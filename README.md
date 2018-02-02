@@ -21,3 +21,20 @@ leecode with go
 38  Count and Say
 ```
 
+# Magic Code
+```
+# hide the success problems
+$(".fa-check").parent("td").parent("tr").hide();
+
+# hide the lock problems
+$(".fa-lock").parent("span").parent("span").parent("div").parent("td").parent("tr").hide();
+
+# only show the lock problems
+$(".reactable-data").find("tr").hide();
+$(".fa-lock").parent("span").parent("span").parent("div").parent("td").parent("tr").show();
+
+# only show the solution text problems
+$(".reactable-data").find("tr").hide();
+$(".fa-file-text").parent("a").parent("td").parent("tr").show();
+```
+
