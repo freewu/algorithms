@@ -13,6 +13,8 @@ leecode with go
 26  Remove Duplicates from Sorted Array
 28  Implement strStr
 35  Search Insert Position
+58  Length of Last Word
+771 Jewels and Stones
 ```
 
 # Attempted
