@@ -1,4 +1,4 @@
-package main 
+package main
 
 /*
 The count-and-say sequence is the sequence of integers with the first five terms as following:
@@ -29,18 +29,49 @@ Output: "1211"
 
 import (
 	"fmt"
+	"strconv"
 )
 
 func countAndSay(n int) string {
-	var t = "1"
-	for i := 1; i <= n ; i++ {
-		fmt.Println(i)
+	if n <= 0 {
+		return ""
 	}
-    return t
+	var t = "1"
+	for { // 循环n次
+		if (n - 1) == 0 {
+			break
+		}
+
+		var s = ""
+		var r = 0
+		var c = t[0]
+		var l = len(t)
+		// 统计字符串
+		for i := 0; i < l; i++ {
+			if c == t[i] {
+				r++
+				continue
+			}
+			s += strconv.Itoa(r) + string(c)
+			//fmt.Println(s)
+			c = t[i]
+			r = 1
+		}
+		s += strconv.Itoa(r) + string(c)
+		//fmt.Println(s)
+		t = s
+		n--
+	}
+	return t
 }
 
 func main() {
 	fmt.Println(countAndSay(1))
 	fmt.Println(countAndSay(2))
+	fmt.Println(countAndSay(3))
+	fmt.Println(countAndSay(4))
+	fmt.Println(countAndSay(5))
+	fmt.Println(countAndSay(6))
 	fmt.Println(countAndSay(7))
+	fmt.Println(countAndSay(8))
 }
