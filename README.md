@@ -17,6 +17,8 @@ leecode with go
 53  Maximum Subarray
 58  Length of Last Word
 66  Plus One
+67  Add Binary
+69  Sqrt(x)
 771 Jewels and Stones
 ```
 
