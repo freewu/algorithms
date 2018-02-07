@@ -4,6 +4,8 @@ leecode with go
 # Solved
 ```
 1   Two Sum
+2   Add Two Numbers
+3   Longest Substring Without Repeating Characters
 7   Reverse Integer
 9   Palindrome Number  
 13  Roman to Integer  
@@ -24,7 +26,8 @@ leecode with go
 
 # Attempted
 ```
-2   Add Two Numbers
+4. Median of Two Sorted Arrays
+70  Climbing Stairs
 ```
 
 # Magic Code
