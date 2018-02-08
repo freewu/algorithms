@@ -6,7 +6,9 @@ leecode with go
 1   Two Sum
 2   Add Two Numbers
 3   Longest Substring Without Repeating Characters
+4   Median of Two Sorted Arrays
 7   Reverse Integer
+8   String to Integer
 9   Palindrome Number  
 13  Roman to Integer  
 14  Longest Common Prefix  
@@ -21,13 +23,15 @@ leecode with go
 66  Plus One
 67  Add Binary
 69  Sqrt(x)
+83  Remove Duplicates from Sorted List
+125 Valid Palindrome
 771 Jewels and Stones
 ```
 
 # Attempted
 ```
-4. Median of Two Sorted Arrays
 70  Climbing Stairs
+100 Same Tree
 ```
 
 # Magic Code

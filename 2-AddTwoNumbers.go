@@ -107,7 +107,7 @@ func printListNode(l *ListNode) {
 		}
 		l = l.Next
 	}
-	fmt.Println("")
+	fmt.Println()
 }
 
 func main() {
