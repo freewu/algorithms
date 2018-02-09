@@ -25,6 +25,8 @@ leecode with go
 69  Sqrt(x)
 83  Remove Duplicates from Sorted List
 125 Valid Palindrome
+344 Reverse String
+345 Reverse Vowels of a String
 771 Jewels and Stones
 ```
 
@@ -32,6 +34,7 @@ leecode with go
 ```
 70  Climbing Stairs
 100 Same Tree
+383 Ransom Note
 ```
 
 # Magic Code
