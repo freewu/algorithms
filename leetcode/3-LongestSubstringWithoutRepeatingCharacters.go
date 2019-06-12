@@ -23,8 +23,9 @@ func lengthOfLongestSubstring(s string) int {
 	}
 	var l = 0
 	var sl = 0
-	var m = ""
+	var m = "" // 子串
 	for i := 0; i < len(s); i++ {
+		// 判断当前子符是否存在子串里
 		if strings.Index(m, string(s[i])) == -1 {
 			l++
 			m += string(s[i])
@@ -32,7 +33,7 @@ func lengthOfLongestSubstring(s string) int {
 			if sl < l {
 				sl = l
 			}
-			// 返回到s[i]之后开始的字符串
+			// 返回到s[i]之后开始的字符串
 			var t = s[i]
 			for {
 				i--
@@ -53,7 +54,7 @@ func lengthOfLongestSubstring(s string) int {
 }
 
 // wrong solution
-func lengthOfLongestSubstring1(s string) int {
+func lengthOfLongestSubstringWrong(s string) int {
 	var l = len(s)
 
 	if 0 == l {
@@ -82,6 +83,24 @@ func lengthOfLongestSubstring1(s string) int {
 	return m
 }
 
+// best speed solution
+func lengthOfLongestSubstring1(s string) int {
+	// index 初始一个list
+	index, res, start, tmp := [128]int{}, 0, 0, 0
+	for i, j := range s {
+		fmt.Println(i, j)
+		if start < index[j] { // 如果
+			start = index[j] // 
+		}
+		tmp = i - start + 1 //
+		if res < tmp {
+			res = tmp
+		}
+		index[j] = i + 1
+	}
+	return res
+}
+
 func main() {
 	fmt.Println(lengthOfLongestSubstring("dvdf"))     // 3
 	fmt.Println(lengthOfLongestSubstring("aac"))      // 2
@@ -91,4 +110,15 @@ func main() {
 	fmt.Println(lengthOfLongestSubstring("abcabcbb")) // 3
 	fmt.Println(lengthOfLongestSubstring("bbbbb"))    // 1
 	fmt.Println(lengthOfLongestSubstring("pwwkew"))   // 3
+
+	fmt.Println()
+
+	fmt.Println(lengthOfLongestSubstring1("dvdf"))     // 3
+	fmt.Println(lengthOfLongestSubstring1("aac"))      // 2
+	fmt.Println(lengthOfLongestSubstring1("abc"))      // 3
+	fmt.Println(lengthOfLongestSubstring1(""))         // 0
+	fmt.Println(lengthOfLongestSubstring1("a"))        // 1
+	fmt.Println(lengthOfLongestSubstring1("abcabcbb")) // 3
+	fmt.Println(lengthOfLongestSubstring1("bbbbb"))    // 1
+	fmt.Println(lengthOfLongestSubstring1("pwwkew"))   // 3
 }

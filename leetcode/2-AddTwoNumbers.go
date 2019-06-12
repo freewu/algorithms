@@ -37,12 +37,14 @@ func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
 
 	var flag = 0 // 进位符
 	for {
+		// 如果循环到任意节点为空直接跳出
 		if nil == l1 || nil == l2 {
 			break
 		}
 
 		var s = l1.Val + l2.Val + flag
 		if s >= 10 {
+			// 如果和大于10 取模型进位
 			t.Next = &ListNode{s % 10, nil}
 			flag = 1
 		} else {
@@ -54,6 +56,7 @@ func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
 		l1 = l1.Next
 		l2 = l2.Next
 	}
+	// 循环 l1 的剩余节点
 	for {
 		if nil == l1 {
 			break
@@ -71,6 +74,7 @@ func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
 		l1 = l1.Next
 		t = t.Next
 	}
+	// 循环 l2 的剩余节点
 	for {
 		if nil == l2 {
 			break
@@ -88,10 +92,48 @@ func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
 		l2 = l2.Next
 		t = t.Next
 	}
+	// 如果还存在进位
 	if 1 == flag {
 		t.Next = &ListNode{1, nil}
 	}
 	return l3.Next.Next
+}
+
+// best speed solution 这个方案好像上有问题的
+func addTwoNumbers1(l1 *ListNode, l2 *ListNode) *ListNode {
+	carry := 0
+	var head *ListNode
+	var currentNode *ListNode
+	// 都为空时跳出循环
+	for (l1 != nil) || (l2 != nil) || (carry != 0) {
+		l1_value := 0
+		if l1 != nil {
+			l1_value = l1.Val
+			l1 = l1.Next
+		}
+
+		l2_value := 0
+		if l2 != nil {
+			l2_value = l2.Val
+			l2 = l2.Next
+		}
+
+		fmt.Println(l1_value, l2_value, carry)
+		current_value := carry + l1_value + l2_value
+		carry = current_value / 10         // int
+		current_value = current_value % 10 // 取余
+
+		if head == nil {
+			head = &ListNode{Val: current_value, Next: nil}
+			currentNode = head
+		} else {
+			next := ListNode{Val: current_value, Next: nil}
+			currentNode.Next = &next
+			currentNode = &next
+		}
+	}
+
+	return head
 }
 
 func printListNode(l *ListNode) {
@@ -123,5 +165,6 @@ func main() {
 
 	printListNode(l23)
 	printListNode(l13)
+	printListNode(addTwoNumbers1(l23, l13))
 	printListNode(addTwoNumbers(l23, l13))
 }

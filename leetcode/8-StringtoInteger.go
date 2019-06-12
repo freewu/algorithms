@@ -20,7 +20,7 @@ func myAtoi(str string) int {
 	if l == 0 {
 		return 0
 	}
-	var flag = 1
+	var flag = 1 // 正负符号
 	var s = 0
 
 	switch true {

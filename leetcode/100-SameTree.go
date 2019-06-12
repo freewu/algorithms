@@ -48,5 +48,5 @@ func isSameTree(p *TreeNode, q *TreeNode) bool {
 }
 
 func main() {
-	fmt.Println
+	fmt.Println("Hello")
 }
