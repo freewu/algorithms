@@ -21,7 +21,7 @@ func isValid(s string) bool {
 	for i := 0; i < len(s); i++ {
 		// 遇到 ([{ 就入栈
 		if '(' == s[i] || '[' == s[i] || '{' == s[i] {
-			a = append(a,string(s[i]))
+			a = append(a, string(s[i]))
 			l++
 		}
 		// 遇到)]} 就出栈 比对
@@ -30,16 +30,16 @@ func isValid(s string) bool {
 			if 0 == l {
 				return false
 			}
-			if ')' == s[i] && "(" != a[l - 1] {
+			if ')' == s[i] && "(" != a[l-1] {
 				return false
 			}
-			if ']' == s[i] && "[" != a[l - 1] {
+			if ']' == s[i] && "[" != a[l-1] {
 				return false
 			}
-			if '}' == s[i] && "{" != a[l - 1] {
+			if '}' == s[i] && "{" != a[l-1] {
 				return false
 			}
-			a = append(a[0:l - 1])
+			a = append(a[0 : l-1])
 			l--
 		}
 	}
@@ -47,7 +47,7 @@ func isValid(s string) bool {
 	if 0 != l {
 		return false
 	}
-    return true
+	return true
 }
 
 func main() {

@@ -90,7 +90,7 @@ func lengthOfLongestSubstring1(s string) int {
 	for i, j := range s {
 		fmt.Println(i, j)
 		if start < index[j] { // 如果
-			start = index[j] // 
+			start = index[j] //
 		}
 		tmp = i - start + 1 //
 		if res < tmp {
