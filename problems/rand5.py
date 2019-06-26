@@ -31,7 +31,7 @@ if __name__ == "__main__":
     
     print "耗时: %f " % (time.time() - start)
 
-    # start = time.time()
+    start = time.time()
     b = [0] * 7
     for i in range(0,len):
         val = rand7()
