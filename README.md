@@ -24,7 +24,9 @@ leecode with go
 67  Add Binary
 69  Sqrt(x)
 83  Remove Duplicates from Sorted List
+92. Reverse Linked List II
 125 Valid Palindrome
+206. Reverse Linked List
 344 Reverse String
 345 Reverse Vowels of a String
 771 Jewels and Stones
@@ -35,6 +37,7 @@ leecode with go
 70  Climbing Stairs
 100 Same Tree
 383 Ransom Note
+
 ```
 
 # Magic Code
