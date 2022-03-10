@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"math"
 )
 
 /*
@@ -21,6 +22,7 @@ nums2 = [3, 4]
 The median is (2 + 3)/2 = 2.5
 */
 
+// by self
 func findMedianSortedArrays(nums1 []int, nums2 []int) float64 {
 	var l1 = len(nums1)
 	var l2 = len(nums2)
@@ -68,7 +70,70 @@ func findMedianSortedArrays(nums1 []int, nums2 []int) float64 {
 	}
 }
 
+// best solution
+func findMedianSortedArraysBest(a []int, b []int) float64 {
+	m,n := len(a), len(b)
+	if m > n {
+		a,b,m,n = b,a,n,m
+	}
+
+	mid := (m + n - 1) / 2 // 两个数组的中位位置
+	l,r := 0,m-1
+	for l <= r {
+		midA := l + (r-l)/2
+		midB := mid - midA
+		if a[midA] < b[midB] {
+			l = midA + 1
+		} else {
+			r = midA - 1
+		}
+	}
+
+	left := 0
+	if l > 0 {
+		left = a[l-1]
+	} else {
+		left = math.MinInt32
+	}
+
+	if mid-l >= 0 {
+		left = max(left, b[mid-l])
+	}
+
+	if (m+n)%2 ==1 {
+		return float64(left)
+	}
+
+	right := 0  //right median, max of a[l] and b[mid-l+1]
+	if l < m {
+		right= a[l]
+	} else {
+		right= math.MaxInt32
+	}
+	if mid - l + 1 < n {
+		right = min(right,b[mid-l+1])
+	}
+	return float64(left+right)/2.0
+}
+
+func min(a, b int) int {
+	if a <= b {
+		return a
+	}
+	return b
+}
+
+func max(a, b int) int {
+	if a <= b {
+		return b
+	}
+	return a
+}
+
 func main() {
 	fmt.Println(findMedianSortedArrays([]int{1, 3}, []int{2}))    // 2.0
-	fmt.Println(findMedianSortedArrays([]int{1, 2}, []int{3, 4})) // 2.0
+	fmt.Println(findMedianSortedArrays([]int{1, 2}, []int{3, 4})) // 2.5
+
+	fmt.Println(findMedianSortedArraysBest([]int{1, 3}, []int{2}))    // 2.0
+	fmt.Println(findMedianSortedArraysBest([]int{1, 2}, []int{3, 4})) // 2.5
 }
