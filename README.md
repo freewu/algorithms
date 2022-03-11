@@ -1,6 +1,7 @@
 # Array
 
-[11 Container With Most Water](./11-ContainerWithMostWater.go)
+[1. Two Sum](./leetcode/1-TwoSum.go)
+[11. Container With Most Water](./leetcode/11-ContainerWithMostWater.go)
 
 
 # leetcode
