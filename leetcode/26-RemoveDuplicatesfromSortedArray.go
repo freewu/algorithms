@@ -1,16 +1,24 @@
 package main
 
 /*
-Given a sorted array, remove the duplicates in-place such that each element appear only once and return the new length.
+26. Remove Duplicates from Sorted Array
 
+Given a sorted array, remove the duplicates in-place such that each element appear only once and return the new length.
 Do not allocate extra space for another array, you must do this by modifying the input array in-place with O(1) extra memory.
 
-Example:
+Example 1:
 
-Given nums = [1,1,2],
+	Given nums = [1,1,2],
+	Your function should return length = 2, with the first two elements of nums being 1 and 2 respectively.
+	It doesn't matter what you leave beyond the returned length.
 
-Your function should return length = 2, with the first two elements of nums being 1 and 2 respectively.
-It doesn't matter what you leave beyond the new length.
+Example 2:
+
+	Given nums = [0,0,1,1,1,2,2,3,3,4],
+	Your function should return length = 5, with the first five elements of nums being modified to 0, 1, 2, 3, and 4 respectively.
+	It doesn't matter what values are set beyond the returned length.
+
+
 */
 
 import (
@@ -54,13 +62,39 @@ func removeDuplicates(nums []int) int {
     return l
 }
 
+func removeDuplicates2(nums []int) int {
+	if len(nums) == 0 {
+		return 0
+	}
+	last, finder := 0, 0
+	for last < len(nums)-1 {
+		for nums[finder] == nums[last] {
+			finder++
+			if finder == len(nums) {
+				return last + 1
+			}
+		}
+		nums[last+1] = nums[finder]
+		last++
+	}
+	return last + 1
+}
+
+// best solution
+func removeDuplicatesBest(nums []int) int {
+	j := 0
+	for i := 1; i < len(nums); i++ {
+		if nums[j] != nums[i] {
+			j++
+			nums[j] = nums[i]
+		}
+	}
+	return j + 1
+}
+
 func main() {
-	//var nums = []int{1,1,2}
-	//fmt.Println(removeDuplicates(nums))
-
-	var nums1 = []int{1,1,5,6,7,8,9,9,10,11,23}
-	fmt.Println(removeDuplicates(nums1))
-
-	//var nums2 = []int{1,1}
-	//fmt.Println(removeDuplicates(nums2))
+	fmt.Printf("removeDuplicates([]int{1,1,5,6,7,8,9,9,10,11,23}) = %v\n",removeDuplicates([]int{1,1,5,6,7,8,9,9,10,11,23}))
+	fmt.Printf("removeDuplicates1([]int{1,1,5,6,7,8,9,9,10,11,23}) = %v\n",removeDuplicates1([]int{1,1,5,6,7,8,9,9,10,11,23}))
+	fmt.Printf("removeDuplicates2([]int{1,1,5,6,7,8,9,9,10,11,23}) = %v\n",removeDuplicates2([]int{1,1,5,6,7,8,9,9,10,11,23}))
+	fmt.Printf("removeDuplicatesBest([]int{1,1,5,6,7,8,9,9,10,11,23}) = %v\n",removeDuplicatesBest([]int{1,1,5,6,7,8,9,9,10,11,23}))
 }
