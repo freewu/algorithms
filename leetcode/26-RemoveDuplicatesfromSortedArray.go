@@ -32,11 +32,11 @@ func removeDuplicates1(nums []int) int {
 		return len(nums)
 	}
 
-	var a = []int{nums[0]}
+	var a = []int{nums[0]} // 声明一个数组来保存 去重后的数据
 	var l = 1
 
 	for i := 1; i < len(nums); i++ {
-		if nums[i] != a[l - 1] {
+		if nums[i] != a[l - 1] { //
 			a = append(a,nums[i])
 			l++
 		} 
@@ -83,11 +83,19 @@ func removeDuplicates2(nums []int) int {
 // best solution
 func removeDuplicatesBest(nums []int) int {
 	j := 0
-	for i := 1; i < len(nums); i++ {
+	for i := 1; i < len(nums); i++ { // 注意从 1 开始
 		if nums[j] != nums[i] {
 			j++
-			nums[j] = nums[i]
+			nums[j] = nums[i] // 用已使用的地址来保存去重的数据
+			// nums: 1 1 2 3 3
+			// r1  nums: 1 1 2 3 3 j:0 i:1 因为 nums[0] == nums[1] 所以不进入
+			// r2  nums: 1 2 2 3 3 j:1 i:2 因为 nums[0] ！+ nums[2] 所有 j++ (1) nums[1] = nums[2
+			// r3  nums: 1 2 3 3 3 j:2 i:3
+			// r3  nums: 1 2 3 3 3 j:2 i:4
 		}
+		fmt.Printf("\nround %v\n",i)
+		fmt.Printf("nums = %v\n",nums)
+		fmt.Printf("j = %v\n",j)
 	}
 	return j + 1
 }
@@ -97,4 +105,5 @@ func main() {
 	fmt.Printf("removeDuplicates1([]int{1,1,5,6,7,8,9,9,10,11,23}) = %v\n",removeDuplicates1([]int{1,1,5,6,7,8,9,9,10,11,23}))
 	fmt.Printf("removeDuplicates2([]int{1,1,5,6,7,8,9,9,10,11,23}) = %v\n",removeDuplicates2([]int{1,1,5,6,7,8,9,9,10,11,23}))
 	fmt.Printf("removeDuplicatesBest([]int{1,1,5,6,7,8,9,9,10,11,23}) = %v\n",removeDuplicatesBest([]int{1,1,5,6,7,8,9,9,10,11,23}))
+	fmt.Printf("removeDuplicatesBest([]int{1,1,2,3,3}) = %v\n",removeDuplicatesBest([]int{1,1,2,3,3}))
 }
