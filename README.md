@@ -4,8 +4,11 @@
 [11. Container With Most Water](./leetcode/11-ContainerWithMostWater.go)   
 [15. 3Sum](./leetcode/15-3Sum.go)   
 [26. Remove Duplicates from Sorted Array](./leetcode/26-RemoveDuplicatesfromSortedArray.go)   
-[27. Remove Element](./leetcode/27-RemoveElement.go)   
+[27. Remove Element](./leetcode/27-RemoveElement.go)    
+
+[498. Diagonal Traverse](./leetcode/498-DiagonalTraverse.go)    
 [500. Keyboard Row](./leetcode/500-KeyboardRow.go)    
+
 
 
 # leetcode
