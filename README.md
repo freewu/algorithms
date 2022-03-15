@@ -3,7 +3,8 @@
 [1. Two Sum](./leetcode/1-TwoSum.go)    
 [4. Median of Two Sorted Arrays](./leetcode/4-MedianofTwoSortedArrays.go)   
 [11. Container With Most Water](./leetcode/11-ContainerWithMostWater.go)   
-[15. 3Sum](./leetcode/15-3Sum.go)   
+[15. 3Sum](./leetcode/15-3Sum.go)    
+[16. 3Sum Closest](./leetcode/16-3SumClosest.go)    
 [26. Remove Duplicates from Sorted Array](./leetcode/26-RemoveDuplicatesfromSortedArray.go)   
 [27. Remove Element](./leetcode/27-RemoveElement.go)    
 
