@@ -7,6 +7,7 @@
 [16. 3Sum Closest](./leetcode/16-3SumClosest.go)    
 [26. Remove Duplicates from Sorted Array](./leetcode/26-RemoveDuplicatesfromSortedArray.go)   
 [27. Remove Element](./leetcode/27-RemoveElement.go)    
+[31. Next Permutation](./leetcode/31-NextPermutation.go)    
 
 [498. Diagonal Traverse](./leetcode/498-DiagonalTraverse.go)    
 [500. Keyboard Row](./leetcode/500-KeyboardRow.go)    
