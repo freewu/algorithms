@@ -9,6 +9,7 @@
 [27. Remove Element](./leetcode/27-RemoveElement.go)    
 [31. Next Permutation](./leetcode/31-NextPermutation.go)    
 [33. Search in Rotated Sorted Array](./leetcode/33-SearchinRotatedSortedArray.go)    
+[34. Find First and Last Position of Element in Sorted Array](./leetcode/34-FindFirstandLastPositionofElementinSortedArray.go)    
 
 [498. Diagonal Traverse](./leetcode/498-DiagonalTraverse.go)    
 [500. Keyboard Row](./leetcode/500-KeyboardRow.go)    
