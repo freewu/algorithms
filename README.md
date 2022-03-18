@@ -12,6 +12,7 @@
 [34. Find First and Last Position of Element in Sorted Array](./leetcode/34-FindFirstandLastPositionofElementinSortedArray.go)    
 [35. Search Insert Position](./leetcode/35-SearchInsertPosition.go)    
 [36. Valid Sudoku](./leetcode/36-ValidSudokun.go)   
+[37. Sudoku Solver](./leetcode/37-SudokuSolver.go)   
 
 [498. Diagonal Traverse](./leetcode/498-DiagonalTraverse.go)    
 [500. Keyboard Row](./leetcode/500-KeyboardRow.go)    
