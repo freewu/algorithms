@@ -16,7 +16,7 @@
 [39. Combination Sum](./leetcode/39-CombinationSum.go)    
 [40. Combination Sum II](./leetcode/40-CombinationSumII.go)    
 [41. First Missing Positive](./leetcode/41-FirstMissingPositive.go)    
-
+[42. Trapping Rain Water](./leetcode/42-TrappingRainWater.go)    
 
 [498. Diagonal Traverse](./leetcode/498-DiagonalTraverse.go)    
 [500. Keyboard Row](./leetcode/500-KeyboardRow.go)    
