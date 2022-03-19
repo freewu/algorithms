@@ -14,6 +14,7 @@
 [36. Valid Sudoku](./leetcode/36-ValidSudokun.go)   
 [37. Sudoku Solver](./leetcode/37-SudokuSolver.go)    
 [39. Combination Sum](./leetcode/39-CombinationSum.go)    
+[40. Combination Sum II](./leetcode/40-CombinationSumII.go)    
 
 [498. Diagonal Traverse](./leetcode/498-DiagonalTraverse.go)    
 [500. Keyboard Row](./leetcode/500-KeyboardRow.go)    
