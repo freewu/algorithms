@@ -19,6 +19,8 @@
 [42. Trapping Rain Water](./leetcode/42-TrappingRainWater.go)    
 [45. Jump Game II](./leetcode/45-JumpGameII.go)    
 [46. Permutations](./leetcode/46-Permutations.go)    
+[47. Permutations II](./leetcode/47-PermutationsII.go)    
+
 
 
 [498. Diagonal Traverse](./leetcode/498-DiagonalTraverse.go)    
