@@ -25,6 +25,8 @@
 [53. Maximum Subarray](./leetcode/53-MaximumSubarray.go)    
 [54. Spiral Matrix](./leetcode/54-SpiralMatrix.go)    
 [55. Jump Game](./leetcode/55-JumpGame.go)    
+[56. Merge Intervals](./leetcode/56.MergeIntervals.go)    
+
 
 [498. Diagonal Traverse](./leetcode/498-DiagonalTraverse.go)    
 [500. Keyboard Row](./leetcode/500-KeyboardRow.go)    
