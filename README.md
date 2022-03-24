@@ -29,6 +29,7 @@
 [57. Insert Interval](./leetcode/57-InsertInterval.go)    
 [59. Spiral Matrix II](./leetcode/59-SpiralMatrixII.go)    
 [63. Unique Paths II](./leetcode/63-UniquePathsII.go)    
+[64. Minimum Path Sum](./leetcode/64-MinimumPathSum.go)    
 
 
 [498. Diagonal Traverse](./leetcode/498-DiagonalTraverse.go)    
