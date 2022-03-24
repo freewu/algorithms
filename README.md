@@ -30,7 +30,7 @@
 [59. Spiral Matrix II](./leetcode/59-SpiralMatrixII.go)    
 [63. Unique Paths II](./leetcode/63-UniquePathsII.go)    
 [64. Minimum Path Sum](./leetcode/64-MinimumPathSum.go)    
-
+[66. Plus One](./leetcode/66-PlusOne.go)    
 
 [498. Diagonal Traverse](./leetcode/498-DiagonalTraverse.go)    
 [500. Keyboard Row](./leetcode/500-KeyboardRow.go)    
