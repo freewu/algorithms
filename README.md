@@ -32,6 +32,8 @@
 [64. Minimum Path Sum](./leetcode/64-MinimumPathSum.go)    
 [66. Plus One](./leetcode/66-PlusOne.go)    
 [73. Set Matrix Zeroes](./leetcode/73-SetMatrixZeroes.go)    
+[74. Search a 2D Matrix](./leetcode/74-Searcha2DMatrix.go)    
+
 
 [498. Diagonal Traverse](./leetcode/498-DiagonalTraverse.go)    
 [500. Keyboard Row](./leetcode/500-KeyboardRow.go)    
