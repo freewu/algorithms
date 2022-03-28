@@ -36,6 +36,8 @@
 [75. Sort Colors](./leetcode/75-SortColors.go)    
 [77. Combinations](./leetcode/77-Combinations.go)    
 [78. Subsets](./leetcode/78-Subsets.go)    
+[79. Word Search](./leetcode/79-WordSearch.go)    
+
 
 [498. Diagonal Traverse](./leetcode/498-DiagonalTraverse.go)    
 [500. Keyboard Row](./leetcode/500-KeyboardRow.go)    
