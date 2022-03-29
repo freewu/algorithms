@@ -39,6 +39,7 @@
 [79. Word Search](./leetcode/79-WordSearch.go)    
 [80. Remove Duplicates from Sorted Array II](./leetcode/80-RemoveDuplicatesfromSortedArrayII.go)    
 [81. Search in Rotated Sorted Array II](./leetcode/81-SearchinRotatedSortedArrayII.go)   
+[84. Largest Rectangle in Histogram](./leetcode/84-LargestRectangleinHistogram.go)   
 
 
 [498. Diagonal Traverse](./leetcode/498-DiagonalTraverse.go)    
