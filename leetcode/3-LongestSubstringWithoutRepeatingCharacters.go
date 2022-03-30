@@ -6,15 +6,34 @@ import (
 )
 
 /*
+3. Longest Substring Without Repeating Characters
+
 Given a string, find the length of the longest substring without repeating characters.
 
-Examples:
+Constraints:
 
-Given "abcabcbb", the answer is "abc", which the length is 3.
+	0 <= s.length <= 5 * 10^4
+	s consists of English letters, digits, symbols and spaces.
 
-Given "bbbbb", the answer is "b", with the length of 1.
+Example 1:
 
-Given "pwwkew", the answer is "wke", with the length of 3. Note that the answer must be a substring, "pwke" is a subsequence and not a substring.
+	Input: s = "abcabcbb"
+	Output: 3
+	Explanation: The answer is "abc", with the length of 3.
+
+Example 2:
+
+	Input: s = "bbbbb"
+	Output: 1
+	Explanation: The answer is "b", with the length of 1.
+
+Example 3:
+
+	Input: s = "pwwkew"
+	Output: 3
+	Explanation: The answer is "wke", with the length of 3.
+	Notice that the answer must be a substring, "pwke" is a subsequence and not a substring.
+
 */
 
 func lengthOfLongestSubstring(s string) int {
@@ -101,6 +120,76 @@ func lengthOfLongestSubstring1(s string) int {
 	return res
 }
 
+// 解法一 位图
+func lengthOfLongestSubstring11(s string) int {
+	if len(s) == 0 {
+		return 0
+	}
+	var bitSet [256]bool
+	result, left, right := 0, 0, 0
+	for left < len(s) {
+		// 右侧字符对应的 bitSet 被标记 true，说明此字符在 X 位置重复，需要左侧向前移动，直到将 X 标记为 false
+		if bitSet[s[right]] {
+			bitSet[s[left]] = false
+			left++
+		} else {
+			bitSet[s[right]] = true
+			right++
+		}
+		if result < right-left {
+			result = right - left
+		}
+		if left+result >= len(s) || right >= len(s) {
+			break
+		}
+	}
+	return result
+}
+
+// 解法二 滑动窗口
+func lengthOfLongestSubstring12(s string) int {
+	if len(s) == 0 {
+		return 0
+	}
+	var freq [127]int
+	result, left, right := 0, 0, -1
+
+	for left < len(s) {
+		if right+1 < len(s) && freq[s[right+1]] == 0 {
+			freq[s[right+1]]++
+			right++
+
+		} else {
+			freq[s[left]]--
+			left++
+		}
+		result = max(result, right-left+1)
+	}
+	return result
+}
+
+// 解法三 滑动窗口-哈希桶
+func lengthOfLongestSubstring13(s string) int {
+	right, left, res := 0, 0, 0
+	indexes := make(map[byte]int, len(s))
+	for left < len(s) {
+		if idx, ok := indexes[s[left]]; ok && idx >= right {
+			right = idx + 1
+		}
+		indexes[s[left]] = left
+		left++
+		res = max(res, left-right)
+	}
+	return res
+}
+
+func max(a int, b int) int {
+	if a > b {
+		return a
+	}
+	return b
+}
+
 func main() {
 	fmt.Println(lengthOfLongestSubstring("dvdf"))     // 3
 	fmt.Println(lengthOfLongestSubstring("aac"))      // 2
@@ -121,4 +210,16 @@ func main() {
 	fmt.Println(lengthOfLongestSubstring1("abcabcbb")) // 3
 	fmt.Println(lengthOfLongestSubstring1("bbbbb"))    // 1
 	fmt.Println(lengthOfLongestSubstring1("pwwkew"))   // 3
+
+	fmt.Printf("lengthOfLongestSubstring13(\"abcabcbb\") = %v\n",lengthOfLongestSubstring13("abcabcbb")) // 3
+	fmt.Printf("lengthOfLongestSubstring13(\"bbbbb\") = %v\n",lengthOfLongestSubstring13("bbbbb")) // 1
+	fmt.Printf("lengthOfLongestSubstring13(\"abcabcbb\") = %v\n",lengthOfLongestSubstring13("pwwkew")) // 3
+
+	fmt.Printf("lengthOfLongestSubstring12(\"abcabcbb\") = %v\n",lengthOfLongestSubstring12("abcabcbb")) // 3
+	fmt.Printf("lengthOfLongestSubstring12(\"bbbbb\") = %v\n",lengthOfLongestSubstring12("bbbbb")) // 1
+	fmt.Printf("lengthOfLongestSubstring12(\"abcabcbb\") = %v\n",lengthOfLongestSubstring12("pwwkew")) // 3
+
+	fmt.Printf("lengthOfLongestSubstring11(\"abcabcbb\") = %v\n",lengthOfLongestSubstring11("abcabcbb")) // 3
+	fmt.Printf("lengthOfLongestSubstring11(\"bbbbb\") = %v\n",lengthOfLongestSubstring11("bbbbb")) // 1
+	fmt.Printf("lengthOfLongestSubstring11(\"abcabcbb\") = %v\n",lengthOfLongestSubstring11("pwwkew")) // 3
 }
