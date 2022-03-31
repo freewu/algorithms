@@ -49,6 +49,8 @@
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
 [5. Longest Palindromic Substring](./leetcode/5-LongestPalindromicSubstring.go)    
 [6. ZigZag Conversion](./leetcode/6-ZigZagConversion.go)    
+[8. String to Integer (atoi)](./leetcode/8-StringtoInteger.go)    
+
 
 
 # leetcode
