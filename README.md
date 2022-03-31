@@ -47,7 +47,7 @@
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
-
+[5. Longest Palindromic Substring](./leetcode/5-LongestPalindromicSubstring.go)    
 
 # leetcode
 leecode with go
