@@ -50,6 +50,8 @@
 [5. Longest Palindromic Substring](./leetcode/5-LongestPalindromicSubstring.go)    
 [6. ZigZag Conversion](./leetcode/6-ZigZagConversion.go)    
 [8. String to Integer (atoi)](./leetcode/8-StringtoInteger.go)    
+[12. Integer to Roman](./leetcode/12-IntegertoRoman.go)    
+
 
 
 
