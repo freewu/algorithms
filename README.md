@@ -52,6 +52,7 @@
 [8. String to Integer (atoi)](./leetcode/8-StringtoInteger.go)    
 [12. Integer to Roman](./leetcode/12-IntegertoRoman.go)    
 [13. Roman to Integer](./leetcode/13-RomantoInteger.go)    
+[14. Longest Common Prefix](./leetcode/14-LongestCommonPrefix.go)    
 
 
 # leetcode
