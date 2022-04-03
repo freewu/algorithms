@@ -55,6 +55,7 @@
 [14. Longest Common Prefix](./leetcode/14-LongestCommonPrefix.go)    
 [17. Letter Combinations of a Phone Number](./leetcode/17-LetterCombinationsofaPhoneNumber.go)    
 [20. Valid Parentheses](./leetcode/20-ValidParentheses.go)    
+[22. Generate Parentheses](./leetcode/22-GenerateParentheses.go)    
 
 
 
