@@ -1,9 +1,35 @@
 package main
 
 /*
-Given a string containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
+20. Valid Parentheses
+Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
 
-The brackets must close in the correct order, "()" and "()[]{}" are all valid but "(]" and "([)]" are not.
+An input string is valid if:
+
+	Open brackets must be closed by the same type of brackets.
+	Open brackets must be closed in the correct order.
+
+Constraints:
+
+	1 <= s.length <= 104
+	s consists of parentheses only '()[]{}'.
+
+Example 1:
+
+	Input: s = "()"
+	Output: true
+
+Example 2:
+
+	Input: s = "()[]{}"
+	Output: true
+
+Example 3:
+
+	Input: s = "(]"
+	Output: false
+
+
 */
 import (
 	"fmt"
@@ -15,7 +41,7 @@ func isValid(s string) bool {
 		return false
 	}
 	// 用stack就可很好处理golang没有原生的stack 这里使用一个array 和 int来处理
-	var a = []string{}
+	var a []string
 	var l = 0
 
 	for i := 0; i < len(s); i++ {
@@ -50,10 +76,37 @@ func isValid(s string) bool {
 	return true
 }
 
+// best solution
+func isValidBest(s string) bool {
+	// 空字符串直接返回 true
+	if len(s) == 0 {
+		return true
+	}
+	stack := make([]rune, 0)
+	for _, v := range s {
+		if (v == '[') || (v == '(') || (v == '{') {
+			stack = append(stack, v)
+		} else if ((v == ']') && len(stack) > 0 && stack[len(stack)-1] == '[') ||
+			((v == ')') && len(stack) > 0 && stack[len(stack)-1] == '(') ||
+			((v == '}') && len(stack) > 0 && stack[len(stack)-1] == '{') {
+			stack = stack[:len(stack)-1]
+		} else {
+			return false
+		}
+	}
+	return len(stack) == 0
+}
+
 func main() {
-	fmt.Println(isValid("(("))
-	fmt.Println(isValid("("))
-	fmt.Println(isValid("()"))
-	fmt.Println(isValid("({[()]})"))
-	fmt.Println(isValid("({[()}])"))
+	fmt.Printf("isValid(\"((\") = %v\n",isValid("((")) // false
+	fmt.Printf("isValid(\"(\") = %v\n",isValid("(")) // false
+	fmt.Printf("isValid(\"(+\") = %v\n",isValid("()")) // true
+	fmt.Printf("isValid(\"({[()]})\") = %v\n",isValid("({[()]})")) // true
+	fmt.Printf("isValid(\"({[()}])\") = %v\n",isValid("({[()}])")) // false
+
+	fmt.Printf("isValidBest(\"((\") = %v\n",isValidBest("((")) // false
+	fmt.Printf("isValidBest(\"(\") = %v\n",isValidBest("(")) // false
+	fmt.Printf("isValidBest(\"(+\") = %v\n",isValidBest("()")) // true
+	fmt.Printf("isValidBest(\"({[()]})\") = %v\n",isValidBest("({[()]})")) // true
+	fmt.Printf("isValidBest(\"({[()}])\") = %v\n",isValidBest("({[()}])")) // false
 }
