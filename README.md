@@ -57,6 +57,7 @@
 [20. Valid Parentheses](./leetcode/20-ValidParentheses.go)    
 [22. Generate Parentheses](./leetcode/22-GenerateParentheses.go)    
 [28. Implement strStr()](./leetcode/28-ImplementstrStr.go)    
+[30. Substring with Concatenation of All Words](./leetcode/30-SubstringwithConcatenationofAllWords.go)    
 
 
 # leetcode
