@@ -63,6 +63,7 @@
 [49. Group Anagrams](./leetcode/49-GroupAnagrams.go)    
 [58. Length of Last Word](./leetcode/58-LengthofLastWord.go)    
 [65. Valid Number](./leetcode/65-ValidNumber.go)    
+[67. Add Binary](./leetcode/67-AddBinary.go)    
 
 
 

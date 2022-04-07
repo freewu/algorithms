@@ -2,15 +2,24 @@ package main
 
 import (
 	"fmt"
+	"strconv"
+	"strings"
 )
 
 /*
+67. Add Binary
 Given two binary strings, return their sum (also a binary string).
+The input strings are both non-empty and contains only characters 1 or 0.
 
-For example,
-a = "11"
-b = "1"
-Return "100".
+Example 1:
+
+	Input: a = "11", b = "1"
+	Output: "100"
+
+Example 2:
+
+	Input: a = "1010", b = "1011"
+	Output: "10101"
 */
 
 func addBinary(a string, b string) string {
@@ -92,7 +101,42 @@ func addBinary(a string, b string) string {
 	return s
 }
 
+// best solution
+func addBinaryBest(a string, b string) string {
+	if len(b) > len(a) {
+		a, b = b, a
+	}
+	res := make([]string, len(a)+1) // 声明一个数组来保存结果 长度是 最长的 + 1
+	i, j, k, c := len(a)-1, len(b)-1, len(a), 0
+	// 先把对齐的长度进行相加处理
+	for i >= 0 && j >= 0 {
+		ai, _ := strconv.Atoi(string(a[i]))
+		bj, _ := strconv.Atoi(string(b[j]))
+		res[k] = strconv.Itoa((ai + bj + c) % 2)
+		c = (ai + bj + c) / 2 // 判断是否进位
+		i--
+		j--
+		k--
+	}
+	// 处理超过长度的部分
+	for i >= 0 {
+		ai, _ := strconv.Atoi(string(a[i]))
+		res[k] = strconv.Itoa((ai + c) % 2)
+		c = (ai + c) / 2
+		i--
+		k--
+	}
+	// 有进位处理
+	if c > 0 {
+		res[k] = strconv.Itoa(c)
+	}
+	return strings.Join(res, "")
+}
+
 func main() {
-	fmt.Println(addBinary("11", "1"))  // "100"
-	fmt.Println(addBinary("11", "11")) // "110"
+	fmt.Printf("addBinary(\"11\", \"1\") = %v\n",addBinary("11", "1"))  // "100"
+	fmt.Printf("addBinary(\"11\", \"11\") = %v\n",addBinary("11", "11")) // "110"
+
+	fmt.Printf("addBinaryBest(\"11\", \"1\") = %v\n",addBinaryBest("11", "1"))  // "100"
+	fmt.Printf("addBinaryBest(\"11\", \"11\") = %v\n",addBinaryBest("11", "11")) // "110"
 }
