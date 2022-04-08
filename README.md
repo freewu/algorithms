@@ -65,7 +65,7 @@
 [65. Valid Number](./leetcode/65-ValidNumber.go)    
 [67. Add Binary](./leetcode/67-AddBinary.go)    
 [71. Simplify Path](./leetcode/71-SimplifyPath.go)    
-
+[76. Minimum Window Substring](./leetcode/76-MinimumWindowSubstring.go)    
 
 
 # leetcode
