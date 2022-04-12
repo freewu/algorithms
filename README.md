@@ -79,6 +79,8 @@
 # Database
 [175. Combine Two Tables](./leetcode/175-CombineTwoTables.sql)   
 [511. Game Play Analysis I](./leetcode/511-GamePlayAnalysisI.sql)   
+[607. Sales Person](./leetcode/607-SalesPerson.sql)   
+
 
 
 # Shell
