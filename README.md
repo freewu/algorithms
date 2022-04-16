@@ -47,8 +47,7 @@
 [118. Pascal’s Triangle](./leetcode/118-PascalsTriangle.go)   
 [119. Pascal’s Triangle II](./leetcode/119-PascalsTriangleII.go)   
 [120. Triangle](./leetcode/120-Triangle.go)   
-
-
+[121. Best Time to Buy and Sell Stock](./leetcode/121-BestTimetoBuyandSellStock.go)   
 
 
 [498. Diagonal Traverse](./leetcode/498-DiagonalTraverse.go)    
