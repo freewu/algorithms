@@ -49,7 +49,7 @@
 [120. Triangle](./leetcode/120-Triangle.go)   
 [121. Best Time to Buy and Sell Stock](./leetcode/121-BestTimetoBuyandSellStock.go)   
 [122. Best Time to Buy and Sell Stock II](./leetcode/122-BestTimetoBuyandSellStockII.go)   
-
+[128. Longest Consecutive Sequence](./leetcode/128-LongestConsecutiveSequence.go)   
 
 [498. Diagonal Traverse](./leetcode/498-DiagonalTraverse.go)    
 [500. Keyboard Row](./leetcode/500-KeyboardRow.go)    
