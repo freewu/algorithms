@@ -51,6 +51,7 @@
 [122. Best Time to Buy and Sell Stock II](./leetcode/122-BestTimetoBuyandSellStockII.go)   
 [128. Longest Consecutive Sequence](./leetcode/128-LongestConsecutiveSequence.go)   
 [130. Surrounded Regions](./leetcode/130-SurroundedRegions.go)   
+[135. Candy](./leetcode/135-Candy.go)   
 
 
 [498. Diagonal Traverse](./leetcode/498-DiagonalTraverse.go)    
