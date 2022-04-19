@@ -52,6 +52,7 @@
 [128. Longest Consecutive Sequence](./leetcode/128-LongestConsecutiveSequence.go)   
 [130. Surrounded Regions](./leetcode/130-SurroundedRegions.go)   
 [135. Candy](./leetcode/135-Candy.go)   
+[136. Single Number](./leetcode/136-SingleNumber.go)   
 
 
 [498. Diagonal Traverse](./leetcode/498-DiagonalTraverse.go)    
