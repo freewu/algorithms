@@ -56,6 +56,8 @@
 [137. Single Number II](./leetcode/137-SingleNumberII.go)   
 [150. Evaluate Reverse Polish Notation](./leetcode/150-EvaluateReversePolishNotation.go)   
 [152. Maximum Product Subarray](./leetcode/152-MaximumProductSubarray.go)   
+[153. Find Minimum in Rotated Sorted Array](./leetcode/153-FindMinimuminRotatedSortedArray.go)   
+
 
 [498. Diagonal Traverse](./leetcode/498-DiagonalTraverse.go)    
 [500. Keyboard Row](./leetcode/500-KeyboardRow.go)    
