@@ -105,8 +105,8 @@
 [1148. Article Views I](./leetcode/1148-ArticleViewsI.sql)   
 [1158. Market Analysis I](./leetcode/1158-MarketAnalysisI.sql)   
 [1179. Reformat Department Table](./leetcode/1179-ReformatDepartmentTable.sql)   
+[1393. Capital Gain/Loss](./leetcode/1393-CapitalGainOrLoss.sql)   
 [1407. Top Travellers](./leetcode/1407-TopTravellers.sql)   
-
 
 
 
