@@ -107,7 +107,7 @@
 [1179. Reformat Department Table](./leetcode/1179-ReformatDepartmentTable.sql)   
 [1393. Capital Gain/Loss](./leetcode/1393-CapitalGainOrLoss.sql)   
 [1407. Top Travellers](./leetcode/1407-TopTravellers.sql)   
-
+[1484. Group Sold Products By The Date](./leetcode/1484-GroupSoldProductsByTheDate.sql)   
 
 
 # Shell
