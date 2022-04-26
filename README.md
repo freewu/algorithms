@@ -112,6 +112,7 @@
 [1581. Customer Who Visited but Did Not Make Any Transactions](./leetcode/1581-CustomerWhoVisitedbutDidNotMakeAnyTransactions.sql)   
 [1587. Bank Account Summary II](./leetcode/1587-BankAccountSummaryII.sql)   
 [1667. Fix Names in a Table](./leetcode/1667-FixNamesinaTable.sql)   
+[1693. Daily Leads and Partners](./leetcode/1693-DailyLeadsandPartners.sql)   
 
 
 # Shell
