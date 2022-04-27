@@ -14,3 +14,6 @@
 [1929 · Analysis of Online Class II](./1929-AnalysisofOnlineClassII.sql)   
 [1930 · Public Rental Housing Information Query](./1930-PublicRentalHousingInformationQuery.sql)   
 [1931 · Find Specific Patient](./1931-FindSpecificPatient.sql)   
+[1932 · Students with the Most Failed Subjects I](./1932-StudentswiththeMostFailedSubjectsI.sql)   
+
+1932 · Students with the Most Failed Subjects I
