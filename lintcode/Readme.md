@@ -18,3 +18,4 @@
 [1933 · Students with the Most Failed Subjects II](./1933-StudentswiththeMostFailedSubjectsII.sql)   
 [1934 · Zhang San's Story I](./1934-ZhangSansStoryI.sql)   
 [1935 · Zhang San's Story II](./1935-ZhangSansStoryII.sql)   
+[1936 · Zhang San's Story III](./1936-ZhangSansStoryIII.sql)   
