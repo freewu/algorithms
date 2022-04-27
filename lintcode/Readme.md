@@ -5,3 +5,4 @@
 [1920 · Find a Classmate with the Same Name](./1920-FindaClassmatewiththeSameName.sql)   
 [1921 · Players Who Never Recharge](./1921-PlayersWhoNeverRecharge.sql)   
 [1922 · Delete Duplicate Names](./1922-DeleteDuplicateNames.sql)   
+[1923 · Increasing Number of Infections](./1923-IncreasingNumberofInfections.sql)   
