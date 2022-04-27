@@ -6,3 +6,5 @@
 [1921 · Players Who Never Recharge](./1921-PlayersWhoNeverRecharge.sql)   
 [1922 · Delete Duplicate Names](./1922-DeleteDuplicateNames.sql)   
 [1923 · Increasing Number of Infections](./1923-IncreasingNumberofInfections.sql)   
+[1924 · Recommend Student to Study Science](./1924-RecommendStudenttoStudyScience.sql)   
+
