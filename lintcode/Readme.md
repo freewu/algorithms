@@ -8,5 +8,5 @@
 [1923 · Increasing Number of Infections](./1923-IncreasingNumberofInfections.sql)   
 [1924 · Recommend Student to Study Science](./1924-RecommendStudenttoStudyScience.sql)   
 [1925 · At Least Three Players Have Scored](./1925-AtLeastThreePlayersHaveScored.sql)   
-
+[1926 · Popular Hero](./1926-PopularHero.sql)   
 
