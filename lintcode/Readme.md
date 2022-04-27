@@ -11,4 +11,4 @@
 [1926 · Popular Hero](./1926-PopularHero.sql)   
 [1927 · Coin Flip](./1927-CoinFlip.sql)   
 [1928 · Analysis of Online Class I](./1928-AnalysisofOnlineClassI.sql)   
-
+[1929 · Analysis of Online Class II](./1929-AnalysisofOnlineClassII.sql)   
