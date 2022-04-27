@@ -10,3 +10,5 @@
 [1925 · At Least Three Players Have Scored](./1925-AtLeastThreePlayersHaveScored.sql)   
 [1926 · Popular Hero](./1926-PopularHero.sql)   
 [1927 · Coin Flip](./1927-CoinFlip.sql)   
+[1928 · Analysis of Online Class I](./1928-AnalysisofOnlineClassI.sql)   
+
