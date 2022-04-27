@@ -27,6 +27,7 @@ func aplusb (a int, b int) int {
 	return a + b
 }
 
+// 使用位运算
 func aplusb1 (a int, b int) int {
 	// write your code here
 	if 0 == a {
@@ -44,8 +45,8 @@ func aplusb1 (a int, b int) int {
 	// b	00000011
 	// & 	00000011
 	// >> 1	00000110
-	var t1 = (a & b) >> 1 // 进位
-	return aplusb1(t,t1)
+	var t1 = (a & b) >> 1 // 处理进位 
+	return aplusb1(t,t1) // 递归到 0
 }
 
 func main() {

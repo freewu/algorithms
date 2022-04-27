@@ -16,5 +16,5 @@
 [1931 · Find Specific Patient](./1931-FindSpecificPatient.sql)   
 [1932 · Students with the Most Failed Subjects I](./1932-StudentswiththeMostFailedSubjectsI.sql)   
 [1933 · Students with the Most Failed Subjects II](./1933-StudentswiththeMostFailedSubjectsII.sql)   
-
+[1934 · Zhang San's Story I](./1934-ZhangSansStoryI.sql)   
 
