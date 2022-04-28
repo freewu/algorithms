@@ -40,6 +40,8 @@
 [1958 · Query the courses that meet the conditions taught by the specified teacher](./1958-Querythecoursesthatmeettheconditionstaughtbythespecifiedteacher.sql)   
 [1959 · Query information about Chinese and British teachers](./1959-QueryinformationaboutChineseandBritishteachers.sql)   
 [1960 · Query course information for a specific time](./1960-Querycourseinformationforaspecifictime.sql)   
+[1961 · Query information about non-Japanese and non-American teachers](./1961-Queryinformationaboutnon-Japaneseandnon-Americanteachers.sql)   
+
 
 ## Python
 [2124 · print hello](./2124-PrintHello.py)   
