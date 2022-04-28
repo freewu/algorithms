@@ -38,6 +38,7 @@
 [1956 · Query information about Eastern Heretic teachers](./1956-QueryinformationaboutEasternHereticteachers.sql)   
 [1957 · Inquire about courses starting before May 2020](./1957-InquireaboutcoursesstartingbeforeMay2020.sql)   
 [1958 · Query the courses that meet the conditions taught by the specified teacher](./1958-Querythecoursesthatmeettheconditionstaughtbythespecifiedteacher.sql)   
+[1959 · Query information about Chinese and British teachers](./1959-QueryinformationaboutChineseandBritishteachers.sql)   
 
 
 ## Python
