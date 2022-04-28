@@ -27,3 +27,5 @@
 [1942 · Two Nearest Saplings](./1942-TwoNearestSaplings.sql)   
 [1943 · Looking for Students of a Certain Height](./1943-LookingforStudentsofaCertainHeight.sql)   
 
+## Python
+[2124 · print hello](./2124-PrintHello.py)   
