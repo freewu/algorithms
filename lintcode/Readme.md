@@ -41,6 +41,7 @@
 [1959 · Query information about Chinese and British teachers](./1959-QueryinformationaboutChineseandBritishteachers.sql)   
 [1960 · Query course information for a specific time](./1960-Querycourseinformationforaspecifictime.sql)   
 [1961 · Query information about non-Japanese and non-American teachers](./1961-Queryinformationaboutnon-Japaneseandnon-Americanteachers.sql)   
+[1962 · Query courses with teacher id other than 1 and 3](./1962-Querycourseswithteacheridotherthan1and3.sql)   
 
 
 ## Python
