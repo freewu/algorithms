@@ -36,6 +36,7 @@
 [1954 · Query course information with the number of students within a specified range](./1954-Querycourseinformationwiththenumberofstudentswithinaspecifiedrange.sql)   
 [1955 · Query teachers who do not meet the conditions](./1955-Queryteacherswhodonotmeettheconditions.sql)   
 [1956 · Query information about Eastern Heretic teachers](./1956-QueryinformationaboutEasternHereticteachers.sql)   
+[1957 · Inquire about courses starting before May 2020](./1957-InquireaboutcoursesstartingbeforeMay2020.sql)   
 
 ## Python
 [2124 · print hello](./2124-PrintHello.py)   
