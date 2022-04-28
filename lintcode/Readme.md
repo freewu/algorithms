@@ -39,7 +39,7 @@
 [1957 · Inquire about courses starting before May 2020](./1957-InquireaboutcoursesstartingbeforeMay2020.sql)   
 [1958 · Query the courses that meet the conditions taught by the specified teacher](./1958-Querythecoursesthatmeettheconditionstaughtbythespecifiedteacher.sql)   
 [1959 · Query information about Chinese and British teachers](./1959-QueryinformationaboutChineseandBritishteachers.sql)   
-
+[1960 · Query course information for a specific time](./1960-Querycourseinformationforaspecifictime.sql)   
 
 ## Python
 [2124 · print hello](./2124-PrintHello.py)   
