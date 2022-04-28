@@ -27,7 +27,8 @@
 [1942 · Two Nearest Saplings](./1942-TwoNearestSaplings.sql)   
 [1943 · Looking for Students of a Certain Height](./1943-LookingforStudentsofaCertainHeight.sql)  
 [1944 · Bike Sharing](./1944-BikeSharing.sql)    
-[1945 · Club Annual Competition Score Ranking I](./1945-ClubAnnualCompetitionScoreRankingI.sql)    
+[1945 · Club Annual Competition Score Ranking I](./1945-ClubAnnualCompetitionScoreRankingI.sql)   
+[1946 · Club Annual Competition Score Ranking II](./1946-ClubAnnualCompetitionScoreRankingII.sql)   
 
 
 
