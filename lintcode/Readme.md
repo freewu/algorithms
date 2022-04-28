@@ -25,4 +25,5 @@
 [1940 · Resume Delivery II](./1940-ResumeDeliveryII.sql)   
 [1941 · Find Right Triangle](./1941-FindRightTriangle.sql)   
 [1942 · Two Nearest Saplings](./1942-TwoNearestSaplings.sql)   
+[1943 · Looking for Students of a Certain Height](./1943-LookingforStudentsofaCertainHeight.sql)   
 
