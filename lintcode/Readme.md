@@ -44,6 +44,8 @@
 [1962 · Query courses with teacher id other than 1 and 3](./1962-Querycourseswithteacheridotherthan1and3.sql)   
 [1963 · Search for teachers aged 20~25 whose nationality is not Chinese or British](./1963-Searchforteachersaged20-25whosenationalityisnotChineseorBritish.sql)   
 [1964 · Query for course information about the number of students within the specified range](./1964-Queryforcourseinformationaboutthenumberofstudentswithinthespecifiedrange.sql)   
+[1965 · Search for information on teachers who are not within the age range of 20 to 30 years](./1965-Searchforinformationonteacherswhoarenotwithintheagerangeof20to30years.sql)   
+
 
 
 ## Python
