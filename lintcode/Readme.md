@@ -30,6 +30,8 @@
 [1945 · Club Annual Competition Score Ranking I](./1945-ClubAnnualCompetitionScoreRankingI.sql)   
 [1946 · Club Annual Competition Score Ranking II](./1946-ClubAnnualCompetitionScoreRankingII.sql)   
 [1950 · Query courses with more than 800 students](./1950-Querycourseswithmorethan800students.sql)   
+[1951 · Query courses with given teacher](./1951-Querycourseswithgiventeacher.sql)   
+
 
 
 ## Python
