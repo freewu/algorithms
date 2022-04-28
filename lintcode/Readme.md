@@ -35,7 +35,7 @@
 [1953 · Query the name of the Chinese teacher](./1953-QuerythenameoftheChineseteacher.sql)   
 [1954 · Query course information with the number of students within a specified range](./1954-Querycourseinformationwiththenumberofstudentswithinaspecifiedrange.sql)   
 [1955 · Query teachers who do not meet the conditions](./1955-Queryteacherswhodonotmeettheconditions.sql)   
-
+[1956 · Query information about Eastern Heretic teachers](./1956-QueryinformationaboutEasternHereticteachers.sql)   
 
 ## Python
 [2124 · print hello](./2124-PrintHello.py)   
