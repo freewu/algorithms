@@ -22,3 +22,4 @@
 [1937 · Consecutive Empty Boxes](./1937-ConsecutiveEmptyBoxes.sql)   
 [1938 · Query User Email](./1938-QueryUserEmail.sql)   
 [1939 · Resume Delivery I](./1939-ResumeDeliveryI.sql)   
+[1940 · Resume Delivery II](./1940-ResumeDeliveryII.sql)   
