@@ -34,7 +34,7 @@
 [1952 · Query teachers over 20 years old](./1952-Queryteachersover20yearsold.sql)   
 [1953 · Query the name of the Chinese teacher](./1953-QuerythenameoftheChineseteacher.sql)   
 [1954 · Query course information with the number of students within a specified range](./1954-Querycourseinformationwiththenumberofstudentswithinaspecifiedrange.sql)   
-
+[1955 · Query teachers who do not meet the conditions](./1955-Queryteacherswhodonotmeettheconditions.sql)   
 
 
 ## Python
