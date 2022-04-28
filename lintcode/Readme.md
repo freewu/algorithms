@@ -37,6 +37,8 @@
 [1955 · Query teachers who do not meet the conditions](./1955-Queryteacherswhodonotmeettheconditions.sql)   
 [1956 · Query information about Eastern Heretic teachers](./1956-QueryinformationaboutEasternHereticteachers.sql)   
 [1957 · Inquire about courses starting before May 2020](./1957-InquireaboutcoursesstartingbeforeMay2020.sql)   
+[1958 · Query the courses that meet the conditions taught by the specified teacher](./1958-Querythecoursesthatmeettheconditionstaughtbythespecifiedteacher.sql)   
+
 
 ## Python
 [2124 · print hello](./2124-PrintHello.py)   
