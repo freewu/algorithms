@@ -80,6 +80,8 @@
 [1998 · Statistics for courses in January to May 2020](./1998-StatisticsforcoursesinJanuarytoMay2020.sql)   
 [1999 · Query the number of students and the course information that meets the requirements of the course name](./1999-Querythenumberofstudentsandthecourseinformationthatmeetstherequirementsofthecoursename.sql)   
 [2000 · Search for course information of System Design](./2000-SearchforcourseinformationofSystemDesign.sql)   
+[2001 · Query the course information of 'Web' or 'Big Data'](./2001-QuerythecourseinformationofWeborBigData.sql)   
+
 
 ## Python
 [2124 · print hello](./2124-PrintHello.py)   
