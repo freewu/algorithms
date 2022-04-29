@@ -12,7 +12,7 @@
 -- | created_at | date | class start time |
 -- | teacher_id | int | teacher id |
 
--- Contact me on wechat to get more FLAMG requent Interview questions . (wechat id : jiuzhang15)
+
 
 
 -- The column names returned by the query need to be the same as the case of the column names output by the sample

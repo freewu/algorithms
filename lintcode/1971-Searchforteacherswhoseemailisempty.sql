@@ -10,7 +10,7 @@
 -- email	varchar	teacher's email
 -- age	int	teacher's age
 -- country	varchar	teacher's nationality
--- Contact me on wechat to get more FLAMG requent Interview questions . (wechat id : jiuzhang15)
+
 
 
 -- The difference between NULL and an empty string: null means that the email data is empty.

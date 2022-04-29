@@ -10,7 +10,7 @@
 -- email	varchar	teacher's email
 -- age	int	teacher's age
 -- country	varchar	teacher's nationality
--- Contact me on wechat to get more FLAMG requent Interview questions . (wechat id : jiuzhang15)
+
 
 
 -- If there is more than one teacher with the oldest age, then return the first data in the table that meets the condition

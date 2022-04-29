@@ -10,7 +10,7 @@
 -- student_count	int	number of students
 -- created_at	datetime	start date
 -- teacher_id	int	teacher id
--- Contact me on wechat to get more FLAMG requent Interview questions . (wechat id : jiuzhang15)
+
 
 
 -- When using the BETWEEN AND statement, please pay attention to the formatting specification, otherwise no results will be returned.

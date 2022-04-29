@@ -10,7 +10,7 @@
 -- email	varchar	teacher‘s email
 -- age	int	teacher‘s age
 -- country	varchar	teacher‘s nationality
--- Contact me on wechat to get more FLAMG requent Interview questions . (wechat id : jiuzhang15)
+
 
 
 -- you must first use WHERE to filter out the appropriate conditions, and then use ORDER BY to sort, otherwise the returned results may be wrong.

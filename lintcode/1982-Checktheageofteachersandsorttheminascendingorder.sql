@@ -9,7 +9,7 @@
 -- email	varchar	teacher's email
 -- age	int	teacher's age
 -- country	varchar	teacher's nationality
--- Contact me on wechat to get more FLAMG requent Interview questions . (wechat id : jiuzhang15)
+
 
 
 -- Note that the returned age cannot be duplicated

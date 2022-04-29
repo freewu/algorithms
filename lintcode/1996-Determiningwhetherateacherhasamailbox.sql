@@ -11,7 +11,7 @@
 -- email	varchar	teacher's email
 -- age	int	teacher's age
 -- country	varchar	teacher’s nationality
--- Contact me on wechat to get more FLAMG requent Interview questions . (wechat id : jiuzhang15)
+
 
 -- Note the use of different NULL functions
 -- Different NULL functions return different values for null values, so pay attention to learning the NULL functions by comparison

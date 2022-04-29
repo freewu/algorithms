@@ -10,7 +10,7 @@
 -- email	varchar	teacher's email
 -- age	int	iteacher's age
 -- country	varchar	teacher's nationality
--- Contact me on wechat to get more FLAMG requent Interview questions . (wechat id : jiuzhang15)
+
 
 
 -- Please remember the returned nationality should not be duplicated

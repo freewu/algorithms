@@ -23,7 +23,6 @@
 -- delivery_date	date	delivery date
 -- company_id	int	company id
 -- student_id	int	student id
--- Contact me on wechat to get more FLAMG requent Interview questions . (wechat id : jiuzhang15)
 
 
 -- Example

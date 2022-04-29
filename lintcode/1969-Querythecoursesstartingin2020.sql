@@ -10,7 +10,7 @@
 -- student_count	int	number of students
 -- created_at	date	course creation time
 -- teacher_id	int	teacher id
--- Contact me on wechat to get more FLAMG requent Interview questions . (wechat id : jiuzhang15)
+
 
 
 -- Within 2020 refers to the period from '2020-01-01' to '2020-12-31', and both days include

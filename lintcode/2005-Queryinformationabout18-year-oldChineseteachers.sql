@@ -1,6 +1,6 @@
--- 1972 · Inquire about Chinese and Japanese teachers who have e-mail addresses
+-- 2005 · Query information about 18-year-old Chinese teachers
 -- # Description
--- Please write a SQL statement to query the information of all teachers whose nationality is 'CN' or 'JP' and the emailemail is not empty in the teacher table teachers.
+-- Please write a SQL statement to find out the information of Chinese teachers whose age is 18 from the teachers table.
 
 -- Table definition : teachers
 
@@ -12,9 +12,8 @@
 -- country	varchar	teacher's nationality
 
 
+-- If there is no query result, nothing will be returned.
 
--- The inquiries are for teachers from China or Japan
--- If there is no query result, nothing will be returned
 -- Example
 -- Example 1:
 
@@ -29,27 +28,25 @@
 -- After running your SQL statement, the table should return:
 
 -- id	name	email	age	country
--- 2	Northern Beggar	northern.beggar@qq.com	21	CN
--- 4	Southern Emperor	southern.emperor@qq.com	21	JP
+-- 5	Linghu Chong		18	CN
 -- Example 2:
 
 -- Table content : teachers
 
 -- id	name	email	age	country
 -- 1	Eastern Heretic	eastern.heretic@gmail.com	18	UK
--- 2	Northern Beggar	northern.beggar@qq.com	21	USA
+-- 2	Northern Beggar	northern.beggar@qq.com	21	CN
 -- 3	Western Venom	western.venom@163.com	28	USA
--- 4	Southern Emperor	southern.emperor@qq.com	21	UK
+-- 4	Southern Emperor	southern.emperor@qq.com	21	JP
 -- 5	Linghu Chong		18	USA
 -- After running your SQL statement, the table should return:
 
 -- id	name	email	age	country
 -- Because there is no data that meets the conditions in the input sample, only the title is shown here, and there is no data.
-
 SELECT
 	*
 FROM
 	teachers
 WHERE
-	country IN ('CN','JP') AND
-	email IS NOT NULL
+	age = 18 AND
+	country = 'CN'

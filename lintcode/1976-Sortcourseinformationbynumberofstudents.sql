@@ -10,7 +10,7 @@
 -- student_count	int	number of students
 -- created_at	date	course creation time
 -- teacher_id	int	teacher id
--- Contact me on wechat to get more FLAMG requent Interview questions . (wechat id : jiuzhang15)
+
 
 
 -- If there is no query results, nothing will be returned.

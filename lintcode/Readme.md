@@ -82,6 +82,7 @@
 [2000 · Search for course information of System Design](./2000-SearchforcourseinformationofSystemDesign.sql)   
 [2001 · Query the course information of 'Web' or 'Big Data'](./2001-QuerythecourseinformationofWeborBigData.sql)   
 [2004 · Delete all courses until 2020](./2004-Deleteallcoursesuntil2020.sql)   
+[2005 · Query information about 18-year-old Chinese teachers](./2005-Queryinformationabout18-year-oldChineseteachers.sql)   
 
 
 ## Python

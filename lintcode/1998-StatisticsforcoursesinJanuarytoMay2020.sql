@@ -11,7 +11,7 @@
 -- student_count	int	student count
 -- created_at	date	course start time
 -- teacher_id	int	teacher id
--- Contact me on wechat to get more FLAMG requent Interview questions . (wechat id : jiuzhang15)
+
 
 
 -- The restricted dates of the query include January and May, and the courses could be duplicated
