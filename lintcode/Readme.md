@@ -72,6 +72,7 @@
 [1990 · The total number of students enroll in all courses](./1990-Thetotalnumberofstudentsenrollinallcourses.sql)   
 [1991 · Count the total number of students for teacher #3](./1991-Countthetotalnumberofstudentsforteacher3.sql)   
 [1992 · Check average course enrollment](./1992-Checkaveragecourseenrollment.sql)   
+[1993 · Delete the course called Dynamic Programming](./1993-DeletethecoursecalledDynamicProgramming.sql)   
 
 
 
