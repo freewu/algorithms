@@ -68,6 +68,7 @@
 [1986 · Query the maximum number of students in all courses](./1986-Querythemaximumnumberofstudentsinallcourses.sql)   
 [1987 · Find the age of the oldest Chinese teacher](./1987-FindtheageoftheoldestChineseteacher.sql)   
 [1988 · Check the number of students in the course with the lowest number of students](./1988-Checkthenumberofstudentsinthecoursewiththelowestnumberofstudents.sql)   
+[1989 · Check the age of the youngest teacher](./1989-Checktheageoftheyoungestteacher.sql)   
 
 
 
