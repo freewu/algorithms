@@ -88,7 +88,8 @@
 [2008 · Query the course information of two courses](./2008-Querythecourseinformationoftwocourses.sql)   
 [2009 · Query all teachers](./2009-Queryallteachers.sql)   
 [2010 · Search all course names](./2010-Searchallcoursenames.sql)   
-[2011 · Search for information on courses with more than 1000 participants](./2011-Searchforinformationoncourseswithmorethan1000participants.sql)   
+[2011 · Search for information on courses with more than 1000 participants](./2011-Searchforinformationoncourseswithmorethan1000participants.sql) 
+[2012 · Find course information for the course named Artificial Intelligence](./2012-FindcourseinformationforthecoursenamedArtificialIntelligence.sql)     
 
 
 
