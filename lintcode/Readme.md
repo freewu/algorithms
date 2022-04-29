@@ -66,7 +66,7 @@
 [1984 · Count the number of different teacher_id](./1984-Countthenumberofdifferentteacher_id.sql)   
 [1985 · Number of teachers aged 20 to 28 who are Chinese and British nationals](./1985-Numberofteachersaged20to28whoareChineseandBritishnationals.sql)   
 [1986 · Query the maximum number of students in all courses](./1986-Querythemaximumnumberofstudentsinallcourses.sql)   
-
+[1987 · Find the age of the oldest Chinese teacher](./1987-FindtheageoftheoldestChineseteacher.sql)   
 
 
 ## Python
