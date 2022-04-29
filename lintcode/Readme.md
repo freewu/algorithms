@@ -67,6 +67,8 @@
 [1985 · Number of teachers aged 20 to 28 who are Chinese and British nationals](./1985-Numberofteachersaged20to28whoareChineseandBritishnationals.sql)   
 [1986 · Query the maximum number of students in all courses](./1986-Querythemaximumnumberofstudentsinallcourses.sql)   
 [1987 · Find the age of the oldest Chinese teacher](./1987-FindtheageoftheoldestChineseteacher.sql)   
+[1988 · Check the number of students in the course with the lowest number of students](./1988-Checkthenumberofstudentsinthecoursewiththelowestnumberofstudents.sql)   
+
 
 
 ## Python
