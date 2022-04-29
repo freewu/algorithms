@@ -75,6 +75,7 @@
 [1993 · Delete the course called Dynamic Programming](./1993-DeletethecoursecalledDynamicProgramming.sql)   
 [1994 · Update all course information](./1994-Updateallcourseinformation.sql)   
 [1995 · Check the average age of teachers over 20 years old](./1995-Checktheaverageageofteachersover20yearsold.sql)   
+[1996 · Determining whether a teacher has a mailbox](./1996-Determiningwhetherateacherhasamailbox.sql)   
 
 
 
