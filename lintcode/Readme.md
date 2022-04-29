@@ -53,6 +53,7 @@
 [1971 · Search for teachers whose email is empty](./1971-Searchforteacherswhoseemailisempty.sql)   
 [1972 · Inquire about Chinese and Japanese teachers who have e-mail addresses](./1972-InquireaboutChineseandJapaneseteacherswhohavee-mailaddresses.sql)   
 [1973 · Search for all courses starting with the letter 'D'](./1973-SearchforallcoursesstartingwiththeletterD.sql)   
+[1974 · Query teacher information by email](./1974-Queryteacherinformationbyemail.sql)   
 
 
 ## Python
