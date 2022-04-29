@@ -77,7 +77,7 @@
 [1995 · Check the average age of teachers over 20 years old](./1995-Checktheaverageageofteachersover20yearsold.sql)   
 [1996 · Determining whether a teacher has a mailbox](./1996-Determiningwhetherateacherhasamailbox.sql)   
 [1997 · Check the information of teachers who do not have email and are older than 20 years old](./1997-Checktheinformationofteacherswhodonothaveemailandareolderthan20yearsold.sql)   
-
+[1998 · Statistics for courses in January to May 2020](./1998-StatisticsforcoursesinJanuarytoMay2020.sql)   
 
 
 ## Python
