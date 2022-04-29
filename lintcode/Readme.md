@@ -86,6 +86,7 @@
 [2006 · Query all courses](./2006-Queryallcourses.sql)   
 [2007 · Check course name and class size](./2007-Checkcoursenameandclasssize.sql)   
 [2008 · Query the course information of two courses](./2008-Querythecourseinformationoftwocourses.sql)   
+[2009 · Query all teachers](./2009-Queryallteachers.sql)   
 
 
 ## Python
