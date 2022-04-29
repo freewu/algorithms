@@ -64,7 +64,7 @@
 [1982 · Check the age of teachers and sort them in ascending order](./1982-Checktheageofteachersandsorttheminascendingorder.sql)   
 [1983 · Query the average number of students in the curriculum](./1983-Querytheaveragenumberofstudentsinthecurriculum.sql)   
 [1984 · Count the number of different teacher_id](./1984-Countthenumberofdifferentteacher_id.sql)   
-
+[1985 · Number of teachers aged 20 to 28 who are Chinese and British nationals](./1985-Numberofteachersaged20to28whoareChineseandBritishnationals.sql)   
 
 
 
