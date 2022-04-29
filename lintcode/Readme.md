@@ -54,6 +54,7 @@
 [1972 · Inquire about Chinese and Japanese teachers who have e-mail addresses](./1972-InquireaboutChineseandJapaneseteacherswhohavee-mailaddresses.sql)   
 [1973 · Search for all courses starting with the letter 'D'](./1973-SearchforallcoursesstartingwiththeletterD.sql)   
 [1974 · Query teacher information by email](./1974-Queryteacherinformationbyemail.sql)   
+[1975 · Inquire about the teacher who is Tencent's mailbox and is of Chinese nationality](./1975-InquireabouttheteacherwhoisTencentsmailboxandisofChinesenationality.sql)   
 
 
 ## Python
