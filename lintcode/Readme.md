@@ -85,7 +85,7 @@
 [2005 · Query information about 18-year-old Chinese teachers](./2005-Queryinformationabout18-year-oldChineseteachers.sql)   
 [2006 · Query all courses](./2006-Queryallcourses.sql)   
 [2007 · Check course name and class size](./2007-Checkcoursenameandclasssize.sql)   
-
+[2008 · Query the course information of two courses](./2008-Querythecourseinformationoftwocourses.sql)   
 
 
 ## Python
