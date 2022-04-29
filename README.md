@@ -116,6 +116,8 @@
 [1729. Find Followers Count](./leetcode/1729-FindFollowersCount.sql)   
 [1741. Find Total Time Spent by Each Employee](./leetcode/1741-FindTotalTimeSpentbyEachEmployee.sql)   
 [1757. Recyclable and Low Fat Products](./leetcode/1757-RecyclableandLowFatProducts.sql)   
+[1795. Rearrange Products Table](./leetcode/1795-RearrangeProductsTable.sql)   
+[1873. Calculate Special Bonus](./leetcode/1873-CalculateSpecialBonus.sql)   
 
 
 # Shell
