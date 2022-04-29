@@ -62,7 +62,8 @@
 [1980 · Search for the oldest Chinese teacher](./1980-SearchfortheoldestChineseteacher.sql)   
 [1981 · Check the nationality of all teachers](./1981-Checkthenationalityofallteachers.sql)   
 [1982 · Check the age of teachers and sort them in ascending order](./1982-Checktheageofteachersandsorttheminascendingorder.sql)   
-[1983 · Query the average number of students in the curriculum](./1983-Querytheaveragenumberofstudentsinthecurriculum.sql)
+[1983 · Query the average number of students in the curriculum](./1983-Querytheaveragenumberofstudentsinthecurriculum.sql)   
+[1984 · Count the number of different teacher_id](./1984-Countthenumberofdifferentteacher_id.sql)   
 
 
 
