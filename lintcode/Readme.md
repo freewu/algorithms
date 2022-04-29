@@ -48,6 +48,8 @@
 [1966 · Use NOT BETWEEN to search for teachers with Chinese nationality](./1966-UseNOTBETWEENtosearchforteacherswithChinesenationality.sql)   
 [1967 · Search for courses starting with the letters 'D' to 'O'](./1967-SearchforcoursesstartingwiththelettersDtoO.sql)   
 [1968 · Query the course name with the first two letters between 'Db' and 'Dy'](./1968-QuerythecoursenamewiththefirsttwolettersbetweenDbandDy.sql)   
+[1969 · Query the courses starting in 2020](./1969-Querythecoursesstartingin2020.sql)   
+
 
 
 
