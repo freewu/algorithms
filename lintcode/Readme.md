@@ -78,6 +78,7 @@
 [1996 · Determining whether a teacher has a mailbox](./1996-Determiningwhetherateacherhasamailbox.sql)   
 [1997 · Check the information of teachers who do not have email and are older than 20 years old](./1997-Checktheinformationofteacherswhodonothaveemailandareolderthan20yearsold.sql)   
 [1998 · Statistics for courses in January to May 2020](./1998-StatisticsforcoursesinJanuarytoMay2020.sql)   
+[1999 · Query the number of students and the course information that meets the requirements of the course name](./1999-Querythenumberofstudentsandthecourseinformationthatmeetstherequirementsofthecoursename.sql)   
 
 
 ## Python
