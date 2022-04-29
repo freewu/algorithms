@@ -84,6 +84,8 @@
 [2004 · Delete all courses until 2020](./2004-Deleteallcoursesuntil2020.sql)   
 [2005 · Query information about 18-year-old Chinese teachers](./2005-Queryinformationabout18-year-oldChineseteachers.sql)   
 [2006 · Query all courses](./2006-Queryallcourses.sql)   
+[2007 · Check course name and class size](./2007-Checkcoursenameandclasssize.sql)   
+
 
 
 ## Python
