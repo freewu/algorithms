@@ -81,6 +81,7 @@
 [1999 · Query the number of students and the course information that meets the requirements of the course name](./1999-Querythenumberofstudentsandthecourseinformationthatmeetstherequirementsofthecoursename.sql)   
 [2000 · Search for course information of System Design](./2000-SearchforcourseinformationofSystemDesign.sql)   
 [2001 · Query the course information of 'Web' or 'Big Data'](./2001-QuerythecourseinformationofWeborBigData.sql)   
+[2004 · Delete all courses until 2020](./2004-Deleteallcoursesuntil2020.sql)   
 
 
 ## Python
