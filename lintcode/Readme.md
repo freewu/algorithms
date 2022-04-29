@@ -70,7 +70,7 @@
 [1988 · Check the number of students in the course with the lowest number of students](./1988-Checkthenumberofstudentsinthecoursewiththelowestnumberofstudents.sql)   
 [1989 · Check the age of the youngest teacher](./1989-Checktheageoftheyoungestteacher.sql)   
 [1990 · The total number of students enroll in all courses](./1990-Thetotalnumberofstudentsenrollinallcourses.sql)   
-
+[1991 · Count the total number of students for teacher #3](./1991-Countthetotalnumberofstudentsforteacher3.sql)   
 
 
 ## Python
