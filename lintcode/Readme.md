@@ -76,6 +76,7 @@
 [1994 · Update all course information](./1994-Updateallcourseinformation.sql)   
 [1995 · Check the average age of teachers over 20 years old](./1995-Checktheaverageageofteachersover20yearsold.sql)   
 [1996 · Determining whether a teacher has a mailbox](./1996-Determiningwhetherateacherhasamailbox.sql)   
+[1997 · Check the information of teachers who do not have email and are older than 20 years old](./1997-Checktheinformationofteacherswhodonothaveemailandareolderthan20yearsold.sql)   
 
 
 
