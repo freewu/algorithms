@@ -60,6 +60,7 @@
 [1978 · Sort by age of Chinese teachers in ascending order](./1978-SortbyageofChineseteachersinascendingorder.sql)   
 [1979 · Check the three courses with the lowest number of students](./1979-Checkthethreecourseswiththelowestnumberofstudents.sql)   
 [1980 · Search for the oldest Chinese teacher](./1980-SearchfortheoldestChineseteacher.sql)   
+[1981 · Check the nationality of all teachers](./1981-Checkthenationalityofallteachers.sql)   
 
 
 ## Python
