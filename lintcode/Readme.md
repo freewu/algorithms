@@ -51,7 +51,7 @@
 [1969 · Query the courses starting in 2020](./1969-Querythecoursesstartingin2020.sql)   
 [1970 · Search for courses with a creation date of June to August 2020](./1970-SearchforcourseswithacreationdateofJunetoAugust2020.sql)   
 [1971 · Search for teachers whose email is empty](./1971-Searchforteacherswhoseemailisempty.sql)   
-
+[1972 · Inquire about Chinese and Japanese teachers who have e-mail addresses](./1972-InquireaboutChineseandJapaneseteacherswhohavee-mailaddresses.sql)   
 
 
 
