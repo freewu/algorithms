@@ -105,6 +105,8 @@
 [2025 · Check the course creation time in the course schedule](./2025-Checkthecoursecreationtimeinthecourseschedule.sql)    
 [2026 · Insert the current time into the table (accurate to milliseconds)](./2026-Insertthecurrenttimeintothetable.sql)    
 [2027 · Query course creation date by 'year month'](./2027-Querycoursecreationdatebyyear-month.sql)   
+[2028 · Postpone all course creation dates by one day](./2028-Postponeallcoursecreationdatesbyoneday.sql)   
+
 
 
 ## Python
