@@ -66,3 +66,22 @@ FROM
 -- ROUND(X,D) -- 表示将值 X 四舍五入为小数点后 D 位的数值，D为小数点后小数位数。若要保留 X 值小数点左边的 D 位，可将 D 设为负值。
 -- FLOOR(X)表示向下取整，只返回值X的整数部分，小数部分舍弃。
 -- CEILING(X) 表示向上取整，只返回值X的整数部分，小数部分舍弃。
+
+SELECT 
+	name AS courses_name, 
+	created_at AS courses_created_at,
+	TIMESTAMPDIFF(YEAR,`created_at`, '2021-04-01') AS year_diff
+FROM 
+	courses
+
+-- TIMESTAMPDIFF(unit,begin,end); 根据单位返回时间差,对于传入的begin和end不需要相同的数据结构,可以存在一个为Date一个DateTime
+-- Unit 支持的单位有
+-- MICROSECOND 毫秒
+-- SECOND 秒
+-- MINUTE 分
+-- HOUR 小时
+-- DAY 天 
+-- WEEK 周
+-- MONTH 月
+-- QUARTER 季
+-- YEAR 年
