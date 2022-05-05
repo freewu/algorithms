@@ -119,6 +119,7 @@
 [1795. Rearrange Products Table](./leetcode/1795-RearrangeProductsTable.sql)   
 [1873. Calculate Special Bonus](./leetcode/1873-CalculateSpecialBonus.sql)   
 [1890. The Latest Login in 2020](./leetcode/1890-TheLatestLoginin2020.sql)   
+[1965. Employees With Missing Information](./leetcode/1965-EmployeesWithMissingInformation.sql)   
 
 
 # Shell
