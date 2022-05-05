@@ -101,6 +101,7 @@
 [2021 · Insert teacher information into the specified column of the teachers table](./2021-Insertteacherinformationintothespecifiedcolumnoftheteacherstable.sql)    
 [2022 · Delayed all course creation dates by one year](./2022-Delayedallcoursecreationdatesbyoneyear.sql)    
 [2023 · Calculate the number of days from 01/13/2018 to the time of course creation](./2023-Calculatethenumberofdaysfrom2018-01-13tothetimeofcoursecreation.sql)    
+[2024 · Query the course name and year of creation date of all course schedules](./2024-Querythecoursenameandyearofcreationdateofallcourseschedules.sql)    
 
 
 
