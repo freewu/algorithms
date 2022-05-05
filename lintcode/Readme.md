@@ -111,6 +111,7 @@
 [2031 · Advance all course creation dates by one month](./2031-Advanceallcoursecreationdatesbyonemonth.sql)   
 [2032 · Advance all course creation dates by one day](./2032-Advanceallcoursecreationdatesbyoneday.sql)   
 [2033 · Query the course name and creation time in seconds for all course schedules](./2033-Querythecoursenameandcreationtimeinsecondsforallcourseschedules.sql)   
+[2034 · Check the average age of teachers at the end of the specified mailbox](./2034-Checktheaverageageofteachersattheendofthespecifiedmailbox.sql)   
 
 
 
