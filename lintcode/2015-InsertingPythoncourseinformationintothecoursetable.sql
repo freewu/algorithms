@@ -12,8 +12,6 @@
 -- student_count	int	student count
 -- created_at	datetime	course start time
 -- teacher_id	int	teacher id
--- Contact me on wechat to get more FLAMG requent Interview questions . (wechat id : jiuzhang15)
-
 
 -- The inserted record field type should match the table definition field type
 
