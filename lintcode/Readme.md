@@ -110,6 +110,8 @@
 [2030 · Query the hours of all course creation times](./2030-Querythehoursofallcoursecreationtimes.sql)   
 [2031 · Advance all course creation dates by one month](./2031-Advanceallcoursecreationdatesbyonemonth.sql)   
 [2032 · Advance all course creation dates by one day](./2032-Advanceallcoursecreationdatesbyoneday.sql)   
+[2033 · Query the course name and creation time in seconds for all course schedules](./2033-Querythecoursenameandcreationtimeinsecondsforallcourseschedules.sql)   
+
 
 
 ## Python
