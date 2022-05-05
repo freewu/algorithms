@@ -97,6 +97,7 @@
 [2017 · Inserting SQL course information into the course table](./2017-InsertingSQLcourseinformationintothecoursetable.sql)    
 [2018 · Insert Flash Sale course information into the specified column of the course schedule](./2018-InsertFlashSalecourseinformationintothespecifiedcolumnofthecourseschedule.sql)    
 [2019 · Delete all rows in the table](./2019-Deleteallrowsinthetable.sql)    
+[2020 · Update on the number of students choosing artificial intelligence](./2020-Updateonthenumberofstudentschoosingartificialintelligence.sql)    
 
 
 ## Python
