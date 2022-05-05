@@ -98,6 +98,10 @@
 [2018 · Insert Flash Sale course information into the specified column of the course schedule](./2018-InsertFlashSalecourseinformationintothespecifiedcolumnofthecourseschedule.sql)    
 [2019 · Delete all rows in the table](./2019-Deleteallrowsinthetable.sql)    
 [2020 · Update on the number of students choosing artificial intelligence](./2020-Updateonthenumberofstudentschoosingartificialintelligence.sql)    
+[2021 · Insert teacher information into the specified column of the teachers table](./2021-Insertteacherinformationintothespecifiedcolumnoftheteacherstable.sql)    
+
+
+
 
 
 ## Python
