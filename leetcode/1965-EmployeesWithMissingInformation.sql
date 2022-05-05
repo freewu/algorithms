@@ -60,6 +60,7 @@
 -- The name of employee 1 is missing.
 -- The salary of employee 2 is missing.
 
+-- union + not in
 SELECT
     employee_id
 FROM
@@ -94,3 +95,16 @@ FROM
     ) AS t
 ORDER BY
     employee_id ASC
+
+-- union all + having
+SELECT
+    a.employee_id AS employee_id
+FROM
+    (
+        SELECT employee_id FROM employees
+        UNION ALL
+        SELECT employee_id FROM salaries
+    ) AS a
+GROUP BY a.employee_id
+HAVING COUNT (a.employee_id) = 1 -- 两张表合并只出一次的 肯定只存在一张表中，另一张表一定不会存在
+ORDER BY a.employee_id ASC
