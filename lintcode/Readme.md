@@ -94,8 +94,9 @@
 [2014 · Query course name and course creation time](./2014-Querycoursenameandcoursecreationtime.sql)   
 [2015 · Inserting Python course information into the course table](./2015-InsertingPythoncourseinformationintothecoursetable.sql)   
 [2016 · Update the email address of the designated teacher](./2016-Updatetheemailaddressofthedesignatedteacher.sql)   
-[2017 · Inserting SQL course information into the course table](./2017-InsertingSQLcourseinformationintothecoursetable.sql)   
-
+[2017 · Inserting SQL course information into the course table](./2017-InsertingSQLcourseinformationintothecoursetable.sql)    
+[2018 · Insert Flash Sale course information into the specified column of the course schedule](./2018-InsertFlashSalecourseinformationintothespecifiedcolumnofthecourseschedule.sql)    
+[2019 · Delete all rows in the table](./2019-Deleteallrowsinthetable.sql)    
 
 
 ## Python
