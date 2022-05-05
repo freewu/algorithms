@@ -109,6 +109,8 @@
 [2029 · Calculate the number of days from 03/26/2019 to the course creation time](./2029-Calculatethenumberofdaysfrom2019-03-26tothecoursecreationtime.sql)   
 [2030 · Query the hours of all course creation times](./2030-Querythehoursofallcoursecreationtimes.sql)   
 [2031 · Advance all course creation dates by one month](./2031-Advanceallcoursecreationdatesbyonemonth.sql)   
+[2032 · Advance all course creation dates by one day](./2032-Advanceallcoursecreationdatesbyoneday.sql)   
+
 
 ## Python
 [2124 · print hello](./2124-PrintHello.py)   
