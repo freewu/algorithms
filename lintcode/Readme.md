@@ -103,8 +103,7 @@
 [2023 · Calculate the number of days from 01/13/2018 to the time of course creation](./2023-Calculatethenumberofdaysfrom2018-01-13tothetimeofcoursecreation.sql)    
 [2024 · Query the course name and year of creation date of all course schedules](./2024-Querythecoursenameandyearofcreationdateofallcourseschedules.sql)    
 [2025 · Check the course creation time in the course schedule](./2025-Checkthecoursecreationtimeinthecourseschedule.sql)    
-
-
+[2026 · Insert the current time into the table (accurate to milliseconds)](./2026-Insertthecurrenttimeintothetable.sql)    
 
 ## Python
 [2124 · print hello](./2124-PrintHello.py)   
