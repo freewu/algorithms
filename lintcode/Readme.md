@@ -129,6 +129,7 @@
 [2049 · Change the course name created by the teacher Western Venom](./2049-ChangethecoursenamecreatedbytheteacherWesternVenom.sql)   
 [2050 · Search for teacher‘s name and the name of courses they taught](./2050-Searchforteachersnameandthenameofcoursestheytaught.sql)   
 [2051 · Search for the names of teachers from China and the names of courses they taught](./2051-SearchforthenamesofteachersfromChinaandthenamesofcoursestheytaught.sql)   
+[2052 · Check the name of the instructor, email address and the name of courses they taught](./2052-Checkthenameoftheinstructoremailaddressandthenameofcoursestheytaught.sql)   
 
 
 
