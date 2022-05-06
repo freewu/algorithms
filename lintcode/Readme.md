@@ -132,6 +132,7 @@
 [2052 · Check the name of the instructor, email address and the name of courses they taught](./2052-Checkthenameoftheinstructoremailaddressandthenameofcoursestheytaught.sql)   
 [2053 · Check the name, email and course name of the teacher from China](./2053-CheckthenameemailandcoursenameoftheteacherfromChina.sql)   
 [2054 · Check the course name and the age of the corresponding instructor](./2054-Checkthecoursenameandtheageofthecorrespondinginstructor.sql)   
+[2055 · Search for all course names and their corresponding instructor names and nationalities](./2055-Searchforallcoursenamesandtheircorrespondinginstructornamesandnationalities.sql)   
 
 
 
