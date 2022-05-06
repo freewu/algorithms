@@ -118,7 +118,7 @@
 [2038 · Search for the date and time in the course creation time of the course schedule respectively](./2038-Searchforthedateandtimeinthecoursecreationtimeofthecourseschedulerespectively.sql)   
 [2039 · Query the creation date of the course in the course schedule](./2039-Querythecreationdateofthecourseinthecourseschedule.sql)   
 [2040 · Search for courses with an instructor id of less than 3 and more than 800 students](./2040-Searchforcourseswithaninstructoridoflessthan3andmorethan800students.sql)   
-
+[2041 · Search for information on courses taught by designated teachers](./2041-Searchforinformationoncoursestaughtbydesignatedteachers.sql)   
 
 
 
