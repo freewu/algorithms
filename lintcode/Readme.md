@@ -133,7 +133,7 @@
 [2053 · Check the name, email and course name of the teacher from China](./2053-CheckthenameemailandcoursenameoftheteacherfromChina.sql)   
 [2054 · Check the course name and the age of the corresponding instructor](./2054-Checkthecoursenameandtheageofthecorrespondinginstructor.sql)   
 [2055 · Search for all course names and their corresponding instructor names and nationalities](./2055-Searchforallcoursenamesandtheircorrespondinginstructornamesandnationalities.sql)   
-
+[2056 · Copy the data in the teachers table that are older than 20 to another table](./2056-Copythedataintheteacherstablethatareolderthan20toanothertable.sql)   
 
 
 ## Python
