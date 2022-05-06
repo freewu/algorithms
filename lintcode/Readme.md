@@ -120,6 +120,7 @@
 [2040 · Search for courses with an instructor id of less than 3 and more than 800 students](./2040-Searchforcourseswithaninstructoridoflessthan3andmorethan800students.sql)   
 [2041 · Search for information on courses taught by designated teachers](./2041-Searchforinformationoncoursestaughtbydesignatedteachers.sql)   
 [2042 · Query all course names in the course schedule and the year and month of the creation date](./2042-Queryallcoursenamesinthecoursescheduleandtheyearandmonthofthecreationdate.sql)   
+[2043 · Search for courses created in the first quarter](./2043-Searchforcoursescreatedinthefirstquarter.sql)   
 
 
 
