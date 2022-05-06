@@ -126,6 +126,7 @@
 [2046 · The date the course was created is displayed in 'year-month-day hour:minute:second'](./2046-ThedatethecoursewascreatedisdisplayedinYYYYmmddHHiiss.sql)   
 [2047 · Copy all the data in the teacher table to another table](./2047-Copyallthedataintheteachertabletoanothertable.sql)   
 [2048 · Search for information on all courses taught by a given teacher](./2048-Searchforinformationonallcoursestaughtbyagiventeacher.sql)   
+[2049 · Change the course name created by the teacher Western Venom](./2049-ChangethecoursenamecreatedbytheteacherWesternVenom.sql)   
 
 
 ## Python
