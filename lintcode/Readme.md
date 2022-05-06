@@ -123,6 +123,8 @@
 [2043 · Search for courses created in the first quarter](./2043-Searchforcoursescreatedinthefirstquarter.sql)   
 [2044 · Output Hello SQL](./2044-OutputHelloSQL.sql)   
 [2045 · Output Hello LintCode](./2045-OutputHelloLintCode.sql)   
+[2046 · The date the course was created is displayed in 'year-month-day hour:minute:second'](./2046-ThedatethecoursewascreatedisdisplayedinYYYYmmddHHiiss.sql)   
+
 
 
 
