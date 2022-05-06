@@ -121,6 +121,7 @@
 [2041 · Search for information on courses taught by designated teachers](./2041-Searchforinformationoncoursestaughtbydesignatedteachers.sql)   
 [2042 · Query all course names in the course schedule and the year and month of the creation date](./2042-Queryallcoursenamesinthecoursescheduleandtheyearandmonthofthecreationdate.sql)   
 [2043 · Search for courses created in the first quarter](./2043-Searchforcoursescreatedinthefirstquarter.sql)   
+[2044 · Output Hello SQL](./2044-OutputHelloSQL.sql)   
 
 
 
