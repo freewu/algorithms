@@ -148,6 +148,7 @@
 [2070 · Search for the name of a course created later than the creation time of any of the specified teacher's courses](./2070-Searchforthenameofacoursecreatedlaterthanthecreationtimeofanyofthespecifiedteacherscourses.sql)   
 [2074 · Search for the names of teachers whose average number of students in classes taught by all teachers exceeds the average number of students in all courses](./2074-Searchforthenamesfteacherswhoseaveragenumberofstudentsinclassestaughtbyallteachersexceedstheaveragenumberofstudentsinallcourses.sql)   
 [2075 · Check the number of teachers in different countries](./2075-Checkthenumberofteachersindifferentcountries.sql)   
+[2076 · Search for teacher information based on national average age](./2076-Searchforteacherinformationbasedonnationalaverageage.sql)   
 
 
 ## Python
