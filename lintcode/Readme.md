@@ -140,6 +140,7 @@
 [2060 · Search for the name of the teacher for the 'Big Data' course](./2060-SearchforthenameoftheteacherfortheBigDatacourse.sql)   
 [2061 · Check the course title and email address of the instructor](./2061-Checkthecoursetitleandemailaddressoftheinstructor.sql)   
 [2062 · Query the id and name of all courses taught by the specified teacher](./2062-Querytheidandnameofallcoursestaughtbythespecifiedteacher.sql)   
+[2063 · Search for the names of all courses taught by teachers whose nationality is 'USA'](./2063-SearchforthenamesofallcoursestaughtbyteacherswhosenationalityisUSA.sql)   
 
 
 ## Python
