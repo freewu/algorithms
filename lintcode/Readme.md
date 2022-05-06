@@ -124,7 +124,7 @@
 [2044 · Output Hello SQL](./2044-OutputHelloSQL.sql)   
 [2045 · Output Hello LintCode](./2045-OutputHelloLintCode.sql)   
 [2046 · The date the course was created is displayed in 'year-month-day hour:minute:second'](./2046-ThedatethecoursewascreatedisdisplayedinYYYYmmddHHiiss.sql)   
-
+[2047 · Copy all the data in the teacher table to another table](./2047-Copyallthedataintheteachertabletoanothertable.sql)   
 
 
 
