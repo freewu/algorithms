@@ -135,6 +135,8 @@
 [2055 · Search for all course names and their corresponding instructor names and nationalities](./2055-Searchforallcoursenamesandtheircorrespondinginstructornamesandnationalities.sql)   
 [2056 · Copy the data in the teachers table that are older than 20 to another table](./2056-Copythedataintheteacherstablethatareolderthan20toanothertable.sql)   
 [2057 · Modify course information created by instructor Eastern Heretic](./2057-ModifycourseinformationcreatedbyinstructorEasternHeretic.sql)   
+[2058 · Delete all courses for teachers younger than 21 years old](./2058-Deleteallcoursesforteachersyoungerthan21yearsold.sql)   
+
 
 
 ## Python
