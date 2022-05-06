@@ -137,7 +137,7 @@
 [2057 · Modify course information created by instructor Eastern Heretic](./2057-ModifycourseinformationcreatedbyinstructorEasternHeretic.sql)   
 [2058 · Delete all courses for teachers younger than 21 years old](./2058-Deleteallcoursesforteachersyoungerthan21yearsold.sql)   
 [2059 · Remove faculty who have created courses before 2020](./2059-Removefacultywhohavecreatedcoursesbefore2020.sql)   
-
+[2060 · Search for the name of the teacher for the 'Big Data' course](./2060-SearchforthenameoftheteacherfortheBigDatacourse.sql)   
 
 
 ## Python
