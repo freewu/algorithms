@@ -127,6 +127,8 @@
 [2047 · Copy all the data in the teacher table to another table](./2047-Copyallthedataintheteachertabletoanothertable.sql)   
 [2048 · Search for information on all courses taught by a given teacher](./2048-Searchforinformationonallcoursestaughtbyagiventeacher.sql)   
 [2049 · Change the course name created by the teacher Western Venom](./2049-ChangethecoursenamecreatedbytheteacherWesternVenom.sql)   
+[2050 · Search for teacher‘s name and the name of courses they taught](./2050-Searchforteachersnameandthenameofcoursestheytaught.sql)   
+
 
 
 ## Python
