@@ -122,6 +122,7 @@
 [2042 · Query all course names in the course schedule and the year and month of the creation date](./2042-Queryallcoursenamesinthecoursescheduleandtheyearandmonthofthecreationdate.sql)   
 [2043 · Search for courses created in the first quarter](./2043-Searchforcoursescreatedinthefirstquarter.sql)   
 [2044 · Output Hello SQL](./2044-OutputHelloSQL.sql)   
+[2045 · Output Hello LintCode](./2045-OutputHelloLintCode.sql)   
 
 
 
