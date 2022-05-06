@@ -143,6 +143,7 @@
 [2063 · Search for the names of all courses taught by teachers whose nationality is 'USA'](./2063-SearchforthenamesofallcoursestaughtbyteacherswhosenationalityisUSA.sql)   
 [2064 · Check course information for courses with more students than Western Venom teachers](./2064-CheckcourseinformationforcourseswithmorestudentsthanWesternVenomteachers.sql)   
 [2065 · Check the course names of all courses taught by all teachers who are older than 20 years old](./2065-Checkthecoursenamesofallcoursestaughtbyallteacherswhoareolderthan20yearsold.sql)   
+[2066 · Search for course information for courses with more students than the number of students in all courses of the oldest teacher](./2066-Searchforcourseinformationforcourseswithmorestudentsthanthenumberofstudentsinallcoursesoftheoldestteacher.sql)   
 
 
 ## Python
