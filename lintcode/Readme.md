@@ -146,6 +146,7 @@
 [2066 · Search for course information for courses with more students than the number of students in all courses of the oldest teacher](./2066-Searchforcourseinformationforcourseswithmorestudentsthanthenumberofstudentsinallcoursesoftheoldestteacher.sql)   
 [2069 · Search for the course name and number of students in the course with the highest number of students per instructor](./2069-Searchforthecoursenameandnumberofstudentsinthecoursewiththehighestnumberofstudentsperinstructor.sql)   
 [2070 · Search for the name of a course created later than the creation time of any of the specified teacher's courses](./2070-Searchforthenameofacoursecreatedlaterthanthecreationtimeofanyofthespecifiedteacherscourses.sql)   
+[2074 · Search for the names of teachers whose average number of students in classes taught by all teachers exceeds the average number of students in all courses](./2074-Searchforthenamesfteacherswhoseaveragenumberofstudentsinclassestaughtbyallteachersexceedstheaveragenumberofstudentsinallcourses.sql)   
 
 
 ## Python
