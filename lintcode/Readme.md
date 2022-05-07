@@ -167,6 +167,8 @@
 
 ## Python
 [2124 · print hello](./2124-PrintHello.py)   
+[2089 · Implement timer decorator](./2089-ImplementTimerDecorator.py)   
+
 
 ## Java
 [2400 · Create a HashMap set and add data](./2400-CreateaHashMapsetandadddata/Solution.java)
