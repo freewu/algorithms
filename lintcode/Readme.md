@@ -150,6 +150,7 @@
 [2075 · Check the number of teachers in different countries](./2075-Checkthenumberofteachersindifferentcountries.sql)   
 [2076 · Search for teacher information based on national average age](./2076-Searchforteacherinformationbasedonnationalaverageage.sql)   
 [2077 · Search for information on courses and instructors with the highest number of students](./2077-Searchforinformationoncoursesandinstructorswiththehighestnumberofstudents.sql)   
+[2079 · Count the total number of students in each teacher's course](./2079-Countthetotalnumberofstudentsineachteacherscourse.sql)   
 
 
 ## Python
