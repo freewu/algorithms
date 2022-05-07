@@ -149,6 +149,7 @@
 [2074 · Search for the names of teachers whose average number of students in classes taught by all teachers exceeds the average number of students in all courses](./2074-Searchforthenamesfteacherswhoseaveragenumberofstudentsinclassestaughtbyallteachersexceedstheaveragenumberofstudentsinallcourses.sql)   
 [2075 · Check the number of teachers in different countries](./2075-Checkthenumberofteachersindifferentcountries.sql)   
 [2076 · Search for teacher information based on national average age](./2076-Searchforteacherinformationbasedonnationalaverageage.sql)   
+[2077 · Search for information on courses and instructors with the highest number of students](./2077-Searchforinformationoncoursesandinstructorswiththehighestnumberofstudents.sql)   
 
 
 ## Python
