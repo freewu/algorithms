@@ -157,8 +157,10 @@
 [2080 · Search for the name of the instructor and the total number of students in all the instructor's courses with less than 3000 students](./2080-Searchforthenameoftheinstructorandthetotalnumberofstudentsinalltheinstructorscourseswithlessthan3000students.sql)   
 [2081 · Insert the current date into the table](./2081-Insertthecurrentdateintothetable.sql)   
 [2082 · Statistics on the number of courses taught by each teacher](./2082-Statisticsonthenumberofcoursestaughtbyeachteacher.sql)   
-[2082 · Statistics on the number of courses taught by each teacher](./2082-Statisticsonthenumberofcoursestaughtbyeachteacher.sql)   
-2084 · Add primary key constraints to the course table courses
+[2084 · Add primary key constraints to the course table courses](./2084-Addprimarykeyconstraintstothecoursetablecourses.sql)   
+[2085 · Remove the primary key constraint from the course table `courses`](./2085-Removetheprimarykeyconstraintfromthecoursetablecourses.sql)   
+
+
 
 ## Python
 [2124 · print hello](./2124-PrintHello.py)   
