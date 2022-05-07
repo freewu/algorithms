@@ -159,6 +159,7 @@
 [2082 · Statistics on the number of courses taught by each teacher](./2082-Statisticsonthenumberofcoursestaughtbyeachteacher.sql)   
 [2084 · Add primary key constraints to the course table courses](./2084-Addprimarykeyconstraintstothecoursetablecourses.sql)   
 [2085 · Remove the primary key constraint from the course table `courses`](./2085-Removetheprimarykeyconstraintfromthecoursetablecourses.sql)   
+[2086 · Search for the nationality of the teacher starting with 'U' and the total number of students between 2000 and 5000 and the total number of students of that nationality](./2086.sql)   
 
 
 
