@@ -154,6 +154,9 @@
 ## Python
 [2124 · print hello](./2124-PrintHello.py)   
 
+## Java
+[2400 · Create a HashMap set and add data](./2400-CreateaHashMapsetandadddata/Solution.java)
+
 ## Git
 [2540 · Your First Git Commit](./2540-YourFirstGitCommit.sh)   
 [2613 · Submit a document amendment](./2613-Submit-a-document-amendment.sh)   
