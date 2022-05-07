@@ -99,3 +99,18 @@ FROM
 	) AS p
 WHERE
 	p.student_count < 3000
+
+-- use having 
+SELECT
+    t.name AS name,
+    IFNULL(SUM(c.student_count),0) AS student_count
+FROM
+    teachers AS t
+LEFT JOIN
+    courses AS c
+ON 
+    t.id = c.teacher_id
+GROUP BY
+    t.id
+HAVING 
+    student_count < 3000
