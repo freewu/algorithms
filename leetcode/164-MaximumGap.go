@@ -1,6 +1,8 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 /**
 164. Maximum Gap
@@ -26,15 +28,41 @@ Constraints:
 	0 <= nums[i] <= 10^9
  */
 
-// 解法一 快排
+//
+//func maximumGap2(nums []int) int {
+//	if len(nums) < 2 {
+//		return 0
+//	}
+//	res := 0
+//	for i := 0; i < len(nums) - 1; i++ {
+//		fmt.Printf("i + 1 = %v,i = %v \n",i+1, i)
+//		fmt.Printf("nums[i+1]= %v,nums[i] = %v \n",nums[i+1], nums[i])
+//		val := abs(nums[i+1] - nums[i])
+//		if val > res { // 循环计算出差值
+//			res = val
+//		}
+//	}
+//	return res
+//}
+//
+//func abs(a int) int {
+//	if a > 0 {
+//		return a
+//	}
+//	return -a
+//}
+
+
+// 解法1 快排
 func maximumGap(nums []int) int {
 	if len(nums) < 2 {
 		return 0
 	}
-	quickSort(nums, 0, len(nums)-1)
+	// 先排序
+	quickSort(nums, 0, len(nums)-1) // successive elements 这也是为啥要先排序的原因
 	res := 0
 	for i := 0; i < len(nums)-1; i++ {
-		if (nums[i+1] - nums[i]) > res {
+		if (nums[i+1] - nums[i]) > res { // 循环计算出差值
 			res = nums[i+1] - nums[i]
 		}
 	}
@@ -63,7 +91,7 @@ func partition(a []int, lo, hi int) int {
 	return i + 1
 }
 
-// 解法二 基数排序
+// 解法2 基数排序
 func maximumGap1(nums []int) int {
 	if nums == nil || len(nums) < 2 {
 		return 0
@@ -115,4 +143,7 @@ func main() {
 
 	fmt.Printf("maximumGap1([]int{ 3,6,9,1 }) = %v\n",maximumGap1([]int{ 3,6,9,1 })) // 3
 	fmt.Printf("maximumGap1([]int{ 10 }) = %v\n",maximumGap1([]int{ 10 })) // 0
+
+	fmt.Printf("maximumGap2([]int{ 3,6,9,1 }) = %v\n",maximumGap2([]int{ 3,6,9,1 })) // 3
+	fmt.Printf("maximumGap2([]int{ 10 }) = %v\n",maximumGap2([]int{ 10 })) // 0
 }
