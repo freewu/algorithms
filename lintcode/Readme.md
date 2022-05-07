@@ -180,7 +180,4 @@
 [2669 · Modify the last commit](./2669-ModifyTheLastCommit.sh)   
 [2671 · Backtrack and recommit commit](./2671-BacktrackAndRecommitCommit.sh)   
 [2696 · Cache and restore across branches](./2696-CacheAndRestoreAcrossBranches.sh)   
-
-
-
-
+[2701 · Remove documents](./2701-RemoveDocuments.sh)   
