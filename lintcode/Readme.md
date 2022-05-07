@@ -162,6 +162,7 @@
 [2086 · Search for the nationality of the teacher starting with 'U' and the total number of students between 2000 and 5000 and the total number of students of that nationality](./2086.sql)   
 [2092 · Search for a lecturer number](./2092-Searchforalecturernumber.sql)   
 [2093 · Check the portfolio of courses and teachers](./2093-Checktheportfolioofcoursesandteachers.sql)   
+[2459 · Nth highest player height](./2459-Nthhighestplayerheight.sql)   
 
 
 ## Python
