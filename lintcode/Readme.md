@@ -167,6 +167,7 @@
 
 ## Python
 [2124 · print hello](./2124-PrintHello.py)   
+[2097 · Find the sum of two parameters](./2097-FindTheSumOfTwoParameters.py)   
 [2089 · Implement timer decorator](./2089-ImplementTimerDecorator.py)   
 
 
