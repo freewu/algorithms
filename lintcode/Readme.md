@@ -1,3 +1,6 @@
+## Algorithms
+[56 · Two Sum](./56-TwoSum.go)  
+
 ## Database
 [1913 · Query Student Enrollment Information](./1913-QueryStudentEnrollmentInformation.sql)    
 [1918 · The height of the second tallest player](./1918-Theheightofthesecondtallestplayer.sql)   
