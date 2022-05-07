@@ -174,9 +174,10 @@
 ## Git
 [2540 · Your First Git Commit](./2540-YourFirstGitCommit.sh)   
 [2613 · Submit a document amendment](./2613-SubmitADocumentAmendment.sh)   
-[2626 · Add files to the stage](./2626-AddFilesToTheStage.sh)   
+[2626 · Add files to the stage](./2626-AddFilesToTheStage1.sh)   
 [2660 · git Branch Renaming](./2660-GitBranchRenaming.sh)   
 [2668 · Create and switch branches](./2668-CreateAndSwitchBranches.sh)   
+[2669 · Modify the last commit](./2669-ModifyTheLastCommit.sh)   
 
 
 
