@@ -163,5 +163,7 @@
 ## Git
 [2540 · Your First Git Commit](./2540-YourFirstGitCommit.sh)   
 [2613 · Submit a document amendment](./2613-Submit-a-document-amendment.sh)   
+[2626 · Add files to the stage](./2626-Addfilestothestage.sh)   
+
 
 
