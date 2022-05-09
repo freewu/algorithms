@@ -172,6 +172,8 @@
 [2556 · Update the age of Linghu Chong](./2556-UpdateTheAgeOfLinghuChong.sql)   
 [2557 · Insert information about Xie Xun](./2557-InsertInformationAboutXieXun.sql)   
 [2559 · Withdrawal of age update for Linghu Chong](./2559-WithdrawalOfAgeUpdateForLinghuChong.sql)   
+[2560 · Undo the insertion of Xie Xun's message](./2560-UndoTheInsertionOfXieXunsMessage.sql)   
+
 
 
 ## Python
