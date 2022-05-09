@@ -179,6 +179,7 @@
 [2568 · Delete the Trigger "before_teachers_update"](./2568-DeleteTheTrigger-before_teachers_update.sql)   
 [2572 · New data trigger message alert](./2572-NewDataTriggerMessageAlert.sql)   
 [2573 · Backup New Data Trigger](./2573-BackupNewDataTrigger.sql)   
+[2576 · Update data processing of recruitment information statistics table](./2576-UpdateDataProcessingOfRecruitmentInformationStatisticsTable.sql)   
 
 
 ## Python
