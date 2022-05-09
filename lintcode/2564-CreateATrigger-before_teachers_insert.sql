@@ -73,23 +73,18 @@
 --     update table ...;
 -- end if;
 -- 　
--- 三、ＭｙSQL查看触发器：
--- 　　可以使用“show triggers;”查看触发器。由于MySQL创建的触发器保存在“information_schema库中的triggers表中，所以还可以通过查询此表查看触发器：
--- -- 通过information_schema.triggers表查看触发器：
--- select * from information_schema.triggers;
+-- mysql 查看触发器：
+-- 1 可以使用“show triggers;”查看触发器
+--      show triggers;
+-- 2 由于MySQL创建的触发器保存在“information_schema库中的triggers表中，所以还可以通过查询此表查看触发器：
+-- 通过information_schema.triggers表查看触发器：
+--      select * from information_schema.triggers;
  
 -- -- mysql 查看当前数据库的触发器
 -- show triggers;
  
 -- -- mysql 查看指定数据库"aiezu"的触发器
 -- show triggers from aiezu;
- 
--- 四、MySQL删除触发器：
--- 1、可以使用drop trigger删除触发器：
--- drop trigger trigger_name;
- 
--- 2、删除前先判断触发器是否存在：
--- drop trigger if exists trigger_name
 
 -- MySQL触发器的创建语法：
 -- CREATE　[DEFINER = { 'user' | CURRENT_USER }]　
