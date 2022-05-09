@@ -147,6 +147,8 @@
 [2064 · Check course information for courses with more students than Western Venom teachers](./2064-CheckcourseinformationforcourseswithmorestudentsthanWesternVenomteachers.sql)   
 [2065 · Check the course names of all courses taught by all teachers who are older than 20 years old](./2065-Checkthecoursenamesofallcoursestaughtbyallteacherswhoareolderthan20yearsold.sql)   
 [2066 · Search for course information for courses with more students than the number of students in all courses of the oldest teacher](./2066-Searchforcourseinformationforcourseswithmorestudentsthanthenumberofstudentsinallcoursesoftheoldestteacher.sql)   
+
+[2067 · Search for information on any course with more students than the 'Eastern Heretic' class size](./2067-SearchForInformationOnAnyCourseWithMoreStudentsThanTheEasternHereticCassSize.sql)   
 [2069 · Search for the course name and number of students in the course with the highest number of students per instructor](./2069-Searchforthecoursenameandnumberofstudentsinthecoursewiththehighestnumberofstudentsperinstructor.sql)   
 [2070 · Search for the name of a course created later than the creation time of any of the specified teacher's courses](./2070-Searchforthenameofacoursecreatedlaterthanthecreationtimeofanyofthespecifiedteacherscourses.sql)   
 [2074 · Search for the names of teachers whose average number of students in classes taught by all teachers exceeds the average number of students in all courses](./2074-Searchforthenamesfteacherswhoseaveragenumberofstudentsinclassestaughtbyallteachersexceedstheaveragenumberofstudentsinallcourses.sql)   
