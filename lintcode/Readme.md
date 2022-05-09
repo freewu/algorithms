@@ -170,6 +170,7 @@
 [2553 · Delete Linghu Chong's message](./2553-DeleteLinghuChongsMessage.sql)   
 [2554 · Insert information about Chong Xu](./2554-InsertInformationAboutChongXu.sql)   
 [2556 · Update the age of Linghu Chong](./2556-UpdateTheAgeOfLinghuChong.sql)   
+[2557 · Insert information about Xie Xun](./2557-InsertInformationAboutXieXun.sql)   
 
 
 ## Python
