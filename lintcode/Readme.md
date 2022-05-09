@@ -168,6 +168,7 @@
 [2544 · Insert information about Feng Qingyang](./2544-InsertInformationAboutFengQingyang.sql)   
 [2548 · Update Southern Emperor's email](./2548-UpdateSouthernEmperorsEmail.sql)   
 [2553 · Delete Linghu Chong's message](./2553-DeleteLinghuChongsMessage.sql)   
+[2554 · Insert information about Chong Xu](./2554-InsertInformationAboutChongXu.sql)   
 
 
 ## Python
