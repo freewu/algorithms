@@ -163,6 +163,7 @@
 [2092 · Search for a lecturer number](./2092-Searchforalecturernumber.sql)   
 [2093 · Check the portfolio of courses and teachers](./2093-Checktheportfolioofcoursesandteachers.sql)   
 [2459 · Nth highest player height](./2459-Nthhighestplayerheight.sql)   
+[2499 · Height of players appearing consecutively](./2499-HeightOfPlayersAppearingConsecutively.sql)   
 
 
 ## Python
