@@ -181,6 +181,7 @@
 [2559 · Withdrawal of age update for Linghu Chong](./2559-WithdrawalOfAgeUpdateForLinghuChong.sql)   
 [2560 · Undo the insertion of Xie Xun's message](./2560-UndoTheInsertionOfXieXunsMessage.sql)   
 [2564 · Create a Trigger "before_teachers_insert"](./2564-CreateATrigger-before_teachers_insert.sql)   
+[2565 · Create a Trigger "before_teachers_update"](./2565-CreateATrigger-before_teachers_update.sql)   
 [2567 · Delete the Trigger "before_teachers_insert"](./2567-DeleteTheTrigger-before_teachers_insert.sql)   
 [2568 · Delete the Trigger "before_teachers_update"](./2568-DeleteTheTrigger-before_teachers_update.sql)   
 [2572 · New data trigger message alert](./2572-NewDataTriggerMessageAlert.sql)   
