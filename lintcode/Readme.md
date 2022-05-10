@@ -196,6 +196,7 @@
 [2583 · Delete data trigger message alert](./2583-DeleteDataTriggerMessageAlert.sql)   
 [2587 · Associated processing when deleting teachers table information (I)](./2587-AssociatedProcessingWhenDeletingTeachersTableInformationI.sql)   
 [2592 · Associated processing when deleting teachers table information (II)](./2592-AssociatedProcessingWhenDeletingTeachersTableInformationII.sql)   
+[2598 · Show all triggers for teachers table](./2598-ShowAllTriggersForTeachersTable.sql)   
 
 
 
