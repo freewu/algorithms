@@ -1,0 +1,58 @@
+-- 2620 · View the self-incrementing locking pattern for MySQL databases
+-- # Description
+-- Write SQL statements to see the self-incrementing locking pattern of the MySQL database
+
+-- Example
+-- After entering your SQL statement, the result should be returned:
+
+-- Variable_name	Value
+-- 'innodb_autoinc_lock_mode'	'2'
+
+SHOW VARIABLES like '%innodb_autoinc_lock_mode%';
+
+-- MySQL自增锁模式innodb_autoinc_lock_mode参数详解
+-- # insert大致上可以分成三类：
+--      1、simple insert 如insert into t(name) values('test')
+--      2、bulk insert 如load data | insert into ... select .... from ....
+--      3、mixed insert 如insert into t(id,name) values(1,'a'),(null,'b'),(5,'c');
+-- 
+-- # innodb_auto_lockmode 有三个取值：
+--      0  tradition 传统
+--  　　1  consecutive 连续
+--  　　2  interleaved 交错
+-- 
+-- # 0 tradition(innodb_autoinc_lock_mode=0) 模式:
+-- 　　 它提供了一个向后兼容的能力
+--  　　在这一模式下，所有的insert语句("insert like") 都要在语句开始的时候得到一个表级的auto_inc锁，在语句结束的时候才释放这把锁，
+--     这里说的是语句级而不是事务级的，一个事务可能包涵有一个或多个语句。
+--  　它能保证值分配的可预见性，与连续性，可重复性，这个也就保证了insert语句在复制到slave的时候还能生成和master那边一样的值(它保证了基于语句复制的安全)。
+--    由于在这种模式下auto_inc锁一直要保持到语句的结束，所以这个就影响到了并发的插入。
+--
+-- # 1 consecutive(innodb_autoinc_lock_mode=1) 模式:
+-- 　　这一模式下去simple insert 做了优化，由于simple insert一次性插入值的个数可以立马得到确定，
+--     所以mysql可以一次生成几个连续的值，用于这个insert语句；总的来说这个对复制也是安全的(它保证了基于语句复制的安全)
+-- 　　这一模式也是mysql的默认模式，这个模式的好处是auto_inc锁不要一直保持到语句的结束，只要语句得到了相应的值后就可以提前释放锁
+--
+-- # 2 interleaved(innodb_autoinc_lock_mode=2) 模式
+--  　  由于这个模式下已经没有了auto_inc锁，所以这个模式下的性能是最好的；
+--      但是它也有一个问题，就是 对于同一个语句来说它所得到的 auto_increment 值可能不是连续的。
+--
+-- 如果你的二进制文件格式是 mixed | row 那么这三个值中的任何一个对于你来说都是复制安全的。
+-- 由于现在mysql已经推荐把二进制的格式设置成row，所以在 binlog_format 不是 statement 的情况下最好是 innodb_autoinc_lock_mode=2 这样可能知道更好的性能。
+--
+-- 三种模式简要说明:
+--      0：traditonal （每次都会产生表锁）
+--      1：consecutive （会产生一个轻量锁，simple insert会获得批量的锁，保证连续插入）
+--      2：interleaved （不会锁表，来一个处理一个，并发最高）
+--
+-- # 总结
+--      1 innodb  row复制时，可将innodb_autoinc_lock_mode设置为2，这时可在所有insert情况下表获得最大并发度
+--      2 innodb statement复制时，可将innodb_autoinc_lock_mode设置为1，保证复制安全的同时，获得简单insert语句的最大并发度
+--      3 myisam引擎情况下，无论什么样自增id锁都是表级锁，设置innodb_autoinc_lock_mode参数无效
+--      4 实际上提问者说到的在innodb引擎下自增id值作为主键的情况下，相比uuid或者自定义的主键，是可以提高插入速度的，
+--        因为innodb是主键聚集索引，实际的主键值必须按照主键顺序存取，那么自增id本身就是升序的，
+--        那么在插入数据时，底层就不必再做额外的排序操作，也减少了索引页分裂的次数，从而大大增加insert速度（除非其他方案也能保证主键完全自增）
+-- 
+-- # 修改自增锁级别方法:
+-- 编辑/etc/my.cnf，加入如下行:
+-- innodb_autoinc_lock_mode=2
