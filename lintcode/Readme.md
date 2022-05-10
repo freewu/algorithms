@@ -195,6 +195,8 @@
 [2581 · Automatic backup when deleting teacher information](./2581-AutomaticBackupWhenDeletingTeacherInformation.sql)   
 [2583 · Delete data trigger message alert](./2583-DeleteDataTriggerMessageAlert.sql)   
 [2587 · Associated processing when deleting teachers table information (I)](./2587-AssociatedProcessingWhenDeletingTeachersTableInformationI.sql)   
+[2592 · Associated processing when deleting teachers table information (II)](./2592-AssociatedProcessingWhenDeletingTeachersTableInformationII.sql)   
+
 
 
 ## Python
