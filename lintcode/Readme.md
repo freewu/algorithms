@@ -200,6 +200,7 @@
 [2616 · Insert Kansas information into the teacher table](./2616-InsertKansasInformationIntoTheTeacherTable.sql)   
 [2617 · View the current transaction isolation level of the database](./2617-ViewTheCurrentTransactionIsolationLevelOfTheDatabase.sql)   
 [2620 · View the self-incrementing locking pattern for MySQL databases](./2620-ViewTheDelf-IncrementingLockingPatternForMySQLDatabases.sql)   
+[2627 · Troubleshoot the current database table locks and view the table lock analysis](./2627-TroubleshootTheCurrentDatabaseTableLocksAndViewTheTableLockAnalysis.sql)   
 
 
 ## Python
