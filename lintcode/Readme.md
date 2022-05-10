@@ -191,6 +191,7 @@
 [2575 · Normative courses table data update](./2575-NormativeCoursesTableDataUpdate.sql)   
 [2576 · Update data processing of recruitment information statistics table](./2576-UpdateDataProcessingOfRecruitmentInformationStatisticsTable.sql)   
 [2577 · Backup Update Data Trigger](./2577-BackupUpdateDataTrigger.sql)   
+[2578 · Update data trigger message alert](./2578-UpdateDataTriggerMessageAlert.sql)   
 
 
 ## Python
