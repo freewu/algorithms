@@ -188,6 +188,7 @@
 [2570 · New data processing of recruitment information statistics table](./2570-NewDataProcessingOfRecruitmentInformationStatisticsTable.sql)   
 [2572 · New data trigger message alert](./2572-NewDataTriggerMessageAlert.sql)   
 [2573 · Backup New Data Trigger](./2573-BackupNewDataTrigger.sql)   
+[2575 · Normative courses table data update](./2575-NormativeCoursesTableDataUpdate.sql)   
 [2576 · Update data processing of recruitment information statistics table](./2576-UpdateDataProcessingOfRecruitmentInformationStatisticsTable.sql)   
 [2577 · Backup Update Data Trigger](./2577-BackupUpdateDataTrigger.sql)   
 
