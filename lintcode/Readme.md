@@ -197,7 +197,7 @@
 [2587 · Associated processing when deleting teachers table information (I)](./2587-AssociatedProcessingWhenDeletingTeachersTableInformationI.sql)   
 [2592 · Associated processing when deleting teachers table information (II)](./2592-AssociatedProcessingWhenDeletingTeachersTableInformationII.sql)   
 [2598 · Show all triggers for teachers table](./2598-ShowAllTriggersForTeachersTable.sql)   
-
+[2616 · Insert Kansas information into the teacher table](./2616-InsertKansasInformationIntoTheTeacherTable.sql)   
 
 
 ## Python
