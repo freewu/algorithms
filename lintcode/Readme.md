@@ -192,6 +192,7 @@
 [2576 · Update data processing of recruitment information statistics table](./2576-UpdateDataProcessingOfRecruitmentInformationStatisticsTable.sql)   
 [2577 · Backup Update Data Trigger](./2577-BackupUpdateDataTrigger.sql)   
 [2578 · Update data trigger message alert](./2578-UpdateDataTriggerMessageAlert.sql)   
+[2581 · Automatic backup when deleting teacher information](./2581-AutomaticBackupWhenDeletingTeacherInformation.sql)   
 
 
 ## Python
