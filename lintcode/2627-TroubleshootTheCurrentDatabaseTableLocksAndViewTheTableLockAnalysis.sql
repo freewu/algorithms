@@ -15,7 +15,7 @@
 -- SHOW VARIABLES 
 SHOW VARIABLES like '%Table_locks%' 
 
--- SHOW VARIABLES 
+-- SHOW STATUS 
 SHOW STATUS like '%Table_open_cache%';
 
 
