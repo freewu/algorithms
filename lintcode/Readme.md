@@ -157,6 +157,7 @@
 [2075 · Check the number of teachers in different countries](./2075-Checkthenumberofteachersindifferentcountries.sql)   
 [2076 · Search for teacher information based on national average age](./2076-Searchforteacherinformationbasedonnationalaverageage.sql)   
 [2077 · Search for information on courses and instructors with the highest number of students](./2077-Searchforinformationoncoursesandinstructorswiththehighestnumberofstudents.sql)   
+[2078 · Find out the number of teachers of different ages](./2078-FindOutTheNumberOfTeachersOfDifferentAges.sql)   
 [2079 · Count the total number of students in each teacher's course](./2079-Countthetotalnumberofstudentsineachteacherscourse.sql)   
 [2080 · Search for the name of the instructor and the total number of students in all the instructor's courses with less than 3000 students](./2080-Searchforthenameoftheinstructorandthetotalnumberofstudentsinalltheinstructorscourseswithlessthan3000students.sql)   
 [2081 · Insert the current date into the table](./2081-Insertthecurrentdateintothetable.sql)   
