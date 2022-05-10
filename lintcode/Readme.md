@@ -172,6 +172,7 @@
 [2499 · Height of players appearing consecutively](./2499-HeightOfPlayersAppearingConsecutively.sql)   
 [2542 · Update Linghu Chong's email](./2542-UpdateLinghuChongsEmail.sql)   
 [2544 · Insert information about Feng Qingyang](./2544-InsertInformationAboutFengQingyang.sql)   
+[2547 · Query all information in the teachers table](./2547-QueryAllInformationInTheTeachersTable.sql)   
 [2548 · Update Southern Emperor's email](./2548-UpdateSouthernEmperorsEmail.sql)   
 [2553 · Delete Linghu Chong's message](./2553-DeleteLinghuChongsMessage.sql)   
 [2554 · Insert information about Chong Xu](./2554-InsertInformationAboutChongXu.sql)   
