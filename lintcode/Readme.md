@@ -214,6 +214,7 @@
 [2683 · Zhang San's MySQL Learning Path (I)](./2683-ZhangSansMySQLLearningPathI.sql)   
 [2685 · Zhang San's MySQL Learning Path (II)](./2685-ZhangSansMySQLLearningPathII.sql)   
 [2689 · Redefining the teachers view](./2689-RedefiningTheTeachersView.sql)   
+[2692 · Count the total number of students taught by each faculty member](./2692-CountTheTotalNumberOfStudentsTaughtByEachFacultyMember.sql)   
 [2705 · Show view in the current database](./2705-ShowViewInTheCurrentDatabase.sql)   
 
 
