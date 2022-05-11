@@ -224,6 +224,8 @@
 [2708 · Drop View (I)](./2708-DropViewI.sql)   
 [2709 · Drop View (II)](./2709-DropViewII.sql)   
 [2715 · View Processing Algorithm Merge](./2715-ViewProcessingAlgorithmMerge.sql)   
+[2716 · View Processing Algorithm TEMPTABLE](./2716-ViewProcessingAlgorithmTEMPTABLE.sql)   
+
 
 ## Python
 [2124 · print hello](./2124-PrintHello.py)   
