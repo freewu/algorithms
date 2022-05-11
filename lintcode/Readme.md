@@ -215,7 +215,8 @@
 [2685 · Zhang San's MySQL Learning Path (II)](./2685-ZhangSansMySQLLearningPathII.sql)   
 [2689 · Redefining the teachers view](./2689-RedefiningTheTeachersView.sql)   
 [2692 · Count the total number of students taught by each faculty member](./2692-CountTheTotalNumberOfStudentsTaughtByEachFacultyMember.sql)   
-[2705 · Show view in the current database](./2705-ShowViewInTheCurrentDatabase.sql)   
+[2700 · Update Linghu Chong's age by view](./2700-UpdateLinghuChongsAgeByView.sql)   
+[2705 · Show view in the current database](./2705-ShowViewInTheCurrntDatabase.sql)   
 
 
 ## Python
