@@ -63,6 +63,8 @@
 [164. Maximum Gap](./leetcode/164-MaximumGap.go)   
 [167. Two Sum II - Input array is sorted](./leetcode/167-TwoSumII-InputArrayIsSorted.go)   
 [169. Majority Element](./leetcode/169-MajorityElement.go)   
+[174. Dungeon Game](./leetcode/174-DungeonGame.go)   
+[189. Rotate Array](./leetcode/189-RotateArray.go)   
 
 
 [498. Diagonal Traverse](./leetcode/498-DiagonalTraverse.go)    
