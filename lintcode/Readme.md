@@ -1,6 +1,8 @@
 ## Algorithms
-[56 · Two Sum](./56-TwoSum.go)  
-[147 · Narcissistic Number](./147-NarcissisticNumber.go)  
+[56 · Two Sum](./56-TwoSum.go)   
+[60 · Search Insert Position](./60-SearchInsertPosition.go)   
+[147 · Narcissistic Number](./147-NarcissisticNumber.go)   
+
 
 ## Database
 [1913 · Query Student Enrollment Information](./1913-QueryStudentEnrollmentInformation.sql)    
