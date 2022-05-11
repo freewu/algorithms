@@ -22,8 +22,8 @@
 
 -- Example
 -- Enter data:
--- courses table.
 
+-- courses table.
 -- id	name	student_count	created_at	teacher_id
 -- 1	'Advanced Algorithms'	880	'2020-6-1 09:03:12'	4
 -- 2	'System Design'	1350	'2020-7-18 10:03:12'	8
@@ -35,16 +35,16 @@
 -- 8	'Data Analysis'	500	'2019-7-12 13:03:12'	6
 -- 10	'Object Oriented Design'	300	'2020-8-8 13:03:12'	4
 -- 12	'Dynamic Programming'	2000	'2018-8-18 20:03:12'	1
--- teachers table.
 
+-- teachers table.
 -- id	name	email	age	country
 -- 1	'Eastern heretic'	'eastern.heretic@gmail.com'	20	'UK'
 -- 2	'Northern Beggar'	'northern.beggar@qq.com'	21	'CN'
 -- 3	'Western Venom'	'western.venom@163.com'	28	'USA'
 -- 4	'Southern Emperor'	'southern.emperor@qq.com'	21	'JP'
 -- 5	'Linghu Chong'	None	18	'CN'
--- Returned results:
 
+-- Returned results:
 -- id	name	student_count	created_at	teacher_id	teacher_name	teacher_email
 -- 1	'Advanced Algorithms'	880	'2020-06-01'	4	'Southern Emperor'	'southern.emperor@qq.com'
 -- 2	'System Design'	1350	'2020-07-18'	8	None	None

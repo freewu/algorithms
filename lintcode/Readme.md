@@ -210,6 +210,7 @@
 [2664 · Recognizing SQL Views (I)](./2664-RecognizingSQLViewsI.sql)   
 [2665 · Recognizing SQL Views (II)](./2665-RecognizingSQLViewsII.sql)   
 [2674 · Creating a simple SQL View (I)](./2674-CreatingASimpleSQLViewI.sql)   
+[2676 · Creating a simple SQL View (II)](./2676-CreatingASimpleSQLViewII.sql)   
 
 
 ## Python
