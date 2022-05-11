@@ -219,6 +219,7 @@
 [2702 · Delete Linghu Chong's teacher data by view](./2702-DeleteLinghuChongsTeacherDataByView.sql)   
 [2704 · Zhang San's MySQL Learning Path (III)](./2704-ZhangSansMySQLLearningPathIII.sql)   
 [2705 · Show view in the current database](./2705-ShowViewInTheCurrntDatabase.sql)   
+[2706 · Renaming views (I)](./2706-RenamingViewsI.sql)   
 
 
 ## Python
