@@ -90,10 +90,13 @@ func max(a int, b int) int {
 func main() {
 	fmt.Printf("rob([]int{ 1,2,3,1 }) = %v\n",rob([]int{ 1,2,3,1 })) // 4   1 + 3
 	fmt.Printf("rob([]int{ 2,7,9,3,1 }) = %v\n",rob([]int{ 2,7,9,3,1 })) // 12  2 + 9 + 1 = 12.
+	fmt.Printf("rob([]int{ 2,7,9,3,1,10,3,1 }) = %v\n",rob([]int{ 2,7,9,3,1,10,3,1 })) // 22  2 + 9 + 10 + １
 
 	fmt.Printf("rob1([]int{ 1,2,3,1 }) = %v\n",rob1([]int{ 1,2,3,1 })) // 4   1 + 3
 	fmt.Printf("rob1([]int{ 2,7,9,3,1 }) = %v\n",rob1([]int{ 2,7,9,3,1 })) // 12  2 + 9 + 1 = 12.
+	fmt.Printf("rob([]int{ 2,7,9,3,1,10,3,1 }) = %v\n",rob1([]int{ 2,7,9,3,1,10,3,1 })) // 22  2 + 9 + 10 + １
 
 	fmt.Printf("rob2([]int{ 1,2,3,1 }) = %v\n",rob2([]int{ 1,2,3,1 })) // 4   1 + 3
 	fmt.Printf("rob3([]int{ 2,7,9,3,1 }) = %v\n",rob2([]int{ 2,7,9,3,1 })) // 12  2 + 9 + 1 = 12.
+	fmt.Printf("rob([]int{ 2,7,9,3,1,10,3,1 }) = %v\n",rob2([]int{ 2,7,9,3,1,10,3,1 })) // 22  2 + 9 + 10 + １
 }
