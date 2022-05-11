@@ -222,6 +222,7 @@
 [2706 · Renaming views (I)](./2706-RenamingViewsI.sql)   
 [2707 · Renaming views (II)](./2707-RenamingViewsII.sql)   
 [2708 · Drop View (I)](./2708-DropViewI.sql)   
+[2709 · Drop View (II)](./2709-DropViewII.sql)   
 
 
 ## Python
