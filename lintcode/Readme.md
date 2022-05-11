@@ -221,6 +221,7 @@
 [2705 · Show view in the current database](./2705-ShowViewInTheCurrntDatabase.sql)   
 [2706 · Renaming views (I)](./2706-RenamingViewsI.sql)   
 [2707 · Renaming views (II)](./2707-RenamingViewsII.sql)   
+[2708 · Drop View (I)](./2708-DropViewI.sql)   
 
 
 ## Python
