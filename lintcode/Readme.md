@@ -213,6 +213,7 @@
 [2676 · Creating a simple SQL View (II)](./2676-CreatingASimpleSQLViewII.sql)   
 [2683 · Zhang San's MySQL Learning Path (I)](./2683-ZhangSansMySQLLearningPathI.sql)   
 [2685 · Zhang San's MySQL Learning Path (II)](./2685-ZhangSansMySQLLearningPathII.sql)   
+[2689 · Redefining the teachers view](./2689-RedefiningTheTeachersView.sql)   
 
 
 ## Python
