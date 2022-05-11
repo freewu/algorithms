@@ -217,6 +217,7 @@
 [2692 · Count the total number of students taught by each faculty member](./2692-CountTheTotalNumberOfStudentsTaughtByEachFacultyMember.sql)   
 [2700 · Update Linghu Chong's age by view](./2700-UpdateLinghuChongsAgeByView.sql)   
 [2702 · Delete Linghu Chong's teacher data by view](./2702-DeleteLinghuChongsTeacherDataByView.sql)   
+[2704 · Zhang San's MySQL Learning Path (III)](./2704-ZhangSansMySQLLearningPathIII.sql)   
 [2705 · Show view in the current database](./2705-ShowViewInTheCurrntDatabase.sql)   
 
 
