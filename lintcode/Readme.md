@@ -250,6 +250,9 @@
 [2741 · Tagging](./2741-Tagging.sh)   
 [2746 · Formatted view of historical submission records](./2746-FormattedViewOfHistoricalSubmissionRecords.sh)   
 
+## Linux Command
+[2513 · Remove Folder](./2513-RemoveFolder.sh)   
+
 ## OOP
 
 ## Concurrency
