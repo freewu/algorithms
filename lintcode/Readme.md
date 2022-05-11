@@ -211,6 +211,7 @@
 [2665 · Recognizing SQL Views (II)](./2665-RecognizingSQLViewsII.sql)   
 [2674 · Creating a simple SQL View (I)](./2674-CreatingASimpleSQLViewI.sql)   
 [2676 · Creating a simple SQL View (II)](./2676-CreatingASimpleSQLViewII.sql)   
+[2683 · Zhang San's MySQL Learning Path (I)](./2683-ZhangSansMySQLLearningPathI.sql)   
 
 
 ## Python
