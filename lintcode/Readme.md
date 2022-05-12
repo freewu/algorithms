@@ -267,7 +267,7 @@
 ## Linux Command
 [2513 · Remove Folder](./2513-RemoveFolder.sh)   
 [2574 · Copying documents](./2574-CopyingDocuments.sh)   
-
+[2582 · Moving documents](./2582-MovingDocuments.sh)   
 
 ## OOP
 
