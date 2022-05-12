@@ -248,7 +248,9 @@
 
 
 ## Java
-[2400 · Create a HashMap set and add data](./2400-CreateaHashMapsetandadddata/Solution.java)
+[2088 · First Java Code: Print Hello World](./2088-PrintHelloWorld/Solution.java)   
+[2400 · Create a HashMap set and add data](./2400-CreateaHashMapsetandadddata/Solution.java)   
+
 
 ## Git
 [2540 · Your First Git Commit](./2540-YourFirstGitCommit.sh)   
