@@ -233,7 +233,7 @@
 [2760 · Understanding SQL Procedures (I)](./2760-UnderstandingSQLProceduresI.sql)   
 [2761 · Understanding SQL Procedures (II)](./2761-UnderstandingSQLProceduresII.sql)   
 [2801 · Delete Stored Procedure (I)](./2801-DeleteStoredProcedureI.sql)   
-
+[2802 · Delete Stored Procedure (II)](./2802-DeleteStoredProcedureII.sql)   
 
 ## Python
 [2124 · print hello](./2124-PrintHello.py)   
