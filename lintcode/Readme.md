@@ -231,6 +231,7 @@
 [2724 · Cascade checking of views](./2724-CascadeCheckingOfViews.sql)   
 [2725 · Local checking of views](./2725-LocalCheckingOfViews.sql)   
 [2760 · Understanding SQL Procedures (I)](./2760-UnderstandingSQLProceduresI.sql)   
+[2761 · Understanding SQL Procedures (II)](./2761-UnderstandingSQLProceduresII.sql)   
 
 
 ## Python
