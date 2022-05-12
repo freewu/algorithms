@@ -228,6 +228,7 @@
 [2720 · Creating a view that ensures consistency (I)](./2720-CreatingAViewThatEnsuresConsistencyI.sql)   
 [2721 · Creating a view that ensures consistency (II)](./2721-CreatingaviewThatEnsuresConsistencyII.sql)   
 [2723 · Showing the definition of a view](./2723-ShowingTheDefinitionOfAView.sql)   
+[2724 · Cascade checking of views](./2724-CascadeCheckingOfViews.sql)   
 
 
 ## Python
