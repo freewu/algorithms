@@ -237,6 +237,7 @@
 [2801 · Delete Stored Procedure (I)](./2801-DeleteStoredProcedureI.sql)   
 [2802 · Delete Stored Procedure (II)](./2802-DeleteStoredProcedureII.sql)   
 [2806 · MySQL Stored Procedure IN Parameters I](./2806-MySQLStoredProcedureINParametersI.sql)   
+[2808 · MySQL Stored Procedure OUT Parameters I](./2808-MySQLStoredProcedureOUTParametersI.sql)   
 
 
 ## Python
