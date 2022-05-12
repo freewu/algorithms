@@ -270,6 +270,8 @@
 [2513 · Remove Folder](./2513-RemoveFolder.sh)   
 [2574 · Copying documents](./2574-CopyingDocuments.sh)   
 [2582 · Moving documents](./2582-MovingDocuments.sh)   
+[2585 · Moving folders](./2585-MovingFolders.sh)   
+
 
 ## OOP
 
