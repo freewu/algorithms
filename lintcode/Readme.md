@@ -272,6 +272,7 @@
 [2582 · Moving documents](./2582-MovingDocuments.sh)   
 [2585 · Moving folders](./2585-MovingFolders.sh)   
 [2586 · Delete document](./2586-DeleteDocument.sh)   
+[2593 · Show current directory](./2593-ShowCurrentDirectory.sh)   
 
 
 ## OOP
