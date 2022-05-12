@@ -226,6 +226,7 @@
 [2715 · View Processing Algorithm Merge](./2715-ViewProcessingAlgorithmMerge.sql)   
 [2716 · View Processing Algorithm TEMPTABLE](./2716-ViewProcessingAlgorithmTEMPTABLE.sql)   
 [2720 · Creating a view that ensures consistency (I)](./2720-CreatingAViewThatEnsuresConsistencyI.sql)   
+[2721 · Creating a view that ensures consistency (II)](./2721-CreatingaviewThatEnsuresConsistencyII.sql)   
 
 
 ## Python
