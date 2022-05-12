@@ -77,3 +77,20 @@ WHERE
 	    GROUP BY
             player_id
     );
+
+-- best solution
+SELECT
+    ROUND( AVG(a.event_date is not null), 2) AS fraction -- AVG(a.event_date is not null) 这个太赞了
+FROM
+    ( -- 取用户首次注册日期&用记编号
+        SELECT
+            player_id,
+            MIN(event_date) AS login
+        FROM activity
+        GROUP BY player_id
+    ) AS p
+LEFT JOIN
+    activity AS a
+ON
+    p.player_id = a.player_id AND
+    DATEDIFF(a.event_date, p.login) = 1
