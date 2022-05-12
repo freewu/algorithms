@@ -225,7 +225,21 @@
 [2709 · Drop View (II)](./2709-DropViewII.sql)   
 [2715 · View Processing Algorithm Merge](./2715-ViewProcessingAlgorithmMerge.sql)   
 [2716 · View Processing Algorithm TEMPTABLE](./2716-ViewProcessingAlgorithmTEMPTABLE.sql)   
-
+[2720 · Creating a view that ensures consistency (I)](./2720-CreatingAViewThatEnsuresConsistencyI.sql)   
+[2721 · Creating a view that ensures consistency (II)](./2721-CreatingaviewThatEnsuresConsistencyII.sql)   
+[2723 · Showing the definition of a view](./2723-ShowingTheDefinitionOfAView.sql)   
+[2724 · Cascade checking of views](./2724-CascadeCheckingOfViews.sql)   
+[2725 · Local checking of views](./2725-LocalCheckingOfViews.sql)   
+[2760 · Understanding SQL Procedures (I)](./2760-UnderstandingSQLProceduresI.sql)   
+[2761 · Understanding SQL Procedures (II)](./2761-UnderstandingSQLProceduresII.sql)   
+[2799 · Creating a procedure for inserting data in bulk](./2799-CreatingAProcedureForInsertingDataInBulk.sql)   
+[2800 · Zhang San's MySQL Learning Path (IV)](./2800-ZhangSansMySQLLearningPathIV.sql)   
+[2801 · Delete Stored Procedure (I)](./2801-DeleteStoredProcedureI.sql)   
+[2802 · Delete Stored Procedure (II)](./2802-DeleteStoredProcedureII.sql)   
+[2806 · MySQL Stored Procedure IN Parameters I](./2806-MySQLStoredProcedureINParametersI.sql)   
+[2808 · MySQL Stored Procedure OUT Parameters I](./2808-MySQLStoredProcedureOUTParametersI.sql)   
+[2809 · MySQL Stored Procedure OUT Parameters II](./2809-MySQLStoredProcedureOUTParametersII.sql)   
+[2812 · MySQL Stored Procedure Variables I](./2812-MySQLStoredProcedureVariablesI.sql)   
 
 ## Python
 [2124 · print hello](./2124-PrintHello.py)   
@@ -234,7 +248,9 @@
 
 
 ## Java
-[2400 · Create a HashMap set and add data](./2400-CreateaHashMapsetandadddata/Solution.java)
+[2088 · First Java Code: Print Hello World](./2088-PrintHelloWorld/Solution.java)   
+[2400 · Create a HashMap set and add data](./2400-CreateaHashMapsetandadddata/Solution.java)   
+
 
 ## Git
 [2540 · Your First Git Commit](./2540-YourFirstGitCommit.sh)   
@@ -250,7 +266,21 @@
 [2741 · Tagging](./2741-Tagging.sh)   
 [2746 · Formatted view of historical submission records](./2746-FormattedViewOfHistoricalSubmissionRecords.sh)   
 
+## Linux Command
+[2513 · Remove Folder](./2513-RemoveFolder.sh)   
+[2574 · Copying documents](./2574-CopyingDocuments.sh)   
+[2582 · Moving documents](./2582-MovingDocuments.sh)   
+[2585 · Moving folders](./2585-MovingFolders.sh)   
+[2586 · Delete document](./2586-DeleteDocument.sh)   
+[2593 · Show current directory](./2593-ShowCurrentDirectory.sh)   
+[2597 · List file directories and file names](./2597-ListFileDirectoriesAndFileNames.sh)   
+[2599 · Compare the differences between the two documents](./2599-CompareTheDifferencesBetweenTheTwoDocuments.sh)   
+
+
+
 ## OOP
+[454-RectangleArea](./454-RectangleArea/Solution.java)   
+
 
 ## Concurrency
 
