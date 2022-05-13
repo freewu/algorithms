@@ -299,6 +299,7 @@
 [2730 · Delete file contents](./2730-DeleteFileContents.sh)   
 [2737 · Document content sorting(ii)](./2737-DocumentContentSortingII.sh)   
 [2743 · Expression evaluation (III)](./2743-ExpressionEvaluationIII.sh)   
+[2752 · Word counts](./2752-WordCounts.sh)   
 
 
 ## OOP
