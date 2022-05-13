@@ -298,6 +298,8 @@
 [2729 · Writing to a file](./2729-WritingToAFile.sh)   
 [2730 · Delete file contents](./2730-DeleteFileContents.sh)   
 [2737 · Document content sorting(ii)](./2737-DocumentContentSortingII.sh)   
+[2743 · Expression evaluation (III)](./2743-ExpressionEvaluationIII.sh)   
+
 
 ## OOP
 [454-RectangleArea](./454-RectangleArea/Solution.java)   
