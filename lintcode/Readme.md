@@ -246,6 +246,7 @@
 [2808 · MySQL Stored Procedure OUT Parameters I](./2808-MySQLStoredProcedureOUTParametersI.sql)   
 [2809 · MySQL Stored Procedure OUT Parameters II](./2809-MySQLStoredProcedureOUTParametersII.sql)   
 [2810 · MySQL Stored Procedure INOUT Parameters I](./2810-MySQLStoredProcedureINOUTParametersI.sql)   
+[2811 · MySQL Stored Procedure INOUT Parameters II](./2811-MySQLStoredProcedureINOUTParametersII.sql)  
 [2812 · MySQL Stored Procedure Variables I](./2812-MySQLStoredProcedureVariablesI.sql)   
 
 ## Python
