@@ -293,6 +293,7 @@
 [2608 · Compare the two documents](./2608-CompareTheTwoDocuments.sh)   
 [2632 · Intercept the string at the specified position](./2632-InterceptTheStringAtTheSpecifiedPosition.sh)   
 [2643 · Create file link (I)](./2643-CreateFileLinkI.sh)   
+[2645 · Viewing the contents of a file using a different binary](./2645-ViewingTheContentsOfAFileUsingADifferentBinary.sh)   
 
 
 ## OOP
