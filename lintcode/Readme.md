@@ -177,6 +177,7 @@
 [2459 · Nth highest player height](./2459-Nthhighestplayerheight.sql)   
 [2460 · Player Height Ranking1](./2460-PlayerHeightRankingI.sql)   
 [2499 · Height of players appearing consecutively](./2499-HeightOfPlayersAppearingConsecutively.sql)   
+[2500 · Highest scoring player in the team](./2500-HighestScoringPlayerInTheTeam.sql)   
 [2542 · Update Linghu Chong's email](./2542-UpdateLinghuChongsEmail.sql)   
 [2544 · Insert information about Feng Qingyang](./2544-InsertInformationAboutFengQingyang.sql)   
 [2547 · Query all information in the teachers table](./2547-QueryAllInformationInTheTeachersTable.sql)   
