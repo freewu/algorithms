@@ -288,7 +288,7 @@
 [2594 · Access to the specified directory](./2594-AccessToTheSpecifiedDirectory.sh)   
 [2597 · List file directories and file names](./2597-ListFileDirectoriesAndFileNames.sh)   
 [2599 · Compare the differences between the two documents](./2599-CompareTheDifferencesBetweenTheTwoDocuments.sh)   
-
+[2606 · View user ID and group ID](./260-ViewUserIDAndGroupID.sh)   
 
 
 ## OOP
