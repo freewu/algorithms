@@ -255,6 +255,7 @@
 ## Git
 [2540 · Your First Git Commit](./2540-YourFirstGitCommit.sh)   
 [2613 · Submit a document amendment](./2613-SubmitADocumentAmendment.sh)   
+[2619 · Track and submit document changes](./2619-TrackAndSubmitDocumentChanges.sh)   
 [2626 · Add files to the stage](./2626-AddFilesToTheStage1.sh)   
 [2660 · git Branch Renaming](./2660-GitBranchRenaming.sh)   
 [2668 · Create and switch branches](./2668-CreateAndSwitchBranches.sh)   
@@ -265,6 +266,7 @@
 [2711 · Move documents](./2711-MoveDocuments.sh)   
 [2741 · Tagging](./2741-Tagging.sh)   
 [2746 · Formatted view of historical submission records](./2746-FormattedViewOfHistoricalSubmissionRecords.sh)   
+
 
 ## Linux Command
 [2513 · Remove Folder](./2513-RemoveFolder.sh)   
