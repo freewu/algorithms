@@ -156,6 +156,8 @@
 [2070 · Search for the name of a course created later than the creation time of any of the specified teacher's courses](./2070-Searchforthenameofacoursecreatedlaterthanthecreationtimeofanyofthespecifiedteacherscourses.sql)   
 [2071 · Search for information on the oldest faculty member whose nationality is American](./2071-SearchForInformationOnTheOldestFacultyMemberWhoseNationalityIsAmerican.sql)   
 [2072 · Search for course names of all courses taught by teachers who are not older than 20 years old](./2072-SearchForCourseNamesOfAllCoursesTaughtByTeachersWhoAreNotOlderThan20YearsOld.sql)   
+[2073 · Query the `id` and and the number of students for all courses taught by teachers whose nationality is not 'USA' and 'UK'](./2073.sql)   
+
 [2074 · Search for the names of teachers whose average number of students in classes taught by all teachers exceeds the average number of students in all courses](./2074-Searchforthenamesfteacherswhoseaveragenumberofstudentsinclassestaughtbyallteachersexceedstheaveragenumberofstudentsinallcourses.sql)   
 [2075 · Check the number of teachers in different countries](./2075-Checkthenumberofteachersindifferentcountries.sql)   
 [2076 · Search for teacher information based on national average age](./2076-Searchforteacherinformationbasedonnationalaverageage.sql)   
