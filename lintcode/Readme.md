@@ -173,6 +173,7 @@
 [2091 · Adding Foreign Key Constraints to Course Tables](./2091-AddingForeignKeyConstraintsToCourseTables.sql)   
 [2092 · Search for a lecturer number](./2092-Searchforalecturernumber.sql)   
 [2093 · Check the portfolio of courses and teachers](./2093-Checktheportfolioofcoursesandteachers.sql)   
+[2136 · Find out when a course was created and the nationality of the teacher](./2136-FindOutWhenACourseWasCreatedAndTheNationalityOfTheTeacher.sql)   
 [2459 · Nth highest player height](./2459-Nthhighestplayerheight.sql)   
 [2499 · Height of players appearing consecutively](./2499-HeightOfPlayersAppearingConsecutively.sql)   
 [2542 · Update Linghu Chong's email](./2542-UpdateLinghuChongsEmail.sql)   
