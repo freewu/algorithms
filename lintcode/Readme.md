@@ -242,6 +242,7 @@
 [2801 · Delete Stored Procedure (I)](./2801-DeleteStoredProcedureI.sql)   
 [2802 · Delete Stored Procedure (II)](./2802-DeleteStoredProcedureII.sql)   
 [2806 · MySQL Stored Procedure IN Parameters I](./2806-MySQLStoredProcedureINParametersI.sql)   
+[2807 · MySQL Stored Procedure IN Parameters II](./2807-MySQLStoredProcedureINParametersII.sql)   
 [2808 · MySQL Stored Procedure OUT Parameters I](./2808-MySQLStoredProcedureOUTParametersI.sql)   
 [2809 · MySQL Stored Procedure OUT Parameters II](./2809-MySQLStoredProcedureOUTParametersII.sql)   
 [2812 · MySQL Stored Procedure Variables I](./2812-MySQLStoredProcedureVariablesI.sql)   
