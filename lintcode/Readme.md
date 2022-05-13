@@ -291,7 +291,7 @@
 [2603 · Checking disk usage](./2603-CheckingDiskUsage.sh)   
 [2606 · View user ID and group ID](./2606-ViewUserIDAndGroupID.sh)   
 [2608 · Compare the two documents](./2608-CompareTheTwoDocuments.sh)   
-
+[2632 · Intercept the string at the specified position](./2632-InterceptTheStringAtTheSpecifiedPosition.sh)   
 
 ## OOP
 [454-RectangleArea](./454-RectangleArea/Solution.java)   
