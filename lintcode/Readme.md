@@ -264,6 +264,7 @@
 [2696 · Cache and restore across branches](./2696-CacheAndRestoreAcrossBranches.sh)   
 [2701 · Remove documents](./2701-RemoveDocuments.sh)   
 [2711 · Move documents](./2711-MoveDocuments.sh)   
+[2732 · View submission history](./2732-ViewSubmissionHistory.sh)   
 [2741 · Tagging](./2741-Tagging.sh)   
 [2746 · Formatted view of historical submission records](./2746-FormattedViewOfHistoricalSubmissionRecords.sh)   
 
