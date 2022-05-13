@@ -175,6 +175,7 @@
 [2093 · Check the portfolio of courses and teachers](./2093-Checktheportfolioofcoursesandteachers.sql)   
 [2136 · Find out when a course was created and the nationality of the teacher](./2136-FindOutWhenACourseWasCreatedAndTheNationalityOfTheTeacher.sql)   
 [2459 · Nth highest player height](./2459-Nthhighestplayerheight.sql)   
+[2460 · Player Height Ranking1](./2460-PlayerHeightRankingI.sql)   
 [2499 · Height of players appearing consecutively](./2499-HeightOfPlayersAppearingConsecutively.sql)   
 [2542 · Update Linghu Chong's email](./2542-UpdateLinghuChongsEmail.sql)   
 [2544 · Insert information about Feng Qingyang](./2544-InsertInformationAboutFengQingyang.sql)   
