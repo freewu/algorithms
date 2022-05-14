@@ -2,6 +2,7 @@
 [56 · Two Sum](./56-TwoSum.go)   
 [60 · Search Insert Position](./60-SearchInsertPosition.go)   
 [147 · Narcissistic Number](./147-NarcissisticNumber.go)   
+[765 · Valid Triangle](./765-ValidTriangle.go)   
 
 
 ## Database
