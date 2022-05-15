@@ -77,8 +77,42 @@ func max(a int, b int) int {
 	return b
 }
 
+// best solution
+func robBest(nums []int) int {
+	if len(nums) == 1 {
+		return nums[0]
+	}
+	var p1, p2, max int
+	for i := 0; i < len(nums) - 1; i += 1 {
+		tmp := p1
+		if p2 + nums[i] > p1 {
+			tmp = p2 + nums[i]
+		}
+		p2 = p1
+		p1 = tmp
+	}
+	max = p1
+	p1, p2 = 0, 0
+	for i := 1; i < len(nums); i += 1 {
+		tmp := p1
+		if p2 + nums[i] > p1 {
+			tmp = p2 + nums[i]
+		}
+		p2 = p1
+		p1 = tmp
+	}
+	if p1 > max {
+		max = p1
+	}
+	return max
+}
+
 func main() {
 	fmt.Printf("rob([]int{ 2,3,2 }) = %v\n",rob([]int{ 2,3,2 })) // 3
-	fmt.Printf("rob([]int{ 1,2,3,1 }) = %v\n",rob([]int{ 1,2,3,1 })) // 4
+	fmt.Printf("rob([]int{ 1,2,3,1 }) = %v\n",rob([]int{ 1,2,3,1 })) // 4  1 + 3
 	fmt.Printf("rob([]int{ 1,2,3 }) = %v\n",rob([]int{ 1,2,3 })) // 3
+
+	fmt.Printf("robBest([]int{ 2,3,2 }) = %v\n",robBest([]int{ 2,3,2 })) // 3
+	fmt.Printf("robBest([]int{ 1,2,3,1 }) = %v\n",robBest([]int{ 1,2,3,1 })) // 4
+	fmt.Printf("robBest([]int{ 1,2,3 }) = %v\n",robBest([]int{ 1,2,3 })) // 3
 }
