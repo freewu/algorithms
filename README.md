@@ -118,6 +118,7 @@
 [607. Sales Person](./leetcode/607-SalesPerson.sql)   
 [608. Tree Node](./leetcode/608-TreeNode.sql)   
 [1050. Actors and Directors Who Cooperated At Least Three Times](./leetcode/1050-ActorsandDirectorsWhoCooperatedAtLeastThreeTimes.sql)   
+[1068. Product Sales Analysis I](./leetcode/1068-ProductSalesAnalysisI.sql)   
 [1084. Sales Analysis III](./leetcode/1084-SalesAnalysisIII.sql)   
 [1141. User Activity for the Past 30 Days I](./leetcode/1141-UserActivityforthePast30DaysI.sql)   
 [1148. Article Views I](./leetcode/1148-ArticleViewsI.sql)   
