@@ -3,7 +3,7 @@
 [60 · Search Insert Position](./60-SearchInsertPosition.go)   
 [147 · Narcissistic Number](./147-NarcissisticNumber.go)   
 [765 · Valid Triangle](./765-ValidTriangle.go)   
-
+[1314 · Power of Two](./1314-PowerOfTwo.go)   
 
 ## Database
 [1913 · Query Student Enrollment Information](./1913-QueryStudentEnrollmentInformation.sql)    
