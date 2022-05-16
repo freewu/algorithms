@@ -76,3 +76,7 @@ find -type d
 # 查找系统中所有文件长度为 0 的普通文件，并列出它们的完整路径：
 
     find / -type f -size 0 -exec ls -l {} \;
+
+# 查找系统中所有文件长度不为 0 的普通文件，并列出它们的完整路径：
+
+    find / -type f ! -size 0 -exec ls -l {} \;

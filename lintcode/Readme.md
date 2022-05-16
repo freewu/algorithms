@@ -296,6 +296,7 @@
 [2608 · Compare the two documents](./2608-CompareTheTwoDocuments.sh)   
 [2623 · Find eligible files in a directory (i)](./2623-FindEligibleFilesInADirectoryI.sh)   
 [2628 · Find eligible files in a directory (ii)](./2628-FindEligibleFilesInADirectoryII.sh)   
+[2630 · Find eligible files in a directory (iIi)](./2630-FindEligibleFilesInADirectoryIII.sh)   
 [2632 · Intercept the string at the specified position](./2632-InterceptTheStringAtTheSpecifiedPosition.sh)   
 [2643 · Create file link (I)](./2643-CreateFileLinkI.sh)   
 [2645 · Viewing the contents of a file using a different binary](./2645-ViewingTheContentsOfAFileUsingADifferentBinary.sh)   
