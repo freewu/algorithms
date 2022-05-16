@@ -107,6 +107,7 @@
 # Database
 [175. Combine Two Tables](./leetcode/175-CombineTwoTables.sql)   
 [176. Second Highest Salary](./leetcode/176-SecondHighestSalary.sql)   
+[177. Nth Highest Salary](./leetcode/177-NthHighestSalary.sql)   
 [511. Game Play Analysis I](./leetcode/511-GamePlayAnalysisI.sql)   
 [512. Game Play Analysis II](./leetcode/512-GamePlayAnalysisII.sql)   
 [534. Game Play Analysis III](./leetcode/534-GamePlayAnalysisIII.sql)   
