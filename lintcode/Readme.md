@@ -290,6 +290,7 @@
 [2597 · List file directories and file names](./2597-ListFileDirectoriesAndFileNames.sh)   
 [2599 · Compare the differences between the two documents](./2599-CompareTheDifferencesBetweenTheTwoDocuments.sh)   
 [2603 · Checking disk usage](./2603-CheckingDiskUsage.sh)   
+[2604 · View the space occupied by a file](./2604-ViewTheSpaceOccupiedByAFile.sh)   
 [2606 · View user ID and group ID](./2606-ViewUserIDAndGroupID.sh)   
 [2608 · Compare the two documents](./2608-CompareTheTwoDocuments.sh)   
 [2632 · Intercept the string at the specified position](./2632-InterceptTheStringAtTheSpecifiedPosition.sh)   
