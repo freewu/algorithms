@@ -307,6 +307,7 @@
 
 [204 · Singleton](./204-Singleton/Solution.java)   
 [218 · Student Level](./218-StudentLevel/Solution.java)   
+[222 · Setter and Getter](./222-SetterAndGetter/Solution.java)   
 [454 · RectangleArea](./454-RectangleArea/Solution.java)   
 
 
