@@ -294,6 +294,7 @@
 [2605 · View username and group name](./2605-ViewUsernameAndGroupName.sh)   
 [2606 · View user ID and group ID](./2606-ViewUserIDAndGroupID.sh)   
 [2608 · Compare the two documents](./2608-CompareTheTwoDocuments.sh)   
+[2623 · Find eligible files in a directory (i)](./2623-FindEligibleFilesInADirectoryI.sh)   
 [2632 · Intercept the string at the specified position](./2632-InterceptTheStringAtTheSpecifiedPosition.sh)   
 [2643 · Create file link (I)](./2643-CreateFileLinkI.sh)   
 [2645 · Viewing the contents of a file using a different binary](./2645-ViewingTheContentsOfAFileUsingADifferentBinary.sh)   
