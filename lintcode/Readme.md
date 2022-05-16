@@ -304,7 +304,9 @@
 
 
 ## OOP
-[454-RectangleArea](./454-RectangleArea/Solution.java)   
+
+[204 · Singleton](./204-Singleton/Solution.java)   
+[454 · RectangleArea](./454-RectangleArea/Solution.java)   
 
 
 ## Concurrency
