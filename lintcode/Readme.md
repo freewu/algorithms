@@ -291,6 +291,7 @@
 [2599 · Compare the differences between the two documents](./2599-CompareTheDifferencesBetweenTheTwoDocuments.sh)   
 [2603 · Checking disk usage](./2603-CheckingDiskUsage.sh)   
 [2604 · View the space occupied by a file](./2604-ViewTheSpaceOccupiedByAFile.sh)   
+[2605 · View username and group name](./2605-ViewUsernameAndGroupName.sh)   
 [2606 · View user ID and group ID](./2606-ViewUserIDAndGroupID.sh)   
 [2608 · Compare the two documents](./2608-CompareTheTwoDocuments.sh)   
 [2632 · Intercept the string at the specified position](./2632-InterceptTheStringAtTheSpecifiedPosition.sh)   
@@ -302,7 +303,6 @@
 [2737 · Document content sorting(ii)](./2737-DocumentContentSortingII.sh)   
 [2743 · Expression evaluation (III)](./2743-ExpressionEvaluationIII.sh)   
 [2752 · Word counts](./2752-WordCounts.sh)   
-
 
 ## OOP
 
