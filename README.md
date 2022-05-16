@@ -112,6 +112,7 @@
 [534. Game Play Analysis III](./leetcode/534-GamePlayAnalysisIII.sql)   
 [550. Game Play Analysis IV](./leetcode/550-GamePlayAnalysisIV.sql)   
 [569. Median Employee Salary](./leetcode/569-MedianEmployeeSalary.sql)   
+[570. Managers with at Least 5 Direct Reports](./leetcode/570-ManagersWithAtLeast5DirectReports.sql)   
 [577. Employee Bonus](./leetcode/577-EmployeeBonus.sql)   
 [584. Find Customer Referee](./leetcode/584-FindCustomerReferee.sql)   
 [586. Customer Placing the Largest Number of Orders](./leetcode/586-CustomerPlacingtheLargestNumberofOrders.sql)   
