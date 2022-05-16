@@ -306,6 +306,7 @@
 ## OOP
 
 [204 · Singleton](./204-Singleton/Solution.java)   
+[218 · Student Level](./218-StudentLevel/Solution.java)   
 [454 · RectangleArea](./454-RectangleArea/Solution.java)   
 
 
