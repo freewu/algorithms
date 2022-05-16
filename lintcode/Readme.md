@@ -312,6 +312,7 @@
 [455 · Student ID](./455-StudentID/Solution.java)   
 [456 · Reference](./456-Reference/Solution.java)   
 [496 · Toy Factory](./496-ToyFactory/Solution.java)   
+[712 · Vending machine OO Design](./712-VendingMachineOODesign/Solution.java)   
 
 
 ## Concurrency
