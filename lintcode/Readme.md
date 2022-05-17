@@ -307,6 +307,7 @@
 [2681 · Display String (iii)](./2681-DisplayStringIII.sh)   
 [2691 · View file details](./2691-ViewFileDetails.sh)   
 [2693 · File creation preset permissions](./2693-FileCreationPresetPermissions.sh)   
+[2695 · Retrieves the specified items of a document by different delimiters](./2695-RetrievesTheSpecifiedItemsOfADocumentByDifferentDelimiters.sh)   
 [2713 · Find the location of the command](./2713-FindTheLocationOfTheCommand.sh)   
 [2729 · Writing to a file](./2729-WritingToAFile.sh)   
 [2730 · Delete file contents](./2730-DeleteFileContents.sh)   
