@@ -300,12 +300,14 @@
 [2632 · Intercept the string at the specified position](./2632-InterceptTheStringAtTheSpecifiedPosition.sh)   
 [2643 · Create file link (I)](./2643-CreateFileLinkI.sh)   
 [2645 · Viewing the contents of a file using a different binary](./2645-ViewingTheContentsOfAFileUsingADifferentBinary.sh)   
+[2648 · View file contents using different decoding methods](./2648-ViewFileContentsUsingDifferentDecodingMethods.sh)   
 [2713 · Find the location of the command](./2713-FindTheLocationOfTheCommand.sh)   
 [2729 · Writing to a file](./2729-WritingToAFile.sh)   
 [2730 · Delete file contents](./2730-DeleteFileContents.sh)   
 [2737 · Document content sorting(ii)](./2737-DocumentContentSortingII.sh)   
 [2743 · Expression evaluation (III)](./2743-ExpressionEvaluationIII.sh)   
 [2752 · Word counts](./2752-WordCounts.sh)   
+
 
 ## OOP
 
