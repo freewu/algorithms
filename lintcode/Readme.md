@@ -310,6 +310,7 @@
 [2695 · Retrieves the specified items of a document by different delimiters](./2695-RetrievesTheSpecifiedItemsOfADocumentByDifferentDelimiters.sh)  
 [2697 · Find a compliant document (i)](./2697-FindACompliantDocumentI.sh)   
 [2698 · Find a compliant document (ii)](./2698-FindACompliantDocumentII.sh)   
+[2710 · Copy Files (i)](./2710-CopyFilesI.sh)   
 [2713 · Find the location of the command](./2713-FindTheLocationOfTheCommand.sh)   
 [2729 · Writing to a file](./2729-WritingToAFile.sh)   
 [2730 · Delete file contents](./2730-DeleteFileContents.sh)   
