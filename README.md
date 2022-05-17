@@ -73,6 +73,7 @@
 [213. House Robber II](./leetcode/213-HouseRobberII.go)   
 [215. Kth Largest Element in an Array](./leetcode/215-KthLargestElementInAnArray.go)   
 [216. Combination Sum III](./leetcode/216-CombinationSumIII.go)   
+[217. Contains Duplicate](./leetcode/217-ContainsDuplicate.go)   
 [498. Diagonal Traverse](./leetcode/498-DiagonalTraverse.go)    
 [500. Keyboard Row](./leetcode/500-KeyboardRow.go)    
 
