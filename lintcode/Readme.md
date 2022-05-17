@@ -254,7 +254,7 @@
 [2124 · print hello](./2124-PrintHello.py)   
 [2097 · Find the sum of two parameters](./2097-FindTheSumOfTwoParameters.py)   
 [2089 · Implement timer decorator](./2089-ImplementTimerDecorator.py)   
-
+[2261 · Delete elements in the list](./2261-DeleteElementsInTheList.py)   
 
 ## Java
 [2088 · First Java Code: Print Hello World](./2088-PrintHelloWorld/Solution.java)   
