@@ -303,6 +303,7 @@
 [2648 · View file contents using different decoding methods](./2648-ViewFileContentsUsingDifferentDecodingMethods.sh)   
 [2653 · Display String (i)](./2653-DisplayStringI.sh)   
 [2656 · Create file link (II)](./2656-CreateFileLinkII.sh)   
+[2679 · Display String (ii)](./2679-DisplayStringII.sh)   
 [2713 · Find the location of the command](./2713-FindTheLocationOfTheCommand.sh)   
 [2729 · Writing to a file](./2729-WritingToAFile.sh)   
 [2730 · Delete file contents](./2730-DeleteFileContents.sh)   
