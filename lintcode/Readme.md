@@ -315,6 +315,7 @@
 [2713 · Find the location of the command](./2713-FindTheLocationOfTheCommand.sh)   
 [2719 · Execute expression](./2719-ExecuteExpression.sh)   
 [2726 · File View](./2726-FileView.sh)   
+[2727 · Compare document differences by column (ii)](./2727-CompareDocumentDifferencesByColumnII.sh)   
 [2729 · Writing to a file](./2729-WritingToAFile.sh)   
 [2730 · Delete file contents](./2730-DeleteFileContents.sh)   
 [2737 · Document content sorting(ii)](./2737-DocumentContentSortingII.sh)   
