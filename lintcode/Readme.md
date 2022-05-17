@@ -325,7 +325,7 @@
 [2752 · Word counts](./2752-WordCounts.sh)   
 [2754 · Set command aliases](./2754-SetCommandAliases.sh)   
 [2755 · Display System Information](./2755-DisplaySystemInformation.sh)   
-
+[2757 · Setting up the shell](./2757-SettingUpTheShell.sh)   
 
 ## OOP
 
