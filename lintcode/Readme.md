@@ -313,6 +313,7 @@
 [2710 · Copy Files (i)](./2710-CopyFilesI.sh)   
 [2712 · View the type of command](./2712-ViewTheTypeOfCommand.sh)   
 [2713 · Find the location of the command](./2713-FindTheLocationOfTheCommand.sh)   
+[2719 · Execute expression](./2719-ExecuteExpression.sh)   
 [2729 · Writing to a file](./2729-WritingToAFile.sh)   
 [2730 · Delete file contents](./2730-DeleteFileContents.sh)   
 [2737 · Document content sorting(ii)](./2737-DocumentContentSortingII.sh)   
