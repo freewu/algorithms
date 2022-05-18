@@ -3,6 +3,7 @@
 [60 · Search Insert Position](./60-SearchInsertPosition.go)   
 [147 · Narcissistic Number](./147-NarcissisticNumber.go)   
 [765 · Valid Triangle](./765-ValidTriangle.go)   
+[1082 · Employee Importance](./1082-EmployeeImportance.py)   
 [1314 · Power of Two](./1314-PowerOfTwo.go)   
 
 ## Database
