@@ -113,6 +113,7 @@
 [177. Nth Highest Salary](./leetcode/177-NthHighestSalary.sql)   
 [178. Rank Scores](./leetcode/178-RankScores.sql)   
 [180. Consecutive Numbers](./leetcode/180-ConsecutiveNumbers.sql)   
+[181. Employees Earning More Than Their Managers](./leetcode/181-EmployeesEarningMoreThanTheirManagers.sql)   
 [511. Game Play Analysis I](./leetcode/511-GamePlayAnalysisI.sql)   
 [512. Game Play Analysis II](./leetcode/512-GamePlayAnalysisII.sql)   
 [534. Game Play Analysis III](./leetcode/534-GamePlayAnalysisIII.sql)   
