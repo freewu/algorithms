@@ -270,6 +270,7 @@
 ## Java
 [2088 · First Java Code: Print Hello World](./2088-PrintHelloWorld/Solution.java)   
 [2157 · Print Welcome to LintCode!](./2157-PrintWelcomeToLintCode/Solution.java)   
+[2159 · Printing strings by splicing](./2159-PrintingStringsBySplicing/Solution.java)   
 [2400 · Create a HashMap set and add data](./2400-CreateaHashMapsetandadddata/Solution.java)   
 [2848 · Refining the right class](./2848-RefiningTheRightClass/Solution.java)   
 
