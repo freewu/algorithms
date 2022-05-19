@@ -14,5 +14,5 @@ gradle-app.setting
 # gradle/wrapper/gradle-wrapper.properties
 .vscode
 /.idea
-.pyc
-.class
+*.pyc
+*.class
