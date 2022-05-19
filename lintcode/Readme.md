@@ -258,7 +258,7 @@
 [2105 · Write Hello World! in the file](./2105-WriteHelloWorldInTheFile.py)   
 [2106 · Create a file directory and write Hello World!](./2106-CreateAFileDirectoryAndWriteHelloWorld.py)   
 [2107 · Copy files in bulk](./2107-CopyFilesInBulk.py)   
-
+[2123 · Get yesterday's date](./2123-GetYesterdaysDate.py)   
 [2089 · Implement timer decorator](./2089-ImplementTimerDecorator.py)   
 [2261 · Delete elements in the list](./2261-DeleteElementsInTheList.py)   
 
