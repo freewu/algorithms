@@ -75,7 +75,7 @@
 [216. Combination Sum III](./leetcode/216-CombinationSumIII.go)   
 [217. Contains Duplicate](./leetcode/217-ContainsDuplicate.go)   
 [218. The Skyline Problem](./leetcode/218-TheSkylineProblem.go)   
-
+[219. Contains Duplicate II](./leetcode/219-ContainsDuplicateII.go)   
 [498. Diagonal Traverse](./leetcode/498-DiagonalTraverse.go)    
 [500. Keyboard Row](./leetcode/500-KeyboardRow.go)    
 
