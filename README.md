@@ -131,6 +131,7 @@
 [574. Winning Candidate](./leetcode/574-WinningCandidate.sql)   
 [577. Employee Bonus](./leetcode/577-EmployeeBonus.sql)   
 [578. Get Highest Answer Rate Question](./leetcode/578-GetHighestAnswerRateQuestion.sql)   
+[580. Count Student Number in Departments](./leetcode/580-CountStudentNumberInDepartments.sql)   
 [584. Find Customer Referee](./leetcode/584-FindCustomerReferee.sql)   
 [586. Customer Placing the Largest Number of Orders](./leetcode/586-CustomerPlacingtheLargestNumberofOrders.sql)   
 [597. Friend Requests I: Overall Acceptance Rate](./leetcode/597-FriendRequestsI-OverallAcceptanceRate.sql)   
