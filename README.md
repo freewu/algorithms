@@ -117,6 +117,7 @@
 [181. Employees Earning More Than Their Managers](./leetcode/181-EmployeesEarningMoreThanTheirManagers.sql)   
 [182. Duplicate Emails](./leetcode/182-DuplicateEmails.sql)   
 [183. Customers Who Never Order](./leetcode/183-CustomersWhoNeverOrder.sql)   
+[184. Department Highest Salary](./leetcode/184-DepartmentHighestSalary.sql)   
 [511. Game Play Analysis I](./leetcode/511-GamePlayAnalysisI.sql)   
 [512. Game Play Analysis II](./leetcode/512-GamePlayAnalysisII.sql)   
 [534. Game Play Analysis III](./leetcode/534-GamePlayAnalysisIII.sql)   
