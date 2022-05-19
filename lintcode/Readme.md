@@ -263,7 +263,7 @@
 [2125 · Call the methods in the file main](./2125-CallTheMethodsInTheFileMain/solution.py)   
 [2126 · Import one of the files in a module folder](./2126-ImportOneOfTheFilesInAModuleFolder/main.py)   
 [2127 · Implementing reverse sorting of numbers in a list](./2127-ImplementingReverseSortingOfNumbersInAList/solution.py)   
-
+[2128 · Use of list built-in methods](./2128-UseOfListBuilt-InMethods/solution.py)   
 [2261 · Delete elements in the list](./2261-DeleteElementsInTheList.py)   
 
 ## Java
