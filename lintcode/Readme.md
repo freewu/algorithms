@@ -271,6 +271,8 @@
 [2142 · Replace the elements in a string](./2142-ReplaceTheElementsInAString/solution.py)  
 [2143 · Implementing a shopping cart program](./2143-ImplementingAShoppingCartProgram.py)    
 [2146 · Implement Decorator with Parameters](./2146-ImplementDecoratorWithParameters/solution.py)    
+[2178 · Iterators and Fibonacci series](./2178-IteratorsAndFibonacciSeries/solution.py)    
+
 [2261 · Delete elements in the list](./2261-DeleteElementsInTheList.py)   
 
 ## Java
