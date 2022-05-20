@@ -270,6 +270,7 @@
 [2140 · The number of the two numbers in the list whose sum is equal to n](./2140-TheNumberOfTheTwoNumbersInTheListWhoseSumIsEqualToN/solution.py)   
 [2142 · Replace the elements in a string](./2142-ReplaceTheElementsInAString/solution.py)  
 [2143 · Implementing a shopping cart program](./2143-ImplementingAShoppingCartProgram.py)    
+[2146 · Implement Decorator with Parameters](./2146-ImplementDecoratorWithParameters/solution.py)    
 [2261 · Delete elements in the list](./2261-DeleteElementsInTheList.py)   
 
 ## Java
