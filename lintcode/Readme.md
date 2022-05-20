@@ -274,6 +274,8 @@
 [2178 · Iterators and Fibonacci series](./2178-IteratorsAndFibonacciSeries/solution.py)    
 
 [2261 · Delete elements in the list](./2261-DeleteElementsInTheList.py)   
+[2960 · Define a function](./2960-DefineAFunction/solution.py)    
+
 
 ## Java
 [2088 · First Java Code: Print Hello World](./2088-PrintHelloWorld/Solution.java)   
