@@ -273,6 +273,7 @@
 [2146 · Implement Decorator with Parameters](./2146-ImplementDecoratorWithParameters/solution.py)    
 [2178 · Iterators and Fibonacci series](./2178-IteratorsAndFibonacciSeries/solution.py)    
 [2199 · Remove empty lines from files](./2199-RemoveEmptyLinesFromFiles/solution.py)    
+[2207 · Filter out all odd numbers](./2207-FilterOutAllOddNumbers/solution.py)    
 
 [2261 · Delete elements in the list](./2261-DeleteElementsInTheList.py)   
 [2960 · Define a function](./2960-DefineAFunction/solution.py)    
