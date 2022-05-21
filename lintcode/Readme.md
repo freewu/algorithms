@@ -277,6 +277,8 @@
 
 [2261 · Delete elements in the list](./2261-DeleteElementsInTheList.py)   
 [2960 · Define a function](./2960-DefineAFunction/solution.py)    
+[2324 · Output String In Reverse Order (Python version)](./2324-OutputStringInReverseOrder.py)   
+
 
 
 ## Java
