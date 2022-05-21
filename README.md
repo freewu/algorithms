@@ -121,6 +121,7 @@
 [183. Customers Who Never Order](./leetcode/183-CustomersWhoNeverOrder.sql)   
 [184. Department Highest Salary](./leetcode/184-DepartmentHighestSalary.sql)   
 [185. Department Top Three Salaries](./leetcode/185-DepartmentTopThreeSalaries.sql)   
+[196. Delete Duplicate Emails](./leetcode/196-DeleteDuplicateEmails.sql)   
 
 
 [511. Game Play Analysis I](./leetcode/511-GamePlayAnalysisI.sql)   
