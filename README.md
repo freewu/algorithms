@@ -123,8 +123,7 @@
 [185. Department Top Three Salaries](./leetcode/185-DepartmentTopThreeSalaries.sql)   
 [196. Delete Duplicate Emails](./leetcode/196-DeleteDuplicateEmails.sql)   
 [197. Rising Temperature](./leetcode/197-RisingTemperature.sql)   
-
-
+[262. Trips and Users](./leetcode/262-TripsAndUsers.sql)   
 [511. Game Play Analysis I](./leetcode/511-GamePlayAnalysisI.sql)   
 [512. Game Play Analysis II](./leetcode/512-GamePlayAnalysisII.sql)   
 [534. Game Play Analysis III](./leetcode/534-GamePlayAnalysisIII.sql)   
