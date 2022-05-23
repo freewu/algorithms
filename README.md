@@ -141,6 +141,7 @@
 [585. Investments in 2016](./leetcode/585-InvestmentsIn2016.sql)   
 [586. Customer Placing the Largest Number of Orders](./leetcode/586-CustomerPlacingtheLargestNumberofOrders.sql)   
 [595. Big Countries](./leetcode/595-BigCountries.sql)   
+[596. Classes More Than 5 Students](./leetcode/596-ClassesMoreThan5Students.sql)   
 
 [597. Friend Requests I: Overall Acceptance Rate](./leetcode/597-FriendRequestsI-OverallAcceptanceRate.sql)   
 [607. Sales Person](./leetcode/607-SalesPerson.sql)   
