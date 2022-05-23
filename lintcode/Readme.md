@@ -1,4 +1,5 @@
 ## Algorithms
+[8 · Rotate Character Array](./8-RotateCharacterArray.go)   
 [14 · First Position of Target](./14-FirstPositionOfTarget.go)   
 [56 · Two Sum](./56-TwoSum.go)   
 [60 · Search Insert Position](./60-SearchInsertPosition.go)   
