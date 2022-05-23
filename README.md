@@ -143,7 +143,7 @@
 [595. Big Countries](./leetcode/595-BigCountries.sql)   
 [596. Classes More Than 5 Students](./leetcode/596-ClassesMoreThan5Students.sql)   
 [597. Friend Requests I: Overall Acceptance Rate](./leetcode/597-FriendRequestsI-OverallAcceptanceRate.sql)   
-
+[601. Human Traffic of Stadium](./leetcode/601-HumanTrafficofStadium.sql)    
 
 [603. Consecutive Available Seats](./leetcode/603-ConsecutiveAvailableSeats.sql)   
 [607. Sales Person](./leetcode/607-SalesPerson.sql)   
