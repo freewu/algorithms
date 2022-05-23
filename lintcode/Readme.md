@@ -2,6 +2,7 @@
 [14 · First Position of Target](./14-FirstPositionOfTarget.go)   
 [56 · Two Sum](./56-TwoSum.go)   
 [60 · Search Insert Position](./60-SearchInsertPosition.go)   
+[82 · Single Number](./82-SingleNumber.go)   
 [147 · Narcissistic Number](./147-NarcissisticNumber.go)   
 [765 · Valid Triangle](./765-ValidTriangle.go)   
 [1082 · Employee Importance](./1082-EmployeeImportance.py)   
