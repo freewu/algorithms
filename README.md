@@ -78,6 +78,7 @@
 [219. Contains Duplicate II](./leetcode/219-ContainsDuplicateII.go)   
 [220. Contains Duplicate III](./leetcode/220-ContainsDuplicateIII.go)   
 [228. Summary Ranges](./leetcode/228-SummaryRanges.go)   
+[229. Majority Element II](./leetcode/229-MajorityElementII.go)   
 
 [498. Diagonal Traverse](./leetcode/498-DiagonalTraverse.go)    
 [500. Keyboard Row](./leetcode/500-KeyboardRow.go)    
