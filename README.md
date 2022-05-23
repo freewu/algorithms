@@ -142,8 +142,10 @@
 [586. Customer Placing the Largest Number of Orders](./leetcode/586-CustomerPlacingtheLargestNumberofOrders.sql)   
 [595. Big Countries](./leetcode/595-BigCountries.sql)   
 [596. Classes More Than 5 Students](./leetcode/596-ClassesMoreThan5Students.sql)   
-
 [597. Friend Requests I: Overall Acceptance Rate](./leetcode/597-FriendRequestsI-OverallAcceptanceRate.sql)   
+
+
+[603. Consecutive Available Seats](./leetcode/603-ConsecutiveAvailableSeats.sql)   
 [607. Sales Person](./leetcode/607-SalesPerson.sql)   
 [608. Tree Node](./leetcode/608-TreeNode.sql)   
 [1050. Actors and Directors Who Cooperated At Least Three Times](./leetcode/1050-ActorsandDirectorsWhoCooperatedAtLeastThreeTimes.sql)   
