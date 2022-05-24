@@ -144,7 +144,7 @@
 [596. Classes More Than 5 Students](./leetcode/596-ClassesMoreThan5Students.sql)   
 [597. Friend Requests I: Overall Acceptance Rate](./leetcode/597-FriendRequestsI-OverallAcceptanceRate.sql)   
 [601. Human Traffic of Stadium](./leetcode/601-HumanTrafficofStadium.sql)    
-
+[602. Friend Requests II: Who Has the Most Friends](./leetcode/602-FriendRequestsII-WhoHasTheMostFriends.sql)    
 [603. Consecutive Available Seats](./leetcode/603-ConsecutiveAvailableSeats.sql)   
 [607. Sales Person](./leetcode/607-SalesPerson.sql)   
 [608. Tree Node](./leetcode/608-TreeNode.sql)   
