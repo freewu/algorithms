@@ -148,6 +148,8 @@
 [603. Consecutive Available Seats](./leetcode/603-ConsecutiveAvailableSeats.sql)   
 [607. Sales Person](./leetcode/607-SalesPerson.sql)   
 [608. Tree Node](./leetcode/608-TreeNode.sql)   
+[610. Triangle Judgement](./leetcode/610-TriangleJudgement.sql)   
+
 [1050. Actors and Directors Who Cooperated At Least Three Times](./leetcode/1050-ActorsandDirectorsWhoCooperatedAtLeastThreeTimes.sql)   
 [1068. Product Sales Analysis I](./leetcode/1068-ProductSalesAnalysisI.sql)   
 [1069. Product Sales Analysis II](./leetcode/1069-ProductSalesAnalysisII.sql)   
@@ -171,7 +173,6 @@
 [1873. Calculate Special Bonus](./leetcode/1873-CalculateSpecialBonus.sql)   
 [1890. The Latest Login in 2020](./leetcode/1890-TheLatestLoginin2020.sql)   
 [1965. Employees With Missing Information](./leetcode/1965-EmployeesWithMissingInformation.sql)   
-
 
 # Shell
 
