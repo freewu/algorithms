@@ -7,6 +7,7 @@
 [82 · Single Number](./82-SingleNumber.go)   
 [147 · Narcissistic Number](./147-NarcissisticNumber.go)   
 [765 · Valid Triangle](./765-ValidTriangle.go)   
+[1053 · Largest Number At Least Twice of Others](./1053-LargestNumberAtLeastTwiceofOthers.go)   
 [1082 · Employee Importance](./1082-EmployeeImportance.py)   
 [1314 · Power of Two](./1314-PowerOfTwo.go)   
 
