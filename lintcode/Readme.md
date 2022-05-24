@@ -286,6 +286,7 @@
 [2261 · Delete elements in the list](./2261-DeleteElementsInTheList.py)   
 [2264 · Convert upper and lower case letters in a string](./2264-ConvertUpperAndLowerCaseLettersInAString.py)   
 [2273 · Sequential Output (Python version)](./2273-SequentialOutput.py)    
+[2276 · Modify and delete elements in the dictionary](./2276-ModifyAndDeleteElementsInTheDictionary.py)    
 [2960 · Define a function](./2960-DefineAFunction/solution.py)    
 [2324 · Output String In Reverse Order (Python version)](./2324-OutputStringInReverseOrder.py)   
 
