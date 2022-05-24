@@ -150,6 +150,7 @@
 [608. Tree Node](./leetcode/608-TreeNode.sql)   
 [610. Triangle Judgement](./leetcode/610-TriangleJudgement.sql)   
 
+[620. Not Boring Movies](./leetcode/620-NotBoringMovies.sql)   
 [1050. Actors and Directors Who Cooperated At Least Three Times](./leetcode/1050-ActorsandDirectorsWhoCooperatedAtLeastThreeTimes.sql)   
 [1068. Product Sales Analysis I](./leetcode/1068-ProductSalesAnalysisI.sql)   
 [1069. Product Sales Analysis II](./leetcode/1069-ProductSalesAnalysisII.sql)   
