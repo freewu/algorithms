@@ -151,7 +151,7 @@
 [607. Sales Person](./leetcode/607-SalesPerson.sql)   
 [608. Tree Node](./leetcode/608-TreeNode.sql)   
 [610. Triangle Judgement](./leetcode/610-TriangleJudgement.sql)   
-
+[613. Shortest Distance in a Line](./leetcode/613-ShortestDistanceInALine.sql)   
 [620. Not Boring Movies](./leetcode/620-NotBoringMovies.sql)   
 [1050. Actors and Directors Who Cooperated At Least Three Times](./leetcode/1050-ActorsandDirectorsWhoCooperatedAtLeastThreeTimes.sql)   
 [1068. Product Sales Analysis I](./leetcode/1068-ProductSalesAnalysisI.sql)   
