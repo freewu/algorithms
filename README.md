@@ -80,6 +80,8 @@
 [228. Summary Ranges](./leetcode/228-SummaryRanges.go)   
 [229. Majority Element II](./leetcode/229-MajorityElementII.go)   
 [239. Sliding Window Maximum](./leetcode/239-SlidingWindowMaximum.go)   
+[240. Search a 2D Matrix II](./leetcode/240-SearchA2DMatrixII.go)   
+
 [498. Diagonal Traverse](./leetcode/498-DiagonalTraverse.go)    
 [500. Keyboard Row](./leetcode/500-KeyboardRow.go)    
 
