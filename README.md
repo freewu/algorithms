@@ -155,6 +155,7 @@
 [613. Shortest Distance in a Line](./leetcode/613-ShortestDistanceInALine.sql)   
 [614. Second Degree Follower](./leetcode/614-SecondDegreeFollower.sql)   
 
+[619. Biggest Single Number](./leetcode/619-BiggestSingleNumber.sql)   
 [620. Not Boring Movies](./leetcode/620-NotBoringMovies.sql)   
 [1050. Actors and Directors Who Cooperated At Least Three Times](./leetcode/1050-ActorsandDirectorsWhoCooperatedAtLeastThreeTimes.sql)   
 [1068. Product Sales Analysis I](./leetcode/1068-ProductSalesAnalysisI.sql)   
