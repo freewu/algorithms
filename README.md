@@ -162,7 +162,7 @@
 [620. Not Boring Movies](./leetcode/620-NotBoringMovies.sql)   
 [626. Exchange Seats](./leetcode/626-ExchangeSeats.sql)   
 [627. Swap Salary](./leetcode/627-SwapSalary.sql)   
-
+[1045. Customers Who Bought All Products](./leetcode/1045-CustomersWhoBoughtAllProducts.sql)   
 [1050. Actors and Directors Who Cooperated At Least Three Times](./leetcode/1050-ActorsandDirectorsWhoCooperatedAtLeastThreeTimes.sql)   
 [1068. Product Sales Analysis I](./leetcode/1068-ProductSalesAnalysisI.sql)   
 [1069. Product Sales Analysis II](./leetcode/1069-ProductSalesAnalysisII.sql)   
