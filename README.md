@@ -156,6 +156,7 @@
 [612. Shortest Distance in a Plane](./leetcode/612-ShortestDistanceInAPlane.sql)   
 [613. Shortest Distance in a Line](./leetcode/613-ShortestDistanceInALine.sql)   
 [614. Second Degree Follower](./leetcode/614-SecondDegreeFollower.sql)   
+[615. Average Salary: Departments VS Company](./leetcode/615-AverageSalary-DepartmentsVSCompany.sql)   
 
 [619. Biggest Single Number](./leetcode/619-BiggestSingleNumber.sql)   
 [620. Not Boring Movies](./leetcode/620-NotBoringMovies.sql)   
