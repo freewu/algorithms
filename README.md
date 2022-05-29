@@ -169,6 +169,7 @@
 [1069. Product Sales Analysis II](./leetcode/1069-ProductSalesAnalysisII.sql)   
 [1070. Product Sales Analysis III](./leetcode/1070-ProductSalesAnalysisIII.sql)   
 [1075. Project Employees I](./leetcode/1075-ProjectEmployeesI.sql)   
+[1076. Project Employees II](./leetcode/1076-ProjectEmployeesII.sql)   
 
 [1084. Sales Analysis III](./leetcode/1084-SalesAnalysisIII.sql)   
 [1141. User Activity for the Past 30 Days I](./leetcode/1141-UserActivityforthePast30DaysI.sql)   
