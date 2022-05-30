@@ -173,7 +173,7 @@
 [1075. Project Employees I](./leetcode/1075-ProjectEmployeesI.sql)   
 [1076. Project Employees II](./leetcode/1076-ProjectEmployeesII.sql)   
 [1077. Project Employees III](./leetcode/1077-ProjectEmployeesIII.sql)   
-
+[1082. Sales Analysis I](./leetcode/1082-SalesAnalysisI.sql)   
 [1084. Sales Analysis III](./leetcode/1084-SalesAnalysisIII.sql)   
 [1141. User Activity for the Past 30 Days I](./leetcode/1141-UserActivityforthePast30DaysI.sql)   
 [1148. Article Views I](./leetcode/1148-ArticleViewsI.sql)   
