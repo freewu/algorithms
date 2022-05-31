@@ -178,6 +178,7 @@
 [1082. Sales Analysis I](./leetcode/1082-SalesAnalysisI.sql)   
 [1083. Sales Analysis II](./leetcode/1083-SalesAnalysisII.sql)   
 [1084. Sales Analysis III](./leetcode/1084-SalesAnalysisIII.sql)   
+[1097. Game Play Analysis V](./leetcode/1097-GamePlayAnalysisV.sql)   
 
 [1141. User Activity for the Past 30 Days I](./leetcode/1141-UserActivityforthePast30DaysI.sql)   
 [1148. Article Views I](./leetcode/1148-ArticleViewsI.sql)   
