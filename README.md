@@ -86,6 +86,8 @@
 [274. H-Index](./leetcode/274-H-Index.go)   
 [275. H-Index II](./leetcode/275-H-IndexII.go)   
 [283. Move Zeroes](./leetcode/283-MoveZeroes.go)   
+[284. Peeking Iterator](./leetcode/284-PeekingIterator.go)   
+
 
 [498. Diagonal Traverse](./leetcode/498-DiagonalTraverse.go)    
 [500. Keyboard Row](./leetcode/500-KeyboardRow.go)    
