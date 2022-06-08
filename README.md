@@ -88,6 +88,7 @@
 [283. Move Zeroes](./leetcode/283-MoveZeroes.go)   
 [284. Peeking Iterator](./leetcode/284-PeekingIterator.go)   
 [287. Find the Duplicate Number](./leetcode/287-FindTheDuplicateNumber.go)   
+[300. Longest Increasing Subsequence](./leetcode/300-LongestIncreasingSubsequence.go)
 
 [498. Diagonal Traverse](./leetcode/498-DiagonalTraverse.go)    
 [500. Keyboard Row](./leetcode/500-KeyboardRow.go)    
