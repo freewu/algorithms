@@ -37,7 +37,10 @@ Follow up: Can you come up with an algorithm that runs in O(n log(n)) time compl
 给定一个无序的整数数组，找到其中最长上升子序列的长度
 */
 
-import "sort"
+import (
+	"fmt"
+	"sort"
+)
 
 func max(a, b int) int {
 	if a > b {
@@ -67,8 +70,11 @@ func lengthOfLIS1(nums []int) int {
 	dp := []int{}
 	for _, num := range nums {
 		i := sort.SearchInts(dp, num)
+		fmt.Printf("i = %v %v\n", i, num)
 		if i == len(dp) {
+			fmt.Printf("append before %v %v\n", dp, num)
 			dp = append(dp, num)
+			fmt.Printf("append after %v %v\n", dp, num)
 		} else {
 			dp[i] = num
 		}
@@ -77,11 +83,11 @@ func lengthOfLIS1(nums []int) int {
 }
 
 func main() {
-	fmt.Printf("lengthOfLIS([]int{10, 9, 2, 5, 3, 7, 101, 18}) =%v\n", lengthOfLIS([]int{10, 9, 2, 5, 3, 7, 101, 18})) // 4 [2,3,7,101]
-	fmt.Printf("lengthOfLIS([]int{0,1,0,3,2,3}) = %v\n", lengthOfLIS([]int{0, 1, 0, 3, 2, 3}))                         // 4 [0,0,2,3]
-	fmt.Printf("lengthOfLIS([]int{7,7,7,7,7,7,7}) = %v\n", lengthOfLIS([]int{7, 7, 7, 7, 7, 7, 7}))                    // 1
+	fmt.Printf("lengthOfLIS([]int{10, 9, 2, 5, 3, 7, 101, 18}) = %v\n", lengthOfLIS([]int{10, 9, 2, 5, 3, 7, 101, 18})) // 4 [2,3,7,101]
+	fmt.Printf("lengthOfLIS([]int{0,1,0,3,2,3}) = %v\n", lengthOfLIS([]int{0, 1, 0, 3, 2, 3}))                          // 4 [0,0,2,3]
+	fmt.Printf("lengthOfLIS([]int{7,7,7,7,7,7,7}) = %v\n", lengthOfLIS([]int{7, 7, 7, 7, 7, 7, 7}))                     // 1
 
-	fmt.Printf("lengthOfLIS1([]int{10, 9, 2, 5, 3, 7, 101, 18}) =%v\n", lengthOfLIS1([]int{10, 9, 2, 5, 3, 7, 101, 18})) // 4 [2,3,7,101]
-	fmt.Printf("lengthOfLIS1([]int{0,1,0,3,2,3}) = %v\n", lengthOfLIS1([]int{0, 1, 0, 3, 2, 3}))                         // 4 [0,0,2,3]
-	fmt.Printf("lengthOfLIS1([]int{7,7,7,7,7,7,7}) = %v\n", lengthOfLIS1([]int{7, 7, 7, 7, 7, 7, 7}))                    // 1
+	fmt.Printf("lengthOfLIS1([]int{10, 9, 2, 5, 3, 7, 101, 18}) = %v\n", lengthOfLIS1([]int{10, 9, 2, 5, 3, 7, 101, 18})) // 4 [2,3,7,101]
+	fmt.Printf("lengthOfLIS1([]int{0,1,0,3,2,3}) = %v\n", lengthOfLIS1([]int{0, 1, 0, 3, 2, 3}))                          // 4 [0,0,2,3]
+	fmt.Printf("lengthOfLIS1([]int{7,7,7,7,7,7,7}) = %v\n", lengthOfLIS1([]int{7, 7, 7, 7, 7, 7, 7}))                     // 1
 }
