@@ -181,7 +181,8 @@
 [1083. Sales Analysis II](./leetcode/1083-SalesAnalysisII.sql)   
 [1084. Sales Analysis III](./leetcode/1084-SalesAnalysisIII.sql)   
 [1097. Game Play Analysis V](./leetcode/1097-GamePlayAnalysisV.sql)   
-[1098. Unpopular Books](./leetcode/1098-UnpopularBooks.sql)
+[1098. Unpopular Books](./leetcode/1098-UnpopularBooks.sql)   
+[1107. New Users Daily Count](./leetcode/1107-NewUsersDailyCount.sql)
 
 [1141. User Activity for the Past 30 Days I](./leetcode/1141-UserActivityforthePast30DaysI.sql)   
 [1148. Article Views I](./leetcode/1148-ArticleViewsI.sql)   
