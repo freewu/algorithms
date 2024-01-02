@@ -69,5 +69,6 @@ FROM
     Employee AS e
 WHERE
     p.employee_id = e.employee_id
+    AND e.experience_years IS NOT NULL -- 处理 experience_years 为 null 的情况
 GROUP BY
     p.project_id
