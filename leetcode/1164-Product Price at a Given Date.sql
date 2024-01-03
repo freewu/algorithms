@@ -78,3 +78,20 @@ LEFT JOIN
         ON d1.product_id = d2.product_id AND d1.change_date = d2.change_date  
     ) AS d -- 取每个产品在 2019-08-16 内最近的一个更新日期的价格
 ON p.product_id = d.product_id
+
+-- 简洁处理
+SELECT
+     distinct p1.product_id,
+     coalesce((
+         select 
+            p2.new_price
+        from
+            Products p2
+        where
+            p2.product_id=p1.product_id AND p2.change_date <= '2019-08-16'
+        order by
+            p2.change_date DESC
+        limit 1
+     ),10) as price
+from    
+    Products p1
