@@ -51,3 +51,19 @@
 -- The customer id 4 has a first order with delivery id 7 and it is immediate.
 -- Hence, half the customers have immediate first orders.
 
+-- Write your MySQL query statement below
+SELECT  
+    ROUND(
+        AVG(
+            order_date = customer_pref_delivery_date -- 即时订单的平均数
+        ) * 100, 
+        2
+    ) AS immediate_percentage
+FROM Delivery
+WHERE 
+    (customer_id, order_date) in (
+        SELECT 
+            customer_id, MIN(order_date) 
+        FROM Delivery
+        GROUP BY customer_id
+    ); -- 取用户ID,和首次订单时间
