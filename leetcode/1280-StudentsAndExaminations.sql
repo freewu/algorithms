@@ -1,6 +1,5 @@
 -- 1280. Students and Examinations
 -- Table: Students
-
 -- +---------------+---------+
 -- | Column Name   | Type    |
 -- +---------------+---------+
@@ -10,9 +9,7 @@
 -- student_id is the primary key (column with unique values) for this table.
 -- Each row of this table contains the ID and the name of one student in the school.
  
-
 -- Table: Subjects
-
 -- +--------------+---------+
 -- | Column Name  | Type    |
 -- +--------------+---------+
@@ -21,9 +18,7 @@
 -- subject_name is the primary key (column with unique values) for this table.
 -- Each row of this table contains the name of one subject in the school.
  
-
 -- Table: Examinations
-
 -- +--------------+---------+
 -- | Column Name  | Type    |
 -- +--------------+---------+
@@ -102,3 +97,36 @@
 -- Bob attended the Math exam 1 time, the Programming exam 1 time, and did not attend the Physics exam.
 -- Alex did not attend any exams.
 -- John attended the Math exam 1 time, the Physics exam 1 time, and the Programming exam 1 time.
+
+-- Write your MySQL query statement below
+SELECT 
+    s.student_id,
+    s.student_name,
+    s.subject_name,
+    IFNULL(e.attended_exams,0) AS attended_exams
+FROM
+    (
+        SELECT 
+            a.student_id,
+            a.student_name,
+            b.subject_name
+        FROM
+            Students AS a,
+            Subjects AS b
+    ) AS s -- 组合成一张 学生 & 每科的全表
+LEFT JOIN
+    (
+        SELECT 
+            student_id,
+            subject_name,
+            count(*) AS attended_exams 
+        FROM 
+            Examinations 
+        GROUP BY
+            student_id,subject_name
+    ) AS e -- 统计 学生的每科的考试次数 
+ON
+    s.student_id = e.student_id AND
+    s.subject_name = e.subject_name
+ORDER BY 
+    s.student_id ASC, s.subject_name ASC
