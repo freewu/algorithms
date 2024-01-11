@@ -20,3 +20,19 @@
 
 // arr 是一个有效的 JSON 数组
 // 0 <= arr.length <= 1000
+
+/**
+ * @return {null|boolean|number|string|Array|Object}
+ */
+Array.prototype.last = function() {
+    let len = this.length;
+    // 为空返回 -1
+    if(len == 0) return -1;
+    // 返回最后一下元素
+    return this[len - 1];
+};
+
+/**
+ * const arr = [1, 2, 3];
+ * arr.last(); // 3
+ */
