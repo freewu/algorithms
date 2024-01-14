@@ -90,7 +90,7 @@
 [287. Find the Duplicate Number](./leetcode/287-FindTheDuplicateNumber.go)   
 [300. Longest Increasing Subsequence](./leetcode/300-LongestIncreasingSubsequence.go)   
 [303. Range Sum Query - Immutable](./leetcode/303-RangeSumQuery-Immutable.go)   
-
+[304. Range Sum Query 2D - Immutable](./leetcode/304-RangeSumQuery2D-Immutable.go)   
 [498. Diagonal Traverse](./leetcode/498-DiagonalTraverse.go)    
 [500. Keyboard Row](./leetcode/500-KeyboardRow.go)    
 
@@ -183,7 +183,6 @@
 [1097. Game Play Analysis V](./leetcode/1097-GamePlayAnalysisV.sql)   
 [1098. Unpopular Books](./leetcode/1098-UnpopularBooks.sql)   
 [1107. New Users Daily Count](./leetcode/1107-NewUsersDailyCount.sql)
-
 [1141. User Activity for the Past 30 Days I](./leetcode/1141-UserActivityforthePast30DaysI.sql)   
 [1148. Article Views I](./leetcode/1148-ArticleViewsI.sql)   
 [1158. Market Analysis I](./leetcode/1158-MarketAnalysisI.sql)   

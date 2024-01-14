@@ -39,12 +39,12 @@ Example 3:
 
 	Input: s = "A", numRows = 1
 	Output: "A"
- */
+*/
 
 func convert(s string, numRows int) string {
 	matrix, down, up := make([][]byte, numRows, numRows), 0, numRows-2
 	for i := 0; i != len(s); {
-		fmt.Printf("matrix: %v\n",matrix)
+		fmt.Printf("matrix: %v\n", matrix)
 		if down != numRows {
 			matrix[down] = append(matrix[down], byte(s[i]))
 			down++
@@ -68,8 +68,8 @@ func convert(s string, numRows int) string {
 }
 
 func main() {
-	fmt.Printf("convert(\"PAYPALISHIRING\",3) = %v\n",convert("PAYPALISHIRING",3))
-	fmt.Printf("convert(\"PAYPALISHIRING\",4) = %v\n",convert("PAYPALISHIRING",4))
-	fmt.Printf("convert(\"PAYPALISHIRING\",5) = %v\n",convert("PAYPALISHIRING",5))
-	fmt.Printf("convert(\"A\",1) = %v\n",convert("A",1))
+	fmt.Printf("convert(\"PAYPALISHIRING\",3) = %v\n", convert("PAYPALISHIRING", 3))
+	fmt.Printf("convert(\"PAYPALISHIRING\",4) = %v\n", convert("PAYPALISHIRING", 4))
+	fmt.Printf("convert(\"PAYPALISHIRING\",5) = %v\n", convert("PAYPALISHIRING", 5))
+	fmt.Printf("convert(\"A\",1) = %v\n", convert("A", 1))
 }

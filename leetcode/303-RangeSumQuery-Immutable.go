@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 /**
 303. Range Sum Query - Immutable
 Given an integer array nums, handle multiple queries of the following type:
@@ -65,4 +67,11 @@ func (this *NumArray) SumRange(i int, j int) int {
 		return this.prefixSum[j] - this.prefixSum[i-1]
 	}
 	return this.prefixSum[j]
+}
+
+func main() {
+	numArray := Constructor([]int{-2, 0, 3, -5, 2, -1});
+	fmt.Println(numArray.SumRange(0, 2)); // return (-2) + 0 + 3 = 1
+	fmt.Println(numArray.SumRange(2, 5)); // return 3 + (-5) + 2 + (-1) = -1
+	fmt.Println(numArray.SumRange(0, 5)); // return (-2) + 0 + 3 + (-5) + 2 + (-1) = -3
 }
