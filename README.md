@@ -212,5 +212,6 @@
 # Concurrency
 
 # Javascript
-[1965. Employees With Missing Information](./leetcode/1965-EmployeesWithMissingInformation.sql)   
-
+[2619. 数组原型对象的最后一个元素](./leetcode/2619-Array-Prototype-Last.js)    
+[2620. 计数器](./leetcode/2620-counter.js)    
+[2667. 创建 Hello World 函数](./leetcode/2667-CreateHelloWorldFunction.js)    
