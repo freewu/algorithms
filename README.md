@@ -204,6 +204,13 @@
 [1965. Employees With Missing Information](./leetcode/1965-EmployeesWithMissingInformation.sql)   
 
 # Shell
+[192. Word Frequency](./leetcode/192-WordFrequency.sh)      
+[193. Valid Phone Numbers](./leetcode/193-ValidPhoneNumbers.sh)    
+[194. Transpose File)](./leetcode/194-TransposeFile.sh)   
+[195. Tenth Line](./leetcode/195-TenthLine.sh)   
 
 # Concurrency
+
+# Javascript
+[1965. Employees With Missing Information](./leetcode/1965-EmployeesWithMissingInformation.sql)   
 

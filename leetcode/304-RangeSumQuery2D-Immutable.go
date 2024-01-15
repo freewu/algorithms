@@ -43,14 +43,15 @@ import "fmt"
 // numMatrix.sumRegion(1, 2, 2, 4); // return 12 (i.e sum of the blue rectangle)
 
 // Constraints:
+// 		m == matrix.length
+// 		n == matrix[i].length
+// 		1 <= m, n <= 200
+// 		-104 <= matrix[i][j] <= 104
+// 		0 <= row1 <= row2 < m
+// 		0 <= col1 <= col2 < n
+// 		At most 104 calls will be made to sumRegion.
 
-// 	m == matrix.length
-// 	n == matrix[i].length
-// 	1 <= m, n <= 200
-// 	-104 <= matrix[i][j] <= 104
-// 	0 <= row1 <= row2 < m
-// 	0 <= col1 <= col2 < n
-// 	At most 104 calls will be made to sumRegion.
+// f(i, j) = f(i-1, j) + f(i, j-1) - f(i-1, j-1) + matrix[i][j]
 
 type NumMatrix struct {
 	cumsum [][]int
