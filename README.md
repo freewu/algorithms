@@ -210,6 +210,8 @@
 [195. Tenth Line](./leetcode/195-TenthLine.sh)   
 
 # Concurrency
+[1114. Print in Order](./leetcode/1114-PrintInOrder.java)   
+
 
 # Javascript
 [2619. 数组原型对象的最后一个元素](./leetcode/2619-Array-Prototype-Last.js)    
