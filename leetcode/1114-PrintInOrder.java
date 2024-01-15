@@ -1,4 +1,4 @@
-package com.leetcode;
+package leetcode;
 
 // 1114. Print in Order
 // 并发问题
