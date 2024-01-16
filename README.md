@@ -91,6 +91,7 @@
 [300. Longest Increasing Subsequence](./leetcode/300-LongestIncreasingSubsequence.go)   
 [303. Range Sum Query - Immutable](./leetcode/303-RangeSumQuery-Immutable.go)   
 [304. Range Sum Query 2D - Immutable](./leetcode/304-RangeSumQuery2D-Immutable.go)   
+[307. Range Sum Query - Mutable](./leetcode/307-RangeSumQuery-Mutable.go)   
 [498. Diagonal Traverse](./leetcode/498-DiagonalTraverse.go)    
 [500. Keyboard Row](./leetcode/500-KeyboardRow.go)    
 
@@ -124,6 +125,10 @@
 
 # Linked List
 [82. Remove Duplicates from Sorted List II](./leetcode/82-RemoveDuplicatesFromSortedListII.go)   
+
+# Segment_Tree
+[307. Range Sum Query - Mutable](./leetcode/307-RangeSumQuery-Mutable.go)   
+
 
 # Database
 [175. Combine Two Tables](./leetcode/175-CombineTwoTables.sql)   
