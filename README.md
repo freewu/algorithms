@@ -120,6 +120,7 @@
 [93. Restore IP Addresses](./leetcode/93-RestoreIPAddresses.go)    
 [97. Interleaving String](./leetcode/97-InterleavingString.go)    
 [115. Distinct Subsequences](./leetcode/115-DistinctSubsequences.go)    
+[125. Valid Palindrome](./leetcode/125-ValidPalindrome.go)    
 
 # Two Pointers
 [11. Container With Most Water](./leetcode/11-ContainerWithMostWater.go)   
