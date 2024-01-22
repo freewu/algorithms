@@ -97,6 +97,7 @@
 [307. Range Sum Query - Mutable](./leetcode/307-RangeSumQuery-Mutable.go)   
 [498. Diagonal Traverse](./leetcode/498-DiagonalTraverse.go)    
 [500. Keyboard Row](./leetcode/500-KeyboardRow.go)    
+[645. Set Mismatch](./leetcode/645-SetMismatch.go)    
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
