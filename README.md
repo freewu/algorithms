@@ -1,6 +1,105 @@
 # Leetcode Top 100
+[1. Two Sum](./leetcode/1-TwoSum.go)    
+[2. Add Two Numbers](./leetcode/2-AddTwoNumbers.go)    
+[3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
+[4. Median of Two Sorted Arrays](./leetcode/4-MedianofTwoSortedArrays.go)   
+[5. Longest Palindromic Substring](./leetcode/5-LongestPalindromicSubstring.go)    
+[10. Regular Expression Matching]   
+[11. Container With Most Water](./leetcode/11-ContainerWithMostWater.go)   
+[15. 3Sum](./leetcode/15-3Sum.go)    
+[17. Letter Combinations of a Phone Number](./leetcode/17-LetterCombinationsofaPhoneNumber.go)    
+[19. Remove Nth Node From End of List]   
+[20. Valid Parentheses](./leetcode/20-ValidParentheses.go)    
+[21. Merge Two Sorted Lists](./leetcode/21-MergeTwoSortedLists.go)    
+[22. Generate Parentheses](./leetcode/22-GenerateParentheses.go)    
+[23. Merge k Sorted Lists]   
+[31. Next Permutation](./leetcode/31-NextPermutation.go)    
+[32. Longest Valid Parentheses](./leetcode/32-LongestValidParentheses.go)    
+[33. Search in Rotated Sorted Array](./leetcode/33-SearchinRotatedSortedArray.go)    
+[34. Find First and Last Position of Element in Sorted Array](./leetcode/34-FindFirstandLastPositionofElementinSortedArray.go)    
+[39. Combination Sum](./leetcode/39-CombinationSum.go)    
+[42. Trapping Rain Water](./leetcode/42-TrappingRainWater.go)    
+[46. Permutations](./leetcode/46-Permutations.go)    
+[48. Rotate Image](./leetcode/48-RotateImage.go)    
+[49. Group Anagrams](./leetcode/49-GroupAnagrams.go)    
+[53. Maximum Subarray](./leetcode/53-MaximumSubarray.go)    
+[55. Jump Game](./leetcode/55-JumpGame.go)    
+[56. Merge Intervals](./leetcode/56-MergeIntervals.go)    
+[62. Unique Paths]   
+[64. Minimum Path Sum](./leetcode/64-MinimumPathSum.go)    
+[70. Climbing Stairs]   
+[72. Edit Distance]   
+[75. Sort Colors](./leetcode/75-SortColors.go)    
+[76. Minimum Window Substring](./leetcode/76-MinimumWindowSubstring.go)    
+[78. Subsets](./leetcode/78-Subsets.go)    
+[79. Word Search](./leetcode/79-WordSearch.go)    
+[84. Largest Rectangle in Histogram](./leetcode/84-LargestRectangleinHistogram.go)    
+[85. Maximal Rectangle]   
+[94. Binary Tree Inorder Traversal]   
+[96. Unique Binary Search Trees]    
+[98. Validate Binary Search Tree]   
+[101. Symmetric Tree]   
+[102. Binary Tree Level Order Traversal]   
+[104. Maximum Depth of Binary Tree]   
+[105. Construct Binary Tree from Preorder and Inorder Traversal](./leetcode/105-ConstructBinaryTreefromPreorderandInorderTraversal.go)   
+[114. Flatten Binary Tree to Linked List]    
+[121. Best Time to Buy and Sell Stock](./leetcode/121-BestTimetoBuyandSellStock.go)   
+[124. Binary Tree Maximum Path Sum]   
+[128. Longest Consecutive Sequence](./leetcode/128-LongestConsecutiveSequence.go)   
+[136. Single Number](./leetcode/136-SingleNumber.go)   
+[139. Word Break]   
+[141. Linked List Cycle]    
+[142. Linked List Cycle II]    
+[146. LRU Cache]    
+[148. Sort List]    
+[152. Maximum Product Subarray](./leetcode/152-MaximumProductSubarray.go)   
+[155. Min Stack]    
+[160. Intersection of Two Linked Lists]    
+[169. Majority Element](./leetcode/169-MajorityElement.go)   
+[198. House Robber](./leetcode/198-HouseRobber.go)   
+[200. Number of Islands](./leetcode/200-NumberofIsLands.go)   
+[206. Reverse Linked List](./leetcode/206-ReverseLinkedList.go)    
+[207. Course Schedule]    
+[208. Implement Trie (Prefix Tree)]    
+[215. Kth Largest Element in an Array](./leetcode/215-KthLargestElementInAnArray.go)   
+[221. Maximal Square]   
+[226. Invert Binary Tree]   
+[234. Palindrome Linked List]   
+[236. Lowest Common Ancestor of a Binary Tree]   
+[238. Product of Array Except Self]   
+[239. Sliding Window Maximum]   
+[240. Search a 2D Matrix II](./leetcode/240-SearchA2DMatrixII.go)   
+[253. Meeting Rooms II]   
+[279. Perfect Squares]    
+[283. Move Zeroes]   
+[297. Serialize and Deserialize Binary Tree]   
+[300. Longest Increasing Subsequence]   
+[301. Remove Invalid Parentheses]   
+[309. Best Time to Buy and Sell Stock with Cooldown]   
+[312. Burst Balloons]   
+[322. Coin Change]   
+[337. House Robber III]   
+[338. Counting Bits]   
+[347. Top K Frequent Elements]   
+[394. Decode String]   
+[399. Evaluate Division]   
+[406. Queue Reconstruction by Height]   
+[416. Partition Equal Subset Sum]   
+[437. Path Sum III]   
+[438. Find All Anagrams in a String]   
+[448. Find All Numbers Disappeared in an Array]   
+[461. Hamming Distance]   
+[494. Target Sum]   
+[538. Convert BST to Greater Tree]   
+[543. Diameter of Binary Tree]   
+[560. Subarray Sum Equals K]   
+[581. Shortest Unsorted Continuous Subarray]   
+[617. Merge Two Binary Trees]   
+[621. Task Scheduler]   
+[647. Palindromic Substrings]   
+[739. Daily Temperatures]   
 
-
+ 
 # Array
 [1. Two Sum](./leetcode/1-TwoSum.go)    
 [4. Median of Two Sorted Arrays](./leetcode/4-MedianofTwoSortedArrays.go)   
@@ -137,7 +236,11 @@
 [11. Container With Most Water](./leetcode/11-ContainerWithMostWater.go)   
 
 # Linked List
+[2. Add Two Numbers](./leetcode/2-AddTwoNumbers.go)    
+[21. Merge Two Sorted Lists](./leetcode/21-MergeTwoSortedLists.go)    
 [82. Remove Duplicates from Sorted List II](./leetcode/82-RemoveDuplicatesFromSortedListII.go)   
+[206. Reverse Linked List](./leetcode/206-ReverseLinkedList.go)    
+
 
 # Segment_Tree
 [307. Range Sum Query - Mutable](./leetcode/307-RangeSumQuery-Mutable.go)   
