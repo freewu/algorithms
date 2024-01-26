@@ -235,7 +235,8 @@
 [1143. Longest Common Subsequence](./leetcode/1143-LongestCommonSubsequence.go)    
 [1239. Maximum Length of a Concatenated String with Unique Characters](./leetcode/1239-MaximumLengthOfAConcatenatedStringWithUniqueCharacters.go)    
 
-
+# Dynamic Programming
+[576. Out of Boundary Paths](./leetcode/576-OutOfBoundaryPaths.go)   
 
 # Two Pointers
 [11. Container With Most Water](./leetcode/11-ContainerWithMostWater.go)   
