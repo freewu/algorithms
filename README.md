@@ -345,6 +345,8 @@
 [1115. Print FooBar Alternately](./leetcode/1115-PrintFooBarAlternately.java)   
 [1116. Print Zero Even Odd](./leetcode/1116-PrintZeroEvenOdd.java)   
 [1117. Building H2O](./leetcode/1117-BuildingH2O.java)   
+[1195. Fizz Buzz Multithreaded](./leetcode/1195-FizzBuzzMultithreaded.java)   
+
 
 # Javascript
 [2619. 数组原型对象的最后一个元素](./leetcode/2619-Array-Prototype-Last.js)    
