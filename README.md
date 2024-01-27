@@ -237,6 +237,7 @@
 
 # Dynamic Programming
 [576. Out of Boundary Paths](./leetcode/576-OutOfBoundaryPaths.go)   
+[629. K Inverse Pairs Array](./leetcode/629-K-InversePairsArray.go)   
 
 # Two Pointers
 [11. Container With Most Water](./leetcode/11-ContainerWithMostWater.go)   
