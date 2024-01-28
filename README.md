@@ -255,6 +255,9 @@
 # Segment_Tree
 [307. Range Sum Query - Mutable](./leetcode/307-RangeSumQuery-Mutable.go)   
 
+# Math
+[2. Add Two Numbers](./leetcode/2-AddTwoNumbers.go)    
+[365. Water and Jug Problem](./leetcode/365-WaterAndJugProblem.go)    
 
 # Database
 [175. Combine Two Tables](./leetcode/175-CombineTwoTables.sql)   
