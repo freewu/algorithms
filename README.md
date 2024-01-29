@@ -369,7 +369,7 @@
 # Pandas
 [2877. Create a DataFrame from List](./leetcode/2877-CreateADataFrameFromList.py)   
 [2878. Get the Size of a DataFrame](./leetcode/2878-GetTheSizeOfADataFrame.py)   
-
+[2879. Display the First Three Rows](./leetcode/2879-DisplayTheFirstThreeRows.py)   
 
 
 # LCR
