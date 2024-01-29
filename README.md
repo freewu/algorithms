@@ -259,6 +259,9 @@
 [2. Add Two Numbers](./leetcode/2-AddTwoNumbers.go)    
 [365. Water and Jug Problem](./leetcode/365-WaterAndJugProblem.go)    
 
+# Stack
+[232. Implement Queue using Stacks](./leetcode/232-ImplementQueueUsingStacks.go)   
+
 # Database
 [175. Combine Two Tables](./leetcode/175-CombineTwoTables.sql)   
 [176. Second Highest Salary](./leetcode/176-SecondHighestSalary.sql)   

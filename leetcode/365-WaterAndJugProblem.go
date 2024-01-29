@@ -49,7 +49,6 @@ import "fmt"
 // 		此可知z一定是gcd的整数倍
 
 func canMeasureWater(jug1Capacity int, jug2Capacity int, targetCapacity int) bool {
-
         if jug1Capacity > jug2Capacity {
 			jug1Capacity, jug2Capacity = jug2Capacity, jug1Capacity
 		}
