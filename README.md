@@ -375,6 +375,7 @@
 [2882. Drop Duplicate Rows](./leetcode/2882-DropDuplicateRows.py)   
 [2883. Drop Missing Data](./leetcode/2883-DropMissingData.py)   
 [2884. Modify Columns](./leetcode/2884-ModifyColumns.py)   
+[2885. Rename Columns](./leetcode/2885-RenameColumns.py)   
 
 
 # LCR
