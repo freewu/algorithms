@@ -234,6 +234,7 @@
 [168. Excel Sheet Column Title](./leetcode/168-ExcelSheetColumnTitle.go)    
 [171. Excel Sheet Column Number](./leetcode/171-ExcelSheetColumnNumber.go)    
 [179. Largest Number](./leetcode/179-LargestNumber.go)    
+[514. Freedom Trail](./leetcode/514-FreedomTrail.go)    
 [1143. Longest Common Subsequence](./leetcode/1143-LongestCommonSubsequence.go)    
 [1239. Maximum Length of a Concatenated String with Unique Characters](./leetcode/1239-MaximumLengthOfAConcatenatedStringWithUniqueCharacters.go)    
 
