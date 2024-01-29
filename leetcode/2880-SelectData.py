@@ -37,3 +37,12 @@ def selectData(students: pd.DataFrame) -> pd.DataFrame:
     s = students[students["student_id"] == 101]
     # 指定列
     return s[["name","age"]]
+
+if __name__ == "__main__":
+    l = [
+        [101, 1, 15],
+        [102, 2, 11],
+        [103, 3, 11],
+        [104, 4, 20]
+    ]
+    print(selectData(pd.DataFrame(l,columns=["student_id","name","age"])))
