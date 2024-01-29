@@ -367,6 +367,8 @@
 
 
 # Pandas
+[2877. Create a DataFrame from List](./leetcode/2877-CreateADataFrameFromList.py)   
+
 
 
 # LCR
