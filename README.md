@@ -372,6 +372,7 @@
 [2879. Display the First Three Rows](./leetcode/2879-DisplayTheFirstThreeRows.py)   
 [2880. Select Data](./leetcode/2880-SelectData.py)   
 [2881. Create a New Column](./leetcode/2881-CreateANewColumn.py)   
+[2882. Drop Duplicate Rows](./leetcode/2882-DropDuplicateRows.py)   
 
 
 # LCR
