@@ -380,6 +380,7 @@
 [2887. Fill Missing Data](./leetcode/2887-FillMissingData.py)   
 [2888. Reshape Data: Concatenate](./leetcode/2888-ReshapeDataConcatenate.py)   
 [2889. Reshape Data: Pivot](./leetcode/2889-ReshapeDataPivot.py)   
+[2890. Reshape Data: Melt](./leetcode/2890-ReshapeDataMelt.py)   
 
 
 # LCR
