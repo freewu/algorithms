@@ -379,6 +379,7 @@
 [2886. Change Data Type](./leetcode/2886-ChangeDataType.py)   
 [2887. Fill Missing Data](./leetcode/2887-FillMissingData.py)   
 [2888. Reshape Data: Concatenate](./leetcode/2888-ReshapeDataConcatenate.py)   
+[2889. Reshape Data: Pivot](./leetcode/2889-ReshapeDataPivot.py)   
 
 
 # LCR
