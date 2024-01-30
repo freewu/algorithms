@@ -381,6 +381,7 @@
 [2888. Reshape Data: Concatenate](./leetcode/2888-ReshapeDataConcatenate.py)   
 [2889. Reshape Data: Pivot](./leetcode/2889-ReshapeDataPivot.py)   
 [2890. Reshape Data: Melt](./leetcode/2890-ReshapeDataMelt.py)   
+[2891. Method Chaining](./leetcode/2891-MethodChaining.py)   
 
 
 # LCR
