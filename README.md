@@ -356,7 +356,7 @@
 [1116. Print Zero Even Odd](./leetcode/1116-PrintZeroEvenOdd.java)   
 [1117. Building H2O](./leetcode/1117-BuildingH2O.java)   
 [1195. Fizz Buzz Multithreaded](./leetcode/1195-FizzBuzzMultithreaded.java)   
-
+[1226. The Dining Philosophers](./leetcode/1226-TheDiningPhilosophers.java)   
 
 # Javascript
 [2618. 检查是否是类的对象实例](./leetcode/2618-CheckIfObjectInstanceOfClass.js)   
