@@ -199,7 +199,7 @@
 [500. Keyboard Row](./leetcode/500-KeyboardRow.go)    
 [645. Set Mismatch](./leetcode/645-SetMismatch.go)    
 [1074. Number of Submatrices That Sum to Target](./leetcode/1074-NumberOfSubmatricesThatSumToTarget.go)    
-
+[2808. Minimum Seconds to Equalize a Circular Array](./leetcode/2808-MinimumSecondsToEqualizeACircularArray.go)    
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
