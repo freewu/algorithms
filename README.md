@@ -377,5 +377,8 @@
 [2884. Modify Columns](./leetcode/2884-ModifyColumns.py)   
 [2885. Rename Columns](./leetcode/2885-RenameColumns.py)   
 [2886. Change Data Type](./leetcode/2886-ChangeDataType.py)   
+[2887. Fill Missing Data](./leetcode/2887-FillMissingData.py)   
+[2888. Reshape Data: Concatenate](./leetcode/2888-ReshapeDataConcatenate.py)   
+
 
 # LCR
