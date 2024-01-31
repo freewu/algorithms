@@ -200,6 +200,7 @@
 [645. Set Mismatch](./leetcode/645-SetMismatch.go)    
 [739. Daily Temperatures](./leetcode/739-DailyTemperatures.go)    
 [1074. Number of Submatrices That Sum to Target](./leetcode/1074-NumberOfSubmatricesThatSumToTarget.go)    
+[2670. Find the Distinct Difference Array](./leetcode/2670-FindTheDistinctDifferenceArray.go)    
 [2808. Minimum Seconds to Equalize a Circular Array](./leetcode/2808-MinimumSecondsToEqualizeACircularArray.go)    
 
 # String
