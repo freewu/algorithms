@@ -255,6 +255,10 @@
 [82. Remove Duplicates from Sorted List II](./leetcode/82-RemoveDuplicatesFromSortedListII.go)   
 [206. Reverse Linked List](./leetcode/206-ReverseLinkedList.go)    
 
+# Enumeration
+[204. Count Primes](./leetcode/204-CountPrimes.go)   
+[1291. Sequential Digits](./leetcode/1291-SequentialDigits.go)   
+
 
 # Segment_Tree
 [307. Range Sum Query - Mutable](./leetcode/307-RangeSumQuery-Mutable.go)   
@@ -386,5 +390,8 @@
 [2890. Reshape Data: Melt](./leetcode/2890-ReshapeDataMelt.py)   
 [2891. Method Chaining](./leetcode/2891-MethodChaining.py)   
 
-
 # LCR
+
+
+# LCP
+[LCP 24. 数字游戏](./leetcode/LCP24-NumberGame.go)   
