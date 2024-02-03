@@ -199,6 +199,7 @@
 [500. Keyboard Row](./leetcode/500-KeyboardRow.go)    
 [645. Set Mismatch](./leetcode/645-SetMismatch.go)    
 [739. Daily Temperatures](./leetcode/739-DailyTemperatures.go)    
+[1043. Partition Array for Maximum Sum](./leetcode/1043-PartitionArrayForMaximumSum.go)    
 [1074. Number of Submatrices That Sum to Target](./leetcode/1074-NumberOfSubmatricesThatSumToTarget.go)    
 [1686. Stone Game VI](./leetcode/1686-StoneGameVI.go)    
 [2670. Find the Distinct Difference Array](./leetcode/2670-FindTheDistinctDifferenceArray.go)    
