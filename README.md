@@ -378,6 +378,7 @@
 [2623. Memoize](./leetcode/2623-Memoize.js)    
 [2624. Snail Traversal](./leetcode/2624-SnailTraversal.js)    
 [2625. Flatten Deeply Nested Array](./leetcode/2625-FlattenDeeplyNestedArray.js)    
+[2626. Array Reduce Transformation](./leetcode/2626-ArrayReduceTransformation.js)    
 [2667. Create Hello World Function](./leetcode/2667-CreateHelloWorldFunction.js)    
 
 # Pandas
