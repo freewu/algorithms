@@ -381,6 +381,7 @@
 [2626. Array Reduce Transformation](./leetcode/2626-ArrayReduceTransformation.js)   
 [2627. Debounce](./leetcode/2627-Debounce.js)    
 [2629. Function Composition](./leetcode/2629-FunctionComposition.js)    
+[2630. Memoize II](./leetcode/2630-MemoizeII.js)   
 [2667. Create Hello World Function](./leetcode/2667-CreateHelloWorldFunction.js)    
 
 # Pandas
