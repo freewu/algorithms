@@ -377,7 +377,8 @@
 [2622. Cache With Time Limit](./leetcode/2622-CacheWithTimeLimit.js)    
 [2623. Memoize](./leetcode/2623-Memoize.js)    
 [2624. Snail Traversal](./leetcode/2624-SnailTraversal.js)    
-[2667. 创建 Hello World 函数](./leetcode/2667-CreateHelloWorldFunction.js)    
+[2625. Flatten Deeply Nested Array](./leetcode/2625-FlattenDeeplyNestedArray.js)    
+[2667. Create Hello World Function](./leetcode/2667-CreateHelloWorldFunction.js)    
 
 # Pandas
 [2877. Create a DataFrame from List](./leetcode/2877-CreateADataFrameFromList.py)   
