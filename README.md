@@ -370,14 +370,14 @@
 [1226. The Dining Philosophers](./leetcode/1226-TheDiningPhilosophers.java)   
 
 # Javascript
-[2618. 检查是否是类的对象实例](./leetcode/2618-CheckIfObjectInstanceOfClass.js)   
-[2619. 数组原型对象的最后一个元素](./leetcode/2619-Array-Prototype-Last.js)    
-[2620. 计数器](./leetcode/2620-counter.js)    
+[2618. Check if Object Instance of Class](./leetcode/2618-CheckIfObjectInstanceOfClass.js)   
+[2619. Array Prototype Last](./leetcode/2619-Array-Prototype-Last.js)    
+[2620. Counter](./leetcode/2620-counter.js)    
 [2621. Sleep](./leetcode/2621-Sleep.js)    
 [2622. Cache With Time Limit](./leetcode/2622-CacheWithTimeLimit.js)    
 [2623. Memoize](./leetcode/2623-Memoize.js)    
+[2624. Snail Traversal](./leetcode/2624-SnailTraversal.js)    
 [2667. 创建 Hello World 函数](./leetcode/2667-CreateHelloWorldFunction.js)    
-2623. Memoize
 
 # Pandas
 [2877. Create a DataFrame from List](./leetcode/2877-CreateADataFrameFromList.py)   
