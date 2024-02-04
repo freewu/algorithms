@@ -268,6 +268,7 @@
 
 # Math
 [2. Add Two Numbers](./leetcode/2-AddTwoNumbers.go)    
+[292. Nim Game](./leetcode/292-NimGame.go)    
 [365. Water and Jug Problem](./leetcode/365-WaterAndJugProblem.go)    
 
 # Stack
