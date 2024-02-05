@@ -203,6 +203,7 @@
 [1074. Number of Submatrices That Sum to Target](./leetcode/1074-NumberOfSubmatricesThatSumToTarget.go)    
 [1686. Stone Game VI](./leetcode/1686-StoneGameVI.go)    
 [1690. Stone Game VII](./leetcode/1690-StoneGameVII.go)    
+[1696. Jump Game VI](./leetcode/1696-JumpGameVI.go)    
 [2670. Find the Distinct Difference Array](./leetcode/2670-FindTheDistinctDifferenceArray.go)    
 [2808. Minimum Seconds to Equalize a Circular Array](./leetcode/2808-MinimumSecondsToEqualizeACircularArray.go)    
 [2966. Divide Array Into Arrays With Max Difference](./leetcode/2966-DivideArrayIntoArraysWithMaxDifference.go)    
