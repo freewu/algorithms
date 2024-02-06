@@ -388,6 +388,7 @@
 [2634. Filter Elements from Array](./leetcode/2634-FilterElementsFromArray.js)   
 [2635. Apply Transform Over Each Element in Array](./leetcode/2635-ApplyTransformOverEachElementInArray.js)   
 [2667. Create Hello World Function](./leetcode/2667-CreateHelloWorldFunction.js)    
+[2677. Chunk Array](./leetcode/2677-ChunkArray.js)    
 
 # Pandas
 [2877. Create a DataFrame from List](./leetcode/2877-CreateADataFrameFromList.py)   
