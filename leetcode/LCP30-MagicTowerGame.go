@@ -49,21 +49,21 @@ func magicTower(nums []int) int {
 	}
 
 	room := &minHeap{} // 当前扣血房间
-	now := 1  // 当前血量
+	hp := 1  // 当前血量
 	ans := 0  // 要调整的步数
 	for i := 0; i < len(nums); i = i + 1 {
 		if nums[i] >= 0 { // 加血房间或不影响血量的房间
-			now = now + nums[i]
+			hp = hp + nums[i]
 		} else { // 扣血房间
-			now = now + nums[i]
+			hp = hp + nums[i]
 			heap.Push(room, nums[i])
 			// 如果当前血量不是正值，则需要将之前扣血最多的房间移动到末尾（贪心）
-			for now <= 0 && room.Len() > 0 {
-				now = now -  heap.Pop(room).(int)
+			for hp <= 0 && room.Len() > 0 {
+				hp = hp - heap.Pop(room).(int) // 反悔处理
 				ans += 1
 			}
 			// 如果当前血量不是正值，且已经没有可以移动的房间，则说明无法通过
-			if now <= 0 &&  room.Len() > 0 {
+			if hp <= 0 &&  room.Len() > 0 {
 				return -1
 			}
 		}
