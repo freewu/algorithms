@@ -72,8 +72,8 @@ func groupAnagrams(strs []string) [][]string {
 	return res
 }
 
-// best solution 这边把字符串生成  hash 值
-func groupAnagramsBest(strs []string) [][]string {
+// 这边把字符串生成  hash 值
+func groupAnagrams1(strs []string) [][]string {
 	m := make(map[int][]string)
 	for _, s := range strs {
 		h := hash(s)
@@ -102,12 +102,43 @@ func hash(s string) int {
 	return result
 }
 
+//  best solution 
+func groupAnagrams2(strs []string) [][]string {
+    // method 1: HashMap 对strs 利的元素在bytes 排序后 就相同了，作为key, values 是个原始切片
+    // method 2: HashMap 用计数作为key, 将计数转化为 [26]int 数组，代表 strs 中每个元素 有几个26字母
+    // METHOD2:
+    hmap := make(map[[26]int][]string)
+
+    for _, str := range strs {
+        // key 表示str 的字符最多26个，每个字符有多少个
+        key := [26]int{}
+        // 计数
+        for _, ch := range str {
+            // ch - 'a'代表字符距离小写字母的距离, b 的话是1
+            key[ch - 'a'] ++
+        }
+        hmap[key] = append(hmap[key], str)
+
+		fmt.Println("key: ",key)
+		fmt.Println("hmap[key]: ",hmap[key])
+    }
+    result := make([][]string, 0, len(hmap))
+    for _, v := range hmap {
+        result = append(result, v)
+    }   
+    return result
+}
+
 func main() {
 	fmt.Printf("groupAnagrams([]string{\"eat\",\"tea\",\"tan\",\"ate\",\"nat\",\"bat\"}) = %v\n",groupAnagrams([]string{"eat","tea","tan","ate","nat","bat"})) //  [["bat"],["nat","tan"],["ate","eat","tea"]]
 	fmt.Printf("groupAnagrams([]string{\"\"}) = %v\n",groupAnagrams([]string{""})) // [[""]]
 	fmt.Printf("groupAnagrams([]string{\"a\"}) = %v\n",groupAnagrams([]string{"a"})) // [["a"]]
 
-	fmt.Printf("groupAnagramsBest([]string{\"eat\",\"tea\",\"tan\",\"ate\",\"nat\",\"bat\"}) = %v\n",groupAnagramsBest([]string{"eat","tea","tan","ate","nat","bat"})) //  [["bat"],["nat","tan"],["ate","eat","tea"]]
-	fmt.Printf("groupAnagramsBest([]string{\"\"}) = %v\n",groupAnagramsBest([]string{""})) // [[""]]
-	fmt.Printf("groupAnagramsBest([]string{\"a\"}) = %v\n",groupAnagramsBest([]string{"a"})) // [["a"]]
+	fmt.Printf("groupAnagrams1([]string{\"eat\",\"tea\",\"tan\",\"ate\",\"nat\",\"bat\"}) = %v\n",groupAnagrams1([]string{"eat","tea","tan","ate","nat","bat"})) //  [["bat"],["nat","tan"],["ate","eat","tea"]]
+	fmt.Printf("groupAnagrams1([]string{\"\"}) = %v\n",groupAnagrams1([]string{""})) // [[""]]
+	fmt.Printf("groupAnagrams1([]string{\"a\"}) = %v\n",groupAnagrams1([]string{"a"})) // [["a"]]
+
+	fmt.Printf("groupAnagrams2([]string{\"eat\",\"tea\",\"tan\",\"ate\",\"nat\",\"bat\"}) = %v\n",groupAnagrams2([]string{"eat","tea","tan","ate","nat","bat"})) //  [["bat"],["nat","tan"],["ate","eat","tea"]]
+	fmt.Printf("groupAnagrams2([]string{\"\"}) = %v\n",groupAnagrams2([]string{""})) // [[""]]
+	fmt.Printf("groupAnagrams2([]string{\"a\"}) = %v\n",groupAnagrams2([]string{"a"})) // [["a"]]
 }
