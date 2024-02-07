@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 // 2641. Cousins in Binary Tree II
 // Given the root of a binary tree, replace the value of each node in the tree with the sum of all its cousins' values.
 // Two nodes of a binary tree are cousins if they have the same depth with different parents.
@@ -85,4 +87,34 @@ func replaceValueInTree(root *TreeNode) *TreeNode {
         }
     }
     return root
+}
+
+type TreeNode struct {
+    Val   int
+    Left  *TreeNode
+    Right *TreeNode
+}
+ 
+func printBinaryTree(root *TreeNode) {
+    if root == nil {
+        return
+    }
+    
+    fmt.Printf("%d ", root.Val) // 先输出当前节点的值
+    
+    printBinaryTree(root.Left)  // 再遍历左子树
+    printBinaryTree(root.Right) // 最后遍历右子树
+}
+ 
+func main() {
+    // 创建一个二叉树
+    tree := &TreeNode{1,
+                      &TreeNode{2,
+                                &TreeNode{4, nil, nil},
+                                &TreeNode{5, nil, nil}},
+                      &TreeNode{3,
+                                &TreeNode{6, nil, nil},
+                                &TreeNode{7, nil, nil}}}
+    
+    printBinaryTree(tree)
 }
