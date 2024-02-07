@@ -393,9 +393,9 @@
 [2635. Apply Transform Over Each Element in Array](./leetcode/2635-ApplyTransformOverEachElementInArray.js)   
 [2637. Promise Time Limit](./leetcode/2637-PromiseTimeLimit.js)   
 [2648. Generate Fibonacci Sequence](./leetcode/2648-GenerateFibonacciSequence.js)   
+[2666. Allow One Function Call](./leetcode/2666-AllowOneFunctionCall.js)   
 [2667. Create Hello World Function](./leetcode/2667-CreateHelloWorldFunction.js)    
 [2677. Chunk Array](./leetcode/2677-ChunkArray.js)    
-
 [2727. Is Object Empty](./leetcode/2727-IsObjectEmpty.js)    
 
 # Pandas

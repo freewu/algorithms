@@ -34,7 +34,10 @@ var createHelloWorld = function() {
     }
 };
 
+// node .\2667-CreateHelloWorldFunction.js
 /**
  * const f = createHelloWorld();
  * f(); // "Hello World"
  */
+const f = createHelloWorld();
+console.log(f()); // "Hello World"
