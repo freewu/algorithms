@@ -4,7 +4,7 @@
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
 [4. Median of Two Sorted Arrays](./leetcode/4-MedianofTwoSortedArrays.go)   
 [5. Longest Palindromic Substring](./leetcode/5-LongestPalindromicSubstring.go)    
-[10. Regular Expression Matching]   
+[10. Regular Expression Matching](./leetcode/10-RegularExpressionMatching.go)     
 [11. Container With Most Water](./leetcode/11-ContainerWithMostWater.go)   
 [15. 3Sum](./leetcode/15-3Sum.go)    
 [17. Letter Combinations of a Phone Number](./leetcode/17-LetterCombinationsofaPhoneNumber.go)    
@@ -213,6 +213,7 @@
 [5. Longest Palindromic Substring](./leetcode/5-LongestPalindromicSubstring.go)    
 [6. ZigZag Conversion](./leetcode/6-ZigZagConversion.go)    
 [8. String to Integer (atoi)](./leetcode/8-StringtoInteger.go)    
+[10. Regular Expression Matching](./leetcode/10-RegularExpressionMatching.go)    
 [12. Integer to Roman](./leetcode/12-IntegertoRoman.go)    
 [13. Roman to Integer](./leetcode/13-RomantoInteger.go)    
 [14. Longest Common Prefix](./leetcode/14-LongestCommonPrefix.go)    

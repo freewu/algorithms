@@ -1,12 +1,12 @@
 package main
 
+import "fmt"
+
 // 10. Regular Expression Matching
 // Given an input string s and a pattern p, implement regular expression matching with support for '.' and '*' where:
-
-// '.' Matches any single character.​​​​
-// '*' Matches zero or more of the preceding element.
-// The matching should cover the entire input string (not partial).
-
+// 		'.' Matches any single character.​​​​
+// 		'*' Matches zero or more of the preceding element.
+// 		The matching should cover the entire input string (not partial).
  
 // Example 1:
 // Input: s = "aa", p = "a"
@@ -31,18 +31,72 @@ package main
 // 		It is guaranteed for each appearance of the character '*', there will be a previous valid character to match.
 // https://zhuanlan.zhihu.com/p/407952577
 
-bool isMatch(string s, string p) {
-	if (p.empty()) return s.empty();
-	if (p.size() == 1) {
-		return (s.size() == 1 && (s[0] == p[0] || p[0] == '.'));
+// 递归
+func isMatch(s string, p string) bool {
+	if len(p) == 0 {
+		return len(s) == 0
 	}
-	if (p[1] != '*') {
-		if (s.empty()) return false;
-		return (s[0] == p[0] || p[0] == '.') && isMatch(s.substr(1), p.substr(1));
+	if len(p) == 1 {
+		return (len(s) == 1) && (s[0] == p[0] || p[0] == '.')
 	}
-	while (!s.empty() && (s[0] == p[0] || p[0] == '.')) {
-		if (isMatch(s, p.substr(2))) return true;
-		s = s.substr(1);
+	if p[1] != '*' {
+		if len(s) == 0 {
+			return false
+		} 
+		return (s[0] == p[0] || p[0] == '.') && isMatch(s[1:], p[1:])
 	}
-	return isMatch(s, p.substr(2));
+	for len(s) > 0 && (s[0] == p[0] || p[0] == '.') {
+		if (isMatch(s, p[2:])) {
+			return true
+		}
+		s = s[1:]
+	}
+	return isMatch(s, p[2:])
+}
+
+// best solution dp
+func isMatch1(s string, p string) bool {
+    n, m := len(s), len(p)
+
+    dp := make([][]bool, n + 1)
+    for i := 0; i <= n; i ++ {
+        dp[i] = make([]bool, m + 1)
+    }
+    dp[0][0] = true
+
+    match := func(i, j int) bool {
+        if i == 0 || j == 0 {
+            return false
+        }
+        return s[i - 1] == p[j - 1] || p[j - 1] == '.'
+    }
+    for i := 0; i <= n; i ++ {
+        for j := 0; j <= m; j ++ {
+            if match(i, j) {
+                dp[i][j] = dp[i - 1][j - 1]
+                continue
+            }
+            if j == 0 || p[j - 1] != '*' {
+                continue
+            }
+
+            if match(i, j - 1) {
+                dp[i][j] = dp[i][j - 1] || dp[i][j - 2] || dp[i - 1][j]
+            } else {
+                dp[i][j] = dp[i][j - 2]
+            }
+        }
+    }
+
+    return dp[n][m]
+}
+
+func main() {
+	fmt.Println(isMatch("aa","a")) // false
+	fmt.Println(isMatch("aa","a*")) // true
+	fmt.Println(isMatch("ab",".*")) // true
+
+	fmt.Println(isMatch1("aa","a")) // false
+	fmt.Println(isMatch1("aa","a*")) // true
+	fmt.Println(isMatch1("ab",".*")) // true
 }
