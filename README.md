@@ -281,6 +281,7 @@
 [232. Implement Queue using Stacks](./leetcode/232-ImplementQueueUsingStacks.go)   
 
 # Tree
+[993. Cousins in Binary Tree](./leetcode/993-CousinsInBinaryTree.go)   
 [2641. Cousins in Binary Tree II](./leetcode/2641-CousinsInBinaryTreeII.go)   
 
 # Database
