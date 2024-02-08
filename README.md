@@ -70,7 +70,7 @@
 [239. Sliding Window Maximum]   
 [240. Search a 2D Matrix II](./leetcode/240-SearchA2DMatrixII.go)   
 [253. Meeting Rooms II]   
-[279. Perfect Squares]    
+[279. Perfect Squares](./leetcode/279-PerfectSquares.go)       
 [283. Move Zeroes]   
 [297. Serialize and Deserialize Binary Tree]   
 [300. Longest Increasing Subsequence]   
@@ -273,6 +273,7 @@
 # Math
 [2. Add Two Numbers](./leetcode/2-AddTwoNumbers.go)    
 [50. Pow(x, n)](./leetcode/50-Pow-x-n.go)    
+[279. Perfect Squares](./leetcode/279-PerfectSquares.go)    
 [292. Nim Game](./leetcode/292-NimGame.go)    
 [365. Water and Jug Problem](./leetcode/365-WaterAndJugProblem.go)    
 
