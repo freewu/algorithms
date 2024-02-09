@@ -282,6 +282,7 @@
 [232. Implement Queue using Stacks](./leetcode/232-ImplementQueueUsingStacks.go)   
 
 # Tree
+[236. Lowest Common Ancestor of a Binary Tree](./leetcode/236-LowestCommonAncestorOfABinaryTree.go)   
 [993. Cousins in Binary Tree](./leetcode/993-CousinsInBinaryTree.go)   
 [2641. Cousins in Binary Tree II](./leetcode/2641-CousinsInBinaryTreeII.go)   
 
