@@ -412,6 +412,8 @@
 [2693. Call Function with Custom Context](./leetcode/2693-CallFunctionWithCustomContext.js)    
 [2694. Event Emitter](./leetcode/2694-EventEmitter.js)   
 [2695. Array Wrapper](./leetcode/2695-ArrayWrapper.js)   
+[2703. Return Length of Arguments Passed](./leetcode/2703-ReturnLengthOfArgumentsPassed.js)   
+
 [2727. Is Object Empty](./leetcode/2727-IsObjectEmpty.js)    
 
 # Pandas
