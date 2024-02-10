@@ -414,6 +414,7 @@
 [2695. Array Wrapper](./leetcode/2695-ArrayWrapper.js)   
 [2703. Return Length of Arguments Passed](./leetcode/2703-ReturnLengthOfArgumentsPassed.js)   
 [2704. To Be Or Not To Be](./leetcode/2704-ToBeOrNotToBe.js)   
+[2705. Compact Object](./leetcode/2705-CompactObject.js)   
 [2727. Is Object Empty](./leetcode/2727-IsObjectEmpty.js)    
 
 # Pandas
