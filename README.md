@@ -417,6 +417,7 @@
 [2703. Return Length of Arguments Passed](./leetcode/2703-ReturnLengthOfArgumentsPassed.js)   
 [2704. To Be Or Not To Be](./leetcode/2704-ToBeOrNotToBe.js)   
 [2705. Compact Object](./leetcode/2705-CompactObject.js)   
+[2724. Sort By](./leetcode/2724-SortBy.js)   
 [2725. Interval Cancellation](./leetcode/2725-IntervalCancellation.js)   
 [2726. Calculator with Method Chaining](./leetcode/2726-CalculatorWithMethodChaining.js)   
 [2727. Is Object Empty](./leetcode/2727-IsObjectEmpty.js)    
