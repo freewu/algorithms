@@ -417,6 +417,7 @@
 [2703. Return Length of Arguments Passed](./leetcode/2703-ReturnLengthOfArgumentsPassed.js)   
 [2704. To Be Or Not To Be](./leetcode/2704-ToBeOrNotToBe.js)   
 [2705. Compact Object](./leetcode/2705-CompactObject.js)   
+[2715. Timeout Cancellation](./leetcode/2715-TimeoutCancellation.js)   
 [2723. Add Two Promises](./leetcode/2723-AddTwoPromises.js)   
 [2724. Sort By](./leetcode/2724-SortBy.js)   
 [2725. Interval Cancellation](./leetcode/2725-IntervalCancellation.js)   
