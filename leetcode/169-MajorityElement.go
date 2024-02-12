@@ -34,9 +34,9 @@ Follow-up: Could you solve the problem in linear time and in O(1) space?
 
 // 解法一 时间复杂度 O(n) 空间复杂度 O(1)
 func majorityElement(nums []int) int {
-	res, count := 0, 0 // 默认第一值就是返回值 只有一个的话 直接返回了
+	res, count := 0, 0 // 默认第一的值就是返回值 只有一个的话 直接返回了
 	for i := 0; i < len(nums); i++ {
-		if count == 0 { // 如果累到 0 重新赋值
+		if count == 0 { // 如果累加到 0 重新赋值
 			res, count = nums[i], 1
 		} else {
 			if nums[i] == res {
@@ -62,11 +62,30 @@ func majorityElement1(nums []int) int {
 	return 0
 }
 
+// 思路和解法1一样
+func majorityElement2(nums []int) int {
+	major, count := nums[0], 1
+	for i := 1; i < len(nums); i++ {
+		if count == 0 {
+			major = nums[i]
+			count++
+		} else if major == nums[i] {
+			count++
+		} else {
+			count--
+		}
+	}
+	return major
+}
+
 func main() {
 	fmt.Printf("majorityElement1([]int{ 3,2,3 }) = %v\n",majorityElement1([]int{ 3,2,3 })) // 3
 	fmt.Printf("majorityElement1([]int{ 2,2,1,1,1,2,2 }) = %v\n",majorityElement1([]int{ 2,2,1,1,1,2,2 })) // 2
 
 	fmt.Printf("majorityElement([]int{ 3,2,3 }) = %v\n",majorityElement([]int{ 3,2,3 })) // 3
 	fmt.Printf("majorityElement([]int{ 2,2,1,1,1,2,2 }) = %v\n",majorityElement([]int{ 2,2,1,1,1,2,2 })) // 2
+
+	fmt.Printf("majorityElement2([]int{ 3,2,3 }) = %v\n",majorityElement2([]int{ 3,2,3 })) // 3
+	fmt.Printf("majorityElement2([]int{ 2,2,1,1,1,2,2 }) = %v\n",majorityElement2([]int{ 2,2,1,1,1,2,2 })) // 2
 
 }
