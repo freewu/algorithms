@@ -400,6 +400,7 @@
 [2625. Flatten Deeply Nested Array](./leetcode/2625-FlattenDeeplyNestedArray.js)    
 [2626. Array Reduce Transformation](./leetcode/2626-ArrayReduceTransformation.js)   
 [2627. Debounce](./leetcode/2627-Debounce.js)    
+[2628. JSON Deep Equal](./leetcode/2628-JSONDeepEqual.js)    
 [2629. Function Composition](./leetcode/2629-FunctionComposition.js)    
 [2630. Memoize II](./leetcode/2630-MemoizeII.js)   
 [2631. Group By](./leetcode/2631-GroupBy.js)   
