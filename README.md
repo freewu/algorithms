@@ -366,6 +366,7 @@
 [1158. Market Analysis I](./leetcode/1158-MarketAnalysisI.sql)   
 [1173. Immediate Food Delivery I](./leetcode/1173-ImmediateFoodDeliveryI.sql)   
 [1179. Reformat Department Table](./leetcode/1179-ReformatDepartmentTable.sql)   
+[1241. Number of Comments per Post](./leetcode/1241-NumberOfCommentsPerPost.sql)   
 [1393. Capital Gain/Loss](./leetcode/1393-CapitalGainOrLoss.sql)   
 [1407. Top Travellers](./leetcode/1407-TopTravellers.sql)   
 [1484. Group Sold Products By The Date](./leetcode/1484-GroupSoldProductsByTheDate.sql)   
