@@ -371,6 +371,7 @@
 [1241. Number of Comments per Post](./leetcode/1241-NumberOfCommentsPerPost.sql)   
 [1294. Weather Type in Each Country](./leetcode/1294-WeatherTypeInEachCountry.sql)   
 [1303. Find the Team Size](./leetcode/1303-FindTheTeamSize.sql)   
+[1322. Ads Performance](./leetcode/1322-AdsPerformance.sql)   
 [1393. Capital Gain/Loss](./leetcode/1393-CapitalGainOrLoss.sql)   
 [1407. Top Travellers](./leetcode/1407-TopTravellers.sql)   
 [1484. Group Sold Products By The Date](./leetcode/1484-GroupSoldProductsByTheDate.sql)   
