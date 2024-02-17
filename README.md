@@ -204,6 +204,7 @@
 [1074. Number of Submatrices That Sum to Target](./leetcode/1074-NumberOfSubmatricesThatSumToTarget.go)    
 [1463. Cherry Pickup II](./leetcode/1463-CherryPickupII.go)    
 [1481. Least Number of Unique Integers after K Removals](./leetcode/1481-LeastNumberOfUniqueIntegersAfterKRemovals.go)    
+[1642. Furthest Building You Can Reach](./leetcode/1642-FurthestBuildingYouCanReach.go)    
 [1686. Stone Game VI](./leetcode/1686-StoneGameVI.go)    
 [1690. Stone Game VII](./leetcode/1690-StoneGameVII.go)    
 [1696. Jump Game VI](./leetcode/1696-JumpGameVI.go)    
