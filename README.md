@@ -27,7 +27,7 @@
 [56. Merge Intervals](./leetcode/56-MergeIntervals.go)    
 [62. Unique Paths]   
 [64. Minimum Path Sum](./leetcode/64-MinimumPathSum.go)    
-[70. Climbing Stairs]   
+[70. Climbing Stairs](./leetcode/70-ClimbingStairs.go)    
 [72. Edit Distance]   
 [75. Sort Colors](./leetcode/75-SortColors.go)    
 [76. Minimum Window Substring](./leetcode/76-MinimumWindowSubstring.go)    
@@ -282,6 +282,7 @@
 # Math
 [2. Add Two Numbers](./leetcode/2-AddTwoNumbers.go)    
 [50. Pow(x, n)](./leetcode/50-Pow-x-n.go)    
+[70. Climbing Stairs](./leetcode/70-ClimbingStairs.go)    
 [279. Perfect Squares](./leetcode/279-PerfectSquares.go)    
 [292. Nim Game](./leetcode/292-NimGame.go)    
 [365. Water and Jug Problem](./leetcode/365-WaterAndJugProblem.go)    
