@@ -299,6 +299,7 @@
 [144. Binary Tree Preorder Traversal](./leetcode/144-BinaryTreePreorderTraversal.go)   
 [145. Binary Tree Postorder Traversal](./leetcode/145-BinaryTreePostorderTraversal.go)   
 [429. N-ary Tree Level Order Traversal](./leetcode/429-N-aryTreeLevelOrderTraversal.go)   
+[589. N-ary Tree Preorder Traversal](./leetcode/589-N-aryTreePreorderTraversal.go)   
 [987. Vertical Order Traversal of a Binary Tree](./leetcode/987-VerticalOrderTraversalOfABinaryTree.go)   
 [236. Lowest Common Ancestor of a Binary Tree](./leetcode/236-LowestCommonAncestorOfABinaryTree.go)   
 [993. Cousins in Binary Tree](./leetcode/993-CousinsInBinaryTree.go)   
