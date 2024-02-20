@@ -480,6 +480,7 @@
 
 # LCR
 [LCR 001. 两数相除](./leetcode/LCR001-DividingTwoNumbers.go)   
+[LCR 002. 二进制求和](./leetcode/LCR002-BinarySummation.go)   
 
 # LCP
 [LCP 01. 猜数字](./leetcode/LCP01-GuessNumbers.go)   

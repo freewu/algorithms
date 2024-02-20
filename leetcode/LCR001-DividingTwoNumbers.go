@@ -54,6 +54,7 @@ func divide(a int, b int) int {
 
 	// 一般情况，使用二分查找
     // 将所有的正数取相反数，这样就只需要考虑一种情况
+	// 判断正负
     rev := false
     if a > 0 {
         a = -a
@@ -88,5 +89,4 @@ func main() {
 	fmt.Println(divide(0,1)) // 0
 	fmt.Println(divide(1,1)) // 1
 	fmt.Println(divide(-2147483648,-1)) // 2147483647
-	
 }
