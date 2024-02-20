@@ -453,6 +453,7 @@
 [2725. Interval Cancellation](./leetcode/2725-IntervalCancellation.js)   
 [2726. Calculator with Method Chaining](./leetcode/2726-CalculatorWithMethodChaining.js)   
 [2727. Is Object Empty](./leetcode/2727-IsObjectEmpty.js)    
+[2804. Array Prototype ForEach](./leetcode/2804-ArrayPrototypeForEach.js)    
 [2805. Custom Interval](./leetcode/2805-CustomInterval.js)    
 [2821. Delay the Resolution of Each Promise](./leetcode/2821-DelayTheResolutionOfEachPromise.js)    
 [2822. Inversion of Object](./leetcode/2822-InversionOfObject.js)    
