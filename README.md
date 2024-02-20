@@ -479,7 +479,7 @@
 [2891. Method Chaining](./leetcode/2891-MethodChaining.py)   
 
 # LCR
-
+[LCR 001. 两数相除](./leetcode/LCR001-DividingTwoNumbers.go)   
 
 # LCP
 [LCP 01. 猜数字](./leetcode/LCP01-GuessNumbers.go)   
