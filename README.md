@@ -499,3 +499,5 @@
 
 # LCCI
 [面试题 01.01. Is Unique LCCI](./leetcode/LCCI0101-IsUnique.go)     
+[面试题 01.02. Check Permutation LCCI](./leetcode/LCCI0102-CheckPermutation.go)     
+
