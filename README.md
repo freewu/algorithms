@@ -496,3 +496,6 @@
 [LCP 01. 猜数字](./leetcode/LCP01-GuessNumbers.go)   
 [LCP 24. 数字游戏](./leetcode/LCP24-NumberGame.go)   
 [LCP 30. 魔塔游戏](./leetcode/LCP30-MagicTowerGame.go)   
+
+# LCCI
+[面试题 01.01. Is Unique LCCI](./leetcode/LCCI0101-IsUnique.go)     
