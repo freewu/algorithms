@@ -293,6 +293,7 @@
 [279. Perfect Squares](./leetcode/279-PerfectSquares.go)    
 [292. Nim Game](./leetcode/292-NimGame.go)    
 [365. Water and Jug Problem](./leetcode/365-WaterAndJugProblem.go)    
+[670. Maximum Swap](./leetcode/670-MaximumSwap.go)    
 
 # Stack
 [232. Implement Queue using Stacks](./leetcode/232-ImplementQueueUsingStacks.go)   
