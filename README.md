@@ -263,6 +263,7 @@
 # Dynamic Programming
 [576. Out of Boundary Paths](./leetcode/576-OutOfBoundaryPaths.go)   
 [629. K Inverse Pairs Array](./leetcode/629-K-InversePairsArray.go)   
+[787. Cheapest Flights Within K Stops](./leetcode/787-CheapestFlightsWithinKStops.go)   
 
 # Two Pointers
 [11. Container With Most Water](./leetcode/11-ContainerWithMostWater.go)   
