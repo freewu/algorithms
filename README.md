@@ -279,6 +279,8 @@
 [204. Count Primes](./leetcode/204-CountPrimes.go)   
 [1291. Sequential Digits](./leetcode/1291-SequentialDigits.go)   
 
+# HashTable
+[694. Number of Distinct Islands](./leetcode/694-NumberOfDistinctIslands.go)   
 
 # Segment_Tree
 [307. Range Sum Query - Mutable](./leetcode/307-RangeSumQuery-Mutable.go)   
