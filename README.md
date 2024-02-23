@@ -464,6 +464,7 @@
 [2725. Interval Cancellation](./leetcode/2725-IntervalCancellation.js)   
 [2726. Calculator with Method Chaining](./leetcode/2726-CalculatorWithMethodChaining.js)   
 [2727. Is Object Empty](./leetcode/2727-IsObjectEmpty.js)    
+[2797. Partial Function with Placeholders](./leetcode/2797-PartialFunctionWithPlaceholders.js)    
 [2803. Factorial Generator](./leetcode/2803-FactorialGenerator.js)    
 [2804. Array Prototype ForEach](./leetcode/2804-ArrayPrototypeForEach.js)    
 [2805. Custom Interval](./leetcode/2805-CustomInterval.js)    
