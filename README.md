@@ -312,6 +312,7 @@
 [889. Construct Binary Tree from Preorder and Postorder Traversal ](./leetcode/889-ConstructBinaryTreeFromPreorderAndPostorderTraversal.go)   
 [987. Vertical Order Traversal of a Binary Tree](./leetcode/987-VerticalOrderTraversalOfABinaryTree.go)  
 [993. Cousins in Binary Tree](./leetcode/993-CousinsInBinaryTree.go)   
+[2476. Closest Nodes Queries in a Binary Search Tree](./leetcode/2476-ClosestNodesQueriesInABinarySearchTree.go)   
 [2583. Kth Largest Sum in a Binary Tree](./leetcode/2583-KthLargestSumInABinaryTree.go)   
 [2641. Cousins in Binary Tree II](./leetcode/2641-CousinsInBinaryTreeII.go)   
 
