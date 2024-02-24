@@ -315,6 +315,9 @@
 [2583. Kth Largest Sum in a Binary Tree](./leetcode/2583-KthLargestSumInABinaryTree.go)   
 [2641. Cousins in Binary Tree II](./leetcode/2641-CousinsInBinaryTreeII.go)   
 
+# Graph
+[2092. Find All People With Secret](./leetcode/2092-FindAllPeopleWithSecret.go)   
+
 # Bit Manipulation
 [201. Bitwise AND of Numbers Range](./leetcode/201-BitwiseANDOfNumbersRange.go)   
 
