@@ -315,6 +315,7 @@
 [2476. Closest Nodes Queries in a Binary Search Tree](./leetcode/2476-ClosestNodesQueriesInABinarySearchTree.go)   
 [2583. Kth Largest Sum in a Binary Tree](./leetcode/2583-KthLargestSumInABinaryTree.go)   
 [2641. Cousins in Binary Tree II](./leetcode/2641-CousinsInBinaryTreeII.go)   
+[2709. Greatest Common Divisor Traversal](./leetcode/2709-GreatestCommonDivisorTraversal.go)   
 
 # Graph
 [2092. Find All People With Secret](./leetcode/2092-FindAllPeopleWithSecret.go)   
