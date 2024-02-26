@@ -84,6 +84,20 @@ func lowestCommonAncestor1(root, p, q *TreeNode) *TreeNode {
     return curr
 }
 
+// best solution
+func lowestCommonAncestor2(root, p, q *TreeNode) *TreeNode {
+	for root != nil {
+        if root.Val < p.Val && root.Val < q.Val {
+            root = root.Right
+        } else if root.Val > p.Val && root.Val > q.Val {
+            root = root.Left
+        } else {
+            return root
+        }
+    }
+    return nil
+}
+
 func main() {
     tree1 := &TreeNode {
 		6,
@@ -119,4 +133,8 @@ func main() {
     fmt.Println(lowestCommonAncestor1(tree1,&TreeNode{2, nil, nil},&TreeNode{8, nil, nil})) // 6
     fmt.Println(lowestCommonAncestor1(tree1,&TreeNode{2, nil, nil},&TreeNode{4, nil, nil})) // 2
     fmt.Println(lowestCommonAncestor1(tree3,&TreeNode{2, nil, nil},&TreeNode{1, nil, nil})) // 2
+
+    fmt.Println(lowestCommonAncestor2(tree1,&TreeNode{2, nil, nil},&TreeNode{8, nil, nil})) // 6
+    fmt.Println(lowestCommonAncestor2(tree1,&TreeNode{2, nil, nil},&TreeNode{4, nil, nil})) // 2
+    fmt.Println(lowestCommonAncestor2(tree3,&TreeNode{2, nil, nil},&TreeNode{1, nil, nil})) // 2
 }

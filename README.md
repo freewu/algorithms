@@ -300,6 +300,7 @@
 
 # Tree
 [94. Binary Tree Inorder Traversal](./leetcode/94-BinaryTreeInorderTraversal.go)   
+[100. Same Tree](./leetcode/100-SameTree.go)   
 [102. Binary Tree Level Order Traversal](./leetcode/102-BinaryTreeLevelOrderTraversal.go)   
 [103. Binary Tree Zigzag Level Order Traversal](./leetcode/103-BinaryTreeZigzagLevelOrderTraversal.go)   
 [107. Binary Tree Level Order Traversal II](./leetcode/107-BinaryTreeLevelOrderTraversalII.go)   
