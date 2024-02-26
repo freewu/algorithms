@@ -457,6 +457,7 @@
 [2665. Counter II](./leetcode/2665-CounterII.js)   
 [2666. Allow One Function Call](./leetcode/2666-AllowOneFunctionCall.js)   
 [2667. Create Hello World Function](./leetcode/2667-CreateHelloWorldFunction.js)    
+[2675. Array of Objects to Matrix](./leetcode/2675-ArrayOfObjectsToMatrix.js)    
 [2676. Throttle](./leetcode/2676-Throttle.js)    
 [2677. Chunk Array](./leetcode/2677-ChunkArray.js)    
 [2693. Call Function with Custom Context](./leetcode/2693-CallFunctionWithCustomContext.js)    
@@ -481,6 +482,7 @@
 [2821. Delay the Resolution of Each Promise](./leetcode/2821-DelayTheResolutionOfEachPromise.js)    
 [2822. Inversion of Object](./leetcode/2822-InversionOfObject.js)    
 [2823. Deep Object Filter](./leetcode/2823-DeepObjectFilter.js)    
+
 
 # Pandas
 [2877. Create a DataFrame from List](./leetcode/2877-CreateADataFrameFromList.py)   
