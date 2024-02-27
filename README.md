@@ -320,6 +320,7 @@
 [2583. Kth Largest Sum in a Binary Tree](./leetcode/2583-KthLargestSumInABinaryTree.go)   
 [2641. Cousins in Binary Tree II](./leetcode/2641-CousinsInBinaryTreeII.go)   
 [2709. Greatest Common Divisor Traversal](./leetcode/2709-GreatestCommonDivisorTraversal.go)   
+[2867. Count Valid Paths in a Tree](./leetcode/2867-CountValidPathsInATree.go)   
 
 # Graph
 [2092. Find All People With Secret](./leetcode/2092-FindAllPeopleWithSecret.go)   
