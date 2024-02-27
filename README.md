@@ -477,6 +477,7 @@
 [2725. Interval Cancellation](./leetcode/2725-IntervalCancellation.js)   
 [2726. Calculator with Method Chaining](./leetcode/2726-CalculatorWithMethodChaining.js)   
 [2727. Is Object Empty](./leetcode/2727-IsObjectEmpty.js)    
+[2794. Create Object from Two Arrays](./leetcode/2794-CreateObjectFromTwoArrays.js)    
 [2795. Parallel Execution of Promises for Individual Results Retrieval](./leetcode/2795-ParallelExecutionOfPromisesForIndividualResultsRetrieval.js)    
 [2796. Repeat String](./leetcode/2796-RepeatString.js)    
 [2797. Partial Function with Placeholders](./leetcode/2797-PartialFunctionWithPlaceholders.js)    
