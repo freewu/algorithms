@@ -512,6 +512,7 @@
 
 # LCP
 [LCP 01. 猜数字](./leetcode/LCP01-GuessNumbers.go)   
+[LCP 02. Deep Dark Fraction](./leetcode/LCP02-DeepDarkFraction.go)   
 [LCP 24. 数字游戏](./leetcode/LCP24-NumberGame.go)   
 [LCP 30. 魔塔游戏](./leetcode/LCP30-MagicTowerGame.go)   
 
