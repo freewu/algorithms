@@ -281,6 +281,7 @@
 
 # HashTable
 [694. Number of Distinct Islands](./leetcode/694-NumberOfDistinctIslands.go)   
+[711. Number of Distinct Islands II](./leetcode/711-NumberOfDistinctIslandsII.go)   
 
 # Segment_Tree
 [307. Range Sum Query - Mutable](./leetcode/307-RangeSumQuery-Mutable.go)   
