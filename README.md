@@ -394,6 +394,7 @@
 [1112. Highest Grade For Each Student](./leetcode/1112-HighestGradeForEachStudent.sql)   
 [1113. Reported Posts](./leetcode/1113-ReportedPosts.sql)   
 [1126. Active Businesses](./leetcode/1126-ActiveBusinesses.sql)   
+[1127. User Purchase Platform](./leetcode/1127-UserPurchasePlatform.sql)   
 [1141. User Activity for the Past 30 Days I](./leetcode/1141-UserActivityforthePast30DaysI.sql)   
 [1142. User Activity for the Past 30 Days II](./leetcode/1142-UserActivityForThePast30DaysII.sql)   
 [1148. Article Views I](./leetcode/1148-ArticleViewsI.sql)   
