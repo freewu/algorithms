@@ -483,6 +483,7 @@
 [2726. Calculator with Method Chaining](./leetcode/2726-CalculatorWithMethodChaining.js)   
 [2727. Is Object Empty](./leetcode/2727-IsObjectEmpty.js)    
 [2775. Undefined to Null](./leetcode/2775-UndefinedToNull.js)    
+[2777. Date Range Generator](./leetcode/2777-DateRangeGenerator.js)    
 [2794. Create Object from Two Arrays](./leetcode/2794-CreateObjectFromTwoArrays.js)    
 [2795. Parallel Execution of Promises for Individual Results Retrieval](./leetcode/2795-ParallelExecutionOfPromisesForIndividualResultsRetrieval.js)    
 [2796. Repeat String](./leetcode/2796-RepeatString.js)    
