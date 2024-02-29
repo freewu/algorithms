@@ -49,9 +49,7 @@ func numDistinctIslands2(grid [][]int) int {
             explore(r, c + 1)
             explore(r, c - 1)
         }
-        
     }
-
     var canonical func(shape []int) string
     canonical = func(shape []int) string {
         ans := ""
@@ -108,7 +106,6 @@ func numDistinctIslands2(grid [][]int) int {
         }
         return ans
     }
-
     for r := 0; r < m; r++ {
         for c := 0; c < n; c++ {
             shape = []int{}
@@ -118,7 +115,6 @@ func numDistinctIslands2(grid [][]int) int {
             }
         }
     }
-
     return len(shapes)
 }
 
