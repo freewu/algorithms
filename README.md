@@ -320,6 +320,7 @@
 [993. Cousins in Binary Tree](./leetcode/993-CousinsInBinaryTree.go)   
 [1609. Even Odd Tree](./leetcode/1609-EvenOddTree.go)   
 [2476. Closest Nodes Queries in a Binary Search Tree](./leetcode/2476-ClosestNodesQueriesInABinarySearchTree.go)   
+[2581. Count Number of Possible Root Nodes](./leetcode/2581-CountNumberOfPossibleRootNodes.go)   
 [2583. Kth Largest Sum in a Binary Tree](./leetcode/2583-KthLargestSumInABinaryTree.go)   
 [2641. Cousins in Binary Tree II](./leetcode/2641-CousinsInBinaryTreeII.go)   
 [2673. Make Costs of Paths Equal in a Binary Tree](./leetcode/2673-MakeCostsOfPathsEqualInABinaryTree.go)   
