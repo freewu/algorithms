@@ -485,6 +485,7 @@
 [2725. Interval Cancellation](./leetcode/2725-IntervalCancellation.js)   
 [2726. Calculator with Method Chaining](./leetcode/2726-CalculatorWithMethodChaining.js)   
 [2727. Is Object Empty](./leetcode/2727-IsObjectEmpty.js)    
+[2774. Array Upper Bound](./leetcode/2774-ArrayUpperBound.js)    
 [2775. Undefined to Null](./leetcode/2775-UndefinedToNull.js)    
 [2776. Convert Callback Based Function to Promise Based Function](./leetcode/2776-ConvertCallbackBasedFunctionToPromiseBasedFunction.js)    
 [2777. Date Range Generator](./leetcode/2777-DateRangeGenerator.js)    
