@@ -259,6 +259,7 @@
 [647. Palindromic Substrings](./leetcode/647-PalindromicSubstrings.go)    
 [1143. Longest Common Subsequence](./leetcode/1143-LongestCommonSubsequence.go)    
 [1239. Maximum Length of a Concatenated String with Unique Characters](./leetcode/1239-MaximumLengthOfAConcatenatedStringWithUniqueCharacters.go)    
+[2864. Maximum Odd Binary Number](./leetcode/2864-MaximumOddBinaryNumber.go)   
 
 # Dynamic Programming
 [576. Out of Boundary Paths](./leetcode/576-OutOfBoundaryPaths.go)   
