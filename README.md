@@ -197,6 +197,7 @@
 [304. Range Sum Query 2D - Immutable](./leetcode/304-RangeSumQuery2D-Immutable.go)   
 [307. Range Sum Query - Mutable](./leetcode/307-RangeSumQuery-Mutable.go)   
 [368. Largest Divisible Subset](./leetcode/368-LargestDivisibleSubset.go)   
+[410. Split Array Largest Sum](./leetcode/410-SplitArrayLargestSum.go)   
 [498. Diagonal Traverse](./leetcode/498-DiagonalTraverse.go)    
 [500. Keyboard Row](./leetcode/500-KeyboardRow.go)    
 [645. Set Mismatch](./leetcode/645-SetMismatch.go)    
