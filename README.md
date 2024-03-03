@@ -303,7 +303,9 @@
 [670. Maximum Swap](./leetcode/670-MaximumSwap.go)    
 
 # Stack
+[225. Implement Stack using Queues](./leetcode/225-ImplementStackUsingQueues.go)   
 [232. Implement Queue using Stacks](./leetcode/232-ImplementQueueUsingStacks.go)   
+
 
 # Tree
 [94. Binary Tree Inorder Traversal](./leetcode/94-BinaryTreeInorderTraversal.go)   
