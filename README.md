@@ -479,6 +479,7 @@
 [2676. Throttle](./leetcode/2676-Throttle.js)    
 [2677. Chunk Array](./leetcode/2677-ChunkArray.js)    
 [2690. Infinite Method Object](./leetcode/2690-InfiniteMethodObject.js)    
+[2691. Immutability Helper](./leetcode/2691-ImmutabilityHelper.js)    
 [2693. Call Function with Custom Context](./leetcode/2693-CallFunctionWithCustomContext.js)    
 [2694. Event Emitter](./leetcode/2694-EventEmitter.js)   
 [2695. Array Wrapper](./leetcode/2695-ArrayWrapper.js)   
