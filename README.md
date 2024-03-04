@@ -487,6 +487,7 @@
 [2693. Call Function with Custom Context](./leetcode/2693-CallFunctionWithCustomContext.js)    
 [2694. Event Emitter](./leetcode/2694-EventEmitter.js)   
 [2695. Array Wrapper](./leetcode/2695-ArrayWrapper.js)   
+[2700. Differences Between Two Objects](./leetcode/2700-DifferencesBetweenTwoObjects.js)   
 [2703. Return Length of Arguments Passed](./leetcode/2703-ReturnLengthOfArgumentsPassed.js)   
 [2704. To Be Or Not To Be](./leetcode/2704-ToBeOrNotToBe.js)   
 [2705. Compact Object](./leetcode/2705-CompactObject.js)   
