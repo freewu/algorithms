@@ -12,7 +12,7 @@
 [20. Valid Parentheses](./leetcode/20-ValidParentheses.go)    
 [21. Merge Two Sorted Lists](./leetcode/21-MergeTwoSortedLists.go)    
 [22. Generate Parentheses](./leetcode/22-GenerateParentheses.go)    
-[23. Merge k Sorted Lists]   
+[23. Merge k Sorted Lists](./leetcode/23-MergeKSortedLists.go)    
 [31. Next Permutation](./leetcode/31-NextPermutation.go)    
 [32. Longest Valid Parentheses](./leetcode/32-LongestValidParentheses.go)    
 [33. Search in Rotated Sorted Array](./leetcode/33-SearchinRotatedSortedArray.go)    
@@ -482,6 +482,7 @@
 [2677. Chunk Array](./leetcode/2677-ChunkArray.js)    
 [2690. Infinite Method Object](./leetcode/2690-InfiniteMethodObject.js)    
 [2691. Immutability Helper](./leetcode/2691-ImmutabilityHelper.js)    
+[2692. Make Object Immutable](./leetcode/2692-MakeObjectImmutable.js)    
 [2693. Call Function with Custom Context](./leetcode/2693-CallFunctionWithCustomContext.js)    
 [2694. Event Emitter](./leetcode/2694-EventEmitter.js)   
 [2695. Array Wrapper](./leetcode/2695-ArrayWrapper.js)   
