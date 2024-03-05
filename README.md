@@ -340,6 +340,7 @@
 [2867. Count Valid Paths in a Tree](./leetcode/2867-CountValidPathsInATree.go)   
 
 # Graph
+[1976. Number of Ways to Arrive at Destination](./leetcode/1976-NumberOfWaysToArriveAtDestination.go)   
 [2092. Find All People With Secret](./leetcode/2092-FindAllPeopleWithSecret.go)   
 
 # Bit Manipulation
