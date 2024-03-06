@@ -505,6 +505,7 @@
 [2726. Calculator with Method Chaining](./leetcode/2726-CalculatorWithMethodChaining.js)   
 [2727. Is Object Empty](./leetcode/2727-IsObjectEmpty.js)    
 [2754. Bind Function to Context](./leetcode/2754-BindFunctionToContext.js)    
+[2755. Deep Merge of Two Objects](./leetcode/2755-DeepMergeOfTwoObjects.js)    
 [2758. Next Day](./leetcode/2758-NextDay.js)    
 [2759. Convert JSON String to Object](./leetcode/2759-ConvertJSONStringToObject.js)    
 [2774. Array Upper Bound](./leetcode/2774-ArrayUpperBound.js)    
