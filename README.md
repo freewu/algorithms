@@ -79,7 +79,7 @@
 [312. Burst Balloons]   
 [322. Coin Change]   
 [337. House Robber III]   
-[338. Counting Bits]   
+[338. Counting Bits](./leetcode/338-CountingBits.go)    
 [347. Top K Frequent Elements]   
 [394. Decode String]   
 [399. Evaluate Division]   
@@ -347,6 +347,7 @@
 [2092. Find All People With Secret](./leetcode/2092-FindAllPeopleWithSecret.go)   
 
 # Bit Manipulation
+[338. Counting Bits](./leetcode/338-CountingBits.go)    
 [201. Bitwise AND of Numbers Range](./leetcode/201-BitwiseANDOfNumbersRange.go)   
 
 # Database
@@ -549,12 +550,14 @@
 [LCR 003. 比特位计数](./leetcode/LCR003-BitCount.go)   
 [LCR 004. 只出现一次的数字 II](./leetcode/LCR004-SingleNumberII.go)   
 
-
 # LCP
 [LCP 01. 猜数字](./leetcode/LCP01-GuessNumbers.go)   
 [LCP 02. Deep Dark Fraction](./leetcode/LCP02-DeepDarkFraction.go)   
 [LCP 24. 数字游戏](./leetcode/LCP24-NumberGame.go)   
 [LCP 30. 魔塔游戏](./leetcode/LCP30-MagicTowerGame.go)   
+
+# LCS
+[LCS 01. 下载插件](./leetcode/LCS01-DownloadPlugins.go)   
 
 # LCCI
 [面试题 01.01. Is Unique LCCI](./leetcode/LCCI0101-IsUnique.go)     
