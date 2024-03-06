@@ -547,6 +547,8 @@
 [LCR 001. 两数相除](./leetcode/LCR001-DividingTwoNumbers.go)   
 [LCR 002. 二进制求和](./leetcode/LCR002-BinarySummation.go)   
 [LCR 003. 比特位计数](./leetcode/LCR003-BitCount.go)   
+[LCR 004. 只出现一次的数字 II](./leetcode/LCR004-SingleNumberII.go)   
+
 
 # LCP
 [LCP 01. 猜数字](./leetcode/LCP01-GuessNumbers.go)   
