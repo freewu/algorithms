@@ -48,7 +48,7 @@
 [128. Longest Consecutive Sequence](./leetcode/128-LongestConsecutiveSequence.go)   
 [136. Single Number](./leetcode/136-SingleNumber.go)   
 [139. Word Break]   
-[141. Linked List Cycle]    
+[141. Linked List Cycle](./leetcode/141-LinkedListCycle.go)    
 [142. Linked List Cycle II]    
 [146. LRU Cache]    
 [148. Sort List]    
@@ -282,6 +282,7 @@
 [21. Merge Two Sorted Lists](./leetcode/21-MergeTwoSortedLists.go)    
 [23. Merge k Sorted Lists](./leetcode/23-MergeKSortedLists.go)    
 [82. Remove Duplicates from Sorted List II](./leetcode/82-RemoveDuplicatesFromSortedListII.go)   
+[141. Linked List Cycle](./leetcode/141-LinkedListCycle.go)    
 [206. Reverse Linked List](./leetcode/206-ReverseLinkedList.go)    
 
 # Enumeration
