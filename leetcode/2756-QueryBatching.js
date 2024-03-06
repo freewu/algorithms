@@ -149,7 +149,7 @@ QueryBatcher.prototype.callFun = function() {
  * batcher.getValue('c').then(console.log); // resolves "c!" at t=100ms 
  */
 
-const batcher = new QueryBatcher(
+let batcher = new QueryBatcher(
     async function queryMultiple(keys) { 
         return keys.map(key => key + '!');
     }, 
@@ -162,3 +162,15 @@ const p = function(...args) {
 batcher.getValue('a').then(p); // resolves "a!" at t=0ms 
 batcher.getValue('b').then(p); // resolves "b!" at t=100ms 
 batcher.getValue('c').then(p); // resolves "c!" at t=100ms 
+
+batcher = new QueryBatcher(
+    async function(keys) { 
+        await new Promise(res => setTimeout(res, keys.length * 100)); 
+        return keys.map(key => key + '!');
+    }, 
+    1000
+);
+batcher.getValue('a').then(p); // resolves "a!" at t=0ms 
+batcher.getValue(['b', 'c', 'd']).then(p); // resolves "b!" at t=100ms 
+batcher.getValue('e').then(p); // resolves "e!" at t=100ms
+batcher.getValue('f').then(p); // resolves "e!" at t=100ms 
