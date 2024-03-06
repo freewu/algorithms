@@ -1,4 +1,4 @@
--- 100260. Find All Unique Email Domains
+-- 3059. Find All Unique Email Domains
 -- Table: Emails
 -- +-------------+---------+
 -- | Column Name | Type    |
