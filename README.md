@@ -49,7 +49,7 @@
 [136. Single Number](./leetcode/136-SingleNumber.go)   
 [139. Word Break]   
 [141. Linked List Cycle](./leetcode/141-LinkedListCycle.go)    
-[142. Linked List Cycle II]    
+[142. Linked List Cycle II](./leetcode/142-LinkedListCycleII.go)    
 [146. LRU Cache]    
 [148. Sort List]    
 [152. Maximum Product Subarray](./leetcode/152-MaximumProductSubarray.go)   
@@ -283,6 +283,7 @@
 [23. Merge k Sorted Lists](./leetcode/23-MergeKSortedLists.go)    
 [82. Remove Duplicates from Sorted List II](./leetcode/82-RemoveDuplicatesFromSortedListII.go)   
 [141. Linked List Cycle](./leetcode/141-LinkedListCycle.go)    
+[142. Linked List Cycle II](./leetcode/142-LinkedListCycleII.go)    
 [206. Reverse Linked List](./leetcode/206-ReverseLinkedList.go)    
 
 # Enumeration
