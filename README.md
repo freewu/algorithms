@@ -434,6 +434,7 @@
 [1350. Students With Invalid Departments](./leetcode/1350-StudentsWithInvalidDepartments.sql)   
 [1393. Capital Gain/Loss](./leetcode/1393-CapitalGainOrLoss.sql)   
 [1407. Top Travellers](./leetcode/1407-TopTravellers.sql)   
+[1421. NPV Queries](./leetcode/1421-NPVQueries.sql)   
 [1435. Create a Session Bar Chart](./leetcode/1435-CreateASessionBarChart.sql)   
 [1484. Group Sold Products By The Date](./leetcode/1484-GroupSoldProductsByTheDate.sql)   
 [1527. Patients With a Condition](./leetcode/1527-PatientsWithaCondition.sql)   
