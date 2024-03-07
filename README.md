@@ -556,6 +556,7 @@
 [LCR 002. 二进制求和](./leetcode/LCR002-BinarySummation.go)   
 [LCR 003. 比特位计数](./leetcode/LCR003-BitCount.go)   
 [LCR 004. 只出现一次的数字 II](./leetcode/LCR004-SingleNumberII.go)   
+[LCR 005. 最大单词长度乘积](./leetcode/LCR005-ProductOfMaximumWordLength.go)   
 
 # LCP
 [LCP 01. 猜数字](./leetcode/LCP01-GuessNumbers.go)   
