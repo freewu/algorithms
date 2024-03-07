@@ -197,6 +197,7 @@
 [303. Range Sum Query - Immutable](./leetcode/303-RangeSumQuery-Immutable.go)   
 [304. Range Sum Query 2D - Immutable](./leetcode/304-RangeSumQuery2D-Immutable.go)   
 [307. Range Sum Query - Mutable](./leetcode/307-RangeSumQuery-Mutable.go)   
+[318. Maximum Product of Word Lengths](./leetcode/318-MaximumProductOfWordLengths.go)   
 [368. Largest Divisible Subset](./leetcode/368-LargestDivisibleSubset.go)   
 [410. Split Array Largest Sum](./leetcode/410-SplitArrayLargestSum.go)   
 [498. Diagonal Traverse](./leetcode/498-DiagonalTraverse.go)    
