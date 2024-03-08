@@ -227,6 +227,7 @@
 [2917. Find the K-or of an Array](./leetcode/2917-FindTheKOrOfAnArray.go)    
 [2966. Divide Array Into Arrays With Max Difference](./leetcode/2966-DivideArrayIntoArraysWithMaxDifference.go)    
 [2971. Find Polygon With the Largest Perimeter](./leetcode/2971-FindPolygonWithTheLargestPerimeter.go)    
+[3005. Count Elements With Maximum Frequency](./leetcode/3005-CountElementsWithMaximumFrequency.go)    
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
