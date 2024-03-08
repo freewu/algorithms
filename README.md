@@ -223,6 +223,7 @@
 [2575. Find the Divisibility Array of a String](./leetcode/2575-FindTheDivisibilityArrayOfAString.go)    
 [2670. Find the Distinct Difference Array](./leetcode/2670-FindTheDistinctDifferenceArray.go)    
 [2808. Minimum Seconds to Equalize a Circular Array](./leetcode/2808-MinimumSecondsToEqualizeACircularArray.go)   
+[2859. Sum of Values at Indices With K Set Bits ](./leetcode/2859-SumOfValuesAtIndicesWithKSetBits.go)    
 [2861. Maximum Number of Alloys](./leetcode/2861-MaximumNumberOfAlloys.go)    
 [2917. Find the K-or of an Array](./leetcode/2917-FindTheKOrOfAnArray.go)    
 [2966. Divide Array Into Arrays With Max Difference](./leetcode/2966-DivideArrayIntoArraysWithMaxDifference.go)    
