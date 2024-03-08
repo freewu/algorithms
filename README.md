@@ -219,6 +219,7 @@
 [2149. Rearrange Array Elements by Sign](./leetcode/2149-RearrangeArrayElementsBySign.go)   
 [2368. Reachable Nodes With Restrictions](./leetcode/2368-ReachableNodesWithRestrictions.go)   
 [2369. Check if There is a Valid Partition For The Array](./leetcode/2369-CheckIfThereIsAValidPartitionForTheArray.go)    
+[2386. Find the K-Sum of an Array](./leetcode/2386-FindTheK-SumOfAnArray.go)    
 [2402. Meeting Rooms III](./leetcode/2402-MeetingRoomsIII.go)    
 [2575. Find the Divisibility Array of a String](./leetcode/2575-FindTheDivisibilityArrayOfAString.go)    
 [2670. Find the Distinct Difference Array](./leetcode/2670-FindTheDistinctDifferenceArray.go)    
