@@ -446,6 +446,7 @@
 [1527. Patients With a Condition](./leetcode/1527-PatientsWithaCondition.sql)   
 [1543. Fix Product Name Format](./leetcode/1543-FixProductNameFormat.sql)   
 [1565. Unique Orders and Customers Per Month](./leetcode/1565-UniqueOrdersAndCustomersPerMonth.sql)   
+[1571. Warehouse Manager](./leetcode/1571-WarehouseManager.sql)   
 [1581. Customer Who Visited but Did Not Make Any Transactions](./leetcode/1581-CustomerWhoVisitedbutDidNotMakeAnyTransactions.sql)   
 [1587. Bank Account Summary II](./leetcode/1587-BankAccountSummaryII.sql)   
 [1667. Fix Names in a Table](./leetcode/1667-FixNamesinaTable.sql)   
