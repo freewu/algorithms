@@ -460,6 +460,7 @@
 [1873. Calculate Special Bonus](./leetcode/1873-CalculateSpecialBonus.sql)   
 [1890. The Latest Login in 2020](./leetcode/1890-TheLatestLoginin2020.sql)   
 [1965. Employees With Missing Information](./leetcode/1965-EmployeesWithMissingInformation.sql)   
+[3053. Classifying Triangles by Lengths](./leetcode/3053-ClassifyingTrianglesByLengths.sql)   
 [3059. Find All Unique Email Domains](./leetcode/3059-FindAllUniqueEmailDomains.sql)   
 
 
