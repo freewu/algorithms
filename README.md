@@ -454,6 +454,7 @@
 [1607. Sellers With No Sales](./leetcode/1607-SellersWithNoSales.sql)   
 [1623. All Valid Triplets That Can Represent a Country](./leetcode/1623-AllValidTripletsThatCanRepresentACountry.sql)   
 [1667. Fix Names in a Table](./leetcode/1667-FixNamesinaTable.sql)   
+[1677. Product's Worth Over Invoices](./leetcode/1677-ProductsWorthOverInvoices.sql)   
 [1693. Daily Leads and Partners](./leetcode/1693-DailyLeadsandPartners.sql)   
 [1729. Find Followers Count](./leetcode/1729-FindFollowersCount.sql)   
 [1741. Find Total Time Spent by Each Employee](./leetcode/1741-FindTotalTimeSpentbyEachEmployee.sql)   
