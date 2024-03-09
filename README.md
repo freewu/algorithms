@@ -267,6 +267,7 @@
 [168. Excel Sheet Column Title](./leetcode/168-ExcelSheetColumnTitle.go)    
 [171. Excel Sheet Column Number](./leetcode/171-ExcelSheetColumnNumber.go)    
 [179. Largest Number](./leetcode/179-LargestNumber.go)    
+[299. Bulls and Cows](./leetcode/299-BullsAndCows.go)    
 [387. First Unique Character in a String](./leetcode/387-FirstUniqueCharacterInAString.go)    
 [451. Sort Characters By Frequency](./leetcode/451-SortCharactersByFrequency.go)       
 [514. Freedom Trail](./leetcode/514-FreedomTrail.go)    
