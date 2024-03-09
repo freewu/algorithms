@@ -461,6 +461,7 @@
 [1757. Recyclable and Low Fat Products](./leetcode/1757-RecyclableandLowFatProducts.sql)   
 [1777. Product's Price for Each Store](./leetcode/1777-ProductsPriceForEachStore.sql)   
 [1795. Rearrange Products Table](./leetcode/1795-RearrangeProductsTable.sql)   
+[1809. Ad-Free Sessions](./leetcode/1809-Ad-FreeSessions.sql)   
 [1853. Convert Date Format](./leetcode/1853-ConvertDateFormat.sql)   
 [1873. Calculate Special Bonus](./leetcode/1873-CalculateSpecialBonus.sql)   
 [1890. The Latest Login in 2020](./leetcode/1890-TheLatestLoginin2020.sql)   
