@@ -431,6 +431,7 @@
 [1141. User Activity for the Past 30 Days I](./leetcode/1141-UserActivityforthePast30DaysI.sql)   
 [1142. User Activity for the Past 30 Days II](./leetcode/1142-UserActivityForThePast30DaysII.sql)   
 [1148. Article Views I](./leetcode/1148-ArticleViewsI.sql)   
+[1149. Article Views II](./leetcode/1149-ArticleViewsII.sql)   
 [1158. Market Analysis I](./leetcode/1158-MarketAnalysisI.sql)   
 [1173. Immediate Food Delivery I](./leetcode/1173-ImmediateFoodDeliveryI.sql)   
 [1179. Reformat Department Table](./leetcode/1179-ReformatDepartmentTable.sql)   
