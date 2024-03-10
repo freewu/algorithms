@@ -471,6 +471,7 @@
 [1890. The Latest Login in 2020](./leetcode/1890-TheLatestLoginin2020.sql)   
 [1939. Users That Actively Request Confirmation Messages](./leetcode/1939-UsersThatActivelyRequestConfirmationMessages.sql)   
 [1965. Employees With Missing Information](./leetcode/1965-EmployeesWithMissingInformation.sql)   
+[2026. Low-Quality Problems](./leetcode/2026-LowQualityProblems.sql)   
 [3053. Classifying Triangles by Lengths](./leetcode/3053-ClassifyingTrianglesByLengths.sql)   
 [3059. Find All Unique Email Domains](./leetcode/3059-FindAllUniqueEmailDomains.sql)   
 
