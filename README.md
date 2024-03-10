@@ -476,6 +476,7 @@
 [2082. The Number of Rich Customers](./leetcode/2082-TheNumberOfRichCustomers.sql)   
 [2205. The Number of Users That Are Eligible for Discount](./leetcode/2205-TheNumberOfUsersThatAreEligibleForDiscount.sql)  
 [2329. Product Sales Analysis V](./leetcode/2329-ProductSalesAnalysisV.sql)   
+[2339. All the Matches of the League](./leetcode/2339-AllTheMatchesOfTheLeague.sql)   
 [3053. Classifying Triangles by Lengths](./leetcode/3053-ClassifyingTrianglesByLengths.sql)   
 [3059. Find All Unique Email Domains](./leetcode/3059-FindAllUniqueEmailDomains.sql)   
 
