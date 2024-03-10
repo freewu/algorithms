@@ -588,6 +588,8 @@
 [LCR 003. 比特位计数](./leetcode/LCR003-BitCount.go)   
 [LCR 004. 只出现一次的数字 II](./leetcode/LCR004-SingleNumberII.go)   
 [LCR 005. 最大单词长度乘积](./leetcode/LCR005-ProductOfMaximumWordLength.go)   
+[LCR 006. 两数之和 II - 输入有序数组](./leetcode/LCR006-TwoSumII.go)   
+
 
 # LCP
 [LCP 01. 猜数字](./leetcode/LCP01-GuessNumbers.go)   
