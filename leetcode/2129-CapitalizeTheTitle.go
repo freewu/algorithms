@@ -36,30 +36,37 @@ package main
 import "fmt"
 import "strings"
 
-// func capitalizeTitle1(title string) string {
-//     l := len(title)
-//     res := make([]byte, l)
-//     flag := true // 开头需要大写
-//     for i := 0; i < l; i++ {
-//         res[i] = title[i]
-//         // 遇到了空格下一个就要大写
-//         if title[i] == ' ' {
-//             // 判段只有1-2个字符的单词开头不需要转成大写
-//             if (i + 2 < l &&  title[i + 2] == ' ') || (i + 3 < l &&  title[i + 3] == ' ') {
-//             } else {
-//                 flag = true
-//                 continue
-//             }
-//         }
-//         if flag && (title[i] >= 'a' && title[i] <= 'z') { // 判断单词开头是否小写
-//             res[i] = title[i] - 32
-//         } else if !flag && title[i] >= 'A' && title[i] <= 'Z' { // 判断单词其它部份(除了开头)是否大写
-//             res[i] = title[i] + 32
-//         }
-//         flag = false
-//     }
-//     return string(res)
-// }
+func capitalizeTitle1(title string) string {
+    l := len(title)
+    res := make([]byte, l)
+    flag := false // 需要大写
+    for i := 0; i < l; i++ {
+        res[i] = title[i]
+        // 处理开头 只有 1-2 字符的大小写的问题
+        if i == 0 {
+            if (i + 1 < l &&  title[i + 1] == ' ') || (i + 2 < l &&  title[i + 2] == ' ') {
+            } else {
+                flag = true
+            }
+        }
+        // 遇到了空格下一个就要大写
+        if title[i] == ' ' {
+            // 判段只有1-2个字符的单词开头不需要转成大写
+            if (i + 2 < l &&  title[i + 2] == ' ') || (i + 3 < l &&  title[i + 3] == ' ') {
+            } else {
+                flag = true
+                continue
+            }
+        }
+        if flag && (title[i] >= 'a' && title[i] <= 'z') { // 判断单词开头是否小写
+            res[i] = title[i] - 32
+        } else if !flag && title[i] >= 'A' && title[i] <= 'Z' { // 判断单词其它部份(除了开头)是否大写
+            res[i] = title[i] + 32
+        }
+        flag = false
+    }
+    return string(res)
+}
 
 func capitalizeTitle(title string) string {
     title = strings.ToLower(title)
@@ -81,7 +88,7 @@ func main() {
     fmt.Println(capitalizeTitle("First leTTeR of EACH Word")) // First Letter of Each Word
     fmt.Println(capitalizeTitle("i lOve leetcode")) // i Love Leetcode
 
-    // fmt.Println(capitalizeTitle1("capiTalIze tHe titLe")) // capiTalIze tHe titLe
-    // fmt.Println(capitalizeTitle1("First leTTeR of EACH Word")) // First Letter of Each Word
-    // fmt.Println(capitalizeTitle1("i lOve leetcode")) // i Love Leetcode
+    fmt.Println(capitalizeTitle1("capiTalIze tHe titLe")) // capiTalIze tHe titLe
+    fmt.Println(capitalizeTitle1("First leTTeR of EACH Word")) // First Letter of Each Word
+    fmt.Println(capitalizeTitle1("i lOve leetcode")) // i Love Leetcode
 }
