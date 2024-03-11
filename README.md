@@ -485,6 +485,7 @@
 [2480. Form a Chemical Bond](./leetcode/2480-FormAChemicalBond.sql)   
 [2504. Concatenate the Name and the Profession](./leetcode/2504-ConcatenateTheNameAndTheProfession.sql)   
 [2668. Find Latest Salaries](./leetcode/2668-FindLatestSalaries.sql)   
+[2669. Count Artist Occurrences On Spotify Ranking List](./leetcode/2669-CountArtistOccurrencesOnSpotifyRankingList.sql)   
 [3053. Classifying Triangles by Lengths](./leetcode/3053-ClassifyingTrianglesByLengths.sql)   
 [3059. Find All Unique Email Domains](./leetcode/3059-FindAllUniqueEmailDomains.sql)   
 
