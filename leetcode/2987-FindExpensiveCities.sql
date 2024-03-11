@@ -48,6 +48,20 @@
 -- Therefore, these two cities are included in the output table. 
 -- The output table is sorted in ascending order based on the city names.
 
+-- Create Table if Not Exists Listings (listing_id int, city varchar(50), price int)
+-- Truncate table Listings
+-- insert into Listings (listing_id, city, price) values ('113', 'LosAngeles', '7560386')
+-- insert into Listings (listing_id, city, price) values ('136', 'SanFrancisco', '2380268')
+-- insert into Listings (listing_id, city, price) values ('92', 'Chicago', '9833209')
+-- insert into Listings (listing_id, city, price) values ('60', 'Chicago', '5147582')
+-- insert into Listings (listing_id, city, price) values ('8', 'Chicago', '5274441')
+-- insert into Listings (listing_id, city, price) values ('79', 'SanFrancisco', '8372065')
+-- insert into Listings (listing_id, city, price) values ('37', 'Chicago', '7939595')
+-- insert into Listings (listing_id, city, price) values ('53', 'LosAngeles', '4965123')
+-- insert into Listings (listing_id, city, price) values ('178', 'SanFrancisco', '999207')
+-- insert into Listings (listing_id, city, price) values ('51', 'NewYork', '5951718')
+-- insert into Listings (listing_id, city, price) values ('121', 'NewYork', '2893760')
+
 SELECT
     city
 FROM    
