@@ -482,6 +482,7 @@
 [2329. Product Sales Analysis V](./leetcode/2329-ProductSalesAnalysisV.sql)   
 [2339. All the Matches of the League](./leetcode/2339-AllTheMatchesOfTheLeague.sql)   
 [2377. Sort the Olympic Table](./leetcode/2377-SortTheOlympicTable.sql)   
+[2480. Form a Chemical Bond](./leetcode/2480-FormAChemicalBond.sql)   
 [3053. Classifying Triangles by Lengths](./leetcode/3053-ClassifyingTrianglesByLengths.sql)   
 [3059. Find All Unique Email Domains](./leetcode/3059-FindAllUniqueEmailDomains.sql)   
 
