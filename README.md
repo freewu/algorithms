@@ -490,6 +490,7 @@
 [2837. Total Traveled Distance](./leetcode/2837-TotalTraveledDistance.sql)   
 [2853. Highest Salaries Difference](./leetcode/2853-HighestSalariesDifference.sql)   
 [2985. Calculate Compressed Mean](./leetcode/2985-CalculateCompressedMean.sql)   
+[2987. Find Expensive Cities](./leetcode/2987-FindExpensiveCities.sql)   
 [3053. Classifying Triangles by Lengths](./leetcode/3053-ClassifyingTrianglesByLengths.sql)   
 [3059. Find All Unique Email Domains](./leetcode/3059-FindAllUniqueEmailDomains.sql)   
 
