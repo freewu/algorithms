@@ -488,6 +488,7 @@
 [2669. Count Artist Occurrences On Spotify Ranking List](./leetcode/2669-CountArtistOccurrencesOnSpotifyRankingList.sql)   
 [2687. Bikes Last Time Used](./leetcode/2687-BikesLastTimUsed.sql)   
 [2837. Total Traveled Distance](./leetcode/2837-TotalTraveledDistance.sql)   
+[2853. Highest Salaries Difference](./leetcode/2853-HighestSalariesDifference.sql)   
 [3053. Classifying Triangles by Lengths](./leetcode/3053-ClassifyingTrianglesByLengths.sql)   
 [3059. Find All Unique Email Domains](./leetcode/3059-FindAllUniqueEmailDomains.sql)   
 
