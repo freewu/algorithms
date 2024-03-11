@@ -483,6 +483,7 @@
 [2339. All the Matches of the League](./leetcode/2339-AllTheMatchesOfTheLeague.sql)   
 [2377. Sort the Olympic Table](./leetcode/2377-SortTheOlympicTable.sql)   
 [2480. Form a Chemical Bond](./leetcode/2480-FormAChemicalBond.sql)   
+[2504. Concatenate the Name and the Profession](./leetcode/2504-ConcatenateTheNameAndTheProfession.sql)   
 [3053. Classifying Triangles by Lengths](./leetcode/3053-ClassifyingTrianglesByLengths.sql)   
 [3059. Find All Unique Email Domains](./leetcode/3059-FindAllUniqueEmailDomains.sql)   
 
