@@ -22,6 +22,7 @@ package main
 //         s contains at least one '1'.
 
 import "fmt"
+import "strings"
 
 func maximumOddBinaryNumber(s string) string {
     // 用两个数存 0 / 1 的个数 
@@ -74,10 +75,18 @@ func maximumOddBinaryNumber1(s string) string {
     return string(res)
 }
 
+func maximumOddBinaryNumber2(s string) string {
+	cnt1 := strings.Count(s, "1")
+	return strings.Repeat("1", cnt1 - 1) + strings.Repeat("0", len(s) - cnt1) + "1"
+}
+
 func main() {
     fmt.Println(maximumOddBinaryNumber("010")) // 001
     fmt.Println(maximumOddBinaryNumber("0101")) // 1001
 
     fmt.Println(maximumOddBinaryNumber1("010")) // 001
     fmt.Println(maximumOddBinaryNumber1("0101")) // 1001
+
+	fmt.Println(maximumOddBinaryNumber2("010")) // 001
+    fmt.Println(maximumOddBinaryNumber2("0101")) // 1001
 }
