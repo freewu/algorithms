@@ -439,6 +439,7 @@
 [1148. Article Views I](./leetcode/1148-ArticleViewsI.sql)   
 [1149. Article Views II](./leetcode/1149-ArticleViewsII.sql)   
 [1158. Market Analysis I](./leetcode/1158-MarketAnalysisI.sql)   
+[1159. Market Analysis II](./leetcode/1159-MarketAnalysisII.sql)   
 [1173. Immediate Food Delivery I](./leetcode/1173-ImmediateFoodDeliveryI.sql)   
 [1179. Reformat Department Table](./leetcode/1179-ReformatDepartmentTable.sql)   
 [1241. Number of Comments per Post](./leetcode/1241-NumberOfCommentsPerPost.sql)   
