@@ -514,7 +514,7 @@
 [1195. Fizz Buzz Multithreaded](./leetcode/1195-FizzBuzzMultithreaded.java)   
 [1226. The Dining Philosophers](./leetcode/1226-TheDiningPhilosophers.java)   
 [1242. Web Crawler Multithreaded](./leetcode/1242-WebCrawlerMultithreaded.java)   
-
+[1279. Traffic Light Controlled Intersection](./leetcode/1279-TrafficLightControlledIntersection.java)   
 
 # Javascript
 [2618. Check if Object Instance of Class](./leetcode/2618-CheckIfObjectInstanceOfClass.js)   
