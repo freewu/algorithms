@@ -349,6 +349,7 @@
 [938. Range Sum of BST](./leetcode/938-RangeSumOfBST.go)    
 [987. Vertical Order Traversal of a Binary Tree](./leetcode/987-VerticalOrderTraversalOfABinaryTree.go)   
 [993. Cousins in Binary Tree](./leetcode/993-CousinsInBinaryTree.go)   
+[1261. Find Elements in a Contaminated Binary Tree](./leetcode/1261-FindElementsInAContaminatedBinaryTree.go)   
 [1609. Even Odd Tree](./leetcode/1609-EvenOddTree.go)   
 [2476. Closest Nodes Queries in a Binary Search Tree](./leetcode/2476-ClosestNodesQueriesInABinarySearchTree.go)   
 [2581. Count Number of Possible Root Nodes](./leetcode/2581-CountNumberOfPossibleRootNodes.go)   
