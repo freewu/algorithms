@@ -442,6 +442,7 @@
 [1159. Market Analysis II](./leetcode/1159-MarketAnalysisII.sql)   
 [1173. Immediate Food Delivery I](./leetcode/1173-ImmediateFoodDeliveryI.sql)   
 [1179. Reformat Department Table](./leetcode/1179-ReformatDepartmentTable.sql)   
+[1194. Tournament Winners](./leetcode/1194-TournamentWinners.sql)   
 [1241. Number of Comments per Post](./leetcode/1241-NumberOfCommentsPerPost.sql)   
 [1294. Weather Type in Each Country](./leetcode/1294-WeatherTypeInEachCountry.sql)   
 [1303. Find the Team Size](./leetcode/1303-FindTheTeamSize.sql)   
