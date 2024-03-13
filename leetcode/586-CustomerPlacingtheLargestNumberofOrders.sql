@@ -43,7 +43,6 @@
 -- insert into orders (order_number, customer_number) values ('3', '3')
 -- insert into orders (order_number, customer_number) values ('4', '3')
 
-
 SELECT
     customer_number
 FROM
