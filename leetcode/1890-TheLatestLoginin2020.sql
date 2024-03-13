@@ -1,6 +1,5 @@
 -- 1890. The Latest Login in 2020
 -- Table: Logins
---
 -- +----------------+----------+
 -- | Column Name    | Type     |
 -- +----------------+----------+
@@ -15,7 +14,6 @@
 -- The query result format is in the following example.
 --
 -- Example 1:
---
 -- Input:
 -- Logins table:
 -- +---------+---------------------+
@@ -44,6 +42,19 @@
 -- User 8 logged into their account 2 times in 2020, once in February and once in December. We include only the latest one (December) in the result table.
 -- User 2 logged into their account 2 times but only once in 2020, so we include this login in the result table.
 -- User 14 did not login in 2020, so we do not include them in the result table.
+
+-- Create table If Not Exists Logins (user_id int, time_stamp datetime)
+-- Truncate table Logins
+-- insert into Logins (user_id, time_stamp) values ('6', '2020-06-30 15:06:07')
+-- insert into Logins (user_id, time_stamp) values ('6', '2021-04-21 14:06:06')
+-- insert into Logins (user_id, time_stamp) values ('6', '2019-03-07 00:18:15')
+-- insert into Logins (user_id, time_stamp) values ('8', '2020-02-01 05:10:53')
+-- insert into Logins (user_id, time_stamp) values ('8', '2020-12-30 00:46:50')
+-- insert into Logins (user_id, time_stamp) values ('2', '2020-01-16 02:49:50')
+-- insert into Logins (user_id, time_stamp) values ('2', '2019-08-25 07:59:08')
+-- insert into Logins (user_id, time_stamp) values ('14', '2019-07-14 09:00:00')
+-- insert into Logins (user_id, time_stamp) values ('14', '2021-01-06 11:59:59')
+
 SELECT
     user_id,
     MAX(time_stamp) AS last_stamp

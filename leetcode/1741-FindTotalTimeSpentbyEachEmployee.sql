@@ -1,6 +1,5 @@
 -- 1741. Find Total Time Spent by Each Employee
 -- Table: Employees
---
 -- +-------------+------+
 -- | Column Name | Type |
 -- +-------------+------+
@@ -21,7 +20,6 @@
 -- The query result format is in the following example.
 --
 -- Example 1:
---
 -- Input:
 -- Employees table:
 -- +--------+------------+---------+----------+
@@ -45,6 +43,14 @@
 -- Explanation:
 -- Employee 1 has three events: two on day 2020-11-28 with a total of (32 - 4) + (200 - 55) = 173, and one on day 2020-12-03 with a total of (42 - 1) = 41.
 -- Employee 2 has two events: one on day 2020-11-28 with a total of (33 - 3) = 30, and one on day 2020-12-09 with a total of (74 - 47) = 27.
+
+-- Create table If Not Exists Employees(emp_id int, event_day date, in_time int, out_time int)
+-- Truncate table Employees
+-- insert into Employees (emp_id, event_day, in_time, out_time) values ('1', '2020-11-28', '4', '32')
+-- insert into Employees (emp_id, event_day, in_time, out_time) values ('1', '2020-11-28', '55', '200')
+-- insert into Employees (emp_id, event_day, in_time, out_time) values ('1', '2020-12-3', '1', '42')
+-- insert into Employees (emp_id, event_day, in_time, out_time) values ('2', '2020-11-28', '3', '33')
+-- insert into Employees (emp_id, event_day, in_time, out_time) values ('2', '2020-12-9', '47', '74')
 
 SELECT
    event_day AS day,
