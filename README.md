@@ -457,6 +457,7 @@
 [1407. Top Travellers](./leetcode/1407-TopTravellers.sql)   
 [1421. NPV Queries](./leetcode/1421-NPVQueries.sql)   
 [1435. Create a Session Bar Chart](./leetcode/1435-CreateASessionBarChart.sql)   
+[1440. Evaluate Boolean Expression](./leetcode/1440-EvaluateBooleanExpression.sql)   
 [1484. Group Sold Products By The Date](./leetcode/1484-GroupSoldProductsByTheDate.sql)   
 [1495. Friendly Movies Streamed Last Month](./leetcode/1495-FriendlyMoviesStreamedLastMonth.sql)   
 [1511. Customer Order Frequency](./leetcode/1511-CustomerOrderFrequency.sql)   
