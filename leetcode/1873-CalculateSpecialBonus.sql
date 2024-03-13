@@ -49,6 +49,8 @@ SELECT
     IF((employee_id % 2 = 1) AND SUBSTR(name,1,1) != 'M', salary, 0) AS bonus
 FROM
     Employees
+ORDER BY
+    employee_id 
 
 -- ID of the employee is an odd number
 -- (employee_id % 2 = 1)
