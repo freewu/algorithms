@@ -445,6 +445,7 @@
 [1179. Reformat Department Table](./leetcode/1179-ReformatDepartmentTable.sql)   
 [1194. Tournament Winners](./leetcode/1194-TournamentWinners.sql)   
 [1205. Monthly Transactions II](./leetcode/1205-MonthlyTransactionsII.sql)   
+[1212. Team Scores in Football Tournament](./leetcode/1212-TeamScoresInFootballTournament.sql)   
 [1241. Number of Comments per Post](./leetcode/1241-NumberOfCommentsPerPost.sql)   
 [1294. Weather Type in Each Country](./leetcode/1294-WeatherTypeInEachCountry.sql)   
 [1303. Find the Team Size](./leetcode/1303-FindTheTeamSize.sql)   
