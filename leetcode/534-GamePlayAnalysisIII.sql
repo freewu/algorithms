@@ -1,6 +1,5 @@
 -- 534. Game Play Analysis III
 -- Table: Activity
---
 -- +--------------+---------+
 -- | Column Name  | Type    |
 -- +--------------+---------+
@@ -16,8 +15,8 @@
 -- That is, the total number of games played by the player until that date. Check the example for clarity.
 -- Return the result table in any order.
 -- The query result format is in the following example.
+
 -- Example 1:
---
 -- Input:
 -- Activity table:
 -- +-----------+-----------+------------+--------------+
@@ -43,6 +42,14 @@
 -- For the player with id 1, 5 + 6 = 11 games played by 2016-05-02, and 5 + 6 + 1 = 12 games played by 2017-06-25.
 -- For the player with id 3, 0 + 5 = 5 games played by 2018-07-03.
 
+-- Create table If Not Exists Activity (player_id int, device_id int, event_date date, games_played int)
+-- Truncate table Activity
+-- insert into Activity (player_id, device_id, event_date, games_played) values ('1', '2', '2016-03-01', '5')
+-- insert into Activity (player_id, device_id, event_date, games_played) values ('1', '2', '2016-05-02', '6')
+-- insert into Activity (player_id, device_id, event_date, games_played) values ('1', '3', '2017-06-25', '1')
+-- insert into Activity (player_id, device_id, event_date, games_played) values ('3', '1', '2016-03-02', '0')
+-- insert into Activity (player_id, device_id, event_date, games_played) values ('3', '4', '2018-07-03', '5')
+
 -- Write your MySQL query statement below
 SELECT
     a.player_id,
@@ -57,3 +64,13 @@ WHERE
 GROUP BY
     a.player_id,
     a.event_date
+
+-- best solution
+SELECT 
+    player_id,
+    event_date,
+    SUM(games_played) OVER(PARTITION BY player_id ORDER BY player_id, event_date ASC) AS games_played_so_far
+FROM 
+    Activity
+ORDER BY
+    player_id, event_date DESC

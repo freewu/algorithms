@@ -42,6 +42,11 @@
 -- Product 0 is available in all three stores with prices 95, 100, and 105 respectively.
 -- Product 1 is available in store1 with price 70 and store3 with price 80. The product is not available in store2.
 
+-- Create table If Not Exists Products (product_id int, store1 int, store2 int, store3 int)
+-- Truncate table Products
+-- insert into Products (product_id, store1, store2, store3) values ('0', '95', '100', '105')
+-- insert into Products (product_id, store1, store2, store3) values ('1', '70', 'None', '80')
+
 SELECT
     *
 FROM
