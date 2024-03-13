@@ -480,6 +480,7 @@
 [1741. Find Total Time Spent by Each Employee](./leetcode/1741-FindTotalTimeSpentbyEachEmployee.sql)   
 [1757. Recyclable and Low Fat Products](./leetcode/1757-RecyclableandLowFatProducts.sql)   
 [1777. Product's Price for Each Store](./leetcode/1777-ProductsPriceForEachStore.sql)   
+[1783. Grand Slam Titles](./leetcode/1783-GrandSlamTitles.sql)   
 [1795. Rearrange Products Table](./leetcode/1795-RearrangeProductsTable.sql)   
 [1809. Ad-Free Sessions](./leetcode/1809-Ad-FreeSessions.sql)   
 [1821. Find Customers With Positive Revenue this Year](./leetcode/1821-FindCustomersWithPositiveRevenueThisYear.sql)   

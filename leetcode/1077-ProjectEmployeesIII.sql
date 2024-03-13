@@ -1,6 +1,5 @@
 -- 1077. Project Employees III
 -- Table: Project
---
 -- +-------------+---------+
 -- | Column Name | Type    |
 -- +-------------+---------+
@@ -12,7 +11,6 @@
 -- Each row of this table indicates that the employee with employee_id is working on the project with project_id.
 --
 -- Table: Employee
---
 -- +------------------+---------+
 -- | Column Name      | Type    |
 -- +------------------+---------+
@@ -27,8 +25,8 @@
 -- In case of a tie, report all employees with the maximum number of experience years.
 -- Return the result table in any order.
 -- The query result format is in the following example.
+
 -- Example 1:
---
 -- Input:
 -- Project table:
 -- +-------------+-------------+
@@ -59,7 +57,21 @@
 -- +-------------+---------------+
 -- Explanation: Both employees with id 1 and 3 have the most experience among the employees of the first project.
 -- For the second project, the employee with id 1 has the most experience.
---
+
+-- Create table If Not Exists Project (project_id int, employee_id int)
+-- Create table If Not Exists Employee (employee_id int, name varchar(10), experience_years int)
+-- Truncate table Project
+-- insert into Project (project_id, employee_id) values ('1', '1')
+-- insert into Project (project_id, employee_id) values ('1', '2')
+-- insert into Project (project_id, employee_id) values ('1', '3')
+-- insert into Project (project_id, employee_id) values ('2', '1')
+-- insert into Project (project_id, employee_id) values ('2', '4')
+-- Truncate table Employee
+-- insert into Employee (employee_id, name, experience_years) values ('1', 'Khaled', '3')
+-- insert into Employee (employee_id, name, experience_years) values ('2', 'Ali', '2')
+-- insert into Employee (employee_id, name, experience_years) values ('3', 'John', '3')
+-- insert into Employee (employee_id, name, experience_years) values ('4', 'Doe', '2')
+
 -- Write your MySQL query statement below
 SELECT
     p1.project_id,

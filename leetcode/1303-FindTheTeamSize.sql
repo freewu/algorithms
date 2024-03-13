@@ -41,6 +41,15 @@
 -- Employee with Id 4 is part of a team with team_id = 7.
 -- Employees with Id 5,6 are part of a team with team_id = 9.
 
+-- Create table If Not Exists Employee (employee_id int, team_id int)
+-- Truncate table Employee
+-- insert into Employee (employee_id, team_id) values ('1', '8')
+-- insert into Employee (employee_id, team_id) values ('2', '8')
+-- insert into Employee (employee_id, team_id) values ('3', '8')
+-- insert into Employee (employee_id, team_id) values ('4', '7')
+-- insert into Employee (employee_id, team_id) values ('5', '9')
+-- insert into Employee (employee_id, team_id) values ('6', '9')
+
 SELECT
     e.employee_id AS employee_id,
     t.count AS team_size
