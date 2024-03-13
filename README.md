@@ -478,6 +478,7 @@
 [1699. Number of Calls Between Two Persons](./leetcode/1699-NumberOfCallsBetweenTwoPersons.sql)   
 [1729. Find Followers Count](./leetcode/1729-FindFollowersCount.sql)   
 [1741. Find Total Time Spent by Each Employee](./leetcode/1741-FindTotalTimeSpentbyEachEmployee.sql)   
+[1747. Leetflex Banned Accounts](./leetcode/1747-LeetflexBannedAccounts.sql)   
 [1757. Recyclable and Low Fat Products](./leetcode/1757-RecyclableandLowFatProducts.sql)   
 [1777. Product's Price for Each Store](./leetcode/1777-ProductsPriceForEachStore.sql)   
 [1783. Grand Slam Titles](./leetcode/1783-GrandSlamTitles.sql)   
