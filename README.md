@@ -453,6 +453,7 @@
 [1322. Ads Performance](./leetcode/1322-AdsPerformance.sql)   
 [1350. Students With Invalid Departments](./leetcode/1350-StudentsWithInvalidDepartments.sql)   
 [1393. Capital Gain/Loss](./leetcode/1393-CapitalGainOrLoss.sql)   
+[1398. Customers Who Bought Products A and B but Not C](./leetcode/1398-CustomersWhoBoughtProductsAAndBButNotC.sql) 
 [1407. Top Travellers](./leetcode/1407-TopTravellers.sql)   
 [1421. NPV Queries](./leetcode/1421-NPVQueries.sql)   
 [1435. Create a Session Bar Chart](./leetcode/1435-CreateASessionBarChart.sql)   
