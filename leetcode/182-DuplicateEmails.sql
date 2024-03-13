@@ -1,6 +1,5 @@
 -- 182. Duplicate Emails
 -- Table: Person
---
 -- +-------------+---------+
 -- | Column Name | Type    |
 -- +-------------+---------+
@@ -15,7 +14,6 @@
 -- The query result format is in the following example.
 --
 -- Example 1:
---
 -- Input:
 -- Person table:
 -- +----+---------+
@@ -32,7 +30,13 @@
 -- | a@b.com |
 -- +---------+
 -- Explanation: a@b.com is repeated two times.
---
+
+-- Create table If Not Exists Person (id int, email varchar(255))
+-- Truncate table Person
+-- insert into Person (id, email) values ('1', 'a@b.com')
+-- insert into Person (id, email) values ('2', 'c@d.com')
+-- insert into Person (id, email) values ('3', 'a@b.com')
+
 -- Write your MySQL query statement below
 SELECT
     email AS Email

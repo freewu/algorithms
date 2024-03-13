@@ -461,6 +461,7 @@
 [1445. Apples & Oranges](./leetcode/1445-ApplesAndOranges.sql)   
 [1484. Group Sold Products By The Date](./leetcode/1484-GroupSoldProductsByTheDate.sql)   
 [1495. Friendly Movies Streamed Last Month](./leetcode/1495-FriendlyMoviesStreamedLastMonth.sql)   
+[1501. Countries You Can Safely Invest In](./leetcode/1501-CountriesYouCanSafelyInvestIn.sql)   
 [1511. Customer Order Frequency](./leetcode/1511-CustomerOrderFrequency.sql)   
 [1527. Patients With a Condition](./leetcode/1527-PatientsWithaCondition.sql)   
 [1543. Fix Product Name Format](./leetcode/1543-FixProductNameFormat.sql)   
