@@ -457,6 +457,7 @@
 [1285. Find the Start and End Number of Continuous Ranges](./leetcode/1285-FindTheStartAndEndNumberOfContinuousRanges.sql)   
 [1294. Weather Type in Each Country](./leetcode/1294-WeatherTypeInEachCountry.sql)   
 [1303. Find the Team Size](./leetcode/1303-FindTheTeamSize.sql)   
+[1308. Running Total for Different Genders](./leetcode/1308-RunningTotalForDifferentGenders.sql)   
 [1322. Ads Performance](./leetcode/1322-AdsPerformance.sql)   
 [1350. Students With Invalid Departments](./leetcode/1350-StudentsWithInvalidDepartments.sql)   
 [1393. Capital Gain/Loss](./leetcode/1393-CapitalGainOrLoss.sql)   
