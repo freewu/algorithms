@@ -468,6 +468,7 @@
 [1511. Customer Order Frequency](./leetcode/1511-CustomerOrderFrequency.sql)   
 [1527. Patients With a Condition](./leetcode/1527-PatientsWithaCondition.sql)   
 [1543. Fix Product Name Format](./leetcode/1543-FixProductNameFormat.sql)   
+[1549. The Most Recent Orders for Each Product](./leetcode/1549-TheMostRecentOrdersForEachProduct.sql)   
 [1565. Unique Orders and Customers Per Month](./leetcode/1565-UniqueOrdersAndCustomersPerMonth.sql)   
 [1571. Warehouse Manager](./leetcode/1571-WarehouseManager.sql)   
 [1581. Customer Who Visited but Did Not Make Any Transactions](./leetcode/1581-CustomerWhoVisitedbutDidNotMakeAnyTransactions.sql)   
