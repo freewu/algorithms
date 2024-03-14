@@ -475,6 +475,7 @@
 [1571. Warehouse Manager](./leetcode/1571-WarehouseManager.sql)   
 [1581. Customer Who Visited but Did Not Make Any Transactions](./leetcode/1581-CustomerWhoVisitedbutDidNotMakeAnyTransactions.sql)   
 [1587. Bank Account Summary II](./leetcode/1587-BankAccountSummaryII.sql)   
+[1596. The Most Frequently Ordered Products for Each Customer](./leetcode/1596-TheMostFrequentlyOrderedProductsForEachCustomer.sql)   
 [1607. Sellers With No Sales](./leetcode/1607-SellersWithNoSales.sql)   
 [1623. All Valid Triplets That Can Represent a Country](./leetcode/1623-AllValidTripletsThatCanRepresentACountry.sql)   
 [1667. Fix Names in a Table](./leetcode/1667-FixNamesinaTable.sql)   
