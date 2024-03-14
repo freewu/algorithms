@@ -467,6 +467,7 @@
 [1501. Countries You Can Safely Invest In](./leetcode/1501-CountriesYouCanSafelyInvestIn.sql)   
 [1511. Customer Order Frequency](./leetcode/1511-CustomerOrderFrequency.sql)   
 [1527. Patients With a Condition](./leetcode/1527-PatientsWithaCondition.sql)   
+[1532. The Most Recent Three Orders](./leetcode/1532-TheMostRecentThreeOrders.sql)   
 [1543. Fix Product Name Format](./leetcode/1543-FixProductNameFormat.sql)   
 [1549. The Most Recent Orders for Each Product](./leetcode/1549-TheMostRecentOrdersForEachProduct.sql)   
 [1565. Unique Orders and Customers Per Month](./leetcode/1565-UniqueOrdersAndCustomersPerMonth.sql)   
