@@ -326,6 +326,7 @@
 [292. Nim Game](./leetcode/292-NimGame.go)    
 [365. Water and Jug Problem](./leetcode/365-WaterAndJugProblem.go)    
 [670. Maximum Swap](./leetcode/670-MaximumSwap.go)    
+[2235. Add Two Integers](./leetcode/2235-AddTwoIntegers.go)    
 [2485. Find the Pivot Integer](./leetcode/2485-FindThePivotInteger.go)    
 [2834. Find the Minimum Possible Sum of a Beautiful Array](./leetcode/2834-FindTheMinimumPossibleSumOfABeautifulArray.go)    
 
