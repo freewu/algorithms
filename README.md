@@ -220,6 +220,7 @@
 [1696. Jump Game VI](./leetcode/1696-JumpGameVI.go)    
 [2108. Find First Palindromic String in the Array](./leetcode/2108-FindFirstPalindromicStringInTheArray.go)    
 [2149. Rearrange Array Elements by Sign](./leetcode/2149-RearrangeArrayElementsBySign.go)   
+[2312. Selling Pieces of Wood](./leetcode/2312-SellingPiecesOfWood.go)   
 [2368. Reachable Nodes With Restrictions](./leetcode/2368-ReachableNodesWithRestrictions.go)   
 [2369. Check if There is a Valid Partition For The Array](./leetcode/2369-CheckIfThereIsAValidPartitionForTheArray.go)    
 [2386. Find the K-Sum of an Array](./leetcode/2386-FindTheK-SumOfAnArray.go)    

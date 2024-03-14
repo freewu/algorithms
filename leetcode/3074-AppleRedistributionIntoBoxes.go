@@ -26,6 +26,7 @@ package main
 
 import "fmt"
 import "slices"
+import "sort"
 
 func minimumBoxes(apple []int, capacity []int) int {
     s := 0
@@ -45,7 +46,30 @@ func minimumBoxes(apple []int, capacity []int) int {
 	return -1
 }
 
+func minimumBoxes1(apple []int, capacity []int) int {
+    // 累加苹果数量
+    var apples int
+    for i := range apple {
+        apples += apple[i]
+    }
+    // 由大到小排序
+    sort.Slice(capacity, func(i, j int) bool { return capacity[i] > capacity[j] })
+    var sum, count int
+    for i := range capacity {
+        sum += capacity[i]
+        count++ // 累加箱子个数
+        // 装满了
+        if sum >= apples {
+            break
+        }
+    }
+    return count
+  }
+
 func main() {
     fmt.Println(minimumBoxes([]int{1,3,2},[]int{4,3,1,5,2})) // 2
     fmt.Println(minimumBoxes([]int{5,5,5},[]int{2,4,2,7})) // 4
+
+    fmt.Println(minimumBoxes1([]int{1,3,2},[]int{4,3,1,5,2})) // 2
+    fmt.Println(minimumBoxes1([]int{5,5,5},[]int{2,4,2,7})) // 4
 }
