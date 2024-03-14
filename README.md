@@ -482,6 +482,7 @@
 [1677. Product's Worth Over Invoices](./leetcode/1677-ProductsWorthOverInvoices.sql)   
 [1693. Daily Leads and Partners](./leetcode/1693-DailyLeadsandPartners.sql)   
 [1699. Number of Calls Between Two Persons](./leetcode/1699-NumberOfCallsBetweenTwoPersons.sql)   
+[1709. Biggest Window Between Visits](./leetcode/1709-BiggestWindowBetweenVisits.sql)   
 [1729. Find Followers Count](./leetcode/1729-FindFollowersCount.sql)   
 [1741. Find Total Time Spent by Each Employee](./leetcode/1741-FindTotalTimeSpentbyEachEmployee.sql)   
 [1747. Leetflex Banned Accounts](./leetcode/1747-LeetflexBannedAccounts.sql)   
