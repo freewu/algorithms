@@ -451,6 +451,7 @@
 [1225. Report Contiguous Dates](./leetcode/1225-ReportContiguousDates.sql)   
 [1241. Number of Comments per Post](./leetcode/1241-NumberOfCommentsPerPost.sql)   
 [1264. Page Recommendations](./leetcode/1264-PageRecommendations.sql)   
+[1270. All People Report to the Given Manager](./leetcode/1270-AllPeopleReportToTheGivenManager.sql)   
 [1285. Find the Start and End Number of Continuous Ranges](./leetcode/1285-FindTheStartAndEndNumberOfContinuousRanges.sql)   
 [1294. Weather Type in Each Country](./leetcode/1294-WeatherTypeInEachCountry.sql)   
 [1303. Find the Team Size](./leetcode/1303-FindTheTeamSize.sql)   
