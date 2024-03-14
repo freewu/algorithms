@@ -489,6 +489,7 @@
 [1741. Find Total Time Spent by Each Employee](./leetcode/1741-FindTotalTimeSpentbyEachEmployee.sql)   
 [1747. Leetflex Banned Accounts](./leetcode/1747-LeetflexBannedAccounts.sql)   
 [1757. Recyclable and Low Fat Products](./leetcode/1757-RecyclableandLowFatProducts.sql)   
+[1767. Find the Subtasks That Did Not Execute](./leetcode/1767-FindTheSubtasksThatDidNotExecute.sql)   
 [1777. Product's Price for Each Store](./leetcode/1777-ProductsPriceForEachStore.sql)   
 [1783. Grand Slam Titles](./leetcode/1783-GrandSlamTitles.sql)   
 [1795. Rearrange Products Table](./leetcode/1795-RearrangeProductsTable.sql)   
