@@ -460,6 +460,7 @@
 [1393. Capital Gain/Loss](./leetcode/1393-CapitalGainOrLoss.sql)   
 [1398. Customers Who Bought Products A and B but Not C](./leetcode/1398-CustomersWhoBoughtProductsAAndBButNotC.sql) 
 [1407. Top Travellers](./leetcode/1407-TopTravellers.sql)   
+[1412. Find the Quiet Students in All Exams](./leetcode/1412-FindTheQuietStudentsInAllExams.sql)   
 [1421. NPV Queries](./leetcode/1421-NPVQueries.sql)   
 [1435. Create a Session Bar Chart](./leetcode/1435-CreateASessionBarChart.sql)   
 [1440. Evaluate Boolean Expression](./leetcode/1440-EvaluateBooleanExpression.sql)   
