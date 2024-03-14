@@ -489,6 +489,7 @@
 [1795. Rearrange Products Table](./leetcode/1795-RearrangeProductsTable.sql)   
 [1809. Ad-Free Sessions](./leetcode/1809-Ad-FreeSessions.sql)   
 [1821. Find Customers With Positive Revenue this Year](./leetcode/1821-FindCustomersWithPositiveRevenueThisYear.sql)   
+[1831. Maximum Transaction Each Day](./leetcode/1831-MaximumTransactionEachDay.sql)  
 [1853. Convert Date Format](./leetcode/1853-ConvertDateFormat.sql)   
 [1873. Calculate Special Bonus](./leetcode/1873-CalculateSpecialBonus.sql)   
 [1890. The Latest Login in 2020](./leetcode/1890-TheLatestLoginin2020.sql)   
