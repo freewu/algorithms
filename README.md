@@ -287,6 +287,7 @@
 [791. Custom Sort String](./leetcode/791-CustomSortString.go)    
 [1143. Longest Common Subsequence](./leetcode/1143-LongestCommonSubsequence.go)    
 [1239. Maximum Length of a Concatenated String with Unique Characters](./leetcode/1239-MaximumLengthOfAConcatenatedStringWithUniqueCharacters.go)    
+[1422. Maximum Score After Splitting a String](./leetcode/1422-MaximumScoreAfterSplittingAString.go)    
 [1750. Minimum Length of String After Deleting Similar Ends](./leetcode/1750-MinimumLengthOfStringAfterDeletingSimilarEnds.go)    
 [2129. Capitalize the Title](./leetcode/2129-CapitalizeTheTitle.go)   
 [2575. Find the Divisibility Array of a String](./leetcode/2575-FindTheDivisibilityArrayOfAString.go)    
