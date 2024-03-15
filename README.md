@@ -338,7 +338,6 @@
 [225. Implement Stack using Queues](./leetcode/225-ImplementStackUsingQueues.go)   
 [232. Implement Queue using Stacks](./leetcode/232-ImplementQueueUsingStacks.go)   
 
-
 # Tree
 [94. Binary Tree Inorder Traversal](./leetcode/94-BinaryTreeInorderTraversal.go)   
 [100. Same Tree](./leetcode/100-SameTree.go)   
@@ -360,6 +359,7 @@
 [993. Cousins in Binary Tree](./leetcode/993-CousinsInBinaryTree.go)   
 [1261. Find Elements in a Contaminated Binary Tree](./leetcode/1261-FindElementsInAContaminatedBinaryTree.go)   
 [1609. Even Odd Tree](./leetcode/1609-EvenOddTree.go)   
+[2236. Root Equals Sum of Children](./leetcode/2236-RootEqualsSumOfChildren.go)   
 [2476. Closest Nodes Queries in a Binary Search Tree](./leetcode/2476-ClosestNodesQueriesInABinarySearchTree.go)   
 [2581. Count Number of Possible Root Nodes](./leetcode/2581-CountNumberOfPossibleRootNodes.go)   
 [2583. Kth Largest Sum in a Binary Tree](./leetcode/2583-KthLargestSumInABinaryTree.go)   
