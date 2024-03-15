@@ -234,6 +234,7 @@
 [2540. Minimum Common Value](./leetcode/2540-MinimumCommonValue.go)    
 [2575. Find the Divisibility Array of a String](./leetcode/2575-FindTheDivisibilityArrayOfAString.go)    
 [2670. Find the Distinct Difference Array](./leetcode/2670-FindTheDistinctDifferenceArray.go)    
+[2684. Maximum Number of Moves in a Grid](./leetcode/2684-MaximumNumberOfMovesInAGrid.go)   
 [2789. Largest Element in an Array after Merge Operations](./leetcode/2789-LargestElementInAnArrayAfterMergeOperations.go)    
 [2808. Minimum Seconds to Equalize a Circular Array](./leetcode/2808-MinimumSecondsToEqualizeACircularArray.go)   
 [2859. Sum of Values at Indices With K Set Bits ](./leetcode/2859-SumOfValuesAtIndicesWithKSetBits.go)    
