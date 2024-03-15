@@ -214,6 +214,7 @@
 [1043. Partition Array for Maximum Sum](./leetcode/1043-PartitionArrayForMaximumSum.go)    
 [1074. Number of Submatrices That Sum to Target](./leetcode/1074-NumberOfSubmatricesThatSumToTarget.go)    
 [1463. Cherry Pickup II](./leetcode/1463-CherryPickupII.go)    
+[1470. Shuffle the Array](./leetcode/1470-ShuffleTheArray.go)    
 [1481. Least Number of Unique Integers after K Removals](./leetcode/1481-LeastNumberOfUniqueIntegersAfterKRemovals.go)    
 [1512. Number of Good Pairs](./leetcode/1512-NumberOfGoodPairs.go)    
 [1534. Count Good Triplets](./leetcode/1534-CountGoodTriplets.go)    
