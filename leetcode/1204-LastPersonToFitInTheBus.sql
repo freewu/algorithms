@@ -1,6 +1,5 @@
 -- 1204. Last Person to Fit in the Bus
 -- Table: Queue
-
 -- +-------------+---------+
 -- | Column Name | Type    |
 -- +-------------+---------+
@@ -19,9 +18,7 @@
 -- Write a solution to find the person_name of the last person that can fit on the bus without exceeding the weight limit. The test cases are generated such that the first person does not exceed the weight limit.
 -- The result format is in the following example.
  
-
 -- Example 1:
-
 -- Input: 
 -- Queue table:
 -- +-----------+-------------+--------+------+
@@ -52,6 +49,15 @@
 -- | 6    | 1  | Winston   | 500    | ___          |
 -- +------+----+-----------+--------+--------------+
 
+-- Create table If Not Exists Queue (person_id int, person_name varchar(30), weight int, turn int)
+-- Truncate table Queue
+-- insert into Queue (person_id, person_name, weight, turn) values ('5', 'Alice', '250', '1')
+-- insert into Queue (person_id, person_name, weight, turn) values ('4', 'Bob', '175', '5')
+-- insert into Queue (person_id, person_name, weight, turn) values ('3', 'Alex', '350', '2')
+-- insert into Queue (person_id, person_name, weight, turn) values ('6', 'John Cena', '400', '3')
+-- insert into Queue (person_id, person_name, weight, turn) values ('1', 'Winston', '500', '6')
+-- insert into Queue (person_id, person_name, weight, turn) values ('2', 'Marie', '200', '4')
+
 -- Write your MySQL query statement below
 SELECT 
     q1.person_name
@@ -59,10 +65,14 @@ FROM
     Queue q1 
 JOIN 
     Queue q2 
-ON q1.turn >= q2.turn -- 
-GROUP BY q1.turn 
-HAVING SUM(q2.weight) <= 1000 --累加判断
-ORDER BY SUM(q2.weight) DESC
+ON 
+    q1.turn >= q2.turn -- 
+GROUP BY 
+    q1.turn 
+HAVING 
+    SUM(q2.weight) <= 1000 --累加判断
+ORDER BY 
+    SUM(q2.weight) DESC
 LIMIT 1
 
 -- best solution
@@ -77,7 +87,7 @@ from
         Queue
 ) as t0
 where 
-    total<=1000
+    total <= 1000
 order by 
     total desc
 limit 1

@@ -95,3 +95,26 @@ FROM
 ) AS d  
 WHERE 
     d.rk = 1;
+
+-- best solution
+SELECT 
+    ROUND(
+        100 * SUM(IF(f.order_date = f.customer_pref_delivery_date, 1, 0)) / COUNT(*), 
+        2
+    ) AS immediate_percentage 
+FROM
+(
+    SELECT 
+        * 
+    FROM 
+    ( 
+        SELECT 
+            * 
+        FROM 
+            Delivery AS a 
+        ORDER BY 
+            a.order_date ASC 
+    ) AS b  
+    GROUP BY 
+        b.customer_id
+) AS f
