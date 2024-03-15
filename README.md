@@ -207,6 +207,7 @@
 [500. Keyboard Row](./leetcode/500-KeyboardRow.go)    
 [645. Set Mismatch](./leetcode/645-SetMismatch.go)    
 [739. Daily Temperatures](./leetcode/739-DailyTemperatures.go)    
+[852. Peak Index in a Mountain Array](./leetcode/852-PeakIndexInAMountainArray.go)    
 [867. Transpose Matrix](./leetcode/867-TransposeMatrix.go)    
 [930. Binary Subarrays With Sum](./leetcode/930-BinarySubarraysWithSum.go)    
 [948. Bag of Tokens](./leetcode/948-BagOfTokens.go)    
