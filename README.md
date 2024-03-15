@@ -326,6 +326,7 @@
 [50. Pow(x, n)](./leetcode/50-Pow-x-n.go)    
 [70. Climbing Stairs](./leetcode/70-ClimbingStairs.go)    
 [231. Power of Two](./leetcode/231-PowerOfTwo.go)    
+[258. Add Digits](./leetcode/258-AddDigits.go)    
 [279. Perfect Squares](./leetcode/279-PerfectSquares.go)    
 [292. Nim Game](./leetcode/292-NimGame.go)    
 [365. Water and Jug Problem](./leetcode/365-WaterAndJugProblem.go)    
