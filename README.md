@@ -328,6 +328,7 @@
 [231. Power of Two](./leetcode/231-PowerOfTwo.go)    
 [258. Add Digits](./leetcode/258-AddDigits.go)    
 [279. Perfect Squares](./leetcode/279-PerfectSquares.go)    
+[326. Power of Three](./leetcode/326-PowerOfThree.go)    
 [292. Nim Game](./leetcode/292-NimGame.go)    
 [365. Water and Jug Problem](./leetcode/365-WaterAndJugProblem.go)    
 [670. Maximum Swap](./leetcode/670-MaximumSwap.go)    
