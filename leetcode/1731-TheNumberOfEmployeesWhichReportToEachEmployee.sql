@@ -16,7 +16,6 @@
 -- Return the result table ordered by employee_id.
 -- The result format is in the following example.
 
-
 -- Example 1:
 -- Input: 
 -- Employees table:
@@ -35,6 +34,13 @@
 -- | 9           | Hercy | 2             | 39          |
 -- +-------------+-------+---------------+-------------+
 -- Explanation: Hercy has 2 people report directly to him, Alice and Bob. Their average age is (41+36)/2 = 38.5, which is 39 after rounding it to the nearest integer.
+
+-- Create table If Not Exists Employees(employee_id int, name varchar(20), reports_to int, age int)
+-- Truncate table Employees
+-- insert into Employees (employee_id, name, reports_to, age) values ('9', 'Hercy', 'None', '43')
+-- insert into Employees (employee_id, name, reports_to, age) values ('6', 'Alice', '9', '41')
+-- insert into Employees (employee_id, name, reports_to, age) values ('4', 'Bob', '9', '36')
+-- insert into Employees (employee_id, name, reports_to, age) values ('2', 'Winston', 'None', '37')
 
 -- Write your MySQL query statement below
 SELECT

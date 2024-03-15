@@ -1,6 +1,5 @@
 -- 1164. Product Price at a Given Date
 -- Table: Products
-
 -- +---------------+---------+
 -- | Column Name   | Type    |
 -- +---------------+---------+
@@ -11,17 +10,12 @@
 -- (product_id, change_date) is the primary key (combination of columns with unique values) of this table.
 -- Each row of this table indicates that the price of some product was changed to a new price at some date.
  
-
--- Write a solution to find the prices of all products on 2019-08-16. Assume the price of all products before any change is 10.
-
+-- Write a solution to find the prices of all products on 2019-08-16. 
+-- Assume the price of all products before any change is 10.
 -- Return the result table in any order.
-
 -- The result format is in the following example.
 
- 
-
 -- Example 1:
-
 -- Input: 
 -- Products table:
 -- +------------+-----------+-------------+
@@ -42,6 +36,15 @@
 -- | 1          | 35    |
 -- | 3          | 10    |
 -- +------------+-------+
+
+-- Create table If Not Exists Products (product_id int, new_price int, change_date date)
+-- Truncate table Products
+-- insert into Products (product_id, new_price, change_date) values ('1', '20', '2019-08-14')
+-- insert into Products (product_id, new_price, change_date) values ('2', '50', '2019-08-14')
+-- insert into Products (product_id, new_price, change_date) values ('1', '30', '2019-08-15')
+-- insert into Products (product_id, new_price, change_date) values ('1', '35', '2019-08-16')
+-- insert into Products (product_id, new_price, change_date) values ('2', '65', '2019-08-17')
+-- insert into Products (product_id, new_price, change_date) values ('3', '20', '2019-08-18')
 
 -- Write your MySQL query statement below
 SELECT 
@@ -95,3 +98,36 @@ SELECT
      ),10) as price
 from    
     Products p1
+
+
+-- best solution
+select 
+    p1.product_id,
+    ifnull(new_price,10) as price 
+from 
+(
+    select 
+        distinct product_id 
+    from 
+        products
+) as p1 
+left join 
+(   
+    select 
+        product_id,new_price 
+    from 
+        products 
+    where 
+        (product_id,change_date) in 
+        (
+            select 
+                product_id,max(change_date) 
+            from 
+                products 
+            where 
+                change_date <= '2019-08-16' 
+            group by product_id
+        )
+) as p2 
+on 
+    p1.product_id=p2.product_id;

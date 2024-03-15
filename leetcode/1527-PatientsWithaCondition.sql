@@ -1,6 +1,5 @@
 -- 1527. Patients With a Condition
 -- Table: Patients
---
 -- +--------------+---------+
 -- | Column Name  | Type    |
 -- +--------------+---------+
@@ -18,7 +17,6 @@
 -- The query result format is in the following example.
 --
 -- Example 1:
---
 -- Input:
 -- Patients table:
 -- +------------+--------------+--------------+
@@ -38,6 +36,15 @@
 -- | 4          | George       | ACNE DIAB100 |
 -- +------------+--------------+--------------+
 -- Explanation: Bob and George both have a condition that starts with DIAB1.
+
+-- Create table If Not Exists Patients (patient_id int, patient_name varchar(30), conditions varchar(100))
+-- Truncate table Patients
+-- insert into Patients (patient_id, patient_name, conditions) values ('1', 'Daniel', 'YFEV COUGH')
+-- insert into Patients (patient_id, patient_name, conditions) values ('2', 'Alice', '')
+-- insert into Patients (patient_id, patient_name, conditions) values ('3', 'Bob', 'DIAB100 MYOP')
+-- insert into Patients (patient_id, patient_name, conditions) values ('4', 'George', 'ACNE DIAB100')
+-- insert into Patients (patient_id, patient_name, conditions) values ('5', 'Alain', 'DIAB201')
+
 SELECT
     patient_id,
     patient_name,

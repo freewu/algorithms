@@ -1,6 +1,5 @@
 -- 550. Game Play Analysis IV
 -- Table: Activity
---
 -- +--------------+---------+
 -- | Column Name  | Type    |
 -- +--------------+---------+
@@ -16,9 +15,8 @@
 -- rounded to 2 decimal places. In other words, you need to count the number of players that logged in for at least two consecutive days starting from their first login date,
 -- then divide that number by the total number of players.
 -- The query result format is in the following example.
---
+
 -- Example 1:
---
 -- Input:
 -- Activity table:
 -- +-----------+-----------+------------+--------------+
@@ -38,8 +36,17 @@
 -- +-----------+
 -- Explanation:
 -- Only the player with id 1 logged back in after the first day he had logged in so the answer is 1/3 = 0.33
---
-# Write your MySQL query statement below
+
+-- Create table If Not Exists Activity (player_id int, device_id int, event_date date, games_played int)
+-- Truncate table Activity
+-- insert into Activity (player_id, device_id, event_date, games_played) values ('1', '2', '2016-03-01', '5')
+-- insert into Activity (player_id, device_id, event_date, games_played) values ('1', '2', '2016-03-02', '6')
+-- insert into Activity (player_id, device_id, event_date, games_played) values ('2', '3', '2017-06-25', '1')
+-- insert into Activity (player_id, device_id, event_date, games_played) values ('3', '1', '2016-03-02', '0')
+-- insert into Activity (player_id, device_id, event_date, games_played) values ('3', '4', '2018-07-03', '5')
+
+
+-- Write your MySQL query statement below
 -- 首日注册后第二天连续登录的.不是任意两天连续登录
 # SELECT
 #     ROUND((

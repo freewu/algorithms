@@ -1,6 +1,5 @@
 -- 1193. Monthly Transactions I
 -- Table: Transactions
-
 -- +---------------+---------+
 -- | Column Name   | Type    |
 -- +---------------+---------+
@@ -19,7 +18,6 @@
 -- The query result format is in the following example.
 
 -- Example 1:
-
 -- Input: 
 -- Transactions table:
 -- +------+---------+----------+--------+------------+
@@ -38,7 +36,16 @@
 -- | 2019-01  | US      | 1           | 1              | 2000               | 2000                  |
 -- | 2019-01  | DE      | 1           | 1              | 2000               | 2000                  |
 -- +----------+---------+-------------+----------------+--------------------+-----------------------+
+
+-- Create table If Not Exists Transactions (id int, country varchar(4), state enum('approved', 'declined'), amount int, trans_date date)
+-- Truncate table Transactions
+-- insert into Transactions (id, country, state, amount, trans_date) values ('121', 'US', 'approved', '1000', '2018-12-18')
+-- insert into Transactions (id, country, state, amount, trans_date) values ('122', 'US', 'declined', '2000', '2018-12-19')
+-- insert into Transactions (id, country, state, amount, trans_date) values ('123', 'US', 'approved', '2000', '2019-01-01')
+-- insert into Transactions (id, country, state, amount, trans_date) values ('124', 'DE', 'approved', '2000', '2019-01-07')
+
 -- Write your MySQL query statement below
+-- union
 SELECT 
     month,
     country,

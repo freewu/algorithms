@@ -1,6 +1,5 @@
 -- 196. Delete Duplicate Emails
 -- Table: Person
---
 -- +-------------+---------+
 -- | Column Name | Type    |
 -- +-------------+---------+
@@ -18,7 +17,6 @@
 -- The query result format is in the following example.
 
 -- Example 1:
---
 -- Input:
 -- Person table:
 -- +----+------------------+
@@ -36,8 +34,14 @@
 -- | 2  | bob@example.com  |
 -- +----+------------------+
 -- Explanation: john@example.com is repeated two times. We keep the row with the smallest Id = 1.
---
 -- Please write a DELETE statement and DO NOT write a SELECT statement.
+
+-- Create table If Not Exists Person (Id int, Email varchar(255))
+-- Truncate table Person
+-- insert into Person (id, email) values ('1', 'john@example.com')
+-- insert into Person (id, email) values ('2', 'bob@example.com')
+-- insert into Person (id, email) values ('3', 'john@example.com')
+
 -- Write your MySQL query statement below
 DELETE FROM
     `Person`

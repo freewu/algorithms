@@ -1,6 +1,5 @@
 -- 602. Friend Requests II: Who Has the Most Friends
 -- Table: RequestAccepted
---
 -- +----------------+---------+
 -- | Column Name    | Type    |
 -- +----------------+---------+
@@ -16,7 +15,6 @@
 -- The query result format is in the following example.
 --
 -- Example 1:
---
 -- Input:
 -- RequestAccepted table:
 -- +--------------+-------------+-------------+
@@ -37,7 +35,14 @@
 -- The person with id 3 is a friend of people 1, 2, and 4, so he has three friends in total, which is the most number than any others.
 --  
 -- Follow up: In the real world, multiple people could have the same most number of friends. Could you find all these people in this case?
---
+
+-- Create table If Not Exists RequestAccepted (requester_id int not null, accepter_id int null, accept_date date null)
+-- Truncate table RequestAccepted
+-- insert into RequestAccepted (requester_id, accepter_id, accept_date) values ('1', '2', '2016/06/03')
+-- insert into RequestAccepted (requester_id, accepter_id, accept_date) values ('1', '3', '2016/06/08')
+-- insert into RequestAccepted (requester_id, accepter_id, accept_date) values ('2', '3', '2016/06/08')
+-- insert into RequestAccepted (requester_id, accepter_id, accept_date) values ('3', '4', '2016/06/09')
+
 -- Write your MySQL query statement below
 SELECT
     a.id,

@@ -1,6 +1,5 @@
 -- 1729. Find Followers Count
 -- Table: Followers
---
 -- +-------------+------+
 -- | Column Name | Type |
 -- +-------------+------+
@@ -14,7 +13,6 @@
 -- The query result format is in the following example.
 --
 -- Example 1:
---
 -- Input:
 -- Followers table:
 -- +---------+-------------+
@@ -37,10 +35,20 @@
 -- The followers of 0 are {1}
 -- The followers of 1 are {0}
 -- The followers of 2 are {0,1}
+
+-- Create table If Not Exists Followers(user_id int, follower_id int)
+-- Truncate table Followers
+-- insert into Followers (user_id, follower_id) values ('0', '1')
+-- insert into Followers (user_id, follower_id) values ('1', '0')
+-- insert into Followers (user_id, follower_id) values ('2', '0')
+-- insert into Followers (user_id, follower_id) values ('2', '1')
+
 SELECT
     user_id,
     count(*) AS followers_count
 FROM
     Followers
-GROUP BY user_id
-ORDER BY user_id
+GROUP BY 
+    user_id
+ORDER BY 
+    user_id

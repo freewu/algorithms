@@ -1,6 +1,5 @@
 -- 1667. Fix Names in a Table
 -- Table: Users
---
 -- +----------------+---------+
 -- | Column Name    | Type    |
 -- +----------------+---------+
@@ -15,7 +14,6 @@
 -- The query result format is in the following example.
 --
 -- Example 1:
---
 -- Input:
 -- Users table:
 -- +---------+-------+
@@ -31,9 +29,16 @@
 -- | 1       | Alice |
 -- | 2       | Bob   |
 -- +---------+-------+
+
+-- Create table If Not Exists Users (user_id int, name varchar(40))
+-- Truncate table Users
+-- insert into Users (user_id, name) values ('1', 'aLice')
+-- insert into Users (user_id, name) values ('2', 'bOB')
+
 SELECT
     user_id,
     CONCAT( UPPER( SUBSTR(name,1,1) ),LOWER( SUBSTR(name,2) ) ) AS name
 FROM
     Users
-ORDER BY user_id
+ORDER BY 
+    user_id

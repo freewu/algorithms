@@ -1,6 +1,5 @@
 -- 1789. Primary Department for Each Employee
 -- Table: Employee
-
 -- +---------------+---------+
 -- | Column Name   |  Type   |
 -- +---------------+---------+
@@ -19,7 +18,6 @@
 -- The result format is in the following example.
 
 -- Example 1:
-
 -- Input: 
 -- Employee table:
 -- +-------------+---------------+--------------+
@@ -48,6 +46,16 @@
 -- - The Primary department for employee 3 is 3.
 -- - The Primary department for employee 4 is 3.
 
+-- Create table If Not Exists Employee (employee_id int, department_id int, primary_flag ENUM('Y','N'))
+-- Truncate table Employee
+-- insert into Employee (employee_id, department_id, primary_flag) values ('1', '1', 'N')
+-- insert into Employee (employee_id, department_id, primary_flag) values ('2', '1', 'Y')
+-- insert into Employee (employee_id, department_id, primary_flag) values ('2', '2', 'N')
+-- insert into Employee (employee_id, department_id, primary_flag) values ('3', '3', 'N')
+-- insert into Employee (employee_id, department_id, primary_flag) values ('4', '2', 'N')
+-- insert into Employee (employee_id, department_id, primary_flag) values ('4', '3', 'Y')
+-- insert into Employee (employee_id, department_id, primary_flag) values ('4', '4', 'N')
+
 -- Write your MySQL query statement below
 SELECT 
     employee_id,
@@ -65,3 +73,26 @@ WHERE
             employee_id
         HAVING(COUNT(*)) = 1
     )
+
+-- UNION
+(-- 只有一个部门的员工
+    SELECT
+        employee_id,
+        department_id
+    FROM
+        Employee 
+    GROUP By
+        employee_id
+    HAVING
+        COUNT(department_id) = 1
+)
+UNION
+(-- 多个部门取 primary_flag = 'Y' 的部门编号
+    SELECT
+        employee_id,
+        department_id
+    FROM
+        Employee 
+    WHERE 
+        primary_flag = 'Y'
+)

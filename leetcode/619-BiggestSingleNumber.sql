@@ -1,6 +1,5 @@
 -- 619. Biggest Single Number
 -- Table: MyNumbers
---
 -- +-------------+------+
 -- | Column Name | Type |
 -- +-------------+------+
@@ -13,7 +12,6 @@
 -- The query result format is in the following example.
 
 -- Example 1:
---
 -- Input:
 -- MyNumbers table:
 -- +-----+
@@ -36,8 +34,8 @@
 -- +-----+
 -- Explanation: The single numbers are 1, 4, 5, and 6.
 -- Since 6 is the largest single number, we return it.
+
 -- Example 2:
---
 -- Input:
 -- MyNumbers table:
 -- +-----+
@@ -58,12 +56,24 @@
 -- | null |
 -- +------+
 -- Explanation: There are no single numbers in the input table so we return null.
---
+
+-- Create table If Not Exists MyNumbers (num int)
+-- Truncate table MyNumbers
+-- insert into MyNumbers (num) values ('8')
+-- insert into MyNumbers (num) values ('8')
+-- insert into MyNumbers (num) values ('3')
+-- insert into MyNumbers (num) values ('3')
+-- insert into MyNumbers (num) values ('1')
+-- insert into MyNumbers (num) values ('4')
+-- insert into MyNumbers (num) values ('5')
+-- insert into MyNumbers (num) values ('6')
+
 -- Write your MySQL query statement below
+-- max
 SELECT
     MAX(num) AS num
 FROM
-    (
+    ( -- 求出一出现一次的所有数字
         SELECT
             num
         FROM
@@ -73,3 +83,22 @@ FROM
         HAVING
             COUNT(*) = 1
     ) AS a
+
+-- limit
+SELECT
+    num
+FROM
+    ( -- 求出一出现一次的所有数字
+        SELECT
+            num
+        FROM
+            MyNumbers
+        GROUP By
+            num
+        HAVING
+            COUNT(*) = 1
+    ) AS a
+ORDER BY
+    num DESC 
+LIMIT 
+    1

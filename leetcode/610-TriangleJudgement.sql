@@ -1,6 +1,5 @@
 -- 610. Triangle Judgement
 -- Table: Triangle
---
 -- +-------------+------+
 -- | Column Name | Type |
 -- +-------------+------+
@@ -14,10 +13,8 @@
 -- Write an SQL query to report for every three line segments whether they can form a triangle.
 -- Return the result table in any order.
 -- The query result format is in the following example.
---
 
 -- Example 1:
---
 -- Input:
 -- Triangle table:
 -- +----+----+----+
@@ -33,9 +30,13 @@
 -- | 13 | 15 | 30 | No       |
 -- | 10 | 20 | 15 | Yes      |
 -- +----+----+----+----------+
---
--- 三角形三边关系是三角形三条边关系的定则，具体内容是在一个三角形中，任意两边之和大于第三边，任意两边之差小于第三边。”
 
+-- Create table If Not Exists Triangle (x int, y int, z int)
+-- Truncate table Triangle
+-- insert into Triangle (x, y, z) values ('13', '15', '30')
+-- insert into Triangle (x, y, z) values ('10', '20', '15')
+
+-- 三角形三边关系是三角形三条边关系的定则，具体内容是在一个三角形中，任意两边之和大于第三边，任意两边之差小于第三边。”
 -- Write your MySQL query statement below
 SELECT
     *,
