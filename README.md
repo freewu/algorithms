@@ -328,6 +328,7 @@
 [365. Water and Jug Problem](./leetcode/365-WaterAndJugProblem.go)    
 [670. Maximum Swap](./leetcode/670-MaximumSwap.go)    
 [2235. Add Two Integers](./leetcode/2235-AddTwoIntegers.go)    
+[2413. Smallest Even Multiple](./leetcode/2413-SmallestEvenMultiple.go)    
 [2469. Convert the Temperature](./leetcode/2469-ConvertTheTemperature.go)    
 [2485. Find the Pivot Integer](./leetcode/2485-FindThePivotInteger.go)    
 [2834. Find the Minimum Possible Sum of a Beautiful Array](./leetcode/2834-FindTheMinimumPossibleSumOfABeautifulArray.go)    
