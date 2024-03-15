@@ -327,6 +327,7 @@
 [70. Climbing Stairs](./leetcode/70-ClimbingStairs.go)    
 [231. Power of Two](./leetcode/231-PowerOfTwo.go)    
 [258. Add Digits](./leetcode/258-AddDigits.go)    
+[263. Ugly Number](./leetcode/263-UglyNumber.go)    
 [279. Perfect Squares](./leetcode/279-PerfectSquares.go)    
 [326. Power of Three](./leetcode/326-PowerOfThree.go)    
 [292. Nim Game](./leetcode/292-NimGame.go)    
