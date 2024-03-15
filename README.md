@@ -331,6 +331,7 @@
 [292. Nim Game](./leetcode/292-NimGame.go)    
 [365. Water and Jug Problem](./leetcode/365-WaterAndJugProblem.go)    
 [670. Maximum Swap](./leetcode/670-MaximumSwap.go)    
+[1281. Subtract the Product and Sum of Digits of an Integer](./leetcode/1281-SubtractTheProductAndSumOfDigitsOfAnInteger.go)    
 [1486. XOR Operation in an Array](./leetcode/1486-XOROperationInAnArray.go)    
 [1512. Number of Good Pairs](./leetcode/1512-NumberOfGoodPairs.go)    
 [2235. Add Two Integers](./leetcode/2235-AddTwoIntegers.go)    
