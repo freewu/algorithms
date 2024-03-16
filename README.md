@@ -283,6 +283,7 @@
 [179. Largest Number](./leetcode/179-LargestNumber.go)    
 [299. Bulls and Cows](./leetcode/299-BullsAndCows.go)    
 [387. First Unique Character in a String](./leetcode/387-FirstUniqueCharacterInAString.go)    
+[389. Find the Difference](./leetcode/389-FindTheDifference.go)    
 [451. Sort Characters By Frequency](./leetcode/451-SortCharactersByFrequency.go)       
 [514. Freedom Trail](./leetcode/514-FreedomTrail.go)    
 [647. Palindromic Substrings](./leetcode/647-PalindromicSubstrings.go)    
