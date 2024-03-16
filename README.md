@@ -559,6 +559,7 @@
 [2668. Find Latest Salaries](./leetcode/2668-FindLatestSalaries.sql)   
 [2669. Count Artist Occurrences On Spotify Ranking List](./leetcode/2669-CountArtistOccurrencesOnSpotifyRankingList.sql)   
 [2687. Bikes Last Time Used](./leetcode/2687-BikesLastTimUsed.sql)   
+[2738. Count Occurrences in Text](./leetcode/2738-CountOccurrencesInText.sql)   
 [2837. Total Traveled Distance](./leetcode/2837-TotalTraveledDistance.sql)   
 [2853. Highest Salaries Difference](./leetcode/2853-HighestSalariesDifference.sql)   
 [2985. Calculate Compressed Mean](./leetcode/2985-CalculateCompressedMean.sql)   
