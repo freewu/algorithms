@@ -659,6 +659,7 @@
 [183. Customers Who Never Order](./leetcode/183-CustomersWhoNeverOrder.py) 
 [595. Big Countries](./leetcode/595-BigCountries.py)   
 [1148. Article Views I](./leetcode/1148-ArticleViewsI.py)   
+[1683. Invalid Tweets](./leetcode/1683-InvalidTweets.py)   
 [1757. Recyclable and Low Fat Products](./leetcode/1757-RecyclableAndLowFatProducts.py)   
 [2877. Create a DataFrame from List](./leetcode/2877-CreateADataFrameFromList.py)   
 [2878. Get the Size of a DataFrame](./leetcode/2878-GetTheSizeOfADataFrame.py)   
