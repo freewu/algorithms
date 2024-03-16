@@ -1,6 +1,5 @@
 -- 177. Nth Highest Salary
 -- Table: Employee
---
 -- +-------------+------+
 -- | Column Name | Type |
 -- +-------------+------+
@@ -13,9 +12,8 @@
 -- Write an SQL query to report the nth highest salary from the Employee table.
 -- If there is no nth highest salary, the query should report null.
 -- The query result format is in the following example.
---
+
 -- Example 1:
---
 -- Input:
 -- Employee table:
 -- +----+--------+
@@ -32,8 +30,8 @@
 -- +------------------------+
 -- | 200                    |
 -- +------------------------+
+
 -- Example 2:
---
 -- Input:
 -- Employee table:
 -- +----+--------+
@@ -48,6 +46,13 @@
 -- +------------------------+
 -- | null                   |
 -- +------------------------+
+
+-- Create table If Not Exists Employee (Id int, Salary int)
+-- Truncate table Employee
+-- insert into Employee (id, salary) values ('1', '100')
+-- insert into Employee (id, salary) values ('2', '200')
+-- insert into Employee (id, salary) values ('3', '300')
+
 CREATE FUNCTION getNthHighestSalary(N INT) RETURNS INT
 BEGIN
     DECLARE M int;

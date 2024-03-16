@@ -656,6 +656,7 @@
 [2823. Deep Object Filter](./leetcode/2823-DeepObjectFilter.js)    
 
 # Pandas
+[177. Nth Highest Salary](./leetcode/177-NthHighestSalary.py)   
 [183. Customers Who Never Order](./leetcode/183-CustomersWhoNeverOrder.py) 
 [595. Big Countries](./leetcode/595-BigCountries.py)   
 [1148. Article Views I](./leetcode/1148-ArticleViewsI.py)   
