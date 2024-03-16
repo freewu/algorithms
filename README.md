@@ -661,6 +661,7 @@
 [1148. Article Views I](./leetcode/1148-ArticleViewsI.py)   
 [1683. Invalid Tweets](./leetcode/1683-InvalidTweets.py)   
 [1757. Recyclable and Low Fat Products](./leetcode/1757-RecyclableAndLowFatProducts.py)   
+[1873. Calculate Special Bonus](./leetcode/1873-CalculateSpecialBonus.py)   
 [2877. Create a DataFrame from List](./leetcode/2877-CreateADataFrameFromList.py)   
 [2878. Get the Size of a DataFrame](./leetcode/2878-GetTheSizeOfADataFrame.py)   
 [2879. Display the First Three Rows](./leetcode/2879-DisplayTheFirstThreeRows.py)   
