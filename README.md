@@ -388,6 +388,7 @@
 [2867. Count Valid Paths in a Tree](./leetcode/2867-CountValidPathsInATree.go)   
 
 # Graph
+[310. Minimum Height Trees](./leetcode/310-MinimumHeightTrees.go)   
 [1976. Number of Ways to Arrive at Destination](./leetcode/1976-NumberOfWaysToArriveAtDestination.go)   
 [2092. Find All People With Secret](./leetcode/2092-FindAllPeopleWithSecret.go)   
 
@@ -653,7 +654,6 @@
 [2821. Delay the Resolution of Each Promise](./leetcode/2821-DelayTheResolutionOfEachPromise.js)    
 [2822. Inversion of Object](./leetcode/2822-InversionOfObject.js)    
 [2823. Deep Object Filter](./leetcode/2823-DeepObjectFilter.js)    
-
 
 # Pandas
 [183. Customers Who Never Order](./leetcode/183-CustomersWhoNeverOrder.py) 
