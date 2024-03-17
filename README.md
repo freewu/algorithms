@@ -659,6 +659,7 @@
 # Pandas
 [176. Second Highest Salary](./leetcode/176-SecondHighestSalary.py)   
 [177. Nth Highest Salary](./leetcode/177-NthHighestSalary.py)   
+[178. Rank Scores](./leetcode/178-RankScores.py)   
 [183. Customers Who Never Order](./leetcode/183-CustomersWhoNeverOrder.py)   
 [184. Department Highest Salary](./leetcode/184-DepartmentHighestSalary.py)   
 [196. Delete Duplicate Emails](./leetcode/196-DeleteDuplicateEmails.py)   
