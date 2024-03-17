@@ -671,6 +671,7 @@
 [1667. Fix Names in a Table](./leetcode/1667-FixNamesinaTable.py)   
 [1683. Invalid Tweets](./leetcode/1683-InvalidTweets.py)   
 [1757. Recyclable and Low Fat Products](./leetcode/1757-RecyclableAndLowFatProducts.py)   
+[1795. Rearrange Products Table](./leetcode/1795-RearrangeProductsTable.py)   
 [1873. Calculate Special Bonus](./leetcode/1873-CalculateSpecialBonus.py)   
 [2738. Count Occurrences in Text](./leetcode/2738-CountOccurrencesInText.py)   
 [2877. Create a DataFrame from List](./leetcode/2877-CreateADataFrameFromList.py)   
