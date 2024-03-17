@@ -50,6 +50,19 @@
 -- for ad_id = 5, ctr = 0.00, Note that ad_id = 5 has no clicks or views.
 -- Note that we do not care about Ignored Ads.
 
+-- Create table If Not Exists Ads (ad_id int, user_id int, action ENUM('Clicked', 'Viewed', 'Ignored'))
+-- Truncate table Ads
+-- insert into Ads (ad_id, user_id, action) values ('1', '1', 'Clicked')
+-- insert into Ads (ad_id, user_id, action) values ('2', '2', 'Clicked')
+-- insert into Ads (ad_id, user_id, action) values ('3', '3', 'Viewed')
+-- insert into Ads (ad_id, user_id, action) values ('5', '5', 'Ignored')
+-- insert into Ads (ad_id, user_id, action) values ('1', '7', 'Ignored')
+-- insert into Ads (ad_id, user_id, action) values ('2', '7', 'Viewed')
+-- insert into Ads (ad_id, user_id, action) values ('3', '5', 'Clicked')
+-- insert into Ads (ad_id, user_id, action) values ('1', '4', 'Viewed')
+-- insert into Ads (ad_id, user_id, action) values ('2', '11', 'Viewed')
+-- insert into Ads (ad_id, user_id, action) values ('1', '2', 'Clicked')
+
 SELECT
     ad_id,
     ROUND(
