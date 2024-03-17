@@ -665,6 +665,7 @@
 [184. Department Highest Salary](./leetcode/184-DepartmentHighestSalary.py)   
 [196. Delete Duplicate Emails](./leetcode/196-DeleteDuplicateEmails.py)   
 [595. Big Countries](./leetcode/595-BigCountries.py)   
+[1173. Immediate Food Delivery I](./leetcode/1173-ImmediateFoodDeliveryI.py)   
 [1148. Article Views I](./leetcode/1148-ArticleViewsI.py)   
 [1517. Find Users With Valid E-Mails](./leetcode/1517-FindUsersWithValidEMails.py)   
 [1527. Patients With a Condition](./leetcode/1527-PatientsWithaCondition.py)   
