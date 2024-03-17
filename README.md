@@ -673,6 +673,7 @@
 [1757. Recyclable and Low Fat Products](./leetcode/1757-RecyclableAndLowFatProducts.py)   
 [1795. Rearrange Products Table](./leetcode/1795-RearrangeProductsTable.py)   
 [1873. Calculate Special Bonus](./leetcode/1873-CalculateSpecialBonus.py)   
+[2082. The Number of Rich Customers](./leetcode/2082-TheNumberOfRichCustomers.py)   
 [2738. Count Occurrences in Text](./leetcode/2738-CountOccurrencesInText.py)   
 [2877. Create a DataFrame from List](./leetcode/2877-CreateADataFrameFromList.py)   
 [2878. Get the Size of a DataFrame](./leetcode/2878-GetTheSizeOfADataFrame.py)   
