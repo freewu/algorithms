@@ -674,6 +674,7 @@
 [1050. Actors and Directors Who Cooperated At Least Three Times](./leetcode/1050-ActorsandDirectorsWhoCooperatedAtLeastThreeTimes.py)   
 [1173. Immediate Food Delivery I](./leetcode/1173-ImmediateFoodDeliveryI.py)   
 [1148. Article Views I](./leetcode/1148-ArticleViewsI.py)   
+[1280. Students and Examinations](./leetcode/1280-StudentsAndExaminations.py)   
 [1322. Ads Performance](./leetcode/1322-AdsPerformance.py)   
 [1378. Replace Employee ID With The Unique Identifier](./leetcode/1378-ReplaceEmployeeIDWithTheUniqueIdentifier.py)   
 [1484. Group Sold Products By The Date](./leetcode/1484-GroupSoldProductsByTheDate.py)   
