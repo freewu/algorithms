@@ -669,6 +669,7 @@
 [196. Delete Duplicate Emails](./leetcode/196-DeleteDuplicateEmails.py)   
 [511. Game Play Analysis I](./leetcode/511-GamePlayAnalysisI.py)   
 [595. Big Countries](./leetcode/595-BigCountries.py)   
+[596. Classes More Than 5 Students](./leetcode/596-ClassesMoreThan5Students.py)   
 [1173. Immediate Food Delivery I](./leetcode/1173-ImmediateFoodDeliveryI.py)   
 [1148. Article Views I](./leetcode/1148-ArticleViewsI.py)   
 [1322. Ads Performance](./leetcode/1322-AdsPerformance.py)   
