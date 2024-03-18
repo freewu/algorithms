@@ -668,6 +668,7 @@
 [184. Department Highest Salary](./leetcode/184-DepartmentHighestSalary.py)   
 [196. Delete Duplicate Emails](./leetcode/196-DeleteDuplicateEmails.py)   
 [511. Game Play Analysis I](./leetcode/511-GamePlayAnalysisI.py)   
+[570. Managers with at Least 5 Direct Reports](./leetcode/570-ManagersWithAtLeast5DirectReports.py)   
 [586. Customer Placing the Largest Number of Orders](./leetcode/586-CustomerPlacingtheLargestNumberofOrders.py)   
 [595. Big Countries](./leetcode/595-BigCountries.py)   
 [596. Classes More Than 5 Students](./leetcode/596-ClassesMoreThan5Students.py)   
