@@ -1,34 +1,38 @@
 package main
 
+// 54. Spiral Matrix
+// Given a matrix of m x n elements (m rows, n columns), return all elements of the matrix in spiral order.
+
+// Example 1:
+// <img src="https://assets.leetcode.com/uploads/2020/11/13/spiral1.jpg" />
+// Input:
+// [
+//     [ 1, 2, 3 ],
+//     [ 4, 5, 6 ],
+//     [ 7, 8, 9 ]
+// ]
+// Output: [1,2,3,6,9,8,7,4,5]
+
+// Example 2:
+// <img src="https://assets.leetcode.com/uploads/2020/11/13/spiral.jpg" />
+// Input:
+// [
+//     [1, 2, 3, 4],
+//     [5, 6, 7, 8],
+//     [9,10,11,12]
+// ]
+// Output: [1,2,3,4,8,12,11,10,9,5,6,7]
+
+// Constraints:
+//     m == matrix.length
+//     n == matrix[i].length
+//     1 <= m, n <= 10
+//     -100 <= matrix[i][j] <= 100
+
+// 解题思路:
+// 	给定一个包含 m x n 个元素的矩阵（m 行, n 列），请按照顺时针螺旋顺序，返回矩阵中的所有元素。
+
 import "fmt"
-
-/**
-54. Spiral Matrix
-Given a matrix of m x n elements (m rows, n columns), return all elements of the matrix in spiral order.
-
-Example 1:
-
-	Input:
-	[
-	 [ 1, 2, 3 ],
-	 [ 4, 5, 6 ],
-	 [ 7, 8, 9 ]
-	]
-	Output: [1,2,3,6,9,8,7,4,5]
-
-Example 2:
-
-	Input:
-	[
-	  [1, 2, 3, 4],
-	  [5, 6, 7, 8],
-	  [9,10,11,12]
-	]
-	Output: [1,2,3,4,8,12,11,10,9,5,6,7]
-
-解题思路:
-	给定一个包含 m x n 个元素的矩阵（m 行, n 列），请按照顺时针螺旋顺序，返回矩阵中的所有元素。
- */
 
 func spiralOrder(matrix [][]int) []int {
 	if len(matrix) == 0 {
@@ -145,36 +149,36 @@ func spiralOrder1(matrix [][]int) []int {
 
 // best solution
 func spiralOrderBest(matrix [][]int) []int {
-	var res []int
-	left, right := 0, len(matrix[0])
-	top, bottom := 0, len(matrix)
+    var res []int
+    left, right := 0, len(matrix[0])
+    top, bottom := 0, len(matrix)
 
-	for left < right && top < bottom {
-		//->
-		for i := left; i < right; i++ {
-			res = append(res, matrix[top][i])
-		}
-		top += 1
-		//↓
-		for i := top; i < bottom; i++ {
-			res = append(res, matrix[i][right-1])
-		}
-		right -= 1
-		if !(left < right && top < bottom) {
-			break
-		}
-		//←
-		for i := right - 1; i >= left; i-- {
-			res = append(res, matrix[bottom-1][i])
-		}
-		bottom -= 1
-		//↑
-		for i := bottom - 1; i >= top; i-- {
-			res = append(res, matrix[i][left])
-		}
-		left += 1
-	}
-	return res
+    for left < right && top < bottom {
+        //->
+        for i := left; i < right; i++ {
+            res = append(res, matrix[top][i])
+        }
+        top += 1
+        //↓
+        for i := top; i < bottom; i++ {
+            res = append(res, matrix[i][right-1])
+        }
+        right -= 1
+        if !(left < right && top < bottom) {
+            break
+        }
+        //←
+        for i := right - 1; i >= left; i-- {
+            res = append(res, matrix[bottom-1][i])
+        }
+        bottom -= 1
+        //↑
+        for i := bottom - 1; i >= top; i-- {
+            res = append(res, matrix[i][left])
+        }
+        left += 1
+    }
+    return res
 }
 
 func main() {
