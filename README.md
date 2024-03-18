@@ -71,7 +71,7 @@
 [240. Search a 2D Matrix II](./leetcode/240-SearchA2DMatrixII.go)   
 [253. Meeting Rooms II]   
 [279. Perfect Squares](./leetcode/279-PerfectSquares.go)       
-[283. Move Zeroes]   
+[283. Move Zeroes](./leetcode/283-MoveZeroes.go)     
 [297. Serialize and Deserialize Binary Tree]   
 [300. Longest Increasing Subsequence]   
 [301. Remove Invalid Parentheses]   
