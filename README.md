@@ -675,6 +675,7 @@
 [1173. Immediate Food Delivery I](./leetcode/1173-ImmediateFoodDeliveryI.py)   
 [1148. Article Views I](./leetcode/1148-ArticleViewsI.py)   
 [1322. Ads Performance](./leetcode/1322-AdsPerformance.py)   
+[1378. Replace Employee ID With The Unique Identifier](./leetcode/1378-ReplaceEmployeeIDWithTheUniqueIdentifier.py)   
 [1484. Group Sold Products By The Date](./leetcode/1484-GroupSoldProductsByTheDate.py)   
 [1517. Find Users With Valid E-Mails](./leetcode/1517-FindUsersWithValidEMails.py)   
 [1527. Patients With a Condition](./leetcode/1527-PatientsWithaCondition.py)   
