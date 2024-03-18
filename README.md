@@ -681,6 +681,7 @@
 [1795. Rearrange Products Table](./leetcode/1795-RearrangeProductsTable.py)   
 [1873. Calculate Special Bonus](./leetcode/1873-CalculateSpecialBonus.py)   
 [1907. Count Salary Categories](./leetcode/1907-CountSalaryCategories.py)   
+[2041. Accepted Candidates From the Interviews](./leetcode/2041-AcceptedCandidatesFromtheInterviews.py)   
 [2082. The Number of Rich Customers](./leetcode/2082-TheNumberOfRichCustomers.py)   
 [2356. Number of Unique Subjects Taught by Each Teacher](./leetcode/2356-NumberofUniqueSubjectsTaughtbyEachTeacher.py)   
 [2738. Count Occurrences in Text](./leetcode/2738-CountOccurrencesInText.py)   
