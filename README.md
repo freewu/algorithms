@@ -671,6 +671,7 @@
 [586. Customer Placing the Largest Number of Orders](./leetcode/586-CustomerPlacingtheLargestNumberofOrders.py)   
 [595. Big Countries](./leetcode/595-BigCountries.py)   
 [596. Classes More Than 5 Students](./leetcode/596-ClassesMoreThan5Students.py)   
+[1050. Actors and Directors Who Cooperated At Least Three Times](./leetcode/1050-ActorsandDirectorsWhoCooperatedAtLeastThreeTimes.py)   
 [1173. Immediate Food Delivery I](./leetcode/1173-ImmediateFoodDeliveryI.py)   
 [1148. Article Views I](./leetcode/1148-ArticleViewsI.py)   
 [1322. Ads Performance](./leetcode/1322-AdsPerformance.py)   
