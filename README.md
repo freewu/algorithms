@@ -682,6 +682,7 @@
 [1873. Calculate Special Bonus](./leetcode/1873-CalculateSpecialBonus.py)   
 [1907. Count Salary Categories](./leetcode/1907-CountSalaryCategories.py)   
 [2082. The Number of Rich Customers](./leetcode/2082-TheNumberOfRichCustomers.py)   
+[2356. Number of Unique Subjects Taught by Each Teacher](./leetcode/2356-NumberofUniqueSubjectsTaughtbyEachTeacher.py)   
 [2738. Count Occurrences in Text](./leetcode/2738-CountOccurrencesInText.py)   
 [2877. Create a DataFrame from List](./leetcode/2877-CreateADataFrameFromList.py)   
 [2878. Get the Size of a DataFrame](./leetcode/2878-GetTheSizeOfADataFrame.py)   
