@@ -679,6 +679,7 @@
 [1527. Patients With a Condition](./leetcode/1527-PatientsWithaCondition.py)   
 [1667. Fix Names in a Table](./leetcode/1667-FixNamesinaTable.py)   
 [1683. Invalid Tweets](./leetcode/1683-InvalidTweets.py)   
+[1693. Daily Leads and Partners](./leetcode/1693-DailyLeadsandPartners.py)   
 [1741. Find Total Time Spent by Each Employee](./leetcode/1741-FindTotalTimeSpentbyEachEmployee.py)   
 [1757. Recyclable and Low Fat Products](./leetcode/1757-RecyclableAndLowFatProducts.py)   
 [1795. Rearrange Products Table](./leetcode/1795-RearrangeProductsTable.py)   
