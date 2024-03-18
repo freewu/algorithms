@@ -667,6 +667,7 @@
 [183. Customers Who Never Order](./leetcode/183-CustomersWhoNeverOrder.py)   
 [184. Department Highest Salary](./leetcode/184-DepartmentHighestSalary.py)   
 [196. Delete Duplicate Emails](./leetcode/196-DeleteDuplicateEmails.py)   
+[511. Game Play Analysis I](./leetcode/511-GamePlayAnalysisI.py)   
 [595. Big Countries](./leetcode/595-BigCountries.py)   
 [1173. Immediate Food Delivery I](./leetcode/1173-ImmediateFoodDeliveryI.py)   
 [1148. Article Views I](./leetcode/1148-ArticleViewsI.py)   
