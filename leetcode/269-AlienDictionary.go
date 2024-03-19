@@ -95,65 +95,65 @@ func alienOrder(words []string) string {
 
 // dfs
 func alienOrder1(words []string) string {
-	const CHARSET int = 26
-	n := len(words)
-	g := make([][]int, CHARSET)
-	vis := make([]bool, CHARSET)
-	for _, c := range words[0] {
-		vis[c-'a'] = true
-	}
-	for i := 1; i < n; i++ {
-		w1, w2 := words[i-1], words[i]
-		j := 0
-		for ; j < min(len(w1), len(w2)); j++ {
-			vis[w2[j]-'a'] = true
-			if w1[j] == w2[j] {
-				continue
-			}
-			g[w1[j]-'a'] = append(g[w1[j]-'a'], int(w2[j]-'a'))
-			break
-		}
-		if j == len(w2) && j < len(w1) {
-			return ""
-		}
-		for ; j < len(w2); j++ {
-			vis[w2[j]-'a'] = true
-		}
-	}
-	cnt := 0
-	for _, v := range vis {
-		if v {
-			cnt++
-		}
-	}
-	ans := []byte{}
-	times := make([]int, CHARSET)
-	var dfs func(u int) bool
-	dfs = func(u int) bool {
-		if times[u] == 2 {
-			return true
-		} else if times[u] == 1 {
-			return false
-		}
-		times[u] = 1
-		for _, v := range g[u] {
-			if !dfs(v) {
-				return false
-			}
-		}
-		ans = append(ans, byte(u+'a'))
-		times[u] = 2
-		return true
-	}
-	for i, v := range vis {
-		if v && !dfs(i) {
-			return ""
-		}
-	}
-	for l, r := 0, len(ans)-1; l < r; l, r = l+1, r-1 {
-		ans[l], ans[r] = ans[r], ans[l]
-	}
-	return string(ans)
+    const CHARSET int = 26
+    n := len(words)
+    g := make([][]int, CHARSET)
+    vis := make([]bool, CHARSET)
+    for _, c := range words[0] {
+        vis[c-'a'] = true
+    }
+    for i := 1; i < n; i++ {
+        w1, w2 := words[i-1], words[i]
+        j := 0
+        for ; j < min(len(w1), len(w2)); j++ {
+            vis[w2[j]-'a'] = true
+            if w1[j] == w2[j] {
+                continue
+            }
+            g[w1[j]-'a'] = append(g[w1[j]-'a'], int(w2[j]-'a'))
+            break
+        }
+        if j == len(w2) && j < len(w1) {
+            return ""
+        }
+        for ; j < len(w2); j++ {
+            vis[w2[j]-'a'] = true
+        }
+    }
+    cnt := 0
+    for _, v := range vis {
+        if v {
+            cnt++
+        }
+    }
+    ans := []byte{}
+    times := make([]int, CHARSET)
+    var dfs func(u int) bool
+    dfs = func(u int) bool {
+        if times[u] == 2 {
+            return true
+        } else if times[u] == 1 {
+            return false
+        }
+        times[u] = 1
+        for _, v := range g[u] {
+            if !dfs(v) {
+                return false
+            }
+        }
+        ans = append(ans, byte(u+'a'))
+        times[u] = 2
+        return true
+    }
+    for i, v := range vis {
+        if v && !dfs(i) {
+            return ""
+        }
+    }
+    for l, r := 0, len(ans)-1; l < r; l, r = l+1, r-1 {
+        ans[l], ans[r] = ans[r], ans[l]
+    }
+    return string(ans)
 }
 
 func main() {
