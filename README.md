@@ -190,6 +190,7 @@
 [245. Shortest Word Distance III](./leetcode/245-ShortestWordDistanceIII.go)   
 [260. Single Number III](./leetcode/260-SingleNumberIII.go)   
 [268. Missing Number](./leetcode/268-MissingNumber.go)   
+[269. Alien Dictionary](./leetcode/269-AlienDictionary.go)   
 [274. H-Index](./leetcode/274-H-Index.go)   
 [275. H-Index II](./leetcode/275-H-IndexII.go)   
 [283. Move Zeroes](./leetcode/283-MoveZeroes.go)   
