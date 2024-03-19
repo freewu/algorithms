@@ -498,6 +498,7 @@
 [1321. Restaurant Growth](./leetcode/1321-RestaurantGrowth.sql)  
 [1322. Ads Performance](./leetcode/1322-AdsPerformance.sql)   
 [1327. List the Products Ordered in a Period](./leetcode/1327-ListTheProductsOrderedInAPeriod.sql)   
+[1336. Number of Transactions per Visit](./leetcode/1336-NumberOfTransactionsPerVisit.sql)   
 [1341. Movie Rating](./leetcode/1341-MovieRating.sql)   
 [1350. Students With Invalid Departments](./leetcode/1350-StudentsWithInvalidDepartments.sql)   
 [1378. Replace Employee ID With The Unique Identifier](./leetcode/1378-ReplaceEmployeeIDWithTheUniqueIdentifier.sql)   
