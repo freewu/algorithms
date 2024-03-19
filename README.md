@@ -208,6 +208,7 @@
 [498. Diagonal Traverse](./leetcode/498-DiagonalTraverse.go)    
 [500. Keyboard Row](./leetcode/500-KeyboardRow.go)    
 [525. Contiguous Array](./leetcode/525-ContiguousArray.go)    
+[621. Task Scheduler](./leetcode/621-TaskScheduler.go)    
 [645. Set Mismatch](./leetcode/645-SetMismatch.go)    
 [739. Daily Temperatures](./leetcode/739-DailyTemperatures.go)    
 [852. Peak Index in a Mountain Array](./leetcode/852-PeakIndexInAMountainArray.go)    
