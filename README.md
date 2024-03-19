@@ -35,7 +35,7 @@
 [79. Word Search](./leetcode/79-WordSearch.go)    
 [84. Largest Rectangle in Histogram](./leetcode/84-LargestRectangleinHistogram.go)    
 [85. Maximal Rectangle]   
-[94. Binary Tree Inorder Traversal]   
+[94. Binary Tree Inorder Traversal](./leetcode/94-BinaryTreeInorderTraversal.go)   
 [96. Unique Binary Search Trees]    
 [98. Validate Binary Search Tree]   
 [101. Symmetric Tree]   
