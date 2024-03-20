@@ -405,6 +405,10 @@
 [338. Counting Bits](./leetcode/338-CountingBits.go)    
 [201. Bitwise AND of Numbers Range](./leetcode/201-BitwiseANDOfNumbersRange.go)   
 
+# Design
+[2671. Frequency Tracker](./leetcode/2671-FrequencyTracker.go)    
+
+
 # Database
 [175. Combine Two Tables](./leetcode/175-CombineTwoTables.sql)   
 [176. Second Highest Salary](./leetcode/176-SecondHighestSalary.sql)   
