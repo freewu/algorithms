@@ -580,7 +580,7 @@
 [3051. Find Candidates for Data Scientist Position](./leetcode/3051-FindCandidatesForDataScientistPosition.sql)   
 [3053. Classifying Triangles by Lengths](./leetcode/3053-ClassifyingTrianglesByLengths.sql)   
 [3059. Find All Unique Email Domains](./leetcode/3059-FindAllUniqueEmailDomains.sql)   
-
+[3087. Find Trending Hashtags](./leetcode/3087-FindTrendingHashtags.sql)   
 
 # Shell
 [192. Word Frequency](./leetcode/192-WordFrequency.sh)      
