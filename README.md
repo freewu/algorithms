@@ -214,6 +214,7 @@
 [739. Daily Temperatures](./leetcode/739-DailyTemperatures.go)    
 [852. Peak Index in a Mountain Array](./leetcode/852-PeakIndexInAMountainArray.go)    
 [867. Transpose Matrix](./leetcode/867-TransposeMatrix.go)    
+[896. Monotonic Array](./leetcode/896-MonotonicArray.go)    
 [930. Binary Subarrays With Sum](./leetcode/930-BinarySubarraysWithSum.go)    
 [948. Bag of Tokens](./leetcode/948-BagOfTokens.go)    
 [977. Squares of a Sorted Array](./leetcode/977-SquaresOfASortedArray.go)    
