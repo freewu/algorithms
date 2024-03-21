@@ -34,10 +34,28 @@ func canMakeArithmeticProgression(arr []int) bool {
     return true
 }
 
+func canMakeArithmeticProgression1(arr []int) bool {
+    sort.Ints(arr)
+    // 计算好 for 里减少 一次计算
+    diff := arr[1] - arr[0]
+    for i := 2; i < len(arr); i++ {
+        if arr[i] - arr[i-1] != diff {
+            return false
+        }
+    }
+    return true
+}
+
 func main( ) {
     fmt.Println(canMakeArithmeticProgression([]int{3,5,1})) // true
     fmt.Println(canMakeArithmeticProgression([]int{1,2,4})) // false
     fmt.Println(canMakeArithmeticProgression([]int{1,2,3,4,5,6})) // true
     fmt.Println(canMakeArithmeticProgression([]int{1,100})) // true
     fmt.Println(canMakeArithmeticProgression([]int{-13,-17,-8,-10,-20,2,3,-19,2,-18,-5,7,-12,18,-17,12,-1})) // false
+
+    fmt.Println(canMakeArithmeticProgression1([]int{3,5,1})) // true
+    fmt.Println(canMakeArithmeticProgression1([]int{1,2,4})) // false
+    fmt.Println(canMakeArithmeticProgression1([]int{1,2,3,4,5,6})) // true
+    fmt.Println(canMakeArithmeticProgression1([]int{1,100})) // true
+    fmt.Println(canMakeArithmeticProgression1([]int{-13,-17,-8,-10,-20,2,3,-19,2,-18,-5,7,-12,18,-17,12,-1})) // false
 }
