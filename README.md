@@ -223,6 +223,7 @@
 [1463. Cherry Pickup II](./leetcode/1463-CherryPickupII.go)    
 [1470. Shuffle the Array](./leetcode/1470-ShuffleTheArray.go)    
 [1481. Least Number of Unique Integers after K Removals](./leetcode/1481-LeastNumberOfUniqueIntegersAfterKRemovals.go)    
+[1502. Can Make Arithmetic Progression From Sequence](./leetcode/1502-CanMakeArithmeticProgressionFromSequence.go)    
 [1512. Number of Good Pairs](./leetcode/1512-NumberOfGoodPairs.go)    
 [1534. Count Good Triplets](./leetcode/1534-CountGoodTriplets.go)    
 [1642. Furthest Building You Can Reach](./leetcode/1642-FurthestBuildingYouCanReach.go)    
