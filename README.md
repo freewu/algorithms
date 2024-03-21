@@ -296,6 +296,7 @@
 [299. Bulls and Cows](./leetcode/299-BullsAndCows.go)    
 [387. First Unique Character in a String](./leetcode/387-FirstUniqueCharacterInAString.go)    
 [389. Find the Difference](./leetcode/389-FindTheDifference.go)    
+[402. Remove K Digits](./leetcode/402-RemoveKDigits.go)    
 [451. Sort Characters By Frequency](./leetcode/451-SortCharactersByFrequency.go)     
 [459. Repeated Substring Pattern](./leetcode/459-RepeatedSubstringPattern.go)     
 [514. Freedom Trail](./leetcode/514-FreedomTrail.go)    
