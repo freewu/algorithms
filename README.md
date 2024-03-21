@@ -244,6 +244,7 @@
 [2402. Meeting Rooms III](./leetcode/2402-MeetingRoomsIII.go)    
 [2540. Minimum Common Value](./leetcode/2540-MinimumCommonValue.go)    
 [2575. Find the Divisibility Array of a String](./leetcode/2575-FindTheDivisibilityArrayOfAString.go)    
+[2617. Minimum Number of Visited Cells in a Grid](./leetcode/2617-MinimumNumberOfVisitedCellsInAGrid.go)    
 [2670. Find the Distinct Difference Array](./leetcode/2670-FindTheDistinctDifferenceArray.go)    
 [2684. Maximum Number of Moves in a Grid](./leetcode/2684-MaximumNumberOfMovesInAGrid.go)   
 [2789. Largest Element in an Array after Merge Operations](./leetcode/2789-LargestElementInAnArrayAfterMergeOperations.go)    
