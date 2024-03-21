@@ -74,18 +74,15 @@ func makeListNode(arr []int) *ListNode {
  * }
  */
 func reverseList(head *ListNode) *ListNode {
-	var new_head *ListNode
-	for {
-        if head == nil {
-            break
-        }
-	    next := head.Next  // 备份head.Next
-	    head.Next = new_head // 更新  head.Next
-	    new_head = head      // 移动 new_head
-	    head = next
-	    //fmt.Println("new_head: ",new_head,"head: ",head)
+    var res *ListNode
+    for head != nil {
+        next := head.Next  // 备份head.Next
+        head.Next = res // 更新  head.Next
+        res = head      // 移动 new_head
+        head = next
+        //fmt.Println("new_head: ",new_head,"head: ",head)
     }
-	return new_head
+    return res
 }
 
 // best
