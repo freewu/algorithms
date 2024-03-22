@@ -369,10 +369,10 @@
 [2485. Find the Pivot Integer](./leetcode/2485-FindThePivotInteger.go)    
 [2834. Find the Minimum Possible Sum of a Beautiful Array](./leetcode/2834-FindTheMinimumPossibleSumOfABeautifulArray.go)    
 
-
 # Stack
 [225. Implement Stack using Queues](./leetcode/225-ImplementStackUsingQueues.go)   
 [232. Implement Queue using Stacks](./leetcode/232-ImplementQueueUsingStacks.go)   
+[321. Create Maximum Number](./leetcode/321-CreateMaximumNumber.go)   
 
 # Tree
 [94. Binary Tree Inorder Traversal](./leetcode/94-BinaryTreeInorderTraversal.go)   
