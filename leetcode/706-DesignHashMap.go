@@ -30,6 +30,8 @@ package main
 //     At most 10^4 calls will be made to put, get, and remove.
 
 import "fmt"
+// import "fnv"
+// import "binary"
 
 type MyHashMap struct {
     data map[int]int
@@ -125,6 +127,67 @@ func (this *MyHashMap1) Remove(key int)  {
     return
 }
 
+// type MyHashMap2 struct {
+//     data [][]*pair
+//     size int
+// }
+
+// type pair struct {
+//     key int
+//     val int
+// }
+
+// func Constructor2() MyHashMap2 {
+//     return MyHashMap2 {
+//         data: make([][]*pair, 1000),
+//         size: 1000,
+//     }
+// }
+
+// func hash(n, max int) int {
+// 	h := fnv.New32a()
+// 	bs := make([]byte, 4)
+// 	binary.LittleEndian.PutUint32(bs, uint32(n))
+// 	h.Write(bs)
+// 	v := h.Sum32()
+// 	return int(v % uint32(max))
+// }
+
+// func (this *MyHashMap2) Put(key int, value int)  {
+//     ind := hash(key, this.size)
+//     for i, val := range this.data[ind] {
+//         if val.key == key {
+//             this.data[ind][i].val = value
+//             return
+//         }
+//     }
+//     this.data[ind] = append(this.data[ind], &pair{key: key, val: value})
+// }
+
+
+// func (this *MyHashMap2) Get(key int) int {
+//     ind := hash(key, this.size)
+//     for _, val := range this.data[ind] {
+//         if val.key == key {
+//             return val.val
+//         }
+//     }
+//     return -1
+// }
+
+
+// func (this *MyHashMap2) Remove(key int)  {
+//     ind := hash(key, this.size)
+//     for i, val := range this.data[ind] {
+//         if val.key == key {
+//             l := len(this.data[ind])
+//             this.data[ind][i] = this.data[ind][l-1]
+//             this.data[ind] = this.data[ind][:l-1]
+//             return
+//         }
+//     }
+// }
+
 
 /**
  * Your MyHashMap object will be instantiated and called as such:
@@ -162,7 +225,6 @@ func main() {
     fmt.Println(obj.Get(2)) // -1
     fmt.Println(obj) // [[1,1]]
 
-
     // MyHashMap myHashMap = new MyHashMap();
     obj1 := Constructor1()
     // myHashMap.put(1, 1); // The map is now [[1,1]]
@@ -189,4 +251,32 @@ func main() {
     // myHashMap.get(2);    // return -1 (i.e., not found), The map is now [[1,1]]
     fmt.Println(obj1.Get(2)) // -1
     fmt.Println(obj1) // [[1,1]]
+
+
+    // // MyHashMap myHashMap = new MyHashMap();
+    // obj2 := Constructor2()
+    // // myHashMap.put(1, 1); // The map is now [[1,1]]
+    // obj2.Put(1,1)
+    // fmt.Println(obj2) // [[1,1]]
+    // // myHashMap.put(2, 2); // The map is now [[1,1], [2,2]]
+    // obj2.Put(2,2)
+    // fmt.Println(obj2) // [[1,1], [2,2]]
+    // // myHashMap.get(1);    // return 1, The map is now [[1,1], [2,2]]
+    // fmt.Println(obj2.Get(1)) // 1
+    // fmt.Println(obj2) // [[1,1], [2,2]]
+    // // myHashMap.get(3);    // return -1 (i.e., not found), The map is now [[1,1], [2,2]]
+    // fmt.Println(obj2.Get(3)) // -1
+    // fmt.Println(obj2) // [[1,1], [2,2]]
+    // // myHashMap.put(2, 1); // The map is now [[1,1], [2,1]] (i.e., update the existing value)
+    // obj2.Put(2,1)
+    // fmt.Println(obj2) // [[1,1], [2,1]]
+    // // myHashMap.get(2);    // return 1, The map is now [[1,1], [2,1]]
+    // fmt.Println(obj2.Get(2)) // 1
+    // fmt.Println(obj2) // [[1,1], [2,1]]
+    // // myHashMap.remove(2); // remove the mapping for 2, The map is now [[1,1]]
+    // obj2.Remove(2)
+    // fmt.Println(obj2) // [[1,1]]
+    // // myHashMap.get(2);    // return -1 (i.e., not found), The map is now [[1,1]]
+    // fmt.Println(obj2.Get(2)) // -1
+    // fmt.Println(obj2) // [[1,1]]
 }
