@@ -415,6 +415,7 @@
 [201. Bitwise AND of Numbers Range](./leetcode/201-BitwiseANDOfNumbersRange.go)   
 
 # Design
+[706. Design HashMap](./leetcode/706-DesignHashMap.go)    
 [1603. Design Parking System](./leetcode/1603-DesignParkingSystem.go)    
 [2671. Frequency Tracker](./leetcode/2671-FrequencyTracker.go)    
 
