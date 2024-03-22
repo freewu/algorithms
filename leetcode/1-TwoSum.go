@@ -50,7 +50,6 @@ func twoSum(nums []int, target int) []int {
     if 2 == l && ((nums[0] + nums[1]) != target) {
         return nil
     }
-
     for i := 0; i < l; i++ {
         for j := i + 1; j < l; j++ {
             // 冒泡的方式遍历

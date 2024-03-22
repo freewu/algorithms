@@ -32,33 +32,33 @@ type ListNode struct {
 
 // 打印链表
 func printListNode(l *ListNode) {
-	if nil == l {
-		return
-	}
-	for {
-		if nil == l.Next {
-			fmt.Print(l.Val)
-			break
-		} else {
-			fmt.Print(l.Val, " -> ")
-		}
-		l = l.Next
-	}
-	fmt.Println()
+    if nil == l {
+        return
+    }
+    for {
+        if nil == l.Next {
+            fmt.Print(l.Val)
+            break
+        } else {
+            fmt.Print(l.Val, " -> ")
+        }
+        l = l.Next
+    }
+    fmt.Println()
 }
 
 // 数组创建链表
 func makeListNode(arr []int) *ListNode {
-	if (len(arr) == 0) {
-		return nil
-	}
-	var l = (len(arr) - 1)
-	var head = &ListNode{arr[l], nil}
-	for i := l - 1; i >= 0; i--  {
-		var n = &ListNode{arr[i], head}
-		head = n
-	}
-	return head
+    if (len(arr) == 0) {
+        return nil
+    }
+    var l = (len(arr) - 1)
+    var head = &ListNode{arr[l], nil}
+    for i := l - 1; i >= 0; i--  {
+        var n = &ListNode{arr[i], head}
+        head = n
+    }
+    return head
 }
 
 /**
