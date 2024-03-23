@@ -77,7 +77,7 @@
 [301. Remove Invalid Parentheses]   
 [309. Best Time to Buy and Sell Stock with Cooldown]   
 [312. Burst Balloons]   
-[322. Coin Change]   
+[322. Coin Change](./leetcode/322-CoinChange.go)   
 [337. House Robber III]   
 [338. Counting Bits](./leetcode/338-CountingBits.go)    
 [347. Top K Frequent Elements]   
@@ -202,6 +202,7 @@
 [304. Range Sum Query 2D - Immutable](./leetcode/304-RangeSumQuery2D-Immutable.go)   
 [307. Range Sum Query - Mutable](./leetcode/307-RangeSumQuery-Mutable.go)   
 [318. Maximum Product of Word Lengths](./leetcode/318-MaximumProductOfWordLengths.go)   
+[322. Coin Change](./leetcode/322-CoinChange.go)   
 [349. Intersection of Two Arrays](./leetcode/349-IntersectionOfTwoArrays.go)   
 [368. Largest Divisible Subset](./leetcode/368-LargestDivisibleSubset.go)   
 [410. Split Array Largest Sum](./leetcode/410-SplitArrayLargestSum.go)   
