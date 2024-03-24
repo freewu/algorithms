@@ -603,6 +603,8 @@
 [3053. Classifying Triangles by Lengths](./leetcode/3053-ClassifyingTrianglesByLengths.sql)   
 [3059. Find All Unique Email Domains](./leetcode/3059-FindAllUniqueEmailDomains.sql)   
 [3087. Find Trending Hashtags](./leetcode/3087-FindTrendingHashtags.sql)   
+[3089. Find Bursty Behavior](./leetcode/3089-FindBurstyBehavior.sql)   
+
 
 # Shell
 [192. Word Frequency](./leetcode/192-WordFrequency.sh)      
