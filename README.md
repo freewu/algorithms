@@ -525,6 +525,7 @@
 [1341. Movie Rating](./leetcode/1341-MovieRating.sql)   
 [1350. Students With Invalid Departments](./leetcode/1350-StudentsWithInvalidDepartments.sql)   
 [1355. Activity Participants](./leetcode/1355-ActivityParticipants.sql)   
+[1364. Number of Trusted Contacts of a Customer](./leetcode/1364-NumberOfTrustedContactsOfACustomer.sql)   
 [1378. Replace Employee ID With The Unique Identifier](./leetcode/1378-ReplaceEmployeeIDWithTheUniqueIdentifier.sql)   
 [1393. Capital Gain/Loss](./leetcode/1393-CapitalGainOrLoss.sql)   
 [1398. Customers Who Bought Products A and B but Not C](./leetcode/1398-CustomersWhoBoughtProductsAAndBButNotC.sql) 
