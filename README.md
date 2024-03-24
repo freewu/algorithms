@@ -537,6 +537,7 @@
 [1435. Create a Session Bar Chart](./leetcode/1435-CreateASessionBarChart.sql)   
 [1440. Evaluate Boolean Expression](./leetcode/1440-EvaluateBooleanExpression.sql)   
 [1445. Apples & Oranges](./leetcode/1445-ApplesAndOranges.sql)   
+[1454. Active Users](./leetcode/1454-ActiveUsers.sql)   
 [1484. Group Sold Products By The Date](./leetcode/1484-GroupSoldProductsByTheDate.sql)   
 [1495. Friendly Movies Streamed Last Month](./leetcode/1495-FriendlyMoviesStreamedLastMonth.sql)   
 [1501. Countries You Can Safely Invest In](./leetcode/1501-CountriesYouCanSafelyInvestIn.sql)   
