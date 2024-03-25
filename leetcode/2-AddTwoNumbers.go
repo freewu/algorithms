@@ -1,29 +1,67 @@
 package main
 
-import (
-	"fmt"
-)
+// 2. Add Two Numbers
+// You are given two non-empty linked lists representing two non-negative integers. 
+// The digits are stored in reverse order, and each of their nodes contains a single digit. 
+// Add the two numbers and return the sum as a linked list.
 
-/*
-2. Add Two Numbers
-You are given two non-empty linked lists representing two non-negative integers. 
-The digits are stored in reverse order and each of their nodes contain a single digit. 
-Add the two numbers and return it as a linked list.
-You may assume the two numbers do not contain any leading zero, except the number 0 itself.
+// You may assume the two numbers do not contain any leading zero, except the number 0 itself.
 
-Example 1
-Input: (2 -> 4 -> 3) + (5 -> 6 -> 4)
-Output: 7 -> 0 -> 8
-Explanation: 342 + 465 = 807.
+// Example 1:
+// <img src="https://assets.leetcode.com/uploads/2020/10/02/addtwonumber1.jpg" />
+// Input: l1 = [2,4,3], l2 = [5,6,4]
+// Output: [7,0,8]
+// Explanation: 342 + 465 = 807.
 
-Eample 2
-Input:[2,4,3][5,6,7]
-Output: [7,0,1,1]
-*/
+// Example 2:
+// Input: l1 = [0], l2 = [0]
+// Output: [0]
+
+// Example 3:
+// Input: l1 = [9,9,9,9,9,9,9], l2 = [9,9,9,9]
+// Output: [8,9,9,9,0,0,0,1]
+ 
+// Constraints:
+//     The number of nodes in each linked list is in the range [1, 100].
+//     0 <= Node.val <= 9
+//     It is guaranteed that the list represents a number that does not have leading zeros.
+
+import "fmt"
 
 type ListNode struct {
 	Val  int
 	Next *ListNode
+}
+
+// 打印链表
+func printListNode(l *ListNode) {
+    if nil == l {
+        return
+    }
+    for {
+        if nil == l.Next {
+            fmt.Print(l.Val)
+            break
+        } else {
+            fmt.Print(l.Val, " -> ")
+        }
+        l = l.Next
+    }
+    fmt.Println()
+}
+
+// 数组创建链表
+func makeListNode(arr []int) *ListNode {
+    if (len(arr) == 0) {
+        return nil
+    }
+    var l = (len(arr) - 1)
+    var head = &ListNode{arr[l], nil}
+    for i := l - 1; i >= 0; i--  {
+        var n = &ListNode{arr[i], head}
+        head = n
+    }
+    return head
 }
 
 /**
@@ -34,139 +72,158 @@ type ListNode struct {
  * }
  */
 func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
-	var t = &ListNode{-1, nil}
-	var l3 = &ListNode{-1, t}
+    var t = &ListNode{-1, nil}
+    var l3 = &ListNode{-1, t}
 
-	var flag = 0 // 进位符
-	for {
-		// 如果循环到任意节点为空直接跳出
-		if nil == l1 || nil == l2 {
-			break
-		}
+    var flag = 0 // 进位符
+    for {
+        // 如果循环到任意节点为空直接跳出
+        if nil == l1 || nil == l2 {
+            break
+        }
 
-		var s = l1.Val + l2.Val + flag
-		if s >= 10 {
-			// 如果和大于10 取模型进位
-			t.Next = &ListNode{s % 10, nil}
-			flag = 1
-		} else {
-			t.Next = &ListNode{s, nil}
-			flag = 0
-		}
+        var s = l1.Val + l2.Val + flag
+        if s >= 10 {
+            // 如果和大于10 取模型进位
+            t.Next = &ListNode{s % 10, nil}
+            flag = 1
+        } else {
+            t.Next = &ListNode{s, nil}
+            flag = 0
+        }
 
-		t = t.Next
-		l1 = l1.Next
-		l2 = l2.Next
-	}
-	// 循环 l1 的剩余节点
-	for {
-		if nil == l1 {
-			break
-		}
-		if flag == 1 {
-			if (l1.Val + 1) >= 10 {
-				flag = 1
-				l1.Val = (l1.Val + 1) % 10
-			} else {
-				flag = 0
-				l1.Val = l1.Val + 1
-			}
-		}
-		t.Next = l1
-		l1 = l1.Next
-		t = t.Next
-	}
-	// 循环 l2 的剩余节点
-	for {
-		if nil == l2 {
-			break
-		}
-		if flag == 1 {
-			if (l2.Val + 1) >= 10 {
-				flag = 1
-				l2.Val = (l2.Val + 1) % 10
-			} else {
-				flag = 0
-				l2.Val = l2.Val + 1
-			}
-		}
-		t.Next = l2
-		l2 = l2.Next
-		t = t.Next
-	}
-	// 如果还存在进位
-	if 1 == flag {
-		t.Next = &ListNode{1, nil}
-	}
-	return l3.Next.Next
+        t = t.Next
+        l1 = l1.Next
+        l2 = l2.Next
+    }
+    // 循环 l1 的剩余节点
+    for {
+        if nil == l1 {
+            break
+        }
+        if flag == 1 {
+            if (l1.Val + 1) >= 10 {
+                flag = 1
+                l1.Val = (l1.Val + 1) % 10
+            } else {
+                flag = 0
+                l1.Val = l1.Val + 1
+            }
+        }
+        t.Next = l1
+        l1 = l1.Next
+        t = t.Next
+    }
+    // 循环 l2 的剩余节点
+    for {
+        if nil == l2 {
+            break
+        }
+        if flag == 1 {
+            if (l2.Val + 1) >= 10 {
+                flag = 1
+                l2.Val = (l2.Val + 1) % 10
+            } else {
+                flag = 0
+                l2.Val = l2.Val + 1
+            }
+        }
+        t.Next = l2
+        l2 = l2.Next
+        t = t.Next
+    }
+    // 如果还存在进位
+    if 1 == flag {
+        t.Next = &ListNode{1, nil}
+    }
+    return l3.Next.Next
 }
 
 // best speed solution 这个方案好像上有问题的
 func addTwoNumbers1(l1 *ListNode, l2 *ListNode) *ListNode {
-	carry := 0
-	var head *ListNode
-	var currentNode *ListNode
-	// 都为空时跳出循环
-	for (l1 != nil) || (l2 != nil) || (carry != 0) {
-		l1_value := 0
-		if l1 != nil {
-			l1_value = l1.Val
-			l1 = l1.Next
-		}
+    carry := 0
+    var head *ListNode
+    var currentNode *ListNode
+    // 都为空时跳出循环
+    for (l1 != nil) || (l2 != nil) || (carry != 0) {
+        l1_value := 0
+        if l1 != nil {
+            l1_value = l1.Val
+            l1 = l1.Next
+        }
 
-		l2_value := 0
-		if l2 != nil {
-			l2_value = l2.Val
-			l2 = l2.Next
-		}
+        l2_value := 0
+        if l2 != nil {
+            l2_value = l2.Val
+            l2 = l2.Next
+        }
 
-		fmt.Println(l1_value, l2_value, carry)
-		current_value := carry + l1_value + l2_value
-		carry = current_value / 10         // int
-		current_value = current_value % 10 // 取余
+        // fmt.Println(l1_value, l2_value, carry)
+        current_value := carry + l1_value + l2_value
+        carry = current_value / 10         // int
+        current_value = current_value % 10 // 取余
 
-		if head == nil {
-			head = &ListNode{Val: current_value, Next: nil}
-			currentNode = head
-		} else {
-			next := ListNode{Val: current_value, Next: nil}
-			currentNode.Next = &next
-			currentNode = &next
-		}
-	}
-
-	return head
-}
-
-func printListNode(l *ListNode) {
-	if nil == l {
-		return
-	}
-	for {
-		if nil == l.Next {
-			fmt.Print(l.Val)
-			break
-		} else {
-			fmt.Print(l.Val, " -> ")
-		}
-		l = l.Next
-	}
-	fmt.Println()
+        if head == nil {
+            head = &ListNode{Val: current_value, Next: nil}
+            currentNode = head
+        } else {
+            next := ListNode{Val: current_value, Next: nil}
+            currentNode.Next = &next
+            currentNode = &next
+        }
+    }
+    return head
 }
 
 func main() {
-	// var l11 = &ListNode{3, nil}
-	// var l12 = &ListNode{4, l11}
-	// var l13 = &ListNode{2, l12}
+    // Explanation: 342 + 465 = 807.
+    l11 := makeListNode([]int{2,4,3})
+    l12 := makeListNode([]int{5,6,4})
+    printListNode(l11) // 2 -> 4 -> 3
+    printListNode(l12) // 5 -> 6 -> 4
+    fmt.Println("addTwoNumbers: ")
+    printListNode(addTwoNumbers(l11, l12)) // 7 -> 0 -> 8
+    fmt.Println()
 
-	var l21 = &ListNode{9, nil}
-	var l22 = &ListNode{9, l21}
-	var l23 = &ListNode{9, l22}
+    l21 := makeListNode([]int{0})
+    l22 := makeListNode([]int{0})
+    printListNode(l21) // 0
+    printListNode(l22) // 0
+    fmt.Println("addTwoNumbers: ")
+    printListNode(addTwoNumbers(l21, l22)) // 0
+    fmt.Println()
 
-	var l13 = &ListNode{1, nil}
+    l31 := makeListNode([]int{9,9,9,9,9,9,9})
+    l32 := makeListNode([]int{9,9,9,9})
+    printListNode(l31) // 9 -> 9 -> 9 -> 9 -> 9 -> 9 -> 9
+    printListNode(l32) // 9 -> 9 -> 9 -> 9
+    fmt.Println("addTwoNumbers: ")
+    printListNode(addTwoNumbers(l31, l32)) // 8 -> 9 -> 9 -> 9 -> 0 -> 0 -> 0 -> 1
+    fmt.Println()
 
-	printListNode(l23)
-	printListNode(l13)
-	printListNode(addTwoNumbers1(l23, l13))
-	printListNode(addTwoNumbers(l23, l13))
+
+    // Explanation: 342 + 465 = 807.
+    l111 := makeListNode([]int{2,4,3})
+    l112 := makeListNode([]int{5,6,4})
+    printListNode(l111) // 2 -> 4 -> 3
+    printListNode(l112) // 5 -> 6 -> 4
+    fmt.Println("addTwoNumbers1: ")
+    printListNode(addTwoNumbers1(l111, l112)) // 7 -> 0 -> 8
+    fmt.Println()
+
+    l121 := makeListNode([]int{0})
+    l122 := makeListNode([]int{0})
+    printListNode(l121) // 0
+    printListNode(l122) // 0
+    fmt.Println("addTwoNumbers1: ")
+    printListNode(addTwoNumbers1(l121, l122)) // 0
+    fmt.Println()
+
+    l131 := makeListNode([]int{9,9,9,9,9,9,9})
+    l132 := makeListNode([]int{9,9,9,9})
+    printListNode(l131) // 9 -> 9 -> 9 -> 9 -> 9 -> 9 -> 9
+    printListNode(l132) // 9 -> 9 -> 9 -> 9
+    fmt.Println("addTwoNumbers1: ")
+    printListNode(addTwoNumbers1(l131, l132)) // 8 -> 9 -> 9 -> 9 -> 0 -> 0 -> 0 -> 1
+    fmt.Println()
 }
