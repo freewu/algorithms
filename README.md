@@ -541,6 +541,7 @@
 [1440. Evaluate Boolean Expression](./leetcode/1440-EvaluateBooleanExpression.sql)   
 [1445. Apples & Oranges](./leetcode/1445-ApplesAndOranges.sql)   
 [1454. Active Users](./leetcode/1454-ActiveUsers.sql)   
+[1459. Rectangles Area](./leetcode/1459-RectanglesArea.sql)   
 [1484. Group Sold Products By The Date](./leetcode/1484-GroupSoldProductsByTheDate.sql)   
 [1495. Friendly Movies Streamed Last Month](./leetcode/1495-FriendlyMoviesStreamedLastMonth.sql)   
 [1501. Countries You Can Safely Invest In](./leetcode/1501-CountriesYouCanSafelyInvestIn.sql)   
