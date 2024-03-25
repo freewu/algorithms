@@ -342,6 +342,7 @@
 [141. Linked List Cycle](./leetcode/141-LinkedListCycle.go)    
 [142. Linked List Cycle II](./leetcode/142-LinkedListCycleII.go)    
 [143. Reorder List](./leetcode/143-ReorderList.go)    
+[160. Intersection of Two Linked Lists](./leetcode/160-IntersectionOfTwoLinkedLists.go)    
 [206. Reverse Linked List](./leetcode/206-ReverseLinkedList.go)    
 [234. Palindrome Linked List](./leetcode/234-PalindromeLinkedList.go)    
 [876. Middle of the Linked List](./leetcode/876-MiddleOfTheLinkedList.go)    
