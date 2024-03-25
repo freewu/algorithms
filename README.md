@@ -418,6 +418,7 @@
 [310. Minimum Height Trees](./leetcode/310-MinimumHeightTrees.go)   
 [1976. Number of Ways to Arrive at Destination](./leetcode/1976-NumberOfWaysToArriveAtDestination.go)   
 [2092. Find All People With Secret](./leetcode/2092-FindAllPeopleWithSecret.go)   
+[2642. Design Graph With Shortest Path Calculator](./leetcode/2642-DesignGraphWithShortestPathCalculator.go)    
 
 # Bit Manipulation
 [338. Counting Bits](./leetcode/338-CountingBits.go)    
@@ -426,8 +427,8 @@
 # Design
 [706. Design HashMap](./leetcode/706-DesignHashMap.go)    
 [1603. Design Parking System](./leetcode/1603-DesignParkingSystem.go)    
-[2671. Frequency Tracker](./leetcode/2671-FrequencyTracker.go)    
-
+[2642. Design Graph With Shortest Path Calculator](./leetcode/2642-DesignGraphWithShortestPathCalculator.go)   
+[2671. Frequency Tracker](./leetcode/2671-FrequencyTracker.go)   
 
 # Database
 [175. Combine Two Tables](./leetcode/175-CombineTwoTables.sql)   
