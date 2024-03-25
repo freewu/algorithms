@@ -86,7 +86,7 @@
 [406. Queue Reconstruction by Height]   
 [416. Partition Equal Subset Sum]   
 [437. Path Sum III]   
-[438. Find All Anagrams in a String]   
+[438. Find All Anagrams in a String](./leetcode/438-FindAllAnagramsInAString.go)   
 [448. Find All Numbers Disappeared in an Array]   
 [461. Hamming Distance]   
 [494. Target Sum]   
@@ -304,6 +304,7 @@
 [387. First Unique Character in a String](./leetcode/387-FirstUniqueCharacterInAString.go)    
 [389. Find the Difference](./leetcode/389-FindTheDifference.go)    
 [402. Remove K Digits](./leetcode/402-RemoveKDigits.go)    
+[438. Find All Anagrams in a String](./leetcode/438-FindAllAnagramsInAString.go)   
 [451. Sort Characters By Frequency](./leetcode/451-SortCharactersByFrequency.go)     
 [459. Repeated Substring Pattern](./leetcode/459-RepeatedSubstringPattern.go)     
 [514. Freedom Trail](./leetcode/514-FreedomTrail.go)    

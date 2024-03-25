@@ -114,60 +114,60 @@
 -- ORDER BY
 --     user_id
 
-SELECT 
-    t.*,
-    rank() OVER(ORDER BY week) AS "rk"
-FROM
-(
-    (
-        SELECT 
-            '1' AS week,
-            COUNT(*) AS cnt,
-            user_id
-        FROM
-            Posts
-        WHERE
-            post_date BETWEEN '2024-02-01' AND '2024-02-06'
-        GROUP BY
-            user_id
-    ) 
-    UNION ALL
-    (
-        SELECT 
-            '2' AS week,
-            COUNT(*) AS cnt,
-            user_id
-        FROM
-            Posts
-        WHERE
-            post_date BETWEEN '2024-02-07' AND '2024-02-13'
-        GROUP BY
-            user_id
-    )
-    UNION ALL
-    (
-        SELECT 
-            '3' AS week,
-            COUNT(*) AS cnt,
-            user_id
-        FROM
-            Posts
-        WHERE
-            post_date BETWEEN '2024-02-14' AND '2024-02-20'
-        GROUP BY
-            user_id
-    )
-    UNION ALL
-    (
-        SELECT 
-            '4' AS week,
-            COUNT(*) AS cnt,
-            user_id
-        FROM
-            Posts
-        WHERE
-            post_date BETWEEN '2024-02-21' AND '2024-02-28'
-        GROUP BY
-            user_id
-    )
-) AS t
+-- SELECT 
+--     t.*,
+--     rank() OVER(ORDER BY week) AS "rk"
+-- FROM
+-- (
+--     (
+--         SELECT 
+--             '1' AS week,
+--             COUNT(*) AS cnt,
+--             user_id
+--         FROM
+--             Posts
+--         WHERE
+--             post_date BETWEEN '2024-02-01' AND '2024-02-06'
+--         GROUP BY
+--             user_id
+--     ) 
+--     UNION ALL
+--     (
+--         SELECT 
+--             '2' AS week,
+--             COUNT(*) AS cnt,
+--             user_id
+--         FROM
+--             Posts
+--         WHERE
+--             post_date BETWEEN '2024-02-07' AND '2024-02-13'
+--         GROUP BY
+--             user_id
+--     )
+--     UNION ALL
+--     (
+--         SELECT 
+--             '3' AS week,
+--             COUNT(*) AS cnt,
+--             user_id
+--         FROM
+--             Posts
+--         WHERE
+--             post_date BETWEEN '2024-02-14' AND '2024-02-20'
+--         GROUP BY
+--             user_id
+--     )
+--     UNION ALL
+--     (
+--         SELECT 
+--             '4' AS week,
+--             COUNT(*) AS cnt,
+--             user_id
+--         FROM
+--             Posts
+--         WHERE
+--             post_date BETWEEN '2024-02-21' AND '2024-02-28'
+--         GROUP BY
+--             user_id
+--     )
+-- ) AS t
