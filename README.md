@@ -251,6 +251,7 @@
 [2540. Minimum Common Value](./leetcode/2540-MinimumCommonValue.go)    
 [2549. Count Distinct Numbers on Board](./leetcode/2549-CountDistinctNumbersOnBoard.go)    
 [2575. Find the Divisibility Array of a String](./leetcode/2575-FindTheDivisibilityArrayOfAString.go)    
+[2580. Count Ways to Group Overlapping Ranges](./leetcode/2580-CountWaysToGroupOverlappingRanges.go)    
 [2617. Minimum Number of Visited Cells in a Grid](./leetcode/2617-MinimumNumberOfVisitedCellsInAGrid.go)    
 [2670. Find the Distinct Difference Array](./leetcode/2670-FindTheDistinctDifferenceArray.go)    
 [2684. Maximum Number of Moves in a Grid](./leetcode/2684-MaximumNumberOfMovesInAGrid.go)   
