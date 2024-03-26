@@ -40,7 +40,7 @@
 [98. Validate Binary Search Tree]   
 [101. Symmetric Tree]   
 [102. Binary Tree Level Order Traversal]   
-[104. Maximum Depth of Binary Tree]   
+[104. Maximum Depth of Binary Tree](./leetcode/104-MaximumDepthOfBinaryTree.go)   
 [105. Construct Binary Tree from Preorder and Inorder Traversal](./leetcode/105-ConstructBinaryTreefromPreorderandInorderTraversal.go)   
 [114. Flatten Binary Tree to Linked List]    
 [121. Best Time to Buy and Sell Stock](./leetcode/121-BestTimetoBuyandSellStock.go)   
@@ -397,6 +397,8 @@
 [103. Binary Tree Zigzag Level Order Traversal](./leetcode/103-BinaryTreeZigzagLevelOrderTraversal.go)   
 [104. Maximum Depth of Binary Tree](./leetcode/104-MaximumDepthOfBinaryTree.go)   
 [107. Binary Tree Level Order Traversal II](./leetcode/107-BinaryTreeLevelOrderTraversalII.go)   
+
+[111. Minimum Depth of Binary Tree](./leetcode/111-MinimumDepthOfBinaryTree.go)   
 [144. Binary Tree Preorder Traversal](./leetcode/144-BinaryTreePreorderTraversal.go)   
 [145. Binary Tree Postorder Traversal](./leetcode/145-BinaryTreePostorderTraversal.go)   
 [235. Lowest Common Ancestor of a Binary Search Tree](./leetcode/235-LowestCommonAncestorOfABinarySearchTree.go)   
