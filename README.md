@@ -233,6 +233,7 @@
 [1512. Number of Good Pairs](./leetcode/1512-NumberOfGoodPairs.go)    
 [1534. Count Good Triplets](./leetcode/1534-CountGoodTriplets.go)    
 [1642. Furthest Building You Can Reach](./leetcode/1642-FurthestBuildingYouCanReach.go)    
+[1672. Richest Customer Wealth](./leetcode/1672-RichestCustomerWealth.go)   
 [1686. Stone Game VI](./leetcode/1686-StoneGameVI.go)    
 [1690. Stone Game VII](./leetcode/1690-StoneGameVII.go)    
 [1696. Jump Game VI](./leetcode/1696-JumpGameVI.go)    
