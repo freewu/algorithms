@@ -63,7 +63,7 @@
 [208. Implement Trie (Prefix Tree)]    
 [215. Kth Largest Element in an Array](./leetcode/215-KthLargestElementInAnArray.go)   
 [221. Maximal Square]   
-[226. Invert Binary Tree]   
+[226. Invert Binary Tree](./leetcode/226-InvertBinaryTree.go)   
 [234. Palindrome Linked List](./leetcode/234-PalindromeLinkedList.go)    
 [236. Lowest Common Ancestor of a Binary Tree]   
 [238. Product of Array Except Self](./leetcode/238-ProductOfArrayExceptSelf.go)      
@@ -397,10 +397,10 @@
 [103. Binary Tree Zigzag Level Order Traversal](./leetcode/103-BinaryTreeZigzagLevelOrderTraversal.go)   
 [104. Maximum Depth of Binary Tree](./leetcode/104-MaximumDepthOfBinaryTree.go)   
 [107. Binary Tree Level Order Traversal II](./leetcode/107-BinaryTreeLevelOrderTraversalII.go)   
-
 [111. Minimum Depth of Binary Tree](./leetcode/111-MinimumDepthOfBinaryTree.go)   
 [144. Binary Tree Preorder Traversal](./leetcode/144-BinaryTreePreorderTraversal.go)   
 [145. Binary Tree Postorder Traversal](./leetcode/145-BinaryTreePostorderTraversal.go)   
+[226. Invert Binary Tree](./leetcode/226-InvertBinaryTree.go)   
 [235. Lowest Common Ancestor of a Binary Search Tree](./leetcode/235-LowestCommonAncestorOfABinarySearchTree.go)   
 [236. Lowest Common Ancestor of a Binary Tree](./leetcode/236-LowestCommonAncestorOfABinaryTree.go)   
 [429. N-ary Tree Level Order Traversal](./leetcode/429-N-aryTreeLevelOrderTraversal.go)   
