@@ -195,7 +195,7 @@
 [275. H-Index II](./leetcode/275-H-IndexII.go)   
 [283. Move Zeroes](./leetcode/283-MoveZeroes.go)   
 [284. Peeking Iterator](./leetcode/284-PeekingIterator.go)   
-[287. Find the Duplicate Number](./leetcode/287-FindTheDuplicateNumber.go)  
+[287. Find the Duplicate Number](./leetcode/287-FindTheDuplicateNumber.go)   
 [289. Game of Life](./leetcode/289-GameOfLife.go)  
 [300. Longest Increasing Subsequence](./leetcode/300-LongestIncreasingSubsequence.go)   
 [303. Range Sum Query - Immutable](./leetcode/303-RangeSumQuery-Immutable.go)   
