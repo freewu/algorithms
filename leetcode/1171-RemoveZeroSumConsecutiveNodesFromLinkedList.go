@@ -20,14 +20,14 @@ package main
 // Output: [1]
  
 // Constraints:
-//         The given linked list will contain between 1 and 1000 nodes.
-//         Each node in the linked list has -1000 <= node.val <= 1000.
+//     The given linked list will contain between 1 and 1000 nodes.
+//     Each node in the linked list has -1000 <= node.val <= 1000.
 
 import "fmt"
 
 type ListNode struct {
-	Val int
-	Next *ListNode
+    Val int
+    Next *ListNode
 }
 
 // 打印链表
