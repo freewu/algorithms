@@ -7,6 +7,9 @@ package main
 
 // Example 1:
 // <img src="https://assets.leetcode.com/uploads/2020/10/03/swap_ex1.jpg" />
+// 1 -> 2 -> 3 -> 4
+//         |
+// 2 -> 1 -> 4 -> 3
 // Input: head = [1,2,3,4]
 // Output: [2,1,4,3]
 

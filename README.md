@@ -343,6 +343,7 @@
 [21. Merge Two Sorted Lists](./leetcode/21-MergeTwoSortedLists.go)    
 [23. Merge k Sorted Lists](./leetcode/23-MergeKSortedLists.go)    
 [24. Swap Nodes in Pairs](./leetcode/24-SwapNodesInPairs.go)    
+[25. Reverse Nodes in k-Group](./leetcode/25-ReverseNodesInKGroup.go)    
 [61. Rotate List](./leetcode/61-RotateList.go)    
 [82. Remove Duplicates from Sorted List II](./leetcode/82-RemoveDuplicatesFromSortedListII.go)   
 [92. Reverse Linked List II](./leetcode/92-ReverseLinkedListII.go)    
