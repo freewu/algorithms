@@ -383,6 +383,7 @@
 [1281. Subtract the Product and Sum of Digits of an Integer](./leetcode/1281-SubtractTheProductAndSumOfDigitsOfAnInteger.go)    
 [1486. XOR Operation in an Array](./leetcode/1486-XOROperationInAnArray.go)    
 [1512. Number of Good Pairs](./leetcode/1512-NumberOfGoodPairs.go)    
+[1523. Count Odd Numbers in an Interval Range](./leetcode/1523-CountOddNumbersInAnIntervalRange.go)    
 [2235. Add Two Integers](./leetcode/2235-AddTwoIntegers.go)    
 [2413. Smallest Even Multiple](./leetcode/2413-SmallestEvenMultiple.go)    
 [2469. Convert the Temperature](./leetcode/2469-ConvertTheTemperature.go)    
