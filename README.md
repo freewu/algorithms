@@ -246,6 +246,7 @@
 [1793. Maximum Score of a Good Subarray](./leetcode/1793-MaximumScoreOfAGoodSubarray.go)    
 [1822. Sign of the Product of an Array](./leetcode/1822-SignOfTheProductOfAnArray.go)    
 [1969. Minimum Non-Zero Product of the Array Elements](./leetcode/1969-MinimumNonZeroProductOfTheArrayElements.go)    
+[1997. First Day Where You Have Been in All the Rooms](./leetcode/1997-FirstDayWhereYouHaveBeenInAllTheRooms.go)    
 [2108. Find First Palindromic String in the Array](./leetcode/2108-FindFirstPalindromicStringInTheArray.go)    
 [2149. Rearrange Array Elements by Sign](./leetcode/2149-RearrangeArrayElementsBySign.go)   
 [2312. Selling Pieces of Wood](./leetcode/2312-SellingPiecesOfWood.go)   
