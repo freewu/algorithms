@@ -377,6 +377,7 @@
 [2. Add Two Numbers](./leetcode/2-AddTwoNumbers.go)    
 [50. Pow(x, n)](./leetcode/50-Pow-x-n.go)    
 [70. Climbing Stairs](./leetcode/70-ClimbingStairs.go)    
+[202. Happy Number](./leetcode/202-HappyNumber.go)    
 [231. Power of Two](./leetcode/231-PowerOfTwo.go)    
 [258. Add Digits](./leetcode/258-AddDigits.go)    
 [263. Ugly Number](./leetcode/263-UglyNumber.go)    
