@@ -1,57 +1,49 @@
 package main
 
-/**
-218. The Skyline Problem
-A city's skyline is the outer contour of the silhouette formed by all the buildings in that city when viewed from a distance.
-Given the locations and heights of all the buildings, return the skyline formed by these buildings collectively.
-The geometric information of each building is given in the array buildings where buildings[i] = [lefti, righti, heighti]:
+// 218. The Skyline Problem
+// A city's skyline is the outer contour of the silhouette formed by all the buildings in that city when viewed from a distance. 
+// Given the locations and heights of all the buildings, return the skyline formed by these buildings collectively.
+// The geometric information of each building is given in the array buildings where buildings[i] = [lefti, righti, heighti]:
+//     lefti is the x coordinate of the left edge of the ith building.
+//     righti is the x coordinate of the right edge of the ith building.
+//     heighti is the height of the ith building.
 
-	lefti is the x coordinate of the left edge of the ith building.
-	righti is the x coordinate of the right edge of the ith building.
-	heighti is the height of the ith building.
+// You may assume all buildings are perfect rectangles grounded on an absolutely flat surface at height 0.
+// The skyline should be represented as a list of "key points" sorted by their x-coordinate in the form [[x1,y1],[x2,y2],...]. 
+// Each key point is the left endpoint of some horizontal segment in the skyline except the last point in the list, which always has a y-coordinate 0 and is used to mark the skyline's termination where the rightmost building ends. 
+// Any ground between the leftmost and rightmost buildings should be part of the skyline's contour.
 
-You may assume all buildings are perfect rectangles grounded on an absolutely flat surface at height 0.
-The skyline should be represented as a list of "key points" sorted by their x-coordinate in the form [[x1,y1],[x2,y2],...].
-Each key point is the left endpoint of some horizontal segment in the skyline except the last point in the list,
-which always has a y-coordinate 0 and is used to mark the skyline's termination where the rightmost building ends.
-Any ground between the leftmost and rightmost buildings should be part of the skyline's contour.
+// Note: There must be no consecutive horizontal lines of equal height in the output skyline. 
+// For instance, [...,[2 3],[4 5],[7 5],[11 5],[12 7],...] is not acceptable; the three lines of height 5 should be merged into one in the final output as such: [...,[2 3],[4 5],[12 7],...]
 
-Note: There must be no consecutive horizontal lines of equal height in the output skyline.
-For instance, [...,[2 3],[4 5],[7 5],[11 5],[12 7],...] is not acceptable;
-the three lines of height 5 should be merged into one in the final output as such: [...,[2 3],[4 5],[12 7],...]
+// Example 1:
+// <img sec="https://assets.leetcode.com/uploads/2020/12/01/merged.jpg" />
+// Input: buildings = [[2,9,10],[3,7,15],[5,12,12],[15,20,10],[19,24,8]]
+// Output: [[2,10],[3,15],[7,12],[12,0],[15,10],[20,8],[24,0]]
+// Explanation:
+// Figure A shows the buildings of the input.
+// Figure B shows the skyline formed by those buildings. The red points in figure B represent the key points in the output list.
 
-Example 1:
+// Example 2:
+// Input: buildings = [[0,2,3],[2,5,3]]
+// Output: [[0,3],[5,0]]
 
-	Input: buildings = [[2,9,10],[3,7,15],[5,12,12],[15,20,10],[19,24,8]]
-	Output: [[2,10],[3,15],[7,12],[12,0],[15,10],[20,8],[24,0]]
-	Explanation:
-		Figure A shows the buildings of the input.
-		Figure B shows the skyline formed by those buildings. The red points in figure B represent the key points in the output list.
+// Constraints:
+//     1 <= buildings.length <= 10^4
+//     0 <= lefti < righti <= 2^31 - 1
+//     1 <= heighti <= 231 - 1
+//     buildings is sorted by lefti in non-decreasing order.
 
-Example 2:
+// # 解题思路
+//     给出一个二维数组，每个子数组里面代表一个高楼的信息，一个高楼的信息包含 3 个信息，高楼起始坐标，高楼终止坐标，高楼高度。
+//     要求找到这些高楼的边际点，并输出这些边际点的高度信息。
+//     这一题可以用树状数组来解答。要求天际线，即找到楼与楼重叠区间外边缘的线，说白了是维护各个区间内的最值。
 
-	Input: buildings = [[0,2,3],[2,5,3]]
-	Output: [[0,3],[5,0]]
+import "fmt"
+import "sort"
+import "container/heap"
 
-Constraints:
-
-	1 <= buildings.length <= 10^4
-	0 <= lefti < righti <= 2^31 - 1
-	1 <= heighti <= 231 - 1
-	buildings is sorted by lefti in non-decreasing order.
-
-# 解题思路
-	给出一个二维数组，每个子数组里面代表一个高楼的信息，一个高楼的信息包含 3 个信息，高楼起始坐标，高楼终止坐标，高楼高度。
-	要求找到这些高楼的边际点，并输出这些边际点的高度信息。
-	这一题可以用树状数组来解答。要求天际线，即找到楼与楼重叠区间外边缘的线，说白了是维护各个区间内的最值。
- */
-
-import (
-	"fmt"
-	"sort"
-)
-
-// 解法一 树状数组，时间复杂度 O(n log n)
+// 树状数组，时间复杂度 O(n log n)
 const LEFTSIDE = 1
 const RIGHTSIDE = 2
 
@@ -438,7 +430,7 @@ func max(a int, b int) int {
 	return b
 }
 
-// 解法三 扫描线 Sweep Line，时间复杂度 O(n log n)
+// 扫描线 Sweep Line，时间复杂度 O(n log n)
 func getSkyline2(buildings [][]int) [][]int {
 	size := len(buildings)
 	es := make([]E, 0)
@@ -585,6 +577,43 @@ func (q *IndexMaxPQ) less(i, j int) bool {
 	return q.items[q.pq[i]] < q.items[q.pq[j]]
 }
 
+type pair struct{ right, height int }
+type hp []pair
+func (h hp) Len() int            { return len(h) }
+func (h hp) Less(i, j int) bool  { return h[i].height > h[j].height }
+func (h hp) Swap(i, j int)       { h[i], h[j] = h[j], h[i] }
+func (h *hp) Push(v interface{}) { *h = append(*h, v.(pair)) }
+func (h *hp) Pop() interface{}   { a := *h; v := a[len(a)-1]; *h = a[:len(a)-1]; return v }
+
+func getSkyline3(buildings [][]int) [][]int {
+    res := [][]int{}
+    n := len(buildings)
+    boundaries := make([]int, 0, n*2)
+    for _, building := range buildings {
+        boundaries = append(boundaries, building[0], building[1])
+    }
+    sort.Ints(boundaries)
+    idx := 0
+    h := hp{}
+    for _, boundary := range boundaries {
+        for idx < n && buildings[idx][0] <= boundary {
+            heap.Push(&h, pair{buildings[idx][1], buildings[idx][2]})
+            idx++
+        }
+        for len(h) > 0 && h[0].right <= boundary {
+            heap.Pop(&h)
+        }
+        maxn := 0
+        if len(h) > 0 {
+            maxn = h[0].height
+        }
+        if len(res) == 0 || maxn != res[len(res)-1][1] {
+            res = append(res, []int{boundary, maxn})
+        }
+    }
+    return res
+}
+
 func main() {
 	fmt.Printf("getSkyline([][]int{ {2,9,10},{3,7,15},{5,12,12},{15,20,10},{19,24,8}}) = %v\n",getSkyline([][]int{ {2,9,10},{3,7,15},{5,12,12},{15,20,10},{19,24,8}})) // [[2,10],[3,15],[7,12],[12,0],[15,10],[20,8],[24,0]]
 	fmt.Printf("getSkyline([][]int{ {0,2,3},{2,5,3}}) = %v\n",getSkyline([][]int{ {0,2,3},{2,5,3} })) // [[0,3],[5,0]]
@@ -594,5 +623,9 @@ func main() {
 
 	fmt.Printf("getSkyline2([][]int{ {2,9,10},{3,7,15},{5,12,12},{15,20,10},{19,24,8}}) = %v\n",getSkyline2([][]int{ {2,9,10},{3,7,15},{5,12,12},{15,20,10},{19,24,8}})) // [[2,10],[3,15],[7,12],[12,0],[15,10],[20,8],[24,0]]
 	fmt.Printf("getSkyline2([][]int{ {0,2,3},{2,5,3}}) = %v\n",getSkyline2([][]int{ {0,2,3},{2,5,3} })) // [[0,3],[5,0]]
+
+    fmt.Printf("getSkyline3([][]int{ {2,9,10},{3,7,15},{5,12,12},{15,20,10},{19,24,8}}) = %v\n",getSkyline3([][]int{ {2,9,10},{3,7,15},{5,12,12},{15,20,10},{19,24,8}})) // [[2,10],[3,15],[7,12],[12,0],[15,10],[20,8],[24,0]]
+	fmt.Printf("getSkyline3([][]int{ {0,2,3},{2,5,3}}) = %v\n",getSkyline3([][]int{ {0,2,3},{2,5,3} })) // [[0,3],[5,0]]
+
 }
 
