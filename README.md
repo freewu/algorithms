@@ -458,6 +458,7 @@
 [707. Design Linked List](./leetcode/707-DesignLinkedList.go)    
 [933. Number of Recent Calls](./leetcode/933-NumberOfRecentCalls.go)    
 [1396. Design Underground System](./leetcode/1396-DesignUndergroundSystem.go)    
+[1472. Design Browser History](./leetcode/1472-DesignBrowserHistory.go)    
 [1603. Design Parking System](./leetcode/1603-DesignParkingSystem.go)    
 [2642. Design Graph With Shortest Path Calculator](./leetcode/2642-DesignGraphWithShortestPathCalculator.go)   
 [2671. Frequency Tracker](./leetcode/2671-FrequencyTracker.go)   
