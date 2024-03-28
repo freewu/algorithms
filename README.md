@@ -455,6 +455,7 @@
 
 # Design
 [706. Design HashMap](./leetcode/706-DesignHashMap.go)    
+[707. Design Linked List](./leetcode/707-DesignLinkedList.go)    
 [933. Number of Recent Calls](./leetcode/933-NumberOfRecentCalls.go)    
 [1396. Design Underground System](./leetcode/1396-DesignUndergroundSystem.go)    
 [1603. Design Parking System](./leetcode/1603-DesignParkingSystem.go)    
