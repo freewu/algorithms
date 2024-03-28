@@ -376,6 +376,7 @@
 
 # Math
 [2. Add Two Numbers](./leetcode/2-AddTwoNumbers.go)    
+[29. Divide Two Integers](./leetcode/29-DivideTwoIntegers.go)    
 [50. Pow(x, n)](./leetcode/50-Pow-x-n.go)    
 [70. Climbing Stairs](./leetcode/70-ClimbingStairs.go)    
 [202. Happy Number](./leetcode/202-HappyNumber.go)    
