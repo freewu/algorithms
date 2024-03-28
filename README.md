@@ -206,6 +206,7 @@
 [349. Intersection of Two Arrays](./leetcode/349-IntersectionOfTwoArrays.go)   
 [368. Largest Divisible Subset](./leetcode/368-LargestDivisibleSubset.go)   
 [410. Split Array Largest Sum](./leetcode/410-SplitArrayLargestSum.go)   
+[422. Valid Word Square](./leetcode/422-ValidWordSquare.go)   
 [442. Find All Duplicates in an Array](./leetcode/442-FindAllDuplicatesInAnArray.go)   
 [452. Minimum Number of Arrows to Burst Balloons](./leetcode/452-MinimumNumberOfArrowsToBurstBalloons.go)   
 [498. Diagonal Traverse](./leetcode/498-DiagonalTraverse.go)    
