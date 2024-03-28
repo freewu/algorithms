@@ -266,6 +266,7 @@
 [2859. Sum of Values at Indices With K Set Bits ](./leetcode/2859-SumOfValuesAtIndicesWithKSetBits.go)    
 [2861. Maximum Number of Alloys](./leetcode/2861-MaximumNumberOfAlloys.go)    
 [2917. Find the K-or of an Array](./leetcode/2917-FindTheKOrOfAnArray.go)    
+[2958. Length of Longest Subarray With at Most K Frequency](./leetcode/2958-LengthOfLongestSubarrayWithAtMostKFrequency.go)    
 [2966. Divide Array Into Arrays With Max Difference](./leetcode/2966-DivideArrayIntoArraysWithMaxDifference.go)    
 [2971. Find Polygon With the Largest Perimeter](./leetcode/2971-FindPolygonWithTheLargestPerimeter.go)    
 [3005. Count Elements With Maximum Frequency](./leetcode/3005-CountElementsWithMaximumFrequency.go)    
