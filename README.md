@@ -654,6 +654,7 @@
 [2990. Loan Types](./leetcode/2990-LoanTypes.sql)   
 [3051. Find Candidates for Data Scientist Position](./leetcode/3051-FindCandidatesForDataScientistPosition.sql)   
 [3053. Classifying Triangles by Lengths](./leetcode/3053-ClassifyingTrianglesByLengths.sql)   
+[3058. Friends With No Mutual Friends](./leetcode/3058-FriendsWithNoMutualFriends.sql)   
 [3059. Find All Unique Email Domains](./leetcode/3059-FindAllUniqueEmailDomains.sql)   
 [3087. Find Trending Hashtags](./leetcode/3087-FindTrendingHashtags.sql)   
 [3089. Find Bursty Behavior](./leetcode/3089-FindBurstyBehavior.sql)   
