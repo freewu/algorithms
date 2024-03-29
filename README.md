@@ -271,6 +271,7 @@
 [2908. Minimum Sum of Mountain Triplets I](./leetcode/2908-MinimumSumOfMountainTripletsI.go)    
 [2917. Find the K-or of an Array](./leetcode/2917-FindTheKOrOfAnArray.go)    
 [2958. Length of Longest Subarray With at Most K Frequency](./leetcode/2958-LengthOfLongestSubarrayWithAtMostKFrequency.go)    
+[2962. Count Subarrays Where Max Element Appears at Least K Times](./leetcode/2962-CountSubarraysWhereMaxElementAppearsAtLeastKTimes.go)   
 [2966. Divide Array Into Arrays With Max Difference](./leetcode/2966-DivideArrayIntoArraysWithMaxDifference.go)    
 [2971. Find Polygon With the Largest Perimeter](./leetcode/2971-FindPolygonWithTheLargestPerimeter.go)    
 [3005. Count Elements With Maximum Frequency](./leetcode/3005-CountElementsWithMaximumFrequency.go)    
