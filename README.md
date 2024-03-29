@@ -597,6 +597,7 @@
 [1587. Bank Account Summary II](./leetcode/1587-BankAccountSummaryII.sql)   
 [1596. The Most Frequently Ordered Products for Each Customer](./leetcode/1596-TheMostFrequentlyOrderedProductsForEachCustomer.sql)   
 [1607. Sellers With No Sales](./leetcode/1607-SellersWithNoSales.sql)   
+[1613. Find the Missing IDs](./leetcode/1613-FindTheMissingIDs.sql)   
 [1623. All Valid Triplets That Can Represent a Country](./leetcode/1623-AllValidTripletsThatCanRepresentACountry.sql)   
 [1633. Percentage of Users Attended a Contest](./leetcode/1633-PercentageOfUsersAttendedAContest.sql)   
 [1661. Average Time of Process per Machine](./leetcode/1661-AverageTimeOfProcessPerMachine.sql)   
