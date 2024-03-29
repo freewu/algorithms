@@ -234,6 +234,7 @@
 [1074. Number of Submatrices That Sum to Target](./leetcode/1074-NumberOfSubmatricesThatSumToTarget.go)    
 [1232. Check If It Is a Straight Line](./leetcode/1232-CheckIfItIsAStraightLine.go)   
 [1275. Find Winner on a Tic Tac Toe Game](./leetcode/1275-FindWinnerOnATicTacToeGame.go)    
+[1351. Count Negative Numbers in a Sorted Matrix](./leetcode/1351-CountNegativeNumbersInASortedMatrix.go)    
 [1463. Cherry Pickup II](./leetcode/1463-CherryPickupII.go)    
 [1470. Shuffle the Array](./leetcode/1470-ShuffleTheArray.go)    
 [1481. Least Number of Unique Integers after K Removals](./leetcode/1481-LeastNumberOfUniqueIntegersAfterKRemovals.go)    
