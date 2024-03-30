@@ -188,6 +188,7 @@
 [243. Shortest Word Distance](./leetcode/243-ShortestWordDistance.go)   
 [244. Shortest Word Distance II](./leetcode/244-ShortestWordDistanceII.go)   
 [245. Shortest Word Distance III](./leetcode/245-ShortestWordDistanceIII.go)   
+[252. Meeting Rooms](./leetcode/252-MeetingRooms.go)   
 [260. Single Number III](./leetcode/260-SingleNumberIII.go)   
 [268. Missing Number](./leetcode/268-MissingNumber.go)   
 [269. Alien Dictionary](./leetcode/269-AlienDictionary.go)   
