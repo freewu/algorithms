@@ -229,6 +229,7 @@
 [948. Bag of Tokens](./leetcode/948-BagOfTokens.go)    
 [976. Largest Perimeter Triangle](./leetcode/976-LargestPerimeterTriangle.go)    
 [977. Squares of a Sorted Array](./leetcode/977-SquaresOfASortedArray.go)    
+[992. Subarrays with K Different Integers](./leetcode/992-SubarraysWithKDifferentIntegers.go)    
 [997. Find the Town Judge](./leetcode/997-FindTheTownJudge.go)   
 [1043. Partition Array for Maximum Sum](./leetcode/1043-PartitionArrayForMaximumSum.go)    
 [1074. Number of Submatrices That Sum to Target](./leetcode/1074-NumberOfSubmatricesThatSumToTarget.go)    
