@@ -245,6 +245,7 @@
 [1491. Average Salary Excluding the Minimum and Maximum Salary](./leetcode/1491-AverageSalaryExcludingTheMinimumAndMaximumSalary.go)    
 [1502. Can Make Arithmetic Progression From Sequence](./leetcode/1502-CanMakeArithmeticProgressionFromSequence.go)    
 [1512. Number of Good Pairs](./leetcode/1512-NumberOfGoodPairs.go)    
+[1533. Find the Index of the Large Integer](./leetcode/1533-FindTheIndexOfTheLargeInteger.go)    
 [1534. Count Good Triplets](./leetcode/1534-CountGoodTriplets.go)    
 [1572. Matrix Diagonal Sum](./leetcode/1572-MatrixDiagonalSum.go)    
 [1642. Furthest Building You Can Reach](./leetcode/1642-FurthestBuildingYouCanReach.go)    
