@@ -1,82 +1,50 @@
 package main
 
-import (
-	"fmt"
-)
+// 69. Sqrt(x)
+// Given a non-negative integer x, return the square root of x rounded down to the nearest integer. 
+// The returned integer should be non-negative as well.
 
-/*
-Implement int sqrt(int x).
+// You must not use any built-in exponent function or operator.
+//     For example, do not use pow(x, 0.5) in c++ or x ** 0.5 in python.
+ 
+// Example 1:
+// Input: x = 4
+// Output: 2
+// Explanation: The square root of 4 is 2, so we return 2.
 
-Compute and return the square root of x.
+// Example 2:
+// Input: x = 8
+// Output: 2
+// Explanation: The square root of 8 is 2.82842..., and since we round it down to the nearest integer, 2 is returned.
+ 
+// Constraints:
+//     0 <= x <= 2^31 - 1
 
-x is guaranteed to be a non-negative integer.
+import "fmt"
 
-Example 1:
-
-Input: 4
-Output: 2
-Example 2:
-
-Input: 8
-Output: 2
-Explanation: The square root of 8 is 2.82842..., and since we want to return an integer, the decimal part part will be truncated.
-
-1 1
-2 1
-3 1
-4 2
-5 2
-6 2
-7 2
-8 2
-9 3
-*/
-
-// 二分搜索
+// 二分法
 func mySqrt1(x int) int {
-	if x == 0 {
-		return 0
-	}
-	var l = 0
-	var r = (x / 2) + 1
-
-	for {
-		if l > r {
-			break
-		}
-		var m = (l + r) / 2 // 取均值
-		var s = m * m       // 均值的平方
-		if s == x {         // 1 / 4 / 9 的情况
-			return m
-		} else if s < x { //
-			l = m + 1
-		} else {
-			r = m - 1
-		}
-
-		fmt.Println("m: ", m, " r: ", r, " l: ", l)
-	}
-	return r
+    l, r := 0, x
+    for l < r {
+        mid := (l + r + 1) / 2
+        if mid * mid > x {
+            r = mid - 1
+        } else {
+            l = mid
+        }
+    }
+    return l
 }
 
 // 牛顿法
 // http://www.cnblogs.com/AnnieKim/archive/2013/04/18/3028607.html
 // xi+1=xi - (xi2 - n) / (2xi) = xi - xi / 2 + n / (2xi) = xi / 2 + n / 2xi = (xi + n/xi) / 2
 func mySqrt(x int) int {
-	if x == 0 {
-		return 0
-	}
-	var r = 1
-	var p = 0
-	for {
-		if r == p {
-			break
-		}
-		p = r
-		r = (r + (x / r)) / 2
-		fmt.Println("p:", p, " r:", r)
-	}
-	return r
+    r := x
+    for r * r > x {
+        r = (r + x / r) / 2
+    }
+    return r
 }
 
 func main() {
@@ -90,4 +58,16 @@ func main() {
 	// fmt.Println(mySqrt(16)) // 4
 	// fmt.Println(mySqrt(24)) // 4
 	// fmt.Println(mySqrt(25)) // 5
+
+    // Explanation: The square root of 4 is 2, so we return 2.
+    fmt.Println(mySqrt(4)) // 2
+    // Explanation: The square root of 8 is 2.82842..., and since we round it down to the nearest integer, 2 is returned.
+    fmt.Println(mySqrt(8)) // 2
+    fmt.Println(mySqrt(9)) // 3
+
+    // Explanation: The square root of 4 is 2, so we return 2.
+    fmt.Println(mySqrt1(4)) // 2
+    // Explanation: The square root of 8 is 2.82842..., and since we round it down to the nearest integer, 2 is returned.
+    fmt.Println(mySqrt1(8)) // 2
+    fmt.Println(mySqrt1(9)) // 3
 }
