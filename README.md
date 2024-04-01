@@ -676,6 +676,7 @@
 [2990. Loan Types](./leetcode/2990-LoanTypes.sql)   
 [3051. Find Candidates for Data Scientist Position](./leetcode/3051-FindCandidatesForDataScientistPosition.sql)   
 [3053. Classifying Triangles by Lengths](./leetcode/3053-ClassifyingTrianglesByLengths.sql)   
+[3055. Top Percentile Fraud](./leetcode/3055-TopPercentileFraud.sql)   
 [3056. Snaps Analysis](./leetcode/3056-SnapsAnalysis.sql)   
 [3058. Friends With No Mutual Friends](./leetcode/3058-FriendsWithNoMutualFriends.sql)   
 [3059. Find All Unique Email Domains](./leetcode/3059-FindAllUniqueEmailDomains.sql)   
