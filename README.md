@@ -481,6 +481,7 @@
 [933. Number of Recent Calls](./leetcode/933-NumberOfRecentCalls.go)    
 [981. Time Based Key-Value Store](./leetcode/981-TimeBasedKeyValueStore.go)    
 [1146. Snapshot Array](./leetcode/1146-SnapshotArray.go)   
+[1166. Design File System](./leetcode/1166-DesignFileSystem.go)   
 [1396. Design Underground System](./leetcode/1396-DesignUndergroundSystem.go)    
 [1472. Design Browser History](./leetcode/1472-DesignBrowserHistory.go)    
 [1603. Design Parking System](./leetcode/1603-DesignParkingSystem.go)    
