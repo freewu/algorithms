@@ -484,6 +484,9 @@
 [2642. Design Graph With Shortest Path Calculator](./leetcode/2642-DesignGraphWithShortestPathCalculator.go)   
 [2671. Frequency Tracker](./leetcode/2671-FrequencyTracker.go)   
 
+# Binary Search
+[374. Guess Number Higher or Lower](./leetcode/374-GuessNumberHigherOrLower.go)   
+
 # Database
 [175. Combine Two Tables](./leetcode/175-CombineTwoTables.sql)   
 [176. Second Highest Salary](./leetcode/176-SecondHighestSalary.sql)   
