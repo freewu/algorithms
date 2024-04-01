@@ -206,6 +206,7 @@
 [322. Coin Change](./leetcode/322-CoinChange.go)   
 [349. Intersection of Two Arrays](./leetcode/349-IntersectionOfTwoArrays.go)   
 [368. Largest Divisible Subset](./leetcode/368-LargestDivisibleSubset.go)   
+[373. Find K Pairs with Smallest Sums](./leetcode/373-FindKPairsWithSmallestSums.go)   
 [410. Split Array Largest Sum](./leetcode/410-SplitArrayLargestSum.go)   
 [422. Valid Word Square](./leetcode/422-ValidWordSquare.go)   
 [436. Find Right Interval](./leetcode/436-FindRightInterval.go)   
