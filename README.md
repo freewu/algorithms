@@ -633,6 +633,7 @@
 [1693. Daily Leads and Partners](./leetcode/1693-DailyLeadsandPartners.sql)   
 [1699. Number of Calls Between Two Persons](./leetcode/1699-NumberOfCallsBetweenTwoPersons.sql)   
 [1709. Biggest Window Between Visits](./leetcode/1709-BiggestWindowBetweenVisits.sql)   
+[1715. Count Apples and Oranges](./leetcode/1715-CountApplesAndOranges.sql)   
 [1729. Find Followers Count](./leetcode/1729-FindFollowersCount.sql)   
 [1731. The Number of Employees Which Report to Each Employee](./leetcode/1731-TheNumberOfEmployeesWhichReportToEachEmployee.sql)   
 [1741. Find Total Time Spent by Each Employee](./leetcode/1741-FindTotalTimeSpentbyEachEmployee.sql)   
