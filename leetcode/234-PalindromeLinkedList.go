@@ -21,8 +21,8 @@ package main
 import "fmt"
 
 type ListNode struct {
-	Val int
-	Next *ListNode
+    Val int
+    Next *ListNode
 }
 
 // 打印链表

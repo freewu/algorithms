@@ -50,7 +50,7 @@
 [139. Word Break]   
 [141. Linked List Cycle](./leetcode/141-LinkedListCycle.go)    
 [142. Linked List Cycle II](./leetcode/142-LinkedListCycleII.go)    
-[146. LRU Cache]    
+[146. LRU Cache](./146-LRUCache.go)    
 [148. Sort List]    
 [152. Maximum Product Subarray](./leetcode/152-MaximumProductSubarray.go)   
 [155. Min Stack]    
@@ -477,6 +477,7 @@
 [201. Bitwise AND of Numbers Range](./leetcode/201-BitwiseANDOfNumbersRange.go)   
 
 # Design
+[146. LRU Cache](./leetcode/146-LRUCache.go)    
 [622. Design Circular Queue](./leetcode/622-DesignCircularQueue.go)    
 [706. Design HashMap](./leetcode/706-DesignHashMap.go)    
 [707. Design Linked List](./leetcode/707-DesignLinkedList.go)    
