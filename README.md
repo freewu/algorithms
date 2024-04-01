@@ -219,6 +219,7 @@
 [621. Task Scheduler](./leetcode/621-TaskScheduler.go)    
 [645. Set Mismatch](./leetcode/645-SetMismatch.go)    
 [682. Baseball Game](./leetcode/682-BaseballGame.go)    
+[702. Search in a Sorted Array of Unknown Size](./leetcode/702-SearchInASortedArrayOfUnknownSize.go)    
 [704. Binary Search](./leetcode/704-BinarySearch.go)    
 [713. Subarray Product Less Than K](./leetcode/713-SubarrayProductLessThanK.go)    
 [739. Daily Temperatures](./leetcode/739-DailyTemperatures.go)    
