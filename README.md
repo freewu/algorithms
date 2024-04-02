@@ -379,6 +379,7 @@
 [82. Remove Duplicates from Sorted List II](./leetcode/82-RemoveDuplicatesFromSortedListII.go)   
 [83. Remove Duplicates from Sorted List](./leetcode/83-RemoveDuplicatesFromSortedList.go)    
 [92. Reverse Linked List II](./leetcode/92-ReverseLinkedListII.go)    
+[138. Copy List with Random Pointer](./leetcode/138-CopyListWithRandomPointer.go)   
 [141. Linked List Cycle](./leetcode/141-LinkedListCycle.go)    
 [142. Linked List Cycle II](./leetcode/142-LinkedListCycleII.go)    
 [143. Reorder List](./leetcode/143-ReorderList.go)    
