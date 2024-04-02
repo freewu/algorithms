@@ -460,6 +460,7 @@
 [987. Vertical Order Traversal of a Binary Tree](./leetcode/987-VerticalOrderTraversalOfABinaryTree.go)   
 [993. Cousins in Binary Tree](./leetcode/993-CousinsInBinaryTree.go)   
 [1261. Find Elements in a Contaminated Binary Tree](./leetcode/1261-FindElementsInAContaminatedBinaryTree.go)   
+[1379. Find a Corresponding Node of a Binary Tree in a Clone of That Tree](./leetcode/1379-FindACorrespondingNodeOfABinaryTreeInACloneOfThatTree.go)   
 [1609. Even Odd Tree](./leetcode/1609-EvenOddTree.go)   
 [2236. Root Equals Sum of Children](./leetcode/2236-RootEqualsSumOfChildren.go)   
 [2476. Closest Nodes Queries in a Binary Search Tree](./leetcode/2476-ClosestNodesQueriesInABinarySearchTree.go)   
