@@ -248,6 +248,7 @@
 [1512. Number of Good Pairs](./leetcode/1512-NumberOfGoodPairs.go)    
 [1533. Find the Index of the Large Integer](./leetcode/1533-FindTheIndexOfTheLargeInteger.go)    
 [1534. Count Good Triplets](./leetcode/1534-CountGoodTriplets.go)    
+[1539. Kth Missing Positive Number](./leetcode/1539-KthMissingPositiveNumber.go)   
 [1572. Matrix Diagonal Sum](./leetcode/1572-MatrixDiagonalSum.go)    
 [1642. Furthest Building You Can Reach](./leetcode/1642-FurthestBuildingYouCanReach.go)    
 [1672. Richest Customer Wealth](./leetcode/1672-RichestCustomerWealth.go)   
