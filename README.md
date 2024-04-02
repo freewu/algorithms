@@ -410,6 +410,7 @@
 [231. Power of Two](./leetcode/231-PowerOfTwo.go)    
 [258. Add Digits](./leetcode/258-AddDigits.go)    
 [263. Ugly Number](./leetcode/263-UglyNumber.go)    
+[264. Ugly Number II](./leetcode/264-UglyNumberII.go)    
 [279. Perfect Squares](./leetcode/279-PerfectSquares.go)   
 [292. Nim Game](./leetcode/292-NimGame.go)     
 [326. Power of Three](./leetcode/326-PowerOfThree.go)    
