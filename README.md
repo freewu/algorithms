@@ -650,6 +650,7 @@
 [1783. Grand Slam Titles](./leetcode/1783-GrandSlamTitles.sql)   
 [1795. Rearrange Products Table](./leetcode/1795-RearrangeProductsTable.sql)   
 [1809. Ad-Free Sessions](./leetcode/1809-Ad-FreeSessions.sql)   
+[1811. Find Interview Candidates](./leetcode/1811-FindInterviewCandidates.sql)   
 [1821. Find Customers With Positive Revenue this Year](./leetcode/1821-FindCustomersWithPositiveRevenueThisYear.sql)   
 [1831. Maximum Transaction Each Day](./leetcode/1831-MaximumTransactionEachDay.sql)  
 [1853. Convert Date Format](./leetcode/1853-ConvertDateFormat.sql)   
@@ -691,6 +692,7 @@
 [3059. Find All Unique Email Domains](./leetcode/3059-FindAllUniqueEmailDomains.sql)   
 [3087. Find Trending Hashtags](./leetcode/3087-FindTrendingHashtags.sql)   
 [3089. Find Bursty Behavior](./leetcode/3089-FindBurstyBehavior.sql)   
+[3103. Find Trending Hashtags II ](./leetcode/3103-FindTrendingHashtagsII.sql)   
 
 
 # Shell
