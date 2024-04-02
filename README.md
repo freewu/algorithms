@@ -415,6 +415,7 @@
 [326. Power of Three](./leetcode/326-PowerOfThree.go)    
 [365. Water and Jug Problem](./leetcode/365-WaterAndJugProblem.go)    
 [367. Valid Perfect Square](./leetcode/367-ValidPerfectSquare.go)    
+[441. Arranging Coins](./leetcode/441-ArrangingCoins.go)    
 [670. Maximum Swap](./leetcode/670-MaximumSwap.go)    
 [1056. Confusing Number](./leetcode/1056-ConfusingNumber.go)    
 [1281. Subtract the Product and Sum of Digits of an Integer](./leetcode/1281-SubtractTheProductAndSumOfDigitsOfAnInteger.go)    
