@@ -417,6 +417,7 @@
 [367. Valid Perfect Square](./leetcode/367-ValidPerfectSquare.go)    
 [441. Arranging Coins](./leetcode/441-ArrangingCoins.go)    
 [670. Maximum Swap](./leetcode/670-MaximumSwap.go)    
+[887. Super Egg Drop](./leetcode/887-SuperEggDrop.go)    
 [1056. Confusing Number](./leetcode/1056-ConfusingNumber.go)    
 [1281. Subtract the Product and Sum of Digits of an Integer](./leetcode/1281-SubtractTheProductAndSumOfDigitsOfAnInteger.go)    
 [1486. XOR Operation in an Array](./leetcode/1486-XOROperationInAnArray.go)    
