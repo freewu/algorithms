@@ -483,6 +483,7 @@
 [310. Minimum Height Trees](./leetcode/310-MinimumHeightTrees.go)   
 [1976. Number of Ways to Arrive at Destination](./leetcode/1976-NumberOfWaysToArriveAtDestination.go)   
 [2092. Find All People With Secret](./leetcode/2092-FindAllPeopleWithSecret.go)   
+[2192. All Ancestors of a Node in a Directed Acyclic Graph](./leetcode/2192-AllAncestorsOfANodeInADirectedAcyclicGraph.go)   
 [2642. Design Graph With Shortest Path Calculator](./leetcode/2642-DesignGraphWithShortestPathCalculator.go)    
 
 # Bit Manipulation
