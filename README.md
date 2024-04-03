@@ -671,6 +671,7 @@
 [1841. League Statistics](./leetcode/1841-LeagueStatistics.sql)   
 [1843. Suspicious Bank Accounts](./leetcode/1843-SuspiciousBankAccounts.sql)   
 [1853. Convert Date Format](./leetcode/1853-ConvertDateFormat.sql)   
+[1867. Orders With Maximum Quantity Above Average](./leetcode/1867-OrdersWithMaximumQuantityAboveAverage.sql)   
 [1873. Calculate Special Bonus](./leetcode/1873-CalculateSpecialBonus.sql)   
 [1890. The Latest Login in 2020](./leetcode/1890-TheLatestLoginin2020.sql)   
 [1907. Count Salary Categories](./leetcode/1907-CountSalaryCategories.sql)   
