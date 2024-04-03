@@ -50,8 +50,8 @@
 [139. Word Break]   
 [141. Linked List Cycle](./leetcode/141-LinkedListCycle.go)    
 [142. Linked List Cycle II](./leetcode/142-LinkedListCycleII.go)    
-[146. LRU Cache](./146-LRUCache.go)    
-[148. Sort List]    
+[146. LRU Cache](./leetcode/146-LRUCache.go)    
+[148. Sort List](./leetcode/148-SortList.go)    
 [152. Maximum Product Subarray](./leetcode/152-MaximumProductSubarray.go)   
 [155. Min Stack]    
 [160. Intersection of Two Linked Lists]    
@@ -384,6 +384,7 @@
 [141. Linked List Cycle](./leetcode/141-LinkedListCycle.go)    
 [142. Linked List Cycle II](./leetcode/142-LinkedListCycleII.go)    
 [143. Reorder List](./leetcode/143-ReorderList.go)    
+[148. Sort List](./leetcode/148-SortList.go)    
 [160. Intersection of Two Linked Lists](./leetcode/160-IntersectionOfTwoLinkedLists.go)    
 [206. Reverse Linked List](./leetcode/206-ReverseLinkedList.go)    
 [234. Palindrome Linked List](./leetcode/234-PalindromeLinkedList.go)    
