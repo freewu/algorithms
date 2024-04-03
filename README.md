@@ -491,7 +491,8 @@
 [201. Bitwise AND of Numbers Range](./leetcode/201-BitwiseANDOfNumbersRange.go)   
 
 # Design
-[146. LRU Cache](./leetcode/146-LRUCache.go)    
+[146. LRU Cache](./leetcode/146-LRUCache.go)   
+[295. Find Median from Data Stream](./leetcode/295-FindMedianFromDataStream.go)   
 [622. Design Circular Queue](./leetcode/622-DesignCircularQueue.go)    
 [706. Design HashMap](./leetcode/706-DesignHashMap.go)    
 [707. Design Linked List](./leetcode/707-DesignLinkedList.go)    
