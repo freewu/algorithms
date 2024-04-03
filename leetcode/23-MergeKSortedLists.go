@@ -25,12 +25,12 @@ package main
 // Output: []
  
 // Constraints:
-//         k == lists.length
-//         0 <= k <= 10^4
-//         0 <= lists[i].length <= 500
-//         -10^4 <= lists[i][j] <= 10^4
-//         lists[i] is sorted in ascending order.
-//         The sum of lists[i].length will not exceed 10^4.
+//     k == lists.length
+//     0 <= k <= 10^4
+//     0 <= lists[i].length <= 500
+//     -10^4 <= lists[i][j] <= 10^4
+//     lists[i] is sorted in ascending order.
+//     The sum of lists[i].length will not exceed 10^4.
 
 import "fmt"
 import "container/heap"
@@ -50,26 +50,26 @@ type ListNode struct {
 // 优先队列（小根堆）
 func mergeKLists(lists []*ListNode) *ListNode {
     // 创建一个小根堆来 pq 维护所有链表的头节点
-	pq := hp{}
-	for _, head := range lists {
-		if head != nil {
-			pq = append(pq, head)
-		}
-	}
-	heap.Init(&pq)
-	dummy := &ListNode{}
-	cur := dummy
-	for len(pq) > 0 {
+    pq := hp{}
+    for _, head := range lists {
+        if head != nil {
+            pq = append(pq, head)
+        }
+    }
+    heap.Init(&pq)
+    dummy := &ListNode{}
+    cur := dummy
+    for len(pq) > 0 {
         // 每次从小根堆中取出值最小的节点，
-		cur.Next = heap.Pop(&pq).(*ListNode)
-		cur = cur.Next
-		if cur.Next != nil {
+        cur.Next = heap.Pop(&pq).(*ListNode)
+        cur = cur.Next
+        if cur.Next != nil {
             // 添加到结果链表的末尾，然后将该节点的下一个节点加入堆中
-			heap.Push(&pq, cur.Next)
-		}
+            heap.Push(&pq, cur.Next)
+        }
         // 重复上述步骤直到堆为空
-	}
-	return dummy.Next
+    }
+    return dummy.Next
 }
 
 type hp []*ListNode
@@ -81,63 +81,63 @@ func (h *hp) Pop() any           { a := *h; v := a[len(a)-1]; *h = a[:len(a)-1];
 
 // 递归合并
 func mergeKLists1(lists []*ListNode) *ListNode {
-	length := len(lists)
-	if length < 1 {
-		return nil
-	}
-	if length == 1 {
-		return lists[0]
-	}
-	num := length / 2
-	left := mergeKLists1(lists[:num])
-	right := mergeKLists1(lists[num:])
-	return mergeTwoLists1(left, right)
+    length := len(lists)
+    if length < 1 {
+        return nil
+    }
+    if length == 1 {
+        return lists[0]
+    }
+    num := length / 2
+    left := mergeKLists1(lists[:num])
+    right := mergeKLists1(lists[num:])
+    return mergeTwoLists1(left, right)
 }
 
 func mergeTwoLists1(l1 *ListNode, l2 *ListNode) *ListNode {
-	if l1 == nil {
-		return l2
-	}
-	if l2 == nil {
-		return l1
-	}
-	if l1.Val < l2.Val {
-		l1.Next = mergeTwoLists1(l1.Next, l2)
-		return l1
-	}
-	l2.Next = mergeTwoLists1(l1, l2.Next)
-	return l2
+    if l1 == nil {
+        return l2
+    }
+    if l2 == nil {
+        return l1
+    }
+    if l1.Val < l2.Val {
+        l1.Next = mergeTwoLists1(l1.Next, l2)
+        return l1
+    }
+    l2.Next = mergeTwoLists1(l1, l2.Next)
+    return l2
 }
 
  // 打印链表
 func printListNode(l *ListNode) {
-	if nil == l {
-		return
-	}
-	for {
-		if nil == l.Next {
-			fmt.Print(l.Val)
-			break
-		} else {
-			fmt.Print(l.Val, " -> ")
-		}
-		l = l.Next
-	}
-	fmt.Println()
+    if nil == l {
+        return
+    }
+    for {
+        if nil == l.Next {
+            fmt.Print(l.Val)
+            break
+        } else {
+            fmt.Print(l.Val, " -> ")
+        }
+        l = l.Next
+    }
+    fmt.Println()
 }
 
 // 数组创建链表
 func makeListNode(arr []int) *ListNode {
-	if (len(arr) == 0) {
-		return nil
-	}
-	var l = (len(arr) - 1)
-	var head = &ListNode{arr[l], nil}
-	for i := l - 1; i >= 0; i--  {
-		var n = &ListNode{arr[i], head}
-		head = n
-	}
-	return head
+    if (len(arr) == 0) {
+        return nil
+    }
+    var l = (len(arr) - 1)
+    var head = &ListNode{arr[l], nil}
+    for i := l - 1; i >= 0; i--  {
+        var n = &ListNode{arr[i], head}
+        head = n
+    }
+    return head
 }
 
 func main() {

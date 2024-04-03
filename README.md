@@ -38,7 +38,7 @@
 [94. Binary Tree Inorder Traversal](./leetcode/94-BinaryTreeInorderTraversal.go)   
 [96. Unique Binary Search Trees]    
 [98. Validate Binary Search Tree]   
-[101. Symmetric Tree]   
+[101. Symmetric Tree](./leetcode/101-SymmetricTree.go)      
 [102. Binary Tree Level Order Traversal]   
 [104. Maximum Depth of Binary Tree](./leetcode/104-MaximumDepthOfBinaryTree.go)   
 [105. Construct Binary Tree from Preorder and Inorder Traversal](./leetcode/105-ConstructBinaryTreefromPreorderandInorderTraversal.go)   
@@ -445,6 +445,7 @@
 # Tree
 [94. Binary Tree Inorder Traversal](./leetcode/94-BinaryTreeInorderTraversal.go)   
 [100. Same Tree](./leetcode/100-SameTree.go)   
+[101. Symmetric Tree](./leetcode/101-SymmetricTree.go)      
 [102. Binary Tree Level Order Traversal](./leetcode/102-BinaryTreeLevelOrderTraversal.go)   
 [103. Binary Tree Zigzag Level Order Traversal](./leetcode/103-BinaryTreeZigzagLevelOrderTraversal.go)   
 [104. Maximum Depth of Binary Tree](./leetcode/104-MaximumDepthOfBinaryTree.go)   

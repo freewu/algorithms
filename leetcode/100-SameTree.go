@@ -25,17 +25,17 @@ package main
 import "fmt"
 
 type TreeNode struct {
-	Val   int
-	Left  *TreeNode
-	Right *TreeNode
+    Val   int
+    Left  *TreeNode
+    Right *TreeNode
 }
 
 func printTreeNode(t *TreeNode) {
-	if nil == t {
-		return
-	}
+    if nil == t {
+        return
+    }
 
-	fmt.Println()
+    fmt.Println()
 }
 
 func makeNodeList(nums []int) *TreeNode {

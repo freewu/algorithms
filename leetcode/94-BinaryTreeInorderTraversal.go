@@ -24,9 +24,9 @@ import "fmt"
 
 // Definition for a binary tree node.
 type TreeNode struct {
-	Val int
-	Left *TreeNode
-	Right *TreeNode
+    Val int
+    Left *TreeNode
+    Right *TreeNode
 }
 
 /**
@@ -104,29 +104,29 @@ func inorderTraversal2(root *TreeNode) []int {
 }
 
 func main() {
-	tree1 := &TreeNode {
-		1,
-		nil,
-		&TreeNode {
-			2,
-			&TreeNode{3, nil, nil},
-			nil,
-		},
-	}
-	tree3 := &TreeNode {
-		1,
-		nil,
-		nil,
-	}
-	fmt.Println(inorderTraversal(tree1)) // [1,3,2]
-	fmt.Println(inorderTraversal(nil)) // []
-	fmt.Println(inorderTraversal(tree3)) // [1]
+    tree1 := &TreeNode {
+        1,
+        nil,
+        &TreeNode {
+            2,
+            &TreeNode{3, nil, nil},
+            nil,
+        },
+    }
+    tree3 := &TreeNode {
+        1,
+        nil,
+        nil,
+    }
+    fmt.Println(inorderTraversal(tree1)) // [1,3,2]
+    fmt.Println(inorderTraversal(nil)) // []
+    fmt.Println(inorderTraversal(tree3)) // [1]
 
-	fmt.Println(inorderTraversal1(tree1)) // [1,3,2]
-	fmt.Println(inorderTraversal1(nil)) // []
-	fmt.Println(inorderTraversal1(tree3)) // [1]
+    fmt.Println(inorderTraversal1(tree1)) // [1,3,2]
+    fmt.Println(inorderTraversal1(nil)) // []
+    fmt.Println(inorderTraversal1(tree3)) // [1]
 
-	fmt.Println(inorderTraversal2(tree1)) // [1,3,2]
-	fmt.Println(inorderTraversal2(nil)) // []
-	fmt.Println(inorderTraversal2(tree3)) // [1]
+    fmt.Println(inorderTraversal2(tree1)) // [1,3,2]
+    fmt.Println(inorderTraversal2(nil)) // []
+    fmt.Println(inorderTraversal2(tree3)) // [1]
 }
