@@ -47,7 +47,7 @@
 [124. Binary Tree Maximum Path Sum]   
 [128. Longest Consecutive Sequence](./leetcode/128-LongestConsecutiveSequence.go)   
 [136. Single Number](./leetcode/136-SingleNumber.go)   
-[139. Word Break]   
+[139. Word Break](./leetcode/139-WordBreak.go)      
 [141. Linked List Cycle](./leetcode/141-LinkedListCycle.go)    
 [142. Linked List Cycle II](./leetcode/142-LinkedListCycleII.go)    
 [146. LRU Cache](./leetcode/146-LRUCache.go)    
@@ -326,6 +326,7 @@
 [126. Word Ladder II](./leetcode/126-WordLadderII.go)    
 [127. Word Ladder](./leetcode/127-WordLadder.go)    
 [131. Palindrome Partitioning](./leetcode/131-PalindromePartitioning.go)    
+[139. Word Break](./leetcode/139-WordBreak.go)      
 [151. Reverse Words in a String](./leetcode/151-ReverseWordsInAString.go)    
 [159. Longest Substring with At Most Two Distinct Characters](./leetcode/159-LongestSubstringWithAtMostTwoDistinctCharacters.go)    
 [165. Compare Version Numbers](./leetcode/165-CompareVersionNumbers.go)    
