@@ -24,9 +24,9 @@ import "fmt"
 
 // Definition for a binary tree node.
 type TreeNode struct {
-	Val int
-	Left *TreeNode
-	Right *TreeNode
+    Val int
+    Left *TreeNode
+    Right *TreeNode
 }
 
 /**
@@ -39,38 +39,33 @@ type TreeNode struct {
  */
 func diameterOfBinaryTree(root *TreeNode) int {
 	result := 0
+    var checkDiameter func(root *TreeNode, result *int) int 
+    checkDiameter = func(root *TreeNode, result *int) int {
+        if root == nil {
+            return 0
+        }
+        max := func (x, y int) int { if x > y { return x; }; return y; }
+        left := checkDiameter(root.Left, result)
+        right := checkDiameter(root.Right, result)
+        *result = max(*result, left+right)
+        return max(left, right) + 1
+    }
 	checkDiameter(root, &result)
 	return result
 }
 
-func checkDiameter(root *TreeNode, result *int) int {
-	if root == nil {
-		return 0
-	}
-	left := checkDiameter(root.Left, result)
-	right := checkDiameter(root.Right, result)
-	*result = max(*result, left+right)
-	return max(left, right) + 1
-}
-
-func max(a int, b int) int {
-	if a > b {
-		return a
-	}
-	return b
-}
-
 func diameterOfBinaryTree1(root *TreeNode) (ans int) {
-    var depth func(*TreeNode) int
     res := 0
+    var depth func(*TreeNode) int
     depth = func (root *TreeNode) int {
         if root == nil {
             return 0
         }
-        leftLen := depth(root.Left)
-        rightLen := depth(root.Right)
-        res = max(res, leftLen+rightLen)
-        return max(leftLen, rightLen) + 1
+        left := depth(root.Left)
+        right := depth(root.Right)
+        max := func (x, y int) int { if x > y { return x; }; return y; }
+        res = max(res, left + right)
+        return max(left, right) + 1
     }
     depth(root)
     return res

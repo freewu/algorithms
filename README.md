@@ -91,7 +91,7 @@
 [461. Hamming Distance]   
 [494. Target Sum]   
 [538. Convert BST to Greater Tree]   
-[543. Diameter of Binary Tree]   
+[543. Diameter of Binary Tree](./leetcode/543-DiameterOfBinaryTree.go)   
 [560. Subarray Sum Equals K]   
 [581. Shortest Unsorted Continuous Subarray]   
 [617. Merge Two Binary Trees]   
