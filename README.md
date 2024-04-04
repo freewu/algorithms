@@ -69,7 +69,7 @@
 [238. Product of Array Except Self](./leetcode/238-ProductOfArrayExceptSelf.go)      
 [239. Sliding Window Maximum](./leetcode/239-SlidingWindowMaximum.go)   
 [240. Search a 2D Matrix II](./leetcode/240-SearchA2DMatrixII.go)   
-[253. Meeting Rooms II]   
+[253. Meeting Rooms II](./leetcode/253-MeetingRoomsII.go)      
 [279. Perfect Squares](./leetcode/279-PerfectSquares.go)       
 [283. Move Zeroes](./leetcode/283-MoveZeroes.go)     
 [297. Serialize and Deserialize Binary Tree]   
