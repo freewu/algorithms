@@ -53,69 +53,68 @@ import "time"
 
 // 递归
 func climbStairs(n int) int {
-	if n == 1 || n == 2 {
-		return n
-	}
-	return climbStairs(n - 1) + climbStairs(n - 2)
+    if n == 1 || n == 2 {
+        return n
+    }
+    return climbStairs(n - 1) + climbStairs(n - 2)
 }
 
 // 利用缓存 备忘录
 func climbStairs1(n int) int  {
-	if n == 1 || n == 2 {
-		return n
-	} else {
-		arr := make([]int, n + 1)
-		arr[1] = 1
-		arr[2] = 2
-		return dfs(n,arr)
-	}
+    var dfs func(n int,arr []int) int 
+    dfs = func(n int,arr []int) int {
+        if arr[n] != 0 {
+            return arr[n]
+        } else {
+            arr[n] = dfs(n -1, arr) + dfs(n - 2, arr)
+            return arr[n]
+        }
+    }
+    if n == 1 || n == 2 {
+        return n
+    } else {
+        arr := make([]int, n + 1)
+        arr[1] = 1
+        arr[2] = 2
+        return dfs(n,arr)
+    }
 }
-
-func dfs(n int,arr []int) int {
-	if arr[n] != 0 {
-		return arr[n]
-	} else {
-		arr[n] = dfs(n -1, arr) + dfs(n - 2, arr)
-		return arr[n]
-	}
-}
-
 
 // 动态规划法 (利用数组来存储)
 func climbStairs2(n int) int  {
-	if n == 1 || n == 2 {
-		return n
-	}
-	arr := make([]int, n + 1)
-	arr[1] = 1
-	arr[2] = 2
-	for i := 3 ; i <= n; i++ {
-		arr[i] = arr[i - 1] + arr[i - 2]
-	}
-	return arr[n]
+    if n == 1 || n == 2 {
+        return n
+    }
+    arr := make([]int, n + 1)
+    arr[1] = 1
+    arr[2] = 2
+    for i := 3 ; i <= n; i++ {
+        arr[i] = arr[i - 1] + arr[i - 2]
+    }
+    return arr[n]
 }
 
 
 func main() {
-	var start,end int64
-	start = time.Now().UnixNano()
-	fmt.Println(climbStairs(2)) // 2
-	fmt.Println(climbStairs(3)) // 3
-	fmt.Println(climbStairs(5)) // 8
-	end = time.Now().UnixNano()
-	fmt.Printf("climbStairs used: %d ns \n",end - start)
+    var start,end int64
+    start = time.Now().UnixNano()
+    fmt.Println(climbStairs(2)) // 2
+    fmt.Println(climbStairs(3)) // 3
+    fmt.Println(climbStairs(5)) // 8
+    end = time.Now().UnixNano()
+    fmt.Printf("climbStairs used: %d ns \n",end - start)
 
-	start = time.Now().UnixNano()
-	fmt.Println(climbStairs1(2)) // 2
-	fmt.Println(climbStairs1(3)) // 3
-	fmt.Println(climbStairs1(5)) // 8
-	end = time.Now().UnixNano()
-	fmt.Printf("climbStairs1 used: %d ns \n",end - start)
+    start = time.Now().UnixNano()
+    fmt.Println(climbStairs1(2)) // 2
+    fmt.Println(climbStairs1(3)) // 3
+    fmt.Println(climbStairs1(5)) // 8
+    end = time.Now().UnixNano()
+    fmt.Printf("climbStairs1 used: %d ns \n",end - start)
 
-	start = time.Now().UnixNano()
-	fmt.Println(climbStairs2(2)) // 2
-	fmt.Println(climbStairs2(3)) // 3
-	fmt.Println(climbStairs2(5)) // 8
-	end = time.Now().UnixNano()
-	fmt.Printf("climbStairs2 used: %d ns \n",end - start)
+    start = time.Now().UnixNano()
+    fmt.Println(climbStairs2(2)) // 2
+    fmt.Println(climbStairs2(3)) // 3
+    fmt.Println(climbStairs2(5)) // 8
+    end = time.Now().UnixNano()
+    fmt.Printf("climbStairs2 used: %d ns \n",end - start)
 }
