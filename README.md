@@ -97,7 +97,7 @@
 [617. Merge Two Binary Trees]   
 [621. Task Scheduler]   
 [647. Palindromic Substrings]   
-[739. Daily Temperatures]   
+[739. Daily Temperatures](./leetcode/739-DailyTemperatures.go)    
 
  
 # Array
@@ -866,7 +866,7 @@
 [LCR 004. 只出现一次的数字 II](./leetcode/LCR004-SingleNumberII.go)   
 [LCR 005. 最大单词长度乘积](./leetcode/LCR005-ProductOfMaximumWordLength.go)   
 [LCR 006. 两数之和 II - 输入有序数组](./leetcode/LCR006-TwoSumII.go)   
-
+[LCR 038. 每日温度](./leetcode/LCR038-DailyTemperatures.go)   
 
 # LCP
 [LCP 01. 猜数字](./leetcode/LCP01-GuessNumbers.go)   
