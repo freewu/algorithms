@@ -80,7 +80,7 @@
 [322. Coin Change](./leetcode/322-CoinChange.go)   
 [337. House Robber III]   
 [338. Counting Bits](./leetcode/338-CountingBits.go)    
-[347. Top K Frequent Elements]   
+[347. Top K Frequent Elements](./leetcode/347-TopKFrequentElements.go)   
 [394. Decode String]   
 [399. Evaluate Division]   
 [406. Queue Reconstruction by Height]   
@@ -349,6 +349,7 @@
 [647. Palindromic Substrings](./leetcode/647-PalindromicSubstrings.go)    
 [657. Robot Return to Origin](./leetcode/657-RobotReturnToOrigin.go)    
 [709. To Lower Case](./leetcode/709-ToLowerCase.go)    
+[763. Partition Labels](./leetcode/763-PartitionLabels.go)    
 [791. Custom Sort String](./leetcode/791-CustomSortString.go)    
 [859. Buddy Strings](./leetcode/859-BuddyStrings.go)    
 [936. Stamping The Sequence](./leetcode/936-StampingTheSequence.go)    
