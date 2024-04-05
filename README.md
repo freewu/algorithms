@@ -25,10 +25,10 @@
 [53. Maximum Subarray](./leetcode/53-MaximumSubarray.go)    
 [55. Jump Game](./leetcode/55-JumpGame.go)    
 [56. Merge Intervals](./leetcode/56-MergeIntervals.go)    
-[62. Unique Paths]   
+[62. Unique Paths](./leetcode/62-UniquePaths.go)    
 [64. Minimum Path Sum](./leetcode/64-MinimumPathSum.go)    
 [70. Climbing Stairs](./leetcode/70-ClimbingStairs.go)    
-[72. Edit Distance]   
+[72. Edit Distance](./leetcode/72-EditDistance.go)    
 [75. Sort Colors](./leetcode/75-SortColors.go)    
 [76. Minimum Window Substring](./leetcode/76-MinimumWindowSubstring.go)    
 [78. Subsets](./leetcode/78-Subsets.go)    
@@ -39,7 +39,7 @@
 [96. Unique Binary Search Trees]    
 [98. Validate Binary Search Tree]   
 [101. Symmetric Tree](./leetcode/101-SymmetricTree.go)      
-[102. Binary Tree Level Order Traversal]   
+[102. Binary Tree Level Order Traversal](./leetcode/102-BinaryTreeLevelOrderTraversal.go)     
 [104. Maximum Depth of Binary Tree](./leetcode/104-MaximumDepthOfBinaryTree.go)   
 [105. Construct Binary Tree from Preorder and Inorder Traversal](./leetcode/105-ConstructBinaryTreefromPreorderandInorderTraversal.go)   
 [114. Flatten Binary Tree to Linked List]    
