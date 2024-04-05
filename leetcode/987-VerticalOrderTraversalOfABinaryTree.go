@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 // 987. Vertical Order Traversal of a Binary Tree
 // Given the root of a binary tree, calculate the vertical order traversal of the binary tree.
 // For each node at position (row, col), its left and right children will be at positions (row + 1, col - 1) and (row + 1, col + 1) respectively. 
@@ -54,102 +52,102 @@ import "fmt"
  *     Right *TreeNode
  * }
  */
-import (
-	"math"
-	"sort"
-)
+
+import "fmt"
+import "math"
+import "sort"
+
 
 // Definition for a binary tree node.
 type TreeNode struct {
-	Val int
-	Left *TreeNode
-	Right *TreeNode
+    Val int
+    Left *TreeNode
+    Right *TreeNode
 }
 
 // 用于存储元素的坐标
 type node struct {
-	x, y, val int
+    x, y, val int
 }
 
 func verticalTraversal(root *TreeNode) [][]int {
-	var dfs func(root *TreeNode, x, y int)
-	var nodes []node
-	dfs = func(root *TreeNode, x, y int) {
-		if root == nil {
-			return
-		}
-		// 按照先序遍历，就可以将这些结点的二维坐标计算出来
-		nodes = append(nodes, node{x, y, root.Val})
-		dfs(root.Left, x+1, y-1)
-		dfs(root.Right, x+1, y+1)
-	}
-	// 根结点是 (0，0) ，即根结点是坐标原点
-	// 它的左子树的 x 坐标都是负数，它的右子树的 x 坐标都是正数
-	dfs(root, 0, 0)
-
-	// 进行一次排序，按照 x 坐标从小到大排序，坐标相同的情况对应着结点摞起来的情况
-	sort.Slice(nodes, func(i, j int) bool {
-		a, b := nodes[i], nodes[j]
-		return a.y < b.y || a.y == b.y &&
-			(a.x < b.x || a.x == b.x && a.val < b.val)
-	})
-
-	// 扫描一遍排好序的数组，按照列的顺序，依次将同一列的结点打包至一个一维数组
-	var res [][]int
-	lastY := math.MinInt32
-	for _, node := range nodes {
-		if lastY != node.y {
-			res = append(res, []int{node.val})
-			lastY = node.y
-		} else {
-			res[len(res)-1] = append(res[len(res)-1], node.val)
-		}
-	}
-	return res
+    var dfs func(root *TreeNode, x, y int)
+    var nodes []node
+    dfs = func(root *TreeNode, x, y int) {
+        if root == nil {
+            return
+        }
+        // 按照先序遍历，就可以将这些结点的二维坐标计算出来
+        nodes = append(nodes, node{x, y, root.Val})
+        dfs(root.Left, x+1, y-1)
+        dfs(root.Right, x+1, y+1)
+    }
+    // 根结点是 (0，0) ，即根结点是坐标原点
+    // 它的左子树的 x 坐标都是负数，它的右子树的 x 坐标都是正数
+    dfs(root, 0, 0)
+    // 进行一次排序，按照 x 坐标从小到大排序，坐标相同的情况对应着结点摞起来的情况
+    sort.Slice(nodes, func(i, j int) bool {
+        a, b := nodes[i], nodes[j]
+        return a.y < b.y || a.y == b.y &&
+            (a.x < b.x || a.x == b.x && a.val < b.val)
+    })
+    // 扫描一遍排好序的数组，按照列的顺序，依次将同一列的结点打包至一个一维数组
+    var res [][]int
+    lastY := math.MinInt32
+    for _, node := range nodes {
+        if lastY != node.y {
+            res = append(res, []int{node.val})
+            lastY = node.y
+        } else {
+            res[len(res)-1] = append(res[len(res)-1], node.val)
+        }
+    }
+    return res
 }
+
 func main() {
-	tree1 := &TreeNode {
-		3,
-		&TreeNode {
-			9,
-			nil,
-			nil,
-		},
-		&TreeNode {
-			30,
-			&TreeNode{15, nil, nil},
-			&TreeNode{7, nil, nil},
-		},
-	}
-	fmt.Println(verticalTraversal(tree1)) // [[9],[3,15],[20],[7]]
+    tree1 := &TreeNode {
+        3,
+        &TreeNode {
+            9,
+            nil,
+            nil,
+        },
+        &TreeNode {
+            30,
+            &TreeNode{15, nil, nil},
+            &TreeNode{7, nil, nil},
+        },
+    }
+    fmt.Println(verticalTraversal(tree1)) // [[9],[3,15],[20],[7]]
 
-	tree2 := &TreeNode {
-		1,
-		&TreeNode {
-			2,
-			&TreeNode{4, nil, nil},
-			&TreeNode{5, nil, nil},
-		},
-		&TreeNode {
-			3,
-			&TreeNode{6, nil, nil},
-			&TreeNode{7, nil, nil},
-		},
-	}
-	fmt.Println(verticalTraversal(tree2)) // [[4],[2],[1,5,6],[3],[7]]
+    tree2 := &TreeNode {
+        1,
+        &TreeNode {
+            2,
+            &TreeNode{4, nil, nil},
+            &TreeNode{5, nil, nil},
+        },
+        &TreeNode {
+            3,
+            &TreeNode{6, nil, nil},
+            &TreeNode{7, nil, nil},
+        },
+    }
+    fmt.Println(verticalTraversal(tree2)) // [[4],[2],[1,5,6],[3],[7]]
 
-	tree3 := &TreeNode {
-		1,
-		&TreeNode {
-			2,
-			&TreeNode{4, nil, nil},
-			&TreeNode{6, nil, nil},
-		},
-		&TreeNode {
-			3,
-			&TreeNode{5, nil, nil},
-			&TreeNode{7, nil, nil},
-		},
-	}
-	fmt.Println(verticalTraversal(tree3)) // [[4],[2],[1,5,6],[3],[7]]
+    tree3 := &TreeNode {
+        1,
+        &TreeNode {
+            2,
+            &TreeNode{4, nil, nil},
+            &TreeNode{6, nil, nil},
+        },
+        &TreeNode {
+            3,
+            &TreeNode{5, nil, nil},
+            &TreeNode{7, nil, nil},
+        },
+    }
+    fmt.Println(verticalTraversal(tree3)) // [[4],[2],[1,5,6],[3],[7]]
 }
