@@ -362,6 +362,7 @@
 [1143. Longest Common Subsequence](./leetcode/1143-LongestCommonSubsequence.go)    
 [1239. Maximum Length of a Concatenated String with Unique Characters](./leetcode/1239-MaximumLengthOfAConcatenatedStringWithUniqueCharacters.go)    
 [1422. Maximum Score After Splitting a String](./leetcode/1422-MaximumScoreAfterSplittingAString.go)    
+[1544. Make The String Great](./leetcode/1544-MakeTheStringGreat.go)   
 [1614. Maximum Nesting Depth of the Parentheses](./leetcode/1614-MaximumNestingDepthOfTheParentheses.go)    
 [1750. Minimum Length of String After Deleting Similar Ends](./leetcode/1750-MinimumLengthOfStringAfterDeletingSimilarEnds.go)    
 [1768. Merge Strings Alternately](./leetcode/1768-MergeStringsAlternately.go)   
