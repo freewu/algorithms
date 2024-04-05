@@ -53,8 +53,8 @@
 [146. LRU Cache](./leetcode/146-LRUCache.go)    
 [148. Sort List](./leetcode/148-SortList.go)    
 [152. Maximum Product Subarray](./leetcode/152-MaximumProductSubarray.go)   
-[155. Min Stack]    
-[160. Intersection of Two Linked Lists]    
+[155. Min Stack](./leetcode/155-MinStack.go)   
+[160. Intersection of Two Linked Lists](./leetcode/160-IntersectionOfTwoLinkedLists.go)    
 [169. Majority Element](./leetcode/169-MajorityElement.go)   
 [198. House Robber](./leetcode/198-HouseRobber.go)   
 [200. Number of Islands](./leetcode/200-NumberofIsLands.go)   
@@ -81,7 +81,7 @@
 [337. House Robber III]   
 [338. Counting Bits](./leetcode/338-CountingBits.go)    
 [347. Top K Frequent Elements](./leetcode/347-TopKFrequentElements.go)   
-[394. Decode String]   
+[394. Decode String](./leetcode/394-DecodeString.go)    
 [399. Evaluate Division]   
 [406. Queue Reconstruction by Height]   
 [416. Partition Equal Subset Sum]   
@@ -95,11 +95,10 @@
 [560. Subarray Sum Equals K]   
 [581. Shortest Unsorted Continuous Subarray]   
 [617. Merge Two Binary Trees]   
-[621. Task Scheduler]   
-[647. Palindromic Substrings]   
+[621. Task Scheduler](./leetcode/621-TaskScheduler.go)    
+[647. Palindromic Substrings](./leetcode/647-PalindromicSubstrings.go)    
 [739. Daily Temperatures](./leetcode/739-DailyTemperatures.go)    
 
- 
 # Array
 [1. Two Sum](./leetcode/1-TwoSum.go)    
 [4. Median of Two Sorted Arrays](./leetcode/4-MedianofTwoSortedArrays.go)   
@@ -243,6 +242,7 @@
 [1074. Number of Submatrices That Sum to Target](./leetcode/1074-NumberOfSubmatricesThatSumToTarget.go)    
 [1099. Two Sum Less Than K](./leetcode/1099-TwoSumLessThanK.go)   
 [1232. Check If It Is a Straight Line](./leetcode/1232-CheckIfItIsAStraightLine.go)   
+[1235. Maximum Profit in Job Scheduling](./leetcode/1235-MaximumProfitInJobScheduling.go)   
 [1275. Find Winner on a Tic Tac Toe Game](./leetcode/1275-FindWinnerOnATicTacToeGame.go)    
 [1351. Count Negative Numbers in a Sorted Matrix](./leetcode/1351-CountNegativeNumbersInASortedMatrix.go)    
 [1463. Cherry Pickup II](./leetcode/1463-CherryPickupII.go)    
