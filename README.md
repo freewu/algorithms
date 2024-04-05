@@ -65,7 +65,7 @@
 [221. Maximal Square]   
 [226. Invert Binary Tree](./leetcode/226-InvertBinaryTree.go)   
 [234. Palindrome Linked List](./leetcode/234-PalindromeLinkedList.go)    
-[236. Lowest Common Ancestor of a Binary Tree]   
+[236. Lowest Common Ancestor of a Binary Tree](./leetcode/236-LowestCommonAncestorOfABinaryTree.go)   
 [238. Product of Array Except Self](./leetcode/238-ProductOfArrayExceptSelf.go)      
 [239. Sliding Window Maximum](./leetcode/239-SlidingWindowMaximum.go)   
 [240. Search a 2D Matrix II](./leetcode/240-SearchA2DMatrixII.go)   

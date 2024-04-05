@@ -57,10 +57,9 @@ func lowestCommonAncestor(root, p, q *TreeNode) *TreeNode {
     // 递归查找 left / right
     left := lowestCommonAncestor(root.Left, p, q)
     right := lowestCommonAncestor(root.Right, p, q)
-
-    fmt.Println("root: ", root)
-    fmt.Println("left: ", left)
-    fmt.Println("right: ", right)
+    // fmt.Println("root: ", root)
+    // fmt.Println("left: ", left)
+    // fmt.Println("right: ", right)
     // 如果 left 和 right 都不为 nil 返回 root
     if left != nil && right != nil {
         return root
