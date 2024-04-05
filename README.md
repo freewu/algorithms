@@ -219,6 +219,7 @@
 [525. Contiguous Array](./leetcode/525-ContiguousArray.go)    
 [540. Single Element in a Sorted Array](./leetcode/540-SingleElementInASortedArray.go)    
 [560. Subarray Sum Equals K](./leetcode/560-SubarraySumEqualsK.go)    
+[611. Valid Triangle Number](./leetcode/611-ValidTriangleNumber.go)   
 [621. Task Scheduler](./leetcode/621-TaskScheduler.go)    
 [645. Set Mismatch](./leetcode/645-SetMismatch.go)    
 [658. Find K Closest Elements](./leetcode/658-FindKClosestElements.go)    
