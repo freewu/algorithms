@@ -242,6 +242,7 @@
 [977. Squares of a Sorted Array](./leetcode/977-SquaresOfASortedArray.go)    
 [992. Subarrays with K Different Integers](./leetcode/992-SubarraysWithKDifferentIntegers.go)    
 [997. Find the Town Judge](./leetcode/997-FindTheTownJudge.go)   
+[1011. Capacity To Ship Packages Within D Days](./leetcode/1011-CapacityToShipPackagesWithinDDays.go)   
 [1043. Partition Array for Maximum Sum](./leetcode/1043-PartitionArrayForMaximumSum.go)    
 [1074. Number of Submatrices That Sum to Target](./leetcode/1074-NumberOfSubmatricesThatSumToTarget.go)    
 [1099. Two Sum Less Than K](./leetcode/1099-TwoSumLessThanK.go)   
