@@ -535,7 +535,7 @@
 # Binary Search
 [278. First Bad Version](./leetcode/278-FirstBadVersion.go)   
 [374. Guess Number Higher or Lower](./leetcode/374-GuessNumberHigherOrLower.go)   
-
+[1802. Maximum Value at a Given Index in a Bounded Array](./leetcode/1802-MaximumValueAtAGivenIndexInABoundedArray.go)    
 
 # Database
 [175. Combine Two Tables](./leetcode/175-CombineTwoTables.sql)   
