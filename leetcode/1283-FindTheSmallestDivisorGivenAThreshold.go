@@ -36,6 +36,7 @@ func smallestDivisor(nums []int, threshold int) int {
     // 判断是否小于阈值
     check := func (nums []int, threshold, mid int) bool {
         sum := 0.0
+        // 你需要选择一个正整数作为除数，然后将数组里每个数都除以它，并对除法结果求和
         for _, num := range nums {
             sum += math.Ceil(float64(num) / float64(mid))
         }
