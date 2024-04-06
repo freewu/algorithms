@@ -27,6 +27,7 @@ package main
 //     s[i] is either'(' , ')', or lowercase English letter.
 
 import "fmt"
+import "strings"
 
 // stack
 func minRemoveToMakeValid(s string) string {
@@ -60,6 +61,25 @@ func minRemoveToMakeValid(s string) string {
     return string(res)
 }
 
+func minRemoveToMakeValid1(s string) string {
+    stack1, stack2, res := []int{}, []int{}, []byte(s)
+	for i := 0; i < len(s); i++ {
+		if s[i] == '(' { // 遇到 ( 入栈
+			stack1 = append(stack1, i)
+		} else if s[i] == ')' {
+			if len(stack1) > 0 {
+				stack1 = stack1[:len(stack1)-1] // 匹配到 ) 出栈
+			} else {
+				stack2 = append(stack2, i) // 没有配对的 ) 入栈到 stack2
+			}
+		}
+	}
+    // 将需要替换的 '('，')'  替换成 #
+	for _, i := range stack1 { res[i] = '#'; }
+	for _, i := range stack2 { res[i] = '#'; }
+	return strings.ReplaceAll(string(res), "#", "")
+}
+
 func main() {
     // Explanation: "lee(t(co)de)" , "lee(t(c)ode)" would also be accepted.
     fmt.Println(minRemoveToMakeValid("lee(t(co)de)")) // lee(t(co)de)
@@ -68,4 +88,8 @@ func main() {
 
     // Explanation: An empty string is also valid.
     fmt.Println(minRemoveToMakeValid("))((")) // ""
+
+    fmt.Println(minRemoveToMakeValid1("lee(t(co)de)")) // lee(t(co)de)
+    fmt.Println(minRemoveToMakeValid1("a)b(c)d")) // ab(c)d
+    fmt.Println(minRemoveToMakeValid1("))((")) // ""
 }
