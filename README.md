@@ -512,6 +512,7 @@
 [146. LRU Cache](./leetcode/146-LRUCache.go)   
 [155. Min Stack](./leetcode/155-MinStack.go)   
 [295. Find Median from Data Stream](./leetcode/295-FindMedianFromDataStream.go)   
+[528. Random Pick with Weight](./leetcode/528-RandomPickWithWeight.go)   
 [622. Design Circular Queue](./leetcode/622-DesignCircularQueue.go)    
 [706. Design HashMap](./leetcode/706-DesignHashMap.go)    
 [707. Design Linked List](./leetcode/707-DesignLinkedList.go)    
