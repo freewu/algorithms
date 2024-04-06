@@ -244,6 +244,7 @@
 [1043. Partition Array for Maximum Sum](./leetcode/1043-PartitionArrayForMaximumSum.go)    
 [1074. Number of Submatrices That Sum to Target](./leetcode/1074-NumberOfSubmatricesThatSumToTarget.go)    
 [1099. Two Sum Less Than K](./leetcode/1099-TwoSumLessThanK.go)   
+[1231. Divide Chocolate](./leetcode/1231-DivideChocolate.go)   
 [1232. Check If It Is a Straight Line](./leetcode/1232-CheckIfItIsAStraightLine.go)   
 [1235. Maximum Profit in Job Scheduling](./leetcode/1235-MaximumProfitInJobScheduling.go)   
 [1275. Find Winner on a Tic Tac Toe Game](./leetcode/1275-FindWinnerOnATicTacToeGame.go)    
