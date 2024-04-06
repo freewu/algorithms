@@ -13,8 +13,8 @@ package main
 // Output: 4
 
 // Constraints:
-// 	1 <= k <= nums.length <= 10^4
-// 	-10^4 <= nums[i] <= 10^4
+//     1 <= k <= nums.length <= 10^4
+//     -10^4 <= nums[i] <= 10^4
 
 import "fmt"
 import "container/heap"
@@ -30,8 +30,7 @@ func findKthLargest1(nums []int, k int) int {
 // 解法二 这个方法的理论依据是 partition 得到的点的下标就是最终排序之后的下标，根据这个下标，我们可以判断第 K 大的数在哪里
 // 时间复杂度 O(n)，空间复杂度 O(log n)，最坏时间复杂度为 O(n^2)，空间复杂度 O(n)
 func findKthLargest(nums []int, k int) int {
-	m := len(nums) - k + 1 // mth smallest, from 1..len(nums)
-
+    m := len(nums) - k + 1 // mth smallest, from 1..len(nums)
     var selectSmallest func (nums []int, l, r, i int) int
     selectSmallest = func (nums []int, l, r, i int) int {
         if l >= r {
@@ -63,9 +62,8 @@ func findKthLargest(nums []int, k int) int {
             return selectSmallest(nums, q+1, r, i-k)
         }
     }
-	return selectSmallest(nums, 0, len(nums)-1, m)
+    return selectSmallest(nums, 0, len(nums)-1, m)
 }
-
 
 // 扩展题 剑指 Offer 40. 最小的 k 个数
 func getLeastNumbers(arr []int, k int) []int {
@@ -105,7 +103,7 @@ func getLeastNumbers(arr []int, k int) []int {
 }
 
 // min heap
-func findKthLargestBest(nums []int, k int) int {
+func findKthLargest2(nums []int, k int) int {
     h := minHeap(nums[:k])
     heap.Init(&h)
     for _, num := range nums[k:] {
@@ -137,12 +135,12 @@ func (h *minHeap) Pop() interface{} {
 }
 
 func main() {
-	fmt.Printf("findKthLargest1([]int{ 3,2,1,5,6,4}, 2) = %v\n",findKthLargest1([]int{ 3,2,1,5,6,4} ,2)) // 5
-	fmt.Printf("findKthLargest1([]int{ 3,2,3,1,2,4,5,5,6}, 4) = %v\n",findKthLargest1([]int{ 3,2,3,1,2,4,5,5,6} ,4)) // 4
+    fmt.Printf("findKthLargest1([]int{ 3,2,1,5,6,4}, 2) = %v\n",findKthLargest1([]int{ 3,2,1,5,6,4} ,2)) // 5
+    fmt.Printf("findKthLargest1([]int{ 3,2,3,1,2,4,5,5,6}, 4) = %v\n",findKthLargest1([]int{ 3,2,3,1,2,4,5,5,6} ,4)) // 4
 
-	fmt.Printf("findKthLargest([]int{ 3,2,1,5,6,4}, 2) = %v\n",findKthLargest([]int{ 3,2,1,5,6,4} ,2)) // 5
-	fmt.Printf("findKthLargest([]int{ 3,2,3,1,2,4,5,5,6}, 4) = %v\n",findKthLargest([]int{ 3,2,3,1,2,4,5,5,6} ,4)) // 4
+    fmt.Printf("findKthLargest([]int{ 3,2,1,5,6,4}, 2) = %v\n",findKthLargest([]int{ 3,2,1,5,6,4} ,2)) // 5
+    fmt.Printf("findKthLargest([]int{ 3,2,3,1,2,4,5,5,6}, 4) = %v\n",findKthLargest([]int{ 3,2,3,1,2,4,5,5,6} ,4)) // 4
 
-	fmt.Printf("findKthLargestBest([]int{ 3,2,1,5,6,4}, 2) = %v\n",findKthLargestBest([]int{ 3,2,1,5,6,4} ,2)) // 5
-	fmt.Printf("findKthLargestBest([]int{ 3,2,3,1,2,4,5,5,6}, 4) = %v\n",findKthLargestBest([]int{ 3,2,3,1,2,4,5,5,6} ,4)) // 4
+    fmt.Printf("findKthLargest2([]int{ 3,2,1,5,6,4}, 2) = %v\n",findKthLargest2([]int{ 3,2,1,5,6,4} ,2)) // 5
+    fmt.Printf("findKthLargest2([]int{ 3,2,3,1,2,4,5,5,6}, 4) = %v\n",findKthLargest2([]int{ 3,2,3,1,2,4,5,5,6} ,4)) // 4
 }
