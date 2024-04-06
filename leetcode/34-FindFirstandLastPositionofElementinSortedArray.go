@@ -132,16 +132,50 @@ func searchRange2(nums []int, target int) []int {
     return []int{ start, end }
 }
 
+func searchRange3(nums []int, target int) []int {
+    if len(nums) == 0 {
+        return []int{-1, -1}
+    }
+    binarySearch := func(nums []int, target int, lower bool) int {
+        i, j, res := 0,len(nums) - 1, -1
+        for i <= j {
+            mid := i + (j-i)/2
+            if nums[mid] > target || (lower && nums[mid] >= target) {
+                j = mid - 1
+                if lower {
+                    res = mid
+                }
+            } else {
+                i = mid + 1
+                if !lower {
+                    res = mid
+                }
+            }
+        }
+        return res
+    }
+    left := binarySearch(nums, target, true)
+    right := binarySearch(nums, target, false)
+    if left >= 0 && right >= 0 && nums[left] == nums[right] && nums[left] == target {
+        return []int{left, right}
+    }
+    return []int{-1, -1}
+}
+
 func main() {
-	fmt.Printf("searchRange([]int{5,7,7,8,8,10},8) = %v\n",searchRange([]int{5,7,7,8,8,10}, 8)) // [3,4]
-	fmt.Printf("searchRange([]int{5,7,7,8,8,10},6) = %v\n",searchRange([]int{5,7,7,8,8,10}, 6)) // [-1,-1]
+    fmt.Printf("searchRange([]int{5,7,7,8,8,10},8) = %v\n",searchRange([]int{5,7,7,8,8,10}, 8)) // [3,4]
+    fmt.Printf("searchRange([]int{5,7,7,8,8,10},6) = %v\n",searchRange([]int{5,7,7,8,8,10}, 6)) // [-1,-1]
     fmt.Printf("searchRange([]int{},0) = %v\n",searchRange([]int{}, 0)) // [-1,-1]
 
-	fmt.Printf("searchRange1([]int{5,7,7,8,8,10},8) = %v\n",searchRange1([]int{5,7,7,8,8,10}, 8)) // [3,4]
-	fmt.Printf("searchRange1([]int{5,7,7,8,8,10},6) = %v\n",searchRange1([]int{5,7,7,8,8,10}, 6)) // [-1,-1]
+    fmt.Printf("searchRange1([]int{5,7,7,8,8,10},8) = %v\n",searchRange1([]int{5,7,7,8,8,10}, 8)) // [3,4]
+    fmt.Printf("searchRange1([]int{5,7,7,8,8,10},6) = %v\n",searchRange1([]int{5,7,7,8,8,10}, 6)) // [-1,-1]
     fmt.Printf("searchRange1([]int{},0) = %v\n",searchRange1([]int{}, 0)) // [-1,-1]
 
-	fmt.Printf("searchRange2([]int{5,7,7,8,8,10},8) = %v\n",searchRange2([]int{5,7,7,8,8,10}, 8)) // [3,4]
-	fmt.Printf("searchRange2([]int{5,7,7,8,8,10},6) = %v\n",searchRange2([]int{5,7,7,8,8,10}, 6)) // [-1,-1]
+    fmt.Printf("searchRange2([]int{5,7,7,8,8,10},8) = %v\n",searchRange2([]int{5,7,7,8,8,10}, 8)) // [3,4]
+    fmt.Printf("searchRange2([]int{5,7,7,8,8,10},6) = %v\n",searchRange2([]int{5,7,7,8,8,10}, 6)) // [-1,-1]
     fmt.Printf("searchRange2([]int{},0) = %v\n",searchRange2([]int{}, 0)) // [-1,-1]
+
+    fmt.Printf("searchRange3([]int{5,7,7,8,8,10},8) = %v\n",searchRange3([]int{5,7,7,8,8,10}, 8)) // [3,4]
+    fmt.Printf("searchRange3([]int{5,7,7,8,8,10},6) = %v\n",searchRange3([]int{5,7,7,8,8,10}, 6)) // [-1,-1]
+    fmt.Printf("searchRange3([]int{},0) = %v\n",searchRange3([]int{}, 0)) // [-1,-1]
 }
