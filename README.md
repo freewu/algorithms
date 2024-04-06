@@ -260,6 +260,7 @@
 [1534. Count Good Triplets](./leetcode/1534-CountGoodTriplets.go)    
 [1539. Kth Missing Positive Number](./leetcode/1539-KthMissingPositiveNumber.go)   
 [1572. Matrix Diagonal Sum](./leetcode/1572-MatrixDiagonalSum.go)    
+[1631. Path With Minimum Effort](./leetcode/1631-PathWithMinimumEffort.go)    
 [1642. Furthest Building You Can Reach](./leetcode/1642-FurthestBuildingYouCanReach.go)    
 [1672. Richest Customer Wealth](./leetcode/1672-RichestCustomerWealth.go)   
 [1686. Stone Game VI](./leetcode/1686-StoneGameVI.go)    
