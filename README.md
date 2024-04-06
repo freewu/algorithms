@@ -234,6 +234,7 @@
 [852. Peak Index in a Mountain Array](./leetcode/852-PeakIndexInAMountainArray.go)    
 [860. Lemonade Change](./leetcode/860-LemonadeChange.go)    
 [867. Transpose Matrix](./leetcode/867-TransposeMatrix.go)    
+[875. Koko Eating Bananas](./leetcode/875-KokoEatingBananas.go)    
 [896. Monotonic Array](./leetcode/896-MonotonicArray.go)    
 [930. Binary Subarrays With Sum](./leetcode/930-BinarySubarraysWithSum.go)    
 [948. Bag of Tokens](./leetcode/948-BagOfTokens.go)    
