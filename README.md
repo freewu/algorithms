@@ -73,7 +73,7 @@
 [279. Perfect Squares](./leetcode/279-PerfectSquares.go)       
 [283. Move Zeroes](./leetcode/283-MoveZeroes.go)     
 [297. Serialize and Deserialize Binary Tree]   
-[300. Longest Increasing Subsequence]   
+[300. Longest Increasing Subsequence](./leetcode/300-LongestIncreasingSubsequence.go)   
 [301. Remove Invalid Parentheses]   
 [309. Best Time to Buy and Sell Stock with Cooldown]   
 [312. Burst Balloons]   
@@ -362,6 +362,7 @@
 [1100. Find K-Length Substrings With No Repeated Characters](./leetcode/1100-FindKLengthSubstringsWithNoRepeatedCharacters.go)    
 [1143. Longest Common Subsequence](./leetcode/1143-LongestCommonSubsequence.go)    
 [1239. Maximum Length of a Concatenated String with Unique Characters](./leetcode/1239-MaximumLengthOfAConcatenatedStringWithUniqueCharacters.go)    
+[1249. Minimum Remove to Make Valid Parentheses](./leetcode/1249-MinimumRemoveToMakeValidParentheses.go)    
 [1422. Maximum Score After Splitting a String](./leetcode/1422-MaximumScoreAfterSplittingAString.go)    
 [1544. Make The String Great](./leetcode/1544-MakeTheStringGreat.go)   
 [1614. Maximum Nesting Depth of the Parentheses](./leetcode/1614-MaximumNestingDepthOfTheParentheses.go)    
