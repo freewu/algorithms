@@ -98,6 +98,7 @@
 [621. Task Scheduler](./leetcode/621-TaskScheduler.go)    
 [647. Palindromic Substrings](./leetcode/647-PalindromicSubstrings.go)    
 [739. Daily Temperatures](./leetcode/739-DailyTemperatures.go)    
+[1143. Longest Common Subsequence](./leetcode/1143-LongestCommonSubsequence.go)    
 
 # Array
 [1. Two Sum](./leetcode/1-TwoSum.go)    
