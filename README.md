@@ -250,6 +250,7 @@
 [1470. Shuffle the Array](./leetcode/1470-ShuffleTheArray.go)    
 [1481. Least Number of Unique Integers after K Removals](./leetcode/1481-LeastNumberOfUniqueIntegersAfterKRemovals.go)    
 [1491. Average Salary Excluding the Minimum and Maximum Salary](./leetcode/1491-AverageSalaryExcludingTheMinimumAndMaximumSalary.go)    
+[1498. Number of Subsequences That Satisfy the Given Sum Condition](./leetcode/1498-NumberOfSubsequencesThatSatisfyTheGivenSumCondition.go)    
 [1502. Can Make Arithmetic Progression From Sequence](./leetcode/1502-CanMakeArithmeticProgressionFromSequence.go)    
 [1512. Number of Good Pairs](./leetcode/1512-NumberOfGoodPairs.go)    
 [1533. Find the Index of the Large Integer](./leetcode/1533-FindTheIndexOfTheLargeInteger.go)    
