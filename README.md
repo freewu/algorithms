@@ -22,6 +22,7 @@
 [46. Permutations](./leetcode/46-Permutations.go)    
 [48. Rotate Image](./leetcode/48-RotateImage.go)    
 [49. Group Anagrams](./leetcode/49-GroupAnagrams.go)    
+[51. N-Queens](./leetcode/51-N-Queens.go)    
 [53. Maximum Subarray](./leetcode/53-MaximumSubarray.go)    
 [55. Jump Game](./leetcode/55-JumpGame.go)    
 [56. Merge Intervals](./leetcode/56-MergeIntervals.go)    
