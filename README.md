@@ -61,7 +61,7 @@
 [198. House Robber](./leetcode/198-HouseRobber.go)   
 [200. Number of Islands](./leetcode/200-NumberofIsLands.go)   
 [206. Reverse Linked List](./leetcode/206-ReverseLinkedList.go)    
-[207. Course Schedule]    
+[207. Course Schedule](./leetcode/207-CourseSchedule.go)        
 [208. Implement Trie (Prefix Tree)]    
 [215. Kth Largest Element in an Array](./leetcode/215-KthLargestElementInAnArray.go)   
 [221. Maximal Square]   
@@ -194,6 +194,7 @@
 [260. Single Number III](./leetcode/260-SingleNumberIII.go)   
 [268. Missing Number](./leetcode/268-MissingNumber.go)   
 [269. Alien Dictionary](./leetcode/269-AlienDictionary.go)   
+[207. Course Schedule](./leetcode/207-CourseSchedule.go)     
 [274. H-Index](./leetcode/274-H-Index.go)   
 [275. H-Index II](./leetcode/275-H-IndexII.go)   
 [283. Move Zeroes](./leetcode/283-MoveZeroes.go)   
