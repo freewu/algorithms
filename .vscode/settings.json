@@ -1,0 +1,6 @@
+{
+    "[go]": {
+        "editor.insertSpaces": true,
+        "editor.tabSize": 4 // 你可以根据需要设置tabSize大小
+    }
+}
