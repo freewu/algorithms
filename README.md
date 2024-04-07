@@ -242,6 +242,7 @@
 [976. Largest Perimeter Triangle](./leetcode/976-LargestPerimeterTriangle.go)    
 [977. Squares of a Sorted Array](./leetcode/977-SquaresOfASortedArray.go)    
 [992. Subarrays with K Different Integers](./leetcode/992-SubarraysWithKDifferentIntegers.go)    
+[994. Rotting Oranges](./leetcode/994-RottingOranges.go)   
 [997. Find the Town Judge](./leetcode/997-FindTheTownJudge.go)   
 [1011. Capacity To Ship Packages Within D Days](./leetcode/1011-CapacityToShipPackagesWithinDDays.go)   
 [1043. Partition Array for Maximum Sum](./leetcode/1043-PartitionArrayForMaximumSum.go)    
