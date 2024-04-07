@@ -62,7 +62,7 @@
 [200. Number of Islands](./leetcode/200-NumberofIsLands.go)   
 [206. Reverse Linked List](./leetcode/206-ReverseLinkedList.go)    
 [207. Course Schedule](./leetcode/207-CourseSchedule.go)        
-[208. Implement Trie (Prefix Tree)]    
+[208. Implement Trie (Prefix Tree)](./leetcode/208-ImplementTrie-PrefixTree.go)    
 [215. Kth Largest Element in an Array](./leetcode/215-KthLargestElementInAnArray.go)   
 [221. Maximal Square]   
 [226. Invert Binary Tree](./leetcode/226-InvertBinaryTree.go)   
@@ -523,6 +523,7 @@
 # Design
 [146. LRU Cache](./leetcode/146-LRUCache.go)   
 [155. Min Stack](./leetcode/155-MinStack.go)   
+[208. Implement Trie (Prefix Tree)](./leetcode/208-ImplementTrie-PrefixTree.go)   
 [295. Find Median from Data Stream](./leetcode/295-FindMedianFromDataStream.go)   
 [346. Moving Average from Data Stream](./leetcode/346-MovingAverageFromDataStream.go)   
 [528. Random Pick with Weight](./leetcode/528-RandomPickWithWeight.go)   
