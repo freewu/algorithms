@@ -38,7 +38,7 @@
 [85. Maximal Rectangle]   
 [94. Binary Tree Inorder Traversal](./leetcode/94-BinaryTreeInorderTraversal.go)   
 [96. Unique Binary Search Trees]    
-[98. Validate Binary Search Tree]   
+[98. Validate Binary Search Tree](./leetcode/98-ValidateBinarySearchTree.go)      
 [101. Symmetric Tree](./leetcode/101-SymmetricTree.go)      
 [102. Binary Tree Level Order Traversal](./leetcode/102-BinaryTreeLevelOrderTraversal.go)     
 [104. Maximum Depth of Binary Tree](./leetcode/104-MaximumDepthOfBinaryTree.go)   
@@ -68,6 +68,7 @@
 [215. Kth Largest Element in an Array](./leetcode/215-KthLargestElementInAnArray.go)   
 [221. Maximal Square]   
 [226. Invert Binary Tree](./leetcode/226-InvertBinaryTree.go)   
+[230. Kth Smallest Element in a BST](./leetcode/230-KthSmallestElementInABST.go)   
 [234. Palindrome Linked List](./leetcode/234-PalindromeLinkedList.go)    
 [236. Lowest Common Ancestor of a Binary Tree](./leetcode/236-LowestCommonAncestorOfABinaryTree.go)   
 [238. Product of Array Except Self](./leetcode/238-ProductOfArrayExceptSelf.go)      
