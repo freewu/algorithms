@@ -43,7 +43,7 @@
 [102. Binary Tree Level Order Traversal](./leetcode/102-BinaryTreeLevelOrderTraversal.go)     
 [104. Maximum Depth of Binary Tree](./leetcode/104-MaximumDepthOfBinaryTree.go)   
 [105. Construct Binary Tree from Preorder and Inorder Traversal](./leetcode/105-ConstructBinaryTreefromPreorderandInorderTraversal.go)   
-[114. Flatten Binary Tree to Linked List]    
+[114. Flatten Binary Tree to Linked List](./leetcode/114-FlattenBinaryTreeToLinkedList.go)   
 [121. Best Time to Buy and Sell Stock](./leetcode/121-BestTimetoBuyandSellStock.go)   
 [124. Binary Tree Maximum Path Sum](./leetcode/124-BinaryTreeMaximumPathSum.go)   
 [128. Longest Consecutive Sequence](./leetcode/128-LongestConsecutiveSequence.go)   
