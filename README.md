@@ -46,6 +46,7 @@
 [121. Best Time to Buy and Sell Stock](./leetcode/121-BestTimetoBuyandSellStock.go)   
 [124. Binary Tree Maximum Path Sum]   
 [128. Longest Consecutive Sequence](./leetcode/128-LongestConsecutiveSequence.go)   
+[131. Palindrome Partitioning](./leetcode/131-PalindromePartitioning.go)    
 [136. Single Number](./leetcode/136-SingleNumber.go)   
 [139. Word Break](./leetcode/139-WordBreak.go)      
 [141. Linked List Cycle](./leetcode/141-LinkedListCycle.go)    
