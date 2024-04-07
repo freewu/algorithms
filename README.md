@@ -45,7 +45,7 @@
 [105. Construct Binary Tree from Preorder and Inorder Traversal](./leetcode/105-ConstructBinaryTreefromPreorderandInorderTraversal.go)   
 [114. Flatten Binary Tree to Linked List]    
 [121. Best Time to Buy and Sell Stock](./leetcode/121-BestTimetoBuyandSellStock.go)   
-[124. Binary Tree Maximum Path Sum]   
+[124. Binary Tree Maximum Path Sum](./leetcode/124-BinaryTreeMaximumPathSum.go)   
 [128. Longest Consecutive Sequence](./leetcode/128-LongestConsecutiveSequence.go)   
 [131. Palindrome Partitioning](./leetcode/131-PalindromePartitioning.go)    
 [136. Single Number](./leetcode/136-SingleNumber.go)   
@@ -95,7 +95,7 @@
 [494. Target Sum]   
 [538. Convert BST to Greater Tree]   
 [543. Diameter of Binary Tree](./leetcode/543-DiameterOfBinaryTree.go)   
-[560. Subarray Sum Equals K]   
+[560. Subarray Sum Equals K](./leetcode/560-SubarraySumEqualsK.go)    
 [581. Shortest Unsorted Continuous Subarray]   
 [617. Merge Two Binary Trees]   
 [621. Task Scheduler](./leetcode/621-TaskScheduler.go)    
@@ -479,6 +479,7 @@
 [104. Maximum Depth of Binary Tree](./leetcode/104-MaximumDepthOfBinaryTree.go)   
 [107. Binary Tree Level Order Traversal II](./leetcode/107-BinaryTreeLevelOrderTraversalII.go)   
 [111. Minimum Depth of Binary Tree](./leetcode/111-MinimumDepthOfBinaryTree.go)   
+[124. Binary Tree Maximum Path Sum](./leetcode/124-BinaryTreeMaximumPathSum.go)   
 [144. Binary Tree Preorder Traversal](./leetcode/144-BinaryTreePreorderTraversal.go)   
 [145. Binary Tree Postorder Traversal](./leetcode/145-BinaryTreePostorderTraversal.go)   
 [226. Invert Binary Tree](./leetcode/226-InvertBinaryTree.go)   
