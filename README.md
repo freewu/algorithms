@@ -88,7 +88,7 @@
 [399. Evaluate Division]   
 [406. Queue Reconstruction by Height]   
 [416. Partition Equal Subset Sum](./leetcode/416-PartitionEqualSubsetSum.go)   
-[437. Path Sum III]   
+[437. Path Sum III](./leetcode/437-PathSumIII.go)   
 [438. Find All Anagrams in a String](./leetcode/438-FindAllAnagramsInAString.go)   
 [448. Find All Numbers Disappeared in an Array]   
 [461. Hamming Distance]   
@@ -487,6 +487,7 @@
 [236. Lowest Common Ancestor of a Binary Tree](./leetcode/236-LowestCommonAncestorOfABinaryTree.go)   
 [331. Verify Preorder Serialization of a Binary Tree](./leetcode/331-VerifyPreorderSerializationOfABinaryTree.go)   
 [429. N-ary Tree Level Order Traversal](./leetcode/429-N-aryTreeLevelOrderTraversal.go)   
+[437. Path Sum III](./leetcode/437-PathSumIII.go)   
 [513. Find Bottom Left Tree Value](./leetcode/513-FindBottomLeftTreeValue.go)   
 [543. Diameter of Binary Tree](./leetcode/543-DiameterOfBinaryTree.go)   
 [589. N-ary Tree Preorder Traversal](./leetcode/589-N-aryTreePreorderTraversal.go)   
