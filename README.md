@@ -35,7 +35,7 @@
 [78. Subsets](./leetcode/78-Subsets.go)    
 [79. Word Search](./leetcode/79-WordSearch.go)    
 [84. Largest Rectangle in Histogram](./leetcode/84-LargestRectangleinHistogram.go)    
-[85. Maximal Rectangle]   
+[85. Maximal Rectangle](./leetcode/85-MaximalRectangle.go)       
 [94. Binary Tree Inorder Traversal](./leetcode/94-BinaryTreeInorderTraversal.go)   
 [96. Unique Binary Search Trees]    
 [98. Validate Binary Search Tree](./leetcode/98-ValidateBinarySearchTree.go)      
@@ -147,6 +147,7 @@
 [80. Remove Duplicates from Sorted Array II](./leetcode/80-RemoveDuplicatesfromSortedArrayII.go)    
 [81. Search in Rotated Sorted Array II](./leetcode/81-SearchinRotatedSortedArrayII.go)   
 [84. Largest Rectangle in Histogram](./leetcode/84-LargestRectangleinHistogram.go)   
+[85. Maximal Rectangle](./leetcode/85-MaximalRectangle.go)       
 [88. Merge Sorted Array](./leetcode/88-MergeSortedArray.go)   
 [90. Subsets II](./leetcode/90-SubsetsII.go)    
 [105. Construct Binary Tree from Preorder and Inorder Traversal](./leetcode/105-ConstructBinaryTreefromPreorderandInorderTraversal.go)   
