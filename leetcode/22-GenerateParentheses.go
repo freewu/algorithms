@@ -1,85 +1,80 @@
 package main
 
+// 22. Generate Parentheses
+// Given n pairs of parentheses, write a function to generate all combinations of well-formed parentheses.
+
+// Example 1:
+// Input: n = 3
+// Output: ["((()))","(()())","(())()","()(())","()()()"]
+
+// Example 2:
+// Input: n = 1
+// Output: ["()"]
+
+// Constraints:
+//     1 <= n <= 8
+
 import "fmt"
 
-/**
-22. Generate Parentheses
-Given n pairs of parentheses, write a function to generate all combinations of well-formed parentheses.
-
-Constraints:
-
-	1 <= n <= 8
-
-Example 1:
-
-	Input: n = 3
-	Output: ["((()))","(()())","(())()","()(())","()()()"]
-
-Example 2:
-
-	Input: n = 1
-	Output: ["()"]
-
- */
-
+// dfs
 func generateParenthesis(n int) []string {
-	if n == 0 {
-		return []string{}
-	}
-	var res []string
-	findGenerateParenthesis(n, n, "", &res)
-	return res
-}
-
-func findGenerateParenthesis(lindex, rindex int, str string, res *[]string) {
-	if lindex == 0 && rindex == 0 {
-		*res = append(*res, str)
-		return
-	}
-	if lindex > 0 {
-		findGenerateParenthesis(lindex-1, rindex, str+"(", res)
-	}
-	if rindex > 0 && lindex < rindex {
-		findGenerateParenthesis(lindex, rindex-1, str+")", res)
-	}
+    res := []string{}
+    if n == 0 {
+        return res
+    }
+    var dfs func(l, r int, str string, res *[]string) 
+    dfs = func(l, r int, str string, res *[]string) {
+        if l == 0 && r == 0 {
+            *res = append(*res, str)
+            return
+        }
+        if l > 0 {
+            dfs(l-1, r, str + "(", res)
+        }
+        if r > 0 && l < r {
+            dfs(l, r - 1, str + ")", res)
+        }
+    }
+    dfs(n, n, "", &res)
+    return res
 }
 
 // best solution
-func generateParenthesisBest(n int) []string {
-	var result []string
-	helper(n, 0, 0, "", &result)
-	return result
-}
-
-func helper(n int, o int, c int, cur string, result *[]string) {
-	if n == o && n == c {
-		*result = append(*result, cur)
-		return
-	}
-	if o < n {
-		helper(n, o+1, c, cur + "(", result)
-	}
-	if c < o {
-		helper(n, o, c+1, cur + ")", result)
-	}
+func generateParenthesis1(n int) []string {
+	res := []string{}
+    var dfs func (n int, o int, c int, cur string, res *[]string)
+    dfs = func (n int, o int, c int, cur string, res *[]string) {
+        if n == o && n == c {
+            *res = append(*res, cur)
+            return
+        }
+        if o < n {
+            dfs(n, o+1, c, cur + "(", res)
+        }
+        if c < o {
+            dfs(n, o, c+1, cur + ")", res)
+        }
+    }
+    dfs(n, 0, 0, "", &res)
+    return res
 }
 
 func main() {
-	fmt.Printf("generateParenthesisBest(1) = %v\n",generateParenthesisBest(1))
-	fmt.Printf("generateParenthesisBest(2) = %v\n",generateParenthesisBest(2))
-	fmt.Printf("generateParenthesisBest(3) = %v\n",generateParenthesisBest(3))
-	fmt.Printf("generateParenthesisBest(4) = %v\n",generateParenthesisBest(4))
-	fmt.Printf("generateParenthesisBest(5) = %v\n",generateParenthesisBest(5))
-	fmt.Printf("generateParenthesisBest(6) = %v\n",generateParenthesisBest(6))
-	fmt.Printf("generateParenthesisBest(7) = %v\n",generateParenthesisBest(7))
-	fmt.Printf("generateParenthesisBest(8) = %v\n",generateParenthesisBest(8))
+    fmt.Printf("generateParenthesis1(1) = %v\n",generateParenthesis1(1)) // [()]
+    fmt.Printf("generateParenthesis1(2) = %v\n",generateParenthesis1(2)) // [(()) ()()]
+    fmt.Printf("generateParenthesis1(3) = %v\n",generateParenthesis1(3)) // [((())) (()()) (())() ()(()) ()()()]
+    // fmt.Printf("generateParenthesis1(4) = %v\n",generateParenthesis1(4))
+    // fmt.Printf("generateParenthesis1(5) = %v\n",generateParenthesis1(5))
+    // fmt.Printf("generateParenthesis1(6) = %v\n",generateParenthesis1(6))
+    // fmt.Printf("generateParenthesis1(7) = %v\n",generateParenthesis1(7))
+    // fmt.Printf("generateParenthesis1(8) = %v\n",generateParenthesis1(8))
 
-	fmt.Printf("generateParenthesis(1) = %v\n",generateParenthesis(1))
-	fmt.Printf("generateParenthesis(2) = %v\n",generateParenthesis(2))
-	fmt.Printf("generateParenthesis(3) = %v\n",generateParenthesis(3))
-	fmt.Printf("generateParenthesis(4) = %v\n",generateParenthesis(4))
-	fmt.Printf("generateParenthesis(5) = %v\n",generateParenthesis(5))
-	fmt.Printf("generateParenthesis(6) = %v\n",generateParenthesis(6))
-	fmt.Printf("generateParenthesis(7) = %v\n",generateParenthesis(7))
-	fmt.Printf("generateParenthesis(8) = %v\n",generateParenthesis(8))
+    fmt.Printf("generateParenthesis(1) = %v\n",generateParenthesis(1)) // [()]
+    fmt.Printf("generateParenthesis(2) = %v\n",generateParenthesis(2)) // [(()) ()()]
+    fmt.Printf("generateParenthesis(3) = %v\n",generateParenthesis(3)) // [((())) (()()) (())() ()(()) ()()()]
+    // fmt.Printf("generateParenthesis(4) = %v\n",generateParenthesis(4))
+    // fmt.Printf("generateParenthesis(5) = %v\n",generateParenthesis(5))
+    // fmt.Printf("generateParenthesis(6) = %v\n",generateParenthesis(6))
+    // fmt.Printf("generateParenthesis(7) = %v\n",generateParenthesis(7))
+    // fmt.Printf("generateParenthesis(8) = %v\n",generateParenthesis(8))
 }
