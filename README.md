@@ -53,6 +53,7 @@
 [146. LRU Cache](./leetcode/146-LRUCache.go)    
 [148. Sort List](./leetcode/148-SortList.go)    
 [152. Maximum Product Subarray](./leetcode/152-MaximumProductSubarray.go)   
+[153. Find Minimum in Rotated Sorted Array](./leetcode/153-FindMinimuminRotatedSortedArray.go)   
 [155. Min Stack](./leetcode/155-MinStack.go)   
 [160. Intersection of Two Linked Lists](./leetcode/160-IntersectionOfTwoLinkedLists.go)    
 [169. Majority Element](./leetcode/169-MajorityElement.go)   

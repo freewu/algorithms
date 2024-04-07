@@ -119,9 +119,9 @@ func findMedianSortedArraysBest(a []int, b []int) float64 {
 }
 
 func main() {
-	fmt.Println(findMedianSortedArrays([]int{1, 3}, []int{2}))    // 2.0
-	fmt.Println(findMedianSortedArrays([]int{1, 2}, []int{3, 4})) // 2.5
+    fmt.Println(findMedianSortedArrays([]int{1, 3}, []int{2}))    // 2.0
+    fmt.Println(findMedianSortedArrays([]int{1, 2}, []int{3, 4})) // 2.5
 
-	fmt.Println(findMedianSortedArraysBest([]int{1, 3}, []int{2}))    // 2.0
-	fmt.Println(findMedianSortedArraysBest([]int{1, 2}, []int{3, 4})) // 2.5
+    fmt.Println(findMedianSortedArraysBest([]int{1, 3}, []int{2}))    // 2.0
+    fmt.Println(findMedianSortedArraysBest([]int{1, 2}, []int{3, 4})) // 2.5
 }
