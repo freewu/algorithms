@@ -44,9 +44,35 @@ func maximumCount(nums []int) int {
     return max(pos, neg)
 }
 
+// use lib
 func maximumCount1(nums []int) int {
     max := func (x, y int) int { if x > y { return x; }; return y; }
     return max(sort.SearchInts(nums, 0), len(nums) - sort.SearchInts(nums, 1))
+}
+
+// 二分法
+func maximumCount2(nums []int) int {
+    binarySearch := func (nums[]int,target int, flag bool) int {
+        low, high := 0, len(nums)
+        pos := func(mid int, target int, flag bool) bool {
+            if flag {
+                return mid < target
+            } else {
+                return mid <= target
+            }
+        }
+        for low < high {
+            mid := low + (high - low) >> 1
+            if pos(nums[mid], target, flag) {
+                low = mid + 1
+            } else {
+                high = mid
+            }
+        }
+        return low
+    }
+    max := func (x, y int) int { if x > y { return x; }; return y; }
+    return max(binarySearch(nums, 0, true), len(nums) - binarySearch(nums, 0, false))
 }
 
 func main() {
@@ -60,4 +86,8 @@ func main() {
     fmt.Println(maximumCount1([]int{-2,-1,-1,1,2,3})) // 3
     fmt.Println(maximumCount1([]int{-3,-2,-1,0,0,1,2})) // 3
     fmt.Println(maximumCount1([]int{5,20,66,1314})) // 4
+
+    fmt.Println(maximumCount2([]int{-2,-1,-1,1,2,3})) // 3
+    fmt.Println(maximumCount2([]int{-3,-2,-1,0,0,1,2})) // 3
+    fmt.Println(maximumCount2([]int{5,20,66,1314})) // 4
 }
