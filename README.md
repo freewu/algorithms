@@ -725,6 +725,7 @@
 [1907. Count Salary Categories](./leetcode/1907-CountSalaryCategories.sql)   
 [1934. Confirmation Rate](./leetcode/1934-ConfirmationRate.sql)   
 [1939. Users That Actively Request Confirmation Messages](./leetcode/1939-UsersThatActivelyRequestConfirmationMessages.sql)   
+[1949. Strong Friendship](./leetcode/1949-StrongFriendship.sql)   
 [1965. Employees With Missing Information](./leetcode/1965-EmployeesWithMissingInformation.sql)   
 [1978. Employees Whose Manager Left the Company](./leetcode/1978-EmployeesWhoseManagerLeftTheCompany.sql)   
 [2026. Low-Quality Problems](./leetcode/2026-LowQualityProblems.sql)   
