@@ -18,7 +18,7 @@ package main
 
 import "fmt"
 
-// 解法一 Manacher's algorithm，时间复杂度 O(n)，空间复杂度 O(n)
+// Manacher's algorithm，时间复杂度 O(n)，空间复杂度 O(n)
 func longestPalindrome(s string) string {
     if len(s) < 2 {
         return s
@@ -61,7 +61,6 @@ func longestPalindrome(s string) string {
     }
     return s[begin : begin+maxLen]
 }
-
 
 // 滑动窗口，时间复杂度 O(n^2)，空间复杂度 O(1)
 func longestPalindrome1(s string) string {
@@ -129,23 +128,23 @@ func longestPalindrome3(s string) string {
 }
 
 func main() {
-	fmt.Printf("longestPalindrome(\"babad\") = %v\n",longestPalindrome("babad")) // bab | aba
-	fmt.Printf("longestPalindrome(\"cbbd\") = %v\n",longestPalindrome("cbbd")) // bb
-	fmt.Printf("longestPalindrome(\"a\") = %v\n",longestPalindrome("a")) // a
-	fmt.Printf("longestPalindrome(\"ac\") = %v\n",longestPalindrome("ac")) // a
+    fmt.Printf("longestPalindrome(\"babad\") = %v\n",longestPalindrome("babad")) // bab | aba
+    fmt.Printf("longestPalindrome(\"cbbd\") = %v\n",longestPalindrome("cbbd")) // bb
+    fmt.Printf("longestPalindrome(\"a\") = %v\n",longestPalindrome("a")) // a
+    fmt.Printf("longestPalindrome(\"ac\") = %v\n",longestPalindrome("ac")) // a
 
-	fmt.Printf("longestPalindrome1(\"babad\") = %v\n",longestPalindrome1("babad")) // bab | aba
-	fmt.Printf("longestPalindrome1(\"cbbd\") = %v\n",longestPalindrome1("cbbd")) // bb
-	fmt.Printf("longestPalindrome1(\"a\") = %v\n",longestPalindrome1("a")) // a
-	fmt.Printf("longestPalindrome1(\"ac\") = %v\n",longestPalindrome1("ac")) // a
+    fmt.Printf("longestPalindrome1(\"babad\") = %v\n",longestPalindrome1("babad")) // bab | aba
+    fmt.Printf("longestPalindrome1(\"cbbd\") = %v\n",longestPalindrome1("cbbd")) // bb
+    fmt.Printf("longestPalindrome1(\"a\") = %v\n",longestPalindrome1("a")) // a
+    fmt.Printf("longestPalindrome1(\"ac\") = %v\n",longestPalindrome1("ac")) // a
 
-	fmt.Printf("longestPalindrome2(\"babad\") = %v\n",longestPalindrome2("babad")) // bab | aba
-	fmt.Printf("longestPalindrome2(\"cbbd\") = %v\n",longestPalindrome2("cbbd")) // bb
-	fmt.Printf("longestPalindrome2(\"a\") = %v\n",longestPalindrome2("a")) // a
-	fmt.Printf("longestPalindrome2(\"ac\") = %v\n",longestPalindrome2("ac")) // a
+    fmt.Printf("longestPalindrome2(\"babad\") = %v\n",longestPalindrome2("babad")) // bab | aba
+    fmt.Printf("longestPalindrome2(\"cbbd\") = %v\n",longestPalindrome2("cbbd")) // bb
+    fmt.Printf("longestPalindrome2(\"a\") = %v\n",longestPalindrome2("a")) // a
+    fmt.Printf("longestPalindrome2(\"ac\") = %v\n",longestPalindrome2("ac")) // a
 
-	fmt.Printf("longestPalindrome3(\"babad\") = %v\n",longestPalindrome3("babad")) // bab | aba
-	fmt.Printf("longestPalindrome3(\"cbbd\") = %v\n",longestPalindrome3("cbbd")) // bb
-	fmt.Printf("longestPalindrome3(\"a\") = %v\n",longestPalindrome3("a")) // a
-	fmt.Printf("longestPalindrome3(\"ac\") = %v\n",longestPalindrome3("ac")) // a
+    fmt.Printf("longestPalindrome3(\"babad\") = %v\n",longestPalindrome3("babad")) // bab | aba
+    fmt.Printf("longestPalindrome3(\"cbbd\") = %v\n",longestPalindrome3("cbbd")) // bb
+    fmt.Printf("longestPalindrome3(\"a\") = %v\n",longestPalindrome3("a")) // a
+    fmt.Printf("longestPalindrome3(\"ac\") = %v\n",longestPalindrome3("ac")) // a
 }
