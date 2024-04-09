@@ -537,6 +537,9 @@
 [2192. All Ancestors of a Node in a Directed Acyclic Graph](./leetcode/2192-AllAncestorsOfANodeInADirectedAcyclicGraph.go)   
 [2642. Design Graph With Shortest Path Calculator](./leetcode/2642-DesignGraphWithShortestPathCalculator.go)    
 
+# Trie
+[386. Lexicographical Numbers](./leetcode/386-LexicographicalNumbers.go)   
+
 # Bit Manipulation
 [338. Counting Bits](./leetcode/338-CountingBits.go)    
 [201. Bitwise AND of Numbers Range](./leetcode/201-BitwiseANDOfNumbersRange.go)   
