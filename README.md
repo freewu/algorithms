@@ -37,7 +37,7 @@
 [84. Largest Rectangle in Histogram](./leetcode/84-LargestRectangleinHistogram.go)    
 [85. Maximal Rectangle](./leetcode/85-MaximalRectangle.go)       
 [94. Binary Tree Inorder Traversal](./leetcode/94-BinaryTreeInorderTraversal.go)   
-[96. Unique Binary Search Trees]    
+[96. Unique Binary Search Trees](./leetcode/96-UniqueBinarySearchTrees.go)       
 [98. Validate Binary Search Tree](./leetcode/98-ValidateBinarySearchTree.go)      
 [101. Symmetric Tree](./leetcode/101-SymmetricTree.go)      
 [102. Binary Tree Level Order Traversal](./leetcode/102-BinaryTreeLevelOrderTraversal.go)     
@@ -484,6 +484,7 @@
 
 # Tree
 [94. Binary Tree Inorder Traversal](./leetcode/94-BinaryTreeInorderTraversal.go)   
+[96. Unique Binary Search Trees](./leetcode/96-UniqueBinarySearchTrees.go)       
 [100. Same Tree](./leetcode/100-SameTree.go)   
 [101. Symmetric Tree](./leetcode/101-SymmetricTree.go)      
 [102. Binary Tree Level Order Traversal](./leetcode/102-BinaryTreeLevelOrderTraversal.go)   
