@@ -66,7 +66,7 @@
 [207. Course Schedule](./leetcode/207-CourseSchedule.go)        
 [208. Implement Trie (Prefix Tree)](./leetcode/208-ImplementTrie-PrefixTree.go)    
 [215. Kth Largest Element in an Array](./leetcode/215-KthLargestElementInAnArray.go)   
-[221. Maximal Square]   
+[221. Maximal Square](./leetcode/221-MaximalSquare.go)   
 [226. Invert Binary Tree](./leetcode/226-InvertBinaryTree.go)   
 [230. Kth Smallest Element in a BST](./leetcode/230-KthSmallestElementInABST.go)   
 [234. Palindrome Linked List](./leetcode/234-PalindromeLinkedList.go)    
@@ -187,6 +187,7 @@
 [218. The Skyline Problem](./leetcode/218-TheSkylineProblem.go)   
 [219. Contains Duplicate II](./leetcode/219-ContainsDuplicateII.go)   
 [220. Contains Duplicate III](./leetcode/220-ContainsDuplicateIII.go)   
+[221. Maximal Square](./leetcode/221-MaximalSquare.go)   
 [228. Summary Ranges](./leetcode/228-SummaryRanges.go)   
 [229. Majority Element II](./leetcode/229-MajorityElementII.go)   
 [238. Product of Array Except Self](./leetcode/238-ProductOfArrayExceptSelf.go)   
