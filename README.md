@@ -396,6 +396,7 @@
 [1422. Maximum Score After Splitting a String](./leetcode/1422-MaximumScoreAfterSplittingAString.go)    
 [1544. Make The String Great](./leetcode/1544-MakeTheStringGreat.go)   
 [1614. Maximum Nesting Depth of the Parentheses](./leetcode/1614-MaximumNestingDepthOfTheParentheses.go)    
+[1702. Maximum Binary String After Change](./leetcode/1702-MaximumBinaryStringAfterChange.go)    
 [1750. Minimum Length of String After Deleting Similar Ends](./leetcode/1750-MinimumLengthOfStringAfterDeletingSimilarEnds.go)    
 [1768. Merge Strings Alternately](./leetcode/1768-MergeStringsAlternately.go)   
 [2129. Capitalize the Title](./leetcode/2129-CapitalizeTheTitle.go)   
