@@ -244,6 +244,7 @@
 [718. Maximum Length of Repeated Subarray](./leetcode/718-MaximumLengthOfRepeatedSubarray.go)    
 [739. Daily Temperatures](./leetcode/739-DailyTemperatures.go)    
 [744. Find Smallest Letter Greater Than Target](./leetcode/744-FindSmallestLetterGreaterThanTarget.go)    
+[746. Min Cost Climbing Stairs](./leetcode/746-MinCostClimbingStairs.go)    
 [852. Peak Index in a Mountain Array](./leetcode/852-PeakIndexInAMountainArray.go)    
 [860. Lemonade Change](./leetcode/860-LemonadeChange.go)    
 [867. Transpose Matrix](./leetcode/867-TransposeMatrix.go)    
