@@ -79,36 +79,31 @@ func findCheapestPrice(n int, flights [][]int, src int, dst int, k int) int {
 }
 
 func findCheapestPrice1(n int, flights [][]int, src int, dst int, k int) int {
-    min := func (a, b int) int {
-        if a < b {
-            return a
-        }
-        return b
-    }
+    min := func (x, y int) int { if x < y { return x; }; return y; }
     // 航班的花费不超过 10^4 最多搭乘航班的次数 k+1 不超过 101
     const inf = 10000*101 + 1
-    f := make([][]int, k+2)
-    for i := range f {
-        f[i] = make([]int, n)
-        for j := range f[i] {
-            f[i][j] = inf
+    dp := make([][]int, k+2)
+    for i := range dp {
+        dp[i] = make([]int, n)
+        for j := range dp[i] {
+            dp[i][j] = inf
         }
     }
-    f[0][src] = 0
+    dp[0][src] = 0
     for t := 1; t <= k+1; t++ {
         for _, flight := range flights {
             j, i, cost := flight[0], flight[1], flight[2]
-            f[t][i] = min(f[t][i], f[t-1][j]+cost)
+            dp[t][i] = min(dp[t][i], dp[t-1][j]+cost)
         }
     }
-    ans := inf
+    res := inf
     for t := 1; t <= k+1; t++ {
-        ans = min(ans, f[t][dst])
+        res = min(res, dp[t][dst])
     }
-    if ans == inf {
-        ans = -1
+    if res == inf {
+        res = -1
     }
-    return ans
+    return res
 }
 
 func main() {
