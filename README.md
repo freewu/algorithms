@@ -252,6 +252,7 @@
 [896. Monotonic Array](./leetcode/896-MonotonicArray.go)    
 [930. Binary Subarrays With Sum](./leetcode/930-BinarySubarraysWithSum.go)    
 [948. Bag of Tokens](./leetcode/948-BagOfTokens.go)    
+[950. Reveal Cards In Increasing Order](./leetcode/950-RevealCardsInIncreasingOrder.go)    
 [976. Largest Perimeter Triangle](./leetcode/976-LargestPerimeterTriangle.go)    
 [977. Squares of a Sorted Array](./leetcode/977-SquaresOfASortedArray.go)    
 [992. Subarrays with K Different Integers](./leetcode/992-SubarraysWithKDifferentIntegers.go)    
