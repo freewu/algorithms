@@ -71,10 +71,50 @@
 -- | #Peaceful      | #Nature   |
 
 -- 不止两个
+-- SELECT 
+--     REGEXP_SUBSTR(tweet, '#[a-zA-z](.*)',1, 1, 'i') AS hashtag1, -- 第一个标签
+--     REGEXP_SUBSTR(tweet, '#[a-zA-z](.*)',1, 2, 'i') AS hashtag2  -- 第二个标签
+-- FROM 
+--     Tweets;
+
+-- Write your MySQL query statement below
+WITH RECURSIVE t AS ( -- 将 tweet 按空格拆分
+    ( 
+        SELECT 
+            SUBSTRING_INDEX(SUBSTRING_INDEX(tweet,' ', 1), ' ',-1) AS w, 
+            1 AS n, 
+            tweet_id AS tid  
+        FROM 
+            tweets 
+        WHERE DATE_FORMAT(tweet_date , '%Y%m') = '202402'
+    )
+    UNION ALL
+    (
+        SELECT 
+            SUBSTRING_INDEX(SUBSTRING_INDEX(tweet,' ', n + 1), ' ',-1) AS w, 
+            n + 1 AS n, 
+            tweet_id 
+        FROM 
+            t, tweets 
+        WHERE 
+            n < LENGTH(tweet) - LENGTH(REPLACE(tweet,' ','')) + 1 AND 
+            DATE_FORMAT(tweet_date , '%Y%m') = '202402' AND 
+            tid = tweets.tweet_id 
+    )
+)
+-- SELECT * FROM t;
 
 SELECT 
-    REGEXP_SUBSTR(tweet, '#[a-zA-z](.*)',1, 1, 'i') AS hashtag1, -- 第一个标签
-    REGEXP_SUBSTR(tweet, '#[a-zA-z](.*)',1, 2, 'i') AS hashtag2  -- 第二个标签
+    w AS hashtag, 
+    COUNT(1) AS count 
 FROM 
-    Tweets;
+    t 
+WHERE
+    w REGEXP '#.+?\\b' -- 只取 # 开头的单词
+GROUP BY 
+    w 
+ORDER BY 
+    count DESC, hashtag DESC -- the result table orderd by count of hashtag, hashtag in descending order.
+LIMIT 3
+
 
