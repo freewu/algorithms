@@ -20,6 +20,7 @@ package main
 // Output: [2,13,3,11,5,17,7]
 // Explanation: 
 // We get the deck in the order [17,13,11,2,3,5,7] (this order does not matter), and reorder it.
+// [2 3 5 7 11 13 17]
 // After reordering, the deck starts as [2,13,3,11,5,17,7], where 2 is the top of the deck.
 // We reveal 2, and move 13 to the bottom.  The deck is now [3,11,5,17,7,13].
 // We reveal 3, and move 11 to the bottom.  The deck is now [5,17,7,13,11].

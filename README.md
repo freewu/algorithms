@@ -286,6 +286,7 @@
 [1690. Stone Game VII](./leetcode/1690-StoneGameVII.go)    
 [1696. Jump Game VI](./leetcode/1696-JumpGameVI.go)    
 [1700. Number of Students Unable to Eat Lunch](./leetcode/1700-NumberOfStudentsUnableToEatLunch.go)    
+[1766. Tree of Coprimes](./leetcode/1766-TreeOfCoprimes.go)    
 [1793. Maximum Score of a Good Subarray](./leetcode/1793-MaximumScoreOfAGoodSubarray.go)    
 [1822. Sign of the Product of an Array](./leetcode/1822-SignOfTheProductOfAnArray.go)    
 [1870. Minimum Speed to Arrive on Time](./leetcode/1870-MinimumSpeedToArriveOnTime.go)    
