@@ -372,6 +372,7 @@
 [205. Isomorphic Strings](./leetcode/205-IsomorphicStrings.go)    
 [242. Valid Anagram](./leetcode/242-ValidAnagram.go)    
 [299. Bulls and Cows](./leetcode/299-BullsAndCows.go)    
+[315. Count of Smaller Numbers After Self](./leetcode/315-CountOfSmallerNumbersAfterSelf.go)    
 [316. Remove Duplicate Letters](./leetcode/316-RemoveDuplicateLetters.go)    
 [331. Verify Preorder Serialization of a Binary Tree](./leetcode/331-VerifyPreorderSerializationOfABinaryTree.go)   
 [344. Reverse String](./leetcode/344-ReverseString.go)    
