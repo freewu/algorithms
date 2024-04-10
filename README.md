@@ -384,6 +384,7 @@
 [451. Sort Characters By Frequency](./leetcode/451-SortCharactersByFrequency.go)     
 [459. Repeated Substring Pattern](./leetcode/459-RepeatedSubstringPattern.go)     
 [514. Freedom Trail](./leetcode/514-FreedomTrail.go)    
+[516. Longest Palindromic Subsequence](./leetcode/516-LongestPalindromicSubsequence.go)    
 [567. Permutation in String](./leetcode/567-PermutationInString.go)    
 [647. Palindromic Substrings](./leetcode/647-PalindromicSubstrings.go)    
 [657. Robot Return to Origin](./leetcode/657-RobotReturnToOrigin.go)    
