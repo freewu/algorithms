@@ -766,6 +766,8 @@
 [2066. Account Balance](./leetcode/2066-AccountBalance.sql)   
 [2072. The Winner University](./leetcode/2072-TheWinnerUniversity.sql)   
 [2082. The Number of Rich Customers](./leetcode/2082-TheNumberOfRichCustomers.sql)   
+[2084. Drop Type 1 Orders for Customers With Type 0 Orders](./leetcode/2084-DropType1OrdersForCustomersWithType0Orders.sql)   
+
 [2205. The Number of Users That Are Eligible for Discount](./leetcode/2205-TheNumberOfUsersThatAreEligibleForDiscount.sql)    
 [2230. The Users That Are Eligible for Discount](./leetcode/2230-TheUsersThatAreEligibleForDiscount.sql)   
 [2329. Product Sales Analysis V](./leetcode/2329-ProductSalesAnalysisV.sql)   
