@@ -226,6 +226,7 @@
 [442. Find All Duplicates in an Array](./leetcode/442-FindAllDuplicatesInAnArray.go)   
 [452. Minimum Number of Arrows to Burst Balloons](./leetcode/452-MinimumNumberOfArrowsToBurstBalloons.go)   
 [480. Sliding Window Median](./leetcode/480-SlidingWindowMedian.go)    
+[486. Predict the Winner](./leetcode/486-PredictTheWinner.go)    
 [498. Diagonal Traverse](./leetcode/498-DiagonalTraverse.go)    
 [500. Keyboard Row](./leetcode/500-KeyboardRow.go)    
 [518. Coin Change II](./leetcode/518-CoinChangeII.go)    
