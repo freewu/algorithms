@@ -751,6 +751,7 @@
 [1965. Employees With Missing Information](./leetcode/1965-EmployeesWithMissingInformation.sql)   
 [1978. Employees Whose Manager Left the Company](./leetcode/1978-EmployeesWhoseManagerLeftTheCompany.sql)   
 [1988. Find Cutoff Score for Each School](./leetcode/1988-FindCutoffScoreForEachSchool.sql)   
+[1990. Count the Number of Experiments](./leetcode/1990-CountTheNumberOfExperiments.sql)   
 [2026. Low-Quality Problems](./leetcode/2026-LowQualityProblems.sql)   
 [2041. Accepted Candidates From the Interviews](./leetcode/2041-AcceptedCandidatesFromtheInterviews.sql)   
 [2072. The Winner University](./leetcode/2072-TheWinnerUniversity.sql)   
