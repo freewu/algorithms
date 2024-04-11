@@ -247,6 +247,7 @@
 [740. Delete and Earn](./leetcode/740-DeleteAndEarn.go)    
 [744. Find Smallest Letter Greater Than Target](./leetcode/744-FindSmallestLetterGreaterThanTarget.go)    
 [746. Min Cost Climbing Stairs](./leetcode/746-MinCostClimbingStairs.go)    
+[797. All Paths From Source to Target](./leetcode/797-AllPathsFromSourceToTarget.go)    
 [852. Peak Index in a Mountain Array](./leetcode/852-PeakIndexInAMountainArray.go)    
 [860. Lemonade Change](./leetcode/860-LemonadeChange.go)    
 [867. Transpose Matrix](./leetcode/867-TransposeMatrix.go)    
