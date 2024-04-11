@@ -231,6 +231,7 @@
 [518. Coin Change II](./leetcode/518-CoinChangeII.go)    
 [525. Contiguous Array](./leetcode/525-ContiguousArray.go)    
 [540. Single Element in a Sorted Array](./leetcode/540-SingleElementInASortedArray.go)    
+[547. Number of Provinces](./leetcode/547-NumberOfProvinces.go)    
 [560. Subarray Sum Equals K](./leetcode/560-SubarraySumEqualsK.go)    
 [611. Valid Triangle Number](./leetcode/611-ValidTriangleNumber.go)   
 [621. Task Scheduler](./leetcode/621-TaskScheduler.go)    
