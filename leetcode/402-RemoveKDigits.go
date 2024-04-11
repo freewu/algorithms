@@ -67,7 +67,7 @@ func removeKdigits1(num string, k int) string {
         stack = append(stack, b)
     }
     stack = stack[:len(stack)-k]
-    // // 把前面为 0 处理掉
+    // 把前面为 0 处理掉
     res := strings.TrimLeft(string(stack), "0")
     if len(res) == 0 {
         res = "0"
