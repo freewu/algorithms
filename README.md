@@ -397,6 +397,7 @@
 [657. Robot Return to Origin](./leetcode/657-RobotReturnToOrigin.go)    
 [678. Valid Parenthesis String](./leetcode/678-ValidParenthesisString.go)    
 [709. To Lower Case](./leetcode/709-ToLowerCase.go)    
+[712. Minimum ASCII Delete Sum for Two Strings](./leetcode/712-MinimumASCIIDeleteSumForTwoStrings.go)    
 [763. Partition Labels](./leetcode/763-PartitionLabels.go)    
 [791. Custom Sort String](./leetcode/791-CustomSortString.go)    
 [859. Buddy Strings](./leetcode/859-BuddyStrings.go)    
