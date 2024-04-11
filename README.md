@@ -755,6 +755,7 @@
 [2020. Number of Accounts That Did Not Stream](./leetcode/2020-NumberOfAccountsThatDidNotStream.sql)   
 [2026. Low-Quality Problems](./leetcode/2026-LowQualityProblems.sql)   
 [2041. Accepted Candidates From the Interviews](./leetcode/2041-AcceptedCandidatesFromtheInterviews.sql)   
+[2051. The Category of Each Member in the Store](./leetcode/2051-TheCategoryOfEachMemberInTheStore.sql)   
 [2072. The Winner University](./leetcode/2072-TheWinnerUniversity.sql)   
 [2082. The Number of Rich Customers](./leetcode/2082-TheNumberOfRichCustomers.sql)   
 [2205. The Number of Users That Are Eligible for Discount](./leetcode/2205-TheNumberOfUsersThatAreEligibleForDiscount.sql)    
