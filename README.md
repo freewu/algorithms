@@ -239,6 +239,7 @@
 [621. Task Scheduler](./leetcode/621-TaskScheduler.go)    
 [632. Smallest Range Covering Elements from K Lists](./leetcode/632-SmallestRangeCoveringElementsFromKLists.go)    
 [645. Set Mismatch](./leetcode/645-SetMismatch.go)    
+[646. Maximum Length of Pair Chain](./leetcode/646-MaximumLengthOfPairChain.go)    
 [658. Find K Closest Elements](./leetcode/658-FindKClosestElements.go)    
 [673. Number of Longest Increasing Subsequence](./leetcode/673-NumberOfLongestIncreasingSubsequence.go)    
 [682. Baseball Game](./leetcode/682-BaseballGame.go)    
