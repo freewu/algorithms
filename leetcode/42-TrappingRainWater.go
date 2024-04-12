@@ -96,8 +96,28 @@ func trap2(height []int) int {
     return res
 }
 
+func trap3(height []int) int {
+    l, r := 0, len(height)-1
+    lm, rm, res := 0, 0, 0
+    max := func (x, y int) int { if x > y { return x; }; return y; }
+    for l < r {
+        lm = max(lm, height[l])
+        rm = max(rm, height[r])
+        if height[l] < height[r] {
+            res += lm - height[l]
+            l++
+        } else {
+            res += rm - height[r]
+            r--
+        }
+    }
+    return res
+}
+
 
 func main() {
+    // The above elevation map (black section) is represented by array [0,1,0,2,1,0,1,3,2,1,2,1]. 
+    // In this case, 6 units of rain water (blue section) are being trapped.
     fmt.Println(trap([]int{0,1,0,2,1,0,1,3,2,1,2,1})) // 6
     fmt.Println(trap([]int{4,2,0,3,2,5})) // 9
 
@@ -106,4 +126,7 @@ func main() {
     
     fmt.Println(trap2([]int{0,1,0,2,1,0,1,3,2,1,2,1})) // 6
     fmt.Println(trap2([]int{4,2,0,3,2,5})) // 9
+
+    fmt.Println(trap3([]int{0,1,0,2,1,0,1,3,2,1,2,1})) // 6
+    fmt.Println(trap3([]int{4,2,0,3,2,5})) // 9
 }
