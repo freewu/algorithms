@@ -568,6 +568,7 @@
 [208. Implement Trie (Prefix Tree)](./leetcode/208-ImplementTrie-PrefixTree.go)   
 [295. Find Median from Data Stream](./leetcode/295-FindMedianFromDataStream.go)   
 [346. Moving Average from Data Stream](./leetcode/346-MovingAverageFromDataStream.go)   
+[478. Generate Random Point in a Circle](./leetcode/478-GenerateRandomPointInACircle.go)   
 [528. Random Pick with Weight](./leetcode/528-RandomPickWithWeight.go)   
 [622. Design Circular Queue](./leetcode/622-DesignCircularQueue.go)    
 [706. Design HashMap](./leetcode/706-DesignHashMap.go)    
@@ -591,6 +592,7 @@
 
 # Rejection Sampling
 [470. Implement Rand10() Using Rand7()](./leetcode/470-ImplementRand10UsingRand7.go)   
+[478. Generate Random Point in a Circle](./leetcode/478-GenerateRandomPointInACircle.go)   
 
 # Database
 [175. Combine Two Tables](./leetcode/175-CombineTwoTables.sql)   
