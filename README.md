@@ -771,6 +771,7 @@
 [2112. The Airport With the Most Traffic](./leetcode/2112-TheAirportWithTheMostTraffic.sql)   
 [2142. The Number of Passengers in Each Bus I](./leetcode/2142-TheNumberOfPassengersInEachBusI.sql)   
 [2159. Order Two Columns Independently](./leetcode/2159-OrderTwoColumnsIndependently.sql)   
+[2175. The Change in Global Rankings](./leetcode/2175-TheChangeInGlobalRankings.sql)   
 [2205. The Number of Users That Are Eligible for Discount](./leetcode/2205-TheNumberOfUsersThatAreEligibleForDiscount.sql)    
 [2230. The Users That Are Eligible for Discount](./leetcode/2230-TheUsersThatAreEligibleForDiscount.sql)   
 [2329. Product Sales Analysis V](./leetcode/2329-ProductSalesAnalysisV.sql)   
