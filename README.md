@@ -212,6 +212,7 @@
 [303. Range Sum Query - Immutable](./leetcode/303-RangeSumQuery-Immutable.go)   
 [304. Range Sum Query 2D - Immutable](./leetcode/304-RangeSumQuery2D-Immutable.go)   
 [307. Range Sum Query - Mutable](./leetcode/307-RangeSumQuery-Mutable.go)   
+[312. Burst Balloons](./leetcode/312-BurstBalloons.go)   
 [318. Maximum Product of Word Lengths](./leetcode/318-MaximumProductOfWordLengths.go)   
 [322. Coin Change](./leetcode/322-CoinChange.go)   
 [324. Wiggle Sort II](./leetcode/324-WiggleSortII.go)   
