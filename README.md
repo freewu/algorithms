@@ -596,6 +596,9 @@
 [374. Guess Number Higher or Lower](./leetcode/374-GuessNumberHigherOrLower.go)   
 [1802. Maximum Value at a Given Index in a Bounded Array](./leetcode/1802-MaximumValueAtAGivenIndexInABoundedArray.go)   
 
+# Biconnected Component
+[1192. Critical Connections in a Network](./leetcode/1192-CriticalConnectionsInANetwork.go)   
+
 # Rejection Sampling
 [470. Implement Rand10() Using Rand7()](./leetcode/470-ImplementRand10UsingRand7.go)   
 [478. Generate Random Point in a Circle](./leetcode/478-GenerateRandomPointInACircle.go)   
