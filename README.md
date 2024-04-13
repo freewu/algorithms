@@ -578,6 +578,7 @@
 [478. Generate Random Point in a Circle](./leetcode/478-GenerateRandomPointInACircle.go)   
 [528. Random Pick with Weight](./leetcode/528-RandomPickWithWeight.go)   
 [622. Design Circular Queue](./leetcode/622-DesignCircularQueue.go)    
+[705. Design HashSet](./leetcode/705-DesignHashSet.go)    
 [706. Design HashMap](./leetcode/706-DesignHashMap.go)    
 [707. Design Linked List](./leetcode/707-DesignLinkedList.go)    
 [933. Number of Recent Calls](./leetcode/933-NumberOfRecentCalls.go)    
