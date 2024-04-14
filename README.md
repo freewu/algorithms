@@ -276,6 +276,7 @@
 [1043. Partition Array for Maximum Sum](./leetcode/1043-PartitionArrayForMaximumSum.go)    
 [1074. Number of Submatrices That Sum to Target](./leetcode/1074-NumberOfSubmatricesThatSumToTarget.go)    
 [1099. Two Sum Less Than K](./leetcode/1099-TwoSumLessThanK.go)   
+[1102. Path With Maximum Minimum Value](./leetcode/1102-PathWithMaximumMinimumValue.go)   
 [1218. Longest Arithmetic Subsequence of Given Difference](./leetcode/1218-LongestArithmeticSubsequenceOfGivenDifference.go)   
 [1231. Divide Chocolate](./leetcode/1231-DivideChocolate.go)   
 [1232. Check If It Is a Straight Line](./leetcode/1232-CheckIfItIsAStraightLine.go)   
