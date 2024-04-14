@@ -59,7 +59,7 @@ func (this *MyHashMap) Remove(key int) {
     delete(this.data, key)
 }
 
-
+// 使用数组来存放
 type Node struct {
     key int
     value int
