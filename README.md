@@ -77,7 +77,7 @@
 [253. Meeting Rooms II](./leetcode/253-MeetingRoomsII.go)      
 [279. Perfect Squares](./leetcode/279-PerfectSquares.go)       
 [283. Move Zeroes](./leetcode/283-MoveZeroes.go)     
-[297. Serialize and Deserialize Binary Tree]   
+[297. Serialize and Deserialize Binary Tree](./leetcode/297-SerializeAndDeserializeBinaryTree.go)   
 [300. Longest Increasing Subsequence](./leetcode/300-LongestIncreasingSubsequence.go)   
 [301. Remove Invalid Parentheses]   
 [309. Best Time to Buy and Sell Stock with Cooldown]   
@@ -584,6 +584,7 @@
 [155. Min Stack](./leetcode/155-MinStack.go)   
 [208. Implement Trie (Prefix Tree)](./leetcode/208-ImplementTrie-PrefixTree.go)   
 [295. Find Median from Data Stream](./leetcode/295-FindMedianFromDataStream.go)   
+[297. Serialize and Deserialize Binary Tree](./leetcode/297-SerializeAndDeserializeBinaryTree.go)   
 [346. Moving Average from Data Stream](./leetcode/346-MovingAverageFromDataStream.go)   
 [478. Generate Random Point in a Circle](./leetcode/478-GenerateRandomPointInACircle.go)   
 [528. Random Pick with Weight](./leetcode/528-RandomPickWithWeight.go)   
