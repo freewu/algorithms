@@ -93,7 +93,7 @@
 [437. Path Sum III](./leetcode/437-PathSumIII.go)   
 [438. Find All Anagrams in a String](./leetcode/438-FindAllAnagramsInAString.go)   
 [448. Find All Numbers Disappeared in an Array](./leetcode/448-FindAllNumbersDisappearedInAnArray.go)   
-[461. Hamming Distance]   
+[461. Hamming Distance](./leetcode/461-HammingDistance.go)    
 [494. Target Sum]   
 [538. Convert BST to Greater Tree]   
 [543. Diameter of Binary Tree](./leetcode/543-DiameterOfBinaryTree.go)   
@@ -581,8 +581,9 @@
 [386. Lexicographical Numbers](./leetcode/386-LexicographicalNumbers.go)   
 
 # Bit Manipulation
-[338. Counting Bits](./leetcode/338-CountingBits.go)    
 [201. Bitwise AND of Numbers Range](./leetcode/201-BitwiseANDOfNumbersRange.go)   
+[338. Counting Bits](./leetcode/338-CountingBits.go)    
+[461. Hamming Distance](./leetcode/461-HammingDistance.go)    
 
 # Design
 [146. LRU Cache](./leetcode/146-LRUCache.go)   
