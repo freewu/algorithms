@@ -527,6 +527,7 @@
 
 # Tree
 [94. Binary Tree Inorder Traversal](./leetcode/94-BinaryTreeInorderTraversal.go)   
+[95. Unique Binary Search Trees II](./leetcode/95-UniqueBinarySearchTreesII.go)   
 [96. Unique Binary Search Trees](./leetcode/96-UniqueBinarySearchTrees.go)       
 [100. Same Tree](./leetcode/100-SameTree.go)   
 [101. Symmetric Tree](./leetcode/101-SymmetricTree.go)      
