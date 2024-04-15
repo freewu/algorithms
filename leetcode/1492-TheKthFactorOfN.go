@@ -46,6 +46,22 @@ func kthFactor(n int, k int) int {
     return -1
 }
 
+func kthFactor1(n int, k int) int {
+    if k == 1 {
+        return 1
+    }
+    var count int = 1
+    for i := 2; i <= n; i++ {
+        if n/i * i == n {
+            count++
+        }
+        if count == k {
+            return i
+        }
+    }
+    return -1
+}
+
 func main() {
     // Explanation: Factors list is [1, 2, 3, 4, 6, 12], the 3rd factor is 3.
     fmt.Println(kthFactor(12, 3)) // 3
@@ -53,4 +69,8 @@ func main() {
     fmt.Println(kthFactor(7, 2)) // 3
     // Explanation: Factors list is [1, 2, 4], there is only 3 factors. We should return -1.
     fmt.Println(kthFactor(4, 24)) // -1
+
+    fmt.Println(kthFactor1(12, 3)) // 3
+    fmt.Println(kthFactor1(7, 2)) // 3
+    fmt.Println(kthFactor1(4, 24)) // -1
 }
