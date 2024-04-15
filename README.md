@@ -529,6 +529,7 @@
 [111. Minimum Depth of Binary Tree](./leetcode/111-MinimumDepthOfBinaryTree.go)   
 [114. Flatten Binary Tree to Linked List](./leetcode/114-FlattenBinaryTreeToLinkedList.go)   
 [124. Binary Tree Maximum Path Sum](./leetcode/124-BinaryTreeMaximumPathSum.go)   
+[129. Sum Root to Leaf Numbers](./leetcode/129-SumRootToLeafNumbers.go)   
 [144. Binary Tree Preorder Traversal](./leetcode/144-BinaryTreePreorderTraversal.go)   
 [145. Binary Tree Postorder Traversal](./leetcode/145-BinaryTreePostorderTraversal.go)   
 [199. Binary Tree Right Side View](./leetcode/199-BinaryTreeRightSideView.go)   

@@ -60,15 +60,15 @@ func makeNodeList(nums []int) *TreeNode {
 // 递归判断
 func isSameTree(p *TreeNode, q *TreeNode) bool {
     if p != nil && q != nil {
-		if p.Val != q.Val {
-			return false
-		}
-		return isSameTree(p.Left, q.Left) && isSameTree(p.Right, q.Right)
+        if p.Val != q.Val {
+            return false
+        }
+        return isSameTree(p.Left, q.Left) && isSameTree(p.Right, q.Right)
     } else if p == nil && q == nil {
-		return true
-	} else {
-		return false
-	}
+        return true
+    } else {
+        return false
+    }
 }
 
 func main() {
