@@ -822,6 +822,7 @@
 [2329. Product Sales Analysis V](./leetcode/2329-ProductSalesAnalysisV.sql)   
 [2230. The Users That Are Eligible for Discount](./leetcode/2230-TheUsersThatAreEligibleForDiscount.sql)   
 [2238. Number of Times a Driver Was a Passenger](./leetcode/2238-NumberOfTimesADriverWasAPassenger.sql)   
+[2298. Tasks Count in the Weekend](./leetcode/2298-TasksCountInTheWeekend.sql)   
 [2308. Arrange Table by Gender](./leetcode/2308-ArrangeTableByGender.sql)   
 [2339. All the Matches of the League](./leetcode/2339-AllTheMatchesOfTheLeague.sql)   
 [2356. Number of Unique Subjects Taught by Each Teacher](./leetcode/2356-NumberofUniqueSubjectsTaughtbyEachTeacher.sql)   
