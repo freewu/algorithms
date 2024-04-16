@@ -223,6 +223,7 @@
 [354. Russian Doll Envelopes](./leetcode/354-RussianDollEnvelopes.go)   
 [368. Largest Divisible Subset](./leetcode/368-LargestDivisibleSubset.go)   
 [373. Find K Pairs with Smallest Sums](./leetcode/373-FindKPairsWithSmallestSums.go)   
+[378. Kth Smallest Element in a Sorted Matrix](./leetcode/378-KthSmallestElementInASortedMatrix.go)   
 [403. Frog Jump](./leetcode/403-FrogJump.go)   
 [406. Queue Reconstruction by Height](./leetcode/406-QueueReconstructionByHeight.go)   
 [410. Split Array Largest Sum](./leetcode/410-SplitArrayLargestSum.go)   
