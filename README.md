@@ -555,6 +555,7 @@
 [543. Diameter of Binary Tree](./leetcode/543-DiameterOfBinaryTree.go)   
 [589. N-ary Tree Preorder Traversal](./leetcode/589-N-aryTreePreorderTraversal.go)   
 [590. N-ary Tree Postorder Traversal](./leetcode/590-N-aryTreePostorderTraversal.go)   
+[623. Add One Row to Tree](./leetcode/623-AddOneRowToTree.go)   
 [889. Construct Binary Tree from Preorder and Postorder Traversal ](./leetcode/889-ConstructBinaryTreeFromPreorderAndPostorderTraversal.go)   
 [894. All Possible Full Binary Trees](./leetcode/894-AllPossibleFullBinaryTrees.go)    
 [938. Range Sum of BST](./leetcode/938-RangeSumOfBST.go)    
