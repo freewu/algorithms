@@ -241,6 +241,7 @@
 [525. Contiguous Array](./leetcode/525-ContiguousArray.go)    
 [529. Minesweeper](./leetcode/529-Minesweeper.go)    
 [540. Single Element in a Sorted Array](./leetcode/540-SingleElementInASortedArray.go)    
+[542. 01 Matrix](./leetcode/542-01Matrix.go)    
 [547. Number of Provinces](./leetcode/547-NumberOfProvinces.go)    
 [560. Subarray Sum Equals K](./leetcode/560-SubarraySumEqualsK.go)    
 [611. Valid Triangle Number](./leetcode/611-ValidTriangleNumber.go)   
