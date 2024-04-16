@@ -824,6 +824,7 @@
 [2238. Number of Times a Driver Was a Passenger](./leetcode/2238-NumberOfTimesADriverWasAPassenger.sql)   
 [2298. Tasks Count in the Weekend](./leetcode/2298-TasksCountInTheWeekend.sql)   
 [2308. Arrange Table by Gender](./leetcode/2308-ArrangeTableByGender.sql)   
+[2314. The First Day of the Maximum Recorded Degree in Each City](./leetcode/2314-TheFirstDayOfTheMaximumRecordedDegreeInEachCity.sql)   
 [2339. All the Matches of the League](./leetcode/2339-AllTheMatchesOfTheLeague.sql)   
 [2356. Number of Unique Subjects Taught by Each Teacher](./leetcode/2356-NumberofUniqueSubjectsTaughtbyEachTeacher.sql)   
 [2377. Sort the Olympic Table](./leetcode/2377-SortTheOlympicTable.sql)   
