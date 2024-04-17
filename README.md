@@ -451,6 +451,7 @@
 [576. Out of Boundary Paths](./leetcode/576-OutOfBoundaryPaths.go)   
 [629. K Inverse Pairs Array](./leetcode/629-K-InversePairsArray.go)   
 [787. Cheapest Flights Within K Stops](./leetcode/787-CheapestFlightsWithinKStops.go)   
+[2466. Count Ways To Build Good Strings](./leetcode/2466-CountWaysToBuildGoodStrings.go)   
 
 # Two Pointers
 [11. Container With Most Water](./leetcode/11-ContainerWithMostWater.go)   
@@ -627,6 +628,7 @@
 [1603. Design Parking System](./leetcode/1603-DesignParkingSystem.go)    
 [2642. Design Graph With Shortest Path Calculator](./leetcode/2642-DesignGraphWithShortestPathCalculator.go)   
 [2671. Frequency Tracker](./leetcode/2671-FrequencyTracker.go)   
+
 
 # Binary Search
 [278. First Bad Version](./leetcode/278-FirstBadVersion.go)   
