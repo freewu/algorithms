@@ -319,6 +319,7 @@
 [1969. Minimum Non-Zero Product of the Array Elements](./leetcode/1969-MinimumNonZeroProductOfTheArrayElements.go)    
 [1979. Find Greatest Common Divisor of Array](./leetcode/1979-FindGreatestCommonDivisorOfArray.go)  
 [1997. First Day Where You Have Been in All the Rooms](./leetcode/1997-FirstDayWhereYouHaveBeenInAllTheRooms.go)    
+[2007. Find Original Array From Doubled Array](./leetcode/2007-FindOriginalArrayFromDoubledArray.go)    
 [2009. Minimum Number of Operations to Make Array Continuous](./leetcode/2009-MinimumNumberOfOperationsToMakeArrayContinuous.go)    
 [2071. Maximum Number of Tasks You Can Assign](./leetcode/2071-MaximumNumberOfTasksYouCanAssign.go)    
 [2073. Time Needed to Buy Tickets](./leetcode/2073-TimeNeededToBuyTickets.go)    
