@@ -564,6 +564,7 @@
 [938. Range Sum of BST](./leetcode/938-RangeSumOfBST.go)    
 [987. Vertical Order Traversal of a Binary Tree](./leetcode/987-VerticalOrderTraversalOfABinaryTree.go)   
 [993. Cousins in Binary Tree](./leetcode/993-CousinsInBinaryTree.go)   
+[988. Smallest String Starting From Leaf](./leetcode/988-SmallestStringStartingFromLeaf.go)   
 [1026. Maximum Difference Between Node and Ancestor](./leetcode/1026-MaximumDifferenceBetweenNodeAndAncestor.go)   
 [1261. Find Elements in a Contaminated Binary Tree](./leetcode/1261-FindElementsInAContaminatedBinaryTree.go)   
 [1379. Find a Corresponding Node of a Binary Tree in a Clone of That Tree](./leetcode/1379-FindACorrespondingNodeOfABinaryTreeInACloneOfThatTree.go)   
