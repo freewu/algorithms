@@ -841,6 +841,7 @@
 [2205. The Number of Users That Are Eligible for Discount](./leetcode/2205-TheNumberOfUsersThatAreEligibleForDiscount.sql)    
 [2228. Users With Two Purchases Within Seven Days](./leetcode/2228-UsersWithTwoPurchasesWithinSevenDays.sql)   
 [2292. Products With Three or More Orders in Two Consecutive Years](./leetcode/2292-ProductsWithThreeOrMoreOrdersInTwoConsecutiveYears.sql)   
+[2324. Product Sales Analysis IV](./leetcode/2324-ProductSalesAnalysisIV.sql)   
 [2329. Product Sales Analysis V](./leetcode/2329-ProductSalesAnalysisV.sql)   
 [2230. The Users That Are Eligible for Discount](./leetcode/2230-TheUsersThatAreEligibleForDiscount.sql)   
 [2238. Number of Times a Driver Was a Passenger](./leetcode/2238-NumberOfTimesADriverWasAPassenger.sql)   
