@@ -873,7 +873,8 @@
 [3059. Find All Unique Email Domains](./leetcode/3059-FindAllUniqueEmailDomains.sql)   
 [3087. Find Trending Hashtags](./leetcode/3087-FindTrendingHashtags.sql)   
 [3089. Find Bursty Behavior](./leetcode/3089-FindBurstyBehavior.sql)   
-[3103. Find Trending Hashtags II ](./leetcode/3103-FindTrendingHashtagsII.sql)   
+[3103. Find Trending Hashtags II](./leetcode/3103-FindTrendingHashtagsII.sql)   
+[3118. Friday Purchase III ](./leetcode/3118-FridayPurchaseIII.sql)   
 
 
 # Shell
