@@ -40,6 +40,7 @@ package main
 // Follow up: Can you come up with an algorithm that runs in O(m + n) time?
 
 import "fmt"
+import "sort"
 
 func merge(nums1 []int, m int, nums2 []int, n int) {
     for i := m + n; m > 0 && n > 0; i-- {
@@ -70,6 +71,11 @@ func merge1(nums1 []int, m int, nums2 []int, n int) {
             m1--
         }
     }
+}
+
+func merge2(nums1 []int, m int, nums2 []int, n int)  {
+    copy(nums1[m:], nums2)
+    sort.Ints(nums1)
 }
 
 func main() { 
@@ -121,4 +127,25 @@ func main() {
     fmt.Println("nums132: ", nums132)
     merge(nums131, 0, nums132, 1)
     fmt.Println("merge after nums131: ", nums131) // [1]
+
+    nums211 := []int{1,2,3,0,0,0}
+    nums212 := []int{2,5,6}
+    fmt.Println("nums211: ", nums211)
+    fmt.Println("nums212: ", nums212)
+    merge(nums211, 3, nums212, 3)
+    fmt.Println("merge after nums211: ", nums211) // [1,2,2,3,5,6]
+
+    nums221 := []int{1}
+    nums222 := []int{}
+    fmt.Println("nums221: ", nums221)
+    fmt.Println("nums222: ", nums222)
+    merge(nums221, 1, nums222, 0)
+    fmt.Println("merge after nums221: ", nums221) // [1]
+
+    nums231 := []int{0}
+    nums232 := []int{1}
+    fmt.Println("nums231: ", nums231)
+    fmt.Println("nums232: ", nums232)
+    merge(nums231, 0, nums232, 1)
+    fmt.Println("merge after nums231: ", nums231) // [1]
 }
