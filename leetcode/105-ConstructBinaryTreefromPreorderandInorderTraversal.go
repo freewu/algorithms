@@ -16,15 +16,16 @@ package main
 // Example 1:
 // 	Input: preorder = [3,9,20,15,7], inorder = [9,3,15,20,7]
 // 	Output: [3,9,20,null,null,15,7]
-
-// Example 2:
-// 	Input: preorder = [-1], inorder = [-1]
-// 	Output: [-1]
 //     3
 //    / \
 //   9  20
 //     /  \
 //    15   7
+
+// Example 2:
+// 	Input: preorder = [-1], inorder = [-1]
+// 	Output: [-1]
+
 
    
 import "fmt"
@@ -101,9 +102,25 @@ func buildTree2(preorder []int, inorder []int) *TreeNode {
     }
 }
 
+func buildTree3(preorder []int, inorder []int) *TreeNode {
+    if len(preorder) == 0 {
+        return nil
+    }
+    index := 0
+    for preorder[0] != inorder[index] {
+        index++
+    }
+    return &TreeNode{
+        Val:   preorder[0],
+        Left:  buildTree3(preorder[1:index+1], inorder[:index]),
+        Right: buildTree3(preorder[index+1:], inorder[index+1:]),
+    }
+}
+
 
 func main() {
     fmt.Printf("%v\n",buildTree([]int{3,9,20,15,7},[]int{9,3,15,20,7}))
     fmt.Printf("%v\n",buildTree1([]int{3,9,20,15,7},[]int{9,3,15,20,7}))
     fmt.Printf("%v\n",buildTree2([]int{3,9,20,15,7},[]int{9,3,15,20,7}))
+    fmt.Printf("%v\n",buildTree3([]int{3,9,20,15,7},[]int{9,3,15,20,7}))
 }

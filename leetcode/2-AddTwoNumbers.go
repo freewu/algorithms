@@ -29,8 +29,8 @@ package main
 import "fmt"
 
 type ListNode struct {
-	Val  int
-	Next *ListNode
+    Val  int
+    Next *ListNode
 }
 
 // 打印链表
@@ -175,6 +175,38 @@ func addTwoNumbers1(l1 *ListNode, l2 *ListNode) *ListNode {
     return head
 }
 
+func addTwoNumbers2(l1 *ListNode, l2 *ListNode) *ListNode {
+    if l1 == nil && l2 == nil {
+        return nil
+    }
+    mergeListHead := &ListNode{}
+    cur := mergeListHead
+    carray := 0
+    for (l1 != nil || l2 != nil) {
+        a, b := 0, 0
+        if l1 != nil {
+            a = l1.Val
+            l1 = l1.Next
+        }
+        if l2 != nil {
+            b = l2.Val
+            l2 = l2.Next
+        }
+        sum := a + b + carray
+        carray = sum/10
+        sum = sum%10
+
+        newNode := &ListNode{Val:sum}
+        cur.Next = newNode
+        cur = cur.Next
+    }
+    if carray > 0 {
+        newNode := &ListNode{Val:carray}
+        cur.Next = newNode
+    }
+    return mergeListHead.Next
+}
+
 func main() {
     // Explanation: 342 + 465 = 807.
     l11 := makeListNode([]int{2,4,3})
@@ -226,4 +258,57 @@ func main() {
     fmt.Println("addTwoNumbers1: ")
     printListNode(addTwoNumbers1(l131, l132)) // 8 -> 9 -> 9 -> 9 -> 0 -> 0 -> 0 -> 1
     fmt.Println()
+
+
+    // Explanation: 342 + 465 = 807.
+    l211 := makeListNode([]int{2,4,3})
+    l212 := makeListNode([]int{5,6,4})
+    printListNode(l211) // 2 -> 4 -> 3
+    printListNode(l212) // 5 -> 6 -> 4
+    fmt.Println("addTwoNumbers2: ")
+    printListNode(addTwoNumbers2(l211, l212)) // 7 -> 0 -> 8
+    fmt.Println()
+
+    l221 := makeListNode([]int{0})
+    l222 := makeListNode([]int{0})
+    printListNode(l221) // 0
+    printListNode(l222) // 0
+    fmt.Println("addTwoNumbers2: ")
+    printListNode(addTwoNumbers2(l221, l222)) // 0
+    fmt.Println()
+
+    l231 := makeListNode([]int{9,9,9,9,9,9,9})
+    l232 := makeListNode([]int{9,9,9,9})
+    printListNode(l231) // 9 -> 9 -> 9 -> 9 -> 9 -> 9 -> 9
+    printListNode(l232) // 9 -> 9 -> 9 -> 9
+    fmt.Println("addTwoNumbers2: ")
+    printListNode(addTwoNumbers2(l231, l232)) // 8 -> 9 -> 9 -> 9 -> 0 -> 0 -> 0 -> 1
+    fmt.Println()
+
+
+    // // Explanation: 342 + 465 = 807.
+    // l311 := makeListNode([]int{2,4,3})
+    // l312 := makeListNode([]int{5,6,4})
+    // printListNode(l311) // 2 -> 4 -> 3
+    // printListNode(l312) // 5 -> 6 -> 4
+    // fmt.Println("addTwoNumbers3: ")
+    // printListNode(addTwoNumbers3(l311, l312)) // 7 -> 0 -> 8
+    // fmt.Println()
+
+    // l321 := makeListNode([]int{0})
+    // l322 := makeListNode([]int{0})
+    // printListNode(l321) // 0
+    // printListNode(l222) // 0
+    // fmt.Println("addTwoNumbers3: ")
+    // printListNode(addTwoNumbers3(l321, l322)) // 0
+    // fmt.Println()
+
+    // l331 := makeListNode([]int{9,9,9,9,9,9,9})
+    // l332 := makeListNode([]int{9,9,9,9})
+    // printListNode(l331) // 9 -> 9 -> 9 -> 9 -> 9 -> 9 -> 9
+    // printListNode(l332) // 9 -> 9 -> 9 -> 9
+    // fmt.Println("addTwoNumbers3: ")
+    // printListNode(addTwoNumbers3(l331, l332)) // 8 -> 9 -> 9 -> 9 -> 0 -> 0 -> 0 -> 1
+    // fmt.Println()
+    
 }
