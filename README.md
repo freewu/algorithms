@@ -461,6 +461,7 @@
 [576. Out of Boundary Paths](./leetcode/576-OutOfBoundaryPaths.go)   
 [629. K Inverse Pairs Array](./leetcode/629-K-InversePairsArray.go)   
 [787. Cheapest Flights Within K Stops](./leetcode/787-CheapestFlightsWithinKStops.go)   
+[790. Domino and Tromino Tiling](./leetcode/790-DominoAndTrominoTiling.go)   
 [2466. Count Ways To Build Good Strings](./leetcode/2466-CountWaysToBuildGoodStrings.go)   
 
 # Two Pointers
