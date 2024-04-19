@@ -132,6 +132,21 @@ func productExceptSelf3(nums []int) []int {
     return res
 }
 
+func productExceptSelf4(nums []int) []int {
+    n := len(nums)
+    res := make([]int, n)
+    res[0] = 1
+    for i := 1; i < n; i++ {
+        res[i] = res[i - 1] * nums[i - 1]
+    }
+    suf := 1
+    for i := n - 1; i >= 0; i-- {
+        res[i] *= suf
+        suf *= nums[i]
+    }
+    return res
+}
+
 func main() {
     fmt.Println(productExceptSelf([]int{ 1,2,3,4 })) // [24,12,8,6]
     fmt.Println(productExceptSelf([]int{ -1,1,0,-3,3 })) // [0,0,9,0,0]
@@ -144,4 +159,7 @@ func main() {
 
     fmt.Println(productExceptSelf3([]int{ 1,2,3,4 })) // [24,12,8,6]
     fmt.Println(productExceptSelf3([]int{ -1,1,0,-3,3 })) // [0,0,9,0,0]
+
+    fmt.Println(productExceptSelf4([]int{ 1,2,3,4 })) // [24,12,8,6]
+    fmt.Println(productExceptSelf4([]int{ -1,1,0,-3,3 })) // [0,0,9,0,0]
 }
