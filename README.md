@@ -859,6 +859,7 @@
 [2504. Concatenate the Name and the Profession](./leetcode/2504-ConcatenateTheNameAndTheProfession.sql)   
 [2668. Find Latest Salaries](./leetcode/2668-FindLatestSalaries.sql)   
 [2669. Count Artist Occurrences On Spotify Ranking List](./leetcode/2669-CountArtistOccurrencesOnSpotifyRankingList.sql)   
+[2686. Immediate Food Delivery III](./leetcode/2686-ImmediateFoodDeliveryIII.sql)   
 [2687. Bikes Last Time Used](./leetcode/2687-BikesLastTimUsed.sql)   
 [2738. Count Occurrences in Text](./leetcode/2738-CountOccurrencesInText.sql)   
 [2837. Total Traveled Distance](./leetcode/2837-TotalTraveledDistance.sql)   
