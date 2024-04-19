@@ -263,7 +263,6 @@
 [704. Binary Search](./leetcode/704-BinarySearch.go)    
 [713. Subarray Product Less Than K](./leetcode/713-SubarrayProductLessThanK.go)   
 [714. Best Time to Buy and Sell Stock with Transaction Fee](./leetcode/714-BestTimeToBuyAndSellStockWithTransactionFee.go)    
-
 [718. Maximum Length of Repeated Subarray](./leetcode/718-MaximumLengthOfRepeatedSubarray.go)    
 [739. Daily Temperatures](./leetcode/739-DailyTemperatures.go)    
 [740. Delete and Earn](./leetcode/740-DeleteAndEarn.go)    
@@ -283,6 +282,7 @@
 [952. Largest Component Size by Common Factor](./leetcode/952-LargestComponentSizeByCommonFactor.go)    
 [976. Largest Perimeter Triangle](./leetcode/976-LargestPerimeterTriangle.go)    
 [977. Squares of a Sorted Array](./leetcode/977-SquaresOfASortedArray.go)    
+[983. Minimum Cost For Tickets](./leetcode/983-MinimumCostForTickets.go)    
 [992. Subarrays with K Different Integers](./leetcode/992-SubarraysWithKDifferentIntegers.go)    
 [994. Rotting Oranges](./leetcode/994-RottingOranges.go)   
 [997. Find the Town Judge](./leetcode/997-FindTheTownJudge.go)   
