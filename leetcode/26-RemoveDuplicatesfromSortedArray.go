@@ -45,35 +45,29 @@ func removeDuplicates1(nums []int) int {
     if len(nums) < 2 {
         return len(nums)
     }
-
-    var a = []int{nums[0]} // 声明一个数组来保存 去重后的数据
-    var l = 1
-
+    res, arr := 1, []int{nums[0]} // 声明一个数组来保存 去重后的数据
     for i := 1; i < len(nums); i++ {
-        if nums[i] != a[l - 1] { //
-            a = append(a,nums[i])
-            l++
+        if nums[i] != arr[res - 1] { //
+            arr = append(arr, nums[i])
+            res++
         } 
     }
-    return l
+    return res
 }
 
 func removeDuplicates(nums []int) int {
-    var le = len(nums)
-    if le < 2 {
-        return le
+    l, res, t := len(nums), 1, nums[0]
+    if l < 2 {
+        return l
     }
-    var l = 1
-    var t = nums[0]
-
-    for i := 1; i < le; i++ {
+    for i := 1; i < l; i++ {
         if nums[i] != t {
             t = nums[i]
-            l++
+            res++
         }
-        nums[l - 1] = nums[i] // it is the point
+        nums[res - 1] = nums[i] // it is the point
     }
-    return l
+    return res
 }
 
 func removeDuplicates2(nums []int) int {
@@ -95,7 +89,7 @@ func removeDuplicates2(nums []int) int {
 }
 
 // best solution
-func removeDuplicatesBest(nums []int) int {
+func removeDuplicates3(nums []int) int {
     j := 0
     for i := 1; i < len(nums); i++ { // 注意从 1 开始
         if nums[j] != nums[i] {
@@ -107,9 +101,6 @@ func removeDuplicatesBest(nums []int) int {
             // r3  nums: 1 2 3 3 3 j:2 i:3
             // r3  nums: 1 2 3 3 3 j:2 i:4
         }
-        // fmt.Printf("\nround %v\n",i)
-        // fmt.Printf("nums = %v\n",nums)
-        // fmt.Printf("j = %v\n",j)
     }
     return j + 1
 }
@@ -121,12 +112,12 @@ func main() {
     // It does not matter what you leave beyond the returned k (hence they are underscores).
     a1 := []int{1,1,2}
     fmt.Println("before: ", a1)
-    fmt.Println(removeDuplicatesBest(a1)) // 2  [1,2,_]
+    fmt.Println(removeDuplicates3(a1)) // 2  [1,2,_]
     fmt.Println("after: ", a1)
 
     a2 := []int{0,0,1,1,1,2,2,3,3,4}
     fmt.Println("before: ", a2)
-    fmt.Println(removeDuplicatesBest(a2)) // 5 [0,1,2,3,4,_,_,_,_,_]
+    fmt.Println(removeDuplicates3(a2)) // 5 [0,1,2,3,4,_,_,_,_,_]
     fmt.Println("after: ", a2)
 
     // Example 2:
@@ -136,6 +127,6 @@ func main() {
 	fmt.Printf("removeDuplicates([]int{1,1,5,6,7,8,9,9,10,11,23}) = %v\n",removeDuplicates([]int{1,1,5,6,7,8,9,9,10,11,23}))
 	fmt.Printf("removeDuplicates1([]int{1,1,5,6,7,8,9,9,10,11,23}) = %v\n",removeDuplicates1([]int{1,1,5,6,7,8,9,9,10,11,23}))
 	fmt.Printf("removeDuplicates2([]int{1,1,5,6,7,8,9,9,10,11,23}) = %v\n",removeDuplicates2([]int{1,1,5,6,7,8,9,9,10,11,23}))
-	fmt.Printf("removeDuplicatesBest([]int{1,1,5,6,7,8,9,9,10,11,23}) = %v\n",removeDuplicatesBest([]int{1,1,5,6,7,8,9,9,10,11,23}))
-	fmt.Printf("removeDuplicatesBest([]int{1,1,2,3,3}) = %v\n",removeDuplicatesBest([]int{1,1,2,3,3}))
+	fmt.Printf("removeDuplicates3([]int{1,1,5,6,7,8,9,9,10,11,23}) = %v\n",removeDuplicates3([]int{1,1,5,6,7,8,9,9,10,11,23}))
+	fmt.Printf("removeDuplicates3([]int{1,1,2,3,3}) = %v\n",removeDuplicates3([]int{1,1,2,3,3}))
 }
