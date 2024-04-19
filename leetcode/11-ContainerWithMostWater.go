@@ -68,10 +68,28 @@ func maxArea1(height []int) int {
     return res
 }
 
+func maxArea2(height []int) int {
+    l, r, res := 0, len(height) - 1, 0
+    max := func (x, y int) int { if x > y { return x; }; return y; }
+    for l < r {
+        area :=  (r - l) * min(height[l], height[r])
+        res = max(res, area)
+        if height[l] < height[r] {
+            l++
+        } else {
+            r--
+        }
+    }
+    return res
+}
+
 func main() {
     fmt.Printf("maxArea([]int{1,8,6,2,5,4,8,3,7} = %v \n",maxArea([]int{1,8,6,2,5,4,8,3,7}));
     fmt.Printf("maxArea([]int{1,1} = %v \n",maxArea([]int{1,1}));
 
     fmt.Printf("maxArea1([]int{1,8,6,2,5,4,8,3,7} = %v \n",maxArea1([]int{1,8,6,2,5,4,8,3,7}));
     fmt.Printf("maxArea1([]int{1,1} = %v \n",maxArea1([]int{1,1}));
+
+    fmt.Printf("maxArea2([]int{1,8,6,2,5,4,8,3,7} = %v \n",maxArea2([]int{1,8,6,2,5,4,8,3,7}));
+    fmt.Printf("maxArea2([]int{1,1} = %v \n",maxArea2([]int{1,1}));
 }
