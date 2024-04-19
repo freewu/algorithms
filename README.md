@@ -851,6 +851,7 @@
 [2339. All the Matches of the League](./leetcode/2339-AllTheMatchesOfTheLeague.sql)   
 [2346. Compute the Rank as a Percentage](./leetcode/2346-ComputeTheRankAsAPercentage.sql)   
 [2356. Number of Unique Subjects Taught by Each Teacher](./leetcode/2356-NumberofUniqueSubjectsTaughtbyEachTeacher.sql)   
+[2372. Calculate the Influence of Each Salesperson](./leetcode/2372-CalculateTheInfluenceOfEachSalesperson.sql)   
 [2377. Sort the Olympic Table](./leetcode/2377-SortTheOlympicTable.sql)   
 [2480. Form a Chemical Bond](./leetcode/2480-FormAChemicalBond.sql)   
 [2504. Concatenate the Name and the Profession](./leetcode/2504-ConcatenateTheNameAndTheProfession.sql)   
