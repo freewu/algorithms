@@ -97,6 +97,28 @@ func combinationSum1(candidates []int, target int) [][]int {
     return res
 }
 
+func combinationSum2(candidates []int, target int) [][]int {
+    comb, res := []int{}, [][]int{}
+    var dfs func(target, index int)
+    dfs = func(target, index int) {
+        if index == len(candidates) {
+            return
+        }
+        if target == 0 {
+            res = append(res, append([]int(nil), comb...))
+            return
+        }
+        dfs(target, index + 1) // 直接跳过
+        if target - candidates[index] >= 0 { // 选择当前数
+            comb = append(comb, candidates[index])
+            dfs(target-candidates[index], index)
+            comb = comb[:len(comb) - 1]
+        }
+    }
+    dfs(target, 0)
+    return res
+}
+
 func main() {
     // Explanation:
     // 2 and 3 are candidates, and 2 + 2 + 3 = 7. Note that 2 can be used multiple times.
@@ -109,4 +131,8 @@ func main() {
     fmt.Printf("combinationSum1([]int{2,3,6,7},7) = %v\n",combinationSum1([]int{2,3,6,7},7)) // [[2,2,3],[7]]
     fmt.Printf("combinationSum1([]int{2,3,5},8) = %v\n",combinationSum1([]int{2,3,5},8)) // [[2,2,2,2],[2,3,3],[3,5]]
     fmt.Printf("combinationSum1([]int{2},1) = %v\n",combinationSum1([]int{2},1)) // []
+    
+    fmt.Printf("combinationSum2([]int{2,3,6,7},7) = %v\n",combinationSum2([]int{2,3,6,7},7)) // [[2,2,3],[7]]
+    fmt.Printf("combinationSum2([]int{2,3,5},8) = %v\n",combinationSum2([]int{2,3,5},8)) // [[2,2,2,2],[2,3,3],[3,5]]
+    fmt.Printf("combinationSum2([]int{2},1) = %v\n",combinationSum2([]int{2},1)) // []
 }
