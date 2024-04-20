@@ -868,6 +868,7 @@
 [2687. Bikes Last Time Used](./leetcode/2687-BikesLastTimUsed.sql)   
 [2688. Find Active Users](./leetcode/2688-FindActiveUsers.sql)   
 [2738. Count Occurrences in Text](./leetcode/2738-CountOccurrencesInText.sql)   
+[2783. Flight Occupancy and Waitlist Analysis](./leetcode/2783-FlightOccupancyAndWaitlistAnalysis.sql)   
 [2837. Total Traveled Distance](./leetcode/2837-TotalTraveledDistance.sql)   
 [2853. Highest Salaries Difference](./leetcode/2853-HighestSalariesDifference.sql)   
 [2985. Calculate Compressed Mean](./leetcode/2985-CalculateCompressedMean.sql)   
