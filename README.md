@@ -338,6 +338,7 @@
 [2140. Solving Questions With Brainpower](./leetcode/2140-SolvingQuestionsWithBrainpower.go)   
 [2149. Rearrange Array Elements by Sign](./leetcode/2149-RearrangeArrayElementsBySign.go)   
 [2183. Count Array Pairs Divisible by K](./leetcode/2183-CountArrayPairsDivisibleByK.go)   
+[2218. Maximum Value of K Coins From Piles](./leetcode/2218-MaximumValueOfKCoinsFromPiles.go)   
 [2300. Successful Pairs of Spells and Potions](./leetcode/2300-SuccessfulPairsOfSpellsAndPotions.go)   
 [2312. Selling Pieces of Wood](./leetcode/2312-SellingPiecesOfWood.go)   
 [2368. Reachable Nodes With Restrictions](./leetcode/2368-ReachableNodesWithRestrictions.go)   
