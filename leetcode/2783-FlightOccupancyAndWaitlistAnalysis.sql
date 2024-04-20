@@ -59,6 +59,21 @@
 -- - Flight 2 has a capacity of 2. Since there are exactly 2 passengers who booked tickets, everyone can secure a seat. As a result, 2 passengers successfully booked their seats and there are no passengers on the waitlist.
 -- - Flight 3 has a capacity of 1. As there are 2 passengers who have booked tickets, only 1 passenger can get a seat. Therefore, 1 passenger is successfully booked, and 1 passenger is on the waitlist.
 
+-- Create table if not exists Flights(flight_id int,capacity int)
+-- Create table if not exists Passengers (passenger_id int,flight_id int)
+-- Truncate table Flights
+-- insert into Flights (flight_id, capacity) values ('1', '2')
+-- insert into Flights (flight_id, capacity) values ('2', '2')
+-- insert into Flights (flight_id, capacity) values ('3', '1')
+-- Truncate table Passengers
+-- insert into Passengers (passenger_id, flight_id) values ('101', '1')
+-- insert into Passengers (passenger_id, flight_id) values ('102', '1')
+-- insert into Passengers (passenger_id, flight_id) values ('103', '1')
+-- insert into Passengers (passenger_id, flight_id) values ('104', '2')
+-- insert into Passengers (passenger_id, flight_id) values ('105', '2')
+-- insert into Passengers (passenger_id, flight_id) values ('106', '3')
+-- insert into Passengers (passenger_id, flight_id) values ('107', '3')
+
 -- Write your MySQL query statement below
 SELECT
     f.flight_id AS flight_id,
