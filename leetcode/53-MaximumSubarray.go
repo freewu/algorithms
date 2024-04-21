@@ -25,17 +25,15 @@ package main
 // Follow up: If you have figured out the O(n) solution, try coding another solution using the divide and conquer approach, which is more subtle.
 
 import "fmt"
-import	"math"
 
 func maxSubArray(nums []int) int {
-    var max = float64(math.MinInt64)
-    var sum float64 = 0
+    mx, sum := -1 >> 32 - 1, 0
+    max := func (x, y int) int { if x > y { return x; }; return y; }
     for i := range nums {
-        // 如果累加值都小于当前值，从当前值开始
-        sum = math.Max((sum + float64(nums[i])), float64(nums[i]))
-        max = math.Max(max, sum)
+        sum = max(sum + nums[i], nums[i]) // 如果累加值都小于当前值，从当前值开始
+        mx = max(mx, sum)
     }
-    return int(max)
+    return mx
 }
 
 func maxSubArray1(nums []int) int {
@@ -55,13 +53,13 @@ func maxSubArray1(nums []int) int {
         array[i] = subArray
     }
 
-    // 输出
-    for i := range array {
-        for j := range array[i] {
-            fmt.Printf("%v ", array[i][j])
-        }
-        fmt.Println()
-    }
+    // // 输出
+    // for i := range array {
+    //     for j := range array[i] {
+    //         fmt.Printf("%v ", array[i][j])
+    //     }
+    //     fmt.Println()
+    // }
     return max
 }
 
@@ -107,10 +105,10 @@ func maxSubArray3(nums []int) int {
 }
 
 // best solution 快慢指针
-func maxSubArrayBest(nums []int) int {
+func maxSubArray4(nums []int) int {
     length := len(nums)
     fast, slow := 0,0
-    result, sum := math.MinInt32,0
+    result, sum :=  -1 >> 32 - 1, 0
     for fast < length && slow < length {
         sum = sum + nums[fast]
         if sum > result {
@@ -142,7 +140,7 @@ func main() {
     fmt.Printf("maxSubArray3([]int{1}) = %v\n",maxSubArray3([]int{1})) // 1
     fmt.Printf("maxSubArray3([]int{5,4,-1,7,8}) = %v\n",maxSubArray3([]int{5,4,-1,7,8})) // 23
 
-    fmt.Printf("maxSubArrayBest([]int{-2, 1, -3, 4, -1, 2, 1, -5, 4}) = %v\n",maxSubArrayBest([]int{-2, 1, -3, 4, -1, 2, 1, -5, 4})) // 6
-    fmt.Printf("maxSubArrayBest([]int{1}) = %v\n",maxSubArrayBest([]int{1})) // 1
-    fmt.Printf("maxSubArrayBest([]int{5,4,-1,7,8}) = %v\n",maxSubArrayBest([]int{5,4,-1,7,8})) // 23
+    fmt.Printf("maxSubArray4([]int{-2, 1, -3, 4, -1, 2, 1, -5, 4}) = %v\n",maxSubArray4([]int{-2, 1, -3, 4, -1, 2, 1, -5, 4})) // 6
+    fmt.Printf("maxSubArray4([]int{1}) = %v\n",maxSubArray4([]int{1})) // 1
+    fmt.Printf("maxSubArray4([]int{5,4,-1,7,8}) = %v\n",maxSubArray4([]int{5,4,-1,7,8})) // 23
 }
