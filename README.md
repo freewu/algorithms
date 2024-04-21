@@ -881,6 +881,7 @@
 [2978. Symmetric Coordinates](./leetcode/2978-SymmetricCoordinates.sql)   
 [2984. Find Peak Calling Hours for Each City](./leetcode/2984-FindPeakCallingHoursForEachCity.sql)   
 [2985. Calculate Compressed Mean](./leetcode/2985-CalculateCompressedMean.sql)   
+[2986. Find Third Transaction](./leetcode/2986-FindThirdTransaction.sql)   
 [2987. Find Expensive Cities](./leetcode/2987-FindExpensiveCities.sql)   
 [2990. Loan Types](./leetcode/2990-LoanTypes.sql)   
 [2993. Friday Purchases I](./leetcode/2993-FridayPurchasesI.sql)   
