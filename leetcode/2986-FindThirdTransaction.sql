@@ -132,3 +132,24 @@ ORDER BY
 --     -- b.rk = 1 -- 一般能匹配两条取和1条即可
 -- ORDER BY 
 --     user_id 
+
+
+select 
+	user_id,
+    spend as third_transaction_spend,
+    transaction_date as third_transaction_date
+from 
+(
+    select 
+        *,
+        row_number() over(partition by user_id order by transaction_date) as rn,
+        lag(spend,1,0) over(partition by user_id order by transaction_date) as last_spend,
+        lag(spend,2,0) over(partition by user_id order by transaction_date) as first_spend
+    from 
+        Transactions
+)   t1
+where 
+    rn = 3 and 
+    spend >last_spend and spend > first_spend
+order by 
+    user_id 

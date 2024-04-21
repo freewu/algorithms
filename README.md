@@ -883,6 +883,7 @@
 [2985. Calculate Compressed Mean](./leetcode/2985-CalculateCompressedMean.sql)   
 [2986. Find Third Transaction](./leetcode/2986-FindThirdTransaction.sql)   
 [2987. Find Expensive Cities](./leetcode/2987-FindExpensiveCities.sql)   
+[2990. Loan Types](./leetcode/2988-ManagerOfTheLargestDepartment.sql)   
 [2990. Loan Types](./leetcode/2990-LoanTypes.sql)   
 [2993. Friday Purchases I](./leetcode/2993-FridayPurchasesI.sql)   
 [3050. Pizza Toppings Cost Analysis](./leetcode/3050-PizzaToppingsCostAnalysis.sql)   
