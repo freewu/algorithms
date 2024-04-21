@@ -877,6 +877,7 @@
 [2853. Highest Salaries Difference](./leetcode/2853-HighestSalariesDifference.sql)   
 [2854. Rolling Average Steps](./leetcode/2854-RollingAverageSteps.sql)   
 [2893. Calculate Orders Within Each Interval](./leetcode/2893-CalculateOrdersWithinEachInterval.sql)   
+[2922. Market Analysis III](./leetcode/2922-MarketAnalysisIII.sql)   
 [2985. Calculate Compressed Mean](./leetcode/2985-CalculateCompressedMean.sql)   
 [2987. Find Expensive Cities](./leetcode/2987-FindExpensiveCities.sql)   
 [2990. Loan Types](./leetcode/2990-LoanTypes.sql)   
