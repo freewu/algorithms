@@ -292,6 +292,7 @@
 [1027. Longest Arithmetic Subsequence](./leetcode/1027-LongestArithmeticSubsequence.go)   
 [1035. Uncrossed Lines](./leetcode/1035-UncrossedLines.go)   
 [1043. Partition Array for Maximum Sum](./leetcode/1043-PartitionArrayForMaximumSum.go)    
+[1052. Grumpy Bookstore Owner](./leetcode/1052-GrumpyBookstoreOwner.go)    
 [1074. Number of Submatrices That Sum to Target](./leetcode/1074-NumberOfSubmatricesThatSumToTarget.go)    
 [1099. Two Sum Less Than K](./leetcode/1099-TwoSumLessThanK.go)   
 [1102. Path With Maximum Minimum Value](./leetcode/1102-PathWithMaximumMinimumValue.go)   
