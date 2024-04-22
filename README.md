@@ -428,6 +428,7 @@
 [344. Reverse String](./leetcode/344-ReverseString.go)    
 [387. First Unique Character in a String](./leetcode/387-FirstUniqueCharacterInAString.go)    
 [389. Find the Difference](./leetcode/389-FindTheDifference.go)    
+[392. Is Subsequence](./leetcode/392-IsSubsequence.go)    
 [394. Decode String](./leetcode/394-DecodeString.go)    
 [402. Remove K Digits](./leetcode/402-RemoveKDigits.go)    
 [409. Longest Palindrome](./leetcode/409-LongestPalindrome.go)    
