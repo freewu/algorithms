@@ -269,6 +269,7 @@
 [740. Delete and Earn](./leetcode/740-DeleteAndEarn.go)    
 [744. Find Smallest Letter Greater Than Target](./leetcode/744-FindSmallestLetterGreaterThanTarget.go)    
 [746. Min Cost Climbing Stairs](./leetcode/746-MinCostClimbingStairs.go)    
+[752. Open the Lock](./leetcode/752-OpenTheLock.go)    
 [785. Is Graph Bipartite?](./leetcode/785-IsGraphBipartite.go)    
 [797. All Paths From Source to Target](./leetcode/797-AllPathsFromSourceToTarget.go)    
 [852. Peak Index in a Mountain Array](./leetcode/852-PeakIndexInAMountainArray.go)    
