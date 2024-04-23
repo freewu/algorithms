@@ -598,6 +598,7 @@
 [1483. Kth Ancestor of a Tree Node](./leetcode/1483-KthAncestorOfATreeNode.go)   
 [1609. Even Odd Tree](./leetcode/1609-EvenOddTree.go)   
 [2236. Root Equals Sum of Children](./leetcode/2236-RootEqualsSumOfChildren.go)   
+[2385. Amount of Time for Binary Tree to Be Infected](./leetcode/2385-AmountOfTimeForBinaryTreeToBeInfected.go)   
 [2476. Closest Nodes Queries in a Binary Search Tree](./leetcode/2476-ClosestNodesQueriesInABinarySearchTree.go)   
 [2581. Count Number of Possible Root Nodes](./leetcode/2581-CountNumberOfPossibleRootNodes.go)   
 [2583. Kth Largest Sum in a Binary Tree](./leetcode/2583-KthLargestSumInABinaryTree.go)   

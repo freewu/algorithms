@@ -34,9 +34,9 @@ package main
 
 // Definition for a binary tree node.
 type TreeNode struct {
-	Val int
-	Left *TreeNode
-	Right *TreeNode
+    Val int
+    Left *TreeNode
+    Right *TreeNode
 }
 
 /**
@@ -114,32 +114,32 @@ func closestNodes1(root *TreeNode, queries []int) [][]int {
 
 // best solution
 func closestNodes2(root *TreeNode, queries []int) [][]int {
-	a := []int{}
-	var dfs func(*TreeNode)
-	dfs = func(node *TreeNode) {
-		if node == nil {
-			return
-		}
-		dfs(node.Left)
-		a = append(a, node.Val)
-		dfs(node.Right)
-	}
-	dfs(root)
+    a := []int{}
+    var dfs func(*TreeNode)
+    dfs = func(node *TreeNode) {
+        if node == nil {
+            return
+        }
+        dfs(node.Left)
+        a = append(a, node.Val)
+        dfs(node.Right)
+    }
+    dfs(root)
 
-	ans := make([][]int, len(queries))
-	for i, q := range queries {
-		mn, mx := -1, -1
-		j, ok := slices.BinarySearch(a, q)
-		if j < len(a) {
-			mx = a[j]
-		}
-		if !ok { // a[j]>q, a[j-1]<q
-			j--
-		}
-		if j >= 0 {
-			mn = a[j]
-		}
-		ans[i] = []int{mn, mx}
-	}
-	return ans
+    res := make([][]int, len(queries))
+    for i, q := range queries {
+        mn, mx := -1, -1
+        j, ok := slices.BinarySearch(a, q)
+        if j < len(a) {
+            mx = a[j]
+        }
+        if !ok { // a[j]>q, a[j-1]<q
+            j--
+        }
+        if j >= 0 {
+            mn = a[j]
+        }
+        res[i] = []int{mn, mx}
+    }
+    return res
 }

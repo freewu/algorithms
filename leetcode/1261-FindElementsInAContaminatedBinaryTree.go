@@ -61,9 +61,9 @@ import "fmt"
 
 // Definition for a binary tree node.
 type TreeNode struct {
-	Val int
-	Left *TreeNode
-	Right *TreeNode
+    Val int
+    Left *TreeNode
+    Right *TreeNode
 }
 
 /**
@@ -143,60 +143,60 @@ func (this *FindElements1) Find(target int) bool {
  * param_1 := obj.Find(target);
  */
 func main() {
-	tree1 := &TreeNode {
-		-1,
-		nil,
-		&TreeNode { -1, nil, nil },
-	}
+    tree1 := &TreeNode {
+        -1,
+        nil,
+        &TreeNode { -1, nil, nil },
+    }
     obj := Constructor(tree1);
-	fmt.Println(obj.Find(1)) // false
+    fmt.Println(obj.Find(1)) // false
     fmt.Println(obj.Find(2)) // true
 
     tree2 := &TreeNode {
-		-1,
-		&TreeNode {
-			-1,
-			&TreeNode { -1 ,nil, nil },
-			&TreeNode { -1 ,nil, nil },
-		},
-		&TreeNode { -1 ,nil, nil },
-	}
+        -1,
+        &TreeNode {
+            -1,
+            &TreeNode { -1 ,nil, nil },
+            &TreeNode { -1 ,nil, nil },
+        },
+        &TreeNode { -1 ,nil, nil },
+    }
     obj = Constructor(tree2);
-	fmt.Println(obj.Find(1)) // true
+    fmt.Println(obj.Find(1)) // true
     fmt.Println(obj.Find(3)) // true
     fmt.Println(obj.Find(5)) // false
 
     tree3 := &TreeNode {
-		-1,
-		nil,
+        -1,
+        nil,
         &TreeNode {
-			-1,
-			&TreeNode { 
+            -1,
+            &TreeNode { 
                 -1,
                 &TreeNode { -1, nil, nil }, 
                 nil,
             },
-			nil,
-		},
-	}
+            nil,
+        },
+    }
     obj = Constructor(tree3);
-	fmt.Println(obj.Find(2)) // true
+    fmt.Println(obj.Find(2)) // true
     fmt.Println(obj.Find(3)) // false
     fmt.Println(obj.Find(4)) // false
     fmt.Println(obj.Find(5)) // true
 
 
     obj1 := Constructor1(tree1);
-	fmt.Println(obj1.Find(1)) // false
+    fmt.Println(obj1.Find(1)) // false
     fmt.Println(obj1.Find(2)) // true
 
     obj1 = Constructor1(tree2);
-	fmt.Println(obj1.Find(1)) // true
+    fmt.Println(obj1.Find(1)) // true
     fmt.Println(obj1.Find(3)) // true
     fmt.Println(obj1.Find(5)) // false
 
     obj1 = Constructor1(tree3);
-	fmt.Println(obj1.Find(2)) // true
+    fmt.Println(obj1.Find(2)) // true
     fmt.Println(obj1.Find(3)) // false
     fmt.Println(obj1.Find(4)) // false
     fmt.Println(obj1.Find(5)) // true
