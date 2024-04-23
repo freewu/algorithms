@@ -515,6 +515,7 @@
 
 # Math
 [2. Add Two Numbers](./leetcode/2-AddTwoNumbers.go)    
+[9. Palindrome Number](./leetcode/9-PalindromeNumber.go)    
 [29. Divide Two Integers](./leetcode/29-DivideTwoIntegers.go)    
 [50. Pow(x, n)](./leetcode/50-Pow-x-n.go)    
 [60. Permutation Sequence](./leetcode/60-PermutationSequence.go)    

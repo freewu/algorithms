@@ -1,45 +1,53 @@
 package main
 
-/*
-Determine whether an integer is a palindrome. Do this without extra space.
+// 9. Palindrome Number
+// Given an integer x, return true if x is a palindrome, and false otherwise.
 
-click to show spoilers.
+// Example 1:
+// Input: x = 121
+// Output: true
+// Explanation: 121 reads as 121 from left to right and from right to left.
 
-Some hints:
-Could negative integers be palindromes? (ie, -1)
+// Example 2:
+// Input: x = -121
+// Output: false
+// Explanation: From left to right, it reads -121. From right to left, it becomes 121-. Therefore it is not a palindrome.
 
-If you are thinking of converting the integer to string, note the restriction of using extra space.
-
-You could also try reversing an integer. However, if you have solved the problem "Reverse Integer", you know that the reversed integer might overflow. How would you handle such case?
-
-There is a more generic way of solving this problem.
-*/
-
-import (
-	"fmt"
-)
+// Example 3:
+// Input: x = 10
+// Output: false
+// Explanation: Reads 01 from right to left. Therefore it is not a palindrome.
+ 
+// Constraints:    
+//     -2^31 <= x <= 2^31 - 1
+ 
+import "fmt"
 
 func isPalindrome(x int) bool {
-	// 负数和个位数不可能是回文
-	if x < 10 {
-		return false
-	}
-
-	var t = x
-	var s int64 = 0
-	for {
-		s = s * 10 + int64(x % 10)
-		x /= 10;
-		if x == 0 {
-			break
-		}
-	}
-	return int(s) == t
+    if x < 0 { // 负数不可能是回文
+        return false
+    }
+    t, s := x, 0
+    for {
+        s = s * 10 + (x % 10)
+        x /= 10;
+        if x == 0 {
+            break
+        }
+    }
+    return s == t
 }
 
 func main() {
-	fmt.Println(isPalindrome(-12321))
-	fmt.Println(isPalindrome(1))
-	fmt.Println(isPalindrome(12321))
-	fmt.Println(isPalindrome(123211))
+    // Explanation: 121 reads as 121 from left to right and from right to left.
+    fmt.Println(isPalindrome(121)) // true
+    // Explanation: From left to right, it reads -121. From right to left, it becomes 121-. Therefore it is not a palindrome.
+    fmt.Println(isPalindrome(-121)) // false
+    // Explanation: Reads 01 from right to left. Therefore it is not a palindrome.
+    fmt.Println(isPalindrome(10)) // false
+ 
+    fmt.Println(isPalindrome(-12321)) // false
+    fmt.Println(isPalindrome(1))
+    fmt.Println(isPalindrome(12321))
+    fmt.Println(isPalindrome(123211))
 }
