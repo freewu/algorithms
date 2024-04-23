@@ -420,6 +420,7 @@
 [187. Repeated DNA Sequences](./leetcode/187-RepeatedDNASequences.go)   
 [205. Isomorphic Strings](./leetcode/205-IsomorphicStrings.go)    
 [242. Valid Anagram](./leetcode/242-ValidAnagram.go)    
+[290. Word Pattern](./leetcode/290-WordPattern.go)    
 [299. Bulls and Cows](./leetcode/299-BullsAndCows.go)    
 [301. Remove Invalid Parentheses](./leetcode/301-RemoveInvalidParentheses.go)   
 [315. Count of Smaller Numbers After Self](./leetcode/315-CountOfSmallerNumbersAfterSelf.go)    
