@@ -903,7 +903,8 @@
 [3087. Find Trending Hashtags](./leetcode/3087-FindTrendingHashtags.sql)   
 [3089. Find Bursty Behavior](./leetcode/3089-FindBurstyBehavior.sql)   
 [3103. Find Trending Hashtags II](./leetcode/3103-FindTrendingHashtagsII.sql)   
-[3118. Friday Purchase III ](./leetcode/3118-FridayPurchaseIII.sql)   
+[3118. Friday Purchase III](./leetcode/3118-FridayPurchaseIII.sql)   
+[3124. Find Longest Calls](./leetcode/3124-FindLongestCalls.sql)   
 
 
 # Shell
