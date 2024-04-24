@@ -839,6 +839,7 @@
 [1873. Calculate Special Bonus](./leetcode/1873-CalculateSpecialBonus.sql)   
 [1875. Group Employees of the Same Salary](./leetcode/1875-GroupEmployeesOfTheSameSalary.sql)   
 [1890. The Latest Login in 2020](./leetcode/1890-TheLatestLoginin2020.sql)   
+[1892. Page Recommendations II](./leetcode/1892-PageRecommendationsII.sql)   
 [1907. Count Salary Categories](./leetcode/1907-CountSalaryCategories.sql)   
 [1934. Confirmation Rate](./leetcode/1934-ConfirmationRate.sql)   
 [1939. Users That Actively Request Confirmation Messages](./leetcode/1939-UsersThatActivelyRequestConfirmationMessages.sql)   
