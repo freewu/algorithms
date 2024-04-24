@@ -93,8 +93,8 @@
 [437. Path Sum III](./leetcode/437-PathSumIII.go)   
 [438. Find All Anagrams in a String](./leetcode/438-FindAllAnagramsInAString.go)   
 [448. Find All Numbers Disappeared in an Array](./leetcode/448-FindAllNumbersDisappearedInAnArray.go)   
-[461. Hamming Distance](./leetcode/461-HammingDistance.go)    
-[494. Target Sum]   
+[461. Hamming Distance](./leetcode/461-HammingDistance.go)   
+[494. Target Sum](./leetcode/494-TargetSum.go)    
 [538. Convert BST to Greater Tree]   
 [543. Diameter of Binary Tree](./leetcode/543-DiameterOfBinaryTree.go)   
 [560. Subarray Sum Equals K](./leetcode/560-SubarraySumEqualsK.go)    
@@ -245,6 +245,7 @@
 [480. Sliding Window Median](./leetcode/480-SlidingWindowMedian.go)    
 [486. Predict the Winner](./leetcode/486-PredictTheWinner.go)    
 [493. Reverse Pairs](./leetcode/493-ReversePairs.go)    
+[494. Target Sum](./leetcode/494-TargetSum.go)    
 [498. Diagonal Traverse](./leetcode/498-DiagonalTraverse.go)    
 [500. Keyboard Row](./leetcode/500-KeyboardRow.go)    
 [518. Coin Change II](./leetcode/518-CoinChangeII.go)    

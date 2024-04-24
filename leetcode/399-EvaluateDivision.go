@@ -95,6 +95,7 @@ func calcEquation(equations [][]string, values []float64, queries [][]string) []
     }
     return results
 }
+
 func main() {
     // Example 1:
     // Input: equations = [["a","b"],["b","c"]], values = [2.0,3.0], queries = [["a","c"],["b","a"],["a","e"],["a","a"],["x","x"]]
