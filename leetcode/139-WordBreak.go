@@ -75,6 +75,21 @@ func wordBreak(s string, wordDict []string) bool {
     return dp[len(dp)-1]
 }
 
+func wordBreak1(s string, wordDict []string) bool {
+    dp := make([]bool, len(s)+1) // dp[i] 是s[0:i+1] 是否可以利用字典中出现的单词拼接出s
+    dp[0] = true // 初始化
+    for i := 1; i <= len(s); i++ { // 递推
+        for j := 0; j < len(wordDict); j++ {
+            if i >= len(wordDict[j]) && s[i-len(wordDict[j]):i] == wordDict[j] {
+                if dp[i] = dp[i-len(wordDict[j])]; dp[i] { // 将重复情况过滤，eg. dogs 在s时候现有s，后有gs。gs会污染
+                    break
+                } 
+            }
+        }
+    }
+    return dp[len(s)]
+}
+
 func main() {
     // Explanation: Return true because "leetcode" can be segmented as "leet code".
     fmt.Println(wordBreak("leetcode",[]string{"leet","code"})) // true
@@ -86,4 +101,8 @@ func main() {
     // Input: s = "catsandog", wordDict = ["cats","dog","sand","and","cat"]
     // Output: false
     fmt.Println(wordBreak("catsandog",[]string{"cats","dog","sand","and","cat"})) // false
+
+    fmt.Println(wordBreak1("leetcode",[]string{"leet","code"})) // true
+    fmt.Println(wordBreak1("applepenapple",[]string{"apple","pen"})) // true
+    fmt.Println(wordBreak1("catsandog",[]string{"cats","dog","sand","and","cat"})) // false
 }
