@@ -100,7 +100,7 @@
 [560. Subarray Sum Equals K](./leetcode/560-SubarraySumEqualsK.go)    
 [567. Permutation in String](./leetcode/567-PermutationInString.go)    
 [581. Shortest Unsorted Continuous Subarray]   
-[617. Merge Two Binary Trees]   
+[617. Merge Two Binary Trees](./leetcode/617-MergeTwoBinaryTrees.go)   
 [621. Task Scheduler](./leetcode/621-TaskScheduler.go)    
 [647. Palindromic Substrings](./leetcode/647-PalindromicSubstrings.go)    
 [739. Daily Temperatures](./leetcode/739-DailyTemperatures.go)    
@@ -551,7 +551,8 @@
 [2235. Add Two Integers](./leetcode/2235-AddTwoIntegers.go)    
 [2413. Smallest Even Multiple](./leetcode/2413-SmallestEvenMultiple.go)    
 [2469. Convert the Temperature](./leetcode/2469-ConvertTheTemperature.go)    
-[2485. Find the Pivot Integer](./leetcode/2485-FindThePivotInteger.go)    
+[2485. Find the Pivot Integer](./leetcode/2485-FindThePivotInteger.go)   
+[2739. Total Distance Traveled](./leetcode/2739-TotalDistanceTraveled.go)   
 [2834. Find the Minimum Possible Sum of a Beautiful Array](./leetcode/2834-FindTheMinimumPossibleSumOfABeautifulArray.go)    
 
 # Stack
