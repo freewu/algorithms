@@ -466,6 +466,7 @@
 [1750. Minimum Length of String After Deleting Similar Ends](./leetcode/1750-MinimumLengthOfStringAfterDeletingSimilarEnds.go)    
 [1768. Merge Strings Alternately](./leetcode/1768-MergeStringsAlternately.go)   
 [2129. Capitalize the Title](./leetcode/2129-CapitalizeTheTitle.go)   
+[2370. Longest Ideal Subsequence](./leetcode/2370-LongestIdealSubsequence.go)   
 [2575. Find the Divisibility Array of a String](./leetcode/2575-FindTheDivisibilityArrayOfAString.go)    
 [2586. Count the Number of Vowel Strings in Range](./leetcode/2586-CountTheNumberOfVowelStringsInRange.go)   
 [2810. Faulty Keyboard](./leetcode/2810-FaultyKeyboard.go)   
