@@ -494,6 +494,7 @@
 [61. Rotate List](./leetcode/61-RotateList.go)    
 [82. Remove Duplicates from Sorted List II](./leetcode/82-RemoveDuplicatesFromSortedListII.go)   
 [83. Remove Duplicates from Sorted List](./leetcode/83-RemoveDuplicatesFromSortedList.go)    
+[86. Partition List](./leetcode/86-PartitionList.go)    
 [92. Reverse Linked List II](./leetcode/92-ReverseLinkedListII.go)    
 [138. Copy List with Random Pointer](./leetcode/138-CopyListWithRandomPointer.go)   
 [141. Linked List Cycle](./leetcode/141-LinkedListCycle.go)    
