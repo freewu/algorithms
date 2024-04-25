@@ -602,6 +602,7 @@
 [993. Cousins in Binary Tree](./leetcode/993-CousinsInBinaryTree.go)   
 [988. Smallest String Starting From Leaf](./leetcode/988-SmallestStringStartingFromLeaf.go)   
 [1026. Maximum Difference Between Node and Ancestor](./leetcode/1026-MaximumDifferenceBetweenNodeAndAncestor.go)   
+[1038. Binary Search Tree to Greater Sum Tree](./leetcode/1038-BinarySearchTreeToGreaterSumTree.go)   
 [1261. Find Elements in a Contaminated Binary Tree](./leetcode/1261-FindElementsInAContaminatedBinaryTree.go)   
 [1379. Find a Corresponding Node of a Binary Tree in a Clone of That Tree](./leetcode/1379-FindACorrespondingNodeOfABinaryTreeInACloneOfThatTree.go)   
 [1483. Kth Ancestor of a Tree Node](./leetcode/1483-KthAncestorOfATreeNode.go)   
