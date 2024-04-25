@@ -575,6 +575,7 @@
 [104. Maximum Depth of Binary Tree](./leetcode/104-MaximumDepthOfBinaryTree.go)   
 [107. Binary Tree Level Order Traversal II](./leetcode/107-BinaryTreeLevelOrderTraversalII.go)   
 [111. Minimum Depth of Binary Tree](./leetcode/111-MinimumDepthOfBinaryTree.go)   
+[112. Path Sum](./leetcode/112-PathSum.go)   
 [114. Flatten Binary Tree to Linked List](./leetcode/114-FlattenBinaryTreeToLinkedList.go)   
 [124. Binary Tree Maximum Path Sum](./leetcode/124-BinaryTreeMaximumPathSum.go)   
 [129. Sum Root to Leaf Numbers](./leetcode/129-SumRootToLeafNumbers.go)   
