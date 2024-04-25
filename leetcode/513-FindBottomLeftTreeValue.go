@@ -20,9 +20,9 @@ package main
 import "fmt"
 
 type TreeNode struct {
-	Val int
-	Left *TreeNode
-	Right *TreeNode
+    Val int
+    Left *TreeNode
+    Right *TreeNode
 }
 
 /**
@@ -35,47 +35,46 @@ type TreeNode struct {
  */
 // DFS
 func findBottomLeftValue(root *TreeNode) int {
-	if root == nil {
-		return 0
-	}
-	res, maxHeight := 0, -1
-	dfs(root, 0, &res, &maxHeight)
-	return res
-}
-
-func dfs(root *TreeNode, curHeight int, res, maxHeight *int) {
-    // 到达最深叶子
-	if curHeight > *maxHeight && root.Left == nil && root.Right == nil {
-		*maxHeight = curHeight
-		*res = root.Val
-	}
-	if root.Left != nil {
-		dfs(root.Left, curHeight+1, res, maxHeight)
-	}
-	if root.Right != nil {
-		dfs(root.Right, curHeight+1, res, maxHeight)
-	}
+    if root == nil {
+        return 0
+    }
+    res, maxHeight := 0, -1
+    var dfs func(root *TreeNode, curHeight int, res, maxHeight *int) 
+    dfs = func (root *TreeNode, curHeight int, res, maxHeight *int) {
+        if curHeight > *maxHeight && root.Left == nil && root.Right == nil { // 到达最深叶子
+            *maxHeight = curHeight
+            *res = root.Val
+        }
+        if root.Left != nil {
+            dfs(root.Left, curHeight + 1, res, maxHeight)
+        }
+        if root.Right != nil {
+            dfs(root.Right, curHeight + 1, res, maxHeight)
+        }
+    }
+    dfs(root, 0, &res, &maxHeight)
+    return res
 }
 
 // BFS
 func findBottomLeftValue1(root *TreeNode) int {
-	queue := []*TreeNode{root}
-	for len(queue) > 0 {
-		next := []*TreeNode{}
-		for _, node := range queue {
-			if node.Left != nil {
-				next = append(next, node.Left)
-			}
-			if node.Right != nil {
-				next = append(next, node.Right)
-			}
-		}
-		if len(next) == 0 {
-			return queue[0].Val
-		}
-		queue = next
-	}
-	return 0
+    queue := []*TreeNode{root}
+    for len(queue) > 0 {
+        next := []*TreeNode{}
+        for _, node := range queue {
+            if node.Left != nil {
+                next = append(next, node.Left)
+            }
+            if node.Right != nil {
+                next = append(next, node.Right)
+            }
+        }
+        if len(next) == 0 {
+            return queue[0].Val
+        }
+        queue = next
+    }
+    return 0
 }
 
 func main() {

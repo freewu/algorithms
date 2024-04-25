@@ -94,8 +94,8 @@
 [438. Find All Anagrams in a String](./leetcode/438-FindAllAnagramsInAString.go)   
 [448. Find All Numbers Disappeared in an Array](./leetcode/448-FindAllNumbersDisappearedInAnArray.go)   
 [461. Hamming Distance](./leetcode/461-HammingDistance.go)   
-[494. Target Sum](./leetcode/494-TargetSum.go)    
-[538. Convert BST to Greater Tree]   
+[494. Target Sum](./leetcode/494-TargetSum.go)   
+[538. Convert BST to Greater Tree](./leetcode/538-ConvertBSTtoGreaterTree.go)   
 [543. Diameter of Binary Tree](./leetcode/543-DiameterOfBinaryTree.go)   
 [560. Subarray Sum Equals K](./leetcode/560-SubarraySumEqualsK.go)    
 [567. Permutation in String](./leetcode/567-PermutationInString.go)    
@@ -589,6 +589,7 @@
 [429. N-ary Tree Level Order Traversal](./leetcode/429-N-aryTreeLevelOrderTraversal.go)   
 [437. Path Sum III](./leetcode/437-PathSumIII.go)   
 [513. Find Bottom Left Tree Value](./leetcode/513-FindBottomLeftTreeValue.go)   
+[538. Convert BST to Greater Tree](./leetcode/538-ConvertBSTtoGreaterTree.go)   
 [543. Diameter of Binary Tree](./leetcode/543-DiameterOfBinaryTree.go)   
 [589. N-ary Tree Preorder Traversal](./leetcode/589-N-aryTreePreorderTraversal.go)   
 [590. N-ary Tree Postorder Traversal](./leetcode/590-N-aryTreePostorderTraversal.go)   
