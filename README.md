@@ -585,6 +585,7 @@
 [145. Binary Tree Postorder Traversal](./leetcode/145-BinaryTreePostorderTraversal.go)   
 [173. Binary Search Tree Iterator](./leetcode/173-BinarySearchTreeIterator.go)   
 [199. Binary Tree Right Side View](./leetcode/199-BinaryTreeRightSideView.go)   
+[222. Count Complete Tree Nodes](./leetcode/222-CountCompleteTreeNodes.go)   
 [226. Invert Binary Tree](./leetcode/226-InvertBinaryTree.go)   
 [230. Kth Smallest Element in a BST](./leetcode/230-KthSmallestElementInABST.go)   
 [235. Lowest Common Ancestor of a Binary Search Tree](./leetcode/235-LowestCommonAncestorOfABinarySearchTree.go)   
