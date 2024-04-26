@@ -307,6 +307,7 @@
 [1274. Number of Ships in a Rectangle](./leetcode/1274-NumberOfShipsInARectangle.go)    
 [1275. Find Winner on a Tic Tac Toe Game](./leetcode/1275-FindWinnerOnATicTacToeGame.go)    
 [1283. Find the Smallest Divisor Given a Threshold](./leetcode/1283-FindTheSmallestDivisorGivenAThreshold.go)    
+[1289. Minimum Falling Path Sum II](./leetcode/1289-MinimumFallingPathSumII.go)    
 [1351. Count Negative Numbers in a Sorted Matrix](./leetcode/1351-CountNegativeNumbersInASortedMatrix.go)    
 [1463. Cherry Pickup II](./leetcode/1463-CherryPickupII.go)    
 [1470. Shuffle the Array](./leetcode/1470-ShuffleTheArray.go)    
