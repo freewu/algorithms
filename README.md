@@ -870,6 +870,7 @@
 [1949. Strong Friendship](./leetcode/1949-StrongFriendship.sql)   
 [1951. All the Pairs With the Maximum Number of Common Followers](./leetcode/1951-AllThePairsWithTheMaximumNumberOfCommonFollowers.sql)   
 [1965. Employees With Missing Information](./leetcode/1965-EmployeesWithMissingInformation.sql)   
+[1972. First and Last Call On the Same Day](./leetcode/1972-FirstAndLastCallOnTheSameDay.sql)   
 [1978. Employees Whose Manager Left the Company](./leetcode/1978-EmployeesWhoseManagerLeftTheCompany.sql)   
 [1988. Find Cutoff Score for Each School](./leetcode/1988-FindCutoffScoreForEachSchool.sql)   
 [1990. Count the Number of Experiments](./leetcode/1990-CountTheNumberOfExperiments.sql)   
