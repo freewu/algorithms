@@ -615,6 +615,8 @@
 [1261. Find Elements in a Contaminated Binary Tree](./leetcode/1261-FindElementsInAContaminatedBinaryTree.go)   
 [1379. Find a Corresponding Node of a Binary Tree in a Clone of That Tree](./leetcode/1379-FindACorrespondingNodeOfABinaryTreeInACloneOfThatTree.go)   
 [1483. Kth Ancestor of a Tree Node](./leetcode/1483-KthAncestorOfATreeNode.go)   
+
+[1506. Find Root of N-Ary Tree](./leetcode/1506-FindRootOfN-AryTree.go)   
 [1609. Even Odd Tree](./leetcode/1609-EvenOddTree.go)   
 [2236. Root Equals Sum of Children](./leetcode/2236-RootEqualsSumOfChildren.go)   
 [2385. Amount of Time for Binary Tree to Be Infected](./leetcode/2385-AmountOfTimeForBinaryTreeToBeInfected.go)   
