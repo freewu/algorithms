@@ -119,5 +119,23 @@ func connect1(root *Node) *Node {
 }
 
 func main() {
-    fmt.Println()
+    // Example 1:
+    // Input: root = [1,2,3,4,5,null,7]
+    // Output: [1,#,2,3,#,4,5,7,#]
+    // Explanation: Given the above binary tree (Figure A), your function should populate each next pointer to point to its next right node, just like in Figure B. The serialized output is in level order as connected by the next pointers, with '#' signifying the end of each level.
+    tree1 := &Node {
+        1,
+        &Node{2, &Node{4, nil, nil, nil}, &Node{5, nil, nil, nil}, nil},
+        &Node{3, nil, &Node{7, nil, nil, nil}, nil},
+        nil,
+    }
+    a1 := connect(tree1)
+    fmt.Println(a1) // [1,#,2,3,#,4,5,6,7,#]
+    fmt.Println(a1.Left) // 
+    fmt.Println(a1.Right) // 
+    fmt.Println(a1.Next) // nil
+    // Example 2:
+    // Input: root = []
+    // Output: []
+    fmt.Println(connect(nil)) // nil
 }
