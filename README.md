@@ -598,6 +598,7 @@
 [429. N-ary Tree Level Order Traversal](./leetcode/429-N-aryTreeLevelOrderTraversal.go)   
 [437. Path Sum III](./leetcode/437-PathSumIII.go)   
 [513. Find Bottom Left Tree Value](./leetcode/513-FindBottomLeftTreeValue.go)   
+[530. Minimum Absolute Difference in BST](./leetcode/530-MinimumAbsoluteDifferenceInBST.go)   
 [538. Convert BST to Greater Tree](./leetcode/538-ConvertBSTtoGreaterTree.go)   
 [543. Diameter of Binary Tree](./leetcode/543-DiameterOfBinaryTree.go)   
 [589. N-ary Tree Preorder Traversal](./leetcode/589-N-aryTreePreorderTraversal.go)   
