@@ -606,6 +606,7 @@
 [617. Merge Two Binary Trees](./leetcode/617-MergeTwoBinaryTrees.go)   
 [623. Add One Row to Tree](./leetcode/623-AddOneRowToTree.go)   
 [637. Average of Levels in Binary Tree](./leetcode/637-AverageOfLevelsInBinaryTree.go)   
+[834. Sum of Distances in Tree](./leetcode/834-SumOfDistancesInTree.go)   
 [889. Construct Binary Tree from Preorder and Postorder Traversal ](./leetcode/889-ConstructBinaryTreeFromPreorderAndPostorderTraversal.go)   
 [894. All Possible Full Binary Trees](./leetcode/894-AllPossibleFullBinaryTrees.go)    
 [938. Range Sum of BST](./leetcode/938-RangeSumOfBST.go)    
