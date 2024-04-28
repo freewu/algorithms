@@ -441,6 +441,7 @@
 [394. Decode String](./leetcode/394-DecodeString.go)    
 [402. Remove K Digits](./leetcode/402-RemoveKDigits.go)    
 [409. Longest Palindrome](./leetcode/409-LongestPalindrome.go)    
+[433. Minimum Genetic Mutation](./leetcode/433-MinimumGeneticMutation.go)    
 [438. Find All Anagrams in a String](./leetcode/438-FindAllAnagramsInAString.go)   
 [451. Sort Characters By Frequency](./leetcode/451-SortCharactersByFrequency.go)     
 [459. Repeated Substring Pattern](./leetcode/459-RepeatedSubstringPattern.go)     
