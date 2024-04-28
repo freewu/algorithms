@@ -96,7 +96,7 @@ func sumOfDistancesInTree1(n int, edges [][]int) []int {
     reroot = func(x, fa int) {
         for _, y := range g[x] { // 遍历 x 的邻居 y
             if y != fa { // 避免访问父节点
-                res[y] = res[x] + n - 2*size[y]
+                res[y] = res[x] + n - 2 * size[y]
                 reroot(y, x) // x 是 y 的父节点
             }
         }
