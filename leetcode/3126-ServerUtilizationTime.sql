@@ -187,3 +187,39 @@
 -- insert into Servers (server_id, status_time, session_status) values ('4', '2023-11-22 00:26:45', 'stop')
 -- insert into Servers (server_id, status_time, session_status) values ('2', '2023-11-04 11:19:31', 'start')
 -- insert into Servers (server_id, status_time, session_status) values ('2', '2023-11-04 16:46:31', 'stop')
+
+-- with rank
+WITH r AS (-- 以每台服务器按时间状态排序 status_time  00:00:00 -> 23:59:59
+    SELECT 
+        *,
+        RANK() OVER (PARTITION BY server_id ORDER BY status_time, session_status) AS rk 
+    FROM 
+        Servers
+)
+
+SELECT 
+    SUM(duration) / 86400 AS total_uptime_days -- 运行天数
+FROM 
+(
+    SELECT 
+        TIMESTAMPDIFF(SECOND, a.status_time, b.status_time) AS duration -- 计算毛得到每次开始结果的时间
+    FROM 
+        r AS a, 
+        r AS b 
+    WHERE 
+        a.server_id = b.server_id AND a.session_status = 'start' AND a.r = b.r - 1
+) AS t
+
+-- with lead
+SELECT 
+    FLOOR(SUM(TIMESTAMPDIFF(SECOND , status_time, next_status_time)) / 86400) AS total_uptime_days 
+FROM (
+    SELECT
+        session_status,
+        status_time,
+        LEAD(status_time) OVER (PARTITION BY server_id ORDER BY status_time) AS next_status_time
+    FROM
+        Servers
+) AS t
+WHERE 
+    session_status = 'start';
