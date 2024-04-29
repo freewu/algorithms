@@ -657,6 +657,9 @@
 [386. Lexicographical Numbers](./leetcode/386-LexicographicalNumbers.go)   
 
 # Bit Manipulation
+[136. Single Number](./leetcode/136-SingleNumber.go)   
+[137. Single Number II](./leetcode/137-SingleNumberII.go)   
+[190. Reverse Bits](./leetcode/190-ReverseBits.go)   
 [201. Bitwise AND of Numbers Range](./leetcode/201-BitwiseANDOfNumbersRange.go)   
 [338. Counting Bits](./leetcode/338-CountingBits.go)    
 [461. Hamming Distance](./leetcode/461-HammingDistance.go)    
