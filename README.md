@@ -894,6 +894,7 @@
 [2112. The Airport With the Most Traffic](./leetcode/2112-TheAirportWithTheMostTraffic.sql)   
 [2118. Build the Equation](./leetcode/2118-BuildTheEquation.sql)   
 [2142. The Number of Passengers in Each Bus I](./leetcode/2142-TheNumberOfPassengersInEachBusI.sql)   
+[2153. The Number of Passengers in Each Bus II](./leetcode/2153-TheNumberOfPassengersInEachBusII.sql)   
 [2159. Order Two Columns Independently](./leetcode/2159-OrderTwoColumnsIndependently.sql)   
 [2175. The Change in Global Rankings](./leetcode/2175-TheChangeInGlobalRankings.sql)   
 [2205. The Number of Users That Are Eligible for Discount](./leetcode/2205-TheNumberOfUsersThatAreEligibleForDiscount.sql)    
