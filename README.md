@@ -660,6 +660,7 @@
 [136. Single Number](./leetcode/136-SingleNumber.go)   
 [137. Single Number II](./leetcode/137-SingleNumberII.go)   
 [190. Reverse Bits](./leetcode/190-ReverseBits.go)   
+[191. Number of 1 Bits](./leetcode/191-NumberOf1Bits.go)   
 [201. Bitwise AND of Numbers Range](./leetcode/201-BitwiseANDOfNumbersRange.go)   
 [338. Counting Bits](./leetcode/338-CountingBits.go)    
 [461. Hamming Distance](./leetcode/461-HammingDistance.go)    
