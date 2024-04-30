@@ -76,6 +76,31 @@ func longestValidParentheses1(s string) int {
     return res
 }
 
+// dp
+func longestValidParentheses2(s string) int {
+    n, res := len(s), 0
+    dp := make([]int, n) // dp[i]: 以第i个字符结尾的字符串的最长有效括号长度
+    for i := 1; i < n; i++{
+        if s[i] == ')' {
+            if s[i-1] == '(' {
+                dp[i] = 2
+                if i - 2 >= 0{
+                    dp[i] += dp[i-2]
+                }
+            } else if dp[i-1] > 0 && i - dp[i-1] - 1 >= 0 && s[i - dp[i-1] - 1] == '(' {
+                dp[i] = dp[i-1] + 2
+                if i - dp[i-1] - 2 >= 0{
+                    dp[i] += dp[i - dp[i-1] - 2]
+                }
+            }
+            if dp[i] > res {
+                res = dp[i]
+            }
+        }
+    }
+    return res
+}
+
 func main() {
     fmt.Printf("longestValidParentheses(\"(()\") = %v\n",longestValidParentheses("(()")) // 2
     fmt.Printf("longestValidParentheses(\")()())\") = %v\n",longestValidParentheses(")()())")) // 4
@@ -86,4 +111,9 @@ func main() {
     fmt.Printf("longestValidParentheses1(\")()())\") = %v\n",longestValidParentheses1(")()())")) // 4
     fmt.Printf("longestValidParentheses1(\"\") = %v\n",longestValidParentheses1("")) // 0
     fmt.Printf("longestValidParentheses1(\")(\") = %v\n",longestValidParentheses1(")(")) // 0
+
+    fmt.Printf("longestValidParentheses2(\"(()\") = %v\n",longestValidParentheses2("(()")) // 2
+    fmt.Printf("longestValidParentheses2(\")()())\") = %v\n",longestValidParentheses2(")()())")) // 4
+    fmt.Printf("longestValidParentheses2(\"\") = %v\n",longestValidParentheses2("")) // 0
+    fmt.Printf("longestValidParentheses2(\")(\") = %v\n",longestValidParentheses2(")(")) // 0
 }
