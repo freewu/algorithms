@@ -249,6 +249,8 @@
 [494. Target Sum](./leetcode/494-TargetSum.go)    
 [498. Diagonal Traverse](./leetcode/498-DiagonalTraverse.go)    
 [500. Keyboard Row](./leetcode/500-KeyboardRow.go)    
+[502. IPO](./leetcode/502-IPO.go)    
+
 [518. Coin Change II](./leetcode/518-CoinChangeII.go)    
 [525. Contiguous Array](./leetcode/525-ContiguousArray.go)    
 [529. Minesweeper](./leetcode/529-Minesweeper.go)    
