@@ -358,6 +358,7 @@
 [2386. Find the K-Sum of an Array](./leetcode/2386-FindTheK-SumOfAnArray.go)    
 [2402. Meeting Rooms III](./leetcode/2402-MeetingRoomsIII.go)    
 [2444. Count Subarrays With Fixed Bounds](./leetcode/2444-CountSubarraysWithFixedBounds.go)   
+[2462. Total Cost to Hire K Workers](./leetcode/2462-TotalCostToHireKWorkers.go)    
 [2464. Minimum Subarrays in a Valid Split](./leetcode/2464-MinimumSubarraysInAValidSplit.go)    
 [2529. Maximum Count of Positive Integer and Negative Integer](./leetcode/2529-MaximumCountOfPositiveIntegerAndNegativeInteger.go)    
 [2540. Minimum Common Value](./leetcode/2540-MinimumCommonValue.go)    
