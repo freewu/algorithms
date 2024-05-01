@@ -917,6 +917,7 @@
 [2228. Users With Two Purchases Within Seven Days](./leetcode/2228-UsersWithTwoPurchasesWithinSevenDays.sql)   
 [2230. The Users That Are Eligible for Discount](./leetcode/2230-TheUsersThatAreEligibleForDiscount.sql)   
 [2238. Number of Times a Driver Was a Passenger](./leetcode/2238-NumberOfTimesADriverWasAPassenger.sql)   
+[2252. Dynamic Pivoting of a Table](./leetcode/2252-DynamicPivotingOfATable.sql)   
 [2292. Products With Three or More Orders in Two Consecutive Years](./leetcode/2292-ProductsWithThreeOrMoreOrdersInTwoConsecutiveYears.sql)   
 [2298. Tasks Count in the Weekend](./leetcode/2298-TasksCountInTheWeekend.sql)   
 [2308. Arrange Table by Gender](./leetcode/2308-ArrangeTableByGender.sql)   
