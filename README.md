@@ -250,7 +250,6 @@
 [498. Diagonal Traverse](./leetcode/498-DiagonalTraverse.go)    
 [500. Keyboard Row](./leetcode/500-KeyboardRow.go)    
 [502. IPO](./leetcode/502-IPO.go)    
-
 [518. Coin Change II](./leetcode/518-CoinChangeII.go)    
 [525. Contiguous Array](./leetcode/525-ContiguousArray.go)    
 [529. Minesweeper](./leetcode/529-Minesweeper.go)    
@@ -280,6 +279,7 @@
 [785. Is Graph Bipartite?](./leetcode/785-IsGraphBipartite.go)    
 [797. All Paths From Source to Target](./leetcode/797-AllPathsFromSourceToTarget.go)    
 [852. Peak Index in a Mountain Array](./leetcode/852-PeakIndexInAMountainArray.go)    
+[857. Minimum Cost to Hire K Workers](./leetcode/857-MinimumCostToHireKWorkers.go)    
 [860. Lemonade Change](./leetcode/860-LemonadeChange.go)    
 [867. Transpose Matrix](./leetcode/867-TransposeMatrix.go)    
 [875. Koko Eating Bananas](./leetcode/875-KokoEatingBananas.go)    
