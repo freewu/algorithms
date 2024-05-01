@@ -546,6 +546,7 @@
 [69. Sqrt(x)](./leetcode/69-Sqrtx.go)    
 [70. Climbing Stairs](./leetcode/70-ClimbingStairs.go)    
 [89. Gray Code](./leetcode/89-GrayCode.go)    
+[166. Fraction to Recurring Decimal](./leetcode/166-FractionToRecurringDecimal.go)    
 [172. Factorial Trailing Zeroes](./leetcode/172-FactorialTrailingZeroes.go)    
 [202. Happy Number](./leetcode/202-HappyNumber.go)    
 [231. Power of Two](./leetcode/231-PowerOfTwo.go)    
