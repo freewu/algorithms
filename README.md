@@ -331,6 +331,7 @@
 [1631. Path With Minimum Effort](./leetcode/1631-PathWithMinimumEffort.go)    
 [1642. Furthest Building You Can Reach](./leetcode/1642-FurthestBuildingYouCanReach.go)    
 [1672. Richest Customer Wealth](./leetcode/1672-RichestCustomerWealth.go)   
+[1679. Max Number of K-Sum Pairs](./leetcode/1679-MaxNumberOfKSumPairs.go)   
 [1686. Stone Game VI](./leetcode/1686-StoneGameVI.go)    
 [1690. Stone Game VII](./leetcode/1690-StoneGameVII.go)    
 [1696. Jump Game VI](./leetcode/1696-JumpGameVI.go)    
