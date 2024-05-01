@@ -562,6 +562,7 @@
 [1017. Convert to Base -2](./leetcode/1017-ConvertToBase-2.go)    
 [1056. Confusing Number](./leetcode/1056-ConfusingNumber.go)    
 [1137. N-th Tribonacci Number](./leetcode/1137-NthTribonacciNumber.go)    
+[1118. Number of Days in a Month](./leetcode/1118-NumberOfDaysInAMonth.go)    
 [1281. Subtract the Product and Sum of Digits of an Integer](./leetcode/1281-SubtractTheProductAndSumOfDigitsOfAnInteger.go)    
 [1486. XOR Operation in an Array](./leetcode/1486-XOROperationInAnArray.go)    
 [1492. The kth Factor of n](./leetcode/1492-TheKthFactorOfN.go)    
