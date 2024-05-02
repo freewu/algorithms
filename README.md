@@ -939,6 +939,7 @@
 [2377. Sort the Olympic Table](./leetcode/2377-SortTheOlympicTable.sql)   
 [2388. Change Null Values in a Table to the Previous Value](./leetcode/2388-ChangeNullValuesInATableToThePreviousValue.sql)   
 [2394. Employees With Deductions](./leetcode/2394-EmployeesWithDeductions.sql)   
+[2474. Customers With Strictly Increasing Purchases](./leetcode/2474-CustomersWithStrictlyIncreasingPurchases.sql)   
 [2480. Form a Chemical Bond](./leetcode/2480-FormAChemicalBond.sql)   
 [2504. Concatenate the Name and the Profession](./leetcode/2504-ConcatenateTheNameAndTheProfession.sql)   
 [2668. Find Latest Salaries](./leetcode/2668-FindLatestSalaries.sql)   
