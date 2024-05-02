@@ -941,6 +941,7 @@
 [2394. Employees With Deductions](./leetcode/2394-EmployeesWithDeductions.sql)   
 [2474. Customers With Strictly Increasing Purchases](./leetcode/2474-CustomersWithStrictlyIncreasingPurchases.sql)   
 [2480. Form a Chemical Bond](./leetcode/2480-FormAChemicalBond.sql)   
+[2494. Merge Overlapping Events in the Same Hall](./leetcode/2494-MergeOverlappingEventsInTheSameHall.sql)   
 [2504. Concatenate the Name and the Profession](./leetcode/2504-ConcatenateTheNameAndTheProfession.sql)   
 [2668. Find Latest Salaries](./leetcode/2668-FindLatestSalaries.sql)   
 [2669. Count Artist Occurrences On Spotify Ranking List](./leetcode/2669-CountArtistOccurrencesOnSpotifyRankingList.sql)   
