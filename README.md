@@ -419,6 +419,7 @@
 [71. Simplify Path](./leetcode/71-SimplifyPath.go)    
 [72. Edit Distance](./leetcode/72-EditDistance.go)    
 [76. Minimum Window Substring](./leetcode/76-MinimumWindowSubstring.go)    
+[87. Scramble String](./leetcode/87-ScrambleString.go)    
 [91. Decode Ways](./leetcode/91-DecodeWays.go)    
 [93. Restore IP Addresses](./leetcode/93-RestoreIPAddresses.go)    
 [97. Interleaving String](./leetcode/97-InterleavingString.go)    
