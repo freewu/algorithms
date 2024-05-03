@@ -380,6 +380,7 @@
 [2789. Largest Element in an Array after Merge Operations](./leetcode/2789-LargestElementInAnArrayAfterMergeOperations.go)    
 [2798. Number of Employees Who Met the Target](./leetcode/2798-NumberOfEmployeesWhoMetTheTarget.go)   
 [2808. Minimum Seconds to Equalize a Circular Array](./leetcode/2808-MinimumSecondsToEqualizeACircularArray.go)   
+[2809. Minimum Time to Make Array Sum At Most x](./leetcode/2809-MinimumTimeToMakeArraySumAtMostX.go)   
 [2859. Sum of Values at Indices With K Set Bits ](./leetcode/2859-SumOfValuesAtIndicesWithKSetBits.go)    
 [2861. Maximum Number of Alloys](./leetcode/2861-MaximumNumberOfAlloys.go)    
 [2865. Beautiful Towers I](./leetcode/2865-BeautifulTowersI.go)   
