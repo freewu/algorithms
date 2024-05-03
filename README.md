@@ -953,6 +953,7 @@
 [2687. Bikes Last Time Used](./leetcode/2687-BikesLastTimUsed.sql)   
 [2688. Find Active Users](./leetcode/2688-FindActiveUsers.sql)   
 [2701. Consecutive Transactions with Increasing Amounts](./leetcode/2701-ConsecutiveTransactionswithIncreasingAmounts.sql)   
+[2720. Popularity Percentage](./leetcode/2720-PopularityPercentage.sql)   
 [2738. Count Occurrences in Text](./leetcode/2738-CountOccurrencesInText.sql)   
 [2783. Flight Occupancy and Waitlist Analysis](./leetcode/2783-FlightOccupancyAndWaitlistAnalysis.sql)   
 [2820. Election Results](./leetcode/2820-ElectionResults.sql)   
