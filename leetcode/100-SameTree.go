@@ -39,14 +39,14 @@ func printTreeNode(t *TreeNode) {
 }
 
 func makeNodeList(nums []int) *TreeNode {
-	var n = &TreeNode{-1, nil, nil}
-	// var b = &ListNode{-1, n}
-	// for i := 0; i < len(nums); i++ {
-	// 	n.Next = &ListNode{nums[i], nil}
-	// 	n = n.Next
-	// }
-	// return b.Next.Next
-	return n
+    var n = &TreeNode{-1, nil, nil}
+    // var b = &ListNode{-1, n}
+    // for i := 0; i < len(nums); i++ {
+    // 	n.Next = &ListNode{nums[i], nil}
+    // 	n = n.Next
+    // }
+    // return b.Next.Next
+    return n
 }
 
 /**
