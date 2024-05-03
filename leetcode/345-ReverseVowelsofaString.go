@@ -1,65 +1,60 @@
 package main
 
-import (
-	"fmt"
-)
+// 345. Reverse Vowels of a String
+// Given a string s, reverse only all the vowels in the string and return it.
+// The vowels are 'a', 'e', 'i', 'o', and 'u', and they can appear in both lower and upper cases, more than once.
 
-/*
-Write a function that takes a string as input and reverse only the vowels of a string.
+// Example 1:
+// Input: s = "hello"
+// Output: "holle"
 
-Example 1:
-Given s = "hello", return "holle".
+// Example 2:
+// Input: s = "leetcode"
+// Output: "leotcede"
 
-Example 2:
-Given s = "leetcode", return "leotcede".
+// Constraints:
+//     1 <= s.length <= 3 * 10^5
+//     s consist of printable ASCII characters.
 
-Note:
-The vowels does not include the letter "y".
-*/
+import "fmt"
 
 func reverseVowels(s string) string {
-	var l = len(s)
-	if l <= 1 {
-		return s
-	}
-	var i = 0
-	var t = make([]byte, l)
-	l = l - 1
-	for {
-		if i > l {
-			break
-		}
-		// find the vowel from begin
-		if 'a' == s[i] || 'e' == s[i] || 'i' == s[i] || 'o' == s[i] || 'u' == s[i] ||
-			'A' == s[i] || 'E' == s[i] || 'I' == s[i] || 'O' == s[i] || 'U' == s[i] {
-		} else {
-			t[i] = s[i]
-			i++
-			continue
-		}
-		// find the vowel from end
-		if 'a' == s[l] || 'e' == s[l] || 'i' == s[l] || 'o' == s[l] || 'u' == s[l] ||
-			'A' == s[l] || 'E' == s[l] || 'I' == s[l] || 'O' == s[l] || 'U' == s[l] {
-		} else {
-			t[l] = s[l]
-			l--
-			continue
-		}
-
-		// syntax sugar
-		t[l], t[i] = s[i], s[l]
-
-		//t[l] = s[i]
-		//t[i] = s[l]
-		i++
-		l--
-	}
-	return string(t)
+    if len(s) <= 1 {
+        return s
+    }
+    isVowel := func(ch byte) bool {
+        return 'a' == ch || 'e' == ch || 'i' == ch || 'o' == ch || 'u' == ch ||
+               'A' == ch || 'E' == ch || 'I' == ch || 'O' == ch || 'U' == ch
+    }
+    t, left, right :=  []byte(s), 0, len(s) - 1
+    for left < right {
+        if !isVowel(t[left]) { // find the vowel from begin
+            left++
+            continue
+        }
+        if !isVowel(t[right]) { // find the vowel from end
+            right--
+            continue
+        }
+        t[left], t[right] = t[right], t[left]
+        left++
+        right--
+    }
+    return string(t)
 }
 
 func main() {
-	fmt.Println(reverseVowels("aA"))    // Aa
-	fmt.Println(reverseVowels("abc"))   // abc
-	fmt.Println(reverseVowels("ooee"))  // ee
-	fmt.Println(reverseVowels("hello")) // holle
+    // Example 1:
+    // Input: s = "hello"
+    // Output: "holle"
+    fmt.Println(reverseVowels("hello")) // holle
+    // Example 2:
+    // Input: s = "leetcode"
+    // Output: "leotcede"
+    fmt.Println(reverseVowels("leetcode")) // leotcede
+
+    fmt.Println(reverseVowels("aA"))    // Aa
+    fmt.Println(reverseVowels("abc"))   // abc
+    fmt.Println(reverseVowels("ooee"))  // ee
+    fmt.Println(reverseVowels("hello")) // holle
 }
