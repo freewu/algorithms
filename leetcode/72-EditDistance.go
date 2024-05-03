@@ -65,6 +65,31 @@ func minDistance(word1, word2 string) int {
     return last[len(last) - 1]
 }
 
+func minDistance1(word1 string, word2 string) int {
+    m, n := len(word1), len(word2)
+    dp := make([][]int, m+1)
+    for i := 0; i <= m; i++ {
+        dp[i] = make([]int, n+1)
+    }
+    for i := 1; i <= m; i++ {
+        dp[i][0] = i
+    }
+    for i := 1; i <= n; i++ {
+        dp[0][i] = i
+    }
+    min := func (x, y int) int { if x < y { return x; }; return y; }
+    for i := 1; i <= m; i++ {
+        for j := 1; j <= n; j++ {
+            if word1[i-1] == word2[j-1] {
+                dp[i][j] = dp[i-1][j-1]
+            } else {
+                dp[i][j] = 1 + min(dp[i-1][j-1], min(dp[i-1][j], dp[i][j-1]))
+            }
+        }
+    }
+    return dp[m][n]
+}
+
 func main() {
     // horse -> rorse (replace 'h' with 'r')
     // rorse -> rose (remove 'r')
@@ -76,4 +101,7 @@ func main() {
     // exention -> exection (replace 'n' with 'c')
     // exection -> execution (insert 'u')
     fmt.Println(minDistance("intention","execution")) // 5
+
+    fmt.Println(minDistance1("horse","ros")) // 3
+    fmt.Println(minDistance1("intention","execution")) // 5
 }

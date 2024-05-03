@@ -985,6 +985,7 @@
 [2988. Manager of the Largest Department](./leetcode/2988-ManagerOfTheLargestDepartment.sql)   
 [2989. Class Performance](./leetcode/2989-ClassPerformance.sql)   
 [2990. Loan Types](./leetcode/2990-LoanTypes.sql)   
+[2991. Top Three Wineries](./leetcode/2991-TopThreeWineries.sql)   
 [2993. Friday Purchases I](./leetcode/2993-FridayPurchasesI.sql)   
 [3050. Pizza Toppings Cost Analysis](./leetcode/3050-PizzaToppingsCostAnalysis.sql)   
 [3051. Find Candidates for Data Scientist Position](./leetcode/3051-FindCandidatesForDataScientistPosition.sql)   
