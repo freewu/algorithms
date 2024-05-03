@@ -376,6 +376,7 @@
 [2670. Find the Distinct Difference Array](./leetcode/2670-FindTheDistinctDifferenceArray.go)    
 [2684. Maximum Number of Moves in a Grid](./leetcode/2684-MaximumNumberOfMovesInAGrid.go)   
 [2765. Longest Alternating Subarray](./leetcode/2765-LongestAlternatingSubarray.go)   
+[2788. Split Strings by Separator](./leetcode/2788-SplitStringsBySeparator.go)   
 [2789. Largest Element in an Array after Merge Operations](./leetcode/2789-LargestElementInAnArrayAfterMergeOperations.go)    
 [2798. Number of Employees Who Met the Target](./leetcode/2798-NumberOfEmployeesWhoMetTheTarget.go)   
 [2808. Minimum Seconds to Equalize a Circular Array](./leetcode/2808-MinimumSecondsToEqualizeACircularArray.go)   
