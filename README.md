@@ -958,6 +958,7 @@
 [2738. Count Occurrences in Text](./leetcode/2738-CountOccurrencesInText.sql)   
 [2752. Customers with Maximum Number of Transactions on Consecutive Days](./leetcode/2752-CustomersWithMaximumNumberOfTransactionsOnConsecutiveDays.sql)   
 [2783. Flight Occupancy and Waitlist Analysis](./leetcode/2783-FlightOccupancyAndWaitlistAnalysis.sql)   
+[2793. Status of Flight Tickets](./leetcode/2793-StatusOfFlightTickets.sql)   
 [2820. Election Results](./leetcode/2820-ElectionResults.sql)   
 [2837. Total Traveled Distance](./leetcode/2837-TotalTraveledDistance.sql)   
 [2853. Highest Salaries Difference](./leetcode/2853-HighestSalariesDifference.sql)   
