@@ -996,6 +996,7 @@
 [2995. Viewers Turned Streamers](./leetcode/2995-ViewersTurnedStreamers.sql)   
 [3050. Pizza Toppings Cost Analysis](./leetcode/3050-PizzaToppingsCostAnalysis.sql)   
 [3051. Find Candidates for Data Scientist Position](./leetcode/3051-FindCandidatesForDataScientistPosition.sql)   
+[3052. Maximize Items](./leetcode/3052-MaximizeItems.sql)   
 [3053. Classifying Triangles by Lengths](./leetcode/3053-ClassifyingTrianglesByLengths.sql)   
 [3054. Binary Tree Nodes](./leetcode/3054-BinaryTreeNodes.sql)   
 [3055. Top Percentile Fraud](./leetcode/3055-TopPercentileFraud.sql)   
