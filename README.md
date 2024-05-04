@@ -1001,6 +1001,7 @@
 [3054. Binary Tree Nodes](./leetcode/3054-BinaryTreeNodes.sql)   
 [3055. Top Percentile Fraud](./leetcode/3055-TopPercentileFraud.sql)   
 [3056. Snaps Analysis](./leetcode/3056-SnapsAnalysis.sql)   
+[3057. Employees Project Allocation](./leetcode/3057-EmployeesProjectAllocation.sql)   
 [3058. Friends With No Mutual Friends](./leetcode/3058-FriendsWithNoMutualFriends.sql)   
 [3059. Find All Unique Email Domains](./leetcode/3059-FindAllUniqueEmailDomains.sql)   
 [3061. Calculate Trapping Rain Water](./leetcode/3061-CalculateTrappingRainWater.sql)   
