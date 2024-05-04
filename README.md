@@ -989,6 +989,7 @@
 [2991. Top Three Wineries](./leetcode/2991-TopThreeWineries.sql)   
 [2993. Friday Purchases I](./leetcode/2993-FridayPurchasesI.sql)   
 [2994. Friday Purchases II](./leetcode/2994-FridayPurchasesII.sql)   
+[2995. Viewers Turned Streamers](./leetcode/2995-ViewersTurnedStreamers.sql)   
 [3050. Pizza Toppings Cost Analysis](./leetcode/3050-PizzaToppingsCostAnalysis.sql)   
 [3051. Find Candidates for Data Scientist Position](./leetcode/3051-FindCandidatesForDataScientistPosition.sql)   
 [3053. Classifying Triangles by Lengths](./leetcode/3053-ClassifyingTrianglesByLengths.sql)   
