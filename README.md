@@ -1004,6 +1004,7 @@
 [3057. Employees Project Allocation](./leetcode/3057-EmployeesProjectAllocation.sql)   
 [3058. Friends With No Mutual Friends](./leetcode/3058-FriendsWithNoMutualFriends.sql)   
 [3059. Find All Unique Email Domains](./leetcode/3059-FindAllUniqueEmailDomains.sql)   
+[3060. User Activities within Time Bounds](./leetcode/3060-UserActivitiesWithinTimeBounds.sql)   
 [3061. Calculate Trapping Rain Water](./leetcode/3061-CalculateTrappingRainWater.sql)   
 [3087. Find Trending Hashtags](./leetcode/3087-FindTrendingHashtags.sql)   
 [3089. Find Bursty Behavior](./leetcode/3089-FindBurstyBehavior.sql)   
