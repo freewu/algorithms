@@ -703,6 +703,7 @@
 [225. Implement Stack using Queues](./leetcode/225-ImplementStackUsingQueues.go)   
 [232. Implement Queue using Stacks](./leetcode/232-ImplementQueueUsingStacks.go)   
 [244. Shortest Word Distance II](./leetcode/244-ShortestWordDistanceII.go)   
+[251. Flatten 2D Vector](./leetcode/251-Flatten2DVector.go)   
 [295. Find Median from Data Stream](./leetcode/295-FindMedianFromDataStream.go)   
 [297. Serialize and Deserialize Binary Tree](./leetcode/297-SerializeAndDeserializeBinaryTree.go)   
 [303. Range Sum Query - Immutable](./leetcode/303-RangeSumQuery-Immutable.go)   
