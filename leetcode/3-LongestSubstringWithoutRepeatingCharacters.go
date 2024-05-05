@@ -132,7 +132,7 @@ func lengthOfLongestSubstring3(s string) int {
 func lengthOfLongestSubstring4(s string) int {
     right, left, res := 0, 0, 0
     m := make(map[byte]int, len(s))
-    max := func (a int, b int) int { if a > b { return a; }; return b; }
+    max := func (x, y int) int { if x > y { return x; }; return y; }
     for left < len(s) {
         if index, ok := m[s[left]]; ok && index >= right {
             right = index + 1

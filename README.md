@@ -276,6 +276,7 @@
 [718. Maximum Length of Repeated Subarray](./leetcode/718-MaximumLengthOfRepeatedSubarray.go)    
 [739. Daily Temperatures](./leetcode/739-DailyTemperatures.go)    
 [740. Delete and Earn](./leetcode/740-DeleteAndEarn.go)    
+[741. Cherry Pickup](./leetcode/741-CherryPickup.go)    
 [744. Find Smallest Letter Greater Than Target](./leetcode/744-FindSmallestLetterGreaterThanTarget.go)    
 [746. Min Cost Climbing Stairs](./leetcode/746-MinCostClimbingStairs.go)    
 [752. Open the Lock](./leetcode/752-OpenTheLock.go)    
