@@ -239,6 +239,7 @@
 [410. Split Array Largest Sum](./leetcode/410-SplitArrayLargestSum.go)   
 [416. Partition Equal Subset Sum](./leetcode/416-PartitionEqualSubsetSum.go)   
 [422. Valid Word Square](./leetcode/422-ValidWordSquare.go)   
+[435. Non-overlapping Intervals](./leetcode/435-Non-overlappingIntervals.go)   
 [436. Find Right Interval](./leetcode/436-FindRightInterval.go)   
 [442. Find All Duplicates in an Array](./leetcode/442-FindAllDuplicatesInAnArray.go)   
 [452. Minimum Number of Arrows to Burst Balloons](./leetcode/452-MinimumNumberOfArrowsToBurstBalloons.go)   
