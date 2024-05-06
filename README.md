@@ -541,6 +541,7 @@
 [876. Middle of the Linked List](./leetcode/876-MiddleOfTheLinkedList.go)    
 [1171. Remove Zero Sum Consecutive Nodes from Linked List](./leetcode/1171-RemoveZeroSumConsecutiveNodesFromLinkedList.go)    
 [1669. Merge In Between Linked Lists](./leetcode/1669-MergeInBetweenLinkedLists.go)    
+[2487. Remove Nodes From Linked List](./leetcode/2487-RemoveNodesFromLinkedList.go)    
 
 # Enumeration
 [204. Count Primes](./leetcode/204-CountPrimes.go)   
@@ -1020,7 +1021,7 @@
 [3118. Friday Purchase III](./leetcode/3118-FridayPurchaseIII.sql)   
 [3124. Find Longest Calls](./leetcode/3124-FindLongestCalls.sql)   
 [3126. Server Utilization Time](./leetcode/3126-ServerUtilizationTime.sql)   
-
+[100325. Consecutive Available Seats II](./leetcode/100325-ConsecutiveAvailableSeatsII.sql)   
 
 # Shell
 [192. Word Frequency](./leetcode/192-WordFrequency.sh)      
