@@ -1,4 +1,4 @@
--- 100325. Consecutive Available Seats II
+-- 3140. Consecutive Available Seats II
 -- Table: Cinema
 -- +-------------+------+
 -- | Column Name | Type |

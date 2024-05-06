@@ -1021,7 +1021,7 @@
 [3118. Friday Purchase III](./leetcode/3118-FridayPurchaseIII.sql)   
 [3124. Find Longest Calls](./leetcode/3124-FindLongestCalls.sql)   
 [3126. Server Utilization Time](./leetcode/3126-ServerUtilizationTime.sql)   
-[100325. Consecutive Available Seats II](./leetcode/100325-ConsecutiveAvailableSeatsII.sql)   
+[3140. Consecutive Available Seats II](./leetcode/3140-ConsecutiveAvailableSeatsII.sql)   
 
 # Shell
 [192. Word Frequency](./leetcode/192-WordFrequency.sh)      
