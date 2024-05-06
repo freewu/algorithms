@@ -50,8 +50,8 @@ func makeListNode(arr []int) *ListNode {
     if (len(arr) == 0) {
         return nil
     }
-    var l = (len(arr) - 1)
-    var head = &ListNode{arr[l], nil}
+    l := len(arr) - 1
+    head := &ListNode{arr[l], nil}
     for i := l - 1; i >= 0; i--  {
         var n = &ListNode{arr[i], head}
         head = n
