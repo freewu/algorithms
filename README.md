@@ -226,6 +226,7 @@
 [322. Coin Change](./leetcode/322-CoinChange.go)   
 [324. Wiggle Sort II](./leetcode/324-WiggleSortII.go)   
 [329. Longest Increasing Path in a Matrix](./leetcode/329-LongestIncreasingPathInAMatrix.go)   
+[334. Increasing Triplet Subsequence](./leetcode/334-IncreasingTripletSubsequence.go)   
 [347. Top K Frequent Elements](./leetcode/347-TopKFrequentElements.go)   
 [349. Intersection of Two Arrays](./leetcode/349-IntersectionOfTwoArrays.go)   
 [354. Russian Doll Envelopes](./leetcode/354-RussianDollEnvelopes.go)   
