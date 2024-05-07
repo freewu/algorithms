@@ -318,6 +318,7 @@
 [1099. Two Sum Less Than K](./leetcode/1099-TwoSumLessThanK.go)   
 [1102. Path With Maximum Minimum Value](./leetcode/1102-PathWithMaximumMinimumValue.go)   
 [1218. Longest Arithmetic Subsequence of Given Difference](./leetcode/1218-LongestArithmeticSubsequenceOfGivenDifference.go)   
+[1230. Toss Strange Coins](./leetcode/1230-TossStrangeCoins.go)   
 [1231. Divide Chocolate](./leetcode/1231-DivideChocolate.go)   
 [1232. Check If It Is a Straight Line](./leetcode/1232-CheckIfItIsAStraightLine.go)   
 [1235. Maximum Profit in Job Scheduling](./leetcode/1235-MaximumProfitInJobScheduling.go)   
