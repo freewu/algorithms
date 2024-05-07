@@ -649,6 +649,7 @@
 [530. Minimum Absolute Difference in BST](./leetcode/530-MinimumAbsoluteDifferenceInBST.go)   
 [538. Convert BST to Greater Tree](./leetcode/538-ConvertBSTtoGreaterTree.go)   
 [543. Diameter of Binary Tree](./leetcode/543-DiameterOfBinaryTree.go)   
+[572. Subtree of Another Tree](./leetcode/572-SubtreeOfAnotherTree.go)   
 [589. N-ary Tree Preorder Traversal](./leetcode/589-N-aryTreePreorderTraversal.go)   
 [590. N-ary Tree Postorder Traversal](./leetcode/590-N-aryTreePostorderTraversal.go)   
 [617. Merge Two Binary Trees](./leetcode/617-MergeTwoBinaryTrees.go)   

@@ -74,39 +74,39 @@ func diameterOfBinaryTree1(root *TreeNode) (ans int) {
 func main() {
     fmt.Println(diameterOfBinaryTree(
         &TreeNode {
-			1,
-			&TreeNode{
+            1,
+            &TreeNode{
                 2, 
                 &TreeNode{4, nil, nil},
                 &TreeNode{5, nil, nil},
             },
-			&TreeNode{3, nil, nil},
-		},
+            &TreeNode{3, nil, nil},
+        },
     )) // 3
     fmt.Println(diameterOfBinaryTree(
         &TreeNode {
-			1,
-			&TreeNode{2, nil, nil},
-			nil,
-		},
+            1,
+            &TreeNode{2, nil, nil},
+            nil,
+        },
     )) // 1
 
     fmt.Println(diameterOfBinaryTree1(
         &TreeNode {
-			1,
-			&TreeNode{
+            1,
+            &TreeNode{
                 2, 
                 &TreeNode{4, nil, nil},
                 &TreeNode{5, nil, nil},
             },
-			&TreeNode{3, nil, nil},
-		},
+            &TreeNode{3, nil, nil},
+        },
     )) // 3
     fmt.Println(diameterOfBinaryTree1(
         &TreeNode {
-			1,
-			&TreeNode{2, nil, nil},
-			nil,
-		},
+            1,
+            &TreeNode{2, nil, nil},
+            nil,
+        },
     )) // 1
  }
