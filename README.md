@@ -734,6 +734,7 @@
 [341. Flatten Nested List Iterator](./leetcode/341-FlattenNestedListIterator.go)   
 [346. Moving Average from Data Stream](./leetcode/346-MovingAverageFromDataStream.go)   
 [348. Design Tic-Tac-Toe](./leetcode/348-DesignTicTacToe.go)   
+[355. Design Twitter](./leetcode/355-DesignTwitter.go)   
 [380. Insert Delete GetRandom O(1)](./leetcode/380-InsertDeleteGetRandomO1.go)   
 [478. Generate Random Point in a Circle](./leetcode/478-GenerateRandomPointInACircle.go)   
 [528. Random Pick with Weight](./leetcode/528-RandomPickWithWeight.go)   
