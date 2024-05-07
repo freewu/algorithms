@@ -82,6 +82,17 @@ func minCostClimbingStairs2(cost []int) int {
     return dp[1]
 }
 
+func minCostClimbingStairs3(cost []int) int {
+    n := len(cost)
+    dp := make([]int,  n + 1)
+    dp[0], dp[1] = 0, 0
+    min := func (x, y int) int { if x < y { return x; }; return y; }
+    for i := 2; i <= n; i++ {
+        dp[i] = min(dp[i-1] + cost[i-1], dp[i-2] + cost[i-2])
+    }
+    return dp[n]
+}
+
 func main() {
     // Explanation: You will start at index 1.
     // - Pay 15 and climb two steps to reach the top.
@@ -102,4 +113,7 @@ func main() {
 
     fmt.Println(minCostClimbingStairs2([]int{10,15,20})) // 15
     fmt.Println(minCostClimbingStairs2([]int{1,100,1,1,1,100,1,1,100,1})) // 6
+
+    fmt.Println(minCostClimbingStairs3([]int{10,15,20})) // 15
+    fmt.Println(minCostClimbingStairs3([]int{1,100,1,1,1,100,1,1,100,1})) // 6
 }
