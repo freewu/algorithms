@@ -30,7 +30,7 @@ import "fmt"
 
 // 暴力解法
 func countGoodTriplets(arr []int, a int, b int, c int) int {
-    abs := func (n int) int { if n < 0 { return -n ; }; return n; }
+    abs := func(x int) int { if x < 0 { return -x; }; return x; }
     res := 0
     for i := 0; i < len(arr); i++ {
         for j := i + 1; j < len(arr); j++ {
@@ -49,9 +49,9 @@ func countGoodTriplets(arr []int, a int, b int, c int) int {
 
 // best solution
 func countGoodTriplets1(arr []int, a int, b int, c int) int {
-    abs := func (n int) int { if n < 0 { return -n; }; return n; }
-    min := func (a int, b int) int { if a < b { return a; }; return b; }
-    max := func (a int, b int) int { if a < b { return b; }; return a; }
+    max := func(x, y int) int { if x > y { return x; }; return y; }
+    min:= func(x, y int) int { if x < y { return x; }; return y; }
+    abs := func(x int) int { if x < 0 { return -x; }; return x; }
     m := arr[0]
     for _, v := range arr {
         if v > m {
