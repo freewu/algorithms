@@ -731,6 +731,7 @@
 [303. Range Sum Query - Immutable](./leetcode/303-RangeSumQuery-Immutable.go)   
 [304. Range Sum Query 2D - Immutable](./leetcode/304-RangeSumQuery2D-Immutable.go)   
 [307. Range Sum Query - Mutable](./leetcode/307-RangeSumQuery-Mutable.go)   
+[341. Flatten Nested List Iterator](./leetcode/341-FlattenNestedListIterator.go)   
 [346. Moving Average from Data Stream](./leetcode/346-MovingAverageFromDataStream.go)   
 [348. Design Tic-Tac-Toe](./leetcode/348-DesignTicTacToe.go)   
 [380. Insert Delete GetRandom O(1)](./leetcode/380-InsertDeleteGetRandomO1.go)   
