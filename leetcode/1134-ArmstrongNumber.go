@@ -7,12 +7,12 @@ package main
 // Example 1:
 // Input: n = 153
 // Output: true
-// Explanation: 153 is a 3-digit number, and 153 = 13 + 53 + 33.
+// Explanation: 153 is a 3-digit number, and 153 = 1^3 + 5^3 + 3^3.
 
 // Example 2:
 // Input: n = 123
 // Output: false
-// Explanation: 123 is a 3-digit number, and 123 != 13 + 23 + 33 = 36.
+// Explanation: 123 is a 3-digit number, and 123 != 1^3 + 2^3 + 3^3 = 36.
  
 // Constraints:
 //     1 <= n <= 10^8
