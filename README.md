@@ -537,12 +537,14 @@
 [160. Intersection of Two Linked Lists](./leetcode/160-IntersectionOfTwoLinkedLists.go)    
 [206. Reverse Linked List](./leetcode/206-ReverseLinkedList.go)    
 [234. Palindrome Linked List](./leetcode/234-PalindromeLinkedList.go)    
-[237. Delete Node in a Linked List](./leetcode/237-DeleteNodeInALinkedList.go)    
-[445. Add Two Numbers II](./leetcode/445-AddTwoNumbersII.go)    
-[876. Middle of the Linked List](./leetcode/876-MiddleOfTheLinkedList.go)    
-[1171. Remove Zero Sum Consecutive Nodes from Linked List](./leetcode/1171-RemoveZeroSumConsecutiveNodesFromLinkedList.go)    
-[1669. Merge In Between Linked Lists](./leetcode/1669-MergeInBetweenLinkedLists.go)    
-[2487. Remove Nodes From Linked List](./leetcode/2487-RemoveNodesFromLinkedList.go)    
+[237. Delete Node in a Linked List](./leetcode/237-DeleteNodeInALinkedList.go)   
+[445. Add Two Numbers II](./leetcode/445-AddTwoNumbersII.go)   
+[876. Middle of the Linked List](./leetcode/876-MiddleOfTheLinkedList.go)   
+[1171. Remove Zero Sum Consecutive Nodes from Linked List](./leetcode/1171-RemoveZeroSumConsecutiveNodesFromLinkedList.go)   
+[1669. Merge In Between Linked Lists](./leetcode/1669-MergeInBetweenLinkedLists.go)   
+[2487. Remove Nodes From Linked List](./leetcode/2487-RemoveNodesFromLinkedList.go)   
+[2816. Double a Number Represented as a Linked List](./leetcode/2816-DoubleANumberRepresentedAsALinkedList.go)   
+
 
 # Enumeration
 [204. Count Primes](./leetcode/204-CountPrimes.go)   
