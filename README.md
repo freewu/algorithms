@@ -244,6 +244,7 @@
 [435. Non-overlapping Intervals](./leetcode/435-Non-overlappingIntervals.go)   
 [436. Find Right Interval](./leetcode/436-FindRightInterval.go)   
 [442. Find All Duplicates in an Array](./leetcode/442-FindAllDuplicatesInAnArray.go)   
+[443. String Compression](./leetcode/443-StringCompression.go)   
 [452. Minimum Number of Arrows to Burst Balloons](./leetcode/452-MinimumNumberOfArrowsToBurstBalloons.go)   
 [454. 4Sum II](./leetcode/454-4SumII.go)    
 [455. Assign Cookies](./leetcode/455-AssignCookies.go)    
