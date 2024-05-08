@@ -367,6 +367,7 @@
 [2071. Maximum Number of Tasks You Can Assign](./leetcode/2071-MaximumNumberOfTasksYouCanAssign.go)   
 [2073. Time Needed to Buy Tickets](./leetcode/2073-TimeNeededToBuyTickets.go)   
 [2079. Watering Plants](./leetcode/2079-WateringPlants.go)   
+[2105. Watering Plants II](./leetcode/2105-WateringPlantsII.go)   
 [2108. Find First Palindromic String in the Array](./leetcode/2108-FindFirstPalindromicStringInTheArray.go)   
 [2140. Solving Questions With Brainpower](./leetcode/2140-SolvingQuestionsWithBrainpower.go)   
 [2149. Rearrange Array Elements by Sign](./leetcode/2149-RearrangeArrayElementsBySign.go)   
