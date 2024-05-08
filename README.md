@@ -483,6 +483,7 @@
 [567. Permutation in String](./leetcode/567-PermutationInString.go)   
 [639. Decode Ways II](./leetcode/639-DecodeWaysII.go)   
 [647. Palindromic Substrings](./leetcode/647-PalindromicSubstrings.go)   
+[649. Dota2 Senate](./leetcode/649-Dota2Senate.go)   
 [657. Robot Return to Origin](./leetcode/657-RobotReturnToOrigin.go)    
 [678. Valid Parenthesis String](./leetcode/678-ValidParenthesisString.go)    
 [709. To Lower Case](./leetcode/709-ToLowerCase.go)    
