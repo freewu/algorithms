@@ -503,6 +503,7 @@
 [1312. Minimum Insertion Steps to Make a String Palindrome](./leetcode/1312-MinimumInsertionStepsToMakeAStringPalindrome.go)    
 [1416. Restore The Array](./leetcode/1416-RestoreTheArray.go)   
 [1422. Maximum Score After Splitting a String](./leetcode/1422-MaximumScoreAfterSplittingAString.go)    
+[1427. Perform String Shifts](./leetcode/1427-PerformStringShifts.go)   
 [1544. Make The String Great](./leetcode/1544-MakeTheStringGreat.go)   
 [1614. Maximum Nesting Depth of the Parentheses](./leetcode/1614-MaximumNestingDepthOfTheParentheses.go)    
 [1702. Maximum Binary String After Change](./leetcode/1702-MaximumBinaryStringAfterChange.go)    
