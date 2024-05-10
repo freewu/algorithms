@@ -531,6 +531,7 @@
 [2864. Maximum Odd Binary Number](./leetcode/2864-MaximumOddBinaryNumber.go)   
 
 # Dynamic Programming
+[276. Paint Fence](./leetcode/276-PaintFence.go)   
 [576. Out of Boundary Paths](./leetcode/576-OutOfBoundaryPaths.go)   
 [629. K Inverse Pairs Array](./leetcode/629-K-InversePairsArray.go)   
 [787. Cheapest Flights Within K Stops](./leetcode/787-CheapestFlightsWithinKStops.go)   
