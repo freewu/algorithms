@@ -299,6 +299,7 @@
 [881. Boats to Save People](./leetcode/881-BoatsToSavePeople.go)    
 [896. Monotonic Array](./leetcode/896-MonotonicArray.go)    
 [909. Snakes and Ladders](./leetcode/909-SnakesAndLadders.go)    
+[912. Sort an Array](./leetcode/912-SortAnArray.go)   
 [918. Maximum Sum Circular Subarray](./leetcode/918-MaximumSumCircularSubarray.go)    
 [930. Binary Subarrays With Sum](./leetcode/930-BinarySubarraysWithSum.go)    
 [931. Minimum Falling Path Sum](./leetcode/931-MinimumFallingPathSum.go)    
@@ -379,6 +380,7 @@
 [2218. Maximum Value of K Coins From Piles](./leetcode/2218-MaximumValueOfKCoinsFromPiles.go)   
 [2300. Successful Pairs of Spells and Potions](./leetcode/2300-SuccessfulPairsOfSpellsAndPotions.go)   
 [2312. Selling Pieces of Wood](./leetcode/2312-SellingPiecesOfWood.go)   
+[2343. Query Kth Smallest Trimmed Number](./leetcode/2343-QueryKthSmallestTrimmedNumber.go)   
 [2368. Reachable Nodes With Restrictions](./leetcode/2368-ReachableNodesWithRestrictions.go)   
 [2369. Check if There is a Valid Partition For The Array](./leetcode/2369-CheckIfThereIsAValidPartitionForTheArray.go)    
 [2386. Find the K-Sum of an Array](./leetcode/2386-FindTheK-SumOfAnArray.go)    
@@ -794,6 +796,7 @@
 # Radix Sort
 [164. Maximum Gap](./leetcode/164-MaximumGap.go)   
 [912. Sort an Array](./leetcode/912-SortAnArray.go)   
+[2343. Query Kth Smallest Trimmed Number](./leetcode/2343-QueryKthSmallestTrimmedNumber.go)   
 
 # Database
 [175. Combine Two Tables](./leetcode/175-CombineTwoTables.sql)   
