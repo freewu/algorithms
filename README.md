@@ -786,6 +786,11 @@
 # Backtracking
 [52. N-Queens II](./leetcode/52-N-QueensII.go)   
 
+# Counting Sort
+[274. H-Index](./leetcode/274-H-Index.go)   
+[561. Array Partition](./leetcode/561-ArrayPartition.go)   
+
+
 # Database
 [175. Combine Two Tables](./leetcode/175-CombineTwoTables.sql)   
 [176. Second Highest Salary](./leetcode/176-SecondHighestSalary.sql)   
