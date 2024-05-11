@@ -780,7 +780,8 @@
 [1472. Design Browser History](./leetcode/1472-DesignBrowserHistory.go)    
 [1483. Kth Ancestor of a Tree Node](./leetcode/1483-KthAncestorOfATreeNode.go)   
 [1600. Throne Inheritance](./leetcode/1600-ThroneInheritance.go)    
-[1603. Design Parking System](./leetcode/1603-DesignParkingSystem.go)    
+[1603. Design Parking System](./leetcode/1603-DesignParkingSystem.go)   
+[2336. Smallest Number in Infinite Set](./leetcode/2336-SmallestNumberInInfiniteSet.go)   
 [2642. Design Graph With Shortest Path Calculator](./leetcode/2642-DesignGraphWithShortestPathCalculator.go)   
 [2671. Frequency Tracker](./leetcode/2671-FrequencyTracker.go)   
 
