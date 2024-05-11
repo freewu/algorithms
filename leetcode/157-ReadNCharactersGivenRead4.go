@@ -13,6 +13,7 @@ package main
 
 // buf4[] is a destination, not a source. The results from read4 will be copied to buf4[].
 // Below is a high-level example of how read4 works:
+// <img src="https://assets.leetcode.com/uploads/2020/07/01/157_example.png" />
 //     File file("abcde"); // File is "abcde", initially file pointer (fp) points to 'a'
 //     char[] buf4 = new char[4]; // Create buffer with enough space to store characters
 //     read4(buf4); // read4 returns 4. Now buf4 = "abcd", fp points to 'e'
