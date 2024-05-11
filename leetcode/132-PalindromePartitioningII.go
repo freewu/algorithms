@@ -63,7 +63,7 @@ func minCut1(s string) int {
     for m := 1; m < len(s); m++ {
         {
             i, j := m, m
-            for i >= 0 && j < len(s) && s[i] == s[j]{
+            for i >= 0 && j < len(s) && s[i] == s[j] {
                 n := 0
                 if i != 0 {
                     n = dp[i - 1] + 1

@@ -460,7 +460,9 @@
 [131. Palindrome Partitioning](./leetcode/131-PalindromePartitioning.go)   
 [132. Palindrome Partitioning II](./leetcode/132-PalindromePartitioningII.go)   
 [139. Word Break](./leetcode/139-WordBreak.go)      
-[151. Reverse Words in a String](./leetcode/151-ReverseWordsInAString.go)    
+[151. Reverse Words in a String](./leetcode/151-ReverseWordsInAString.go)   
+[157. Read N Characters Given Read4](./leetcode/157-ReadNCharactersGivenRead4.go)   
+
 [159. Longest Substring with At Most Two Distinct Characters](./leetcode/159-LongestSubstringWithAtMostTwoDistinctCharacters.go)   
 [161. One Edit Distance](./leetcode/161-OneEditDistance.go)   
 [165. Compare Version Numbers](./leetcode/165-CompareVersionNumbers.go)    
