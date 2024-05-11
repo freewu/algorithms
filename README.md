@@ -749,6 +749,7 @@
 [232. Implement Queue using Stacks](./leetcode/232-ImplementQueueUsingStacks.go)   
 [244. Shortest Word Distance II](./leetcode/244-ShortestWordDistanceII.go)   
 [251. Flatten 2D Vector](./leetcode/251-Flatten2DVector.go)   
+[281. Zigzag Iterator](./leetcode/281-ZigzagIterator.go)   
 [284. Peeking Iterator](./leetcode/284-PeekingIterator.go)   
 [271. Encode and Decode Strings](./leetcode/271-EncodeAndDecodeStrings.go)   
 [295. Find Median from Data Stream](./leetcode/295-FindMedianFromDataStream.go)   
