@@ -360,6 +360,7 @@
 [1732. Find the Highest Altitude](./leetcode/1732-FindTheHighestAltitude.go)   
 [1735. Count Ways to Make Array With Product](./leetcode/1735-CountWaysToMakeArrayWithProduct.go)   
 [1766. Tree of Coprimes](./leetcode/1766-TreeOfCoprimes.go)    
+[1770. Maximum Score from Performing Multiplication Operations](./leetcode/1770-MaximumScoreFromPerformingMultiplicationOperations.go)   
 [1793. Maximum Score of a Good Subarray](./leetcode/1793-MaximumScoreOfAGoodSubarray.go)    
 [1822. Sign of the Product of an Array](./leetcode/1822-SignOfTheProductOfAnArray.go)    
 [1883. Minimum Skips to Arrive at Meeting On Time](./leetcode/1883-MinimumSkipsToArriveAtMeetingOnTime.go)    
