@@ -387,7 +387,8 @@
 [2343. Query Kth Smallest Trimmed Number](./leetcode/2343-QueryKthSmallestTrimmedNumber.go)   
 [2368. Reachable Nodes With Restrictions](./leetcode/2368-ReachableNodesWithRestrictions.go)   
 [2369. Check if There is a Valid Partition For The Array](./leetcode/2369-CheckIfThereIsAValidPartitionForTheArray.go)   
-[2386. Find the K-Sum of an Array](./leetcode/2386-FindTheK-SumOfAnArray.go)    、
+[2373. Largest Local Values in a Matrix](./leetcode/2373-LargestLocalValuesInAMatrix.go)   
+[2386. Find the K-Sum of an Array](./leetcode/2386-FindTheK-SumOfAnArray.go)   
 [2391. Minimum Amount of Time to Collect Garbage](./leetcode/2391-MinimumAmountOfTimeToCollectGarbage.go)   
 [2402. Meeting Rooms III](./leetcode/2402-MeetingRoomsIII.go)    
 [2441. Largest Positive Integer That Exists With Its Negative](./leetcode/2441-LargestPositiveIntegerThatExistsWithItsNegative.go)   
