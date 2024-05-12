@@ -336,6 +336,7 @@
 [1289. Minimum Falling Path Sum II](./leetcode/1289-MinimumFallingPathSumII.go)    
 [1329. Sort the Matrix Diagonally](./leetcode/1329-SortTheMatrixDiagonally.go)    
 [1351. Count Negative Numbers in a Sorted Matrix](./leetcode/1351-CountNegativeNumbersInASortedMatrix.go)   
+[1406. Stone Game III](./leetcode/1406-StoneGameIII.go)   
 [1431. Kids With the Greatest Number of Candies](./leetcode/1431-KidsWithTheGreatestNumberOfCandies.go)    
 [1463. Cherry Pickup II](./leetcode/1463-CherryPickupII.go)   
 [1470. Shuffle the Array](./leetcode/1470-ShuffleTheArray.go)   
