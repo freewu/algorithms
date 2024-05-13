@@ -282,6 +282,7 @@
 [713. Subarray Product Less Than K](./leetcode/713-SubarrayProductLessThanK.go)   
 [714. Best Time to Buy and Sell Stock with Transaction Fee](./leetcode/714-BestTimeToBuyAndSellStockWithTransactionFee.go)    
 [718. Maximum Length of Repeated Subarray](./leetcode/718-MaximumLengthOfRepeatedSubarray.go)    
+[724. Find Pivot Index](./leetcode/724-FindPivotIndex.go)    
 [739. Daily Temperatures](./leetcode/739-DailyTemperatures.go)    
 [740. Delete and Earn](./leetcode/740-DeleteAndEarn.go)    
 [741. Cherry Pickup](./leetcode/741-CherryPickup.go)    
