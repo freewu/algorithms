@@ -343,6 +343,7 @@
 [1431. Kids With the Greatest Number of Candies](./leetcode/1431-KidsWithTheGreatestNumberOfCandies.go)    
 [1463. Cherry Pickup II](./leetcode/1463-CherryPickupII.go)   
 [1470. Shuffle the Array](./leetcode/1470-ShuffleTheArray.go)   
+[1473. Paint House III](./leetcode/1473-PaintHouseIII.go)   
 [1481. Least Number of Unique Integers after K Removals](./leetcode/1481-LeastNumberOfUniqueIntegersAfterKRemovals.go)    
 [1491. Average Salary Excluding the Minimum and Maximum Salary](./leetcode/1491-AverageSalaryExcludingTheMinimumAndMaximumSalary.go)   
 [1493. Longest Subarray of 1's After Deleting One Element](./leetcode/1493-LongestSubarrayOf1sAfterDeletingOneElement.go)   
