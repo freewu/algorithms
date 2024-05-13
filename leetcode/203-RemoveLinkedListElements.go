@@ -125,6 +125,23 @@ func removeElements1(head *ListNode, val int) *ListNode {
     return head
 }
 
+func removeElements2(head *ListNode, val int) *ListNode {
+    dummy := &ListNode{0, head}
+    cur, pre := head, dummy
+    for cur != nil {
+        if cur.Val == val {
+            tmp := cur.Next
+            pre.Next = tmp
+            cur.Next = nil
+            cur = tmp
+        } else {
+            pre = cur
+            cur = cur.Next
+        }
+    }
+    return dummy.Next
+}
+
 func main() {
     // Example 1:
     // 1 -> 2 -> 6 -> 3 -> 4 -> 5 -> 6  =>  1 -> 2  -> 3 -> 4 -> 5 
@@ -156,4 +173,14 @@ func main() {
     l13 := makeListNode([]int{7,7,7,7})
     printListNode(l13)
     printListNode(removeElements(l13,7))
+
+    l21 := makeListNode([]int{1,2,6,3,4,5,6})
+    printListNode(l21)
+    printListNode(removeElements(l21,6))
+    l22 := makeListNode([]int{})
+    printListNode(l22)
+    printListNode(removeElements(l22,1))
+    l23 := makeListNode([]int{7,7,7,7})
+    printListNode(l23)
+    printListNode(removeElements(l23,7))
 }
