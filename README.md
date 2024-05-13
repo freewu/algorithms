@@ -1091,6 +1091,7 @@
 [3124. Find Longest Calls](./leetcode/3124-FindLongestCalls.sql)   
 [3126. Server Utilization Time](./leetcode/3126-ServerUtilizationTime.sql)   
 [3140. Consecutive Available Seats II](./leetcode/3140-ConsecutiveAvailableSeatsII.sql)   
+[3150. Invalid Tweets II](./leetcode/3150-InvalidTweetsII.sql)   
 
 # Shell
 [192. Word Frequency](./leetcode/192-WordFrequency.sh)      
