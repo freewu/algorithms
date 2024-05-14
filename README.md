@@ -735,6 +735,7 @@
 [310. Minimum Height Trees](./leetcode/310-MinimumHeightTrees.go)   
 [323. Number of Connected Components in an Undirected Graph](./leetcode/323-NumberOfConnectedComponentsInAnUndirectedGraph.go)   
 [332. Reconstruct Itinerary](./leetcode/332-ReconstructItinerary.go)   
+[753. Cracking the Safe](./leetcode/753-CrackingTheSafe.go)   
 [924. Minimize Malware Spread](./leetcode/924-MinimizeMalwareSpread.go)    
 [928. Minimize Malware Spread II](./leetcode/928-MinimizeMalwareSpreadII.go)   
 [1466. Reorder Routes to Make All Paths Lead to the City Zero](./leetcode/1466-ReorderRoutesToMakeAllPathsLeadToTheCityZero.go)   
@@ -835,6 +836,7 @@
 
 # Eulerian Circuit
 [332. Reconstruct Itinerary](./leetcode/332-ReconstructItinerary.go)   
+[753. Cracking the Safe](./leetcode/753-CrackingTheSafe.go)   
 
 # Database
 [175. Combine Two Tables](./leetcode/175-CombineTwoTables.sql)   
