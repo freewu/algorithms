@@ -32,6 +32,188 @@ package main
 
 import "fmt"
 import "math"
+// // https://leetcode.cn/problems/s5kipK/solutions/2354044/lcp-54-duo-hui-ju-dian-jie-ti-si-lu-lao-rpxjy/
+// from typing import List
+// from collections import defaultdict
+
+// class Solution:
+//     def minimumCost(self, cost: List[int], roads: List[List[int]]) -> int:
+//         ans = 0
+//         n = len(cost)
+        
+//         adj = defaultdict(list)
+//         for u, v in roads:
+//             adj[u].append(v)
+//             adj[v].append(u)
+        
+//         def tarjan(u, dfn, low, tim, root, cut, vdcc, st):
+//             tim[0] += 1
+//             dfn[u] = low[u] = tim[0]
+//             st.append(u)
+//             child = 0
+            
+//             if not adj[u]:
+//                 vdcc.append([u])
+//                 return
+            
+//             for v in adj[u]:
+//                 if dfn[v]:
+//                     low[u] = min(low[u], dfn[v])
+//                     continue
+                
+//                 tarjan(v, dfn, low, tim, root, cut, vdcc, st)
+//                 low[u] = min(low[u], low[v])
+                
+//                 if low[v] >= dfn[u]:
+//                     child += 1
+//                     if u != root or child > 1:
+//                         cut[u] = 1
+//                     vdcc.append([])
+//                     x = None
+//                     while x != v:
+//                         x = st.pop()
+//                         vdcc[-1].append(x)
+//                     vdcc[-1].append(u)
+        
+//         dfn = [0] * n
+//         low = [0] * n
+//         tim = [0]
+//         root = 0
+//         cut = {}
+//         vdcc = []
+//         st = []
+        
+//         tarjan(root, dfn, low, tim, root, cut, vdcc, st)
+        
+//         cnt = [0] * len(vdcc)
+//         minCost = [float('inf')] * len(vdcc)
+//         for i in range(len(vdcc)):
+//             for x in vdcc[i]:
+//                 if x in cut:
+//                     cnt[i] += 1
+//                 else:
+//                     minCost[i] = min(minCost[i], cost[x])
+        
+//         Max = float('-inf')
+//         for i in range(len(cnt)):
+//             if cnt[i] <= 1:
+//                 ans += minCost[i]
+//                 Max = max(Max, minCost[i])
+        
+//         return ans if len(cnt) == 1 else ans - Max
+
+// func minimumCost(cost []int, roads [][]int) int64 {
+//     res, n := 0, len(cost)
+//     g := [][]int{}
+//     for _,v := range roads {
+//         g[v[0]] = append(g[v[0]],v[1])
+//         g[v[1]] = append(g[v[1]],v[0])
+//     }
+//     fmt.Println(n)
+//     return int64(res)
+// }
+
+// def minimumCost(self, cost: List[int], roads: List[List[int]]) -> int:
+//     n = len(cost)
+//     G = [[] for i in range(n)]
+//     for i,j in roads:
+//         G[i].append(j)
+//         G[j].append(i)
+//     low = [n] * n
+//     seen = {-1: -1}
+//     cut = [0] * n
+//     res = []
+//     inf = float('inf')
+
+//     def tarjan(i, pre):
+//         seen[i] = len(seen) + 1
+//         children = 0
+//         min_cost = inf
+//         count_cut = 0
+//         for j in G[i]:
+//             if j in seen:
+//                 low[i] = min(low[i], seen[j])
+//                 continue
+//             children += 1
+//             cur_cost, cur_cut = tarjan(j, i)
+//             low[i] = min(low[i], low[j])
+//             if seen[i] <= low[j]:
+//                 if i != root or children > 1:
+//                     cut[i] = 1
+//                     cost[i] = inf
+//             if i == root or seen[i] > low[j]:
+//                 min_cost = min(min_cost, cur_cost)
+//                 count_cut += cur_cut
+
+//         min_cost = min(min_cost, cost[i])
+//         count_cut += cut[i] > 0
+
+//         if count_cut + (i != root) < 2 and seen[pre] <= low[i] and cut[i] == 0:
+//             res.append(min_cost)
+//         return [min_cost, count_cut]
+
+//     tarjan(root:= 0, -1)
+//     return sum(res) - max(res)
+
+// func minimumCost(cost []int, roads [][]int) int64 {
+//     n := len(cost)
+//     graph := make([][]int,len(roads) + 1)
+//     for _,v := range roads {
+//         graph[v[0]] = append(graph[v[0]],v[1])
+//         graph[v[1]] = append(graph[v[1]],v[0])
+//     }
+//     low, cut, seen, res := make([]int,n), make([]int,n), make(map[int]int), []int{}
+//     seen[-1] = -1
+//     min := func (x, y int) int { if x < y { return x; }; return y; }
+//     var tarjan func(i, j int) (int, int) 
+//     tarjan = func(i, j int) (int, int) {
+//         seen[i] = len(seen) + 1
+//         children, count_cut, min_cost := 0, 0, math.MaxInt32
+//         for _, v := range graph[i] {
+//             if seen[v] != 0 {
+//                 low[i] = min(low[i], seen[j])
+//                 continue
+//             }
+//             children += 1
+//             cur_cost, cur_cut = tarjan(j, i)
+//             low[i] = min(low[i], low[j])
+//             if seen[i] <= low[j] {
+//                 if i != root || children > 1 {
+//                     cut[i] = 1
+//                     cost[i] = math.MaxInt32
+//                 }
+//             }
+//             if i == root || seen[i] > low[j] {
+//                 min_cost = min(min_cost, cur_cost)
+//                 count_cut += cur_cut
+//             }
+//         }
+//         min_cost = min(min_cost, cost[i])
+//         count_cut += cut[i] > 0
+//         if count_cut + (i != root) < 2 && seen[pre] <= low[i] && cut[i] == 0 {
+//             res = append(res, min_cost)
+//         }
+//         return min_cost, count_cut
+//     }
+//     tarjan(0, -1)
+//     sum := func(nums []int) {
+//         res := 0
+//         for _,v := range nums {
+//             res += v
+//         }
+//         return res
+//     }
+//     max := func(nums []int) {
+//         res := math.MinInt32
+//         for _,v := range nums {
+//             if v > res {
+//                 res = v
+//             }
+//         }
+//         return res
+//     }
+//     return int64(sum(res) - max(res))
+// }
 
 // def minimumCost(self, cost: List[int], roads: List[List[int]]) -> int:
 //     n = len(cost)
@@ -76,32 +258,73 @@ import "math"
 //     return sum(res) - max(res)
 
 func minimumCost(cost []int, roads [][]int) int64 {
-    // n := len(cost)
-    // graph := make([][]int,len(roads) + 1)
-    // for _,v := range roads {
-    //     graph[v[0]] = append(graph[v[0]],v[1])
-    //     graph[v[1]] = append(graph[v[1]],v[0])
-    // }
-    // // G = [[] for i in range(n)]
-    // // for i,j in roads:
-    // //     G[i].append(j)
-    // //     G[j].append(i)
-    // low, cut, seen, res := make([]int,n), make([]int,n), make(make[int]int), []int{}
-    // seen[-1] = -1
-    // min := func (x, y int) int { if x < y { return x; }; return y; }
-    // var tarjan func(i, pre) []int 
-    // tarjan = func(i, pre) []int {
-    //     seen[i] = len(seen) + 1
-    //     children, count_cut,min_cost = 0, 0, math.MaxInt32
-    //     for _, v := range graph[i] {
-    //         if seen[v] != 0 {
-    //             low[i] = min(low[i], seen[j])
-    //             continue
-    //         }
-    //     }
-    // }
-    // return int64(0)
+    n := len(cost)
+    graph := make([][]int,len(roads) + 1)
+    for _,v := range roads {
+        graph[v[0]] = append(graph[v[0]],v[1])
+        graph[v[1]] = append(graph[v[1]],v[0])
+    }
+    low, cut, seen, res := make([]int,n), make([]int,n), make(map[int]int), []int{}
+    seen[-1] = -1
+    min := func (x, y int) int { if x < y { return x; }; return y; }
+    var tarjan func(i, pre, root int) (int, int) 
+    tarjan = func(i, pre, root int) (int, int) {
+        seen[i] = len(seen) + 1
+        children, count_cut, min_cost := 0, 0, math.MaxInt32
+        for _, j := range graph[i] {
+            if seen[j] != 0 {
+                low[i] = min(low[i], seen[j])
+                continue
+            }
+            children += 1
+            cur_cost, cur_cut := tarjan(j, i, root)
+            low[i] = min(low[i], low[j])
+            if seen[i] <= low[j] {
+                if i != root || children > 1 {
+                    cut[i] = 1
+                    cost[i] = math.MaxInt32
+                }
+            }
+            if i == root || seen[i] > low[j] {
+                min_cost = min(min_cost, cur_cost)
+                count_cut += cur_cut
+            }
+        }
+        min_cost = min(min_cost, cost[i])
+        //count_cut += cut[i] > 0
+        if cut[i] > 0 {
+            count_cut++
+        }
+        if i != root {
+            if count_cut < 3 && seen[pre] <= low[i] && cut[i] == 0 {
+                res = append(res, min_cost)
+            }
+        }
+        return min_cost, count_cut
+    }
+    tarjan(0, -1, 0)
+    sum := func(nums []int) int {
+        res := 0
+        for _,v := range nums {
+            res += v
+        }
+        return res
+    }
+    max := func(nums []int) int {
+        res := math.MinInt32
+        for _,v := range nums {
+            if v > res {
+                res = v
+            }
+        }
+        return res
+    }
+    return int64(sum(res) - max(res))
 }
+
+// 作者：Han3000
+// 链接：https://leetcode.cn/problems/s5kipK/solutions/1468501/by-han3000-yb3c/
+
 
 func main() {
     //  解释： 勇者消耗资源 6 夺回据点 0 和 4，魔物据点 1、2、3、5 相连通； 

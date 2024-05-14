@@ -734,6 +734,7 @@
 [210. Course Schedule II](./leetcode/210-CourseScheduleII.go)   
 [310. Minimum Height Trees](./leetcode/310-MinimumHeightTrees.go)   
 [323. Number of Connected Components in an Undirected Graph](./leetcode/323-NumberOfConnectedComponentsInAnUndirectedGraph.go)   
+[332. Reconstruct Itinerary](./leetcode/332-ReconstructItinerary.go)   
 [924. Minimize Malware Spread](./leetcode/924-MinimizeMalwareSpread.go)    
 [928. Minimize Malware Spread II](./leetcode/928-MinimizeMalwareSpreadII.go)   
 [1466. Reorder Routes to Make All Paths Lead to the City Zero](./leetcode/1466-ReorderRoutesToMakeAllPathsLeadToTheCityZero.go)   
@@ -831,6 +832,9 @@
 [164. Maximum Gap](./leetcode/164-MaximumGap.go)   
 [912. Sort an Array](./leetcode/912-SortAnArray.go)   
 [2343. Query Kth Smallest Trimmed Number](./leetcode/2343-QueryKthSmallestTrimmedNumber.go)   
+
+# Eulerian Circuit
+[332. Reconstruct Itinerary](./leetcode/332-ReconstructItinerary.go)   
 
 # Database
 [175. Combine Two Tables](./leetcode/175-CombineTwoTables.sql)   
@@ -1253,7 +1257,6 @@
 [LCP 24. 数字游戏](./leetcode/LCP24-NumberGame.go)   
 [LCP 30. 魔塔游戏](./leetcode/LCP30-MagicTowerGame.go)   
 [LCP 54. 夺回据点](./leetcode/LCP54-RetrieveTheStronghold.go)   
-
 
 # LCS
 [LCS 01. 下载插件](./leetcode/LCS01-DownloadPlugins.go)   
