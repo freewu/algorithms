@@ -345,12 +345,12 @@
 [1463. Cherry Pickup II](./leetcode/1463-CherryPickupII.go)   
 [1470. Shuffle the Array](./leetcode/1470-ShuffleTheArray.go)   
 [1473. Paint House III](./leetcode/1473-PaintHouseIII.go)   
-[1481. Least Number of Unique Integers after K Removals](./leetcode/1481-LeastNumberOfUniqueIntegersAfterKRemovals.go)    
+[1481. Least Number of Unique Integers after K Removals](./leetcode/1481-LeastNumberOfUniqueIntegersAfterKRemovals.go)   
 [1491. Average Salary Excluding the Minimum and Maximum Salary](./leetcode/1491-AverageSalaryExcludingTheMinimumAndMaximumSalary.go)   
 [1493. Longest Subarray of 1's After Deleting One Element](./leetcode/1493-LongestSubarrayOf1sAfterDeletingOneElement.go)   
 [1498. Number of Subsequences That Satisfy the Given Sum Condition](./leetcode/1498-NumberOfSubsequencesThatSatisfyTheGivenSumCondition.go)   
-[1502. Can Make Arithmetic Progression From Sequence](./leetcode/1502-CanMakeArithmeticProgressionFromSequence.go)    
-[1512. Number of Good Pairs](./leetcode/1512-NumberOfGoodPairs.go)    
+[1502. Can Make Arithmetic Progression From Sequence](./leetcode/1502-CanMakeArithmeticProgressionFromSequence.go)   
+[1512. Number of Good Pairs](./leetcode/1512-NumberOfGoodPairs.go)   
 [1533. Find the Index of the Large Integer](./leetcode/1533-FindTheIndexOfTheLargeInteger.go)    
 [1534. Count Good Triplets](./leetcode/1534-CountGoodTriplets.go)   
 [1538. Guess the Majority in a Hidden Array](./leetcode/1538-GuessTheMajorityInAHiddenArray.go)   
@@ -598,7 +598,6 @@
 [2487. Remove Nodes From Linked List](./leetcode/2487-RemoveNodesFromLinkedList.go)   
 [2816. Double a Number Represented as a Linked List](./leetcode/2816-DoubleANumberRepresentedAsALinkedList.go)   
 
-
 # Enumeration
 [204. Count Primes](./leetcode/204-CountPrimes.go)   
 [1291. Sequential Digits](./leetcode/1291-SequentialDigits.go)   
@@ -647,7 +646,8 @@
 [1259. Handshakes That Don't Cross](./leetcode/1259-HandshakesThatDontCross.go)    
 [1281. Subtract the Product and Sum of Digits of an Integer](./leetcode/1281-SubtractTheProductAndSumOfDigitsOfAnInteger.go)    
 [1486. XOR Operation in an Array](./leetcode/1486-XOROperationInAnArray.go)    
-[1492. The kth Factor of n](./leetcode/1492-TheKthFactorOfN.go)    
+[1492. The kth Factor of n](./leetcode/1492-TheKthFactorOfN.go)   
+[1510. Stone Game IV](./leetcode/1510-StoneGameIV.go)   
 [1512. Number of Good Pairs](./leetcode/1512-NumberOfGoodPairs.go)    
 [1523. Count Odd Numbers in an Interval Range](./leetcode/1523-CountOddNumbersInAnIntervalRange.go)    
 [2235. Add Two Integers](./leetcode/2235-AddTwoIntegers.go)    
