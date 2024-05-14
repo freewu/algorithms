@@ -594,6 +594,7 @@
 [1171. Remove Zero Sum Consecutive Nodes from Linked List](./leetcode/1171-RemoveZeroSumConsecutiveNodesFromLinkedList.go)   
 [1669. Merge In Between Linked Lists](./leetcode/1669-MergeInBetweenLinkedLists.go)   
 [2095. Delete the Middle Node of a Linked List](./leetcode/2095-DeleteTheMiddleNodeOfALinkedList.go)   
+[2130. Maximum Twin Sum of a Linked List](./leetcode/2130-MaximumTwinSumOfALinkedList.go)   
 [2487. Remove Nodes From Linked List](./leetcode/2487-RemoveNodesFromLinkedList.go)   
 [2816. Double a Number Represented as a Linked List](./leetcode/2816-DoubleANumberRepresentedAsALinkedList.go)   
 
