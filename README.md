@@ -375,6 +375,7 @@
 [1883. Minimum Skips to Arrive at Meeting On Time](./leetcode/1883-MinimumSkipsToArriveAtMeetingOnTime.go)    
 [1870. Minimum Speed to Arrive on Time](./leetcode/1870-MinimumSpeedToArriveOnTime.go)   
 [1926. Nearest Exit from Entrance in Maze](./leetcode/1926-NearestExitFromEntranceInMaze.go)   
+[1953. Maximum Number of Weeks for Which You Can Work](./leetcode/1953-MaximumNumberOfWeeksForWhichYouCanWork.go)   
 [1964. Find the Longest Valid Obstacle Course at Each Position](./leetcode/1964-FindTheLongestValidObstacleCourseAtEachPosition.go)    
 [1969. Minimum Non-Zero Product of the Array Elements](./leetcode/1969-MinimumNonZeroProductOfTheArrayElements.go)    
 [1979. Find Greatest Common Divisor of Array](./leetcode/1979-FindGreatestCommonDivisorOfArray.go)   
@@ -833,6 +834,31 @@
 # Backtracking
 [52. N-Queens II](./leetcode/52-N-QueensII.go)   
 
+# QuickSelect
+[215. Kth Largest Element in an Array](./leetcode/215-KthLargestElementInAnArray.go)   
+[324. Wiggle Sort II](./leetcode/324-WiggleSortII.go)   
+[347. Top K Frequent Elements](./leetcode/347-TopKFrequentElements.go)   
+973. K Closest Points to Origin	
+1738. Find Kth Largest XOR Coordinate Value	
+1985. Find the Kth Largest Integer in the Array
+[2343. Query Kth Smallest Trimmed Number](./leetcode/2343-QueryKthSmallestTrimmedNumber.go)   
+[LCR 060. 前 K 个高频元素](./leetcode/LCR060-TopKFrequentWords.go)   
+LCR 076. 数组中的第 K 个最大元素	
+LCR 159. 库存管理 III	
+面试题 17.14. Smallest K LCCI
+
+# Iterator
+[173. Binary Search Tree Iterator](./leetcode/173-BinarySearchTreeIterator.go)   
+[251. Flatten 2D Vector](./leetcode/251-Flatten2DVector.go)   
+[281. Zigzag Iterator](./leetcode/281-ZigzagIterator.go)   
+[284. Peeking Iterator](./leetcode/284-PeekingIterator.go)   
+[341. Flatten Nested List Iterator](./leetcode/341-FlattenNestedListIterator.go)   
+[604. Design Compressed String Iterator](./leetcode/604-DesignCompressedStringIterator.go)   
+900. RLE Iterator	
+1286. Iterator for Combination
+1586. Binary Search Tree Iterator II
+LCR 055. 二叉搜索树迭代器
+
 # Probability & Statistics
 [470. Implement Rand10() Using Rand7()](./leetcode/470-ImplementRand10UsingRand7.go)   
 808. Soup Servings
@@ -843,7 +869,6 @@
 1467. Probability of a Two Boxes Having The Same Number of Distinct Balls
 LCP 11. 期望个数统计
 LCR 185. 统计结果概率
-
 
 # Bucket Sort
 [164. Maximum Gap](./leetcode/164-MaximumGap.go)   
@@ -866,6 +891,10 @@ LCR 185. 统计结果概率
 # Counting Sort
 [274. H-Index](./leetcode/274-H-Index.go)   
 [561. Array Partition](./leetcode/561-ArrayPartition.go)   
+[912. Sort an Array](./leetcode/912-SortAnArray.go)   
+1051. Height Checker
+1122. Relative Sort Array
+LCR 075. 数组的相对排序
 
 # Minimum Spanning Tree
 1135. Connecting Cities With Minimum Cost
@@ -890,7 +919,6 @@ LCR 185. 统计结果概率
 1489. Find Critical and Pseudo-Critical Edges in Minimum Spanning Tree
 1568. Minimum Number of Days to Disconnect Island
 [2846. Minimum Edge Weight Equilibrium Queries in a Tree](./leetcode/2846-MinimumEdgeWeightEquilibriumQueriesInATree.go)   
-
 
 # Eulerian Circuit
 [332. Reconstruct Itinerary](./leetcode/332-ReconstructItinerary.go)   
