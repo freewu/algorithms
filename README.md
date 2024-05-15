@@ -625,6 +625,7 @@
 [166. Fraction to Recurring Decimal](./leetcode/166-FractionToRecurringDecimal.go)    
 [172. Factorial Trailing Zeroes](./leetcode/172-FactorialTrailingZeroes.go)    
 [202. Happy Number](./leetcode/202-HappyNumber.go)    
+[223. Rectangle Area](./leetcode/223-RectangleArea.go)    
 [231. Power of Two](./leetcode/231-PowerOfTwo.go)    
 [258. Add Digits](./leetcode/258-AddDigits.go)    
 [263. Ugly Number](./leetcode/263-UglyNumber.go)    
