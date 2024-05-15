@@ -1,28 +1,27 @@
 package main
 
-// 220. Contains Duplicate III
-// Given an integer array nums and two integers k and t,
-// return true if there are two distinct indices i and j in the array such that abs(nums[i] - nums[j]) <= t and abs(i - j) <= k.
+// LCR 057. 存在重复元素 III
+// 给你一个整数数组 nums 和两个整数 k 和 t 。
+// 请你判断是否存在 两个不同下标 i 和 j，使得 abs(nums[i] - nums[j]) <= t ，同时又满足 abs(i - j) <= k 。
+// 如果存在则返回 true，不存在返回 false。
 
-// Example 1:
-// Input: nums = [1,2,3,1], k = 3, t = 0
-// Output: true
+// 示例 1：
+// 输入：nums = [1,2,3,1], k = 3, t = 0
+// 输出：true
 
-// Example 2:
-// Input: nums = [1,0,1,1], k = 1, t = 2
-// Output: true
+// 示例 2：
+// 输入：nums = [1,0,1,1], k = 1, t = 2
+// 输出：true
 
-// Example 3:
-// Input: nums = [1,5,9,1,5,9], k = 2, t = 3
-// Output: false
-
-// Constraints:
-//     1 <= nums.length <= 2 * 10^4
+// 示例 3：
+// 输入：nums = [1,5,9,1,5,9], k = 2, t = 3
+// 输出：false
+ 
+// 提示：
+//     0 <= nums.length <= 2 * 10^4
 //     -2^31 <= nums[i] <= 2^31 - 1
 //     0 <= k <= 10^4
 //     0 <= t <= 2^31 - 1
-
-// 在 num 中能否找到一组 i 和 j，使得 num[i] 和 num[j] 的绝对差值最大为 t，并且 i 和 j 之前的绝对差值最大为 k。
 
 import "fmt"
 

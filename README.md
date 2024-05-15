@@ -827,15 +827,43 @@
 [157. Read N Characters Given Read4](./leetcode/157-ReadNCharactersGivenRead4.go)   
 [158. Read N Characters Given read4 II - Call Multiple Times](./leetcode/158-ReadNCharactersGivenRead4II-CallMultipleTimes.go)   
 
-# Biconnected Component
-[1192. Critical Connections in a Network](./leetcode/1192-CriticalConnectionsInANetwork.go)   
-
 # Backtracking
 [52. N-Queens II](./leetcode/52-N-QueensII.go)   
+
+# Bucket Sort
+[164. Maximum Gap](./leetcode/164-MaximumGap.go)   
+[220. Contains Duplicate III](./leetcode/220-ContainsDuplicateIII.go)   
+[347. Top K Frequent Elements](./leetcode/347-TopKFrequentElements.go)   
+[451. Sort Characters By Frequency](./leetcode/451-SortCharactersByFrequency.go)   
+692. Top K Frequent Words
+[912. Sort an Array](./leetcode/912-SortAnArray.go)   
+[LCR 057. 存在重复元素 III](./leetcode/LCR057-ContainsDuplicateIII.go)   
+LCR 060. 前 K 个高频元素
+
+# Suffix Array
+1044. Longest Duplicate Substring
+1062. Longest Repeating Substring
+1698. Number of Distinct Substrings in a String
+1923. Longest Common Subpath
+1977. Number of Ways to Separate Numbers
+2223. Sum of Scores of Built Strings
 
 # Counting Sort
 [274. H-Index](./leetcode/274-H-Index.go)   
 [561. Array Partition](./leetcode/561-ArrayPartition.go)   
+
+# Minimum Spanning Tree
+1135. Connecting Cities With Minimum Cost
+1168. Optimize Water Distribution in a Village
+1489. Find Critical and Pseudo-Critical Edges in Minimum Spanning Tree
+1584. Min Cost to Connect All Points
+1724. Checking Existence of Edge Length Limited Paths II
+
+# Line Sweep
+[218. The Skyline Problem](./leetcode/218-TheSkylineProblem.go)   
+391. Perfect Rectangle
+850. Rectangle Area II
+1851. Minimum Interval to Include Eac
 
 # Reservoir Sampling
 382. Linked List Random Node
@@ -846,15 +874,20 @@
 # Strongly Connected Component
 [2846. Minimum Edge Weight Equilibrium Queries in a Tree](./leetcode/2846-MinimumEdgeWeightEquilibriumQueriesInATree.go)   
 
-# Radix Sort
-[164. Maximum Gap](./leetcode/164-MaximumGap.go)   
-[912. Sort an Array](./leetcode/912-SortAnArray.go)   
-[2343. Query Kth Smallest Trimmed Number](./leetcode/2343-QueryKthSmallestTrimmedNumber.go)   
 
 # Eulerian Circuit
 [332. Reconstruct Itinerary](./leetcode/332-ReconstructItinerary.go)   
 [753. Cracking the Safe](./leetcode/753-CrackingTheSafe.go)   
 [2097. Valid Arrangement of Pairs](./leetcode/2097-ValidArrangementOfPairs.go)   
+
+# Radix Sort
+[164. Maximum Gap](./leetcode/164-MaximumGap.go)   
+[912. Sort an Array](./leetcode/912-SortAnArray.go)   
+[2343. Query Kth Smallest Trimmed Number](./leetcode/2343-QueryKthSmallestTrimmedNumber.go)   
+
+# Biconnected Component
+[1192. Critical Connections in a Network](./leetcode/1192-CriticalConnectionsInANetwork.go)   
+[LCP 54. 夺回据点](./leetcode/LCP54-RetrieveTheStronghold.go)   
 
 # Rejection Sampling
 [470. Implement Rand10() Using Rand7()](./leetcode/470-ImplementRand10UsingRand7.go)   
@@ -1274,6 +1307,7 @@
 [LCR 005. 最大单词长度乘积](./leetcode/LCR005-ProductOfMaximumWordLength.go)   
 [LCR 006. 两数之和 II - 输入有序数组](./leetcode/LCR006-TwoSumII.go)   
 [LCR 038. 每日温度](./leetcode/LCR038-DailyTemperatures.go)   
+[LCR 057. 存在重复元素 III](./leetcode/LCR057-ContainsDuplicateIII.go)   
 
 # LCP
 [LCP 01. 猜数字](./leetcode/LCP01-GuessNumbers.go)   
