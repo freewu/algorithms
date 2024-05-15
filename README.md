@@ -501,6 +501,7 @@
 [315. Count of Smaller Numbers After Self](./leetcode/315-CountOfSmallerNumbersAfterSelf.go)    
 [316. Remove Duplicate Letters](./leetcode/316-RemoveDuplicateLetters.go)    
 [331. Verify Preorder Serialization of a Binary Tree](./leetcode/331-VerifyPreorderSerializationOfABinaryTree.go)   
+[340. Longest Substring with At Most K Distinct Characters](./leetcode/340-LongestSubstringWithAtMostKDistinctCharacters.go)   
 [344. Reverse String](./leetcode/344-ReverseString.go)   
 [345. Reverse Vowels of a String](./leetcode/345-ReverseVowelsOfAString.go)   
 [383. Ransom Note](./leetcode/383-RansomNote.go)   
