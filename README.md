@@ -488,6 +488,7 @@
 [186. Reverse Words in a String II](./leetcode/186-ReverseWordsInAStringII.go)   
 [187. Repeated DNA Sequences](./leetcode/187-RepeatedDNASequences.go)   
 [205. Isomorphic Strings](./leetcode/205-IsomorphicStrings.go)   
+[214. Shortest Palindrome](./leetcode/214-ShortestPalindrome.go)   
 [224. Basic Calculator](./leetcode/224-BasicCalculator.go)    
 [227. Basic Calculator II](./leetcode/227-BasicCalculatorII.go)    
 [242. Valid Anagram](./leetcode/242-ValidAnagram.go)   
@@ -831,6 +832,18 @@
 # Backtracking
 [52. N-Queens II](./leetcode/52-N-QueensII.go)   
 
+# Probability & Statistics
+[470. Implement Rand10() Using Rand7()](./leetcode/470-ImplementRand10UsingRand7.go)   
+808. Soup Servings
+837. New 21 Game	
+1093. Statistics from a Large Sample
+1227. Airplane Seat Assignment Probability
+[1230. Toss Strange Coins](./leetcode/1230-TossStrangeCoins.go)   
+1467. Probability of a Two Boxes Having The Same Number of Distinct Balls
+LCP 11. 期望个数统计
+LCR 185. 统计结果概率
+
+
 # Bucket Sort
 [164. Maximum Gap](./leetcode/164-MaximumGap.go)   
 [220. Contains Duplicate III](./leetcode/220-ContainsDuplicateIII.go)   
@@ -873,6 +886,8 @@
 519. Random Flip Matrix
 
 # Strongly Connected Component
+1489. Find Critical and Pseudo-Critical Edges in Minimum Spanning Tree
+1568. Minimum Number of Days to Disconnect Island
 [2846. Minimum Edge Weight Equilibrium Queries in a Tree](./leetcode/2846-MinimumEdgeWeightEquilibriumQueriesInATree.go)   
 
 
