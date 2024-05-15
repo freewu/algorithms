@@ -839,7 +839,7 @@
 [692. Top K Frequent Words](./leetcode/692-TopKFrequentWords.go)   
 [912. Sort an Array](./leetcode/912-SortAnArray.go)   
 [LCR 057. 存在重复元素 III](./leetcode/LCR057-ContainsDuplicateIII.go)   
-LCR 060. 前 K 个高频元素
+[LCR 060. 前 K 个高频元素](./leetcode/LCR060-TopKFrequentWords.go)   
 
 # Suffix Array
 1044. Longest Duplicate Substring
@@ -1309,6 +1309,7 @@ LCR 060. 前 K 个高频元素
 [LCR 006. 两数之和 II - 输入有序数组](./leetcode/LCR006-TwoSumII.go)   
 [LCR 038. 每日温度](./leetcode/LCR038-DailyTemperatures.go)   
 [LCR 057. 存在重复元素 III](./leetcode/LCR057-ContainsDuplicateIII.go)   
+[LCR 060. 前 K 个高频元素](./leetcode/LCR060-TopKFrequentElements.go)   
 
 # LCP
 [LCP 01. 猜数字](./leetcode/LCP01-GuessNumbers.go)   

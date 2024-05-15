@@ -1,47 +1,41 @@
 package main
 
-// 347. Top K Frequent Elements
-// Given an integer array nums and an integer k, return the k most frequent elements. 
-// You may return the answer in any order.
+// LCR 060. 前 K 个高频元素
+// 给定一个整数数组 nums 和一个整数 k ，请返回其中出现频率前 k 高的元素。可以按 任意顺序 返回答案。
 
-// Example 1:
-// Input: nums = [1,1,1,2,2,3], k = 2
-// Output: [1,2]
+// 示例 1:
+// 输入: nums = [1,1,1,2,2,3], k = 2
+// 输出: [1,2]
 
-// Example 2:
-// Input: nums = [1], k = 1
-// Output: [1]
+// 示例 2:
+// 输入: nums = [1], k = 1
+// 输出: [1]
+
+// 提示：
+// 1 <= nums.length <= 10^5
+// k 的取值范围是 [1, 数组中不相同的元素的个数]
+// 题目数据保证答案唯一，换句话说，数组中前 k 个高频元素的集合是唯一的
  
-// Constraints:
-//     1 <= nums.length <= 10^5
-//     -10^4 <= nums[i] <= 10^4
-//     k is in the range [1, the number of unique elements in the array].
-//     It is guaranteed that the answer is unique.
-
-// Follow up: Your algorithm's time complexity must be better than O(n log n), where n is the array's size.
+// 进阶：所设计算法的时间复杂度 必须 优于 O(n log n) ，其中 n 是数组大小。 
 
 import "fmt"
 import "slices"
 
 func topKFrequent(nums []int, k int) []int {
-    // 先统计频率
     m := make(map[int]int,0) 
-    for _, v := range nums {
+    for _, v := range nums { // 先统计频率
         m[v]++
     }
     arr := [][]int{}
-    // 将 map 转成数组
-    for k,v := range m {
+    for k,v := range m { // 将 map 转成数组
         arr = append(arr,[]int{k,v})
     }
-    // 排序
-    slices.SortFunc(arr, func(a1, a2 []int) int {
+    slices.SortFunc(arr, func(a1, a2 []int) int { // 排序
         return a2[1] - a1[1]
-    })
-    // 取 top k
+    }) 
     res := []int{}
     for _, v := range arr {
-        if len(res) == k {
+        if len(res) == k { // 取 top k
             break
         }
         res = append(res,v[0])
@@ -50,12 +44,11 @@ func topKFrequent(nums []int, k int) []int {
 }
 
 func topKFrequent1(nums []int, k int) []int {
-    var frequency map[int]int = make(map[int]int)
-    for _, v := range nums {
+    frequency := make(map[int]int)
+    for _, v := range nums { // 统计元素出现频次
         frequency[v] += 1
     }
-    var bucket [][]int = make([][]int, len(nums)+1)
-    var res []int
+    res, bucket := []int{}, make([][]int, len(nums)+1)
     for k, v := range frequency {
         bucket[v] = append(bucket[v], k)
     }
@@ -86,7 +79,7 @@ func topKFrequent2(nums []int, k int) []int {
 }
 
 func main() {
-    fmt.Println(topKFrequent([]int{1,1,1,2,2,3},2)) // [1,2]
+    fmt.Println(topKFrequent([]int{1,1,1,2,2,3}, 2)) // [1,2]
     fmt.Println(topKFrequent([]int{1},1)) // [1]
 
     fmt.Println(topKFrequent1([]int{1,1,1,2,2,3},2)) // [1,2]
