@@ -550,6 +550,7 @@
 [2000. Reverse Prefix of Word](./leetcode/2000-ReversePrefixOfWord.go)   
 [2129. Capitalize the Title](./leetcode/2129-CapitalizeTheTitle.go)   
 [2370. Longest Ideal Subsequence](./leetcode/2370-LongestIdealSubsequence.go)   
+[2390. Removing Stars From a String](./leetcode/2390-RemovingStarsFromAString.go)   
 [2575. Find the Divisibility Array of a String](./leetcode/2575-FindTheDivisibilityArrayOfAString.go)    
 [2586. Count the Number of Vowel Strings in Range](./leetcode/2586-CountTheNumberOfVowelStringsInRange.go)   
 [2810. Faulty Keyboard](./leetcode/2810-FaultyKeyboard.go)   
