@@ -253,6 +253,7 @@
 [474. Ones and Zeroes](./leetcode/474-OnesAndZeroes.go)    
 [480. Sliding Window Median](./leetcode/480-SlidingWindowMedian.go)    
 [486. Predict the Winner](./leetcode/486-PredictTheWinner.go)    
+[487. Max Consecutive Ones II](./leetcode/487-MaxConsecutiveOnesII.go)    
 [493. Reverse Pairs](./leetcode/493-ReversePairs.go)    
 [494. Target Sum](./leetcode/494-TargetSum.go)    
 [498. Diagonal Traverse](./leetcode/498-DiagonalTraverse.go)    
