@@ -343,6 +343,7 @@
 [1283. Find the Smallest Divisor Given a Threshold](./leetcode/1283-FindTheSmallestDivisorGivenAThreshold.go)    
 [1289. Minimum Falling Path Sum II](./leetcode/1289-MinimumFallingPathSumII.go)    
 [1329. Sort the Matrix Diagonally](./leetcode/1329-SortTheMatrixDiagonally.go)    
+[1335. Minimum Difficulty of a Job Schedule](./leetcode/1335-MinimumDifficultyOfAJobSchedule.go)    
 [1351. Count Negative Numbers in a Sorted Matrix](./leetcode/1351-CountNegativeNumbersInASortedMatrix.go)   
 [1406. Stone Game III](./leetcode/1406-StoneGameIII.go)   
 [1431. Kids With the Greatest Number of Candies](./leetcode/1431-KidsWithTheGreatestNumberOfCandies.go)    
