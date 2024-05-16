@@ -62,6 +62,24 @@ func pathSum(root *TreeNode, targetSum int) int {
     return res
 }
 
+func pathSum1(root *TreeNode, targetSum int) int {
+    res, m := 0, map[int]int{0:1}
+    var dfs func(*TreeNode, int)
+    dfs = func(root *TreeNode, cur int) {
+        if root == nil {
+            return
+        }
+        cur += root.Val
+        res += m[cur - targetSum]
+        m[cur]++
+        defer func() {m[cur]--}()
+        dfs(root.Left, cur)
+        dfs(root.Right, cur)
+    }
+    dfs(root, 0)
+    return res
+}
+
 func main() {
     tree1 := &TreeNode {
         10,
@@ -107,4 +125,7 @@ func main() {
     }
     fmt.Println(pathSum(tree1,8)) // 3
     fmt.Println(pathSum(tree2,22)) // 3
+
+    fmt.Println(pathSum1(tree1,8)) // 3
+    fmt.Println(pathSum1(tree2,22)) // 3
 }

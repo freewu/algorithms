@@ -35,7 +35,7 @@ type TreeNode struct {
  * }
  */
 // dfs
-func maxDepth(root *TreeNode) int {
+func maxDepth3(root *TreeNode) int {
     res := 0
     var dfs func (node *TreeNode, count int)
     dfs = func (node *TreeNode, count int) {
@@ -84,6 +84,20 @@ func maxDepth2(root *TreeNode) int {
     return max(l,r)
 }
 
+// 递归
+func maxDepth(root *TreeNode) int {
+    if root == nil {
+        return 0
+    }
+    leftDepth := maxDepth(root.Left)
+    rightDepth := maxDepth(root.Right)
+    if leftDepth < rightDepth {
+        return rightDepth + 1
+    } else {
+        return leftDepth + 1
+    }
+}
+
 func main() {
     tree1 := &TreeNode {
         3,
@@ -108,4 +122,7 @@ func main() {
 
     fmt.Println(maxDepth2(tree1)) // 3
     fmt.Println(maxDepth2(tree2)) // 2
+
+    fmt.Println(maxDepth3(tree1)) // 3
+    fmt.Println(maxDepth3(tree2)) // 2
 }
