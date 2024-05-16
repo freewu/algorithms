@@ -295,6 +295,7 @@
 [785. Is Graph Bipartite?](./leetcode/785-IsGraphBipartite.go)   
 [786. K-th Smallest Prime Fraction](./leetcode/786-KthSmallestPrimeFraction.go)   
 [797. All Paths From Source to Target](./leetcode/797-AllPathsFromSourceToTarget.go)   
+[826. Most Profit Assigning Work](./leetcode/826-MostProfitAssigningWork.go)   
 [841. Keys and Rooms](./leetcode/841-KeysAndRooms.go)   
 [852. Peak Index in a Mountain Array](./leetcode/852-PeakIndexInAMountainArray.go)    
 [857. Minimum Cost to Hire K Workers](./leetcode/857-MinimumCostToHireKWorkers.go)    
