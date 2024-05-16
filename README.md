@@ -493,6 +493,7 @@
 [214. Shortest Palindrome](./leetcode/214-ShortestPalindrome.go)   
 [224. Basic Calculator](./leetcode/224-BasicCalculator.go)    
 [227. Basic Calculator II](./leetcode/227-BasicCalculatorII.go)    
+[241. Different Ways to Add Parentheses](./leetcode/241-DifferentWaysToAddParentheses.go)   
 [242. Valid Anagram](./leetcode/242-ValidAnagram.go)   
 [246. Strobogrammatic Number](./leetcode/246-StrobogrammaticNumber.go)   
 [290. Word Pattern](./leetcode/290-WordPattern.go)    
