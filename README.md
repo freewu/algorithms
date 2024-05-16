@@ -632,6 +632,7 @@
 [202. Happy Number](./leetcode/202-HappyNumber.go)    
 [223. Rectangle Area](./leetcode/223-RectangleArea.go)    
 [231. Power of Two](./leetcode/231-PowerOfTwo.go)    
+[233. Number of Digit One](./leetcode/233-NumberOfDigitOne.go)    
 [258. Add Digits](./leetcode/258-AddDigits.go)    
 [263. Ugly Number](./leetcode/263-UglyNumber.go)    
 [264. Ugly Number II](./leetcode/264-UglyNumberII.go)    
