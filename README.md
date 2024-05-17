@@ -506,6 +506,7 @@
 [290. Word Pattern](./leetcode/290-WordPattern.go)    
 [299. Bulls and Cows](./leetcode/299-BullsAndCows.go)    
 [301. Remove Invalid Parentheses](./leetcode/301-RemoveInvalidParentheses.go)   
+[306. Additive Number](./leetcode/306-AdditiveNumber.go)   
 [315. Count of Smaller Numbers After Self](./leetcode/315-CountOfSmallerNumbersAfterSelf.go)    
 [316. Remove Duplicate Letters](./leetcode/316-RemoveDuplicateLetters.go)    
 [331. Verify Preorder Serialization of a Binary Tree](./leetcode/331-VerifyPreorderSerializationOfABinaryTree.go)   
