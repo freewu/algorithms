@@ -502,6 +502,7 @@
 [246. Strobogrammatic Number](./leetcode/246-StrobogrammaticNumber.go)   
 [247. Strobogrammatic Number II](./leetcode/247-StrobogrammaticNumberII.go)   
 [248. Strobogrammatic Number III](./leetcode/248-StrobogrammaticNumberIII.go)   
+[282. Expression Add Operators](./leetcode/282-ExpressionAddOperators.go)    
 [290. Word Pattern](./leetcode/290-WordPattern.go)    
 [299. Bulls and Cows](./leetcode/299-BullsAndCows.go)    
 [301. Remove Invalid Parentheses](./leetcode/301-RemoveInvalidParentheses.go)   
