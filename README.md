@@ -229,6 +229,7 @@
 [334. Increasing Triplet Subsequence](./leetcode/334-IncreasingTripletSubsequence.go)   
 [347. Top K Frequent Elements](./leetcode/347-TopKFrequentElements.go)   
 [349. Intersection of Two Arrays](./leetcode/349-IntersectionOfTwoArrays.go)   
+[350. Intersection of Two Arrays II](./leetcode/350-IntersectionOfTwoArraysII.go)   
 [354. Russian Doll Envelopes](./leetcode/354-RussianDollEnvelopes.go)   
 [368. Largest Divisible Subset](./leetcode/368-LargestDivisibleSubset.go)   
 [373. Find K Pairs with Smallest Sums](./leetcode/373-FindKPairsWithSmallestSums.go)   
