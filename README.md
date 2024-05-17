@@ -748,6 +748,7 @@
 [1038. Binary Search Tree to Greater Sum Tree](./leetcode/1038-BinarySearchTreeToGreaterSumTree.go)   
 [1261. Find Elements in a Contaminated Binary Tree](./leetcode/1261-FindElementsInAContaminatedBinaryTree.go)   
 [1325. Delete Leaves With a Given Value](./leetcode/1325-DeleteLeavesWithAGivenValue.go)   
+[1372. Longest ZigZag Path in a Binary Tree](./leetcode/1372-LongestZigZagPathInABinaryTree.go)   
 [1379. Find a Corresponding Node of a Binary Tree in a Clone of That Tree](./leetcode/1379-FindACorrespondingNodeOfABinaryTreeInACloneOfThatTree.go)   
 [1483. Kth Ancestor of a Tree Node](./leetcode/1483-KthAncestorOfATreeNode.go)   
 [1506. Find Root of N-Ary Tree](./leetcode/1506-FindRootOfN-AryTree.go)   
