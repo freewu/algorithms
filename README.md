@@ -820,6 +820,7 @@
 [588. Design In-Memory File System](./leetcode/588-DesignIn-MemoryFileSystem.go)   
 [604. Design Compressed String Iterator](./leetcode/604-DesignCompressedStringIterator.go)   
 [622. Design Circular Queue](./leetcode/622-DesignCircularQueue.go)   
+[642. Design Search Autocomplete System](./leetcode/642-DesignSearchAutocompleteSystem.go)   
 [705. Design HashSet](./leetcode/705-DesignHashSet.go)    
 [706. Design HashMap](./leetcode/706-DesignHashMap.go)    
 [707. Design Linked List](./leetcode/707-DesignLinkedList.go)   
