@@ -362,6 +362,7 @@
 [1534. Count Good Triplets](./leetcode/1534-CountGoodTriplets.go)   
 [1538. Guess the Majority in a Hidden Array](./leetcode/1538-GuessTheMajorityInAHiddenArray.go)   
 [1539. Kth Missing Positive Number](./leetcode/1539-KthMissingPositiveNumber.go)   
+[1547. Minimum Cost to Cut a Stick](./leetcode/1547-MinimumCostToCutAStick.go)    
 [1572. Matrix Diagonal Sum](./leetcode/1572-MatrixDiagonalSum.go)    
 [1631. Path With Minimum Effort](./leetcode/1631-PathWithMinimumEffort.go)    
 [1642. Furthest Building You Can Reach](./leetcode/1642-FurthestBuildingYouCanReach.go)   
