@@ -658,6 +658,7 @@
 [651. 4 Keys Keyboard](./leetcode/651-4KeysKeyboard.go)   
 [670. Maximum Swap](./leetcode/670-MaximumSwap.go)    
 [887. Super Egg Drop](./leetcode/887-SuperEggDrop.go)    
+[1006. Clumsy Factorial](./leetcode/1006-ClumsyFactorial.go)   
 [1017. Convert to Base -2](./leetcode/1017-ConvertToBase-2.go)    
 [1056. Confusing Number](./leetcode/1056-ConfusingNumber.go)   
 [1134. Armstrong Number](./leetcode/1134-ArmstrongNumber.go)   
