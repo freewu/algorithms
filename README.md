@@ -547,6 +547,7 @@
 [1041. Robot Bounded In Circle](./leetcode/1041-RobotBoundedInCircle.go)   
 [1055. Shortest Way to Form String](./leetcode/1055-ShortestWayToFormString.go)   
 [1071. Greatest Common Divisor of Strings](./leetcode/1071-GreatestCommonDivisorOfStrings.go)   
+[1087. Brace Expansion](./leetcode/1087-BraceExpansion.go)   
 [1100. Find K-Length Substrings With No Repeated Characters](./leetcode/1100-FindKLengthSubstringsWithNoRepeatedCharacters.go)   
 [1143. Longest Common Subsequence](./leetcode/1143-LongestCommonSubsequence.go)   
 [1180. Count Substrings with Only One Distinct Letter](./leetcode/1180-CountSubstringsWithOnlyOneDistinctLetter.go)    
