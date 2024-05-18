@@ -721,6 +721,7 @@
 [235. Lowest Common Ancestor of a Binary Search Tree](./leetcode/235-LowestCommonAncestorOfABinarySearchTree.go)   
 [236. Lowest Common Ancestor of a Binary Tree](./leetcode/236-LowestCommonAncestorOfABinaryTree.go)   
 [250. Count Univalue Subtrees](./leetcode/250-CountUnivalueSubtrees.go)   
+[255. Verify Preorder Sequence in Binary Search Tree](./leetcode/255-VerifyPreorderSequenceInBinarySearchTree.go)   
 [257. Binary Tree Paths](./leetcode/257-BinaryTreePaths.go)   
 [331. Verify Preorder Serialization of a Binary Tree](./leetcode/331-VerifyPreorderSerializationOfABinaryTree.go)   
 [337. House Robber III](./leetcode/337-HouseRobberIII.go)   
