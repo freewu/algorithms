@@ -206,6 +206,7 @@
 [249. Group Shifted Strings](./leetcode/249-GroupShiftedStrings.go)   
 [252. Meeting Rooms](./leetcode/252-MeetingRooms.go)   
 [256. Paint House](./leetcode/256-PaintHouse.go)   
+[259. 3Sum Smaller](./leetcode/259-3SumSmaller.go)   
 [260. Single Number III](./leetcode/260-SingleNumberIII.go)   
 [265. Paint House II](./leetcode/265-PaintHouseII.go)   
 [268. Missing Number](./leetcode/268-MissingNumber.go)   
