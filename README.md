@@ -834,6 +834,7 @@
 [355. Design Twitter](./leetcode/355-DesignTwitter.go)   
 [380. Insert Delete GetRandom O(1)](./leetcode/380-InsertDeleteGetRandomO1.go)   
 [428. Serialize and Deserialize N-ary Tree](./leetcode/428-SerializeAndDeserializeN-aryTree.go)   
+[431. Encode N-ary Tree to Binary Tree](./leetcode/431-EncodeN-aryTreeToBinaryTree.go)   
 [460. LFU Cache](./leetcode/460-LFUCache.go)   
 [478. Generate Random Point in a Circle](./leetcode/478-GenerateRandomPointInACircle.go)   
 [528. Random Pick with Weight](./leetcode/528-RandomPickWithWeight.go)   

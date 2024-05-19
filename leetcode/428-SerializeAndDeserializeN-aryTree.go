@@ -58,15 +58,15 @@ type Node struct {
  *     Children []*Node
  * }
  */
-type Codec struct {
+type Codec1 struct {
 
 }
 
-func Constructor() *Codec {
-    return &Codec{}
+func Constructor1() *Codec1 {
+    return &Codec1{}
 }
 
-func (this *Codec) serialize(root *Node) string {
+func (this *Codec1) serialize(root *Node) string {
     if root == nil {
         return ""
     }
@@ -93,7 +93,7 @@ func (this *Codec) serialize(root *Node) string {
     return strings.Join(res, ",")
 }
 
-func (this *Codec) deserialize(data string) *Node {
+func (this *Codec1) deserialize(data string) *Node {
     if len(data) == 0 {
         return nil
     }
@@ -118,7 +118,57 @@ func (this *Codec) deserialize(data string) *Node {
     }
     return i2n[0]
 }
- 
+
+type Codec struct {
+}
+
+func Constructor() *Codec {
+    return &Codec{}
+}
+
+func (this *Codec) serialize(root *Node) string {
+    if root == nil {
+        return "[]"
+    }
+    res := strconv.Itoa(root.Val) + ","
+    if root.Children == nil {
+        return res
+    }
+    res += "["
+    for _, n := range root.Children {
+        res += this.serialize(n)
+    }
+    return res + "]"
+}
+
+func (this *Codec) deserialize(data string) *Node {
+    if data == "[]" {
+        return nil
+    }
+    parent := &Node{}
+    sum, stack, res := 0, []*Node{}, parent
+    var node *Node
+    for _, v := range data {
+        switch true {
+        case '0' <= v && v <= '9':
+            sum = sum * 10 + int(v - '0')
+        case v == ',':
+            node = &Node{Val: sum}
+            parent.Children = append(parent.Children, node)
+            sum = 0
+        case v == '[':
+            stack = append(stack, parent)
+            parent = node
+            sum = 0
+        case v == ']':
+            top := len(stack) - 1
+            parent = stack[top]
+            stack = stack[:top]
+        }
+    }
+    return res.Children[0]
+}
+
 /**
   * Your Codec object will be instantiated and called as such:
   * obj := Constructor();
@@ -168,4 +218,24 @@ func main() {
     fmt.Println(data3)
     t3 := obj.deserialize(data3)
     fmt.Println(t3)
+
+    obj1 := Constructor1()
+    data11 := obj1.serialize(tree1)
+    fmt.Println(data11)
+    t11 := obj1.deserialize(data11)
+    fmt.Println(t11.Val)
+    fmt.Println(len(t11.Children))
+
+    data12 := obj1.serialize(tree2)
+    fmt.Println(data12)
+    t12 := obj1.deserialize(data12)
+    fmt.Println(t12.Val)
+    fmt.Println(len(t12.Children))
+    // Example 3:
+    // Input: root = []
+    // Output: []
+    data13 := obj1.serialize(nil)
+    fmt.Println(data13)
+    t13 := obj1.deserialize(data13)
+    fmt.Println(t13)
 }
