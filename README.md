@@ -362,6 +362,7 @@
 [1512. Number of Good Pairs](./leetcode/1512-NumberOfGoodPairs.go)   
 [1533. Find the Index of the Large Integer](./leetcode/1533-FindTheIndexOfTheLargeInteger.go)    
 [1534. Count Good Triplets](./leetcode/1534-CountGoodTriplets.go)   
+[1535. Find the Winner of an Array Game](./leetcode/1535-FindTheWinnerOfAnArrayGame.go)   
 [1538. Guess the Majority in a Hidden Array](./leetcode/1538-GuessTheMajorityInAHiddenArray.go)   
 [1539. Kth Missing Positive Number](./leetcode/1539-KthMissingPositiveNumber.go)   
 [1547. Minimum Cost to Cut a Stick](./leetcode/1547-MinimumCostToCutAStick.go)    

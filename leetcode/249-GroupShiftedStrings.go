@@ -57,6 +57,36 @@ func groupStrings(strings []string) [][]string {
 }
 
 // 哈希表记录分组
+func groupStrings1(strings []string) [][]string {
+    res := make(map[string][]string)
+    change := func (inp string) (ret string){
+        offset, tmpByte := inp[0] - 'a', []byte(inp)
+        for i := 0; i <  len(tmpByte); i++ {
+            tmpByte[i] = tmpByte[i] - offset
+            if tmpByte[i] < 'a' {
+                tmpByte[i] = tmpByte[i] + 26
+            }
+            if inp[i] > 'z' {
+                tmpByte[i] = tmpByte[i] - 26
+            }
+        }
+        return string(tmpByte) 
+    }
+    for _, cur := range(strings) {
+        changeStr := change(cur)
+        if val, ok := res[changeStr]; ok {
+            res[changeStr] = append(val, cur)
+        } else {
+            res[changeStr] = make([]string, 0)
+            res[changeStr] = append(res[changeStr], cur)
+        }
+    }
+    result := make([][]string, 0)
+    for _, v := range(res){
+        result = append(result, v)
+    }
+    return result
+}
 
 func main() {
     // Example 1:
@@ -66,5 +96,8 @@ func main() {
     // Example 2:
     // Input: strings = ["a"]
     // Output: [["a"]]
-    fmt.Println(groupStrings([]string{"a"})) //[["a"]]
+    fmt.Println(groupStrings([]string{"a"})) // [["a"]]
+
+    fmt.Println(groupStrings1([]string{"abc","bcd","acef","xyz","az","ba","a","z"})) // [["acef"],["a","z"],["abc","bcd","xyz"],["az","ba"]]
+    fmt.Println(groupStrings1([]string{"a"})) // [["a"]]
 }
