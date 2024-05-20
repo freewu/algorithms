@@ -514,6 +514,7 @@
 [247. Strobogrammatic Number II](./leetcode/247-StrobogrammaticNumberII.go)   
 [248. Strobogrammatic Number III](./leetcode/248-StrobogrammaticNumberIII.go)   
 [266. Palindrome Permutation](./leetcode/266-PalindromePermutation.go)   
+[267. Palindrome Permutation II](./leetcode/267-PalindromePermutationII.go)   
 [282. Expression Add Operators](./leetcode/282-ExpressionAddOperators.go)   
 [290. Word Pattern](./leetcode/290-WordPattern.go)    
 [299. Bulls and Cows](./leetcode/299-BullsAndCows.go)    
