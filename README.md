@@ -785,6 +785,7 @@
 # Graph
 [133. Clone Graph](./leetcode/133-CloneGraph.go)   
 [210. Course Schedule II](./leetcode/210-CourseScheduleII.go)   
+[261. Graph Valid Tree](./leetcode/261-GraphValidTree.go)   
 [310. Minimum Height Trees](./leetcode/310-MinimumHeightTrees.go)   
 [323. Number of Connected Components in an Undirected Graph](./leetcode/323-NumberOfConnectedComponentsInAnUndirectedGraph.go)   
 [332. Reconstruct Itinerary](./leetcode/332-ReconstructItinerary.go)   
@@ -1256,6 +1257,8 @@ LCR 075. 数组的相对排序
 [3126. Server Utilization Time](./leetcode/3126-ServerUtilizationTime.sql)   
 [3140. Consecutive Available Seats II](./leetcode/3140-ConsecutiveAvailableSeatsII.sql)   
 [3150. Invalid Tweets II](./leetcode/3150-InvalidTweetsII.sql)   
+[3156. Employee Task Duration and Concurrent Tasks](./leetcode/3156-EmployeeTaskDurationAndConcurrentTasks.sql)   
+
 
 # Shell
 [192. Word Frequency](./leetcode/192-WordFrequency.sh)      
