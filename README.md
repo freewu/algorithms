@@ -563,6 +563,7 @@
 [1087. Brace Expansion](./leetcode/1087-BraceExpansion.go)   
 [1100. Find K-Length Substrings With No Repeated Characters](./leetcode/1100-FindKLengthSubstringsWithNoRepeatedCharacters.go)   
 [1143. Longest Common Subsequence](./leetcode/1143-LongestCommonSubsequence.go)   
+[1163. Last Substring in Lexicographical Order](./leetcode/1163-LastSubstringInLexicographicalOrder.go)   
 [1180. Count Substrings with Only One Distinct Letter](./leetcode/1180-CountSubstringsWithOnlyOneDistinctLetter.go)    
 [1239. Maximum Length of a Concatenated String with Unique Characters](./leetcode/1239-MaximumLengthOfAConcatenatedStringWithUniqueCharacters.go)    
 [1249. Minimum Remove to Make Valid Parentheses](./leetcode/1249-MinimumRemoveToMakeValidParentheses.go)    
