@@ -682,6 +682,7 @@
 [651. 4 Keys Keyboard](./leetcode/651-4KeysKeyboard.go)   
 [670. Maximum Swap](./leetcode/670-MaximumSwap.go)   
 [808. Soup Servings](./leetcode/808-SoupServings.go)   
+[837. New 21 Game](./leetcode/837-New21Game.go)   
 [887. Super Egg Drop](./leetcode/887-SuperEggDrop.go)    
 [1006. Clumsy Factorial](./leetcode/1006-ClumsyFactorial.go)   
 [1017. Convert to Base -2](./leetcode/1017-ConvertToBase-2.go)    
