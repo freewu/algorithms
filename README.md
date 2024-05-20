@@ -666,6 +666,7 @@
 [279. Perfect Squares](./leetcode/279-PerfectSquares.go)   
 [292. Nim Game](./leetcode/292-NimGame.go)   
 [313. Super Ugly Number](./leetcode/313-SuperUglyNumber.go)   
+[319. Bulb Switcher](./leetcode/319-BulbSwitcher.go)   
 [326. Power of Three](./leetcode/326-PowerOfThree.go)    
 [365. Water and Jug Problem](./leetcode/365-WaterAndJugProblem.go)    
 [367. Valid Perfect Square](./leetcode/367-ValidPerfectSquare.go)    
