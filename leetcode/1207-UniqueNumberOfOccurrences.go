@@ -30,12 +30,12 @@ func uniqueOccurrences(arr []int) bool {
     for _,v := range arr { // 累加每个数值的出现次数
         m[v]++ 
     }
-    c := make(map[int]int)
+    c := make(map[int]bool)
     for _,v := range m { 
         if _, ok := c[v]; ok { // 出现相同次数
             return false
         }
-        c[v] = 1
+        c[v] = true
     }
     return true
 }
