@@ -700,6 +700,7 @@
 [2469. Convert the Temperature](./leetcode/2469-ConvertTheTemperature.go)    
 [2485. Find the Pivot Integer](./leetcode/2485-FindThePivotInteger.go)   
 [2739. Total Distance Traveled](./leetcode/2739-TotalDistanceTraveled.go)   
+[2769. Find the Maximum Achievable Number](./leetcode/2769-FindTheMaximumAchievableNumber.go)   
 [2834. Find the Minimum Possible Sum of a Beautiful Array](./leetcode/2834-FindTheMinimumPossibleSumOfABeautifulArray.go)    
 
 # Stack
