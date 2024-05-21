@@ -229,6 +229,7 @@
 [324. Wiggle Sort II](./leetcode/324-WiggleSortII.go)   
 [327. Count of Range Sum](./leetcode/327-CountOfRangeSum.go)   
 [329. Longest Increasing Path in a Matrix](./leetcode/329-LongestIncreasingPathInAMatrix.go)   
+[330. Patching Array](./leetcode/330-PatchingArray.go)   
 [334. Increasing Triplet Subsequence](./leetcode/334-IncreasingTripletSubsequence.go)   
 [347. Top K Frequent Elements](./leetcode/347-TopKFrequentElements.go)   
 [349. Intersection of Two Arrays](./leetcode/349-IntersectionOfTwoArrays.go)   
