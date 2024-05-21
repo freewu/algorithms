@@ -600,6 +600,7 @@
 [276. Paint Fence](./leetcode/276-PaintFence.go)   
 [576. Out of Boundary Paths](./leetcode/576-OutOfBoundaryPaths.go)   
 [629. K Inverse Pairs Array](./leetcode/629-K-InversePairsArray.go)   
+[688. Knight Probability in Chessboard](./leetcode/688-KnightProbabilityInChessboard.go)   
 [787. Cheapest Flights Within K Stops](./leetcode/787-CheapestFlightsWithinKStops.go)   
 [790. Domino and Tromino Tiling](./leetcode/790-DominoAndTrominoTiling.go)   
 [1220. Count Vowels Permutation](./leetcode/1220-CountVowelsPermutation.go)   
