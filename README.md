@@ -227,6 +227,7 @@
 [318. Maximum Product of Word Lengths](./leetcode/318-MaximumProductOfWordLengths.go)   
 [322. Coin Change](./leetcode/322-CoinChange.go)   
 [324. Wiggle Sort II](./leetcode/324-WiggleSortII.go)   
+[327. Count of Range Sum](./leetcode/327-CountOfRangeSum.go)   
 [329. Longest Increasing Path in a Matrix](./leetcode/329-LongestIncreasingPathInAMatrix.go)   
 [334. Increasing Triplet Subsequence](./leetcode/334-IncreasingTripletSubsequence.go)   
 [347. Top K Frequent Elements](./leetcode/347-TopKFrequentElements.go)   
