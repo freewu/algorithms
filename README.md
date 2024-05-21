@@ -581,6 +581,7 @@
 [1456. Maximum Number of Vowels in a Substring of Given Length](./leetcode/1456-MaximumNumberOfVowelsInASubstringOfGivenLength.go)   
 [1542. Find Longest Awesome Substring](./leetcode/1542-FindLongestAwesomeSubstring.go)   
 [1544. Make The String Great](./leetcode/1544-MakeTheStringGreat.go)   
+[1556. Thousand Separator](./leetcode/1556-ThousandSeparator.go)   
 [1614. Maximum Nesting Depth of the Parentheses](./leetcode/1614-MaximumNestingDepthOfTheParentheses.go)   
 [1657. Determine if Two Strings Are Close](./leetcode/1657-DetermineIfTwoStringsAreClose.go)   
 [1702. Maximum Binary String After Change](./leetcode/1702-MaximumBinaryStringAfterChange.go)    
