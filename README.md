@@ -342,6 +342,7 @@
 [1090. Largest Values From Labels](./leetcode/1090-LargestValuesFromLabels.go)   
 [1099. Two Sum Less Than K](./leetcode/1099-TwoSumLessThanK.go)   
 [1102. Path With Maximum Minimum Value](./leetcode/1102-PathWithMaximumMinimumValue.go)   
+[1133. Largest Unique Number](./leetcode/1133-LargestUniqueNumber.go)   
 [1140. Stone Game II](./leetcode/1140-StoneGameII.go)   
 [1207. Unique Number of Occurrences](./leetcode/1207-UniqueNumberOfOccurrences.go)   
 [1218. Longest Arithmetic Subsequence of Given Difference](./leetcode/1218-LongestArithmeticSubsequenceOfGivenDifference.go)   
