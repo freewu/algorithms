@@ -64,12 +64,12 @@ func guessNumber(n int) int {
 }
 
 func main() {
-	pick = 6
-	fmt.Println(guessNumber(10)) // 6
-	pick = 1
-	fmt.Println(guessNumber(1)) // 1
-	pick = 1
-	fmt.Println(guessNumber(2)) // 1
-	pick = 2
-	fmt.Println(guessNumber(2)) // 2
+    pick = 6
+    fmt.Println(guessNumber(10)) // 6
+    pick = 1
+    fmt.Println(guessNumber(1)) // 1
+    pick = 1
+    fmt.Println(guessNumber(2)) // 1
+    pick = 2
+    fmt.Println(guessNumber(2)) // 2
 }
