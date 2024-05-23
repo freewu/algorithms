@@ -344,6 +344,7 @@
 [1102. Path With Maximum Minimum Value](./leetcode/1102-PathWithMaximumMinimumValue.go)   
 [1133. Largest Unique Number](./leetcode/1133-LargestUniqueNumber.go)   
 [1140. Stone Game II](./leetcode/1140-StoneGameII.go)   
+[1198. Find Smallest Common Element in All Rows](./leetcode/1198-FindSmallestCommonElementInAllRows.go)   
 [1207. Unique Number of Occurrences](./leetcode/1207-UniqueNumberOfOccurrences.go)   
 [1218. Longest Arithmetic Subsequence of Given Difference](./leetcode/1218-LongestArithmeticSubsequenceOfGivenDifference.go)   
 [1219. Path with Maximum Gold](./leetcode/1219-PathWithMaximumGold.go)   
