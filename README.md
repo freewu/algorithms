@@ -696,6 +696,7 @@
 [343. Integer Break](./leetcode/343-IntegerBreak.go)   
 [365. Water and Jug Problem](./leetcode/365-WaterAndJugProblem.go)   
 [367. Valid Perfect Square](./leetcode/367-ValidPerfectSquare.go)   
+[371. Sum of Two Integers](./leetcode/371-SumOfTwoIntegers.go)   
 [412. Fizz Buzz](./leetcode/412-FizzBuzz.go)   
 [441. Arranging Coins](./leetcode/441-ArrangingCoins.go)   
 [509. Fibonacci Number](./leetcode/509-FibonacciNumber.go)   
