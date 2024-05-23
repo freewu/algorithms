@@ -29,13 +29,13 @@ import "fmt"
 func isPowerOfThree(n int) bool {
     for n >= 3 {
         // 每次除3 判断是否能被 3 整除
-		if n % 3 == 0 {
-			n = n / 3
-		} else {
-			return false
-		}
-	}
-	return n == 1
+        if n % 3 == 0 {
+            n = n / 3
+        } else {
+            return false
+        }
+    }
+    return n == 1
 }
 
 // 每次乘 3
