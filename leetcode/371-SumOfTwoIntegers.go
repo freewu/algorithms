@@ -24,6 +24,15 @@ func getSum(a int, b int) int {
     return getSum((a & b) << 1, a ^ b)
 }
 
+func getSum1(a int, b int) int {
+    for b != 0 {
+        temp := (a & b) << 1
+        a = a ^ b
+        b = temp
+    }
+    return a
+}
+
 func main() {
     // Example 1:
     // Input: a = 1, b = 2
@@ -33,4 +42,7 @@ func main() {
     // Input: a = 2, b = 3
     // Output: 5
     fmt.Println(getSum(2, 3)) // 5
+
+    fmt.Println(getSum1(1, 2)) // 3
+    fmt.Println(getSum1(2, 3)) // 5
 }
