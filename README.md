@@ -888,6 +888,7 @@
 [341. Flatten Nested List Iterator](./leetcode/341-FlattenNestedListIterator.go)   
 [346. Moving Average from Data Stream](./leetcode/346-MovingAverageFromDataStream.go)   
 [348. Design Tic-Tac-Toe](./leetcode/348-DesignTicTacToe.go)   
+[352. Data Stream as Disjoint Intervals](./leetcode/352-DataStreamAsDisjointIntervals.go)   
 [353. Design Snake Game](./leetcode/353-DesignSnakeGame.go)   
 [355. Design Twitter](./leetcode/355-DesignTwitter.go)   
 [380. Insert Delete GetRandom O(1)](./leetcode/380-InsertDeleteGetRandomO1.go)   
