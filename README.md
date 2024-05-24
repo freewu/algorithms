@@ -215,6 +215,7 @@
 [275. H-Index II](./leetcode/275-H-IndexII.go)   
 [280. Wiggle Sort](./leetcode/280-WiggleSort.go)   
 [283. Move Zeroes](./leetcode/283-MoveZeroes.go)   
+[286. Walls and Gates](./leetcode/286-WallsAndGates.go)   
 [287. Find the Duplicate Number](./leetcode/287-FindTheDuplicateNumber.go)   
 [289. Game of Life](./leetcode/289-GameOfLife.go)  
 [300. Longest Increasing Subsequence](./leetcode/300-LongestIncreasingSubsequence.go)   
