@@ -542,6 +542,7 @@
 [290. Word Pattern](./leetcode/290-WordPattern.go)   
 [291. Word Pattern II](./leetcode/291-WordPatternII.go)   
 [293. Flip Game](./leetcode/293-FlipGame.go)   
+[294. Flip Game II](./leetcode/294-FlipGameII.go)   
 [299. Bulls and Cows](./leetcode/299-BullsAndCows.go)   
 [301. Remove Invalid Parentheses](./leetcode/301-RemoveInvalidParentheses.go)   
 [306. Additive Number](./leetcode/306-AdditiveNumber.go)   
