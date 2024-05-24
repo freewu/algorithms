@@ -701,6 +701,7 @@
 [326. Power of Three](./leetcode/326-PowerOfThree.go)   
 [342. Power of Four](./leetcode/342-PowerOfFour.go)   
 [343. Integer Break](./leetcode/343-IntegerBreak.go)   
+[357. Count Numbers with Unique Digits](./leetcode/357-CountNumbersWithUniqueDigits.go)   
 [365. Water and Jug Problem](./leetcode/365-WaterAndJugProblem.go)   
 [367. Valid Perfect Square](./leetcode/367-ValidPerfectSquare.go)   
 [371. Sum of Two Integers](./leetcode/371-SumOfTwoIntegers.go)   
