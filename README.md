@@ -352,6 +352,7 @@
 [1231. Divide Chocolate](./leetcode/1231-DivideChocolate.go)   
 [1232. Check If It Is a Straight Line](./leetcode/1232-CheckIfItIsAStraightLine.go)   
 [1235. Maximum Profit in Job Scheduling](./leetcode/1235-MaximumProfitInJobScheduling.go)   
+[1255. Maximum Score Words Formed by Letters](./leetcode/1255-MaximumScoreWordsFormedByLetters.go)   
 [1268. Search Suggestions System](./leetcode/1268-SearchSuggestionsSystem.go)   
 [1274. Number of Ships in a Rectangle](./leetcode/1274-NumberOfShipsInARectangle.go)    
 [1275. Find Winner on a Tic Tac Toe Game](./leetcode/1275-FindWinnerOnATicTacToeGame.go)    
