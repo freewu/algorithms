@@ -1452,6 +1452,7 @@ LCR 075. 数组的相对排序
 [LCR 004. 只出现一次的数字 II](./leetcode/LCR004-SingleNumberII.go)   
 [LCR 005. 最大单词长度乘积](./leetcode/LCR005-ProductOfMaximumWordLength.go)   
 [LCR 006. 两数之和 II - 输入有序数组](./leetcode/LCR006-TwoSumII.go)   
+[LCR 007. 三数之和](./leetcode/LCR007-ThreeSum.go)   
 [LCR 038. 每日温度](./leetcode/LCR038-DailyTemperatures.go)   
 [LCR 057. 存在重复元素 III](./leetcode/LCR057-ContainsDuplicateIII.go)   
 [LCR 060. 前 K 个高频元素](./leetcode/LCR060-TopKFrequentElements.go)   
