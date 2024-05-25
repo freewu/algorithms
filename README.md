@@ -455,6 +455,7 @@
 [2684. Maximum Number of Moves in a Grid](./leetcode/2684-MaximumNumberOfMovesInAGrid.go)   
 [2731. Movement of Robots](./leetcode/2731-MovementOfRobots.go)   
 [2765. Longest Alternating Subarray](./leetcode/2765-LongestAlternatingSubarray.go)   
+[2771. Longest Non-decreasing Subarray From Two Arrays](./leetcode/2771-LongestNon-DecreasingSubarrayFromTwoArrays.go)   
 [2788. Split Strings by Separator](./leetcode/2788-SplitStringsBySeparator.go)   
 [2789. Largest Element in an Array after Merge Operations](./leetcode/2789-LargestElementInAnArrayAfterMergeOperations.go)    
 [2798. Number of Employees Who Met the Target](./leetcode/2798-NumberOfEmployeesWhoMetTheTarget.go)   
