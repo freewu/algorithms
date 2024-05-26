@@ -907,6 +907,7 @@
 [359. Logger Rate Limiter](./leetcode/359-LoggerRateLimiter.go)   
 [362. Design Hit Counter](./leetcode/362-DesignHitCounter.go)   
 [380. Insert Delete GetRandom O(1)](./leetcode/380-InsertDeleteGetRandomO1.go)   
+[381. Insert Delete GetRandom O(1) - Duplicates allowed](./leetcode/381-InsertDeleteGetRandomO1-DuplicatesAllowed.go)   
 [428. Serialize and Deserialize N-ary Tree](./leetcode/428-SerializeAndDeserializeN-aryTree.go)   
 [431. Encode N-ary Tree to Binary Tree](./leetcode/431-EncodeN-aryTreeToBinaryTree.go)   
 [460. LFU Cache](./leetcode/460-LFUCache.go)   
