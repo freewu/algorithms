@@ -220,6 +220,7 @@
 [289. Game of Life](./leetcode/289-GameOfLife.go)   
 [296. Best Meeting Point](./leetcode/296-BestMeetingPoint.go)   
 [300. Longest Increasing Subsequence](./leetcode/300-LongestIncreasingSubsequence.go)   
+[302. Smallest Rectangle Enclosing Black Pixels](./leetcode/302-SmallestRectangleEnclosingBlackPixels.go)   
 [303. Range Sum Query - Immutable](./leetcode/303-RangeSumQuery-Immutable.go)   
 [304. Range Sum Query 2D - Immutable](./leetcode/304-RangeSumQuery2D-Immutable.go)   
 [307. Range Sum Query - Mutable](./leetcode/307-RangeSumQuery-Mutable.go)   
