@@ -47,6 +47,26 @@ func findLonelyPixel(picture [][]byte) int {
     return res
 }
 
+func findLonelyPixel1(picture [][]byte) int {
+    if len(picture) == 0 { return 0 }
+    res, m, n := 0, len(picture), len(picture[0])
+    column, row := make(map[int][]int, m), make(map[int][]int, n)
+    for i,arr := range picture {
+        for j,v := range arr{
+            if v == 'B' {
+                column[i] = append(column[i], j)
+                row[j] = append(row[j],i)
+            }
+        }
+    }
+    for _,v := range column {
+        if len(v) != 1 { continue } // 本列已超过一个像素的 b 黑色
+        if len(row[v[0]]) !=1 { continue } // 本行已超过一个像素的 b 黑色
+        res ++
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // <img src="https://assets.leetcode.com/uploads/2020/11/11/pixel1.jpg" />
@@ -59,4 +79,7 @@ func main() {
     // Input: picture = [["B","B","B"],["B","B","W"],["B","B","B"]]
     // Output: 0
     fmt.Println(findLonelyPixel([][]byte{{'B','B','B'},{'B','B','W'},{'B','B','B'}})) // 0
+
+    fmt.Println(findLonelyPixel1([][]byte{{'W','W','B'},{'W','B','W'},{'B','W','W'}})) // 3
+    fmt.Println(findLonelyPixel1([][]byte{{'B','B','B'},{'B','B','W'},{'B','B','B'}})) // 0
 }
