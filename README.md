@@ -909,6 +909,7 @@
 [355. Design Twitter](./leetcode/355-DesignTwitter.go)   
 [359. Logger Rate Limiter](./leetcode/359-LoggerRateLimiter.go)   
 [362. Design Hit Counter](./leetcode/362-DesignHitCounter.go)   
+[379. Design Phone Directory](./leetcode/379-DesignPhoneDirectory.go)   
 [380. Insert Delete GetRandom O(1)](./leetcode/380-InsertDeleteGetRandomO1.go)   
 [381. Insert Delete GetRandom O(1) - Duplicates allowed](./leetcode/381-InsertDeleteGetRandomO1-DuplicatesAllowed.go)   
 [382. Linked List Random Node](./leetcode/382-LinkedListRandomNode.go)   
