@@ -564,6 +564,7 @@
 [344. Reverse String](./leetcode/344-ReverseString.go)   
 [345. Reverse Vowels of a String](./leetcode/345-ReverseVowelsOfAString.go)   
 [383. Ransom Note](./leetcode/383-RansomNote.go)   
+[385. Mini Parser](./leetcode/385-MiniParser.go)   
 [387. First Unique Character in a String](./leetcode/387-FirstUniqueCharacterInAString.go)    
 [389. Find the Difference](./leetcode/389-FindTheDifference.go)    
 [392. Is Subsequence](./leetcode/392-IsSubsequence.go)    
