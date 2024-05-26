@@ -226,6 +226,7 @@
 [305. Number of Islands II](./leetcode/305-NumberOfIslandsII.go)   
 [307. Range Sum Query - Mutable](./leetcode/307-RangeSumQuery-Mutable.go)   
 [309. Best Time to Buy and Sell Stock with Cooldown](./leetcode/309-BestTimeToBuyAndSellStockWithCooldown.go)   
+[311. Sparse Matrix Multiplication](./leetcode/311-SparseMatrixMultiplication.go)   
 [312. Burst Balloons](./leetcode/312-BurstBalloons.go)   
 [313. Super Ugly Number](./leetcode/313-SuperUglyNumber.go)   
 [318. Maximum Product of Word Lengths](./leetcode/318-MaximumProductOfWordLengths.go)   
