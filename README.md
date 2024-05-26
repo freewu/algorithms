@@ -404,6 +404,7 @@
 [1732. Find the Highest Altitude](./leetcode/1732-FindTheHighestAltitude.go)   
 [1735. Count Ways to Make Array With Product](./leetcode/1735-CountWaysToMakeArrayWithProduct.go)   
 [1738. Find Kth Largest XOR Coordinate Value](./leetcode/1738-FindKthLargestXORCoordinateValue.go)   
+[1751. Maximum Number of Events That Can Be Attended II](./leetcode/1751-MaximumNumberOfEventsThatCanBeAttendedII.go)   
 [1766. Tree of Coprimes](./leetcode/1766-TreeOfCoprimes.go)   
 [1770. Maximum Score from Performing Multiplication Operations](./leetcode/1770-MaximumScoreFromPerformingMultiplicationOperations.go)   
 [1793. Maximum Score of a Good Subarray](./leetcode/1793-MaximumScoreOfAGoodSubarray.go)   
