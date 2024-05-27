@@ -229,6 +229,7 @@
 [311. Sparse Matrix Multiplication](./leetcode/311-SparseMatrixMultiplication.go)   
 [312. Burst Balloons](./leetcode/312-BurstBalloons.go)   
 [313. Super Ugly Number](./leetcode/313-SuperUglyNumber.go)   
+[317. Shortest Distance from All Buildings](./leetcode/317-ShortestDistanceFromAllBuildings.go)   
 [318. Maximum Product of Word Lengths](./leetcode/318-MaximumProductOfWordLengths.go)   
 [322. Coin Change](./leetcode/322-CoinChange.go)   
 [324. Wiggle Sort II](./leetcode/324-WiggleSortII.go)   
