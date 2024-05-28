@@ -233,6 +233,7 @@
 [318. Maximum Product of Word Lengths](./leetcode/318-MaximumProductOfWordLengths.go)   
 [322. Coin Change](./leetcode/322-CoinChange.go)   
 [324. Wiggle Sort II](./leetcode/324-WiggleSortII.go)   
+[325. Maximum Size Subarray Sum Equals k](./leetcode/325-MaximumSizeSubarraySumEqualsk.go)   
 [327. Count of Range Sum](./leetcode/327-CountOfRangeSum.go)   
 [329. Longest Increasing Path in a Matrix](./leetcode/329-LongestIncreasingPathInAMatrix.go)   
 [330. Patching Array](./leetcode/330-PatchingArray.go)   
