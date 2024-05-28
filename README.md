@@ -251,6 +251,7 @@
 [377. Combination Sum IV](./leetcode/377-CombinationSumIV.go)   
 [378. Kth Smallest Element in a Sorted Matrix](./leetcode/378-KthSmallestElementInASortedMatrix.go)   
 [391. Perfect Rectangle](./leetcode/391-PerfectRectangle.go)   
+[393. UTF-8 Validation](./leetcode/393-UTF-8Validation.go)   
 [399. Evaluate Division](./leetcode/399-EvaluateDivision.go)   
 [403. Frog Jump](./leetcode/403-FrogJump.go)   
 [406. Queue Reconstruction by Height](./leetcode/406-QueueReconstructionByHeight.go)   
