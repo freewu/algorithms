@@ -46,11 +46,11 @@ func validUtf8(data []int) bool {
     count := 0
     for _, num := range data {
         if count == 0 {
-            if num >> 3 == 0b11110 {
+            if num >> 3 == 0b11110 { // 0b11110 240
                 count = 3
-            } else if num >> 4 == 0b1110 {
+            } else if num >> 4 == 0b1110 { // 0b1110 224
                 count = 2
-            } else if num >> 5 == 0b110 {
+            } else if num >> 5 == 0b110 { // 0b110 192
                 count = 1
             } else if num >> 7 != 0b0 { // 对于 1 字节 的字符，字节的第一位设为 0 ，后面 7 位为这个符号的 unicode 码
                 return false
