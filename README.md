@@ -622,6 +622,7 @@
 [1249. Minimum Remove to Make Valid Parentheses](./leetcode/1249-MinimumRemoveToMakeValidParentheses.go)    
 [1312. Minimum Insertion Steps to Make a String Palindrome](./leetcode/1312-MinimumInsertionStepsToMakeAStringPalindrome.go)   
 [1360. Number of Days Between Two Dates](./leetcode/1360-NumberOfDaysBetweenTwoDates.go)   
+[1404. Number of Steps to Reduce a Number in Binary Representation to One](./leetcode/1404-NumberOfStepsToReduceANumberInBinaryRepresentationToOne.go)   
 [1416. Restore The Array](./leetcode/1416-RestoreTheArray.go)   
 [1422. Maximum Score After Splitting a String](./leetcode/1422-MaximumScoreAfterSplittingAString.go)    
 [1427. Perform String Shifts](./leetcode/1427-PerformStringShifts.go)   
@@ -644,7 +645,6 @@
 [2810. Faulty Keyboard](./leetcode/2810-FaultyKeyboard.go)   
 [2864. Maximum Odd Binary Number](./leetcode/2864-MaximumOddBinaryNumber.go)   
 [2981. Find Longest Special Substring That Occurs Thrice I](./leetcode/2981-FindLongestSpecialSubstringThatOccursThriceI.go)   
-
 
 # Dynamic Programming
 [276. Paint Fence](./leetcode/276-PaintFence.go)   
