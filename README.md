@@ -399,6 +399,7 @@
 [1575. Count All Possible Routes](./leetcode/1575-CountAllPossibleRoutes.go)   
 [1601. Maximum Number of Achievable Transfer Requests](./leetcode/1601-MaximumNumberOfAchievableTransferRequests.go)   
 [1608. Special Array With X Elements Greater Than or Equal X](./leetcode/1608-SpecialArrayWithXElementsGreaterThanOrEqualX.go)   
+[1626. Best Team With No Conflicts](./leetcode/1626-BestTeamWithNoConflicts.go)   
 [1631. Path With Minimum Effort](./leetcode/1631-PathWithMinimumEffort.go)   
 [1639. Number of Ways to Form a Target String Given a Dictionary](./leetcode/1639-NumberOfWaysToFormATargetStringGivenADictionary.go)   
 [1642. Furthest Building You Can Reach](./leetcode/1642-FurthestBuildingYouCanReach.go)   
