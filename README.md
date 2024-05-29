@@ -909,6 +909,7 @@
 [201. Bitwise AND of Numbers Range](./leetcode/201-BitwiseANDOfNumbersRange.go)   
 [338. Counting Bits](./leetcode/338-CountingBits.go)   
 [397. Integer Replacement](./leetcode/397-IntegerReplacement.go)   
+[401. Binary Watch](./leetcode/401-BinaryWatch.go)   
 [461. Hamming Distance](./leetcode/461-HammingDistance.go)   
 [1318. Minimum Flips to Make a OR b Equal to c](./leetcode/1318-MinimumFlipsToMakeAORBEqualToC.go)   
 
