@@ -643,6 +643,8 @@
 [2586. Count the Number of Vowel Strings in Range](./leetcode/2586-CountTheNumberOfVowelStringsInRange.go)   
 [2810. Faulty Keyboard](./leetcode/2810-FaultyKeyboard.go)   
 [2864. Maximum Odd Binary Number](./leetcode/2864-MaximumOddBinaryNumber.go)   
+[2981. Find Longest Special Substring That Occurs Thrice I](./leetcode/2981-FindLongestSpecialSubstringThatOccursThriceI.go)   
+
 
 # Dynamic Programming
 [276. Paint Fence](./leetcode/276-PaintFence.go)   
