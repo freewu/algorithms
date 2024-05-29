@@ -16,6 +16,7 @@ package main
 // Constraints:
 //     The number of nodes in the tree is in the range [1, 1000].
 //     -1000 <= Node.val <= 1000
+
 import "fmt"
 
 // Definition for a binary tree node.
