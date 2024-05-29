@@ -939,6 +939,7 @@
 [381. Insert Delete GetRandom O(1) - Duplicates allowed](./leetcode/381-InsertDeleteGetRandomO1-DuplicatesAllowed.go)   
 [382. Linked List Random Node](./leetcode/382-LinkedListRandomNode.go)   
 [384. Shuffle an Array](./leetcode/384-ShuffleAnArray.go)   
+[398. Random Pick Index](./leetcode/398-RandomPickIndex.go)   
 [428. Serialize and Deserialize N-ary Tree](./leetcode/428-SerializeAndDeserializeN-aryTree.go)   
 [431. Encode N-ary Tree to Binary Tree](./leetcode/431-EncodeN-aryTreeToBinaryTree.go)   
 [460. LFU Cache](./leetcode/460-LFUCache.go)   
