@@ -900,7 +900,8 @@
 [190. Reverse Bits](./leetcode/190-ReverseBits.go)   
 [191. Number of 1 Bits](./leetcode/191-NumberOf1Bits.go)   
 [201. Bitwise AND of Numbers Range](./leetcode/201-BitwiseANDOfNumbersRange.go)   
-[338. Counting Bits](./leetcode/338-CountingBits.go)    
+[338. Counting Bits](./leetcode/338-CountingBits.go)   
+[397. Integer Replacement](./leetcode/397-IntegerReplacement.go)   
 [461. Hamming Distance](./leetcode/461-HammingDistance.go)   
 [1318. Minimum Flips to Make a OR b Equal to c](./leetcode/1318-MinimumFlipsToMakeAORBEqualToC.go)   
 
