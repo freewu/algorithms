@@ -248,6 +248,7 @@
 [361. Bomb Enemy](./leetcode/361-BombEnemy.go)   
 [363. Max Sum of Rectangle No Larger Than K](./leetcode/363-MaxSumOfRectangleNoLargerThanK.go)   
 [368. Largest Divisible Subset](./leetcode/368-LargestDivisibleSubset.go)   
+[370. Range Addition](./leetcode/370-RangeAddition.go)   
 [373. Find K Pairs with Smallest Sums](./leetcode/373-FindKPairsWithSmallestSums.go)   
 [376. Wiggle Subsequence](./leetcode/376-WiggleSubsequence.go)   
 [377. Combination Sum IV](./leetcode/377-CombinationSumIV.go)   
