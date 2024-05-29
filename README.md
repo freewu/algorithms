@@ -330,6 +330,7 @@
 [867. Transpose Matrix](./leetcode/867-TransposeMatrix.go)    
 [875. Koko Eating Bananas](./leetcode/875-KokoEatingBananas.go)   
 [877. Stone Game](./leetcode/877-StoneGame.go)   
+[879. Profitable Schemes](./leetcode/879-ProfitableSchemes.go)   
 [881. Boats to Save People](./leetcode/881-BoatsToSavePeople.go)   
 [896. Monotonic Array](./leetcode/896-MonotonicArray.go)    
 [909. Snakes and Ladders](./leetcode/909-SnakesAndLadders.go)    
