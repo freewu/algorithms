@@ -911,6 +911,7 @@
 [191. Number of 1 Bits](./leetcode/191-NumberOf1Bits.go)   
 [201. Bitwise AND of Numbers Range](./leetcode/201-BitwiseANDOfNumbersRange.go)   
 [338. Counting Bits](./leetcode/338-CountingBits.go)   
+[351. Android Unlock Patterns](./leetcode/351-AndroidUnlockPatterns.go)   
 [397. Integer Replacement](./leetcode/397-IntegerReplacement.go)   
 [401. Binary Watch](./leetcode/401-BinaryWatch.go)   
 [461. Hamming Distance](./leetcode/461-HammingDistance.go)   
