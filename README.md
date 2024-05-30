@@ -750,6 +750,7 @@
 [390. Elimination Game](./leetcode/390-EliminationGame.go)   
 [396. Rotate Function](./leetcode/396-RotateFunction.go)   
 [400. Nth Digit](./leetcode/400-NthDigit.go)   
+[405. Convert a Number to Hexadecimal](./leetcode/405-ConvertANumberToHexadecimal.go)   
 [412. Fizz Buzz](./leetcode/412-FizzBuzz.go)   
 [441. Arranging Coins](./leetcode/441-ArrangingCoins.go)   
 [509. Fibonacci Number](./leetcode/509-FibonacciNumber.go)   
