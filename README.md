@@ -580,6 +580,7 @@
 [340. Longest Substring with At Most K Distinct Characters](./leetcode/340-LongestSubstringWithAtMostKDistinctCharacters.go)   
 [344. Reverse String](./leetcode/344-ReverseString.go)   
 [345. Reverse Vowels of a String](./leetcode/345-ReverseVowelsOfAString.go)   
+[358. Rearrange String k Distance Apart](./leetcode/358-RearrangeStringKDistanceApart.go)   
 [383. Ransom Note](./leetcode/383-RansomNote.go)   
 [385. Mini Parser](./leetcode/385-MiniParser.go)   
 [387. First Unique Character in a String](./leetcode/387-FirstUniqueCharacterInAString.go)   
