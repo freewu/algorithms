@@ -262,6 +262,7 @@
 [406. Queue Reconstruction by Height](./leetcode/406-QueueReconstructionByHeight.go)   
 [407. Trapping Rain Water II](./leetcode/407-TrappingRainWaterII.go)   
 [410. Split Array Largest Sum](./leetcode/410-SplitArrayLargestSum.go)   
+[413. Arithmetic Slices](./leetcode/413-ArithmeticSlices.go)   
 [414. Third Maximum Number](./leetcode/414-ThirdMaximumNumber.go)   
 [416. Partition Equal Subset Sum](./leetcode/416-PartitionEqualSubsetSum.go)   
 [422. Valid Word Square](./leetcode/422-ValidWordSquare.go)   
