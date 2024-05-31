@@ -701,7 +701,6 @@
 [234. Palindrome Linked List](./leetcode/234-PalindromeLinkedList.go)    
 [237. Delete Node in a Linked List](./leetcode/237-DeleteNodeInALinkedList.go)   
 [328. Odd Even Linked List](./leetcode/328-OddEvenLinkedList.go)   
-[339. Nested List Weight Sum](./leetcode/339-NestedListWeightSum.go)   
 [445. Add Two Numbers II](./leetcode/445-AddTwoNumbersII.go)   
 [876. Middle of the Linked List](./leetcode/876-MiddleOfTheLinkedList.go)   
 [1171. Remove Zero Sum Consecutive Nodes from Linked List](./leetcode/1171-RemoveZeroSumConsecutiveNodesFromLinkedList.go)   
@@ -797,6 +796,8 @@
 [225. Implement Stack using Queues](./leetcode/225-ImplementStackUsingQueues.go)   
 [232. Implement Queue using Stacks](./leetcode/232-ImplementQueueUsingStacks.go)   
 [321. Create Maximum Number](./leetcode/321-CreateMaximumNumber.go)   
+[339. Nested List Weight Sum](./leetcode/339-NestedListWeightSum.go)   
+[364. Nested List Weight Sum II](./leetcode/364-NestedListWeightSumII.go)   
 
 # Tree
 [94. Binary Tree Inorder Traversal](./leetcode/94-BinaryTreeInorderTraversal.go)   
