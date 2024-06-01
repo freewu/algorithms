@@ -484,6 +484,7 @@
 [2670. Find the Distinct Difference Array](./leetcode/2670-FindTheDistinctDifferenceArray.go)   
 [2684. Maximum Number of Moves in a Grid](./leetcode/2684-MaximumNumberOfMovesInAGrid.go)   
 [2731. Movement of Robots](./leetcode/2731-MovementOfRobots.go)   
+[2744. Find Maximum Number of String Pairs](./leetcode/2744-FindMaximumNumberOfStringPairs.go)   
 [2765. Longest Alternating Subarray](./leetcode/2765-LongestAlternatingSubarray.go)   
 [2771. Longest Non-decreasing Subarray From Two Arrays](./leetcode/2771-LongestNon-DecreasingSubarrayFromTwoArrays.go)   
 [2788. Split Strings by Separator](./leetcode/2788-SplitStringsBySeparator.go)   
