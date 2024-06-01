@@ -791,6 +791,7 @@
 [2739. Total Distance Traveled](./leetcode/2739-TotalDistanceTraveled.go)   
 [2769. Find the Maximum Achievable Number](./leetcode/2769-FindTheMaximumAchievableNumber.go)   
 [2834. Find the Minimum Possible Sum of a Beautiful Array](./leetcode/2834-FindTheMinimumPossibleSumOfABeautifulArray.go)    
+[2928. Distribute Candies Among Children I](./leetcode/2928-DistributeCandiesAmongChildrenI.go)   
 
 # Stack
 [225. Implement Stack using Queues](./leetcode/225-ImplementStackUsingQueues.go)   
