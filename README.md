@@ -705,6 +705,7 @@
 [234. Palindrome Linked List](./leetcode/234-PalindromeLinkedList.go)    
 [237. Delete Node in a Linked List](./leetcode/237-DeleteNodeInALinkedList.go)   
 [328. Odd Even Linked List](./leetcode/328-OddEvenLinkedList.go)   
+[369. Plus One Linked List](./leetcode/369-PlusOneLinkedList.go)   
 [445. Add Two Numbers II](./leetcode/445-AddTwoNumbersII.go)   
 [876. Middle of the Linked List](./leetcode/876-MiddleOfTheLinkedList.go)   
 [1171. Remove Zero Sum Consecutive Nodes from Linked List](./leetcode/1171-RemoveZeroSumConsecutiveNodesFromLinkedList.go)   
