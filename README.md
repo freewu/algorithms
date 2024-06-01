@@ -659,6 +659,7 @@
 [2864. Maximum Odd Binary Number](./leetcode/2864-MaximumOddBinaryNumber.go)   
 [2981. Find Longest Special Substring That Occurs Thrice I](./leetcode/2981-FindLongestSpecialSubstringThatOccursThriceI.go)   
 [2982. Find Longest Special Substring That Occurs Thrice II](./leetcode/2982-FindLongestSpecialSubstringThatOccursThriceII.go)   
+[3110. Score of a String](./leetcode/3110-ScoreOfAString.go)   
 
 
 # Dynamic Programming
