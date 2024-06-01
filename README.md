@@ -450,6 +450,7 @@
 [2108. Find First Palindromic String in the Array](./leetcode/2108-FindFirstPalindromicStringInTheArray.go)   
 [2140. Solving Questions With Brainpower](./leetcode/2140-SolvingQuestionsWithBrainpower.go)   
 [2149. Rearrange Array Elements by Sign](./leetcode/2149-RearrangeArrayElementsBySign.go)   
+[2171. Removing Minimum Number of Magic Beans](./leetcode/2171-RemovingMinimumNumberOfMagicBeans.go)   
 [2183. Count Array Pairs Divisible by K](./leetcode/2183-CountArrayPairsDivisibleByK.go)   
 [2215. Find the Difference of Two Arrays](./leetcode/2215-FindTheDifferenceOfTwoArrays.go)   
 [2218. Maximum Value of K Coins From Piles](./leetcode/2218-MaximumValueOfKCoinsFromPiles.go)   

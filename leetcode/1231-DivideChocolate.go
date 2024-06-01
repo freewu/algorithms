@@ -82,6 +82,36 @@ func maximizeSweetness1(sweetness []int, k int) int {
     return low - 1
 }
 
+func maximizeSweetness2(sweetness []int, k int) int {
+    sum, least := 0, 1 << 31-1
+    min := func (x, y int) int { if x < y { return x; }; return y; }
+    for _, s := range sweetness {
+        sum += s
+        least = min(least, s)
+    }
+    canMaximizeSweetness := func (sweetness []int, k, least int) bool {
+        cnt, sum := 0, 0
+        for _, s := range sweetness {
+            sum += s
+            if sum >= least {
+                cnt++
+                sum = 0
+            }
+        }
+        return cnt >= k+1
+    }
+    l,r := least,sum / (k+1) + 1
+    for l < r-1 {
+        mid := (l+r) >> 1
+        if canMaximizeSweetness(sweetness,k,mid){
+            l = mid
+        }else{
+            r = mid
+        }
+    }
+    return l
+}
+
 func main() {
     // Explanation: You can divide the chocolate to [1,2,3], [4,5], [6], [7], [8], [9]
     fmt.Println(maximizeSweetness([]int{1,2,3,4,5,6,7,8,9},5)) // 6
@@ -93,4 +123,8 @@ func main() {
     fmt.Println(maximizeSweetness1([]int{1,2,3,4,5,6,7,8,9},5)) // 6
     fmt.Println(maximizeSweetness1([]int{5,6,7,8,9,1,2,3,4},8)) // 1
     fmt.Println(maximizeSweetness1([]int{1,2,2,1,2,2,1,2,2},2)) // 5
+
+    fmt.Println(maximizeSweetness2([]int{1,2,3,4,5,6,7,8,9},5)) // 6
+    fmt.Println(maximizeSweetness2([]int{5,6,7,8,9,1,2,3,4},8)) // 1
+    fmt.Println(maximizeSweetness2([]int{1,2,2,1,2,2,1,2,2},2)) // 5
 }
