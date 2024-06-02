@@ -294,6 +294,7 @@
 [542. 01 Matrix](./leetcode/542-01Matrix.go)   
 [547. Number of Provinces](./leetcode/547-NumberOfProvinces.go)   
 [560. Subarray Sum Equals K](./leetcode/560-SubarraySumEqualsK.go)   
+[575. Distribute Candies](./leetcode/575-DistributeCandies.go)   
 [581. Shortest Unsorted Continuous Subarray](./leetcode/581-ShortestUnsortedContinuousSubarray.go)   
 [605. Can Place Flowers](./leetcode/605-CanPlaceFlowers.go)   
 [611. Valid Triangle Number](./leetcode/611-ValidTriangleNumber.go)   
@@ -910,6 +911,7 @@
 [753. Cracking the Safe](./leetcode/753-CrackingTheSafe.go)   
 [924. Minimize Malware Spread](./leetcode/924-MinimizeMalwareSpread.go)    
 [928. Minimize Malware Spread II](./leetcode/928-MinimizeMalwareSpreadII.go)   
+1168. Optimize Water Distribution in a Village
 [1466. Reorder Routes to Make All Paths Lead to the City Zero](./leetcode/1466-ReorderRoutesToMakeAllPathsLeadToTheCityZero.go)   
 [1971. Find if Path Exists in Graph](./leetcode/1971-FindIfPathExistsInGraph.go)   
 [1976. Number of Ways to Arrive at Destination](./leetcode/1976-NumberOfWaysToArriveAtDestination.go)   
