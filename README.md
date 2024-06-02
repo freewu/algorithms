@@ -266,6 +266,7 @@
 [414. Third Maximum Number](./leetcode/414-ThirdMaximumNumber.go)   
 [416. Partition Equal Subset Sum](./leetcode/416-PartitionEqualSubsetSum.go)   
 [417. Pacific Atlantic Water Flow](./leetcode/417-PacificAtlanticWaterFlow.go)   
+419. Battleships in a Board
 [422. Valid Word Square](./leetcode/422-ValidWordSquare.go)   
 [435. Non-overlapping Intervals](./leetcode/435-Non-overlappingIntervals.go)   
 [436. Find Right Interval](./leetcode/436-FindRightInterval.go)   
@@ -911,7 +912,7 @@
 [753. Cracking the Safe](./leetcode/753-CrackingTheSafe.go)   
 [924. Minimize Malware Spread](./leetcode/924-MinimizeMalwareSpread.go)    
 [928. Minimize Malware Spread II](./leetcode/928-MinimizeMalwareSpreadII.go)   
-1168. Optimize Water Distribution in a Village
+[1168. Optimize Water Distribution in a Village](./leetcode/1168-OptimizeWaterDistributionInAVillage.go)   
 [1466. Reorder Routes to Make All Paths Lead to the City Zero](./leetcode/1466-ReorderRoutesToMakeAllPathsLeadToTheCityZero.go)   
 [1971. Find if Path Exists in Graph](./leetcode/1971-FindIfPathExistsInGraph.go)   
 [1976. Number of Ways to Arrive at Destination](./leetcode/1976-NumberOfWaysToArriveAtDestination.go)   
