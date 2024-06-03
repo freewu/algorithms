@@ -605,6 +605,7 @@
 [394. Decode String](./leetcode/394-DecodeString.go)   
 [395. Longest Substring with At Least K Repeating Characters](./leetcode/395-LongestSubstringWithAtLeastKRepeatingCharacters.go)   
 [402. Remove K Digits](./leetcode/402-RemoveKDigits.go)   
+[408. Valid Word Abbreviation](./leetcode/408-ValidWordAbbreviation.go)   
 [409. Longest Palindrome](./leetcode/409-LongestPalindrome.go)   
 [415. Add Strings](./leetcode/415-AddStrings.go)   
 [420. Strong Password Checker](./leetcode/420-StrongPasswordChecker.go)   
