@@ -626,7 +626,7 @@
 [541. Reverse String II](./leetcode/541-ReverseStringII.go)   
 [557. Reverse Words in a String III](./leetcode/557-ReverseWordsInAStringIII.go)   
 [567. Permutation in String](./leetcode/567-PermutationInString.go)   
-616. Add Bold Tag in String
+[616. Add Bold Tag in String](./leetcode/616-AddBoldTagInString.go)   
 [639. Decode Ways II](./leetcode/639-DecodeWaysII.go)   
 [647. Palindromic Substrings](./leetcode/647-PalindromicSubstrings.go)   
 [649. Dota2 Senate](./leetcode/649-Dota2Senate.go)   
