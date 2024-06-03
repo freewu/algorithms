@@ -660,6 +660,7 @@
 [2129. Capitalize the Title](./leetcode/2129-CapitalizeTheTitle.go)   
 [2370. Longest Ideal Subsequence](./leetcode/2370-LongestIdealSubsequence.go)   
 [2390. Removing Stars From a String](./leetcode/2390-RemovingStarsFromAString.go)   
+[2486. Append Characters to String to Make Subsequence](./leetcode/2486-AppendCharactersToStringToMakeSubsequence.go)   
 [2575. Find the Divisibility Array of a String](./leetcode/2575-FindTheDivisibilityArrayOfAString.go)    
 [2586. Count the Number of Vowel Strings in Range](./leetcode/2586-CountTheNumberOfVowelStringsInRange.go)   
 [2719. Count of Integers](./leetcode/2719-CountOfIntegers.go)   
