@@ -783,6 +783,7 @@
 [1006. Clumsy Factorial](./leetcode/1006-ClumsyFactorial.go)   
 [1017. Convert to Base -2](./leetcode/1017-ConvertToBase-2.go)   
 [1056. Confusing Number](./leetcode/1056-ConfusingNumber.go)   
+[1103. Distribute Candies to People](./leetcode/1103-DistributeCandiesToPeople.go)   
 [1134. Armstrong Number](./leetcode/1134-ArmstrongNumber.go)   
 [1137. N-th Tribonacci Number](./leetcode/1137-NthTribonacciNumber.go)   
 [1118. Number of Days in a Month](./leetcode/1118-NumberOfDaysInAMonth.go)   
