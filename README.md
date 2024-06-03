@@ -609,6 +609,7 @@
 [415. Add Strings](./leetcode/415-AddStrings.go)   
 [420. Strong Password Checker](./leetcode/420-StrongPasswordChecker.go)   
 [423. Reconstruct Original Digits from English](./leetcode/423-ReconstructOriginalDigitsFromEnglish.go)   
+[424. Longest Repeating Character Replacement](./leetcode/424-LongestRepeatingCharacterReplacement.go)   
 [433. Minimum Genetic Mutation](./leetcode/433-MinimumGeneticMutation.go)    
 [438. Find All Anagrams in a String](./leetcode/438-FindAllAnagramsInAString.go)   
 [451. Sort Characters By Frequency](./leetcode/451-SortCharactersByFrequency.go)   
