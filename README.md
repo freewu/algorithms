@@ -607,6 +607,7 @@
 [402. Remove K Digits](./leetcode/402-RemoveKDigits.go)   
 [408. Valid Word Abbreviation](./leetcode/408-ValidWordAbbreviation.go)   
 [409. Longest Palindrome](./leetcode/409-LongestPalindrome.go)   
+[411. Minimum Unique Word Abbreviation](./leetcode/411-MinimumUniqueWordAbbreviation.go)   
 [415. Add Strings](./leetcode/415-AddStrings.go)   
 [420. Strong Password Checker](./leetcode/420-StrongPasswordChecker.go)   
 [423. Reconstruct Original Digits from English](./leetcode/423-ReconstructOriginalDigitsFromEnglish.go)   
