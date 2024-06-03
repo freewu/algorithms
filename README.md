@@ -517,12 +517,14 @@
 [2962. Count Subarrays Where Max Element Appears at Least K Times](./leetcode/2962-CountSubarraysWhereMaxElementAppearsAtLeastKTimes.go)   
 [2965. Find Missing and Repeated Values](./leetcode/2965-FindMissingAndRepeatedValues.go)   
 [2966. Divide Array Into Arrays With Max Difference](./leetcode/2966-DivideArrayIntoArraysWithMaxDifference.go)   
-[2971. Find Polygon With the Largest Perimeter](./leetcode/2971-FindPolygonWithTheLargestPerimeter.go)    
-[2997. Minimum Number of Operations to Make Array XOR Equal to K](./leetcode/2997-MinimumNumberOfOperationsToMakeArrayXOREqualToK.go)    
+[2971. Find Polygon With the Largest Perimeter](./leetcode/2971-FindPolygonWithTheLargestPerimeter.go)   
+[2997. Minimum Number of Operations to Make Array XOR Equal to K](./leetcode/2997-MinimumNumberOfOperationsToMakeArrayXOREqualToK.go)   
 [3068. Find the Maximum Sum of Node Values](./leetcode/3068-FindTheMaximumSumOfNodeValues.go)   
-[3005. Count Elements With Maximum Frequency](./leetcode/3005-CountElementsWithMaximumFrequency.go)    
-[3074. Apple Redistribution into Boxes](./leetcode/3074-AppleRedistributionIntoBoxes.go)    
+[3005. Count Elements With Maximum Frequency](./leetcode/3005-CountElementsWithMaximumFrequency.go)   
+[3067. Count Pairs of Connectable Servers in a Weighted Tree Network](./leetcode/3067-CountPairsOfConnectableServersInAWeightedTreeNetwork.go)   
+[3074. Apple Redistribution into Boxes](./leetcode/3074-AppleRedistributionIntoBoxes.go)   
 [3075. Maximize Happiness of Selected Children](./leetcode/3075-MaximizeHappinessOfSelectedChildren.go)   
+
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
