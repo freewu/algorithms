@@ -626,6 +626,7 @@
 [541. Reverse String II](./leetcode/541-ReverseStringII.go)   
 [557. Reverse Words in a String III](./leetcode/557-ReverseWordsInAStringIII.go)   
 [567. Permutation in String](./leetcode/567-PermutationInString.go)   
+616. Add Bold Tag in String
 [639. Decode Ways II](./leetcode/639-DecodeWaysII.go)   
 [647. Palindromic Substrings](./leetcode/647-PalindromicSubstrings.go)   
 [649. Dota2 Senate](./leetcode/649-Dota2Senate.go)   
@@ -924,6 +925,7 @@
 [323. Number of Connected Components in an Undirected Graph](./leetcode/323-NumberOfConnectedComponentsInAnUndirectedGraph.go)   
 [332. Reconstruct Itinerary](./leetcode/332-ReconstructItinerary.go)   
 [753. Cracking the Safe](./leetcode/753-CrackingTheSafe.go)   
+[847. Shortest Path Visiting All Nodes](./leetcode/847-ShortestPathVisitingAllNodes.go)   
 [924. Minimize Malware Spread](./leetcode/924-MinimizeMalwareSpread.go)    
 [928. Minimize Malware Spread II](./leetcode/928-MinimizeMalwareSpreadII.go)   
 [1168. Optimize Water Distribution in a Village](./leetcode/1168-OptimizeWaterDistributionInAVillage.go)   
