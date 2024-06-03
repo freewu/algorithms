@@ -1398,6 +1398,7 @@ LCR 075. 数组的相对排序
 [3150. Invalid Tweets II](./leetcode/3150-InvalidTweetsII.sql)   
 [3156. Employee Task Duration and Concurrent Tasks](./leetcode/3156-EmployeeTaskDurationAndConcurrentTasks.sql)   
 [3166. Calculate Parking Fees and Duration](./leetcode/3166-CalculateParkingFeesAndDuration.sql)   
+[3172. Second Day Verification](./leetcode/3172-SecondDayVerification.sql)   
 
 # Shell
 [192. Word Frequency](./leetcode/192-WordFrequency.sh)      
