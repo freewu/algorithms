@@ -609,6 +609,7 @@
 [409. Longest Palindrome](./leetcode/409-LongestPalindrome.go)   
 [411. Minimum Unique Word Abbreviation](./leetcode/411-MinimumUniqueWordAbbreviation.go)   
 [415. Add Strings](./leetcode/415-AddStrings.go)   
+[418. Sentence Screen Fitting](./leetcode/418-SentenceScreenFitting.go)   
 [420. Strong Password Checker](./leetcode/420-StrongPasswordChecker.go)   
 [423. Reconstruct Original Digits from English](./leetcode/423-ReconstructOriginalDigitsFromEnglish.go)   
 [424. Longest Repeating Character Replacement](./leetcode/424-LongestRepeatingCharacterReplacement.go)   
