@@ -385,6 +385,7 @@
 [1235. Maximum Profit in Job Scheduling](./leetcode/1235-MaximumProfitInJobScheduling.go)   
 [1255. Maximum Score Words Formed by Letters](./leetcode/1255-MaximumScoreWordsFormedByLetters.go)   
 [1268. Search Suggestions System](./leetcode/1268-SearchSuggestionsSystem.go)   
+[1272. Remove Interval](./leetcode/1272-RemoveInterval.go)   
 [1274. Number of Ships in a Rectangle](./leetcode/1274-NumberOfShipsInARectangle.go)   
 [1275. Find Winner on a Tic Tac Toe Game](./leetcode/1275-FindWinnerOnATicTacToeGame.go)   
 [1283. Find the Smallest Divisor Given a Threshold](./leetcode/1283-FindTheSmallestDivisorGivenAThreshold.go)   
