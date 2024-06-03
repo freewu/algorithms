@@ -316,6 +316,7 @@
 [713. Subarray Product Less Than K](./leetcode/713-SubarrayProductLessThanK.go)   
 [714. Best Time to Buy and Sell Stock with Transaction Fee](./leetcode/714-BestTimeToBuyAndSellStockWithTransactionFee.go)   
 [718. Maximum Length of Repeated Subarray](./leetcode/718-MaximumLengthOfRepeatedSubarray.go)   
+[723. Candy Crush](./leetcode/723-CandyCrush.go)   
 [724. Find Pivot Index](./leetcode/724-FindPivotIndex.go)   
 [734. Sentence Similarity](./leetcode/734-SentenceSimilarity.go)   
 [735. Asteroid Collision](./leetcode/735-AsteroidCollision.go)   
