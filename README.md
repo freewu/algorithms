@@ -309,6 +309,7 @@
 [673. Number of Longest Increasing Subsequence](./leetcode/673-NumberOfLongestIncreasingSubsequence.go)   
 [682. Baseball Game](./leetcode/682-BaseballGame.go)   
 [692. Top K Frequent Words](./leetcode/692-TopKFrequentWords.go)   
+[698. Partition to K Equal Sum Subsets](./leetcode/698-PartitionToKEqualSumSubsets.go)   
 [702. Search in a Sorted Array of Unknown Size](./leetcode/702-SearchInASortedArrayOfUnknownSize.go)   
 [704. Binary Search](./leetcode/704-BinarySearch.go)    
 [713. Subarray Product Less Than K](./leetcode/713-SubarrayProductLessThanK.go)   
