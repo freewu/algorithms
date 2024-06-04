@@ -999,6 +999,7 @@
 [460. LFU Cache](./leetcode/460-LFUCache.go)   
 [478. Generate Random Point in a Circle](./leetcode/478-GenerateRandomPointInACircle.go)   
 [528. Random Pick with Weight](./leetcode/528-RandomPickWithWeight.go)   
+[535. Encode and Decode TinyURL](./leetcode/535-EncodeAndDecodeTinyURL.go)   
 [588. Design In-Memory File System](./leetcode/588-DesignIn-MemoryFileSystem.go)   
 [604. Design Compressed String Iterator](./leetcode/604-DesignCompressedStringIterator.go)   
 [622. Design Circular Queue](./leetcode/622-DesignCircularQueue.go)   
