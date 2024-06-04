@@ -993,6 +993,7 @@
 [398. Random Pick Index](./leetcode/398-RandomPickIndex.go)   
 [428. Serialize and Deserialize N-ary Tree](./leetcode/428-SerializeAndDeserializeN-aryTree.go)   
 [431. Encode N-ary Tree to Binary Tree](./leetcode/431-EncodeN-aryTreeToBinaryTree.go)   
+[432. All O`one Data Structure](./leetcode/432-AllOoneDataStructure.go)   
 [460. LFU Cache](./leetcode/460-LFUCache.go)   
 [478. Generate Random Point in a Circle](./leetcode/478-GenerateRandomPointInACircle.go)   
 [528. Random Pick with Weight](./leetcode/528-RandomPickWithWeight.go)   
