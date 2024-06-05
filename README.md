@@ -795,6 +795,7 @@
 [405. Convert a Number to Hexadecimal](./leetcode/405-ConvertANumberToHexadecimal.go)   
 [412. Fizz Buzz](./leetcode/412-FizzBuzz.go)   
 [441. Arranging Coins](./leetcode/441-ArrangingCoins.go)   
+[507. Perfect Number](./leetcode/507-PerfectNumber.go)   
 [509. Fibonacci Number](./leetcode/509-FibonacciNumber.go)   
 [634. Find the Derangement of An Array](./leetcode/634-FindTheDerangementOfAnArray.go)   
 [651. 4 Keys Keyboard](./leetcode/651-4KeysKeyboard.go)   
