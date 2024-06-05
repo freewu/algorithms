@@ -689,6 +689,7 @@
 [2719. Count of Integers](./leetcode/2719-CountOfIntegers.go)   
 [2810. Faulty Keyboard](./leetcode/2810-FaultyKeyboard.go)   
 [2864. Maximum Odd Binary Number](./leetcode/2864-MaximumOddBinaryNumber.go)   
+[2938. Separate Black and White Balls](./leetcode/2938-SeparateBlackAndWhiteBalls.go)   
 [2981. Find Longest Special Substring That Occurs Thrice I](./leetcode/2981-FindLongestSpecialSubstringThatOccursThriceI.go)   
 [2982. Find Longest Special Substring That Occurs Thrice II](./leetcode/2982-FindLongestSpecialSubstringThatOccursThriceII.go)   
 [3110. Score of a String](./leetcode/3110-ScoreOfAString.go)   
