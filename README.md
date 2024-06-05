@@ -953,6 +953,7 @@
 
 # Trie
 [386. Lexicographical Numbers](./leetcode/386-LexicographicalNumbers.go)   
+[440. K-th Smallest in Lexicographical Order](./leetcode/440-KthSmallestInLexicographicalOrder.go)   
 
 # Bit Manipulation
 [136. Single Number](./leetcode/136-SingleNumber.go)   
