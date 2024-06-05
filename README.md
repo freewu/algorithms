@@ -360,7 +360,7 @@
 [992. Subarrays with K Different Integers](./leetcode/992-SubarraysWithKDifferentIntegers.go)   
 [994. Rotting Oranges](./leetcode/994-RottingOranges.go)   
 [997. Find the Town Judge](./leetcode/997-FindTheTownJudge.go)   
-1002. Find Common Characters
+[1002. Find Common Characters](./leetcode/1002-FindCommonCharacters.go)   
 [1004. Max Consecutive Ones III](./leetcode/1004-MaxConsecutiveOnesIII.go)   
 [1011. Capacity To Ship Packages Within D Days](./leetcode/1011-CapacityToShipPackagesWithinDDays.go)   
 [1027. Longest Arithmetic Subsequence](./leetcode/1027-LongestArithmeticSubsequence.go)   
