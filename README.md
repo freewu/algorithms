@@ -627,6 +627,7 @@
 [451. Sort Characters By Frequency](./leetcode/451-SortCharactersByFrequency.go)   
 [459. Repeated Substring Pattern](./leetcode/459-RepeatedSubstringPattern.go)   
 [468. Validate IP Address](./leetcode/468-ValidateIPAddress.go)   
+[484. Find Permutation](./leetcode/484-FindPermutation.go)   
 [514. Freedom Trail](./leetcode/514-FreedomTrail.go)   
 [516. Longest Palindromic Subsequence](./leetcode/516-LongestPalindromicSubsequence.go)   
 [541. Reverse String II](./leetcode/541-ReverseStringII.go)   
