@@ -623,6 +623,7 @@
 [424. Longest Repeating Character Replacement](./leetcode/424-LongestRepeatingCharacterReplacement.go)   
 [433. Minimum Genetic Mutation](./leetcode/433-MinimumGeneticMutation.go)    
 [438. Find All Anagrams in a String](./leetcode/438-FindAllAnagramsInAString.go)   
+[439. Ternary Expression Parser](./leetcode/439-TernaryExpressionParser.go)   
 [451. Sort Characters By Frequency](./leetcode/451-SortCharactersByFrequency.go)   
 [459. Repeated Substring Pattern](./leetcode/459-RepeatedSubstringPattern.go)   
 [468. Validate IP Address](./leetcode/468-ValidateIPAddress.go)   
