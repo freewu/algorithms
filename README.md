@@ -360,6 +360,7 @@
 [992. Subarrays with K Different Integers](./leetcode/992-SubarraysWithKDifferentIntegers.go)   
 [994. Rotting Oranges](./leetcode/994-RottingOranges.go)   
 [997. Find the Town Judge](./leetcode/997-FindTheTownJudge.go)   
+1002. Find Common Characters
 [1004. Max Consecutive Ones III](./leetcode/1004-MaxConsecutiveOnesIII.go)   
 [1011. Capacity To Ship Packages Within D Days](./leetcode/1011-CapacityToShipPackagesWithinDDays.go)   
 [1027. Longest Arithmetic Subsequence](./leetcode/1027-LongestArithmeticSubsequence.go)   
@@ -524,6 +525,7 @@
 [3068. Find the Maximum Sum of Node Values](./leetcode/3068-FindTheMaximumSumOfNodeValues.go)   
 [3005. Count Elements With Maximum Frequency](./leetcode/3005-CountElementsWithMaximumFrequency.go)   
 [3067. Count Pairs of Connectable Servers in a Weighted Tree Network](./leetcode/3067-CountPairsOfConnectableServersInAWeightedTreeNetwork.go)   
+[3072. Distribute Elements Into Two Arrays II](./leetcode/3072-DistributeElementsIntoTwoArraysII.go)   
 [3074. Apple Redistribution into Boxes](./leetcode/3074-AppleRedistributionIntoBoxes.go)   
 [3075. Maximize Happiness of Selected Children](./leetcode/3075-MaximizeHappinessOfSelectedChildren.go)   
 
