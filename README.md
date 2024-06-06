@@ -274,6 +274,7 @@
 [436. Find Right Interval](./leetcode/436-FindRightInterval.go)   
 [442. Find All Duplicates in an Array](./leetcode/442-FindAllDuplicatesInAnArray.go)   
 [443. String Compression](./leetcode/443-StringCompression.go)   
+[444. Sequence Reconstruction](./leetcode/444-SequenceReconstruction.go)   
 [446. Arithmetic Slices II - Subsequence](./leetcode/446-ArithmeticSlicesII-Subsequence.go)   
 [447. Number of Boomerangs](./leetcode/447-NumberOfBoomerangs.go)   
 [452. Minimum Number of Arrows to Burst Balloons](./leetcode/452-MinimumNumberOfArrowsToBurstBalloons.go)   
