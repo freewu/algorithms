@@ -373,6 +373,7 @@
 [1043. Partition Array for Maximum Sum](./leetcode/1043-PartitionArrayForMaximumSum.go)   
 [1048. Longest String Chain](./leetcode/1048-LongestStringChain.go)   
 [1052. Grumpy Bookstore Owner](./leetcode/1052-GrumpyBookstoreOwner.go)   
+[1060. Missing Element in Sorted Array](./leetcode/1060-MissingElementInSortedArray.go)   
 [1064. Fixed Point](./leetcode/1064-FixedPoint.go)   
 [1074. Number of Submatrices That Sum to Target](./leetcode/1074-NumberOfSubmatricesThatSumToTarget.go)   
 [1090. Largest Values From Labels](./leetcode/1090-LargestValuesFromLabels.go)   
