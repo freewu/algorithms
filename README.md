@@ -335,6 +335,7 @@
 [797. All Paths From Source to Target](./leetcode/797-AllPathsFromSourceToTarget.go)   
 [826. Most Profit Assigning Work](./leetcode/826-MostProfitAssigningWork.go)   
 [841. Keys and Rooms](./leetcode/841-KeysAndRooms.go)   
+[846. Hand of Straights](./leetcode/846-HandOfStraights.go)   
 [852. Peak Index in a Mountain Array](./leetcode/852-PeakIndexInAMountainArray.go)    
 [857. Minimum Cost to Hire K Workers](./leetcode/857-MinimumCostToHireKWorkers.go)    
 [860. Lemonade Change](./leetcode/860-LemonadeChange.go)   
