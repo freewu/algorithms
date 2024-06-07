@@ -450,6 +450,7 @@
 [1766. Tree of Coprimes](./leetcode/1766-TreeOfCoprimes.go)   
 [1770. Maximum Score from Performing Multiplication Operations](./leetcode/1770-MaximumScoreFromPerformingMultiplicationOperations.go)   
 [1793. Maximum Score of a Good Subarray](./leetcode/1793-MaximumScoreOfAGoodSubarray.go)   
+[1799. Maximize Score After N Operations](./leetcode/1799-MaximizeScoreAfterNOperations.go)   
 [1822. Sign of the Product of an Array](./leetcode/1822-SignOfTheProductOfAnArray.go)   
 [1863. Sum of All Subset XOR Totals](./leetcode/1863-SumOfAllSubsetXORTotals.go)   
 [1883. Minimum Skips to Arrive at Meeting On Time](./leetcode/1883-MinimumSkipsToArriveAtMeetingOnTime.go)    
