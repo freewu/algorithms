@@ -532,6 +532,7 @@
 [2966. Divide Array Into Arrays With Max Difference](./leetcode/2966-DivideArrayIntoArraysWithMaxDifference.go)   
 [2971. Find Polygon With the Largest Perimeter](./leetcode/2971-FindPolygonWithTheLargestPerimeter.go)   
 [2997. Minimum Number of Operations to Make Array XOR Equal to K](./leetcode/2997-MinimumNumberOfOperationsToMakeArrayXOREqualToK.go)   
+[3038. Maximum Number of Operations With the Same Score I](./leetcode/3038-MaximumNumberOfOperationsWithTheSameScoreI.go)   
 [3068. Find the Maximum Sum of Node Values](./leetcode/3068-FindTheMaximumSumOfNodeValues.go)   
 [3005. Count Elements With Maximum Frequency](./leetcode/3005-CountElementsWithMaximumFrequency.go)   
 [3067. Count Pairs of Connectable Servers in a Weighted Tree Network](./leetcode/3067-CountPairsOfConnectableServersInAWeightedTreeNetwork.go)   
