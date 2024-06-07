@@ -952,6 +952,7 @@
 [310. Minimum Height Trees](./leetcode/310-MinimumHeightTrees.go)   
 [323. Number of Connected Components in an Undirected Graph](./leetcode/323-NumberOfConnectedComponentsInAnUndirectedGraph.go)   
 [332. Reconstruct Itinerary](./leetcode/332-ReconstructItinerary.go)   
+[490. The Maze](./leetcode/490-TheMaze.go)   
 [753. Cracking the Safe](./leetcode/753-CrackingTheSafe.go)   
 [847. Shortest Path Visiting All Nodes](./leetcode/847-ShortestPathVisitingAllNodes.go)   
 [924. Minimize Malware Spread](./leetcode/924-MinimizeMalwareSpread.go)    
