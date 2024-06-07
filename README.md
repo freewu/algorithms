@@ -927,6 +927,7 @@
 [1161. Maximum Level Sum of a Binary Tree](./leetcode/1161-MaximumLevelSumOfABinaryTree.go)   
 [1261. Find Elements in a Contaminated Binary Tree](./leetcode/1261-FindElementsInAContaminatedBinaryTree.go)   
 [1325. Delete Leaves With a Given Value](./leetcode/1325-DeleteLeavesWithAGivenValue.go)   
+[1339. Maximum Product of Splitted Binary Tree](./leetcode/1339-MaximumProductOfSplittedBinaryTree.go)   
 [1372. Longest ZigZag Path in a Binary Tree](./leetcode/1372-LongestZigZagPathInABinaryTree.go)   
 [1379. Find a Corresponding Node of a Binary Tree in a Clone of That Tree](./leetcode/1379-FindACorrespondingNodeOfABinaryTreeInACloneOfThatTree.go)   
 [1448. Count Good Nodes in Binary Tree](./leetcode/1448-CountGoodNodesInBinaryTree.go)   
