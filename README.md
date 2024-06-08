@@ -281,6 +281,7 @@
 [453. Minimum Moves to Equal Array Elements](./leetcode/453-MinimumMovesToEqualArrayElements.go)   
 [454. 4Sum II](./leetcode/454-4SumII.go)   
 [455. Assign Cookies](./leetcode/455-AssignCookies.go)   
+[456. 132 Pattern](./leetcode/456-132Pattern.go)   
 [463. Island Perimeter](./leetcode/463-IslandPerimeter.go)   
 [465. Optimal Account Balancing](./leetcode/465-OptimalAccountBalancing.go)   
 [474. Ones and Zeroes](./leetcode/474-OnesAndZeroes.go)   
