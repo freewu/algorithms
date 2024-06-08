@@ -980,6 +980,9 @@
 [386. Lexicographical Numbers](./leetcode/386-LexicographicalNumbers.go)   
 [440. K-th Smallest in Lexicographical Order](./leetcode/440-KthSmallestInLexicographicalOrder.go)   
 
+# Breadth-First Search
+[1197. Minimum Knight Moves](./leetcode/1197-MinimumKnightMoves.go)   
+
 # Bit Manipulation
 [136. Single Number](./leetcode/136-SingleNumber.go)   
 [137. Single Number II](./leetcode/137-SingleNumberII.go)   
