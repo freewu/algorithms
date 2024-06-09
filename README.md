@@ -1460,6 +1460,7 @@ LCR 075. 数组的相对排序
 [3156. Employee Task Duration and Concurrent Tasks](./leetcode/3156-EmployeeTaskDurationAndConcurrentTasks.sql)   
 [3166. Calculate Parking Fees and Duration](./leetcode/3166-CalculateParkingFeesAndDuration.sql)   
 [3172. Second Day Verification](./leetcode/3172-SecondDayVerification.sql)   
+[3182. Find Top Scoring Students](./leetcode/3182-FindTopScoringStudents.sql)   
 
 # Shell
 [192. Word Frequency](./leetcode/192-WordFrequency.sh)      
