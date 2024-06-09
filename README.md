@@ -391,6 +391,7 @@
 [1133. Largest Unique Number](./leetcode/1133-LargestUniqueNumber.go)   
 [1140. Stone Game II](./leetcode/1140-StoneGameII.go)   
 [1150. Check If a Number Is Majority Element in a Sorted Array](./leetcode/1150-CheckIfANumberIsMajorityElementInASortedArray.go)   
+1167. Minimum Cost to Connect Sticks
 [1187. Make Array Strictly Increasing](./leetcode/1187-MakeArrayStrictlyIncreasing.go)   
 [1198. Find Smallest Common Element in All Rows](./leetcode/1198-FindSmallestCommonElementInAllRows.go)   
 [1207. Unique Number of Occurrences](./leetcode/1207-UniqueNumberOfOccurrences.go)   
@@ -1617,6 +1618,7 @@ LCR 075. 数组的相对排序
 [LCR 015. 找到字符串中所有字母异位词](./leetcode/LCR015-FindAllAnagramsInAString.go)   
 [LCR 016. 无重复字符的最长子串](./leetcode/LCR016-LongestSubstringWithoutRepeatingCharacters.go)   
 [LCR 017. 最小覆盖子串](./leetcode/LCR017-MinimumWindowSubstring.go)   
+[LCR 018. 验证回文串](./leetcode/LCR018-ValidPalindrome.go)   
 [LCR 038. 每日温度](./leetcode/LCR038-DailyTemperatures.go)   
 [LCR 057. 存在重复元素 III](./leetcode/LCR057-ContainsDuplicateIII.go)   
 [LCR 060. 前 K 个高频元素](./leetcode/LCR060-TopKFrequentElements.go)   
