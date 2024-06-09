@@ -365,6 +365,7 @@
 [950. Reveal Cards In Increasing Order](./leetcode/950-RevealCardsInIncreasingOrder.go)   
 [952. Largest Component Size by Common Factor](./leetcode/952-LargestComponentSizeByCommonFactor.go)   
 [956. Tallest Billboard](./leetcode/956-TallestBillboard.go)   
+[974. Subarray Sums Divisible by K](./leetcode/974-SubarraySumsDivisibleByK.go)   
 [976. Largest Perimeter Triangle](./leetcode/976-LargestPerimeterTriangle.go)   
 [977. Squares of a Sorted Array](./leetcode/977-SquaresOfASortedArray.go)   
 [983. Minimum Cost For Tickets](./leetcode/983-MinimumCostForTickets.go)   
