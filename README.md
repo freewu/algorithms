@@ -381,6 +381,7 @@
 [1048. Longest String Chain](./leetcode/1048-LongestStringChain.go)   
 [1051. Height Checker](./leetcode/1051-HeightChecker.go)   
 [1052. Grumpy Bookstore Owner](./leetcode/1052-GrumpyBookstoreOwner.go)   
+[1057. Campus Bikes](./leetcode/1057-CampusBikes.go)   
 [1060. Missing Element in Sorted Array](./leetcode/1060-MissingElementInSortedArray.go)   
 [1064. Fixed Point](./leetcode/1064-FixedPoint.go)   
 [1074. Number of Submatrices That Sum to Target](./leetcode/1074-NumberOfSubmatricesThatSumToTarget.go)   
