@@ -1,23 +1,22 @@
 package main
 
-// 647. Palindromic Substrings
-// Given a string s, return the number of palindromic substrings in it.
-// A string is a palindrome when it reads the same backward as forward.
-// A substring is a contiguous sequence of characters within the string.
+// LCR 020. 回文子串
+// 给定一个字符串 s ，请计算这个字符串中有多少个回文子字符串。
+// 具有不同开始位置或结束位置的子串，即使是由相同的字符组成，也会被视作不同的子串。
 
-// Example 1:
-// Input: s = "abc"
-// Output: 3
-// Explanation: Three palindromic strings: "a", "b", "c".
+// 示例 1：
+// 输入：s = "abc"
+// 输出：3
+// 解释：三个回文子串: "a", "b", "c"
 
-// Example 2:
-// Input: s = "aaa"
-// Output: 6
-// Explanation: Six palindromic strings: "a", "a", "a", "aa", "aa", "aaa".
-
-// Constraints:
+// 示例 2：
+// 输入：s = "aaa"
+// 输出：6
+// 解释：6个回文子串: "a", "a", "a", "aa", "aa", "aaa"
+ 
+// 提示：
 //     1 <= s.length <= 1000
-//     s consists of lowercase English letters.
+//     s 由小写英文字母组成
 
 import "fmt"
 
