@@ -388,6 +388,7 @@
 [1090. Largest Values From Labels](./leetcode/1090-LargestValuesFromLabels.go)   
 [1099. Two Sum Less Than K](./leetcode/1099-TwoSumLessThanK.go)   
 [1102. Path With Maximum Minimum Value](./leetcode/1102-PathWithMaximumMinimumValue.go)   
+[1122. Relative Sort Array](./leetcode/1122-RelativeSortArray.go)   
 [1125. Smallest Sufficient Team](./leetcode/1125-SmallestSufficientTeam.go)   
 [1133. Largest Unique Number](./leetcode/1133-LargestUniqueNumber.go)   
 [1140. Stone Game II](./leetcode/1140-StoneGameII.go)   
