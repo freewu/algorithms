@@ -70,8 +70,7 @@ func canIWin(maxChoosableInteger int, desiredTotal int) bool {
         return mem[bm] - 1
     }
     mem := make([]byte, (1 << (maxChoosableInteger + 1))-1)
-    res := findWinner(mem, 0, maxChoosableInteger, 0, desiredTotal, 0) == 0
-    return res
+    return findWinner(mem, 0, maxChoosableInteger, 0, desiredTotal, 0) == 0
 }
 
 func main() {
