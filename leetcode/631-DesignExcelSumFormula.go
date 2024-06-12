@@ -71,132 +71,252 @@ import "fmt"
 import "strconv"
 import "strings"
 
+// type Excel struct {
+//     h            int
+//     w            int
+//     matrix       [][]int
+//     dictPosToSum map[int]map[int]int // 点对应的 sum
+//     dictSumPos   map[int]int         // sum 点坐标
+// }
+
+// func b2i(b byte) int {
+//     return int(b - 'A')
+// }
+
+// func posParser(s string) []int {
+//     r, _ := strconv.Atoi(s[1:])
+//     c := b2i(s[0])
+//     return []int{r - 1, c}
+// }
+
+// func Constructor(H int, W byte) Excel {
+//     excel := Excel{}
+//     excel.matrix = make([][]int, H)
+//     for i := 0; i < H; i++ {
+//         excel.matrix[i] = make([]int, b2i(W)+1)
+//     }
+//     excel.dictPosToSum = make(map[int]map[int]int)
+//     excel.dictSumPos = make(map[int]int)
+//     excel.h = H
+//     excel.w = b2i(W) + 1
+//     return excel
+// }
+
+// func getDictKeys(dict map[int]int) []int {
+//     res := make([]int, 0)
+//     for k, v := range dict {
+//         for i := 0; i < v; i++ {
+//             res = append(res, k)
+//         }
+//     }
+//     return res
+// }
+
+// func (this *Excel) p2i(pos []int) int {
+//     return this.w*pos[0] + pos[1]
+// }
+
+// func (this *Excel) i2p(idx int) []int {
+//     return []int{idx / this.w, idx % this.w}
+// }
+
+// func (this *Excel) Set(r int, c byte, v int) {
+//     pSum := []int{r - 1, b2i(c)}
+//     idx := this.p2i(pSum)
+//     if _, ok := this.dictSumPos[idx]; ok { // cover this point
+//         this.removeSumFunc(idx)
+//     }
+//     d := v - this.matrix[pSum[0]][pSum[1]]
+//     this.matrix[r-1][b2i(c)] = v
+//     if _, ok := this.dictPosToSum[idx]; !ok {
+//         return
+//     }
+//     queue := [][]int{getDictKeys(this.dictPosToSum[idx])}
+//     for len(queue) > 0 {
+//         qNew := make([][]int, 0)
+//         for _, q := range queue {
+//             for _, qq := range q {
+//                 pos := this.i2p(qq)
+//                 this.matrix[pos[0]][pos[1]] += d
+//                 qNew = append(qNew, getDictKeys(this.dictPosToSum[qq]))
+//             }
+//         }
+//         queue = qNew
+//     }
+// }
+
+// func (this *Excel) Get(r int, c byte) int {
+//     return this.matrix[r-1][b2i(c)]
+// }
+
+// func (this *Excel) Sum(r int, c byte, strs []string) int {
+//     sum, pSum := 0,[]int{r - 1, b2i(c)}
+//     idx := this.p2i(pSum)
+//     if _, ok := this.dictSumPos[idx]; ok { // cover this point
+//         this.removeSumFunc(idx)
+//     }
+
+//     for _, s := range strs {
+//         strSep := strings.Split(s, ":")
+//         if len(strSep[0]) == 0 {
+//             continue
+//         }
+//         posBeg, posEnd := posParser(strSep[0]), posParser(strSep[0])
+//         if len(strSep) > 1 {
+//             if len(strSep[1]) == 0 {
+//                 continue
+//             }
+//             posEnd = posParser(strSep[1])
+//         }
+//         for i := posBeg[0]; i <= posEnd[0]; i++ {
+//             for j := posBeg[1]; j <= posEnd[1]; j++ {
+//                 idxInSum := this.p2i([]int{i, j})
+//                 if _, ok := this.dictPosToSum[idxInSum]; !ok {
+//                     this.dictPosToSum[idxInSum] = make(map[int]int, 0)
+//                 }
+//                 this.dictPosToSum[idxInSum][idx]++
+//                 sum += this.matrix[i][j]
+//             }
+//         }
+//     }
+//     this.matrix[pSum[0]][pSum[1]] = sum
+//     this.dictSumPos[idx] = 1
+//     return sum
+// }
+
+// func (this *Excel) removeSumFunc(idx int) {
+//     for k := range this.dictPosToSum {
+//         if _, ok := this.dictPosToSum[k][idx]; ok {
+//             delete(this.dictPosToSum[k], idx)
+//         }
+//     }
+//     for k := range this.dictPosToSum {
+//         if len(this.dictPosToSum[k]) == 0 {
+//             delete(this.dictPosToSum, k)
+//         }
+//     }
+//     delete(this.dictSumPos, idx)
+// }
+
 type Excel struct {
-    h            int
-    w            int
-    matrix       [][]int
-    dictPosToSum map[int]map[int]int // 点对应的 sum
-    dictSumPos   map[int]int         // sum 点坐标
+    grid [][]int
+    father map[int]map[int]int // union find 来更新, 内层map{key: father, value: times}
+    children map[int]map[int]int
 }
 
-func b2i(b byte) int {
-    return int(b - 'A')
-}
-
-func posParser(s string) []int {
-    r, _ := strconv.Atoi(s[1:])
-    c := b2i(s[0])
-    return []int{r - 1, c}
-}
-
-func Constructor(H int, W byte) Excel {
-    excel := Excel{}
-    excel.matrix = make([][]int, H)
-    for i := 0; i < H; i++ {
-        excel.matrix[i] = make([]int, b2i(W)+1)
+func Constructor(height int, width byte) Excel {
+    grid := make([][]int, height + 1)
+    for i, _ := range grid {
+        grid[i] = make([]int, width - 'A' + 1)
     }
-    excel.dictPosToSum = make(map[int]map[int]int)
-    excel.dictSumPos = make(map[int]int)
-    excel.h = H
-    excel.w = b2i(W) + 1
-    return excel
+    father := make(map[int]map[int]int)
+    children := make(map[int]map[int]int)
+    for i := 0; i < len(grid); i ++ {
+        for j := 0; j < len(grid[0]); j ++ {
+            father[i * len(grid[0]) + j] = make(map[int]int)
+            children[i * len(grid[0]) + j] = make(map[int]int)
+        }
+    }
+    return Excel{grid, father, children}
 }
 
-func getDictKeys(dict map[int]int) []int {
-    res := make([]int, 0)
-    for k, v := range dict {
-        for i := 0; i < v; i++ {
-            res = append(res, k)
+func (this *Excel) dfs(row, col, offSet int) {
+    key := row * len(this.grid[0]) + col
+    km := this.father[key]
+    for k, v := range km {
+        fr := k / len(this.grid[0])
+        fc := k % len(this.grid[0])
+        this.grid[fr][fc] += offSet * v
+        this.dfs(fr, fc, offSet * v)
+    }
+}
+
+func (this *Excel) Set(row int, column byte, val int)  {
+    col := int(column - 'A')
+    oldVal := this.grid[row][col]
+    this.grid[row][col] = val
+    offSet := val - oldVal
+    this.dfs(row, col, offSet)
+    key := row * len(this.grid[0]) + col
+    for child, _ := range this.children[key] {
+        delete(this.father[child], key)
+    }
+    this.children[key] = make(map[int]int)
+    //fmt.Println("after setting ", row, col, val, ": ", this.children, ", ", this.father)
+}
+
+
+func (this *Excel) Get(row int, column byte) int {
+    return this.grid[row][column - 'A']
+}
+
+func (this *Excel) Sum(row int, column byte, numbers []string) int {
+    res := 0
+    col := int(column - 'A')
+    fk := row * len(this.grid[0]) + col // fk的father也要更新
+    oldVal := this.grid[row][col]
+    // 重置
+    for cld, _ := range this.children[fk] {
+        delete(this.father[cld], fk)
+    }
+    this.children[fk] = make(map[int]int) 
+    // 重置结束
+    for _, num := range numbers {
+        tmpRes := 0
+        if strings.Contains(num, ":") {
+            tmpRes += this.sumRec(num, fk)
+        } else {
+            tmpRes += this.getCellVal(num, fk)
+        }
+        // fmt.Println("num is ", num, " tmpRes is ", tmpRes)
+        res += tmpRes
+    }
+    //fmt.Println(row, column - 'A')
+    this.grid[row][col] = res
+    offSet := res - oldVal
+    this.dfs(row, col, offSet)
+    return res
+}
+
+func (this *Excel) getCellVal(cl string, fk int) int {
+    c := cl[0] - 'A'
+    r, _ := strconv.Atoi(string(cl[1:]))
+    key := r * len(this.grid[0]) + int(c)
+    this.children[fk][key] += 1 
+    this.father[key][fk] = this.children[fk][key] // 同步
+    //fmt.Println(cl, r, c)
+    return this.grid[r][c]
+}
+
+func (this *Excel) sumRec(rg string, fk int) int {
+    res := 0
+    ul, lr := strings.Split(rg, ":")[0], strings.Split(rg, ":")[1]
+    c1 := ul[0] - 'A'
+    r1, _ := strconv.Atoi(string(ul[1:]))
+    c2 := lr[0] - 'A'
+    r2, _  := strconv.Atoi(string(lr[1:]))
+    for r := r1; r <= r2; r ++ {
+        for c := c1; c <= c2; c ++ {
+            // if rg == "D1:F10" {
+            //     fmt.Println(r, c, this.grid[r][c])
+            // }
+            res += this.grid[r][c]
+            key := r * len(this.grid[0]) + int(c)
+            this.children[fk][key] += 1 
+            this.father[key][fk] = this.children[fk][key] // 同步
         }
     }
     return res
 }
 
-func (this *Excel) p2i(pos []int) int {
-    return this.w*pos[0] + pos[1]
-}
 
-func (this *Excel) i2p(idx int) []int {
-    return []int{idx / this.w, idx % this.w}
-}
-
-func (this *Excel) Set(r int, c byte, v int) {
-    pSum := []int{r - 1, b2i(c)}
-    idx := this.p2i(pSum)
-    if _, ok := this.dictSumPos[idx]; ok { // cover this point
-        this.removeSumFunc(idx)
-    }
-    d := v - this.matrix[pSum[0]][pSum[1]]
-    this.matrix[r-1][b2i(c)] = v
-    if _, ok := this.dictPosToSum[idx]; !ok {
-        return
-    }
-    queue := [][]int{getDictKeys(this.dictPosToSum[idx])}
-    for len(queue) > 0 {
-        qNew := make([][]int, 0)
-        for _, q := range queue {
-            for _, qq := range q {
-                pos := this.i2p(qq)
-                this.matrix[pos[0]][pos[1]] += d
-                qNew = append(qNew, getDictKeys(this.dictPosToSum[qq]))
-            }
-        }
-        queue = qNew
-    }
-}
-
-func (this *Excel) Get(r int, c byte) int {
-    return this.matrix[r-1][b2i(c)]
-}
-
-func (this *Excel) Sum(r int, c byte, strs []string) int {
-    sum, pSum := 0,[]int{r - 1, b2i(c)}
-    idx := this.p2i(pSum)
-    if _, ok := this.dictSumPos[idx]; ok { // cover this point
-        this.removeSumFunc(idx)
-    }
-
-    for _, s := range strs {
-        strSep := strings.Split(s, ":")
-        if len(strSep[0]) == 0 {
-            continue
-        }
-        posBeg, posEnd := posParser(strSep[0]), posParser(strSep[0])
-        if len(strSep) > 1 {
-            if len(strSep[1]) == 0 {
-                continue
-            }
-            posEnd = posParser(strSep[1])
-        }
-        for i := posBeg[0]; i <= posEnd[0]; i++ {
-            for j := posBeg[1]; j <= posEnd[1]; j++ {
-                idxInSum := this.p2i([]int{i, j})
-                if _, ok := this.dictPosToSum[idxInSum]; !ok {
-                    this.dictPosToSum[idxInSum] = make(map[int]int, 0)
-                }
-                this.dictPosToSum[idxInSum][idx]++
-                sum += this.matrix[i][j]
-            }
-        }
-    }
-    this.matrix[pSum[0]][pSum[1]] = sum
-    this.dictSumPos[idx] = 1
-    return sum
-}
-
-func (this *Excel) removeSumFunc(idx int) {
-    for k := range this.dictPosToSum {
-        if _, ok := this.dictPosToSum[k][idx]; ok {
-            delete(this.dictPosToSum[k], idx)
-        }
-    }
-    for k := range this.dictPosToSum {
-        if len(this.dictPosToSum[k]) == 0 {
-            delete(this.dictPosToSum, k)
-        }
-    }
-    delete(this.dictSumPos, idx)
-}
+/**
+ * Your Excel object will be instantiated and called as such:
+ * obj := Constructor(height, width);
+ * obj.Set(row,column,val);
+ * param_2 := obj.Get(row,column);
+ * param_3 := obj.Sum(row,column,numbers);
+ */
 
 func main() {
     // Explanation
