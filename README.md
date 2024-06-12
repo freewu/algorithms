@@ -836,6 +836,7 @@
 [453. Minimum Moves to Equal Array Elements](./leetcode/453-MinimumMovesToEqualArrayElements.go)   
 [458. Poor Pigs](./leetcode/458-PoorPigs.go)   
 [464. Can I Win](./leetcode/464-CanIWin.go)   
+[479. Largest Palindrome Product](./leetcode/479-LargestPalindromeProduct.go)   
 [507. Perfect Number](./leetcode/507-PerfectNumber.go)   
 [509. Fibonacci Number](./leetcode/509-FibonacciNumber.go)   
 [634. Find the Derangement of An Array](./leetcode/634-FindTheDerangementOfAnArray.go)   
