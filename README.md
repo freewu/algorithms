@@ -1070,6 +1070,7 @@
 [588. Design In-Memory File System](./leetcode/588-DesignIn-MemoryFileSystem.go)   
 [604. Design Compressed String Iterator](./leetcode/604-DesignCompressedStringIterator.go)   
 [622. Design Circular Queue](./leetcode/622-DesignCircularQueue.go)   
+[631. Design Excel Sum Formula](./leetcode/631-DesignExcelSumFormula.go)   
 [641. Design Circular Deque](./leetcode/641-DesignCircularDeque.go)   
 [642. Design Search Autocomplete System](./leetcode/642-DesignSearchAutocompleteSystem.go)   
 [705. Design HashSet](./leetcode/705-DesignHashSet.go)    
