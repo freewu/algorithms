@@ -287,6 +287,7 @@
 [463. Island Perimeter](./leetcode/463-IslandPerimeter.go)   
 [465. Optimal Account Balancing](./leetcode/465-OptimalAccountBalancing.go)   
 [469. Convex Polygon](./leetcode/469-ConvexPolygon.go)   
+[472. Concatenated Words](./leetcode/472-ConcatenatedWords.go)   
 [474. Ones and Zeroes](./leetcode/474-OnesAndZeroes.go)   
 [480. Sliding Window Median](./leetcode/480-SlidingWindowMedian.go)   
 [486. Predict the Winner](./leetcode/486-PredictTheWinner.go)   
