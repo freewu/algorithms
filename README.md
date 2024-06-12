@@ -290,6 +290,7 @@
 [472. Concatenated Words](./leetcode/472-ConcatenatedWords.go)   
 [473. Matchsticks to Square](./leetcode/473-MatchsticksToSquare.go)   
 [474. Ones and Zeroes](./leetcode/474-OnesAndZeroes.go)   
+[475. Heaters](./leetcode/475-Heaters.go)   
 [480. Sliding Window Median](./leetcode/480-SlidingWindowMedian.go)   
 [486. Predict the Winner](./leetcode/486-PredictTheWinner.go)   
 [487. Max Consecutive Ones II](./leetcode/487-MaxConsecutiveOnesII.go)   
