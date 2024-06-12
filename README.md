@@ -533,6 +533,7 @@
 [2808. Minimum Seconds to Equalize a Circular Array](./leetcode/2808-MinimumSecondsToEqualizeACircularArray.go)   
 [2809. Minimum Time to Make Array Sum At Most x](./leetcode/2809-MinimumTimeToMakeArraySumAtMostX.go)   
 [2812. Find the Safest Path in a Grid](./leetcode/2812-FindTheSafestPathInAGrid.go)   
+[2813. Maximum Elegance of a K-Length Subsequence](./leetcode/2813-MaximumEleganceOfAK-LengthSubsequence.go)   
 [2831. Find the Longest Equal Subarray](./leetcode/2831-FindTheLongestEqualSubarray.go)   
 [2859. Sum of Values at Indices With K Set Bits](./leetcode/2859-SumOfValuesAtIndicesWithKSetBits.go)   
 [2861. Maximum Number of Alloys](./leetcode/2861-MaximumNumberOfAlloys.go)    
