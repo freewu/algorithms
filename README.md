@@ -1018,6 +1018,7 @@
 [397. Integer Replacement](./leetcode/397-IntegerReplacement.go)   
 [401. Binary Watch](./leetcode/401-BinaryWatch.go)   
 [461. Hamming Distance](./leetcode/461-HammingDistance.go)   
+[476. Number Complement](./leetcode/476-NumberComplement.go)   
 [1318. Minimum Flips to Make a OR b Equal to c](./leetcode/1318-MinimumFlipsToMakeAORBEqualToC.go)   
 
 # Design
