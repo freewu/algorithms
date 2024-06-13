@@ -293,6 +293,7 @@
 [475. Heaters](./leetcode/475-Heaters.go)   
 [477. Total Hamming Distance](./leetcode/477-TotalHammingDistance.go)   
 [480. Sliding Window Median](./leetcode/480-SlidingWindowMedian.go)   
+[485. Max Consecutive Ones](./leetcode/485-MaxConsecutiveOnes.go)   
 [486. Predict the Winner](./leetcode/486-PredictTheWinner.go)   
 [487. Max Consecutive Ones II](./leetcode/487-MaxConsecutiveOnesII.go)   
 [493. Reverse Pairs](./leetcode/493-ReversePairs.go)    
