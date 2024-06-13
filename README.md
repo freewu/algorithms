@@ -700,6 +700,7 @@
 [1165. Single-Row Keyboard](./leetcode/1165-Single-RowKeyboard.go)   
 [1180. Count Substrings with Only One Distinct Letter](./leetcode/1180-CountSubstringsWithOnlyOneDistinctLetter.go)   
 [1208. Get Equal Substrings Within Budget](./leetcode/1208-GetEqualSubstringsWithinBudget.go)   
+[1236. Web Crawler](./leetcode/1236-WebCrawler.go)   
 [1239. Maximum Length of a Concatenated String with Unique Characters](./leetcode/1239-MaximumLengthOfAConcatenatedStringWithUniqueCharacters.go)    
 [1249. Minimum Remove to Make Valid Parentheses](./leetcode/1249-MinimumRemoveToMakeValidParentheses.go)    
 [1312. Minimum Insertion Steps to Make a String Palindrome](./leetcode/1312-MinimumInsertionStepsToMakeAStringPalindrome.go)   
