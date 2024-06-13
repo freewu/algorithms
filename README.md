@@ -529,6 +529,7 @@
 [2744. Find Maximum Number of String Pairs](./leetcode/2744-FindMaximumNumberOfStringPairs.go)   
 [2765. Longest Alternating Subarray](./leetcode/2765-LongestAlternatingSubarray.go)   
 [2771. Longest Non-decreasing Subarray From Two Arrays](./leetcode/2771-LongestNon-DecreasingSubarrayFromTwoArrays.go)   
+[2786. Visit Array Positions to Maximize Score](./leetcode/2786-VisitArrayPositionsToMaximizeScore.go)   
 [2788. Split Strings by Separator](./leetcode/2788-SplitStringsBySeparator.go)   
 [2789. Largest Element in an Array after Merge Operations](./leetcode/2789-LargestElementInAnArrayAfterMergeOperations.go)    
 [2798. Number of Employees Who Met the Target](./leetcode/2798-NumberOfEmployeesWhoMetTheTarget.go)   
