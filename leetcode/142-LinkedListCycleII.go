@@ -38,36 +38,36 @@ package main
  *     Next *ListNode
  * }
  */
+// 快慢指针
 func detectCycle(head *ListNode) *ListNode {
-	if head == nil || head.Next == nil {
-		return nil
-	}
+    if head == nil || head.Next == nil {
+        return nil
+    }
+    hasCycle := func (head *ListNode) (bool, *ListNode) {
+        fast := head
+        slow := head
+        for slow != nil && fast != nil && fast.Next != nil {
+            fast = fast.Next.Next
+            slow = slow.Next
+            if fast == slow {
+                return true, slow
+            }
+        }
+        return false, nil
+    }
     // 先判断是否存在环形
-	isCycle, slow := hasCycle(head)
-	if !isCycle {
-		return nil
-	}
+    isCycle, slow := hasCycle(head)
+    if !isCycle {
+        return nil
+    }
     // 2 个指针相遇以后，如果 slow 继续往前走，fast 指针回到起点 head，
     // 两者都每次走一步，那么必定会在环的起点相遇，相遇以后输出这个点即是结果
-	fast := head
-	for fast != slow {
-		fast = fast.Next
-		slow = slow.Next
-	}
-	return fast
-}
-
-func hasCycle(head *ListNode) (bool, *ListNode) {
-	fast := head
-	slow := head
-	for slow != nil && fast != nil && fast.Next != nil {
-		fast = fast.Next.Next
-		slow = slow.Next
-		if fast == slow {
-			return true, slow
-		}
-	}
-	return false, nil
+    fast := head
+    for fast != slow {
+        fast = fast.Next
+        slow = slow.Next
+    }
+    return fast
 }
 
 // best solution
