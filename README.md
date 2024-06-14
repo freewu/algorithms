@@ -788,6 +788,7 @@
 [445. Add Two Numbers II](./leetcode/445-AddTwoNumbersII.go)   
 [876. Middle of the Linked List](./leetcode/876-MiddleOfTheLinkedList.go)   
 [1171. Remove Zero Sum Consecutive Nodes from Linked List](./leetcode/1171-RemoveZeroSumConsecutiveNodesFromLinkedList.go)   
+[1265. Print Immutable Linked List in Reverse](./leetcode/1265-PrintImmutableLinkedListInReverse.go)   
 [1474. Delete N Nodes After M Nodes of a Linked List](./leetcode/1474-DeleteN-NodesAfterM-NodesOfALinkedList.go)   
 [1669. Merge In Between Linked Lists](./leetcode/1669-MergeInBetweenLinkedLists.go)   
 [2095. Delete the Middle Node of a Linked List](./leetcode/2095-DeleteTheMiddleNodeOfALinkedList.go)   
