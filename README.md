@@ -299,6 +299,7 @@
 [493. Reverse Pairs](./leetcode/493-ReversePairs.go)   
 [494. Target Sum](./leetcode/494-TargetSum.go)   
 [495. Teemo Attacking](./leetcode/495-TeemoAttacking.go)   
+[496. Next Greater Element I](./leetcode/496-NextGreaterElementI.go)   
 [498. Diagonal Traverse](./leetcode/498-DiagonalTraverse.go)   
 [500. Keyboard Row](./leetcode/500-KeyboardRow.go)   
 [502. IPO](./leetcode/502-IPO.go)   
