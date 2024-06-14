@@ -1080,6 +1080,7 @@
 [449. Serialize and Deserialize BST](./leetcode/449-SerializeAndDeserializeBST.go)   
 [460. LFU Cache](./leetcode/460-LFUCache.go)   
 [478. Generate Random Point in a Circle](./leetcode/478-GenerateRandomPointInACircle.go)   
+[497. Random Point in Non-overlapping Rectangles](./leetcode/497-RandomPointInNonOverlappingRectangles.go)   
 [528. Random Pick with Weight](./leetcode/528-RandomPickWithWeight.go)   
 [535. Encode and Decode TinyURL](./leetcode/535-EncodeAndDecodeTinyURL.go)   
 [588. Design In-Memory File System](./leetcode/588-DesignIn-MemoryFileSystem.go)   
@@ -1202,7 +1203,7 @@ LCR 075. 数组的相对排序
 # Reservoir Sampling
 382. Linked List Random Node
 398. Random Pick Index
-497. Random Point in Non-overlapping Rectangles
+[497. Random Point in Non-overlapping Rectangles](./leetcode/497-RandomPointInNonOverlappingRectangles.go)   
 519. Random Flip Matrix
 
 # Strongly Connected Component
