@@ -296,6 +296,7 @@
 [485. Max Consecutive Ones](./leetcode/485-MaxConsecutiveOnes.go)   
 [486. Predict the Winner](./leetcode/486-PredictTheWinner.go)   
 [487. Max Consecutive Ones II](./leetcode/487-MaxConsecutiveOnesII.go)   
+[491. Non-decreasing Subsequences](./leetcode/491-NonDecreasingSubsequences.go)   
 [493. Reverse Pairs](./leetcode/493-ReversePairs.go)   
 [494. Target Sum](./leetcode/494-TargetSum.go)   
 [495. Teemo Attacking](./leetcode/495-TeemoAttacking.go)   
