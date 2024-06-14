@@ -668,6 +668,7 @@
 [471. Encode String with Shortest Length](./leetcode/471-EncodeStringWithShortestLength.go)   
 [481. Magical String](./leetcode/481-MagicalString.go)   
 [482. License Key Formatting](./leetcode/482-LicenseKeyFormatting.go)   
+[483. Smallest Good Base](./leetcode/483-SmallestGoodBase.go)   
 [488. Zuma Game](./leetcode/488-ZumaGame.go)   
 [484. Find Permutation](./leetcode/484-FindPermutation.go)   
 [514. Freedom Trail](./leetcode/514-FreedomTrail.go)   
