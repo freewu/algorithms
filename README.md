@@ -368,6 +368,7 @@
 [918. Maximum Sum Circular Subarray](./leetcode/918-MaximumSumCircularSubarray.go)   
 [930. Binary Subarrays With Sum](./leetcode/930-BinarySubarraysWithSum.go)    
 [931. Minimum Falling Path Sum](./leetcode/931-MinimumFallingPathSum.go)   
+[945. Minimum Increment to Make Array Unique](./leetcode/945-MinimumIncrementToMakeArrayUnique.go)   
 [946. Validate Stack Sequences](./leetcode/946-ValidateStackSequences.go)   
 [948. Bag of Tokens](./leetcode/948-BagOfTokens.go)   
 [950. Reveal Cards In Increasing Order](./leetcode/950-RevealCardsInIncreasingOrder.go)   
