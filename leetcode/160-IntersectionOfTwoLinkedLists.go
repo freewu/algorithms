@@ -110,7 +110,7 @@ func makeListNode(arr []int) *ListNode {
  *     Next *ListNode
  * }
  */
- func getIntersectionNode(headA, headB *ListNode) *ListNode {
+func getIntersectionNode(headA, headB *ListNode) *ListNode {
     a, b := headA, headB
     // AB不相交时，AB走的路径都是两条链表。
     // AB相交时，转换为环形链表的入环点。
