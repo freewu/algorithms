@@ -944,6 +944,7 @@
 [437. Path Sum III](./leetcode/437-PathSumIII.go)   
 [449. Serialize and Deserialize BST](./leetcode/449-SerializeAndDeserializeBST.go)   
 [450. Delete Node in a BST](./leetcode/450-DeleteNodeInABST.go)   
+[501. Find Mode in Binary Search Tree](./leetcode/501-FindModeInBinarySearchTree.go)   
 [513. Find Bottom Left Tree Value](./leetcode/513-FindBottomLeftTreeValue.go)   
 [530. Minimum Absolute Difference in BST](./leetcode/530-MinimumAbsoluteDifferenceInBST.go)   
 [538. Convert BST to Greater Tree](./leetcode/538-ConvertBSTtoGreaterTree.go)   
