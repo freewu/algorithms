@@ -854,6 +854,7 @@
 [464. Can I Win](./leetcode/464-CanIWin.go)   
 [479. Largest Palindrome Product](./leetcode/479-LargestPalindromeProduct.go)   
 [492. Construct the Rectangle](./leetcode/492-ConstructTheRectangle.go)   
+[504. Base 7](./leetcode/504-Base7.go)   
 [507. Perfect Number](./leetcode/507-PerfectNumber.go)   
 [509. Fibonacci Number](./leetcode/509-FibonacciNumber.go)   
 [634. Find the Derangement of An Array](./leetcode/634-FindTheDerangementOfAnArray.go)   
