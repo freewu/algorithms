@@ -680,6 +680,7 @@
 [484. Find Permutation](./leetcode/484-FindPermutation.go)   
 [514. Freedom Trail](./leetcode/514-FreedomTrail.go)   
 [516. Longest Palindromic Subsequence](./leetcode/516-LongestPalindromicSubsequence.go)   
+[521. Longest Uncommon Subsequence I](./leetcode/521-LongestUncommonSubsequenceI.go)   
 [541. Reverse String II](./leetcode/541-ReverseStringII.go)   
 [557. Reverse Words in a String III](./leetcode/557-ReverseWordsInAStringIII.go)   
 [567. Permutation in String](./leetcode/567-PermutationInString.go)   
