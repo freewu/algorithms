@@ -952,6 +952,7 @@
 [501. Find Mode in Binary Search Tree](./leetcode/501-FindModeInBinarySearchTree.go)   
 [508. Most Frequent Subtree Sum](./leetcode/508-MostFrequentSubtreeSum.go)   
 [513. Find Bottom Left Tree Value](./leetcode/513-FindBottomLeftTreeValue.go)   
+[515. Find Largest Value in Each Tree Row](./leetcode/515-FindLargestValueInEachTreeRow.go)   
 [530. Minimum Absolute Difference in BST](./leetcode/530-MinimumAbsoluteDifferenceInBST.go)   
 [538. Convert BST to Greater Tree](./leetcode/538-ConvertBSTtoGreaterTree.go)   
 [543. Diameter of Binary Tree](./leetcode/543-DiameterOfBinaryTree.go)   

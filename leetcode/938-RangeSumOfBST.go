@@ -24,12 +24,11 @@ package main
 
 import "fmt"
 
-
 // Definition for a binary tree node.
 type TreeNode struct {
-	Val int
-	Left *TreeNode
-	Right *TreeNode
+    Val int
+    Left *TreeNode
+    Right *TreeNode
 }
 
 /**
@@ -42,21 +41,20 @@ type TreeNode struct {
  */
 // 递归前序遍历
 func rangeSumBST(root *TreeNode, low int, high int) int {
-	res := 0
-	preOrder(root, low, high, &res)
-	return res
-}
-
-func preOrder(root *TreeNode, low, high int, res *int) {
-	if root == nil {
-		return
-	}
-    // Val 为 [low,high] 的值累加到 res
-	if low <= root.Val && root.Val <= high {
-		*res += root.Val
-	}
-	preOrder(root.Left, low, high, res)
-	preOrder(root.Right, low, high, res)
+    res := 0
+    var preOrder func(root *TreeNode, low, high int, res *int)
+    preOrder = func(root *TreeNode, low, high int, res *int) {
+        if root == nil {
+            return
+        }
+        if low <= root.Val && root.Val <= high { // Val 为 [low,high] 的值累加到 res
+            *res += root.Val
+        }
+        preOrder(root.Left, low, high, res)
+        preOrder(root.Right, low, high, res)
+    }
+    preOrder(root, low, high, &res)
+    return res
 }
 
 // best solution
@@ -77,41 +75,41 @@ func rangeSumBST1(root *TreeNode, low int, high int) int {
     }
 }
 
- func main() {
+func main() {
     tree1 := &TreeNode {
-		10,
+        10,
         &TreeNode {
-			5,
-			&TreeNode{3, nil, nil},
-			&TreeNode{7, nil, nil},
-		},
-		&TreeNode {
-			15,
-			nil,
+            5,
+            &TreeNode{3, nil, nil},
+            &TreeNode{7, nil, nil},
+        },
+        &TreeNode {
+            15,
+            nil,
             &TreeNode{18, nil, nil},
-		},
-	}
+        },
+    }
     tree2 := &TreeNode {
-		10,
+        10,
         &TreeNode {
-			5,
-			&TreeNode{
+            5,
+            &TreeNode{
                 3, 
                 &TreeNode{1, nil, nil},
                 nil,
             },
-			&TreeNode{
+            &TreeNode{
                 7, 
                 &TreeNode{6, nil, nil},
                 nil,
             },
-		},
-		&TreeNode {
-			15,
-			&TreeNode{13, nil, nil},
+        },
+        &TreeNode {
+            15,
+            &TreeNode{13, nil, nil},
             &TreeNode{18, nil, nil},
-		},
-	}
+        },
+    }
 
     fmt.Println(rangeSumBST(tree1,7,15)) // 32
     fmt.Println(rangeSumBST(tree2,6,10)) // 23
