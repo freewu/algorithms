@@ -1,31 +1,30 @@
 package main
 
-// 445. Add Two Numbers II
-// You are given two non-empty linked lists representing two non-negative integers.
-// The most significant digit comes first and each of their nodes contains a single digit. 
-// Add the two numbers and return the sum as a linked list.
+// LCR 025. 两数相加 II
+// 给定两个 非空链表 l1和 l2 来代表两个非负整数。数字最高位位于链表开始位置。
+// 它们的每个节点只存储一位数字。将这两数相加会返回一个新的链表。
 
-// You may assume the two numbers do not contain any leading zero, except the number 0 itself.
+// 可以假设除了数字 0 之外，这两个数字都不会以零开头。
 
-// Example 1:
-// <img src="https://assets.leetcode.com/uploads/2021/04/09/sumii-linked-list.jpg" />
-// Input: l1 = [7,2,4,3], l2 = [5,6,4]
-// Output: [7,8,0,7]
+// 示例1：
+// <img src="https://pic.leetcode-cn.com/1626420025-fZfzMX-image.png" />
+// 输入：l1 = [7,2,4,3], l2 = [5,6,4]
+// 输出：[7,8,0,7]
 
-// Example 2:
-// Input: l1 = [2,4,3], l2 = [5,6,4]
-// Output: [8,0,7]
+// 示例2：
+// 输入：l1 = [2,4,3], l2 = [5,6,4]
+// 输出：[8,0,7]
 
-// Example 3:
-// Input: l1 = [0], l2 = [0]
-// Output: [0]
+// 示例3：
+// 输入：l1 = [0], l2 = [0]
+// 输出：[0]
  
-// Constraints:
-//     The number of nodes in each linked list is in the range [1, 100].
-//     0 <= Node.val <= 9
-//     It is guaranteed that the list represents a number that does not have leading zeros.
-
-// Follow up: Could you solve it without reversing the input lists?
+// 提示：
+//     链表的长度范围为 [1, 100]
+//     0 <= node.val <= 9
+//     输入数据保证链表代表的数字无前导 0
+ 
+// 进阶：如果输入链表不能修改该如何处理？换句话说，不能对列表中的节点进行翻转。
 
 import "fmt"
 
@@ -85,19 +84,14 @@ func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
         
         return resp
     }
-    l1 = reverse(l1)
-    l2 = reverse(l2)
-
+    l1, l2 = reverse(l1), reverse(l2)
     res := &ListNode{}
-    head := res
-    memo := 0
+    head, memo := res, 0
     for l1 != nil || l2 != nil {
         head.Next = &ListNode{
             Val: getVal(l1) + getVal(l2) + memo,
         }
-
-        l1 = nodeNext(l1)
-        l2 = nodeNext(l2)
+        l1, l2 = nodeNext(l1), nodeNext(l2)
         memo = 0
         head = head.Next
         if head.Val > 9 {
@@ -105,7 +99,6 @@ func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
             head.Val -= 10
         }
     }
-
     if memo > 0 {
         head.Next = &ListNode{
             Val: 1,

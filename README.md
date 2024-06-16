@@ -1023,6 +1023,7 @@
 [847. Shortest Path Visiting All Nodes](./leetcode/847-ShortestPathVisitingAllNodes.go)   
 [924. Minimize Malware Spread](./leetcode/924-MinimizeMalwareSpread.go)    
 [928. Minimize Malware Spread II](./leetcode/928-MinimizeMalwareSpreadII.go)   
+1059. All Paths from Source Lead to Destination
 [1136. Parallel Courses](./leetcode/1136-ParallelCourses.go)   
 [1168. Optimize Water Distribution in a Village](./leetcode/1168-OptimizeWaterDistributionInAVillage.go)   
 [1466. Reorder Routes to Make All Paths Lead to the City Zero](./leetcode/1466-ReorderRoutesToMakeAllPathsLeadToTheCityZero.go)   
@@ -1682,6 +1683,7 @@ LCR 075. 数组的相对排序
 [LCR 022. 环形链表 II](./leetcode/LCR022-LinkedListCycleII.go)   
 [LCR 023. 相交链表](./leetcode/LCR023-IntersectionOfTwoLinkedLists.go)   
 [LCR 024. 反转链表](./leetcode/LCR024-ReverseLinkedList.go)   
+[LCR 025. 两数相加 II](./leetcode/LCR025-AddTwoNumbersII.go)   
 [LCR 038. 每日温度](./leetcode/LCR038-DailyTemperatures.go)   
 [LCR 057. 存在重复元素 III](./leetcode/LCR057-ContainsDuplicateIII.go)   
 [LCR 060. 前 K 个高频元素](./leetcode/LCR060-TopKFrequentElements.go)   
