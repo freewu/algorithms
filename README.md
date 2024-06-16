@@ -1023,7 +1023,7 @@
 [847. Shortest Path Visiting All Nodes](./leetcode/847-ShortestPathVisitingAllNodes.go)   
 [924. Minimize Malware Spread](./leetcode/924-MinimizeMalwareSpread.go)    
 [928. Minimize Malware Spread II](./leetcode/928-MinimizeMalwareSpreadII.go)   
-1059. All Paths from Source Lead to Destination
+[1059. All Paths from Source Lead to Destination](./leetcode/1059-AllPathsFromSourceLeadToDestination.go)   
 [1136. Parallel Courses](./leetcode/1136-ParallelCourses.go)   
 [1168. Optimize Water Distribution in a Village](./leetcode/1168-OptimizeWaterDistributionInAVillage.go)   
 [1466. Reorder Routes to Make All Paths Lead to the City Zero](./leetcode/1466-ReorderRoutesToMakeAllPathsLeadToTheCityZero.go)   
