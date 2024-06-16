@@ -308,6 +308,7 @@
 [506. Relative Ranks](./leetcode/506-RelativeRanks.go)   
 [517. Super Washing Machines](./leetcode/517-SuperWashingMachines.go)   
 [518. Coin Change II](./leetcode/518-CoinChangeII.go)   
+[522. Longest Uncommon Subsequence II](./leetcode/522-LongestUncommonSubsequenceII.go)   
 [523. Continuous Subarray Sum](./leetcode/523-ContinuousSubarraySum.go)   
 [525. Contiguous Array](./leetcode/525-ContiguousArray.go)   
 [529. Minesweeper](./leetcode/529-Minesweeper.go)   
