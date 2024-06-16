@@ -861,6 +861,7 @@
 [504. Base 7](./leetcode/504-Base7.go)   
 [507. Perfect Number](./leetcode/507-PerfectNumber.go)   
 [509. Fibonacci Number](./leetcode/509-FibonacciNumber.go)   
+[519. Random Flip Matrix](./leetcode/519-RandomFlipMatrix.go)   
 [634. Find the Derangement of An Array](./leetcode/634-FindTheDerangementOfAnArray.go)   
 [651. 4 Keys Keyboard](./leetcode/651-4KeysKeyboard.go)   
 [670. Maximum Swap](./leetcode/670-MaximumSwap.go)   
@@ -1136,7 +1137,6 @@
 [254. Factor Combinations](./leetcode/254-FactorCombinations.go)   
 [489. Robot Room Cleaner](./leetcode/489-RobotRoomCleaner.go)   
 
-
 # QuickSelect
 [215. Kth Largest Element in an Array](./leetcode/215-KthLargestElementInAnArray.go)   
 [324. Wiggle Sort II](./leetcode/324-WiggleSortII.go)   
@@ -1208,15 +1208,16 @@ LCR 075. 数组的相对排序
 
 # Line Sweep
 [218. The Skyline Problem](./leetcode/218-TheSkylineProblem.go)   
-391. Perfect Rectangle
+[391. Perfect Rectangle](./leetcode/391-PerfectRectangle.go)   
 850. Rectangle Area II
 1851. Minimum Interval to Include Eac
 
 # Reservoir Sampling
-382. Linked List Random Node
-398. Random Pick Index
+[382. Linked List Random Node](./leetcode/382-LinkedListRandomNode.go)   
+[398. Random Pick Index](./leetcode/398-RandomPickIndex.go)   
 [497. Random Point in Non-overlapping Rectangles](./leetcode/497-RandomPointInNonOverlappingRectangles.go)   
-519. Random Flip Matrix
+[519. Random Flip Matrix](./leetcode/519-RandomFlipMatrix.go)   
+
 
 # Strongly Connected Component
 1489. Find Critical and Pseudo-Critical Edges in Minimum Spanning Tree
