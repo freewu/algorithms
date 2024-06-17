@@ -740,6 +740,7 @@
 [1915. Number of Wonderful Substrings](./leetcode/1915-NumberOfWonderfulSubstrings.go)   
 [2000. Reverse Prefix of Word](./leetcode/2000-ReversePrefixOfWord.go)   
 [2129. Capitalize the Title](./leetcode/2129-CapitalizeTheTitle.go)   
+[2288. Apply Discount to Prices](./leetcode/2288-ApplyDiscountToPrices.go)   
 [2370. Longest Ideal Subsequence](./leetcode/2370-LongestIdealSubsequence.go)   
 [2390. Removing Stars From a String](./leetcode/2390-RemovingStarsFromAString.go)   
 [2486. Append Characters to String to Make Subsequence](./leetcode/2486-AppendCharactersToStringToMakeSubsequence.go)   
@@ -1690,6 +1691,7 @@ LCR 075. 数组的相对排序
 [LCR 023. 相交链表](./leetcode/LCR023-IntersectionOfTwoLinkedLists.go)   
 [LCR 024. 反转链表](./leetcode/LCR024-ReverseLinkedList.go)   
 [LCR 025. 两数相加 II](./leetcode/LCR025-AddTwoNumbersII.go)   
+LCR 026. 重排链表
 [LCR 038. 每日温度](./leetcode/LCR038-DailyTemperatures.go)   
 [LCR 057. 存在重复元素 III](./leetcode/LCR057-ContainsDuplicateIII.go)   
 [LCR 060. 前 K 个高频元素](./leetcode/LCR060-TopKFrequentElements.go)   
