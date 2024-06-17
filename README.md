@@ -798,6 +798,7 @@
 [369. Plus One Linked List](./leetcode/369-PlusOneLinkedList.go)   
 [430. Flatten a Multilevel Doubly Linked List](./leetcode/430-FlattenAMultilevelDoublyLinkedList.go)   
 [445. Add Two Numbers II](./leetcode/445-AddTwoNumbersII.go)   
+[708. Insert into a Sorted Circular Linked List](./leetcode/708-InsertIntoASortedCircularLinkedList.go)   
 [876. Middle of the Linked List](./leetcode/876-MiddleOfTheLinkedList.go)   
 [1171. Remove Zero Sum Consecutive Nodes from Linked List](./leetcode/1171-RemoveZeroSumConsecutiveNodesFromLinkedList.go)   
 [1265. Print Immutable Linked List in Reverse](./leetcode/1265-PrintImmutableLinkedListInReverse.go)   
