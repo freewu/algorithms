@@ -326,6 +326,7 @@
 [611. Valid Triangle Number](./leetcode/611-ValidTriangleNumber.go)   
 [621. Task Scheduler](./leetcode/621-TaskScheduler.go)   
 [624. Maximum Distance in Arrays](./leetcode/624-MaximumDistanceInArrays.go)   
+[628. Maximum Product of Three Numbers](./leetcode/628-MaximumProductOfThreeNumbers.go)   
 [632. Smallest Range Covering Elements from K Lists](./leetcode/632-SmallestRangeCoveringElementsFromKLists.go)   
 [643. Maximum Average Subarray I](./leetcode/643-MaximumAverageSubarrayI.go)   
 [644. Maximum Average Subarray II](./leetcode/644-MaximumAverageSubarrayII.go)   
