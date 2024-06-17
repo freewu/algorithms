@@ -1,31 +1,29 @@
 package main
 
-// 143. Reorder List
-// You are given the head of a singly linked-list. The list can be represented as:
+// LCR 026. 重排链表
+// 给定一个单链表 L 的头节点 head ，单链表 L 表示为：
+//     L0 → L1 → … → Ln-1 → Ln 
 
-//     L0 → L1 → … → Ln - 1 → Ln
+// 请将其重新排列后变为：
 
-// Reorder the list to be on the following form:
+//     L0 → Ln → L1 → Ln-1 → L2 → Ln-2 → …
 
-//     L0 → Ln → L1 → Ln - 1 → L2 → Ln - 2 → …
+// 不能只是单纯的改变节点内部的值，而是需要实际的进行节点交换。
 
-// You may not modify the values in the list's nodes. Only nodes themselves may be changed.
+// 示例 1:
+// <img src="https://pic.leetcode-cn.com/1626420311-PkUiGI-image.png" />
+// 输入: head = [1,2,3,4]
+// 输出: [1,4,2,3]
 
-// Example 1:
-// (1) -> (2) -> (3) -> (4)
-// (1) -> (4) -> (2) -> (3)
-// Input: head = [1,2,3,4]
-// Output: [1,4,2,3]go
+// 示例 2:
+// <img src="https://pic.leetcode-cn.com/1626420320-YUiulT-image.png" />
+// 输入: head = [1,2,3,4,5]
+// 输出: [1,5,2,4,3]
 
-// Example 2:
-// (1) -> (2) -> (3) -> (4) -> (5)
-// (1) -> (5) -> (2) -> (4) -> (3)
-// Input: head = [1,2,3,4,5]
-// Output: [1,5,2,4,3]
+// 提示：
+//     链表的长度范围为 [1, 5 * 10^4]
+//     1 <= node.val <= 1000
 
-// Constraints:
-//     The number of nodes in the list is in the range [1, 5 * 10^4].
-//     1 <= Node.val <= 1000
 
 import "fmt"
 
@@ -76,18 +74,15 @@ func reorderList(head *ListNode) {
     if head.Next == nil { // 只有一个结点,直接返回
         return
     }
-    // 查找中间结点
-    middleNode := func (head *ListNode) *ListNode {
-        // 快慢指针
-        slow, fast := head, head
+    middleNode := func (head *ListNode) *ListNode { // 查找中间结点
+        slow, fast := head, head // 快慢指针
         for fast != nil && fast.Next != nil {
             slow = slow.Next
             fast = fast.Next.Next
         }
         return slow
     }
-    // 反转链表（不带头结点）
-    reverse := func (l *ListNode) *ListNode { 
+    reverse := func (l *ListNode) *ListNode { // 反转链表（不带头结点）
         if l == nil {
             return nil
         }
@@ -119,7 +114,6 @@ func reorderList(head *ListNode) {
         front = front.Next
         p = p.Next
     }
-
     if front != nil {
         p.Next = front
     }

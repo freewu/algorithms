@@ -1691,7 +1691,7 @@ LCR 075. 数组的相对排序
 [LCR 023. 相交链表](./leetcode/LCR023-IntersectionOfTwoLinkedLists.go)   
 [LCR 024. 反转链表](./leetcode/LCR024-ReverseLinkedList.go)   
 [LCR 025. 两数相加 II](./leetcode/LCR025-AddTwoNumbersII.go)   
-LCR 026. 重排链表
+[LCR 026. 重排链表](./leetcode/LCR026-ReorderList.go)   
 [LCR 038. 每日温度](./leetcode/LCR038-DailyTemperatures.go)   
 [LCR 057. 存在重复元素 III](./leetcode/LCR057-ContainsDuplicateIII.go)   
 [LCR 060. 前 K 个高频元素](./leetcode/LCR060-TopKFrequentElements.go)   
