@@ -311,6 +311,7 @@
 [522. Longest Uncommon Subsequence II](./leetcode/522-LongestUncommonSubsequenceII.go)   
 [523. Continuous Subarray Sum](./leetcode/523-ContinuousSubarraySum.go)   
 [525. Contiguous Array](./leetcode/525-ContiguousArray.go)   
+[527. Word Abbreviation](./leetcode/527-WordAbbreviation.go)   
 [529. Minesweeper](./leetcode/529-Minesweeper.go)   
 [531. Lonely Pixel I](./leetcode/531-LonelyPixelI.go)   
 [532. K-diff Pairs in an Array](./leetcode/532-K-diffPairsInAnArray.go)   
