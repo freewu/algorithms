@@ -689,6 +689,7 @@
 [520. Detect Capital](./leetcode/520-DetectCapital.go)   
 [521. Longest Uncommon Subsequence I](./leetcode/521-LongestUncommonSubsequenceI.go)   
 [524. Longest Word in Dictionary through Deleting](./leetcode/524-LongestWordInDictionaryThroughDeleting.go)   
+[537. Complex Number Multiplication](./leetcode/537-ComplexNumberMultiplication.go)   
 [541. Reverse String II](./leetcode/541-ReverseStringII.go)   
 [557. Reverse Words in a String III](./leetcode/557-ReverseWordsInAStringIII.go)   
 [567. Permutation in String](./leetcode/567-PermutationInString.go)   
