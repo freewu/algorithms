@@ -314,6 +314,7 @@
 [529. Minesweeper](./leetcode/529-Minesweeper.go)   
 [531. Lonely Pixel I](./leetcode/531-LonelyPixelI.go)   
 [532. K-diff Pairs in an Array](./leetcode/532-K-diffPairsInAnArray.go)   
+[539. Minimum Time Difference](./leetcode/539-MinimumTimeDifference.go)   
 [540. Single Element in a Sorted Array](./leetcode/540-SingleElementInASortedArray.go)   
 [542. 01 Matrix](./leetcode/542-01Matrix.go)   
 [547. Number of Provinces](./leetcode/547-NumberOfProvinces.go)   
