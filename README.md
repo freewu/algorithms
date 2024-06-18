@@ -1011,6 +1011,7 @@
 [1483. Kth Ancestor of a Tree Node](./leetcode/1483-KthAncestorOfATreeNode.go)   
 [1490. Clone N-ary Tree](./leetcode/1490-CloneN-AryTree.go)   
 [1506. Find Root of N-Ary Tree](./leetcode/1506-FindRootOfN-AryTree.go)   
+[1522. Diameter of N-Ary Tree](./leetcode/1522-DiameterOfN-AryTree.go)   
 [1569. Number of Ways to Reorder Array to Get Same BST](./leetcode/1569-NumberOfWaysToReorderArrayToGetSameBST.go)   
 [1609. Even Odd Tree](./leetcode/1609-EvenOddTree.go)   
 [2236. Root Equals Sum of Children](./leetcode/2236-RootEqualsSumOfChildren.go)   
