@@ -1009,6 +1009,7 @@
 [1379. Find a Corresponding Node of a Binary Tree in a Clone of That Tree](./leetcode/1379-FindACorrespondingNodeOfABinaryTreeInACloneOfThatTree.go)   
 [1448. Count Good Nodes in Binary Tree](./leetcode/1448-CountGoodNodesInBinaryTree.go)   
 [1483. Kth Ancestor of a Tree Node](./leetcode/1483-KthAncestorOfATreeNode.go)   
+[1490. Clone N-ary Tree](./leetcode/1490-CloneN-AryTree.go)   
 [1506. Find Root of N-Ary Tree](./leetcode/1506-FindRootOfN-AryTree.go)   
 [1569. Number of Ways to Reorder Array to Get Same BST](./leetcode/1569-NumberOfWaysToReorderArrayToGetSameBST.go)   
 [1609. Even Odd Tree](./leetcode/1609-EvenOddTree.go)   
