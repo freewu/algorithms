@@ -693,6 +693,7 @@
 [524. Longest Word in Dictionary through Deleting](./leetcode/524-LongestWordInDictionaryThroughDeleting.go)   
 [537. Complex Number Multiplication](./leetcode/537-ComplexNumberMultiplication.go)   
 [541. Reverse String II](./leetcode/541-ReverseStringII.go)   
+[551. Student Attendance Record I](./leetcode/551-StudentAttendanceRecordI.go)   
 [557. Reverse Words in a String III](./leetcode/557-ReverseWordsInAStringIII.go)   
 [567. Permutation in String](./leetcode/567-PermutationInString.go)   
 [616. Add Bold Tag in String](./leetcode/616-AddBoldTagInString.go)   
