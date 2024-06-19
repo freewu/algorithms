@@ -449,6 +449,7 @@
 [1470. Shuffle the Array](./leetcode/1470-ShuffleTheArray.go)   
 [1473. Paint House III](./leetcode/1473-PaintHouseIII.go)   
 [1481. Least Number of Unique Integers after K Removals](./leetcode/1481-LeastNumberOfUniqueIntegersAfterKRemovals.go)   
+[1482. Minimum Number of Days to Make m Bouquets](./leetcode/1482-MinimumNumberOfDaysToMakeMBouquets.go)   
 [1491. Average Salary Excluding the Minimum and Maximum Salary](./leetcode/1491-AverageSalaryExcludingTheMinimumAndMaximumSalary.go)   
 [1493. Longest Subarray of 1's After Deleting One Element](./leetcode/1493-LongestSubarrayOf1sAfterDeletingOneElement.go)   
 [1498. Number of Subsequences That Satisfy the Given Sum Condition](./leetcode/1498-NumberOfSubsequencesThatSatisfyTheGivenSumCondition.go)   
@@ -1540,6 +1541,8 @@ LCR 075. 数组的相对排序
 [3166. Calculate Parking Fees and Duration](./leetcode/3166-CalculateParkingFeesAndDuration.sql)   
 [3172. Second Day Verification](./leetcode/3172-SecondDayVerification.sql)   
 [3182. Find Top Scoring Students](./leetcode/3182-FindTopScoringStudents.sql)   
+[3188. Find Top Scoring Students II](./leetcode/3188-FindTopScoringStudentsII.sql)   
+
 
 # Shell
 [192. Word Frequency](./leetcode/192-WordFrequency.sh)      
