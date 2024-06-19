@@ -706,6 +706,7 @@
 [592. Fraction Addition and Subtraction](./leetcode/592-FractionAdditionAndSubtraction.go)   
 [616. Add Bold Tag in String](./leetcode/616-AddBoldTagInString.go)   
 [639. Decode Ways II](./leetcode/639-DecodeWaysII.go)   
+[640. Solve the Equation](./leetcode/640-SolveTheEquation.go)   
 [647. Palindromic Substrings](./leetcode/647-PalindromicSubstrings.go)   
 [649. Dota2 Senate](./leetcode/649-Dota2Senate.go)   
 [657. Robot Return to Origin](./leetcode/657-RobotReturnToOrigin.go)   
