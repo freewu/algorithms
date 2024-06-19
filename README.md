@@ -338,6 +338,7 @@
 [646. Maximum Length of Pair Chain](./leetcode/646-MaximumLengthOfPairChain.go)   
 [648. Replace Words](./leetcode/648-ReplaceWords.go)   
 [658. Find K Closest Elements](./leetcode/658-FindKClosestElements.go)   
+[661. Image Smoother](./leetcode/661-ImageSmoother.go)   
 [673. Number of Longest Increasing Subsequence](./leetcode/673-NumberOfLongestIncreasingSubsequence.go)   
 [682. Baseball Game](./leetcode/682-BaseballGame.go)   
 [692. Top K Frequent Words](./leetcode/692-TopKFrequentWords.go)   
