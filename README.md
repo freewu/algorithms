@@ -714,6 +714,7 @@
 [678. Valid Parenthesis String](./leetcode/678-ValidParenthesisString.go)   
 [680. Valid Palindrome II](./leetcode/680-ValidPalindromeII.go)   
 [686. Repeated String Match](./leetcode/686-RepeatedStringMatch.go)   
+[696. Count Binary Substrings](./leetcode/696-CountBinarySubstrings.go)   
 [709. To Lower Case](./leetcode/709-ToLowerCase.go)   
 [712. Minimum ASCII Delete Sum for Two Strings](./leetcode/712-MinimumASCIIDeleteSumForTwoStrings.go)   
 [763. Partition Labels](./leetcode/763-PartitionLabels.go)   
