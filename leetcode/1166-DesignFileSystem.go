@@ -46,40 +46,40 @@ package main
 import "fmt"
 
 type FileSystem struct {
-	files map[string]int
+    files map[string]int
 }
 
 func Constructor() FileSystem {
-	return FileSystem{ map[string]int{} }
+    return FileSystem{ map[string]int{} }
 }
 
 func (fs *FileSystem) CreatePath(path string, value int) bool {
-	if path == "" || path == "/" {
-		return false
-	}
-	if path[len(path)-1] == '/' {
-		return false
-	}
-	for i := 1; i < len(path); i++ {
-		if path[i] == '/' {
-			if fs.Get(path[:i]) == -1 {
-				return false
-			}
-		}
-	}
-	if _, ok := fs.files[path]; ok{
-		return false // path exists
-	}
-	fs.files[path] = value
-	return true
+    if path == "" || path == "/" {
+        return false
+    }
+    if path[len(path)-1] == '/' {
+        return false
+    }
+    for i := 1; i < len(path); i++ {
+        if path[i] == '/' {
+            if fs.Get(path[:i]) == -1 {
+                return false
+            }
+        }
+    }
+    if _, ok := fs.files[path]; ok{
+        return false // path exists
+    }
+    fs.files[path] = value
+    return true
 }
 
 func (fs *FileSystem) Get(path string) int {
-	if v, ok := fs.files[path]; ok {
-		return v
-	} else {
-		return -1
-	}
+    if v, ok := fs.files[path]; ok {
+        return v
+    } else {
+        return -1
+    }
 }
 
 /**
