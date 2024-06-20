@@ -737,6 +737,7 @@
 [1087. Brace Expansion](./leetcode/1087-BraceExpansion.go)   
 [1100. Find K-Length Substrings With No Repeated Characters](./leetcode/1100-FindKLengthSubstringsWithNoRepeatedCharacters.go)   
 [1143. Longest Common Subsequence](./leetcode/1143-LongestCommonSubsequence.go)   
+[1156. Swap For Longest Repeated Character Substring](./leetcode/1156-SwapForLongestRepeatedCharacterSubstring.go)   
 [1163. Last Substring in Lexicographical Order](./leetcode/1163-LastSubstringInLexicographicalOrder.go)   
 [1165. Single-Row Keyboard](./leetcode/1165-Single-RowKeyboard.go)   
 [1180. Count Substrings with Only One Distinct Letter](./leetcode/1180-CountSubstringsWithOnlyOneDistinctLetter.go)   
