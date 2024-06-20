@@ -1730,6 +1730,8 @@ LCR 075. 数组的相对排序
 [LCR 057. 存在重复元素 III](./leetcode/LCR057-ContainsDuplicateIII.go)   
 [LCR 060. 前 K 个高频元素](./leetcode/LCR060-TopKFrequentElements.go)   
 [LCR 122. 路径加密](./leetcode/LCR122-PathEncryption.go)   
+[LCR 182. 动态口令](./leetcode/LCR182-DynamicPassword.go)   
+
 
 # LCP
 [LCP 01. 猜数字](./leetcode/LCP01-GuessNumbers.go)   
