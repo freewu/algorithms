@@ -1736,8 +1736,7 @@ LCR 075. 数组的相对排序
 [LCP 24. 数字游戏](./leetcode/LCP24-NumberGame.go)   
 [LCP 30. 魔塔游戏](./leetcode/LCP30-MagicTowerGame.go)   
 [LCP 54. 夺回据点](./leetcode/LCP54-RetrieveTheStronghold.go)   
-[LCP 61. 气温变化趋势](./leetcode/LCP30-MagicTowerGame.go)   
-LCP 61. 气温变化趋势
+[LCP 61. 气温变化趋势](./leetcode/LCP61-TemperatureTrend.go)   
 
 # LCS
 [LCS 01. 下载插件](./leetcode/LCS01-DownloadPlugins.go)   
