@@ -315,6 +315,7 @@
 [529. Minesweeper](./leetcode/529-Minesweeper.go)   
 [531. Lonely Pixel I](./leetcode/531-LonelyPixelI.go)   
 [532. K-diff Pairs in an Array](./leetcode/532-K-diffPairsInAnArray.go)   
+[533. Lonely Pixel II](./leetcode/533-LonelyPixelII.go)   
 [539. Minimum Time Difference](./leetcode/539-MinimumTimeDifference.go)   
 [540. Single Element in a Sorted Array](./leetcode/540-SingleElementInASortedArray.go)   
 [542. 01 Matrix](./leetcode/542-01Matrix.go)   
@@ -1735,6 +1736,8 @@ LCR 075. 数组的相对排序
 [LCP 24. 数字游戏](./leetcode/LCP24-NumberGame.go)   
 [LCP 30. 魔塔游戏](./leetcode/LCP30-MagicTowerGame.go)   
 [LCP 54. 夺回据点](./leetcode/LCP54-RetrieveTheStronghold.go)   
+[LCP 61. 气温变化趋势](./leetcode/LCP30-MagicTowerGame.go)   
+LCP 61. 气温变化趋势
 
 # LCS
 [LCS 01. 下载插件](./leetcode/LCS01-DownloadPlugins.go)   
