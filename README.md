@@ -467,6 +467,7 @@
 [1538. Guess the Majority in a Hidden Array](./leetcode/1538-GuessTheMajorityInAHiddenArray.go)   
 [1539. Kth Missing Positive Number](./leetcode/1539-KthMissingPositiveNumber.go)   
 [1547. Minimum Cost to Cut a Stick](./leetcode/1547-MinimumCostToCutAStick.go)   
+[1552. Magnetic Force Between Two Balls](./leetcode/1552-MagneticForceBetweenTwoBalls.go)   
 [1572. Matrix Diagonal Sum](./leetcode/1572-MatrixDiagonalSum.go)   
 [1575. Count All Possible Routes](./leetcode/1575-CountAllPossibleRoutes.go)   
 [1601. Maximum Number of Achievable Transfer Requests](./leetcode/1601-MaximumNumberOfAchievableTransferRequests.go)   
