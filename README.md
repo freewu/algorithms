@@ -324,6 +324,7 @@
 [548. Split Array with Equal Sum](./leetcode/548-SplitArrayWithEqualSum.go)   
 [553. Optimal Division](./leetcode/553-OptimalDivision.go)   
 [554. Brick Wall](./leetcode/554-BrickWall.go)   
+[555. Split Concatenated Strings](./leetcode/555-SplitConcatenatedStrings.go)   
 [560. Subarray Sum Equals K](./leetcode/560-SubarraySumEqualsK.go)   
 [566. Reshape the Matrix](./leetcode/566-ReshapeTheMatrix.go)   
 [575. Distribute Candies](./leetcode/575-DistributeCandies.go)   
