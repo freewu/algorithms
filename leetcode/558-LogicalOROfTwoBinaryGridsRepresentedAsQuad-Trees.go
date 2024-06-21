@@ -96,12 +96,12 @@ type Node struct {
 
 func intersect(quadTree1, quadTree2 *Node) *Node {
     if quadTree1.IsLeaf { 
-        if quadTree1.Val {//若1为叶子结点且值为1 直接返回全为1的结点
+        if quadTree1.Val {// 若1为叶子结点且值为1 直接返回全为1的结点
             return &Node{Val: true, IsLeaf: true}
         }
         return quadTree2
     }
-    if quadTree2.IsLeaf {//若2为叶子结点 则转换为上面那种情况
+    if quadTree2.IsLeaf { // 若2为叶子结点 则转换为上面那种情况
         return intersect(quadTree2, quadTree1)
     }
     n1 := intersect(quadTree1.TopLeft, quadTree2.TopLeft) //分治
