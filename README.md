@@ -332,6 +332,7 @@
 [594. Longest Harmonious Subsequence](./leetcode/594-LongestHarmoniousSubsequence.go)   
 [598. Range Addition II](./leetcode/598-RangeAdditionII.go)   
 [605. Can Place Flowers](./leetcode/605-CanPlaceFlowers.go)   
+[609. Find Duplicate File in System](./leetcode/609-FindDuplicateFileInSystem.go)   
 [611. Valid Triangle Number](./leetcode/611-ValidTriangleNumber.go)   
 [621. Task Scheduler](./leetcode/621-TaskScheduler.go)   
 [624. Maximum Distance in Arrays](./leetcode/624-MaximumDistanceInArrays.go)   
