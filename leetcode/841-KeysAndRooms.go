@@ -44,7 +44,7 @@ func canVisitAllRooms(rooms [][]int) bool {
     for len(stack) != 0 {
         pop := stack[0]
         stack = stack[1:]
-        if visit[pop] {
+        if visited[pop] {
             for _, key := range rooms[pop] {
                 if !visited[key] { // 没有进入过
                     visited[key] = true
@@ -59,6 +59,25 @@ func canVisitAllRooms(rooms [][]int) bool {
         }
     }
     return true
+}
+
+// dfs 
+func canVisitAllRooms1(rooms [][]int) bool {
+    count, n := 0, len(rooms)
+    visited := make([]bool, n)
+    var dfs func(x int)
+    dfs = func(x int) {
+        if visited[x] {
+            return
+        }
+        visited[x] = true
+        count++
+        for _, v := range rooms[x] {
+            dfs(v)
+        }
+    }
+    dfs(0)
+    return count == n
 }
 
 func main() {
@@ -77,4 +96,7 @@ func main() {
     // Output: false
     // Explanation: We can not enter room number 2 since the only key that unlocks it is in that room.
     fmt.Println(canVisitAllRooms([][]int{{1,3},{3,0,1},{2},{0}})) // false
+
+    fmt.Println(canVisitAllRooms1([][]int{{1},{2},{3},{}})) // true
+    fmt.Println(canVisitAllRooms1([][]int{{1,3},{3,0,1},{2},{0}})) // false
 }
