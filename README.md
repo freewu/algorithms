@@ -373,6 +373,7 @@
 [785. Is Graph Bipartite?](./leetcode/785-IsGraphBipartite.go)   
 [786. K-th Smallest Prime Fraction](./leetcode/786-KthSmallestPrimeFraction.go)   
 [797. All Paths From Source to Target](./leetcode/797-AllPathsFromSourceToTarget.go)   
+[802. Find Eventual Safe States](./leetcode/802-FindEventualSafeStates.go)   
 [826. Most Profit Assigning Work](./leetcode/826-MostProfitAssigningWork.go)   
 [841. Keys and Rooms](./leetcode/841-KeysAndRooms.go)   
 [846. Hand of Straights](./leetcode/846-HandOfStraights.go)   
@@ -781,6 +782,7 @@
 [2486. Append Characters to String to Make Subsequence](./leetcode/2486-AppendCharactersToStringToMakeSubsequence.go)   
 [2575. Find the Divisibility Array of a String](./leetcode/2575-FindTheDivisibilityArrayOfAString.go)    
 [2586. Count the Number of Vowel Strings in Range](./leetcode/2586-CountTheNumberOfVowelStringsInRange.go)   
+2663. Lexicographically Smallest Beautiful String
 [2719. Count of Integers](./leetcode/2719-CountOfIntegers.go)   
 [2810. Faulty Keyboard](./leetcode/2810-FaultyKeyboard.go)   
 [2864. Maximum Odd Binary Number](./leetcode/2864-MaximumOddBinaryNumber.go)   
