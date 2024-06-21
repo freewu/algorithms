@@ -368,6 +368,7 @@
 [746. Min Cost Climbing Stairs](./leetcode/746-MinCostClimbingStairs.go)    
 [752. Open the Lock](./leetcode/752-OpenTheLock.go)   
 [760. Find Anagram Mappings](./leetcode/760-FindAnagramMappings.go)   
+[768. Max Chunks To Make Sorted II](./leetcode/768-MaxChunksToMakeSortedII.go)   
 [785. Is Graph Bipartite?](./leetcode/785-IsGraphBipartite.go)   
 [786. K-th Smallest Prime Fraction](./leetcode/786-KthSmallestPrimeFraction.go)   
 [797. All Paths From Source to Target](./leetcode/797-AllPathsFromSourceToTarget.go)   
