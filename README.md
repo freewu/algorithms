@@ -706,8 +706,10 @@
 [520. Detect Capital](./leetcode/520-DetectCapital.go)   
 [521. Longest Uncommon Subsequence I](./leetcode/521-LongestUncommonSubsequenceI.go)   
 [524. Longest Word in Dictionary through Deleting](./leetcode/524-LongestWordInDictionaryThroughDeleting.go)   
+[536. Construct Binary Tree from String](./leetcode/536-ConstructBinaryTreeFromString.go)   
 [537. Complex Number Multiplication](./leetcode/537-ComplexNumberMultiplication.go)   
 [541. Reverse String II](./leetcode/541-ReverseStringII.go)   
+544. Output Contest Matches
 [551. Student Attendance Record I](./leetcode/551-StudentAttendanceRecordI.go)   
 [553. Optimal Division](./leetcode/553-OptimalDivision.go)   
 [557. Reverse Words in a String III](./leetcode/557-ReverseWordsInAStringIII.go)   
