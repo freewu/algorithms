@@ -321,6 +321,7 @@
 [542. 01 Matrix](./leetcode/542-01Matrix.go)   
 [546. Remove Boxes](./leetcode/546-RemoveBoxes.go)   
 [547. Number of Provinces](./leetcode/547-NumberOfProvinces.go)   
+[548. Split Array with Equal Sum](./leetcode/548-SplitArrayWithEqualSum.go)   
 [553. Optimal Division](./leetcode/553-OptimalDivision.go)   
 [554. Brick Wall](./leetcode/554-BrickWall.go)   
 [560. Subarray Sum Equals K](./leetcode/560-SubarraySumEqualsK.go)   
