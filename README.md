@@ -322,6 +322,7 @@
 [546. Remove Boxes](./leetcode/546-RemoveBoxes.go)   
 [547. Number of Provinces](./leetcode/547-NumberOfProvinces.go)   
 [553. Optimal Division](./leetcode/553-OptimalDivision.go)   
+[554. Brick Wall](./leetcode/554-BrickWall.go)   
 [560. Subarray Sum Equals K](./leetcode/560-SubarraySumEqualsK.go)   
 [566. Reshape the Matrix](./leetcode/566-ReshapeTheMatrix.go)   
 [575. Distribute Candies](./leetcode/575-DistributeCandies.go)   
