@@ -998,6 +998,7 @@
 [543. Diameter of Binary Tree](./leetcode/543-DiameterOfBinaryTree.go)   
 [545. Boundary of Binary Tree](./leetcode/545-BoundaryOfBinaryTree.go)   
 [549. Binary Tree Longest Consecutive Sequence II](./leetcode/549-BinaryTreeLongestConsecutiveSequenceII.go)   
+[558. Logical OR of Two Binary Grids Represented as Quad-Trees](./leetcode/558-LogicalOROfTwoBinaryGridsRepresentedAsQuad-Trees.go)   
 [572. Subtree of Another Tree](./leetcode/572-SubtreeOfAnotherTree.go)   
 [582. Kill Process](./leetcode/582-KillProcess.go)   
 [589. N-ary Tree Preorder Traversal](./leetcode/589-N-aryTreePreorderTraversal.go)   
