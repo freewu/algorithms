@@ -72,6 +72,21 @@ func majorityElement2(nums []int) int {
     return major
 }
 
+func majorityElement3(nums []int) int {
+    res, num := nums[0], 1
+    for _, v := range nums[1:] {
+        if v == res {
+            num++
+        } else if num == 0 {
+            res = v
+            num = 1
+        } else {
+            num--
+        }
+    }
+    return res
+}
+
 func main() {
     fmt.Printf("majorityElement1([]int{ 3,2,3 }) = %v\n",majorityElement1([]int{ 3,2,3 })) // 3
     fmt.Printf("majorityElement1([]int{ 2,2,1,1,1,2,2 }) = %v\n",majorityElement1([]int{ 2,2,1,1,1,2,2 })) // 2
@@ -81,4 +96,8 @@ func main() {
 
     fmt.Printf("majorityElement2([]int{ 3,2,3 }) = %v\n",majorityElement2([]int{ 3,2,3 })) // 3
     fmt.Printf("majorityElement2([]int{ 2,2,1,1,1,2,2 }) = %v\n",majorityElement2([]int{ 2,2,1,1,1,2,2 })) // 2
+
+    fmt.Printf("majorityElement3([]int{ 3,2,3 }) = %v\n",majorityElement3([]int{ 3,2,3 })) // 3
+    fmt.Printf("majorityElement3([]int{ 2,2,1,1,1,2,2 }) = %v\n",majorityElement3([]int{ 2,2,1,1,1,2,2 })) // 2
+
 }
