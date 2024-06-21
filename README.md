@@ -445,6 +445,7 @@
 [1272. Remove Interval](./leetcode/1272-RemoveInterval.go)   
 [1274. Number of Ships in a Rectangle](./leetcode/1274-NumberOfShipsInARectangle.go)   
 [1275. Find Winner on a Tic Tac Toe Game](./leetcode/1275-FindWinnerOnATicTacToeGame.go)   
+[1282. Group the People Given the Group Size They Belong To](./leetcode/1282-GroupThePeopleGivenTheGroupSizeTheyBelongTo.go)   
 [1283. Find the Smallest Divisor Given a Threshold](./leetcode/1283-FindTheSmallestDivisorGivenAThreshold.go)   
 [1288. Remove Covered Intervals](./leetcode/1288-RemoveCoveredIntervals.go)   
 [1289. Minimum Falling Path Sum II](./leetcode/1289-MinimumFallingPathSumII.go)   
