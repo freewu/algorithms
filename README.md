@@ -328,6 +328,7 @@
 [560. Subarray Sum Equals K](./leetcode/560-SubarraySumEqualsK.go)   
 [565. Array Nesting](./leetcode/565-ArrayNesting.go)   
 [566. Reshape the Matrix](./leetcode/566-ReshapeTheMatrix.go)   
+[573. Squirrel Simulation](./leetcode/573-SquirrelSimulation.go)   
 [575. Distribute Candies](./leetcode/575-DistributeCandies.go)   
 [581. Shortest Unsorted Continuous Subarray](./leetcode/581-ShortestUnsortedContinuousSubarray.go)   
 [594. Longest Harmonious Subsequence](./leetcode/594-LongestHarmoniousSubsequence.go)   
