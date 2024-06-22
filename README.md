@@ -329,6 +329,7 @@
 [562. Longest Line of Consecutive One in Matrix](./leetcode/562-LongestLineOfConsecutiveOneInMatrix.go)   
 [565. Array Nesting](./leetcode/565-ArrayNesting.go)   
 [566. Reshape the Matrix](./leetcode/566-ReshapeTheMatrix.go)   
+[568. Maximum Vacation Days](./leetcode/568-MaximumVacationDays.go)   
 [573. Squirrel Simulation](./leetcode/573-SquirrelSimulation.go)   
 [575. Distribute Candies](./leetcode/575-DistributeCandies.go)   
 [581. Shortest Unsorted Continuous Subarray](./leetcode/581-ShortestUnsortedContinuousSubarray.go)   
