@@ -326,6 +326,7 @@
 [554. Brick Wall](./leetcode/554-BrickWall.go)   
 [555. Split Concatenated Strings](./leetcode/555-SplitConcatenatedStrings.go)   
 [560. Subarray Sum Equals K](./leetcode/560-SubarraySumEqualsK.go)   
+[562. Longest Line of Consecutive One in Matrix](./leetcode/562-LongestLineOfConsecutiveOneInMatrix.go)   
 [565. Array Nesting](./leetcode/565-ArrayNesting.go)   
 [566. Reshape the Matrix](./leetcode/566-ReshapeTheMatrix.go)   
 [573. Squirrel Simulation](./leetcode/573-SquirrelSimulation.go)   
