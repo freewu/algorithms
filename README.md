@@ -1757,6 +1757,7 @@ LCR 075. 数组的相对排序
 [LCR 138. 有效数字](./leetcode/LCR138-ValidNumber.go)   
 [LCR 158. 库存管理 II](./leetcode/LCR158-InventoryManagementII.go)   
 [LCR 182. 动态口令](./leetcode/LCR182-DynamicPassword.go)   
+[LCR 192. 把字符串转换成整数 (atoi)](./leetcode/LCR192-StringToInteger.go)   
 
 
 # LCP
