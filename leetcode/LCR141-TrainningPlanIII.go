@@ -1,24 +1,22 @@
 package main
 
-// 206. Reverse Linked List
-// Given the head of a singly linked list, reverse the list, and return the reversed list.
+// LCR 141. 训练计划 III
+// 给定一个头节点为 head 的单链表用于记录一系列核心肌群训练编号，请将该系列训练编号 倒序 记录于链表并返回。
 
-// Example 1:
-// <img src="https://assets.leetcode.com/uploads/2021/02/19/rev1ex1.jpg" />
-// Input: head = [1,2,3,4,5] 1->2->3->4->5->NULL
-// Output: [5,4,3,2,1] 5->4->3->2->1->NULL
+// 示例 1：
+// 输入：head = [1,2,3,4,5]
+// 输出：[5,4,3,2,1]
 
-// Example 2:
-// <img src="https://assets.leetcode.com/uploads/2021/02/19/rev1ex2.jpg" />
-// Input: head = [1,2]  1->2->NULL
-// Output: [2,1] 2->1->NULL
+// 示例 2：
+// 输入：head = [1,2]
+// 输出：[2,1]
 
-// Example 3:
-// Input: head = []
-// Output: []
- 
-// Constraints:
-//     The number of nodes in the list is the range [0, 5000].
+// 示例 3：
+// 输入：head = []
+// 输出：[]
+
+// 提示：
+//     链表中节点的数目范围是 [0, 5000]
 //     -5000 <= Node.val <= 5000
 
 import "fmt"
@@ -59,7 +57,6 @@ func makeListNode(arr []int) *ListNode {
     return head
 }
 
-
 /**
  * Definition for singly-linked list.
  * type ListNode struct {
@@ -67,7 +64,7 @@ func makeListNode(arr []int) *ListNode {
  *     Next *ListNode
  * }
  */
-func reverseList(head *ListNode) *ListNode {
+func trainningPlan(head *ListNode) *ListNode {
     var res *ListNode
     for head != nil {
         next := head.Next  // 备份head.Next
@@ -80,7 +77,7 @@ func reverseList(head *ListNode) *ListNode {
 }
 
 // best
-func reverseList1(head *ListNode) *ListNode {
+func trainningPlan1(head *ListNode) *ListNode {
     var prev *ListNode = nil
     cur := head
     var next *ListNode = nil
@@ -94,7 +91,7 @@ func reverseList1(head *ListNode) *ListNode {
     return prev
 }
 
-func reverseList2(head *ListNode) *ListNode {
+func trainningPlan2(head *ListNode) *ListNode {
     var recur func(q *ListNode, w *ListNode) *ListNode
     recur = func (q *ListNode, w *ListNode) *ListNode {
         if q == nil {
@@ -107,58 +104,60 @@ func reverseList2(head *ListNode) *ListNode {
     return recur(head,nil)
 }
 
+
 func main() {
     l1 := makeListNode([]int{1,2,3,4,5})
     fmt.Println("l1: ")
     printListNode(l1)
-    fmt.Println("reverseList(l1): ")
-    printListNode(reverseList(l1))
+    fmt.Println("trainningPlan(l1): ")
+    printListNode(trainningPlan(l1))
 
     l2 := makeListNode([]int{1,2})
     fmt.Println("l2: ")
     printListNode(l2)
-    fmt.Println("reverseList(l2): ")
-    printListNode(reverseList(l2))
+    fmt.Println("trainningPlan(l2): ")
+    printListNode(trainningPlan(l2))
 
     l3 := makeListNode([]int{})
     fmt.Println("l3: ")
     printListNode(l3)
-    fmt.Println("reverseList(l3): ")
-    printListNode(reverseList(l3))
+    fmt.Println("trainningPlan(l3): ")
+    printListNode(trainningPlan(l3))
+
 
     l1 = makeListNode([]int{1,2,3,4,5})
     fmt.Println("l1: ")
     printListNode(l1)
-    fmt.Println("reverseList1(l1): ")
-    printListNode(reverseList1(l1))
+    fmt.Println("trainningPlan1(l1): ")
+    printListNode(trainningPlan1(l1))
 
     l2 = makeListNode([]int{1,2})
     fmt.Println("l2: ")
     printListNode(l2)
-    fmt.Println("reverseList1(l2): ")
-    printListNode(reverseList1(l2))
+    fmt.Println("trainningPlan1(l2): ")
+    printListNode(trainningPlan1(l2))
 
     l3 = makeListNode([]int{})
     fmt.Println("l3: ")
     printListNode(l3)
-    fmt.Println("reverseList1(l3): ")
-    printListNode(reverseList1(l3))
+    fmt.Println("trainningPlan1(l3): ")
+    printListNode(trainningPlan1(l3))
 
     l1 = makeListNode([]int{1,2,3,4,5})
     fmt.Println("l1: ")
     printListNode(l1)
-    fmt.Println("reverseList2(l1): ")
-    printListNode(reverseList2(l1))
+    fmt.Println("trainningPlan2(l1): ")
+    printListNode(trainningPlan2(l1))
 
     l2 = makeListNode([]int{1,2})
     fmt.Println("l2: ")
     printListNode(l2)
-    fmt.Println("reverseList2(l2): ")
-    printListNode(reverseList2(l2))
+    fmt.Println("trainningPlan2(l2): ")
+    printListNode(trainningPlan2(l2))
 
     l3 = makeListNode([]int{})
     fmt.Println("l3: ")
     printListNode(l3)
-    fmt.Println("reverseList2(l3): ")
-    printListNode(reverseList2(l3))
+    fmt.Println("trainningPlan2(l3): ")
+    printListNode(trainningPlan2(l3))
 }
