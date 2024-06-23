@@ -465,6 +465,8 @@
 [1426. Counting Elements](./leetcode/1426-CountingElements.go)   
 [1431. Kids With the Greatest Number of Candies](./leetcode/1431-KidsWithTheGreatestNumberOfCandies.go)   
 [1434. Number of Ways to Wear Different Hats to Each Other](./leetcode/1434-NumberOfWaysToWearDifferentHatsToEachOther.go)   
+
+[1438. Longest Continuous Subarray With Absolute Diff Less Than or Equal to Limit](./leetcode/1438-LongestContinuousSubarrayWithAbsoluteDiffLessThanOrEqualToLimit.go)   
 [1442. Count Triplets That Can Form Two Arrays of Equal XOR](./leetcode/1442-CountTripletsThatCanFormTwoArraysOfEqualXOR.go)   
 [1444. Number of Ways of Cutting a Pizza](./leetcode/1444-NumberOfWaysOfCuttingAPizza.go)   
 [1463. Cherry Pickup II](./leetcode/1463-CherryPickupII.go)   
