@@ -336,6 +336,7 @@
 [587. Erect the Fence](./leetcode/587-ErectTheFence.go)   
 [594. Longest Harmonious Subsequence](./leetcode/594-LongestHarmoniousSubsequence.go)   
 [598. Range Addition II](./leetcode/598-RangeAdditionII.go)   
+[599. Minimum Index Sum of Two Lists](./leetcode/599-MinimumIndexSumOfTwoLists.go)   
 [605. Can Place Flowers](./leetcode/605-CanPlaceFlowers.go)   
 [609. Find Duplicate File in System](./leetcode/609-FindDuplicateFileInSystem.go)   
 [611. Valid Triangle Number](./leetcode/611-ValidTriangleNumber.go)   
@@ -921,6 +922,7 @@
 [556. Next Greater Element III](./leetcode/556-NextGreaterElementIII.go)   
 [587. Erect the Fence](./leetcode/587-ErectTheFence.go)   
 [593. Valid Square](./leetcode/593-ValidSquare.go)   
+625. Minimum Factorization
 [633. Sum of Square Numbers](./leetcode/633-SumOfSquareNumbers.go)   
 [634. Find the Derangement of An Array](./leetcode/634-FindTheDerangementOfAnArray.go)   
 [651. 4 Keys Keyboard](./leetcode/651-4KeysKeyboard.go)   
