@@ -922,7 +922,7 @@
 [556. Next Greater Element III](./leetcode/556-NextGreaterElementIII.go)   
 [587. Erect the Fence](./leetcode/587-ErectTheFence.go)   
 [593. Valid Square](./leetcode/593-ValidSquare.go)   
-625. Minimum Factorization
+[625. Minimum Factorization](./leetcode/625-MinimumFactorization.go)   
 [633. Sum of Square Numbers](./leetcode/633-SumOfSquareNumbers.go)   
 [634. Find the Derangement of An Array](./leetcode/634-FindTheDerangementOfAnArray.go)   
 [651. 4 Keys Keyboard](./leetcode/651-4KeysKeyboard.go)   
