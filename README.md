@@ -732,6 +732,7 @@
 [564. Find the Closest Palindrome](./leetcode/564-FindTheClosestPalindrome.go)   
 [567. Permutation in String](./leetcode/567-PermutationInString.go)   
 [583. Delete Operation for Two Strings](./leetcode/583-DeleteOperationForTwoStrings.go)   
+[591. Tag Validator](./leetcode/591-TagValidator.go)   
 [592. Fraction Addition and Subtraction](./leetcode/592-FractionAdditionAndSubtraction.go)   
 [616. Add Bold Tag in String](./leetcode/616-AddBoldTagInString.go)   
 [639. Decode Ways II](./leetcode/639-DecodeWaysII.go)   
