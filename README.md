@@ -809,6 +809,7 @@
 [276. Paint Fence](./leetcode/276-PaintFence.go)   
 [552. Student Attendance Record II](./leetcode/552-StudentAttendanceRecordII.go)   
 [576. Out of Boundary Paths](./leetcode/576-OutOfBoundaryPaths.go)   
+[600. Non-negative Integers without Consecutive Ones](./leetcode/600-Non-NegativeIntegersWithoutConsecutiveOnes.go)   
 [629. K Inverse Pairs Array](./leetcode/629-K-InversePairsArray.go)   
 [688. Knight Probability in Chessboard](./leetcode/688-KnightProbabilityInChessboard.go)   
 [787. Cheapest Flights Within K Stops](./leetcode/787-CheapestFlightsWithinKStops.go)   
