@@ -415,6 +415,7 @@
 [983. Minimum Cost For Tickets](./leetcode/983-MinimumCostForTickets.go)   
 [992. Subarrays with K Different Integers](./leetcode/992-SubarraysWithKDifferentIntegers.go)   
 [994. Rotting Oranges](./leetcode/994-RottingOranges.go)   
+[995. Minimum Number of K Consecutive Bit Flips](./leetcode/995-MinimumNumberOfKConsecutiveBitFlips.go)   
 [997. Find the Town Judge](./leetcode/997-FindTheTownJudge.go)   
 [1002. Find Common Characters](./leetcode/1002-FindCommonCharacters.go)   
 [1004. Max Consecutive Ones III](./leetcode/1004-MaxConsecutiveOnesIII.go)   
