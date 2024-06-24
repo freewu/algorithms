@@ -352,6 +352,7 @@
 [645. Set Mismatch](./leetcode/645-SetMismatch.go)   
 [646. Maximum Length of Pair Chain](./leetcode/646-MaximumLengthOfPairChain.go)   
 [648. Replace Words](./leetcode/648-ReplaceWords.go)   
+[656. Coin Path](./leetcode/656-CoinPath.go)   
 [658. Find K Closest Elements](./leetcode/658-FindKClosestElements.go)   
 [661. Image Smoother](./leetcode/661-ImageSmoother.go)   
 [665. Non-decreasing Array](./leetcode/665-Non-DecreasingArray.go)   
