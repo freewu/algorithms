@@ -577,6 +577,7 @@
 [2684. Maximum Number of Moves in a Grid](./leetcode/2684-MaximumNumberOfMovesInAGrid.go)   
 [2713. Maximum Strictly Increasing Cells in a Matrix](./leetcode/2713-MaximumStrictlyIncreasingCellsInAMatrix.go)   
 [2731. Movement of Robots](./leetcode/2731-MovementOfRobots.go)   
+[2732. Find a Good Subset of the Matrix](./leetcode/2732-FindAGoodSubsetOfTheMatrix.go)   
 [2744. Find Maximum Number of String Pairs](./leetcode/2744-FindMaximumNumberOfStringPairs.go)   
 [2748. Number of Beautiful Pairs](./leetcode/2748-NumberOfBeautifulPairs.go)   
 [2765. Longest Alternating Subarray](./leetcode/2765-LongestAlternatingSubarray.go)   
