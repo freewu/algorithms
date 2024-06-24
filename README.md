@@ -1033,6 +1033,7 @@
 [582. Kill Process](./leetcode/582-KillProcess.go)   
 [589. N-ary Tree Preorder Traversal](./leetcode/589-N-aryTreePreorderTraversal.go)   
 [590. N-ary Tree Postorder Traversal](./leetcode/590-N-aryTreePostorderTraversal.go)   
+[606. Construct String from Binary Tree](./leetcode/606-ConstructStringFromBinaryTree.go)   
 [617. Merge Two Binary Trees](./leetcode/617-MergeTwoBinaryTrees.go)   
 [623. Add One Row to Tree](./leetcode/623-AddOneRowToTree.go)   
 [637. Average of Levels in Binary Tree](./leetcode/637-AverageOfLevelsInBinaryTree.go)   
