@@ -345,6 +345,7 @@
 [628. Maximum Product of Three Numbers](./leetcode/628-MaximumProductOfThreeNumbers.go)   
 [630. Course Schedule III](./leetcode/630-CourseScheduleIII.go)   
 [632. Smallest Range Covering Elements from K Lists](./leetcode/632-SmallestRangeCoveringElementsFromKLists.go)   
+[636. Exclusive Time of Functions](./leetcode/636-ExclusiveTimeOfFunctions.go)   
 [643. Maximum Average Subarray I](./leetcode/643-MaximumAverageSubarrayI.go)   
 [644. Maximum Average Subarray II](./leetcode/644-MaximumAverageSubarrayII.go)   
 [645. Set Mismatch](./leetcode/645-SetMismatch.go)   
