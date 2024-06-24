@@ -1,35 +1,25 @@
 package main
 
-// 49. Group Anagrams
-// Given an array of strings strs, group the anagrams together. 
-// You can return the answer in any order.
-// An Anagram is a word or phrase formed by rearranging the letters of a different word or phrase, typically using all the original letters exactly once.
+// LCR 033. 字母异位词分组
+// 给定一个字符串数组 strs ，将 变位词 组合在一起。 可以按任意顺序返回结果列表。
+// 注意：若两个字符串中每个字符出现的次数都相同，则称它们互为变位词。
 
-// Constraints:
+// 示例 1:
+// 输入: strs = ["eat", "tea", "tan", "ate", "nat", "bat"]
+// 输出: [["bat"],["nat","tan"],["ate","eat","tea"]]
+
+// 示例 2:
+// 输入: strs = [""]
+// 输出: [[""]]
+
+// 示例 3:
+// 输入: strs = ["a"]
+// 输出: [["a"]]
+
+// 提示：
 //     1 <= strs.length <= 10^4
 //     0 <= strs[i].length <= 100
-//     strs[i] consists of lowercase English letters.
-
-// Example 1:
-//     Input: strs = ["eat","tea","tan","ate","nat","bat"]
-//     Output: [["bat"],["nat","tan"],["ate","eat","tea"]]
-
-// Example 2:
-//     Input: strs = [""]
-//     Output: [[""]]
-
-// Example 3:
-//     Input: strs = ["a"]
-//     Output: [["a"]]
-
-// 给出一个字符串数组，要求对字符串数组里面有 Anagrams 关系的字符串进行分组。
-// Anagrams 关系是指两个字符串的字符完全相同，顺序不同，两者是由排列组合组成。
-
-// 将每个字符串都排序，排序完成以后，
-// 相同 Anagrams 的字符串必然排序结果一样。
-// 把排序以后的字符串当做 key 存入到 map 中。
-// 遍历数组以后，就能得到一个 map，key 是排序以后的字符串，value 对应的是这个排序字符串以后的 Anagrams 字符串集合。
-// 最后再将这些 value 对应的字符串数组输出即可。
+//     strs[i] 仅包含小写字母
 
 import "fmt"
 import "sort"
