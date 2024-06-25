@@ -1609,7 +1609,7 @@ LCR 075. 数组的相对排序
 [3172. Second Day Verification](./leetcode/3172-SecondDayVerification.sql)   
 [3182. Find Top Scoring Students](./leetcode/3182-FindTopScoringStudents.sql)   
 [3188. Find Top Scoring Students II](./leetcode/3188-FindTopScoringStudentsII.sql)   
-
+[3198. Find Cities in Each State](./leetcode/3198-FindCitiesInEachState.sql)   
 
 # Shell
 [192. Word Frequency](./leetcode/192-WordFrequency.sh)      
