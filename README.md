@@ -1044,6 +1044,7 @@
 [617. Merge Two Binary Trees](./leetcode/617-MergeTwoBinaryTrees.go)   
 [623. Add One Row to Tree](./leetcode/623-AddOneRowToTree.go)   
 [637. Average of Levels in Binary Tree](./leetcode/637-AverageOfLevelsInBinaryTree.go)   
+[652. Find Duplicate Subtrees](./leetcode/652-FindDuplicateSubtrees.go)   
 [700. Search in a Binary Search Tree](./leetcode/700-SearchInABinarySearchTree.go)   
 [834. Sum of Distances in Tree](./leetcode/834-SumOfDistancesInTree.go)   
 [872. Leaf-Similar Trees](./leetcode/872-Leaf-SimilarTrees.go)   
