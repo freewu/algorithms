@@ -1047,6 +1047,7 @@
 [652. Find Duplicate Subtrees](./leetcode/652-FindDuplicateSubtrees.go)   
 [653. Two Sum IV - Input is a BST](./leetcode/652-FindDuplicateSubtrees.go)   
 [654. Maximum Binary Tree](./leetcode/654-MaximumBinaryTree.go)   
+[655. Print Binary Tree](./leetcode/655-PrintBinaryTree.go)   
 [700. Search in a Binary Search Tree](./leetcode/653-TwoSumIV-InputIsABST.go)   
 [834. Sum of Distances in Tree](./leetcode/834-SumOfDistancesInTree.go)   
 [872. Leaf-Similar Trees](./leetcode/872-Leaf-SimilarTrees.go)   
