@@ -56,6 +56,15 @@ func hammingWeight2(n int) int {
     return res
 }
 
+func hammingWeight3(n int) int {
+    res := 0
+    for n != 0 {
+        res += n % 2
+        n = n >> 1
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: n = 11
@@ -83,4 +92,8 @@ func main() {
     fmt.Println(hammingWeight2(11)) // 3 (1011)
     fmt.Println(hammingWeight2(128)) // 1 (10000000)
     fmt.Println(hammingWeight2(2147483645)) // 30 (1111111111111111111111111111101)
+
+    fmt.Println(hammingWeight3(11)) // 3 (1011)
+    fmt.Println(hammingWeight3(128)) // 1 (10000000)
+    fmt.Println(hammingWeight3(2147483645)) // 30 (1111111111111111111111111111101)
 }
