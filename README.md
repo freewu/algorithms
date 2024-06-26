@@ -1056,6 +1056,7 @@
 [655. Print Binary Tree](./leetcode/655-PrintBinaryTree.go)   
 [662. Maximum Width of Binary Tree](./leetcode/662-MaximumWidthOfBinaryTree.go)   
 [663. Equal Tree Partition](./leetcode/663-EqualTreePartition.go)   
+[669. Trim a Binary Search Tree](./leetcode/669-TrimABinarySearchTree.go)   
 [700. Search in a Binary Search Tree](./leetcode/653-TwoSumIV-InputIsABST.go)   
 [834. Sum of Distances in Tree](./leetcode/834-SumOfDistancesInTree.go)   
 [872. Leaf-Similar Trees](./leetcode/872-Leaf-SimilarTrees.go)   
