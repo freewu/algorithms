@@ -940,6 +940,7 @@
 [651. 4 Keys Keyboard](./leetcode/651-4KeysKeyboard.go)   
 [660. Remove 9](./leetcode/660-Remove9.go)   
 [667. Beautiful Arrangement II](./leetcode/667-BeautifulArrangementII.go)   
+[668. Kth Smallest Number in Multiplication Table](./leetcode/668-KthSmallestNumberInMultiplicationTable.go)   
 [670. Maximum Swap](./leetcode/670-MaximumSwap.go)   
 [808. Soup Servings](./leetcode/808-SoupServings.go)   
 [837. New 21 Game](./leetcode/837-New21Game.go)   
