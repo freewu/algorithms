@@ -1807,6 +1807,7 @@ LCR 075. 数组的相对排序
 [LCR 122. 路径加密](./leetcode/LCR122-PathEncryption.go)   
 [LCR 123. 图书整理 I](./leetcode/LCR123-ReverseBookList.go)   
 [LCR 133. 位 1 的个数](./leetcode/LCR133-NumberOfOneBits.go)   
+[LCR 136. 删除链表的节点](./leetcode/LCR136-DeleteNode.go)   
 [LCR 138. 有效数字](./leetcode/LCR138-ValidNumber.go)   
 [LCR 141. 训练计划 III](./leetcode/LCR141-TrainningPlanIII.go)   
 [LCR 147. 最小栈](./leetcode/LCR147-MinStack.go)   
