@@ -1208,6 +1208,7 @@
 [641. Design Circular Deque](./leetcode/641-DesignCircularDeque.go)   
 [642. Design Search Autocomplete System](./leetcode/642-DesignSearchAutocompleteSystem.go)   
 [676. Implement Magic Dictionary](./leetcode/676-ImplementMagicDictionary.go)   
+[677. Map Sum Pairs](./leetcode/677-MapSumPairs.go)    
 [705. Design HashSet](./leetcode/705-DesignHashSet.go)    
 [706. Design HashMap](./leetcode/706-DesignHashMap.go)    
 [707. Design Linked List](./leetcode/707-DesignLinkedList.go)   
