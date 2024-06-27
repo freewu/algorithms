@@ -1800,6 +1800,7 @@ LCR 075. 数组的相对排序
 [LCR 033. 字母异位词分组](./leetcode/LCR033-GroupAnagrams.go)   
 [LCR 034. 验证外星语词典](./leetcode/LCR034-VerifyingAnAlienDictionary.go)   
 [LCR 035. 最小时间差](./leetcode/LCR035-MinimumTimeDifference.go)   
+[LCR 036. 逆波兰表达式求值](./leetcode/LCR036-EvaluateReversePolishNotation.go)   
 [LCR 038. 每日温度](./leetcode/LCR038-DailyTemperatures.go)   
 [LCR 057. 存在重复元素 III](./leetcode/LCR057-ContainsDuplicateIII.go)   
 [LCR 060. 前 K 个高频元素](./leetcode/LCR060-TopKFrequentElements.go)   
