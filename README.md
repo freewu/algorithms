@@ -756,6 +756,7 @@
 [664. Strange Printer](./leetcode/664-StrangePrinter.go)   
 [678. Valid Parenthesis String](./leetcode/678-ValidParenthesisString.go)   
 [680. Valid Palindrome II](./leetcode/680-ValidPalindromeII.go)   
+[681. Next Closest Time](./leetcode/681-NextClosestTime.go)   
 [686. Repeated String Match](./leetcode/686-RepeatedStringMatch.go)   
 [696. Count Binary Substrings](./leetcode/696-CountBinarySubstrings.go)   
 [709. To Lower Case](./leetcode/709-ToLowerCase.go)   
