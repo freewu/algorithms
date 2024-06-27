@@ -1120,6 +1120,7 @@
 [1136. Parallel Courses](./leetcode/1136-ParallelCourses.go)   
 [1168. Optimize Water Distribution in a Village](./leetcode/1168-OptimizeWaterDistributionInAVillage.go)   
 [1466. Reorder Routes to Make All Paths Lead to the City Zero](./leetcode/1466-ReorderRoutesToMakeAllPathsLeadToTheCityZero.go)   
+[1791. Find Center of Star Graph](./leetcode/1791-FindCenterOfStarGraph.go)   
 [1971. Find if Path Exists in Graph](./leetcode/1971-FindIfPathExistsInGraph.go)   
 [1976. Number of Ways to Arrive at Destination](./leetcode/1976-NumberOfWaysToArriveAtDestination.go)   
 [2092. Find All People With Secret](./leetcode/2092-FindAllPeopleWithSecret.go)   
