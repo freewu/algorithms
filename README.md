@@ -359,6 +359,7 @@
 [665. Non-decreasing Array](./leetcode/665-Non-DecreasingArray.go)   
 [666. Path Sum IV](./leetcode/666-PathSumIV.go)   
 [673. Number of Longest Increasing Subsequence](./leetcode/673-NumberOfLongestIncreasingSubsequence.go)   
+[674. Longest Continuous Increasing Subsequence](./leetcode/674-LongestContinuousIncreasingSubsequence.go)   
 [682. Baseball Game](./leetcode/682-BaseballGame.go)   
 [692. Top K Frequent Words](./leetcode/692-TopKFrequentWords.go)   
 [695. Max Area of Island](./leetcode/695-MaxAreaOfIsland.go)   
