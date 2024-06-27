@@ -1119,6 +1119,7 @@
 [490. The Maze](./leetcode/490-TheMaze.go)   
 [499. The Maze III](./leetcode/499-TheMazeIII.go)   
 [505. The Maze II](./leetcode/505-TheMazeII.go)   
+[684. Redundant Connection](./leetcode/684-RedundantConnection.go)   
 [753. Cracking the Safe](./leetcode/753-CrackingTheSafe.go)   
 [847. Shortest Path Visiting All Nodes](./leetcode/847-ShortestPathVisitingAllNodes.go)   
 [924. Minimize Malware Spread](./leetcode/924-MinimizeMalwareSpread.go)    
