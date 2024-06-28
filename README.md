@@ -371,6 +371,7 @@
 [695. Max Area of Island](./leetcode/695-MaxAreaOfIsland.go)   
 [697. Degree of an Array](./leetcode/697-DegreeOfAnArray.go)   
 [698. Partition to K Equal Sum Subsets](./leetcode/698-PartitionToKEqualSumSubsets.go)   
+[699. Falling Squares](./leetcode/699-FallingSquares.go)   
 [702. Search in a Sorted Array of Unknown Size](./leetcode/702-SearchInASortedArrayOfUnknownSize.go)   
 [704. Binary Search](./leetcode/704-BinarySearch.go)    
 [713. Subarray Product Less Than K](./leetcode/713-SubarrayProductLessThanK.go)   
