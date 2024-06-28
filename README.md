@@ -1818,13 +1818,13 @@ LCR 075. 数组的相对排序
 [LCR 133. 位 1 的个数](./leetcode/LCR133-NumberOfOneBits.go)   
 [LCR 136. 删除链表的节点](./leetcode/LCR136-DeleteNode.go)   
 [LCR 138. 有效数字](./leetcode/LCR138-ValidNumber.go)   
+[LCR 140. 训练计划 II](./leetcode/LCR140-TrainningPlanII.go)   
 [LCR 141. 训练计划 III](./leetcode/LCR141-TrainningPlanIII.go)   
 [LCR 147. 最小栈](./leetcode/LCR147-MinStack.go)   
 [LCR 154. 复杂链表的复制](./leetcode/LCR154-CopyListWithRandomPointer.go)   
 [LCR 158. 库存管理 II](./leetcode/LCR158-InventoryManagementII.go)   
 [LCR 182. 动态口令](./leetcode/LCR182-DynamicPassword.go)   
 [LCR 192. 把字符串转换成整数 (atoi)](./leetcode/LCR192-StringToInteger.go)   
-
 
 # LCP
 [LCP 01. 猜数字](./leetcode/LCP01-GuessNumbers.go)   
