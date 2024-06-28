@@ -812,6 +812,7 @@
 [2575. Find the Divisibility Array of a String](./leetcode/2575-FindTheDivisibilityArrayOfAString.go)    
 [2586. Count the Number of Vowel Strings in Range](./leetcode/2586-CountTheNumberOfVowelStringsInRange.go)   
 [2663. Lexicographically Smallest Beautiful String](./leetcode/2663-LexicographicallySmallestBeautifulString.go)   
+[2710. Remove Trailing Zeros From a String](./leetcode/2710-RemoveTrailingZerosFromAString.go)   
 [2719. Count of Integers](./leetcode/2719-CountOfIntegers.go)   
 [2734. Lexicographically Smallest String After Substring Operation](./leetcode/2734-LexicographicallySmallestStringAfterSubstringOperation.go)   
 [2810. Faulty Keyboard](./leetcode/2810-FaultyKeyboard.go)   
