@@ -1165,6 +1165,7 @@
 [401. Binary Watch](./leetcode/401-BinaryWatch.go)   
 [461. Hamming Distance](./leetcode/461-HammingDistance.go)   
 [476. Number Complement](./leetcode/476-NumberComplement.go)   
+[693. Binary Number with Alternating Bits](./leetcode/693-BinaryNumberWithAlternatingBits.go)   
 [1009. Complement of Base 10 Integer](./leetcode/1009-ComplementOfBase10Integer.go)   
 [1318. Minimum Flips to Make a OR b Equal to c](./leetcode/1318-MinimumFlipsToMakeAORBEqualToC.go)   
 
