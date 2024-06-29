@@ -1095,6 +1095,7 @@
 [1325. Delete Leaves With a Given Value](./leetcode/1325-DeleteLeavesWithAGivenValue.go)   
 [1339. Maximum Product of Splitted Binary Tree](./leetcode/1339-MaximumProductOfSplittedBinaryTree.go)   
 [1372. Longest ZigZag Path in a Binary Tree](./leetcode/1372-LongestZigZagPathInABinaryTree.go)   
+[1376. Time Needed to Inform All Employees](./leetcode/1376-TimeNeededToInformAllEmployees.go)   
 [1379. Find a Corresponding Node of a Binary Tree in a Clone of That Tree](./leetcode/1379-FindACorrespondingNodeOfABinaryTreeInACloneOfThatTree.go)   
 [1382. Balance a Binary Search Tree](./leetcode/1382-BalanceABinarySearchTree.go)   
 [1448. Count Good Nodes in Binary Tree](./leetcode/1448-CountGoodNodesInBinaryTree.go)   
