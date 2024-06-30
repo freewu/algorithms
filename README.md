@@ -1104,6 +1104,7 @@
 [1506. Find Root of N-Ary Tree](./leetcode/1506-FindRootOfN-AryTree.go)   
 [1522. Diameter of N-Ary Tree](./leetcode/1522-DiameterOfN-AryTree.go)   
 [1569. Number of Ways to Reorder Array to Get Same BST](./leetcode/1569-NumberOfWaysToReorderArrayToGetSameBST.go)   
+1602. Find Nearest Right Node in Binary Tree
 [1609. Even Odd Tree](./leetcode/1609-EvenOddTree.go)   
 [2236. Root Equals Sum of Children](./leetcode/2236-RootEqualsSumOfChildren.go)   
 [2331. Evaluate Boolean Binary Tree](./leetcode/2331-EvaluateBooleanBinaryTree.go)   
@@ -1139,6 +1140,7 @@
 [1136. Parallel Courses](./leetcode/1136-ParallelCourses.go)   
 [1168. Optimize Water Distribution in a Village](./leetcode/1168-OptimizeWaterDistributionInAVillage.go)   
 [1466. Reorder Routes to Make All Paths Lead to the City Zero](./leetcode/1466-ReorderRoutesToMakeAllPathsLeadToTheCityZero.go)   
+[1579. Remove Max Number of Edges to Keep Graph Fully Traversable](./leetcode/1579-RemoveMaxNumberOfEdgesToKeepGraphFullyTraversable.go)   
 [1791. Find Center of Star Graph](./leetcode/1791-FindCenterOfStarGraph.go)   
 [1971. Find if Path Exists in Graph](./leetcode/1971-FindIfPathExistsInGraph.go)   
 [1976. Number of Ways to Arrive at Destination](./leetcode/1976-NumberOfWaysToArriveAtDestination.go)   
