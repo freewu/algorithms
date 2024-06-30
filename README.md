@@ -1822,6 +1822,7 @@ LCR 075. 数组的相对排序
 [LCR 036. 逆波兰表达式求值](./leetcode/LCR036-EvaluateReversePolishNotation.go)   
 [LCR 037. 行星碰撞](./leetcode/LCR037-AsteroidCollision.go)   
 [LCR 038. 每日温度](./leetcode/LCR038-DailyTemperatures.go)   
+[LCR 039. 柱状图中最大的矩形](./leetcode/LCR039-LargestRectangleInHistogram.go)   
 [LCR 040. 最大矩形](./leetcode/LCR040-MaximalRectangle.go)   
 [LCR 057. 存在重复元素 III](./leetcode/LCR057-ContainsDuplicateIII.go)   
 [LCR 060. 前 K 个高频元素](./leetcode/LCR060-TopKFrequentElements.go)   
