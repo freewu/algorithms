@@ -1,32 +1,24 @@
 package main
 
-// 21. Merge Two Sorted Lists
-// You are given the heads of two sorted linked lists list1 and list2.
-// Merge the two lists into one sorted list. The list should be made by splicing together the nodes of the first two lists.
-// Return the head of the merged linked list.
+// LCR 142. 训练计划 IV
+// 给定两个以 有序链表 形式记录的训练计划 l1、l2，
+// 分别记录了两套核心肌群训练项目编号，请合并这两个训练计划，按训练项目编号 升序 记录于链表并返回。
+// 注意：新链表是通过拼接给定的两个链表的所有节点组成的。
 
-// Example 1:
-// before:
-// [1] -> [2] -> [4]
-// (1) -> (3) -> (4)
-// after:
-// [1] -> (1) -> [2] -> (3) -> [4] -> (4)
-// <img src="https://assets.leetcode.com/uploads/2020/10/03/merge_ex1.jpg" />
-// Input: list1 = [1,2,4], list2 = [1,3,4]
-// Output: [1,1,2,3,4,4]
+// 示例 1：
+// 输入：l1 = [1,2,4], l2 = [1,3,4]
+// 输出：[1,1,2,3,4,4]
 
-// Example 2:
-// Input: list1 = [], list2 = []
-// Output: []
+// 示例 2：
+// 输入：l1 = [], l2 = []
+// 输出：[]
 
-// Example 3:
-// Input: list1 = [], list2 = [0]
-// Output: [0]
+// 示例 3：
+// 输入：l1 = [], l2 = [0]
+// 输出：[0]
  
-// Constraints:
-//     The number of nodes in both lists is in the range [0, 50].
-//     -100 <= Node.val <= 100
-//     Both list1 and list2 are sorted in non-decreasing order.
+// 提示：
+//     0 <= 链表长度 <= 1000
 
 import "fmt"
 
@@ -73,7 +65,7 @@ func makeListNode(arr []int) *ListNode {
  *     Next *ListNode
  * }
  */
-func mergeTwoLists(l1 *ListNode, l2 *ListNode) *ListNode {
+func trainningPlan(l1 *ListNode, l2 *ListNode) *ListNode {
     if nil == l1 && nil == l2 {
         return nil
     }
@@ -110,7 +102,7 @@ func mergeTwoLists(l1 *ListNode, l2 *ListNode) *ListNode {
  *     Next *ListNode
  * }
  */
-func mergeTwoLists1(list1 *ListNode, list2 *ListNode) *ListNode {
+func trainningPlan1(list1 *ListNode, list2 *ListNode) *ListNode {
     // 头节点
     var head = &ListNode{}
     var last = head
@@ -165,7 +157,7 @@ func main() {
     fmt.Println("l12: ")
     printListNode(l12)
     fmt.Println("merged: ")
-    printListNode(mergeTwoLists(l11,l12))
+    printListNode(trainningPlan(l11,l12))
 
     l21 := makeListNode([]int{1,2,4})
     l22 := makeListNode([]int{1,3,4})
@@ -174,5 +166,5 @@ func main() {
     fmt.Println("l22: ")
     printListNode(l22)
     fmt.Println("merged: ")
-    printListNode(mergeTwoLists1(l21,l22))
+    printListNode(trainningPlan1(l21,l22))
 }
