@@ -52,7 +52,7 @@ func findMin(nums []int) int {
 }
 
 // best solution
-func findMinBest(nums []int) int {
+func findMin1(nums []int) int {
     low, high := 0, len(nums) - 1
     for low < high {
         mid := low + (high - low) / 2
@@ -67,10 +67,23 @@ func findMinBest(nums []int) int {
     return nums[low]
 }
 
+func findMin2(nums []int) int {
+    mn := nums[0]
+    for i := 1; i < len(nums); i++ {
+        if nums[i] < mn {
+            mn = nums[i]
+        }
+    }
+    return mn
+}
+
 func main() {
     fmt.Printf("findMin([]int{ 1,3,5 }) = %v\n",findMin([]int{ 1,3,5 })) // 1
     fmt.Printf("findMin([]int{ 2,2,2,0,1 }) = %v\n",findMin([]int{ 2,2,2,0,1 })) // 0
 
-    fmt.Printf("findMinBest([]int{ 1,3,5 }) = %v\n",findMinBest([]int{ 1,3,5 })) // 1
-    fmt.Printf("findMinBest([]int{ 2,2,2,0,1 }) = %v\n",findMinBest([]int{ 2,2,2,0,1 })) // 0
+    fmt.Printf("findMin1([]int{ 1,3,5 }) = %v\n",findMin1([]int{ 1,3,5 })) // 1
+    fmt.Printf("findMin1([]int{ 2,2,2,0,1 }) = %v\n",findMin1([]int{ 2,2,2,0,1 })) // 0
+
+    fmt.Printf("findMin2([]int{ 1,3,5 }) = %v\n",findMin2([]int{ 1,3,5 })) // 1
+    fmt.Printf("findMin2([]int{ 2,2,2,0,1 }) = %v\n",findMin2([]int{ 2,2,2,0,1 })) // 0
 }

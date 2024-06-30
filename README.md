@@ -1828,6 +1828,7 @@ LCR 075. 数组的相对排序
 [LCR 060. 前 K 个高频元素](./leetcode/LCR060-TopKFrequentElements.go)   
 [LCR 122. 路径加密](./leetcode/LCR122-PathEncryption.go)   
 [LCR 123. 图书整理 I](./leetcode/LCR123-ReverseBookList.go)   
+[LCR 128. 库存管理 I](./leetcode/LCR128-StockManagementI.go)   
 [LCR 133. 位 1 的个数](./leetcode/LCR133-NumberOfOneBits.go)   
 [LCR 136. 删除链表的节点](./leetcode/LCR136-DeleteNode.go)   
 [LCR 138. 有效数字](./leetcode/LCR138-ValidNumber.go)   
