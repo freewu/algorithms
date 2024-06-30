@@ -548,6 +548,7 @@
 [2071. Maximum Number of Tasks You Can Assign](./leetcode/2071-MaximumNumberOfTasksYouCanAssign.go)   
 [2073. Time Needed to Buy Tickets](./leetcode/2073-TimeNeededToBuyTickets.go)   
 [2079. Watering Plants](./leetcode/2079-WateringPlants.go)   
+[2085. Count Common Words With One Occurrence](./leetcode/2085-CountCommonWordsWithOneOccurrence.go)   
 [2093. Minimum Cost to Reach City With Discounts](./leetcode/2093-MinimumCostToReachCityWithDiscounts.go)   
 [2105. Watering Plants II](./leetcode/2105-WateringPlantsII.go)   
 [2108. Find First Palindromic String in the Array](./leetcode/2108-FindFirstPalindromicStringInTheArray.go)   
