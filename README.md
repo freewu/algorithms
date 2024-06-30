@@ -633,7 +633,6 @@
 [3074. Apple Redistribution into Boxes](./leetcode/3074-AppleRedistributionIntoBoxes.go)   
 [3075. Maximize Happiness of Selected Children](./leetcode/3075-MaximizeHappinessOfSelectedChildren.go)   
 
-
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
 [5. Longest Palindromic Substring](./leetcode/5-LongestPalindromicSubstring.go)    
@@ -817,6 +816,7 @@
 [2486. Append Characters to String to Make Subsequence](./leetcode/2486-AppendCharactersToStringToMakeSubsequence.go)   
 [2575. Find the Divisibility Array of a String](./leetcode/2575-FindTheDivisibilityArrayOfAString.go)    
 [2586. Count the Number of Vowel Strings in Range](./leetcode/2586-CountTheNumberOfVowelStringsInRange.go)   
+[2645. Minimum Additions to Make Valid String](./leetcode/2645-MinimumAdditionsToMakeValidString.go)   
 [2663. Lexicographically Smallest Beautiful String](./leetcode/2663-LexicographicallySmallestBeautifulString.go)   
 [2710. Remove Trailing Zeros From a String](./leetcode/2710-RemoveTrailingZerosFromAString.go)   
 [2719. Count of Integers](./leetcode/2719-CountOfIntegers.go)   
