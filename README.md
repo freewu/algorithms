@@ -1144,6 +1144,7 @@
 [1791. Find Center of Star Graph](./leetcode/1791-FindCenterOfStarGraph.go)   
 [1971. Find if Path Exists in Graph](./leetcode/1971-FindIfPathExistsInGraph.go)   
 [1976. Number of Ways to Arrive at Destination](./leetcode/1976-NumberOfWaysToArriveAtDestination.go)   
+[2065. Maximum Path Quality of a Graph](./leetcode/2065-MaximumPathQualityOfAGraph.go)   
 [2092. Find All People With Secret](./leetcode/2092-FindAllPeopleWithSecret.go)   
 [2097. Valid Arrangement of Pairs](./leetcode/2097-ValidArrangementOfPairs.go)   
 [2192. All Ancestors of a Node in a Directed Acyclic Graph](./leetcode/2192-AllAncestorsOfANodeInADirectedAcyclicGraph.go)   
