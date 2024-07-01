@@ -119,7 +119,7 @@ func getIntersectionNode(headA, headB *ListNode) *ListNode {
         if b != nil { b = b.Next } else { b = headA }
     }
     return a
- }
+}
 
 func main() {
     fmt.Println("Example 1:")
