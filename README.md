@@ -416,6 +416,7 @@
 [930. Binary Subarrays With Sum](./leetcode/930-BinarySubarraysWithSum.go)    
 [931. Minimum Falling Path Sum](./leetcode/931-MinimumFallingPathSum.go)   
 [932. Beautiful Array](./leetcode/932-BeautifulArray.go)   
+[934. Shortest Bridge](./leetcode/934-ShortestBridge.go)   
 [945. Minimum Increment to Make Array Unique](./leetcode/945-MinimumIncrementToMakeArrayUnique.go)   
 [946. Validate Stack Sequences](./leetcode/946-ValidateStackSequences.go)   
 [948. Bag of Tokens](./leetcode/948-BagOfTokens.go)   
@@ -1239,6 +1240,7 @@
 [705. Design HashSet](./leetcode/705-DesignHashSet.go)    
 [706. Design HashMap](./leetcode/706-DesignHashMap.go)    
 [707. Design Linked List](./leetcode/707-DesignLinkedList.go)   
+710. Random Pick with Blacklist
 [716. Max Stack](./leetcode/716-MaxStack.go)   
 [729. My Calendar I](./leetcode/729-MyCalendarI.go)   
 [901. Online Stock Span](./leetcode/901-OnlineStockSpan.go)    
