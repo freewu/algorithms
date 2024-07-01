@@ -1240,7 +1240,7 @@
 [705. Design HashSet](./leetcode/705-DesignHashSet.go)    
 [706. Design HashMap](./leetcode/706-DesignHashMap.go)    
 [707. Design Linked List](./leetcode/707-DesignLinkedList.go)   
-710. Random Pick with Blacklist
+[710. Random Pick with Blacklist](./leetcode/710-RandomPickWithBlacklist.go)   
 [716. Max Stack](./leetcode/716-MaxStack.go)   
 [729. My Calendar I](./leetcode/729-MyCalendarI.go)   
 [901. Online Stock Span](./leetcode/901-OnlineStockSpan.go)    
