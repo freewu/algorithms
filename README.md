@@ -1844,6 +1844,7 @@ LCR 075. 数组的相对排序
 [LCR 133. 位 1 的个数](./leetcode/LCR133-NumberOfOneBits.go)   
 [LCR 136. 删除链表的节点](./leetcode/LCR136-DeleteNode.go)   
 [LCR 138. 有效数字](./leetcode/LCR138-ValidNumber.go)   
+[LCR 139. 训练计划 I](./leetcode/LCR139-TrainningPlanI.go)   
 [LCR 140. 训练计划 II](./leetcode/LCR140-TrainningPlanII.go)   
 [LCR 141. 训练计划 III](./leetcode/LCR141-TrainningPlanIII.go)   
 [LCR 142. 训练计划 IV](./leetcode/LCR142-TrainningPlanIV.go)   
