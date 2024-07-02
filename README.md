@@ -991,6 +991,7 @@
 [2806. Account Balance After Rounded Purchase](./leetcode/2806-AccountBalanceAfterRoundedPurchase.go)   
 [2834. Find the Minimum Possible Sum of a Beautiful Array](./leetcode/2834-FindTheMinimumPossibleSumOfABeautifulArray.go)    
 [2928. Distribute Candies Among Children I](./leetcode/2928-DistributeCandiesAmongChildrenI.go)   
+[3099. Harshad Number](./leetcode/3099-HarshadNumber.go)   
 
 # Stack
 [225. Implement Stack using Queues](./leetcode/225-ImplementStackUsingQueues.go)   
