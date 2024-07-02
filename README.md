@@ -1835,6 +1835,7 @@ LCR 075. 数组的相对排序
 [LCR 039. 柱状图中最大的矩形](./leetcode/LCR039-LargestRectangleInHistogram.go)   
 [LCR 040. 最大矩形](./leetcode/LCR040-MaximalRectangle.go)   
 [LCR 041. 数据流中的移动平均值](./leetcode/LCR041-MovingAverageFromDataStream.go)   
+[LCR 042. 最近的请求次数](./leetcode/LCR042-NumberOfRecentCalls.go)   
 [LCR 057. 存在重复元素 III](./leetcode/LCR057-ContainsDuplicateIII.go)   
 [LCR 060. 前 K 个高频元素](./leetcode/LCR060-TopKFrequentElements.go)   
 [LCR 122. 路径加密](./leetcode/LCR122-PathEncryption.go)   
