@@ -1860,6 +1860,7 @@ LCR 075. 数组的相对排序
 [LCR 154. 复杂链表的复制](./leetcode/LCR154-CopyListWithRandomPointer.go)   
 [LCR 158. 库存管理 II](./leetcode/LCR158-InventoryManagementII.go)   
 [LCR 171. 训练计划 V](./leetcode/LCR171-TrainningPlanV.go)   
+[LCR 179. 查找总价格为目标值的两个商品](./leetcode/LCR179-TwoSum.go)   
 [LCR 182. 动态口令](./leetcode/LCR182-DynamicPassword.go)   
 [LCR 192. 把字符串转换成整数 (atoi)](./leetcode/LCR192-StringToInteger.go)   
 
