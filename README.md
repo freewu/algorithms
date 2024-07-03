@@ -967,6 +967,7 @@
 [668. Kth Smallest Number in Multiplication Table](./leetcode/668-KthSmallestNumberInMultiplicationTable.go)   
 [670. Maximum Swap](./leetcode/670-MaximumSwap.go)   
 [672. Bulb Switcher II](./leetcode/672-BulbSwitcherII.go)   
+[728. Self Dividing Numbers](./leetcode/728-SelfDividingNumbers.go)   
 [808. Soup Servings](./leetcode/808-SoupServings.go)   
 [837. New 21 Game](./leetcode/837-New21Game.go)   
 [887. Super Egg Drop](./leetcode/887-SuperEggDrop.go)   
