@@ -638,6 +638,7 @@
 [3072. Distribute Elements Into Two Arrays II](./leetcode/3072-DistributeElementsIntoTwoArraysII.go)   
 [3074. Apple Redistribution into Boxes](./leetcode/3074-AppleRedistributionIntoBoxes.go)   
 [3075. Maximize Happiness of Selected Children](./leetcode/3075-MaximizeHappinessOfSelectedChildren.go)   
+[3086. Minimum Moves to Pick K Ones](./leetcode/3086-MinimumMovesToPickKOnes.go)   
 [3115. Maximum Prime Difference](./leetcode/3115-MaximumPrimeDifference.go)   
 
 
