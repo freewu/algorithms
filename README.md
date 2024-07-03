@@ -777,6 +777,7 @@
 [696. Count Binary Substrings](./leetcode/696-CountBinarySubstrings.go)   
 [709. To Lower Case](./leetcode/709-ToLowerCase.go)   
 [712. Minimum ASCII Delete Sum for Two Strings](./leetcode/712-MinimumASCIIDeleteSumForTwoStrings.go)   
+[727. Minimum Window Subsequence](./leetcode/727-MinimumWindowSubsequence.go)   
 [763. Partition Labels](./leetcode/763-PartitionLabels.go)   
 [772. Basic Calculator III](./leetcode/772-BasicCalculatorIII.go)   
 [791. Custom Sort String](./leetcode/791-CustomSortString.go)   
