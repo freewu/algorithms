@@ -1875,6 +1875,8 @@ LCR 075. 数组的相对排序
 
 # LCS
 [LCS 01. 下载插件](./leetcode/LCS01-DownloadPlugins.go)   
+[LCS 02. 完成一半题目](./leetcode/LCS02-HalfQuestions.go)   
+
 
 # LCCI
 [面试题 01.01. Is Unique LCCI](./leetcode/LCCI0101-IsUnique.go)     
