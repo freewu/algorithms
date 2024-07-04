@@ -640,6 +640,7 @@
 [3075. Maximize Happiness of Selected Children](./leetcode/3075-MaximizeHappinessOfSelectedChildren.go)   
 [3086. Minimum Moves to Pick K Ones](./leetcode/3086-MinimumMovesToPickKOnes.go)   
 [3115. Maximum Prime Difference](./leetcode/3115-MaximumPrimeDifference.go)   
+[3190. Find Minimum Operations to Make All Elements Divisible by Three](./leetcode/3190-FindMinimumOperationsToMakeAllElementsDivisibleByThree.go)   
 
 
 # String
