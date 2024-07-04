@@ -1255,6 +1255,7 @@
 [715. Range Module](./leetcode/715-RangeModule.go)   
 [716. Max Stack](./leetcode/716-MaxStack.go)   
 [729. My Calendar I](./leetcode/729-MyCalendarI.go)   
+[900. RLE Iterator](./leetcode/900-RLEIterator.go)   
 [901. Online Stock Span](./leetcode/901-OnlineStockSpan.go)    
 [933. Number of Recent Calls](./leetcode/933-NumberOfRecentCalls.go)    
 [981. Time Based Key-Value Store](./leetcode/981-TimeBasedKeyValueStore.go)    
@@ -1305,7 +1306,7 @@ LCR 159. 库存管理 III
 [284. Peeking Iterator](./leetcode/284-PeekingIterator.go)   
 [341. Flatten Nested List Iterator](./leetcode/341-FlattenNestedListIterator.go)   
 [604. Design Compressed String Iterator](./leetcode/604-DesignCompressedStringIterator.go)   
-900. RLE Iterator	
+[900. RLE Iterator](./leetcode/900-RLEIterator.go)   
 1286. Iterator for Combination
 1586. Binary Search Tree Iterator II
 LCR 055. 二叉搜索树迭代器
