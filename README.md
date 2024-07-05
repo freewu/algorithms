@@ -1095,6 +1095,7 @@
 [687. Longest Univalue Path](./leetcode/687-LongestUnivaluePath.go)   
 [700. Search in a Binary Search Tree](./leetcode/700-SearchInABinarySearchTree.go)   
 [701. Insert into a Binary Search Tree](./leetcode/701-InsertIntoABinarySearchTree.go)   
+[814. Binary Tree Pruning](./leetcode/814-BinaryTreePruning.go)   
 [834. Sum of Distances in Tree](./leetcode/834-SumOfDistancesInTree.go)   
 [872. Leaf-Similar Trees](./leetcode/872-Leaf-SimilarTrees.go)   
 [889. Construct Binary Tree from Preorder and Postorder Traversal ](./leetcode/889-ConstructBinaryTreeFromPreorderAndPostorderTraversal.go)   
