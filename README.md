@@ -379,6 +379,7 @@
 [717. 1-bit and 2-bit Characters](./leetcode/717-1bitAnd2bitCharacters.go)   
 [718. Maximum Length of Repeated Subarray](./leetcode/718-MaximumLengthOfRepeatedSubarray.go)   
 [719. Find K-th Smallest Pair Distance](./leetcode/719-FindKthSmallestPairDistance.go)   
+[720. Longest Word in Dictionary](./leetcode/720-LongestWordInDictionary.go)   
 [723. Candy Crush](./leetcode/723-CandyCrush.go)   
 [724. Find Pivot Index](./leetcode/724-FindPivotIndex.go)   
 [734. Sentence Similarity](./leetcode/734-SentenceSimilarity.go)   
