@@ -810,6 +810,7 @@
 [1427. Perform String Shifts](./leetcode/1427-PerformStringShifts.go)   
 [1446. Consecutive Characters](./leetcode/1446-ConsecutiveCharacters.go)   
 [1456. Maximum Number of Vowels in a Substring of Given Length](./leetcode/1456-MaximumNumberOfVowelsInASubstringOfGivenLength.go)   
+[1507. Reformat Date](./leetcode/1507-ReformatDate.go)   
 [1542. Find Longest Awesome Substring](./leetcode/1542-FindLongestAwesomeSubstring.go)   
 [1544. Make The String Great](./leetcode/1544-MakeTheStringGreat.go)   
 [1556. Thousand Separator](./leetcode/1556-ThousandSeparator.go)   
