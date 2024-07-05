@@ -892,6 +892,7 @@
 [1265. Print Immutable Linked List in Reverse](./leetcode/1265-PrintImmutableLinkedListInReverse.go)   
 [1474. Delete N Nodes After M Nodes of a Linked List](./leetcode/1474-DeleteN-NodesAfterM-NodesOfALinkedList.go)   
 [1669. Merge In Between Linked Lists](./leetcode/1669-MergeInBetweenLinkedLists.go)   
+[2058. Find the Minimum and Maximum Number of Nodes Between Critical Points](./leetcode/2058-FindTheMinimumAndMaximumNumberOfNodesBetweenCriticalPoints.go)   
 [2095. Delete the Middle Node of a Linked List](./leetcode/2095-DeleteTheMiddleNodeOfALinkedList.go)   
 [2130. Maximum Twin Sum of a Linked List](./leetcode/2130-MaximumTwinSumOfALinkedList.go)   
 [2181. Merge Nodes in Between Zeros](./leetcode/2181-MergeNodesInBetweenZeros.go)   
