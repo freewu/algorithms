@@ -439,6 +439,7 @@
 [994. Rotting Oranges](./leetcode/994-RottingOranges.go)   
 [995. Minimum Number of K Consecutive Bit Flips](./leetcode/995-MinimumNumberOfKConsecutiveBitFlips.go)   
 [997. Find the Town Judge](./leetcode/997-FindTheTownJudge.go)   
+[1000. Minimum Cost to Merge Stones](./leetcode/1000-MinimumCostToMergeStones.go)   
 [1002. Find Common Characters](./leetcode/1002-FindCommonCharacters.go)   
 [1004. Max Consecutive Ones III](./leetcode/1004-MaxConsecutiveOnesIII.go)   
 [1011. Capacity To Ship Packages Within D Days](./leetcode/1011-CapacityToShipPackagesWithinDDays.go)   
