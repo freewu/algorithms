@@ -826,6 +826,7 @@
 [1768. Merge Strings Alternately](./leetcode/1768-MergeStringsAlternately.go)   
 [1915. Number of Wonderful Substrings](./leetcode/1915-NumberOfWonderfulSubstrings.go)   
 [2000. Reverse Prefix of Word](./leetcode/2000-ReversePrefixOfWord.go)   
+[2103. Rings and Rods](./leetcode/2103-RingsAndRods.go)   
 [2129. Capitalize the Title](./leetcode/2129-CapitalizeTheTitle.go)   
 [2182. Construct String With Repeat Limit](./leetcode/2182-ConstructStringWithRepeatLimit.go)   
 [2288. Apply Discount to Prices](./leetcode/2288-ApplyDiscountToPrices.go)   
