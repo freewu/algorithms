@@ -544,6 +544,7 @@
 [1914. Cyclically Rotating a Grid](./leetcode/1914-CyclicallyRotatingAGrid.go)   
 [1926. Nearest Exit from Entrance in Maze](./leetcode/1926-NearestExitFromEntranceInMaze.go)   
 [1953. Maximum Number of Weeks for Which You Can Work](./leetcode/1953-MaximumNumberOfWeeksForWhichYouCanWork.go)   
+[1958. Check if Move is Legal](./leetcode/1958-CheckIfMoveIsLegal.go)   
 [1964. Find the Longest Valid Obstacle Course at Each Position](./leetcode/1964-FindTheLongestValidObstacleCourseAtEachPosition.go)    
 [1969. Minimum Non-Zero Product of the Array Elements](./leetcode/1969-MinimumNonZeroProductOfTheArrayElements.go)    
 [1979. Find Greatest Common Divisor of Array](./leetcode/1979-FindGreatestCommonDivisorOfArray.go)   
