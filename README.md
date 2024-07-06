@@ -1867,6 +1867,7 @@ LCR 075. 数组的相对排序
 [LCR 042. 最近的请求次数](./leetcode/LCR042-NumberOfRecentCalls.go)   
 [LCR 043. 完全二叉树插入器](./leetcode/LCR043-CompleteBinaryTreeInserter.go)   
 [LCR 057. 存在重复元素 III](./leetcode/LCR057-ContainsDuplicateIII.go)   
+[LCR 059. 数据流中的第 K 大元素](./leetcode/LCR059-KthLargestElementInAStream.go)   
 [LCR 060. 前 K 个高频元素](./leetcode/LCR060-TopKFrequentElements.go)   
 [LCR 068. 搜索插入位置](./leetcode/LCR068-SearchInsertPosition.go)   
 [LCR 069. 山脉数组的峰顶索引](./leetcode/LCR069-PeakIndexInAMountainArray.go)   
