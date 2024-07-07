@@ -381,6 +381,7 @@
 [719. Find K-th Smallest Pair Distance](./leetcode/719-FindKthSmallestPairDistance.go)   
 [720. Longest Word in Dictionary](./leetcode/720-LongestWordInDictionary.go)   
 [721. Accounts Merge](./leetcode/721-AccountsMerge.go)   
+[722. Remove Comments](./leetcode/722-RemoveComments.go)   
 [723. Candy Crush](./leetcode/723-CandyCrush.go)   
 [724. Find Pivot Index](./leetcode/724-FindPivotIndex.go)   
 [734. Sentence Similarity](./leetcode/734-SentenceSimilarity.go)   
