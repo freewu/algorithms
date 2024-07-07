@@ -790,6 +790,7 @@
 [712. Minimum ASCII Delete Sum for Two Strings](./leetcode/712-MinimumASCIIDeleteSumForTwoStrings.go)   
 [726. Number of Atoms](./leetcode/726-NumberOfAtoms.go)   
 [727. Minimum Window Subsequence](./leetcode/727-MinimumWindowSubsequence.go)   
+[751. IP to CIDR](./leetcode/751-IPToCIDR.go)   
 [763. Partition Labels](./leetcode/763-PartitionLabels.go)   
 [772. Basic Calculator III](./leetcode/772-BasicCalculatorIII.go)   
 [791. Custom Sort String](./leetcode/791-CustomSortString.go)   
