@@ -1881,6 +1881,7 @@ LCR 075. 数组的相对排序
 [LCR 069. 山脉数组的峰顶索引](./leetcode/LCR069-PeakIndexInAMountainArray.go)   
 [LCR 122. 路径加密](./leetcode/LCR122-PathEncryption.go)   
 [LCR 123. 图书整理 I](./leetcode/LCR123-ReverseBookList.go)   
+[LCR 125. 图书整理 II](./leetcode/LCR125-BookQueue.go)   
 [LCR 128. 库存管理 I](./leetcode/LCR128-StockManagementI.go)   
 [LCR 133. 位 1 的个数](./leetcode/LCR133-NumberOfOneBits.go)   
 [LCR 136. 删除链表的节点](./leetcode/LCR136-DeleteNode.go)   
