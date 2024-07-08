@@ -1,49 +1,39 @@
 package main
 
-// 173. Binary Search Tree Iterator
-// Implement the BSTIterator class that represents an iterator over the in-order traversal of a binary search tree (BST):
-//     BSTIterator(TreeNode root) 
-//         Initializes an object of the BSTIterator class. 
-//         The root of the BST is given as part of the constructor. 
-//         The pointer should be initialized to a non-existent number smaller than any element in the BST.
-//     boolean hasNext() 
-//         Returns true if there exists a number in the traversal to the right of the pointer, 
-//         otherwise returns false.
-//     int next() 
-//         Moves the pointer to the right, then returns the number at the pointer.
+// LCR 055. 二叉搜索树迭代器
+// 实现一个二叉搜索树迭代器类BSTIterator ，表示一个按中序遍历二叉搜索树（BST）的迭代器：
+//     BSTIterator(TreeNode root) 初始化 BSTIterator 类的一个对象。BST 的根节点 root 会作为构造函数的一部分给出。指针应初始化为一个不存在于 BST 中的数字，且该数字小于 BST 中的任何元素。
+//     boolean hasNext() 如果向指针右侧遍历存在数字，则返回 true ；否则返回 false 。
+//     int next()将指针向右移动，然后返回指针处的数字。
 
-// Notice that by initializing the pointer to a non-existent smallest number, 
-// the first call to next() will return the smallest element in the BST.
+// 注意，指针初始化为一个不存在于 BST 中的数字，所以对 next() 的首次调用将返回 BST 中的最小元素。
+// 可以假设 next() 调用总是有效的，也就是说，当调用 next() 时，BST 的中序遍历中至少存在一个下一个数字。
 
-// You may assume that next() calls will always be valid. 
-// That is, there will be at least a next number in the in-order traversal when next() is called.
-
-// Example 1:
-
-// Input
-// ["BSTIterator", "next", "next", "hasNext", "next", "hasNext", "next", "hasNext", "next", "hasNext"]
-// [[[7, 3, 15, null, null, 9, 20]], [], [], [], [], [], [], [], [], []]
-// Output
+// 示例：
+// 输入
+// inputs = ["BSTIterator", "next", "next", "hasNext", "next", "hasNext", "next", "hasNext", "next", "hasNext"]
+// inputs = [[[7, 3, 15, null, null, 9, 20]], [], [], [], [], [], [], [], [], []]
+// 输出
 // [null, 3, 7, true, 9, true, 15, true, 20, false]
-// Explanation
+// 解释
 // BSTIterator bSTIterator = new BSTIterator([7, 3, 15, null, null, 9, 20]);
-// bSTIterator.next();    // return 3
-// bSTIterator.next();    // return 7
-// bSTIterator.hasNext(); // return True
-// bSTIterator.next();    // return 9
-// bSTIterator.hasNext(); // return True
-// bSTIterator.next();    // return 15
-// bSTIterator.hasNext(); // return True
-// bSTIterator.next();    // return 20
-// bSTIterator.hasNext(); // return False
+// bSTIterator.next();    // 返回 3
+// bSTIterator.next();    // 返回 7
+// bSTIterator.hasNext(); // 返回 True
+// bSTIterator.next();    // 返回 9
+// bSTIterator.hasNext(); // 返回 True
+// bSTIterator.next();    // 返回 15
+// bSTIterator.hasNext(); // 返回 True
+// bSTIterator.next();    // 返回 20
+// bSTIterator.hasNext(); // 返回 False
 
-// Constraints:
-//     The number of nodes in the tree is in the range [1, 10^5].
+// 提示：
+//     树中节点的数目在范围 [1, 10^5] 内
 //     0 <= Node.val <= 10^6
-//     At most 10^5 calls will be made to hasNext, and next.
- 
-// Follow up:
-//     Could you implement next() and hasNext() to run in average O(1) time and use O(h) memory, where h is the height of the tree?
+//     最多调用 10^5 次 hasNext 和 next 操作
+
+// 进阶：
+//     你可以设计一个满足下述条件的解决方案吗？next() 和 hasNext() 操作均摊时间复杂度为 O(1) ，并使用 O(h) 内存。其中 h 是树的高度。
 
 import "fmt"
 
@@ -170,34 +160,6 @@ func (this *BSTIterator) HasNext() bool {
     return !this.stack.IsEmpty() || this.curr != nil
 }
 
-
-type BSTIterator2 struct {
-    stack []*TreeNode
-}
-
-func Constructor2(root *TreeNode) BSTIterator2 {
-    stack := []*TreeNode{}
-    for ; root != nil; root = root.Left {
-        stack = append(stack, root)
-    }
-    return BSTIterator2{
-        stack: stack,
-    }
-}
-
-func (this *BSTIterator2) Next() int {
-    cur := this.stack[len(this.stack)-1]
-    this.stack = this.stack[:len(this.stack)-1]
-    for node := cur.Right; node != nil; node = node.Left {
-        this.stack = append(this.stack, node)
-    }
-    return cur.Val
-}
-
-func (this *BSTIterator2) HasNext() bool {
-    return len(this.stack) > 0
-}
-
 /**
 * Your BSTIterator object will be instantiated and called as such:
 * obj := Constructor(root);
@@ -256,35 +218,7 @@ func main() {
     // bSTIterator.hasNext(); // return True
     fmt.Println(obj1.HasNext()) // true
     // bSTIterator.next();    // return 20
-    //fmt.Println(obj1.Next()) // 20
+    fmt.Println(obj1.Next()) // 20
     // bSTIterator.hasNext(); // return False
-    //fmt.Println(obj1.HasNext()) // false
-
-
-    tree21 := &TreeNode {
-        7,
-        &TreeNode{3, nil, nil},
-        &TreeNode{15, &TreeNode{9, nil, nil}, &TreeNode{20, nil, nil}, },
-    }
-    // Explanation
-    // BSTIterator bSTIterator = new BSTIterator([7, 3, 15, null, null, 9, 20]);
-    obj2 := Constructor2(tree21)
-    // bSTIterator.next();    // return 3
-    fmt.Println(obj2.Next()) // 3
-    // bSTIterator.next();    // return 7
-    fmt.Println(obj2.Next()) // 7
-    // bSTIterator.hasNext(); // return True
-    fmt.Println(obj2.HasNext()) // true
-    // bSTIterator.next();    // return 9
-    fmt.Println(obj2.Next()) // 9
-    // bSTIterator.hasNext(); // return True
-    fmt.Println(obj2.HasNext()) // true
-    // bSTIterator.next();    // return 15
-    fmt.Println(obj1.Next()) // 15
-    // bSTIterator.hasNext(); // return True
-    fmt.Println(obj2.HasNext()) // true
-    // bSTIterator.next();    // return 20
-    fmt.Println(obj2.Next()) // 20
-    // bSTIterator.hasNext(); // return False
-    fmt.Println(obj2.HasNext()) // false
+    fmt.Println(obj1.HasNext()) // false
 }
