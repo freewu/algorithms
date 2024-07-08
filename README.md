@@ -1694,6 +1694,7 @@ LCR 075. 数组的相对排序
 [3188. Find Top Scoring Students II](./leetcode/3188-FindTopScoringStudentsII.sql)   
 [3198. Find Cities in Each State](./leetcode/3198-FindCitiesInEachState.sql)   
 [3204. Bitwise User Permissions Analysis](./leetcode/3204-BitwiseUserPermissionsAnalysis.sql)   
+[3214. Year on Year Growth Rate](./leetcode/3214-YearOnYearGrowthRate.sql)   
 
 
 # Shell
