@@ -458,6 +458,7 @@
 [1086. High Five](./leetcode/1086-HighFive.go)   
 [1090. Largest Values From Labels](./leetcode/1090-LargestValuesFromLabels.go)   
 [1091. Shortest Path in Binary Matrix](./leetcode/1091-ShortestPathInBinaryMatrix.go)   
+[1093. Statistics from a Large Sample](./leetcode/1093-StatisticsFromALargeSample.go)   
 [1099. Two Sum Less Than K](./leetcode/1099-TwoSumLessThanK.go)   
 [1102. Path With Maximum Minimum Value](./leetcode/1102-PathWithMaximumMinimumValue.go)   
 [1122. Relative Sort Array](./leetcode/1122-RelativeSortArray.go)   
@@ -1338,9 +1339,9 @@ LCR 055. 二叉搜索树迭代器
 
 # Probability & Statistics
 [470. Implement Rand10() Using Rand7()](./leetcode/470-ImplementRand10UsingRand7.go)   
-808. Soup Servings
-837. New 21 Game	
-1093. Statistics from a Large Sample
+[808. Soup Servings](./leetcode/808-SoupServings.go)   
+[837. New 21 Game](./leetcode/837-New21Game.go)   	
+[1093. Statistics from a Large Sample](./leetcode/1093-StatisticsFromALargeSample.go)   
 1227. Airplane Seat Assignment Probability
 [1230. Toss Strange Coins](./leetcode/1230-TossStrangeCoins.go)   
 1467. Probability of a Two Boxes Having The Same Number of Distinct Balls
