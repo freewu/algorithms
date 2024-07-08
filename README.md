@@ -1345,7 +1345,7 @@ LCR 055. 二叉搜索树迭代器
 [1093. Statistics from a Large Sample](./leetcode/1093-StatisticsFromALargeSample.go)   
 [1227. Airplane Seat Assignment Probability](./leetcode/1227-AirplaneSeatAssignmentProbability.go)   
 [1230. Toss Strange Coins](./leetcode/1230-TossStrangeCoins.go)   
-1467. Probability of a Two Boxes Having The Same Number of Distinct Balls
+[1467. Probability of a Two Boxes Having The Same Number of Distinct Balls](./leetcode/1467-ProbabilityOfATwoBoxesHavingTheSameNumberOfDistinctBalls.go)   
 LCP 11. 期望个数统计
 LCR 185. 统计结果概率
 
