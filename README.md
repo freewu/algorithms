@@ -1003,6 +1003,7 @@
 [1137. N-th Tribonacci Number](./leetcode/1137-NthTribonacciNumber.go)   
 [1118. Number of Days in a Month](./leetcode/1118-NumberOfDaysInAMonth.go)   
 [1183. Maximum Number of Ones](./leetcode/1183-MaximumNumberOfOnes.go)   
+[1227. Airplane Seat Assignment Probability](./leetcode/1227-AirplaneSeatAssignmentProbability.go)   
 [1259. Handshakes That Don't Cross](./leetcode/1259-HandshakesThatDontCross.go)   
 [1281. Subtract the Product and Sum of Digits of an Integer](./leetcode/1281-SubtractTheProductAndSumOfDigitsOfAnInteger.go)   
 [1401. Circle and Rectangle Overlapping](./leetcode/1401-CircleAndRectangleOverlapping.go)   
@@ -1342,7 +1343,7 @@ LCR 055. 二叉搜索树迭代器
 [808. Soup Servings](./leetcode/808-SoupServings.go)   
 [837. New 21 Game](./leetcode/837-New21Game.go)   	
 [1093. Statistics from a Large Sample](./leetcode/1093-StatisticsFromALargeSample.go)   
-1227. Airplane Seat Assignment Probability
+[1227. Airplane Seat Assignment Probability](./leetcode/1227-AirplaneSeatAssignmentProbability.go)   
 [1230. Toss Strange Coins](./leetcode/1230-TossStrangeCoins.go)   
 1467. Probability of a Two Boxes Having The Same Number of Distinct Balls
 LCP 11. 期望个数统计
