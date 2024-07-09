@@ -651,6 +651,7 @@
 [3075. Maximize Happiness of Selected Children](./leetcode/3075-MaximizeHappinessOfSelectedChildren.go)   
 [3086. Minimum Moves to Pick K Ones](./leetcode/3086-MinimumMovesToPickKOnes.go)   
 [3101. Count Alternating Subarrays](./leetcode/3101-CountAlternatingSubarrays.go)   
+[3102. Minimize Manhattan Distances](./leetcode/3102-MinimizeManhattanDistances.go)   
 [3115. Maximum Prime Difference](./leetcode/3115-MaximumPrimeDifference.go)   
 [3190. Find Minimum Operations to Make All Elements Divisible by Three](./leetcode/3190-FindMinimumOperationsToMakeAllElementsDivisibleByThree.go)   
 
@@ -1027,6 +1028,7 @@
 [2834. Find the Minimum Possible Sum of a Beautiful Array](./leetcode/2834-FindTheMinimumPossibleSumOfABeautifulArray.go)    
 [2928. Distribute Candies Among Children I](./leetcode/2928-DistributeCandiesAmongChildrenI.go)   
 [3099. Harshad Number](./leetcode/3099-HarshadNumber.go)   
+[3102. Minimize Manhattan Distances](./leetcode/3102-MinimizeManhattanDistances.go)   
 
 # Stack
 [225. Implement Stack using Queues](./leetcode/225-ImplementStackUsingQueues.go)   
