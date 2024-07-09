@@ -37,20 +37,19 @@ package main
 import "fmt"
 
 // 暴力解法 O(n^2)
-func maxSlidingWindow1(a []int, k int) []int {
-    res := make([]int, 0, k)
-    n := len(a)
+func maxSlidingWindow1(arr []int, k int) []int {
+    res, n := make([]int, 0, k), len(arr)
     if n == 0 {
         return []int{}
     }
     for i := 0; i <= n - k; i++ {
-        max := a[i]
+        mx := arr[i]
         for j := 1; j < k; j++ {
-            if max < a[i+j] {
-                max = a[i+j]
+            if mx < arr[i+j] {
+                mx = arr[i+j]
             }
         }
-        res = append(res, max)
+        res = append(res, mx)
     }
     return res
 }
@@ -61,7 +60,7 @@ func maxSlidingWindow(nums []int, k int) []int {
         return make([]int, 0)
     }
     window := make([]int, 0, k) // store the index of nums
-    result := make([]int, 0, len(nums)-k+1)
+    res := make([]int, 0, len(nums)-k+1)
     for i, v := range nums { // if the left-most index is out of window, remove it
         if i >= k && window[0] <= i-k {
             window = window[1:len(window)]
@@ -71,16 +70,46 @@ func maxSlidingWindow(nums []int, k int) []int {
         }
         window = append(window, i) // store the index of nums
         if i >= k-1 {
-            result = append(result, nums[window[0]]) // the left-most is the index of max value in nums
+            res = append(res, nums[window[0]]) // the left-most is the index of max value in nums
         }
     }
-    return result
+    return res
 }
 
-func main()  {
-    fmt.Printf("maxSlidingWindow1([]int{1,3,-1,-3,5,3,6,7},3) = %v\n",maxSlidingWindow1([]int{1,3,-1,-3,5,3,6,7},3)) // Output: [3,3,5,5,6,7]
-    fmt.Printf("maxSlidingWindow1([]int{1},1) = %v\n",maxSlidingWindow1([]int{1},1)) // Output: [1]
+func maxSlidingWindow2(nums []int, limit int) []int {
+    res, stack := []int{}, []int{}
+    if len(nums) == 0 {
+        return res
+    }
+    check := func(n int) {
+        for len(stack) != 0 && stack[len(stack)-1] < n {
+            stack = stack[:len(stack)-1]
+        }
+        stack = append(stack, n)
+    }
+    for i := 0; i < limit; i++ {
+        check(nums[i])
+    }
+    res = append(res, stack[0])
+    for i := limit; i < len(nums); i++ {
+        check(nums[i])
+        val := stack[0]
+        if nums[i-limit] == val {
+            stack = stack[1:]
+        }
+        res = append(res, stack[0])
+    }
+    return res
+}
 
-    fmt.Printf("maxSlidingWindow([]int{1,3,-1,-3,5,3,6,7},3) = %v\n",maxSlidingWindow([]int{1,3,-1,-3,5,3,6,7},3)) // Output: [3,3,5,5,6,7]
-    fmt.Printf("maxSlidingWindow([]int{1},1) = %v\n",maxSlidingWindow([]int{1},1)) // Output: [1]
+
+func main()  {
+    fmt.Printf("maxSlidingWindow1([]int{1,3,-1,-3,5,3,6,7},3) = %v\n",maxSlidingWindow1([]int{1,3,-1,-3,5,3,6,7},3)) // [3,3,5,5,6,7]
+    fmt.Printf("maxSlidingWindow1([]int{1},1) = %v\n",maxSlidingWindow1([]int{1},1)) // [1]
+
+    fmt.Printf("maxSlidingWindow([]int{1,3,-1,-3,5,3,6,7},3) = %v\n",maxSlidingWindow([]int{1,3,-1,-3,5,3,6,7},3)) // [3,3,5,5,6,7]
+    fmt.Printf("maxSlidingWindow([]int{1},1) = %v\n",maxSlidingWindow([]int{1},1)) // [1]
+
+    fmt.Printf("maxSlidingWindow2([]int{1,3,-1,-3,5,3,6,7},3) = %v\n",maxSlidingWindow2([]int{1,3,-1,-3,5,3,6,7},3)) // [3,3,5,5,6,7]
+    fmt.Printf("maxSlidingWindow2([]int{1},1) = %v\n",maxSlidingWindow2([]int{1},1)) // [1]
 }
