@@ -1909,6 +1909,7 @@ LCR 075. 数组的相对排序
 [LCR 158. 库存管理 II](./leetcode/LCR158-InventoryManagementII.go)   
 [LCR 168. 丑数](./leetcode/LCR168-UglyNumber.go)   
 [LCR 171. 训练计划 V](./leetcode/LCR171-TrainningPlanV.go)   
+[LCR 177. 撞色搭配](./leetcode/LCR177-SockCollocation.go)   
 [LCR 179. 查找总价格为目标值的两个商品](./leetcode/LCR179-TwoSum.go)   
 [LCR 182. 动态口令](./leetcode/LCR182-DynamicPassword.go)   
 [LCR 181. 字符串中的单词反转](./leetcode/LCR181-ReverseWordsInAString.go)   
