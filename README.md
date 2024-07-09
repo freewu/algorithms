@@ -1892,6 +1892,7 @@ LCR 075. 数组的相对排序
 [LCR 062. 实现 Trie (前缀树)](./leetcode/LCR062-ImplementTriePrefixTree.go)   
 [LCR 068. 搜索插入位置](./leetcode/LCR068-SearchInsertPosition.go)   
 [LCR 069. 山脉数组的峰顶索引](./leetcode/LCR069-PeakIndexInAMountainArray.go)   
+[LCR 070. 有序数组中的单一元素](./leetcode/LCR070-SingleElementInASortedArray.go)   
 [LCR 122. 路径加密](./leetcode/LCR122-PathEncryption.go)   
 [LCR 123. 图书整理 I](./leetcode/LCR123-ReverseBookList.go)   
 [LCR 125. 图书整理 II](./leetcode/LCR125-BookQueue.go)   
