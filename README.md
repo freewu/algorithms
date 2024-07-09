@@ -1886,6 +1886,7 @@ LCR 075. 数组的相对排序
 [LCR 059. 数据流中的第 K 大元素](./leetcode/LCR059-KthLargestElementInAStream.go)   
 [LCR 060. 前 K 个高频元素](./leetcode/LCR060-TopKFrequentElements.go)   
 [LCR 061. 查找和最小的 K 对数字](./leetcode/LCR061-FindKPairsWithSmallestSums.go)   
+[LCR 062. 实现 Trie (前缀树)](./leetcode/LCR062-ImplementTriePrefixTree.go)   
 [LCR 068. 搜索插入位置](./leetcode/LCR068-SearchInsertPosition.go)   
 [LCR 069. 山脉数组的峰顶索引](./leetcode/LCR069-PeakIndexInAMountainArray.go)   
 [LCR 122. 路径加密](./leetcode/LCR122-PathEncryption.go)   
