@@ -641,6 +641,7 @@
 [2966. Divide Array Into Arrays With Max Difference](./leetcode/2966-DivideArrayIntoArraysWithMaxDifference.go)   
 [2970. Count the Number of Incremovable Subarrays I](./leetcode/2970-CountTheNumberOfIncremovableSubarraysI.go)   
 [2971. Find Polygon With the Largest Perimeter](./leetcode/2971-FindPolygonWithTheLargestPerimeter.go)   
+[2972. Count the Number of Incremovable Subarrays II](./leetcode/2972-CountTheNumberOfIncremovableSubarraysII.go)   
 [2997. Minimum Number of Operations to Make Array XOR Equal to K](./leetcode/2997-MinimumNumberOfOperationsToMakeArrayXOREqualToK.go)   
 [3038. Maximum Number of Operations With the Same Score I](./leetcode/3038-MaximumNumberOfOperationsWithTheSameScoreI.go)   
 [3040. Maximum Number of Operations With the Same Score II](./leetcode/3040-MaximumNumberOfOperationsWithTheSameScoreII.go)   
