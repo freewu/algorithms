@@ -437,6 +437,7 @@
 [977. Squares of a Sorted Array](./leetcode/977-SquaresOfASortedArray.go)   
 [980. Unique Paths III](./leetcode/980-UniquePathsIII.go)   
 [983. Minimum Cost For Tickets](./leetcode/983-MinimumCostForTickets.go)   
+[990. Satisfiability of Equality Equations](./leetcode/990-SatisfiabilityOfEqualityEquations.go)   
 [992. Subarrays with K Different Integers](./leetcode/992-SubarraysWithKDifferentIntegers.go)   
 [994. Rotting Oranges](./leetcode/994-RottingOranges.go)   
 [995. Minimum Number of K Consecutive Bit Flips](./leetcode/995-MinimumNumberOfKConsecutiveBitFlips.go)   
