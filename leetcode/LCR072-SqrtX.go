@@ -1,23 +1,20 @@
 package main
 
-// 69. Sqrt(x)
-// Given a non-negative integer x, return the square root of x rounded down to the nearest integer. 
-// The returned integer should be non-negative as well.
+// LCR 072. x 的平方根
+// 给定一个非负整数 x ，计算并返回 x 的平方根，即实现 int sqrt(int x) 函数。
+// 正数的平方根有两个，只输出其中的正数平方根。
+// 如果平方根不是整数，输出只保留整数的部分，小数部分将被舍去。
 
-// You must not use any built-in exponent function or operator.
-//     For example, do not use pow(x, 0.5) in c++ or x ** 0.5 in python.
- 
-// Example 1:
-// Input: x = 4
-// Output: 2
-// Explanation: The square root of 4 is 2, so we return 2.
+// 示例 1:
+// 输入: x = 4
+// 输出: 2
 
-// Example 2:
-// Input: x = 8
-// Output: 2
-// Explanation: The square root of 8 is 2.82842..., and since we round it down to the nearest integer, 2 is returned.
- 
-// Constraints:
+// 示例 2:
+// 输入: x = 8
+// 输出: 2
+// 解释: 8 的平方根是 2.82842...，由于小数部分将被舍去，所以返回 2
+
+// 提示:
 //     0 <= x <= 2^31 - 1
 
 import "fmt"
@@ -49,15 +46,15 @@ func mySqrt(x int) int {
 
 func main() {
     fmt.Println(mySqrt(10)) // 3
-    // fmt.Println(mySqrt(2))  // 1
-    // fmt.Println(mySqrt(3))  // 1
-    // fmt.Println(mySqrt(4))  // 2
-    // fmt.Println(mySqrt(8))  // 2
-    // fmt.Println(mySqrt(9))  // 3
-    // fmt.Println(mySqrt(15)) // 3
-    // fmt.Println(mySqrt(16)) // 4
-    // fmt.Println(mySqrt(24)) // 4
-    // fmt.Println(mySqrt(25)) // 5
+    fmt.Println(mySqrt(2))  // 1
+    fmt.Println(mySqrt(3))  // 1
+    fmt.Println(mySqrt(4))  // 2
+    fmt.Println(mySqrt(8))  // 2
+    fmt.Println(mySqrt(9))  // 3
+    fmt.Println(mySqrt(15)) // 3
+    fmt.Println(mySqrt(16)) // 4
+    fmt.Println(mySqrt(24)) // 4
+    fmt.Println(mySqrt(25)) // 5
 
     // Explanation: The square root of 4 is 2, so we return 2.
     fmt.Println(mySqrt(4)) // 2
