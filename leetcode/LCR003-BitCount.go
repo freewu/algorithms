@@ -37,25 +37,25 @@ import "fmt"
 //   X & -X => 得到最低位的1 
 //   X &~X=>0
 func countBits(n int) []int {
-	bits := make([]int, n + 1)
-	for i := 1; i <= n; i++ {
-        fmt.Printf("i: %v i & (i-1): %b, %v\n", i,i & (i-1),i & (i-1))
+    bits := make([]int, n + 1)
+    for i := 1; i <= n; i++ {
+        //fmt.Printf("i: %v i & (i-1): %b, %v\n", i,i & (i-1),i & (i-1))
         // X & (X-1) 清零最低位的 1
-		bits[i] += bits[ i & (i-1) ] + 1
-	}
-	return bits
+        bits[i] += bits[ i & (i-1) ] + 1
+    }
+    return bits
 }
 
 func countBits1(n int) []int {
-	res := []int{0}
-	k := 1
-	for i := 1; i <= n; i++ {
-		if k*2 == i {
-			k = i
-		}
-		res = append(res, res[i-k]+1)
-	}
-	return res
+    res := []int{0}
+    k := 1
+    for i := 1; i <= n; i++ {
+        if k*2 == i {
+            k = i
+        }
+        res = append(res, res[i-k]+1)
+    }
+    return res
 }
 
 func main() {

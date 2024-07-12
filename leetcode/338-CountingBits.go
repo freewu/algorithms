@@ -1,7 +1,8 @@
 package main
 
 // 338. Counting Bits
-// Given an integer n, return an array ans of length n + 1 such that for each i (0 <= i <= n), ans[i] is the number of 1's in the binary representation of i.
+// Given an integer n, return an array ans of length n + 1 such 
+// that for each i (0 <= i <= n), ans[i] is the number of 1's in the binary representation of i.
 
 // Example 1:
 // Input: n = 2
@@ -36,41 +37,41 @@ import "fmt"
 //   X & -X => 得到最低位的1 
 //   X &~X=>0
 func countBits(n int) []int {
-	bits := make([]int, n + 1)
-	for i := 1; i <= n; i++ {
-        fmt.Printf("i: %v i & (i-1): %b, %v\n", i,i & (i-1),i & (i-1))
+    bits := make([]int, n + 1)
+    for i := 1; i <= n; i++ {
+        //fmt.Printf("i: %v i & (i-1): %b, %v\n", i,i & (i-1),i & (i-1))
         // X & (X-1) 清零最低位的 1
-		bits[i] += bits[ i & (i-1) ] + 1
-	}
-	return bits
+        bits[i] += bits[ i & (i-1) ] + 1
+    }
+    return bits
 }
 
 func countBits1(n int) []int {
-	res := []int{0}
-	k := 1
-	for i := 1; i <= n; i++ {
-		if k*2 == i {
-			k = i
-		}
-		res = append(res, res[i-k]+1)
-	}
-	return res
+    res := []int{0}
+    k := 1
+    for i := 1; i <= n; i++ {
+        if k*2 == i {
+            k = i
+        }
+        res = append(res, res[i-k]+1)
+    }
+    return res
 }
 
 func countBits2(n int) []int {
-	onesCount := func(v int) int {
-		var ans int
-		for v != 0 {
-			ans++
-			v = v & (v - 1)
-		}
-		return ans
-	}
-	var ans []int
-	for i := 0; i <= n; i++ {
-		ans = append(ans, onesCount(i))
-	}
-	return ans
+    onesCount := func(v int) int {
+        res := 0
+        for v != 0 {
+            res++
+            v = v & (v - 1)
+        }
+        return res
+    }
+    res := []int{}
+    for i := 0; i <= n; i++ {
+        res = append(res, onesCount(i))
+    }
+    return res
 }
 
 func countBits3(n int) []int {
