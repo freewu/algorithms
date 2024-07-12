@@ -1199,6 +1199,7 @@
 [1136. Parallel Courses](./leetcode/1136-ParallelCourses.go)   
 [1168. Optimize Water Distribution in a Village](./leetcode/1168-OptimizeWaterDistributionInAVillage.go)   
 [1466. Reorder Routes to Make All Paths Lead to the City Zero](./leetcode/1466-ReorderRoutesToMakeAllPathsLeadToTheCityZero.go)   
+[1514. Path with Maximum Probability](./leetcode/1514-PathWithMaximumProbability.go)   
 [1557. Minimum Number of Vertices to Reach All Nodes](./leetcode/1557-MinimumNumberOfVerticesToReachAllNodes.go)   
 [1579. Remove Max Number of Edges to Keep Graph Fully Traversable](./leetcode/1579-RemoveMaxNumberOfEdgesToKeepGraphFullyTraversable.go)   
 [1615. Maximal Network Rank](./leetcode/1615-MaximalNetworkRank.go)   
