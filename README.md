@@ -1913,6 +1913,7 @@ LCR 075. 数组的相对排序
 [LCR 123. 图书整理 I](./leetcode/LCR123-ReverseBookList.go)   
 [LCR 125. 图书整理 II](./leetcode/LCR125-BookQueue.go)   
 [LCR 126. 斐波那契数](./leetcode/LCR126-Fibonacci.go)   
+[LCR 127. 跳跃训练](./leetcode/LCR127-TrainWays.go)   
 [LCR 128. 库存管理 I](./leetcode/LCR128-StockManagementI.go)   
 [LCR 133. 位 1 的个数](./leetcode/LCR133-NumberOfOneBits.go)   
 [LCR 136. 删除链表的节点](./leetcode/LCR136-DeleteNode.go)   
