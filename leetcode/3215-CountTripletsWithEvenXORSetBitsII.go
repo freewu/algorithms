@@ -47,26 +47,7 @@ func tripletCount(a []int, b []int, c []int) int64 {
            int64(ra[1] * rb[0] * rc[1]) +  int64(ra[1] * rb[1] * rc[0])
 }
 
-/*
-    public long tripletCount(int[] a, int[] b, int[] c) {
-        int[] evenOddCountsA = getEvenOddCounts(a);
-        int[] evenOddCountsB = getEvenOddCounts(b);
-        int[] evenOddCountsC = getEvenOddCounts(c);
-        return (long) evenOddCountsA[0] * evenOddCountsB[0] * evenOddCountsC[0] + 
-               (long) evenOddCountsA[0] * evenOddCountsB[1] * evenOddCountsC[1] + 
-               (long) evenOddCountsA[1] * evenOddCountsB[0] * evenOddCountsC[1] + 
-               (long) evenOddCountsA[1] * evenOddCountsB[1] * evenOddCountsC[0];
-    }
 
-    public int[] getEvenOddCounts(int[] arr) {
-        int[] counts = new int[2];
-        for (int num : arr) {
-            counts[Integer.bitCount(num) % 2]++;
-        }
-        return counts;
-    }
-
-*/
 
 func main() {
     // Example 1:

@@ -645,6 +645,7 @@
 [2972. Count the Number of Incremovable Subarrays II](./leetcode/2972-CountTheNumberOfIncremovableSubarraysII.go)   
 [2974. Minimum Number Game](./leetcode/2974-MinimumNumberGame.go)   
 [2997. Minimum Number of Operations to Make Array XOR Equal to K](./leetcode/2997-MinimumNumberOfOperationsToMakeArrayXOREqualToK.go)   
+[3011. Find if Array Can Be Sorted](./leetcode/3011-FindIfArrayCanBeSorted.go)   
 [3038. Maximum Number of Operations With the Same Score I](./leetcode/3038-MaximumNumberOfOperationsWithTheSameScoreI.go)   
 [3040. Maximum Number of Operations With the Same Score II](./leetcode/3040-MaximumNumberOfOperationsWithTheSameScoreII.go)   
 [3068. Find the Maximum Sum of Node Values](./leetcode/3068-FindTheMaximumSumOfNodeValues.go)   
