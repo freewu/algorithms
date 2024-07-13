@@ -1927,6 +1927,7 @@ LCR 075. 数组的相对排序
 [LCR 142. 训练计划 IV](./leetcode/LCR142-TrainningPlanIV.go)   
 [LCR 146. 螺旋遍历二维数组](./leetcode/LCR146-SpiralMatrix.go)   
 [LCR 147. 最小栈](./leetcode/LCR147-MinStack.go)   
+[LCR 148. 验证图书取出顺序](./leetcode/LCR148-ValidateStackSequences.go)   
 [LCR 154. 复杂链表的复制](./leetcode/LCR154-CopyListWithRandomPointer.go)   
 [LCR 158. 库存管理 II](./leetcode/LCR158-InventoryManagementII.go)   
 [LCR 168. 丑数](./leetcode/LCR168-UglyNumber.go)   
