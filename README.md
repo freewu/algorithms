@@ -613,6 +613,7 @@
 [2742. Painting the Walls](./leetcode/2742-PaintingTheWalls.go)   
 [2744. Find Maximum Number of String Pairs](./leetcode/2744-FindMaximumNumberOfStringPairs.go)   
 [2748. Number of Beautiful Pairs](./leetcode/2748-NumberOfBeautifulPairs.go)   
+[2751. Robot Collisions](./leetcode/2751-RobotCollisions.go)   
 [2765. Longest Alternating Subarray](./leetcode/2765-LongestAlternatingSubarray.go)   
 [2771. Longest Non-decreasing Subarray From Two Arrays](./leetcode/2771-LongestNon-DecreasingSubarrayFromTwoArrays.go)   
 [2779. Maximum Beauty of an Array After Applying Operation](./leetcode/2779-MaximumBeautyOfAnArrayAfterApplyingOperation.go)   
