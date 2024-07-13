@@ -401,6 +401,7 @@
 [786. K-th Smallest Prime Fraction](./leetcode/786-KthSmallestPrimeFraction.go)   
 [797. All Paths From Source to Target](./leetcode/797-AllPathsFromSourceToTarget.go)   
 [802. Find Eventual Safe States](./leetcode/802-FindEventualSafeStates.go)   
+[807. Max Increase to Keep City Skyline](./leetcode/807-MaxIncreaseToKeepCitySkyline.go)   
 [826. Most Profit Assigning Work](./leetcode/826-MostProfitAssigningWork.go)   
 [841. Keys and Rooms](./leetcode/841-KeysAndRooms.go)   
 [846. Hand of Straights](./leetcode/846-HandOfStraights.go)   
