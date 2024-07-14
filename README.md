@@ -815,6 +815,7 @@
 [1041. Robot Bounded In Circle](./leetcode/1041-RobotBoundedInCircle.go)   
 [1047. Remove All Adjacent Duplicates In String](./leetcode/1047-RemoveAllAdjacentDuplicatesInString.go)   
 [1055. Shortest Way to Form String](./leetcode/1055-ShortestWayToFormString.go)   
+[1061. Lexicographically Smallest Equivalent String](./leetcode/1061-LexicographicallySmallestEquivalentString.go)   
 [1071. Greatest Common Divisor of Strings](./leetcode/1071-GreatestCommonDivisorOfStrings.go)   
 [1087. Brace Expansion](./leetcode/1087-BraceExpansion.go)   
 [1100. Find K-Length Substrings With No Repeated Characters](./leetcode/1100-FindKLengthSubstringsWithNoRepeatedCharacters.go)   
