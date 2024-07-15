@@ -1918,6 +1918,7 @@ LCR 075. 数组的相对排序
 [LCR 063. 单词替换](./leetcode/LCR063-ReplaceWords.go)   
 [LCR 064. 实现一个魔法字典](./leetcode/LCR064-ImplementMagicDictionary.go)   
 [LCR 065. 单词的压缩编码](./leetcode/LCR065-ShortEncodingOfWords.go)   
+[LCR 066.  键值映射](./leetcode/LCR066-MapSumPairs.go)   
 [LCR 068. 搜索插入位置](./leetcode/LCR068-SearchInsertPosition.go)   
 [LCR 069. 山脉数组的峰顶索引](./leetcode/LCR069-PeakIndexInAMountainArray.go)   
 [LCR 070. 有序数组中的单一元素](./leetcode/LCR070-SingleElementInASortedArray.go)   
