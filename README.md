@@ -1931,6 +1931,7 @@ LCR 075. 数组的相对排序
 [LCR 127. 跳跃训练](./leetcode/LCR127-TrainWays.go)   
 [LCR 128. 库存管理 I](./leetcode/LCR128-StockManagementI.go)   
 [LCR 133. 位 1 的个数](./leetcode/LCR133-NumberOfOneBits.go)   
+[LCR 134. Pow(x, n)](./leetcode/LCR134-PowXN.go)   
 [LCR 136. 删除链表的节点](./leetcode/LCR136-DeleteNode.go)   
 [LCR 138. 有效数字](./leetcode/LCR138-ValidNumber.go)   
 [LCR 139. 训练计划 I](./leetcode/LCR139-TrainningPlanI.go)   
