@@ -641,6 +641,7 @@
 [2924. Find Champion II](./leetcode/2924-FindChampionII.go)   
 [2951. Find the Peaks](./leetcode/2951-FindThePeaks.go)   
 [2952. Minimum Number of Coins to be Added](./leetcode/2952-MinimumNumberOfCoinsToBeAdded.go)   
+[2956. Find Common Elements Between Two Arrays](./leetcode/2956-FindCommonElementsBetweenTwoArrays.go)   
 [2958. Length of Longest Subarray With at Most K Frequency](./leetcode/2958-LengthOfLongestSubarrayWithAtMostKFrequency.go)   
 [2960. Count Tested Devices After Test Operations](./leetcode/2960-CountTestedDevicesAfterTestOperations.go)   
 [2962. Count Subarrays Where Max Element Appears at Least K Times](./leetcode/2962-CountSubarraysWhereMaxElementAppearsAtLeastKTimes.go)   
