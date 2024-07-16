@@ -437,6 +437,7 @@
 [954. Array of Doubled Pairs](./leetcode/954-ArrayOfDoubledPairs.go)   
 [956. Tallest Billboard](./leetcode/956-TallestBillboard.go)   
 [974. Subarray Sums Divisible by K](./leetcode/974-SubarraySumsDivisibleByK.go)   
+[975. Odd Even Jump](./leetcode/975-OddEvenJump.go)   
 [976. Largest Perimeter Triangle](./leetcode/976-LargestPerimeterTriangle.go)   
 [977. Squares of a Sorted Array](./leetcode/977-SquaresOfASortedArray.go)   
 [980. Unique Paths III](./leetcode/980-UniquePathsIII.go)   
