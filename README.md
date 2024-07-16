@@ -815,6 +815,7 @@
 [800. Similar RGB Color](./leetcode/800-SimilarRGBColor.go)   
 [859. Buddy Strings](./leetcode/859-BuddyStrings.go)   
 [936. Stamping The Sequence](./leetcode/936-StampingTheSequence.go)   
+[940. Distinct Subsequences II](./leetcode/940-DistinctSubsequencesII.go)   
 [1041. Robot Bounded In Circle](./leetcode/1041-RobotBoundedInCircle.go)   
 [1047. Remove All Adjacent Duplicates In String](./leetcode/1047-RemoveAllAdjacentDuplicatesInString.go)   
 [1055. Shortest Way to Form String](./leetcode/1055-ShortestWayToFormString.go)   
