@@ -1229,6 +1229,7 @@
 [2328. Number of Increasing Paths in a Grid](./leetcode/2328-NumberOfIncreasingPathsInAGrid.go)   
 [2639. Find the Width of Columns of a Grid](./leetcode/2639-FindTheWidthOfColumnsOfAGrid.go)   
 [2642. Design Graph With Shortest Path Calculator](./leetcode/2642-DesignGraphWithShortestPathCalculator.go)    
+[2959. Number of Possible Sets of Closing Branches](./leetcode/2959-NumberOfPossibleSetsOfClosingBranches.go)   
 
 # Trie
 [386. Lexicographical Numbers](./leetcode/386-LexicographicalNumbers.go)   
