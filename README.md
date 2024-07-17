@@ -1223,6 +1223,7 @@
 [1514. Path with Maximum Probability](./leetcode/1514-PathWithMaximumProbability.go)   
 [1557. Minimum Number of Vertices to Reach All Nodes](./leetcode/1557-MinimumNumberOfVerticesToReachAllNodes.go)   
 [1579. Remove Max Number of Edges to Keep Graph Fully Traversable](./leetcode/1579-RemoveMaxNumberOfEdgesToKeepGraphFullyTraversable.go)   
+[1584. Min Cost to Connect All Points](./leetcode/1584-MinCostToConnectAllPoints.go)   
 [1615. Maximal Network Rank](./leetcode/1615-MaximalNetworkRank.go)   
 [1791. Find Center of Star Graph](./leetcode/1791-FindCenterOfStarGraph.go)   
 [1857. Largest Color Value in a Directed Graph](./leetcode/1857-LargestColorValueInADirectedGraph.go)   
