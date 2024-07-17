@@ -1740,7 +1740,7 @@ LCR 075. 数组的相对排序
 [3198. Find Cities in Each State](./leetcode/3198-FindCitiesInEachState.sql)   
 [3204. Bitwise User Permissions Analysis](./leetcode/3204-BitwiseUserPermissionsAnalysis.sql)   
 [3214. Year on Year Growth Rate](./leetcode/3214-YearOnYearGrowthRate.sql)   
-
+[3220. Odd and Even Transactions](./leetcode/3220-OddAndEvenTransactions.sql)   
 
 # Shell
 [192. Word Frequency](./leetcode/192-WordFrequency.sh)      
