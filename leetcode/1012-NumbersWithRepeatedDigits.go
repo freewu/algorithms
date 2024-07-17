@@ -70,6 +70,44 @@ func numDupDigitsAtMostN(n int) int {
     return n - sum
 }
 
+func numDupDigitsAtMostN1(n int) int {
+    var help func(m, n int) int 
+    help = func(m, n int) int {
+        if n == 0 { return 1 }
+        return help(m, n-1) * (m - n + 1)
+    }
+    nonRepeating := func(n int) int {
+        digits := []int{}
+        for n != 0 {
+            digits = append(digits, n%10)
+            n /= 10
+        }
+        res, m, vis := 0, len(digits), make([]bool, 10)
+        for i := 1; i < m; i++ {
+            res += 9 * help(9, i-1)
+        }
+        for i := m - 1; i >= 0; i-- {
+            v := digits[i]
+            j := 0
+            if i == m-1 {
+                j = 1
+            }
+            for ; j < v; j++ {
+                if !vis[j] {
+                    res += help(10-(m-i), i)
+                }
+            }
+            if vis[v] { break }
+            vis[v] = true
+            if i == 0 {
+                res++
+            }
+        }
+        return res
+    }
+    return n - nonRepeating(n)
+}
+
 func main() {
     // Example 1:
     // Input: n = 20
@@ -85,4 +123,8 @@ func main() {
     // Input: n = 1000
     // Output: 262
     fmt.Println(numDupDigitsAtMostN(1000)) // 262
+
+    fmt.Println(numDupDigitsAtMostN1(20)) // 1
+    fmt.Println(numDupDigitsAtMostN1(100)) // 10
+    fmt.Println(numDupDigitsAtMostN1(1000)) // 262
 }
