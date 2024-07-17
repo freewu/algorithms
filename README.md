@@ -1957,6 +1957,7 @@ LCR 075. 数组的相对排序
 [LCR 148. 验证图书取出顺序](./leetcode/LCR148-ValidateStackSequences.go)   
 [LCR 154. 复杂链表的复制](./leetcode/LCR154-CopyListWithRandomPointer.go)   
 [LCR 158. 库存管理 II](./leetcode/LCR158-InventoryManagementII.go)   
+[LCR 161. 连续天数的最高销售额](./leetcode/LCR161-MaximumSales.go)   
 [LCR 168. 丑数](./leetcode/LCR168-UglyNumber.go)   
 [LCR 171. 训练计划 V](./leetcode/LCR171-TrainningPlanV.go)   
 [LCR 177. 撞色搭配](./leetcode/LCR177-SockCollocation.go)   
