@@ -1225,6 +1225,7 @@
 [1579. Remove Max Number of Edges to Keep Graph Fully Traversable](./leetcode/1579-RemoveMaxNumberOfEdgesToKeepGraphFullyTraversable.go)   
 [1615. Maximal Network Rank](./leetcode/1615-MaximalNetworkRank.go)   
 [1791. Find Center of Star Graph](./leetcode/1791-FindCenterOfStarGraph.go)   
+[1857. Largest Color Value in a Directed Graph](./leetcode/1857-LargestColorValueInADirectedGraph.go)   
 [1971. Find if Path Exists in Graph](./leetcode/1971-FindIfPathExistsInGraph.go)   
 [1976. Number of Ways to Arrive at Destination](./leetcode/1976-NumberOfWaysToArriveAtDestination.go)   
 [2065. Maximum Path Quality of a Graph](./leetcode/2065-MaximumPathQualityOfAGraph.go)   
