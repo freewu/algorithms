@@ -1141,6 +1141,7 @@
 [687. Longest Univalue Path](./leetcode/687-LongestUnivaluePath.go)   
 [700. Search in a Binary Search Tree](./leetcode/700-SearchInABinarySearchTree.go)   
 [701. Insert into a Binary Search Tree](./leetcode/701-InsertIntoABinarySearchTree.go)   
+[742. Closest Leaf in a Binary Tree](./leetcode/742-ClosestLeafInABinaryTree.go)   
 [814. Binary Tree Pruning](./leetcode/814-BinaryTreePruning.go)   
 [834. Sum of Distances in Tree](./leetcode/834-SumOfDistancesInTree.go)   
 [863. All Nodes Distance K in Binary Tree](./leetcode/863-AllNodesDistanceKInBinaryTree.go)   
