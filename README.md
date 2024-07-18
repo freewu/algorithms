@@ -1179,6 +1179,7 @@
 [1490. Clone N-ary Tree](./leetcode/1490-CloneN-AryTree.go)   
 [1506. Find Root of N-Ary Tree](./leetcode/1506-FindRootOfN-AryTree.go)   
 [1522. Diameter of N-Ary Tree](./leetcode/1522-DiameterOfN-AryTree.go)   
+[1530. Number of Good Leaf Nodes Pairs](./leetcode/1530-NumberOfGoodLeafNodesPairs.go)   
 [1569. Number of Ways to Reorder Array to Get Same BST](./leetcode/1569-NumberOfWaysToReorderArrayToGetSameBST.go)   
 [1602. Find Nearest Right Node in Binary Tree](./leetcode/1602-FindNearestRightNodeInBinaryTree.go)   
 [1609. Even Odd Tree](./leetcode/1609-EvenOddTree.go)   

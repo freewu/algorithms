@@ -65,7 +65,7 @@ SELECT
 FROM 
 (
     SELECT
-        MOD(amount,2) AS m,
+        MOD(amount,2) AS m, -- 金额取模
         amount,
         transaction_date
     FROM
