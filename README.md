@@ -1943,6 +1943,7 @@ LCR 075. 数组的相对排序
 [LCR 072. x 的平方根](./leetcode/LCR072-SqrtX.go)   
 [LCR 073. 爱吃香蕉的狒狒](./leetcode/LCR073-KokoEatingBananas.go)   
 [LCR 074. 合并区间](./leetcode/LCR074-MergeIntervals.go)   
+[LCR 075. 数组的相对排序](./leetcode/LCR075-RelativeSortArray.go)   
 [LCR 122. 路径加密](./leetcode/LCR122-PathEncryption.go)   
 [LCR 123. 图书整理 I](./leetcode/LCR123-ReverseBookList.go)   
 [LCR 125. 图书整理 II](./leetcode/LCR125-BookQueue.go)   
