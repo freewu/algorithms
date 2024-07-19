@@ -665,6 +665,7 @@
 [3074. Apple Redistribution into Boxes](./leetcode/3074-AppleRedistributionIntoBoxes.go)   
 [3075. Maximize Happiness of Selected Children](./leetcode/3075-MaximizeHappinessOfSelectedChildren.go)   
 [3086. Minimum Moves to Pick K Ones](./leetcode/3086-MinimumMovesToPickKOnes.go)   
+[3096. Minimum Levels to Gain More Points](./leetcode/3096-MinimumLevelsToGainMorePoints.go)   
 [3101. Count Alternating Subarrays](./leetcode/3101-CountAlternatingSubarrays.go)   
 [3102. Minimize Manhattan Distances](./leetcode/3102-MinimizeManhattanDistances.go)   
 [3115. Maximum Prime Difference](./leetcode/3115-MaximumPrimeDifference.go)   
