@@ -812,6 +812,7 @@
 [712. Minimum ASCII Delete Sum for Two Strings](./leetcode/712-MinimumASCIIDeleteSumForTwoStrings.go)   
 [726. Number of Atoms](./leetcode/726-NumberOfAtoms.go)   
 [727. Minimum Window Subsequence](./leetcode/727-MinimumWindowSubsequence.go)   
+[730. Count Different Palindromic Subsequences](./leetcode/730-CountDifferentPalindromicSubsequences.go)   
 [736. Parse Lisp Expression](./leetcode/736-ParseLispExpression.go)   
 [751. IP to CIDR](./leetcode/751-IPToCIDR.go)   
 [758. Bold Words in String](./leetcode/758-BoldWordsInString.go)   
