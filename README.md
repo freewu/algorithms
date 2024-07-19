@@ -635,6 +635,7 @@
 [2812. Find the Safest Path in a Grid](./leetcode/2812-FindTheSafestPathInAGrid.go)   
 [2813. Maximum Elegance of a K-Length Subsequence](./leetcode/2813-MaximumEleganceOfAK-LengthSubsequence.go)   
 [2831. Find the Longest Equal Subarray](./leetcode/2831-FindTheLongestEqualSubarray.go)   
+[2850. Minimum Moves to Spread Stones Over Grid](./leetcode/2850-MinimumMovesToSpreadStonesOverGrid.go)   
 [2859. Sum of Values at Indices With K Set Bits](./leetcode/2859-SumOfValuesAtIndicesWithKSetBits.go)   
 [2861. Maximum Number of Alloys](./leetcode/2861-MaximumNumberOfAlloys.go)    
 [2865. Beautiful Towers I](./leetcode/2865-BeautifulTowersI.go)   
