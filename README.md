@@ -483,6 +483,7 @@
 [1218. Longest Arithmetic Subsequence of Given Difference](./leetcode/1218-LongestArithmeticSubsequenceOfGivenDifference.go)   
 [1219. Path with Maximum Gold](./leetcode/1219-PathWithMaximumGold.go)   
 [1228. Missing Number In Arithmetic Progression](./leetcode/1228-MissingNumberInArithmeticProgression.go)   
+[1229. Meeting Scheduler](./leetcode/1229-MeetingScheduler.go)   
 [1230. Toss Strange Coins](./leetcode/1230-TossStrangeCoins.go)   
 [1231. Divide Chocolate](./leetcode/1231-DivideChocolate.go)   
 [1232. Check If It Is a Straight Line](./leetcode/1232-CheckIfItIsAStraightLine.go)   
