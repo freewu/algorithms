@@ -1952,6 +1952,7 @@ LCR 075. 数组的相对排序
 [LCR 074. 合并区间](./leetcode/LCR074-MergeIntervals.go)   
 [LCR 075. 数组的相对排序](./leetcode/LCR075-RelativeSortArray.go)   
 [LCR 076. 数组中的第 K 个最大元素](./leetcode/LCR076-KthLargestElementInAnArray.go)   
+[LCR 077. 排序链表](./leetcode/LCR077-SortList.go)   
 [LCR 122. 路径加密](./leetcode/LCR122-PathEncryption.go)   
 [LCR 123. 图书整理 I](./leetcode/LCR123-ReverseBookList.go)   
 [LCR 125. 图书整理 II](./leetcode/LCR125-BookQueue.go)   
