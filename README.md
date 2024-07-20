@@ -533,6 +533,7 @@
 [1572. Matrix Diagonal Sum](./leetcode/1572-MatrixDiagonalSum.go)   
 [1575. Count All Possible Routes](./leetcode/1575-CountAllPossibleRoutes.go)   
 [1601. Maximum Number of Achievable Transfer Requests](./leetcode/1601-MaximumNumberOfAchievableTransferRequests.go)   
+[1605. Find Valid Matrix Given Row and Column Sums](./leetcode/1605-FindValidMatrixGivenRowAndColumnSums.go)   
 [1608. Special Array With X Elements Greater Than or Equal X](./leetcode/1608-SpecialArrayWithXElementsGreaterThanOrEqualX.go)   
 [1626. Best Team With No Conflicts](./leetcode/1626-BestTeamWithNoConflicts.go)   
 [1631. Path With Minimum Effort](./leetcode/1631-PathWithMinimumEffort.go)   
