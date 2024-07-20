@@ -1975,6 +1975,7 @@ LCR 075. 数组的相对排序
 [LCR 161. 连续天数的最高销售额](./leetcode/LCR161-MaximumSales.go)   
 [LCR 165. 解密数字](./leetcode/LCR165-CrackNumber.go)   
 [LCR 166. 珠宝的最高价值](./leetcode/LCR166-JewelleryValue.go)   
+[LCR 167. 招式拆解 I](./leetcode/LCR167-DismantlingActionI.go)   
 [LCR 168. 丑数](./leetcode/LCR168-UglyNumber.go)   
 [LCR 171. 训练计划 V](./leetcode/LCR171-TrainningPlanV.go)   
 [LCR 177. 撞色搭配](./leetcode/LCR177-SockCollocation.go)   

@@ -30,9 +30,7 @@ func lengthOfLongestSubstring(s string) int {
     if 0 == len(s) {
         return 0
     }
-    var l = 0
-    var sl = 0
-    var m = "" // 子串
+    l, sl, m := 0, 0, "" // 子串
     for i := 0; i < len(s); i++ {
         // 判断当前子符是否存在子串里
         if strings.Index(m, string(s[i])) == -1 {
@@ -43,7 +41,7 @@ func lengthOfLongestSubstring(s string) int {
                 sl = l
             }
             // 返回到s[i]之后开始的字符串
-            var t = s[i]
+            t := s[i]
             for {
                 i--
                 if t == s[i] {
@@ -85,7 +83,7 @@ func lengthOfLongestSubstring2(s string) int {
     if len(s) == 0 {
         return 0
     }
-    var bitSet [256]bool
+    bitSet := [256]bool{}
     result, left, right := 0, 0, 0
     for left < len(s) {
         // 右侧字符对应的 bitSet 被标记 true，说明此字符在 X 位置重复，需要左侧向前移动，直到将 X 标记为 false
@@ -111,7 +109,7 @@ func lengthOfLongestSubstring3(s string) int {
     if len(s) == 0 {
         return 0
     }
-    var freq [127]int
+    freq := [127]int{}
     result, left, right := 0, 0, -1
 
     for left < len(s) {
