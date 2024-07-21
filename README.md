@@ -458,6 +458,7 @@
 [1035. Uncrossed Lines](./leetcode/1035-UncrossedLines.go)   
 [1043. Partition Array for Maximum Sum](./leetcode/1043-PartitionArrayForMaximumSum.go)   
 [1048. Longest String Chain](./leetcode/1048-LongestStringChain.go)   
+[1049. Last Stone Weight II](./leetcode/1049-LastStoneWeightII.go)   
 [1051. Height Checker](./leetcode/1051-HeightChecker.go)   
 [1052. Grumpy Bookstore Owner](./leetcode/1052-GrumpyBookstoreOwner.go)   
 [1057. Campus Bikes](./leetcode/1057-CampusBikes.go)   
