@@ -1999,6 +1999,7 @@ LCR 075. 数组的相对排序
 [LCR 185. 统计结果概率](./leetcode/LCR185-StatisticsProbability.go)   
 [LCR 188. 买卖芯片的最佳时机](./leetcode/LCR188-BestTiming.go)   
 [LCR 190. 加密运算](./leetcode/LCR190-EncryptionCalculate.go)   
+[LCR 191. 按规则计算统计结果](./leetcode/LCR191-StatisticalResult.go)   
 [LCR 192. 把字符串转换成整数 (atoi)](./leetcode/LCR192-StringToInteger.go)   
 
 # LCP
