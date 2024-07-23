@@ -113,7 +113,6 @@ func containsCycle1(grid [][]byte) bool {
     return false
 }
 
-
 func main() {
     // Example 1:
     // <img src="https://assets.leetcode.com/uploads/2020/07/15/1.png" />
