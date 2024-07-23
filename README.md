@@ -456,6 +456,7 @@
 [1020. Number of Enclaves](./leetcode/1020-NumberOfEnclaves.go)   
 [1027. Longest Arithmetic Subsequence](./leetcode/1027-LongestArithmeticSubsequence.go)   
 [1035. Uncrossed Lines](./leetcode/1035-UncrossedLines.go)   
+[1039. Minimum Score Triangulation of Polygon](./leetcode/1039-MinimumScoreTriangulationOfPolygon.go)   
 [1043. Partition Array for Maximum Sum](./leetcode/1043-PartitionArrayForMaximumSum.go)   
 [1048. Longest String Chain](./leetcode/1048-LongestStringChain.go)   
 [1049. Last Stone Weight II](./leetcode/1049-LastStoneWeightII.go)   
