@@ -534,6 +534,7 @@
 [1547. Minimum Cost to Cut a Stick](./leetcode/1547-MinimumCostToCutAStick.go)   
 [1550. Three Consecutive Odds](./leetcode/1550-ThreeConsecutiveOdds.go)   
 [1552. Magnetic Force Between Two Balls](./leetcode/1552-MagneticForceBetweenTwoBalls.go)   
+[1559. Detect Cycles in 2D Grid](./leetcode/1559-DetectCyclesIn2DGrid.go)   
 [1572. Matrix Diagonal Sum](./leetcode/1572-MatrixDiagonalSum.go)   
 [1575. Count All Possible Routes](./leetcode/1575-CountAllPossibleRoutes.go)   
 [1601. Maximum Number of Achievable Transfer Requests](./leetcode/1601-MaximumNumberOfAchievableTransferRequests.go)   
