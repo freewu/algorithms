@@ -1976,6 +1976,7 @@ LCR 075. 数组的相对排序
 [LCR 077. 排序链表](./leetcode/LCR077-SortList.go)   
 [LCR 078. 合并 K 个升序链表](./leetcode/LCR078-MergeKSortedLists.go)   
 [LCR 079. 子集](./leetcode/LCR079-Subsets.go)   
+[LCR 080. 组合](./leetcode/LCR080-Combinations.go)   
 [LCR 122. 路径加密](./leetcode/LCR122-PathEncryption.go)   
 [LCR 123. 图书整理 I](./leetcode/LCR123-ReverseBookList.go)   
 [LCR 125. 图书整理 II](./leetcode/LCR125-BookQueue.go)   
