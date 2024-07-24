@@ -32,6 +32,24 @@ func integerBreak(n int) int {
     return dp[n]
 }
 
+func integerBreak1(n int) int {
+    if n <= 3 {
+        return n - 1
+    }
+    min := func (x, y int) int { if x < y { return x; }; return y; }
+    res := 1
+    for n > 0 {
+        if n > 4 {
+            res *= min(n, 3)
+            n -= 3
+        } else {
+            res *= n
+            n = 0
+        }
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: n = 2
@@ -43,4 +61,9 @@ func main() {
     // Output: 36
     // Explanation: 10 = 3 + 3 + 4, 3 × 3 × 4 = 36.
     fmt.Println(integerBreak(10)) // 36
+    fmt.Println(integerBreak(12)) // 81
+
+    fmt.Println(integerBreak1(2)) // 1
+    fmt.Println(integerBreak1(10)) // 36
+    fmt.Println(integerBreak1(12)) // 81
 }
