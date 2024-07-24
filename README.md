@@ -617,6 +617,7 @@
 [2462. Total Cost to Hire K Workers](./leetcode/2462-TotalCostToHireKWorkers.go)    
 [2464. Minimum Subarrays in a Valid Split](./leetcode/2464-MinimumSubarraysInAValidSplit.go)   
 [2482. Difference Between Ones and Zeros in Row and Column](./leetcode/2482-DifferenceBetweenOnesAndZerosInRowAndColumn.go)   
+[2498. Frog Jump II](./leetcode/2498-FrogJumpII.go)   
 [2529. Maximum Count of Positive Integer and Negative Integer](./leetcode/2529-MaximumCountOfPositiveIntegerAndNegativeInteger.go)   
 [2540. Minimum Common Value](./leetcode/2540-MinimumCommonValue.go)   
 [2542. Maximum Subsequence Score](./leetcode/2542-MaximumSubsequenceScore.go)   
