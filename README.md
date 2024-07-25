@@ -849,6 +849,7 @@
 [1062. Longest Repeating Substring](./leetcode/1062-LongestRepeatingSubstring.go)   
 [1071. Greatest Common Divisor of Strings](./leetcode/1071-GreatestCommonDivisorOfStrings.go)   
 [1087. Brace Expansion](./leetcode/1087-BraceExpansion.go)   
+[1092. Shortest Common Supersequence](./leetcode/1092-ShortestCommonSupersequence.go)   
 [1100. Find K-Length Substrings With No Repeated Characters](./leetcode/1100-FindKLengthSubstringsWithNoRepeatedCharacters.go)   
 [1143. Longest Common Subsequence](./leetcode/1143-LongestCommonSubsequence.go)   
 [1156. Swap For Longest Repeated Character Substring](./leetcode/1156-SwapForLongestRepeatedCharacterSubstring.go)   
