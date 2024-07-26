@@ -2026,6 +2026,7 @@ LCR 075. 数组的相对排序
 [LCR 181. 字符串中的单词反转](./leetcode/LCR181-ReverseWordsInAString.go)   
 [LCR 183. 望远镜中最高的海拔](./leetcode/LCR183-SlidingWindowMaximum.go)   
 [LCR 185. 统计结果概率](./leetcode/LCR185-StatisticsProbability.go)   
+[LCR 187. 破冰游戏](./leetcode/LCR187-IceBreakingGame.go)   
 [LCR 188. 买卖芯片的最佳时机](./leetcode/LCR188-BestTiming.go)   
 [LCR 190. 加密运算](./leetcode/LCR190-EncryptionCalculate.go)   
 [LCR 191. 按规则计算统计结果](./leetcode/LCR191-StatisticalResult.go)   
