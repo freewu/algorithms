@@ -393,6 +393,7 @@
 [741. Cherry Pickup](./leetcode/741-CherryPickup.go)   
 [744. Find Smallest Letter Greater Than Target](./leetcode/744-FindSmallestLetterGreaterThanTarget.go)   
 [746. Min Cost Climbing Stairs](./leetcode/746-MinCostClimbingStairs.go)   
+[749. Contain Virus](./leetcode/749-ContainVirus.go)   
 [750. Number Of Corner Rectangles](./leetcode/750-NumberOfCornerRectangles.go)   
 [752. Open the Lock](./leetcode/752-OpenTheLock.go)   
 [755. Pour Water](./leetcode/755-PourWater.go)   
