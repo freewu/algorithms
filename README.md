@@ -658,6 +658,7 @@
 [2859. Sum of Values at Indices With K Set Bits](./leetcode/2859-SumOfValuesAtIndicesWithKSetBits.go)   
 [2861. Maximum Number of Alloys](./leetcode/2861-MaximumNumberOfAlloys.go)    
 [2865. Beautiful Towers I](./leetcode/2865-BeautifulTowersI.go)   
+[2873. Maximum Value of an Ordered Triplet I](./leetcode/2873-MaximumValueOfAnOrderedTripletI.go)   
 [2903. Find Indices With Index and Value Difference I](./leetcode/2903-FindIndicesWithIndexAndValueDifferenceI.go)   
 [2908. Minimum Sum of Mountain Triplets I](./leetcode/2908-MinimumSumOfMountainTripletsI.go)   
 [2917. Find the K-or of an Array](./leetcode/2917-FindTheKOrOfAnArray.go)   
