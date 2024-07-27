@@ -1225,6 +1225,7 @@
 [2236. Root Equals Sum of Children](./leetcode/2236-RootEqualsSumOfChildren.go)   
 [2331. Evaluate Boolean Binary Tree](./leetcode/2331-EvaluateBooleanBinaryTree.go)   
 [2385. Amount of Time for Binary Tree to Be Infected](./leetcode/2385-AmountOfTimeForBinaryTreeToBeInfected.go)   
+[2445. Number of Nodes With Value One](./leetcode/2445-NumberOfNodesWithValueOne.go)   
 [2476. Closest Nodes Queries in a Binary Search Tree](./leetcode/2476-ClosestNodesQueriesInABinarySearchTree.go)   
 [2581. Count Number of Possible Root Nodes](./leetcode/2581-CountNumberOfPossibleRootNodes.go)   
 [2583. Kth Largest Sum in a Binary Tree](./leetcode/2583-KthLargestSumInABinaryTree.go)   
