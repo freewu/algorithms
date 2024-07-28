@@ -1222,6 +1222,7 @@
 [1569. Number of Ways to Reorder Array to Get Same BST](./leetcode/1569-NumberOfWaysToReorderArrayToGetSameBST.go)   
 [1602. Find Nearest Right Node in Binary Tree](./leetcode/1602-FindNearestRightNodeInBinaryTree.go)   
 [1609. Even Odd Tree](./leetcode/1609-EvenOddTree.go)   
+[2003. Smallest Missing Genetic Value in Each Subtree](./leetcode/2003-SmallestMissingGeneticValueInEachSubtree.go)   
 [2096. Step-By-Step Directions From a Binary Tree Node to Another](./leetcode/2096-StepByStepDirectionsFromABinaryTreeNodeToAnother.go)   
 [2196. Create Binary Tree From Descriptions](./leetcode/2196-CreateBinaryTreeFromDescriptions.go)   
 [2236. Root Equals Sum of Children](./leetcode/2236-RootEqualsSumOfChildren.go)   
