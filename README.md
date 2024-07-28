@@ -1270,6 +1270,7 @@
 [1857. Largest Color Value in a Directed Graph](./leetcode/1857-LargestColorValueInADirectedGraph.go)   
 [1971. Find if Path Exists in Graph](./leetcode/1971-FindIfPathExistsInGraph.go)   
 [1976. Number of Ways to Arrive at Destination](./leetcode/1976-NumberOfWaysToArriveAtDestination.go)   
+[2045. Second Minimum Time to Reach Destination](./leetcode/2045-SecondMinimumTimeToReachDestination.go)   
 [2065. Maximum Path Quality of a Graph](./leetcode/2065-MaximumPathQualityOfAGraph.go)   
 [2092. Find All People With Secret](./leetcode/2092-FindAllPeopleWithSecret.go)   
 [2097. Valid Arrangement of Pairs](./leetcode/2097-ValidArrangementOfPairs.go)   
