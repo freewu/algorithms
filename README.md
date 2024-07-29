@@ -677,6 +677,7 @@
 [2956. Find Common Elements Between Two Arrays](./leetcode/2956-FindCommonElementsBetweenTwoArrays.go)   
 [2958. Length of Longest Subarray With at Most K Frequency](./leetcode/2958-LengthOfLongestSubarrayWithAtMostKFrequency.go)   
 [2960. Count Tested Devices After Test Operations](./leetcode/2960-CountTestedDevicesAfterTestOperations.go)   
+[2961. Double Modular Exponentiation](./leetcode/2961-DoubleModularExponentiation.go)   
 [2962. Count Subarrays Where Max Element Appears at Least K Times](./leetcode/2962-CountSubarraysWhereMaxElementAppearsAtLeastKTimes.go)   
 [2965. Find Missing and Repeated Values](./leetcode/2965-FindMissingAndRepeatedValues.go)   
 [2966. Divide Array Into Arrays With Max Difference](./leetcode/2966-DivideArrayIntoArraysWithMaxDifference.go)   
