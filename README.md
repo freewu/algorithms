@@ -2008,6 +2008,7 @@ LCR 075. 数组的相对排序
 [LCR 082. 组合总和 II](./leetcode/LCR082-CombinationSumII.go)   
 [LCR 083. 全排列](./leetcode/LCR083-Permutations.go)   
 [LCR 084. 全排列 II](./leetcode/LCR084-PermutationsII.go)   
+[LCR 085. 括号生成](./leetcode/LCR085-GenerateParentheses.go)   
 [LCR 122. 路径加密](./leetcode/LCR122-PathEncryption.go)   
 [LCR 123. 图书整理 I](./leetcode/LCR123-ReverseBookList.go)   
 [LCR 125. 图书整理 II](./leetcode/LCR125-BookQueue.go)   
