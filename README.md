@@ -513,6 +513,7 @@
 [1335. Minimum Difficulty of a Job Schedule](./leetcode/1335-MinimumDifficultyOfAJobSchedule.go)   
 [1351. Count Negative Numbers in a Sorted Matrix](./leetcode/1351-CountNegativeNumbersInASortedMatrix.go)   
 [1380. Lucky Numbers in a Matrix](./leetcode/1380-LuckyNumbersInAMatrix.go)   
+[1395. Count Number of Teams](./leetcode/1395-CountNumberOfTeams.go)   
 [1406. Stone Game III](./leetcode/1406-StoneGameIII.go)   
 [1426. Counting Elements](./leetcode/1426-CountingElements.go)   
 [1431. Kids With the Greatest Number of Candies](./leetcode/1431-KidsWithTheGreatestNumberOfCandies.go)   
