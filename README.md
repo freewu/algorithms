@@ -394,6 +394,7 @@
 [744. Find Smallest Letter Greater Than Target](./leetcode/744-FindSmallestLetterGreaterThanTarget.go)   
 [746. Min Cost Climbing Stairs](./leetcode/746-MinCostClimbingStairs.go)   
 [747. Largest Number At Least Twice of Others](./leetcode/747-LargestNumberAtLeastTwiceOfOthers.go)   
+[748. Shortest Completing Word](./leetcode/748-ShortestCompletingWord.go)   
 [749. Contain Virus](./leetcode/749-ContainVirus.go)   
 [750. Number Of Corner Rectangles](./leetcode/750-NumberOfCornerRectangles.go)   
 [752. Open the Lock](./leetcode/752-OpenTheLock.go)   
