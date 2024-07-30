@@ -850,6 +850,7 @@
 [730. Count Different Palindromic Subsequences](./leetcode/730-CountDifferentPalindromicSubsequences.go)   
 [736. Parse Lisp Expression](./leetcode/736-ParseLispExpression.go)   
 [751. IP to CIDR](./leetcode/751-IPToCIDR.go)   
+[756. Pyramid Transition Matrix](./leetcode/756-PyramidTransitionMatrix.go)   
 [758. Bold Words in String](./leetcode/758-BoldWordsInString.go)   
 [763. Partition Labels](./leetcode/763-PartitionLabels.go)   
 [772. Basic Calculator III](./leetcode/772-BasicCalculatorIII.go)   
