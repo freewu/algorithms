@@ -404,6 +404,7 @@
 [768. Max Chunks To Make Sorted II](./leetcode/768-MaxChunksToMakeSortedII.go)   
 [773. Sliding Puzzle](./leetcode/773-SlidingPuzzle.go)   
 [774. Minimize Max Distance to Gas Station](./leetcode/774-MinimizeMaxDistanceToGasStation.go)   
+[778. Swim in Rising Water](./leetcode/778-SwimInRisingWater.go)   
 [785. Is Graph Bipartite?](./leetcode/785-IsGraphBipartite.go)   
 [786. K-th Smallest Prime Fraction](./leetcode/786-KthSmallestPrimeFraction.go)   
 [797. All Paths From Source to Target](./leetcode/797-AllPathsFromSourceToTarget.go)   
