@@ -1804,6 +1804,7 @@ LCR 075. 数组的相对排序
 [3214. Year on Year Growth Rate](./leetcode/3214-YearOnYearGrowthRate.sql)   
 [3220. Odd and Even Transactions](./leetcode/3220-OddAndEvenTransactions.sql)   
 [3230. Customer Purchasing Behavior Analysis](./leetcode/3230-CustomerPurchasingBehaviorAnalysis.sql)   
+[3236. CEO Subordinate Hierarchy](./leetcode/3236-CEOSubordinateHierarchy.sql)   
 
 # Shell
 [192. Word Frequency](./leetcode/192-WordFrequency.sh)      
