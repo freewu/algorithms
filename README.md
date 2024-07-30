@@ -890,6 +890,7 @@
 [1556. Thousand Separator](./leetcode/1556-ThousandSeparator.go)   
 [1598. Crawler Log Folder](./leetcode/1598-CrawlerLogFolder.go)   
 [1614. Maximum Nesting Depth of the Parentheses](./leetcode/1614-MaximumNestingDepthOfTheParentheses.go)   
+[1653. Minimum Deletions to Make String Balanced](./leetcode/1653-MinimumDeletionsToMakeStringBalanced.go)   
 [1657. Determine if Two Strings Are Close](./leetcode/1657-DetermineIfTwoStringsAreClose.go)   
 [1668. Maximum Repeating Substring](./leetcode/1668-MaximumRepeatingSubstring.go)   
 [1702. Maximum Binary String After Change](./leetcode/1702-MaximumBinaryStringAfterChange.go)   
