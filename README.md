@@ -1080,6 +1080,7 @@
 [1227. Airplane Seat Assignment Probability](./leetcode/1227-AirplaneSeatAssignmentProbability.go)   
 [1259. Handshakes That Don't Cross](./leetcode/1259-HandshakesThatDontCross.go)   
 [1281. Subtract the Product and Sum of Digits of an Integer](./leetcode/1281-SubtractTheProductAndSumOfDigitsOfAnInteger.go)   
+[1344. Angle Between Hands of a Clock](./leetcode/1344-AngleBetweenHandsOfAClock.go)   
 [1401. Circle and Rectangle Overlapping](./leetcode/1401-CircleAndRectangleOverlapping.go)   
 [1486. XOR Operation in an Array](./leetcode/1486-XOROperationInAnArray.go)   
 [1492. The kth Factor of n](./leetcode/1492-TheKthFactorOfN.go)   
