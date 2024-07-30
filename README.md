@@ -402,6 +402,7 @@
 [759. Employee Free Time](./leetcode/759-EmployeeFreeTime.go)   
 [760. Find Anagram Mappings](./leetcode/760-FindAnagramMappings.go)   
 [768. Max Chunks To Make Sorted II](./leetcode/768-MaxChunksToMakeSortedII.go)   
+[773. Sliding Puzzle](./leetcode/773-SlidingPuzzle.go)   
 [774. Minimize Max Distance to Gas Station](./leetcode/774-MinimizeMaxDistanceToGasStation.go)   
 [785. Is Graph Bipartite?](./leetcode/785-IsGraphBipartite.go)   
 [786. K-th Smallest Prime Fraction](./leetcode/786-KthSmallestPrimeFraction.go)   
