@@ -1061,6 +1061,7 @@
 [672. Bulb Switcher II](./leetcode/672-BulbSwitcherII.go)   
 [728. Self Dividing Numbers](./leetcode/728-SelfDividingNumbers.go)   
 [738. Monotone Increasing Digits](./leetcode/738-MonotoneIncreasingDigits.go)   
+[754. Reach a Number](./leetcode/754-ReachANumber.go)   
 [808. Soup Servings](./leetcode/808-SoupServings.go)   
 [837. New 21 Game](./leetcode/837-New21Game.go)   
 [887. Super Egg Drop](./leetcode/887-SuperEggDrop.go)   
