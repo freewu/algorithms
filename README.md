@@ -413,6 +413,7 @@
 [802. Find Eventual Safe States](./leetcode/802-FindEventualSafeStates.go)   
 [807. Max Increase to Keep City Skyline](./leetcode/807-MaxIncreaseToKeepCitySkyline.go)   
 [820. Short Encoding of Words](./leetcode/820-ShortEncodingOfWords.go)   
+[825. Friends Of Appropriate Ages](./leetcode/825-FriendsOfAppropriateAges.go)   
 [826. Most Profit Assigning Work](./leetcode/826-MostProfitAssigningWork.go)   
 [839. Similar String Groups](./leetcode/839-SimilarStringGroups.go)   
 [841. Keys and Rooms](./leetcode/841-KeysAndRooms.go)   
