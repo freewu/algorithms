@@ -921,6 +921,7 @@
 [2586. Count the Number of Vowel Strings in Range](./leetcode/2586-CountTheNumberOfVowelStringsInRange.go)   
 [2645. Minimum Additions to Make Valid String](./leetcode/2645-MinimumAdditionsToMakeValidString.go)   
 [2663. Lexicographically Smallest Beautiful String](./leetcode/2663-LexicographicallySmallestBeautifulString.go)   
+[2696. Minimum String Length After Removing Substrings](./leetcode/2696-MinimumStringLengthAfterRemovingSubstrings.go)   
 [2707. Extra Characters in a String](./leetcode/2707-ExtraCharactersInAString.go)   
 [2710. Remove Trailing Zeros From a String](./leetcode/2710-RemoveTrailingZerosFromAString.go)   
 [2719. Count of Integers](./leetcode/2719-CountOfIntegers.go)   
