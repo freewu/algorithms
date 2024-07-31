@@ -2053,6 +2053,7 @@ LCR 075. 数组的相对排序
 [LCR 154. 复杂链表的复制](./leetcode/LCR154-CopyListWithRandomPointer.go)   
 [LCR 158. 库存管理 II](./leetcode/LCR158-InventoryManagementII.go)   
 [LCR 159. 库存管理 III](./leetcode/LCR159-InventoryManagementIII.go)   
+[LCR 160. 数据流中的中位数](./leetcode/LCR160-FindMedianFromDataStream.go)   
 [LCR 161. 连续天数的最高销售额](./leetcode/LCR161-MaximumSales.go)   
 [LCR 162. 数字 1 的个数](./leetcode/LCR162-NumberOfDigitOne.go)   
 [LCR 163. 找到第 k 位数字](./leetcode/LCR163-NthDigit.go)   
