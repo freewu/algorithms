@@ -705,6 +705,7 @@
 [3098. Find the Sum of Subsequence Powers](./leetcode/3098-FindTheSumOfSubsequencePowers.go)   
 [3101. Count Alternating Subarrays](./leetcode/3101-CountAlternatingSubarrays.go)   
 [3102. Minimize Manhattan Distances](./leetcode/3102-MinimizeManhattanDistances.go)   
+[3111. Minimum Rectangles to Cover Points](./leetcode/3111-MinimumRectanglesToCoverPoints.go)   
 [3115. Maximum Prime Difference](./leetcode/3115-MaximumPrimeDifference.go)   
 [3190. Find Minimum Operations to Make All Elements Divisible by Three](./leetcode/3190-FindMinimumOperationsToMakeAllElementsDivisibleByThree.go)   
 [3195. Find the Minimum Area to Cover All Ones I](./leetcode/3195-FindTheMinimumAreaToCoverAllOnesI.go)   
