@@ -1080,6 +1080,7 @@
 [1006. Clumsy Factorial](./leetcode/1006-ClumsyFactorial.go)   
 [1012. Numbers With Repeated Digits](./leetcode/1012-NumbersWithRepeatedDigits.go)   
 [1017. Convert to Base -2](./leetcode/1017-ConvertToBase-2.go)   
+[1025. Divisor Game](./leetcode/1025-DivisorGame.go)   
 [1056. Confusing Number](./leetcode/1056-ConfusingNumber.go)   
 [1067. Digit Count in Range](./leetcode/1067-DigitCountInRange.go)   
 [1103. Distribute Candies to People](./leetcode/1103-DistributeCandiesToPeople.go)   
