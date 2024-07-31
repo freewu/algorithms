@@ -412,6 +412,7 @@
 [797. All Paths From Source to Target](./leetcode/797-AllPathsFromSourceToTarget.go)   
 [802. Find Eventual Safe States](./leetcode/802-FindEventualSafeStates.go)   
 [807. Max Increase to Keep City Skyline](./leetcode/807-MaxIncreaseToKeepCitySkyline.go)   
+[810. Chalkboard XOR Game](./leetcode/810-ChalkboardXORGame.go)   
 [820. Short Encoding of Words](./leetcode/820-ShortEncodingOfWords.go)   
 [825. Friends Of Appropriate Ages](./leetcode/825-FriendsOfAppropriateAges.go)   
 [826. Most Profit Assigning Work](./leetcode/826-MostProfitAssigningWork.go)   
