@@ -2081,6 +2081,7 @@ LCR 075. 数组的相对排序
 [LCR 182. 动态口令](./leetcode/LCR182-DynamicPassword.go)   
 [LCR 181. 字符串中的单词反转](./leetcode/LCR181-ReverseWordsInAString.go)   
 [LCR 183. 望远镜中最高的海拔](./leetcode/LCR183-SlidingWindowMaximum.go)   
+[LCR 184. 设计自助结算系统](./leetcode/LCR184-DesignCheckoutSystem.go)   
 [LCR 185. 统计结果概率](./leetcode/LCR185-StatisticsProbability.go)   
 [LCR 186. 文物朝代判断](./leetcode/LCR186-CheckDynasty.go)   
 [LCR 187. 破冰游戏](./leetcode/LCR187-IceBreakingGame.go)   
