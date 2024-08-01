@@ -1123,6 +1123,8 @@
 [2928. Distribute Candies Among Children I](./leetcode/2928-DistributeCandiesAmongChildrenI.go)   
 [3099. Harshad Number](./leetcode/3099-HarshadNumber.go)   
 [3102. Minimize Manhattan Distances](./leetcode/3102-MinimizeManhattanDistances.go)   
+[3128. Right Triangles](./leetcode/3128-RightTriangles.go)   
+
 
 # Stack
 [225. Implement Stack using Queues](./leetcode/225-ImplementStackUsingQueues.go)   
