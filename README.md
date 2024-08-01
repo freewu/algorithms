@@ -884,6 +884,7 @@
 [1163. Last Substring in Lexicographical Order](./leetcode/1163-LastSubstringInLexicographicalOrder.go)   
 [1165. Single-Row Keyboard](./leetcode/1165-Single-RowKeyboard.go)   
 [1180. Count Substrings with Only One Distinct Letter](./leetcode/1180-CountSubstringsWithOnlyOneDistinctLetter.go)   
+[1189. Maximum Number of Balloons](./leetcode/1189-MaximumNumberOfBalloons.go)   
 [1190. Reverse Substrings Between Each Pair of Parentheses](./leetcode/1190-ReverseSubstringsBetweenEachPairOfParentheses.go)   
 [1208. Get Equal Substrings Within Budget](./leetcode/1208-GetEqualSubstringsWithinBudget.go)   
 [1236. Web Crawler](./leetcode/1236-WebCrawler.go)   
