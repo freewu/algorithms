@@ -554,6 +554,7 @@
 [1559. Detect Cycles in 2D Grid](./leetcode/1559-DetectCyclesIn2DGrid.go)   
 [1572. Matrix Diagonal Sum](./leetcode/1572-MatrixDiagonalSum.go)   
 [1575. Count All Possible Routes](./leetcode/1575-CountAllPossibleRoutes.go)   
+[1599. Maximum Profit of Operating a Centennial Wheel](./leetcode/1599-MaximumProfitOfOperatingACentennialWheel.go)   
 [1601. Maximum Number of Achievable Transfer Requests](./leetcode/1601-MaximumNumberOfAchievableTransferRequests.go)   
 [1605. Find Valid Matrix Given Row and Column Sums](./leetcode/1605-FindValidMatrixGivenRowAndColumnSums.go)   
 [1608. Special Array With X Elements Greater Than or Equal X](./leetcode/1608-SpecialArrayWithXElementsGreaterThanOrEqualX.go)   
