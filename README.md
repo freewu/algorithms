@@ -646,6 +646,8 @@
 [2617. Minimum Number of Visited Cells in a Grid](./leetcode/2617-MinimumNumberOfVisitedCellsInAGrid.go)   
 [2644. Find the Maximum Divisibility Score](./leetcode/2644-FindTheMaximumDivisibilityScore.go)   
 [2670. Find the Distinct Difference Array](./leetcode/2670-FindTheDistinctDifferenceArray.go)   
+[2670. Find the Distinct Difference Array](./leetcode/2670-FindTheDistinctDifferenceArray.go)   
+[2678. Number of Senior Citizens](./leetcode/2678-NumberOfSeniorCitizens.go)   
 [2684. Maximum Number of Moves in a Grid](./leetcode/2684-MaximumNumberOfMovesInAGrid.go)   
 [2713. Maximum Strictly Increasing Cells in a Matrix](./leetcode/2713-MaximumStrictlyIncreasingCellsInAMatrix.go)   
 [2731. Movement of Robots](./leetcode/2731-MovementOfRobots.go)   
