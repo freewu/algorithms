@@ -47,35 +47,31 @@ import "fmt"
 func replaceValueInTree(root *TreeNode) *TreeNode {
     children := []*TreeNode{root}
     root.Val = 0
-
     // Each iteration children list contains all elements with the same depth
     for len(children) > 0 {
         parents := children
         children = []*TreeNode{}
-
         // Find sum of all children in this depth
         sum := 0
         for _, parent := range parents {
             if parent.Left != nil { 
-				sum += parent.Left.Val 
-			}
+                sum += parent.Left.Val 
+            }
             if parent.Right != nil { 
-				sum += parent.Right.Val 
-			} 
+                sum += parent.Right.Val 
+            } 
         }
-
         // Update children values:
         // Calculated sum minus the current childer values (if they exist)
         // Also add all children to the list for the next iteration (depth+1)
         for _, parent := range parents {
             reduce := 0
             if parent.Left != nil { 
-				reduce += parent.Left.Val 
-			}
+                reduce += parent.Left.Val 
+            }
             if parent.Right != nil { 
-				reduce += parent.Right.Val 
-			}
-            
+                reduce += parent.Right.Val 
+            }
             if parent.Left != nil {
                 parent.Left.Val = sum - reduce
                 children = append(children, parent.Left)
@@ -115,6 +111,5 @@ func main() {
                       &TreeNode{3,
                                 &TreeNode{6, nil, nil},
                                 &TreeNode{7, nil, nil}}}
-    
     printBinaryTree(tree)
 }
