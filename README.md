@@ -2054,6 +2054,7 @@ LCR 075. 数组的相对排序
 [LCR 087. 复原 IP 地址](./leetcode/LCR087-RestoreIPAddresses.go)   
 [LCR 088. 使用最小花费爬楼梯](./leetcode/LCR088-MincostClimbingStairs.go)   
 [LCR 089. 打家劫舍](./leetcode/LCR089-HouseRobber.go)   
+[LCR 090. 打家劫舍 II](./leetcode/LCR090-HouseRobberII.go)   
 [LCR 120. 寻找文件副本](./leetcode/LCR120-FindRepeatDocument.go)   
 [LCR 122. 路径加密](./leetcode/LCR122-PathEncryption.go)   
 [LCR 123. 图书整理 I](./leetcode/LCR123-ReverseBookList.go)   
