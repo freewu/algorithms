@@ -1090,6 +1090,7 @@
 [738. Monotone Increasing Digits](./leetcode/738-MonotoneIncreasingDigits.go)   
 [754. Reach a Number](./leetcode/754-ReachANumber.go)   
 [762. Prime Number of Set Bits in Binary Representation](./leetcode/762-PrimeNumberOfSetBitsInBinaryRepresentation.go)   
+[780. Reaching Points](./leetcode/780-ReachingPoints.go)   
 [808. Soup Servings](./leetcode/808-SoupServings.go)   
 [837. New 21 Game](./leetcode/837-New21Game.go)   
 [887. Super Egg Drop](./leetcode/887-SuperEggDrop.go)   
