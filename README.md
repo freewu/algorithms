@@ -406,6 +406,7 @@
 [765. Couples Holding Hands](./leetcode/765-CouplesHoldingHands.go)   
 [766. Toeplitz Matrix](./leetcode/766-ToeplitzMatrix.go)   
 [768. Max Chunks To Make Sorted II](./leetcode/768-MaxChunksToMakeSortedII.go)   
+[769. Max Chunks To Make Sorted](./leetcode/769-MaxChunksToMakeSorted.go)   
 [773. Sliding Puzzle](./leetcode/773-SlidingPuzzle.go)   
 [774. Minimize Max Distance to Gas Station](./leetcode/774-MinimizeMaxDistanceToGasStation.go)   
 [778. Swim in Rising Water](./leetcode/778-SwimInRisingWater.go)   
