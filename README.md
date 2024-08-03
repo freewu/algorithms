@@ -404,6 +404,7 @@
 [760. Find Anagram Mappings](./leetcode/760-FindAnagramMappings.go)   
 [764. Largest Plus Sign](./leetcode/764-LargestPlusSign.go)   
 [765. Couples Holding Hands](./leetcode/765-CouplesHoldingHands.go)   
+[766. Toeplitz Matrix](./leetcode/766-ToeplitzMatrix.go)   
 [768. Max Chunks To Make Sorted II](./leetcode/768-MaxChunksToMakeSortedII.go)   
 [773. Sliding Puzzle](./leetcode/773-SlidingPuzzle.go)   
 [774. Minimize Max Distance to Gas Station](./leetcode/774-MinimizeMaxDistanceToGasStation.go)   
