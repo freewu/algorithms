@@ -90,8 +90,6 @@ func isSubtree1(root *TreeNode, subRoot *TreeNode) bool {
     return same(root, subRoot) || isSubtree1(root.Left, subRoot) || isSubtree1(root.Right, subRoot)
 }
 
-
-
 func main() {
     // Example 1:
     //         root                  subRoot
