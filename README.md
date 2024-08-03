@@ -875,6 +875,7 @@
 [761. Special Binary String](./leetcode/761-SpecialBinaryString.go)   
 [763. Partition Labels](./leetcode/763-PartitionLabels.go)   
 [767. Reorganize String](./leetcode/767-ReorganizeString.go)   
+[770. Basic Calculator IV](./leetcode/770-BasicCalculatorIV.go)   
 [772. Basic Calculator III](./leetcode/772-BasicCalculatorIII.go)   
 [791. Custom Sort String](./leetcode/791-CustomSortString.go)   
 [800. Similar RGB Color](./leetcode/800-SimilarRGBColor.go)   
