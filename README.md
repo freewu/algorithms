@@ -2066,6 +2066,7 @@ LCR 075. 数组的相对排序
 [LCR 090. 打家劫舍 II](./leetcode/LCR090-HouseRobberII.go)   
 [LCR 091. 粉刷房子](./leetcode/LCR091-PaintHouse.go)   
 [LCR 120. 寻找文件副本](./leetcode/LCR120-FindRepeatDocument.go)   
+[LCR 121. 寻找目标值 - 二维数组](./leetcode/LCR121-FindTargetInMatrix.go)   
 [LCR 122. 路径加密](./leetcode/LCR122-PathEncryption.go)   
 [LCR 123. 图书整理 I](./leetcode/LCR123-ReverseBookList.go)   
 [LCR 125. 图书整理 II](./leetcode/LCR125-BookQueue.go)   
