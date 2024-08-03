@@ -533,6 +533,7 @@
 [1438. Longest Continuous Subarray With Absolute Diff Less Than or Equal to Limit](./leetcode/1438-LongestContinuousSubarrayWithAbsoluteDiffLessThanOrEqualToLimit.go)   
 [1442. Count Triplets That Can Form Two Arrays of Equal XOR](./leetcode/1442-CountTripletsThatCanFormTwoArraysOfEqualXOR.go)   
 [1444. Number of Ways of Cutting a Pizza](./leetcode/1444-NumberOfWaysOfCuttingAPizza.go)   
+[1460. Make Two Arrays Equal by Reversing Subarrays](./leetcode/1460-MakeTwoArraysEqualByReversingSubarrays.go)   
 [1463. Cherry Pickup II](./leetcode/1463-CherryPickupII.go)   
 [1470. Shuffle the Array](./leetcode/1470-ShuffleTheArray.go)   
 [1473. Paint House III](./leetcode/1473-PaintHouseIII.go)   
