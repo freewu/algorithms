@@ -2100,6 +2100,7 @@ LCR 075. 数组的相对排序
 [LCR 168. 丑数](./leetcode/LCR168-UglyNumber.go)   
 [LCR 171. 训练计划 V](./leetcode/LCR171-TrainningPlanV.go)   
 [LCR 172. 统计目标成绩的出现次数](./leetcode/LCR172-CountTarget.go)   
+[LCR 173. 点名](./leetcode/LCR173-TakeAttendance.go)   
 [LCR 177. 撞色搭配](./leetcode/LCR177-SockCollocation.go)   
 [LCR 178. 训练计划 VI](./leetcode/LCR178-TrainningPlanVI.go)   
 [LCR 179. 查找总价格为目标值的两个商品](./leetcode/LCR179-TwoSum.go)   
