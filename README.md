@@ -468,6 +468,7 @@
 [1001. Grid Illumination](./leetcode/1001-GridIllumination.go)   
 [1002. Find Common Characters](./leetcode/1002-FindCommonCharacters.go)   
 [1004. Max Consecutive Ones III](./leetcode/1004-MaxConsecutiveOnesIII.go)   
+[1010. Pairs of Songs With Total Durations Divisible by 60](./leetcode/1010-PairsOfSongsWithTotalDurationsDivisibleBy60.go)   
 [1011. Capacity To Ship Packages Within D Days](./leetcode/1011-CapacityToShipPackagesWithinDDays.go)   
 [1014. Best Sightseeing Pair](./leetcode/1014-BestSightseeingPair.go)   
 [1020. Number of Enclaves](./leetcode/1020-NumberOfEnclaves.go)   
