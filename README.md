@@ -731,6 +731,7 @@
 [3190. Find Minimum Operations to Make All Elements Divisible by Three](./leetcode/3190-FindMinimumOperationsToMakeAllElementsDivisibleByThree.go)   
 [3195. Find the Minimum Area to Cover All Ones I](./leetcode/3195-FindTheMinimumAreaToCoverAllOnesI.go)   
 [3206. Alternating Groups I](./leetcode/3206-AlternatingGroupsI.go)   
+[3208. Alternating Groups II](./leetcode/3208-AlternatingGroupsII.go)   
 [3215. Count Triplets with Even XOR Set Bits II](./leetcode/3215-CountTripletsWithEvenXORSetBitsII.go)   
 
 # String
