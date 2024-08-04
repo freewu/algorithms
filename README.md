@@ -1245,6 +1245,7 @@
 [938. Range Sum of BST](./leetcode/938-RangeSumOfBST.go)   
 [965. Univalued Binary Tree](./leetcode/965-UnivaluedBinaryTree.go)   
 [968. Binary Tree Cameras](./leetcode/968-BinaryTreeCameras.go)   
+[971. Flip Binary Tree To Match Preorder Traversal](./leetcode/971-FlipBinaryTreeToMatchPreorderTraversal.go)   
 [979. Distribute Coins in Binary Tree](./leetcode/979-DistributeCoinsInBinaryTree.go)   
 [987. Vertical Order Traversal of a Binary Tree](./leetcode/987-VerticalOrderTraversalOfABinaryTree.go)   
 [988. Smallest String Starting From Leaf](./leetcode/988-SmallestStringStartingFromLeaf.go)   
