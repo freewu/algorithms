@@ -1448,6 +1448,7 @@
 [981. Time Based Key-Value Store](./leetcode/981-TimeBasedKeyValueStore.go)   
 [1146. Snapshot Array](./leetcode/1146-SnapshotArray.go)   
 [1166. Design File System](./leetcode/1166-DesignFileSystem.go)   
+[1206. Design Skiplist](./leetcode/1206-DesignSkiplist.go)   
 [1244. Design A Leaderboard](./leetcode/1244-DesignALeaderboard.go)   
 [1286. Iterator for Combination](./leetcode/1286-IteratorForCombination.go)   
 [1396. Design Underground System](./leetcode/1396-DesignUndergroundSystem.go)   
