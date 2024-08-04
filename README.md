@@ -2115,6 +2115,7 @@ LCR 075. 数组的相对排序
 [LCR 166. 珠宝的最高价值](./leetcode/LCR166-JewelleryValue.go)   
 [LCR 167. 招式拆解 I](./leetcode/LCR167-DismantlingActionI.go)   
 [LCR 168. 丑数](./leetcode/LCR168-UglyNumber.go)   
+[LCR 169. 招式拆解 II](./leetcode/LCR169-DismantlingActionII.go)   
 [LCR 171. 训练计划 V](./leetcode/LCR171-TrainningPlanV.go)   
 [LCR 172. 统计目标成绩的出现次数](./leetcode/LCR172-CountTarget.go)   
 [LCR 173. 点名](./leetcode/LCR173-TakeAttendance.go)   
