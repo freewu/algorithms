@@ -881,6 +881,7 @@
 [772. Basic Calculator III](./leetcode/772-BasicCalculatorIII.go)   
 [791. Custom Sort String](./leetcode/791-CustomSortString.go)   
 [800. Similar RGB Color](./leetcode/800-SimilarRGBColor.go)   
+[824. Goat Latin](./leetcode/824-GoatLatin.go)   
 [859. Buddy Strings](./leetcode/859-BuddyStrings.go)   
 [936. Stamping The Sequence](./leetcode/936-StampingTheSequence.go)   
 [940. Distinct Subsequences II](./leetcode/940-DistinctSubsequencesII.go)   
