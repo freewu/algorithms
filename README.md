@@ -411,6 +411,7 @@
 [774. Minimize Max Distance to Gas Station](./leetcode/774-MinimizeMaxDistanceToGasStation.go)   
 [775. Global and Local Inversions](./leetcode/775-GlobalAndLocalInversions.go)   
 [778. Swim in Rising Water](./leetcode/778-SwimInRisingWater.go)   
+[781. Rabbits in Forest](./leetcode/781-RabbitsInForest.go)   
 [782. Transform to Chessboard](./leetcode/782-TransformToChessboard.go)   
 [785. Is Graph Bipartite?](./leetcode/785-IsGraphBipartite.go)   
 [786. K-th Smallest Prime Fraction](./leetcode/786-KthSmallestPrimeFraction.go)   
