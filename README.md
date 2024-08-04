@@ -1102,6 +1102,7 @@
 [775. Global and Local Inversions](./leetcode/775-GlobalAndLocalInversions.go)   
 [779. K-th Symbol in Grammar](./leetcode/779-KthSymbolInGrammar.go)   
 [780. Reaching Points](./leetcode/780-ReachingPoints.go)   
+[788. Rotated Digits](./leetcode/788-RotatedDigits.go)   
 [808. Soup Servings](./leetcode/808-SoupServings.go)   
 [837. New 21 Game](./leetcode/837-New21Game.go)   
 [887. Super Egg Drop](./leetcode/887-SuperEggDrop.go)   
