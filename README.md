@@ -1098,6 +1098,7 @@
 [754. Reach a Number](./leetcode/754-ReachANumber.go)   
 [762. Prime Number of Set Bits in Binary Representation](./leetcode/762-PrimeNumberOfSetBitsInBinaryRepresentation.go)   
 [775. Global and Local Inversions](./leetcode/775-GlobalAndLocalInversions.go)   
+[779. K-th Symbol in Grammar](./leetcode/779-KthSymbolInGrammar.go)   
 [780. Reaching Points](./leetcode/780-ReachingPoints.go)   
 [808. Soup Servings](./leetcode/808-SoupServings.go)   
 [837. New 21 Game](./leetcode/837-New21Game.go)   
