@@ -982,6 +982,7 @@
 [1220. Count Vowels Permutation](./leetcode/1220-CountVowelsPermutation.go)   
 [1553. Minimum Number of Days to Eat N Oranges](./leetcode/1553-MinimumNumberOfDaysToEatNOranges.go)   
 [2466. Count Ways To Build Good Strings](./leetcode/2466-CountWaysToBuildGoodStrings.go)   
+[3129. Find All Possible Stable Binary Arrays I](./leetcode/3129-FindAllPossibleStableBinaryArraysI.go)   
 
 # Two Pointers
 [11. Container With Most Water](./leetcode/11-ContainerWithMostWater.go)   
