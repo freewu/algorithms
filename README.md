@@ -888,6 +888,7 @@
 [770. Basic Calculator IV](./leetcode/770-BasicCalculatorIV.go)   
 [772. Basic Calculator III](./leetcode/772-BasicCalculatorIII.go)   
 [777. Swap Adjacent in LR String](./leetcode/777-SwapAdjacentInLRString.go)   
+[784. Letter Case Permutation](./leetcode/784-LetterCasePermutation.go)   
 [791. Custom Sort String](./leetcode/791-CustomSortString.go)   
 [800. Similar RGB Color](./leetcode/800-SimilarRGBColor.go)   
 [824. Goat Latin](./leetcode/824-GoatLatin.go)   
