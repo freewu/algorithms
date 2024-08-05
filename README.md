@@ -590,6 +590,7 @@
 [1793. Maximum Score of a Good Subarray](./leetcode/1793-MaximumScoreOfAGoodSubarray.go)   
 [1799. Maximize Score After N Operations](./leetcode/1799-MaximizeScoreAfterNOperations.go)   
 [1822. Sign of the Product of an Array](./leetcode/1822-SignOfTheProductOfAnArray.go)   
+[1854. Maximum Population Year](./leetcode/1854-MaximumPopulationYear.go)   
 [1863. Sum of All Subset XOR Totals](./leetcode/1863-SumOfAllSubsetXORTotals.go)   
 [1883. Minimum Skips to Arrive at Meeting On Time](./leetcode/1883-MinimumSkipsToArriveAtMeetingOnTime.go)    
 [1870. Minimum Speed to Arrive on Time](./leetcode/1870-MinimumSpeedToArriveOnTime.go)   
