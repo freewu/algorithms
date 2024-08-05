@@ -416,6 +416,7 @@
 [785. Is Graph Bipartite?](./leetcode/785-IsGraphBipartite.go)   
 [786. K-th Smallest Prime Fraction](./leetcode/786-KthSmallestPrimeFraction.go)   
 [797. All Paths From Source to Target](./leetcode/797-AllPathsFromSourceToTarget.go)   
+[789. Escape The Ghosts](./leetcode/789-EscapeTheGhosts.go)   
 [802. Find Eventual Safe States](./leetcode/802-FindEventualSafeStates.go)   
 [807. Max Increase to Keep City Skyline](./leetcode/807-MaxIncreaseToKeepCitySkyline.go)   
 [810. Chalkboard XOR Game](./leetcode/810-ChalkboardXORGame.go)   
