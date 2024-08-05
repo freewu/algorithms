@@ -1247,6 +1247,7 @@
 [701. Insert into a Binary Search Tree](./leetcode/701-InsertIntoABinarySearchTree.go)   
 [742. Closest Leaf in a Binary Tree](./leetcode/742-ClosestLeafInABinaryTree.go)   
 [776. Split BST](./leetcode/776-SplitBST.go)   
+[783. Minimum Distance Between BST Nodes](./leetcode/783-MinimumDistanceBetweenBSTNodes.go)   
 [814. Binary Tree Pruning](./leetcode/814-BinaryTreePruning.go)   
 [834. Sum of Distances in Tree](./leetcode/834-SumOfDistancesInTree.go)   
 [863. All Nodes Distance K in Binary Tree](./leetcode/863-AllNodesDistanceKInBinaryTree.go)   
