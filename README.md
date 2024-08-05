@@ -609,6 +609,7 @@
 [2009. Minimum Number of Operations to Make Array Continuous](./leetcode/2009-MinimumNumberOfOperationsToMakeArrayContinuous.go)   
 [2028. Find Missing Observations](./leetcode/2028-FindMissingObservations.go)   
 [2037. Minimum Number of Moves to Seat Everyone](./leetcode/2037-MinimumNumberOfMovesToSeatEveryone.go)   
+[2053. Kth Distinct String in an Array](./leetcode/2053-KthDistinctStringInAnArray.go)   
 [2071. Maximum Number of Tasks You Can Assign](./leetcode/2071-MaximumNumberOfTasksYouCanAssign.go)   
 [2073. Time Needed to Buy Tickets](./leetcode/2073-TimeNeededToBuyTickets.go)   
 [2079. Watering Plants](./leetcode/2079-WateringPlants.go)   
