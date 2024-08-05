@@ -595,6 +595,7 @@
 [1883. Minimum Skips to Arrive at Meeting On Time](./leetcode/1883-MinimumSkipsToArriveAtMeetingOnTime.go)    
 [1870. Minimum Speed to Arrive on Time](./leetcode/1870-MinimumSpeedToArriveOnTime.go)   
 [1902. Depth of BST Given Insertion Order](./leetcode/1902-DepthOfBSTGivenInsertionOrder.go)   
+[1905. Count Sub Islands](./leetcode/1905-CountSubIslands.go)   
 [1914. Cyclically Rotating a Grid](./leetcode/1914-CyclicallyRotatingAGrid.go)   
 [1926. Nearest Exit from Entrance in Maze](./leetcode/1926-NearestExitFromEntranceInMaze.go)   
 [1938. Maximum Genetic Difference Query](./leetcode/1938-MaximumGeneticDifferenceQuery.go)   
