@@ -2106,6 +2106,7 @@ LCR 075. 数组的相对排序
 [LCR 132. 砍竹子 II](./leetcode/LCR132-CuttingBambooII.go)   
 [LCR 133. 位 1 的个数](./leetcode/LCR133-NumberOfOneBits.go)   
 [LCR 134. Pow(x, n)](./leetcode/LCR134-PowXN.go)   
+[LCR 135. 报数](./leetcode/LCR135-CountNumbers.go)   
 [LCR 136. 删除链表的节点](./leetcode/LCR136-DeleteNode.go)   
 [LCR 137. 模糊搜索验证](./leetcode/LCR137-RegularExpressionMatching.go)   
 [LCR 138. 有效数字](./leetcode/LCR138-ValidNumber.go)   
