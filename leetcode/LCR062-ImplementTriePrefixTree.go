@@ -39,16 +39,14 @@ type Trie struct {
 }
 
 func Constructor() Trie {
-    return Trie {
-        nodes: map[rune]*Trie{},
-    }
+    return Trie { nodes: map[rune]*Trie{}, }
 }
 
 func (this *Trie) Insert(word string)  {
     curr := this
     for _, r := range word {
         if _, ok := curr.nodes[r]; !ok {
-            curr.nodes[r] = &Trie{nodes: map[rune]*Trie{}}
+            curr.nodes[r] = &Trie{ nodes: map[rune]*Trie{} }
         }
         curr = curr.nodes[r]
     }

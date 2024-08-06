@@ -1472,6 +1472,7 @@
 [919. Complete Binary Tree Inserter](./leetcode/919-CompleteBinaryTreeInserter.go)   
 [933. Number of Recent Calls](./leetcode/933-NumberOfRecentCalls.go)   
 [981. Time Based Key-Value Store](./leetcode/981-TimeBasedKeyValueStore.go)   
+[1032. Stream of Characters](./leetcode/1032-StreamOfCharacters.go)   
 [1146. Snapshot Array](./leetcode/1146-SnapshotArray.go)   
 [1166. Design File System](./leetcode/1166-DesignFileSystem.go)   
 [1206. Design Skiplist](./leetcode/1206-DesignSkiplist.go)   
