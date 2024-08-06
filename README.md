@@ -1304,6 +1304,7 @@
 [2331. Evaluate Boolean Binary Tree](./leetcode/2331-EvaluateBooleanBinaryTree.go)   
 [2385. Amount of Time for Binary Tree to Be Infected](./leetcode/2385-AmountOfTimeForBinaryTreeToBeInfected.go)   
 [2445. Number of Nodes With Value One](./leetcode/2445-NumberOfNodesWithValueOne.go)   
+[2458. Height of Binary Tree After Subtree Removal Queries](./leetcode/2458-HeightOfBinaryTreeAfterSubtreeRemovalQueries.go)   
 [2476. Closest Nodes Queries in a Binary Search Tree](./leetcode/2476-ClosestNodesQueriesInABinarySearchTree.go)   
 [2509. Cycle Length Queries in a Tree](./leetcode/2509-CycleLengthQueriesInATree.go)   
 [2581. Count Number of Possible Root Nodes](./leetcode/2581-CountNumberOfPossibleRootNodes.go)   
