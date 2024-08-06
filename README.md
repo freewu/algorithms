@@ -607,6 +607,7 @@
 [1964. Find the Longest Valid Obstacle Course at Each Position](./leetcode/1964-FindTheLongestValidObstacleCourseAtEachPosition.go)    
 [1969. Minimum Non-Zero Product of the Array Elements](./leetcode/1969-MinimumNonZeroProductOfTheArrayElements.go)    
 [1979. Find Greatest Common Divisor of Array](./leetcode/1979-FindGreatestCommonDivisorOfArray.go)   
+[1981. Minimize the Difference Between Target and Chosen Elements](./leetcode/1981-MinimizeTheDifferenceBetweenTargetAndChosenElements.go)   
 [1991. Find the Middle Index in Array](./leetcode/1991-FindTheMiddleIndexInArray.go)   
 [1992. Find All Groups of Farmland](./leetcode/1992-FindAllGroupsOfFarmland.go)   
 [1997. First Day Where You Have Been in All the Rooms](./leetcode/1997-FirstDayWhereYouHaveBeenInAllTheRooms.go)    
