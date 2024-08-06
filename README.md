@@ -1118,6 +1118,7 @@
 [780. Reaching Points](./leetcode/780-ReachingPoints.go)   
 [788. Rotated Digits](./leetcode/788-RotatedDigits.go)   
 [808. Soup Servings](./leetcode/808-SoupServings.go)   
+[812. Largest Triangle Area](./leetcode/812-LargestTriangleArea.go)   
 [837. New 21 Game](./leetcode/837-New21Game.go)   
 [887. Super Egg Drop](./leetcode/887-SuperEggDrop.go)   
 [902. Numbers At Most N Given Digit Set](./leetcode/902-NumbersAtMostNGivenDigitSet.go)   
