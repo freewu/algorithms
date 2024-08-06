@@ -638,6 +638,7 @@
 [2257. Count Unguarded Cells in the Grid](./leetcode/2257-CountUnguardedCellsInTheGrid.go)   
 [2281. Sum of Total Strength of Wizards](./leetcode/2281-SumOfTotalStrengthOfWizards.go)   
 [2300. Successful Pairs of Spells and Potions](./leetcode/2300-SuccessfulPairsOfSpellsAndPotions.go)   
+[2304. Minimum Path Cost in a Grid](./leetcode/2304-MinimumPathCostInAGrid.go)   
 [2312. Selling Pieces of Wood](./leetcode/2312-SellingPiecesOfWood.go)   
 [2343. Query Kth Smallest Trimmed Number](./leetcode/2343-QueryKthSmallestTrimmedNumber.go)   
 [2352. Equal Row and Column Pairs](./leetcode/2352-EqualRowAndColumnPairs.go)   
