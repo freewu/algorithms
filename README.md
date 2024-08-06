@@ -976,8 +976,6 @@
 [3106. Lexicographically Smallest String After Operations With Constraint](./leetcode/3106-LexicographicallySmallestStringAfterOperationsWithConstraint.go)   
 [3110. Score of a String](./leetcode/3110-ScoreOfAString.go)   
 
-
-
 # Dynamic Programming
 [276. Paint Fence](./leetcode/276-PaintFence.go)   
 [552. Student Attendance Record II](./leetcode/552-StudentAttendanceRecordII.go)   
@@ -992,6 +990,7 @@
 [1553. Minimum Number of Days to Eat N Oranges](./leetcode/1553-MinimumNumberOfDaysToEatNOranges.go)   
 [2466. Count Ways To Build Good Strings](./leetcode/2466-CountWaysToBuildGoodStrings.go)   
 [3129. Find All Possible Stable Binary Arrays I](./leetcode/3129-FindAllPossibleStableBinaryArraysI.go)   
+[3130. Find All Possible Stable Binary Arrays II](./leetcode/3130-FindAllPossibleStableBinaryArraysII.go)   
 
 # Two Pointers
 [11. Container With Most Water](./leetcode/11-ContainerWithMostWater.go)   
