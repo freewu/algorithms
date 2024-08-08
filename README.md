@@ -2117,6 +2117,7 @@ LCR 075. 数组的相对排序
 [LCR 121. 寻找目标值 - 二维数组](./leetcode/LCR121-FindTargetInMatrix.go)   
 [LCR 122. 路径加密](./leetcode/LCR122-PathEncryption.go)   
 [LCR 123. 图书整理 I](./leetcode/LCR123-ReverseBookList.go)   
+[LCR 124. 推理二叉树](./leetcode/LCR124-DeduceBinaryTree.go)   
 [LCR 125. 图书整理 II](./leetcode/LCR125-BookQueue.go)   
 [LCR 126. 斐波那契数](./leetcode/LCR126-Fibonacci.go)   
 [LCR 127. 跳跃训练](./leetcode/LCR127-TrainWays.go)   
