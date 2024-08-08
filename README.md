@@ -736,6 +736,7 @@
 [3102. Minimize Manhattan Distances](./leetcode/3102-MinimizeManhattanDistances.go)   
 [3111. Minimum Rectangles to Cover Points](./leetcode/3111-MinimumRectanglesToCoverPoints.go)   
 [3115. Maximum Prime Difference](./leetcode/3115-MaximumPrimeDifference.go)   
+[3131. Find the Integer Added to Array I](./leetcode/3131-FindTheIntegerAddedToArrayI.go)   
 [3143. Maximum Points Inside the Square](./leetcode/3143-MaximumPointsInsideTheSquare.go)   
 [3190. Find Minimum Operations to Make All Elements Divisible by Three](./leetcode/3190-FindMinimumOperationsToMakeAllElementsDivisibleByThree.go)   
 [3195. Find the Minimum Area to Cover All Ones I](./leetcode/3195-FindTheMinimumAreaToCoverAllOnesI.go)   
