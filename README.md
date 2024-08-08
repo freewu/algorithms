@@ -2112,6 +2112,7 @@ LCR 075. 数组的相对排序
 [LCR 092. 将字符串翻转到单调递增](./leetcode/LCR092-FlipStringToMonotoneIncreasing.go)   
 [LCR 093. 最长的斐波那契子序列的长度](./leetcode/LCR093-LengthOfLongestFibonacciSubsequence.go)   
 [LCR 094. 分割回文串 II](./leetcode/LCR094-PalindromePartitioningII.go)   
+[LCR 095. 最长公共子序列](./leetcode/LCR095-LongestCommonSubsequence.go)   
 [LCR 120. 寻找文件副本](./leetcode/LCR120-FindRepeatDocument.go)   
 [LCR 121. 寻找目标值 - 二维数组](./leetcode/LCR121-FindTargetInMatrix.go)   
 [LCR 122. 路径加密](./leetcode/LCR122-PathEncryption.go)   
