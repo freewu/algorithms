@@ -1121,6 +1121,7 @@
 [779. K-th Symbol in Grammar](./leetcode/779-KthSymbolInGrammar.go)   
 [780. Reaching Points](./leetcode/780-ReachingPoints.go)   
 [788. Rotated Digits](./leetcode/788-RotatedDigits.go)   
+[793. Preimage Size of Factorial Zeroes Function](./leetcode/793-PreimageSizeOfFactorialZeroesFunction.go)   
 [808. Soup Servings](./leetcode/808-SoupServings.go)   
 [812. Largest Triangle Area](./leetcode/812-LargestTriangleArea.go)   
 [837. New 21 Game](./leetcode/837-New21Game.go)   
