@@ -421,6 +421,7 @@
 [795. Number of Subarrays with Bounded Maximum](./leetcode/795-NumberOfSubarraysWithBoundedMaximum.go)   
 [798. Smallest Rotation with Highest Score](./leetcode/798-SmallestRotationWithHighestScore.go)   
 [802. Find Eventual Safe States](./leetcode/802-FindEventualSafeStates.go)   
+[804. Unique Morse Code Words](./leetcode/804-UniqueMorseCodeWords.go)   
 [807. Max Increase to Keep City Skyline](./leetcode/807-MaxIncreaseToKeepCitySkyline.go)   
 [810. Chalkboard XOR Game](./leetcode/810-ChalkboardXORGame.go)   
 [820. Short Encoding of Words](./leetcode/820-ShortEncodingOfWords.go)   
