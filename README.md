@@ -1494,6 +1494,7 @@
 [981. Time Based Key-Value Store](./leetcode/981-TimeBasedKeyValueStore.go)   
 [1032. Stream of Characters](./leetcode/1032-StreamOfCharacters.go)   
 [1146. Snapshot Array](./leetcode/1146-SnapshotArray.go)   
+[1157. Online Majority Element In Subarray](./leetcode/1157-OnlineMajorityElementInSubarray.go)   
 [1166. Design File System](./leetcode/1166-DesignFileSystem.go)   
 [1206. Design Skiplist](./leetcode/1206-DesignSkiplist.go)   
 [1244. Design A Leaderboard](./leetcode/1244-DesignALeaderboard.go)   
