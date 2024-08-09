@@ -912,6 +912,7 @@
 [796. Rotate String](./leetcode/796-RotateString.go)   
 [800. Similar RGB Color](./leetcode/800-SimilarRGBColor.go)   
 [809. Expressive Words](./leetcode/809-ExpressiveWords.go)   
+[819. Most Common Word](./leetcode/819-MostCommonWord.go)   
 [824. Goat Latin](./leetcode/824-GoatLatin.go)   
 [859. Buddy Strings](./leetcode/859-BuddyStrings.go)   
 [926. Flip String to Monotone Increasing](./leetcode/926-FlipStringToMonotoneIncreasing.go)   
