@@ -428,6 +428,7 @@
 [825. Friends Of Appropriate Ages](./leetcode/825-FriendsOfAppropriateAges.go)   
 [826. Most Profit Assigning Work](./leetcode/826-MostProfitAssigningWork.go)   
 [839. Similar String Groups](./leetcode/839-SimilarStringGroups.go)   
+[840. Magic Squares In Grid](./leetcode/840-MagicSquaresInGrid.go)   
 [841. Keys and Rooms](./leetcode/841-KeysAndRooms.go)   
 [846. Hand of Straights](./leetcode/846-HandOfStraights.go)   
 [852. Peak Index in a Mountain Array](./leetcode/852-PeakIndexInAMountainArray.go)    
