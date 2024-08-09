@@ -424,6 +424,7 @@
 [802. Find Eventual Safe States](./leetcode/802-FindEventualSafeStates.go)   
 [803. Bricks Falling When Hit](./leetcode/803-BricksFallingWhenHit.go)   
 [804. Unique Morse Code Words](./leetcode/804-UniqueMorseCodeWords.go)   
+[805. Split Array With Same Average](./leetcode/805-SplitArrayWithSameAverage.go)   
 [806. Number of Lines To Write String](./leetcode/806-NumberOfLinesToWriteString.go)   
 [807. Max Increase to Keep City Skyline](./leetcode/807-MaxIncreaseToKeepCitySkyline.go)   
 [810. Chalkboard XOR Game](./leetcode/810-ChalkboardXORGame.go)   
