@@ -1,25 +1,16 @@
-package main 
+package main
 
-// 102. Binary Tree Level Order Traversal
-// Given the root of a binary tree, 
-// return the level order traversal of its nodes' values. (i.e., from left to right, level by level).
+// LCR 150. 彩灯装饰记录 II
+// 一棵圣诞树记作根节点为 root 的二叉树，节点值为该位置装饰彩灯的颜色编号。
+// 请按照从左到右的顺序返回每一层彩灯编号，每一层的结果记录于一行。
 
-// Example 1:
-// <img src="https://assets.leetcode.com/uploads/2021/02/19/tree1.jpg" />
-// Input: root = [3,9,20,null,null,15,7]
-// Output: [[3],[9,20],[15,7]]
+// 示例 1：
+// <img src="https://pic.leetcode.cn/1694758674-XYrUiV-%E5%89%91%E6%8C%87%20Offer%2032%20-%20I_%E7%A4%BA%E4%BE%8B1.png" />
+// 输入：root = [8,17,21,18,null,null,6]
+// 输出：[[8],[17,21],[18,6]]
 
-// Example 2:
-// Input: root = [1]
-// Output: [[1]]
-
-// Example 3:
-// Input: root = []
-// Output: []
-
-// Constraints:
-//     The number of nodes in the tree is in the range [0, 2000].
-//     -1000 <= Node.val <= 1000
+// 提示：
+//     节点总数 <= 1000
 
 import "fmt"
 
@@ -39,13 +30,13 @@ type TreeNode struct {
  * }
  */
 // BFS
-func levelOrder(root *TreeNode) [][]int {
+func decorateRecord(root *TreeNode) [][]int {
     res := [][]int{}
     if root == nil {
         return res
     }
-    // 准备一个队列 queue 先把 root 放里面
-    queue := []*TreeNode{root}
+     
+    queue := []*TreeNode{ root } // 准备一个队列 queue 先把 root 放里面
     // 有多个层就会循环多少次
     for len(queue) > 0 {
         l := len(queue)
@@ -70,7 +61,7 @@ func levelOrder(root *TreeNode) [][]int {
 }
 
 // DFS
-func levelOrder1(root *TreeNode) [][]int {
+func decorateRecord1(root *TreeNode) [][]int {
     res := [][]int{}
     var dfs func(node *TreeNode, level int)
     dfs = func(node *TreeNode, level int) {
@@ -93,18 +84,10 @@ func levelOrder1(root *TreeNode) [][]int {
 func main() {
     tree1 := &TreeNode {
         3,
-        &TreeNode{9, nil, nil},
-        &TreeNode {
-            20,
-            &TreeNode{15, nil, nil},
-            &TreeNode{7, nil, nil},
-        },
+        &TreeNode{ 9, nil, nil},
+        &TreeNode{ 20, &TreeNode{15, nil, nil}, &TreeNode{7, nil, nil}, },
     }
-    tree3 := &TreeNode {
-        1,
-        nil,
-        nil,
-    }
+    tree3 := &TreeNode { 1, nil, nil, }
     fmt.Println(levelOrder(tree1)) // [[3],[9,20],[15,7]]
     fmt.Println(levelOrder(nil)) // []
     fmt.Println(levelOrder(tree3)) // [1]
