@@ -482,6 +482,7 @@
 [1014. Best Sightseeing Pair](./leetcode/1014-BestSightseeingPair.go)   
 [1020. Number of Enclaves](./leetcode/1020-NumberOfEnclaves.go)   
 [1027. Longest Arithmetic Subsequence](./leetcode/1027-LongestArithmeticSubsequence.go)   
+[1029. Two City Scheduling](./leetcode/1029-TwoCityScheduling.go)   
 [1035. Uncrossed Lines](./leetcode/1035-UncrossedLines.go)   
 [1039. Minimum Score Triangulation of Polygon](./leetcode/1039-MinimumScoreTriangulationOfPolygon.go)   
 [1043. Partition Array for Maximum Sum](./leetcode/1043-PartitionArrayForMaximumSum.go)   
