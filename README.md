@@ -500,6 +500,7 @@
 [1065. Index Pairs of a String](./leetcode/1065-IndexPairsOfAString.go)   
 [1066. Campus Bikes II](./leetcode/1066-CampusBikesII.go)   
 [1074. Number of Submatrices That Sum to Target](./leetcode/1074-NumberOfSubmatricesThatSumToTarget.go)   
+[1085. Sum of Digits in the Minimum Number](./leetcode/1085-SumOfDigitsInTheMinimumNumber.go)   
 [1086. High Five](./leetcode/1086-HighFive.go)   
 [1090. Largest Values From Labels](./leetcode/1090-LargestValuesFromLabels.go)   
 [1091. Shortest Path in Binary Matrix](./leetcode/1091-ShortestPathInBinaryMatrix.go)   
