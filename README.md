@@ -716,6 +716,7 @@
 [2917. Find the K-or of an Array](./leetcode/2917-FindTheKOrOfAnArray.go)   
 [2923. Find Champion I](./leetcode/2923-FindChampionI.go)   
 [2924. Find Champion II](./leetcode/2924-FindChampionII.go)   
+[2940. Find Building Where Alice and Bob Can Meet](./leetcode/2940-FindBuildingWhereAliceAndBobCanMeet.go)   
 [2951. Find the Peaks](./leetcode/2951-FindThePeaks.go)   
 [2952. Minimum Number of Coins to be Added](./leetcode/2952-MinimumNumberOfCoinsToBeAdded.go)   
 [2956. Find Common Elements Between Two Arrays](./leetcode/2956-FindCommonElementsBetweenTwoArrays.go)   
