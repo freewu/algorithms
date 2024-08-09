@@ -2131,6 +2131,7 @@ LCR 075. 数组的相对排序
 [LCR 094. 分割回文串 II](./leetcode/LCR094-PalindromePartitioningII.go)   
 [LCR 095. 最长公共子序列](./leetcode/LCR095-LongestCommonSubsequence.go)   
 [LCR 096. 交错字符串](./leetcode/LCR096-InterleavingString.go)   
+[LCR 097. 不同的子序列](./leetcode/LCR097-DistinctSubsequences.go)   
 [LCR 120. 寻找文件副本](./leetcode/LCR120-FindRepeatDocument.go)   
 [LCR 121. 寻找目标值 - 二维数组](./leetcode/LCR121-FindTargetInMatrix.go)   
 [LCR 122. 路径加密](./leetcode/LCR122-PathEncryption.go)   
