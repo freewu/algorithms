@@ -420,6 +420,7 @@
 [794. Valid Tic-Tac-Toe State](./leetcode/794-ValidTicTacToeState.go)   
 [795. Number of Subarrays with Bounded Maximum](./leetcode/795-NumberOfSubarraysWithBoundedMaximum.go)   
 [798. Smallest Rotation with Highest Score](./leetcode/798-SmallestRotationWithHighestScore.go)   
+[801. Minimum Swaps To Make Sequences Increasing](./leetcode/801-MinimumSwapsToMakeSequencesIncreasing.go)   
 [802. Find Eventual Safe States](./leetcode/802-FindEventualSafeStates.go)   
 [803. Bricks Falling When Hit](./leetcode/803-BricksFallingWhenHit.go)   
 [804. Unique Morse Code Words](./leetcode/804-UniqueMorseCodeWords.go)   
