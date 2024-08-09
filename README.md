@@ -2158,6 +2158,7 @@ LCR 075. 数组的相对排序
 [LCR 148. 验证图书取出顺序](./leetcode/LCR148-ValidateStackSequences.go)   
 [LCR 149. 彩灯装饰记录 I](./leetcode/LCR149-DecorateRecord.go)   
 [LCR 150. 彩灯装饰记录 II](./leetcode/LCR150-DecorateRecordII.go)   
+[LCR 151. 彩灯装饰记录 III](./leetcode/LCR151-DecorateRecordIII.go)   
 [LCR 152. 验证二叉搜索树的后序遍历序列](./leetcode/LCR152-VerifyBinarySearchTreePostorderTraversalOrder.go)   
 [LCR 154. 复杂链表的复制](./leetcode/LCR154-CopyListWithRandomPointer.go)   
 [LCR 158. 库存管理 II](./leetcode/LCR158-InventoryManagementII.go)   
