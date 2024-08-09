@@ -1496,6 +1496,7 @@
 [1146. Snapshot Array](./leetcode/1146-SnapshotArray.go)   
 [1157. Online Majority Element In Subarray](./leetcode/1157-OnlineMajorityElementInSubarray.go)   
 [1166. Design File System](./leetcode/1166-DesignFileSystem.go)   
+[1172. Dinner Plate Stacks](./leetcode/1172-DinnerPlateStacks.go)   
 [1206. Design Skiplist](./leetcode/1206-DesignSkiplist.go)   
 [1244. Design A Leaderboard](./leetcode/1244-DesignALeaderboard.go)   
 [1286. Iterator for Combination](./leetcode/1286-IteratorForCombination.go)   
