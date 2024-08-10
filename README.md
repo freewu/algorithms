@@ -466,6 +466,7 @@
 [953. Verifying an Alien Dictionary](./leetcode/953-VerifyingAnAlienDictionary.go)   
 [954. Array of Doubled Pairs](./leetcode/954-ArrayOfDoubledPairs.go)   
 [956. Tallest Billboard](./leetcode/956-TallestBillboard.go)   
+[959. Regions Cut By Slashes](./leetcode/959-RegionsCutBySlashes.go)   
 [974. Subarray Sums Divisible by K](./leetcode/974-SubarraySumsDivisibleByK.go)   
 [975. Odd Even Jump](./leetcode/975-OddEvenJump.go)   
 [976. Largest Perimeter Triangle](./leetcode/976-LargestPerimeterTriangle.go)   
