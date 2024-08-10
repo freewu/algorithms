@@ -1190,6 +1190,7 @@
 [3162. Find the Number of Good Pairs I](./leetcode/3162-FindTheNumberOfGoodPairsI.go)   
 [3164. Find the Number of Good Pairs II](./leetcode/3164-FindTheNumberOfGoodPairsII.go)   
 [3200. Maximum Height of a Triangle](./leetcode/3200-MaximumHeightOfATriangle.go)   
+[3222. Find the Winning Player in Coin Game](./leetcode/3222-FindTheWinningPlayerInCoinGame.go)   
 
 # Stack
 [225. Implement Stack using Queues](./leetcode/225-ImplementStackUsingQueues.go)   
