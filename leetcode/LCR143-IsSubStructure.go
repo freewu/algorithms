@@ -44,8 +44,8 @@ func isSubStructure(A *TreeNode, B *TreeNode) bool {
 }
 
 func recur(a, b *TreeNode) bool {
-    if b == nil { return true }
-    if a == nil { return false }
+    if b == nil { return true } // b 可以有
+    if a == nil { return false } // a 必须有
     if a.Val == b.Val { return recur(a.Left, b.Left) && recur(a.Right, b.Right) }
     return false
 }
