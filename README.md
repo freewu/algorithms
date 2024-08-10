@@ -2164,6 +2164,7 @@ LCR 075. 数组的相对排序
 [LCR 140. 训练计划 II](./leetcode/LCR140-TrainningPlanII.go)   
 [LCR 141. 训练计划 III](./leetcode/LCR141-TrainningPlanIII.go)   
 [LCR 142. 训练计划 IV](./leetcode/LCR142-TrainningPlanIV.go)   
+[LCR 143. 子结构判断](./leetcode/LCR143-IsSubStructure.go)   
 [LCR 146. 螺旋遍历二维数组](./leetcode/LCR146-SpiralMatrix.go)   
 [LCR 147. 最小栈](./leetcode/LCR147-MinStack.go)   
 [LCR 148. 验证图书取出顺序](./leetcode/LCR148-ValidateStackSequences.go)   
