@@ -80,6 +80,25 @@ func maxUncrossedLines1(nums1 []int, nums2 []int) int {
     return res
 }
 
+func maxUncrossedLines2(nums1, nums2 []int) int {
+    m, n := len(nums1), len(nums2)
+    dp := make([][]int, m+1)
+    for i := range dp {
+        dp[i] = make([]int, n+1)
+    }
+    max := func (x, y int) int { if x > y { return x; }; return y; }
+    for i, v := range nums1 {
+        for j, w := range nums2 {
+            if v == w {
+                dp[i+1][j+1] = dp[i][j] + 1
+            } else {
+                dp[i+1][j+1] = max(dp[i][j+1], dp[i+1][j])
+            }
+        }
+    }
+    return dp[m][n]
+}
+
 func main() {
     // Explanation: We can draw 2 uncrossed lines as in the diagram.
     // We cannot draw 3 uncrossed lines, because the line from nums1[1] = 4 to nums2[2] = 4 will intersect the line from nums1[2]=2 to nums2[1]=2.
@@ -90,4 +109,8 @@ func main() {
     fmt.Println(maxUncrossedLines1([]int{1,4,2},[]int{1,2,4})) // 2
     fmt.Println(maxUncrossedLines1([]int{2,5,1,2,5},[]int{10,5,2,1,5,2})) // 3
     fmt.Println(maxUncrossedLines1([]int{1,3,7,1,7,5},[]int{1,9,2,5,1})) // 2
+
+    fmt.Println(maxUncrossedLines2([]int{1,4,2},[]int{1,2,4})) // 2
+    fmt.Println(maxUncrossedLines2([]int{2,5,1,2,5},[]int{10,5,2,1,5,2})) // 3
+    fmt.Println(maxUncrossedLines2([]int{1,3,7,1,7,5},[]int{1,9,2,5,1})) // 2
 }
