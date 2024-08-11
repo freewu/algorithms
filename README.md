@@ -1513,6 +1513,7 @@
 [1244. Design A Leaderboard](./leetcode/1244-DesignALeaderboard.go)   
 [1286. Iterator for Combination](./leetcode/1286-IteratorForCombination.go)   
 [1348. Tweet Counts Per Frequency](./leetcode/1348-TweetCountsPerFrequency.go)   
+[1352. Product of the Last K Numbers](./leetcode/1352-ProductOfTheLastKNumbers.go)   
 [1396. Design Underground System](./leetcode/1396-DesignUndergroundSystem.go)   
 [1429. First Unique Number](./leetcode/1429-FirstUniqueNumber.go)   
 [1472. Design Browser History](./leetcode/1472-DesignBrowserHistory.go)    
