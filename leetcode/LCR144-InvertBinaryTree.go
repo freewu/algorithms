@@ -1,24 +1,20 @@
 package main
 
-// 226. Invert Binary Tree  
-// Given the root of a binary tree, invert the tree, and return its root.
+// LCR 144. 翻转二叉树
+// 给定一棵二叉树的根节点 root，请左右翻转这棵二叉树，并返回其根节点。
 
-// Example 1:
-// <img src="https://assets.leetcode.com/uploads/2021/03/14/invert1-tree.jpg" />
-// Input: root = [4,2,7,1,3,6,9]
-// Output: [4,7,2,9,6,3,1]
+// 示例 1：
+//          5                   5
+//        /   \               /   \
+//       7     9     =>      9     7
+//      /  \  /  \         /  \   /  \
+//     8   3  2   4       4    2 3    9
+// <img src="https://pic.leetcode.cn/1694686821-qlvjod-%E7%BF%BB%E8%BD%AC%E4%BA%8C%E5%8F%89%E6%A0%91.png" />
+// 输入：root = [5,7,9,8,3,2,4]
+// 输出：[5,9,7,4,2,3,8]
 
-// Example 2:
-// <img src="https://assets.leetcode.com/uploads/2021/03/14/invert2-tree.jpg" />
-// Input: root = [2,1,3]
-// Output: [2,3,1]
-
-// Example 3:
-// Input: root = []
-// Output: []
-
-// Constraints:
-//     The number of nodes in the tree is in the range [0, 100].
+// 提示：
+//     树中节点数目范围在 [0, 100] 内
 //     -100 <= Node.val <= 100
 
 import "fmt"
@@ -38,8 +34,7 @@ type TreeNode struct {
  *     Right *TreeNode
  * }
  */
-// dfs
-func invertTree(root *TreeNode) *TreeNode {
+func mirrorTree(root *TreeNode) *TreeNode {
     if root == nil {
         return nil
     }
@@ -47,16 +42,16 @@ func invertTree(root *TreeNode) *TreeNode {
     // invert child node of current root
     root.Left, root.Right = root.Right, root.Left   
     // invert subtree with DFS
-    invertTree(root.Left)
-    invertTree(root.Right)
+    mirrorTree(root.Left)
+    mirrorTree(root.Right)
     return root
 }
 
-func invertTree1(root *TreeNode) *TreeNode {
+func mirrorTree1(root *TreeNode) *TreeNode {
     if root == nil{
         return nil
     }
-    root.Left, root.Right = invertTree1(root.Right), invertTree1(root.Left)
+    root.Left, root.Right = mirrorTree1(root.Right), mirrorTree1(root.Left)
     return root
 }
 
@@ -70,7 +65,7 @@ func main() {
         &TreeNode { 2, &TreeNode{1, nil, nil}, &TreeNode{3, nil, nil}, },
         &TreeNode { 7, &TreeNode{6, nil, nil}, &TreeNode{9, nil, nil}, },
     }
-    fmt.Println(invertTree(tree1))
+    fmt.Println(mirrorTree(tree1))
     // Example 2:
     // <img src="https://assets.leetcode.com/uploads/2021/03/14/invert2-tree.jpg" />
     // Input: root = [2,1,3]
@@ -80,18 +75,18 @@ func main() {
         &TreeNode{1, nil, nil},
         &TreeNode{3, nil, nil},
     }
-    fmt.Println(invertTree(tree2))
+    fmt.Println(mirrorTree(tree2))
 
     tree11 := &TreeNode{
         4,
         &TreeNode { 2, &TreeNode{1, nil, nil}, &TreeNode{3, nil, nil}, },
         &TreeNode { 7, &TreeNode{6, nil, nil}, &TreeNode{9, nil, nil}, },
     }
-    fmt.Println(invertTree1(tree11))
+    fmt.Println(mirrorTree1(tree11))
     tree12 := &TreeNode{
         2,
         &TreeNode{1, nil, nil},
         &TreeNode{3, nil, nil},
     }
-    fmt.Println(invertTree1(tree12))
+    fmt.Println(mirrorTree1(tree12))
 }
