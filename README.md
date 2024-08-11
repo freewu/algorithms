@@ -2151,6 +2151,7 @@ LCR 075. 数组的相对排序
 [LCR 096. 交错字符串](./leetcode/LCR096-InterleavingString.go)   
 [LCR 097. 不同的子序列](./leetcode/LCR097-DistinctSubsequences.go)   
 [LCR 098. 不同路径](./leetcode/LCR098-UniquePaths.go)   
+[LCR 099. 最小路径和](./leetcode/LCR099-MinimumPathSum.go)   
 [LCR 120. 寻找文件副本](./leetcode/LCR120-FindRepeatDocument.go)   
 [LCR 121. 寻找目标值 - 二维数组](./leetcode/LCR121-FindTargetInMatrix.go)   
 [LCR 122. 路径加密](./leetcode/LCR122-PathEncryption.go)   
