@@ -1,34 +1,28 @@
 package main
 
-// 79. Word Search
-// Given an m x n grid of characters board and a string word, return true if word exists in the grid.
-// The word can be constructed from letters of sequentially adjacent cells, 
-// where adjacent cells are horizontally or vertically neighboring. 
-// The same letter cell may not be used more than once.
-
-// Example 1:
+// LCR 129. 字母迷宫
+// 字母迷宫游戏初始界面记作 m x n 二维字符串数组 grid，请判断玩家是否能在 grid 中找到目标单词 target。
+// 注意：寻找单词时 必须 按照字母顺序，通过水平或垂直方向相邻的单元格内的字母构成，同时，同一个单元格内的字母 不允许被重复使用 。
 // <img src="https://assets.leetcode.com/uploads/2020/11/04/word2.jpg" />
-// Input: board = [["A","B","C","E"],["S","F","C","S"],["A","D","E","E"]], word = "ABCCED"
-// Output: true
 
-// Example 2:
-// <img src="https://assets.leetcode.com/uploads/2020/11/04/word-1.jpg" />
-// Input: board = [["A","B","C","E"],["S","F","C","S"],["A","D","E","E"]], word = "SEE"
-// Output: true
+// 示例 1：
+// 输入：grid = [["A","B","C","E"],["S","F","C","S"],["A","D","E","E"]], target = "ABCCED"
+// 输出：true
 
-// Example 3:
-// <img src="https://assets.leetcode.com/uploads/2020/10/15/word3.jpg" />
-// Input: board = [["A","B","C","E"],["S","F","C","S"],["A","D","E","E"]], word = "ABCB"
-// Output: false
+// 示例 2：
+// 输入：grid = [["A","B","C","E"],["S","F","C","S"],["A","D","E","E"]], target = "SEE"
+// 输出：true
 
-// Constraints:
-//     m == board.length
-//     n = board[i].length
+// 示例 3：
+// 输入：grid = [["A","B","C","E"],["S","F","C","S"],["A","D","E","E"]], target = "ABCB"
+// 输出：false
+
+// 提示：
+//     m == grid.length
+//     n = grid[i].length
 //     1 <= m, n <= 6
-//     1 <= word.length <= 15
-//     board and word consists of only lowercase and uppercase English letters.
-    
-// Follow up: Could you use search pruning to make your solution faster with a larger board?
+//     1 <= target.length <= 15
+//     grid 和 target 仅由大小写英文字母组成
 
 // 解题思路:
 //     在地图上的任意一个起点开始，
@@ -37,7 +31,7 @@ package main
 
 import "fmt"
 
-func exist(board [][]byte, word string) bool {
+func wordPuzzle(board [][]byte, word string) bool {
     dir := [][]int{ {-1, 0}, {0, 1}, {1, 0}, {0, -1} }
     visited := make([][]bool, len(board))
     for i := 0; i < len(visited); i++ {
@@ -75,7 +69,7 @@ func exist(board [][]byte, word string) bool {
 }
 
 // best solution dfs
-func exist1(board [][]byte, word string) bool {
+func wordPuzzle1(board [][]byte, word string) bool {
     type Cell struct {
         Row, Col int
     }
@@ -120,7 +114,6 @@ func exist1(board [][]byte, word string) bool {
                 }
             }
         }
-
         return false
     }
     for i := range board {
@@ -138,7 +131,7 @@ func exist1(board [][]byte, word string) bool {
 }
 
 // bfs
-func exist2(board [][]byte, word string) bool {
+func wordPuzzle2(board [][]byte, word string) bool {
     var backtrack func (i, j int, word string, board [][]byte) bool
     backtrack = func (i, j int, word string, board [][]byte) bool {
         if len(word) == 0 {
@@ -180,15 +173,15 @@ func main() {
         {'S', 'F', 'C', 'S'}, 
         {'A', 'D', 'E', 'E'},
     }
-    fmt.Printf("exist(bytes,\"ABCCED\") = %v\n",exist(bytes,"ABCCED")) // true
-    fmt.Printf("exist(bytes,\"SEE\") = %v\n",exist(bytes,"SEE")) // true
-    fmt.Printf("exist(bytes,\"ABCB\") = %v\n",exist(bytes,"ABCB")) // false
+    fmt.Printf("wordPuzzle(bytes,\"ABCCED\") = %v\n",wordPuzzle(bytes,"ABCCED")) // true
+    fmt.Printf("wordPuzzle(bytes,\"SEE\") = %v\n",wordPuzzle(bytes,"SEE")) // true
+    fmt.Printf("wordPuzzle(bytes,\"ABCB\") = %v\n",wordPuzzle(bytes,"ABCB")) // false
 
-    fmt.Printf("exist1(bytes,\"ABCCED\") = %v\n",exist1(bytes,"ABCCED")) // true
-    fmt.Printf("exist1(bytes,\"SEE\") = %v\n",exist1(bytes,"SEE")) // true
-    fmt.Printf("exist1(bytes,\"ABCB\") = %v\n",exist1(bytes,"ABCB")) // false
+    fmt.Printf("wordPuzzle1(bytes,\"ABCCED\") = %v\n",wordPuzzle1(bytes,"ABCCED")) // true
+    fmt.Printf("wordPuzzle1(bytes,\"SEE\") = %v\n",wordPuzzle1(bytes,"SEE")) // true
+    fmt.Printf("wordPuzzle1(bytes,\"ABCB\") = %v\n",wordPuzzle1(bytes,"ABCB")) // false
 
-    fmt.Printf("exist2(bytes,\"ABCCED\") = %v\n",exist2(bytes,"ABCCED")) // true
-    fmt.Printf("exist2(bytes,\"SEE\") = %v\n",exist2(bytes,"SEE")) // true
-    fmt.Printf("exist2(bytes,\"ABCB\") = %v\n",exist2(bytes,"ABCB")) // false
+    fmt.Printf("wordPuzzle2(bytes,\"ABCCED\") = %v\n",wordPuzzle2(bytes,"ABCCED")) // true
+    fmt.Printf("wordPuzzle2(bytes,\"SEE\") = %v\n",wordPuzzle2(bytes,"SEE")) // true
+    fmt.Printf("wordPuzzle2(bytes,\"ABCB\") = %v\n",wordPuzzle2(bytes,"ABCB")) // false
 }
