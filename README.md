@@ -636,6 +636,7 @@
 [2073. Time Needed to Buy Tickets](./leetcode/2073-TimeNeededToBuyTickets.go)   
 [2079. Watering Plants](./leetcode/2079-WateringPlants.go)   
 [2085. Count Common Words With One Occurrence](./leetcode/2085-CountCommonWordsWithOneOccurrence.go)   
+[2088. Count Fertile Pyramids in a Land](./leetcode/2088-CountFertilePyramidsInALand.go)   
 [2093. Minimum Cost to Reach City With Discounts](./leetcode/2093-MinimumCostToReachCityWithDiscounts.go)   
 [2101. Detonate the Maximum Bombs](./leetcode/2101-DetonateTheMaximumBombs.go)   
 [2105. Watering Plants II](./leetcode/2105-WateringPlantsII.go)   
