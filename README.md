@@ -1927,6 +1927,7 @@ LCR 075. 数组的相对排序
 [3230. Customer Purchasing Behavior Analysis](./leetcode/3230-CustomerPurchasingBehaviorAnalysis.sql)   
 [3236. CEO Subordinate Hierarchy](./leetcode/3236-CEOSubordinateHierarchy.sql)   
 [3246. Premier League Table Ranking](./leetcode/3246-PremierLeagueTableRanking.sql)   
+[3252. Premier League Table Ranking II](./leetcode/3252-PremierLeagueTableRankingII.sql)   
 
 
 # Shell
