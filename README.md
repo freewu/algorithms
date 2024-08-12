@@ -2172,6 +2172,7 @@ LCR 075. 数组的相对排序
 [LCR 127. 跳跃训练](./leetcode/LCR127-TrainWays.go)   
 [LCR 128. 库存管理 I](./leetcode/LCR128-StockManagementI.go)   
 [LCR 129. 字母迷宫](./leetcode/LCR129-WordPuzzle.go)   
+[LCR 130. 衣橱整理](./leetcode/LCR130-WardrobeFinishing.go)   
 [LCR 131. 砍竹子 I](./leetcode/LCR131-CuttingBamboo.go)   
 [LCR 132. 砍竹子 II](./leetcode/LCR132-CuttingBambooII.go)   
 [LCR 133. 位 1 的个数](./leetcode/LCR133-NumberOfOneBits.go)   
