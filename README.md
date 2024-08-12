@@ -922,6 +922,7 @@
 [796. Rotate String](./leetcode/796-RotateString.go)   
 [800. Similar RGB Color](./leetcode/800-SimilarRGBColor.go)   
 [809. Expressive Words](./leetcode/809-ExpressiveWords.go)   
+[816. Ambiguous Coordinates](./leetcode/816-AmbiguousCoordinates.go)   
 [819. Most Common Word](./leetcode/819-MostCommonWord.go)   
 [821. Shortest Distance to a Character](./leetcode/821-ShortestDistanceToACharacter.go)   
 [824. Goat Latin](./leetcode/824-GoatLatin.go)   
