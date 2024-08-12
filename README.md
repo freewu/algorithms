@@ -760,6 +760,7 @@
 [3131. Find the Integer Added to Array I](./leetcode/3131-FindTheIntegerAddedToArrayI.go)   
 [3132. Find the Integer Added to Array II](./leetcode/3132-FindTheIntegerAddedToArrayII.go)   
 [3143. Maximum Points Inside the Square](./leetcode/3143-MaximumPointsInsideTheSquare.go)   
+[3151. Special Array I](./leetcode/3151-SpecialArrayI.go)   
 [3190. Find Minimum Operations to Make All Elements Divisible by Three](./leetcode/3190-FindMinimumOperationsToMakeAllElementsDivisibleByThree.go)   
 [3195. Find the Minimum Area to Cover All Ones I](./leetcode/3195-FindTheMinimumAreaToCoverAllOnesI.go)   
 [3206. Alternating Groups I](./leetcode/3206-AlternatingGroupsI.go)   
