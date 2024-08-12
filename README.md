@@ -429,6 +429,7 @@
 [807. Max Increase to Keep City Skyline](./leetcode/807-MaxIncreaseToKeepCitySkyline.go)   
 [810. Chalkboard XOR Game](./leetcode/810-ChalkboardXORGame.go)   
 [811. Subdomain Visit Count](./leetcode/811-SubdomainVisitCount.go)   
+[813. Largest Sum of Averages](./leetcode/813-LargestSumOfAverages.go)   
 [815. Bus Routes](./leetcode/815-BusRoutes.go)   
 [820. Short Encoding of Words](./leetcode/820-ShortEncodingOfWords.go)   
 [825. Friends Of Appropriate Ages](./leetcode/825-FriendsOfAppropriateAges.go)   
