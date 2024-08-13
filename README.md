@@ -928,6 +928,7 @@
 [819. Most Common Word](./leetcode/819-MostCommonWord.go)   
 [821. Shortest Distance to a Character](./leetcode/821-ShortestDistanceToACharacter.go)   
 [824. Goat Latin](./leetcode/824-GoatLatin.go)   
+[831. Masking Personal Information](./leetcode/831-MaskingPersonalInformation.go)   
 [859. Buddy Strings](./leetcode/859-BuddyStrings.go)   
 [926. Flip String to Monotone Increasing](./leetcode/926-FlipStringToMonotoneIncreasing.go)   
 [936. Stamping The Sequence](./leetcode/936-StampingTheSequence.go)   
