@@ -569,6 +569,7 @@
 [1493. Longest Subarray of 1's After Deleting One Element](./leetcode/1493-LongestSubarrayOf1sAfterDeletingOneElement.go)   
 [1498. Number of Subsequences That Satisfy the Given Sum Condition](./leetcode/1498-NumberOfSubsequencesThatSatisfyTheGivenSumCondition.go)   
 [1502. Can Make Arithmetic Progression From Sequence](./leetcode/1502-CanMakeArithmeticProgressionFromSequence.go)   
+[1504. Count Submatrices With All Ones](./leetcode/1504-CountSubmatricesWithAllOnes.go)   
 [1508. Range Sum of Sorted Subarray Sums](./leetcode/1508-RangeSumOfSortedSubarraySums.go)   
 [1509. Minimum Difference Between Largest and Smallest Value in Three Moves](./leetcode/1509-MinimumDifferenceBetweenLargestAndSmallestValueInThreeMoves.go)   
 [1512. Number of Good Pairs](./leetcode/1512-NumberOfGoodPairs.go)   
