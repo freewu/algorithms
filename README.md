@@ -2234,6 +2234,7 @@ LCR 075. 数组的相对排序
 [LCR 186. 文物朝代判断](./leetcode/LCR186-CheckDynasty.go)   
 [LCR 187. 破冰游戏](./leetcode/LCR187-IceBreakingGame.go)   
 [LCR 188. 买卖芯片的最佳时机](./leetcode/LCR188-BestTiming.go)   
+[LCR 189. 设计机械累加器](./leetcode/LCR189-MechanicalAccumulator.go)   
 [LCR 190. 加密运算](./leetcode/LCR190-EncryptionCalculate.go)   
 [LCR 191. 按规则计算统计结果](./leetcode/LCR191-StatisticalResult.go)   
 [LCR 192. 把字符串转换成整数 (atoi)](./leetcode/LCR192-StringToInteger.go)   
