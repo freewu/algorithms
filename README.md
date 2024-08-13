@@ -930,6 +930,7 @@
 [824. Goat Latin](./leetcode/824-GoatLatin.go)   
 [831. Masking Personal Information](./leetcode/831-MaskingPersonalInformation.go)   
 [859. Buddy Strings](./leetcode/859-BuddyStrings.go)   
+[871. Minimum Number of Refueling Stops](./leetcode/871-MinimumNumberOfRefuelingStops.go)   
 [926. Flip String to Monotone Increasing](./leetcode/926-FlipStringToMonotoneIncreasing.go)   
 [936. Stamping The Sequence](./leetcode/936-StampingTheSequence.go)   
 [940. Distinct Subsequences II](./leetcode/940-DistinctSubsequencesII.go)   
