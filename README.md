@@ -746,6 +746,7 @@
 [3033. Modify the Matrix](./leetcode/3033-ModifyTheMatrix.go)   
 [3038. Maximum Number of Operations With the Same Score I](./leetcode/3038-MaximumNumberOfOperationsWithTheSameScoreI.go)   
 [3040. Maximum Number of Operations With the Same Score II](./leetcode/3040-MaximumNumberOfOperationsWithTheSameScoreII.go)   
+[3041. Maximize Consecutive Elements in an Array After Modification](./leetcode/3041-MaximizeConsecutiveElementsInAnArrayAfterModification.go)   
 [3067. Count Pairs of Connectable Servers in a Weighted Tree Network](./leetcode/3067-CountPairsOfConnectableServersInAWeightedTreeNetwork.go)   
 [3068. Find the Maximum Sum of Node Values](./leetcode/3068-FindTheMaximumSumOfNodeValues.go)   
 [3072. Distribute Elements Into Two Arrays II](./leetcode/3072-DistributeElementsIntoTwoArraysII.go)   
