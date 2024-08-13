@@ -759,6 +759,7 @@
 [3102. Minimize Manhattan Distances](./leetcode/3102-MinimizeManhattanDistances.go)   
 [3111. Minimum Rectangles to Cover Points](./leetcode/3111-MinimumRectanglesToCoverPoints.go)   
 [3115. Maximum Prime Difference](./leetcode/3115-MaximumPrimeDifference.go)   
+[3127. Make a Square with the Same Color](./leetcode/3127-MakeASquareWithTheSameColor.go)   
 [3131. Find the Integer Added to Array I](./leetcode/3131-FindTheIntegerAddedToArrayI.go)   
 [3132. Find the Integer Added to Array II](./leetcode/3132-FindTheIntegerAddedToArrayII.go)   
 [3143. Maximum Points Inside the Square](./leetcode/3143-MaximumPointsInsideTheSquare.go)   
