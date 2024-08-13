@@ -65,6 +65,28 @@ func isArraySpecial1(nums []int, queries [][]int) []bool {
     return res
 }
 
+func isArraySpecial2(nums []int, queries [][]int) []bool {
+    cache := make([]int, len(nums))
+    for i := 0; i < len(nums) - 1; {
+        k := i+1
+        for ; k < len(nums); k++ {
+            if nums[k]%2 == nums[k-1]%2 {
+                break
+            }
+        }
+        for ; i < k; i++ {
+            cache[i] = k-1
+        }
+    }
+    cache[len(cache)-1] = len(cache)-1
+    res := make([]bool, 0, len(queries))
+    for _, q := range queries {
+        l, r := q[0], q[1]
+        res = append(res, cache[l] >= r)
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: nums = [3,4,1,2,6], queries = [[0,4]]
@@ -82,4 +104,7 @@ func main() {
 
     fmt.Println(isArraySpecial1([]int{3,4,1,2,6},[][]int{{0,4}})) // [false]
     fmt.Println(isArraySpecial1([]int{4,3,1,6},[][]int{{0,2},{2,3}})) // [false,true]
+
+    fmt.Println(isArraySpecial2([]int{3,4,1,2,6},[][]int{{0,4}})) // [false]
+    fmt.Println(isArraySpecial2([]int{4,3,1,6},[][]int{{0,2},{2,3}})) // [false,true]
 }
