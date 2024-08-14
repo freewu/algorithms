@@ -90,6 +90,30 @@ func maxScore1(grid [][]int) int {
     return res
 }
 
+func maxScore2(grid [][]int) int {
+    res, inf, m, n := -1 << 31, -1 << 31, len(grid), len(grid[0])
+    dp, memo := make([][]int, m), make([][]int, m)
+    for i, _ := range dp {
+        dp[i], memo[i] = make([]int, n), make([]int, n)
+    }
+    memo[m-1][n-1] = grid[m-1][n-1]
+    max := func (x, y int) int { if x > y { return x; }; return y; }
+    for i := m-1; i >= 0; i-- {
+        for j := n-1; j >= 0; j-- {
+            dp[i][j] = inf
+            if i < m-1 {
+                dp[i][j] = max(dp[i][j], memo[i+1][j] - grid[i][j])
+            }
+            if j < n-1 {
+                dp[i][j] = max(dp[i][j], memo[i][j+1] - grid[i][j])
+            }
+            memo[i][j] = max(grid[i][j], dp[i][j] + grid[i][j])
+            res = max(res, dp[i][j])
+        }
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // <img src="https://assets.leetcode.com/uploads/2024/03/14/grid1.png" />
@@ -126,4 +150,8 @@ func main() {
     fmt.Println(maxScore1(grid1)) // 9
     fmt.Println(maxScore1(grid2)) // -1
     fmt.Println(maxScore1(grid3)) // -2
+    
+    fmt.Println(maxScore2(grid1)) // 9
+    fmt.Println(maxScore2(grid2)) // -1
+    fmt.Println(maxScore2(grid3)) // -2
 }
