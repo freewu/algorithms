@@ -2180,6 +2180,7 @@ LCR 075. 数组的相对排序
 [LCR 099. 最小路径和](./leetcode/LCR099-MinimumPathSum.go)   
 [LCR 100. 三角形最小路径和](./leetcode/LCR100-Triangle.go)   
 [LCR 101. 分割等和子集](./leetcode/LCR101-PartitionEqualSubsetSum.go)   
+[LCR 102. 目标和](./leetcode/LCR102-TargetSum.go)   
 [LCR 120. 寻找文件副本](./leetcode/LCR120-FindRepeatDocument.go)   
 [LCR 121. 寻找目标值 - 二维数组](./leetcode/LCR121-FindTargetInMatrix.go)   
 [LCR 122. 路径加密](./leetcode/LCR122-PathEncryption.go)   
