@@ -515,6 +515,7 @@
 [1105. Filling Bookcase Shelves](./leetcode/1105-FillingBookcaseShelves.go)   
 [1122. Relative Sort Array](./leetcode/1122-RelativeSortArray.go)   
 [1125. Smallest Sufficient Team](./leetcode/1125-SmallestSufficientTeam.go)   
+[1130. Minimum Cost Tree From Leaf Values](./leetcode/1130-MinimumCostTreeFromLeafValues.go)   
 [1133. Largest Unique Number](./leetcode/1133-LargestUniqueNumber.go)   
 [1140. Stone Game II](./leetcode/1140-StoneGameII.go)   
 [1150. Check If a Number Is Majority Element in a Sorted Array](./leetcode/1150-CheckIfANumberIsMajorityElementInASortedArray.go)   
