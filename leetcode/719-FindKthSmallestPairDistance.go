@@ -80,6 +80,30 @@ func smallestDistancePair1(nums []int, k int) int {
     return low
 }
 
+func smallestDistancePair2(nums []int, k int) int {   
+    sort.Ints(nums)
+    n := len(nums)
+    l, r := 0, nums[n - 1] - nums[0]
+    for l < r {   
+        guess := l + (r - l) / 2
+        count := 0
+        i, j := 0, 1 
+        for i < n {
+            for j < n && nums[j] - nums[i] <= guess {
+               j++ 
+            } 
+            count = count + (j - i - 1)
+            i++
+        }
+        if count >= k {
+           r = guess 
+        } else {
+           l = guess + 1 
+        }
+    }
+    return l
+}
+
 func main() {
     // Example 1:
     // Input: nums = [1,3,1], k = 1
@@ -102,4 +126,8 @@ func main() {
     fmt.Println(smallestDistancePair1([]int{1,3,1}, 1)) // 0
     fmt.Println(smallestDistancePair1([]int{1,1,1}, 2)) // 0
     fmt.Println(smallestDistancePair1([]int{1,6,1}, 3)) // 5
+
+    fmt.Println(smallestDistancePair2([]int{1,3,1}, 1)) // 0
+    fmt.Println(smallestDistancePair2([]int{1,1,1}, 2)) // 0
+    fmt.Println(smallestDistancePair2([]int{1,6,1}, 3)) // 5
 }
