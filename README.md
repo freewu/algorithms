@@ -960,6 +960,7 @@
 [1189. Maximum Number of Balloons](./leetcode/1189-MaximumNumberOfBalloons.go)   
 [1190. Reverse Substrings Between Each Pair of Parentheses](./leetcode/1190-ReverseSubstringsBetweenEachPairOfParentheses.go)   
 [1208. Get Equal Substrings Within Budget](./leetcode/1208-GetEqualSubstringsWithinBudget.go)   
+[1216. Valid Palindrome III](./leetcode/1216-ValidPalindromeIII.go)   
 [1236. Web Crawler](./leetcode/1236-WebCrawler.go)   
 [1239. Maximum Length of a Concatenated String with Unique Characters](./leetcode/1239-MaximumLengthOfAConcatenatedStringWithUniqueCharacters.go)   
 [1249. Minimum Remove to Make Valid Parentheses](./leetcode/1249-MinimumRemoveToMakeValidParentheses.go)   
