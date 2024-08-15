@@ -432,6 +432,7 @@
 [813. Largest Sum of Averages](./leetcode/813-LargestSumOfAverages.go)   
 [815. Bus Routes](./leetcode/815-BusRoutes.go)   
 [820. Short Encoding of Words](./leetcode/820-ShortEncodingOfWords.go)   
+[822. Card Flipping Game](./leetcode/822-CardFlippingGame.go)   
 [825. Friends Of Appropriate Ages](./leetcode/825-FriendsOfAppropriateAges.go)   
 [826. Most Profit Assigning Work](./leetcode/826-MostProfitAssigningWork.go)   
 [839. Similar String Groups](./leetcode/839-SimilarStringGroups.go)   
