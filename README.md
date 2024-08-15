@@ -2213,6 +2213,7 @@ LCR 075. 数组的相对排序
 [LCR 142. 训练计划 IV](./leetcode/LCR142-TrainningPlanIV.go)   
 [LCR 143. 子结构判断](./leetcode/LCR143-IsSubStructure.go)   
 [LCR 144. 翻转二叉树](./leetcode/LCR144-InvertBinaryTree.go)   
+[LCR 145. 判断对称二叉树](./leetcode/LCR145-SymmetricTree.go)   
 [LCR 146. 螺旋遍历二维数组](./leetcode/LCR146-SpiralMatrix.go)   
 [LCR 147. 最小栈](./leetcode/LCR147-MinStack.go)   
 [LCR 148. 验证图书取出顺序](./leetcode/LCR148-ValidateStackSequences.go)   
