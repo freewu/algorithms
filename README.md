@@ -991,6 +991,7 @@
 [1653. Minimum Deletions to Make String Balanced](./leetcode/1653-MinimumDeletionsToMakeStringBalanced.go)   
 [1657. Determine if Two Strings Are Close](./leetcode/1657-DetermineIfTwoStringsAreClose.go)   
 [1668. Maximum Repeating Substring](./leetcode/1668-MaximumRepeatingSubstring.go)   
+[1682. Longest Palindromic Subsequence II](./leetcode/1682-LongestPalindromicSubsequenceII.go)   
 [1702. Maximum Binary String After Change](./leetcode/1702-MaximumBinaryStringAfterChange.go)   
 [1717. Maximum Score From Removing Substrings](./leetcode/1717-MaximumScoreFromRemovingSubstrings.go)   
 [1750. Minimum Length of String After Deleting Similar Ends](./leetcode/1750-MinimumLengthOfStringAfterDeletingSimilarEnds.go)    
