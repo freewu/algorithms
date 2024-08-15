@@ -435,6 +435,7 @@
 [822. Card Flipping Game](./leetcode/822-CardFlippingGame.go)   
 [825. Friends Of Appropriate Ages](./leetcode/825-FriendsOfAppropriateAges.go)   
 [826. Most Profit Assigning Work](./leetcode/826-MostProfitAssigningWork.go)   
+[827. Making A Large Island](./leetcode/827-MakingALargeIsland.go)   
 [839. Similar String Groups](./leetcode/839-SimilarStringGroups.go)   
 [840. Magic Squares In Grid](./leetcode/840-MagicSquaresInGrid.go)   
 [841. Keys and Rooms](./leetcode/841-KeysAndRooms.go)   
