@@ -940,6 +940,7 @@
 [819. Most Common Word](./leetcode/819-MostCommonWord.go)   
 [821. Shortest Distance to a Character](./leetcode/821-ShortestDistanceToACharacter.go)   
 [824. Goat Latin](./leetcode/824-GoatLatin.go)   
+[828. Count Unique Characters of All Substrings of a Given String](./leetcode/828-CountUniqueCharactersOfAllSubstringsOfAGivenString.go)   
 [831. Masking Personal Information](./leetcode/831-MaskingPersonalInformation.go)   
 [859. Buddy Strings](./leetcode/859-BuddyStrings.go)   
 [871. Minimum Number of Refueling Stops](./leetcode/871-MinimumNumberOfRefuelingStops.go)   
