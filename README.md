@@ -454,6 +454,7 @@
 [879. Profitable Schemes](./leetcode/879-ProfitableSchemes.go)   
 [881. Boats to Save People](./leetcode/881-BoatsToSavePeople.go)   
 [885. Spiral Matrix III](./leetcode/885-SpiralMatrixIII.go)   
+[888. Fair Candy Swap](./leetcode/888-FairCandySwap.go)   
 [896. Monotonic Array](./leetcode/896-MonotonicArray.go)   
 [902. Numbers At Most N Given Digit Set](./leetcode/902-NumbersAtMostNGivenDigitSet.go)   
 [907. Sum of Subarray Minimums](./leetcode/907-SumOfSubarrayMinimums.go)   
