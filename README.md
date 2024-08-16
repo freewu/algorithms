@@ -507,6 +507,7 @@
 [1057. Campus Bikes](./leetcode/1057-CampusBikes.go)   
 [1058. Minimize Rounding Error to Meet Target](./leetcode/1058-MinimizeRoundingErrorToMeetTarget.go)   
 [1060. Missing Element in Sorted Array](./leetcode/1060-MissingElementInSortedArray.go)   
+[1063. Number of Valid Subarrays](./leetcode/1063-NumberOfValidSubarrays.go)   
 [1064. Fixed Point](./leetcode/1064-FixedPoint.go)   
 [1065. Index Pairs of a String](./leetcode/1065-IndexPairsOfAString.go)   
 [1066. Campus Bikes II](./leetcode/1066-CampusBikesII.go)   
