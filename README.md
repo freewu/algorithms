@@ -505,6 +505,7 @@
 [1051. Height Checker](./leetcode/1051-HeightChecker.go)   
 [1052. Grumpy Bookstore Owner](./leetcode/1052-GrumpyBookstoreOwner.go)   
 [1057. Campus Bikes](./leetcode/1057-CampusBikes.go)   
+[1058. Minimize Rounding Error to Meet Target](./leetcode/1058-MinimizeRoundingErrorToMeetTarget.go)   
 [1060. Missing Element in Sorted Array](./leetcode/1060-MissingElementInSortedArray.go)   
 [1064. Fixed Point](./leetcode/1064-FixedPoint.go)   
 [1065. Index Pairs of a String](./leetcode/1065-IndexPairsOfAString.go)   
