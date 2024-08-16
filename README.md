@@ -2257,6 +2257,7 @@ LCR 075. 数组的相对排序
 [LCR 171. 训练计划 V](./leetcode/LCR171-TrainningPlanV.go)   
 [LCR 172. 统计目标成绩的出现次数](./leetcode/LCR172-CountTarget.go)   
 [LCR 173. 点名](./leetcode/LCR173-TakeAttendance.go)   
+[LCR 175. 计算二叉树的深度](./leetcode/LCR175-CalculateBinaryTreeDepth.go)   
 [LCR 176. 判断是否为平衡二叉树](./leetcode/LCR176-BalancedBinaryTree.go)   
 [LCR 177. 撞色搭配](./leetcode/LCR177-SockCollocation.go)   
 [LCR 178. 训练计划 VI](./leetcode/LCR178-TrainningPlanVI.go)   

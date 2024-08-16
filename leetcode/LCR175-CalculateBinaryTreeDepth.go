@@ -1,21 +1,16 @@
 package main
 
-// 104. Maximum Depth of Binary Tree
-// Given the root of a binary tree, return its maximum depth.
-// A binary tree's maximum depth is the number of nodes along the longest path from the root node down to the farthest leaf node.
+// LCR 175. 计算二叉树的深度
+// 某公司架构以二叉树形式记录，请返回该公司的层级数。
 
-// Example 1:
-// <img src="https://assets.leetcode.com/uploads/2020/11/26/tmp-tree.jpg" />
-// Input: root = [3,9,20,null,null,15,7]
-// Output: 3
+// 示例 1：
+// <img src="https://pic.leetcode.cn/1695101942-FSrxqu-image.png" />
+// 输入：root = [1, 2, 2, 3, null, null, 5, 4, null, null, 4]
+// 输出: 4
+// 解释: 上面示例中的二叉树的最大深度是 4，沿着路径 1 -> 2 -> 3 -> 4 或 1 -> 2 -> 5 -> 4 到达叶节点的最长路径上有 4 个节点。
 
-// Example 2:
-// Input: root = [1,null,2]
-// Output: 2
- 
-// Constraints:
-//     The number of nodes in the tree is in the range [0, 10^4].
-//     -100 <= Node.val <= 100
+// 提示：
+//     节点总数 <= 10000
 
 import "fmt"
 
@@ -35,7 +30,7 @@ type TreeNode struct {
  * }
  */
 // dfs
-func maxDepth(root *TreeNode) int {
+func calculateDepth(root *TreeNode) int {
     res := 0
     var dfs func (node *TreeNode, count int)
     dfs = func (node *TreeNode, count int) {
@@ -52,7 +47,7 @@ func maxDepth(root *TreeNode) int {
 }
 
 // bfs
-func maxDepth1(root *TreeNode) int {
+func calculateDepth1(root *TreeNode) int {
     if root == nil {
         return 0
     }
@@ -74,11 +69,11 @@ func maxDepth1(root *TreeNode) int {
 }
 
 // 递归
-func maxDepth2(root *TreeNode) int {
+func calculateDepth2(root *TreeNode) int {
     if root == nil {
         return 0
     }
-    l, r := maxDepth2(root.Left) + 1, maxDepth2(root.Right) + 1
+    l, r := calculateDepth2(root.Left) + 1, calculateDepth2(root.Right) + 1
     max := func (a int, b int) int { if a > b { return a; }; return b; }
     return max(l,r)
 }
@@ -93,18 +88,18 @@ func main() {
             &TreeNode{7, nil, nil},
         },
     }
-    fmt.Println(maxDepth(tree1)) // 3
+    fmt.Println(calculateDepth(tree1)) // 3
 
     tree2 := &TreeNode {
         1,
         nil,
         &TreeNode{2, nil, nil},
     }
-    fmt.Println(maxDepth(tree2)) // 2
+    fmt.Println(calculateDepth(tree2)) // 2
 
-    fmt.Println(maxDepth1(tree1)) // 3
-    fmt.Println(maxDepth1(tree2)) // 2
+    fmt.Println(calculateDepth1(tree1)) // 3
+    fmt.Println(calculateDepth1(tree2)) // 2
 
-    fmt.Println(maxDepth2(tree1)) // 3
-    fmt.Println(maxDepth2(tree2)) // 2
+    fmt.Println(calculateDepth2(tree1)) // 3
+    fmt.Println(calculateDepth2(tree2)) // 2
 }
