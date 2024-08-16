@@ -1035,6 +1035,7 @@
 [3104. Find Longest Self-Contained Substring](./leetcode/3104-FindLongestSelfContainedSubstring.go)   
 [3106. Lexicographically Smallest String After Operations With Constraint](./leetcode/3106-LexicographicallySmallestStringAfterOperationsWithConstraint.go)   
 [3110. Score of a String](./leetcode/3110-ScoreOfAString.go)   
+[3137. Minimum Number of Operations to Make Word K-Periodic](./leetcode/3137-MinimumNumberOfOperationsToMakeWordKPeriodic.go)   
 
 # Dynamic Programming
 [276. Paint Fence](./leetcode/276-PaintFence.go)   
