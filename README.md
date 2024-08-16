@@ -1406,6 +1406,7 @@
 [743. Network Delay Time](./leetcode/743-NetworkDelayTime.go)   
 [753. Cracking the Safe](./leetcode/753-CrackingTheSafe.go)   
 [847. Shortest Path Visiting All Nodes](./leetcode/847-ShortestPathVisitingAllNodes.go)   
+[886. Possible Bipartition](./leetcode/886-PossibleBipartition.go)   
 [924. Minimize Malware Spread](./leetcode/924-MinimizeMalwareSpread.go)    
 [928. Minimize Malware Spread II](./leetcode/928-MinimizeMalwareSpreadII.go)   
 [1059. All Paths from Source Lead to Destination](./leetcode/1059-AllPathsFromSourceLeadToDestination.go)   
