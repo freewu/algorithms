@@ -30,7 +30,7 @@ func validSubarrays(nums []int) int {
     nums = append(nums, -1)
     queue := []int{ n }
     for i := n-1; i >= 0; i-- {
-        for nums[i] <= nums[queue[len(queue) - 1]] {
+        for nums[i] <= nums[queue[len(queue) - 1]] { // 子数组最左边的元素不大于子数组中的其他元素 
             queue = queue[:len(queue) - 1]
         }
         res += queue[len(queue) - 1] - i
