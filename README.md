@@ -954,6 +954,7 @@
 [828. Count Unique Characters of All Substrings of a Given String](./leetcode/828-CountUniqueCharactersOfAllSubstringsOfAGivenString.go)   
 [830. Positions of Large Groups](./leetcode/830-PositionsOfLargeGroups.go)   
 [831. Masking Personal Information](./leetcode/831-MaskingPersonalInformation.go)   
+[833. Find And Replace in String](./leetcode/833-FindAndReplaceInString.go)   
 [859. Buddy Strings](./leetcode/859-BuddyStrings.go)   
 [871. Minimum Number of Refueling Stops](./leetcode/871-MinimumNumberOfRefuelingStops.go)   
 [880. Decoded String at Index](./leetcode/880-DecodedStringAtIndex.go)   
