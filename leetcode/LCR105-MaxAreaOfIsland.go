@@ -95,6 +95,41 @@ func maxAreaOfIsland1(grid [][]int) int {
     return res
 }
 
+func maxAreaOfIsland2(grid [][]int) int {
+    res := 0
+    max := func (x, y int) int { if x > y { return x; }; return y; }
+    getArea := func (p []int, grid [][]int) int {
+        grid[p[0]][p[1]] = 0
+        dirs := [][]int{ {-1, 0}, {1, 0}, {0, -1}, {0, 1}, }
+        area := 0
+        queue := [][]int{p}
+        for len(queue) != 0 {
+            p = queue[0]
+            queue = queue[1:]
+            area++
+            for _, d := range dirs {
+                x := p[0] + d[0]
+                y := p[1] + d[1]
+                if x >= 0 && x < len(grid) && y >= 0 && y < len(grid[0]) {
+                    if grid[x][y] == 1 {
+                        queue = append(queue, []int{x, y})
+                        grid[x][y] = 0
+                    }
+                }
+            }
+        }
+        return area
+    }
+    for i := 0; i < len(grid); i++ {
+        for j := 0; j < len(grid[0]); j++ {
+            if grid[i][j] == 1  {
+                res = max(res, getArea([]int{i, j}, grid))
+            }
+        }
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // <img scr="" />
@@ -120,6 +155,35 @@ func main() {
     }
     fmt.Println(maxAreaOfIsland(island2)) // 0
 
-    fmt.Println(maxAreaOfIsland1(island1)) // 6
-    fmt.Println(maxAreaOfIsland1(island2)) // 0
+    island11 := [][]int{
+        {0,0,1,0,0,0,0,1,0,0,0,0,0},
+        {0,0,0,0,0,0,0,1,1,1,0,0,0},
+        {0,1,1,0,1,0,0,0,0,0,0,0,0},
+        {0,1,0,0,1,1,0,0,1,0,1,0,0},
+        {0,1,0,0,1,1,0,0,1,1,1,0,0},
+        {0,0,0,0,0,0,0,0,0,0,1,0,0},
+        {0,0,0,0,0,0,0,1,1,1,0,0,0},
+        {0,0,0,0,0,0,0,1,1,0,0,0,0},
+    }
+    fmt.Println(maxAreaOfIsland1(island11)) // 6
+    island12 := [][]int{
+        {0,0,0,0,0,0,0,0},
+    }
+    fmt.Println(maxAreaOfIsland1(island12)) // 0
+
+    island21 := [][]int{
+        {0,0,1,0,0,0,0,1,0,0,0,0,0},
+        {0,0,0,0,0,0,0,1,1,1,0,0,0},
+        {0,1,1,0,1,0,0,0,0,0,0,0,0},
+        {0,1,0,0,1,1,0,0,1,0,1,0,0},
+        {0,1,0,0,1,1,0,0,1,1,1,0,0},
+        {0,0,0,0,0,0,0,0,0,0,1,0,0},
+        {0,0,0,0,0,0,0,1,1,1,0,0,0},
+        {0,0,0,0,0,0,0,1,1,0,0,0,0},
+    }
+    fmt.Println(maxAreaOfIsland2(island21)) // 6
+    island22 := [][]int{
+        {0,0,0,0,0,0,0,0},
+    }
+    fmt.Println(maxAreaOfIsland2(island22)) // 0
 }
