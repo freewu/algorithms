@@ -523,6 +523,7 @@
 [1101. The Earliest Moment When Everyone Become Friends](./leetcode/1101-TheEarliestMomentWhenEveryoneBecomeFriends.go)   
 [1102. Path With Maximum Minimum Value](./leetcode/1102-PathWithMaximumMinimumValue.go)   
 [1105. Filling Bookcase Shelves](./leetcode/1105-FillingBookcaseShelves.go)   
+[1121. Divide Array Into Increasing Sequences](./leetcode/1121-DivideArrayIntoIncreasingSequences.go)   
 [1122. Relative Sort Array](./leetcode/1122-RelativeSortArray.go)   
 [1125. Smallest Sufficient Team](./leetcode/1125-SmallestSufficientTeam.go)   
 [1130. Minimum Cost Tree From Leaf Values](./leetcode/1130-MinimumCostTreeFromLeafValues.go)   
