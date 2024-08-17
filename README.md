@@ -1014,6 +1014,7 @@
 [2129. Capitalize the Title](./leetcode/2129-CapitalizeTheTitle.go)   
 [2182. Construct String With Repeat Limit](./leetcode/2182-ConstructStringWithRepeatLimit.go)   
 [2288. Apply Discount to Prices](./leetcode/2288-ApplyDiscountToPrices.go)   
+[2322. Minimum Score After Removals on a Tree](./leetcode/2322-MinimumScoreAfterRemovalsOnATree.go)   
 [2370. Longest Ideal Subsequence](./leetcode/2370-LongestIdealSubsequence.go)   
 [2390. Removing Stars From a String](./leetcode/2390-RemovingStarsFromAString.go)   
 [2486. Append Characters to String to Make Subsequence](./leetcode/2486-AppendCharactersToStringToMakeSubsequence.go)   
