@@ -630,6 +630,7 @@
 [1905. Count Sub Islands](./leetcode/1905-CountSubIslands.go)   
 [1914. Cyclically Rotating a Grid](./leetcode/1914-CyclicallyRotatingAGrid.go)   
 [1926. Nearest Exit from Entrance in Maze](./leetcode/1926-NearestExitFromEntranceInMaze.go)   
+[1937. Maximum Number of Points with Cost](./leetcode/1937-MaximumNumberOfPointsWithCost.go)   
 [1938. Maximum Genetic Difference Query](./leetcode/1938-MaximumGeneticDifferenceQuery.go)   
 [1953. Maximum Number of Weeks for Which You Can Work](./leetcode/1953-MaximumNumberOfWeeksForWhichYouCanWork.go)   
 [1958. Check if Move is Legal](./leetcode/1958-CheckIfMoveIsLegal.go)   
