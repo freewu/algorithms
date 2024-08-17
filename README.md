@@ -975,6 +975,7 @@
 [1087. Brace Expansion](./leetcode/1087-BraceExpansion.go)   
 [1092. Shortest Common Supersequence](./leetcode/1092-ShortestCommonSupersequence.go)   
 [1100. Find K-Length Substrings With No Repeated Characters](./leetcode/1100-FindKLengthSubstringsWithNoRepeatedCharacters.go)   
+[1119. Remove Vowels from a String](./leetcode/1119-RemoveVowelsFromAString.go)   
 [1143. Longest Common Subsequence](./leetcode/1143-LongestCommonSubsequence.go)   
 [1153. String Transforms Into Another String](./leetcode/1153-StringTransformsIntoAnotherString.go)   
 [1156. Swap For Longest Repeated Character Substring](./leetcode/1156-SwapForLongestRepeatedCharacterSubstring.go)   
