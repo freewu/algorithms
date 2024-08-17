@@ -33,6 +33,25 @@ func canDivideIntoSubsequences(nums []int, k int) bool {
     return m * k <= len(nums) // 只要判断 数量 * 序列长度 <= 数组长度
 }
 
+func canDivideIntoSubsequences1(nums []int, k int) bool {
+    if k == 1 {
+        return true
+    }
+    pre, cnt := nums[0], 0
+    for i := 0; i < len(nums); i++ {
+        if pre == nums[i] {
+            cnt++
+        } else {
+            if cnt * k > len(nums) {
+                return false
+            }
+            pre = nums[i]
+            cnt = 1
+        }
+    }
+    return cnt * k <= len(nums)
+}
+
 func main() {
     // Example 1:
     // Input: nums = [1,2,2,3,3,4,4], k = 3
@@ -44,4 +63,7 @@ func main() {
     // Output: false
     // Explanation: There is no way to divide the array using the conditions required.
     fmt.Println(canDivideIntoSubsequences([]int{5,6,6,7,8}, 3)) // false
+
+    fmt.Println(canDivideIntoSubsequences1([]int{1,2,2,3,3,4,4}, 3)) // true
+    fmt.Println(canDivideIntoSubsequences1([]int{5,6,6,7,8}, 3)) // false
 }
