@@ -2214,6 +2214,7 @@ LCR 075. 数组的相对排序
 [LCR 102. 目标和](./leetcode/LCR102-TargetSum.go)   
 [LCR 103. 零钱兑换](./leetcode/LCR103-CoinChange.go)   
 [LCR 104. 组合总和 Ⅳ](./leetcode/LCR104-CombinationSumIV.go)   
+[LCR 105. 岛屿的最大面积](./leetcode/LCR105-MaxAreaOfIsland.go)   
 [LCR 120. 寻找文件副本](./leetcode/LCR120-FindRepeatDocument.go)   
 [LCR 121. 寻找目标值 - 二维数组](./leetcode/LCR121-FindTargetInMatrix.go)   
 [LCR 122. 路径加密](./leetcode/LCR122-PathEncryption.go)   
