@@ -966,6 +966,7 @@
 [838. Push Dominoes](./leetcode/838-PushDominoes.go)   
 [842. Split Array into Fibonacci Sequence](./leetcode/842-SplitArrayIntoFibonacciSequence.go)   
 [844. Backspace String Compare](./leetcode/844-BackspaceStringCompare.go)   
+[848. Shifting Letters](./leetcode/848-ShiftingLetters.go)   
 [859. Buddy Strings](./leetcode/859-BuddyStrings.go)   
 [871. Minimum Number of Refueling Stops](./leetcode/871-MinimumNumberOfRefuelingStops.go)   
 [880. Decoded String at Index](./leetcode/880-DecodedStringAtIndex.go)   
