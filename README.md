@@ -530,6 +530,7 @@
 [1133. Largest Unique Number](./leetcode/1133-LargestUniqueNumber.go)   
 [1140. Stone Game II](./leetcode/1140-StoneGameII.go)   
 [1150. Check If a Number Is Majority Element in a Sorted Array](./leetcode/1150-CheckIfANumberIsMajorityElementInASortedArray.go)   
+[1151. Minimum Swaps to Group All 1's Together](./leetcode/1151-MinimumSwapsToGroupAllOnesTogether.go)   
 [1162. As Far from Land as Possible](./leetcode/1162-AsFarFromLandAsPossible.go)   
 [1167. Minimum Cost to Connect Sticks](./leetcode/1167-MinimumCostToConnectSticks.go)   
 [1182. Shortest Distance to Target Color](./leetcode/1182-ShortestDistanceToTargetColor.go)   
