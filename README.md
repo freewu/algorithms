@@ -790,6 +790,7 @@
 [3208. Alternating Groups II](./leetcode/3208-AlternatingGroupsII.go)   
 [3215. Count Triplets with Even XOR Set Bits II](./leetcode/3215-CountTripletsWithEvenXORSetBitsII.go)   
 [3221. Maximum Array Hopping Score II](./leetcode/3221-MaximumArrayHoppingScoreII.go)   
+[3235. Check if the Rectangle Corner Is Reachable](./leetcode/3235-CheckIfTheRectangleCornerIsReachable.go)   
 [3237. Alt and Tab Simulation](./leetcode/3237-AltAndTabSimulation.go)   
 [3245. Alternating Groups III](./leetcode/3245-AlternatingGroupsIII.go)   
 
@@ -1252,6 +1253,7 @@
 [3164. Find the Number of Good Pairs II](./leetcode/3164-FindTheNumberOfGoodPairsII.go)   
 [3200. Maximum Height of a Triangle](./leetcode/3200-MaximumHeightOfATriangle.go)   
 [3222. Find the Winning Player in Coin Game](./leetcode/3222-FindTheWinningPlayerInCoinGame.go)   
+[3235. Check if the Rectangle Corner Is Reachable](./leetcode/3235-CheckIfTheRectangleCornerIsReachable.go)   
 
 # Stack
 [225. Implement Stack using Queues](./leetcode/225-ImplementStackUsingQueues.go)   
