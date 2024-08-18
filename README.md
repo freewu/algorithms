@@ -443,6 +443,7 @@
 [840. Magic Squares In Grid](./leetcode/840-MagicSquaresInGrid.go)   
 [841. Keys and Rooms](./leetcode/841-KeysAndRooms.go)   
 [843. Guess the Word](./leetcode/843-GuessTheWord.go)   
+[845. Longest Mountain in Array](./leetcode/845-LongestMountainInArray.go)   
 [846. Hand of Straights](./leetcode/846-HandOfStraights.go)   
 [852. Peak Index in a Mountain Array](./leetcode/852-PeakIndexInAMountainArray.go)    
 [857. Minimum Cost to Hire K Workers](./leetcode/857-MinimumCostToHireKWorkers.go)    
