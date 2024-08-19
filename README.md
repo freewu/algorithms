@@ -2269,6 +2269,7 @@ LCR 075. 数组的相对排序
 [LCR 153. 二叉树中和为目标值的路径](./leetcode/LCR153-BinaryTreePathSum.go)   
 [LCR 154. 复杂链表的复制](./leetcode/LCR154-CopyListWithRandomPointer.go)   
 [LCR 155. 将二叉搜索树转化为排序的双向链表](./leetcode/LCR155-ConvertBinarySearchTreeToSortedDoublyLinkedList.go)   
+[LCR 156. 序列化与反序列化二叉树](./leetcode/LCR156-SerializeAndDeserializeBinaryTree.go)   
 [LCR 157. 套餐内商品的排列顺序](./leetcode/LCR157-GoodsOrder.go)   
 [LCR 158. 库存管理 II](./leetcode/LCR158-InventoryManagementII.go)   
 [LCR 159. 库存管理 III](./leetcode/LCR159-InventoryManagementIII.go)   
