@@ -1264,6 +1264,7 @@
 [3099. Harshad Number](./leetcode/3099-HarshadNumber.go)   
 [3102. Minimize Manhattan Distances](./leetcode/3102-MinimizeManhattanDistances.go)   
 [3128. Right Triangles](./leetcode/3128-RightTriangles.go)   
+[3154. Find Number of Ways to Reach the K-th Stair](./leetcode/3154-FindNumberOfWaysToReachTheKthStair.go)   
 [3162. Find the Number of Good Pairs I](./leetcode/3162-FindTheNumberOfGoodPairsI.go)   
 [3164. Find the Number of Good Pairs II](./leetcode/3164-FindTheNumberOfGoodPairsII.go)   
 [3200. Maximum Height of a Triangle](./leetcode/3200-MaximumHeightOfATriangle.go)   
