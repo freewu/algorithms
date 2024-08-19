@@ -491,6 +491,7 @@
 [992. Subarrays with K Different Integers](./leetcode/992-SubarraysWithKDifferentIntegers.go)   
 [994. Rotting Oranges](./leetcode/994-RottingOranges.go)   
 [995. Minimum Number of K Consecutive Bit Flips](./leetcode/995-MinimumNumberOfKConsecutiveBitFlips.go)   
+[996. Number of Squareful Arrays](./leetcode/996-NumberOfSquarefulArrays.go)   
 [997. Find the Town Judge](./leetcode/997-FindTheTownJudge.go)   
 [999. Available Captures for Rook](./leetcode/999-AvailableCapturesForRook.go)   
 [1000. Minimum Cost to Merge Stones](./leetcode/1000-MinimumCostToMergeStones.go)   

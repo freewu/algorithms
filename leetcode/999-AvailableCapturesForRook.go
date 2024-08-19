@@ -119,7 +119,7 @@ func main() {
     // Explanation:
     // The bishops are blocking the rook from attacking any of the pawns.
     board2 := [][]byte{
-        {'.','.','.','.','.','.','.'},
+        {'.','.','.','.','.','.','.','.'},
         {'.','p','p','p','p','p','.','.'},
         {'.','p','p','B','p','p','.','.'},
         {'.','p','B','R','B','p','.','.'},
