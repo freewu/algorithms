@@ -1513,6 +1513,7 @@
 [1318. Minimum Flips to Make a OR b Equal to c](./leetcode/1318-MinimumFlipsToMakeAORBEqualToC.go)   
 [3141. Maximum Hamming Distances](./leetcode/3141-MaximumHammingDistances.go)   
 [3199. Count Triplets with Even XOR Set Bits I](./leetcode/3199-CountTripletsWithEvenXORSetBitsI.go)   
+[3007. Maximum Number That Sum of the Prices Is Less Than or Equal to K](./leetcode/3007-MaximumNumberThatSumOfThePricesIsLessThanOrEqualToK.go)   
 
 # Design
 [146. LRU Cache](./leetcode/146-LRUCache.go)   
