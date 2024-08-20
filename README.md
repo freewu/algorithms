@@ -1251,6 +1251,7 @@
 [1922. Count Good Numbers](./leetcode/1922-CountGoodNumbers.go)   
 [2081. Sum of k-Mirror Numbers](./leetcode/2081-SumOfKMirrorNumbers.go)   
 [2101. Detonate the Maximum Bombs](./leetcode/2101-DetonateTheMaximumBombs.go)   
+[2128. Remove All Ones With Row and Column Flips](./leetcode/2128-RemoveAllOnesWithRowAndColumnFlips.go)   
 [2165. Smallest Value of the Rearranged Number](./leetcode/2165-SmallestValueOfTheRearrangedNumber.go)   
 [2235. Add Two Integers](./leetcode/2235-AddTwoIntegers.go)   
 [2376. Count Special Integers](./leetcode/2376-CountSpecialIntegers.go)   
