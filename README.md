@@ -490,6 +490,7 @@
 [982. Triples with Bitwise AND Equal To Zero](./leetcode/982-TriplesWithBitwiseANDEqualToZero.go)   
 [983. Minimum Cost For Tickets](./leetcode/983-MinimumCostForTickets.go)   
 [985. Sum of Even Numbers After Queries](./leetcode/985-SumOfEvenNumbersAfterQueries.go)   
+[986. Interval List Intersections](./leetcode/986-IntervalListIntersections.go)   
 [989. Add to Array-Form of Integer](./leetcode/989-AddToArrayFormOfInteger.go)   
 [990. Satisfiability of Equality Equations](./leetcode/990-SatisfiabilityOfEqualityEquations.go)   
 [992. Subarrays with K Different Integers](./leetcode/992-SubarraysWithKDifferentIntegers.go)   
