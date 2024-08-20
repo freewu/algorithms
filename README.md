@@ -1252,6 +1252,7 @@
 [2101. Detonate the Maximum Bombs](./leetcode/2101-DetonateTheMaximumBombs.go)   
 [2165. Smallest Value of the Rearranged Number](./leetcode/2165-SmallestValueOfTheRearrangedNumber.go)   
 [2235. Add Two Integers](./leetcode/2235-AddTwoIntegers.go)   
+[2376. Count Special Integers](./leetcode/2376-CountSpecialIntegers.go)   
 [2413. Smallest Even Multiple](./leetcode/2413-SmallestEvenMultiple.go)   
 [2469. Convert the Temperature](./leetcode/2469-ConvertTheTemperature.go)   
 [2485. Find the Pivot Integer](./leetcode/2485-FindThePivotInteger.go)   
