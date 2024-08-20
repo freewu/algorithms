@@ -487,6 +487,7 @@
 [976. Largest Perimeter Triangle](./leetcode/976-LargestPerimeterTriangle.go)   
 [977. Squares of a Sorted Array](./leetcode/977-SquaresOfASortedArray.go)   
 [980. Unique Paths III](./leetcode/980-UniquePathsIII.go)   
+[982. Triples with Bitwise AND Equal To Zero](./leetcode/982-TriplesWithBitwiseANDEqualToZero.go)   
 [983. Minimum Cost For Tickets](./leetcode/983-MinimumCostForTickets.go)   
 [990. Satisfiability of Equality Equations](./leetcode/990-SatisfiabilityOfEqualityEquations.go)   
 [992. Subarrays with K Different Integers](./leetcode/992-SubarraysWithKDifferentIntegers.go)   
