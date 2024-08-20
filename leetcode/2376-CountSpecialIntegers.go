@@ -113,6 +113,33 @@ func countSpecialNumbers1(n int) int {
     return dfs(0, 0, true, false) // 注意:开始阶段,isLimit=true,用来限制第一步做决定时,不能超过限制
 }
 
+func countSpecialNumbers2(n int) int {
+    res, visited, arr := 0, make([]bool, 10), []int{}
+    perm := func (n, k int) int {
+        res := 1
+        for ; k > 0; n, k = n-1, k-1 {
+            res *= n
+        }
+        return res
+    }
+    for n = n + 1; n > 0; n /= 10 {
+        arr = append([]int{n % 10}, arr...)
+    }
+    for i := 0; i < len(arr)-1; i++ {
+        res += 9 * perm(9, i)
+    }
+    for i, upper := range arr {
+        for digit := 0; digit < upper; digit++ {
+            if (i > 0 || digit > 0) && !visited[digit] {
+                res += perm(9-i, len(arr)-1-i)
+            }
+        }
+        if visited[upper] { break }
+        visited[upper] = true
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: n = 20
@@ -134,4 +161,8 @@ func main() {
     fmt.Println(countSpecialNumbers1(20)) // 19
     fmt.Println(countSpecialNumbers1(5)) // 5
     fmt.Println(countSpecialNumbers1(135)) // 110
+
+    fmt.Println(countSpecialNumbers2(20)) // 19
+    fmt.Println(countSpecialNumbers2(5)) // 5
+    fmt.Println(countSpecialNumbers2(135)) // 110
 }
