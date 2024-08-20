@@ -489,6 +489,7 @@
 [980. Unique Paths III](./leetcode/980-UniquePathsIII.go)   
 [982. Triples with Bitwise AND Equal To Zero](./leetcode/982-TriplesWithBitwiseANDEqualToZero.go)   
 [983. Minimum Cost For Tickets](./leetcode/983-MinimumCostForTickets.go)   
+[985. Sum of Even Numbers After Queries](./leetcode/985-SumOfEvenNumbersAfterQueries.go)   
 [990. Satisfiability of Equality Equations](./leetcode/990-SatisfiabilityOfEqualityEquations.go)   
 [992. Subarrays with K Different Integers](./leetcode/992-SubarraysWithKDifferentIntegers.go)   
 [994. Rotting Oranges](./leetcode/994-RottingOranges.go)   
