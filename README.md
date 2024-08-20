@@ -1371,6 +1371,7 @@
 [872. Leaf-Similar Trees](./leetcode/872-Leaf-SimilarTrees.go)   
 [889. Construct Binary Tree from Preorder and Postorder Traversal ](./leetcode/889-ConstructBinaryTreeFromPreorderAndPostorderTraversal.go)   
 [894. All Possible Full Binary Trees](./leetcode/894-AllPossibleFullBinaryTrees.go)   
+[897. Increasing Order Search Tree](./leetcode/897-IncreasingOrderSearchTree.go)   
 [919. Complete Binary Tree Inserter](./leetcode/919-CompleteBinaryTreeInserter.go)   
 [938. Range Sum of BST](./leetcode/938-RangeSumOfBST.go)   
 [965. Univalued Binary Tree](./leetcode/965-UnivaluedBinaryTree.go)   
