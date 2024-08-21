@@ -2013,6 +2013,7 @@ LCR 075. 数组的相对排序
 [3236. CEO Subordinate Hierarchy](./leetcode/3236-CEOSubordinateHierarchy.sql)   
 [3246. Premier League Table Ranking](./leetcode/3246-PremierLeagueTableRanking.sql)   
 [3252. Premier League Table Ranking II](./leetcode/3252-PremierLeagueTableRankingII.sql)   
+[3262. Find Overlapping Shifts](./leetcode/3262-FindOverlappingShifts.sql)   
 
 
 # Shell
