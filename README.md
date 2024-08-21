@@ -2327,6 +2327,7 @@ LCR 075. 数组的相对排序
 [LCP 02. Deep Dark Fraction](./leetcode/LCP02-DeepDarkFraction.go)   
 [LCP 24. 数字游戏](./leetcode/LCP24-NumberGame.go)   
 [LCP 30. 魔塔游戏](./leetcode/LCP30-MagicTowerGame.go)   
+[LCP 39. 无人机方阵](./leetcode/LCP39-DroneArray.go)   
 [LCP 40. 心算挑战](./leetcode/LCP40-MaxmiumScore.go)   
 [LCP 54. 夺回据点](./leetcode/LCP54-RetrieveTheStronghold.go)   
 [LCP 61. 气温变化趋势](./leetcode/LCP61-TemperatureTrend.go)   
