@@ -447,6 +447,7 @@
 [846. Hand of Straights](./leetcode/846-HandOfStraights.go)   
 [849. Maximize Distance to Closest Person](./leetcode/849-MaximizeDistanceToClosestPerson.go)   
 [850. Rectangle Area II](./leetcode/850-RectangleAreaII.go)   
+[851. Loud and Rich](./leetcode/851-LoudAndRich.go)   
 [852. Peak Index in a Mountain Array](./leetcode/852-PeakIndexInAMountainArray.go)    
 [857. Minimum Cost to Hire K Workers](./leetcode/857-MinimumCostToHireKWorkers.go)    
 [860. Lemonade Change](./leetcode/860-LemonadeChange.go)   
