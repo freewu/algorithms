@@ -20,6 +20,7 @@ package main
 
 import "fmt"
 import "math/bits"
+import "strconv"
 
 func findComplement(num int) int {
     res, fac := 0, 1
@@ -33,6 +34,20 @@ func findComplement(num int) int {
 
 func findComplement1(num int) int {
     return (1 << (bits.Len(uint(num))) - 1) ^ num
+}
+
+func findComplement2(num int) int {
+    bin := ""
+    for num != 0 {
+        if num % 2 == 0 {
+            bin = "1" + bin
+        } else {
+            bin = "0" + bin
+        }
+        num = num / 2
+    }
+    decimal, _ := strconv.ParseInt(bin, 2, 64)
+	return int(decimal)
 }
 
 func main() {
@@ -49,4 +64,7 @@ func main() {
 
     fmt.Println(findComplement1(5)) // 2
     fmt.Println(findComplement1(1)) // 0
+
+    fmt.Println(findComplement2(5)) // 2
+    fmt.Println(findComplement2(1)) // 0
 }
