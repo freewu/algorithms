@@ -455,6 +455,7 @@
 [861. Score After Flipping Matrix](./leetcode/861-ScoreAfterFlippingMatrix.go)   
 [864. Shortest Path to Get All Keys](./leetcode/864-ShortestPathToGetAllKeys.go)   
 [867. Transpose Matrix](./leetcode/867-TransposeMatrix.go)   
+[870. Advantage Shuffle](./leetcode/870-AdvantageShuffle.go)   
 [873. Length of Longest Fibonacci Subsequence](./leetcode/873-LengthOfLongestFibonacciSubsequence.go)   
 [874. Walking Robot Simulation](./leetcode/874-WalkingRobotSimulation.go)   
 [875. Koko Eating Bananas](./leetcode/875-KokoEatingBananas.go)   
