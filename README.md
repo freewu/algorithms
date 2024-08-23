@@ -983,6 +983,7 @@
 [842. Split Array into Fibonacci Sequence](./leetcode/842-SplitArrayIntoFibonacciSequence.go)   
 [844. Backspace String Compare](./leetcode/844-BackspaceStringCompare.go)   
 [848. Shifting Letters](./leetcode/848-ShiftingLetters.go)   
+[854. K-Similar Strings](./leetcode/854-KSimilarStrings.go)   
 [856. Score of Parentheses](./leetcode/856-ScoreOfParentheses.go)   
 [859. Buddy Strings](./leetcode/859-BuddyStrings.go)   
 [871. Minimum Number of Refueling Stops](./leetcode/871-MinimumNumberOfRefuelingStops.go)   
