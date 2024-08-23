@@ -78,6 +78,28 @@ func canThreePartsEqualSum1(arr []int) bool {
     return false
 }
 
+func canThreePartsEqualSum2(arr []int) bool {
+    for i := 1; i < len(arr); i++ {
+        arr[i] += arr[i-1]
+    }
+    preLastIndex, lastIndex := len(arr)-2, len(arr)-1
+    if arr[lastIndex] % 3 > 0 {
+        return false
+    }
+    oneThird, twoThirds := arr[lastIndex] / 3, arr[lastIndex] / 3 * 2
+    for i := 0; i < preLastIndex; i++ {
+        if arr[i] != oneThird {
+            continue
+        }
+        for j := i + 1; j < lastIndex; j++ {
+            if arr[j] == twoThirds && arr[lastIndex]-arr[j] == oneThird {
+                return true
+            }
+        }
+    }
+    return false
+}
+
 func main() {
     // Example 1:
     // Input: arr = [0,2,1,-6,6,-7,9,1,2,0,1]
@@ -97,4 +119,8 @@ func main() {
     fmt.Println(canThreePartsEqualSum1([]int{0,2,1,-6,6,-7,9,1,2,0,1})) // true
     fmt.Println(canThreePartsEqualSum1([]int{0,2,1,-6,6,7,9,-1,2,0,1})) // false
     fmt.Println(canThreePartsEqualSum1([]int{3,3,6,5,-2,2,5,1,-9,4})) // true
+
+    fmt.Println(canThreePartsEqualSum2([]int{0,2,1,-6,6,-7,9,1,2,0,1})) // true
+    fmt.Println(canThreePartsEqualSum2([]int{0,2,1,-6,6,7,9,-1,2,0,1})) // false
+    fmt.Println(canThreePartsEqualSum2([]int{3,3,6,5,-2,2,5,1,-9,4})) // true
 }
