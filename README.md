@@ -508,6 +508,7 @@
 [1004. Max Consecutive Ones III](./leetcode/1004-MaxConsecutiveOnesIII.go)   
 [1010. Pairs of Songs With Total Durations Divisible by 60](./leetcode/1010-PairsOfSongsWithTotalDurationsDivisibleBy60.go)   
 [1011. Capacity To Ship Packages Within D Days](./leetcode/1011-CapacityToShipPackagesWithinDDays.go)   
+[1013. Partition Array Into Three Parts With Equal Sum](./leetcode/1013-PartitionArrayIntoThreePartsWithEqualSum.go)   
 [1014. Best Sightseeing Pair](./leetcode/1014-BestSightseeingPair.go)   
 [1020. Number of Enclaves](./leetcode/1020-NumberOfEnclaves.go)   
 [1027. Longest Arithmetic Subsequence](./leetcode/1027-LongestArithmeticSubsequence.go)   
