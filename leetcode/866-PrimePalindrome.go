@@ -66,6 +66,49 @@ func primePalindrome1(n int) int {
     return arr[sort.SearchInts(arr, n)]
 }
 
+func primePalindrome2(n int) int {
+    small := []int{ 2,3,5,7,11,101 }
+    for _, k := range small {
+        if k >= n {
+            return k
+        }
+    }
+    if n % 2 == 0 {
+        n++
+    }
+    isPrime := func (num int) bool {
+        if num <= 2 {
+            return num == 2
+        }
+        for i:=3; i*i <= num; i += 2 {
+            if num % i == 0 {
+                return false
+            }
+        }
+        return true
+    }
+    isPalindrome := func (num int) bool {
+        ori, res := num, 0
+        for num > 0 {
+            res = res * 10 + num % 10
+            num /= 10
+        }
+        return ori == res
+    }
+    for {
+        if n >= 9989899 {
+            return 100030001
+        }
+        if n % 2 != 0 && n % 3 != 0 && n % 5 != 0 {
+            if isPalindrome(n) && isPrime(n) {
+                return n
+            }
+        }
+        n += 2
+    }
+    return n
+}
+
 func main() {
     // Example 1:
     // Input: n = 6
@@ -83,4 +126,8 @@ func main() {
     fmt.Println(primePalindrome1(6)) // 7
     fmt.Println(primePalindrome1(8)) // 11
     fmt.Println(primePalindrome1(13)) // 101
+
+    fmt.Println(primePalindrome2(6)) // 7
+    fmt.Println(primePalindrome2(8)) // 11
+    fmt.Println(primePalindrome2(13)) // 101
 }

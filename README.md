@@ -1237,6 +1237,7 @@
 [837. New 21 Game](./leetcode/837-New21Game.go)   
 [858. Mirror Reflection](./leetcode/858-MirrorReflection.go)   
 [866. Prime Palindrome](./leetcode/866-PrimePalindrome.go)   
+[869. Reordered Power of 2](./leetcode/869-ReorderedPowerOfTwo.go)   
 [878. Nth Magical Number](./leetcode/878-NthMagicalNumber.go)   
 [883. Projection Area of 3D Shapes](./leetcode/883-ProjectionAreaOf3DShapes.go)   
 [892. Surface Area of 3D Shapes](./leetcode/892-SurfaceAreaOf3DShapes.go)   
