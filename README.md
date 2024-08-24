@@ -556,6 +556,7 @@
 [1187. Make Array Strictly Increasing](./leetcode/1187-MakeArrayStrictlyIncreasing.go)   
 [1196. How Many Apples Can You Put into the Basket](./leetcode/1196-HowManyApplesCanYouPutIntoTheBasket.go)   
 [1198. Find Smallest Common Element in All Rows](./leetcode/1198-FindSmallestCommonElementInAllRows.go)   
+[1199. Minimum Time to Build Blocks](./leetcode/1199-MinimumTimeToBuildBlocks.go)   
 [1207. Unique Number of Occurrences](./leetcode/1207-UniqueNumberOfOccurrences.go)   
 [1213. Intersection of Three Sorted Arrays](./leetcode/1213-IntersectionOfThreeSortedArrays.go)   
 [1218. Longest Arithmetic Subsequence of Given Difference](./leetcode/1218-LongestArithmeticSubsequenceOfGivenDifference.go)   
