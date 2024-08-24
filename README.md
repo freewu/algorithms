@@ -1527,6 +1527,7 @@
 [461. Hamming Distance](./leetcode/461-HammingDistance.go)   
 [476. Number Complement](./leetcode/476-NumberComplement.go)   
 [693. Binary Number with Alternating Bits](./leetcode/693-BinaryNumberWithAlternatingBits.go)   
+[868. Binary Gap](./leetcode/868-BinaryGap.go)   
 [1009. Complement of Base 10 Integer](./leetcode/1009-ComplementOfBase10Integer.go)   
 [1318. Minimum Flips to Make a OR b Equal to c](./leetcode/1318-MinimumFlipsToMakeAORBEqualToC.go)   
 [3007. Maximum Number That Sum of the Prices Is Less Than or Equal to K](./leetcode/3007-MaximumNumberThatSumOfThePricesIsLessThanOrEqualToK.go)   
