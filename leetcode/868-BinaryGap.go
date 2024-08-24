@@ -98,6 +98,24 @@ func binaryGap2(n int) int {
     return mx
 }
 
+func binaryGap3(n int) int {
+    res, count, curr  := 0, 0, 1
+    for n > 0 {
+        if n % 2 == 0 && count != 0 {
+            curr++
+        } else if n % 2 == 1 {
+            if curr > res { res = curr }
+            curr = 1
+            count++
+        }
+        n /= 2
+    }
+    if count < 2 {
+        return 0
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: n = 22
@@ -127,4 +145,8 @@ func main() {
     fmt.Println(binaryGap2(22)) // 2  10110
     fmt.Println(binaryGap2(8)) // 0  1000
     fmt.Println(binaryGap2(5)) // 2  101
+
+    fmt.Println(binaryGap3(22)) // 2  10110
+    fmt.Println(binaryGap3(8)) // 0  1000
+    fmt.Println(binaryGap3(5)) // 2  101
 }
