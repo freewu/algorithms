@@ -70,7 +70,7 @@ func maxArea1(height []int) int {
 
 func maxArea2(height []int) int {
     l, r, res := 0, len(height) - 1, 0
-    max := func (x, y int) int { if x > y { return x; }; return y; }
+     func (x, y int) int { if x > y { return x; }; return y; }
     for l < r {
         area :=  (r - l) * min(height[l], height[r])
         res = max(res, area)
