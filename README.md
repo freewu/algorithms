@@ -1403,6 +1403,7 @@
 [897. Increasing Order Search Tree](./leetcode/897-IncreasingOrderSearchTree.go)   
 [919. Complete Binary Tree Inserter](./leetcode/919-CompleteBinaryTreeInserter.go)   
 [938. Range Sum of BST](./leetcode/938-RangeSumOfBST.go)   
+[958. Check Completeness of a Binary Tree](./leetcode/958-CheckCompletenessOfABinaryTree.go)   
 [965. Univalued Binary Tree](./leetcode/965-UnivaluedBinaryTree.go)   
 [968. Binary Tree Cameras](./leetcode/968-BinaryTreeCameras.go)   
 [971. Flip Binary Tree To Match Preorder Traversal](./leetcode/971-FlipBinaryTreeToMatchPreorderTraversal.go)   

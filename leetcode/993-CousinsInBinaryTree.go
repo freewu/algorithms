@@ -50,39 +50,39 @@ type TreeNode struct {
  */
 // 解法一 递归
 func isCousins(root *TreeNode, x int, y int) bool {
-	if root == nil {
-		return false
-	}
-	levelX, levelY := findLevel(root, x, 1), findLevel(root, y, 1)
-	if levelX != levelY {
-		return false
-	}
-	return !haveSameParents(root, x, y)
-}
-
-func findLevel(root *TreeNode, x, level int) int {
-    if root == nil {
-        return 0
-    }
-    if root.Val != x {
-        leftLevel, rightLevel := findLevel(root.Left, x, level+1), findLevel(root.Right, x, level+1)
-        if leftLevel == 0 {
-            return rightLevel
-        }
-        return leftLevel
-    }
-    return level
-}
-
-func haveSameParents(root *TreeNode, x, y int) bool {
     if root == nil {
         return false
     }
-    if (root.Left != nil && root.Right != nil && root.Left.Val == x && root.Right.Val == y) ||
-        (root.Left != nil && root.Right != nil && root.Left.Val == y && root.Right.Val == x) {
-        return true
+    var findLevel func(root *TreeNode, x, level int) int
+    findLevel = func(root *TreeNode, x, level int) int {
+        if root == nil {
+            return 0
+        }
+        if root.Val != x {
+            leftLevel, rightLevel := findLevel(root.Left, x, level+1), findLevel(root.Right, x, level+1)
+            if leftLevel == 0 {
+                return rightLevel
+            }
+            return leftLevel
+        }
+        return level
     }
-    return haveSameParents(root.Left, x, y) || haveSameParents(root.Right, x, y)
+    var haveSameParents func(root *TreeNode, x, y int) bool
+    haveSameParents = func (root *TreeNode, x, y int) bool {
+        if root == nil {
+            return false
+        }
+        if (root.Left != nil && root.Right != nil && root.Left.Val == x && root.Right.Val == y) ||
+            (root.Left != nil && root.Right != nil && root.Left.Val == y && root.Right.Val == x) {
+            return true
+        }
+        return haveSameParents(root.Left, x, y) || haveSameParents(root.Right, x, y)
+    }
+    levelX, levelY := findLevel(root, x, 1), findLevel(root, y, 1)
+    if levelX != levelY {
+        return false
+    }
+    return !haveSameParents(root, x, y)
 }
 
 // 解法二 BFS
@@ -123,8 +123,8 @@ func isCousinsBFS(root *TreeNode, x int, y int) bool {
 // 解法三 DFS
 func isCousinsDFS(root *TreeNode, x int, y int) bool {
 	depth1, depth2, parent1, parent2 := 0, 0, 0, 0
-    var dfsCousins func(root *TreeNode, val, depth, last int, parent, res *int) 
-    dfsCousins = func(root *TreeNode, val, depth, last int, parent, res *int) {
+    var dfs func(root *TreeNode, val, depth, last int, parent, res *int) 
+    dfs = func(root *TreeNode, val, depth, last int, parent, res *int) {
         if root == nil {
             return
         }
@@ -134,11 +134,11 @@ func isCousinsDFS(root *TreeNode, x int, y int) bool {
             return
         }
         depth++
-        dfsCousins(root.Left, val, depth, root.Val, parent, res)
-        dfsCousins(root.Right, val, depth, root.Val, parent, res)
+        dfs(root.Left, val, depth, root.Val, parent, res)
+        dfs(root.Right, val, depth, root.Val, parent, res)
     }
-	dfsCousins(root, x, 0, -1, &parent1, &depth1)
-	dfsCousins(root, y, 0, -1, &parent2, &depth2)
+	dfs(root, x, 0, -1, &parent1, &depth1)
+	dfs(root, y, 0, -1, &parent2, &depth2)
 	return depth1 > 1 && depth1 == depth2 && parent1 != parent2
 }
 
