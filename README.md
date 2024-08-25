@@ -811,6 +811,7 @@
 [3148. Maximum Difference Score in a Grid](./leetcode/3148-MaximumDifferenceScoreInAGrid.go)   
 [3151. Special Array I](./leetcode/3151-SpecialArrayI.go)   
 [3152. Special Array II](./leetcode/3152-SpecialArrayII.go)   
+[3160. Find the Number of Distinct Colors Among the Balls](./leetcode/3160-FindTheNumberOfDistinctColorsAmongTheBalls.go)   
 [3190. Find Minimum Operations to Make All Elements Divisible by Three](./leetcode/3190-FindMinimumOperationsToMakeAllElementsDivisibleByThree.go)   
 [3195. Find the Minimum Area to Cover All Ones I](./leetcode/3195-FindTheMinimumAreaToCoverAllOnesI.go)   
 [3205. Maximum Array Hopping Score I](./leetcode/3205-MaximumArrayHoppingScoreI.go)   
