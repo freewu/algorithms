@@ -1005,6 +1005,7 @@
 [871. Minimum Number of Refueling Stops](./leetcode/871-MinimumNumberOfRefuelingStops.go)   
 [880. Decoded String at Index](./leetcode/880-DecodedStringAtIndex.go)   
 [884. Uncommon Words from Two Sentences](./leetcode/884-UncommonWordsFromTwoSentences.go)   
+[890. Find and Replace Pattern](./leetcode/890-FindAndReplacePattern.go)   
 [917. Reverse Only Letters](./leetcode/917-ReverseOnlyLetters.go)   
 [926. Flip String to Monotone Increasing](./leetcode/926-FlipStringToMonotoneIncreasing.go)   
 [936. Stamping The Sequence](./leetcode/936-StampingTheSequence.go)   
