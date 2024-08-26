@@ -818,6 +818,7 @@
 [3127. Make a Square with the Same Color](./leetcode/3127-MakeASquareWithTheSameColor.go)   
 [3131. Find the Integer Added to Array I](./leetcode/3131-FindTheIntegerAddedToArrayI.go)   
 [3132. Find the Integer Added to Array II](./leetcode/3132-FindTheIntegerAddedToArrayII.go)   
+[3134. Find the Median of the Uniqueness Array](./leetcode/3134-FindTheMedianOfTheUniquenessArray.go)   
 [3143. Maximum Points Inside the Square](./leetcode/3143-MaximumPointsInsideTheSquare.go)   
 [3145. Find Products of Elements of Big Array](./leetcode/3145-FindProductsOfElementsOfBigArray.go)   
 [3148. Maximum Difference Score in a Grid](./leetcode/3148-MaximumDifferenceScoreInAGrid.go)   
