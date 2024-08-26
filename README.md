@@ -834,7 +834,6 @@
 [3237. Alt and Tab Simulation](./leetcode/3237-AltAndTabSimulation.go)   
 [3245. Alternating Groups III](./leetcode/3245-AlternatingGroupsIII.go)   
 
-
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
 [5. Longest Palindromic Substring](./leetcode/5-LongestPalindromicSubstring.go)    
@@ -1009,6 +1008,7 @@
 [880. Decoded String at Index](./leetcode/880-DecodedStringAtIndex.go)   
 [884. Uncommon Words from Two Sentences](./leetcode/884-UncommonWordsFromTwoSentences.go)   
 [890. Find and Replace Pattern](./leetcode/890-FindAndReplacePattern.go)   
+[899. Orderly Queue](./leetcode/899-OrderlyQueue.go)   
 [917. Reverse Only Letters](./leetcode/917-ReverseOnlyLetters.go)   
 [926. Flip String to Monotone Increasing](./leetcode/926-FlipStringToMonotoneIncreasing.go)   
 [936. Stamping The Sequence](./leetcode/936-StampingTheSequence.go)   
