@@ -1277,6 +1277,7 @@
 [1118. Number of Days in a Month](./leetcode/1118-NumberOfDaysInAMonth.go)   
 [1183. Maximum Number of Ones](./leetcode/1183-MaximumNumberOfOnes.go)   
 [1227. Airplane Seat Assignment Probability](./leetcode/1227-AirplaneSeatAssignmentProbability.go)   
+[1256. Encode Number](./leetcode/1256-EncodeNumber.go)   
 [1259. Handshakes That Don't Cross](./leetcode/1259-HandshakesThatDontCross.go)   
 [1281. Subtract the Product and Sum of Digits of an Integer](./leetcode/1281-SubtractTheProductAndSumOfDigitsOfAnInteger.go)   
 [1344. Angle Between Hands of a Clock](./leetcode/1344-AngleBetweenHandsOfAClock.go)   
