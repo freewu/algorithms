@@ -470,6 +470,7 @@
 [892. Surface Area of 3D Shapes](./leetcode/892-SurfaceAreaOf3DShapes.go)   
 [893. Groups of Special-Equivalent Strings](./leetcode/893-GroupsOfSpecialEquivalentStrings.go)   
 [896. Monotonic Array](./leetcode/896-MonotonicArray.go)   
+[898. Bitwise ORs of Subarrays](./leetcode/898-BitwiseORsOfSubarrays.go)   
 [902. Numbers At Most N Given Digit Set](./leetcode/902-NumbersAtMostNGivenDigitSet.go)   
 [907. Sum of Subarray Minimums](./leetcode/907-SumOfSubarrayMinimums.go)   
 [908. Smallest Range I](./leetcode/908-SmallestRangeI.go)   
