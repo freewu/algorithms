@@ -466,6 +466,7 @@
 [883. Projection Area of 3D Shapes](./leetcode/883-ProjectionAreaOf3DShapes.go)   
 [885. Spiral Matrix III](./leetcode/885-SpiralMatrixIII.go)   
 [888. Fair Candy Swap](./leetcode/888-FairCandySwap.go)   
+[891. Sum of Subsequence Widths](./leetcode/891-SumOfSubsequenceWidths.go)   
 [892. Surface Area of 3D Shapes](./leetcode/892-SurfaceAreaOf3DShapes.go)   
 [896. Monotonic Array](./leetcode/896-MonotonicArray.go)   
 [902. Numbers At Most N Given Digit Set](./leetcode/902-NumbersAtMostNGivenDigitSet.go)   
