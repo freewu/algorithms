@@ -468,6 +468,7 @@
 [888. Fair Candy Swap](./leetcode/888-FairCandySwap.go)   
 [891. Sum of Subsequence Widths](./leetcode/891-SumOfSubsequenceWidths.go)   
 [892. Surface Area of 3D Shapes](./leetcode/892-SurfaceAreaOf3DShapes.go)   
+[893. Groups of Special-Equivalent Strings](./leetcode/893-GroupsOfSpecialEquivalentStrings.go)   
 [896. Monotonic Array](./leetcode/896-MonotonicArray.go)   
 [902. Numbers At Most N Given Digit Set](./leetcode/902-NumbersAtMostNGivenDigitSet.go)   
 [907. Sum of Subarray Minimums](./leetcode/907-SumOfSubarrayMinimums.go)   
