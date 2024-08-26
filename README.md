@@ -574,6 +574,7 @@
 [1232. Check If It Is a Straight Line](./leetcode/1232-CheckIfItIsAStraightLine.go)   
 [1235. Maximum Profit in Job Scheduling](./leetcode/1235-MaximumProfitInJobScheduling.go)   
 [1243. Array Transformation](./leetcode/1243-ArrayTransformation.go)   
+[1246. Palindrome Removal](./leetcode/1246-PalindromeRemoval.go)   
 [1248. Count Number of Nice Subarrays](./leetcode/1248-CountNumberOfNiceSubarrays.go)   
 [1254. Number of Closed Islands](./leetcode/1254-NumberOfClosedIslands.go)   
 [1255. Maximum Score Words Formed by Letters](./leetcode/1255-MaximumScoreWordsFormedByLetters.go)   
