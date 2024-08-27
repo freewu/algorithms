@@ -697,6 +697,7 @@
 [2120. Execution of All Suffix Instructions Staying in a Grid](./leetcode/2120-ExecutionOfAllSuffixInstructionsStayingInAGrid.go)   
 [2134. Minimum Swaps to Group All 1's Together II](./leetcode/2134-MinimumSwapsToGroupAllOneTogetherII.go)   
 [2140. Solving Questions With Brainpower](./leetcode/2140-SolvingQuestionsWithBrainpower.go)   
+[2146. K Highest Ranked Items Within a Price Range](./leetcode/2146-KHighestRankedItemsWithinAPriceRange.go)   
 [2149. Rearrange Array Elements by Sign](./leetcode/2149-RearrangeArrayElementsBySign.go)   
 [2171. Removing Minimum Number of Magic Beans](./leetcode/2171-RemovingMinimumNumberOfMagicBeans.go)   
 [2174. Remove All Ones With Row and Column Flips II](./leetcode/2174-RemoveAllOnesWithRowAndColumnFlipsII.go)   
