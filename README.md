@@ -730,6 +730,7 @@
 [2464. Minimum Subarrays in a Valid Split](./leetcode/2464-MinimumSubarraysInAValidSplit.go)   
 [2482. Difference Between Ones and Zeros in Row and Column](./leetcode/2482-DifferenceBetweenOnesAndZerosInRowAndColumn.go)   
 [2498. Frog Jump II](./leetcode/2498-FrogJumpII.go)   
+[2503. Maximum Number of Points From Grid Queries](./leetcode/2503-MaximumNumberOfPointsFromGridQueries.go)   
 [2509. Cycle Length Queries in a Tree](./leetcode/2509-CycleLengthQueriesInATree.go)   
 [2509. Cycle Length Queries in a Tree](./leetcode/2509-CycleLengthQueriesInATree.go)   
 [2510. Check if There is a Path With Equal Number of 0's And 1's](./leetcode/2510-CheckIfThereIsAPathWithEqualNumberOfZerosAndOnes.go)   
