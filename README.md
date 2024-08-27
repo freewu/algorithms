@@ -737,6 +737,7 @@
 [2540. Minimum Common Value](./leetcode/2540-MinimumCommonValue.go)   
 [2542. Maximum Subsequence Score](./leetcode/2542-MaximumSubsequenceScore.go)   
 [2549. Count Distinct Numbers on Board](./leetcode/2549-CountDistinctNumbersOnBoard.go)   
+[2556. Disconnect Path in a Binary Matrix by at Most One Flip](./leetcode/2556-DisconnectPathInABinaryMatrixByAtMostOneFlip.go)   
 [2575. Find the Divisibility Array of a String](./leetcode/2575-FindTheDivisibilityArrayOfAString.go)   
 [2577. Minimum Time to Visit a Cell In a Grid](./leetcode/2577-MinimumTimeToVisitACellInAGrid.go)   
 [2580. Count Ways to Group Overlapping Ranges](./leetcode/2580-CountWaysToGroupOverlappingRanges.go)   
