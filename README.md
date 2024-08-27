@@ -1531,6 +1531,7 @@
 [2097. Valid Arrangement of Pairs](./leetcode/2097-ValidArrangementOfPairs.go)   
 [2192. All Ancestors of a Node in a Directed Acyclic Graph](./leetcode/2192-AllAncestorsOfANodeInADirectedAcyclicGraph.go)   
 [2204. Distance to a Cycle in Undirected Graph](./leetcode/2204-DistanceToACycleInUndirectedGraph.go)   
+[2242. Maximum Score of a Node Sequence](./leetcode/2242-MaximumScoreOfANodeSequence.go)   
 [2285. Maximum Total Importance of Roads](./leetcode/2285-MaximumTotalImportanceOfRoads.go)   
 [2316. Count Unreachable Pairs of Nodes in an Undirected Graph](./leetcode/2316-CountUnreachablePairsOfNodesInAnUndirectedGraph.go)   
 [2328. Number of Increasing Paths in a Grid](./leetcode/2328-NumberOfIncreasingPathsInAGrid.go)   
