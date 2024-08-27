@@ -49,10 +49,6 @@ package main
 //     sequences 的所有数组都是 唯一 的
 //     sequences[i] 是 nums 的一个子序列
 
-func sequenceReconstruction(nums []int, sequences [][]int) bool {
-
-}
-
 import "fmt"
 
 func sequenceReconstruction(nums []int, sequences [][]int) bool {
