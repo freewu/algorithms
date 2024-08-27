@@ -736,6 +736,7 @@
 [2542. Maximum Subsequence Score](./leetcode/2542-MaximumSubsequenceScore.go)   
 [2549. Count Distinct Numbers on Board](./leetcode/2549-CountDistinctNumbersOnBoard.go)   
 [2575. Find the Divisibility Array of a String](./leetcode/2575-FindTheDivisibilityArrayOfAString.go)   
+[2577. Minimum Time to Visit a Cell In a Grid](./leetcode/2577-MinimumTimeToVisitACellInAGrid.go)   
 [2580. Count Ways to Group Overlapping Ranges](./leetcode/2580-CountWaysToGroupOverlappingRanges.go)   
 [2589. Minimum Time to Complete All Tasks](./leetcode/2589-MinimumTimeToCompleteAllTasks.go)   
 [2596. Check Knight Tour Configuration](./leetcode/2596-CheckKnightTourConfiguration.go)   
