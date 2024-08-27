@@ -102,6 +102,42 @@ func findCircleNum2(isConnected [][]int) int {
     return res
 }
 
+// 并查集
+func findCircleNum3(isConnected [][]int) int {
+    n := len(isConnected)
+    set := make([]int, n)
+    for i := range set {
+        set[i] = i
+    }
+    var find func(i int) int
+    find = func(i int) int {
+        if set[set[i]] != set[i] {
+            set[i] = find(set[i])
+        }
+        return set[i]
+    }
+    union := func(i, j int) bool { 
+        pi, pj := find(i), find(j)
+        if pi == pj {
+            return false
+        }
+        set[pi] = pj
+        return true
+    }
+    for i := 0; i < n; i++ {
+        for j := 0 ; j < len(isConnected[0]); j++ {
+            if isConnected[i][j] == 1 {
+                union(i, j)
+            }
+        }
+    }
+    mp := make(map[int]bool)
+    for i := 0 ; i < n ; i++ {
+        mp[find(i)] = true
+    }
+    return len(mp)
+}
+
 
 func main() {
     fmt.Println(findCircleNum([][]int{{1,1,0},{1,1,0},{0,0,1}})) // 2
@@ -112,4 +148,7 @@ func main() {
 
     fmt.Println(findCircleNum2([][]int{{1,1,0},{1,1,0},{0,0,1}})) // 2
     fmt.Println(findCircleNum2([][]int{{1,0,0},{0,1,0},{0,0,1}})) // 3
+
+    fmt.Println(findCircleNum3([][]int{{1,1,0},{1,1,0},{0,0,1}})) // 2
+    fmt.Println(findCircleNum3([][]int{{1,0,0},{0,1,0},{0,0,1}})) // 3
 }
