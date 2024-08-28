@@ -645,6 +645,7 @@
 [1679. Max Number of K-Sum Pairs](./leetcode/1679-MaxNumberOfKSumPairs.go)   
 [1686. Stone Game VI](./leetcode/1686-StoneGameVI.go)   
 [1690. Stone Game VII](./leetcode/1690-StoneGameVII.go)   
+[1691. Maximum Height by Stacking Cuboids](./leetcode/1691-MaximumHeightByStackingCuboids.go)   
 [1696. Jump Game VI](./leetcode/1696-JumpGameVI.go)   
 [1700. Number of Students Unable to Eat Lunch](./leetcode/1700-NumberOfStudentsUnableToEatLunch.go)   
 [1732. Find the Highest Altitude](./leetcode/1732-FindTheHighestAltitude.go)   
