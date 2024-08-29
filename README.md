@@ -1029,6 +1029,7 @@
 [926. Flip String to Monotone Increasing](./leetcode/926-FlipStringToMonotoneIncreasing.go)   
 [936. Stamping The Sequence](./leetcode/936-StampingTheSequence.go)   
 [940. Distinct Subsequences II](./leetcode/940-DistinctSubsequencesII.go)   
+[942. DI String Match](./leetcode/942-DIStringMatch.go)   
 [984. String Without AAA or BBB](./leetcode/984-StringWithoutAAAOrBBB.go)   
 [1041. Robot Bounded In Circle](./leetcode/1041-RobotBoundedInCircle.go)   
 [1047. Remove All Adjacent Duplicates In String](./leetcode/1047-RemoveAllAdjacentDuplicatesInString.go)   
