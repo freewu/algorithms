@@ -2323,6 +2323,7 @@ LCR 075. 数组的相对排序
 [LCR 114. 火星词典](./leetcode/LCR114-AlienDictionary.go)   
 [LCR 115. 序列重建](./leetcode/LCR115-SequenceReconstruction.go)   
 [LCR 116. 省份数量](./leetcode/LCR116-NumberOfProvinces.go)   
+[LCR 117. 相似字符串组](./leetcode/LCR117-SimilarStringGroups.go)   
 [LCR 120. 寻找文件副本](./leetcode/LCR120-FindRepeatDocument.go)   
 [LCR 121. 寻找目标值 - 二维数组](./leetcode/LCR121-FindTargetInMatrix.go)   
 [LCR 122. 路径加密](./leetcode/LCR122-PathEncryption.go)   
