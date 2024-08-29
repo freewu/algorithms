@@ -488,6 +488,7 @@
 [946. Validate Stack Sequences](./leetcode/946-ValidateStackSequences.go)   
 [947. Most Stones Removed with Same Row or Column](./leetcode/947-MostStonesRemovedWithSameRowOrColumn.go)   
 [948. Bag of Tokens](./leetcode/948-BagOfTokens.go)   
+[949. Largest Time for Given Digits](./leetcode/949-LargestTimeForGivenDigits.go)   
 [950. Reveal Cards In Increasing Order](./leetcode/950-RevealCardsInIncreasingOrder.go)   
 [952. Largest Component Size by Common Factor](./leetcode/952-LargestComponentSizeByCommonFactor.go)   
 [953. Verifying an Alien Dictionary](./leetcode/953-VerifyingAnAlienDictionary.go)   
