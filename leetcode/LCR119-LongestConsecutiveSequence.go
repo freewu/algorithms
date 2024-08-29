@@ -1,21 +1,24 @@
 package main
 
-// 128. Longest Consecutive Sequence
-// Given an unsorted array of integers nums, return the length of the longest consecutive elements sequence.
-// You must write an algorithm that runs in O(n) time.
+// LCR 119. 最长连续序列
+// 给定一个未排序的整数数组 nums ，找出数字连续的最长序列（不要求序列元素在原数组中连续）的长度。
 
-// Constraints:
-//     0 <= nums.length <= 10^5
+// 示例 1：
+// 输入：nums = [100,4,200,1,3,2]
+// 输出：4
+// 解释：最长数字连续序列是 [1, 2, 3, 4]。它的长度为 4。
+
+// 示例 2：
+// 输入：nums = [0,3,7,2,5,8,4,6,0,1]
+// 输出：9
+
+// 提示：
+//     0 <= nums.length <= 10^4
 //     -10^9 <= nums[i] <= 10^9
 
-// Example 1:
-// Input: nums = [100,4,200,1,3,2]
-// Output: 4
-// Explanation: The longest consecutive elements sequence is [1, 2, 3, 4]. Therefore its length is 4.
+// 进阶：可以设计并实现时间复杂度为 O(n) 的解决方案吗？
 
-// Example 2:
-// Input: nums = [0,3,7,2,5,8,4,6,0,1]
-// Output: 9
+import "fmt"
 
 // # 解题思路
 //     要求找出最长连续序列，输出这个最长的长度。要求时间复杂度为 O(n)
@@ -23,7 +26,6 @@ package main
 //     先删去 map 中没有前一个数 nums[i]-1 也没有后一个数 nums[i]+1 的数 nums[i]，这种数前后都不连续
 //     然后在 map 中找到前一个数 nums[i]-1 不存在，但是后一个数 nums[i]+1 存在的数，这种数是连续序列的起点，那么不断的往后搜，直到序列“断”了。最后输出最长序列的长度
 
-import "fmt"
 
 // 解法一 map，时间复杂度 O(n)
 func longestConsecutive(nums []int) int {
