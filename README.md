@@ -603,6 +603,7 @@
 [1395. Count Number of Teams](./leetcode/1395-CountNumberOfTeams.go)   
 [1406. Stone Game III](./leetcode/1406-StoneGameIII.go)   
 [1426. Counting Elements](./leetcode/1426-CountingElements.go)   
+[1428. Leftmost Column with at Least a One](./leetcode/1428-LeftmostColumnWithAtLeastAOne.go)   
 [1431. Kids With the Greatest Number of Candies](./leetcode/1431-KidsWithTheGreatestNumberOfCandies.go)   
 [1434. Number of Ways to Wear Different Hats to Each Other](./leetcode/1434-NumberOfWaysToWearDifferentHatsToEachOther.go)   
 [1438. Longest Continuous Subarray With Absolute Diff Less Than or Equal to Limit](./leetcode/1438-LongestContinuousSubarrayWithAbsoluteDiffLessThanOrEqualToLimit.go)   
