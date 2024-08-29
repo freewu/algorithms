@@ -853,6 +853,7 @@
 [3235. Check if the Rectangle Corner Is Reachable](./leetcode/3235-CheckIfTheRectangleCornerIsReachable.go)   
 [3237. Alt and Tab Simulation](./leetcode/3237-AltAndTabSimulation.go)   
 [3245. Alternating Groups III](./leetcode/3245-AlternatingGroupsIII.go)   
+[3269. Constructing Two Increasing Arrays](./leetcode/3269-ConstructingTwoIncreasingArrays.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
