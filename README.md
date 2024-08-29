@@ -484,6 +484,7 @@
 [937. Reorder Data in Log Files](./leetcode/937-ReorderDataInLogFiles.go)   
 [939. Minimum Area Rectangle](./leetcode/939-MinimumAreaRectangle.go)   
 [941. Valid Mountain Array](./leetcode/941-ValidMountainArray.go)   
+[943. Find the Shortest Superstring](./leetcode/943-FindTheShortestSuperstring.go)   
 [944. Delete Columns to Make Sorted](./leetcode/944-DeleteColumnsToMakeSorted.go)   
 [945. Minimum Increment to Make Array Unique](./leetcode/945-MinimumIncrementToMakeArrayUnique.go)   
 [946. Validate Stack Sequences](./leetcode/946-ValidateStackSequences.go)   
