@@ -473,6 +473,7 @@
 [898. Bitwise ORs of Subarrays](./leetcode/898-BitwiseORsOfSubarrays.go)   
 [902. Numbers At Most N Given Digit Set](./leetcode/902-NumbersAtMostNGivenDigitSet.go)   
 [904. Fruit Into Baskets](./leetcode/904-FruitIntoBaskets.go)   
+[905. Sort Array By Parity](./leetcode/905-SortArrayByParity.go)   
 [907. Sum of Subarray Minimums](./leetcode/907-SumOfSubarrayMinimums.go)   
 [908. Smallest Range I](./leetcode/908-SmallestRangeI.go)   
 [909. Snakes and Ladders](./leetcode/909-SnakesAndLadders.go)   
