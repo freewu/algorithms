@@ -1557,7 +1557,8 @@
 [2492. Minimum Score of a Path Between Two Cities](./leetcode/2492-MinimumScoreOfAPathBetweenTwoCities.go)   
 [2508. Add Edges to Make Degrees of All Nodes Even](./leetcode/2508-AddEdgesToMakeDegreesOfAllNodesEven.go)   
 [2639. Find the Width of Columns of a Grid](./leetcode/2639-FindTheWidthOfColumnsOfAGrid.go)   
-[2642. Design Graph With Shortest Path Calculator](./leetcode/2642-DesignGraphWithShortestPathCalculator.go)    
+[2642. Design Graph With Shortest Path Calculator](./leetcode/2642-DesignGraphWithShortestPathCalculator.go)   
+[2699. Modify Graph Edge Weights](./leetcode/2699-ModifyGraphEdgeWeights.go)   
 [2959. Number of Possible Sets of Closing Branches](./leetcode/2959-NumberOfPossibleSetsOfClosingBranches.go)   
 [3112. Minimum Time to Visit Disappearing Nodes](./leetcode/3112-MinimumTimeToVisitDisappearingNodes.go)   
 
