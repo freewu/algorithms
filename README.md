@@ -2274,6 +2274,7 @@ LCR 075. 数组的相对排序
 [LCR 042. 最近的请求次数](./leetcode/LCR042-NumberOfRecentCalls.go)   
 [LCR 043. 完全二叉树插入器](./leetcode/LCR043-CompleteBinaryTreeInserter.go)   
 [LCR 044. 在每个树行中找最大值](./leetcode/LCR044-FindLargestValueInEachTreeRow.go)   
+[LCR 045. 找树左下角的值](./leetcode/LCR045-FindBottomLeftTreeValue.go)   
 [LCR 055. 二叉搜索树迭代器](./leetcode/LCR055-BinarySearchTreeIterator.go)   
 [LCR 057. 存在重复元素 III](./leetcode/LCR057-ContainsDuplicateIII.go)   
 [LCR 059. 数据流中的第 K 大元素](./leetcode/LCR059-KthLargestElementInAStream.go)   
