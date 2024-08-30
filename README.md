@@ -1034,6 +1034,7 @@
 [890. Find and Replace Pattern](./leetcode/890-FindAndReplacePattern.go)   
 [899. Orderly Queue](./leetcode/899-OrderlyQueue.go)   
 [903. Valid Permutations for DI Sequence](./leetcode/903-ValidPermutationsForDISequence.go)   
+[906. Super Palindromes](./leetcode/906-SuperPalindromes.go)   
 [917. Reverse Only Letters](./leetcode/917-ReverseOnlyLetters.go)   
 [926. Flip String to Monotone Increasing](./leetcode/926-FlipStringToMonotoneIncreasing.go)   
 [936. Stamping The Sequence](./leetcode/936-StampingTheSequence.go)   
