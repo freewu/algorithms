@@ -1533,6 +1533,7 @@
 [1334. Find the City With the Smallest Number of Neighbors at a Threshold Distance](./leetcode/1334-FindTheCityWithTheSmallestNumberOfNeighborsAtAThresholdDistance.go)   
 [1466. Reorder Routes to Make All Paths Lead to the City Zero](./leetcode/1466-ReorderRoutesToMakeAllPathsLeadToTheCityZero.go)   
 [1489. Find Critical and Pseudo-Critical Edges in Minimum Spanning Tree](./leetcode/1489-FindCriticalAndPseudoCriticalEdgesInMinimumSpanningTree.go)   
+[1494. Parallel Courses II](./leetcode/1494-ParallelCoursesII.go)   
 [1514. Path with Maximum Probability](./leetcode/1514-PathWithMaximumProbability.go)   
 [1548. The Most Similar Path in a Graph](./leetcode/1548-TheMostSimilarPathInAGraph.go)   
 [1557. Minimum Number of Vertices to Reach All Nodes](./leetcode/1557-MinimumNumberOfVerticesToReachAllNodes.go)   
