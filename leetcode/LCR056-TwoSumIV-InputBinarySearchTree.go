@@ -1,30 +1,25 @@
-package main
+package main 
 
-// 653. Two Sum IV - Input is a BST
-// Given the root of a binary search tree and an integer k, 
-// return true if there exist two elements in the BST such that their sum is equal to k, or false otherwise.
+// LCR 056. 两数之和 IV - 输入二叉搜索树
+// 给定一个二叉搜索树的 根节点 root 和一个整数 k , 请判断该二叉搜索树中是否存在两个节点它们的值之和等于 k 。
+// 假设二叉搜索树中节点的值均唯一。
 
-// Example 1:
-//            {5}
-//           /   \
-//         (3)   (6)
-//        /   \     \
-//      [2]    {4}   [7]
-// <img src="https://assets.leetcode.com/uploads/2020/09/21/sum_tree_1.jpg" />
-// Input: root = [5,3,6,2,4,null,7], k = 9
-// Output: true
+// 示例 1：
+// 输入: root = [8,6,10,5,7,9,11], k = 12
+// 输出: true
+// 解释: 节点 5 和节点 7 之和等于 12
 
-// Example 2:
-// <img src="https://assets.leetcode.com/uploads/2020/09/21/sum_tree_2.jpg" />
-// Input: root = [5,3,6,2,4,null,7], k = 28
-// Output: false
-
-// Constraints:
-//     The number of nodes in the tree is in the range [1, 10^4].
+// 示例 2：
+// 输入: root = [8,6,10,5,7,9,11], k = 22
+// 输出: false
+// 解释: 不存在两个节点值之和为 22 的节点
+ 
+// 提示：
+//     二叉树的节点个数的范围是  [1, 10^4].
 //     -10^4 <= Node.val <= 10^4
-//     root is guaranteed to be a valid binary search tree.
+//     root 为二叉搜索树
 //     -10^5 <= k <= 10^5
-
+ 
 import "fmt"
 
 // Definition for a binary tree node.
