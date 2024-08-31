@@ -503,6 +503,7 @@
 [959. Regions Cut By Slashes](./leetcode/959-RegionsCutBySlashes.go)   
 [961. N-Repeated Element in Size 2N Array](./leetcode/961-NRepeatedElementInSize2NArray.go)   
 [962. Maximum Width Ramp](./leetcode/962-MaximumWidthRamp.go)   
+[963. Minimum Area Rectangle II](./leetcode/963-MinimumAreaRectangleII.go)   
 [969. Pancake Sorting](./leetcode/969-PancakeSorting.go)   
 [974. Subarray Sums Divisible by K](./leetcode/974-SubarraySumsDivisibleByK.go)   
 [975. Odd Even Jump](./leetcode/975-OddEvenJump.go)   
