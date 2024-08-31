@@ -2286,6 +2286,7 @@ LCR 075. 数组的相对排序
 [LCR 055. 二叉搜索树迭代器](./leetcode/LCR055-BinarySearchTreeIterator.go)   
 [LCR 056. 两数之和 IV - 输入二叉搜索树](./leetcode/LCR056-TwoSumIV-InputBinarySearchTree.go)   
 [LCR 057. 存在重复元素 III](./leetcode/LCR057-ContainsDuplicateIII.go)   
+[LCR 058. 我的日程安排表 I](./leetcode/LCR058-MyCalendarI.go)   
 [LCR 059. 数据流中的第 K 大元素](./leetcode/LCR059-KthLargestElementInAStream.go)   
 [LCR 060. 前 K 个高频元素](./leetcode/LCR060-TopKFrequentElements.go)   
 [LCR 061. 查找和最小的 K 对数字](./leetcode/LCR061-FindKPairsWithSmallestSums.go)   
