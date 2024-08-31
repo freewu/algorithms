@@ -1710,6 +1710,7 @@
 [52. N-Queens II](./leetcode/52-N-QueensII.go)   
 [254. Factor Combinations](./leetcode/254-FactorCombinations.go)   
 [489. Robot Room Cleaner](./leetcode/489-RobotRoomCleaner.go)   
+[967. Numbers With Same Consecutive Differences](./leetcode/967-NumbersWithSameConsecutiveDifferences.go)   
 [1215. Stepping Numbers](./leetcode/1215-SteppingNumbers.go)   
 
 # QuickSelect
