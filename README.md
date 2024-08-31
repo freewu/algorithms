@@ -1485,6 +1485,7 @@
 [1376. Time Needed to Inform All Employees](./leetcode/1376-TimeNeededToInformAllEmployees.go)   
 [1379. Find a Corresponding Node of a Binary Tree in a Clone of That Tree](./leetcode/1379-FindACorrespondingNodeOfABinaryTreeInACloneOfThatTree.go)   
 [1382. Balance a Binary Search Tree](./leetcode/1382-BalanceABinarySearchTree.go)   
+[1430. Check If a String Is a Valid Sequence from Root to Leaves Path in a Binary Tree](./leetcode/1430-CheckIfAStringIsAValidSequenceFromRootToLeavesPathInABinaryTree.go)   
 [1448. Count Good Nodes in Binary Tree](./leetcode/1448-CountGoodNodesInBinaryTree.go)   
 [1469. Find All The Lonely Nodes](./leetcode/1469-FindAllTheLonelyNodes.go)   
 [1483. Kth Ancestor of a Tree Node](./leetcode/1483-KthAncestorOfATreeNode.go)   
