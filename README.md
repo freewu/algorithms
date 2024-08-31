@@ -501,6 +501,7 @@
 [956. Tallest Billboard](./leetcode/956-TallestBillboard.go)   
 [957. Prison Cells After N Days](./leetcode/957-PrisonCellsAfterNDays.go)   
 [959. Regions Cut By Slashes](./leetcode/959-RegionsCutBySlashes.go)   
+[960. Delete Columns to Make Sorted III](./leetcode/960-DeleteColumnsToMakeSortedIII.go)   
 [961. N-Repeated Element in Size 2N Array](./leetcode/961-NRepeatedElementInSize2NArray.go)   
 [962. Maximum Width Ramp](./leetcode/962-MaximumWidthRamp.go)   
 [963. Minimum Area Rectangle II](./leetcode/963-MinimumAreaRectangleII.go)   
