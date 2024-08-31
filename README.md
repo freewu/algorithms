@@ -502,6 +502,7 @@
 [957. Prison Cells After N Days](./leetcode/957-PrisonCellsAfterNDays.go)   
 [959. Regions Cut By Slashes](./leetcode/959-RegionsCutBySlashes.go)   
 [961. N-Repeated Element in Size 2N Array](./leetcode/961-NRepeatedElementInSize2NArray.go)   
+[969. Pancake Sorting](./leetcode/969-PancakeSorting.go)   
 [974. Subarray Sums Divisible by K](./leetcode/974-SubarraySumsDivisibleByK.go)   
 [975. Odd Even Jump](./leetcode/975-OddEvenJump.go)   
 [976. Largest Perimeter Triangle](./leetcode/976-LargestPerimeterTriangle.go)   
