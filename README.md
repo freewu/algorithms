@@ -1489,6 +1489,7 @@
 [1448. Count Good Nodes in Binary Tree](./leetcode/1448-CountGoodNodesInBinaryTree.go)   
 [1469. Find All The Lonely Nodes](./leetcode/1469-FindAllTheLonelyNodes.go)   
 [1483. Kth Ancestor of a Tree Node](./leetcode/1483-KthAncestorOfATreeNode.go)   
+[1485. Clone Binary Tree With Random Pointer](./leetcode/1485-CloneBinaryTreeWithRandomPointer.go)   
 [1490. Clone N-ary Tree](./leetcode/1490-CloneN-AryTree.go)   
 [1506. Find Root of N-Ary Tree](./leetcode/1506-FindRootOfN-AryTree.go)   
 [1522. Diameter of N-Ary Tree](./leetcode/1522-DiameterOfN-AryTree.go)   
