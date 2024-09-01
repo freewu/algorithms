@@ -529,6 +529,7 @@
 [1001. Grid Illumination](./leetcode/1001-GridIllumination.go)   
 [1002. Find Common Characters](./leetcode/1002-FindCommonCharacters.go)   
 [1004. Max Consecutive Ones III](./leetcode/1004-MaxConsecutiveOnesIII.go)   
+[1007. Minimum Domino Rotations For Equal Row](./leetcode/1007-MinimumDominoRotationsForEqualRow.go)   
 [1010. Pairs of Songs With Total Durations Divisible by 60](./leetcode/1010-PairsOfSongsWithTotalDurationsDivisibleBy60.go)   
 [1011. Capacity To Ship Packages Within D Days](./leetcode/1011-CapacityToShipPackagesWithinDDays.go)   
 [1013. Partition Array Into Three Parts With Equal Sum](./leetcode/1013-PartitionArrayIntoThreePartsWithEqualSum.go)   
