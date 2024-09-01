@@ -1705,6 +1705,7 @@
 [1472. Design Browser History](./leetcode/1472-DesignBrowserHistory.go)    
 [1483. Kth Ancestor of a Tree Node](./leetcode/1483-KthAncestorOfATreeNode.go)   
 [1500. Design a File Sharing System](./leetcode/1500-DesignAFileSharingSystem.go)   
+[1586. Binary Search Tree Iterator II](./leetcode/1586-BinarySearchTreeIteratorII.go)    
 [1600. Throne Inheritance](./leetcode/1600-ThroneInheritance.go)    
 [1603. Design Parking System](./leetcode/1603-DesignParkingSystem.go)   
 [2336. Smallest Number in Infinite Set](./leetcode/2336-SmallestNumberInInfiniteSet.go)   
