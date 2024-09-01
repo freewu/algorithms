@@ -1191,6 +1191,7 @@
 [725. Split Linked List in Parts](./leetcode/725-SplitLinkedListInParts.go)   
 [817. Linked List Components](./leetcode/817-LinkedListComponents.go)   
 [876. Middle of the Linked List](./leetcode/876-MiddleOfTheLinkedList.go)   
+[1019. Next Greater Node In Linked List](./leetcode/1019-NextGreaterNodeInLinkedList.go)   
 [1171. Remove Zero Sum Consecutive Nodes from Linked List](./leetcode/1171-RemoveZeroSumConsecutiveNodesFromLinkedList.go)   
 [1265. Print Immutable Linked List in Reverse](./leetcode/1265-PrintImmutableLinkedListInReverse.go)   
 [1474. Delete N Nodes After M Nodes of a Linked List](./leetcode/1474-DeleteN-NodesAfterM-NodesOfALinkedList.go)   
