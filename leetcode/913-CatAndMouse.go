@@ -118,6 +118,68 @@ func catMouseGame(graph [][]int) int {
     return dp[1][2][0]
 }
 
+func catMouseGame1(graph [][]int) int {
+    DRAW, MOUSE_WIN, CAT_WIN := 0, 1, 2
+    MOUSE_MOVE, CAT_MOVE := 0, 1
+    n := len(graph)
+    dp := make([][][2]int, n)
+    for i := 0; i < n; i++ {
+        dp[i] = make([][2]int, n)
+    }
+    degree := make([][][2]int, n)
+    for i := 0; i < n; i++ {
+        degree[i] = make([][2]int, n)
+        for j := 0; j < n; j++ {
+            cnt := 0
+            for _, to := range graph[j] {
+                if to == 0 {
+                    cnt++
+                }
+            }
+            degree[i][j][MOUSE_MOVE] = len(graph[i])
+            degree[i][j][CAT_MOVE] = len(graph[j]) - cnt
+        }
+    }
+    q := make([][3]int, 0, 16)
+    for i := 1; i < n; i++ {
+        dp[0][i][CAT_MOVE], dp[0][i][MOUSE_MOVE] = MOUSE_WIN, MOUSE_WIN
+        dp[i][i][CAT_MOVE], dp[i][i][MOUSE_MOVE] = CAT_WIN, CAT_WIN
+        q = append(q, [3]int{0, i, CAT_MOVE}, [3]int{0, i, MOUSE_MOVE}, [3]int{i, i, CAT_MOVE}, [3]int{i, i, MOUSE_MOVE})
+    }
+    for len(q) > 0 {
+        mouse, cat, move := q[0][0], q[0][1], q[0][2]
+        q = q[1:]
+        if mouse == 1 && cat == 2 && move == MOUSE_MOVE {
+            break
+        }
+        prevTurn := move ^ 1 
+        moves := graph[mouse] 
+        if prevTurn == 1 {
+            moves = graph[cat]
+        }
+        for _, prevMove := range moves {
+            prevMouse, prevCat := prevMove, cat
+            if prevTurn == 1 {
+                prevMouse, prevCat = mouse, prevMove
+            } 
+            if prevCat == 0 || dp[prevMouse][prevCat][prevTurn] != DRAW {
+                continue
+            }
+            if (prevTurn == 0 && dp[mouse][cat][move] == MOUSE_WIN) ||(prevTurn == 1 && dp[mouse][cat][move] == CAT_WIN) {
+                dp[prevMouse][prevCat][prevTurn] = dp[mouse][cat][move]
+                q = append(q, [3]int{prevMouse, prevCat, prevTurn})
+                continue
+            }
+            degree[prevMouse][prevCat][prevTurn]--
+            if degree[prevMouse][prevCat][prevTurn] == 0 {
+                dp[prevMouse][prevCat][prevTurn] = dp[mouse][cat][move]
+                q = append(q, [3]int{prevMouse, prevCat, prevTurn})
+            }
+        }
+    }
+    return dp[1][2][MOUSE_MOVE]
+}
+
 func main() {
     // Example 1:
     // <img src="https://assets.leetcode.com/uploads/2020/11/17/cat1.jpg" />
@@ -129,4 +191,7 @@ func main() {
     // Input: graph = [[1,3],[0],[3],[0,2]]
     // Output: 1
     fmt.Println(catMouseGame([][]int{{1,3},{0},{3},{0,2}})) // 1
+
+    fmt.Println(catMouseGame1([][]int{{2,5},{3},{0,4,5},{1,4,5},{2,3},{0,2,3}})) // 0
+    fmt.Println(catMouseGame1([][]int{{1,3},{0},{3},{0,2}})) // 1
 }
