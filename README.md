@@ -1314,6 +1314,7 @@
 [932. Beautiful Array](./leetcode/932-BeautifulArray.go)   
 [939. Minimum Area Rectangle](./leetcode/939-MinimumAreaRectangle.go)   
 [964. Least Operators to Express Number](./leetcode/964-LeastOperatorsToExpressNumber.go)   
+[970. Powerful Integers](./leetcode/970-PowerfulIntegers.go)   
 [973. K Closest Points to Origin](./leetcode/973-KClosestPointsToOrigin.go)   
 [991. Broken Calculator](./leetcode/991-BrokenCalculator.go)   
 [1006. Clumsy Factorial](./leetcode/1006-ClumsyFactorial.go)   
