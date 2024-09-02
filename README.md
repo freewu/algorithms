@@ -654,6 +654,7 @@
 [1568. Minimum Number of Days to Disconnect Island](./leetcode/1568-MinimumNumberOfDaysToDisconnectIsland.go)   
 [1572. Matrix Diagonal Sum](./leetcode/1572-MatrixDiagonalSum.go)   
 [1575. Count All Possible Routes](./leetcode/1575-CountAllPossibleRoutes.go)   
+[1580. Put Boxes Into the Warehouse II](./leetcode/1580-PutBoxesIntoTheWarehouseII.go)   
 [1599. Maximum Profit of Operating a Centennial Wheel](./leetcode/1599-MaximumProfitOfOperatingACentennialWheel.go)   
 [1601. Maximum Number of Achievable Transfer Requests](./leetcode/1601-MaximumNumberOfAchievableTransferRequests.go)   
 [1605. Find Valid Matrix Given Row and Column Sums](./leetcode/1605-FindValidMatrixGivenRowAndColumnSums.go)   
