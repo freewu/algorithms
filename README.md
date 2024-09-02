@@ -1729,6 +1729,7 @@
 [489. Robot Room Cleaner](./leetcode/489-RobotRoomCleaner.go)   
 [967. Numbers With Same Consecutive Differences](./leetcode/967-NumbersWithSameConsecutiveDifferences.go)   
 [1215. Stepping Numbers](./leetcode/1215-SteppingNumbers.go)   
+[1240. Tiling a Rectangle with the Fewest Squares](./leetcode/1240-TilingARectangleWithTheFewestSquares.go)   
 
 # QuickSelect
 [215. Kth Largest Element in an Array](./leetcode/215-KthLargestElementInAnArray.go)   
