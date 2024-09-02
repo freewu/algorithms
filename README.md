@@ -515,6 +515,7 @@
 [975. Odd Even Jump](./leetcode/975-OddEvenJump.go)   
 [976. Largest Perimeter Triangle](./leetcode/976-LargestPerimeterTriangle.go)   
 [977. Squares of a Sorted Array](./leetcode/977-SquaresOfASortedArray.go)   
+[978. Longest Turbulent Subarray](./leetcode/978-LongestTurbulentSubarray.go)   
 [980. Unique Paths III](./leetcode/980-UniquePathsIII.go)   
 [982. Triples with Bitwise AND Equal To Zero](./leetcode/982-TriplesWithBitwiseANDEqualToZero.go)   
 [983. Minimum Cost For Tickets](./leetcode/983-MinimumCostForTickets.go)   
