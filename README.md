@@ -478,6 +478,7 @@
 [908. Smallest Range I](./leetcode/908-SmallestRangeI.go)   
 [909. Snakes and Ladders](./leetcode/909-SnakesAndLadders.go)   
 [912. Sort an Array](./leetcode/912-SortAnArray.go)   
+[914. X of a Kind in a Deck of Cards](./leetcode/914-XOfAKindInADeckOfCards.go)   
 [918. Maximum Sum Circular Subarray](./leetcode/918-MaximumSumCircularSubarray.go)   
 [930. Binary Subarrays With Sum](./leetcode/930-BinarySubarraysWithSum.go)    
 [931. Minimum Falling Path Sum](./leetcode/931-MinimumFallingPathSum.go)   
