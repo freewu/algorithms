@@ -2305,6 +2305,7 @@ LCR 075. 数组的相对排序
 [LCR 045. 找树左下角的值](./leetcode/LCR045-FindBottomLeftTreeValue.go)   
 [LCR 046. 二叉树的右视图](./leetcode/LCR046-BinaryTreeRightSideView.go)   
 [LCR 047. 二叉树剪枝](./leetcode/LCR047-BinaryTreePruning.go)   
+[LCR 048. 二叉树的序列化与反序列化](./leetcode/LCR048-SerializeAndDeserializeBinaryTree.go)   
 [LCR 055. 二叉搜索树迭代器](./leetcode/LCR055-BinarySearchTreeIterator.go)   
 [LCR 056. 两数之和 IV - 输入二叉搜索树](./leetcode/LCR056-TwoSumIV-InputBinarySearchTree.go)   
 [LCR 057. 存在重复元素 III](./leetcode/LCR057-ContainsDuplicateIII.go)   
