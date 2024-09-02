@@ -2127,6 +2127,8 @@ LCR 075. 数组的相对排序
 [3252. Premier League Table Ranking II](./leetcode/3252-PremierLeagueTableRankingII.sql)   
 [3262. Find Overlapping Shifts](./leetcode/3262-FindOverlappingShifts.sql)   
 [3268. Find Overlapping Shifts II](./leetcode/3268-FindOverlappingShiftsII.sql)   
+[3278. Find Candidates for Data Scientist Position II](./leetcode/3278-FindCandidatesForDataScientistPositionII.sql)   
+
 
 # Shell
 [192. Word Frequency](./leetcode/192-WordFrequency.sh)      
