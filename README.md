@@ -485,6 +485,7 @@
 [922. Sort Array By Parity II](./leetcode/922-SortArrayByParityII.go)   
 [923. 3Sum With Multiplicity](./leetcode/923-3SumWithMultiplicity.go)   
 [927. Three Equal Parts](./leetcode/927-ThreeEqualParts.go)   
+[929. Unique Email Addresses](./leetcode/929-UniqueEmailAddresses.go)   
 [930. Binary Subarrays With Sum](./leetcode/930-BinarySubarraysWithSum.go)   
 [931. Minimum Falling Path Sum](./leetcode/931-MinimumFallingPathSum.go)   
 [932. Beautiful Array](./leetcode/932-BeautifulArray.go)   
