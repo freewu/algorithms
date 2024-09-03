@@ -1520,6 +1520,7 @@
 [1485. Clone Binary Tree With Random Pointer](./leetcode/1485-CloneBinaryTreeWithRandomPointer.go)   
 [1490. Clone N-ary Tree](./leetcode/1490-CloneN-AryTree.go)   
 [1506. Find Root of N-Ary Tree](./leetcode/1506-FindRootOfN-AryTree.go)   
+[1516. Move Sub-Tree of N-Ary Tree](./leetcode/1516-MoveSubTreeOfNAryTree.go)   
 [1522. Diameter of N-Ary Tree](./leetcode/1522-DiameterOfN-AryTree.go)   
 [1530. Number of Good Leaf Nodes Pairs](./leetcode/1530-NumberOfGoodLeafNodesPairs.go)   
 [1569. Number of Ways to Reorder Array to Get Same BST](./leetcode/1569-NumberOfWaysToReorderArrayToGetSameBST.go)   
