@@ -1,33 +1,28 @@
 package main
 
-// 124. Binary Tree Maximum Path Sum
-// A path in a binary tree is a sequence of nodes where each pair of adjacent nodes in the sequence has an edge connecting them. A node can only appear in the sequence at most once. 
-// Note that the path does not need to pass through the root.
-// The path sum of a path is the sum of the node's values in the path.
-// Given the root of a binary tree, return the maximum path sum of any non-empty path.
+// LCR 051. 二叉树中的最大路径和
+// 路径 被定义为一条从树中任意节点出发，沿父节点-子节点连接，达到任意节点的序列。
+// 同一个节点在一条路径序列中 至多出现一次 。
+// 该路径 至少包含一个 节点，且不一定经过根节点。
 
-// Example 1:
-// <img src="https://assets.leetcode.com/uploads/2020/10/13/exx1.jpg" / >
-//     1
-//    /  \ 
-//   2    3
-// Input: root = [1,2,3]
-// Output: 6
-// Explanation: The optimal path is 2 -> 1 -> 3 with a path sum of 2 + 1 + 3 = 6.
+// 路径和 是路径中各节点值的总和。
 
-// Example 2:
-// <img src="https://assets.leetcode.com/uploads/2020/10/13/exx2.jpg" / >
-//         -10
-//         /  \
-//        9    20
-//            /  \
-//           15   7
-// Input: root = [-10,9,20,null,null,15,7]
-// Output: 42
-// Explanation: The optimal path is 15 -> 20 -> 7 with a path sum of 15 + 20 + 7 = 42.
+// 给定一个二叉树的根节点 root ，返回其 最大路径和，即所有路径上节点值之和的最大值。
 
-// Constraints:
-//     The number of nodes in the tree is in the range [1, 3 * 10^4].
+// 示例 1：
+// <img src="https://assets.leetcode.com/uploads/2020/10/13/exx1.jpg" />
+// 输入：root = [1,2,3]
+// 输出：6
+// 解释：最优路径是 2 -> 1 -> 3 ，路径和为 2 + 1 + 3 = 6
+
+// 示例 2：
+// <img src="https://assets.leetcode.com/uploads/2020/10/13/exx2.jpg" />
+// 输入：root = [-10,9,20,null,null,15,7]
+// 输出：42
+// 解释：最优路径是 15 -> 20 -> 7 ，路径和为 15 + 20 + 7 = 42
+
+// 提示：
+//     树中节点数目范围是 [1, 3 * 10^4]
 //     -1000 <= Node.val <= 1000
 
 import "fmt"
@@ -83,6 +78,20 @@ func maxPathSum1(root *TreeNode) int {
 }
 
 func maxPathSum2(root *TreeNode) int {
+    if root == nil { return 0 }
+    max := func (x, y int) int { if x > y { return x; }; return y; }
+    var dfs func(node *TreeNode) (int, int) // @return 最大路径和 + 最大单条路径和
+    dfs = func(node *TreeNode) (int, int) {
+        if node == nil { return -1 << 31, 0 }
+        lres, lPathSum := dfs(node.Left)
+        rres, rPathSum := dfs(node.Right)
+        return max(max(lres, rres), lPathSum + rPathSum+node.Val),  max(0, max(lPathSum, rPathSum) + node.Val)
+    }
+    res, _ := dfs(root)
+    return res
+}
+
+func maxPathSum3(root *TreeNode) int {
     res := -1 << 31
     max := func (x, y int) int { if x > y { return x; }; return y; }
     var dfs func(*TreeNode) int
@@ -119,7 +128,10 @@ func main() {
 
     fmt.Println(maxPathSum1(tree1)) // 6
     fmt.Println(maxPathSum1(tree2)) // 42
-    
+
     fmt.Println(maxPathSum2(tree1)) // 6
     fmt.Println(maxPathSum2(tree2)) // 42
+
+    fmt.Println(maxPathSum3(tree1)) // 6
+    fmt.Println(maxPathSum3(tree2)) // 42
 }
