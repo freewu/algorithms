@@ -1,38 +1,21 @@
 package main
 
-// 897. Increasing Order Search Tree
-// Given the root of a binary search tree, 
-// rearrange the tree in in-order so that the leftmost node in the tree is now the root of the tree, 
-// and every node has no left child and only one right child.
+// LCR 052. 递增顺序搜索树
+// 给你一棵二叉搜索树，请 按中序遍历 将其重新排列为一棵递增顺序搜索树，
+// 使树中最左边的节点成为树的根节点，并且每个节点没有左子节点，只有一个右子节点。
 
-// Example 1:
-//             5                           1
-//           /    \                          \
-//          3      6                          2 
-//        /   \      \             =>          \
-//       2     4      8                          3
-//     /             /  \                         \
-//    1             7    9                         4
-//                                                 [\]
-//                                                   8
-//                                                     \
-//                                                      9
+// 示例 1：
 // <img src="https://assets.leetcode.com/uploads/2020/11/17/ex1.jpg" />
-// Input: root = [5,3,6,2,4,null,8,1,null,null,null,7,9]
-// Output: [1,null,2,null,3,null,4,null,5,null,6,null,7,null,8,null,9]
+// 输入：root = [5,3,6,2,4,null,8,1,null,null,null,7,9]
+// 输出：[1,null,2,null,3,null,4,null,5,null,6,null,7,null,8,null,9]
 
-// Example 2:
+// 示例 2：
 // <img src="https://assets.leetcode.com/uploads/2020/11/17/ex2.jpg" />
-//         5                   1
-//       /   \        =>         \
-//      1     7                    5
-//                                  \
-//                                    7
-// Input: root = [5,1,7] 
-// Output: [1,null,5,null,7]
+// 输入：root = [5,1,7]
+// 输出：[1,null,5,null,7]
 
-// Constraints:
-//     The number of nodes in the given tree will be in the range [1, 100].
+// 提示：
+//     树中节点数的取值范围是 [1, 100]
 //     0 <= Node.val <= 1000
 
 import "fmt"
@@ -71,7 +54,6 @@ func increasingBST1(root *TreeNode) *TreeNode {
     }
     return res.Right
 }
-
 
 // 递归
 func increasingBST(root *TreeNode) *TreeNode {

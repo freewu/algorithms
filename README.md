@@ -2333,6 +2333,7 @@ LCR 075. 数组的相对排序
 [LCR 049. 求根节点到叶节点数字之和](./leetcode/LCR049-SumRootToLeafNumbers.go)   
 [LCR 050. 路径总和 III](./leetcode/LCR050-PathSumIII.go)   
 [LCR 051. 二叉树中的最大路径和](./leetcode/LCR051-BinaryTreeMaximumPathSum.go)   
+[LCR 052. 递增顺序搜索树](./leetcode/LCR052-IncreasingOrderSearchTree.go)   
 [LCR 055. 二叉搜索树迭代器](./leetcode/LCR055-BinarySearchTreeIterator.go)   
 [LCR 056. 两数之和 IV - 输入二叉搜索树](./leetcode/LCR056-TwoSumIV-InputBinarySearchTree.go)   
 [LCR 057. 存在重复元素 III](./leetcode/LCR057-ContainsDuplicateIII.go)   
