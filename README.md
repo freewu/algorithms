@@ -1067,6 +1067,7 @@
 [942. DI String Match](./leetcode/942-DIStringMatch.go)   
 [972. Equal Rational Numbers](./leetcode/972-EqualRationalNumbers.go)   
 [984. String Without AAA or BBB](./leetcode/984-StringWithoutAAAOrBBB.go)   
+[1003. Check If Word Is Valid After Substitutions](./leetcode/1003-CheckIfWordIsValidAfterSubstitutions.go)   
 [1041. Robot Bounded In Circle](./leetcode/1041-RobotBoundedInCircle.go)   
 [1047. Remove All Adjacent Duplicates In String](./leetcode/1047-RemoveAllAdjacentDuplicatesInString.go)   
 [1154. Day of the Year](./leetcode/1154-DayOfTheYear.go)   
