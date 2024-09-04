@@ -1646,7 +1646,6 @@
 [3141. Maximum Hamming Distances](./leetcode/3141-MaximumHammingDistances.go)   
 [3199. Count Triplets with Even XOR Set Bits I](./leetcode/3199-CountTripletsWithEvenXORSetBitsI.go)   
 
-
 # Design
 [146. LRU Cache](./leetcode/146-LRUCache.go)   
 [155. Min Stack](./leetcode/155-MinStack.go)   
@@ -1737,6 +1736,7 @@
 [1472. Design Browser History](./leetcode/1472-DesignBrowserHistory.go)    
 [1483. Kth Ancestor of a Tree Node](./leetcode/1483-KthAncestorOfATreeNode.go)   
 [1500. Design a File Sharing System](./leetcode/1500-DesignAFileSharingSystem.go)   
+[1570. Dot Product of Two Sparse Vectors](./leetcode/1570-DotProductOfTwoSparseVectors.go)   
 [1586. Binary Search Tree Iterator II](./leetcode/1586-BinarySearchTreeIteratorII.go)    
 [1600. Throne Inheritance](./leetcode/1600-ThroneInheritance.go)    
 [1603. Design Parking System](./leetcode/1603-DesignParkingSystem.go)   
