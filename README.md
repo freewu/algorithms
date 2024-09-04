@@ -543,6 +543,7 @@
 [1011. Capacity To Ship Packages Within D Days](./leetcode/1011-CapacityToShipPackagesWithinDDays.go)   
 [1013. Partition Array Into Three Parts With Equal Sum](./leetcode/1013-PartitionArrayIntoThreePartsWithEqualSum.go)   
 [1014. Best Sightseeing Pair](./leetcode/1014-BestSightseeingPair.go)   
+[1018. Binary Prefix Divisible By 5](./leetcode/1018-BinaryPrefixDivisibleByFive.go)   
 [1020. Number of Enclaves](./leetcode/1020-NumberOfEnclaves.go)   
 [1027. Longest Arithmetic Subsequence](./leetcode/1027-LongestArithmeticSubsequence.go)   
 [1029. Two City Scheduling](./leetcode/1029-TwoCityScheduling.go)   
