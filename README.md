@@ -545,6 +545,7 @@
 [1014. Best Sightseeing Pair](./leetcode/1014-BestSightseeingPair.go)   
 [1018. Binary Prefix Divisible By 5](./leetcode/1018-BinaryPrefixDivisibleByFive.go)   
 [1020. Number of Enclaves](./leetcode/1020-NumberOfEnclaves.go)   
+[1024. Video Stitching](./leetcode/1024-VideoStitching.go)   
 [1027. Longest Arithmetic Subsequence](./leetcode/1027-LongestArithmeticSubsequence.go)   
 [1029. Two City Scheduling](./leetcode/1029-TwoCityScheduling.go)   
 [1035. Uncrossed Lines](./leetcode/1035-UncrossedLines.go)   
