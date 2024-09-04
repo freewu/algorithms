@@ -1074,6 +1074,7 @@
 [984. String Without AAA or BBB](./leetcode/984-StringWithoutAAAOrBBB.go)   
 [1003. Check If Word Is Valid After Substitutions](./leetcode/1003-CheckIfWordIsValidAfterSubstitutions.go)   
 [1016. Binary String With Substrings Representing 1 To N](./leetcode/1016-BinaryStringWithSubstringsRepresentingOneToN.go)   
+[1021. Remove Outermost Parentheses](./leetcode/1021-RemoveOutermostParentheses.go)   
 [1041. Robot Bounded In Circle](./leetcode/1041-RobotBoundedInCircle.go)   
 [1047. Remove All Adjacent Duplicates In String](./leetcode/1047-RemoveAllAdjacentDuplicatesInString.go)   
 [1154. Day of the Year](./leetcode/1154-DayOfTheYear.go)   
