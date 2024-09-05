@@ -593,6 +593,7 @@
 [1199. Minimum Time to Build Blocks](./leetcode/1199-MinimumTimeToBuildBlocks.go)   
 [1207. Unique Number of Occurrences](./leetcode/1207-UniqueNumberOfOccurrences.go)   
 [1213. Intersection of Three Sorted Arrays](./leetcode/1213-IntersectionOfThreeSortedArrays.go)   
+[1217. Minimum Cost to Move Chips to The Same Position](./leetcode/1217-MinimumCostToMoveChipsToTheSamePosition.go)   
 [1218. Longest Arithmetic Subsequence of Given Difference](./leetcode/1218-LongestArithmeticSubsequenceOfGivenDifference.go)   
 [1219. Path with Maximum Gold](./leetcode/1219-PathWithMaximumGold.go)   
 [1228. Missing Number In Arithmetic Progression](./leetcode/1228-MissingNumberInArithmeticProgression.go)   
