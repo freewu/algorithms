@@ -1520,6 +1520,7 @@
 [1026. Maximum Difference Between Node and Ancestor](./leetcode/1026-MaximumDifferenceBetweenNodeAndAncestor.go)   
 [1028. Recover a Tree From Preorder Traversal](./leetcode/1028-RecoverATreeFromPreorderTraversal.go)   
 [1038. Binary Search Tree to Greater Sum Tree](./leetcode/1038-BinarySearchTreeToGreaterSumTree.go)   
+[1080. Insufficient Nodes in Root to Leaf Paths](./leetcode/1080-InsufficientNodesInRootToLeafPaths.go)   
 [1110. Delete Nodes And Return Forest](./leetcode/1110-DeleteNodesAndReturnForest.go)   
 [1120. Maximum Average Subtree](./leetcode/1120-MaximumAverageSubtree.go)   
 [1123. Lowest Common Ancestor of Deepest Leaves](./leetcode/1123-LowestCommonAncestorOfDeepestLeaves.go)   
