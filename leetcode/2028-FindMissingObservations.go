@@ -90,6 +90,32 @@ func missingRolls1(rolls []int, mean int, n int) []int {
     return res
 }
 
+func missingRolls2(rolls []int, mean int, n int) []int {
+    mTotal := 0
+    for _, v := range rolls { // 统计出未缺失的观测数据总和
+        mTotal += v
+    }
+    nTotal := ((mean) * (n + len(rolls))) - mTotal //  计算出缺失的观测数据总和
+    if nTotal > n * 6 || nTotal < n {
+        return []int{}
+    }
+    res, rem := make([]int, n), nTotal
+    for i := range res {
+        res[i] = 1
+        rem -= 1
+    }
+    min := func (x, y int) int { if x < y { return x; }; return y; }
+    for i := range res {
+        currAdd := min(5, rem)
+        res[i] += currAdd
+        rem -= currAdd
+        if rem == 0 {
+            break
+        }
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: rolls = [3,2,4,3], mean = 4, n = 2
@@ -110,4 +136,8 @@ func main() {
     fmt.Println(missingRolls1([]int{3,2,4,3}, 4, 2)) // [6,6]
     fmt.Println(missingRolls1([]int{1,5,6}, 3, 4)) // [2,3,2,2]
     fmt.Println(missingRolls1([]int{1,2,3,4}, 6, 4)) // []
+
+    fmt.Println(missingRolls2([]int{3,2,4,3}, 4, 2)) // [6,6]
+    fmt.Println(missingRolls2([]int{1,5,6}, 3, 4)) // [2,3,2,2]
+    fmt.Println(missingRolls2([]int{1,2,3,4}, 6, 4)) // []
 }
