@@ -1,37 +1,35 @@
 package main
 
-// 285. Inorder Successor in BST
-// Given the root of a binary search tree and a node p in it, return the in-order successor of that node in the BST. 
-// If the given node has no in-order successor in the tree, return null.
-// The successor of a node p is the node with the smallest key greater than p.val.
+// LCR 053. 二叉搜索树中的中序后继
+// 给定一棵二叉搜索树和其中的一个节点 p ，找到该节点在树中的中序后继。如果节点没有中序后继，请返回 null 。
+// 节点 p 的后继是值比 p.val 大的节点中键值最小的节点，即按中序遍历的顺序节点 p 的下一个节点。
 
-// Example 1:
+// 示例 1：
 //         2
 //       /   \
 //      1     3
 // <img src="https://assets.leetcode.com/uploads/2019/01/23/285_example_1.PNG" />
-// Input: root = [2,1,3], p = 1
-// Output: 2
-// Explanation: 1's in-order successor node is 2. Note that both p and the return value is of TreeNode type.
+// 输入：root = [2,1,3], p = 1
+// 输出：2
+// 解释：这里 1 的中序后继是 2。请注意 p 和返回值都应是 TreeNode 类型。
 
-// Example 2:
-//           5
-//         /   \
-//        3     6
-//      /   \
-//     2     4
-//    /
-//   1
+// 示例 2：
+//         5
+//       /   \
+//      3     6
+//    /   \
+//   2    4
+//  /
+// 1
 // <img src="https://assets.leetcode.com/uploads/2019/01/23/285_example_2.PNG" />
-// Input: root = [5,3,6,2,4,null,null,1], p = 6
-// Output: null
-// Explanation: There is no in-order successor of the current node, so the answer is null.
- 
-// Constraints:
-//     The number of nodes in the tree is in the range [1, 10^4].
-//     -10^5 <= Node.val <= 10^5
-//     All Nodes will have unique values.
+// 输入：root = [5,3,6,2,4,null,null,1], p = 6
+// 输出：null
+// 解释：因为给出的节点没有中序后继，所以答案就返回 null 了。
 
+// 提示：
+//     树中节点的数目在范围 [1, 10^4] 内。
+//     -10^5 <= Node.val <= 10^5
+//     树中各节点的值均保证唯一。
 import "fmt"
 
 // Definition for a binary tree node.
