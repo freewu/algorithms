@@ -842,6 +842,7 @@
 [2974. Minimum Number Game](./leetcode/2974-MinimumNumberGame.go)   
 [2997. Minimum Number of Operations to Make Array XOR Equal to K](./leetcode/2997-MinimumNumberOfOperationsToMakeArrayXOREqualToK.go)   
 [3000. Maximum Area of Longest Diagonal Rectangle](./leetcode/3000-MaximumAreaOfLongestDiagonalRectangle.go)   
+[3004. Maximum Subtree of the Same Color](./leetcode/3004-MaximumSubtreeOfTheSameColor.go)   
 [3005. Count Elements With Maximum Frequency](./leetcode/3005-CountElementsWithMaximumFrequency.go)   
 [3009. Maximum Number of Intersections on the Chart](./leetcode/3009-MaximumNumberOfIntersectionsOnTheChart.go)   
 [3011. Find if Array Can Be Sorted](./leetcode/3011-FindIfArrayCanBeSorted.go)   
