@@ -1236,6 +1236,7 @@
 # Enumeration
 [204. Count Primes](./leetcode/204-CountPrimes.go)   
 [1291. Sequential Digits](./leetcode/1291-SequentialDigits.go)   
+[3001. Minimum Moves to Capture The Queen](./leetcode/3001-MinimumMovesToCaptureTheQueen.go)   
 
 # HashTable
 [694. Number of Distinct Islands](./leetcode/694-NumberOfDistinctIslands.go)   
