@@ -882,6 +882,7 @@
 [3153. Sum of Digit Differences of All Pairs](./leetcode/3153-SumOfDigitDifferencesOfAllPairs.go)   
 [3160. Find the Number of Distinct Colors Among the Balls](./leetcode/3160-FindTheNumberOfDistinctColorsAmongTheBalls.go)   
 [3176. Find the Maximum Length of a Good Subsequence I](./leetcode/3176-FindTheMaximumLengthOfAGoodSubsequenceI.go)   
+[3177. Find the Maximum Length of a Good Subsequence II](./leetcode/3177-FindTheMaximumLengthOfAGoodSubsequenceII.go)   
 [3190. Find Minimum Operations to Make All Elements Divisible by Three](./leetcode/3190-FindMinimumOperationsToMakeAllElementsDivisibleByThree.go)   
 [3195. Find the Minimum Area to Cover All Ones I](./leetcode/3195-FindTheMinimumAreaToCoverAllOnesI.go)   
 [3205. Maximum Array Hopping Score I](./leetcode/3205-MaximumArrayHoppingScoreI.go)   
