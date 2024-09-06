@@ -1140,6 +1140,7 @@
 [1750. Minimum Length of String After Deleting Similar Ends](./leetcode/1750-MinimumLengthOfStringAfterDeletingSimilarEnds.go)    
 [1768. Merge Strings Alternately](./leetcode/1768-MergeStringsAlternately.go)   
 [1915. Number of Wonderful Substrings](./leetcode/1915-NumberOfWonderfulSubstrings.go)   
+[1933. Check if String Is Decomposable Into Value-Equal Substrings](./leetcode/1933-CheckIfStringIsDecomposableIntoValueEqualSubstrings.go)   
 [1945. Sum of Digits of String After Convert](./leetcode/1945-SumOfDigitsOfStringAfterConvert.go)   
 [2000. Reverse Prefix of Word](./leetcode/2000-ReversePrefixOfWord.go)   
 [2024. Maximize the Confusion of an Exam](./leetcode/2024-MaximizeTheConfusionOfAnExam.go)   

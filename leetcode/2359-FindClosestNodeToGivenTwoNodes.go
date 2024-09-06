@@ -124,6 +124,25 @@ func closestMeetingNode1(edges []int, node1 int, node2 int) int {
     return res
 }
 
+func closestMeetingNode2(edges []int, node1 int, node2 int) int {
+    n, found := len(edges), 1_000_000_001
+    visited1, visited2 := make([]bool, n),  make([]bool, n)
+    visited1[node1], visited2[node2] = true, true
+    min := func (x, y int) int { if x < y { return x; }; return y; }
+    for node1 != -1 || node2 != -1 {
+        if node2 != -1 && visited1[node2] { found = min(found, node2) }
+        if node1 != -1 && visited2[node1] { found = min(found, node1) }
+        if found != 1000000001 { return found }
+        if node1 != -1 { node1 = edges[node1] }
+        if node2 != -1 { node2 = edges[node2] }
+        if node1 != -1 && visited1[node1] { node1 = -1 }
+        if node2 != -1 && visited2[node2] { node2 = -1 } 
+        if node1 != -1 { visited1[node1] = true }
+        if node2 != -1 { visited2[node2] = true }
+    }
+    return -1
+}
+
 func main() {
     // Example 1:
     // <img src="https://assets.leetcode.com/uploads/2022/06/07/graph4drawio-2.png" />
@@ -142,4 +161,7 @@ func main() {
 
     fmt.Println(closestMeetingNode1([]int{2,2,3,-1}, 0, 1)) // 2
     fmt.Println(closestMeetingNode1([]int{1,2,-1}, 0, 2)) // 2
+
+    fmt.Println(closestMeetingNode2([]int{2,2,3,-1}, 0, 1)) // 2
+    fmt.Println(closestMeetingNode2([]int{1,2,-1}, 0, 2)) // 2
 }
