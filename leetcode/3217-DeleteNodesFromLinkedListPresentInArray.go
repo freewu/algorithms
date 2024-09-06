@@ -91,6 +91,22 @@ func modifiedList(nums []int, head *ListNode) *ListNode {
     return dummy.Next
 }
 
+func modifiedList1(nums []int, head *ListNode) *ListNode {
+    mp := [1e5+1]bool{}
+    for _, v := range nums {
+        mp[v] = true
+    }
+    dummy := &ListNode{ Val: -1, Next: head, }
+    for pre := dummy; pre.Next != nil; {
+        if mp[pre.Next.Val] {
+            pre.Next = pre.Next.Next // 删除该节点
+        } else {
+            pre = pre.Next
+        }
+    }
+    return dummy.Next
+}
+
 func main() {
     // Example 1:
     // Input: nums = [1,2,3], head = [1,2,3,4,5]
@@ -116,4 +132,14 @@ func main() {
     list3 := makeListNode([]int{1,2,3,4})
     printListNode(list3) // 1 -> 2 -> 3 -> 4
     printListNode(modifiedList([]int{5}, list3)) // 1 -> 2 -> 3 -> 4
+
+    list11 := makeListNode([]int{1,2,3,4,5})
+    printListNode(list11) // 1 -> 2 -> 3 -> 4 -> 5
+    printListNode(modifiedList1([]int{1,2,3}, list11)) // 4 -> 5
+    list12 := makeListNode([]int{1,2,1,2,1,2})
+    printListNode(list12) // 1 -> 2 -> 1 -> 2 -> 1 -> 2
+    printListNode(modifiedList1([]int{1}, list12)) // 2 -> 2 -> 2
+    list13 := makeListNode([]int{1,2,3,4})
+    printListNode(list13) // 1 -> 2 -> 3 -> 4
+    printListNode(modifiedList1([]int{5}, list13)) // 1 -> 2 -> 3 -> 4
 }
