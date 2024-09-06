@@ -1192,6 +1192,7 @@
 [1155. Number of Dice Rolls With Target Sum](./leetcode/1155-NumberOfDiceRollsWithTargetSum.go)   
 [1220. Count Vowels Permutation](./leetcode/1220-CountVowelsPermutation.go)   
 [1553. Minimum Number of Days to Eat N Oranges](./leetcode/1553-MinimumNumberOfDaysToEatNOranges.go)   
+[1931. Painting a Grid With Three Different Colors](./leetcode/1931-PaintingAGridWithThreeDifferentColors.go)   
 [2466. Count Ways To Build Good Strings](./leetcode/2466-CountWaysToBuildGoodStrings.go)   
 [3129. Find All Possible Stable Binary Arrays I](./leetcode/3129-FindAllPossibleStableBinaryArraysI.go)   
 [3130. Find All Possible Stable Binary Arrays II](./leetcode/3130-FindAllPossibleStableBinaryArraysII.go)   
