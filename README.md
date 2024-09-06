@@ -1241,6 +1241,7 @@
 [2181. Merge Nodes in Between Zeros](./leetcode/2181-MergeNodesInBetweenZeros.go)   
 [2487. Remove Nodes From Linked List](./leetcode/2487-RemoveNodesFromLinkedList.go)   
 [2816. Double a Number Represented as a Linked List](./leetcode/2816-DoubleANumberRepresentedAsALinkedList.go)   
+[3217. Delete Nodes From Linked List Present in Array](./leetcode/3217-DeleteNodesFromLinkedListPresentInArray.go)   
 
 # Enumeration
 [204. Count Primes](./leetcode/204-CountPrimes.go)   
