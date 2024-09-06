@@ -694,6 +694,7 @@
 [1793. Maximum Score of a Good Subarray](./leetcode/1793-MaximumScoreOfAGoodSubarray.go)   
 [1799. Maximize Score After N Operations](./leetcode/1799-MaximizeScoreAfterNOperations.go)   
 [1800. Maximum Ascending Subarray Sum](./leetcode/1800-MaximumAscendingSubarraySum.go)   
+[1814. Count Nice Pairs in an Array](./leetcode/1814-CountNicePairsInAnArray.go)   
 [1822. Sign of the Product of an Array](./leetcode/1822-SignOfTheProductOfAnArray.go)   
 [1840. Maximum Building Height](./leetcode/1840-MaximumBuildingHeight.go)   
 [1854. Maximum Population Year](./leetcode/1854-MaximumPopulationYear.go)   
