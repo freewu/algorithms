@@ -1632,6 +1632,7 @@
 [2285. Maximum Total Importance of Roads](./leetcode/2285-MaximumTotalImportanceOfRoads.go)   
 [2316. Count Unreachable Pairs of Nodes in an Undirected Graph](./leetcode/2316-CountUnreachablePairsOfNodesInAnUndirectedGraph.go)   
 [2328. Number of Increasing Paths in a Grid](./leetcode/2328-NumberOfIncreasingPathsInAGrid.go)   
+[2359. Find Closest Node to Given Two Nodes](./leetcode/2359-FindClosestNodeToGivenTwoNodes.go)   
 [2492. Minimum Score of a Path Between Two Cities](./leetcode/2492-MinimumScoreOfAPathBetweenTwoCities.go)   
 [2508. Add Edges to Make Degrees of All Nodes Even](./leetcode/2508-AddEdgesToMakeDegreesOfAllNodesEven.go)   
 [2639. Find the Width of Columns of a Grid](./leetcode/2639-FindTheWidthOfColumnsOfAGrid.go)   
