@@ -1371,6 +1371,7 @@
 [1015. Smallest Integer Divisible by K](./leetcode/1015-SmallestIntegerDivisibleByK.go)   
 [1017. Convert to Base -2](./leetcode/1017-ConvertToBase-2.go)   
 [1025. Divisor Game](./leetcode/1025-DivisorGame.go)   
+[1033. Moving Stones Until Consecutive](./leetcode/1033-MovingStonesUntilConsecutive.go)   
 [1056. Confusing Number](./leetcode/1056-ConfusingNumber.go)   
 [1067. Digit Count in Range](./leetcode/1067-DigitCountInRange.go)   
 [1088. Confusing Number II](./leetcode/1088-ConfusingNumberII.go)   
