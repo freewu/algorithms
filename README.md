@@ -551,6 +551,7 @@
 [1030. Matrix Cells in Distance Order](./leetcode/1030-MatrixCellsInDistanceOrder.go)   
 [1031. Maximum Sum of Two Non-Overlapping Subarrays](./leetcode/1031-MaximumSumOfTwoNonOverlappingSubarrays.go)   
 [1035. Uncrossed Lines](./leetcode/1035-UncrossedLines.go)   
+[1037. Valid Boomerang](./leetcode/1037-ValidBoomerang.go)   
 [1039. Minimum Score Triangulation of Polygon](./leetcode/1039-MinimumScoreTriangulationOfPolygon.go)   
 [1043. Partition Array for Maximum Sum](./leetcode/1043-PartitionArrayForMaximumSum.go)   
 [1048. Longest String Chain](./leetcode/1048-LongestStringChain.go)   
