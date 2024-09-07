@@ -550,6 +550,7 @@
 [1029. Two City Scheduling](./leetcode/1029-TwoCityScheduling.go)   
 [1030. Matrix Cells in Distance Order](./leetcode/1030-MatrixCellsInDistanceOrder.go)   
 [1031. Maximum Sum of Two Non-Overlapping Subarrays](./leetcode/1031-MaximumSumOfTwoNonOverlappingSubarrays.go)   
+[1034. Coloring A Border](./leetcode/1034-ColoringABorder.go)   
 [1035. Uncrossed Lines](./leetcode/1035-UncrossedLines.go)   
 [1037. Valid Boomerang](./leetcode/1037-ValidBoomerang.go)   
 [1039. Minimum Score Triangulation of Polygon](./leetcode/1039-MinimumScoreTriangulationOfPolygon.go)   
