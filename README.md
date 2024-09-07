@@ -1644,6 +1644,7 @@
 [2699. Modify Graph Edge Weights](./leetcode/2699-ModifyGraphEdgeWeights.go)   
 [2959. Number of Possible Sets of Closing Branches](./leetcode/2959-NumberOfPossibleSetsOfClosingBranches.go)   
 [3112. Minimum Time to Visit Disappearing Nodes](./leetcode/3112-MinimumTimeToVisitDisappearingNodes.go)   
+[3123. Find Edges in Shortest Paths](./leetcode/3123-FindEdgesInShortestPaths.go)   
 
 # Trie
 [386. Lexicographical Numbers](./leetcode/386-LexicographicalNumbers.go)   
