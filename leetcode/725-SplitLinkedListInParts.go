@@ -126,6 +126,47 @@ func splitListToParts1(head *ListNode, k int) []*ListNode {
     return res
 }
 
+func splitListToParts2(head *ListNode, k int) []*ListNode {
+    listLength := func (node *ListNode) int {
+        res := 0
+        for node != nil {
+            res++
+            node = node.Next
+        }
+        return res
+    }
+    l := listLength(head) // length of the list
+    c, f := l/k, l/k // ceiling and floor, corresponds to the longer lists' length at first, and then the shorter sequences
+    if l % k != 0 { c++  }
+    // place c nodes into a single part until the remaining length divided by f
+    // equals free cells in the result
+    res := make([]*ListNode, k)
+    nodeId, cellId, node, floorPhase := 0, 0, head, false
+    for node != nil {
+        // var remains = l-nodeId
+        if f != 0 && (l - nodeId) % f == 0 && (l - nodeId) / f == k - cellId {
+            floorPhase = true
+        }
+        res[cellId] = node
+        cellId++
+        howMany := 0
+        if floorPhase {
+            howMany = f - 1
+        } else {
+            howMany = c - 1
+        }
+        for i := 0; i < howMany; i++ { // move node forward
+            node = node.Next
+            nodeId++
+        }
+        next := node.Next // mark last node's next as nil befor moving to the next one
+        node.Next = nil
+        node = next
+        nodeId++
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // <img src="https://assets.leetcode.com/uploads/2021/06/13/split1-lc.jpg" />
@@ -153,4 +194,11 @@ func main() {
     list12 := makeListNode([]int{1,2,3,4,5,6,7,8,9,10})
     printListNode(list12) // 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8 -> 9 -> 10
     fmt.Println(splitListToParts1(list12, 3)) // [0xc000028150 0xc000028110 0xc0000280e0]
+
+    list21 := makeListNode([]int{1,2,3})
+    printListNode(list21) // 1 -> 2 -> 3
+    fmt.Println(splitListToParts2(list21, 5)) // [0xc000028090 0xc000028080 0xc000028070 <nil> <nil>]
+    list22 := makeListNode([]int{1,2,3,4,5,6,7,8,9,10})
+    printListNode(list22) // 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8 -> 9 -> 10
+    fmt.Println(splitListToParts2(list22, 3)) // [0xc000028150 0xc000028110 0xc0000280e0]
 }
