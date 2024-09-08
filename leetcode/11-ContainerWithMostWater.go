@@ -50,7 +50,7 @@ func maxArea(height []int) int {
 
 // best solution
 func maxArea1(height []int) int {
-    min := func (a, b int) int { if b > a { return a; }; return b; }
+    min := func (x, y int) int { if x < y { return x; }; return y; }
     area, res := 0, 0
     low, high := 0, len(height) - 1
 

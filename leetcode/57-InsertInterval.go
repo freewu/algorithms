@@ -28,8 +28,8 @@ package main
 import "fmt"
 
 func insert(intervals [][]int, newInterval []int) [][]int {
-    max := func (a int, b int) int { if a > b { return a; }; return b; }
-    min := func (a int, b int) int { if a > b { return b; }; return a; }
+    min := func (x, y int) int { if x < y { return x; }; return y; }
+    max := func (x, y int) int { if x > y { return x; }; return y; }
     res := make([][]int, 0)
     if len(intervals) == 0 {
         res = append(res, newInterval)
@@ -90,11 +90,9 @@ func insert1(intervals [][]int, newInterval []int) [][]int {
 // time: O(n) space: O(n)
 func insert2(intervals [][]int, newInterval []int) [][]int {
     //isOverlap := func (a, b []int) bool { return a[0] <= b[1] && b[0] <= a[1]; }
-    merge := func (a, b []int) []int { 
-        max := func (a int, b int) int { if a > b { return a; }; return b; }
-        min := func (a int, b int) int { if a > b { return b; }; return a; }
-        return []int{ min(a[0], b[0]), max(a[1], b[1]) } 
-    }
+    min := func (x, y int) int { if x < y { return x; }; return y; }
+    max := func (x, y int) int { if x > y { return x; }; return y; }
+    merge := func (a, b []int) []int { return []int{ min(a[0], b[0]), max(a[1], b[1]) } }
     res := make([][]int, 0, len(intervals))
     for i := 0; i < len(intervals); i++ {
         itv := intervals[i]
