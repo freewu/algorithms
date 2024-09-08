@@ -861,6 +861,7 @@
 [3005. Count Elements With Maximum Frequency](./leetcode/3005-CountElementsWithMaximumFrequency.go)   
 [3009. Maximum Number of Intersections on the Chart](./leetcode/3009-MaximumNumberOfIntersectionsOnTheChart.go)   
 [3011. Find if Array Can Be Sorted](./leetcode/3011-FindIfArrayCanBeSorted.go)   
+[3018. Maximum Number of Removal Queries That Can Be Processed I](./leetcode/3018-MaximumNumberOfRemovalQueriesThatCanBeProcessedI.go)   
 [3030. Find the Grid of Region Average](./leetcode/3030-FindTheGridOfRegionAverage.go)   
 [3033. Modify the Matrix](./leetcode/3033-ModifyTheMatrix.go)   
 [3038. Maximum Number of Operations With the Same Score I](./leetcode/3038-MaximumNumberOfOperationsWithTheSameScoreI.go)   
