@@ -862,7 +862,6 @@
 [3009. Maximum Number of Intersections on the Chart](./leetcode/3009-MaximumNumberOfIntersectionsOnTheChart.go)   
 [3011. Find if Array Can Be Sorted](./leetcode/3011-FindIfArrayCanBeSorted.go)   
 [3018. Maximum Number of Removal Queries That Can Be Processed I](./leetcode/3018-MaximumNumberOfRemovalQueriesThatCanBeProcessedI.go)   
-
 [3023. Find Pattern in Infinite Stream I](./leetcode/3023-FindPatternInInfiniteStreamI.go)   
 [3030. Find the Grid of Region Average](./leetcode/3030-FindTheGridOfRegionAverage.go)   
 [3033. Modify the Matrix](./leetcode/3033-ModifyTheMatrix.go)   
@@ -870,6 +869,7 @@
 [3040. Maximum Number of Operations With the Same Score II](./leetcode/3040-MaximumNumberOfOperationsWithTheSameScoreII.go)   
 [3041. Maximize Consecutive Elements in an Array After Modification](./leetcode/3041-MaximizeConsecutiveElementsInAnArrayAfterModification.go)   
 [3044. Most Frequent Prime](./leetcode/3044-MostFrequentPrime.go)   
+[3065. Minimum Operations to Exceed Threshold Value I](./leetcode/3065-MinimumOperationsToExceedThresholdValueI.go)   
 [3067. Count Pairs of Connectable Servers in a Weighted Tree Network](./leetcode/3067-CountPairsOfConnectableServersInAWeightedTreeNetwork.go)   
 [3068. Find the Maximum Sum of Node Values](./leetcode/3068-FindTheMaximumSumOfNodeValues.go)   
 [3072. Distribute Elements Into Two Arrays II](./leetcode/3072-DistributeElementsIntoTwoArraysII.go)   
