@@ -1096,6 +1096,7 @@
 [1021. Remove Outermost Parentheses](./leetcode/1021-RemoveOutermostParentheses.go)   
 [1023. Camelcase Matching](./leetcode/1023-CamelcaseMatching.go)   
 [1041. Robot Bounded In Circle](./leetcode/1041-RobotBoundedInCircle.go)   
+[1044. Longest Duplicate Substring](./leetcode/1044-LongestDuplicateSubstring.go)   
 [1047. Remove All Adjacent Duplicates In String](./leetcode/1047-RemoveAllAdjacentDuplicatesInString.go)   
 [1055. Shortest Way to Form String](./leetcode/1055-ShortestWayToFormString.go)   
 [1061. Lexicographically Smallest Equivalent String](./leetcode/1061-LexicographicallySmallestEquivalentString.go)   
