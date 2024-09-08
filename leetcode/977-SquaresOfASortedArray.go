@@ -21,33 +21,51 @@ package main
 
 // Follow up: Squaring each element and sorting the new array is very trivial, could you find an O(n) solution using a different approach?
 
-import "sort"
 import "fmt"
+import "sort"
 
 func sortedSquares(nums []int) []int {
-	ans := make([]int, len(nums))
+    res := make([]int, len(nums))
     // 负数最大从 0 开始 i ,正数最大列表尾部开始 j
-	for i, k, j := 0, len(nums)-1, len(ans)-1; i <= j; k-- {
+    for i, k, j := 0, len(nums) - 1, len(res) - 1; i <= j; k-- {
         // 取平方最大的一个占坑
         s1, s2 := nums[i] * nums[i], nums[j] * nums[j]
-		if s1 > s2 {
-			ans[k] = s1
-			i++
-		} else {
-			ans[k] = s2
-			j--
-		}
-	}
-	return ans
+        if s1 > s2 {
+            res[k] = s1
+            i++
+        } else {
+            res[k] = s2
+            j--
+        }
+    }
+    return res
 }
 
 // 使用了 sort 达不到 O(n) 要求 
 func sortedSquares1(nums []int) []int {
-	for i, value := range nums {
-		nums[i] = value * value
-	}
-	sort.Ints(nums)
-	return nums
+    for i, value := range nums {
+        nums[i] = value * value
+    }
+    sort.Ints(nums)
+    return nums
+}
+
+func sortedSquares2(nums []int) []int {
+    res := make([]int,len(nums))
+    l, r, i := 0, len(nums) - 1, len(nums) - 1
+    abs := func(x int) int { if x < 0 { return -x; }; return x; }
+    for i >= 0 {
+        if abs(nums[l]) > abs(nums[r]) {
+            res[i] = nums[l] * nums[l]
+            l++
+            i--
+        } else {
+            res[i] = nums[r] * nums[r]
+            r--
+            i--
+        }
+    }
+    return res
 }
 
 func main() {
@@ -56,4 +74,7 @@ func main() {
 
     fmt.Println(sortedSquares1([]int{ -4,-1,0,3,10 })) // [0,1,9,16,100]
     fmt.Println(sortedSquares1([]int{ -7,-3,2,3,11 })) // [4,9,9,49,121]
+
+    fmt.Println(sortedSquares2([]int{ -4,-1,0,3,10 })) // [0,1,9,16,100]
+    fmt.Println(sortedSquares2([]int{ -7,-3,2,3,11 })) // [4,9,9,49,121]
 }
