@@ -557,6 +557,7 @@
 [1039. Minimum Score Triangulation of Polygon](./leetcode/1039-MinimumScoreTriangulationOfPolygon.go)   
 [1040. Moving Stones Until Consecutive II](./leetcode/1040-MovingStonesUntilConsecutiveII.go)   
 [1043. Partition Array for Maximum Sum](./leetcode/1043-PartitionArrayForMaximumSum.go)   
+[1046. Last Stone Weight](./leetcode/1046-LastStoneWeight.go)   
 [1048. Longest String Chain](./leetcode/1048-LongestStringChain.go)   
 [1049. Last Stone Weight II](./leetcode/1049-LastStoneWeightII.go)   
 [1051. Height Checker](./leetcode/1051-HeightChecker.go)   
