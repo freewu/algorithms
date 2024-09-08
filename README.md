@@ -596,6 +596,7 @@
 [1182. Shortest Distance to Target Color](./leetcode/1182-ShortestDistanceToTargetColor.go)   
 [1186. Maximum Subarray Sum with One Deletion](./leetcode/1186-MaximumSubarraySumWithOneDeletion.go)   
 [1187. Make Array Strictly Increasing](./leetcode/1187-MakeArrayStrictlyIncreasing.go)   
+[1191. K-Concatenation Maximum Sum](./leetcode/1191-KConcatenationMaximumSum.go)   
 [1196. How Many Apples Can You Put into the Basket](./leetcode/1196-HowManyApplesCanYouPutIntoTheBasket.go)   
 [1198. Find Smallest Common Element in All Rows](./leetcode/1198-FindSmallestCommonElementInAllRows.go)   
 [1199. Minimum Time to Build Blocks](./leetcode/1199-MinimumTimeToBuildBlocks.go)   
