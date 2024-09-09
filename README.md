@@ -1111,6 +1111,7 @@
 [1061. Lexicographically Smallest Equivalent String](./leetcode/1061-LexicographicallySmallestEquivalentString.go)   
 [1062. Longest Repeating Substring](./leetcode/1062-LongestRepeatingSubstring.go)   
 [1071. Greatest Common Divisor of Strings](./leetcode/1071-GreatestCommonDivisorOfStrings.go)   
+[1078. Occurrences After Bigram](./leetcode/1078-OccurrencesAfterBigram.go)   
 [1081. Smallest Subsequence of Distinct Characters](./leetcode/1081-SmallestSubsequenceOfDistinctCharacters.go)   
 [1087. Brace Expansion](./leetcode/1087-BraceExpansion.go)   
 [1092. Shortest Common Supersequence](./leetcode/1092-ShortestCommonSupersequence.go)   
