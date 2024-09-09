@@ -562,6 +562,7 @@
 [1049. Last Stone Weight II](./leetcode/1049-LastStoneWeightII.go)   
 [1051. Height Checker](./leetcode/1051-HeightChecker.go)   
 [1052. Grumpy Bookstore Owner](./leetcode/1052-GrumpyBookstoreOwner.go)   
+[1053. Previous Permutation With One Swap](./leetcode/1053-PreviousPermutationWithOneSwap.go)   
 [1057. Campus Bikes](./leetcode/1057-CampusBikes.go)   
 [1058. Minimize Rounding Error to Meet Target](./leetcode/1058-MinimizeRoundingErrorToMeetTarget.go)   
 [1060. Missing Element in Sorted Array](./leetcode/1060-MissingElementInSortedArray.go)   
