@@ -1405,6 +1405,7 @@
 [1137. N-th Tribonacci Number](./leetcode/1137-NthTribonacciNumber.go)   
 [1154. Day of the Year](./leetcode/1154-DayOfTheYear.go)   
 [1183. Maximum Number of Ones](./leetcode/1183-MaximumNumberOfOnes.go)   
+[1185. Day of the Week](./leetcode/1185-DayOfTheWeek.go)   
 [1227. Airplane Seat Assignment Probability](./leetcode/1227-AirplaneSeatAssignmentProbability.go)   
 [1256. Encode Number](./leetcode/1256-EncodeNumber.go)   
 [1259. Handshakes That Don't Cross](./leetcode/1259-HandshakesThatDontCross.go)   
