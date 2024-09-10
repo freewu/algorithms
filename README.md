@@ -909,6 +909,7 @@
 [3206. Alternating Groups I](./leetcode/3206-AlternatingGroupsI.go)   
 [3208. Alternating Groups II](./leetcode/3208-AlternatingGroupsII.go)   
 [3215. Count Triplets with Even XOR Set Bits II](./leetcode/3215-CountTripletsWithEvenXORSetBitsII.go)   
+[3218. Minimum Cost for Cutting Cake I](./leetcode/3218-MinimumCostForCuttingCakeI.go)   
 [3221. Maximum Array Hopping Score II](./leetcode/3221-MaximumArrayHoppingScoreII.go)   
 [3235. Check if the Rectangle Corner Is Reachable](./leetcode/3235-CheckIfTheRectangleCornerIsReachable.go)   
 [3237. Alt and Tab Simulation](./leetcode/3237-AltAndTabSimulation.go)   
