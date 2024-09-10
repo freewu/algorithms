@@ -60,18 +60,17 @@ func init() {
 }
 
 func countPaths(n int, edges [][]int) int64 {
-    G := make([][]int, n + 1)
+    graph := make([][]int, n + 1)
     for _, edge := range edges {
         i, j := edge[0], edge[1]
-        G[i] = append(G[i], j)
-        G[j] = append(G[j], i)
+        graph[i] = append(graph[i], j)
+        graph[j] = append(graph[j], i)
     }
-
     var dfs func(int, int)
     var seen []int
     dfs = func(i, pre int) {
         seen = append(seen, i)
-        for _, j := range G[i] {
+        for _, j := range graph[i] {
             if j != pre && !is_prime[j] {
                 dfs(j, i)
             }
@@ -84,7 +83,7 @@ func countPaths(n int, edges [][]int) int64 {
             continue
         }
         cur := int64(0)
-        for _, j := range G[i] {
+        for _, j := range graph[i] {
             if is_prime[j] {
                 continue
             }
