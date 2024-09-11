@@ -1707,6 +1707,7 @@
 [868. Binary Gap](./leetcode/868-BinaryGap.go)   
 [1009. Complement of Base 10 Integer](./leetcode/1009-ComplementOfBase10Integer.go)   
 [1318. Minimum Flips to Make a OR b Equal to c](./leetcode/1318-MinimumFlipsToMakeAORBEqualToC.go)   
+[2220. Minimum Bit Flips to Convert Number](./leetcode/2220-MinimumBitFlipsToConvertNumber.go)   
 [3007. Maximum Number That Sum of the Prices Is Less Than or Equal to K](./leetcode/3007-MaximumNumberThatSumOfThePricesIsLessThanOrEqualToK.go)   
 [3133. Minimum Array End](./leetcode/3133-MinimumArrayEnd.go)   
 [3141. Maximum Hamming Distances](./leetcode/3141-MaximumHammingDistances.go)   
