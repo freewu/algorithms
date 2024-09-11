@@ -593,6 +593,7 @@
 [1150. Check If a Number Is Majority Element in a Sorted Array](./leetcode/1150-CheckIfANumberIsMajorityElementInASortedArray.go)   
 [1151. Minimum Swaps to Group All 1's Together](./leetcode/1151-MinimumSwapsToGroupAllOnesTogether.go)   
 [1152. Analyze User Website Visit Pattern](./leetcode/1152-AnalyzeUserWebsiteVisitPattern.go)   
+[1160. Find Words That Can Be Formed by Characters](./leetcode/1160-FindWordsThatCanBeFormedByCharacters.go)   
 [1162. As Far from Land as Possible](./leetcode/1162-AsFarFromLandAsPossible.go)   
 [1167. Minimum Cost to Connect Sticks](./leetcode/1167-MinimumCostToConnectSticks.go)   
 [1176. Diet Plan Performance](./leetcode/1176-DietPlanPerformance.go)   
