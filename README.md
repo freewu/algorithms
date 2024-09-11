@@ -1127,6 +1127,7 @@
 [1081. Smallest Subsequence of Distinct Characters](./leetcode/1081-SmallestSubsequenceOfDistinctCharacters.go)   
 [1087. Brace Expansion](./leetcode/1087-BraceExpansion.go)   
 [1092. Shortest Common Supersequence](./leetcode/1092-ShortestCommonSupersequence.go)   
+[1096. Brace Expansion II](./leetcode/1096-BraceExpansionII.go)   
 [1100. Find K-Length Substrings With No Repeated Characters](./leetcode/1100-FindKLengthSubstringsWithNoRepeatedCharacters.go)   
 [1119. Remove Vowels from a String](./leetcode/1119-RemoveVowelsFromAString.go)   
 [1143. Longest Common Subsequence](./leetcode/1143-LongestCommonSubsequence.go)   
