@@ -804,6 +804,7 @@
 [2555. Maximize Win From Two Segments](./leetcode/2555-MaximizeWinFromTwoSegments.go)   
 [2556. Disconnect Path in a Binary Matrix by at Most One Flip](./leetcode/2556-DisconnectPathInABinaryMatrixByAtMostOneFlip.go)   
 [2575. Find the Divisibility Array of a String](./leetcode/2575-FindTheDivisibilityArrayOfAString.go)   
+[2576. Find the Maximum Number of Marked Indices](./leetcode/2576-FindTheMaximumNumberOfMarkedIndices.go)   
 [2577. Minimum Time to Visit a Cell In a Grid](./leetcode/2577-MinimumTimeToVisitACellInAGrid.go)   
 [2580. Count Ways to Group Overlapping Ranges](./leetcode/2580-CountWaysToGroupOverlappingRanges.go)   
 [2589. Minimum Time to Complete All Tasks](./leetcode/2589-MinimumTimeToCompleteAllTasks.go)   
