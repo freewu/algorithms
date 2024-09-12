@@ -1209,6 +1209,7 @@
 [2981. Find Longest Special Substring That Occurs Thrice I](./leetcode/2981-FindLongestSpecialSubstringThatOccursThriceI.go)   
 [2982. Find Longest Special Substring That Occurs Thrice II](./leetcode/2982-FindLongestSpecialSubstringThatOccursThriceII.go)   
 [3016. Minimum Number of Pushes to Type Word II](./leetcode/3016-MinimumNumberOfPushesToTypeWordII.go)   
+[3088. Make String Anti-palindrome](./leetcode/3088-MakeStringAntiPalindrome.go)   
 [3104. Find Longest Self-Contained Substring](./leetcode/3104-FindLongestSelfContainedSubstring.go)   
 [3106. Lexicographically Smallest String After Operations With Constraint](./leetcode/3106-LexicographicallySmallestStringAfterOperationsWithConstraint.go)   
 [3110. Score of a String](./leetcode/3110-ScoreOfAString.go)   
