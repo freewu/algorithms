@@ -1726,6 +1726,7 @@
 [2220. Minimum Bit Flips to Convert Number](./leetcode/2220-MinimumBitFlipsToConvertNumber.go)   
 [3007. Maximum Number That Sum of the Prices Is Less Than or Equal to K](./leetcode/3007-MaximumNumberThatSumOfThePricesIsLessThanOrEqualToK.go)   
 [3064. Guess the Number Using Bitwise Questions I](./leetcode/3064-GuessTheNumberUsingBitwiseQuestionsI.go)   
+[3094. Guess the Number Using Bitwise Questions II](./leetcode/3094-GuessTheNumberUsingBitwiseQuestionsII.go)   
 [3133. Minimum Array End](./leetcode/3133-MinimumArrayEnd.go)   
 [3141. Maximum Hamming Distances](./leetcode/3141-MaximumHammingDistances.go)   
 [3199. Count Triplets with Even XOR Set Bits I](./leetcode/3199-CountTripletsWithEvenXORSetBitsI.go)   
