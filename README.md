@@ -1609,6 +1609,7 @@
 [1609. Even Odd Tree](./leetcode/1609-EvenOddTree.go)   
 [1650. Lowest Common Ancestor of a Binary Tree III](./leetcode/1650-LowestCommonAncestorOfABinaryTreeIII.go)   
 [1902. Depth of BST Given Insertion Order](./leetcode/1902-DepthOfBSTGivenInsertionOrder.go)   
+[1932. Merge BSTs to Create Single BST](./leetcode/1932-MergeBSTsToCreateSingleBST.go)   
 [2003. Smallest Missing Genetic Value in Each Subtree](./leetcode/2003-SmallestMissingGeneticValueInEachSubtree.go)   
 [2096. Step-By-Step Directions From a Binary Tree Node to Another](./leetcode/2096-StepByStepDirectionsFromABinaryTreeNodeToAnother.go)   
 [2196. Create Binary Tree From Descriptions](./leetcode/2196-CreateBinaryTreeFromDescriptions.go)   
