@@ -1147,6 +1147,7 @@
 [1216. Valid Palindrome III](./leetcode/1216-ValidPalindromeIII.go)   
 [1236. Web Crawler](./leetcode/1236-WebCrawler.go)   
 [1239. Maximum Length of a Concatenated String with Unique Characters](./leetcode/1239-MaximumLengthOfAConcatenatedStringWithUniqueCharacters.go)   
+[1247. Minimum Swaps to Make Strings Equal](./leetcode/1247-MinimumSwapsToMakeStringsEqual.go)   
 [1249. Minimum Remove to Make Valid Parentheses](./leetcode/1249-MinimumRemoveToMakeValidParentheses.go)   
 [1257. Smallest Common Region](./leetcode/1257-SmallestCommonRegion.go)   
 [1258. Synonymous Sentences](./leetcode/1258-SynonymousSentences.go)   
