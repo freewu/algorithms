@@ -592,6 +592,7 @@
 [1130. Minimum Cost Tree From Leaf Values](./leetcode/1130-MinimumCostTreeFromLeafValues.go)   
 [1131. Maximum of Absolute Value Expression](./leetcode/1131-MaximumOfAbsoluteValueExpression.go)   
 [1133. Largest Unique Number](./leetcode/1133-LargestUniqueNumber.go)   
+[1139. Largest 1-Bordered Square](./leetcode/1139-LargestOneBorderedSquare.go)   
 [1140. Stone Game II](./leetcode/1140-StoneGameII.go)   
 [1150. Check If a Number Is Majority Element in a Sorted Array](./leetcode/1150-CheckIfANumberIsMajorityElementInASortedArray.go)   
 [1151. Minimum Swaps to Group All 1's Together](./leetcode/1151-MinimumSwapsToGroupAllOnesTogether.go)   
