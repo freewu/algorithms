@@ -1833,6 +1833,7 @@
 [1603. Design Parking System](./leetcode/1603-DesignParkingSystem.go)   
 [1628. Design an Expression Tree With Evaluate Function](./leetcode/1628-DesignanExpressionTreeWithEvaluateFunction.go)   
 [2080. Range Frequency Queries](./leetcode/2080-RangeFrequencyQueries.go)   
+[2227. Encrypt and Decrypt Strings](./leetcode/2227-EncryptAndDecryptStrings.go)   
 [2336. Smallest Number in Infinite Set](./leetcode/2336-SmallestNumberInInfiniteSet.go)   
 [2642. Design Graph With Shortest Path Calculator](./leetcode/2642-DesignGraphWithShortestPathCalculator.go)   
 [2671. Frequency Tracker](./leetcode/2671-FrequencyTracker.go)   
