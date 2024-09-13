@@ -1299,6 +1299,7 @@
 [3062. Winner of the Linked List Game](./leetcode/3062-WinnerOfTheLinkedListGame.go)   
 [3063. Linked List Frequency](./leetcode/3063-LinkedListFrequency.go)   
 [3217. Delete Nodes From Linked List Present in Array](./leetcode/3217-DeleteNodesFromLinkedListPresentInArray.go)   
+[3263. Convert Doubly Linked List to Array I](./leetcode/3263-ConvertDoublyLinkedListToArrayI.go)   
 
 # Enumeration
 [204. Count Primes](./leetcode/204-CountPrimes.go)   
