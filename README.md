@@ -1710,6 +1710,7 @@
 [2959. Number of Possible Sets of Closing Branches](./leetcode/2959-NumberOfPossibleSetsOfClosingBranches.go)   
 [3112. Minimum Time to Visit Disappearing Nodes](./leetcode/3112-MinimumTimeToVisitDisappearingNodes.go)   
 [3123. Find Edges in Shortest Paths](./leetcode/3123-FindEdgesInShortestPaths.go)   
+[3241. Time Taken to Mark All Nodes](./leetcode/3241-TimeTakenToMarkAllNodes.go)   
 
 # Trie
 [386. Lexicographical Numbers](./leetcode/386-LexicographicalNumbers.go)   
