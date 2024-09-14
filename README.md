@@ -820,6 +820,7 @@
 [2597. The Number of Beautiful Subsets](./leetcode/2597-TheNumberOfBeautifulSubsets.go)   
 [2617. Minimum Number of Visited Cells in a Grid](./leetcode/2617-MinimumNumberOfVisitedCellsInAGrid.go)   
 [2644. Find the Maximum Divisibility Score](./leetcode/2644-FindTheMaximumDivisibilityScore.go)   
+[2658. Maximum Number of Fish in a Grid](./leetcode/2658-MaximumNumberOfFishInAGrid.go)   
 [2661. First Completely Painted Row or Column](./leetcode/2661-FirstCompletelyPaintedRowOrColumn.go)   
 [2670. Find the Distinct Difference Array](./leetcode/2670-FindTheDistinctDifferenceArray.go)   
 [2678. Number of Senior Citizens](./leetcode/2678-NumberOfSeniorCitizens.go)   
