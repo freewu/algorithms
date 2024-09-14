@@ -791,6 +791,7 @@
 [2398. Maximum Number of Robots Within Budget](./leetcode/2398-MaximumNumberOfRobotsWithinBudget.go)   
 [2402. Meeting Rooms III](./leetcode/2402-MeetingRoomsIII.go)   
 [2418. Sort the People](./leetcode/2418-SortThePeople.go)   
+[2419. Longest Subarray With Maximum Bitwise AND](./leetcode/2419-LongestSubarrayWithMaximumBitwiseAND.go)   
 [2441. Largest Positive Integer That Exists With Its Negative](./leetcode/2441-LargestPositiveIntegerThatExistsWithItsNegative.go)   
 [2444. Count Subarrays With Fixed Bounds](./leetcode/2444-CountSubarraysWithFixedBounds.go)   
 [2462. Total Cost to Hire K Workers](./leetcode/2462-TotalCostToHireKWorkers.go)    
@@ -1849,6 +1850,26 @@
 # Interactive
 [157. Read N Characters Given Read4](./leetcode/157-ReadNCharactersGivenRead4.go)   
 [158. Read N Characters Given read4 II - Call Multiple Times](./leetcode/158-ReadNCharactersGivenRead4II-CallMultipleTimes.go)   
+[277. Find the Celebrity](./leetcode/277-FindTheCelebrity.go)   
+[278. First Bad Version](./leetcode/278-FirstBadVersion.go)   
+[374. Guess Number Higher or Lower](./leetcode/374-GuessNumberHigherOrLower.go)   
+[489. Robot Room Cleaner](./leetcode/489-RobotRoomCleaner.go)   
+[702. Search in a Sorted Array of Unknown Size](./leetcode/702-SearchInASortedArrayOfUnknownSize.go)   
+[843. Guess the Word](./leetcode/843-GuessTheWord.go)   
+[1095. Find in Mountain Array](./leetcode/1095-FindInMountainArray.go)   
+[1236. Web Crawler](./leetcode/1236-WebCrawler.go)   
+1237. Find Positive Integer Solution for a Given Equation
+[1274. Number of Ships in a Rectangle](./leetcode/1274-NumberOfShipsInARectangle.go)   
+[1428. Leftmost Column with at Least a One](./leetcode/1428-LeftmostColumnWithAtLeastAOne.go)   
+[1533. Find the Index of the Large Integer](./leetcode/1533-FindTheIndexOfTheLargeInteger.go)   
+1618. Maximum Font to Fit a Sentence in a Screen
+1778. Shortest Path in a Hidden Grid
+1810. Minimum Path Cost in a Hidden Grid
+2728. Count Houses in a Circular Street
+2782. Number of Unique Categories
+2936. Number of Equal Numbers Blocks
+[3064. Guess the Number Using Bitwise Questions I](./leetcode/3064-GuessTheNumberUsingBitwiseQuestionsI.go)   
+[3094. Guess the Number Using Bitwise Questions II](./leetcode/3094-GuessTheNumberUsingBitwiseQuestionsII.go)   
 
 # Backtracking
 [52. N-Queens II](./leetcode/52-N-QueensII.go)   
