@@ -1686,6 +1686,7 @@
 [1584. Min Cost to Connect All Points](./leetcode/1584-MinCostToConnectAllPoints.go)   
 [1615. Maximal Network Rank](./leetcode/1615-MaximalNetworkRank.go)   
 [1697. Checking Existence of Edge Length Limited Paths](./leetcode/1697-CheckingExistenceOfEdgeLengthLimitedPaths.go)   
+[1719. Number Of Ways To Reconstruct A Tree](./leetcode/1719-NumberOfWaysToReconstructATree.go)   
 [1791. Find Center of Star Graph](./leetcode/1791-FindCenterOfStarGraph.go)   
 [1857. Largest Color Value in a Directed Graph](./leetcode/1857-LargestColorValueInADirectedGraph.go)   
 [1971. Find if Path Exists in Graph](./leetcode/1971-FindIfPathExistsInGraph.go)   
