@@ -850,6 +850,7 @@
 [2813. Maximum Elegance of a K-Length Subsequence](./leetcode/2813-MaximumEleganceOfAK-LengthSubsequence.go)   
 [2815. Max Pair Sum in an Array](./leetcode/2815-MaxPairSumInAnArray.go)   
 [2831. Find the Longest Equal Subarray](./leetcode/2831-FindTheLongestEqualSubarray.go)   
+[2848. Points That Intersect With Cars](./leetcode/2848-PointsThatIntersectWithCars.go)   
 [2850. Minimum Moves to Spread Stones Over Grid](./leetcode/2850-MinimumMovesToSpreadStonesOverGrid.go)   
 [2859. Sum of Values at Indices With K Set Bits](./leetcode/2859-SumOfValuesAtIndicesWithKSetBits.go)   
 [2860. Happy Students](./leetcode/2860-HappyStudents.go)   
