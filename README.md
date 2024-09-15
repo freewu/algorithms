@@ -1222,6 +1222,7 @@
 [2844. Minimum Operations to Make a Special Number](./leetcode/2844-MinimumOperationsToMakeASpecialNumber.go)   
 [2864. Maximum Odd Binary Number](./leetcode/2864-MaximumOddBinaryNumber.go)   
 [2938. Separate Black and White Balls](./leetcode/2938-SeparateBlackAndWhiteBalls.go)   
+[2950. Number of Divisible Substrings](./leetcode/2950-NumberOfDivisibleSubstrings.go)   
 [2976. Minimum Cost to Convert String I](./leetcode/2976-MinimumCostToConvertStringI.go)   
 [2981. Find Longest Special Substring That Occurs Thrice I](./leetcode/2981-FindLongestSpecialSubstringThatOccursThriceI.go)   
 [2982. Find Longest Special Substring That Occurs Thrice II](./leetcode/2982-FindLongestSpecialSubstringThatOccursThriceII.go)   
@@ -1235,6 +1236,7 @@
 [3146. Permutation Difference between Two Strings](./leetcode/3146-PermutationDifferenceBetweenTwoStrings.go)   
 [3167. Better Compression of String](./leetcode/3167-BetterCompressionOfString.go)   
 [3174. Clear Digits](./leetcode/3174-ClearDigits.go)   
+
 
 
 # Dynamic Programming
