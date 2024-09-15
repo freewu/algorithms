@@ -1433,6 +1433,7 @@
 [1067. Digit Count in Range](./leetcode/1067-DigitCountInRange.go)   
 [1088. Confusing Number II](./leetcode/1088-ConfusingNumberII.go)   
 [1103. Distribute Candies to People](./leetcode/1103-DistributeCandiesToPeople.go)   
+[1104. Path In Zigzag Labelled Binary Tree](./leetcode/1104-PathInZigzagLabelledBinaryTree.go)   
 [1118. Number of Days in a Month](./leetcode/1118-NumberOfDaysInAMonth.go)   
 [1134. Armstrong Number](./leetcode/1134-ArmstrongNumber.go)   
 [1137. N-th Tribonacci Number](./leetcode/1137-NthTribonacciNumber.go)   
