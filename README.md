@@ -1164,6 +1164,7 @@
 [1271. Hexspeak](./leetcode/1271-Hexspeak.go)   
 [1312. Minimum Insertion Steps to Make a String Palindrome](./leetcode/1312-MinimumInsertionStepsToMakeAStringPalindrome.go)   
 [1360. Number of Days Between Two Dates](./leetcode/1360-NumberOfDaysBetweenTwoDates.go)   
+[1371. Find the Longest Substring Containing Vowels in Even Counts](./leetcode/1371-FindTheLongestSubstringContainingVowelsTnEvenCounts.go)   
 [1404. Number of Steps to Reduce a Number in Binary Representation to One](./leetcode/1404-NumberOfStepsToReduceANumberInBinaryRepresentationToOne.go)   
 [1416. Restore The Array](./leetcode/1416-RestoreTheArray.go)   
 [1422. Maximum Score After Splitting a String](./leetcode/1422-MaximumScoreAfterSplittingAString.go)    
