@@ -589,6 +589,7 @@
 [1109. Corporate Flight Bookings](./leetcode/1109-CorporateFlightBookings.go)   
 [1121. Divide Array Into Increasing Sequences](./leetcode/1121-DivideArrayIntoIncreasingSequences.go)   
 [1122. Relative Sort Array](./leetcode/1122-RelativeSortArray.go)   
+[1124. Longest Well-Performing Interval](./leetcode/1124-LongestWellPerformingInterval.go)   
 [1125. Smallest Sufficient Team](./leetcode/1125-SmallestSufficientTeam.go)   
 [1130. Minimum Cost Tree From Leaf Values](./leetcode/1130-MinimumCostTreeFromLeafValues.go)   
 [1131. Maximum of Absolute Value Expression](./leetcode/1131-MaximumOfAbsoluteValueExpression.go)   
