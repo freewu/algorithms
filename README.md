@@ -591,6 +591,7 @@
 [1122. Relative Sort Array](./leetcode/1122-RelativeSortArray.go)   
 [1124. Longest Well-Performing Interval](./leetcode/1124-LongestWellPerformingInterval.go)   
 [1125. Smallest Sufficient Team](./leetcode/1125-SmallestSufficientTeam.go)   
+[1128. Number of Equivalent Domino Pairs](./leetcode/1128-NumberOfEquivalentDominoPairs.go)   
 [1130. Minimum Cost Tree From Leaf Values](./leetcode/1130-MinimumCostTreeFromLeafValues.go)   
 [1131. Maximum of Absolute Value Expression](./leetcode/1131-MaximumOfAbsoluteValueExpression.go)   
 [1133. Largest Unique Number](./leetcode/1133-LargestUniqueNumber.go)   
