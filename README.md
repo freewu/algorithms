@@ -1141,6 +1141,7 @@
 [1092. Shortest Common Supersequence](./leetcode/1092-ShortestCommonSupersequence.go)   
 [1096. Brace Expansion II](./leetcode/1096-BraceExpansionII.go)   
 [1100. Find K-Length Substrings With No Repeated Characters](./leetcode/1100-FindKLengthSubstringsWithNoRepeatedCharacters.go)   
+[1108. Defanging an IP Address](./leetcode/1108-DefangingAnIPAddress.go)   
 [1111. Maximum Nesting Depth of Two Valid Parentheses Strings](./leetcode/1111-MaximumNestingDepthOfTwoValidParenthesesStrings.go)   
 [1119. Remove Vowels from a String](./leetcode/1119-RemoveVowelsFromAString.go)   
 [1138. Alphabet Board Path](./leetcode/1138-AlphabetBoardPath.go)   
