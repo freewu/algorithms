@@ -1443,6 +1443,7 @@
 [1134. Armstrong Number](./leetcode/1134-ArmstrongNumber.go)   
 [1137. N-th Tribonacci Number](./leetcode/1137-NthTribonacciNumber.go)   
 [1154. Day of the Year](./leetcode/1154-DayOfTheYear.go)   
+[1175. Prime Arrangements](./leetcode/1175-PrimeArrangements.go)   
 [1183. Maximum Number of Ones](./leetcode/1183-MaximumNumberOfOnes.go)   
 [1185. Day of the Week](./leetcode/1185-DayOfTheWeek.go)   
 [1227. Airplane Seat Assignment Probability](./leetcode/1227-AirplaneSeatAssignmentProbability.go)   
