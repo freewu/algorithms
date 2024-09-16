@@ -19,6 +19,7 @@ package main
 import "fmt"
 import "sort"
 import "strconv"
+import "strings"
 
 func findMinDifference(timePoints []string) int {
     res, minutes := 1 << 32 -1, []int{}
@@ -36,6 +37,51 @@ func findMinDifference(timePoints []string) int {
     return res
 }
 
+func findMinDifference1(timePoints []string) int {
+    minutes := make([]bool, 24* 60)
+    mx, mn := 0, 24 * 60
+    for _, timePoint := range(timePoints) {
+        parts := strings.Split(timePoint, ":")
+        h, _ := strconv.Atoi(parts[0])
+        m, _ := strconv.Atoi(parts[1])
+        temp := h * 60 + m
+        if temp > mx { mx = temp }
+        if temp < mn { mn = temp  }
+        if minutes[temp] {  return 0 }
+        minutes[temp] = true
+    }
+    res, prev := mn - mx + 1440, mn
+    for i := mn + 1; i <= mx; i++ {
+        if minutes[i]{
+            diff := i - prev
+            if diff < res {
+                res = diff
+            }
+            prev = i
+        }
+    }
+    return res
+}
+
+func findMinDifference2(timePoints []string) int {
+    res, date :=  60*24, []int{}
+    convert := func(timePoint string) int { // 转换成分钟数
+        vals := strings.Split(timePoint, ":")
+        h := int(vals[0][0] - '0') * 10 + int(vals[0][1] - '0')
+        m := int(vals[1][0] - '0') * 10 + int(vals[1][1] - '0')
+        return h * 60 + m
+    }
+    for i:=range timePoints{
+        date = append(date, convert(timePoints[i]))
+    }
+    sort.Ints(date)
+    for i := 1; i <len(date); i++ {
+        res = min(res, date[i] - date[i-1])
+    }
+    res = min(res, 60 * 24 - date[len(date)-1] + date[0]) // 处理跨天的情况
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: timePoints = ["23:59","00:00"]
@@ -45,4 +91,10 @@ func main() {
     // Input: timePoints = ["00:00","23:59","00:00"]
     // Output: 0
     fmt.Println(findMinDifference([]string{"00:00","23:59","00:00"})) // 0
+
+    fmt.Println(findMinDifference1([]string{"23:59","00:00"})) // 1
+    fmt.Println(findMinDifference1([]string{"00:00","23:59","00:00"})) // 0
+
+    fmt.Println(findMinDifference2([]string{"23:59","00:00"})) // 1
+    fmt.Println(findMinDifference2([]string{"00:00","23:59","00:00"})) // 0
 }
