@@ -1154,6 +1154,7 @@
 [1119. Remove Vowels from a String](./leetcode/1119-RemoveVowelsFromAString.go)   
 [1138. Alphabet Board Path](./leetcode/1138-AlphabetBoardPath.go)   
 [1143. Longest Common Subsequence](./leetcode/1143-LongestCommonSubsequence.go)   
+[1147. Longest Chunked Palindrome Decomposition](./leetcode/1147-LongestChunkedPalindromeDecomposition.go)   
 [1153. String Transforms Into Another String](./leetcode/1153-StringTransformsIntoAnotherString.go)   
 [1154. Day of the Year](./leetcode/1154-DayOfTheYear.go)   
 [1156. Swap For Longest Repeated Character Substring](./leetcode/1156-SwapForLongestRepeatedCharacterSubstring.go)   
