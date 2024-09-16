@@ -605,6 +605,7 @@
 [1162. As Far from Land as Possible](./leetcode/1162-AsFarFromLandAsPossible.go)   
 [1167. Minimum Cost to Connect Sticks](./leetcode/1167-MinimumCostToConnectSticks.go)   
 [1169. Invalid Transactions](./leetcode/1169-InvalidTransactions.go)   
+[1170. Compare Strings by Frequency of the Smallest Character](./leetcode/1170-CompareStringsByFrequencyOfTheSmallestCharacter.go)   
 [1176. Diet Plan Performance](./leetcode/1176-DietPlanPerformance.go)   
 [1181. Before and After Puzzle](./leetcode/1181-BeforeAndAfterPuzzle.go)   
 [1182. Shortest Distance to Target Color](./leetcode/1182-ShortestDistanceToTargetColor.go)   
