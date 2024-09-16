@@ -1614,6 +1614,7 @@
 [1110. Delete Nodes And Return Forest](./leetcode/1110-DeleteNodesAndReturnForest.go)   
 [1120. Maximum Average Subtree](./leetcode/1120-MaximumAverageSubtree.go)   
 [1123. Lowest Common Ancestor of Deepest Leaves](./leetcode/1123-LowestCommonAncestorOfDeepestLeaves.go)   
+[1145. Binary Tree Coloring Game](./leetcode/1145-BinaryTreeColoringGame.go)   
 [1161. Maximum Level Sum of a Binary Tree](./leetcode/1161-MaximumLevelSumOfABinaryTree.go)   
 [1214. Two Sum BSTs](./leetcode/1214-TwoSumBSTs.go)   
 [1261. Find Elements in a Contaminated Binary Tree](./leetcode/1261-FindElementsInAContaminatedBinaryTree.go)   
