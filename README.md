@@ -614,6 +614,7 @@
 [1196. How Many Apples Can You Put into the Basket](./leetcode/1196-HowManyApplesCanYouPutIntoTheBasket.go)   
 [1198. Find Smallest Common Element in All Rows](./leetcode/1198-FindSmallestCommonElementInAllRows.go)   
 [1199. Minimum Time to Build Blocks](./leetcode/1199-MinimumTimeToBuildBlocks.go)   
+[1200. Minimum Absolute Difference](./leetcode/1200-MinimumAbsoluteDifference.go)   
 [1207. Unique Number of Occurrences](./leetcode/1207-UniqueNumberOfOccurrences.go)   
 [1213. Intersection of Three Sorted Arrays](./leetcode/1213-IntersectionOfThreeSortedArrays.go)   
 [1217. Minimum Cost to Move Chips to The Same Position](./leetcode/1217-MinimumCostToMoveChipsToTheSamePosition.go)   
