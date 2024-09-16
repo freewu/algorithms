@@ -607,6 +607,7 @@
 [1169. Invalid Transactions](./leetcode/1169-InvalidTransactions.go)   
 [1170. Compare Strings by Frequency of the Smallest Character](./leetcode/1170-CompareStringsByFrequencyOfTheSmallestCharacter.go)   
 [1176. Diet Plan Performance](./leetcode/1176-DietPlanPerformance.go)   
+[1178. Number of Valid Words for Each Puzzle](./leetcode/1178-NumberOfValidWordsForEachPuzzle.go)   
 [1181. Before and After Puzzle](./leetcode/1181-BeforeAndAfterPuzzle.go)   
 [1182. Shortest Distance to Target Color](./leetcode/1182-ShortestDistanceToTargetColor.go)   
 [1184. Distance Between Bus Stops](./leetcode/1184-DistanceBetweenBusStops.go)   
