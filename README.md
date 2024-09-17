@@ -729,6 +729,7 @@
 [1800. Maximum Ascending Subarray Sum](./leetcode/1800-MaximumAscendingSubarraySum.go)   
 [1814. Count Nice Pairs in an Array](./leetcode/1814-CountNicePairsInAnArray.go)   
 [1822. Sign of the Product of an Array](./leetcode/1822-SignOfTheProductOfAnArray.go)   
+[1826. Faulty Sensor](./leetcode/1826-FaultySensor.go)   
 [1840. Maximum Building Height](./leetcode/1840-MaximumBuildingHeight.go)   
 [1854. Maximum Population Year](./leetcode/1854-MaximumPopulationYear.go)   
 [1863. Sum of All Subset XOR Totals](./leetcode/1863-SumOfAllSubsetXORTotals.go)   
