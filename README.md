@@ -1451,6 +1451,7 @@
 [1175. Prime Arrangements](./leetcode/1175-PrimeArrangements.go)   
 [1183. Maximum Number of Ones](./leetcode/1183-MaximumNumberOfOnes.go)   
 [1185. Day of the Week](./leetcode/1185-DayOfTheWeek.go)   
+[1201. Ugly Number III](./leetcode/1201-UglyNumberIII.go)   
 [1227. Airplane Seat Assignment Probability](./leetcode/1227-AirplaneSeatAssignmentProbability.go)   
 [1256. Encode Number](./leetcode/1256-EncodeNumber.go)   
 [1259. Handshakes That Don't Cross](./leetcode/1259-HandshakesThatDontCross.go)   
