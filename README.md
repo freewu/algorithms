@@ -1166,6 +1166,7 @@
 [1180. Count Substrings with Only One Distinct Letter](./leetcode/1180-CountSubstringsWithOnlyOneDistinctLetter.go)   
 [1189. Maximum Number of Balloons](./leetcode/1189-MaximumNumberOfBalloons.go)   
 [1190. Reverse Substrings Between Each Pair of Parentheses](./leetcode/1190-ReverseSubstringsBetweenEachPairOfParentheses.go)   
+[1202. Smallest String With Swaps](./leetcode/1202-SmallestStringWithSwaps.go)   
 [1208. Get Equal Substrings Within Budget](./leetcode/1208-GetEqualSubstringsWithinBudget.go)   
 [1216. Valid Palindrome III](./leetcode/1216-ValidPalindromeIII.go)   
 [1221. Split a String in Balanced Strings](./leetcode/1221-SplitAStringInBalancedStrings.go)   
