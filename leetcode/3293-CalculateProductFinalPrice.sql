@@ -83,10 +83,10 @@
 SELECT
     p.product_id AS  product_id,
     IF(
-        d.discount = null,
+        d.discount IS NULL,
         p.price,
-        ROUND( (100 - d.discount) / 100 * p.price )
-    ) AS final_price
+        ROUND( (100 - d.discount) / 100 * p.price, 2 )
+    ) AS final_price,
     p.category AS category
 FROM
     Products AS p 
