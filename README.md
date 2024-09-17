@@ -620,6 +620,7 @@
 [1199. Minimum Time to Build Blocks](./leetcode/1199-MinimumTimeToBuildBlocks.go)   
 [1200. Minimum Absolute Difference](./leetcode/1200-MinimumAbsoluteDifference.go)   
 [1207. Unique Number of Occurrences](./leetcode/1207-UniqueNumberOfOccurrences.go)   
+[1210. Minimum Moves to Reach Target with Rotations](./leetcode/1210-MinimumMovesToReachTargetWithRotations.go)   
 [1213. Intersection of Three Sorted Arrays](./leetcode/1213-IntersectionOfThreeSortedArrays.go)   
 [1217. Minimum Cost to Move Chips to The Same Position](./leetcode/1217-MinimumCostToMoveChipsToTheSamePosition.go)   
 [1218. Longest Arithmetic Subsequence of Given Difference](./leetcode/1218-LongestArithmeticSubsequenceOfGivenDifference.go)   
