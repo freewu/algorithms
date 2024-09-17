@@ -38,10 +38,7 @@ import "fmt"
 
 func decodeAtIndex(s string, k int) string {
     if k == 1 { return string(s[0]) }
-    isLetter := func (char byte) bool {
-        if char >= 'a' && char <= 'z' { return true }
-        return false 
-    }
+    isLetter := func (char byte) bool { return char >= 'a' && char <= 'z' }
     n := 0
     for i := 0; i < len(s); i++ {
         if isLetter(s[i]) {
