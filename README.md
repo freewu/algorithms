@@ -773,6 +773,7 @@
 [2106. Maximum Fruits Harvested After at Most K Steps](./leetcode/2106-MaximumFruitsHarvestedAfterAtMostKSteps.go)   
 [2108. Find First Palindromic String in the Array](./leetcode/2108-FindFirstPalindromicStringInTheArray.go)   
 [2120. Execution of All Suffix Instructions Staying in a Grid](./leetcode/2120-ExecutionOfAllSuffixInstructionsStayingInAGrid.go)   
+[2132. Stamping the Grid](./leetcode/2132-StampingTheGrid.go)   
 [2134. Minimum Swaps to Group All 1's Together II](./leetcode/2134-MinimumSwapsToGroupAllOneTogetherII.go)   
 [2140. Solving Questions With Brainpower](./leetcode/2140-SolvingQuestionsWithBrainpower.go)   
 [2146. K Highest Ranked Items Within a Price Range](./leetcode/2146-KHighestRankedItemsWithinAPriceRange.go)   
