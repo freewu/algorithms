@@ -653,6 +653,7 @@
 [1306. Jump Game III](./leetcode/1306-JumpGameIII.go)   
 [1307. Verbal Arithmetic Puzzle](./leetcode/1307-VerbalArithmeticPuzzle.go)   
 [1310. XOR Queries of a Subarray](./leetcode/1310-XORQueriesOfASubarray.go)   
+[1311. Get Watched Videos by Your Friends](./leetcode/1311-GetWatchedVideosByYourFriends.go)   
 [1326. Minimum Number of Taps to Open to Water a Garden](./leetcode/1326-MinimumNumberOfTapsToOpenToWaterAGarden.go)   
 [1329. Sort the Matrix Diagonally](./leetcode/1329-SortTheMatrixDiagonally.go)   
 [1335. Minimum Difficulty of a Job Schedule](./leetcode/1335-MinimumDifficultyOfAJobSchedule.go)   
