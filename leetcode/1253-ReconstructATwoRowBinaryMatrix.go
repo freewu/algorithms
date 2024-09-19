@@ -68,6 +68,30 @@ func reconstructMatrix(upper int, lower int, colsum []int) [][]int {
     return [][]int{ matrixRowUpper, matrixRowLower }
 }
 
+func reconstructMatrix1(upper int, lower int, colsum []int) [][]int {
+    matrix := make([][]int,2)
+    matrix[0], matrix[1] = make([] int, len(colsum)), make([] int, len(colsum))
+    for i, sum := range colsum {
+        if sum == 0 {
+            // pass
+        } else if sum == 2 {
+            matrix[0][i], matrix[1][i] = 1, 1
+            upper--
+            lower-- 
+        } else if upper > lower{
+            matrix[0][i] = 1
+            upper--
+        } else {
+            matrix[1][i] = 1
+            lower--
+        }
+    }
+    if lower != 0 || upper != 0 {
+       return nil
+    }
+    return matrix    
+}
+
 func main() {
     // Example 1:
     // Input: upper = 2, lower = 1, colsum = [1,1,1]
@@ -82,4 +106,8 @@ func main() {
     // Input: upper = 5, lower = 5, colsum = [2,1,2,0,1,0,1,2,0,1]
     // Output: [[1,1,1,0,1,0,0,1,0,0],[1,0,1,0,0,0,1,1,0,1]]
     fmt.Println(reconstructMatrix(5, 5, []int{2,1,2,0,1,0,1,2,0,1})) // [[1,1,1,0,1,0,0,1,0,0],[1,0,1,0,0,0,1,1,0,1]]
+
+    fmt.Println(reconstructMatrix1(2, 1, []int{1,1,1})) // [[1,1,0],[0,0,1]]
+    fmt.Println(reconstructMatrix1(2, 3, []int{2,2,1,1})) // []
+    fmt.Println(reconstructMatrix1(5, 5, []int{2,1,2,0,1,0,1,2,0,1})) // [[1,1,1,0,1,0,0,1,0,0],[1,0,1,0,0,0,1,1,0,1]]
 }
