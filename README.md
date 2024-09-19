@@ -638,6 +638,7 @@
 [1243. Array Transformation](./leetcode/1243-ArrayTransformation.go)   
 [1246. Palindrome Removal](./leetcode/1246-PalindromeRemoval.go)   
 [1248. Count Number of Nice Subarrays](./leetcode/1248-CountNumberOfNiceSubarrays.go)   
+[1250. Check If It Is a Good Array](./leetcode/1250-CheckIfItIsAGoodArray.go)   
 [1252. Cells with Odd Values in a Matrix](./leetcode/1252-CellsWithOddValuesInAMatrix.go)   
 [1254. Number of Closed Islands](./leetcode/1254-NumberOfClosedIslands.go)   
 [1255. Maximum Score Words Formed by Letters](./leetcode/1255-MaximumScoreWordsFormedByLetters.go)   
