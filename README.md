@@ -633,6 +633,7 @@
 [1230. Toss Strange Coins](./leetcode/1230-TossStrangeCoins.go)   
 [1231. Divide Chocolate](./leetcode/1231-DivideChocolate.go)   
 [1232. Check If It Is a Straight Line](./leetcode/1232-CheckIfItIsAStraightLine.go)   
+[1233. Remove Sub-Folders from the Filesystem](./leetcode/1233-RemoveSubFoldersFromTheFilesystem.go)   
 [1235. Maximum Profit in Job Scheduling](./leetcode/1235-MaximumProfitInJobScheduling.go)   
 [1243. Array Transformation](./leetcode/1243-ArrayTransformation.go)   
 [1246. Palindrome Removal](./leetcode/1246-PalindromeRemoval.go)   
