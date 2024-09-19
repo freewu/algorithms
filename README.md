@@ -1465,6 +1465,7 @@
 [1185. Day of the Week](./leetcode/1185-DayOfTheWeek.go)   
 [1201. Ugly Number III](./leetcode/1201-UglyNumberIII.go)   
 [1227. Airplane Seat Assignment Probability](./leetcode/1227-AirplaneSeatAssignmentProbability.go)   
+[1237. Find Positive Integer Solution for a Given Equation](./leetcode/1237-FindPositiveIntegerSolutionForAGivenEquation.go)   
 [1256. Encode Number](./leetcode/1256-EncodeNumber.go)   
 [1259. Handshakes That Don't Cross](./leetcode/1259-HandshakesThatDontCross.go)   
 [1281. Subtract the Product and Sum of Digits of an Integer](./leetcode/1281-SubtractTheProductAndSumOfDigitsOfAnInteger.go)   
