@@ -36,24 +36,23 @@ func diffWaysToCompute(expression string) []int {
     res := make([]int, 0)
     for i := 0; i < len(expression); i++ {
         if expression[i] == '+' || expression[i] == '-' || expression[i] == '*' {
-            leftExpAnswers := diffWaysToCompute(expression[:i])
-            rightExpAnswers := diffWaysToCompute(expression[i+1:])
-            for _, leftAnswer := range leftExpAnswers {
-                for _, rightAnswer := range rightExpAnswers {
+            left, right := diffWaysToCompute(expression[:i]), diffWaysToCompute(expression[i+1:])
+            for _, l := range left {
+                for _, r := range right {
                     if expression[i] == '+' {
-                        res = append(res, leftAnswer + rightAnswer)
+                        res = append(res, l + r)
                     } else if expression[i] == '-' {
-                        res = append(res, leftAnswer - rightAnswer)
+                        res = append(res, l - r)
                     } else if expression[i] == '*' {
-                        res = append(res, leftAnswer * rightAnswer)
+                        res = append(res, l * r)
                     }
                 }
             }
         }
     }
     if len(res) == 0 {
-        expressionInt, _ := strconv.Atoi(expression)
-        res = append(res, expressionInt)
+        num, _ := strconv.Atoi(expression)
+        res = append(res, num)
     }
     return res
 }
