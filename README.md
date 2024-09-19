@@ -1179,6 +1179,7 @@
 [1209. Remove All Adjacent Duplicates in String II](./leetcode/1209-RemoveAllAdjacentDuplicatesInStringII.go)   
 [1216. Valid Palindrome III](./leetcode/1216-ValidPalindromeIII.go)   
 [1221. Split a String in Balanced Strings](./leetcode/1221-SplitAStringInBalancedStrings.go)   
+[1234. Replace the Substring for Balanced String](./leetcode/1234-ReplaceTheSubstringForBalancedString.go)   
 [1236. Web Crawler](./leetcode/1236-WebCrawler.go)   
 [1239. Maximum Length of a Concatenated String with Unique Characters](./leetcode/1239-MaximumLengthOfAConcatenatedStringWithUniqueCharacters.go)   
 [1247. Minimum Swaps to Make Strings Equal](./leetcode/1247-MinimumSwapsToMakeStringsEqual.go)   
