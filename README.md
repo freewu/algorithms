@@ -640,6 +640,7 @@
 [1248. Count Number of Nice Subarrays](./leetcode/1248-CountNumberOfNiceSubarrays.go)   
 [1250. Check If It Is a Good Array](./leetcode/1250-CheckIfItIsAGoodArray.go)   
 [1252. Cells with Odd Values in a Matrix](./leetcode/1252-CellsWithOddValuesInAMatrix.go)   
+[1253. Reconstruct a 2-Row Binary Matrix](./leetcode/1253-ReconstructATwoRowBinaryMatrix.go)   
 [1254. Number of Closed Islands](./leetcode/1254-NumberOfClosedIslands.go)   
 [1255. Maximum Score Words Formed by Letters](./leetcode/1255-MaximumScoreWordsFormedByLetters.go)   
 [1267. Count Servers that Communicate](./leetcode/1267-CountServersThatCommunicate.go)   
