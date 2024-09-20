@@ -643,6 +643,7 @@
 [1253. Reconstruct a 2-Row Binary Matrix](./leetcode/1253-ReconstructATwoRowBinaryMatrix.go)   
 [1254. Number of Closed Islands](./leetcode/1254-NumberOfClosedIslands.go)   
 [1255. Maximum Score Words Formed by Letters](./leetcode/1255-MaximumScoreWordsFormedByLetters.go)   
+[1260. Shift 2D Grid](./leetcode/1260-Shift2DGrid.go)   
 [1267. Count Servers that Communicate](./leetcode/1267-CountServersThatCommunicate.go)   
 [1268. Search Suggestions System](./leetcode/1268-SearchSuggestionsSystem.go)   
 [1272. Remove Interval](./leetcode/1272-RemoveInterval.go)   
