@@ -1894,6 +1894,7 @@
 [1600. Throne Inheritance](./leetcode/1600-ThroneInheritance.go)   
 [1603. Design Parking System](./leetcode/1603-DesignParkingSystem.go)   
 [1628. Design an Expression Tree With Evaluate Function](./leetcode/1628-DesignanExpressionTreeWithEvaluateFunction.go)   
+[1756. Design Most Recently Used Queue](./leetcode/1756-DesignMostRecentlyUsedQueue.go)   
 [2080. Range Frequency Queries](./leetcode/2080-RangeFrequencyQueries.go)   
 [2227. Encrypt and Decrypt Strings](./leetcode/2227-EncryptAndDecryptStrings.go)   
 [2336. Smallest Number in Infinite Set](./leetcode/2336-SmallestNumberInInfiniteSet.go)   
