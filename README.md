@@ -840,6 +840,7 @@
 [2589. Minimum Time to Complete All Tasks](./leetcode/2589-MinimumTimeToCompleteAllTasks.go)   
 [2596. Check Knight Tour Configuration](./leetcode/2596-CheckKnightTourConfiguration.go)   
 [2597. The Number of Beautiful Subsets](./leetcode/2597-TheNumberOfBeautifulSubsets.go)   
+[2604. Minimum Time to Eat All Grains](./leetcode/2604-MinimumTimeToEatAllGrains.go)   
 [2617. Minimum Number of Visited Cells in a Grid](./leetcode/2617-MinimumNumberOfVisitedCellsInAGrid.go)   
 [2644. Find the Maximum Divisibility Score](./leetcode/2644-FindTheMaximumDivisibilityScore.go)   
 [2658. Maximum Number of Fish in a Grid](./leetcode/2658-MaximumNumberOfFishInAGrid.go)   
