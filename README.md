@@ -767,6 +767,7 @@
 [2028. Find Missing Observations](./leetcode/2028-FindMissingObservations.go)   
 [2037. Minimum Number of Moves to Seat Everyone](./leetcode/2037-MinimumNumberOfMovesToSeatEveryone.go)   
 [2053. Kth Distinct String in an Array](./leetcode/2053-KthDistinctStringInAnArray.go)   
+[2056. Number of Valid Move Combinations On Chessboard](./leetcode/2056-NumberOfValidMoveCombinationsOnChessboard.go)   
 [2071. Maximum Number of Tasks You Can Assign](./leetcode/2071-MaximumNumberOfTasksYouCanAssign.go)   
 [2073. Time Needed to Buy Tickets](./leetcode/2073-TimeNeededToBuyTickets.go)   
 [2079. Watering Plants](./leetcode/2079-WateringPlants.go)   
