@@ -661,6 +661,7 @@
 [1288. Remove Covered Intervals](./leetcode/1288-RemoveCoveredIntervals.go)   
 [1289. Minimum Falling Path Sum II](./leetcode/1289-MinimumFallingPathSumII.go)   
 [1293. Shortest Path in a Grid with Obstacles Elimination](./leetcode/1293-ShortestPathInAGridWithObstaclesElimination.go)   
+[1295. Find Numbers with Even Number of Digits](./leetcode/1295-FindNumbersWithEvenNumberOfDigits.go)   
 [1306. Jump Game III](./leetcode/1306-JumpGameIII.go)   
 [1307. Verbal Arithmetic Puzzle](./leetcode/1307-VerbalArithmeticPuzzle.go)   
 [1310. XOR Queries of a Subarray](./leetcode/1310-XORQueriesOfASubarray.go)   
