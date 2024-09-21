@@ -1200,6 +1200,7 @@
 [1257. Smallest Common Region](./leetcode/1257-SmallestCommonRegion.go)   
 [1258. Synonymous Sentences](./leetcode/1258-SynonymousSentences.go)   
 [1271. Hexspeak](./leetcode/1271-Hexspeak.go)   
+[1278. Palindrome Partitioning III](./leetcode/1278-PalindromePartitioningIII.go)   
 [1312. Minimum Insertion Steps to Make a String Palindrome](./leetcode/1312-MinimumInsertionStepsToMakeAStringPalindrome.go)   
 [1360. Number of Days Between Two Dates](./leetcode/1360-NumberOfDaysBetweenTwoDates.go)   
 [1371. Find the Longest Substring Containing Vowels in Even Counts](./leetcode/1371-FindTheLongestSubstringContainingVowelsTnEvenCounts.go)   
