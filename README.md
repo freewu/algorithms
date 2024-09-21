@@ -1482,6 +1482,7 @@
 [1238. Circular Permutation in Binary Representation](./leetcode/1238-CircularPermutationInBinaryRepresentation.go)   
 [1256. Encode Number](./leetcode/1256-EncodeNumber.go)   
 [1259. Handshakes That Don't Cross](./leetcode/1259-HandshakesThatDontCross.go)   
+[1276. Number of Burgers with No Waste of Ingredients](./leetcode/1276-NumberOfBurgersWithNoWasteOfIngredients.go)   
 [1281. Subtract the Product and Sum of Digits of an Integer](./leetcode/1281-SubtractTheProductAndSumOfDigitsOfAnInteger.go)   
 [1344. Angle Between Hands of a Clock](./leetcode/1344-AngleBetweenHandsOfAClock.go)   
 [1401. Circle and Rectangle Overlapping](./leetcode/1401-CircleAndRectangleOverlapping.go)   
