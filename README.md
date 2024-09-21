@@ -653,6 +653,7 @@
 [1273. Delete Tree Nodes](./leetcode/1273-DeleteTreeNodes.go)   
 [1274. Number of Ships in a Rectangle](./leetcode/1274-NumberOfShipsInARectangle.go)   
 [1275. Find Winner on a Tic Tac Toe Game](./leetcode/1275-FindWinnerOnATicTacToeGame.go)   
+[1277. Count Square Submatrices with All Ones](./leetcode/1277-CountSquareSubmatricesWithAllOnes.go)   
 [1282. Group the People Given the Group Size They Belong To](./leetcode/1282-GroupThePeopleGivenTheGroupSizeTheyBelongTo.go)   
 [1283. Find the Smallest Divisor Given a Threshold](./leetcode/1283-FindTheSmallestDivisorGivenAThreshold.go)   
 [1288. Remove Covered Intervals](./leetcode/1288-RemoveCoveredIntervals.go)   
