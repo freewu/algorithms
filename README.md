@@ -889,6 +889,7 @@
 [2917. Find the K-or of an Array](./leetcode/2917-FindTheKOrOfAnArray.go)   
 [2923. Find Champion I](./leetcode/2923-FindChampionI.go)   
 [2924. Find Champion II](./leetcode/2924-FindChampionII.go)   
+[2931. Maximum Spending After Buying Items](./leetcode/2931-MaximumSpendingAfterBuyingItems.go)   
 [2940. Find Building Where Alice and Bob Can Meet](./leetcode/2940-FindBuildingWhereAliceAndBobCanMeet.go)   
 [2943. Maximize Area of Square Hole in Grid](./leetcode/2943-MaximizeAreaOfSquareHoleInGrid.go)   
 [2951. Find the Peaks](./leetcode/2951-FindThePeaks.go)   

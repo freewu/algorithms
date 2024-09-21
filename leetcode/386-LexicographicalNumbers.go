@@ -74,6 +74,22 @@ func lexicalOrder2(n int) []int {
     return res
 }
 
+func lexicalOrder3(n int) []int {
+    res, num  := make([]int, n), 1
+    for i := 0; i < len(res); i++ {
+        res[i] = num
+        if num * 10 <= n {
+            num = num * 10
+        } else {
+            for num % 10 == 9 || num + 1 > n {
+                num = num / 10
+            }
+            num++
+        }
+    }
+    return res
+}
+
 func main() {
     fmt.Println(lexicalOrder(13)) // [1,10,11,12,13,2,3,4,5,6,7,8,9]
     fmt.Println(lexicalOrder(1)) // [1,2]
@@ -83,4 +99,7 @@ func main() {
 
     fmt.Println(lexicalOrder2(13)) // [1,10,11,12,13,2,3,4,5,6,7,8,9]
     fmt.Println(lexicalOrder2(1)) // [1,2]
+
+    fmt.Println(lexicalOrder3(13)) // [1,10,11,12,13,2,3,4,5,6,7,8,9]
+    fmt.Println(lexicalOrder3(1)) // [1,2]
 }
