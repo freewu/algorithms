@@ -656,6 +656,7 @@
 [1277. Count Square Submatrices with All Ones](./leetcode/1277-CountSquareSubmatricesWithAllOnes.go)   
 [1282. Group the People Given the Group Size They Belong To](./leetcode/1282-GroupThePeopleGivenTheGroupSizeTheyBelongTo.go)   
 [1283. Find the Smallest Divisor Given a Threshold](./leetcode/1283-FindTheSmallestDivisorGivenAThreshold.go)   
+[1287. Element Appearing More Than 25% In Sorted Array](./leetcode/1287-ElementAppearingMoreThan25PercentInSortedArray.go)   
 [1288. Remove Covered Intervals](./leetcode/1288-RemoveCoveredIntervals.go)   
 [1289. Minimum Falling Path Sum II](./leetcode/1289-MinimumFallingPathSumII.go)   
 [1293. Shortest Path in a Grid with Obstacles Elimination](./leetcode/1293-ShortestPathInAGridWithObstaclesElimination.go)   
