@@ -1336,6 +1336,7 @@
 [1019. Next Greater Node In Linked List](./leetcode/1019-NextGreaterNodeInLinkedList.go)   
 [1171. Remove Zero Sum Consecutive Nodes from Linked List](./leetcode/1171-RemoveZeroSumConsecutiveNodesFromLinkedList.go)   
 [1265. Print Immutable Linked List in Reverse](./leetcode/1265-PrintImmutableLinkedListInReverse.go)   
+[1290. Convert Binary Number in a Linked List to Integer](./leetcode/1290-ConvertBinaryNumberInALinkedListToInteger.go)   
 [1367. Linked List in Binary Tree](./leetcode/1367-LinkedListInBinaryTree.go)   
 [1474. Delete N Nodes After M Nodes of a Linked List](./leetcode/1474-DeleteN-NodesAfterM-NodesOfALinkedList.go)   
 [1669. Merge In Between Linked Lists](./leetcode/1669-MergeInBetweenLinkedLists.go)   
