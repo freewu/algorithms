@@ -663,6 +663,7 @@
 [1292. Maximum Side Length of a Square with Sum Less than or Equal to Threshold](./leetcode/1292-MaximumSideLengthOfASquareWithSumLessThanOrEqualToThreshold.go)   
 [1293. Shortest Path in a Grid with Obstacles Elimination](./leetcode/1293-ShortestPathInAGridWithObstaclesElimination.go)   
 [1295. Find Numbers with Even Number of Digits](./leetcode/1295-FindNumbersWithEvenNumberOfDigits.go)   
+[1296. Divide Array in Sets of K Consecutive Numbers](./leetcode/1296-DivideArrayInSetsOfKConsecutiveNumbers.go)   
 [1299. Replace Elements with Greatest Element on Right Side](./leetcode/1299-ReplaceElementsWithGreatestElementOnRightSide.go)   
 [1306. Jump Game III](./leetcode/1306-JumpGameIII.go)   
 [1307. Verbal Arithmetic Puzzle](./leetcode/1307-VerbalArithmeticPuzzle.go)   
