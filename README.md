@@ -973,6 +973,7 @@
 [3245. Alternating Groups III](./leetcode/3245-AlternatingGroupsIII.go)   
 [3247. Number of Subsequences with Odd Sum](./leetcode/3247-NumberOfSubsequencesWithOddSum.go)   
 [3269. Constructing Two Increasing Arrays](./leetcode/3269-ConstructingTwoIncreasingArrays.go)   
+[3279. Maximum Total Area Occupied by Pistons](./leetcode/3279-MaximumTotalAreaOccupiedByPistons.go)   
 [3286. Find a Safe Walk Through a Grid](./leetcode/3286-FindASafeWalkThroughAGrid.go)   
 
 # String
