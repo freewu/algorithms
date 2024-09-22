@@ -1347,6 +1347,7 @@
 [1290. Convert Binary Number in a Linked List to Integer](./leetcode/1290-ConvertBinaryNumberInALinkedListToInteger.go)   
 [1367. Linked List in Binary Tree](./leetcode/1367-LinkedListInBinaryTree.go)   
 [1474. Delete N Nodes After M Nodes of a Linked List](./leetcode/1474-DeleteN-NodesAfterM-NodesOfALinkedList.go)   
+[1634. Add Two Polynomials Represented as Linked Lists](./leetcode/1634-AddTwoPolynomialsRepresentedAsLinkedLists.go)   
 [1669. Merge In Between Linked Lists](./leetcode/1669-MergeInBetweenLinkedLists.go)   
 [1836. Remove Duplicates From an Unsorted Linked List](./leetcode/1836-RemoveDuplicatesFromAnUnsortedLinkedList.go)   
 [2058. Find the Minimum and Maximum Number of Nodes Between Critical Points](./leetcode/2058-FindTheMinimumAndMaximumNumberOfNodesBetweenCriticalPoints.go)   
