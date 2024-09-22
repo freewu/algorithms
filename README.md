@@ -660,6 +660,7 @@
 [1287. Element Appearing More Than 25% In Sorted Array](./leetcode/1287-ElementAppearingMoreThan25PercentInSortedArray.go)   
 [1288. Remove Covered Intervals](./leetcode/1288-RemoveCoveredIntervals.go)   
 [1289. Minimum Falling Path Sum II](./leetcode/1289-MinimumFallingPathSumII.go)   
+[1292. Maximum Side Length of a Square with Sum Less than or Equal to Threshold](./leetcode/1292-MaximumSideLengthOfASquareWithSumLessThanOrEqualToThreshold.go)   
 [1293. Shortest Path in a Grid with Obstacles Elimination](./leetcode/1293-ShortestPathInAGridWithObstaclesElimination.go)   
 [1295. Find Numbers with Even Number of Digits](./leetcode/1295-FindNumbersWithEvenNumberOfDigits.go)   
 [1299. Replace Elements with Greatest Element on Right Side](./leetcode/1299-ReplaceElementsWithGreatestElementOnRightSide.go)   
