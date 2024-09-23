@@ -1213,6 +1213,7 @@
 [1271. Hexspeak](./leetcode/1271-Hexspeak.go)   
 [1278. Palindrome Partitioning III](./leetcode/1278-PalindromePartitioningIII.go)   
 [1297. Maximum Number of Occurrences of a Substring](./leetcode/1297-MaximumNumberOfOccurrencesOfASubstring.go)   
+[1309. Decrypt String from Alphabet to Integer Mapping](./leetcode/1309-DecryptStringFromAlphabetToIntegerMapping.go)   
 [1312. Minimum Insertion Steps to Make a String Palindrome](./leetcode/1312-MinimumInsertionStepsToMakeAStringPalindrome.go)   
 [1360. Number of Days Between Two Dates](./leetcode/1360-NumberOfDaysBetweenTwoDates.go)   
 [1371. Find the Longest Substring Containing Vowels in Even Counts](./leetcode/1371-FindTheLongestSubstringContainingVowelsTnEvenCounts.go)   
