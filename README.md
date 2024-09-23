@@ -727,6 +727,7 @@
 [1636. Sort Array by Increasing Frequency](./leetcode/1636-SortArrayByIncreasingFrequency.go)   
 [1639. Number of Ways to Form a Target String Given a Dictionary](./leetcode/1639-NumberOfWaysToFormATargetStringGivenADictionary.go)   
 [1642. Furthest Building You Can Reach](./leetcode/1642-FurthestBuildingYouCanReach.go)   
+[1648. Sell Diminishing-Valued Colored Balls](./leetcode/1648-SellDiminishingValuedColoredBalls.go)   
 [1652. Defuse the Bomb](./leetcode/1652-DefuseTheBomb.go)   
 [1672. Richest Customer Wealth](./leetcode/1672-RichestCustomerWealth.go)   
 [1673. Find the Most Competitive Subsequence](./leetcode/1673-FindTheMostCompetitiveSubsequence.go)   
