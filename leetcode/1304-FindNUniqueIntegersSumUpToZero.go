@@ -30,6 +30,18 @@ func sumZero(n int) []int {
     return res
 }
 
+func sumZero1(n int) []int {
+    res := []int{}
+    for i := 0; i < n / 2; i++ {
+        res = append(res, +(i + 1))
+        res = append(res, -(i + 1))
+    }
+    if n % 2 == 1 { // 奇数补个0
+        res = append(res, 0)
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: n = 5
@@ -48,4 +60,11 @@ func main() {
     fmt.Println(sumZero(10)) // [-5 -4 -3 -2 -1 5 4 3 2 1]
     fmt.Println(sumZero(16)) // [-8 -7 -6 -5 -4 -3 -2 -1 8 7 6 5 4 3 2 1]
     fmt.Println(sumZero(32)) // [-16 -15 -14 -13 -12 -11 -10 -9 -8 -7 -6 -5 -4 -3 -2 -1 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1]
+
+    fmt.Println(sumZero1(5)) // [-2 -1 2 1 0]
+    fmt.Println(sumZero1(3)) // [-1 1 0]
+    fmt.Println(sumZero1(1)) // [0]
+    fmt.Println(sumZero1(10)) // [-5 -4 -3 -2 -1 5 4 3 2 1]
+    fmt.Println(sumZero1(16)) // [-8 -7 -6 -5 -4 -3 -2 -1 8 7 6 5 4 3 2 1]
+    fmt.Println(sumZero1(32)) // [-16 -15 -14 -13 -12 -11 -10 -9 -8 -7 -6 -5 -4 -3 -2 -1 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1]
 }

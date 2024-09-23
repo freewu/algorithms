@@ -666,6 +666,7 @@
 [1296. Divide Array in Sets of K Consecutive Numbers](./leetcode/1296-DivideArrayInSetsOfKConsecutiveNumbers.go)   
 [1298. Maximum Candies You Can Get from Boxes](./leetcode/1298-MaximumCandiesYouCanGetFromBoxes.go)   
 [1299. Replace Elements with Greatest Element on Right Side](./leetcode/1299-ReplaceElementsWithGreatestElementOnRightSide.go)   
+[1300. Sum of Mutated Array Closest to Target](./leetcode/1300-SumOfMutatedArrayClosestToTarget.go)   
 [1306. Jump Game III](./leetcode/1306-JumpGameIII.go)   
 [1307. Verbal Arithmetic Puzzle](./leetcode/1307-VerbalArithmeticPuzzle.go)   
 [1310. XOR Queries of a Subarray](./leetcode/1310-XORQueriesOfASubarray.go)   
