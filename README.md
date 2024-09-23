@@ -1670,6 +1670,7 @@
 [1214. Two Sum BSTs](./leetcode/1214-TwoSumBSTs.go)   
 [1261. Find Elements in a Contaminated Binary Tree](./leetcode/1261-FindElementsInAContaminatedBinaryTree.go)   
 [1302. Deepest Leaves Sum](./leetcode/1302-DeepestLeavesSum.go)   
+[1305. All Elements in Two Binary Search Trees](./leetcode/1305-AllElementsInTwoBinarySearchTrees.go)   
 [1315. Sum of Nodes with Even-Valued Grandparent](./leetcode/1315-SumOfNodesWithEvenValuedGrandparent.go)   
 [1325. Delete Leaves With a Given Value](./leetcode/1325-DeleteLeavesWithAGivenValue.go)   
 [1339. Maximum Product of Splitted Binary Tree](./leetcode/1339-MaximumProductOfSplittedBinaryTree.go)   
