@@ -676,6 +676,7 @@
 [1329. Sort the Matrix Diagonally](./leetcode/1329-SortTheMatrixDiagonally.go)   
 [1335. Minimum Difficulty of a Job Schedule](./leetcode/1335-MinimumDifficultyOfAJobSchedule.go)   
 [1340. Jump Game V](./leetcode/1340-JumpGameV.go)   
+[1343. Number of Sub-arrays of Size K and Average Greater than or Equal to Threshold](./leetcode/1343-NumberOfSubArraysOfSizeKAndAverageGreaterThanOrEqualToThreshold.go)   
 [1345. Jump Game IV](./leetcode/1345-JumpGameIV.go)   
 [1346. Check If N and Its Double Exist](./leetcode/1346-CheckIfNAndItsDoubleExist.go)   
 [1351. Count Negative Numbers in a Sorted Matrix](./leetcode/1351-CountNegativeNumbersInASortedMatrix.go)   
