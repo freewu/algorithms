@@ -764,6 +764,7 @@
 [1883. Minimum Skips to Arrive at Meeting On Time](./leetcode/1883-MinimumSkipsToArriveAtMeetingOnTime.go)   
 [1885. Count Pairs in Two Arrays](./leetcode/1885-CountPairsInTwoArrays.go)   
 [1886. Determine Whether Matrix Can Be Obtained By Rotation](./leetcode/1886-DetermineWhetherMatrixCanBeObtainedByRotation.go)   
+[1891. Cutting Ribbons](./leetcode/1891-CuttingRibbons.go)   
 [1894. Find the Student that Will Replace the Chalk](./leetcode/1894-FindTheStudentThatWillReplaceTheChalk.go)   
 [1902. Depth of BST Given Insertion Order](./leetcode/1902-DepthOfBSTGivenInsertionOrder.go)   
 [1905. Count Sub Islands](./leetcode/1905-CountSubIslands.go)   
