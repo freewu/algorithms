@@ -675,6 +675,7 @@
 [1326. Minimum Number of Taps to Open to Water a Garden](./leetcode/1326-MinimumNumberOfTapsToOpenToWaterAGarden.go)   
 [1329. Sort the Matrix Diagonally](./leetcode/1329-SortTheMatrixDiagonally.go)   
 [1335. Minimum Difficulty of a Job Schedule](./leetcode/1335-MinimumDifficultyOfAJobSchedule.go)   
+[1340. Jump Game V](./leetcode/1340-JumpGameV.go)   
 [1351. Count Negative Numbers in a Sorted Matrix](./leetcode/1351-CountNegativeNumbersInASortedMatrix.go)   
 [1353. Maximum Number of Events That Can Be Attended](./leetcode/1353-MaximumNumberOfEventsThatCanBeAttended.go)   
 [1380. Lucky Numbers in a Matrix](./leetcode/1380-LuckyNumbersInAMatrix.go)   
