@@ -677,6 +677,7 @@
 [1335. Minimum Difficulty of a Job Schedule](./leetcode/1335-MinimumDifficultyOfAJobSchedule.go)   
 [1340. Jump Game V](./leetcode/1340-JumpGameV.go)   
 [1345. Jump Game IV](./leetcode/1345-JumpGameIV.go)   
+[1346. Check If N and Its Double Exist](./leetcode/1346-CheckIfNAndItsDoubleExist.go)   
 [1351. Count Negative Numbers in a Sorted Matrix](./leetcode/1351-CountNegativeNumbersInASortedMatrix.go)   
 [1353. Maximum Number of Events That Can Be Attended](./leetcode/1353-MaximumNumberOfEventsThatCanBeAttended.go)   
 [1380. Lucky Numbers in a Matrix](./leetcode/1380-LuckyNumbersInAMatrix.go)   
