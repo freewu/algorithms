@@ -679,6 +679,7 @@
 [1343. Number of Sub-arrays of Size K and Average Greater than or Equal to Threshold](./leetcode/1343-NumberOfSubArraysOfSizeKAndAverageGreaterThanOrEqualToThreshold.go)   
 [1345. Jump Game IV](./leetcode/1345-JumpGameIV.go)   
 [1346. Check If N and Its Double Exist](./leetcode/1346-CheckIfNAndItsDoubleExist.go)   
+[1349. Maximum Students Taking Exam](./leetcode/1349-MaximumStudentsTakingExam.go)   
 [1351. Count Negative Numbers in a Sorted Matrix](./leetcode/1351-CountNegativeNumbersInASortedMatrix.go)   
 [1353. Maximum Number of Events That Can Be Attended](./leetcode/1353-MaximumNumberOfEventsThatCanBeAttended.go)   
 [1380. Lucky Numbers in a Matrix](./leetcode/1380-LuckyNumbersInAMatrix.go)   
