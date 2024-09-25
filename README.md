@@ -1767,6 +1767,7 @@
 [1168. Optimize Water Distribution in a Village](./leetcode/1168-OptimizeWaterDistributionInAVillage.go)   
 [1203. Sort Items by Groups Respecting Dependencies](./leetcode/1203-SortItemsByGroupsRespectingDependencies.go)   
 [1245. Tree Diameter](./leetcode/1245-TreeDiameter.go)   
+[1319. Number of Operations to Make Network Connected](./leetcode/1319-NumberOfOperationsToMakeNetworkConnected.go)   
 [1334. Find the City With the Smallest Number of Neighbors at a Threshold Distance](./leetcode/1334-FindTheCityWithTheSmallestNumberOfNeighborsAtAThresholdDistance.go)   
 [1377. Frog Position After T Seconds](./leetcode/1377-FrogPositionAfterTSeconds.go)   
 [1462. Course Schedule IV](./leetcode/1462-CourseScheduleIV.go)   
