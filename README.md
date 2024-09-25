@@ -853,6 +853,8 @@
 [2509. Cycle Length Queries in a Tree](./leetcode/2509-CycleLengthQueriesInATree.go)   
 [2510. Check if There is a Path With Equal Number of 0's And 1's](./leetcode/2510-CheckIfThereIsAPathWithEqualNumberOfZerosAndOnes.go)   
 [2529. Maximum Count of Positive Integer and Negative Integer](./leetcode/2529-MaximumCountOfPositiveIntegerAndNegativeInteger.go)   
+
+[2535. Difference Between Element Sum and Digit Sum of an Array](./leetcode/2535-DifferenceBetweenElementSumAndDigitSumOfAnArray.go)   
 [2540. Minimum Common Value](./leetcode/2540-MinimumCommonValue.go)   
 [2542. Maximum Subsequence Score](./leetcode/2542-MaximumSubsequenceScore.go)   
 [2545. Sort the Students by Their Kth Score](./leetcode/2545-SortTheStudentsByTheirKthScore.go)   
