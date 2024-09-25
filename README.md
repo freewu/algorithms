@@ -1938,6 +1938,7 @@
 [1603. Design Parking System](./leetcode/1603-DesignParkingSystem.go)   
 [1622. Fancy Sequence](./leetcode/1622-FancySequence.go)   
 [1628. Design an Expression Tree With Evaluate Function](./leetcode/1628-DesignanExpressionTreeWithEvaluateFunction.go)   
+[1656. Design an Ordered Stream](./leetcode/1656-DesignAnOrderedStream.go)   
 [1670. Design Front Middle Back Queue](./leetcode/1670-DesignFrontMiddleBackQueue.go)   
 [1756. Design Most Recently Used Queue](./leetcode/1756-DesignMostRecentlyUsedQueue.go)   
 [2080. Range Frequency Queries](./leetcode/2080-RangeFrequencyQueries.go)   
