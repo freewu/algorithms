@@ -1941,6 +1941,7 @@
 [1656. Design an Ordered Stream](./leetcode/1656-DesignAnOrderedStream.go)   
 [1670. Design Front Middle Back Queue](./leetcode/1670-DesignFrontMiddleBackQueue.go)   
 [1756. Design Most Recently Used Queue](./leetcode/1756-DesignMostRecentlyUsedQueue.go)   
+[1797. Design Authentication Manager](./leetcode/1797-DesignAuthenticationManager.go)   
 [2080. Range Frequency Queries](./leetcode/2080-RangeFrequencyQueries.go)   
 [2227. Encrypt and Decrypt Strings](./leetcode/2227-EncryptAndDecryptStrings.go)   
 [2336. Smallest Number in Infinite Set](./leetcode/2336-SmallestNumberInInfiniteSet.go)   
