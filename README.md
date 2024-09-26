@@ -1957,6 +1957,7 @@
 [1756. Design Most Recently Used Queue](./leetcode/1756-DesignMostRecentlyUsedQueue.go)   
 [1797. Design Authentication Manager](./leetcode/1797-DesignAuthenticationManager.go)   
 [1804. Implement Trie II (Prefix Tree)](./leetcode/1804-ImplementTrieII.go)   
+[1845. Seat Reservation Manager](./leetcode/1845-SeatReservationManager.go)   
 [2080. Range Frequency Queries](./leetcode/2080-RangeFrequencyQueries.go)   
 [2227. Encrypt and Decrypt Strings](./leetcode/2227-EncryptAndDecryptStrings.go)   
 [2336. Smallest Number in Infinite Set](./leetcode/2336-SmallestNumberInInfiniteSet.go)   
