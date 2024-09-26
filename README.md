@@ -1259,6 +1259,7 @@
 [1653. Minimum Deletions to Make String Balanced](./leetcode/1653-MinimumDeletionsToMakeStringBalanced.go)   
 [1657. Determine if Two Strings Are Close](./leetcode/1657-DetermineIfTwoStringsAreClose.go)   
 [1668. Maximum Repeating Substring](./leetcode/1668-MaximumRepeatingSubstring.go)   
+[1678. Goal Parser Interpretation](./leetcode/1678-GoalParserInterpretation.go)   
 [1682. Longest Palindromic Subsequence II](./leetcode/1682-LongestPalindromicSubsequenceII.go)   
 [1684. Count the Number of Consistent Strings](./leetcode/1684-CountTheNumberOfConsistentStrings.go)   
 [1698. Number of Distinct Substrings in a String](./leetcode/1698-NumberOfDistinctSubstringsInAString.go)   
