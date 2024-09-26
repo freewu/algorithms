@@ -686,6 +686,7 @@
 [1353. Maximum Number of Events That Can Be Attended](./leetcode/1353-MaximumNumberOfEventsThatCanBeAttended.go)   
 [1380. Lucky Numbers in a Matrix](./leetcode/1380-LuckyNumbersInAMatrix.go)   
 [1390. Four Divisors](./leetcode/1390-FourDivisors.go)   
+[1391. Check if There is a Valid Path in a Grid](./leetcode/1391-CheckIfThereIsAValidPathInAGrid.go)   
 [1394. Find Lucky Integer in an Array](./leetcode/1394-FindLuckyIntegerInAnArray.go)   
 [1395. Count Number of Teams](./leetcode/1395-CountNumberOfTeams.go)   
 [1406. Stone Game III](./leetcode/1406-StoneGameIII.go)   
