@@ -2079,7 +2079,7 @@ LCR 185. 统计结果概率
 [1168. Optimize Water Distribution in a Village](./leetcode/1168-OptimizeWaterDistributionInAVillage.go)   
 [1489. Find Critical and Pseudo-Critical Edges in Minimum Spanning Tree](./leetcode/1489-FindCriticalAndPseudoCriticalEdgesInMinimumSpanningTree.go)   
 [1584. Min Cost to Connect All Points](./leetcode/1584-MinCostToConnectAllPoints.go)   
-1724. Checking Existence of Edge Length Limited Paths II
+[1724. Checking Existence of Edge Length Limited Paths II](./leetcode/1724-CheckingExistenceOfEdgeLengthLimitedPathsII.go)   
 
 # Line Sweep
 [218. The Skyline Problem](./leetcode/218-TheSkylineProblem.go)   
