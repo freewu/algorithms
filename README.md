@@ -763,6 +763,7 @@
 [1822. Sign of the Product of an Array](./leetcode/1822-SignOfTheProductOfAnArray.go)   
 [1826. Faulty Sensor](./leetcode/1826-FaultySensor.go)   
 [1840. Maximum Building Height](./leetcode/1840-MaximumBuildingHeight.go)   
+[1851. Minimum Interval to Include Eac](./leetcode/1851-MinimumIntervalToIncludeEac.go)   
 [1854. Maximum Population Year](./leetcode/1854-MaximumPopulationYear.go)   
 [1863. Sum of All Subset XOR Totals](./leetcode/1863-SumOfAllSubsetXORTotals.go)   
 [1870. Minimum Speed to Arrive on Time](./leetcode/1870-MinimumSpeedToArriveOnTime.go)   
@@ -2069,22 +2070,22 @@ LCR 185. 统计结果概率
 [274. H-Index](./leetcode/274-H-Index.go)   
 [561. Array Partition](./leetcode/561-ArrayPartition.go)   
 [912. Sort an Array](./leetcode/912-SortAnArray.go)   
-1051. Height Checker
-1122. Relative Sort Array
-LCR 075. 数组的相对排序
+[1051. Height Checker](./leetcode/1051-HeightChecker.go)   
+[1122. Relative Sort Array](./leetcode/1122-RelativeSortArray.go)   
+[LCR 075. 数组的相对排序](./leetcode/LCR075-RelativeSortArray.go)   
 
 # Minimum Spanning Tree
-1135. Connecting Cities With Minimum Cost
-1168. Optimize Water Distribution in a Village
-1489. Find Critical and Pseudo-Critical Edges in Minimum Spanning Tree
-1584. Min Cost to Connect All Points
+[1135. Connecting Cities With Minimum Cost](./leetcode/1135-ConnectingCitiesWithMinimumCost.go)   
+[1168. Optimize Water Distribution in a Village](./leetcode/1168-OptimizeWaterDistributionInAVillage.go)   
+[1489. Find Critical and Pseudo-Critical Edges in Minimum Spanning Tree](./leetcode/1489-FindCriticalAndPseudoCriticalEdgesInMinimumSpanningTree.go)   
+[1584. Min Cost to Connect All Points](./leetcode/1584-MinCostToConnectAllPoints.go)   
 1724. Checking Existence of Edge Length Limited Paths II
 
 # Line Sweep
 [218. The Skyline Problem](./leetcode/218-TheSkylineProblem.go)   
 [391. Perfect Rectangle](./leetcode/391-PerfectRectangle.go)   
-850. Rectangle Area II
-1851. Minimum Interval to Include Eac
+[850. Rectangle Area II](./leetcode/850-RectangleAreaII.go)   
+[1851. Minimum Interval to Include Eac](./leetcode/1851-MinimumIntervalToIncludeEac.go)   
 
 # Reservoir Sampling
 [382. Linked List Random Node](./leetcode/382-LinkedListRandomNode.go)   
@@ -2092,10 +2093,9 @@ LCR 075. 数组的相对排序
 [497. Random Point in Non-overlapping Rectangles](./leetcode/497-RandomPointInNonOverlappingRectangles.go)   
 [519. Random Flip Matrix](./leetcode/519-RandomFlipMatrix.go)   
 
-
 # Strongly Connected Component
-1489. Find Critical and Pseudo-Critical Edges in Minimum Spanning Tree
-1568. Minimum Number of Days to Disconnect Island
+[1489. Find Critical and Pseudo-Critical Edges in Minimum Spanning Tree](./leetcode/1489-FindCriticalAndPseudoCriticalEdgesInMinimumSpanningTree.go)   
+[1568. Minimum Number of Days to Disconnect Island](./leetcode/1568-MinimumNumberOfDaysToDisconnectIsland.go)   
 [2846. Minimum Edge Weight Equilibrium Queries in a Tree](./leetcode/2846-MinimumEdgeWeightEquilibriumQueriesInATree.go)   
 
 # Eulerian Circuit
