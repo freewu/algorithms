@@ -1965,6 +1965,7 @@
 [1804. Implement Trie II (Prefix Tree)](./leetcode/1804-ImplementTrieII.go)   
 [1825. Finding MK Average](./leetcode/1825-FindingMKAverage.go)   
 [1845. Seat Reservation Manager](./leetcode/1845-SeatReservationManager.go)   
+[1865. Finding Pairs With a Certain Sum](./leetcode/1865-FindingPairsWithACertainSum.go)   
 [2080. Range Frequency Queries](./leetcode/2080-RangeFrequencyQueries.go)   
 [2227. Encrypt and Decrypt Strings](./leetcode/2227-EncryptAndDecryptStrings.go)   
 [2336. Smallest Number in Infinite Set](./leetcode/2336-SmallestNumberInInfiniteSet.go)   

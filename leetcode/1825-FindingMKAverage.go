@@ -143,6 +143,142 @@ func (mk *MKAverage) CalculateMKAverage() int {
     return mk.M.sum / len(mk.M.s)
 }
 
+// 使用红黑树
+// import rbt "github.com/emirpasic/gods/v2/trees/redblacktree"
+
+// type RedBlackTree struct {
+//     *rbt.Tree[int, int]
+//     size int // count the duplicates as well
+// }
+
+// type MKAverage struct {
+//     m, k             int
+//     nums             []int
+//     left, mid, right *RedBlackTree
+//     sum              int // mid sum
+// }
+
+// func Constructor(m int, k int) MKAverage {
+//     return MKAverage{
+//         m: m, k: k,
+//         nums:  make([]int, 0),
+//         left:  &RedBlackTree{rbt.New[int, int](), 0},
+//         mid:   &RedBlackTree{rbt.New[int, int](), 0},
+//         right: &RedBlackTree{rbt.New[int, int](), 0},
+//         sum:   0,
+//     }
+// }
+
+// func (a *MKAverage) AddElement(num int) {
+//     a.nums = append(a.nums, num)
+//     if len(a.nums) < a.m {
+//         add(a.mid, num)
+//         a.sum += num
+//         return
+//     } else if len(a.nums) == a.m {
+//         add(a.mid, num)
+//         a.sum += num
+//         for a.left.size < a.k {
+//             node := a.mid.Left()
+//             remove(a.mid, node.Key)
+//             a.sum -= node.Key
+//             add(a.left, node.Key)
+//         }
+//         for a.right.size < a.k {
+//             node := a.mid.Right()
+//             remove(a.mid, node.Key)
+//             a.sum -= node.Key
+//             add(a.right, node.Key)
+//         }
+//         return
+//     }
+
+//     oldNum := a.nums[0]
+//     a.nums = a.nums[1:]
+//     // remove old num
+//     if node := a.left.Right(); node != nil && oldNum <= node.Key {
+//         remove(a.left, oldNum)
+//     } else if node := a.mid.Right(); node != nil && oldNum <= node.Key {
+//         remove(a.mid, oldNum)
+//         a.sum -= oldNum
+//     } else {
+//         remove(a.right, oldNum)
+//     }
+//     // add new num
+//     if node := a.left.Right(); node != nil && num <= node.Key {
+//         add(a.left, num)
+//     } else if node := a.mid.Right(); node != nil && num <= node.Key {
+//         add(a.mid, num)
+//         a.sum += num
+//     } else {
+//         add(a.right, num)
+//     }
+//     // balance the trees
+//     if a.left.size > a.k {
+//         node := a.left.Right()
+//         remove(a.left, node.Key)
+//         add(a.mid, node.Key)
+//         a.sum += node.Key
+//         if a.mid.size > a.m-2*a.k {
+//             node := a.mid.Right()
+//             remove(a.mid, node.Key)
+//             a.sum -= node.Key
+//             add(a.right, node.Key)
+//         }
+//     } else if a.right.size > a.k {
+//         node := a.right.Left()
+//         remove(a.right, node.Key)
+//         add(a.mid, node.Key)
+//         a.sum += node.Key
+//         if a.mid.size > a.m-2*a.k {
+//             node := a.mid.Left()
+//             remove(a.mid, node.Key)
+//             a.sum -= node.Key
+//             add(a.left, node.Key)
+//         }
+//     } else {
+//         if a.left.size < a.k {
+//             node := a.mid.Left()
+//             remove(a.mid, node.Key)
+//             a.sum -= node.Key
+//             add(a.left, node.Key)
+//         } else if a.right.size < a.k {
+//             node := a.mid.Right()
+//             remove(a.mid, node.Key)
+//             a.sum -= node.Key
+//             add(a.right, node.Key)
+//         }
+//     }
+// }
+
+// func (a *MKAverage) CalculateMKAverage() int {
+//     if len(a.nums) < a.m {
+//         return -1
+//     }
+//     return a.sum / (a.m - (2 * a.k))
+// }
+
+// func add(tree *RedBlackTree, key int) {
+//     if val, ok := tree.Get(key); ok {
+//         tree.Put(key, val+1)
+//     } else {
+//         tree.Put(key, 1)
+//     }
+//     tree.size++
+// }
+
+// func remove(tree *RedBlackTree, key int) {
+//     if val, ok := tree.Get(key); ok {
+//         val -= 1
+//         if val == 0 {
+//             tree.Remove(key)
+//         } else {
+//             tree.Put(key, val)
+//         }
+//     }
+//     tree.size--
+// }
+
 /**
  * Your MKAverage object will be instantiated and called as such:
  * obj := Constructor(m, k);
