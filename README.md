@@ -1969,6 +1969,7 @@
 [1865. Finding Pairs With a Certain Sum](./leetcode/1865-FindingPairsWithACertainSum.go)   
 [2080. Range Frequency Queries](./leetcode/2080-RangeFrequencyQueries.go)   
 [2227. Encrypt and Decrypt Strings](./leetcode/2227-EncryptAndDecryptStrings.go)   
+[2286. Booking Concert Tickets in Groups](./leetcode/2286-BookingConcertTicketsInGroups.go)   
 [2336. Smallest Number in Infinite Set](./leetcode/2336-SmallestNumberInInfiniteSet.go)   
 [2590. Design a Todo List](./leetcode/2590-DesignATodoList.go)   
 [2642. Design Graph With Shortest Path Calculator](./leetcode/2642-DesignGraphWithShortestPathCalculator.go)   
