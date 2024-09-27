@@ -1236,6 +1236,7 @@
 [1309. Decrypt String from Alphabet to Integer Mapping](./leetcode/1309-DecryptStringFromAlphabetToIntegerMapping.go)   
 [1312. Minimum Insertion Steps to Make a String Palindrome](./leetcode/1312-MinimumInsertionStepsToMakeAStringPalindrome.go)   
 [1316. Distinct Echo Substrings](./leetcode/1316-DistinctEchoSubstrings.go)   
+[1328. Break a Palindrome](./leetcode/1328-BreakAPalindrome.go)   
 [1347. Minimum Number of Steps to Make Two Strings Anagram](./leetcode/1347-MinimumNumberOfStepsToMakeTwoStringsAnagram.go)   
 [1360. Number of Days Between Two Dates](./leetcode/1360-NumberOfDaysBetweenTwoDates.go)   
 [1371. Find the Longest Substring Containing Vowels in Even Counts](./leetcode/1371-FindTheLongestSubstringContainingVowelsTnEvenCounts.go)   
