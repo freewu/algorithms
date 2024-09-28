@@ -676,6 +676,7 @@
 [1314. Matrix Block Sum](./leetcode/1314-MatrixBlockSum.go)   
 [1326. Minimum Number of Taps to Open to Water a Garden](./leetcode/1326-MinimumNumberOfTapsToOpenToWaterAGarden.go)   
 [1329. Sort the Matrix Diagonally](./leetcode/1329-SortTheMatrixDiagonally.go)   
+[1330. Reverse Subarray To Maximize Array Value](./leetcode/1330-ReverseSubarrayToMaximizeArrayValue.go)   
 [1331. Rank Transform of an Array](./leetcode/1331-RankTransformOfAnArray.go)   
 [1335. Minimum Difficulty of a Job Schedule](./leetcode/1335-MinimumDifficultyOfAJobSchedule.go)   
 [1338. Reduce Array Size to The Half](./leetcode/1338-ReduceArraySizeToTheHalf.go)   
