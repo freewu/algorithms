@@ -678,6 +678,7 @@
 [1329. Sort the Matrix Diagonally](./leetcode/1329-SortTheMatrixDiagonally.go)   
 [1330. Reverse Subarray To Maximize Array Value](./leetcode/1330-ReverseSubarrayToMaximizeArrayValue.go)   
 [1331. Rank Transform of an Array](./leetcode/1331-RankTransformOfAnArray.go)   
+[1333. Filter Restaurants by Vegan-Friendly, Price and Distance](./leetcode/1333-FilterRestaurantsByVeganFriendlyPriceAndDistance.go)   
 [1335. Minimum Difficulty of a Job Schedule](./leetcode/1335-MinimumDifficultyOfAJobSchedule.go)   
 [1337. The K Weakest Rows in a Matrix](./leetcode/1337-TheKWeakestRowsInAMatrix.go)   
 [1338. Reduce Array Size to The Half](./leetcode/1338-ReduceArraySizeToTheHalf.go)   
