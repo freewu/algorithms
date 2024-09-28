@@ -1248,6 +1248,7 @@
 [1332. Remove Palindromic Subsequences](./leetcode/1332-RemovePalindromicSubsequences.go)   
 [1347. Minimum Number of Steps to Make Two Strings Anagram](./leetcode/1347-MinimumNumberOfStepsToMakeTwoStringsAnagram.go)   
 [1360. Number of Days Between Two Dates](./leetcode/1360-NumberOfDaysBetweenTwoDates.go)   
+[1370. Increasing Decreasing String](./leetcode/1370-IncreasingDecreasingString.go)   
 [1371. Find the Longest Substring Containing Vowels in Even Counts](./leetcode/1371-FindTheLongestSubstringContainingVowelsTnEvenCounts.go)   
 [1392. Longest Happy Prefix](./leetcode/1392-LongestHappyPrefix.go)   
 [1397. Find All Good Strings](./leetcode/1397-FindAllGoodStrings.go)   
