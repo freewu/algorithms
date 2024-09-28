@@ -1244,6 +1244,7 @@
 [1320. Minimum Distance to Type a Word Using Two Fingers](./leetcode/1320-MinimumDistanceToTypeAWordUsingTwoFingers.go)   
 [1324. Print Words Vertically](./leetcode/1324-PrintWordsVertically.go)   
 [1328. Break a Palindrome](./leetcode/1328-BreakAPalindrome.go)   
+[1332. Remove Palindromic Subsequences](./leetcode/1332-RemovePalindromicSubsequences.go)   
 [1347. Minimum Number of Steps to Make Two Strings Anagram](./leetcode/1347-MinimumNumberOfStepsToMakeTwoStringsAnagram.go)   
 [1360. Number of Days Between Two Dates](./leetcode/1360-NumberOfDaysBetweenTwoDates.go)   
 [1371. Find the Longest Substring Containing Vowels in Even Counts](./leetcode/1371-FindTheLongestSubstringContainingVowelsTnEvenCounts.go)   
