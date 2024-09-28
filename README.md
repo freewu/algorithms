@@ -1250,6 +1250,7 @@
 [1360. Number of Days Between Two Dates](./leetcode/1360-NumberOfDaysBetweenTwoDates.go)   
 [1370. Increasing Decreasing String](./leetcode/1370-IncreasingDecreasingString.go)   
 [1371. Find the Longest Substring Containing Vowels in Even Counts](./leetcode/1371-FindTheLongestSubstringContainingVowelsTnEvenCounts.go)   
+[1374. Generate a String With Characters That Have Odd Counts](./leetcode/1374-GenerateAStringWithCharactersThatHaveOddCounts.go)   
 [1392. Longest Happy Prefix](./leetcode/1392-LongestHappyPrefix.go)   
 [1397. Find All Good Strings](./leetcode/1397-FindAllGoodStrings.go)   
 [1404. Number of Steps to Reduce a Number in Binary Representation to One](./leetcode/1404-NumberOfStepsToReduceANumberInBinaryRepresentationToOne.go)   
