@@ -1740,6 +1740,7 @@
 [1612. Check If Two Expression Trees are Equivalent](./leetcode/1612-CheckIfTwoExpressionTreesAreEquivalent.go)   
 [1644. Lowest Common Ancestor of a Binary Tree II](./leetcode/1644-LowestCommonAncestorOfABinaryTreeII.go)   
 [1650. Lowest Common Ancestor of a Binary Tree III](./leetcode/1650-LowestCommonAncestorOfABinaryTreeIII.go)   
+[1676. Lowest Common Ancestor of a Binary Tree IV](./leetcode/1676-LowestCommonAncestorOfABinaryTreeIV.go)   
 [1902. Depth of BST Given Insertion Order](./leetcode/1902-DepthOfBSTGivenInsertionOrder.go)   
 [1932. Merge BSTs to Create Single BST](./leetcode/1932-MergeBSTsToCreateSingleBST.go)   
 [2003. Smallest Missing Genetic Value in Each Subtree](./leetcode/2003-SmallestMissingGeneticValueInEachSubtree.go)   
