@@ -689,6 +689,7 @@
 [1349. Maximum Students Taking Exam](./leetcode/1349-MaximumStudentsTakingExam.go)   
 [1351. Count Negative Numbers in a Sorted Matrix](./leetcode/1351-CountNegativeNumbersInASortedMatrix.go)   
 [1353. Maximum Number of Events That Can Be Attended](./leetcode/1353-MaximumNumberOfEventsThatCanBeAttended.go)   
+[1375. Number of Times Binary String Is Prefix-Aligned](./leetcode/1375-NumberOfTimesBinaryStringIsPrefixAligned.go)   
 [1380. Lucky Numbers in a Matrix](./leetcode/1380-LuckyNumbersInAMatrix.go)   
 [1390. Four Divisors](./leetcode/1390-FourDivisors.go)   
 [1391. Check if There is a Valid Path in a Grid](./leetcode/1391-CheckIfThereIsAValidPathInAGrid.go)   
