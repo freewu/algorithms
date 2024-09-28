@@ -679,6 +679,7 @@
 [1330. Reverse Subarray To Maximize Array Value](./leetcode/1330-ReverseSubarrayToMaximizeArrayValue.go)   
 [1331. Rank Transform of an Array](./leetcode/1331-RankTransformOfAnArray.go)   
 [1335. Minimum Difficulty of a Job Schedule](./leetcode/1335-MinimumDifficultyOfAJobSchedule.go)   
+[1337. The K Weakest Rows in a Matrix](./leetcode/1337-TheKWeakestRowsInAMatrix.go)   
 [1338. Reduce Array Size to The Half](./leetcode/1338-ReduceArraySizeToTheHalf.go)   
 [1340. Jump Game V](./leetcode/1340-JumpGameV.go)   
 [1343. Number of Sub-arrays of Size K and Average Greater than or Equal to Threshold](./leetcode/1343-NumberOfSubArraysOfSizeKAndAverageGreaterThanOrEqualToThreshold.go)   
