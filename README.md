@@ -691,6 +691,7 @@
 [1353. Maximum Number of Events That Can Be Attended](./leetcode/1353-MaximumNumberOfEventsThatCanBeAttended.go)   
 [1375. Number of Times Binary String Is Prefix-Aligned](./leetcode/1375-NumberOfTimesBinaryStringIsPrefixAligned.go)   
 [1380. Lucky Numbers in a Matrix](./leetcode/1380-LuckyNumbersInAMatrix.go)   
+[1383. Maximum Performance of a Team](./leetcode/1383-MaximumPerformanceOfATeam.go)   
 [1385. Find the Distance Value Between Two Arrays](./leetcode/1385-FindTheDistanceValueBetweenTwoArrays.go)   
 [1386. Cinema Seat Allocation](./leetcode/1386-CinemaSeatAllocation.go)   
 [1388. Pizza With 3n Slices](./leetcode/1388-PizzaWith3nSlices.go)   
