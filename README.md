@@ -1572,6 +1572,7 @@
 [2413. Smallest Even Multiple](./leetcode/2413-SmallestEvenMultiple.go)   
 [2469. Convert the Temperature](./leetcode/2469-ConvertTheTemperature.go)   
 [2485. Find the Pivot Integer](./leetcode/2485-FindThePivotInteger.go)   
+[2578. Split With Minimum Sum](./leetcode/2578-SplitWithMinimumSum.go)   
 [2582. Pass the Pillow](./leetcode/2582-PassThePillowd.go)   
 [2739. Total Distance Traveled](./leetcode/2739-TotalDistanceTraveled.go)   
 [2769. Find the Maximum Achievable Number](./leetcode/2769-FindTheMaximumAchievableNumber.go)   
