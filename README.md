@@ -692,6 +692,7 @@
 [1375. Number of Times Binary String Is Prefix-Aligned](./leetcode/1375-NumberOfTimesBinaryStringIsPrefixAligned.go)   
 [1380. Lucky Numbers in a Matrix](./leetcode/1380-LuckyNumbersInAMatrix.go)   
 [1385. Find the Distance Value Between Two Arrays](./leetcode/1385-FindTheDistanceValueBetweenTwoArrays.go)   
+[1386. Cinema Seat Allocation](./leetcode/1386-CinemaSeatAllocation.go)   
 [1389. Create Target Array in the Given Order](./leetcode/1389-CreateTargetArrayInTheGivenOrder.go)   
 [1390. Four Divisors](./leetcode/1390-FourDivisors.go)   
 [1391. Check if There is a Valid Path in a Grid](./leetcode/1391-CheckIfThereIsAValidPathInAGrid.go)   
