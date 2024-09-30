@@ -795,6 +795,7 @@
 [1937. Maximum Number of Points with Cost](./leetcode/1937-MaximumNumberOfPointsWithCost.go)   
 [1938. Maximum Genetic Difference Query](./leetcode/1938-MaximumGeneticDifferenceQuery.go)   
 [1943. Describe the Painting](./leetcode/1943-DescribeThePainting.go)   
+[1944. Number of Visible People in a Queue](./leetcode/1944-NumberOfVisiblePeopleInAQueue.go)   
 [1953. Maximum Number of Weeks for Which You Can Work](./leetcode/1953-MaximumNumberOfWeeksForWhichYouCanWork.go)   
 [1958. Check if Move is Legal](./leetcode/1958-CheckIfMoveIsLegal.go)   
 [1964. Find the Longest Valid Obstacle Course at Each Position](./leetcode/1964-FindTheLongestValidObstacleCourseAtEachPosition.go)   
