@@ -689,6 +689,7 @@
 [1349. Maximum Students Taking Exam](./leetcode/1349-MaximumStudentsTakingExam.go)   
 [1351. Count Negative Numbers in a Sorted Matrix](./leetcode/1351-CountNegativeNumbersInASortedMatrix.go)   
 [1353. Maximum Number of Events That Can Be Attended](./leetcode/1353-MaximumNumberOfEventsThatCanBeAttended.go)   
+[1365. How Many Numbers Are Smaller Than the Current Number](./leetcode/1365-HowManyNumbersAreSmallerThanTheCurrentNumber.go)   
 [1375. Number of Times Binary String Is Prefix-Aligned](./leetcode/1375-NumberOfTimesBinaryStringIsPrefixAligned.go)   
 [1380. Lucky Numbers in a Matrix](./leetcode/1380-LuckyNumbersInAMatrix.go)   
 [1383. Maximum Performance of a Team](./leetcode/1383-MaximumPerformanceOfATeam.go)   
