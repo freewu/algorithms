@@ -2423,6 +2423,7 @@ LCR 185. 统计结果概率
 [3268. Find Overlapping Shifts II](./leetcode/3268-FindOverlappingShiftsII.sql)   
 [3278. Find Candidates for Data Scientist Position II](./leetcode/3278-FindCandidatesForDataScientistPositionII.sql)   
 [3293. Calculate Product Final Price](./leetcode/3293-CalculateProductFinalPrice.sql)   
+[3308. Find Top Performing Driver](./leetcode/3308-FindTopPerformingDriver.sql)   
 
 # Shell
 [192. Word Frequency](./leetcode/192-WordFrequency.sh)      
