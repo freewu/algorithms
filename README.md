@@ -692,6 +692,7 @@
 [1363. Largest Multiple of Three](./leetcode/1363-LargestMultipleOfThree.go)   
 [1365. How Many Numbers Are Smaller Than the Current Number](./leetcode/1365-HowManyNumbersAreSmallerThanTheCurrentNumber.go)   
 [1366. Rank Teams by Votes](./leetcode/1366-RankTeamsByVotes.go)   
+[1368. Minimum Cost to Make at Least One Valid Path in a Grid](./leetcode/1368-MinimumCostToMakeAtLeastOneValidPathInAGrid.go)   
 [1375. Number of Times Binary String Is Prefix-Aligned](./leetcode/1375-NumberOfTimesBinaryStringIsPrefixAligned.go)   
 [1380. Lucky Numbers in a Matrix](./leetcode/1380-LuckyNumbersInAMatrix.go)   
 [1383. Maximum Performance of a Team](./leetcode/1383-MaximumPerformanceOfATeam.go)   
