@@ -857,6 +857,7 @@
 [2386. Find the K-Sum of an Array](./leetcode/2386-FindTheK-SumOfAnArray.go)   
 [2391. Minimum Amount of Time to Collect Garbage](./leetcode/2391-MinimumAmountOfTimeToCollectGarbage.go)   
 [2392. Build a Matrix With Conditions](./leetcode/2392-BuildAMatrixWithConditions.go)   
+[2397. Maximum Rows Covered by Columns](./leetcode/2397-MaximumRowsCoveredByColumns.go)   
 [2398. Maximum Number of Robots Within Budget](./leetcode/2398-MaximumNumberOfRobotsWithinBudget.go)   
 [2402. Meeting Rooms III](./leetcode/2402-MeetingRoomsIII.go)   
 [2416. Sum of Prefix Scores of Strings](./leetcode/2416-SumOfPrefixScoresOfStrings.go)   
