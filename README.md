@@ -1555,6 +1555,7 @@
 [1323. Maximum 69 Number](./leetcode/1323-Maximum69Number.go)   
 [1342. Number of Steps to Reduce a Number to Zero](./leetcode/1342-NumberOfStepsToReduceANumberToZero.go)   
 [1344. Angle Between Hands of a Clock](./leetcode/1344-AngleBetweenHandsOfAClock.go)   
+[1362. Closest Divisors](./leetcode/1362-ClosestDivisors.go)   
 [1390. Four Divisors](./leetcode/1390-FourDivisors.go)   
 [1399. Count Largest Group](./leetcode/1399-CountLargestGroup.go)   
 [1401. Circle and Rectangle Overlapping](./leetcode/1401-CircleAndRectangleOverlapping.go)   
