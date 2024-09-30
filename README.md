@@ -1757,6 +1757,7 @@
 [1644. Lowest Common Ancestor of a Binary Tree II](./leetcode/1644-LowestCommonAncestorOfABinaryTreeII.go)   
 [1650. Lowest Common Ancestor of a Binary Tree III](./leetcode/1650-LowestCommonAncestorOfABinaryTreeIII.go)   
 [1660. Correct a Binary Tree](./leetcode/1660-CorrectABinaryTree.go)   
+[1666. Change the Root of a Binary Tree](./leetcode/1666-ChangeTheRootOfABinaryTree.go)   
 [1676. Lowest Common Ancestor of a Binary Tree IV](./leetcode/1676-LowestCommonAncestorOfABinaryTreeIV.go)   
 [1902. Depth of BST Given Insertion Order](./leetcode/1902-DepthOfBSTGivenInsertionOrder.go)   
 [1932. Merge BSTs to Create Single BST](./leetcode/1932-MergeBSTsToCreateSingleBST.go)   
