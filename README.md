@@ -1267,6 +1267,7 @@
 [1328. Break a Palindrome](./leetcode/1328-BreakAPalindrome.go)   
 [1332. Remove Palindromic Subsequences](./leetcode/1332-RemovePalindromicSubsequences.go)   
 [1347. Minimum Number of Steps to Make Two Strings Anagram](./leetcode/1347-MinimumNumberOfStepsToMakeTwoStringsAnagram.go)   
+[1358. Number of Substrings Containing All Three Characters](./leetcode/1358-NumberOfSubstringsContainingAllThreeCharacters.go)   
 [1360. Number of Days Between Two Dates](./leetcode/1360-NumberOfDaysBetweenTwoDates.go)   
 [1370. Increasing Decreasing String](./leetcode/1370-IncreasingDecreasingString.go)   
 [1371. Find the Longest Substring Containing Vowels in Even Counts](./leetcode/1371-FindTheLongestSubstringContainingVowelsTnEvenCounts.go)   
