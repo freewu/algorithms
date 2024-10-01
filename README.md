@@ -1273,6 +1273,7 @@
 [1374. Generate a String With Characters That Have Odd Counts](./leetcode/1374-GenerateAStringWithCharactersThatHaveOddCounts.go)   
 [1392. Longest Happy Prefix](./leetcode/1392-LongestHappyPrefix.go)   
 [1397. Find All Good Strings](./leetcode/1397-FindAllGoodStrings.go)   
+[1400. Construct K Palindrome Strings](./leetcode/1400-ConstructKPalindromeStrings.go)   
 [1404. Number of Steps to Reduce a Number in Binary Representation to One](./leetcode/1404-NumberOfStepsToReduceANumberInBinaryRepresentationToOne.go)   
 [1405. Longest Happy String](./leetcode/1405-LongestHappyString.go)   
 [1416. Restore The Array](./leetcode/1416-RestoreTheArray.go)   
