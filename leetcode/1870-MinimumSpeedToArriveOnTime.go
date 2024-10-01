@@ -44,6 +44,7 @@ package main
 
 import "fmt"
 import "math"
+import "sort"
 
 func minSpeedOnTime(dist []int, hour float64) int {
     res, low, high := -1, 0, int(10e9)
@@ -70,6 +71,24 @@ func minSpeedOnTime(dist []int, hour float64) int {
     return res
 }
 
+func minSpeedOnTime1(dist []int, hour float64) int {
+    n, mx := len(dist), -1
+    if hour <= float64(n) - 1 { return -1 }
+    max := func (x, y int) int { if x > y { return x; }; return y; }
+    for i := 0; i < n; i++ { // 找出最大距离
+        mx = max(mx, dist[i])
+    }
+    valid := func(speed int) bool {
+        time := 0.0
+        for i := 0; i < n - 1; i++ {
+            time += math.Ceil(float64(dist[i]) / float64(speed))
+        }
+        return time+(float64(dist[n-1])/float64(speed)) <= hour
+    }
+    final := math.Ceil(float64(dist[n-1]) / (hour - float64(n-1)))
+    return sort.Search(max(int(final), mx), valid)
+}
+
 func main() {
     // Explanation: At speed 1:
     // - The first train ride takes 1/1 = 1 hour.
@@ -85,5 +104,8 @@ func main() {
     fmt.Println(minSpeedOnTime([]int{1,3,2}, 2.7)) // 3
     // Explanation: It is impossible because the earliest the third train can depart is at the 2 hour mark.
     fmt.Println(minSpeedOnTime([]int{1,3,2}, 1.9)) // -1
- 
+
+    fmt.Println(minSpeedOnTime1([]int{1,3,2}, 6)) // 1
+    fmt.Println(minSpeedOnTime1([]int{1,3,2}, 2.7)) // 3
+    fmt.Println(minSpeedOnTime1([]int{1,3,2}, 1.9)) // -1
 }
