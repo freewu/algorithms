@@ -708,6 +708,7 @@
 [1403. Minimum Subsequence in Non-Increasing Order](./leetcode/1403-MinimumSubsequenceInNonIncreasingOrder.go)   
 [1406. Stone Game III](./leetcode/1406-StoneGameIII.go)   
 [1408. String Matching in an Array](./leetcode/1408-StringMatchingInAnArray.go)   
+[1409. Queries on a Permutation With Key](./leetcode/1409-QueriesOnAPermutationWithKey.go)   
 [1426. Counting Elements](./leetcode/1426-CountingElements.go)   
 [1428. Leftmost Column with at Least a One](./leetcode/1428-LeftmostColumnWithAtLeastAOne.go)   
 [1431. Kids With the Greatest Number of Candies](./leetcode/1431-KidsWithTheGreatestNumberOfCandies.go)   
