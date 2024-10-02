@@ -43,6 +43,7 @@ package main
 //     The graph does not contain self loops.
 
 import "fmt"
+import "container/heap"
 
 func minCost(maxTime int, edges [][]int, passingFees []int) int {
     n, inf := len(passingFees), 1 << 31
@@ -106,6 +107,66 @@ func minCost1(maxTime int, edges [][]int, passingFees []int) int {
    return res
 }
 
+type Elem struct {
+    cost int // total cost to reach this node
+    time int // total time to reach this node
+    node int // current node
+}
+
+type PriorityQueue []*Elem
+func (pq PriorityQueue) Len() int { return len(pq) }
+func (pq PriorityQueue) Less(i, j int) bool {
+    // Prioritize by cost first, then by time
+    return pq[i].cost < pq[j].cost || (pq[i].cost == pq[j].cost && pq[i].time < pq[j].time)
+}
+func (pq PriorityQueue)  Swap(i, j int) { pq[i], pq[j] = pq[j], pq[i]}
+func (pq *PriorityQueue) Push(x interface{}) { *pq = append(*pq, x.(*Elem)) }
+func (pq *PriorityQueue) Pop() interface{} {
+    old := *pq
+    n := len(old)
+    x := old[n-1]
+    *pq = old[0 : n-1]
+    return x
+}
+
+func minCost2(maxTime int, edges [][]int, passingFees []int) int {
+    n, inf := len(passingFees), 1 << 31
+    adj := make([][][2]int, n)
+    for _, e := range edges {
+        u, v, w := e[0], e[1], e[2]
+        adj[u] = append(adj[u], [2]int{v, w})
+        adj[v] = append(adj[v], [2]int{u, w})
+    }
+    pq := &PriorityQueue{}
+    heap.Init(pq)
+    // Initialize distance and time arrays
+    minCost, minTime := make([]int, n), make([]int, n)
+    for i := range minCost {
+        minCost[i], minTime[i] = inf, inf
+    }
+    minCost[0], minTime[0] = passingFees[0], 0
+    heap.Push(pq, &Elem{ cost: passingFees[0], time: 0, node: 0, })
+    for pq.Len() > 0 {
+        top := heap.Pop(pq).(*Elem)
+        currCost, currTime, u := top.cost, top.time, top.node
+        if u == n - 1 {
+            return currCost
+        }
+        for _, vPair := range adj[u] {
+            v, w := vPair[0], vPair[1]
+            newTime, newCost := currTime + w, currCost + passingFees[v]
+            if newTime <= maxTime && (newCost < minCost[v] || newTime < minTime[v]) {
+                minCost[v], minTime[v] = newCost, newTime
+                heap.Push(pq, &Elem{ cost: newCost, time: newTime, node: v, })
+            }
+        }
+    }
+    if minCost[n-1] == inf {
+        return -1
+    }
+    return minCost[n-1]
+}
+
 func main() {
     // Example 1:
     // <img src="https://assets.leetcode.com/uploads/2021/06/04/leetgraph1-1.png" />
@@ -129,4 +190,9 @@ func main() {
     fmt.Println(minCost1(30, [][]int{{0,1,10},{1,2,10},{2,5,10},{0,3,1},{3,4,10},{4,5,15}}, []int{5,1,2,20,20,3})) // 11
     fmt.Println(minCost1(29, [][]int{{0,1,10},{1,2,10},{2,5,10},{0,3,1},{3,4,10},{4,5,15}}, []int{5,1,2,20,20,3})) // 48
     fmt.Println(minCost1(25, [][]int{{0,1,10},{1,2,10},{2,5,10},{0,3,1},{3,4,10},{4,5,15}}, []int{5,1,2,20,20,3})) // -1
+    
+    fmt.Println(minCost2(30, [][]int{{0,1,10},{1,2,10},{2,5,10},{0,3,1},{3,4,10},{4,5,15}}, []int{5,1,2,20,20,3})) // 11
+    fmt.Println(minCost2(29, [][]int{{0,1,10},{1,2,10},{2,5,10},{0,3,1},{3,4,10},{4,5,15}}, []int{5,1,2,20,20,3})) // 48
+    fmt.Println(minCost2(25, [][]int{{0,1,10},{1,2,10},{2,5,10},{0,3,1},{3,4,10},{4,5,15}}, []int{5,1,2,20,20,3})) // -1
+
 }
