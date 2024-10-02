@@ -731,6 +731,7 @@
 [1493. Longest Subarray of 1's After Deleting One Element](./leetcode/1493-LongestSubarrayOf1sAfterDeletingOneElement.go)   
 [1497. Check If Array Pairs Are Divisible by k](./leetcode/1497-CheckIfArrayPairsAreDivisibleByk.go)   
 [1498. Number of Subsequences That Satisfy the Given Sum Condition](./leetcode/1498-NumberOfSubsequencesThatSatisfyTheGivenSumCondition.go)   
+[1499. Max Value of Equation](./leetcode/1499-MaxValueOfEquation.go)   
 [1502. Can Make Arithmetic Progression From Sequence](./leetcode/1502-CanMakeArithmeticProgressionFromSequence.go)   
 [1504. Count Submatrices With All Ones](./leetcode/1504-CountSubmatricesWithAllOnes.go)   
 [1508. Range Sum of Sorted Subarray Sums](./leetcode/1508-RangeSumOfSortedSubarraySums.go)   
