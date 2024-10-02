@@ -1587,6 +1587,7 @@
 [1739. Building Boxes](./leetcode/1739-BuildingBoxes.go)   
 [1823. Find the Winner of the Circular Game](./leetcode/1823-FindTheWinnerOfTheCircularGame.go)   
 [1922. Count Good Numbers](./leetcode/1922-CountGoodNumbers.go)   
+[2048. Next Greater Numerically Balanced Number](./leetcode/2048-NextGreaterNumericallyBalancedNumber.go)   
 [2081. Sum of k-Mirror Numbers](./leetcode/2081-SumOfKMirrorNumbers.go)   
 [2101. Detonate the Maximum Bombs](./leetcode/2101-DetonateTheMaximumBombs.go)   
 [2128. Remove All Ones With Row and Column Flips](./leetcode/2128-RemoveAllOnesWithRowAndColumnFlips.go)   
