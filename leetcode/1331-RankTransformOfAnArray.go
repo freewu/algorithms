@@ -47,6 +47,43 @@ func arrayRankTransform(arr []int) []int {
     return res
 }
 
+func arrayRankTransform1(arr []int) []int {
+    res, mp := append([]int{}, arr...), make(map[int]int)
+    for _, v := range arr {
+        mp[v] = 0
+    }
+    sort.Ints(arr)
+    index := 0
+    for i, v := range arr {
+        if(i > 0 && v == arr[i-1]) {
+        } else {
+            index++
+        }
+        mp[v]= index
+    }
+    index = 0
+    for i, v := range res {
+        res[i] = mp[v]
+    }
+    return res
+}
+
+func arrayRankTransform2(arr []int) []int {
+    n := len(arr)
+    res, t, rank := []int{}, make([]int , n), map[int]int{}
+    copy(t, arr)
+    sort.Ints(t)
+
+    for _, v := range t {
+        if _, ok := rank[v]; ok{ continue }
+        rank[v] = len(rank) + 1
+    }
+    for i := 0; i < n ; i++ {
+        res = append(res, rank[arr[i]])
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: arr = [40,10,20,30]
@@ -62,4 +99,12 @@ func main() {
     // Input: arr = [37,12,28,9,100,56,80,5,12]
     // Output: [5,3,4,2,8,6,7,1,3]
     fmt.Println(arrayRankTransform([]int{37,12,28,9,100,56,80,5,12})) // [5,3,4,2,8,6,7,1,3]
+
+    fmt.Println(arrayRankTransform1([]int{40,10,20,30})) // [4,1,2,3]
+    fmt.Println(arrayRankTransform1([]int{100,100,100})) // [1,1,1]
+    fmt.Println(arrayRankTransform1([]int{37,12,28,9,100,56,80,5,12})) // [5,3,4,2,8,6,7,1,3]
+
+    fmt.Println(arrayRankTransform2([]int{40,10,20,30})) // [4,1,2,3]
+    fmt.Println(arrayRankTransform2([]int{100,100,100})) // [1,1,1]
+    fmt.Println(arrayRankTransform2([]int{37,12,28,9,100,56,80,5,12})) // [5,3,4,2,8,6,7,1,3]
 }
