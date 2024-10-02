@@ -2013,6 +2013,7 @@
 [1825. Finding MK Average](./leetcode/1825-FindingMKAverage.go)   
 [1845. Seat Reservation Manager](./leetcode/1845-SeatReservationManager.go)   
 [1865. Finding Pairs With a Certain Sum](./leetcode/1865-FindingPairsWithACertainSum.go)   
+[1912. Design Movie Rental System](./leetcode/1912-DesignMovieRentalSystem.go)   
 [2080. Range Frequency Queries](./leetcode/2080-RangeFrequencyQueries.go)   
 [2227. Encrypt and Decrypt Strings](./leetcode/2227-EncryptAndDecryptStrings.go)   
 [2286. Booking Concert Tickets in Groups](./leetcode/2286-BookingConcertTicketsInGroups.go)   
