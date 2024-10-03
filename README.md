@@ -840,6 +840,7 @@
 [2134. Minimum Swaps to Group All 1's Together II](./leetcode/2134-MinimumSwapsToGroupAllOneTogetherII.go)   
 [2136. Earliest Possible Day of Full Bloom](./leetcode/2136-EarliestPossibleDayOfFullBloom.go)   
 [2140. Solving Questions With Brainpower](./leetcode/2140-SolvingQuestionsWithBrainpower.go)   
+[2141. Maximum Running Time of N Computers](./leetcode/2141-MaximumRunningTimeOfNComputers.go)   
 [2146. K Highest Ranked Items Within a Price Range](./leetcode/2146-KHighestRankedItemsWithinAPriceRange.go)   
 [2149. Rearrange Array Elements by Sign](./leetcode/2149-RearrangeArrayElementsBySign.go)   
 [2171. Removing Minimum Number of Magic Beans](./leetcode/2171-RemovingMinimumNumberOfMagicBeans.go)   
