@@ -878,6 +878,7 @@
 [2416. Sum of Prefix Scores of Strings](./leetcode/2416-SumOfPrefixScoresOfStrings.go)   
 [2418. Sort the People](./leetcode/2418-SortThePeople.go)   
 [2419. Longest Subarray With Maximum Bitwise AND](./leetcode/2419-LongestSubarrayWithMaximumBitwiseAND.go)   
+[2428. Maximum Sum of an Hourglass](./leetcode/2428-MaximumSumOfAnHourglass.go)   
 [2441. Largest Positive Integer That Exists With Its Negative](./leetcode/2441-LargestPositiveIntegerThatExistsWithItsNegative.go)   
 [2444. Count Subarrays With Fixed Bounds](./leetcode/2444-CountSubarraysWithFixedBounds.go)   
 [2462. Total Cost to Hire K Workers](./leetcode/2462-TotalCostToHireKWorkers.go)    
