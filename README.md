@@ -925,6 +925,7 @@
 [2751. Robot Collisions](./leetcode/2751-RobotCollisions.go)   
 [2765. Longest Alternating Subarray](./leetcode/2765-LongestAlternatingSubarray.go)   
 [2766. Relocate Marbles](./leetcode/2766-RelocateMarbles.go)   
+[2768. Number of Black Blocks](./leetcode/2768-NumberOfBlackBlocks.go)   
 [2771. Longest Non-decreasing Subarray From Two Arrays](./leetcode/2771-LongestNon-DecreasingSubarrayFromTwoArrays.go)   
 [2779. Maximum Beauty of an Array After Applying Operation](./leetcode/2779-MaximumBeautyOfAnArrayAfterApplyingOperation.go)   
 [2786. Visit Array Positions to Maximize Score](./leetcode/2786-VisitArrayPositionsToMaximizeScore.go)   
