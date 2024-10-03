@@ -954,6 +954,7 @@
 [2931. Maximum Spending After Buying Items](./leetcode/2931-MaximumSpendingAfterBuyingItems.go)   
 [2940. Find Building Where Alice and Bob Can Meet](./leetcode/2940-FindBuildingWhereAliceAndBobCanMeet.go)   
 [2943. Maximize Area of Square Hole in Grid](./leetcode/2943-MaximizeAreaOfSquareHoleInGrid.go)   
+[2946. Matrix Similarity After Cyclic Shifts](./leetcode/2946-MatrixSimilarityAfterCyclicShifts.go)   
 [2951. Find the Peaks](./leetcode/2951-FindThePeaks.go)   
 [2952. Minimum Number of Coins to be Added](./leetcode/2952-MinimumNumberOfCoinsToBeAdded.go)   
 [2956. Find Common Elements Between Two Arrays](./leetcode/2956-FindCommonElementsBetweenTwoArrays.go)   
