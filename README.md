@@ -1011,6 +1011,7 @@
 [3173. Bitwise OR of Adjacent Elements](./leetcode/3173-BitwiseOROfAdjacentElements.go)   
 [3176. Find the Maximum Length of a Good Subsequence I](./leetcode/3176-FindTheMaximumLengthOfAGoodSubsequenceI.go)   
 [3177. Find the Maximum Length of a Good Subsequence II](./leetcode/3177-FindTheMaximumLengthOfAGoodSubsequenceII.go)   
+[3189. Minimum Moves to Get a Peaceful Board](./leetcode/3189-MinimumMovesToGetAPeacefulBoard.go)   
 [3190. Find Minimum Operations to Make All Elements Divisible by Three](./leetcode/3190-FindMinimumOperationsToMakeAllElementsDivisibleByThree.go)   
 [3195. Find the Minimum Area to Cover All Ones I](./leetcode/3195-FindTheMinimumAreaToCoverAllOnesI.go)   
 [3197. Find the Minimum Area to Cover All Ones II](./leetcode/3197-FindTheMinimumAreaToCoverAllOnesII.go)   
