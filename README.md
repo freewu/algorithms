@@ -1601,6 +1601,7 @@
 [2101. Detonate the Maximum Bombs](./leetcode/2101-DetonateTheMaximumBombs.go)   
 [2128. Remove All Ones With Row and Column Flips](./leetcode/2128-RemoveAllOnesWithRowAndColumnFlips.go)   
 [2165. Smallest Value of the Rearranged Number](./leetcode/2165-SmallestValueOfTheRearrangedNumber.go)   
+[2189. Number of Ways to Build House of Cards](./leetcode/2189-NumberOfWaysToBuildHouseOfCards.go)   
 [2235. Add Two Integers](./leetcode/2235-AddTwoIntegers.go)   
 [2376. Count Special Integers](./leetcode/2376-CountSpecialIntegers.go)   
 [2413. Smallest Even Multiple](./leetcode/2413-SmallestEvenMultiple.go)   
