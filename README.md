@@ -791,6 +791,7 @@
 [1840. Maximum Building Height](./leetcode/1840-MaximumBuildingHeight.go)   
 [1851. Minimum Interval to Include Eac](./leetcode/1851-MinimumIntervalToIncludeEac.go)   
 [1854. Maximum Population Year](./leetcode/1854-MaximumPopulationYear.go)   
+[1861. Rotating the Box](./leetcode/1861-RotatingTheBox.go)   
 [1863. Sum of All Subset XOR Totals](./leetcode/1863-SumOfAllSubsetXORTotals.go)   
 [1870. Minimum Speed to Arrive on Time](./leetcode/1870-MinimumSpeedToArriveOnTime.go)   
 [1883. Minimum Skips to Arrive at Meeting On Time](./leetcode/1883-MinimumSkipsToArriveAtMeetingOnTime.go)   
