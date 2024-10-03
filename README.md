@@ -850,6 +850,7 @@
 [2217. Find Palindrome With Fixed Length](./leetcode/2217-FindPalindromeWithFixedLength.go)   
 [2218. Maximum Value of K Coins From Piles](./leetcode/2218-MaximumValueOfKCoinsFromPiles.go)   
 [2225. Find Players With Zero or One Losses](./leetcode/2225-FindPlayersWithZeroOrOneLosses.go)   
+[2237. Count Positions on Street With Required Brightness](./leetcode/2237-CountPositionsOnStreetWithRequiredBrightness.go)   
 [2244. Minimum Rounds to Complete All Tasks](./leetcode/2244-MinimumRoundsToCompleteAllTasks.go)   
 [2245. Maximum Trailing Zeros in a Cornered Path](./leetcode/2245-MaximumTrailingZerosInACorneredPath.go)   
 [2248. Intersection of Multiple Arrays](./leetcode/2248-IntersectionOfMultipleArrays.go)   
