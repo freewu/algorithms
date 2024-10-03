@@ -1295,6 +1295,7 @@
 [1427. Perform String Shifts](./leetcode/1427-PerformStringShifts.go)   
 [1446. Consecutive Characters](./leetcode/1446-ConsecutiveCharacters.go)   
 [1456. Maximum Number of Vowels in a Substring of Given Length](./leetcode/1456-MaximumNumberOfVowelsInASubstringOfGivenLength.go)   
+[1461. Check If a String Contains All Binary Codes of Size K](./leetcode/1461-CheckIfAStringContainsAllBinaryCodesOfSizeK.go)   
 [1496. Path Crossing](./leetcode/1496-PathCrossing.go)   
 [1505. Minimum Possible Integer After at Most K Adjacent Swaps On Digits](./leetcode/1505-MinimumPossibleIntegerAfterAtMostKAdjacentSwapsOnDigits.go)   
 [1507. Reformat Date](./leetcode/1507-ReformatDate.go)   
