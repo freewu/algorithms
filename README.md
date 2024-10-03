@@ -864,6 +864,7 @@
 [2332. The Latest Time to Catch a Bus](./leetcode/2332-TheLatestTimeToCatchABus.go)   
 [2343. Query Kth Smallest Trimmed Number](./leetcode/2343-QueryKthSmallestTrimmedNumber.go)   
 [2352. Equal Row and Column Pairs](./leetcode/2352-EqualRowAndColumnPairs.go)   
+[2361. Minimum Costs Using the Train Line](./leetcode/2361-MinimumCostsUsingTheTrainLine.go)   
 [2368. Reachable Nodes With Restrictions](./leetcode/2368-ReachableNodesWithRestrictions.go)   
 [2369. Check if There is a Valid Partition For The Array](./leetcode/2369-CheckIfThereIsAValidPartitionForTheArray.go)   
 [2373. Largest Local Values in a Matrix](./leetcode/2373-LargestLocalValuesInAMatrix.go)   
