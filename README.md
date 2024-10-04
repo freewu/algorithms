@@ -860,6 +860,7 @@
 [2258. Escape the Spreading Fire](./leetcode/2258-EscapeTheSpreadingFire.go)   
 [2271. Maximum White Tiles Covered by a Carpet](./leetcode/2271-MaximumWhiteTilesCoveredByACarpet.go)   
 [2281. Sum of Total Strength of Wizards](./leetcode/2281-SumOfTotalStrengthOfWizards.go)   
+[2282. Number of People That Can Be Seen in a Grid](./leetcode/2282-NumberOfPeopleThatCanBeSeenInAGrid.go)   
 [2300. Successful Pairs of Spells and Potions](./leetcode/2300-SuccessfulPairsOfSpellsAndPotions.go)   
 [2304. Minimum Path Cost in a Grid](./leetcode/2304-MinimumPathCostInAGrid.go)   
 [2306. Naming a Company](./leetcode/2306-NamingACompany.go)   
