@@ -1883,6 +1883,7 @@
 [2359. Find Closest Node to Given Two Nodes](./leetcode/2359-FindClosestNodeToGivenTwoNodes.go)   
 [2374. Node With Highest Edge Score](./leetcode/2374-NodeWithHighestEdgeScore.go)   
 [2473. Minimum Cost to Buy Apples](./leetcode/2473-MinimumCostToBuyApples.go)   
+[2479. Maximum XOR of Two Non-Overlapping Subtrees](./leetcode/2479-MaximumXOROfTwoNonOverlappingSubtrees.go)   
 [2492. Minimum Score of a Path Between Two Cities](./leetcode/2492-MinimumScoreOfAPathBetweenTwoCities.go)   
 [2497. Maximum Star Sum of a Graph](./leetcode/2497-MaximumStarSumOfAGraph.go)   
 [2508. Add Edges to Make Degrees of All Nodes Even](./leetcode/2508-AddEdgesToMakeDegreesOfAllNodesEven.go)   
