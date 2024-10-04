@@ -726,6 +726,7 @@
 [1465. Maximum Area of a Piece of Cake After Horizontal and Vertical Cuts](./leetcode/1465-MaximumAreaOfAPieceOfCakeAfterHorizontalAndVerticalCuts.go)   
 [1470. Shuffle the Array](./leetcode/1470-ShuffleTheArray.go)   
 [1473. Paint House III](./leetcode/1473-PaintHouseIII.go)   
+[1478. Allocate Mailboxes](./leetcode/1478-AllocateMailboxes.go)   
 [1480. Running Sum of 1d Array](./leetcode/1480-RunningSumOf1dArray.go)   
 [1481. Least Number of Unique Integers after K Removals](./leetcode/1481-LeastNumberOfUniqueIntegersAfterKRemovals.go)   
 [1482. Minimum Number of Days to Make m Bouquets](./leetcode/1482-MinimumNumberOfDaysToMakeMBouquets.go)   
