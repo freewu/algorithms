@@ -1823,6 +1823,7 @@
 [2581. Count Number of Possible Root Nodes](./leetcode/2581-CountNumberOfPossibleRootNodes.go)   
 [2583. Kth Largest Sum in a Binary Tree](./leetcode/2583-KthLargestSumInABinaryTree.go)   
 [2641. Cousins in Binary Tree II](./leetcode/2641-CousinsInBinaryTreeII.go)   
+[2646. Minimize the Total Price of the Trips](./leetcode/2646-MinimizeTheTotalPriceOfTheTrips.go)   
 [2673. Make Costs of Paths Equal in a Binary Tree](./leetcode/2673-MakeCostsOfPathsEqualInABinaryTree.go)   
 [2689. Extract Kth Character From The Rope Tree](./leetcode/2689-ExtractKthCharacterFromTheRopeTree.go)   
 [2709. Greatest Common Divisor Traversal](./leetcode/2709-GreatestCommonDivisorTraversal.go)   
