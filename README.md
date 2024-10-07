@@ -1799,6 +1799,7 @@
 [1602. Find Nearest Right Node in Binary Tree](./leetcode/1602-FindNearestRightNodeInBinaryTree.go)   
 [1609. Even Odd Tree](./leetcode/1609-EvenOddTree.go)   
 [1612. Check If Two Expression Trees are Equivalent](./leetcode/1612-CheckIfTwoExpressionTreesAreEquivalent.go)   
+[1617. Count Subtrees With Max Distance Between Cities](./leetcode/1617-CountSubtreesWithMaxDistanceBetweenCities.go)   
 [1644. Lowest Common Ancestor of a Binary Tree II](./leetcode/1644-LowestCommonAncestorOfABinaryTreeII.go)   
 [1650. Lowest Common Ancestor of a Binary Tree III](./leetcode/1650-LowestCommonAncestorOfABinaryTreeIII.go)   
 [1660. Correct a Binary Tree](./leetcode/1660-CorrectABinaryTree.go)   
