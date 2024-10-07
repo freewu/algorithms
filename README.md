@@ -1812,6 +1812,7 @@
 [2236. Root Equals Sum of Children](./leetcode/2236-RootEqualsSumOfChildren.go)   
 [2313. Minimum Flips in Binary Tree to Get Result](./leetcode/2313-MinimumFlipsInBinaryTreeToGetResult.go)   
 [2331. Evaluate Boolean Binary Tree](./leetcode/2331-EvaluateBooleanBinaryTree.go)   
+[2378. Choose Edges to Maximize Score in a Tree](./leetcode/2378-ChooseEdgesToMaximizeScoreInATree.go)   
 [2385. Amount of Time for Binary Tree to Be Infected](./leetcode/2385-AmountOfTimeForBinaryTreeToBeInfected.go)   
 [2421. Number of Good Paths](./leetcode/2421-NumberOfGoodPaths.go)   
 [2445. Number of Nodes With Value One](./leetcode/2445-NumberOfNodesWithValueOne.go)   
