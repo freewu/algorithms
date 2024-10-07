@@ -43,6 +43,7 @@ package main
 //     1 <= fueli < 10^9
 
 import "fmt"
+import "sort"
 import "container/heap"
 
 // dp
@@ -109,6 +110,31 @@ func (h *MaxHeap) Peek() interface{} {
     return 0
 }
 
+func minRefuelStops2(target, startFuel int, stations [][]int) int {
+    stations = append(stations, []int{target, 0})
+    res, prePosition, curFuel := 0, 0, startFuel
+    fuelHeap := &hp{}
+    for _, station := range stations {
+        position, fuel := station[0], station[1]
+        curFuel -= position - prePosition       // 每行驶 1 英里用掉 1 升汽油
+        for fuelHeap.Len() > 0 && curFuel < 0 { // 没油了
+            curFuel += heap.Pop(fuelHeap).(int) // 选油量最多的油桶
+            res++
+        }
+        if curFuel < 0 { // 无法到达
+            return -1
+        }
+        heap.Push(fuelHeap, fuel) // 留着后面加油
+        prePosition = position
+    }
+    return res
+}
+
+type hp struct{ sort.IntSlice }
+func (h hp) Less(i, j int) bool { return h.IntSlice[i] > h.IntSlice[j] } // 最大堆
+func (h *hp) Push(v any)        { h.IntSlice = append(h.IntSlice, v.(int)) }
+func (h *hp) Pop() any          { a := h.IntSlice; v := a[len(a)-1]; h.IntSlice = a[:len(a)-1]; return v }
+
 func main() {
     // Example 1:
     // Input: target = 1, startFuel = 1, stations = []
@@ -133,4 +159,8 @@ func main() {
     fmt.Println(minRefuelStops1(1,1,[][]int{})) // 0
     fmt.Println(minRefuelStops1(100,1,[][]int{{10,100}})) // -1
     fmt.Println(minRefuelStops1(100,10,[][]int{{10,60},{20,30},{30,30},{60,40}})) // 2
+
+    fmt.Println(minRefuelStops2(1,1,[][]int{})) // 0
+    fmt.Println(minRefuelStops2(100,1,[][]int{{10,100}})) // -1
+    fmt.Println(minRefuelStops2(100,10,[][]int{{10,60},{20,30},{30,30},{60,40}})) // 2
 }
