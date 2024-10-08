@@ -1302,6 +1302,7 @@
 [1404. Number of Steps to Reduce a Number in Binary Representation to One](./leetcode/1404-NumberOfStepsToReduceANumberInBinaryRepresentationToOne.go)   
 [1405. Longest Happy String](./leetcode/1405-LongestHappyString.go)   
 [1410. HTML Entity Parser](./leetcode/1410-HTMLEntityParser.go)   
+[1415. The k-th Lexicographical String of All Happy Strings of Length n](./leetcode/1415-TheKthLexicographicalStringOfAllHappyStringsOfLengthN.go)   
 [1416. Restore The Array](./leetcode/1416-RestoreTheArray.go)   
 [1422. Maximum Score After Splitting a String](./leetcode/1422-MaximumScoreAfterSplittingAString.go)    
 [1427. Perform String Shifts](./leetcode/1427-PerformStringShifts.go)   
