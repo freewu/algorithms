@@ -795,6 +795,7 @@
 [1814. Count Nice Pairs in an Array](./leetcode/1814-CountNicePairsInAnArray.go)   
 [1819. Number of Different Subsequences GCDs](./leetcode/1819-NumberOfDifferentSubsequencesGCDs.go)   
 [1822. Sign of the Product of an Array](./leetcode/1822-SignOfTheProductOfAnArray.go)   
+[1824. Minimum Sideway Jumps](./leetcode/1824-MinimumSidewayJumps.go)   
 [1826. Faulty Sensor](./leetcode/1826-FaultySensor.go)   
 [1840. Maximum Building Height](./leetcode/1840-MaximumBuildingHeight.go)   
 [1851. Minimum Interval to Include Eac](./leetcode/1851-MinimumIntervalToIncludeEac.go)   
