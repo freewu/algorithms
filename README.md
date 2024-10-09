@@ -792,6 +792,7 @@
 [1762. Buildings With an Ocean View](./leetcode/1762-BuildingsWithAnOceanView.go)   
 [1766. Tree of Coprimes](./leetcode/1766-TreeOfCoprimes.go)   
 [1770. Maximum Score from Performing Multiplication Operations](./leetcode/1770-MaximumScoreFromPerformingMultiplicationOperations.go)   
+[1772. Sort Features by Popularity](./leetcode/1772-SortFeaturesByPopularity.go)   
 [1793. Maximum Score of a Good Subarray](./leetcode/1793-MaximumScoreOfAGoodSubarray.go)   
 [1799. Maximize Score After N Operations](./leetcode/1799-MaximizeScoreAfterNOperations.go)   
 [1800. Maximum Ascending Subarray Sum](./leetcode/1800-MaximumAscendingSubarraySum.go)   
