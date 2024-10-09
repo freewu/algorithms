@@ -1026,6 +1026,7 @@
 [3152. Special Array II](./leetcode/3152-SpecialArrayII.go)   
 [3153. Sum of Digit Differences of All Pairs](./leetcode/3153-SumOfDigitDifferencesOfAllPairs.go)   
 [3160. Find the Number of Distinct Colors Among the Balls](./leetcode/3160-FindTheNumberOfDistinctColorsAmongTheBalls.go)   
+[3171. Find Subarray With Bitwise OR Closest to K](./leetcode/3171-FindSubarrayWithBitwiseORClosestToK.go)   
 [3173. Bitwise OR of Adjacent Elements](./leetcode/3173-BitwiseOROfAdjacentElements.go)   
 [3176. Find the Maximum Length of a Good Subsequence I](./leetcode/3176-FindTheMaximumLengthOfAGoodSubsequenceI.go)   
 [3177. Find the Maximum Length of a Good Subsequence II](./leetcode/3177-FindTheMaximumLengthOfAGoodSubsequenceII.go)   
