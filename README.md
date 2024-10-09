@@ -1625,6 +1625,7 @@
 [1621. Number of Sets of K Non-Overlapping Line Segments](./leetcode/1621-NumberOfSetsOfKNonOverlappingLineSegments.go)   
 [1701. Average Waiting Time](./leetcode/1701-AverageWaitingTime.go)   
 [1739. Building Boxes](./leetcode/1739-BuildingBoxes.go)   
+[1780. Check if Number is a Sum of Powers of Three](./leetcode/1780-CheckIfNumberIsASumOfPowersOfThree.go)   
 [1823. Find the Winner of the Circular Game](./leetcode/1823-FindTheWinnerOfTheCircularGame.go)   
 [1922. Count Good Numbers](./leetcode/1922-CountGoodNumbers.go)   
 [2048. Next Greater Numerically Balanced Number](./leetcode/2048-NextGreaterNumericallyBalancedNumber.go)   
