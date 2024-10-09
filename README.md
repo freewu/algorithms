@@ -781,6 +781,7 @@
 [1691. Maximum Height by Stacking Cuboids](./leetcode/1691-MaximumHeightByStackingCuboids.go)   
 [1696. Jump Game VI](./leetcode/1696-JumpGameVI.go)   
 [1700. Number of Students Unable to Eat Lunch](./leetcode/1700-NumberOfStudentsUnableToEatLunch.go)   
+[1710. Maximum Units on a Truck](./leetcode/1710-MaximumUnitsOnATruck.go)   
 [1714. Sum Of Special Evenly-Spaced Elements In Array](./leetcode/1714-SumOfSpecialEvenlySpacedElementsInArray.go)   
 [1730. Shortest Path to Get Food](./leetcode/1730-ShortestPathToGetFood.go)   
 [1732. Find the Highest Altitude](./leetcode/1732-FindTheHighestAltitude.go)   
