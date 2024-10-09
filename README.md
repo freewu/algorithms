@@ -789,6 +789,7 @@
 [1738. Find Kth Largest XOR Coordinate Value](./leetcode/1738-FindKthLargestXORCoordinateValue.go)   
 [1746. Maximum Subarray Sum After One Operation](./leetcode/1746-MaximumSubarraySumAfterOneOperation.go)   
 [1751. Maximum Number of Events That Can Be Attended II](./leetcode/1751-MaximumNumberOfEventsThatCanBeAttendedII.go)   
+[1762. Buildings With an Ocean View](./leetcode/1762-BuildingsWithAnOceanView.go)   
 [1766. Tree of Coprimes](./leetcode/1766-TreeOfCoprimes.go)   
 [1770. Maximum Score from Performing Multiplication Operations](./leetcode/1770-MaximumScoreFromPerformingMultiplicationOperations.go)   
 [1793. Maximum Score of a Good Subarray](./leetcode/1793-MaximumScoreOfAGoodSubarray.go)   
