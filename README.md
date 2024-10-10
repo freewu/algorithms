@@ -732,6 +732,7 @@
 [1480. Running Sum of 1d Array](./leetcode/1480-RunningSumOf1dArray.go)   
 [1481. Least Number of Unique Integers after K Removals](./leetcode/1481-LeastNumberOfUniqueIntegersAfterKRemovals.go)   
 [1482. Minimum Number of Days to Make m Bouquets](./leetcode/1482-MinimumNumberOfDaysToMakeMBouquets.go)   
+[1487. Making File Names Unique](./leetcode/1487-MakingFileNamesUnique.go)   
 [1488. Avoid Flood in The City](./leetcode/1488-AvoidFloodInTheCity.go)   
 [1491. Average Salary Excluding the Minimum and Maximum Salary](./leetcode/1491-AverageSalaryExcludingTheMinimumAndMaximumSalary.go)   
 [1493. Longest Subarray of 1's After Deleting One Element](./leetcode/1493-LongestSubarrayOf1sAfterDeletingOneElement.go)   
