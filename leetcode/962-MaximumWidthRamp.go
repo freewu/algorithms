@@ -66,6 +66,28 @@ func maxWidthRamp1(nums []int) int {
     return res
 }
 
+func maxWidthRamp2(nums []int) int {
+    stack := []int{}
+    // array of decresing values
+    for i := 0; i < len(nums); i++ {
+        if len(stack) == 0 || nums[stack[len(stack)-1]] > nums[i] {
+            stack = append(stack, i)
+        }
+    }
+    res := 0
+    // look for answer from the end
+    for i := len(nums) - 1; i >= 0; i-- {
+        for len(stack) > 0 && nums[stack[len(stack)-1]] <= nums[i] {
+            res = max(res, i-stack[len(stack)-1])
+            stack = stack[:len(stack)-1]
+            if res == i {
+                return res
+            }
+        }
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: nums = [6,0,8,2,1,5]
@@ -80,4 +102,7 @@ func main() {
 
     fmt.Println(maxWidthRamp1([]int{6,0,8,2,1,5})) // 4
     fmt.Println(maxWidthRamp1([]int{9,8,1,0,1,9,4,0,4,1})) // 7
+
+    fmt.Println(maxWidthRamp2([]int{6,0,8,2,1,5})) // 4
+    fmt.Println(maxWidthRamp2([]int{9,8,1,0,1,9,4,0,4,1})) // 7
 }
