@@ -1668,6 +1668,8 @@
 [3200. Maximum Height of a Triangle](./leetcode/3200-MaximumHeightOfATriangle.go)   
 [3222. Find the Winning Player in Coin Game](./leetcode/3222-FindTheWinningPlayerInCoinGame.go)   
 [3235. Check if the Rectangle Corner Is Reachable](./leetcode/3235-CheckIfTheRectangleCornerIsReachable.go)   
+[3304. Find the K-th Character in String Game I](./leetcode/3304-FindTheKthCharacterInStringGameI.go)   
+
 
 # Stack
 [225. Implement Stack using Queues](./leetcode/225-ImplementStackUsingQueues.go)   
