@@ -1407,6 +1407,7 @@
 [1220. Count Vowels Permutation](./leetcode/1220-CountVowelsPermutation.go)   
 [1269. Number of Ways to Stay in the Same Place After Some Steps](./leetcode/1269-NumberOfWaysToStayInTheSamePlaceAfterSomeSteps.go)   
 [1387. Sort Integers by The Power Value](./leetcode/1387-SortIntegersByThePowerValue.go)   
+[1411. Number of Ways to Paint N × 3 Grid](./leetcode/1411-NumberOfWaysToPaintN3Grid.go)   
 [1420. Build Array Where You Can Find The Maximum Exactly K Comparisons](./leetcode/1420-BuildArrayWhereYouCanFindTheMaximumExactlyKComparisons.go)   
 [1553. Minimum Number of Days to Eat N Oranges](./leetcode/1553-MinimumNumberOfDaysToEatNOranges.go)   
 [1692. Count Ways to Distribute Candies](./leetcode/1692-CountWaysToDistributeCandies.go)   
