@@ -1396,6 +1396,7 @@
 [3167. Better Compression of String](./leetcode/3167-BetterCompressionOfString.go)   
 [3174. Clear Digits](./leetcode/3174-ClearDigits.go)   
 [3305. Count of Substrings Containing Every Vowel and K Consonants I](./leetcode/3305-CountOfSubstringsContainingEveryVowelAndKConsonantsI.go)   
+[3306. Count of Substrings Containing Every Vowel and K Consonants II](./leetcode/3306-CountOfSubstringsContainingEveryVowelAndKConsonantsII.go)   
 
 
 # Dynamic Programming
