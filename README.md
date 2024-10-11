@@ -822,6 +822,7 @@
 [1926. Nearest Exit from Entrance in Maze](./leetcode/1926-NearestExitFromEntranceInMaze.go)   
 [1937. Maximum Number of Points with Cost](./leetcode/1937-MaximumNumberOfPointsWithCost.go)   
 [1938. Maximum Genetic Difference Query](./leetcode/1938-MaximumGeneticDifferenceQuery.go)   
+[1942. The Number of the Smallest Unoccupied Chair](./leetcode/1942-TheNumberOfTheSmallestUnoccupiedChair.go)   
 [1943. Describe the Painting](./leetcode/1943-DescribeThePainting.go)   
 [1944. Number of Visible People in a Queue](./leetcode/1944-NumberOfVisiblePeopleInAQueue.go)   
 [1953. Maximum Number of Weeks for Which You Can Work](./leetcode/1953-MaximumNumberOfWeeksForWhichYouCanWork.go)   
