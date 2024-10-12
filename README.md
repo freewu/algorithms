@@ -898,6 +898,7 @@
 [2397. Maximum Rows Covered by Columns](./leetcode/2397-MaximumRowsCoveredByColumns.go)   
 [2398. Maximum Number of Robots Within Budget](./leetcode/2398-MaximumNumberOfRobotsWithinBudget.go)   
 [2402. Meeting Rooms III](./leetcode/2402-MeetingRoomsIII.go)   
+[2406. Divide Intervals Into Minimum Number of Groups](./leetcode/2406-DivideIntervalsIntoMinimumNumberOfGroups.go)   
 [2416. Sum of Prefix Scores of Strings](./leetcode/2416-SumOfPrefixScoresOfStrings.go)   
 [2418. Sort the People](./leetcode/2418-SortThePeople.go)   
 [2419. Longest Subarray With Maximum Bitwise AND](./leetcode/2419-LongestSubarrayWithMaximumBitwiseAND.go)   
