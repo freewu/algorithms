@@ -843,6 +843,8 @@
 [2009. Minimum Number of Operations to Make Array Continuous](./leetcode/2009-MinimumNumberOfOperationsToMakeArrayContinuous.go)   
 [2022. Convert 1D Array Into 2D Array](./leetcode/2022-Convert1DArrayInto2DArray.go)   
 [2028. Find Missing Observations](./leetcode/2028-FindMissingObservations.go)   
+[2035. Partition Array Into Two Arrays to Minimize Sum Difference](./leetcode/2035-PartitionArrayIntoTwoArraysToMinimizeSumDifference.go)   
+
 [2037. Minimum Number of Moves to Seat Everyone](./leetcode/2037-MinimumNumberOfMovesToSeatEveryone.go)   
 [2053. Kth Distinct String in an Array](./leetcode/2053-KthDistinctStringInAnArray.go)   
 [2056. Number of Valid Move Combinations On Chessboard](./leetcode/2056-NumberOfValidMoveCombinationsOnChessboard.go)   
