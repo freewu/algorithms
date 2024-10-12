@@ -715,6 +715,7 @@
 [1418. Display Table of Food Orders in a Restaurant](./leetcode/1418-DisplayTableOfFoodOrdersInARestaurant.go)   
 [1423. Maximum Points You Can Obtain from Cards](./leetcode/1423-MaximumPointsYouCanObtainFromCards.go)   
 [1424. Diagonal Traverse II](./leetcode/1424-DiagonalTraverseII.go)   
+[1425. Constrained Subsequence Sum](./leetcode/1425-ConstrainedSubsequenceSum.go)   
 [1426. Counting Elements](./leetcode/1426-CountingElements.go)   
 [1428. Leftmost Column with at Least a One](./leetcode/1428-LeftmostColumnWithAtLeastAOne.go)   
 [1431. Kids With the Greatest Number of Candies](./leetcode/1431-KidsWithTheGreatestNumberOfCandies.go)   
