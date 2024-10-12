@@ -1422,6 +1422,7 @@
 [1411. Number of Ways to Paint N × 3 Grid](./leetcode/1411-NumberOfWaysToPaintN3Grid.go)   
 [1420. Build Array Where You Can Find The Maximum Exactly K Comparisons](./leetcode/1420-BuildArrayWhereYouCanFindTheMaximumExactlyKComparisons.go)   
 [1553. Minimum Number of Days to Eat N Oranges](./leetcode/1553-MinimumNumberOfDaysToEatNOranges.go)   
+[1659. Maximize Grid Happiness](./leetcode/1659-MaximizeGridHappiness.go)   
 [1692. Count Ways to Distribute Candies](./leetcode/1692-CountWaysToDistributeCandies.go)   
 [1931. Painting a Grid With Three Different Colors](./leetcode/1931-PaintingAGridWithThreeDifferentColors.go)   
 [2466. Count Ways To Build Good Strings](./leetcode/2466-CountWaysToBuildGoodStrings.go)   
