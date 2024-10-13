@@ -1650,6 +1650,7 @@
 [1739. Building Boxes](./leetcode/1739-BuildingBoxes.go)   
 [1780. Check if Number is a Sum of Powers of Three](./leetcode/1780-CheckIfNumberIsASumOfPowersOfThree.go)   
 [1823. Find the Winner of the Circular Game](./leetcode/1823-FindTheWinnerOfTheCircularGame.go)   
+[1884. Egg Drop With 2 Eggs and N Floors](./leetcode/1884-EggDropWithTwoEggsAndNFloors.go)   
 [1922. Count Good Numbers](./leetcode/1922-CountGoodNumbers.go)   
 [2048. Next Greater Numerically Balanced Number](./leetcode/2048-NextGreaterNumericallyBalancedNumber.go)   
 [2081. Sum of k-Mirror Numbers](./leetcode/2081-SumOfKMirrorNumbers.go)   
@@ -1871,6 +1872,7 @@
 [2846. Minimum Edge Weight Equilibrium Queries in a Tree](./leetcode/2846-MinimumEdgeWeightEquilibriumQueriesInATree.go)   
 [2867. Count Valid Paths in a Tree](./leetcode/2867-CountValidPathsInATree.go)   
 [2973. Find Number of Coins to Place in Tree Nodes](./leetcode/2973-FindNumberOfCoinsToPlaceInTreeNodes.go)   
+[3313. Find the Last Marked Nodes in Tree](./leetcode/3313-FindTheLastMarkedNodesInTree.go)   
 
 # Graph
 [133. Clone Graph](./leetcode/133-CloneGraph.go)   
