@@ -945,6 +945,7 @@
 [2684. Maximum Number of Moves in a Grid](./leetcode/2684-MaximumNumberOfMovesInAGrid.go)   
 [2708. Maximum Strength of a Group](./leetcode/2708-MaximumStrengthOfAGroup.go)   
 [2713. Maximum Strictly Increasing Cells in a Matrix](./leetcode/2713-MaximumStrictlyIncreasingCellsInAMatrix.go)   
+[2718. Sum of Matrix After Queries](./leetcode/2718-SumOfMatrixAfterQueries.go)   
 [2731. Movement of Robots](./leetcode/2731-MovementOfRobots.go)   
 [2732. Find a Good Subset of the Matrix](./leetcode/2732-FindAGoodSubsetOfTheMatrix.go)   
 [2740. Find the Value of the Partition](./leetcode/2740-FindTheValueOfThePartition.go)   
