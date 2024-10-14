@@ -1645,6 +1645,7 @@
 [1399. Count Largest Group](./leetcode/1399-CountLargestGroup.go)   
 [1401. Circle and Rectangle Overlapping](./leetcode/1401-CircleAndRectangleOverlapping.go)   
 [1414. Find the Minimum Number of Fibonacci Numbers Whose Sum Is K](./leetcode/1414-FindTheMinimumNumberOfFibonacciNumbersWhoseSumIsK.go)   
+[1432. Max Difference You Can Get From Changing an Integer](./leetcode/1432-MaxDifferenceYouCanGetFromChangingAnInteger.go)   
 [1486. XOR Operation in an Array](./leetcode/1486-XOROperationInAnArray.go)   
 [1492. The kth Factor of n](./leetcode/1492-TheKthFactorOfN.go)   
 [1510. Stone Game IV](./leetcode/1510-StoneGameIV.go)   
