@@ -734,6 +734,8 @@
 [1471. The k Strongest Values in an Array](./leetcode/1471-TheKStrongestValuesInAnArray.go)   
 [1473. Paint House III](./leetcode/1473-PaintHouseIII.go)   
 [1475. Final Prices With a Special Discount in a Shop](./leetcode/1475-FinalPricesWithASpecialDiscountInAShop.go)   
+[1477. Find Two Non-overlapping Sub-arrays Each With Target Sum](./leetcode/1477-FindTwoNonOverlappingSubArraysEachWithTargetSum.go)   
+
 [1478. Allocate Mailboxes](./leetcode/1478-AllocateMailboxes.go)   
 [1480. Running Sum of 1d Array](./leetcode/1480-RunningSumOf1dArray.go)   
 [1481. Least Number of Unique Integers after K Removals](./leetcode/1481-LeastNumberOfUniqueIntegersAfterKRemovals.go)   
