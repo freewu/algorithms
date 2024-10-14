@@ -1333,6 +1333,7 @@
 [1419. Minimum Number of Frogs Croaking](./leetcode/1419-MinimumNumberOfFrogsCroaking.go)   
 [1422. Maximum Score After Splitting a String](./leetcode/1422-MaximumScoreAfterSplittingAString.go)    
 [1427. Perform String Shifts](./leetcode/1427-PerformStringShifts.go)   
+[1433. Check If a String Can Break Another String](./leetcode/1433-CheckIfAStringCanBreakAnotherString.go)   
 [1446. Consecutive Characters](./leetcode/1446-ConsecutiveCharacters.go)   
 [1451. Rearrange Words in a Sentence](./leetcode/1451-RearrangeWordsInASentence.go)   
 [1456. Maximum Number of Vowels in a Substring of Given Length](./leetcode/1456-MaximumNumberOfVowelsInASubstringOfGivenLength.go)   
