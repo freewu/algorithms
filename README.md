@@ -731,6 +731,7 @@
 [1464. Maximum Product of Two Elements in an Array](./leetcode/1464-MaximumProductOfTwoElementsInAnArray.go)   
 [1465. Maximum Area of a Piece of Cake After Horizontal and Vertical Cuts](./leetcode/1465-MaximumAreaOfAPieceOfCakeAfterHorizontalAndVerticalCuts.go)   
 [1470. Shuffle the Array](./leetcode/1470-ShuffleTheArray.go)   
+[1471. The k Strongest Values in an Array](./leetcode/1471-TheKStrongestValuesInAnArray.go)   
 [1473. Paint House III](./leetcode/1473-PaintHouseIII.go)   
 [1478. Allocate Mailboxes](./leetcode/1478-AllocateMailboxes.go)   
 [1480. Running Sum of 1d Array](./leetcode/1480-RunningSumOf1dArray.go)   
