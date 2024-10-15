@@ -727,6 +727,7 @@
 [1442. Count Triplets That Can Form Two Arrays of Equal XOR](./leetcode/1442-CountTripletsThatCanFormTwoArraysOfEqualXOR.go)   
 [1444. Number of Ways of Cutting a Pizza](./leetcode/1444-NumberOfWaysOfCuttingAPizza.go)   
 [1450. Number of Students Doing Homework at a Given Time](./leetcode/1450-NumberOfStudentsDoingHomeworkAtAGivenTime.go)   
+[1452. People Whose List of Favorite Companies Is Not a Subset of Another List](./leetcode/1452-PeopleWhoseListOfFavoriteCompaniesIsNotASubsetOfAnotherList.go)   
 [1460. Make Two Arrays Equal by Reversing Subarrays](./leetcode/1460-MakeTwoArraysEqualByReversingSubarrays.go)   
 [1463. Cherry Pickup II](./leetcode/1463-CherryPickupII.go)   
 [1464. Maximum Product of Two Elements in an Array](./leetcode/1464-MaximumProductOfTwoElementsInAnArray.go)   
