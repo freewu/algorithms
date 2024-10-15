@@ -1060,6 +1060,7 @@
 [3177. Find the Maximum Length of a Good Subsequence II](./leetcode/3177-FindTheMaximumLengthOfAGoodSubsequenceII.go)   
 [3189. Minimum Moves to Get a Peaceful Board](./leetcode/3189-MinimumMovesToGetAPeacefulBoard.go)   
 [3190. Find Minimum Operations to Make All Elements Divisible by Three](./leetcode/3190-FindMinimumOperationsToMakeAllElementsDivisibleByThree.go)   
+[3194. Minimum Average of Smallest and Largest Elements](./leetcode/3194-MinimumAverageOfSmallestAndLargestElements.go)   
 [3195. Find the Minimum Area to Cover All Ones I](./leetcode/3195-FindTheMinimumAreaToCoverAllOnesI.go)   
 [3197. Find the Minimum Area to Cover All Ones II](./leetcode/3197-FindTheMinimumAreaToCoverAllOnesII.go)   
 [3205. Maximum Array Hopping Score I](./leetcode/3205-MaximumArrayHoppingScoreI.go)   
