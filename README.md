@@ -724,6 +724,7 @@
 [1437. Check If All 1's Are at Least Length K Places Away](./leetcode/1437-CheckIfAllOnesAreAtLeastLengthKPlacesAway.go)   
 [1438. Longest Continuous Subarray With Absolute Diff Less Than or Equal to Limit](./leetcode/1438-LongestContinuousSubarrayWithAbsoluteDiffLessThanOrEqualToLimit.go)   
 [1439. Find the Kth Smallest Sum of a Matrix With Sorted Rows](./leetcode/1439-FindTheKthSmallestSumOfAMatrixWithSortedRows.go)   
+[1441. Build an Array With Stack Operations](./leetcode/1441-BuildAnArrayWithStackOperations.go)   
 [1442. Count Triplets That Can Form Two Arrays of Equal XOR](./leetcode/1442-CountTripletsThatCanFormTwoArraysOfEqualXOR.go)   
 [1444. Number of Ways of Cutting a Pizza](./leetcode/1444-NumberOfWaysOfCuttingAPizza.go)   
 [1450. Number of Students Doing Homework at a Given Time](./leetcode/1450-NumberOfStudentsDoingHomeworkAtAGivenTime.go)   
