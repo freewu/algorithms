@@ -1,9 +1,7 @@
 package main
 
 // 2920. Maximum Points After Collecting Coins From All Nodes
-// There exists an undirected tree rooted at node 0 with n nodes labeled from 0 to n - 1. 
-// You are given a 2D integer array edges of length n - 1, 
-// where edges[i] = [ai, bi] indicates that there is an edge between nodes ai and bi in the tree. 
+// Tre edges[i] = [ai, bi] indicates that there is an edge between nodes ai and bi in the tree. 
 // You are also given a 0-indexed array coins of size n where coins[i] indicates the number of coins in the vertex i, 
 // and an integer k.
 
@@ -22,7 +20,9 @@ package main
 // <img src="https://assets.leetcode.com/uploads/2023/09/18/ex1-copy.png" />
 // Input: edges = [[0,1],[1,2],[2,3]], coins = [10,10,3,3], k = 5
 // Output: 11                        
-// Explanation: 
+// Explanahere exists an undirected tree rooted at node 0 with n nodes labeled from 0 to n - 1. 
+// You are given a 2D integer array edges of length n - 1, 
+// whetion: 
 // Collect all the coins from node 0 using the first way. Total points = 10 - 5 = 5.
 // Collect all the coins from node 1 using the first way. Total points = 5 + (10 - 5) = 10.
 // Collect all the coins from node 2 using the second way so coins left at node 3 will be floor(3 / 2) = 1. Total points = 10 + floor(3 / 2) = 11.
@@ -79,6 +79,39 @@ func maximumPoints(edges [][]int, coins []int, k int) int {
     return dfs(0,0,-1)
 }
 
+func maximumPoints1(edges [][]int, coins []int, k int) int {
+    n := len(coins)
+    dp, g := make([][]int, n), make([][]int, n)
+    for i := range dp {
+        dp[i] = make([]int, 15)
+        for j := range dp[i] {
+            dp[i][j] = -1
+        }
+    }
+    for _, e := range edges {
+        a, b := e[0], e[1]
+        g[a] = append(g[a], b)
+        g[b] = append(g[b], a)
+    }
+    max := func (x, y int) int { if x > y { return x; }; return y; }
+    var dfs func(i, fa, j int) int
+    dfs = func(i, fa, j int) int {
+        if dp[i][j] != -1 { return dp[i][j] }
+        a, b := (coins[i] >> j) - k, coins[i] >> (j + 1)
+        for _, c := range g[i] {
+            if c != fa {
+                a += dfs(c, i, j)
+                if j < 14 {
+                    b += dfs(c, i, j+1)
+                }
+            }
+        }
+        dp[i][j] = max(a, b)
+        return dp[i][j]
+    }
+    return dfs(0, -1, 0)
+}
+
 func main() {
     // Example 1:
     // <img src="https://assets.leetcode.com/uploads/2023/09/18/ex1-copy.png" />
@@ -98,4 +131,7 @@ func main() {
     // Explanation: 
     // Coins will be collected from all the nodes using the first way. Therefore, total points = (8 - 0) + (4 - 0) + (4 - 0) = 16.
     fmt.Println(maximumPoints([][]int{{0,1},{0,2}}, []int{8,4,4}, 0)) // 16
+
+    fmt.Println(maximumPoints1([][]int{{0,1},{1,2},{2,3}}, []int{10,10,3,3}, 5)) // 11
+    fmt.Println(maximumPoints1([][]int{{0,1},{0,2}}, []int{8,4,4}, 0)) // 16
 }
