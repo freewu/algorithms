@@ -1655,6 +1655,7 @@
 [1401. Circle and Rectangle Overlapping](./leetcode/1401-CircleAndRectangleOverlapping.go)   
 [1414. Find the Minimum Number of Fibonacci Numbers Whose Sum Is K](./leetcode/1414-FindTheMinimumNumberOfFibonacciNumbersWhoseSumIsK.go)   
 [1432. Max Difference You Can Get From Changing an Integer](./leetcode/1432-MaxDifferenceYouCanGetFromChangingAnInteger.go)   
+[1447. Simplified Fractions](./leetcode/1447-SimplifiedFractions.go)   
 [1453. Maximum Number of Darts Inside of a Circular Dartboard](./leetcode/1453-MaximumNumberOfDartsInsideOfACircularDartboard.go)   
 [1486. XOR Operation in an Array](./leetcode/1486-XOROperationInAnArray.go)   
 [1492. The kth Factor of n](./leetcode/1492-TheKthFactorOfN.go)   
