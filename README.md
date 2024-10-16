@@ -727,6 +727,7 @@
 [1441. Build an Array With Stack Operations](./leetcode/1441-BuildAnArrayWithStackOperations.go)   
 [1442. Count Triplets That Can Form Two Arrays of Equal XOR](./leetcode/1442-CountTripletsThatCanFormTwoArraysOfEqualXOR.go)   
 [1444. Number of Ways of Cutting a Pizza](./leetcode/1444-NumberOfWaysOfCuttingAPizza.go)   
+[1449. Form Largest Integer With Digits That Add up to Target](./leetcode/1449-FormLargestIntegerWithDigitsThatAddUpToTarget.go)   
 [1450. Number of Students Doing Homework at a Given Time](./leetcode/1450-NumberOfStudentsDoingHomeworkAtAGivenTime.go)   
 [1452. People Whose List of Favorite Companies Is Not a Subset of Another List](./leetcode/1452-PeopleWhoseListOfFavoriteCompaniesIsNotASubsetOfAnotherList.go)   
 [1453. Maximum Number of Darts Inside of a Circular Dartboard](./leetcode/1453-MaximumNumberOfDartsInsideOfACircularDartboard.go)   
