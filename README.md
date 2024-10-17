@@ -1375,6 +1375,7 @@
 [1698. Number of Distinct Substrings in a String](./leetcode/1698-NumberOfDistinctSubstringsInAString.go)   
 [1702. Maximum Binary String After Change](./leetcode/1702-MaximumBinaryStringAfterChange.go)   
 [1717. Maximum Score From Removing Substrings](./leetcode/1717-MaximumScoreFromRemovingSubstrings.go)   
+[1794. Count Pairs of Equal Substrings With Minimum Difference](./leetcode/1794-CountPairsOfEqualSubstringsWithMinimumDifference.go)   
 [1750. Minimum Length of String After Deleting Similar Ends](./leetcode/1750-MinimumLengthOfStringAfterDeletingSimilarEnds.go)    
 [1768. Merge Strings Alternately](./leetcode/1768-MergeStringsAlternately.go)   
 [1813. Sentence Similarity III](./leetcode/1813-SentenceSimilarityIII.go)   
