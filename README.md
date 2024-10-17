@@ -1068,6 +1068,7 @@
 [3189. Minimum Moves to Get a Peaceful Board](./leetcode/3189-MinimumMovesToGetAPeacefulBoard.go)   
 [3190. Find Minimum Operations to Make All Elements Divisible by Three](./leetcode/3190-FindMinimumOperationsToMakeAllElementsDivisibleByThree.go)   
 [3191. Minimum Operations to Make Binary Array Elements Equal to One I](./leetcode/3191-MinimumOperationsToMakeBinaryArrayElementsEqualToOneI.go)   
+[3192. Minimum Operations to Make Binary Array Elements Equal to One II](./leetcode/3192-MinimumOperationsToMakeBinaryArrayElementsEqualToOneII.go)   
 [3193. Count the Number of Inversions](./leetcode/3193-CountTheNumberOfInversions.go)   
 [3194. Minimum Average of Smallest and Largest Elements](./leetcode/3194-MinimumAverageOfSmallestAndLargestElements.go)   
 [3195. Find the Minimum Area to Cover All Ones I](./leetcode/3195-FindTheMinimumAreaToCoverAllOnesI.go)   
