@@ -1353,6 +1353,7 @@
 [1496. Path Crossing](./leetcode/1496-PathCrossing.go)   
 [1505. Minimum Possible Integer After at Most K Adjacent Swaps On Digits](./leetcode/1505-MinimumPossibleIntegerAfterAtMostKAdjacentSwapsOnDigits.go)   
 [1507. Reformat Date](./leetcode/1507-ReformatDate.go)   
+[1513. Number of Substrings With Only 1s](./leetcode/1513-NumberOfSubstringsWithOnlyOnes.go)   
 [1528. Shuffle String](./leetcode/1528-ShuffleString.go)   
 [1542. Find Longest Awesome Substring](./leetcode/1542-FindLongestAwesomeSubstring.go)   
 [1544. Make The String Great](./leetcode/1544-MakeTheStringGreat.go)   
