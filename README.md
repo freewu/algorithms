@@ -1070,6 +1070,7 @@
 [3176. Find the Maximum Length of a Good Subsequence I](./leetcode/3176-FindTheMaximumLengthOfAGoodSubsequenceI.go)   
 [3177. Find the Maximum Length of a Good Subsequence II](./leetcode/3177-FindTheMaximumLengthOfAGoodSubsequenceII.go)   
 [3184. Count Pairs That Form a Complete Day I](./leetcode/3184-CountPairsThatFormACompleteDayI.go)   
+[3185. Count Pairs That Form a Complete Day II](./leetcode/3185-CountPairsThatFormACompleteDayII.go)   
 [3189. Minimum Moves to Get a Peaceful Board](./leetcode/3189-MinimumMovesToGetAPeacefulBoard.go)   
 [3190. Find Minimum Operations to Make All Elements Divisible by Three](./leetcode/3190-FindMinimumOperationsToMakeAllElementsDivisibleByThree.go)   
 [3191. Minimum Operations to Make Binary Array Elements Equal to One I](./leetcode/3191-MinimumOperationsToMakeBinaryArrayElementsEqualToOneI.go)   
