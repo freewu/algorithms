@@ -2127,6 +2127,7 @@
 [1865. Finding Pairs With a Certain Sum](./leetcode/1865-FindingPairsWithACertainSum.go)   
 [1912. Design Movie Rental System](./leetcode/1912-DesignMovieRentalSystem.go)   
 [1993. Operations on Tree](./leetcode/1993-OperationsOnTree.go)   
+[2013. Detect Squares](./leetcode/2013-DetectSquares.go)   
 [2080. Range Frequency Queries](./leetcode/2080-RangeFrequencyQueries.go)   
 [2227. Encrypt and Decrypt Strings](./leetcode/2227-EncryptAndDecryptStrings.go)   
 [2286. Booking Concert Tickets in Groups](./leetcode/2286-BookingConcertTicketsInGroups.go)   
