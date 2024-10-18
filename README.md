@@ -2128,6 +2128,7 @@
 [1912. Design Movie Rental System](./leetcode/1912-DesignMovieRentalSystem.go)   
 [1993. Operations on Tree](./leetcode/1993-OperationsOnTree.go)   
 [2013. Detect Squares](./leetcode/2013-DetectSquares.go)   
+[2034. Stock Price Fluctuation](./leetcode/2034-StockPriceFluctuation.go)   
 [2080. Range Frequency Queries](./leetcode/2080-RangeFrequencyQueries.go)   
 [2227. Encrypt and Decrypt Strings](./leetcode/2227-EncryptAndDecryptStrings.go)   
 [2286. Booking Concert Tickets in Groups](./leetcode/2286-BookingConcertTicketsInGroups.go)   
