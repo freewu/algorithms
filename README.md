@@ -820,6 +820,7 @@
 [1800. Maximum Ascending Subarray Sum](./leetcode/1800-MaximumAscendingSubarraySum.go)   
 [1814. Count Nice Pairs in an Array](./leetcode/1814-CountNicePairsInAnArray.go)   
 [1819. Number of Different Subsequences GCDs](./leetcode/1819-NumberOfDifferentSubsequencesGCDs.go)   
+[1820. Maximum Number of Accepted Invitations](./leetcode/1820-MaximumNumberOfAcceptedInvitations.go)   
 [1822. Sign of the Product of an Array](./leetcode/1822-SignOfTheProductOfAnArray.go)   
 [1824. Minimum Sideway Jumps](./leetcode/1824-MinimumSidewayJumps.go)   
 [1826. Faulty Sensor](./leetcode/1826-FaultySensor.go)   
