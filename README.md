@@ -818,6 +818,7 @@
 [1793. Maximum Score of a Good Subarray](./leetcode/1793-MaximumScoreOfAGoodSubarray.go)   
 [1799. Maximize Score After N Operations](./leetcode/1799-MaximizeScoreAfterNOperations.go)   
 [1800. Maximum Ascending Subarray Sum](./leetcode/1800-MaximumAscendingSubarraySum.go)   
+[1810. Minimum Path Cost in a Hidden Grid](./leetcode/1810-MinimumPathCostInAHiddenGrid.go)   
 [1814. Count Nice Pairs in an Array](./leetcode/1814-CountNicePairsInAnArray.go)   
 [1819. Number of Different Subsequences GCDs](./leetcode/1819-NumberOfDifferentSubsequencesGCDs.go)   
 [1820. Maximum Number of Accepted Invitations](./leetcode/1820-MaximumNumberOfAcceptedInvitations.go)   
