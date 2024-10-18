@@ -2130,6 +2130,7 @@
 [2013. Detect Squares](./leetcode/2013-DetectSquares.go)   
 [2034. Stock Price Fluctuation](./leetcode/2034-StockPriceFluctuation.go)   
 [2043. Simple Bank System](./leetcode/2043-SimpleBankSystem.go)   
+[2069. Walking Robot Simulation II](./leetcode/2069-WalkingRobotSimulationII.go)   
 [2080. Range Frequency Queries](./leetcode/2080-RangeFrequencyQueries.go)   
 [2227. Encrypt and Decrypt Strings](./leetcode/2227-EncryptAndDecryptStrings.go)   
 [2286. Booking Concert Tickets in Groups](./leetcode/2286-BookingConcertTicketsInGroups.go)   
