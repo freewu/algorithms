@@ -762,6 +762,7 @@
 [1515. Best Position for a Service Centre](./leetcode/1515-BestPositionForAServiceCentre.go)   
 [1521. Find a Value of a Mysterious Function Closest to Target](./leetcode/1521-FindAValueOfAMysteriousFunctionClosestToTarget.go)   
 [1524. Number of Sub-arrays With Odd Sum](./leetcode/1524-NumberOfSubArraysWithOddSum.go)   
+[1526. Minimum Number of Increments on Subarrays to Form a Target Array](./leetcode/1526-MinimumNumberOfIncrementsOnSubarraysToFormATargetArray.go)   
 [1533. Find the Index of the Large Integer](./leetcode/1533-FindTheIndexOfTheLargeInteger.go)   
 [1534. Count Good Triplets](./leetcode/1534-CountGoodTriplets.go)   
 [1535. Find the Winner of an Array Game](./leetcode/1535-FindTheWinnerOfAnArrayGame.go)   
