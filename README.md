@@ -1364,6 +1364,7 @@
 [1505. Minimum Possible Integer After at Most K Adjacent Swaps On Digits](./leetcode/1505-MinimumPossibleIntegerAfterAtMostKAdjacentSwapsOnDigits.go)   
 [1507. Reformat Date](./leetcode/1507-ReformatDate.go)   
 [1513. Number of Substrings With Only 1s](./leetcode/1513-NumberOfSubstringsWithOnlyOnes.go)   
+[1520. Maximum Number of Non-Overlapping Substrings](./leetcode/1520-MaximumNumberOfNonOverlappingSubstrings.go)   
 [1528. Shuffle String](./leetcode/1528-ShuffleString.go)   
 [1531. String Compression II](./leetcode/1531-StringCompressionII.go)   
 [1542. Find Longest Awesome Substring](./leetcode/1542-FindLongestAwesomeSubstring.go)   
