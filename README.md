@@ -1368,6 +1368,7 @@
 [1531. String Compression II](./leetcode/1531-StringCompressionII.go)   
 [1542. Find Longest Awesome Substring](./leetcode/1542-FindLongestAwesomeSubstring.go)   
 [1544. Make The String Great](./leetcode/1544-MakeTheStringGreat.go)   
+[1545. Find Kth Bit in Nth Binary String](./leetcode/1545-FindKthBitInNthBinaryString.go)   
 [1556. Thousand Separator](./leetcode/1556-ThousandSeparator.go)   
 [1597. Build Binary Expression Tree From Infix Expression](./leetcode/1597-BuildBinaryExpressionTreeFromInfixExpression.go)   
 [1598. Crawler Log Folder](./leetcode/1598-CrawlerLogFolder.go)   
