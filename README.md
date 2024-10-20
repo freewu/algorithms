@@ -1372,6 +1372,7 @@
 [1528. Shuffle String](./leetcode/1528-ShuffleString.go)   
 [1529. Minimum Suffix Flips](./leetcode/1529-MinimumSuffixFlips.go)   
 [1531. String Compression II](./leetcode/1531-StringCompressionII.go)   
+[1540. Can Convert String in K Moves](./leetcode/1540-CanConvertStringInKMoves.go)   
 [1542. Find Longest Awesome Substring](./leetcode/1542-FindLongestAwesomeSubstring.go)   
 [1544. Make The String Great](./leetcode/1544-MakeTheStringGreat.go)   
 [1545. Find Kth Bit in Nth Binary String](./leetcode/1545-FindKthBitInNthBinaryString.go)   
