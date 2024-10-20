@@ -770,6 +770,7 @@
 [1537. Get the Maximum Score](./leetcode/1537-GetTheMaximumScore.go)   
 [1538. Guess the Majority in a Hidden Array](./leetcode/1538-GuessTheMajorityInAHiddenArray.go)   
 [1539. Kth Missing Positive Number](./leetcode/1539-KthMissingPositiveNumber.go)   
+[1546. Maximum Number of Non-Overlapping Subarrays With Sum Equals Target](./leetcode/1546-MaximumNumberOfNonOverlappingSubarraysWithSumEqualsTarget.go)   
 [1547. Minimum Cost to Cut a Stick](./leetcode/1547-MinimumCostToCutAStick.go)   
 [1550. Three Consecutive Odds](./leetcode/1550-ThreeConsecutiveOdds.go)   
 [1552. Magnetic Force Between Two Balls](./leetcode/1552-MagneticForceBetweenTwoBalls.go)   
