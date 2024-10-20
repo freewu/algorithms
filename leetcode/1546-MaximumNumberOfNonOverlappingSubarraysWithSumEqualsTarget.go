@@ -38,6 +38,20 @@ func maxNonOverlapping(nums []int, target int) int {
     return res
 }
 
+func maxNonOverlapping1(nums []int, target int) int {
+    mp := map[int]int{ 0: 0 }
+    res, sum := 0, 0
+    max := func (x, y int) int { if x > y { return x; }; return y; }
+    for i := 0; i < len(nums); i++ {
+        sum += nums[i]
+        if prev, ok := mp[sum - target]; ok {
+            res = max(res, prev + 1)
+        }
+        mp[sum] = res
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: nums = [1,1,1,1,1], target = 2
@@ -50,4 +64,7 @@ func main() {
     // Explanation: There are 3 subarrays with sum equal to 6.
     // ([5,1], [4,2], [3,5,1,4,2,-9]) but only the first 2 are non-overlapping.
     fmt.Println(maxNonOverlapping([]int{-1,3,5,1,4,2,-9}, 6)) // 2
+
+    fmt.Println(maxNonOverlapping1([]int{1,1,1,1,1}, 2)) // 2
+    fmt.Println(maxNonOverlapping1([]int{-1,3,5,1,4,2,-9}, 6)) // 2
 }
