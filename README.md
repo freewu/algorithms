@@ -831,6 +831,7 @@
 [1826. Faulty Sensor](./leetcode/1826-FaultySensor.go)   
 [1840. Maximum Building Height](./leetcode/1840-MaximumBuildingHeight.go)   
 [1851. Minimum Interval to Include Eac](./leetcode/1851-MinimumIntervalToIncludeEac.go)   
+[1852. Distinct Numbers in Each Subarray](./leetcode/1852-DistinctNumbersInEachSubarray.go)   
 [1854. Maximum Population Year](./leetcode/1854-MaximumPopulationYear.go)   
 [1858. Longest Word With All Prefixes](./leetcode/1858-LongestWordWithAllPrefixes.go)   
 [1861. Rotating the Box](./leetcode/1861-RotatingTheBox.go)   
