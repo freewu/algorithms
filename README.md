@@ -1717,6 +1717,7 @@
 [2806. Account Balance After Rounded Purchase](./leetcode/2806-AccountBalanceAfterRoundedPurchase.go)   
 [2834. Find the Minimum Possible Sum of a Beautiful Array](./leetcode/2834-FindTheMinimumPossibleSumOfABeautifulArray.go)    
 [2928. Distribute Candies Among Children I](./leetcode/2928-DistributeCandiesAmongChildrenI.go)   
+[2999. Count the Number of Powerful Integers](./leetcode/2999-CountTheNumberOfPowerfulIntegers.go)   
 [3009. Maximum Number of Intersections on the Chart](./leetcode/3009-MaximumNumberOfIntersectionsOnTheChart.go)   
 [3032. Count Numbers With Unique Digits II](./leetcode/3032-CountNumbersWithUniqueDigitsII.go)   
 [3099. Harshad Number](./leetcode/3099-HarshadNumber.go)   
