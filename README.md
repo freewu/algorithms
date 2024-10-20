@@ -2027,6 +2027,7 @@
 [1009. Complement of Base 10 Integer](./leetcode/1009-ComplementOfBase10Integer.go)   
 [1318. Minimum Flips to Make a OR b Equal to c](./leetcode/1318-MinimumFlipsToMakeAORBEqualToC.go)   
 [2220. Minimum Bit Flips to Convert Number](./leetcode/2220-MinimumBitFlipsToConvertNumber.go)   
+[2429. Minimize XOR](./leetcode/2429-MinimizeXOR.go)   
 [3007. Maximum Number That Sum of the Prices Is Less Than or Equal to K](./leetcode/3007-MaximumNumberThatSumOfThePricesIsLessThanOrEqualToK.go)   
 [3064. Guess the Number Using Bitwise Questions I](./leetcode/3064-GuessTheNumberUsingBitwiseQuestionsI.go)   
 [3094. Guess the Number Using Bitwise Questions II](./leetcode/3094-GuessTheNumberUsingBitwiseQuestionsII.go)   
