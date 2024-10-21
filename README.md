@@ -789,6 +789,7 @@
 [1574. Shortest Subarray to be Removed to Make Array Sorted](./leetcode/1574-ShortestSubarrayToBeRemovedToMakeArraySorted.go)   
 [1575. Count All Possible Routes](./leetcode/1575-CountAllPossibleRoutes.go)   
 [1577. Number of Ways Where Square of Number Is Equal to Product of Two Numbers](./leetcode/1577-NumberOfWaysWhereSquareOfNumberIsEqualToProductOfTwoNumbers.go)   
+[1578. Minimum Time to Make Rope Colorful](./leetcode/1578-MinimumTimeToMakeRopeColorful.go)   
 [1580. Put Boxes Into the Warehouse II](./leetcode/1580-PutBoxesIntoTheWarehouseII.go)   
 [1590. Make Sum Divisible by P](./leetcode/1590-MakeSumDivisibleByP.go)   
 [1599. Maximum Profit of Operating a Centennial Wheel](./leetcode/1599-MaximumProfitOfOperatingACentennialWheel.go)   
