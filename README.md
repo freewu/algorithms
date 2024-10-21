@@ -2598,6 +2598,8 @@ LCR 185. 统计结果概率
 [3293. Calculate Product Final Price](./leetcode/3293-CalculateProductFinalPrice.sql)   
 [3308. Find Top Performing Driver](./leetcode/3308-FindTopPerformingDriver.sql)   
 [3322. Premier League Table Ranking III](./leetcode/3322-PremierLeagueTableRankingIII.sql)   
+[3328. Find Cities in Each State II](./leetcode/3328-FindCitiesInEachStateII.sql)   
+
 
 # Shell
 [192. Word Frequency](./leetcode/192-WordFrequency.sh)      
