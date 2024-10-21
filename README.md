@@ -779,6 +779,7 @@
 [1559. Detect Cycles in 2D Grid](./leetcode/1559-DetectCyclesIn2DGrid.go)   
 [1560. Most Visited Sector in a Circular Track](./leetcode/1560-MostVisitedSectorInACircularTrack.go)   
 [1561. Maximum Number of Coins You Can Get](./leetcode/1561-MaximumNumberOfCoinsYouCanGet.go)   
+[1562. Find Latest Group of Size M](./leetcode/1562-FindLatestGroupOfSizeM.go)   
 [1564. Put Boxes Into the Warehouse I](./leetcode/1564-PutBoxesIntoTheWarehouseI.go)   
 [1566. Detect Pattern of Length M Repeated K or More Times](./leetcode/1566-DetectPatternOfLengthMRepeatedKOrMoreTimes.go)   
 [1568. Minimum Number of Days to Disconnect Island](./leetcode/1568-MinimumNumberOfDaysToDisconnectIsland.go)   
