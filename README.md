@@ -786,6 +786,7 @@
 [1567. Maximum Length of Subarray With Positive Product](./leetcode/1567-MaximumLengthOfSubarrayWithPositiveProduct.go)   
 [1568. Minimum Number of Days to Disconnect Island](./leetcode/1568-MinimumNumberOfDaysToDisconnectIsland.go)   
 [1572. Matrix Diagonal Sum](./leetcode/1572-MatrixDiagonalSum.go)   
+[1574. Shortest Subarray to be Removed to Make Array Sorted](./leetcode/1574-ShortestSubarrayToBeRemovedToMakeArraySorted.go)   
 [1575. Count All Possible Routes](./leetcode/1575-CountAllPossibleRoutes.go)   
 [1580. Put Boxes Into the Warehouse II](./leetcode/1580-PutBoxesIntoTheWarehouseII.go)   
 [1590. Make Sum Divisible by P](./leetcode/1590-MakeSumDivisibleByP.go)   
