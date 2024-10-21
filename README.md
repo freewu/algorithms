@@ -782,6 +782,7 @@
 [1562. Find Latest Group of Size M](./leetcode/1562-FindLatestGroupOfSizeM.go)   
 [1564. Put Boxes Into the Warehouse I](./leetcode/1564-PutBoxesIntoTheWarehouseI.go)   
 [1566. Detect Pattern of Length M Repeated K or More Times](./leetcode/1566-DetectPatternOfLengthMRepeatedKOrMoreTimes.go)   
+[1567. Maximum Length of Subarray With Positive Product](./leetcode/1567-MaximumLengthOfSubarrayWithPositiveProduct.go)   
 [1568. Minimum Number of Days to Disconnect Island](./leetcode/1568-MinimumNumberOfDaysToDisconnectIsland.go)   
 [1572. Matrix Diagonal Sum](./leetcode/1572-MatrixDiagonalSum.go)   
 [1575. Count All Possible Routes](./leetcode/1575-CountAllPossibleRoutes.go)   
