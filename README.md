@@ -780,6 +780,7 @@
 [1560. Most Visited Sector in a Circular Track](./leetcode/1560-MostVisitedSectorInACircularTrack.go)   
 [1561. Maximum Number of Coins You Can Get](./leetcode/1561-MaximumNumberOfCoinsYouCanGet.go)   
 [1562. Find Latest Group of Size M](./leetcode/1562-FindLatestGroupOfSizeM.go)   
+[1563. Stone Game V](./leetcode/1563-StoneGameV.go)   
 [1564. Put Boxes Into the Warehouse I](./leetcode/1564-PutBoxesIntoTheWarehouseI.go)   
 [1566. Detect Pattern of Length M Repeated K or More Times](./leetcode/1566-DetectPatternOfLengthMRepeatedKOrMoreTimes.go)   
 [1567. Maximum Length of Subarray With Positive Product](./leetcode/1567-MaximumLengthOfSubarrayWithPositiveProduct.go)   
