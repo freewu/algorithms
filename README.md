@@ -1386,6 +1386,7 @@
 [1542. Find Longest Awesome Substring](./leetcode/1542-FindLongestAwesomeSubstring.go)   
 [1544. Make The String Great](./leetcode/1544-MakeTheStringGreat.go)   
 [1545. Find Kth Bit in Nth Binary String](./leetcode/1545-FindKthBitInNthBinaryString.go)   
+[1573. Number of Ways to Split a String](./leetcode/1573-NumberOfWaysToSplitAString.go)   
 [1593. Split a String Into the Max Number of Unique Substrings](./leetcode/1593-SplitAStringIntoTheMaxNumberOfUniqueSubstrings.go)   
 [1556. Thousand Separator](./leetcode/1556-ThousandSeparator.go)   
 [1597. Build Binary Expression Tree From Infix Expression](./leetcode/1597-BuildBinaryExpressionTreeFromInfixExpression.go)   
