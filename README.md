@@ -777,6 +777,7 @@
 [1554. Strings Differ by One Character](./leetcode/1554-StringsDifferByOneCharacter.go)   
 [1558. Minimum Numbers of Function Calls to Make Target Array](./leetcode/1558-MinimumNumbersOfFunctionCallsToMakeTargetArray.go)   
 [1559. Detect Cycles in 2D Grid](./leetcode/1559-DetectCyclesIn2DGrid.go)   
+[1560. Most Visited Sector in a Circular Track](./leetcode/1560-MostVisitedSectorInACircularTrack.go)   
 [1564. Put Boxes Into the Warehouse I](./leetcode/1564-PutBoxesIntoTheWarehouseI.go)   
 [1568. Minimum Number of Days to Disconnect Island](./leetcode/1568-MinimumNumberOfDaysToDisconnectIsland.go)   
 [1572. Matrix Diagonal Sum](./leetcode/1572-MatrixDiagonalSum.go)   
