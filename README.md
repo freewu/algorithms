@@ -2171,6 +2171,7 @@
 [2227. Encrypt and Decrypt Strings](./leetcode/2227-EncryptAndDecryptStrings.go)   
 [2286. Booking Concert Tickets in Groups](./leetcode/2286-BookingConcertTicketsInGroups.go)   
 [2336. Smallest Number in Infinite Set](./leetcode/2336-SmallestNumberInInfiniteSet.go)   
+[2349. Design a Number Container System](./leetcode/2349-DesignANumberContainerSystem.go)   
 [2590. Design a Todo List](./leetcode/2590-DesignATodoList.go)   
 [2642. Design Graph With Shortest Path Calculator](./leetcode/2642-DesignGraphWithShortestPathCalculator.go)   
 [2671. Frequency Tracker](./leetcode/2671-FrequencyTracker.go)   
