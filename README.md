@@ -853,6 +853,7 @@
 [1863. Sum of All Subset XOR Totals](./leetcode/1863-SumOfAllSubsetXORTotals.go)   
 [1868. Product of Two Run-Length Encoded Arrays](./leetcode/1868-ProductOfTwoRunLengthEncodedArrays.go)   
 [1870. Minimum Speed to Arrive on Time](./leetcode/1870-MinimumSpeedToArriveOnTime.go)   
+[1874. Minimize Product Sum of Two Arrays](./leetcode/1874-MinimizeProductSumOfTwoArrays.go)   
 [1883. Minimum Skips to Arrive at Meeting On Time](./leetcode/1883-MinimumSkipsToArriveAtMeetingOnTime.go)   
 [1885. Count Pairs in Two Arrays](./leetcode/1885-CountPairsInTwoArrays.go)   
 [1886. Determine Whether Matrix Can Be Obtained By Rotation](./leetcode/1886-DetermineWhetherMatrixCanBeObtainedByRotation.go)   
