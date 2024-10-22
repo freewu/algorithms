@@ -791,6 +791,7 @@
 [1577. Number of Ways Where Square of Number Is Equal to Product of Two Numbers](./leetcode/1577-NumberOfWaysWhereSquareOfNumberIsEqualToProductOfTwoNumbers.go)   
 [1578. Minimum Time to Make Rope Colorful](./leetcode/1578-MinimumTimeToMakeRopeColorful.go)   
 [1580. Put Boxes Into the Warehouse II](./leetcode/1580-PutBoxesIntoTheWarehouseII.go)   
+[1582. Special Positions in a Binary Matrix](./leetcode/1582-SpecialPositionsInABinaryMatrix.go)   
 [1590. Make Sum Divisible by P](./leetcode/1590-MakeSumDivisibleByP.go)   
 [1599. Maximum Profit of Operating a Centennial Wheel](./leetcode/1599-MaximumProfitOfOperatingACentennialWheel.go)   
 [1601. Maximum Number of Achievable Transfer Requests](./leetcode/1601-MaximumNumberOfAchievableTransferRequests.go)   
