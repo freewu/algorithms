@@ -1114,6 +1114,7 @@
 [3245. Alternating Groups III](./leetcode/3245-AlternatingGroupsIII.go)   
 [3247. Number of Subsequences with Odd Sum](./leetcode/3247-NumberOfSubsequencesWithOddSum.go)   
 [3250. Find the Count of Monotonic Pairs I](./leetcode/3250-FindTheCountOfMonotonicPairsI.go)   
+[3251. Find the Count of Monotonic Pairs II](./leetcode/3251-FindTheCountOfMonotonicPairsII.go)   
 [3269. Constructing Two Increasing Arrays](./leetcode/3269-ConstructingTwoIncreasingArrays.go)   
 [3279. Maximum Total Area Occupied by Pistons](./leetcode/3279-MaximumTotalAreaOccupiedByPistons.go)   
 [3286. Find a Safe Walk Through a Grid](./leetcode/3286-FindASafeWalkThroughAGrid.go)   
@@ -1760,6 +1761,7 @@
 [3222. Find the Winning Player in Coin Game](./leetcode/3222-FindTheWinningPlayerInCoinGame.go)   
 [3235. Check if the Rectangle Corner Is Reachable](./leetcode/3235-CheckIfTheRectangleCornerIsReachable.go)   
 [3250. Find the Count of Monotonic Pairs I](./leetcode/3250-FindTheCountOfMonotonicPairsI.go)   
+[3251. Find the Count of Monotonic Pairs II](./leetcode/3251-FindTheCountOfMonotonicPairsII.go)   
 [3304. Find the K-th Character in String Game I](./leetcode/3304-FindTheKthCharacterInStringGameI.go)   
 [3307. Find the K-th Character in String Game II](./leetcode/3307-FindTheKthCharacterInStringGameII.go)   
 
