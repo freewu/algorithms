@@ -2038,6 +2038,7 @@
 [2699. Modify Graph Edge Weights](./leetcode/2699-ModifyGraphEdgeWeights.go)   
 [2959. Number of Possible Sets of Closing Branches](./leetcode/2959-NumberOfPossibleSetsOfClosingBranches.go)   
 [3015. Count the Number of Houses at a Certain Distance I](./leetcode/3015-CountTheNumberOfHousesAtACertainDistanceI.go)   
+[3017. Count the Number of Houses at a Certain Distance II](./leetcode/3017-CountTheNumberOfHousesAtACertainDistanceII.go)   
 [3108. Minimum Cost Walk in Weighted Graph](./leetcode/3108-MinimumCostWalkInWeightedGraph.go)   
 [3112. Minimum Time to Visit Disappearing Nodes](./leetcode/3112-MinimumTimeToVisitDisappearingNodes.go)   
 [3123. Find Edges in Shortest Paths](./leetcode/3123-FindEdgesInShortestPaths.go)   
