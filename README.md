@@ -1115,6 +1115,7 @@
 [3247. Number of Subsequences with Odd Sum](./leetcode/3247-NumberOfSubsequencesWithOddSum.go)   
 [3250. Find the Count of Monotonic Pairs I](./leetcode/3250-FindTheCountOfMonotonicPairsI.go)   
 [3251. Find the Count of Monotonic Pairs II](./leetcode/3251-FindTheCountOfMonotonicPairsII.go)   
+[3265. Count Almost Equal Pairs I](./leetcode/3265-CountAlmostEqualPairsI.go)   
 [3269. Constructing Two Increasing Arrays](./leetcode/3269-ConstructingTwoIncreasingArrays.go)   
 [3279. Maximum Total Area Occupied by Pistons](./leetcode/3279-MaximumTotalAreaOccupiedByPistons.go)   
 [3286. Find a Safe Walk Through a Grid](./leetcode/3286-FindASafeWalkThroughAGrid.go)   
