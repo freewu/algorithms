@@ -1112,6 +1112,7 @@
 [3235. Check if the Rectangle Corner Is Reachable](./leetcode/3235-CheckIfTheRectangleCornerIsReachable.go)   
 [3237. Alt and Tab Simulation](./leetcode/3237-AltAndTabSimulation.go)   
 [3239. Minimum Number of Flips to Make Binary Grid Palindromic I](./leetcode/3239-MinimumNumberOfFlipsToMakeBinaryGridPalindromicI.go)   
+[3240. Minimum Number of Flips to Make Binary Grid Palindromic II](./leetcode/3240-MinimumNumberOfFlipsToMakeBinaryGridPalindromicII.go)   
 [3245. Alternating Groups III](./leetcode/3245-AlternatingGroupsIII.go)   
 [3247. Number of Subsequences with Odd Sum](./leetcode/3247-NumberOfSubsequencesWithOddSum.go)   
 [3250. Find the Count of Monotonic Pairs I](./leetcode/3250-FindTheCountOfMonotonicPairsI.go)   
