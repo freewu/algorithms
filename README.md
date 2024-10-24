@@ -798,6 +798,7 @@
 [1590. Make Sum Divisible by P](./leetcode/1590-MakeSumDivisibleByP.go)   
 [1591. Strange Printer II](./leetcode/1591-StrangePrinterII.go)   
 [1594. Maximum Non Negative Product in a Matrix](./leetcode/1594-MaximumNonNegativeProductInAMatrix.go)   
+[1595. Minimum Cost to Connect Two Groups of Points](./leetcode/1595-MinimumCostToConnectTwoGroupsOfPoints.go)   
 [1599. Maximum Profit of Operating a Centennial Wheel](./leetcode/1599-MaximumProfitOfOperatingACentennialWheel.go)   
 [1601. Maximum Number of Achievable Transfer Requests](./leetcode/1601-MaximumNumberOfAchievableTransferRequests.go)   
 [1604. Alert Using Same Key-Card Three or More Times in a One Hour Period](./leetcode/1604-AlertUsingSameKeyCardThreeOrMoreTimesInAOneHourPeriod.go)   
