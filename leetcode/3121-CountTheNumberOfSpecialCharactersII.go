@@ -30,6 +30,7 @@ package main
 //     word consists of only lowercase and uppercase English letters
 
 import "fmt"
+import "math/bits"
 
 func numberOfSpecialChars1(word string) int {
     res, mp := 0, make(map[byte]int)
@@ -92,6 +93,21 @@ func numberOfSpecialChars2(word string) int {
     return res
 }
 
+func numberOfSpecialChars3(word string) int {
+    lower, upper, invalid := uint(0), uint(0), uint(0)
+    for _, c := range word {
+        bit := uint(1) << (c & 31)
+        if c & 32 > 0 {
+            lower |= bit
+            if upper&bit > 0 {
+                invalid |= bit
+            }
+        } else {
+            upper |= bit
+        }
+    }
+    return bits.OnesCount(lower & upper &^ invalid)
+}
 
 func main() {
     // Example 1:
@@ -124,4 +140,9 @@ func main() {
     fmt.Println(numberOfSpecialChars2("abc")) // 0
     fmt.Println(numberOfSpecialChars2("AbBCab")) // 0
     fmt.Println(numberOfSpecialChars2("cCceDC")) // 0
+
+    fmt.Println(numberOfSpecialChars3("aaAbcBC")) // 3
+    fmt.Println(numberOfSpecialChars3("abc")) // 0
+    fmt.Println(numberOfSpecialChars3("AbBCab")) // 0
+    fmt.Println(numberOfSpecialChars3("cCceDC")) // 0
 }
