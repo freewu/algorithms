@@ -867,6 +867,7 @@
 [1905. Count Sub Islands](./leetcode/1905-CountSubIslands.go)   
 [1908. Game of Nim](./leetcode/1908-GameOfNim.go)   
 [1914. Cyclically Rotating a Grid](./leetcode/1914-CyclicallyRotatingAGrid.go)   
+[1918. Kth Smallest Subarray Sum](./leetcode/1918-KthSmallestSubarraySum.go)   
 [1926. Nearest Exit from Entrance in Maze](./leetcode/1926-NearestExitFromEntranceInMaze.go)   
 [1937. Maximum Number of Points with Cost](./leetcode/1937-MaximumNumberOfPointsWithCost.go)   
 [1938. Maximum Genetic Difference Query](./leetcode/1938-MaximumGeneticDifferenceQuery.go)   
