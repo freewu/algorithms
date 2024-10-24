@@ -806,6 +806,7 @@
 [1606. Find Servers That Handled Most Number of Requests](./leetcode/1606-FindServersThatHandledMostNumberOfRequests.go)   
 [1608. Special Array With X Elements Greater Than or Equal X](./leetcode/1608-SpecialArrayWithXElementsGreaterThanOrEqualX.go)   
 [1610. Maximum Number of Visible Points](./leetcode/1610-MaximumNumberOfVisiblePoints.go)   
+[1619. Mean of Array After Removing Some Elements](./leetcode/1619-MeanOfArrayAfterRemovingSomeElements.go)   
 [1626. Best Team With No Conflicts](./leetcode/1626-BestTeamWithNoConflicts.go)   
 [1627. Graph Connectivity With Threshold](./leetcode/1627-GraphConnectivityWithThreshold.go)   
 [1631. Path With Minimum Effort](./leetcode/1631-PathWithMinimumEffort.go)   
