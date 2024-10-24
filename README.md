@@ -1102,6 +1102,7 @@
 [3175. Find The First Player to win K Games in a Row](./leetcode/3175-FindTheFirstPlayerToWinKGamesInARow.go)   
 [3176. Find the Maximum Length of a Good Subsequence I](./leetcode/3176-FindTheMaximumLengthOfAGoodSubsequenceI.go)   
 [3177. Find the Maximum Length of a Good Subsequence II](./leetcode/3177-FindTheMaximumLengthOfAGoodSubsequenceII.go)   
+[3180. Maximum Total Reward Using Operations I](./leetcode/3180-MaximumTotalRewardUsingOperationsI.go)   
 [3184. Count Pairs That Form a Complete Day I](./leetcode/3184-CountPairsThatFormACompleteDayI.go)   
 [3185. Count Pairs That Form a Complete Day II](./leetcode/3185-CountPairsThatFormACompleteDayII.go)   
 [3189. Minimum Moves to Get a Peaceful Board](./leetcode/3189-MinimumMovesToGetAPeacefulBoard.go)   
