@@ -796,6 +796,7 @@
 [1588. Sum of All Odd Length Subarrays](./leetcode/1588-SumOfAllOddLengthSubarrays.go)   
 [1589. Maximum Sum Obtained of Any Permutation](./leetcode/1589-MaximumSumObtainedOfAnyPermutation.go)   
 [1590. Make Sum Divisible by P](./leetcode/1590-MakeSumDivisibleByP.go)   
+[1591. Strange Printer II](./leetcode/1591-StrangePrinterII.go)   
 [1599. Maximum Profit of Operating a Centennial Wheel](./leetcode/1599-MaximumProfitOfOperatingACentennialWheel.go)   
 [1601. Maximum Number of Achievable Transfer Requests](./leetcode/1601-MaximumNumberOfAchievableTransferRequests.go)   
 [1604. Alert Using Same Key-Card Three or More Times in a One Hour Period](./leetcode/1604-AlertUsingSameKeyCardThreeOrMoreTimesInAOneHourPeriod.go)   
