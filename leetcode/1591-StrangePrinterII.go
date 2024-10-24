@@ -89,6 +89,55 @@ func isPrintable(targetGrid [][]int) bool {
     return handled == len(colors) // Return whether we can paint all colors
 }
 
+func isPrintable1(targetGrid [][]int) bool {
+    pos := make(map[int][]int)
+    m, n := len(targetGrid), len(targetGrid[0])
+    for i := 0; i < m; i++ {
+        for j := 0; j < n; j++ {
+            color := targetGrid[i][j]
+            _, ok := pos[color]
+            if (!ok) {
+                pos[color] = []int{ m - 1, n - 1, 0, 0}
+            }
+            coord := pos[color]
+            if (i < coord[0]) { coord[0] = i }
+            if (j < coord[1]) { coord[1] = j }
+            if (i > coord[2]) { coord[2] = i }
+            if (j > coord[3]) { coord[3] = j }
+        }
+    }
+    colors := make(map[int]bool)
+    for color := range pos {
+        colors[color] = true
+    }
+    erase := func(targetGrid [][]int, coord []int, color int) bool {
+        for i := coord[0]; i <= coord[2]; i++ {
+            for j := coord[1]; j <= coord[3]; j++ {
+                if (targetGrid[i][j] != 0 && targetGrid[i][j] != color) { return false }
+            }
+        }
+        for i := coord[0]; i <= coord[2]; i++ {
+            for j := coord[1]; j <= coord[3]; j++ {
+                targetGrid[i][j] = 0
+            }
+        }
+        return true
+    }
+    for len(colors) > 0 {
+        next := make(map[int]bool)
+        for color := range colors {
+            if (!erase(targetGrid, pos[color], color)) {
+                next[color] = true
+            }
+        }
+        if len(colors) == len(next) {
+            return false
+        }
+        colors = next
+    }
+    return true
+}
+
 func main() {
     // Example 1:
     // <img src="https://assets.leetcode.com/uploads/2021/12/23/print1.jpg" />
@@ -105,4 +154,8 @@ func main() {
     // Output: false
     // Explanation: It is impossible to form targetGrid because it is not allowed to print the same color in different turns.
     fmt.Println(isPrintable([][]int{{1,2,1},{2,1,2},{1,2,1}})) // false
+
+    fmt.Println(isPrintable1([][]int{{1,1,1,1},{1,2,2,1},{1,2,2,1},{1,1,1,1}})) // true
+    fmt.Println(isPrintable1([][]int{{1,1,1,1},{1,1,3,3},{1,1,3,4},{5,5,1,4}})) // true
+    fmt.Println(isPrintable1([][]int{{1,2,1},{2,1,2},{1,2,1}})) // false
 }
