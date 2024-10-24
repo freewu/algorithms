@@ -820,6 +820,7 @@
 [1686. Stone Game VI](./leetcode/1686-StoneGameVI.go)   
 [1690. Stone Game VII](./leetcode/1690-StoneGameVII.go)   
 [1691. Maximum Height by Stacking Cuboids](./leetcode/1691-MaximumHeightByStackingCuboids.go)   
+[1695. Maximum Erasure Value](./leetcode/1695-MaximumErasureValue.go)   
 [1696. Jump Game VI](./leetcode/1696-JumpGameVI.go)   
 [1700. Number of Students Unable to Eat Lunch](./leetcode/1700-NumberOfStudentsUnableToEatLunch.go)   
 [1710. Maximum Units on a Truck](./leetcode/1710-MaximumUnitsOnATruck.go)   
