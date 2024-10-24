@@ -1487,6 +1487,7 @@
 [3104. Find Longest Self-Contained Substring](./leetcode/3104-FindLongestSelfContainedSubstring.go)   
 [3106. Lexicographically Smallest String After Operations With Constraint](./leetcode/3106-LexicographicallySmallestStringAfterOperationsWithConstraint.go)   
 [3110. Score of a String](./leetcode/3110-ScoreOfAString.go)   
+[3120. Count the Number of Special Characters I](./leetcode/3120-CountTheNumberOfSpecialCharactersI.go)   
 [3137. Minimum Number of Operations to Make Word K-Periodic](./leetcode/3137-MinimumNumberOfOperationsToMakeWordKPeriodic.go)   
 [3144. Minimum Substring Partition of Equal Character](./leetcode/3144-MinimumSubstringPartitionOfEqualCharacter.go)   
 [3146. Permutation Difference between Two Strings](./leetcode/3146-PermutationDifferenceBetweenTwoStrings.go)   
