@@ -878,6 +878,7 @@
 [1942. The Number of the Smallest Unoccupied Chair](./leetcode/1942-TheNumberOfTheSmallestUnoccupiedChair.go)   
 [1943. Describe the Painting](./leetcode/1943-DescribeThePainting.go)   
 [1944. Number of Visible People in a Queue](./leetcode/1944-NumberOfVisiblePeopleInAQueue.go)   
+[1950. Maximum of Minimum Values in All Subarrays](./leetcode/1950-MaximumOfMinimumValuesInAllSubarrays.go)   
 [1953. Maximum Number of Weeks for Which You Can Work](./leetcode/1953-MaximumNumberOfWeeksForWhichYouCanWork.go)   
 [1958. Check if Move is Legal](./leetcode/1958-CheckIfMoveIsLegal.go)   
 [1964. Find the Longest Valid Obstacle Course at Each Position](./leetcode/1964-FindTheLongestValidObstacleCourseAtEachPosition.go)   
