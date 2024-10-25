@@ -1438,6 +1438,7 @@
 [1678. Goal Parser Interpretation](./leetcode/1678-GoalParserInterpretation.go)   
 [1682. Longest Palindromic Subsequence II](./leetcode/1682-LongestPalindromicSubsequenceII.go)   
 [1684. Count the Number of Consistent Strings](./leetcode/1684-CountTheNumberOfConsistentStrings.go)   
+[1689. Partitioning Into Minimum Number Of Deci-Binary Numbers](./leetcode/1689-PartitioningIntoMinimumNumberOfDeciBinaryNumbers.go)   
 [1694. Reformat Phone Number](./leetcode/1694-ReformatPhoneNumber.go)   
 [1698. Number of Distinct Substrings in a String](./leetcode/1698-NumberOfDistinctSubstringsInAString.go)   
 [1702. Maximum Binary String After Change](./leetcode/1702-MaximumBinaryStringAfterChange.go)   
