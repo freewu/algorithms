@@ -1084,6 +1084,7 @@
 [3075. Maximize Happiness of Selected Children](./leetcode/3075-MaximizeHappinessOfSelectedChildren.go)   
 [3086. Minimum Moves to Pick K Ones](./leetcode/3086-MinimumMovesToPickKOnes.go)   
 [3095. Shortest Subarray With OR at Least K I](./leetcode/3095-ShortestSubarrayWithORAtLeastKI.go)   
+[3097. Shortest Subarray With OR at Least K II](./leetcode/3097-ShortestSubarrayWithORAtLeastKII.go)   
 [3096. Minimum Levels to Gain More Points](./leetcode/3096-MinimumLevelsToGainMorePoints.go)   
 [3098. Find the Sum of Subsequence Powers](./leetcode/3098-FindTheSumOfSubsequencePowers.go)   
 [3101. Count Alternating Subarrays](./leetcode/3101-CountAlternatingSubarrays.go)   
