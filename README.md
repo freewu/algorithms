@@ -1988,6 +1988,7 @@
 [2709. Greatest Common Divisor Traversal](./leetcode/2709-GreatestCommonDivisorTraversal.go)   
 [2773. Height of Special Binary Tree](./leetcode/2773-HeightOfSpecialBinaryTree.go)   
 [2791. Count Paths That Can Form a Palindrome in a Tree](./leetcode/2791-CountPathsThatCanFormAPalindromeInATree.go)   
+[2792. Count Nodes That Are Great Enough](./leetcode/2792-CountNodesThatAreGreatEnough.go)   
 [2846. Minimum Edge Weight Equilibrium Queries in a Tree](./leetcode/2846-MinimumEdgeWeightEquilibriumQueriesInATree.go)   
 [2867. Count Valid Paths in a Tree](./leetcode/2867-CountValidPathsInATree.go)   
 [2973. Find Number of Coins to Place in Tree Nodes](./leetcode/2973-FindNumberOfCoinsToPlaceInTreeNodes.go)   
