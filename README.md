@@ -901,6 +901,7 @@
 [2044. Count Number of Maximum Bitwise-OR Subsets](./leetcode/2044-CountNumberOfMaximumBitwiseORSubsets.go)   
 [2053. Kth Distinct String in an Array](./leetcode/2053-KthDistinctStringInAnArray.go)   
 [2056. Number of Valid Move Combinations On Chessboard](./leetcode/2056-NumberOfValidMoveCombinationsOnChessboard.go)   
+[2061. Number of Spaces Cleaning Robot Cleaned](./leetcode/2061-NumberOfSpacesCleaningRobotCleaned.go)   
 [2071. Maximum Number of Tasks You Can Assign](./leetcode/2071-MaximumNumberOfTasksYouCanAssign.go)   
 [2073. Time Needed to Buy Tickets](./leetcode/2073-TimeNeededToBuyTickets.go)   
 [2079. Watering Plants](./leetcode/2079-WateringPlants.go)   
