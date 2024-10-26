@@ -810,6 +810,7 @@
 [1620. Coordinate With Maximum Network Quality](./leetcode/1620-CoordinateWithMaximumNetworkQuality.go)   
 [1626. Best Team With No Conflicts](./leetcode/1626-BestTeamWithNoConflicts.go)   
 [1627. Graph Connectivity With Threshold](./leetcode/1627-GraphConnectivityWithThreshold.go)   
+[1629. Slowest Key](./leetcode/1629-SlowestKey.go)   
 [1631. Path With Minimum Effort](./leetcode/1631-PathWithMinimumEffort.go)   
 [1636. Sort Array by Increasing Frequency](./leetcode/1636-SortArrayByIncreasingFrequency.go)   
 [1639. Number of Ways to Form a Target String Given a Dictionary](./leetcode/1639-NumberOfWaysToFormATargetStringGivenADictionary.go)   
