@@ -2001,6 +2001,7 @@
 [2792. Count Nodes That Are Great Enough](./leetcode/2792-CountNodesThatAreGreatEnough.go)   
 [2846. Minimum Edge Weight Equilibrium Queries in a Tree](./leetcode/2846-MinimumEdgeWeightEquilibriumQueriesInATree.go)   
 [2867. Count Valid Paths in a Tree](./leetcode/2867-CountValidPathsInATree.go)   
+[2925. Maximum Score After Applying Operations on a Tree](./leetcode/2925-MaximumScoreAfterApplyingOperationsOnATree.go)   
 [2973. Find Number of Coins to Place in Tree Nodes](./leetcode/2973-FindNumberOfCoinsToPlaceInTreeNodes.go)   
 [3313. Find the Last Marked Nodes in Tree](./leetcode/3313-FindTheLastMarkedNodesInTree.go)   
 
