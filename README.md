@@ -1778,6 +1778,7 @@
 [1922. Count Good Numbers](./leetcode/1922-CountGoodNumbers.go)   
 [1924. Erect the Fence II](./leetcode/1924-ErectTheFenceII.go)   
 [1956. Minimum Time For K Virus Variants to Spread](./leetcode/1956-MinimumTimeForKVirusVariantsToSpread.go)   
+[1999. Smallest Greater Multiple Made of Two Digits](./leetcode/1999-SmallestGreaterMultipleMadeOfTwoDigits.go)   
 [2048. Next Greater Numerically Balanced Number](./leetcode/2048-NextGreaterNumericallyBalancedNumber.go)   
 [2081. Sum of k-Mirror Numbers](./leetcode/2081-SumOfKMirrorNumbers.go)   
 [2101. Detonate the Maximum Bombs](./leetcode/2101-DetonateTheMaximumBombs.go)   
