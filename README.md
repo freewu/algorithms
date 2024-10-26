@@ -891,6 +891,7 @@
 [1975. Maximum Matrix Sum](./leetcode/1975-MaximumMatrixSum.go)   
 [1979. Find Greatest Common Divisor of Array](./leetcode/1979-FindGreatestCommonDivisorOfArray.go)   
 [1981. Minimize the Difference Between Target and Chosen Elements](./leetcode/1981-MinimizeTheDifferenceBetweenTargetAndChosenElements.go)   
+[1989. Maximum Number of People That Can Be Caught in Tag](./leetcode/1989-MaximumNumberOfPeopleThatCanBeCaughtInTag.go)   
 [1991. Find the Middle Index in Array](./leetcode/1991-FindTheMiddleIndexInArray.go)   
 [1992. Find All Groups of Farmland](./leetcode/1992-FindAllGroupsOfFarmland.go)   
 [1997. First Day Where You Have Been in All the Rooms](./leetcode/1997-FirstDayWhereYouHaveBeenInAllTheRooms.go)   
