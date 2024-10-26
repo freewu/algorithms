@@ -1437,6 +1437,7 @@
 [1614. Maximum Nesting Depth of the Parentheses](./leetcode/1614-MaximumNestingDepthOfTheParentheses.go)   
 [1616. Split Two Strings to Make Palindrome](./leetcode/1616-SplitTwoStringsToMakePalindrome.go)   
 [1618. Maximum Font to Fit a Sentence in a Screen](./leetcode/1618-MaximumFontToFitASentenceInAScreen.go)   
+[1624. Largest Substring Between Two Equal Characters](./leetcode/1624-LargestSubstringBetweenTwoEqualCharacters.go)   
 [1653. Minimum Deletions to Make String Balanced](./leetcode/1653-MinimumDeletionsToMakeStringBalanced.go)   
 [1657. Determine if Two Strings Are Close](./leetcode/1657-DetermineIfTwoStringsAreClose.go)   
 [1668. Maximum Repeating Substring](./leetcode/1668-MaximumRepeatingSubstring.go)   
