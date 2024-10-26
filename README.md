@@ -1786,6 +1786,7 @@
 [2457. Minimum Addition to Make Integer Beautiful](./leetcode/2457-MinimumAdditionToMakeIntegerBeautiful.go)   
 [2469. Convert the Temperature](./leetcode/2469-ConvertTheTemperature.go)   
 [2485. Find the Pivot Integer](./leetcode/2485-FindThePivotInteger.go)   
+[2525. Categorize Box According to Criteria](./leetcode/2525-CategorizeBoxAccordingToCriteria.go)   
 [2578. Split With Minimum Sum](./leetcode/2578-SplitWithMinimumSum.go)   
 [2582. Pass the Pillow](./leetcode/2582-PassThePillowd.go)   
 [2739. Total Distance Traveled](./leetcode/2739-TotalDistanceTraveled.go)   
