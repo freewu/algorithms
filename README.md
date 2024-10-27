@@ -1147,6 +1147,7 @@
 [3269. Constructing Two Increasing Arrays](./leetcode/3269-ConstructingTwoIncreasingArrays.go)   
 [3279. Maximum Total Area Occupied by Pistons](./leetcode/3279-MaximumTotalAreaOccupiedByPistons.go)   
 [3286. Find a Safe Walk Through a Grid](./leetcode/3286-FindASafeWalkThroughAGrid.go)   
+[3309. Maximum Possible Number by Binary Concatenation](./leetcode/3309-MaximumPossibleNumberByBinaryConcatenation.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
