@@ -822,6 +822,7 @@
 [1648. Sell Diminishing-Valued Colored Balls](./leetcode/1648-SellDiminishingValuedColoredBalls.go)   
 [1652. Defuse the Bomb](./leetcode/1652-DefuseTheBomb.go)   
 [1654. Minimum Jumps to Reach Home](./leetcode/1654-MinimumJumpsToReachHome.go)   
+[1655. Distribute Repeating Integers](./leetcode/1655-DistributeRepeatingIntegers.go)   
 [1658. Minimum Operations to Reduce X to Zero](./leetcode/1658-MinimumOperationsToReduceXToZero.go)   
 [1672. Richest Customer Wealth](./leetcode/1672-RichestCustomerWealth.go)   
 [1673. Find the Most Competitive Subsequence](./leetcode/1673-FindTheMostCompetitiveSubsequence.go)   
