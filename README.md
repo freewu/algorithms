@@ -814,6 +814,7 @@
 [1630. Arithmetic Subarrays](./leetcode/1630-ArithmeticSubarrays.go)   
 [1631. Path With Minimum Effort](./leetcode/1631-PathWithMinimumEffort.go)   
 [1636. Sort Array by Increasing Frequency](./leetcode/1636-SortArrayByIncreasingFrequency.go)   
+[1637. Widest Vertical Area Between Two Points Containing No Points](./leetcode/1637-WidestVerticalAreaBetweenTwoPointsContainingNoPoints.go)   
 [1639. Number of Ways to Form a Target String Given a Dictionary](./leetcode/1639-NumberOfWaysToFormATargetStringGivenADictionary.go)   
 [1640. Check Array Formation Through Concatenation](./leetcode/1640-CheckArrayFormationThroughConcatenation.go)   
 [1642. Furthest Building You Can Reach](./leetcode/1642-FurthestBuildingYouCanReach.go)   
