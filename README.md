@@ -1060,6 +1060,7 @@
 [2923. Find Champion I](./leetcode/2923-FindChampionI.go)   
 [2924. Find Champion II](./leetcode/2924-FindChampionII.go)   
 [2931. Maximum Spending After Buying Items](./leetcode/2931-MaximumSpendingAfterBuyingItems.go)   
+[2935. Maximum Strong Pair XOR II](./leetcode/2935-MaximumStrongPairXORII.go)   
 [2940. Find Building Where Alice and Bob Can Meet](./leetcode/2940-FindBuildingWhereAliceAndBobCanMeet.go)   
 [2943. Maximize Area of Square Hole in Grid](./leetcode/2943-MaximizeAreaOfSquareHoleInGrid.go)   
 [2946. Matrix Similarity After Cyclic Shifts](./leetcode/2946-MatrixSimilarityAfterCyclicShifts.go)   
