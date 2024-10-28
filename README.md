@@ -1049,6 +1049,7 @@
 [2865. Beautiful Towers I](./leetcode/2865-BeautifulTowersI.go)   
 [2873. Maximum Value of an Ordered Triplet I](./leetcode/2873-MaximumValueOfAnOrderedTripletI.go)   
 [2874. Maximum Value of an Ordered Triplet II](./leetcode/2874-MaximumValueOfAnOrderedTripletII.go)   
+[2895. Minimum Processing Time](./leetcode/2895-MinimumProcessingTime.go)   
 [2903. Find Indices With Index and Value Difference I](./leetcode/2903-FindIndicesWithIndexAndValueDifferenceI.go)   
 [2906. Construct Product Matrix](./leetcode/2906-ConstructProductMatrix.go)   
 [2908. Minimum Sum of Mountain Triplets I](./leetcode/2908-MinimumSumOfMountainTripletsI.go)   
