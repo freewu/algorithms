@@ -1483,6 +1483,7 @@
 [2103. Rings and Rods](./leetcode/2103-RingsAndRods.go)   
 [2129. Capitalize the Title](./leetcode/2129-CapitalizeTheTitle.go)   
 [2182. Construct String With Repeat Limit](./leetcode/2182-ConstructStringWithRepeatLimit.go)   
+[2194. Cells in a Range on an Excel Sheet](./leetcode/2194-CellsInARangeOnAnExcelSheet.go)   
 [2207. Maximize Number of Subsequences in a String](./leetcode/2207-MaximizeNumberOfSubsequencesInAString.go)   
 [2209. Minimum White Tiles After Covering With Carpets](./leetcode/2209-MinimumWhiteTilesAfterCoveringWithCarpets.go)   
 [2259. Remove Digit From Number to Maximize Result](./leetcode/2259-RemoveDigitFromNumberToMaximizeResult.go)   
