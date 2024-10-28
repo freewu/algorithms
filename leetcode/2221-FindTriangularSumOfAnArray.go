@@ -44,6 +44,17 @@ func triangularSum(nums []int) int {
     return nums[0]
 }
 
+func triangularSum1(nums []int) int {
+    n := len(nums)
+    for n != 1 {
+        for i := 0 ;i < n - 1; i++ {
+            nums[i] = (nums[i] + nums[i + 1]) % 10
+        }
+        n--
+    }
+    return nums[0]
+}
+
 func main() {
     // Example 1:
     // <img src="https://assets.leetcode.com/uploads/2022/02/22/ex1drawio.png" />
@@ -61,4 +72,9 @@ func main() {
 
     fmt.Println(triangularSum([]int{9,9,9,9,9,9,9,9,9})) // 4
     fmt.Println(triangularSum([]int{1,1,1,1,1,1,1,1,1})) // 6
+
+    fmt.Println(triangularSum1([]int{1,2,3,4,5})) // 8
+    fmt.Println(triangularSum1([]int{5})) // 5
+    fmt.Println(triangularSum1([]int{9,9,9,9,9,9,9,9,9})) // 4
+    fmt.Println(triangularSum1([]int{1,1,1,1,1,1,1,1,1})) // 6
 }
