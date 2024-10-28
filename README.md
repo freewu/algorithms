@@ -2152,6 +2152,8 @@
 [3133. Minimum Array End](./leetcode/3133-MinimumArrayEnd.go)   
 [3141. Maximum Hamming Distances](./leetcode/3141-MaximumHammingDistances.go)   
 [3199. Count Triplets with Even XOR Set Bits I](./leetcode/3199-CountTripletsWithEvenXORSetBitsI.go)   
+[3211. Generate Binary Strings Without Adjacent Zeros](./leetcode/3211-GenerateBinaryStringsWithoutAdjacentZeros.go)   
+
 
 # Design
 [146. LRU Cache](./leetcode/146-LRUCache.go)   
