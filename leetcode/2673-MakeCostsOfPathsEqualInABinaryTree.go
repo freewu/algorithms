@@ -36,71 +36,50 @@ package main
 
 import "fmt"
 
-type TreeNode struct {
-	Val int
-	Left *TreeNode
-	Right *TreeNode
-}
-
 func minIncrements(n int, cost []int) int {
-    max := func (a, b int) int {
-        if a > b {
-            return a
-        }
-        return b
-    }
-    min := func (a, b int) int {
-        if a > b {
-            return b
-        }
-        return a
-    }
-    var ans int
-    // 满二叉树 路径结果一半
-    var sums []int = make([]int, n / 2)
+    min := func (x, y int) int { if x < y { return x; }; return y; }
+    max := func (x, y int) int { if x > y { return x; }; return y; }
+    res, sums := 0, make([]int, n / 2) // 满二叉树 路径结果一半
     for i := n - 1; i > 1; i -= 2 {
-        left_sum, right_sum := cost[i - 1], cost[i]
+        leftSum, rightSum := cost[i - 1], cost[i]
         if i < len(sums) {
-            left_sum += sums[i - 1]
-            right_sum += sums[i]
+            leftSum += sums[i - 1]
+            rightSum += sums[i]
         }
-        sums[i / 2 - 1] = max(left_sum, right_sum)
-        ans += sums[i / 2 - 1] - min(left_sum, right_sum)
-        //fmt.Println(sums)
+        sums[i / 2 - 1] = max(leftSum, rightSum)
+        res += sums[i / 2 - 1] - min(leftSum, rightSum)
     }
-    return ans
+    return res
 }
 
 func minIncrements1(n int, cost []int) int {
-    var ans int 
-    // 累加路径和
-    for i := 0; i < (n-1)/2; i++ {
-        cost[2*i+1] += cost[i]
-        cost[2*i+2] += cost[i]
+    res := 0
+    for i := 0; i < (n - 1) / 2; i++ { // 累加路径和
+        cost[2 * i + 1] += cost[i]
+        cost[2 * i + 2] += cost[i]
     }
-    // 反向构建，根为孩子中最大值
-    for i := (n-3)/2; i >= 0; i-- {
-        cost[i] = max(cost[2*i+1], cost[2*i+2])
+    max := func (x, y int) int { if x > y { return x; }; return y; }
+    for i := (n - 3)/2; i >= 0; i-- { // 反向构建，根为孩子中最大值
+        cost[i] = max(cost[2 * i + 1], cost[2 * i + 2])
     }
-    // 计算当前节点和父亲节点的差值就是答案,画图比较清晰
-    for i := 1; i < n; i++ {
-        ans += cost[(i-1)/2] -cost[i]
+    for i := 1; i < n; i++ { // 计算当前节点和父亲节点的差值就是答案,
+        res += cost[(i-1)/2] - cost[i]
     }
-    return ans
+    return res
 }
 
 // best solution
 func minIncrements2(n int, cost []int) int {
-	res := 0
-	for i := n / 2; i >= 1; i-- { // 从最后一个非叶节点开始算
-		left, right := cost[i*2-1], cost[i*2]
-		if left > right { // 保证 left <= right
-			left, right = right, left
-		}
-		res += right - left // 两个子节点变成一样的
-		cost[i-1] += right // 累加路径和
-	}
-	return res
+    res := 0
+    for i := n / 2; i >= 1; i-- { // 从最后一个非叶节点开始算
+        left, right := cost[i*2-1], cost[i*2]
+        if left > right { // 保证 left <= right
+            left, right = right, left
+        }
+        res += right - left // 两个子节点变成一样的
+        cost[i-1] += right // 累加路径和
+    }
+    return res
 }
 
 func main() {

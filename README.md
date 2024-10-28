@@ -2031,6 +2031,7 @@
 [2925. Maximum Score After Applying Operations on a Tree](./leetcode/2925-MaximumScoreAfterApplyingOperationsOnATree.go)   
 [2973. Find Number of Coins to Place in Tree Nodes](./leetcode/2973-FindNumberOfCoinsToPlaceInTreeNodes.go)   
 [3313. Find the Last Marked Nodes in Tree](./leetcode/3313-FindTheLastMarkedNodesInTree.go)   
+[3319. K-th Largest Perfect Subtree Size in Binary Tree](./leetcode/3319-KthLargestPerfectSubtreeSizeInBinaryTree.go)   
 
 # Graph
 [133. Clone Graph](./leetcode/133-CloneGraph.go)   
