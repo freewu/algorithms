@@ -2029,6 +2029,7 @@
 [2673. Make Costs of Paths Equal in a Binary Tree](./leetcode/2673-MakeCostsOfPathsEqualInABinaryTree.go)   
 [2689. Extract Kth Character From The Rope Tree](./leetcode/2689-ExtractKthCharacterFromTheRopeTree.go)   
 [2709. Greatest Common Divisor Traversal](./leetcode/2709-GreatestCommonDivisorTraversal.go)   
+[2764. Is Array a Preorder of Some ‌Binary Tree](./leetcode/2764-IsArrayAPreorderOfSomeBinaryTree.go)   
 [2773. Height of Special Binary Tree](./leetcode/2773-HeightOfSpecialBinaryTree.go)   
 [2791. Count Paths That Can Form a Palindrome in a Tree](./leetcode/2791-CountPathsThatCanFormAPalindromeInATree.go)   
 [2792. Count Nodes That Are Great Enough](./leetcode/2792-CountNodesThatAreGreatEnough.go)   
