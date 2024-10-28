@@ -926,6 +926,7 @@
 [2108. Find First Palindromic String in the Array](./leetcode/2108-FindFirstPalindromicStringInTheArray.go)   
 [2120. Execution of All Suffix Instructions Staying in a Grid](./leetcode/2120-ExecutionOfAllSuffixInstructionsStayingInAGrid.go)   
 [2132. Stamping the Grid](./leetcode/2132-StampingTheGrid.go)   
+[2133. Check if Every Row and Column Contains All Numbers](./leetcode/2133-CheckIfEveryRowAndColumnContainsAllNumbers.go)   
 [2134. Minimum Swaps to Group All 1's Together II](./leetcode/2134-MinimumSwapsToGroupAllOneTogetherII.go)   
 [2136. Earliest Possible Day of Full Bloom](./leetcode/2136-EarliestPossibleDayOfFullBloom.go)   
 [2140. Solving Questions With Brainpower](./leetcode/2140-SolvingQuestionsWithBrainpower.go)   
