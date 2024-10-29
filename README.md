@@ -1536,7 +1536,6 @@
 [3174. Clear Digits](./leetcode/3174-ClearDigits.go)   
 [3258. Count Substrings That Satisfy K-Constraint I](./leetcode/3258-CountSubstringsThatSatisfyKConstraintI.go)   
 [3261. Count Substrings That Satisfy K-Constraint II](./leetcode/3261-CountSubstringsThatSatisfyKConstraintII.go)   
-3298. Count Substrings That Can Be Rearranged to Contain a String II
 [3297. Count Substrings That Can Be Rearranged to Contain a String I](./leetcode/3297-CountSubstringsThatCanBeRearrangedToContainAStringI.go)   
 [3298. Count Substrings That Can Be Rearranged to Contain a String II](./leetcode/3298-CountSubstringsThatCanBeRearrangedToContainAStringII.go)   
 [3305. Count of Substrings Containing Every Vowel and K Consonants I](./leetcode/3305-CountOfSubstringsContainingEveryVowelAndKConsonantsI.go)   
@@ -1790,6 +1789,7 @@
 [1578. Minimum Time to Make Rope Colorful](./leetcode/1578-MinimumTimeToMakeRopeColorful.go)   
 [1610. Maximum Number of Visible Points](./leetcode/1610-MaximumNumberOfVisiblePoints.go)   
 [1621. Number of Sets of K Non-Overlapping Line Segments](./leetcode/1621-NumberOfSetsOfKNonOverlappingLineSegments.go)   
+[1688. Count of Matches in Tournament](./leetcode/1688-CountOfMatchesInTournament.go)   
 [1701. Average Waiting Time](./leetcode/1701-AverageWaitingTime.go)   
 [1739. Building Boxes](./leetcode/1739-BuildingBoxes.go)   
 [1780. Check if Number is a Sum of Powers of Three](./leetcode/1780-CheckIfNumberIsASumOfPowersOfThree.go)   
