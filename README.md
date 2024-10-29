@@ -827,6 +827,7 @@
 [1671. Minimum Number of Removals to Make Mountain Array](./leetcode/1671-MinimumNumberOfRemovalsToMakeMountainArray.go)   
 [1672. Richest Customer Wealth](./leetcode/1672-RichestCustomerWealth.go)   
 [1673. Find the Most Competitive Subsequence](./leetcode/1673-FindTheMostCompetitiveSubsequence.go)   
+[1674. Minimum Moves to Make Array Complementary](./leetcode/1674-MinimumMovesToMakeArrayComplementary.go)   
 [1679. Max Number of K-Sum Pairs](./leetcode/1679-MaxNumberOfKSumPairs.go)   
 [1686. Stone Game VI](./leetcode/1686-StoneGameVI.go)   
 [1690. Stone Game VII](./leetcode/1690-StoneGameVII.go)   
