@@ -1542,6 +1542,7 @@
 [3146. Permutation Difference between Two Strings](./leetcode/3146-PermutationDifferenceBetweenTwoStrings.go)   
 [3167. Better Compression of String](./leetcode/3167-BetterCompressionOfString.go)   
 [3174. Clear Digits](./leetcode/3174-ClearDigits.go)   
+[3216. Lexicographically Smallest String After a Swap](./leetcode/3216-LexicographicallySmallestStringAfterASwap.go)   
 [3258. Count Substrings That Satisfy K-Constraint I](./leetcode/3258-CountSubstringsThatSatisfyKConstraintI.go)   
 [3261. Count Substrings That Satisfy K-Constraint II](./leetcode/3261-CountSubstringsThatSatisfyKConstraintII.go)   
 [3297. Count Substrings That Can Be Rearranged to Contain a String I](./leetcode/3297-CountSubstringsThatCanBeRearrangedToContainAStringI.go)   
