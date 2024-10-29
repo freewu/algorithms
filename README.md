@@ -830,6 +830,7 @@
 [1674. Minimum Moves to Make Array Complementary](./leetcode/1674-MinimumMovesToMakeArrayComplementary.go)   
 [1675. Minimize Deviation in Array](./leetcode/1675-MinimizeDeviationInArray.go)   
 [1679. Max Number of K-Sum Pairs](./leetcode/1679-MaxNumberOfKSumPairs.go)   
+[1681. Minimum Incompatibility](./leetcode/1681-MinimumIncompatibility.go)   
 [1685. Sum of Absolute Differences in a Sorted Array](./leetcode/1685-SumOfAbsoluteDifferencesInASortedArray.go)   
 [1686. Stone Game VI](./leetcode/1686-StoneGameVI.go)   
 [1690. Stone Game VII](./leetcode/1690-StoneGameVII.go)   
