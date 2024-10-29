@@ -1492,6 +1492,7 @@
 [2024. Maximize the Confusion of an Exam](./leetcode/2024-MaximizeTheConfusionOfAnExam.go)   
 [2052. Minimum Cost to Separate Sentence Into Rows](./leetcode/2052-MinimumCostToSeparateSentenceIntoRows.go)   
 [2055. Plates Between Candles](./leetcode/2055-PlatesBetweenCandles.go)   
+[2067. Number of Equal Count Substrings](./leetcode/2067-NumberOfEqualCountSubstrings.go)   
 [2075. Decode the Slanted Ciphertext](./leetcode/2075-DecodeTheSlantedCiphertext.go)   
 [2103. Rings and Rods](./leetcode/2103-RingsAndRods.go)   
 [2129. Capitalize the Title](./leetcode/2129-CapitalizeTheTitle.go)   
