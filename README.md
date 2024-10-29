@@ -1792,6 +1792,7 @@
 [1578. Minimum Time to Make Rope Colorful](./leetcode/1578-MinimumTimeToMakeRopeColorful.go)   
 [1610. Maximum Number of Visible Points](./leetcode/1610-MaximumNumberOfVisiblePoints.go)   
 [1621. Number of Sets of K Non-Overlapping Line Segments](./leetcode/1621-NumberOfSetsOfKNonOverlappingLineSegments.go)   
+[1680. Concatenation of Consecutive Binary Numbers](./leetcode/1680-ConcatenationOfConsecutiveBinaryNumbers.go)   
 [1688. Count of Matches in Tournament](./leetcode/1688-CountOfMatchesInTournament.go)   
 [1701. Average Waiting Time](./leetcode/1701-AverageWaitingTime.go)   
 [1739. Building Boxes](./leetcode/1739-BuildingBoxes.go)   
