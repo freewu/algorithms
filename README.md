@@ -833,6 +833,7 @@
 [1681. Minimum Incompatibility](./leetcode/1681-MinimumIncompatibility.go)   
 [1685. Sum of Absolute Differences in a Sorted Array](./leetcode/1685-SumOfAbsoluteDifferencesInASortedArray.go)   
 [1686. Stone Game VI](./leetcode/1686-StoneGameVI.go)   
+[1687. Delivering Boxes from Storage to Ports](./leetcode/1687-DeliveringBoxesFromStorageToPorts.go)   
 [1690. Stone Game VII](./leetcode/1690-StoneGameVII.go)   
 [1691. Maximum Height by Stacking Cuboids](./leetcode/1691-MaximumHeightByStackingCuboids.go)   
 [1695. Maximum Erasure Value](./leetcode/1695-MaximumErasureValue.go)   
