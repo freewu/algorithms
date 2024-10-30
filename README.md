@@ -824,6 +824,7 @@
 [1654. Minimum Jumps to Reach Home](./leetcode/1654-MinimumJumpsToReachHome.go)   
 [1655. Distribute Repeating Integers](./leetcode/1655-DistributeRepeatingIntegers.go)   
 [1658. Minimum Operations to Reduce X to Zero](./leetcode/1658-MinimumOperationsToReduceXToZero.go)   
+[1662. Check If Two String Arrays are Equivalent](./leetcode/1662-CheckIfTwoStringArraysAreEquivalent.go)   
 [1671. Minimum Number of Removals to Make Mountain Array](./leetcode/1671-MinimumNumberOfRemovalsToMakeMountainArray.go)   
 [1672. Richest Customer Wealth](./leetcode/1672-RichestCustomerWealth.go)   
 [1673. Find the Most Competitive Subsequence](./leetcode/1673-FindTheMostCompetitiveSubsequence.go)   
