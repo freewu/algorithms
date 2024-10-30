@@ -91,7 +91,6 @@ import "container/heap"
 type MinHeap struct {
     arr []int
 }
-
 func (m *MinHeap) Len() int { return len(m.arr) }
 func (m *MinHeap) Less(i, j int) bool { return m.arr[i] < m.arr[j] }
 func (m *MinHeap) Swap(i, j int) { m.arr[i], m.arr[j] = m.arr[j], m.arr[i] }
@@ -102,47 +101,43 @@ func (m *MinHeap) Pop() interface{} {
     return top
 }
 
+type Video struct {
+    content string
+    like, dislike, views int
+}
+
 // 用堆保持当前可用的id，hashmap存video对应关系即可
-type VideoSharingPlatform struct { 
+type VideoSharingPlatform struct {
     g *MinHeap
-    v map[int] *struct {
-        content              string
-        like, dislike, views int
-    }
+    v map[int]*Video
 }
 
 func Constructor() VideoSharingPlatform {
-    no := make([]int, 10001)
+    no := make([]int, 1e5 + 1)
     for i := 0; i < len(no); i++ {
         no[i] = i
     }
     h := &MinHeap{ arr: no }
     heap.Init(h)
-    return VideoSharingPlatform{g: h,v: map[int]*struct {
-        content              string
-        like, dislike, views int
-    }{}}
+    return VideoSharingPlatform{ g: h, v: make(map[int]*Video), }
 }
 
 func (p *VideoSharingPlatform) Upload(video string) int {
     videoId:= heap.Pop(p.g).(int)
-    p.v[videoId] = &struct {
-        content              string
-        like, dislike, views int
-    }{ content: video, like: 0, dislike:0, views: 0 }
+    p.v[videoId] = &Video{ content: video, like: 0, dislike: 0, views: 0 }
     return videoId
 }
 
 func (p *VideoSharingPlatform) Remove(videoId int) {
-    if p.v[videoId] == nil { return  }
+    if p.v[videoId] == nil { return }
     delete(p.v, videoId)
     heap.Push(p.g, videoId)
 }
 
 func (p *VideoSharingPlatform) Watch(videoId int, startMinute int, endMinute int) string {
     t := p.v[videoId]
-    if t == nil { return "-1" }
-    if endMinute > len(t.content) - 1{
+    if t == nil{ return "-1" }
+    if endMinute > len(t.content) - 1 {
         endMinute = len(t.content) - 1
     }
     p.v[videoId].views++
@@ -160,8 +155,8 @@ func (p *VideoSharingPlatform) Dislike(videoId int) {
 }
 
 func (p *VideoSharingPlatform) GetLikesAndDislikes(videoId int) []int {
-    if p.v[videoId] == nil{ return []int{ -1 } }
-    return []int{p.v[videoId].like, p.v[videoId].dislike}
+    if p.v[videoId] == nil { return []int{ -1 } }
+    return []int{ p.v[videoId].like, p.v[videoId].dislike }
 }
 
 func (p *VideoSharingPlatform) GetViews(videoId int) int {
