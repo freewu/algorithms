@@ -826,6 +826,7 @@
 [1658. Minimum Operations to Reduce X to Zero](./leetcode/1658-MinimumOperationsToReduceXToZero.go)   
 [1662. Check If Two String Arrays are Equivalent](./leetcode/1662-CheckIfTwoStringArraysAreEquivalent.go)   
 [1664. Ways to Make a Fair Array](./leetcode/1664-WaysToMakeAFairArray.go)   
+[1665. Minimum Initial Energy to Finish Tasks](./leetcode/1665-MinimumInitialEnergyToFinishTasks.go)   
 [1671. Minimum Number of Removals to Make Mountain Array](./leetcode/1671-MinimumNumberOfRemovalsToMakeMountainArray.go)   
 [1672. Richest Customer Wealth](./leetcode/1672-RichestCustomerWealth.go)   
 [1673. Find the Most Competitive Subsequence](./leetcode/1673-FindTheMostCompetitiveSubsequence.go)   
