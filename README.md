@@ -2177,7 +2177,6 @@
 [3199. Count Triplets with Even XOR Set Bits I](./leetcode/3199-CountTripletsWithEvenXORSetBitsI.go)   
 [3211. Generate Binary Strings Without Adjacent Zeros](./leetcode/3211-GenerateBinaryStringsWithoutAdjacentZeros.go)   
 
-
 # Design
 [146. LRU Cache](./leetcode/146-LRUCache.go)   
 [155. Min Stack](./leetcode/155-MinStack.go)   
@@ -2299,6 +2298,7 @@
 [2296. Design a Text Editor](./leetcode/2296-DesignATextEditor.go)   
 [2336. Smallest Number in Infinite Set](./leetcode/2336-SmallestNumberInInfiniteSet.go)   
 [2349. Design a Number Container System](./leetcode/2349-DesignANumberContainerSystem.go)   
+[2408. Design SQL](./leetcode/2408-DesignSQL.go)   
 [2590. Design a Todo List](./leetcode/2590-DesignATodoList.go)   
 [2642. Design Graph With Shortest Path Calculator](./leetcode/2642-DesignGraphWithShortestPathCalculator.go)   
 [2671. Frequency Tracker](./leetcode/2671-FrequencyTracker.go)   
