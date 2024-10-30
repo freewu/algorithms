@@ -2293,6 +2293,7 @@
 [2166. Design Bitset](./leetcode/2166-DesignBitset.go)   
 [2227. Encrypt and Decrypt Strings](./leetcode/2227-EncryptAndDecryptStrings.go)   
 [2241. Design an ATM Machine](./leetcode/2241-DesignAnATMMachine.go)   
+[2254. Design Video Sharing Platform](./leetcode/2254-DesignVideoSharingPlatform.go)   
 [2276. Count Integers in Intervals](./leetcode/2276-CountIntegersInIntervals.go)   
 [2286. Booking Concert Tickets in Groups](./leetcode/2286-BookingConcertTicketsInGroups.go)   
 [2296. Design a Text Editor](./leetcode/2296-DesignATextEditor.go)   
