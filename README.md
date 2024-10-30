@@ -2289,6 +2289,7 @@
 [2102. Sequentially Ordinal Rank Tracker](./leetcode/2102-SequentiallyOrdinalRankTracker.go)   
 [2166. Design Bitset](./leetcode/2166-DesignBitset.go)   
 [2227. Encrypt and Decrypt Strings](./leetcode/2227-EncryptAndDecryptStrings.go)   
+[2241. Design an ATM Machine](./leetcode/2241-DesignAnATMMachine.go)   
 [2286. Booking Concert Tickets in Groups](./leetcode/2286-BookingConcertTicketsInGroups.go)   
 [2336. Smallest Number in Infinite Set](./leetcode/2336-SmallestNumberInInfiniteSet.go)   
 [2349. Design a Number Container System](./leetcode/2349-DesignANumberContainerSystem.go)   
