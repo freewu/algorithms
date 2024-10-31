@@ -2308,6 +2308,7 @@
 [2296. Design a Text Editor](./leetcode/2296-DesignATextEditor.go)   
 [2336. Smallest Number in Infinite Set](./leetcode/2336-SmallestNumberInInfiniteSet.go)   
 [2349. Design a Number Container System](./leetcode/2349-DesignANumberContainerSystem.go)   
+[2353. Design a Food Rating System](./leetcode/2353-DesignAFoodRatingSystem.go)   
 [2408. Design SQL](./leetcode/2408-DesignSQL.go)   
 [2590. Design a Todo List](./leetcode/2590-DesignATodoList.go)   
 [2642. Design Graph With Shortest Path Calculator](./leetcode/2642-DesignGraphWithShortestPathCalculator.go)   
