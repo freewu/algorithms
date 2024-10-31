@@ -819,6 +819,7 @@
 [1639. Number of Ways to Form a Target String Given a Dictionary](./leetcode/1639-NumberOfWaysToFormATargetStringGivenADictionary.go)   
 [1640. Check Array Formation Through Concatenation](./leetcode/1640-CheckArrayFormationThroughConcatenation.go)   
 [1642. Furthest Building You Can Reach](./leetcode/1642-FurthestBuildingYouCanReach.go)   
+[1643. Kth Smallest Instructions](./leetcode/1643-KthSmallestInstructions.go)   
 [1646. Get Maximum in Generated Array](./leetcode/1646-GetMaximumInGeneratedArray.go)   
 [1648. Sell Diminishing-Valued Colored Balls](./leetcode/1648-SellDiminishingValuedColoredBalls.go)   
 [1649. Create Sorted Array through Instructions](./leetcode/1649-CreateSortedArrayThroughInstructions.go)   
