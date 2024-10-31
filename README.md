@@ -1478,6 +1478,7 @@
 [1624. Largest Substring Between Two Equal Characters](./leetcode/1624-LargestSubstringBetweenTwoEqualCharacters.go)  
 [1625. Lexicographically Smallest String After Applying Operations](./leetcode/1625-LexicographicallySmallestStringAfterApplyingOperations.go)   
 [1638. Count Substrings That Differ by One Character](./leetcode/1638-CountSubstringsThatDifferByOneCharacter.go)   
+[1647. Minimum Deletions to Make Character Frequencies Unique](./leetcode/1647-MinimumDeletionsToMakeCharacterFrequenciesUnique.go)   
 [1653. Minimum Deletions to Make String Balanced](./leetcode/1653-MinimumDeletionsToMakeStringBalanced.go)   
 [1657. Determine if Two Strings Are Close](./leetcode/1657-DetermineIfTwoStringsAreClose.go)   
 [1663. Smallest String With A Given Numeric Value](./leetcode/1663-SmallestStringWithAGivenNumericValue.go)   
