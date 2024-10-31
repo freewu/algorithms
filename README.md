@@ -821,6 +821,7 @@
 [1642. Furthest Building You Can Reach](./leetcode/1642-FurthestBuildingYouCanReach.go)   
 [1646. Get Maximum in Generated Array](./leetcode/1646-GetMaximumInGeneratedArray.go)   
 [1648. Sell Diminishing-Valued Colored Balls](./leetcode/1648-SellDiminishingValuedColoredBalls.go)   
+[1649. Create Sorted Array through Instructions](./leetcode/1649-CreateSortedArrayThroughInstructions.go)   
 [1652. Defuse the Bomb](./leetcode/1652-DefuseTheBomb.go)   
 [1654. Minimum Jumps to Reach Home](./leetcode/1654-MinimumJumpsToReachHome.go)   
 [1655. Distribute Repeating Integers](./leetcode/1655-DistributeRepeatingIntegers.go)   
