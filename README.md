@@ -1504,6 +1504,7 @@
 [1915. Number of Wonderful Substrings](./leetcode/1915-NumberOfWonderfulSubstrings.go)   
 [1933. Check if String Is Decomposable Into Value-Equal Substrings](./leetcode/1933-CheckIfStringIsDecomposableIntoValueEqualSubstrings.go)   
 [1945. Sum of Digits of String After Convert](./leetcode/1945-SumOfDigitsOfStringAfterConvert.go)   
+[1957. Delete Characters to Make Fancy String](./leetcode/1957-DeleteCharactersToMakeFancyString.go)   
 [1963. Minimum Number of Swaps to Make the String Balanced](./leetcode/1963-MinimumNumberOfSwapsToMakeTheStringBalanced.go)   
 [2000. Reverse Prefix of Word](./leetcode/2000-ReversePrefixOfWord.go)   
 [2024. Maximize the Confusion of an Exam](./leetcode/2024-MaximizeTheConfusionOfAnExam.go)   
