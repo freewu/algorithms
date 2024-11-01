@@ -1073,6 +1073,7 @@
 [2900. Longest Unequal Adjacent Groups Subsequence I](./leetcode/2900-LongestUnequalAdjacentGroupsSubsequenceI.go)   
 [2901. Longest Unequal Adjacent Groups Subsequence II](./leetcode/2901-LongestUnequalAdjacentGroupsSubsequenceII.go)   
 [2903. Find Indices With Index and Value Difference I](./leetcode/2903-FindIndicesWithIndexAndValueDifferenceI.go)   
+[2905. Find Indices With Index and Value Difference II](./leetcode/2905-FindIndicesWithIndexAndValueDifferenceII.go)   
 [2906. Construct Product Matrix](./leetcode/2906-ConstructProductMatrix.go)   
 [2908. Minimum Sum of Mountain Triplets I](./leetcode/2908-MinimumSumOfMountainTripletsI.go)   
 [2909. Minimum Sum of Mountain Triplets II](./leetcode/2909-MinimumSumOfMountainTripletsII.go)   
