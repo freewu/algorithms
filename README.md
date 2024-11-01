@@ -965,6 +965,7 @@
 [2244. Minimum Rounds to Complete All Tasks](./leetcode/2244-MinimumRoundsToCompleteAllTasks.go)   
 [2245. Maximum Trailing Zeros in a Cornered Path](./leetcode/2245-MaximumTrailingZerosInACorneredPath.go)   
 [2248. Intersection of Multiple Arrays](./leetcode/2248-IntersectionOfMultipleArrays.go)   
+[2251. Number of Flowers in Full Bloom](./leetcode/2251-NumberOfFlowersInFullBloom.go)   
 [2257. Count Unguarded Cells in the Grid](./leetcode/2257-CountUnguardedCellsInTheGrid.go)   
 [2258. Escape the Spreading Fire](./leetcode/2258-EscapeTheSpreadingFire.go)   
 [2271. Maximum White Tiles Covered by a Carpet](./leetcode/2271-MaximumWhiteTilesCoveredByACarpet.go)   
