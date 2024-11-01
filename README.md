@@ -1191,6 +1191,7 @@
 [3309. Maximum Possible Number by Binary Concatenation](./leetcode/3309-MaximumPossibleNumberByBinaryConcatenation.go)   
 [3314. Construct the Minimum Bitwise Array I](./leetcode/3314-ConstructTheMinimumBitwiseArrayI.go)   
 [3315. Construct the Minimum Bitwise Array II](./leetcode/3315-ConstructTheMinimumBitwiseArrayII.go)   
+[3318. Find X-Sum of All K-Long Subarrays I](./leetcode/3318-FindXSumOfAllKLongSubarraysI.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
