@@ -1082,6 +1082,7 @@
 [2909. Minimum Sum of Mountain Triplets II](./leetcode/2909-MinimumSumOfMountainTripletsII.go)   
 [2917. Find the K-or of an Array](./leetcode/2917-FindTheKOrOfAnArray.go)   
 [2920. Maximum Points After Collecting Coins From All Nodes](./leetcode/2920-MaximumPointsAfterCollectingCoinsFromAllNodes.go)   
+[2921. Maximum Profitable Triplets With Increasing Prices II](./leetcode/2921-MaximumProfitableTripletsWithIncreasingPricesII.go)   
 [2923. Find Champion I](./leetcode/2923-FindChampionI.go)   
 [2924. Find Champion II](./leetcode/2924-FindChampionII.go)   
 [2931. Maximum Spending After Buying Items](./leetcode/2931-MaximumSpendingAfterBuyingItems.go)   
