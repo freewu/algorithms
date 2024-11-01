@@ -845,6 +845,7 @@
 [1695. Maximum Erasure Value](./leetcode/1695-MaximumErasureValue.go)   
 [1696. Jump Game VI](./leetcode/1696-JumpGameVI.go)   
 [1700. Number of Students Unable to Eat Lunch](./leetcode/1700-NumberOfStudentsUnableToEatLunch.go)   
+[1703. Minimum Adjacent Swaps for K Consecutive Ones](./leetcode/1703-MinimumAdjacentSwapsForKConsecutiveOnes.go)   
 [1705. Maximum Number of Eaten Apples](./leetcode/1705-MaximumNumberOfEatenApples.go)   
 [1706. Where Will the Ball Fall](./leetcode/1706-WhereWillTheBallFall.go)   
 [1707. Maximum XOR With an Element From Array](./leetcode/1707-MaximumXORWithAnElementFromArray.go)   
