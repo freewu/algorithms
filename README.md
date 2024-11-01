@@ -1582,7 +1582,8 @@
 [3298. Count Substrings That Can Be Rearranged to Contain a String II](./leetcode/3298-CountSubstringsThatCanBeRearrangedToContainAStringII.go)   
 [3305. Count of Substrings Containing Every Vowel and K Consonants I](./leetcode/3305-CountOfSubstringsContainingEveryVowelAndKConsonantsI.go)   
 [3306. Count of Substrings Containing Every Vowel and K Consonants II](./leetcode/3306-CountOfSubstringsContainingEveryVowelAndKConsonantsII.go)   
-[3330. Find the Original Typed String I](./leetcode/3330-FindTheOriginalTypedStringI.go)  
+[3330. Find the Original Typed String I](./leetcode/3330-FindTheOriginalTypedStringI.go)   
+[3333. Find the Original Typed String II](./leetcode/3333-FindTheOriginalTypedStringII.go)   
 
 # Dynamic Programming
 [276. Paint Fence](./leetcode/276-PaintFence.go)   
