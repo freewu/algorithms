@@ -847,6 +847,7 @@
 [1700. Number of Students Unable to Eat Lunch](./leetcode/1700-NumberOfStudentsUnableToEatLunch.go)   
 [1705. Maximum Number of Eaten Apples](./leetcode/1705-MaximumNumberOfEatenApples.go)   
 [1706. Where Will the Ball Fall](./leetcode/1706-WhereWillTheBallFall.go)   
+[1707. Maximum XOR With an Element From Array](./leetcode/1707-MaximumXORWithAnElementFromArray.go)   
 [1710. Maximum Units on a Truck](./leetcode/1710-MaximumUnitsOnATruck.go)   
 [1714. Sum Of Special Evenly-Spaced Elements In Array](./leetcode/1714-SumOfSpecialEvenlySpacedElementsInArray.go)   
 [1727. Largest Submatrix With Rearrangements](./leetcode/1727-LargestSubmatrixWithRearrangements.go)   
