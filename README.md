@@ -1539,6 +1539,7 @@
 [2390. Removing Stars From a String](./leetcode/2390-RemovingStarsFromAString.go)   
 [2414. Length of the Longest Alphabetical Continuous Substring](./leetcode/2414-LengthOfTheLongestAlphabeticalContinuousSubstring.go)   
 [2486. Append Characters to String to Make Subsequence](./leetcode/2486-AppendCharactersToStringToMakeSubsequence.go)   
+[2490. Circular Sentence](./leetcode/2490-CircularSentence.go)   
 [2491. Divide Players Into Teams of Equal Skill](./leetcode/2491-DividePlayersIntoTeamsOfEqualSkill.go)   
 [2516. Take K of Each Character From Left and Right](./leetcode/2516-TakeKOfEachCharacterFromLeftAndRight.go)   
 [2575. Find the Divisibility Array of a String](./leetcode/2575-FindTheDivisibilityArrayOfAString.go)   
