@@ -856,6 +856,7 @@
 [1714. Sum Of Special Evenly-Spaced Elements In Array](./leetcode/1714-SumOfSpecialEvenlySpacedElementsInArray.go)   
 [1718. Construct the Lexicographically Largest Valid Sequence](./leetcode/1718-ConstructTheLexicographicallyLargestValidSequence.go)   
 [1720. Decode XORed Array](./leetcode/1720-DecodeXORedArray.go)   
+[1723. Find Minimum Time to Finish All Jobs](./leetcode/1723-FindMinimumTimeToFinishAllJobs.go)   
 [1725. Number Of Rectangles That Can Form The Largest Square](./leetcode/1725-NumberOfRectanglesThatCanFormTheLargestSquare.go)   
 [1726. Tuple with Same Product](./leetcode/1726-TupleWithSameProduct.go)   
 [1727. Largest Submatrix With Rearrangements](./leetcode/1727-LargestSubmatrixWithRearrangements.go)   
