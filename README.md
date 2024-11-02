@@ -850,6 +850,7 @@
 [1706. Where Will the Ball Fall](./leetcode/1706-WhereWillTheBallFall.go)   
 [1707. Maximum XOR With an Element From Array](./leetcode/1707-MaximumXORWithAnElementFromArray.go)   
 [1710. Maximum Units on a Truck](./leetcode/1710-MaximumUnitsOnATruck.go)   
+[1711. Count Good Meals](./leetcode/1711-CountGoodMeals.go)   
 [1714. Sum Of Special Evenly-Spaced Elements In Array](./leetcode/1714-SumOfSpecialEvenlySpacedElementsInArray.go)   
 [1727. Largest Submatrix With Rearrangements](./leetcode/1727-LargestSubmatrixWithRearrangements.go)   
 [1730. Shortest Path to Get Food](./leetcode/1730-ShortestPathToGetFood.go)   
