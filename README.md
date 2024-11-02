@@ -857,6 +857,7 @@
 [1718. Construct the Lexicographically Largest Valid Sequence](./leetcode/1718-ConstructTheLexicographicallyLargestValidSequence.go)   
 [1720. Decode XORed Array](./leetcode/1720-DecodeXORedArray.go)   
 [1725. Number Of Rectangles That Can Form The Largest Square](./leetcode/1725-NumberOfRectanglesThatCanFormTheLargestSquare.go)   
+[1726. Tuple with Same Product](./leetcode/1726-TupleWithSameProduct.go)   
 [1727. Largest Submatrix With Rearrangements](./leetcode/1727-LargestSubmatrixWithRearrangements.go)   
 [1730. Shortest Path to Get Food](./leetcode/1730-ShortestPathToGetFood.go)   
 [1732. Find the Highest Altitude](./leetcode/1732-FindTheHighestAltitude.go)   
