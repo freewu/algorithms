@@ -855,6 +855,7 @@
 [1713. Minimum Operations to Make a Subsequence](./leetcode/1713-MinimumOperationsToMakeASubsequence.go)   
 [1714. Sum Of Special Evenly-Spaced Elements In Array](./leetcode/1714-SumOfSpecialEvenlySpacedElementsInArray.go)   
 [1718. Construct the Lexicographically Largest Valid Sequence](./leetcode/1718-ConstructTheLexicographicallyLargestValidSequence.go)   
+[1720. Decode XORed Array](./leetcode/1720-DecodeXORedArray.go)   
 [1727. Largest Submatrix With Rearrangements](./leetcode/1727-LargestSubmatrixWithRearrangements.go)   
 [1730. Shortest Path to Get Food](./leetcode/1730-ShortestPathToGetFood.go)   
 [1732. Find the Highest Altitude](./leetcode/1732-FindTheHighestAltitude.go)   
