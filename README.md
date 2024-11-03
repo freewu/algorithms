@@ -1605,7 +1605,7 @@
 [3330. Find the Original Typed String I](./leetcode/3330-FindTheOriginalTypedStringI.go)   
 [3333. Find the Original Typed String II](./leetcode/3333-FindTheOriginalTypedStringII.go)   
 [3335. Total Characters in String After Transformations I](./leetcode/3335-TotalCharactersInStringAfterTransformationsI.go)   
-
+[3337. Total Characters in String After Transformations II](./leetcode/3337-TotalCharactersInStringAfterTransformationsII.go)   
 
 # Dynamic Programming
 [276. Paint Fence](./leetcode/276-PaintFence.go)   
