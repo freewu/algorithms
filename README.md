@@ -1203,6 +1203,7 @@
 [3269. Constructing Two Increasing Arrays](./leetcode/3269-ConstructingTwoIncreasingArrays.go)   
 [3279. Maximum Total Area Occupied by Pistons](./leetcode/3279-MaximumTotalAreaOccupiedByPistons.go)   
 [3286. Find a Safe Walk Through a Grid](./leetcode/3286-FindASafeWalkThroughAGrid.go)   
+[3288. Length of the Longest Increasing Path](./leetcode/3288-LengthOfTheLongestIncreasingPath.go)   
 [3309. Maximum Possible Number by Binary Concatenation](./leetcode/3309-MaximumPossibleNumberByBinaryConcatenation.go)   
 [3314. Construct the Minimum Bitwise Array I](./leetcode/3314-ConstructTheMinimumBitwiseArrayI.go)   
 [3315. Construct the Minimum Bitwise Array II](./leetcode/3315-ConstructTheMinimumBitwiseArrayII.go)   
