@@ -2354,6 +2354,7 @@
 [2408. Design SQL](./leetcode/2408-DesignSQL.go)   
 [2424. Longest Uploaded Prefix](./leetcode/2424-LongestUploadedPrefix.go)   
 [2502. Design Memory Allocator](./leetcode/2502-DesignMemoryAllocator.go)   
+[2526. Find Consecutive Integers from a Data Stream](./leetcode/2526-FindConsecutiveIntegersFromADataStream.go)   
 [2590. Design a Todo List](./leetcode/2590-DesignATodoList.go)   
 [2642. Design Graph With Shortest Path Calculator](./leetcode/2642-DesignGraphWithShortestPathCalculator.go)   
 [2671. Frequency Tracker](./leetcode/2671-FrequencyTracker.go)   
