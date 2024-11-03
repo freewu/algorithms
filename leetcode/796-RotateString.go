@@ -25,11 +25,11 @@ func rotateString(s string, goal string) bool {
 }
 
 func rotateString1(s string, goal string) bool {
-    chArr := []rune(s) 
-    for _, v := range chArr { // 从头移动到尾部
-        chArr = chArr[1:]
-        chArr = append(chArr, v)
-        if string(chArr) == goal {
+    arr := []byte(s) 
+    for _, v := range arr {
+        arr = arr[1:] // 从头移动到尾部
+        arr = append(arr, v)
+        if string(arr) == goal {
             return true
         }
     }
