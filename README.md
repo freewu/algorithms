@@ -1521,6 +1521,7 @@
 [1702. Maximum Binary String After Change](./leetcode/1702-MaximumBinaryStringAfterChange.go)   
 [1704. Determine if String Halves Are Alike](./leetcode/1704-DetermineIfStringHalvesAreAlike.go)   
 [1717. Maximum Score From Removing Substrings](./leetcode/1717-MaximumScoreFromRemovingSubstrings.go)   
+[1736. Latest Time by Replacing Hidden Digits](./leetcode/1736-LatestTimeByReplacingHiddenDigits.go)   
 [1750. Minimum Length of String After Deleting Similar Ends](./leetcode/1750-MinimumLengthOfStringAfterDeletingSimilarEnds.go)    
 [1768. Merge Strings Alternately](./leetcode/1768-MergeStringsAlternately.go)   
 [1794. Count Pairs of Equal Substrings With Minimum Difference](./leetcode/1794-CountPairsOfEqualSubstringsWithMinimumDifference.go)   
