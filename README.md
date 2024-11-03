@@ -860,6 +860,7 @@
 [1725. Number Of Rectangles That Can Form The Largest Square](./leetcode/1725-NumberOfRectanglesThatCanFormTheLargestSquare.go)   
 [1726. Tuple with Same Product](./leetcode/1726-TupleWithSameProduct.go)   
 [1727. Largest Submatrix With Rearrangements](./leetcode/1727-LargestSubmatrixWithRearrangements.go)   
+[1728. Cat and Mouse II](./leetcode/1728-CatAndMouseII.go)   
 [1730. Shortest Path to Get Food](./leetcode/1730-ShortestPathToGetFood.go)   
 [1732. Find the Highest Altitude](./leetcode/1732-FindTheHighestAltitude.go)   
 [1735. Count Ways to Make Array With Product](./leetcode/1735-CountWaysToMakeArrayWithProduct.go)   
