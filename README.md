@@ -1541,6 +1541,7 @@
 [2083. Substrings That Begin and End With the Same Letter](./leetcode/2083-SubstringsThatBeginAndEndWithTheSameLetter.go)   
 [2103. Rings and Rods](./leetcode/2103-RingsAndRods.go)   
 [2129. Capitalize the Title](./leetcode/2129-CapitalizeTheTitle.go)   
+[2168. Unique Substrings With Equal Digit Frequency](./leetcode/2168-UniqueSubstringsWithEqualDigitFrequency.go)   
 [2182. Construct String With Repeat Limit](./leetcode/2182-ConstructStringWithRepeatLimit.go)   
 [2194. Cells in a Range on an Excel Sheet](./leetcode/2194-CellsInARangeOnAnExcelSheet.go)   
 [2207. Maximize Number of Subsequences in a String](./leetcode/2207-MaximizeNumberOfSubsequencesInAString.go)   
