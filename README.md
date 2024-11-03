@@ -1671,6 +1671,7 @@
 [1474. Delete N Nodes After M Nodes of a Linked List](./leetcode/1474-DeleteN-NodesAfterM-NodesOfALinkedList.go)   
 [1634. Add Two Polynomials Represented as Linked Lists](./leetcode/1634-AddTwoPolynomialsRepresentedAsLinkedLists.go)   
 [1669. Merge In Between Linked Lists](./leetcode/1669-MergeInBetweenLinkedLists.go)   
+[1721. Swapping Nodes in a Linked List](./leetcode/1721-SwappingNodesInALinkedList.go)   
 [1836. Remove Duplicates From an Unsorted Linked List](./leetcode/1836-RemoveDuplicatesFromAnUnsortedLinkedList.go)   
 [2046. Sort Linked List Already Sorted Using Absolute Values](./leetcode/2046-SortLinkedListAlreadySortedUsingAbsoluteValues.go)   
 [2058. Find the Minimum and Maximum Number of Nodes Between Critical Points](./leetcode/2058-FindTheMinimumAndMaximumNumberOfNodesBetweenCriticalPoints.go)   
