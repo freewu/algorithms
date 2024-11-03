@@ -865,6 +865,7 @@
 [1730. Shortest Path to Get Food](./leetcode/1730-ShortestPathToGetFood.go)   
 [1732. Find the Highest Altitude](./leetcode/1732-FindTheHighestAltitude.go)   
 [1733. Minimum Number of People to Teach](./leetcode/1733-MinimumNumberOfPeopleToTeach.go)   
+[1734. Decode XORed Permutation](./leetcode/1734-DecodeXORedPermutation.go)   
 [1735. Count Ways to Make Array With Product](./leetcode/1735-CountWaysToMakeArrayWithProduct.go)   
 [1738. Find Kth Largest XOR Coordinate Value](./leetcode/1738-FindKthLargestXORCoordinateValue.go)   
 [1746. Maximum Subarray Sum After One Operation](./leetcode/1746-MaximumSubarraySumAfterOneOperation.go)   
