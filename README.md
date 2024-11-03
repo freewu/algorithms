@@ -970,6 +970,7 @@
 [2184. Number of Ways to Build Sturdy Brick Wall](./leetcode/2184-NumberOfWaysToBuildSturdyBrickWall.go)   
 [2187. Minimum Time to Complete Trips](./leetcode/2187-MinimumTimeToCompleteTrips.go)   
 [2191. Sort the Jumbled Numbers](./leetcode/2191-SortTheJumbledNumbers.go)   
+[2198. Number of Single Divisor Triplets](./leetcode/2198-NumberOfSingleDivisorTriplets.go)   
 [2215. Find the Difference of Two Arrays](./leetcode/2215-FindTheDifferenceOfTwoArrays.go)   
 [2217. Find Palindrome With Fixed Length](./leetcode/2217-FindPalindromeWithFixedLength.go)   
 [2218. Maximum Value of K Coins From Piles](./leetcode/2218-MaximumValueOfKCoinsFromPiles.go)   
