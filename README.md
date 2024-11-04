@@ -1221,7 +1221,7 @@
 [3318. Find X-Sum of All K-Long Subarrays I](./leetcode/3318-FindXSumOfAllKLongSubarraysI.go)   
 [3321. Find X-Sum of All K-Long Subarrays II](./leetcode/3321-FindXSumOfAllKLongSubarraysII.go)   
 [3341. Find Minimum Time to Reach Last Room I](./leetcode/3341-FindMinimumTimeToReachLastRoomI.go)   
-
+[3342. Find Minimum Time to Reach Last Room II](./leetcode/3342-FindMinimumTimeToReachLastRoomII.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
