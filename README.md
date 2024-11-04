@@ -1593,6 +1593,7 @@
 [3137. Minimum Number of Operations to Make Word K-Periodic](./leetcode/3137-MinimumNumberOfOperationsToMakeWordKPeriodic.go)   
 [3144. Minimum Substring Partition of Equal Character](./leetcode/3144-MinimumSubstringPartitionOfEqualCharacter.go)   
 [3146. Permutation Difference between Two Strings](./leetcode/3146-PermutationDifferenceBetweenTwoStrings.go)   
+[3163. String Compression III](./leetcode/3163-StringCompressionIII.go)   
 [3167. Better Compression of String](./leetcode/3167-BetterCompressionOfString.go)   
 [3174. Clear Digits](./leetcode/3174-ClearDigits.go)   
 [3216. Lexicographically Smallest String After a Swap](./leetcode/3216-LexicographicallySmallestStringAfterASwap.go)   
