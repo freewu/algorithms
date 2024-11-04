@@ -872,6 +872,7 @@
 [1744. Can You Eat Your Favorite Candy on Your Favorite Day?](./leetcode/1744-CanYouEatYourFavoriteCandyOnYourFavoriteDay.go)   
 [1746. Maximum Subarray Sum After One Operation](./leetcode/1746-MaximumSubarraySumAfterOneOperation.go)   
 [1748. Sum of Unique Elements](./leetcode/1748-SumOfUniqueElements.go)   
+[1749. Maximum Absolute Sum of Any Subarray](./leetcode/1749-MaximumAbsoluteSumOfAnySubarray.go)   
 [1751. Maximum Number of Events That Can Be Attended II](./leetcode/1751-MaximumNumberOfEventsThatCanBeAttendedII.go)   
 [1762. Buildings With an Ocean View](./leetcode/1762-BuildingsWithAnOceanView.go)   
 [1766. Tree of Coprimes](./leetcode/1766-TreeOfCoprimes.go)   
