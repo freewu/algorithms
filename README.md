@@ -868,6 +868,7 @@
 [1734. Decode XORed Permutation](./leetcode/1734-DecodeXORedPermutation.go)   
 [1735. Count Ways to Make Array With Product](./leetcode/1735-CountWaysToMakeArrayWithProduct.go)   
 [1738. Find Kth Largest XOR Coordinate Value](./leetcode/1738-FindKthLargestXORCoordinateValue.go)   
+[1744. Can You Eat Your Favorite Candy on Your Favorite Day?](./leetcode/1744-CanYouEatYourFavoriteCandyOnYourFavoriteDay.go)   
 [1746. Maximum Subarray Sum After One Operation](./leetcode/1746-MaximumSubarraySumAfterOneOperation.go)   
 [1751. Maximum Number of Events That Can Be Attended II](./leetcode/1751-MaximumNumberOfEventsThatCanBeAttendedII.go)   
 [1762. Buildings With an Ocean View](./leetcode/1762-BuildingsWithAnOceanView.go)   
