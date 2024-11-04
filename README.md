@@ -1862,6 +1862,7 @@
 [1701. Average Waiting Time](./leetcode/1701-AverageWaitingTime.go)   
 [1716. Calculate Money in Leetcode Bank](./leetcode/1716-CalculateMoneyInLeetcodeBank.go)   
 [1739. Building Boxes](./leetcode/1739-BuildingBoxes.go)   
+[1742. Maximum Number of Balls in a Box](./leetcode/1742-MaximumNumberOfBallsInABox.go)   
 [1780. Check if Number is a Sum of Powers of Three](./leetcode/1780-CheckIfNumberIsASumOfPowersOfThree.go)   
 [1823. Find the Winner of the Circular Game](./leetcode/1823-FindTheWinnerOfTheCircularGame.go)   
 [1884. Egg Drop With 2 Eggs and N Floors](./leetcode/1884-EggDropWithTwoEggsAndNFloors.go)   
