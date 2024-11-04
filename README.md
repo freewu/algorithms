@@ -958,6 +958,7 @@
 [2101. Detonate the Maximum Bombs](./leetcode/2101-DetonateTheMaximumBombs.go)   
 [2105. Watering Plants II](./leetcode/2105-WateringPlantsII.go)   
 [2106. Maximum Fruits Harvested After at Most K Steps](./leetcode/2106-MaximumFruitsHarvestedAfterAtMostKSteps.go)   
+[2107. Number of Unique Flavors After Sharing K Candies](./leetcode/2107-NumberOfUniqueFlavorsAfterSharingKCandies.go)   
 [2108. Find First Palindromic String in the Array](./leetcode/2108-FindFirstPalindromicStringInTheArray.go)   
 [2120. Execution of All Suffix Instructions Staying in a Grid](./leetcode/2120-ExecutionOfAllSuffixInstructionsStayingInAGrid.go)   
 [2123. Minimum Operations to Remove Adjacent Ones in Matrix](./leetcode/2123-MinimumOperationsToRemoveAdjacentOnesInMatrix.go)   
