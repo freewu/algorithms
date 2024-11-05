@@ -1538,6 +1538,7 @@
 [1745. Palindrome Partitioning IV](./leetcode/1745-PalindromePartitioningIV.go)   
 [1750. Minimum Length of String After Deleting Similar Ends](./leetcode/1750-MinimumLengthOfStringAfterDeletingSimilarEnds.go)    
 [1754. Largest Merge Of Two Strings](./leetcode/1754-LargestMergeOfTwoStrings.go)   
+[1758. Minimum Changes To Make Alternating Binary String](./leetcode/1758-MinimumChangesToMakeAlternatingBinaryString.go) 
 [1768. Merge Strings Alternately](./leetcode/1768-MergeStringsAlternately.go)   
 [1794. Count Pairs of Equal Substrings With Minimum Difference](./leetcode/1794-CountPairsOfEqualSubstringsWithMinimumDifference.go)   
 [1805. Number of Different Integers in a String](./leetcode/1805-NumberOfDifferentIntegersInAString.go)   
