@@ -77,7 +77,6 @@ func minAbsDifference(nums []int, goal int) int {
 
 var ltsums, rtsums [1<<20]int
 
-// 解答错误 70 / 74
 func minAbsDifference1(nums []int, goal int) int {
     n := len(nums)
     ltsums, rtsums := ltsums[:1<<(n/2)], rtsums[:1<<(n-n/2)]
