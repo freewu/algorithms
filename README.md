@@ -1550,6 +1550,8 @@
 [1758. Minimum Changes To Make Alternating Binary String](./leetcode/1758-MinimumChangesToMakeAlternatingBinaryString.go)   
 [1759. Count Number of Homogenous Substrings](./leetcode/1759-CountNumberOfHomogenousSubstrings.go)   
 [1768. Merge Strings Alternately](./leetcode/1768-MergeStringsAlternately.go)   
+[1769. Minimum Number of Operations to Move All Balls to Each Box](./leetcode/1769-MinimumNumberOfOperationsToMoveAllBallsToEachBox.go)   
+
 [1794. Count Pairs of Equal Substrings With Minimum Difference](./leetcode/1794-CountPairsOfEqualSubstringsWithMinimumDifference.go)   
 [1805. Number of Different Integers in a String](./leetcode/1805-NumberOfDifferentIntegersInAString.go)   
 [1813. Sentence Similarity III](./leetcode/1813-SentenceSimilarityIII.go)   
