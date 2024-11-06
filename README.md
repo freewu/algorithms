@@ -878,6 +878,7 @@
 [1755. Closest Subsequence Sum](./leetcode/1755-ClosestSubsequenceSum.go)   
 [1760. Minimum Limit of Balls in a Bag](./leetcode/1760-MinimumLimitOfBallsInABag.go)   
 [1762. Buildings With an Ocean View](./leetcode/1762-BuildingsWithAnOceanView.go)   
+[1764. Form Array by Concatenating Subarrays of Another Array](./leetcode/1764-FormArrayByConcatenatingSubarraysOfAnotherArray.go)   
 [1766. Tree of Coprimes](./leetcode/1766-TreeOfCoprimes.go)   
 [1770. Maximum Score from Performing Multiplication Operations](./leetcode/1770-MaximumScoreFromPerformingMultiplicationOperations.go)   
 [1772. Sort Features by Popularity](./leetcode/1772-SortFeaturesByPopularity.go)   
