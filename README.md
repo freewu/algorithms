@@ -1549,6 +1549,7 @@
 [1754. Largest Merge Of Two Strings](./leetcode/1754-LargestMergeOfTwoStrings.go)   
 [1758. Minimum Changes To Make Alternating Binary String](./leetcode/1758-MinimumChangesToMakeAlternatingBinaryString.go)   
 [1759. Count Number of Homogenous Substrings](./leetcode/1759-CountNumberOfHomogenousSubstrings.go)   
+[1763. Longest Nice Substring](./leetcode/1763-LongestNiceSubstring.go)   
 [1768. Merge Strings Alternately](./leetcode/1768-MergeStringsAlternately.go)   
 [1769. Minimum Number of Operations to Move All Balls to Each Box](./leetcode/1769-MinimumNumberOfOperationsToMoveAllBallsToEachBox.go)   
 
