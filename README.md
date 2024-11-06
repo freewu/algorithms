@@ -876,6 +876,7 @@
 [1751. Maximum Number of Events That Can Be Attended II](./leetcode/1751-MaximumNumberOfEventsThatCanBeAttendedII.go)   
 [1752. Check if Array Is Sorted and Rotated](./leetcode/1752-CheckIfArrayIsSortedAndRotated.go)   
 [1755. Closest Subsequence Sum](./leetcode/1755-ClosestSubsequenceSum.go)   
+[1760. Minimum Limit of Balls in a Bag](./leetcode/1760-MinimumLimitOfBallsInABag.go)   
 [1762. Buildings With an Ocean View](./leetcode/1762-BuildingsWithAnOceanView.go)   
 [1766. Tree of Coprimes](./leetcode/1766-TreeOfCoprimes.go)   
 [1770. Maximum Score from Performing Multiplication Operations](./leetcode/1770-MaximumScoreFromPerformingMultiplicationOperations.go)   
