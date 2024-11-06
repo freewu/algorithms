@@ -1206,6 +1206,7 @@
 [3195. Find the Minimum Area to Cover All Ones I](./leetcode/3195-FindTheMinimumAreaToCoverAllOnesI.go)   
 [3197. Find the Minimum Area to Cover All Ones II](./leetcode/3197-FindTheMinimumAreaToCoverAllOnesII.go)   
 [3201. Find the Maximum Length of Valid Subsequence I](./leetcode/3201-FindTheMaximumLengthOfValidSubsequenceI.go)   
+[3202. Find the Maximum Length of Valid Subsequence II](./leetcode/3202-FindTheMaximumLengthOfValidSubsequenceII.go)   
 [3205. Maximum Array Hopping Score I](./leetcode/3205-MaximumArrayHoppingScoreI.go)   
 [3206. Alternating Groups I](./leetcode/3206-AlternatingGroupsI.go)   
 [3208. Alternating Groups II](./leetcode/3208-AlternatingGroupsII.go)   
