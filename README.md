@@ -993,6 +993,7 @@
 [2215. Find the Difference of Two Arrays](./leetcode/2215-FindTheDifferenceOfTwoArrays.go)   
 [2217. Find Palindrome With Fixed Length](./leetcode/2217-FindPalindromeWithFixedLength.go)   
 [2218. Maximum Value of K Coins From Piles](./leetcode/2218-MaximumValueOfKCoinsFromPiles.go)   
+[2219. Maximum Sum Score of Array](./leetcode/2219-MaximumSumScoreOfArray.go)   
 [2221. Find Triangular Sum of an Array](./leetcode/2221-FindTriangularSumOfAnArray.go)   
 [2225. Find Players With Zero or One Losses](./leetcode/2225-FindPlayersWithZeroOrOneLosses.go)   
 [2229. Check if an Array Is Consecutive](./leetcode/2229-CheckIfAnArrayIsConsecutive.go)   
