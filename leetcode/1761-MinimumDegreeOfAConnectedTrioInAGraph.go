@@ -84,6 +84,32 @@ func minTrioDegree(n int, edges [][]int) int {
     return res
 }
 
+func minTrioDegree1(n int, edges [][]int) int {
+    connected, degree := [512][512]bool{}, [512]int{}
+    for i := 1; i <= n; i++ {
+        degree[i] = 0
+        for j := 1; j <= n; j++ { connected[i][j] = false }
+    }
+    for _, e := range edges {
+        u, v := e[0], e[1]
+        degree[u], degree[v], connected[u][v], connected[v][u] = degree[u] + 1, degree[v] + 1, true, true
+    }
+    res := 1 << 31
+    min := func (x, y int) int { if x < y { return x; }; return y; }
+    for i := 1; i <= n; i++ {
+        for j := i + 1; j <= n; j++ {
+            if !connected[i][j] { continue }
+            for k := j + 1; k <= n; k++ {
+                if connected[i][k] && connected[j][k] {
+                    res = min(res, degree[i] + degree[j] + degree[k] - 6)
+                }
+            }
+        }
+    }
+    if res == 1 << 31 { return -1 }
+    return res
+}
+
 func main() {
     // Example 1:
     // <img src="https://assets.leetcode.com/uploads/2021/01/26/trios1.png" />
@@ -101,4 +127,7 @@ func main() {
     // 2) [2,5,6] with degree 2.
     // 3) [5,6,7] with degree 2.
     fmt.Println(minTrioDegree(7, [][]int{{1,3},{4,1},{4,3},{2,5},{5,6},{6,7},{7,5},{2,6}})) // 0
+
+    fmt.Println(minTrioDegree1(6, [][]int{{1,2},{1,3},{3,2},{4,1},{5,2},{3,6}})) // 3
+    fmt.Println(minTrioDegree1(7, [][]int{{1,3},{4,1},{4,3},{2,5},{5,6},{6,7},{7,5},{2,6}})) // 0
 }
