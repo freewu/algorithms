@@ -888,6 +888,7 @@
 [1775. Equal Sum Arrays With Minimum Number of Operations](./leetcode/1775-EqualSumArraysWithMinimumNumberOfOperations.go)   
 [1776. Car Fleet II](./leetcode/1776-CarFleetII.go)   
 [1778. Shortest Path in a Hidden Grid](./leetcode/1778-ShortestPathInAHiddenGrid.go)   
+[1779. Find Nearest Point That Has the Same X or Y Coordinate](./leetcode/1779-FindNearestPointThatHasTheSameXOrYCoordinate.go)   
 [1788. Maximize the Beauty of the Garden](./leetcode/1788-MaximizeTheBeautyOfTheGarden.go)   
 [1793. Maximum Score of a Good Subarray](./leetcode/1793-MaximumScoreOfAGoodSubarray.go)   
 [1799. Maximize Score After N Operations](./leetcode/1799-MaximizeScoreAfterNOperations.go)   
