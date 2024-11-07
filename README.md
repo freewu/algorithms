@@ -1571,6 +1571,7 @@
 [1771. Maximize Palindrome Length From Subsequences](./leetcode/1771-MaximizePalindromeLengthFromSubsequences.go)   
 [1794. Count Pairs of Equal Substrings With Minimum Difference](./leetcode/1794-CountPairsOfEqualSubstringsWithMinimumDifference.go)   
 [1796. Second Largest Digit in a String](./leetcode/1796-SecondLargestDigitInAString.go)   
+[1790. Check if One String Swap Can Make Strings Equal](./leetcode/1790-CheckIfOneStringSwapCanMakeStringsEqual.go)   
 [1805. Number of Different Integers in a String](./leetcode/1805-NumberOfDifferentIntegersInAString.go)   
 [1813. Sentence Similarity III](./leetcode/1813-SentenceSimilarityIII.go)   
 [1842. Next Palindrome Using Same Digits](./leetcode/1842-NextPalindromeUsingSameDigits.go)   
