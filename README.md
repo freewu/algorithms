@@ -883,6 +883,7 @@
 [1766. Tree of Coprimes](./leetcode/1766-TreeOfCoprimes.go)   
 [1770. Maximum Score from Performing Multiplication Operations](./leetcode/1770-MaximumScoreFromPerformingMultiplicationOperations.go)   
 [1772. Sort Features by Popularity](./leetcode/1772-SortFeaturesByPopularity.go)   
+[1773. Count Items Matching a Rule](./leetcode/1773-CountItemsMatchingARule.go)   
 [1778. Shortest Path in a Hidden Grid](./leetcode/1778-ShortestPathInAHiddenGrid.go)   
 [1788. Maximize the Beauty of the Garden](./leetcode/1788-MaximizeTheBeautyOfTheGarden.go)   
 [1793. Maximum Score of a Good Subarray](./leetcode/1793-MaximumScoreOfAGoodSubarray.go)   
