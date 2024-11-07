@@ -1235,6 +1235,7 @@
 [3259. Maximum Energy Boost From Two Drinks](./leetcode/3259-MaximumEnergyBoostFromTwoDrinks.go)   
 [3264. Final Array State After K Multiplication Operations I](./leetcode/3264-FinalArrayStateAfterKMultiplicationOperationsI.go)   
 [3265. Count Almost Equal Pairs I](./leetcode/3265-CountAlmostEqualPairsI.go)   
+[3266. Final Array State After K Multiplication Operations II](./leetcode/3266-FinalArrayStateAfterKMultiplicationOperationsII.go)  
 [3267. Count Almost Equal Pairs II](./leetcode/3267-CountAlmostEqualPairsII.go)   
 [3269. Constructing Two Increasing Arrays](./leetcode/3269-ConstructingTwoIncreasingArrays.go)   
 [3279. Maximum Total Area Occupied by Pistons](./leetcode/3279-MaximumTotalAreaOccupiedByPistons.go)   
