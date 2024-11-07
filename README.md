@@ -1565,7 +1565,7 @@
 [1763. Longest Nice Substring](./leetcode/1763-LongestNiceSubstring.go)   
 [1768. Merge Strings Alternately](./leetcode/1768-MergeStringsAlternately.go)   
 [1769. Minimum Number of Operations to Move All Balls to Each Box](./leetcode/1769-MinimumNumberOfOperationsToMoveAllBallsToEachBox.go)   
-
+[1771. Maximize Palindrome Length From Subsequences](./leetcode/1771-MaximizePalindromeLengthFromSubsequences.go)   
 [1794. Count Pairs of Equal Substrings With Minimum Difference](./leetcode/1794-CountPairsOfEqualSubstringsWithMinimumDifference.go)   
 [1805. Number of Different Integers in a String](./leetcode/1805-NumberOfDifferentIntegersInAString.go)   
 [1813. Sentence Similarity III](./leetcode/1813-SentenceSimilarityIII.go)   
