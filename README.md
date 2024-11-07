@@ -1233,6 +1233,7 @@
 [3254. Find the Power of K-Size Subarrays I](./leetcode/3254-FindThePowerOfKSizeSubarraysI.go)   
 [3255. Find the Power of K-Size Subarrays II](./leetcode/3255-FindThePowerOfKSizeSubarraysII.go)   
 [3259. Maximum Energy Boost From Two Drinks](./leetcode/3259-MaximumEnergyBoostFromTwoDrinks.go)   
+[3264. Final Array State After K Multiplication Operations I](./leetcode/3264-FinalArrayStateAfterKMultiplicationOperationsI.go)   
 [3265. Count Almost Equal Pairs I](./leetcode/3265-CountAlmostEqualPairsI.go)   
 [3267. Count Almost Equal Pairs II](./leetcode/3267-CountAlmostEqualPairsII.go)   
 [3269. Constructing Two Increasing Arrays](./leetcode/3269-ConstructingTwoIncreasingArrays.go)   
