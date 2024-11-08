@@ -115,6 +115,39 @@ func minimumOperations(root *TreeNode) int {
     return res
 }
 
+func minimumOperations1(root *TreeNode) int {
+    res, queue := 0, []*TreeNode{root}
+    for len(queue) > 0 {
+        n := len(queue)
+        arr := make([]int, n)
+        tmp := queue
+        queue = nil
+        for i, node := range tmp {
+            arr[i] = node.Val
+            if node.Left != nil  { queue = append(queue, node.Left) }
+            if node.Right != nil { queue = append(queue, node.Right) }
+        }
+        index := make([]int, n)
+        for i := range index {
+            index[i] = i
+        }
+        sort.Slice(index, func(i, j int) bool {
+            return arr[index[i]] < arr[index[j]]
+        })
+        res += n
+        visited := make([]bool, n)
+        for _, v := range index {
+            if !visited[v] {
+                for ; !visited[v]; v = index[v] {
+                    visited[v] = true
+                }
+                res--
+            }
+        }
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // <img src="https://assets.leetcode.com/uploads/2022/09/18/image-20220918174006-2.png" />
@@ -176,4 +209,8 @@ func main() {
         &TreeNode { 3, &TreeNode { 6, nil, nil }, nil, },
     }
     fmt.Println(minimumOperations(tree3)) // 0
+
+    fmt.Println(minimumOperations1(tree1)) // 3
+    fmt.Println(minimumOperations1(tree2)) // 3
+    fmt.Println(minimumOperations1(tree3)) // 0
 }
