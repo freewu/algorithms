@@ -2149,6 +2149,7 @@
 [2445. Number of Nodes With Value One](./leetcode/2445-NumberOfNodesWithValueOne.go)   
 [2458. Height of Binary Tree After Subtree Removal Queries](./leetcode/2458-HeightOfBinaryTreeAfterSubtreeRemovalQueries.go)   
 [2467. Most Profitable Path in a Tree](./leetcode/2467-MostProfitablePathInATree.go)   
+[2471. Minimum Number of Operations to Sort a Binary Tree by Level](./leetcode/2471-MinimumNumberOfOperationsToSortABinaryTreeByLevel.go)   
 [2476. Closest Nodes Queries in a Binary Search Tree](./leetcode/2476-ClosestNodesQueriesInABinarySearchTree.go)   
 [2509. Cycle Length Queries in a Tree](./leetcode/2509-CycleLengthQueriesInATree.go)   
 [2581. Count Number of Possible Root Nodes](./leetcode/2581-CountNumberOfPossibleRootNodes.go)   
