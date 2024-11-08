@@ -890,6 +890,7 @@
 [1778. Shortest Path in a Hidden Grid](./leetcode/1778-ShortestPathInAHiddenGrid.go)   
 [1779. Find Nearest Point That Has the Same X or Y Coordinate](./leetcode/1779-FindNearestPointThatHasTheSameXOrYCoordinate.go)   
 [1788. Maximize the Beauty of the Garden](./leetcode/1788-MaximizeTheBeautyOfTheGarden.go)   
+[1792. Maximum Average Pass Ratio](./leetcode/1792-MaximumAveragePassRatio.go)   
 [1793. Maximum Score of a Good Subarray](./leetcode/1793-MaximumScoreOfAGoodSubarray.go)   
 [1799. Maximize Score After N Operations](./leetcode/1799-MaximizeScoreAfterNOperations.go)   
 [1800. Maximum Ascending Subarray Sum](./leetcode/1800-MaximumAscendingSubarraySum.go)   
