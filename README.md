@@ -1940,6 +1940,7 @@
 [2525. Categorize Box According to Criteria](./leetcode/2525-CategorizeBoxAccordingToCriteria.go)   
 [2578. Split With Minimum Sum](./leetcode/2578-SplitWithMinimumSum.go)   
 [2582. Pass the Pillow](./leetcode/2582-PassThePillowd.go)   
+[2698. Find the Punishment Number of an Integer](./leetcode/2698-FindThePunishmentNumberOfAnInteger.go)   
 [2739. Total Distance Traveled](./leetcode/2739-TotalDistanceTraveled.go)   
 [2769. Find the Maximum Achievable Number](./leetcode/2769-FindTheMaximumAchievableNumber.go)   
 [2806. Account Balance After Rounded Purchase](./leetcode/2806-AccountBalanceAfterRoundedPurchase.go)   
