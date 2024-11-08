@@ -1604,6 +1604,7 @@
 [2207. Maximize Number of Subsequences in a String](./leetcode/2207-MaximizeNumberOfSubsequencesInAString.go)   
 [2209. Minimum White Tiles After Covering With Carpets](./leetcode/2209-MinimumWhiteTilesAfterCoveringWithCarpets.go)   
 [2259. Remove Digit From Number to Maximize Result](./leetcode/2259-RemoveDigitFromNumberToMaximizeResult.go)   
+[2268. Minimum Number of Keypresses](./leetcode/2268-MinimumNumberOfKeypresses.go)   
 [2288. Apply Discount to Prices](./leetcode/2288-ApplyDiscountToPrices.go)   
 [2322. Minimum Score After Removals on a Tree](./leetcode/2322-MinimumScoreAfterRemovalsOnATree.go)   
 [2325. Decode the Message](./leetcode/2325-DecodeTheMessage.go)   
