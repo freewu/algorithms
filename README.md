@@ -2293,6 +2293,7 @@
 [3199. Count Triplets with Even XOR Set Bits I](./leetcode/3199-CountTripletsWithEvenXORSetBitsI.go)   
 [3211. Generate Binary Strings Without Adjacent Zeros](./leetcode/3211-GenerateBinaryStringsWithoutAdjacentZeros.go)   
 [3226. Number of Bit Changes to Make Two Integers Equal](./leetcode/3226-NumberOfBitChangesToMakeTwoIntegersEqual.go)   
+[3344. Maximum Sized Array](./leetcode/3344-MaximumSizpedArray.go)   
 
 # Design
 [146. LRU Cache](./leetcode/146-LRUCache.go)   
