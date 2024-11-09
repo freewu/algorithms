@@ -898,6 +898,7 @@
 [1798. Maximum Number of Consecutive Values You Can Make](./leetcode/1798-MaximumNumberOfConsecutiveValuesYouCanMake.go)   
 [1799. Maximize Score After N Operations](./leetcode/1799-MaximizeScoreAfterNOperations.go)   
 [1800. Maximum Ascending Subarray Sum](./leetcode/1800-MaximumAscendingSubarraySum.go)   
+[1801. Number of Orders in the Backlog](./leetcode/1801-NumberOfOrdersInTheBacklog.go)   
 [1810. Minimum Path Cost in a Hidden Grid](./leetcode/1810-MinimumPathCostInAHiddenGrid.go)   
 [1814. Count Nice Pairs in an Array](./leetcode/1814-CountNicePairsInAnArray.go)   
 [1819. Number of Different Subsequences GCDs](./leetcode/1819-NumberOfDifferentSubsequencesGCDs.go)   
