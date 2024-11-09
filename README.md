@@ -1961,6 +1961,7 @@
 [3009. Maximum Number of Intersections on the Chart](./leetcode/3009-MaximumNumberOfIntersectionsOnTheChart.go)   
 [3032. Count Numbers With Unique Digits II](./leetcode/3032-CountNumbersWithUniqueDigitsII.go)   
 [3099. Harshad Number](./leetcode/3099-HarshadNumber.go)   
+[3100. Water Bottles II](./leetcode/3100-WaterBottlesII.go)   
 [3102. Minimize Manhattan Distances](./leetcode/3102-MinimizeManhattanDistances.go)   
 [3128. Right Triangles](./leetcode/3128-RightTriangles.go)   
 [3154. Find Number of Ways to Reach the K-th Stair](./leetcode/3154-FindNumberOfWaysToReachTheKthStair.go)   
