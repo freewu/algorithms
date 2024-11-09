@@ -1026,6 +1026,7 @@
 [2290. Minimum Obstacle Removal to Reach Corner](./leetcode/2290-MinimumObstacleRemovalToReachCorner.go)   
 [2291. Maximum Profit From Trading Stocks](./leetcode/2291-MaximumProfitFromTradingStocks.go)   
 [2293. Min Max Game](./leetcode/2293-MinMaxGame.go)   
+[2297. Jump Game VIII](./leetcode/2297-JumpGameVIII.go)   
 [2300. Successful Pairs of Spells and Potions](./leetcode/2300-SuccessfulPairsOfSpellsAndPotions.go)   
 [2304. Minimum Path Cost in a Grid](./leetcode/2304-MinimumPathCostInAGrid.go)   
 [2306. Naming a Company](./leetcode/2306-NamingACompany.go)   
