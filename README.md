@@ -1024,6 +1024,7 @@
 [2281. Sum of Total Strength of Wizards](./leetcode/2281-SumOfTotalStrengthOfWizards.go)   
 [2282. Number of People That Can Be Seen in a Grid](./leetcode/2282-NumberOfPeopleThatCanBeSeenInAGrid.go)   
 [2290. Minimum Obstacle Removal to Reach Corner](./leetcode/2290-MinimumObstacleRemovalToReachCorner.go)   
+[2291. Maximum Profit From Trading Stocks](./leetcode/2291-MaximumProfitFromTradingStocks.go)   
 [2293. Min Max Game](./leetcode/2293-MinMaxGame.go)   
 [2300. Successful Pairs of Spells and Potions](./leetcode/2300-SuccessfulPairsOfSpellsAndPotions.go)   
 [2304. Minimum Path Cost in a Grid](./leetcode/2304-MinimumPathCostInAGrid.go)   
