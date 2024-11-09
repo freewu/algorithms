@@ -1637,6 +1637,7 @@
 [2982. Find Longest Special Substring That Occurs Thrice II](./leetcode/2982-FindLongestSpecialSubstringThatOccursThriceII.go)   
 [3006. Find Beautiful Indices in the Given Array I](./leetcode/3006-FindBeautifulIndicesInTheGivenArrayI.go)   
 [3008. Find Beautiful Indices in the Given Array II](./leetcode/3008-FindBeautifulIndicesInTheGivenArrayII.go)   
+[3014. Minimum Number of Pushes to Type Word I](./leetcode/3014-MinimumNumberOfPushesToTypeWordI.go)   
 [3016. Minimum Number of Pushes to Type Word II](./leetcode/3016-MinimumNumberOfPushesToTypeWordII.go)   
 [3019. Number of Changing Keys](./leetcode/3019-NumberOfChangingKeys.go)   
 [3088. Make String Anti-palindrome](./leetcode/3088-MakeStringAntiPalindrome.go)   
