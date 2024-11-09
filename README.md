@@ -1925,6 +1925,7 @@
 [1753. Maximum Score From Removing Stones](./leetcode/1753-MaximumScoreFromRemovingStones.go)   
 [1780. Check if Number is a Sum of Powers of Three](./leetcode/1780-CheckIfNumberIsASumOfPowersOfThree.go)   
 [1806. Minimum Number of Operations to Reinitialize a Permutation](./leetcode/1806-MinimumNumberOfOperationsToReinitializeAPermutation.go)   
+[1808. Maximize Number of Nice Divisors](./leetcode/1808-MaximizeNumberOfNiceDivisors.go)   
 [1823. Find the Winner of the Circular Game](./leetcode/1823-FindTheWinnerOfTheCircularGame.go)   
 [1884. Egg Drop With 2 Eggs and N Floors](./leetcode/1884-EggDropWithTwoEggsAndNFloors.go)   
 [1908. Game of Nim](./leetcode/1908-GameOfNim.go)   
