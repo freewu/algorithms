@@ -1604,6 +1604,7 @@
 [2103. Rings and Rods](./leetcode/2103-RingsAndRods.go)   
 [2116. Check if a Parentheses String Can Be Valid](./leetcode/2116-CheckIfAParenthesesStringCanBeValid.go)   
 [2129. Capitalize the Title](./leetcode/2129-CapitalizeTheTitle.go)   
+[2147. Number of Ways to Divide a Long Corridor](./leetcode/2147-NumberOfWaysToDivideALongCorridor.go)   
 [2168. Unique Substrings With Equal Digit Frequency](./leetcode/2168-UniqueSubstringsWithEqualDigitFrequency.go)   
 [2182. Construct String With Repeat Limit](./leetcode/2182-ConstructStringWithRepeatLimit.go)   
 [2194. Cells in a Range on an Excel Sheet](./leetcode/2194-CellsInARangeOnAnExcelSheet.go)   
