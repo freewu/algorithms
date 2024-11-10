@@ -903,6 +903,7 @@
 [1810. Minimum Path Cost in a Hidden Grid](./leetcode/1810-MinimumPathCostInAHiddenGrid.go)   
 [1812. Determine Color of a Chessboard Square](./leetcode/1812-DetermineColorOfAChessboardSquare.go)   
 [1814. Count Nice Pairs in an Array](./leetcode/1814-CountNicePairsInAnArray.go)   
+[1815. Maximum Number of Groups Getting Fresh Donuts](./leetcode/1815-MaximumNumberOfGroupsGettingFreshDonuts.go)   
 [1819. Number of Different Subsequences GCDs](./leetcode/1819-NumberOfDifferentSubsequencesGCDs.go)   
 [1820. Maximum Number of Accepted Invitations](./leetcode/1820-MaximumNumberOfAcceptedInvitations.go)   
 [1822. Sign of the Product of an Array](./leetcode/1822-SignOfTheProductOfAnArray.go)   
