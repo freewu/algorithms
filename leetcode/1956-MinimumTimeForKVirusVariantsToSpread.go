@@ -36,6 +36,7 @@ package main
 //     2 <= k <= n
 
 import "fmt"
+import "sort"
 
 // 超出时间限制 47 / 70 
 func minDayskVariants(points [][]int, k int) int {
@@ -175,6 +176,48 @@ func minDayskVariants1(points [][]int, k int) int {
     return res
 }
 
+func minDayskVariants2(points [][]int, k int) int {
+    n, multer := len(points), 2000000001
+    cp, mp := make([][2]int, n), make(map[int]bool)
+    for i := 0; i < n; i++ {
+        cp[i][0], cp[i][1] = (points[i][0] + points[i][1]), (points[i][0] - points[i][1])
+        mp[cp[i][0] * multer + cp[i][1]] = true
+    }
+    for i := 0; i < n; i++ {
+        for j := i + 1; j < n; j++ {
+            if cp[i][0] > cp[j][0] {
+                cp[i][0], cp[j][0] = cp[j][0], cp[i][0]
+                cp[i][1], cp[j][1] = cp[j][1], cp[i][1]
+            }
+        }
+    }
+    min := func (x, y int) int { if x < y { return x; }; return y; }
+    max := func (x, y int) int { if x > y { return x; }; return y; }
+    res := 1000000000
+    for i := 0; i <= n - k; i++ {
+        for j := k; j <= n - i; j++ {
+            xDis := cp[i+j-1][0] - cp[i][0]
+            if xDis < res {
+                yAxis := []int{}
+                for t := 0; t < j; t++ {
+                    yAxis = append(yAxis, cp[i + t][1])
+                }
+                sort.Ints(yAxis)
+                for t := 0; t <= j - k; t++ {
+                    yDis, yStart, xStart := (yAxis[t+k-1] - yAxis[t]), yAxis[t], cp[i][0]
+                    dis := max(xDis, yDis)
+                    if dis % 2 == 0 && xDis == yDis && (xStart + yStart) % 2 != 0 {
+                        dis++
+                    }
+                    res = min(res, dis)
+                }
+            }
+        }
+    }
+    if res == 0 { return 0 }
+    return ((res - 1) / 2) + 1
+}
+
 func main() {
     // Example 1:
     // <img src="https://assets.leetcode.com/uploads/2021/06/30/case-1.png" />
@@ -194,8 +237,16 @@ func main() {
     // Output: 4
     // Explanation: On day 4, the point (5,2) will contain all 3 viruses. Note that this is not the only point that will contain all 3 virus variants.
     fmt.Println(minDayskVariants([][]int{{3,3},{1,2},{9,2}}, 3)) // 4
+    
+    //fmt.Println(minDayskVariants([][]int{{35,43},{41,70},{11,18},{20,30},{50,89},{20,91},{28,9},{54,53},{43,70},{60,54},{8,27},{54,50},{99,75},{90,3},{98,74},{49,62},{1,46},{39,97},{50,54},{69,96},{95,70},{78,29},{63,29},{35,56},{63,4},{50,44},{86,87},{52,93},{22,60},{17,80},{69,4},{51,76}}, 28)) // 4
 
     fmt.Println(minDayskVariants1([][]int{{1,1},{6,1}}, 2)) // 3
     fmt.Println(minDayskVariants1([][]int{{3,3},{1,2},{9,2}}, 2)) // 2
     fmt.Println(minDayskVariants1([][]int{{3,3},{1,2},{9,2}}, 3)) // 4
+    //fmt.Println(minDayskVariants1([][]int{{35,43},{41,70},{11,18},{20,30},{50,89},{20,91},{28,9},{54,53},{43,70},{60,54},{8,27},{54,50},{99,75},{90,3},{98,74},{49,62},{1,46},{39,97},{50,54},{69,96},{95,70},{78,29},{63,29},{35,56},{63,4},{50,44},{86,87},{52,93},{22,60},{17,80},{69,4},{51,76}}, 28)) // 4
+
+    fmt.Println(minDayskVariants2([][]int{{1,1},{6,1}}, 2)) // 3
+    fmt.Println(minDayskVariants2([][]int{{3,3},{1,2},{9,2}}, 2)) // 2
+    fmt.Println(minDayskVariants2([][]int{{3,3},{1,2},{9,2}}, 3)) // 4
+    fmt.Println(minDayskVariants2([][]int{{35,43},{41,70},{11,18},{20,30},{50,89},{20,91},{28,9},{54,53},{43,70},{60,54},{8,27},{54,50},{99,75},{90,3},{98,74},{49,62},{1,46},{39,97},{50,54},{69,96},{95,70},{78,29},{63,29},{35,56},{63,4},{50,44},{86,87},{52,93},{22,60},{17,80},{69,4},{51,76}}, 28)) // 68
 }
