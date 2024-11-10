@@ -905,6 +905,7 @@
 [1814. Count Nice Pairs in an Array](./leetcode/1814-CountNicePairsInAnArray.go)   
 [1815. Maximum Number of Groups Getting Fresh Donuts](./leetcode/1815-MaximumNumberOfGroupsGettingFreshDonuts.go)   
 [1817. Finding the Users Active Minutes](./leetcode/1817-FindingTheUsersActiveMinutes.go)   
+[1818. Minimum Absolute Sum Difference](./leetcode/1818-MinimumAbsoluteSumDifference.go)   
 [1819. Number of Different Subsequences GCDs](./leetcode/1819-NumberOfDifferentSubsequencesGCDs.go)   
 [1820. Maximum Number of Accepted Invitations](./leetcode/1820-MaximumNumberOfAcceptedInvitations.go)   
 [1822. Sign of the Product of an Array](./leetcode/1822-SignOfTheProductOfAnArray.go)   
