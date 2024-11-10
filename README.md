@@ -1205,6 +1205,7 @@
 [3153. Sum of Digit Differences of All Pairs](./leetcode/3153-SumOfDigitDifferencesOfAllPairs.go)   
 [3158. Find the XOR of Numbers Which Appear Twice](./leetcode/3158-FindTheXOROfNumbersWhichAppearTwice.go)   
 [3160. Find the Number of Distinct Colors Among the Balls](./leetcode/3160-FindTheNumberOfDistinctColorsAmongTheBalls.go)   
+[3161. Block Placement Queries](./leetcode/3161-BlockPlacementQueries.go)   
 [3165. Maximum Sum of Subsequence With Non-adjacent Elements](./leetcode/3165-MaximumSumOfSubsequenceWithNonAdjacentElements.go)   
 [3171. Find Subarray With Bitwise OR Closest to K](./leetcode/3171-FindSubarrayWithBitwiseORClosestToK.go)   
 [3173. Bitwise OR of Adjacent Elements](./leetcode/3173-BitwiseOROfAdjacentElements.go)   
