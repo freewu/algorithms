@@ -105,6 +105,25 @@ func minimumSubarrayLength1(nums []int, k int) int {
     return res
 }
 
+func minimumSubarrayLength2(nums []int, k int) int {
+    res := len(nums) + 1
+    min := func (x, y int) int { if x < y { return x; }; return y; }
+    for i, v := range nums {
+        if v >= k {
+            res = min(res, 1)
+        }
+        for j := i - 1; j >= 0; j -- {
+            if nums[j] | v == nums[j] { break }
+            nums[j] |= v
+            if nums[j] >= k {
+                res = min(res, i - j + 1)
+            }
+        }
+    }
+    if res == len(nums) + 1 {  return -1 }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: nums = [1,2,3], k = 2
@@ -128,4 +147,8 @@ func main() {
     fmt.Println(minimumSubarrayLength1([]int{1,2,3}, 2)) // 1
     fmt.Println(minimumSubarrayLength1([]int{2,1,8}, 10)) // 3
     fmt.Println(minimumSubarrayLength1([]int{1,2}, 0)) // 1
+
+    fmt.Println(minimumSubarrayLength2([]int{1,2,3}, 2)) // 1
+    fmt.Println(minimumSubarrayLength2([]int{2,1,8}, 10)) // 3
+    fmt.Println(minimumSubarrayLength2([]int{1,2}, 0)) // 1
 }
