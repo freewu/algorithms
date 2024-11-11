@@ -1603,6 +1603,7 @@
 [1807. Evaluate the Bracket Pairs of a String](./leetcode/1807-EvaluateTheBracketPairsOfAString.go)   
 [1813. Sentence Similarity III](./leetcode/1813-SentenceSimilarityIII.go)   
 [1816. Truncate Sentence](./leetcode/1816-TruncateSentence.go)   
+[1830. Minimum Number of Operations to Make String Sorted](./leetcode/1830-MinimumNumberOfOperationsToMakeStringSorted.go)   
 [1832. Check if the Sentence Is Pangram](./leetcode/1832-CheckIfTheSentenceIsPangram.go)   
 [1842. Next Palindrome Using Same Digits](./leetcode/1842-NextPalindromeUsingSameDigits.go)   
 [1915. Number of Wonderful Substrings](./leetcode/1915-NumberOfWonderfulSubstrings.go)   
