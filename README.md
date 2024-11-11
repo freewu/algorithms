@@ -1045,6 +1045,7 @@
 [2319. Check if Matrix Is X-Matrix](./leetcode/2319-CheckIfMatrixIsXMatrix.go)   
 [2323. Find Minimum Time to Finish All Jobs II](./leetcode/2323-FindMinimumTimeToFinishAllJobsII.go)   
 [2332. The Latest Time to Catch a Bus](./leetcode/2332-TheLatestTimeToCatchABus.go)   
+[2340. Minimum Adjacent Swaps to Make a Valid Array](./leetcode/2340-MinimumAdjacentSwapsToMakeAValidArray.go)   
 [2343. Query Kth Smallest Trimmed Number](./leetcode/2343-QueryKthSmallestTrimmedNumber.go)   
 [2352. Equal Row and Column Pairs](./leetcode/2352-EqualRowAndColumnPairs.go)   
 [2361. Minimum Costs Using the Train Line](./leetcode/2361-MinimumCostsUsingTheTrainLine.go)   
