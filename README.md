@@ -915,6 +915,7 @@
 [1828. Queries on Number of Points Inside a Circle](./leetcode/1828-QueriesOnNumberOfPointsInsideACircle.go)   
 [1829. Maximum XOR for Each Query](./leetcode/1829-MaximumXORForEachQuery.go)   
 [1833. Maximum Ice Cream Bars](./leetcode/1833-MaximumIceCreamBars.go)   
+[1834. Single-Threaded CPU](./leetcode/1834-SingleThreadedCPU.go)   
 [1840. Maximum Building Height](./leetcode/1840-MaximumBuildingHeight.go)   
 [1851. Minimum Interval to Include Eac](./leetcode/1851-MinimumIntervalToIncludeEac.go)   
 [1852. Distinct Numbers in Each Subarray](./leetcode/1852-DistinctNumbersInEachSubarray.go)   
