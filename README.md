@@ -1607,6 +1607,7 @@
 [1842. Next Palindrome Using Same Digits](./leetcode/1842-NextPalindromeUsingSameDigits.go)   
 [1915. Number of Wonderful Substrings](./leetcode/1915-NumberOfWonderfulSubstrings.go)   
 [1933. Check if String Is Decomposable Into Value-Equal Substrings](./leetcode/1933-CheckIfStringIsDecomposableIntoValueEqualSubstrings.go)   
+[1839. Longest Substring Of All Vowels in Order](./leetcode/1839-LongestSubstringOfAllVowelsInOrder.go)   
 [1945. Sum of Digits of String After Convert](./leetcode/1945-SumOfDigitsOfStringAfterConvert.go)   
 [1957. Delete Characters to Make Fancy String](./leetcode/1957-DeleteCharactersToMakeFancyString.go)   
 [1963. Minimum Number of Swaps to Make the String Balanced](./leetcode/1963-MinimumNumberOfSwapsToMakeTheStringBalanced.go)   
