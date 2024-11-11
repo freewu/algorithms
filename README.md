@@ -2008,6 +2008,7 @@
 [3235. Check if the Rectangle Corner Is Reachable](./leetcode/3235-CheckIfTheRectangleCornerIsReachable.go)   
 [3250. Find the Count of Monotonic Pairs I](./leetcode/3250-FindTheCountOfMonotonicPairsI.go)   
 [3251. Find the Count of Monotonic Pairs II](./leetcode/3251-FindTheCountOfMonotonicPairsII.go)   
+[3260. Find the Largest Palindrome Divisible by K](./leetcode/3260-FindTheLargestPalindromeDivisibleByK.go)   
 [3304. Find the K-th Character in String Game I](./leetcode/3304-FindTheKthCharacterInStringGameI.go)   
 [3307. Find the K-th Character in String Game II](./leetcode/3307-FindTheKthCharacterInStringGameII.go)   
 
