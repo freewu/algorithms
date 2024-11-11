@@ -1047,6 +1047,7 @@
 [2332. The Latest Time to Catch a Bus](./leetcode/2332-TheLatestTimeToCatchABus.go)   
 [2340. Minimum Adjacent Swaps to Make a Valid Array](./leetcode/2340-MinimumAdjacentSwapsToMakeAValidArray.go)   
 [2343. Query Kth Smallest Trimmed Number](./leetcode/2343-QueryKthSmallestTrimmedNumber.go)   
+[2345. Finding the Number of Visible Mountains](./leetcode/2345-FindingTheNumberOfVisibleMountains.go)   
 [2352. Equal Row and Column Pairs](./leetcode/2352-EqualRowAndColumnPairs.go)   
 [2361. Minimum Costs Using the Train Line](./leetcode/2361-MinimumCostsUsingTheTrainLine.go)   
 [2368. Reachable Nodes With Restrictions](./leetcode/2368-ReachableNodesWithRestrictions.go)   
