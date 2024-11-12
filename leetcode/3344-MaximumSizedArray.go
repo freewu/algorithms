@@ -34,86 +34,41 @@ package main
 
 import "fmt"
 
+// 对于n，整个数组的和，提取公因式就是 0 * (任意或的和) + 1 * (任意或的和) + ... + (n - 1) * (任意或的和)
 func maxSizedArray(s int64) int {
-    bitLength := func(n int64) int64 { // 返回表示该数字在二进制下的最小位数
-        if n == 0 { return 0 }
-        res := int64(0)
-        for n != 0 {
-            n >>= 1
-            res++
+    low, high := 1, 200000
+    getResult := func(n int) int64 {
+        sum, subone := int64(0), int64(n - 1)
+        for i := 0; i <= 20; i++ { // 每一位遍历, 这里取的20，可以更小，但懒得算具体多小了
+            bit, zeroCount := int64(1 << i), int64(0) // 0 到 n-1 中，此位是 0 的数字个数
+            mod := subone % bit // 完整周期之外的
+            round := (subone - mod) / bit // 完整周期数
+            half := (round >> 1) // 有一半的周期是0
+            zeroCount += half * bit
+            //fmt.Println(round & 1)
+            if (round & 1) == 1 {
+                zeroCount += bit // 如果是奇数个完整周期，最后一个周期，对应的位也是0
+            } else {
+                zeroCount += (mod + 1) // 如果是偶数个完整周期， 多出来的，对应位都是0
+            }
+            count := int64(n * n) - (zeroCount * zeroCount) // 所有两两或操作的结果中，此位1的数量
+            sum += (bit * count) // 累加到或操作的和里去
         }
-        return res
+        return int64((n - 1) * n / 2) * sum // 整个数组的和
     }
-    // [0, upper]中二进制第k(k>=0)位为1的数的个数. 即满足 `num & (1 << k) > 0` 的数的个数
-    calc := func(upper, k int64) int64 {
-        if k >= bitLength(upper) { return 0 } 
-        res := upper / (1 << (k + 1)) * (1 << k)
-        upper %= 1 << (k + 1)
-        if upper >= 1 << k {
-            res += upper - (1 << k) + 1
-        }
-        return res
-    }
-    check := func(mid int64) bool {
-        pairs, sumOr := int64(mid * mid), int64(0)
-        // 对于每一位 bit，计算在所有 (j OR k) 中该位为 1 的总次数
-        for b := int64(0); b <= 60; b++ {
-            ones := calc(mid - 1, b)
-            zeros := mid - ones
-            anyOnes := pairs - zeros * zeros
-            sumOr += anyOnes * (1 << b)
-        }
-        sumI := mid * (mid - 1) / 2
-        return sumI * sumOr <= s
-    }
-    left, right := int64(1), int64(1e16)
-    for left <= right {
-        mid := (left + right) / 2
-        fmt.Println(check(mid), " left: ", left, " right:", right)
-        if check(mid) {
-            left = mid + 1
+    for low <= high {
+        mid := (low + high) / 2
+        v := getResult(mid)
+        fmt.Println("get result: ",v, " low: ", low, " high: ", high)
+        if  v <= s {
+            low = mid + 1
         } else {
-            right = mid - 1
+            high = mid - 1
         }
     }
-    return int(right)
+    return high
 }
 
-// def calc(upper: int, k: int) -> int:
-//     """[0, upper]中二进制第k(k>=0)位为1的数的个数.
-//     即满足 `num & (1 << k) > 0` 的数的个数
-//     """
-//     if k >= upper.bit_length():
-//         return 0
-//     res = upper // (1 << (k + 1)) * (1 << k)
-//     upper %= 1 << (k + 1)
-//     if upper >= 1 << k:
-//         res += upper - (1 << k) + 1
-//     return res
-
-
-// class Solution:
-//     def maxSizedArray(self, s: int) -> int:
-//         def check(mid: int) -> bool:
-//             pairs = mid * mid
-//             sumOr = 0
-//             # 对于每一位 bit，计算在所有 (j OR k) 中该位为 1 的总次数
-//             for b in range(60):
-//                 ones = calc(mid - 1, b)
-//                 zeros = mid - ones
-//                 anyOnes = pairs - zeros * zeros
-//                 sumOr += anyOnes * (1 << b)
-//             sumI = mid * (mid - 1) // 2
-//             return sumI * sumOr <= s
-
-//         left, right = 1, int(1e16)
-//         while left <= right:
-//             mid = (left + right) // 2
-//             if check(mid):
-//                 left = mid + 1
-//             else:
-//                 right = mid - 1
-//         return right
 
 func main() {
     // Example 1:
