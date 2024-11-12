@@ -921,6 +921,7 @@
 [1840. Maximum Building Height](./leetcode/1840-MaximumBuildingHeight.go)   
 [1846. Maximum Element After Decreasing and Rearranging](./leetcode/1846-MaximumElementAfterDecreasingAndRearranging.go)   
 [1847. Closest Room](./leetcode/1847-ClosestRoom.go)   
+[1848. Minimum Distance to the Target Element](./leetcode/1848-MinimumDistanceToTheTargetElement.go)   
 [1851. Minimum Interval to Include Eac](./leetcode/1851-MinimumIntervalToIncludeEac.go)   
 [1852. Distinct Numbers in Each Subarray](./leetcode/1852-DistinctNumbersInEachSubarray.go)   
 [1854. Maximum Population Year](./leetcode/1854-MaximumPopulationYear.go)   
