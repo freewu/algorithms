@@ -1057,6 +1057,7 @@
 [2361. Minimum Costs Using the Train Line](./leetcode/2361-MinimumCostsUsingTheTrainLine.go)   
 [2368. Reachable Nodes With Restrictions](./leetcode/2368-ReachableNodesWithRestrictions.go)   
 [2369. Check if There is a Valid Partition For The Array](./leetcode/2369-CheckIfThereIsAValidPartitionForTheArray.go)   
+[2371. Minimize Maximum Value in a Grid](./leetcode/2371-MinimizeMaximumValueInAGrid.go)   
 [2373. Largest Local Values in a Matrix](./leetcode/2373-LargestLocalValuesInAMatrix.go)   
 [2386. Find the K-Sum of an Array](./leetcode/2386-FindTheK-SumOfAnArray.go)   
 [2387. Median of a Row Wise Sorted Matrix](./leetcode/2387-MedianOfARowWiseSortedMatrix.go)   
