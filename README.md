@@ -1623,6 +1623,7 @@
 [1963. Minimum Number of Swaps to Make the String Balanced](./leetcode/1963-MinimumNumberOfSwapsToMakeTheStringBalanced.go)   
 [2000. Reverse Prefix of Word](./leetcode/2000-ReversePrefixOfWord.go)   
 [2024. Maximize the Confusion of an Exam](./leetcode/2024-MaximizeTheConfusionOfAnExam.go)   
+[2047. Number of Valid Words in a Sentence](./leetcode/2047-NumberOfValidWordsInASentence.go)   
 [2052. Minimum Cost to Separate Sentence Into Rows](./leetcode/2052-MinimumCostToSeparateSentenceIntoRows.go)   
 [2055. Plates Between Candles](./leetcode/2055-PlatesBetweenCandles.go)   
 [2067. Number of Equal Count Substrings](./leetcode/2067-NumberOfEqualCountSubstrings.go)   
