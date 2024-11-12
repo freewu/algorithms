@@ -1062,6 +1062,7 @@
 [2387. Median of a Row Wise Sorted Matrix](./leetcode/2387-MedianOfARowWiseSortedMatrix.go)   
 [2391. Minimum Amount of Time to Collect Garbage](./leetcode/2391-MinimumAmountOfTimeToCollectGarbage.go)   
 [2392. Build a Matrix With Conditions](./leetcode/2392-BuildAMatrixWithConditions.go)   
+[2393. Count Strictly Increasing Subarrays](./leetcode/2393-CountStrictlyIncreasingSubarrays.go)   
 [2397. Maximum Rows Covered by Columns](./leetcode/2397-MaximumRowsCoveredByColumns.go)   
 [2398. Maximum Number of Robots Within Budget](./leetcode/2398-MaximumNumberOfRobotsWithinBudget.go)   
 [2402. Meeting Rooms III](./leetcode/2402-MeetingRoomsIII.go)   
