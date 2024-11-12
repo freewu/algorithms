@@ -1059,6 +1059,7 @@
 [2369. Check if There is a Valid Partition For The Array](./leetcode/2369-CheckIfThereIsAValidPartitionForTheArray.go)   
 [2373. Largest Local Values in a Matrix](./leetcode/2373-LargestLocalValuesInAMatrix.go)   
 [2386. Find the K-Sum of an Array](./leetcode/2386-FindTheK-SumOfAnArray.go)   
+[2387. Median of a Row Wise Sorted Matrix](./leetcode/2387-MedianOfARowWiseSortedMatrix.go)   
 [2391. Minimum Amount of Time to Collect Garbage](./leetcode/2391-MinimumAmountOfTimeToCollectGarbage.go)   
 [2392. Build a Matrix With Conditions](./leetcode/2392-BuildAMatrixWithConditions.go)   
 [2397. Maximum Rows Covered by Columns](./leetcode/2397-MaximumRowsCoveredByColumns.go)   
