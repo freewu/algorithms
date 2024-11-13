@@ -926,6 +926,7 @@
 [1852. Distinct Numbers in Each Subarray](./leetcode/1852-DistinctNumbersInEachSubarray.go)   
 [1854. Maximum Population Year](./leetcode/1854-MaximumPopulationYear.go)   
 [1855. Maximum Distance Between a Pair of Values](./leetcode/1855-MaximumDistanceBetweenAPairOfValues.go)   
+[1856. Maximum Subarray Min-Product](./leetcode/1856-MaximumSubarrayMinProduct.go)   
 [1858. Longest Word With All Prefixes](./leetcode/1858-LongestWordWithAllPrefixes.go)   
 [1861. Rotating the Box](./leetcode/1861-RotatingTheBox.go)   
 [1863. Sum of All Subset XOR Totals](./leetcode/1863-SumOfAllSubsetXORTotals.go)   
