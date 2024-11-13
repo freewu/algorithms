@@ -1621,6 +1621,7 @@
 [1842. Next Palindrome Using Same Digits](./leetcode/1842-NextPalindromeUsingSameDigits.go)   
 [1844. Replace All Digits with Characters](./leetcode/1844-ReplaceAllDigitsWithCharacters.go)   
 [1850. Minimum Adjacent Swaps to Reach the Kth Smallest Number](./leetcode/1850-MinimumAdjacentSwapsToReachTheKthSmallestNumber.go)   
+[1859. Sorting the Sentence](./leetcode/1859-SortingTheSentence.go)   
 [1915. Number of Wonderful Substrings](./leetcode/1915-NumberOfWonderfulSubstrings.go)   
 [1933. Check if String Is Decomposable Into Value-Equal Substrings](./leetcode/1933-CheckIfStringIsDecomposableIntoValueEqualSubstrings.go)   
 [1839. Longest Substring Of All Vowels in Order](./leetcode/1839-LongestSubstringOfAllVowelsInOrder.go)   
