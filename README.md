@@ -2022,6 +2022,7 @@
 [3260. Find the Largest Palindrome Divisible by K](./leetcode/3260-FindTheLargestPalindromeDivisibleByK.go)   
 [3304. Find the K-th Character in String Game I](./leetcode/3304-FindTheKthCharacterInStringGameI.go)   
 [3307. Find the K-th Character in String Game II](./leetcode/3307-FindTheKthCharacterInStringGameII.go)   
+[3345. Smallest Divisible Digit Product I](./leetcode/3345-SmallestDivisibleDigitProductI.go)   
 
 # Stack
 [225. Implement Stack using Queues](./leetcode/225-ImplementStackUsingQueues.go)   
