@@ -2228,6 +2228,7 @@
 [2867. Count Valid Paths in a Tree](./leetcode/2867-CountValidPathsInATree.go)   
 [2925. Maximum Score After Applying Operations on a Tree](./leetcode/2925-MaximumScoreAfterApplyingOperationsOnATree.go)   
 [2973. Find Number of Coins to Place in Tree Nodes](./leetcode/2973-FindNumberOfCoinsToPlaceInTreeNodes.go)   
+[3249. Count the Number of Good Nodes](./leetcode/3249-CountTheNumberOfGoodNodes.go)   
 [3313. Find the Last Marked Nodes in Tree](./leetcode/3313-FindTheLastMarkedNodesInTree.go)   
 [3319. K-th Largest Perfect Subtree Size in Binary Tree](./leetcode/3319-KthLargestPerfectSubtreeSizeInBinaryTree.go)   
 
