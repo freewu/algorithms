@@ -1085,7 +1085,6 @@
 [2509. Cycle Length Queries in a Tree](./leetcode/2509-CycleLengthQueriesInATree.go)   
 [2510. Check if There is a Path With Equal Number of 0's And 1's](./leetcode/2510-CheckIfThereIsAPathWithEqualNumberOfZerosAndOnes.go)   
 [2529. Maximum Count of Positive Integer and Negative Integer](./leetcode/2529-MaximumCountOfPositiveIntegerAndNegativeInteger.go)   
-
 [2530. Maximal Score After Applying K Operations](./leetcode/2530-MaximalScoreAfterApplyingKOperations.go)   
 [2535. Difference Between Element Sum and Digit Sum of an Array](./leetcode/2535-DifferenceBetweenElementSumAndDigitSumOfAnArray.go)   
 [2540. Minimum Common Value](./leetcode/2540-MinimumCommonValue.go)   
@@ -1095,6 +1094,7 @@
 [2552. Count Increasing Quadruplets](./leetcode/2552-CountIncreasingQuadruplets.go)   
 [2555. Maximize Win From Two Segments](./leetcode/2555-MaximizeWinFromTwoSegments.go)   
 [2556. Disconnect Path in a Binary Matrix by at Most One Flip](./leetcode/2556-DisconnectPathInABinaryMatrixByAtMostOneFlip.go)   
+[2563. Count the Number of Fair Pairs](./leetcode/2563-CountTheNumberOfFairPairs.go)   
 [2575. Find the Divisibility Array of a String](./leetcode/2575-FindTheDivisibilityArrayOfAString.go)   
 [2576. Find the Maximum Number of Marked Indices](./leetcode/2576-FindTheMaximumNumberOfMarkedIndices.go)   
 [2577. Minimum Time to Visit a Cell In a Grid](./leetcode/2577-MinimumTimeToVisitACellInAGrid.go)   
