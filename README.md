@@ -1285,6 +1285,7 @@
 [3341. Find Minimum Time to Reach Last Room I](./leetcode/3341-FindMinimumTimeToReachLastRoomI.go)   
 [3342. Find Minimum Time to Reach Last Room II](./leetcode/3342-FindMinimumTimeToReachLastRoomII.go)   
 [3346. Maximum Frequency of an Element After Performing Operations I](./leetcode/3346-MaximumFrequencyOfAnElementAfterPerformingOperationsI.go)   
+[3347. Maximum Frequency of an Element After Performing Operations II](./leetcode/3347-MaximumFrequencyOfAnElementAfterPerformingOperationsII.go)   
 
 
 # String
