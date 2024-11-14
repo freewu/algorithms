@@ -59,6 +59,48 @@ func minFlips(grid [][]int) int {
     return l
 }
 
+func minFlips1(grid [][]int) int {
+    m, n, x, y := len(grid), len(grid[0]), 0, 0
+    for i := 0; i < m; i++ {
+        j, k := 0, n - 1
+        for j < k {
+            if grid[i][j] != grid[i][k] { x++ }
+            j++
+            k--
+        }
+    }
+    for i := 0; i < n; i++ {
+        j, k := 0, m - 1
+        for j < k {
+            if grid[j][i] != grid[k][i] { y++ }
+            j++
+            k--
+        }
+    }
+    min := func (x, y int) int { if x < y { return x; }; return y; }
+    return min(x, y)
+}
+
+func minFlips2(grid [][]int) int {
+    rn, cn := 0, 0
+    for y, row := range grid {
+        for x, num := range row {
+            if x < len(row)/2 {
+                if num != row[len(row) - x - 1] {
+                    rn++
+                }
+            }
+            if y < len(grid)/2 {
+                if num != grid[len(grid)-y-1][x] {
+                    cn++
+                }
+            }
+        }
+    }
+    min := func (x, y int) int { if x < y { return x; }; return y; }
+    return min(rn, cn)
+}
+
 func main() {
     // Example 1:
     // Input: grid = [[1,0,0],[0,0,0],[0,0,1]]
@@ -80,4 +122,12 @@ func main() {
     // Explanation:
     // All rows are already palindromic.
     fmt.Println(minFlips([][]int{{1},{0}})) // 0
+
+    fmt.Println(minFlips1([][]int{{1,0,0},{0,0,0},{0,0,1}})) // 2
+    fmt.Println(minFlips1([][]int{{0,1},{0,1},{0,0}})) // 1
+    fmt.Println(minFlips1([][]int{{1},{0}})) // 0
+
+    fmt.Println(minFlips2([][]int{{1,0,0},{0,0,0},{0,0,1}})) // 2
+    fmt.Println(minFlips2([][]int{{0,1},{0,1},{0,0}})) // 1
+    fmt.Println(minFlips2([][]int{{1},{0}})) // 0
 }
