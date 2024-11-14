@@ -938,6 +938,7 @@
 [1886. Determine Whether Matrix Can Be Obtained By Rotation](./leetcode/1886-DetermineWhetherMatrixCanBeObtainedByRotation.go)   
 [1891. Cutting Ribbons](./leetcode/1891-CuttingRibbons.go)   
 [1894. Find the Student that Will Replace the Chalk](./leetcode/1894-FindTheStudentThatWillReplaceTheChalk.go)   
+[1901. Find a Peak Element II](./leetcode/1901-FindAPeakElementII.go)   
 [1902. Depth of BST Given Insertion Order](./leetcode/1902-DepthOfBSTGivenInsertionOrder.go)   
 [1905. Count Sub Islands](./leetcode/1905-CountSubIslands.go)   
 [1908. Game of Nim](./leetcode/1908-GameOfNim.go)   
