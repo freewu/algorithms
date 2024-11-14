@@ -1629,6 +1629,7 @@
 [1850. Minimum Adjacent Swaps to Reach the Kth Smallest Number](./leetcode/1850-MinimumAdjacentSwapsToReachTheKthSmallestNumber.go)   
 [1859. Sorting the Sentence](./leetcode/1859-SortingTheSentence.go)   
 [1864. Minimum Number of Swaps to Make the Binary String Alternating](./leetcode/1864-MinimumNumberOfSwapsToMakeTheBinaryStringAlternating.go)   
+[1869. Longer Contiguous Segments of Ones than Zeros](./leetcode/1869-LongerContiguousSegmentsOfOnesThanZeros.go)   
 [1915. Number of Wonderful Substrings](./leetcode/1915-NumberOfWonderfulSubstrings.go)   
 [1933. Check if String Is Decomposable Into Value-Equal Substrings](./leetcode/1933-CheckIfStringIsDecomposableIntoValueEqualSubstrings.go)   
 [1839. Longest Substring Of All Vowels in Order](./leetcode/1839-LongestSubstringOfAllVowelsInOrder.go)   
