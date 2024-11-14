@@ -1981,6 +1981,7 @@
 [1837. Sum of Digits in Base K](./leetcode/1837-SumOfDigitsInBaseK.go)   
 [1860. Incremental Memory Leak](./leetcode/1860-IncrementalMemoryLeak.go)   
 [1862. Sum of Floored Pairs](./leetcode/1862-SumOfFlooredPairs.go)   
+[1866. Number of Ways to Rearrange Sticks With K Sticks Visible](./leetcode/1866-NumberOfWaysToRearrangeSticksWithKSticksVisible.go)   
 [1884. Egg Drop With 2 Eggs and N Floors](./leetcode/1884-EggDropWithTwoEggsAndNFloors.go)   
 [1908. Game of Nim](./leetcode/1908-GameOfNim.go)   
 [1922. Count Good Numbers](./leetcode/1922-CountGoodNumbers.go)   
