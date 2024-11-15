@@ -1675,6 +1675,7 @@
 [2370. Longest Ideal Subsequence](./leetcode/2370-LongestIdealSubsequence.go)   
 [2390. Removing Stars From a String](./leetcode/2390-RemovingStarsFromAString.go)   
 [2414. Length of the Longest Alphabetical Continuous Substring](./leetcode/2414-LengthOfTheLongestAlphabeticalContinuousSubstring.go)   
+[2450. Number of Distinct Binary Strings After Applying Operations](./leetcode/2450-NumberOfDistinctBinaryStringsAfterApplyingOperations.go)   
 [2486. Append Characters to String to Make Subsequence](./leetcode/2486-AppendCharactersToStringToMakeSubsequence.go)   
 [2490. Circular Sentence](./leetcode/2490-CircularSentence.go)   
 [2491. Divide Players Into Teams of Equal Skill](./leetcode/2491-DividePlayersIntoTeamsOfEqualSkill.go)   
