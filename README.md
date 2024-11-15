@@ -933,6 +933,7 @@
 [1863. Sum of All Subset XOR Totals](./leetcode/1863-SumOfAllSubsetXORTotals.go)   
 [1868. Product of Two Run-Length Encoded Arrays](./leetcode/1868-ProductOfTwoRunLengthEncodedArrays.go)   
 [1870. Minimum Speed to Arrive on Time](./leetcode/1870-MinimumSpeedToArriveOnTime.go)   
+[1872. Stone Game VIII](./leetcode/1872-StoneGameVIII.go)   
 [1874. Minimize Product Sum of Two Arrays](./leetcode/1874-MinimizeProductSumOfTwoArrays.go)   
 [1877. Minimize Maximum Pair Sum in Array](./leetcode/1877-MinimizeMaximumPairSumInArray.go)   
 [1878. Get Biggest Three Rhombus Sums in a Grid](./leetcode/1878-GetBiggestThreeRhombusSumsInAGrid.go)   
