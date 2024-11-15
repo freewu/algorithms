@@ -936,6 +936,7 @@
 [1874. Minimize Product Sum of Two Arrays](./leetcode/1874-MinimizeProductSumOfTwoArrays.go)   
 [1877. Minimize Maximum Pair Sum in Array](./leetcode/1877-MinimizeMaximumPairSumInArray.go)   
 [1878. Get Biggest Three Rhombus Sums in a Grid](./leetcode/1878-GetBiggestThreeRhombusSumsInAGrid.go)   
+[1879. Minimum XOR Sum of Two Arrays](./leetcode/1879-MinimumXORSumOfTwoArrays.go)   
 [1883. Minimum Skips to Arrive at Meeting On Time](./leetcode/1883-MinimumSkipsToArriveAtMeetingOnTime.go)   
 [1885. Count Pairs in Two Arrays](./leetcode/1885-CountPairsInTwoArrays.go)   
 [1886. Determine Whether Matrix Can Be Obtained By Rotation](./leetcode/1886-DetermineWhetherMatrixCanBeObtainedByRotation.go)   
