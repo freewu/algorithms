@@ -1095,6 +1095,7 @@
 [2463. Minimum Total Distance Traveled](./leetcode/2463-MinimumTotalDistanceTraveled.go)   
 [2464. Minimum Subarrays in a Valid Split](./leetcode/2464-MinimumSubarraysInAValidSplit.go)   
 [2482. Difference Between Ones and Zeros in Row and Column](./leetcode/2482-DifferenceBetweenOnesAndZerosInRowAndColumn.go)   
+[2495. Number of Subarrays Having Even Product](./leetcode/2495-NumberOfSubarraysHavingEvenProduct.go)   
 [2498. Frog Jump II](./leetcode/2498-FrogJumpII.go)   
 [2501. Longest Square Streak in an Array](./leetcode/2501-LongestSquareStreakInAnArray.go)   
 [2503. Maximum Number of Points From Grid Queries](./leetcode/2503-MaximumNumberOfPointsFromGridQueries.go)   
