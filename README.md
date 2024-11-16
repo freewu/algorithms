@@ -943,6 +943,7 @@
 [1885. Count Pairs in Two Arrays](./leetcode/1885-CountPairsInTwoArrays.go)   
 [1886. Determine Whether Matrix Can Be Obtained By Rotation](./leetcode/1886-DetermineWhetherMatrixCanBeObtainedByRotation.go)   
 [1887. Reduction Operations to Make the Array Elements Equal](./leetcode/1887-ReductionOperationsToMakeTheArrayElementsEqual.go)   
+[1889. Minimum Space Wasted From Packaging](./leetcode/1889-MinimumSpaceWastedFromPackaging.go)   
 [1891. Cutting Ribbons](./leetcode/1891-CuttingRibbons.go)   
 [1894. Find the Student that Will Replace the Chalk](./leetcode/1894-FindTheStudentThatWillReplaceTheChalk.go)   
 [1901. Find a Peak Element II](./leetcode/1901-FindAPeakElementII.go)   
