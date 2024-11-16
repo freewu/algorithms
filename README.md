@@ -1647,6 +1647,7 @@
 [1933. Check if String Is Decomposable Into Value-Equal Substrings](./leetcode/1933-CheckIfStringIsDecomposableIntoValueEqualSubstrings.go)   
 [1839. Longest Substring Of All Vowels in Order](./leetcode/1839-LongestSubstringOfAllVowelsInOrder.go)   
 [1849. Splitting a String Into Descending Consecutive Values](./leetcode/1849-SplittingAStringIntoDescendingConsecutiveValues.go)   
+[1903. Largest Odd Number in String](./leetcode/1903-LargestOddNumberInString.go)   
 [1945. Sum of Digits of String After Convert](./leetcode/1945-SumOfDigitsOfStringAfterConvert.go)   
 [1957. Delete Characters to Make Fancy String](./leetcode/1957-DeleteCharactersToMakeFancyString.go)   
 [1963. Minimum Number of Swaps to Make the String Balanced](./leetcode/1963-MinimumNumberOfSwapsToMakeTheStringBalanced.go)   
