@@ -1234,6 +1234,7 @@
 [3102. Minimize Manhattan Distances](./leetcode/3102-MinimizeManhattanDistances.go)   
 [3111. Minimum Rectangles to Cover Points](./leetcode/3111-MinimumRectanglesToCoverPoints.go)   
 [3115. Maximum Prime Difference](./leetcode/3115-MaximumPrimeDifference.go)   
+[3116. Kth Smallest Amount With Single Denomination Combination](./leetcode/3116-KthSmallestAmountWithSingleDenominationCombination.go)   
 [3117. Minimum Sum of Values by Dividing Array](./leetcode/3117-MinimumSumOfValuesByDividingArray.go)   
 [3127. Make a Square with the Same Color](./leetcode/3127-MakeASquareWithTheSameColor.go)   
 [3131. Find the Integer Added to Array I](./leetcode/3131-FindTheIntegerAddedToArrayI.go)   
