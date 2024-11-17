@@ -89,6 +89,27 @@ func imageSmoother1(img [][]int) [][]int {
     return res
 }
 
+func imageSmoother2(img [][]int) [][]int {
+    n, m := len(img), len(img[0])
+    res := make([][]int, n)
+    directions := [][]int{{-1,-1}, {-1,0}, {-1,1}, {0,-1}, {0,1}, {1,-1}, {1,0}, {1,1}}
+    for i := range img {
+        res[i] = make([]int, m)
+        for j := range img[i] {
+            sum, count := img[i][j], 1
+            for _, v := range directions {
+                x, y := i + v[0], j + v[1]
+                if x >= 0 && y >= 0 && x < n && y < m {
+                    count++
+                    sum += img[x][y]
+                }
+            }
+            res[i][j] = sum / count
+        }
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // <img src="https://assets.leetcode.com/uploads/2021/05/03/smooth-grid.jpg" />
@@ -111,4 +132,8 @@ func main() {
     
     fmt.Println(imageSmoother1([][]int{{1,1,1},{1,0,1},{1,1,1}})) // [[0,0,0],[0,0,0],[0,0,0]]
     fmt.Println(imageSmoother1([][]int{{100,200,100},{200,50,200},{100,200,100}})) // [[137,141,137],[141,138,141],[137,141,137]]
+
+    fmt.Println(imageSmoother2([][]int{{1,1,1},{1,0,1},{1,1,1}})) // [[0,0,0],[0,0,0],[0,0,0]]
+    fmt.Println(imageSmoother2([][]int{{100,200,100},{200,50,200},{100,200,100}})) // [[137,141,137],[141,138,141],[137,141,137]]
+
 }
