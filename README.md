@@ -1241,6 +1241,7 @@
 [3142. Check if Grid Satisfies Conditions](./leetcode/3142-CheckIfGridSatisfiesConditions.go)   
 [3143. Maximum Points Inside the Square](./leetcode/3143-MaximumPointsInsideTheSquare.go)   
 [3145. Find Products of Elements of Big Array](./leetcode/3145-FindProductsOfElementsOfBigArray.go)   
+[3147. Taking Maximum Energy From the Mystic Dungeon](./leetcode/3147-TakingMaximumEnergyFromTheMysticDungeon.go)   
 [3148. Maximum Difference Score in a Grid](./leetcode/3148-MaximumDifferenceScoreInAGrid.go)   
 [3151. Special Array I](./leetcode/3151-SpecialArrayI.go)   
 [3152. Special Array II](./leetcode/3152-SpecialArrayII.go)   
