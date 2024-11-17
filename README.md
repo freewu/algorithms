@@ -1716,6 +1716,7 @@
 [3016. Minimum Number of Pushes to Type Word II](./leetcode/3016-MinimumNumberOfPushesToTypeWordII.go)   
 [3019. Number of Changing Keys](./leetcode/3019-NumberOfChangingKeys.go)   
 [3083. Existence of a Substring in a String and Its Reverse](./leetcode/3083-ExistenceOfASubstringInAStringAndItsReverse.go)   
+[3084. Count Substrings Starting and Ending with Given Character](./leetcode/3084-CountSubstringsStartingAndEndingWithGivenCharacter.go)   
 [3085. Minimum Deletions to Make String K-Special](./leetcode/3085-MinimumDeletionsToMakeStringKSpecial.go)   
 [3088. Make String Anti-palindrome](./leetcode/3088-MakeStringAntiPalindrome.go)   
 [3104. Find Longest Self-Contained Substring](./leetcode/3104-FindLongestSelfContainedSubstring.go)   
