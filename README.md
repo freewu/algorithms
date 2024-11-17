@@ -1088,6 +1088,7 @@
 [2422. Merge Operations to Turn Array Into a Palindrome](./leetcode/2422-MergeOperationsToTurnArrayIntoAPalindrome.go)   
 [2428. Maximum Sum of an Hourglass](./leetcode/2428-MaximumSumOfAnHourglass.go)   
 [2431. Maximize Total Tastiness of Purchased Fruits](./leetcode/2431-MaximizeTotalTastinessOfPurchasedFruits.go)   
+[2435. Paths in Matrix Whose Sum Is Divisible by K](./leetcode/2435-PathsInMatrixWhoseSumIsDivisibleByK.go)   
 [2436. Minimum Split Into Subarrays With GCD Greater Than One](./leetcode/2436-MinimumSplitIntoSubarraysWithGCDGreaterThanOne.go)   
 [2441. Largest Positive Integer That Exists With Its Negative](./leetcode/2441-LargestPositiveIntegerThatExistsWithItsNegative.go)   
 [2444. Count Subarrays With Fixed Bounds](./leetcode/2444-CountSubarraysWithFixedBounds.go)   
