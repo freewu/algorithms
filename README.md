@@ -1676,6 +1676,7 @@
 [2194. Cells in a Range on an Excel Sheet](./leetcode/2194-CellsInARangeOnAnExcelSheet.go)   
 [2207. Maximize Number of Subsequences in a String](./leetcode/2207-MaximizeNumberOfSubsequencesInAString.go)   
 [2209. Minimum White Tiles After Covering With Carpets](./leetcode/2209-MinimumWhiteTilesAfterCoveringWithCarpets.go)   
+[2232. Minimize Result by Adding Parentheses to Expression](./leetcode/2232-MinimizeResultByAddingParenthesesToExpression.go)   
 [2259. Remove Digit From Number to Maximize Result](./leetcode/2259-RemoveDigitFromNumberToMaximizeResult.go)   
 [2268. Minimum Number of Keypresses](./leetcode/2268-MinimumNumberOfKeypresses.go)   
 [2288. Apply Discount to Prices](./leetcode/2288-ApplyDiscountToPrices.go)   
