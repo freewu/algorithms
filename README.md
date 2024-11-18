@@ -1048,6 +1048,7 @@
 [2257. Count Unguarded Cells in the Grid](./leetcode/2257-CountUnguardedCellsInTheGrid.go)   
 [2258. Escape the Spreading Fire](./leetcode/2258-EscapeTheSpreadingFire.go)   
 [2263. Make Array Non-decreasing or Non-increasing](./leetcode/2263-MakeArrayNonDecreasingOrNonIncreasing.go)   
+[2267. Check if There Is a Valid Parentheses String Path](./leetcode/2267-CheckIfThereIsAValidParenthesesStringPath.go)   
 [2271. Maximum White Tiles Covered by a Carpet](./leetcode/2271-MaximumWhiteTilesCoveredByACarpet.go)   
 [2275. Largest Combination With Bitwise AND Greater Than Zero](./leetcode/2275-LargestCombinationWithBitwiseANDGreaterThanZero.go)   
 [2280. Minimum Lines to Represent a Line Chart](./leetcode/2280-MinimumLinesToRepresentALineChart.go)   
