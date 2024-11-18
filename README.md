@@ -2974,6 +2974,7 @@ LCR 185. 统计结果概率
 [3322. Premier League Table Ranking III](./leetcode/3322-PremierLeagueTableRankingIII.sql)   
 [3328. Find Cities in Each State II](./leetcode/3328-FindCitiesInEachStateII.sql)   
 [3338. Second Highest Salary II](./leetcode/3338-SecondHighestSalaryII.sql)   
+[3358. Books with NULL Ratings](./leetcode/3358-BooksWithNULLRatings.sql)   
 
 # Shell
 [192. Word Frequency](./leetcode/192-WordFrequency.sh)      
