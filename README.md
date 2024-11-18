@@ -1107,7 +1107,7 @@
 [2498. Frog Jump II](./leetcode/2498-FrogJumpII.go)   
 [2501. Longest Square Streak in an Array](./leetcode/2501-LongestSquareStreakInAnArray.go)   
 [2503. Maximum Number of Points From Grid Queries](./leetcode/2503-MaximumNumberOfPointsFromGridQueries.go)   
-[2509. Cycle Length Queries in a Tree](./leetcode/2509-CycleLengthQueriesInATree.go)   
+[2505. Bitwise OR of All Subsequence Sums](./leetcode/2505-BitwiseOROfAllSubsequenceSums.go)   
 [2509. Cycle Length Queries in a Tree](./leetcode/2509-CycleLengthQueriesInATree.go)   
 [2510. Check if There is a Path With Equal Number of 0's And 1's](./leetcode/2510-CheckIfThereIsAPathWithEqualNumberOfZerosAndOnes.go)   
 [2529. Maximum Count of Positive Integer and Negative Integer](./leetcode/2529-MaximumCountOfPositiveIntegerAndNegativeInteger.go)   
