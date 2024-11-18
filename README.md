@@ -1295,6 +1295,7 @@
 [3239. Minimum Number of Flips to Make Binary Grid Palindromic I](./leetcode/3239-MinimumNumberOfFlipsToMakeBinaryGridPalindromicI.go)   
 [3240. Minimum Number of Flips to Make Binary Grid Palindromic II](./leetcode/3240-MinimumNumberOfFlipsToMakeBinaryGridPalindromicII.go)   
 [3243. Shortest Distance After Road Addition Queries I](./leetcode/3243-ShortestDistanceAfterRoadAdditionQueriesI.go)   
+[3244. Shortest Distance After Road Addition Queries II](./leetcode/3244-ShortestDistanceAfterRoadAdditionQueriesII.go)   
 [3245. Alternating Groups III](./leetcode/3245-AlternatingGroupsIII.go)   
 [3247. Number of Subsequences with Odd Sum](./leetcode/3247-NumberOfSubsequencesWithOddSum.go)   
 [3250. Find the Count of Monotonic Pairs I](./leetcode/3250-FindTheCountOfMonotonicPairsI.go)   
