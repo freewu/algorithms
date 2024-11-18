@@ -986,6 +986,7 @@
 [2022. Convert 1D Array Into 2D Array](./leetcode/2022-Convert1DArrayInto2DArray.go)   
 [2028. Find Missing Observations](./leetcode/2028-FindMissingObservations.go)   
 [2031. Count Subarrays With More Ones Than Zeros](./leetcode/2031-CountSubarraysWithMoreOnesThanZeros.go)   
+[2033. Minimum Operations to Make a Uni-Value Grid](./leetcode/2033-MinimumOperationsToMakeAUniValueGrid.go)   
 [2035. Partition Array Into Two Arrays to Minimize Sum Difference](./leetcode/2035-PartitionArrayIntoTwoArraysToMinimizeSumDifference.go)   
 [2036. Maximum Alternating Subarray Sum](./leetcode/2036-MaximumAlternatingSubarraySum.go)   
 [2037. Minimum Number of Moves to Seat Everyone](./leetcode/2037-MinimumNumberOfMovesToSeatEveryone.go)   
