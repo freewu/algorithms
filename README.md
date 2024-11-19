@@ -1716,6 +1716,7 @@
 [2490. Circular Sentence](./leetcode/2490-CircularSentence.go)   
 [2491. Divide Players Into Teams of Equal Skill](./leetcode/2491-DividePlayersIntoTeamsOfEqualSkill.go)   
 [2516. Take K of Each Character From Left and Right](./leetcode/2516-TakeKOfEachCharacterFromLeftAndRight.go)   
+[2539. Count the Number of Good Subsequences](./leetcode/2539-CountTheNumberOfGoodSubsequences.go)   
 [2575. Find the Divisibility Array of a String](./leetcode/2575-FindTheDivisibilityArrayOfAString.go)   
 [2586. Count the Number of Vowel Strings in Range](./leetcode/2586-CountTheNumberOfVowelStringsInRange.go)   
 [2645. Minimum Additions to Make Valid String](./leetcode/2645-MinimumAdditionsToMakeValidString.go)   
