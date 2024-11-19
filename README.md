@@ -1787,6 +1787,7 @@
 [1611. Minimum One Bit Operations to Make Integers Zero](./leetcode/1611-MinimumOneBitOperationsToMakeIntegersZero.go)   
 [1659. Maximize Grid Happiness](./leetcode/1659-MaximizeGridHappiness.go)   
 [1692. Count Ways to Distribute Candies](./leetcode/1692-CountWaysToDistributeCandies.go)   
+[1900. The Earliest and Latest Rounds Where Players Compete](./leetcode/1900-TheEarliestAndLatestRoundsWherePlayersCompete.go)   
 [1931. Painting a Grid With Three Different Colors](./leetcode/1931-PaintingAGridWithThreeDifferentColors.go)   
 [2466. Count Ways To Build Good Strings](./leetcode/2466-CountWaysToBuildGoodStrings.go)   
 [3129. Find All Possible Stable Binary Arrays I](./leetcode/3129-FindAllPossibleStableBinaryArraysI.go)   
