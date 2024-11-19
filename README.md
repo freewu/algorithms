@@ -1672,6 +1672,7 @@
 [1896. Minimum Cost to Change the Final Value of Expression](./leetcode/1896-MinimumCostToChangeTheFinalValueOfExpression.go)   
 [1898. Maximum Number of Removable Characters](./leetcode/1898-MaximumNumberOfRemovableCharacters.go)   
 [1903. Largest Odd Number in String](./leetcode/1903-LargestOddNumberInString.go)   
+[1904. The Number of Full Rounds You Have Played](./leetcode/1904-TheNumberOfFullRoundsYouHavePlayed.go)   
 [1915. Number of Wonderful Substrings](./leetcode/1915-NumberOfWonderfulSubstrings.go)   
 [1933. Check if String Is Decomposable Into Value-Equal Substrings](./leetcode/1933-CheckIfStringIsDecomposableIntoValueEqualSubstrings.go)   
 [1945. Sum of Digits of String After Convert](./leetcode/1945-SumOfDigitsOfStringAfterConvert.go)   
