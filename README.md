@@ -956,6 +956,7 @@
 [1906. Minimum Absolute Difference Queries](./leetcode/1906-MinimumAbsoluteDifferenceQueries.go)   
 [1908. Game of Nim](./leetcode/1908-GameOfNim.go)   
 [1909. Remove One Element to Make the Array Strictly Increasing](./leetcode/1909-RemoveOneElementToMakeTheArrayStrictlyIncreasing.go)   
+[1913. Maximum Product Difference Between Two Pairs](./leetcode/1913-MaximumProductDifferenceBetweenTwoPairs.go)   
 [1914. Cyclically Rotating a Grid](./leetcode/1914-CyclicallyRotatingAGrid.go)   
 [1918. Kth Smallest Subarray Sum](./leetcode/1918-KthSmallestSubarraySum.go)   
 [1924. Erect the Fence II](./leetcode/1924-ErectTheFenceII.go)   
