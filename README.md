@@ -953,6 +953,7 @@
 [1901. Find a Peak Element II](./leetcode/1901-FindAPeakElementII.go)   
 [1902. Depth of BST Given Insertion Order](./leetcode/1902-DepthOfBSTGivenInsertionOrder.go)   
 [1905. Count Sub Islands](./leetcode/1905-CountSubIslands.go)   
+[1906. Minimum Absolute Difference Queries](./leetcode/1906-MinimumAbsoluteDifferenceQueries.go)   
 [1908. Game of Nim](./leetcode/1908-GameOfNim.go)   
 [1914. Cyclically Rotating a Grid](./leetcode/1914-CyclicallyRotatingAGrid.go)   
 [1918. Kth Smallest Subarray Sum](./leetcode/1918-KthSmallestSubarraySum.go)   
