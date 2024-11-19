@@ -1099,6 +1099,7 @@
 [2441. Largest Positive Integer That Exists With Its Negative](./leetcode/2441-LargestPositiveIntegerThatExistsWithItsNegative.go)   
 [2444. Count Subarrays With Fixed Bounds](./leetcode/2444-CountSubarraysWithFixedBounds.go)   
 [2459. Sort Array by Moving Items to Empty Space](./leetcode/2459-SortArrayByMovingItemsToEmptySpace.go)   
+[2461. Maximum Sum of Distinct Subarrays With Length K](./leetcode/2461-MaximumSumOfDistinctSubarraysWithLengthK.go)   
 [2462. Total Cost to Hire K Workers](./leetcode/2462-TotalCostToHireKWorkers.go)   
 [2463. Minimum Total Distance Traveled](./leetcode/2463-MinimumTotalDistanceTraveled.go)   
 [2464. Minimum Subarrays in a Valid Split](./leetcode/2464-MinimumSubarraysInAValidSplit.go)   
