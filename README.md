@@ -962,6 +962,7 @@
 [1918. Kth Smallest Subarray Sum](./leetcode/1918-KthSmallestSubarraySum.go)   
 [1920. Build Array from Permutation](./leetcode/1920-BuildArrayFromPermutation.go)   
 [1921. Eliminate Maximum Number of Monsters](./leetcode/1921-EliminateMaximumNumberOfMonsters.go)   
+[1923. Longest Common Subpath](./leetcode/1923-LongestCommonSubpath.go)   
 [1924. Erect the Fence II](./leetcode/1924-ErectTheFenceII.go)   
 [1926. Nearest Exit from Entrance in Maze](./leetcode/1926-NearestExitFromEntranceInMaze.go)   
 [1929. Concatenation of Array](./leetcode/1929-ConcatenationOfArray.go)   

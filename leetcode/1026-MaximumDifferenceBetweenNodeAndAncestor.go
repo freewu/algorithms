@@ -50,7 +50,7 @@ func maxAncestorDiff(root *TreeNode) int {
             return pmax - pmin
         }
         max := func(x, y int) int { if x > y { return x; }; return y; }
-        min:= func(x, y int) int { if x < y { return x; }; return y; }
+        min := func(x, y int) int { if x < y { return x; }; return y; }
         mx, mi := max(node.Val, pmax), min(node.Val, pmin)
         return max(dfs(node.Left, mx, mi), dfs(node.Right, mx, mi))
     }
@@ -64,7 +64,7 @@ func maxAncestorDiff1(root *TreeNode) int {
             return 0
         }
         max := func(x, y int) int { if x > y { return x; }; return y; }
-        min:= func(x, y int) int { if x < y { return x; }; return y; }
+        min := func(x, y int) int { if x < y { return x; }; return y; }
         abs := func(x int) int { if x < 0 { return -x; }; return x; }
 
         diff := max(abs(root.Val - mi), abs(root.Val - ma))

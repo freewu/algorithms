@@ -31,7 +31,7 @@ func maxDistance(arrays [][]int) int {
     }
     res, mx, mn := 0, arrays[0][len(arrays[0]) - 1], arrays[0][0]
     max := func(x, y int) int { if x > y { return x; }; return y; }
-    min:= func(x, y int) int { if x < y { return x; }; return y; }
+    min := func(x, y int) int { if x < y { return x; }; return y; }
     abs := func(x int) int { if x < 0 { return -x; }; return x; }
     for i:=1; i<len(arrays); i++ {
         n := len(arrays[i])

@@ -50,7 +50,7 @@ func countGoodTriplets(arr []int, a int, b int, c int) int {
 // best solution
 func countGoodTriplets1(arr []int, a int, b int, c int) int {
     max := func(x, y int) int { if x > y { return x; }; return y; }
-    min:= func(x, y int) int { if x < y { return x; }; return y; }
+    min := func(x, y int) int { if x < y { return x; }; return y; }
     abs := func(x int) int { if x < 0 { return -x; }; return x; }
     m := arr[0]
     for _, v := range arr {
