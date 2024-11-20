@@ -1308,6 +1308,7 @@
 [3244. Shortest Distance After Road Addition Queries II](./leetcode/3244-ShortestDistanceAfterRoadAdditionQueriesII.go)   
 [3245. Alternating Groups III](./leetcode/3245-AlternatingGroupsIII.go)   
 [3247. Number of Subsequences with Odd Sum](./leetcode/3247-NumberOfSubsequencesWithOddSum.go)   
+[3248. Snake in Matrix](./leetcode/3248-SnakeInMatrix.go)   
 [3250. Find the Count of Monotonic Pairs I](./leetcode/3250-FindTheCountOfMonotonicPairsI.go)   
 [3251. Find the Count of Monotonic Pairs II](./leetcode/3251-FindTheCountOfMonotonicPairsII.go)   
 [3254. Find the Power of K-Size Subarrays I](./leetcode/3254-FindThePowerOfKSizeSubarraysI.go)   
