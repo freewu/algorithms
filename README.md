@@ -2348,6 +2348,7 @@
 [1786. Number of Restricted Paths From First to Last Node](./leetcode/1786-NumberOfRestrictedPathsFromFirstToLastNode.go)   
 [1791. Find Center of Star Graph](./leetcode/1791-FindCenterOfStarGraph.go)   
 [1857. Largest Color Value in a Directed Graph](./leetcode/1857-LargestColorValueInADirectedGraph.go)   
+[1916. Count Ways to Build Rooms in an Ant Colony](./leetcode/1916-CountWaysToBuildRoomsInAnAntColony.go)   
 [1928. Minimum Cost to Reach Destination in Time](./leetcode/1928-MinimumCostToReachDestinationInTime.go)   
 [1971. Find if Path Exists in Graph](./leetcode/1971-FindIfPathExistsInGraph.go)   
 [1976. Number of Ways to Arrive at Destination](./leetcode/1976-NumberOfWaysToArriveAtDestination.go)   
