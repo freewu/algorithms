@@ -1128,6 +1128,7 @@
 [2540. Minimum Common Value](./leetcode/2540-MinimumCommonValue.go)   
 [2542. Maximum Subsequence Score](./leetcode/2542-MaximumSubsequenceScore.go)   
 [2545. Sort the Students by Their Kth Score](./leetcode/2545-SortTheStudentsByTheirKthScore.go)   
+[2548. Maximum Price to Fill a Bag](./leetcode/2548-MaximumPriceToFillABag.go)   
 [2549. Count Distinct Numbers on Board](./leetcode/2549-CountDistinctNumbersOnBoard.go)   
 [2552. Count Increasing Quadruplets](./leetcode/2552-CountIncreasingQuadruplets.go)   
 [2555. Maximize Win From Two Segments](./leetcode/2555-MaximizeWinFromTwoSegments.go)   
