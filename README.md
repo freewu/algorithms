@@ -1683,6 +1683,7 @@
 [1904. The Number of Full Rounds You Have Played](./leetcode/1904-TheNumberOfFullRoundsYouHavePlayed.go)   
 [1910. Remove All Occurrences of a Substring](./leetcode/1910-RemoveAllOccurrencesOfASubstring.go)   
 [1915. Number of Wonderful Substrings](./leetcode/1915-NumberOfWonderfulSubstrings.go)   
+[1927. Sum Game](./leetcode/1927-SumGame.go)   
 [1933. Check if String Is Decomposable Into Value-Equal Substrings](./leetcode/1933-CheckIfStringIsDecomposableIntoValueEqualSubstrings.go)   
 [1945. Sum of Digits of String After Convert](./leetcode/1945-SumOfDigitsOfStringAfterConvert.go)   
 [1957. Delete Characters to Make Fancy String](./leetcode/1957-DeleteCharactersToMakeFancyString.go)   
