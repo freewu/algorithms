@@ -2063,6 +2063,7 @@
 [1922. Count Good Numbers](./leetcode/1922-CountGoodNumbers.go)   
 [1924. Erect the Fence II](./leetcode/1924-ErectTheFenceII.go)   
 [1925. Count Square Sum Triples](./leetcode/1925-CountSquareSumTriples.go)   
+[1952. Three Divisors](./leetcode/1952-ThreeDivisors.go)   
 [1956. Minimum Time For K Virus Variants to Spread](./leetcode/1956-MinimumTimeForKVirusVariantsToSpread.go)   
 [1999. Smallest Greater Multiple Made of Two Digits](./leetcode/1999-SmallestGreaterMultipleMadeOfTwoDigits.go)   
 [2005. Subtree Removal Game with Fibonacci Tree](./leetcode/2005-SubtreeRemovalGameWithFibonacciTree.go)   
