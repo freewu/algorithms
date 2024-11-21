@@ -2108,6 +2108,7 @@
 [3178. Find the Child Who Has the Ball After K Seconds](./leetcode/3178-FindTheChildWhoHasTheBallAfterKSeconds.go)   
 [3200. Maximum Height of a Triangle](./leetcode/3200-MaximumHeightOfATriangle.go)   
 [3222. Find the Winning Player in Coin Game](./leetcode/3222-FindTheWinningPlayerInCoinGame.go)   
+[3233. Find the Count of Numbers Which Are Not Special](./leetcode/3233-FindTheCountOfNumbersWhichAreNotSpecial.go)   
 [3235. Check if the Rectangle Corner Is Reachable](./leetcode/3235-CheckIfTheRectangleCornerIsReachable.go)   
 [3250. Find the Count of Monotonic Pairs I](./leetcode/3250-FindTheCountOfMonotonicPairsI.go)   
 [3251. Find the Count of Monotonic Pairs II](./leetcode/3251-FindTheCountOfMonotonicPairsII.go)   
