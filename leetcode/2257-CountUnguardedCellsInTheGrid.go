@@ -131,6 +131,30 @@ func countUnguarded1(m int, n int, guards [][]int, walls [][]int) int {
     return res
 }
 
+func countUnguarded2(m int, n int, guards [][]int, walls [][]int) int {
+    res := 0
+    arr := make([]byte, m * n)
+    for _, w := range walls { // 墙的位置
+        arr[w[0] * n + w[1]] = 1
+    }
+    for _, g := range guards { // 守卫的位置
+        arr[g[0]*n + g[1]] = 1
+    }
+    for _, g := range guards { // 守卫能观察到的位置
+        r, c := g[0], g[1]
+        for r := r - 1; r >= 0 && arr[r * n + c] != 1; r-- { arr[r * n + c] = 2 }
+        for r := r + 1; r <  m && arr[r * n + c] != 1; r++ { arr[r * n + c] = 2 }
+        for c := c - 1; c >= 0 && arr[r * n + c] != 1; c-- { arr[r * n + c] = 2 }
+        for c := c + 1; c <  n && arr[r * n + c] != 1; c++ { arr[r * n + c] = 2 }
+    }
+    for i := 0; i < m * n; i++ {
+        if arr[i] == 0 {
+            res++
+        }
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // <img src="https://assets.leetcode.com/uploads/2022/03/10/example1drawio2.png" />
@@ -149,4 +173,7 @@ func main() {
 
     fmt.Println(countUnguarded1(4,6,[][]int{{0,0},{1,1},{2,3}},[][]int{{0,1},{2,2},{1,4}})) // 7
     fmt.Println(countUnguarded1(3,3,[][]int{{1,1}},[][]int{{0,1},{1,0},{2,1},{1,2}})) // 4
+
+    fmt.Println(countUnguarded2(4,6,[][]int{{0,0},{1,1},{2,3}},[][]int{{0,1},{2,2},{1,4}})) // 7
+    fmt.Println(countUnguarded2(3,3,[][]int{{1,1}},[][]int{{0,1},{1,0},{2,1},{1,2}})) // 4
 }
