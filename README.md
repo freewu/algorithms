@@ -966,6 +966,7 @@
 [1924. Erect the Fence II](./leetcode/1924-ErectTheFenceII.go)   
 [1926. Nearest Exit from Entrance in Maze](./leetcode/1926-NearestExitFromEntranceInMaze.go)   
 [1929. Concatenation of Array](./leetcode/1929-ConcatenationOfArray.go)   
+[1936. Add Minimum Number of Rungs](./leetcode/1936-AddMinimumNumberOfRungs.go)   
 [1937. Maximum Number of Points with Cost](./leetcode/1937-MaximumNumberOfPointsWithCost.go)   
 [1938. Maximum Genetic Difference Query](./leetcode/1938-MaximumGeneticDifferenceQuery.go)   
 [1940. Longest Common Subsequence Between Sorted Arrays](./leetcode/1940-LongestCommonSubsequenceBetweenSortedArrays.go)   
