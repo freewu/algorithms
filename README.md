@@ -1689,6 +1689,7 @@
 [1927. Sum Game](./leetcode/1927-SumGame.go)   
 [1930. Unique Length-3 Palindromic Subsequences](./leetcode/1930-UniqueLength3PalindromicSubsequences.go)   
 [1933. Check if String Is Decomposable Into Value-Equal Substrings](./leetcode/1933-CheckIfStringIsDecomposableIntoValueEqualSubstrings.go)   
+[1935. Maximum Number of Words You Can Type](./leetcode/1935-MaximumNumberOfWordsYouCanType.go)   
 [1945. Sum of Digits of String After Convert](./leetcode/1945-SumOfDigitsOfStringAfterConvert.go)   
 [1957. Delete Characters to Make Fancy String](./leetcode/1957-DeleteCharactersToMakeFancyString.go)   
 [1963. Minimum Number of Swaps to Make the String Balanced](./leetcode/1963-MinimumNumberOfSwapsToMakeTheStringBalanced.go)   
