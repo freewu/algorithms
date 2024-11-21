@@ -973,6 +973,7 @@
 [1942. The Number of the Smallest Unoccupied Chair](./leetcode/1942-TheNumberOfTheSmallestUnoccupiedChair.go)   
 [1943. Describe the Painting](./leetcode/1943-DescribeThePainting.go)   
 [1944. Number of Visible People in a Queue](./leetcode/1944-NumberOfVisiblePeopleInAQueue.go)   
+[1947. Maximum Compatibility Score Sum](./leetcode/1947-MaximumCompatibilityScoreSum.go)   
 [1950. Maximum of Minimum Values in All Subarrays](./leetcode/1950-MaximumOfMinimumValuesInAllSubarrays.go)   
 [1953. Maximum Number of Weeks for Which You Can Work](./leetcode/1953-MaximumNumberOfWeeksForWhichYouCanWork.go)   
 [1956. Minimum Time For K Virus Variants to Spread](./leetcode/1956-MinimumTimeForKVirusVariantsToSpread.go)   
