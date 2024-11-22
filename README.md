@@ -980,6 +980,7 @@
 [1956. Minimum Time For K Virus Variants to Spread](./leetcode/1956-MinimumTimeForKVirusVariantsToSpread.go)   
 [1958. Check if Move is Legal](./leetcode/1958-CheckIfMoveIsLegal.go)   
 [1959. Minimum Total Space Wasted With K Resizing Operations](./leetcode/1959-MinimumTotalSpaceWastedWithKResizingOperations.go)   
+[1962. Remove Stones to Minimize the Total](./leetcode/1962-RemoveStonesToMinimizeTheTotal.go)   
 [1964. Find the Longest Valid Obstacle Course at Each Position](./leetcode/1964-FindTheLongestValidObstacleCourseAtEachPosition.go)   
 [1966. Binary Searchable Numbers in an Unsorted Array](./leetcode/1966-BinarySearchableNumbersInAnUnsortedArray.go)   
 [1969. Minimum Non-Zero Product of the Array Elements](./leetcode/1969-MinimumNonZeroProductOfTheArrayElements.go)   
