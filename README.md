@@ -1315,6 +1315,7 @@
 [3327. Check if DFS Strings Are Palindromes](./leetcode/3327-CheckIfDFSStringsArePalindromes.go)   
 [3235. Check if the Rectangle Corner Is Reachable](./leetcode/3235-CheckIfTheRectangleCornerIsReachable.go)   
 [3237. Alt and Tab Simulation](./leetcode/3237-AltAndTabSimulation.go)   
+[3238. Find the Number of Winning Players](./leetcode/3238-FindTheNumberOfWinningPlayers.go)   
 [3239. Minimum Number of Flips to Make Binary Grid Palindromic I](./leetcode/3239-MinimumNumberOfFlipsToMakeBinaryGridPalindromicI.go)   
 [3240. Minimum Number of Flips to Make Binary Grid Palindromic II](./leetcode/3240-MinimumNumberOfFlipsToMakeBinaryGridPalindromicII.go)   
 [3243. Shortest Distance After Road Addition Queries I](./leetcode/3243-ShortestDistanceAfterRoadAdditionQueriesI.go)   
