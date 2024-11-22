@@ -1180,6 +1180,7 @@
 [2809. Minimum Time to Make Array Sum At Most x](./leetcode/2809-MinimumTimeToMakeArraySumAtMostX.go)   
 [2812. Find the Safest Path in a Grid](./leetcode/2812-FindTheSafestPathInAGrid.go)   
 [2813. Maximum Elegance of a K-Length Subsequence](./leetcode/2813-MaximumEleganceOfAK-LengthSubsequence.go)   
+[2814. Minimum Time Takes to Reach Destination Without Drowning](./leetcode/2814-MinimumTimeTakesToReachDestinationWithoutDrowning.go)   
 [2815. Max Pair Sum in an Array](./leetcode/2815-MaxPairSumInAnArray.go)   
 [2831. Find the Longest Equal Subarray](./leetcode/2831-FindTheLongestEqualSubarray.go)   
 [2848. Points That Intersect With Cars](./leetcode/2848-PointsThatIntersectWithCars.go)   
