@@ -983,6 +983,7 @@
 [1962. Remove Stones to Minimize the Total](./leetcode/1962-RemoveStonesToMinimizeTheTotal.go)   
 [1964. Find the Longest Valid Obstacle Course at Each Position](./leetcode/1964-FindTheLongestValidObstacleCourseAtEachPosition.go)   
 [1966. Binary Searchable Numbers in an Unsorted Array](./leetcode/1966-BinarySearchableNumbersInAnUnsortedArray.go)   
+[1968. Array With Elements Not Equal to Average of Neighbors](./leetcode/1968-ArrayWithElementsNotEqualToAverageOfNeighbors.go)   
 [1969. Minimum Non-Zero Product of the Array Elements](./leetcode/1969-MinimumNonZeroProductOfTheArrayElements.go)   
 [1970. Last Day Where You Can Still Cross](./leetcode/1970-LastDayWhereYouCanStillCross.go)   
 [1975. Maximum Matrix Sum](./leetcode/1975-MaximumMatrixSum.go)   
