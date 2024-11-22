@@ -976,6 +976,7 @@
 [1947. Maximum Compatibility Score Sum](./leetcode/1947-MaximumCompatibilityScoreSum.go)   
 [1950. Maximum of Minimum Values in All Subarrays](./leetcode/1950-MaximumOfMinimumValuesInAllSubarrays.go)   
 [1953. Maximum Number of Weeks for Which You Can Work](./leetcode/1953-MaximumNumberOfWeeksForWhichYouCanWork.go)   
+[1955. Count Number of Special Subsequences](./leetcode/1955-CountNumberOfSpecialSubsequences.go)   
 [1956. Minimum Time For K Virus Variants to Spread](./leetcode/1956-MinimumTimeForKVirusVariantsToSpread.go)   
 [1958. Check if Move is Legal](./leetcode/1958-CheckIfMoveIsLegal.go)   
 [1959. Minimum Total Space Wasted With K Resizing Operations](./leetcode/1959-MinimumTotalSpaceWastedWithKResizingOperations.go)   
