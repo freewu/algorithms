@@ -1707,6 +1707,7 @@
 [1957. Delete Characters to Make Fancy String](./leetcode/1957-DeleteCharactersToMakeFancyString.go)   
 [1961. Check If String Is a Prefix of Array](./leetcode/1961-CheckIfStringIsAPrefixOfArray.go)   
 [1963. Minimum Number of Swaps to Make the String Balanced](./leetcode/1963-MinimumNumberOfSwapsToMakeTheStringBalanced.go)   
+[1967. Number of Strings That Appear as Substrings in Word](./leetcode/1967-NumberOfStringsThatAppearAsSubstringsInWord.go)   
 [2000. Reverse Prefix of Word](./leetcode/2000-ReversePrefixOfWord.go)   
 [2024. Maximize the Confusion of an Exam](./leetcode/2024-MaximizeTheConfusionOfAnExam.go)   
 [2042. Check if Numbers Are Ascending in a Sentence](./leetcode/2042-CheckIfNumbersAreAscendingInASentence.go)   
