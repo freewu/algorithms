@@ -1155,6 +1155,7 @@
 [2614. Prime In Diagonal](./leetcode/2614-PrimeInDiagonal.go)   
 [2617. Minimum Number of Visited Cells in a Grid](./leetcode/2617-MinimumNumberOfVisitedCellsInAGrid.go)   
 [2638. Count the Number of K-Free Subsets](./leetcode/2638-CountTheNumberOfKFreeSubsets.go)   
+[2655. Find Maximal Uncovered Ranges](./leetcode/2655-FindMaximalUncoveredRanges.go)   
 [2658. Maximum Number of Fish in a Grid](./leetcode/2658-MaximumNumberOfFishInAGrid.go)   
 [2661. First Completely Painted Row or Column](./leetcode/2661-FirstCompletelyPaintedRowOrColumn.go)   
 [2670. Find the Distinct Difference Array](./leetcode/2670-FindTheDistinctDifferenceArray.go)   
