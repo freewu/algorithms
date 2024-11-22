@@ -1705,6 +1705,7 @@
 [1946. Largest Number After Mutating Substring](./leetcode/1946-LargestNumberAfterMutatingSubstring.go)   
 [1948. Delete Duplicate Folders in System](./leetcode/1948-DeleteDuplicateFoldersInSystem.go)   
 [1957. Delete Characters to Make Fancy String](./leetcode/1957-DeleteCharactersToMakeFancyString.go)   
+[1961. Check If String Is a Prefix of Array](./leetcode/1961-CheckIfStringIsAPrefixOfArray.go)   
 [1963. Minimum Number of Swaps to Make the String Balanced](./leetcode/1963-MinimumNumberOfSwapsToMakeTheStringBalanced.go)   
 [2000. Reverse Prefix of Word](./leetcode/2000-ReversePrefixOfWord.go)   
 [2024. Maximize the Confusion of an Exam](./leetcode/2024-MaximizeTheConfusionOfAnExam.go)   
