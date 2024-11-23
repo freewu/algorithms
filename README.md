@@ -1896,6 +1896,7 @@
 [2181. Merge Nodes in Between Zeros](./leetcode/2181-MergeNodesInBetweenZeros.go)   
 [2326. Spiral Matrix IV](./leetcode/2326-SpiralMatrixIV.go)   
 [2487. Remove Nodes From Linked List](./leetcode/2487-RemoveNodesFromLinkedList.go)   
+[2674. Split a Circular Linked List](./leetcode/2674-SplitACircularLinkedList.go)   
 [2807. Insert Greatest Common Divisors in Linked List](./leetcode/2807-InsertGreatestCommonDivisorsInLinkedList.go)   
 [2816. Double a Number Represented as a Linked List](./leetcode/2816-DoubleANumberRepresentedAsALinkedList.go)   
 [3062. Winner of the Linked List Game](./leetcode/3062-WinnerOfTheLinkedListGame.go)   
