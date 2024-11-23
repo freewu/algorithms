@@ -992,6 +992,7 @@
 [1982. Find Array Given Subset Sums](./leetcode/1982-FindArrayGivenSubsetSums.go)   
 [1983. Widest Pair of Indices With Equal Range Sum](./leetcode/1983-WidestPairOfIndicesWithEqualRangeSum.go)   
 [1984. Minimum Difference Between Highest and Lowest of K Scores](./leetcode/1984-MinimumDifferenceBetweenHighestAndLowestOfKScores.go)   
+[1985. Find the Kth Largest Integer in the Array](./leetcode/1985-FindTheKthLargestIntegerInTheArray.go)   
 [1989. Maximum Number of People That Can Be Caught in Tag](./leetcode/1989-MaximumNumberOfPeopleThatCanBeCaughtInTag.go)   
 [1991. Find the Middle Index in Array](./leetcode/1991-FindTheMiddleIndexInArray.go)   
 [1992. Find All Groups of Farmland](./leetcode/1992-FindAllGroupsOfFarmland.go)   
