@@ -34,41 +34,63 @@ package main
 
 import "fmt"
 
-// 对于n，整个数组的和，提取公因式就是 0 * (任意或的和) + 1 * (任意或的和) + ... + (n - 1) * (任意或的和)
 func maxSizedArray(s int64) int {
-    low, high := 1, 200000
-    getResult := func(n int) int64 {
-        sum, subone := int64(0), int64(n - 1)
-        for i := 0; i <= 20; i++ { // 每一位遍历, 这里取的20，可以更小，但懒得算具体多小了
-            bit, zeroCount := int64(1 << i), int64(0) // 0 到 n-1 中，此位是 0 的数字个数
-            mod := subone % bit // 完整周期之外的
-            round := (subone - mod) / bit // 完整周期数
-            half := (round >> 1) // 有一半的周期是0
-            zeroCount += half * bit
-            //fmt.Println(round & 1)
-            if (round & 1) == 1 {
-                zeroCount += bit // 如果是奇数个完整周期，最后一个周期，对应的位也是0
-            } else {
-                zeroCount += (mod + 1) // 如果是偶数个完整周期， 多出来的，对应位都是0
+    left, right := 0, 1200
+    calc := func(n int) int64 {
+        if n == 0 { return 0 }
+        res := make([]int, 32)
+        //  计算 0～n 每个数二进制表示时，１的个数
+        for j := 0; j < n + 1; j++ {
+            for i := 0; i < 32 ; i++ {
+                if (1 << i & j) != 0 {
+                    res[i]++
+                }
             }
-            count := int64(n * n) - (zeroCount * zeroCount) // 所有两两或操作的结果中，此位1的数量
-            sum += (bit * count) // 累加到或操作的和里去
         }
-        return int64((n - 1) * n / 2) * sum // 整个数组的和
+        // 计算sum([j|k for j in range(n+1) for k in range(n+1)])
+        sum := 0
+        for i := 0; i < 32 ; i++ {
+            c0, c1 := n + 1 - res[i], res[i]
+            res[i] = c0 * res[i] + c1 * (n + 1)
+            sum += (res[i] * 1 << i)
+        }
+        return int64((n * n + n) * sum / 2)
     }
-    for low <= high {
-        mid := (low + high) / 2
-        v := getResult(mid)
-        fmt.Println("get result: ",v, " low: ", low, " high: ", high)
-        if  v <= s {
-            low = mid + 1
+    for left <= right {
+        mid := (left + right) / 2
+        if calc(mid) > s {
+            right = mid - 1
         } else {
-            high = mid - 1
+            left = mid + 1
         }
     }
-    return high
+    return right + 1
 }
 
+func maxSizedArray1(s int64) int {
+    mx := 1330
+    facts := make([]int64, mx)
+    init := func () {
+        facts[0] = 0
+        for i := 1; i < mx; i++ {
+            facts[i] = facts[i-1] + int64(i)
+            for j := 0; j < i; j++ {
+                facts[i] += 2 * int64(i|j)
+            }
+        }
+    }
+    init()
+    left, right := 1, mx
+    for left < right {
+        mid := (left + right + 1) >> 1
+        if facts[mid - 1] * int64(mid - 1) * int64(mid) / 2 <= s {
+            left = mid
+        } else {
+            right = mid - 1
+        }
+    }
+    return left
+}
 
 func main() {
     // Example 1:
@@ -95,6 +117,11 @@ func main() {
     // The total sum of the elements in array A is 0, which does not exceed 0, so the maximum possible value of n is 1.
     fmt.Println(maxSizedArray(0)) // 1
 
-    fmt.Println(maxSizedArray(1024)) // 1
-    fmt.Println(maxSizedArray(999999999)) // 1
+    fmt.Println(maxSizedArray(1024)) // 5
+    fmt.Println(maxSizedArray(999999999)) // 75
+
+    fmt.Println(maxSizedArray1(10)) // 2
+    fmt.Println(maxSizedArray1(0)) // 1
+    fmt.Println(maxSizedArray1(1024)) // 5
+    fmt.Println(maxSizedArray1(999999999)) // 75
 }
