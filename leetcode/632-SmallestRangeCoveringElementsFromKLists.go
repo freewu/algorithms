@@ -209,6 +209,90 @@ func smallestRange3(nums [][]int) []int {
     return []int{ res[0], res[1] }
 }
 
+// func smallestRange4(nums [][]int) []int {
+//     if len(nums) == 1 { return []int{nums[0][0], nums[0][0]} }
+//     n, inf := len(nums), 1 << 31
+//     ranges := [][2]int // intermediate ranges
+//     minRange := [2]int{ -inf, inf } // resulting range
+//     minRangeLen := inf // resulting range length
+//     diff := func(a, b int) int {
+//         if a > b { return a - b }
+//         return b - a
+//     }
+//     for _, v := range nums[0] { // for each number of first input slice
+//         ranges = ranges[:0]
+//         il, ir := v, v // intermediate range borders
+//         // find minimum range
+//         for i := 1; i < len(nums); i++ { // for each next slice
+//             // find numbers closest to num
+//             l, r := math.MinInt, math.MaxInt
+//             for _, num_ := range nums[i] {
+//                 if num_ <= num {
+//                     l = num_
+//                 }
+//                 if num_ >= num {
+//                     r = num_
+//                     break
+//                 }
+//             }
+//             // try to grow borders
+//             if l != r && l != math.MinInt && r != math.MaxInt {
+//                 if (l < il || l > ir) && (r < il || r > ir) {
+//                     // it's unclear yet which number to use
+//                     ranges = append(ranges, [2]int{l, r})
+//                 }
+//             } else {
+//                 // have only one number
+//                 // grow range
+//                 if l == math.MinInt {
+//                     l = r
+//                 }
+//                 if l < il {
+//                     il = l
+//                 } else if l > ir {
+//                     ir = l
+//                 }
+//             }
+//         }
+//         // merge remaining numbers
+//         for idx := 0; idx < len(ranges); idx++ {
+//             l, r := ranges[idx][0], ranges[idx][1]
+//             if (l < il || l > ir) && (r < il || r > ir) {
+//                 diffL := min(diff(l, il), diff(l, ir))
+//                 diffR := min(diff(r, il), diff(r, ir))
+//                 if diffL < diffR {
+//                     // l is closer to range
+//                     if il == ir {
+//                         il = l
+//                     } else if diff(l, il) < diff(l, ir) {
+//                         il = l
+//                     } else {
+//                         ir = l
+//                     }
+//                 } else {
+//                     // r is closer to range
+//                     if il == ir {
+//                         ir = r
+//                     } else if diff(r, il) < diff(r, ir) {
+//                         il = r
+//                     } else {
+//                         ir = r
+//                     }
+//                 }
+//             }
+//         }
+//         // update result range
+//         d := ir-il
+//         if d < minRangeLen {
+//             minRangeLen = d
+//             minRange = [2]int{il, ir}
+//         } else if d == minRangeLen && il < minRange[0] {
+//             minRange = [2]int{il, ir}
+//         }
+//     }
+//     return minRange[:]
+// }
+
 func main() {
     // Example 1:
     // Input: nums = [[4,10,15,24,26],[0,9,12,20],[5,18,22,30]]
@@ -231,4 +315,7 @@ func main() {
 
     fmt.Println(smallestRange3([][]int{{4,10,15,24,26},{0,9,12,20},{5,18,22,30}})) // [20,24]
     fmt.Println(smallestRange3([][]int{{1,2,3},{1,2,3},{1,2,3}})) //  [1,1]
+
+    // fmt.Println(smallestRange4([][]int{{4,10,15,24,26},{0,9,12,20},{5,18,22,30}})) // [20,24]
+    // fmt.Println(smallestRange4([][]int{{1,2,3},{1,2,3},{1,2,3}})) //  [1,1]
 }
