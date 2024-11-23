@@ -988,6 +988,7 @@
 [1970. Last Day Where You Can Still Cross](./leetcode/1970-LastDayWhereYouCanStillCross.go)   
 [1975. Maximum Matrix Sum](./leetcode/1975-MaximumMatrixSum.go)   
 [1979. Find Greatest Common Divisor of Array](./leetcode/1979-FindGreatestCommonDivisorOfArray.go)   
+[1980. Find Unique Binary String](./leetcode/1980-FindUniqueBinaryString.go)   
 [1981. Minimize the Difference Between Target and Chosen Elements](./leetcode/1981-MinimizeTheDifferenceBetweenTargetAndChosenElements.go)   
 [1982. Find Array Given Subset Sums](./leetcode/1982-FindArrayGivenSubsetSums.go)   
 [1983. Widest Pair of Indices With Equal Range Sum](./leetcode/1983-WidestPairOfIndicesWithEqualRangeSum.go)   
