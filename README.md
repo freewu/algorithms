@@ -989,6 +989,7 @@
 [1975. Maximum Matrix Sum](./leetcode/1975-MaximumMatrixSum.go)   
 [1979. Find Greatest Common Divisor of Array](./leetcode/1979-FindGreatestCommonDivisorOfArray.go)   
 [1981. Minimize the Difference Between Target and Chosen Elements](./leetcode/1981-MinimizeTheDifferenceBetweenTargetAndChosenElements.go)   
+[1982. Find Array Given Subset Sums](./leetcode/1982-FindArrayGivenSubsetSums.go)   
 [1983. Widest Pair of Indices With Equal Range Sum](./leetcode/1983-WidestPairOfIndicesWithEqualRangeSum.go)   
 [1984. Minimum Difference Between Highest and Lowest of K Scores](./leetcode/1984-MinimumDifferenceBetweenHighestAndLowestOfKScores.go)   
 [1989. Maximum Number of People That Can Be Caught in Tag](./leetcode/1989-MaximumNumberOfPeopleThatCanBeCaughtInTag.go)   
