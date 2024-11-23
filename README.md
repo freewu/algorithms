@@ -1163,6 +1163,7 @@
 [2655. Find Maximal Uncovered Ranges](./leetcode/2655-FindMaximalUncoveredRanges.go)   
 [2658. Maximum Number of Fish in a Grid](./leetcode/2658-MaximumNumberOfFishInAGrid.go)   
 [2661. First Completely Painted Row or Column](./leetcode/2661-FirstCompletelyPaintedRowOrColumn.go)   
+[2664. The Knight’s Tour](./leetcode/2664-TheKnightsTour.go)   
 [2670. Find the Distinct Difference Array](./leetcode/2670-FindTheDistinctDifferenceArray.go)   
 [2678. Number of Senior Citizens](./leetcode/2678-NumberOfSeniorCitizens.go)   
 [2684. Maximum Number of Moves in a Grid](./leetcode/2684-MaximumNumberOfMovesInAGrid.go)   
