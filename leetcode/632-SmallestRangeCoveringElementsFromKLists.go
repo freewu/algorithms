@@ -28,6 +28,7 @@ package main
 import "fmt"
 import "math"
 import "container/heap"
+import "slices"
 
 // heap item: the num, the array index, the index of num in the array
 func smallestRange(nums [][]int) []int {
@@ -144,13 +145,90 @@ func (h *MyHeap) Pop() any {
     return x
 }
 
+type Tuple struct{ x, i, j int }
+type MinHeap []Tuple
+func (h MinHeap) Len() int           { return len(h) }
+func (h MinHeap) Less(i, j int) bool { return h[i].x < h[j].x }
+func (h MinHeap) Swap(i, j int)      { h[i], h[j] = h[j], h[i] }
+func (h *MinHeap) Push(v any)        { *h = append(*h, v.(Tuple)) }
+func (MinHeap) Pop() (_ any)         { return }
+
+func smallestRange2(nums [][]int) []int {
+    mx, mhp := -1 << 31, MinHeap{}
+    max := func (x, y int) int { if x > y { return x; }; return y; }
+    for i, arr := range nums {
+        heap.Push(&mhp, Tuple{arr[0], i, 0}) // 把每个列表的第一个元素入堆
+        mx = max(mx, arr[0])
+    }
+    heap.Init(&mhp)
+    left, right := mhp[0].x, mx
+    for mhp[0].j + 1 < len(nums[mhp[0].i]) { // 堆顶列表有下一个元素
+        x := nums[mhp[0].i][mhp[0].j + 1] // 堆顶列表的下一个元素
+        mx = max(mx, x)
+        mhp[0].x = x // 替换堆顶
+        mhp[0].j++
+        heap.Fix(&mhp, 0)
+        if mx - mhp[0].x < right - left { // mhp[0].x 是当前合法区间的左端点
+            left, right = mhp[0].x, mx
+        }
+    }
+    return []int{ left, right }
+}
+
+func smallestRange3(nums [][]int) []int {
+    type Pair struct{ x, i int }
+    pairs := []Pair{}
+    for i, arr := range nums {
+        for _, x := range arr {
+            pairs = append(pairs, Pair{x, i})
+        }
+    }
+    slices.SortFunc(pairs, func(a, b Pair) int { 
+        return a.x - b.x 
+    })
+    n, left := len(nums), 0
+    res, count := [2]int{pairs[0].x, pairs[len(pairs)-1].x}, make([]int, n)
+    for _, p := range pairs {
+        r, i := p.x, p.i
+        if count[i] == 0 { // 包含 nums[i] 的数字
+            n--
+        }
+        count[i]++
+        for n == 0 { // 每个列表都至少包含一个数
+            l, i := pairs[left].x, pairs[left].i
+            if r - l < res[1] - res[0] {
+                res[0], res[1] = l, r
+            }
+            count[i]--
+            if count[i] == 0 { // 不包含 nums[i] 的数字
+                n++
+            }
+            left++
+        }
+    }
+    return []int{ res[0], res[1] }
+}
+
 func main() {
+    // Example 1:
+    // Input: nums = [[4,10,15,24,26],[0,9,12,20],[5,18,22,30]]
+    // Output: [20,24]
+    // Explanation: 
     // List 1: [4, 10, 15, 24,26], 24 is in range [20,24].
     // List 2: [0, 9, 12, 20], 20 is in range [20,24].
     // List 3: [5, 18, 22, 30], 22 is in range [20,24].
     fmt.Println(smallestRange([][]int{{4,10,15,24,26},{0,9,12,20},{5,18,22,30}})) // [20,24]
+    // Example 2:
+    // Input: nums = [[1,2,3],[1,2,3],[1,2,3]]
+    // Output: [1,1]
     fmt.Println(smallestRange([][]int{{1,2,3},{1,2,3},{1,2,3}})) //  [1,1]
 
     fmt.Println(smallestRange1([][]int{{4,10,15,24,26},{0,9,12,20},{5,18,22,30}})) // [20,24]
     fmt.Println(smallestRange1([][]int{{1,2,3},{1,2,3},{1,2,3}})) //  [1,1]
+
+    fmt.Println(smallestRange2([][]int{{4,10,15,24,26},{0,9,12,20},{5,18,22,30}})) // [20,24]
+    fmt.Println(smallestRange2([][]int{{1,2,3},{1,2,3},{1,2,3}})) //  [1,1]
+
+    fmt.Println(smallestRange3([][]int{{4,10,15,24,26},{0,9,12,20},{5,18,22,30}})) // [20,24]
+    fmt.Println(smallestRange3([][]int{{1,2,3},{1,2,3},{1,2,3}})) //  [1,1]
 }
