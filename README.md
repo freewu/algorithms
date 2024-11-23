@@ -1719,6 +1719,7 @@
 [1967. Number of Strings That Appear as Substrings in Word](./leetcode/1967-NumberOfStringsThatAppearAsSubstringsInWord.go)   
 [1974. Minimum Time to Type Word Using Special Typewriter](./leetcode/1974-MinimumTimeToTypeWordUsingSpecialTypewriter.go)   
 [1977. Number of Ways to Separate Numbers](./leetcode/1977-NumberOfWaysToSeparateNumbers.go)   
+[1987. Number of Unique Good Subsequences](./leetcode/1987-NumberOfUniqueGoodSubsequences.go)   
 [2000. Reverse Prefix of Word](./leetcode/2000-ReversePrefixOfWord.go)   
 [2024. Maximize the Confusion of an Exam](./leetcode/2024-MaximizeTheConfusionOfAnExam.go)   
 [2042. Check if Numbers Are Ascending in a Sentence](./leetcode/2042-CheckIfNumbersAreAscendingInASentence.go)   
