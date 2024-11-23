@@ -18,30 +18,19 @@ package main
 // Example 1:
 // <img src="https://assets.leetcode.com/uploads/2021/04/08/rotatingtheboxleetcodewithstones.png" />
 // Input: box = [["#",".","#"]]
-// Output: [["."],
-//          ["#"],
-//          ["#"]]
+// Output: [["."], ["#"], ["#"]]
 
 // Example 2:
 // <img src="https://assets.leetcode.com/uploads/2021/04/08/rotatingtheboxleetcode2withstones.png" />
-// Input: box = [["#",".","*","."],
-//               ["#","#","*","."]]
-// Output: [["#","."],
-//          ["#","#"],
-//          ["*","*"],
-//          [".","."]]
+// Input: box = [["#",".","*","."], ["#","#","*","."]]
+// Output: [["#","."], ["#","#"], ["*","*"], [".","."]]
 
 // Example 3:
 // <img src="https://assets.leetcode.com/uploads/2021/04/08/rotatingtheboxleetcode3withstone.png" />
 // Input: box = [["#","#","*",".","*","."],
 //               ["#","#","#","*",".","."],
 //               ["#","#","#",".","#","."]]
-// Output: [[".","#","#"],
-//          [".","#","#"],
-//          ["#","#","*"],
-//          ["#","*","."],
-//          ["#",".","*"],
-//          ["#",".","."]]
+// Output: [[".","#","#"], [".","#","#"], ["#","#","*"], ["#","*","."], ["#",".","*"], ["#",".","."]]
 
 // Constraints:
 //     m == box.length
@@ -66,9 +55,7 @@ func rotateTheBox(box [][]byte) [][]byte {
                 j = min(j, i - 1)
                 for j >= 0 && box[t][j] != '*' {
                     if box[t][j] == '#' {
-                        box[t][j] = '.'
-                        res[j][r] = '.'
-                        res[i][r] = '#'
+                        box[t][j], res[j][r],res[i][r] = '.', '.', '#'
                         break
                     }
                     j--
@@ -79,36 +66,59 @@ func rotateTheBox(box [][]byte) [][]byte {
     return res
 }
 
+func rotateTheBox1(box [][]byte) [][]byte {
+    n, m := len(box), len(box[0])
+    res := make([][]byte, m)
+    for i := 0; i < m; i++ {
+        res[i] = make([]byte, n)
+    }
+    for i := 0; i < n; i++ {
+        for j := 0; j < m; j++ {
+            res[j][n-i-1] = box[i][j]
+        }
+    }
+    for i := 0; i < n; i++ {
+        high, low := m - 1, m - 1
+        for high >= 0 {
+            if res[high][i] == '#' {
+                for low >= high {
+                    if res[low][i] == '.' {
+                        res[high][i], res[low][i] = '.', '#'
+                        break
+                    }
+                    low--
+                }
+            }
+            if res[high][i] == '*' { low = high }
+            high--
+        }
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // <img src="https://assets.leetcode.com/uploads/2021/04/08/rotatingtheboxleetcodewithstones.png" />
     // Input: box = [["#",".","#"]]
-    // Output: [["."],
-    //          ["#"],
-    //          ["#"]]
+    // Output: [["."], ["#"], ["#"]]
     box1 := [][]byte{{'#','.','#'}}
-    fmt.Println(rotateTheBox(box1)) // 
+    fmt.Println(rotateTheBox(box1)) // [["."], ["#"], ["#"]]
     // Example 2:
     // <img src="https://assets.leetcode.com/uploads/2021/04/08/rotatingtheboxleetcode2withstones.png" />
-    // Input: box = [["#",".","*","."],
-    //               ["#","#","*","."]]
-    // Output: [["#","."],
-    //          ["#","#"],
-    //          ["*","*"],
-    //          [".","."]]
+    // Input: box = [["#",".","*","."], ["#","#","*","."]]
+    // Output: [["#","."], ["#","#"], ["*","*"], [".","."]]
     box2 := [][]byte{{'#','.','*','.'}, {'#','#','*','.'}}
-    fmt.Println(rotateTheBox(box2)) // 
+    fmt.Println(rotateTheBox(box2)) // [["#","."], ["#","#"], ["*","*"], [".","."]]
     // Example 3:
     // <img src="https://assets.leetcode.com/uploads/2021/04/08/rotatingtheboxleetcode3withstone.png" />
     // Input: box = [["#","#","*",".","*","."],
     //               ["#","#","#","*",".","."],
     //               ["#","#","#",".","#","."]]
-    // Output: [[".","#","#"],
-    //          [".","#","#"],
-    //          ["#","#","*"],
-    //          ["#","*","."],
-    //          ["#",".","*"],
-    //          ["#",".","."]]
+    // Output: [[".","#","#"], [".","#","#"], ["#","#","*"], ["#","*","."], ["#",".","*"], ["#",".","."]]
     box3 := [][]byte{{'#','#','*','.','*','.'}, {'#','#','#','*','.','.'}, {'#','#','#','.','#','.'}}
-    fmt.Println(rotateTheBox(box3)) // 
+    fmt.Println(rotateTheBox(box3)) // [[".","#","#"], [".","#","#"], ["#","#","*"], ["#","*","."], ["#",".","*"], ["#",".","."]]
+
+    fmt.Println(rotateTheBox1(box1)) // [["."], ["#"], ["#"]]
+    fmt.Println(rotateTheBox1(box2)) // [["#","."], ["#","#"], ["*","*"], [".","."]]
+    fmt.Println(rotateTheBox1(box3)) // [[".","#","#"], [".","#","#"], ["#","#","*"], ["#","*","."], ["#",".","*"], ["#",".","."]]
 }
