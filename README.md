@@ -1001,6 +1001,7 @@
 [1995. Count Special Quadruplets](./leetcode/1995-CountSpecialQuadruplets.go)   
 [1996. The Number of Weak Characters in the Game](./leetcode/1996-TheNumberOfWeakCharactersInTheGame.go)   
 [1997. First Day Where You Have Been in All the Rooms](./leetcode/1997-FirstDayWhereYouHaveBeenInAllTheRooms.go)   
+[1998. GCD Sort of an Array](./leetcode/1998-GCDSortOfAnArray.go)   
 [2007. Find Original Array From Doubled Array](./leetcode/2007-FindOriginalArrayFromDoubledArray.go)   
 [2009. Minimum Number of Operations to Make Array Continuous](./leetcode/2009-MinimumNumberOfOperationsToMakeArrayContinuous.go)   
 [2015. Average Height of Buildings in Each Segment](./leetcode/2015-AverageHeightOfBuildingsInEachSegment.go)   
