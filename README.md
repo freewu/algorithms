@@ -1006,6 +1006,7 @@
 [2001. Number of Pairs of Interchangeable Rectangles](./leetcode/2001-NumberOfPairsOfInterchangeableRectangles.go)   
 [2006. Count Number of Pairs With Absolute Difference K](./leetcode/2006-CountNumberOfPairsWithAbsoluteDifferenceK.go)   
 [2007. Find Original Array From Doubled Array](./leetcode/2007-FindOriginalArrayFromDoubledArray.go)   
+[2008. Maximum Earnings From Taxi](./leetcode/2008-MaximumEarningsFromTaxi.go)   
 [2009. Minimum Number of Operations to Make Array Continuous](./leetcode/2009-MinimumNumberOfOperationsToMakeArrayContinuous.go)   
 [2015. Average Height of Buildings in Each Segment](./leetcode/2015-AverageHeightOfBuildingsInEachSegment.go)   
 [2021. Brightest Position on Street](./leetcode/2021-BrightestPositionOnStreet.go)   
