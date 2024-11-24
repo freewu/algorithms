@@ -1364,6 +1364,8 @@
 [3349. Adjacent Increasing Subarrays Detection I](./leetcode/3349-AdjacentIncreasingSubarraysDetectionI.go)   
 [3350. Adjacent Increasing Subarrays Detection II](./leetcode/3350-AdjacentIncreasingSubarraysDetectionII.go)   
 [3353. Minimum Total Operations](./leetcode/3353-MinimumTotalOperations.go)   
+[3355. Zero Array Transformation I](./leetcode/3355-ZeroArrayTransformationI.go)   
+
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
