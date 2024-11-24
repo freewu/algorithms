@@ -998,6 +998,7 @@
 [1989. Maximum Number of People That Can Be Caught in Tag](./leetcode/1989-MaximumNumberOfPeopleThatCanBeCaughtInTag.go)   
 [1991. Find the Middle Index in Array](./leetcode/1991-FindTheMiddleIndexInArray.go)   
 [1992. Find All Groups of Farmland](./leetcode/1992-FindAllGroupsOfFarmland.go)   
+[1994. The Number of Good Subsets](./leetcode/1994-TheNumberOfGoodSubsets.go)   
 [1995. Count Special Quadruplets](./leetcode/1995-CountSpecialQuadruplets.go)   
 [1996. The Number of Weak Characters in the Game](./leetcode/1996-TheNumberOfWeakCharactersInTheGame.go)   
 [1997. First Day Where You Have Been in All the Rooms](./leetcode/1997-FirstDayWhereYouHaveBeenInAllTheRooms.go)   
