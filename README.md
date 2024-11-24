@@ -1365,6 +1365,7 @@
 [3350. Adjacent Increasing Subarrays Detection II](./leetcode/3350-AdjacentIncreasingSubarraysDetectionII.go)   
 [3353. Minimum Total Operations](./leetcode/3353-MinimumTotalOperations.go)   
 [3355. Zero Array Transformation I](./leetcode/3355-ZeroArrayTransformationI.go)   
+[3356. Zero Array Transformation II](./leetcode/3356-ZeroArrayTransformationII.go)   
 
 
 # String
