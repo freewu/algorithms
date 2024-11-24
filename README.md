@@ -1003,6 +1003,7 @@
 [1996. The Number of Weak Characters in the Game](./leetcode/1996-TheNumberOfWeakCharactersInTheGame.go)   
 [1997. First Day Where You Have Been in All the Rooms](./leetcode/1997-FirstDayWhereYouHaveBeenInAllTheRooms.go)   
 [1998. GCD Sort of an Array](./leetcode/1998-GCDSortOfAnArray.go)   
+[2001. Number of Pairs of Interchangeable Rectangles](./leetcode/2001-NumberOfPairsOfInterchangeableRectangles.go)   
 [2006. Count Number of Pairs With Absolute Difference K](./leetcode/2006-CountNumberOfPairsWithAbsoluteDifferenceK.go)   
 [2007. Find Original Array From Doubled Array](./leetcode/2007-FindOriginalArrayFromDoubledArray.go)   
 [2009. Minimum Number of Operations to Make Array Continuous](./leetcode/2009-MinimumNumberOfOperationsToMakeArrayContinuous.go)   
