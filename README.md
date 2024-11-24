@@ -1366,7 +1366,7 @@
 [3353. Minimum Total Operations](./leetcode/3353-MinimumTotalOperations.go)   
 [3355. Zero Array Transformation I](./leetcode/3355-ZeroArrayTransformationI.go)   
 [3356. Zero Array Transformation II](./leetcode/3356-ZeroArrayTransformationII.go)   
-
+[3362. Zero Array Transformation III](./leetcode/3362-ZeroArrayTransformationIII.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
