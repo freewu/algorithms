@@ -1009,6 +1009,7 @@
 [2008. Maximum Earnings From Taxi](./leetcode/2008-MaximumEarningsFromTaxi.go)   
 [2009. Minimum Number of Operations to Make Array Continuous](./leetcode/2009-MinimumNumberOfOperationsToMakeArrayContinuous.go)   
 [2011. Final Value of Variable After Performing Operations](./leetcode/2011-FinalValueOfVariableAfterPerformingOperations.go)   
+[2012. Sum of Beauty in the Array](./leetcode/2012-SumOfBeautyInTheArray.go)   
 [2015. Average Height of Buildings in Each Segment](./leetcode/2015-AverageHeightOfBuildingsInEachSegment.go)   
 [2021. Brightest Position on Street](./leetcode/2021-BrightestPositionOnStreet.go)   
 [2022. Convert 1D Array Into 2D Array](./leetcode/2022-Convert1DArrayInto2DArray.go)   
