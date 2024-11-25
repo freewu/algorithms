@@ -1738,6 +1738,7 @@
 [1987. Number of Unique Good Subsequences](./leetcode/1987-NumberOfUniqueGoodSubsequences.go)   
 [2000. Reverse Prefix of Word](./leetcode/2000-ReversePrefixOfWord.go)   
 [2002. Maximum Product of the Length of Two Palindromic Subsequences](./leetcode/2002-MaximumProductOfTheLengthOfTwoPalindromicSubsequences.go)   
+[2014. Longest Subsequence Repeated k Times](./leetcode/2014-LongestSubsequenceRepeatedKTimes.go)   
 [2024. Maximize the Confusion of an Exam](./leetcode/2024-MaximizeTheConfusionOfAnExam.go)   
 [2042. Check if Numbers Are Ascending in a Sentence](./leetcode/2042-CheckIfNumbersAreAscendingInASentence.go)   
 [2047. Number of Valid Words in a Sentence](./leetcode/2047-NumberOfValidWordsInASentence.go)   
