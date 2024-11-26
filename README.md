@@ -1036,6 +1036,7 @@
 [2070. Most Beautiful Item for Each Query](./leetcode/2070-MostBeautifulItemForEachQuery.go)   
 [2071. Maximum Number of Tasks You Can Assign](./leetcode/2071-MaximumNumberOfTasksYouCanAssign.go)   
 [2073. Time Needed to Buy Tickets](./leetcode/2073-TimeNeededToBuyTickets.go)   
+[2078. Two Furthest Houses With Different Colors](./leetcode/2078-TwoFurthestHousesWithDifferentColors.go)   
 [2079. Watering Plants](./leetcode/2079-WateringPlants.go)   
 [2085. Count Common Words With One Occurrence](./leetcode/2085-CountCommonWordsWithOneOccurrence.go)   
 [2088. Count Fertile Pyramids in a Land](./leetcode/2088-CountFertilePyramidsInALand.go)   
