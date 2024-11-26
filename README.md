@@ -1028,6 +1028,7 @@
 [2039. The Time When the Network Becomes Idle](./leetcode/2039-TheTimeWhenTheNetworkBecomesIdle.go)   
 [2040. Kth Smallest Product of Two Sorted Arrays](./leetcode/2040-KthSmallestProductOfTwoSortedArrays.go)   
 [2044. Count Number of Maximum Bitwise-OR Subsets](./leetcode/2044-CountNumberOfMaximumBitwiseORSubsets.go)   
+[2049. Count Nodes With the Highest Score](./leetcode/2049-CountNodesWithTheHighestScore.go)   
 [2053. Kth Distinct String in an Array](./leetcode/2053-KthDistinctStringInAnArray.go)   
 [2056. Number of Valid Move Combinations On Chessboard](./leetcode/2056-NumberOfValidMoveCombinationsOnChessboard.go)   
 [2061. Number of Spaces Cleaning Robot Cleaned](./leetcode/2061-NumberOfSpacesCleaningRobotCleaned.go)   
