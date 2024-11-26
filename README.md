@@ -1016,6 +1016,7 @@
 [2018. Check if Word Can Be Placed In Crossword](./leetcode/2018-CheckIfWordCanBePlacedInCrossword.go)   
 [2021. Brightest Position on Street](./leetcode/2021-BrightestPositionOnStreet.go)   
 [2022. Convert 1D Array Into 2D Array](./leetcode/2022-Convert1DArrayInto2DArray.go)   
+[2023. Number of Pairs of Strings With Concatenation Equal to Target](./leetcode/2023-NumberOfPairsOfStringsWithConcatenationEqualToTarget.go)   
 [2028. Find Missing Observations](./leetcode/2028-FindMissingObservations.go)   
 [2031. Count Subarrays With More Ones Than Zeros](./leetcode/2031-CountSubarraysWithMoreOnesThanZeros.go)   
 [2033. Minimum Operations to Make a Uni-Value Grid](./leetcode/2033-MinimumOperationsToMakeAUniValueGrid.go)   
