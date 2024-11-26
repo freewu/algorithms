@@ -1019,6 +1019,7 @@
 [2023. Number of Pairs of Strings With Concatenation Equal to Target](./leetcode/2023-NumberOfPairsOfStringsWithConcatenationEqualToTarget.go)   
 [2025. Maximum Number of Ways to Partition an Array](./leetcode/2025-MaximumNumberOfWaysToPartitionAnArray.go)   
 [2028. Find Missing Observations](./leetcode/2028-FindMissingObservations.go)   
+[2029. Stone Game IX](./leetcode/2029-StoneGameIX.go)   
 [2031. Count Subarrays With More Ones Than Zeros](./leetcode/2031-CountSubarraysWithMoreOnesThanZeros.go)   
 [2033. Minimum Operations to Make a Uni-Value Grid](./leetcode/2033-MinimumOperationsToMakeAUniValueGrid.go)   
 [2035. Partition Array Into Two Arrays to Minimize Sum Difference](./leetcode/2035-PartitionArrayIntoTwoArraysToMinimizeSumDifference.go)   
