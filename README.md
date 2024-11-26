@@ -2427,6 +2427,7 @@
 [2045. Second Minimum Time to Reach Destination](./leetcode/2045-SecondMinimumTimeToReachDestination.go)   
 [2050. Parallel Courses III](./leetcode/2050-ParallelCoursesIII.go)   
 [2065. Maximum Path Quality of a Graph](./leetcode/2065-MaximumPathQualityOfAGraph.go)   
+[2076. Process Restricted Friend Requests](./leetcode/2076-ProcessRestrictedFriendRequests.go)   
 [2077. Paths in Maze That Lead to Same Room](./leetcode/2077-PathsInMazeThatLeadToSameRoom.go)   
 [2092. Find All People With Secret](./leetcode/2092-FindAllPeopleWithSecret.go)   
 [2097. Valid Arrangement of Pairs](./leetcode/2097-ValidArrangementOfPairs.go)   
