@@ -1026,6 +1026,7 @@
 [2036. Maximum Alternating Subarray Sum](./leetcode/2036-MaximumAlternatingSubarraySum.go)   
 [2037. Minimum Number of Moves to Seat Everyone](./leetcode/2037-MinimumNumberOfMovesToSeatEveryone.go)   
 [2039. The Time When the Network Becomes Idle](./leetcode/2039-TheTimeWhenTheNetworkBecomesIdle.go)   
+[2040. Kth Smallest Product of Two Sorted Arrays](./leetcode/2040-KthSmallestProductOfTwoSortedArrays.go)   
 [2044. Count Number of Maximum Bitwise-OR Subsets](./leetcode/2044-CountNumberOfMaximumBitwiseORSubsets.go)   
 [2053. Kth Distinct String in an Array](./leetcode/2053-KthDistinctStringInAnArray.go)   
 [2056. Number of Valid Move Combinations On Chessboard](./leetcode/2056-NumberOfValidMoveCombinationsOnChessboard.go)   
