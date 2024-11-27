@@ -3067,6 +3067,7 @@ LCR 185. 统计结果概率
 [3328. Find Cities in Each State II](./leetcode/3328-FindCitiesInEachStateII.sql)   
 [3338. Second Highest Salary II](./leetcode/3338-SecondHighestSalaryII.sql)   
 [3358. Books with NULL Ratings](./leetcode/3358-BooksWithNULLRatings.sql)   
+[3368. First Letter Capitalization](./leetcode/3368-FirstLetterCappaitalization.sql)   
 
 # Shell
 [192. Word Frequency](./leetcode/192-WordFrequency.sh)      
