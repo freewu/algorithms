@@ -1021,6 +1021,7 @@
 [2028. Find Missing Observations](./leetcode/2028-FindMissingObservations.go)   
 [2029. Stone Game IX](./leetcode/2029-StoneGameIX.go)   
 [2031. Count Subarrays With More Ones Than Zeros](./leetcode/2031-CountSubarraysWithMoreOnesThanZeros.go)   
+[2032. Two Out of Three](./leetcode/2032-TwoOutOfThree.go)   
 [2033. Minimum Operations to Make a Uni-Value Grid](./leetcode/2033-MinimumOperationsToMakeAUniValueGrid.go)   
 [2035. Partition Array Into Two Arrays to Minimize Sum Difference](./leetcode/2035-PartitionArrayIntoTwoArraysToMinimizeSumDifference.go)   
 [2036. Maximum Alternating Subarray Sum](./leetcode/2036-MaximumAlternatingSubarraySum.go)   
