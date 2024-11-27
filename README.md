@@ -1034,6 +1034,7 @@
 [2054. Two Best Non-Overlapping Events](./leetcode/2054-TwoBestNonOverlappingEvents.go)   
 [2056. Number of Valid Move Combinations On Chessboard](./leetcode/2056-NumberOfValidMoveCombinationsOnChessboard.go)   
 [2057. Smallest Index With Equal Value](./leetcode/2057-SmallestIndexWithEqualValue.go)   
+[2059. Minimum Operations to Convert Number](./leetcode/2059-MinimumOperationsToConvertNumber.go)   
 [2061. Number of Spaces Cleaning Robot Cleaned](./leetcode/2061-NumberOfSpacesCleaningRobotCleaned.go)   
 [2064. Minimized Maximum of Products Distributed to Any Store](./leetcode/2064-MinimizedMaximumOfProductsDistributedToAnyStore.go)   
 [2070. Most Beautiful Item for Each Query](./leetcode/2070-MostBeautifulItemForEachQuery.go)   
