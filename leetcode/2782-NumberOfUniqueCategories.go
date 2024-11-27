@@ -33,6 +33,25 @@ package main
 
 import "fmt"
 
+type CategoryHandler interface {
+    HaveSameCategory(int, int) bool
+}
+
+type CategoryService struct {
+    data []int
+}
+
+func NewCategoryService(data []int) CategoryHandler {
+    return CategoryService{ data: data }
+}
+
+// 实现接口
+func (this CategoryService) HaveSameCategory(a, b int) bool {
+    n := len(this.data)
+    if a > n - 1 || a < 0 || b > n - 1 || b < 0  { return false }
+    return this.data[a] == this.data[b]
+}
+
 /**
  * Definition for a category handler.
  * type CategoryHandler interface {
@@ -86,15 +105,19 @@ func main() {
     // Input: n = 6, categoryHandler = [1,1,2,2,3,3]
     // Output: 3
     // Explanation: There are 6 elements in this example. The first two elements belong to category 1, the second two belong to category 2, and the last two elements belong to category 3. So there are 3 unique categories.
-
+    fmt.Println(numberOfCategories(6, NewCategoryService([]int{1,1,2,2,3,3}))) // 3
     // Example 2:
     // Input: n = 5, categoryHandler = [1,2,3,4,5]
     // Output: 5
     // Explanation: There are 5 elements in this example. Each element belongs to a unique category. So there are 5 unique categories.
-
+    fmt.Println(numberOfCategories(5, NewCategoryService([]int{1,2,3,4,5}))) // 5
     // Example 3:
     // Input: n = 3, categoryHandler = [1,1,1]
     // Output: 1
     // Explanation: There are 3 elements in this example. All of them belong to one category. So there is only 1 unique category.
-    fmt.Println()
+    fmt.Println(numberOfCategories(2, NewCategoryService([]int{1,1,1}))) // 1
+
+    fmt.Println(numberOfCategories1(6, NewCategoryService([]int{1,1,2,2,3,3}))) // 3
+    fmt.Println(numberOfCategories1(5, NewCategoryService([]int{1,2,3,4,5}))) // 5
+    fmt.Println(numberOfCategories1(2, NewCategoryService([]int{1,1,1}))) // 1
 }
