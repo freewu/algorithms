@@ -32,6 +32,7 @@ package main
 //     1 <= nums[i] <= 50
 
 import "fmt"
+import "slices"
 
 func countOfPairs(nums []int) int {
     res, n, mod := 0, len(nums), 1_000_000_007
@@ -91,6 +92,35 @@ func countOfPairs1(nums []int) int {
     return comb(m + n, n)
 }
 
+func countOfPairs2(nums []int) int {
+    res, n, mx, mod := 0, len(nums), slices.Max(nums), 1_000_000_007
+    facts := make([][]int, n)
+    for i := range facts {
+        facts[i] = make([]int, mx + 1)
+    }
+    s := make([]int, mx + 1)
+    for j := 0; j <= nums[0]; j++ {
+        facts[0][j] = 1
+    }
+    min := func (x, y int) int { if x < y { return x; }; return y; }
+    for i := 1; i < n; i++ {
+        s[0] = facts[i-1][0]
+        for k := 1; k <= mx; k++ {
+            s[k] = s[k-1] + facts[i-1][k] // facts[i-1] 的前缀和
+        }
+        for j := 0; j <= nums[i]; j++ {
+            m := j + min(nums[i-1] - nums[i], 0)
+            if m >= 0 {
+                facts[i][j] = s[m] % mod
+            }
+        }
+    }
+    for _, v := range facts[n-1][:nums[n-1]+1] {
+        res += v
+    }
+    return res % mod
+}
+
 func main() {
     // Example 1:
     // Input: nums = [2,3,2]
@@ -109,4 +139,7 @@ func main() {
 
     fmt.Println(countOfPairs1([]int{2,3,2})) // 4
     fmt.Println(countOfPairs1([]int{5,5,5,5})) // 126
+
+    fmt.Println(countOfPairs2([]int{2,3,2})) // 4
+    fmt.Println(countOfPairs2([]int{5,5,5,5})) // 126
 }
