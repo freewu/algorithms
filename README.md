@@ -1031,6 +1031,7 @@
 [2044. Count Number of Maximum Bitwise-OR Subsets](./leetcode/2044-CountNumberOfMaximumBitwiseORSubsets.go)   
 [2049. Count Nodes With the Highest Score](./leetcode/2049-CountNodesWithTheHighestScore.go)   
 [2053. Kth Distinct String in an Array](./leetcode/2053-KthDistinctStringInAnArray.go)   
+[2054. Two Best Non-Overlapping Events](./leetcode/2054-TwoBestNonOverlappingEvents.go)   
 [2056. Number of Valid Move Combinations On Chessboard](./leetcode/2056-NumberOfValidMoveCombinationsOnChessboard.go)   
 [2061. Number of Spaces Cleaning Robot Cleaned](./leetcode/2061-NumberOfSpacesCleaningRobotCleaned.go)   
 [2064. Minimized Maximum of Products Distributed to Any Store](./leetcode/2064-MinimizedMaximumOfProductsDistributedToAnyStore.go)   
