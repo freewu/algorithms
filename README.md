@@ -1752,6 +1752,7 @@
 [2019. The Score of Students Solving Math Expression](./leetcode/2019-TheScoreOfStudentsSolvingMathExpression.go)   
 [2024. Maximize the Confusion of an Exam](./leetcode/2024-MaximizeTheConfusionOfAnExam.go)   
 [2027. Minimum Moves to Convert String](./leetcode/2027-MinimumMovesToConvertString.go)   
+[2030. Smallest K-Length Subsequence With Occurrences of a Letter](./leetcode/2030-SmallestKLengthSubsequenceWithOccurrencesOfALetter.go)   
 [2038. Remove Colored Pieces if Both Neighbors are the Same Color](./leetcode/2038-RemoveColoredPiecesIfBothNeighborsAreTheSameColor.go)   
 [2042. Check if Numbers Are Ascending in a Sentence](./leetcode/2042-CheckIfNumbersAreAscendingInASentence.go)   
 [2047. Number of Valid Words in a Sentence](./leetcode/2047-NumberOfValidWordsInASentence.go)   
