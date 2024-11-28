@@ -1764,6 +1764,7 @@
 [2062. Count Vowel Substrings of a String](./leetcode/2062-CountVowelSubstringsOfAString.go)   
 [2063. Vowels of All Substrings](./leetcode/2063-VowelsOfAllSubstrings.go)   
 [2067. Number of Equal Count Substrings](./leetcode/2067-NumberOfEqualCountSubstrings.go)   
+[2068. Check Whether Two Strings are Almost Equivalent](./leetcode/2068-CheckWhetherTwoStringsAreAlmostEquivalent.go)   
 [2075. Decode the Slanted Ciphertext](./leetcode/2075-DecodeTheSlantedCiphertext.go)   
 [2083. Substrings That Begin and End With the Same Letter](./leetcode/2083-SubstringsThatBeginAndEndWithTheSameLetter.go)   
 [2103. Rings and Rods](./leetcode/2103-RingsAndRods.go)   
