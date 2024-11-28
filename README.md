@@ -1769,6 +1769,7 @@
 [2068. Check Whether Two Strings are Almost Equivalent](./leetcode/2068-CheckWhetherTwoStringsAreAlmostEquivalent.go)   
 [2075. Decode the Slanted Ciphertext](./leetcode/2075-DecodeTheSlantedCiphertext.go)   
 [2083. Substrings That Begin and End With the Same Letter](./leetcode/2083-SubstringsThatBeginAndEndWithTheSameLetter.go)   
+[2086. Minimum Number of Food Buckets to Feed the Hamsters](./leetcode/2086-MinimumNumberOfFoodBucketsToFeedTheHamsters.go)   
 [2103. Rings and Rods](./leetcode/2103-RingsAndRods.go)   
 [2116. Check if a Parentheses String Can Be Valid](./leetcode/2116-CheckIfAParenthesesStringCanBeValid.go)   
 [2129. Capitalize the Title](./leetcode/2129-CapitalizeTheTitle.go)   
