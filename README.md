@@ -1047,6 +1047,7 @@
 [2088. Count Fertile Pyramids in a Land](./leetcode/2088-CountFertilePyramidsInALand.go)   
 [2089. Find Target Indices After Sorting Array](./leetcode/2089-FindTargetIndicesAfterSortingArray.go)   
 [2093. Minimum Cost to Reach City With Discounts](./leetcode/2093-MinimumCostToReachCityWithDiscounts.go)   
+[2094. Finding 3-Digit Even Numbers](./leetcode/2094-Finding3DigitEvenNumbers.go)   
 [2098. Subsequence of Size K With the Largest Even Sum](./leetcode/2098-SubsequenceOfSizeKWithTheLargestEvenSum.go)   
 [2101. Detonate the Maximum Bombs](./leetcode/2101-DetonateTheMaximumBombs.go)   
 [2105. Watering Plants II](./leetcode/2105-WateringPlantsII.go)   
