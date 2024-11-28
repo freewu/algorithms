@@ -1761,6 +1761,7 @@
 [2047. Number of Valid Words in a Sentence](./leetcode/2047-NumberOfValidWordsInASentence.go)   
 [2052. Minimum Cost to Separate Sentence Into Rows](./leetcode/2052-MinimumCostToSeparateSentenceIntoRows.go)   
 [2055. Plates Between Candles](./leetcode/2055-PlatesBetweenCandles.go)   
+[2060. Check if an Original String Exists Given Two Encoded Strings](./leetcode/2060-CheckIfAnOriginalStringExistsGivenTwoEncodedStrings.go)   
 [2062. Count Vowel Substrings of a String](./leetcode/2062-CountVowelSubstringsOfAString.go)   
 [2063. Vowels of All Substrings](./leetcode/2063-VowelsOfAllSubstrings.go)   
 [2067. Number of Equal Count Substrings](./leetcode/2067-NumberOfEqualCountSubstrings.go)   
