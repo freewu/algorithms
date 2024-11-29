@@ -1046,6 +1046,7 @@
 [2087. Minimum Cost Homecoming of a Robot in a Grid](./leetcode/2087-MinimumCostHomecomingOfARobotInAGrid.go)   
 [2088. Count Fertile Pyramids in a Land](./leetcode/2088-CountFertilePyramidsInALand.go)   
 [2089. Find Target Indices After Sorting Array](./leetcode/2089-FindTargetIndicesAfterSortingArray.go)   
+[2090. K Radius Subarray Averages](./leetcode/2090-KRadiusSubarrayAverages.go)   
 [2091. Removing Minimum and Maximum From Array](./leetcode/2091-RemovingMinimumAndMaximumFromArray.go)   
 [2093. Minimum Cost to Reach City With Discounts](./leetcode/2093-MinimumCostToReachCityWithDiscounts.go)   
 [2094. Finding 3-Digit Even Numbers](./leetcode/2094-Finding3DigitEvenNumbers.go)   
