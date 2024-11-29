@@ -1350,6 +1350,7 @@
 [3219. Minimum Cost for Cutting Cake II](./leetcode/3219-MinimumCostForCuttingCakeII.go)   
 [3221. Maximum Array Hopping Score II](./leetcode/3221-MaximumArrayHoppingScoreII.go)   
 [3327. Check if DFS Strings Are Palindromes](./leetcode/3327-CheckIfDFSStringsArePalindromes.go)   
+[3232. Find if Digit Game Can Be Won](./leetcode/3232-FindIfDigitGameCanBeWon.go)   
 [3235. Check if the Rectangle Corner Is Reachable](./leetcode/3235-CheckIfTheRectangleCornerIsReachable.go)   
 [3237. Alt and Tab Simulation](./leetcode/3237-AltAndTabSimulation.go)   
 [3238. Find the Number of Winning Players](./leetcode/3238-FindTheNumberOfWinningPlayers.go)   
