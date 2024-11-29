@@ -1052,6 +1052,7 @@
 [2094. Finding 3-Digit Even Numbers](./leetcode/2094-Finding3DigitEvenNumbers.go)   
 [2098. Subsequence of Size K With the Largest Even Sum](./leetcode/2098-SubsequenceOfSizeKWithTheLargestEvenSum.go)   
 [2099. Find Subsequence of Length K With the Largest Sum](./leetcode/2099-FindSubsequenceOfLengthKWithTheLargestSum.go)   
+[2100. Find Good Days to Rob the Bank](./leetcode/2100-FindGoodDaysToRobTheBank.go)   
 [2101. Detonate the Maximum Bombs](./leetcode/2101-DetonateTheMaximumBombs.go)   
 [2105. Watering Plants II](./leetcode/2105-WateringPlantsII.go)   
 [2106. Maximum Fruits Harvested After at Most K Steps](./leetcode/2106-MaximumFruitsHarvestedAfterAtMostKSteps.go)   
