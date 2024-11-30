@@ -77,6 +77,42 @@ func validArrangement(pairs [][]int) [][]int {
     return res
 }
 
+func validArrangement1(pairs [][]int) [][]int {
+    adjacencyList, inOutDegree := make(map[int][]int), make(map[int]int) // Create adjacency list and in/out degree maps
+    for _, pair := range pairs { // Build graph and count in/out degrees
+        adjacencyList[pair[0]] = append(adjacencyList[pair[0]], pair[1])
+        inOutDegree[pair[0]]++  // out-degree
+        inOutDegree[pair[1]]--  // in-degree
+    }
+    startNode := pairs[0][0] // Find starting node
+    for node, degree := range inOutDegree {
+        if degree == 1 {
+            startNode = node
+            break
+        }
+    }
+    path, nodeStack := []int{}, []int{ startNode } // Use slice as stack for path
+    for len(nodeStack) > 0 {
+        lastIdx := len(nodeStack) - 1
+        curr := nodeStack[lastIdx]
+        neighbors := adjacencyList[curr]
+        if len(neighbors) == 0 {
+            path = append(path, curr)
+            nodeStack = nodeStack[:lastIdx]
+        } else {
+            nextNode := neighbors[len(neighbors)-1]
+            nodeStack = append(nodeStack, nextNode)
+            adjacencyList[curr] = neighbors[:len(neighbors)-1]
+        }
+    }
+    // Build final arrangement
+    arrangement := make([][]int, 0, len(path)-1)
+    for i := len(path) - 1; i > 0; i-- {
+        arrangement = append(arrangement, []int{path[i], path[i-1]})
+    }
+    return arrangement
+}
+
 func main() {
     // Example 1:
     // Input: pairs = [[5,1],[4,5],[11,9],[9,4]]
@@ -104,4 +140,8 @@ func main() {
     // end0 = 2 == 2 = start1
     // end1 = 1 == 1 = start2
     fmt.Println(validArrangement([][]int{{1,2},{1,3},{2,1}})) //  [[1,2],[2,1],[1,3]]
+
+    fmt.Println(validArrangement1([][]int{{5,1},{4,5},{11,9},{9,4}})) // [[11,9],[9,4],[4,5],[5,1]]
+    fmt.Println(validArrangement1([][]int{{1,3},{3,2},{2,1}})) // [[1,3],[3,2],[2,1]]
+    fmt.Println(validArrangement1([][]int{{1,2},{1,3},{2,1}})) //  [[1,2],[2,1],[1,3]]
 }
