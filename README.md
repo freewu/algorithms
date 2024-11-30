@@ -1063,6 +1063,7 @@
 [2111. Minimum Operations to Make the Array K-Increasing](./leetcode/2111-MinimumOperationsToMakeTheArrayKIncreasing.go)   
 [2113. Elements in Array After Removing and Replacing Elements](./leetcode/2113-ElementsInArrayAfterRemovingAndReplacingElements.go)   
 [2114. Maximum Number of Words Found in Sentences](./leetcode/2114-MaximumNumberOfWordsFoundInSentences.go)   
+[2115. Find All Possible Recipes from Given Supplies](./leetcode/2115-FindAllPossibleRecipesFromGivenSupplies.go)   
 [2120. Execution of All Suffix Instructions Staying in a Grid](./leetcode/2120-ExecutionOfAllSuffixInstructionsStayingInAGrid.go)   
 [2123. Minimum Operations to Remove Adjacent Ones in Matrix](./leetcode/2123-MinimumOperationsToRemoveAdjacentOnesInMatrix.go)   
 [2125. Number of Laser Beams in a Bank](./leetcode/2125-NumberOfLaserBeamsInABank.go)   
