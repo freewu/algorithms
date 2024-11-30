@@ -2150,6 +2150,7 @@
 [2152. Minimum Number of Lines to Cover Points](./leetcode/2152-MinimumNumberOfLinesToCoverPoints.go)   
 [2165. Smallest Value of the Rearranged Number](./leetcode/2165-SmallestValueOfTheRearrangedNumber.go)   
 [2189. Number of Ways to Build House of Cards](./leetcode/2189-NumberOfWaysToBuildHouseOfCards.go)   
+[2119. A Number After a Double Reversal](./leetcode/2119-ANumberAfterADoubleReversal.go)   
 [2221. Find Triangular Sum of an Array](./leetcode/2221-FindTriangularSumOfAnArray.go)   
 [2235. Add Two Integers](./leetcode/2235-AddTwoIntegers.go)   
 [2269. Find the K-Beauty of a Number](./leetcode/2269-FindTheKBeautyOfANumber.go)   
