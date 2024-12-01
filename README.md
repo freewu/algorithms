@@ -1069,6 +1069,7 @@
 [2122. Recover the Original Array](./leetcode/2122-RecoverTheOriginalArray.go)   
 [2123. Minimum Operations to Remove Adjacent Ones in Matrix](./leetcode/2123-MinimumOperationsToRemoveAdjacentOnesInMatrix.go)   
 [2125. Number of Laser Beams in a Bank](./leetcode/2125-NumberOfLaserBeamsInABank.go)   
+[2126. Destroying Asteroids](./leetcode/2126-DestroyingAsteroids.go)   
 [2127. Maximum Employees to Be Invited to a Meeting](./leetcode/2127-MaximumEmployeesToBeInvitedToAMeeting.go)   
 [2132. Stamping the Grid](./leetcode/2132-StampingTheGrid.go)   
 [2133. Check if Every Row and Column Contains All Numbers](./leetcode/2133-CheckIfEveryRowAndColumnContainsAllNumbers.go)   
