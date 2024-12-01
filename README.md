@@ -1066,6 +1066,7 @@
 [2115. Find All Possible Recipes from Given Supplies](./leetcode/2115-FindAllPossibleRecipesFromGivenSupplies.go)   
 [2120. Execution of All Suffix Instructions Staying in a Grid](./leetcode/2120-ExecutionOfAllSuffixInstructionsStayingInAGrid.go)   
 [2121. Intervals Between Identical Elements](./leetcode/2121-IntervalsBetweenIdenticalElements.go)   
+[2122. Recover the Original Array](./leetcode/2122-RecoverTheOriginalArray.go)   
 [2123. Minimum Operations to Remove Adjacent Ones in Matrix](./leetcode/2123-MinimumOperationsToRemoveAdjacentOnesInMatrix.go)   
 [2125. Number of Laser Beams in a Bank](./leetcode/2125-NumberOfLaserBeamsInABank.go)   
 [2127. Maximum Employees to Be Invited to a Meeting](./leetcode/2127-MaximumEmployeesToBeInvitedToAMeeting.go)   
