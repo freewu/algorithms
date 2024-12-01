@@ -1193,6 +1193,7 @@
 [2604. Minimum Time to Eat All Grains](./leetcode/2604-MinimumTimeToEatAllGrains.go)   
 [2613. Beautiful Pairs](./leetcode/2613-BeautifulPairs.go)   
 [2614. Prime In Diagonal](./leetcode/2614-PrimeInDiagonal.go)   
+[2615. Sum of Distances](./leetcode/2615-SumOfDistances.go)   
 [2617. Minimum Number of Visited Cells in a Grid](./leetcode/2617-MinimumNumberOfVisitedCellsInAGrid.go)   
 [2638. Count the Number of K-Free Subsets](./leetcode/2638-CountTheNumberOfKFreeSubsets.go)   
 [2655. Find Maximal Uncovered Ranges](./leetcode/2655-FindMaximalUncoveredRanges.go)   
