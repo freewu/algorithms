@@ -1791,6 +1791,7 @@
 [2103. Rings and Rods](./leetcode/2103-RingsAndRods.go)   
 [2109. Adding Spaces to a String](./leetcode/2109-AddingSpacesToAString.go)   
 [2116. Check if a Parentheses String Can Be Valid](./leetcode/2116-CheckIfAParenthesesStringCanBeValid.go)   
+[2124. Check if All A's Appears Before All B's](./leetcode/2124-CheckIfAllAsAppearsBeforeAllBs.go)   
 [2129. Capitalize the Title](./leetcode/2129-CapitalizeTheTitle.go)   
 [2147. Number of Ways to Divide a Long Corridor](./leetcode/2147-NumberOfWaysToDivideALongCorridor.go)   
 [2168. Unique Substrings With Equal Digit Frequency](./leetcode/2168-UniqueSubstringsWithEqualDigitFrequency.go)   
