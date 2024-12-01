@@ -1822,6 +1822,7 @@
 [2743. Count Substrings Without Repeating Character](./leetcode/2743-CountSubstringsWithoutRepeatingCharacter.go)   
 [2810. Faulty Keyboard](./leetcode/2810-FaultyKeyboard.go)   
 [2839. Check if Strings Can be Made Equal With Operations I](./leetcode/2839-CheckIfStringsCanBeMadeEqualWithOperationsI.go)   
+[2840. Check if Strings Can be Made Equal With Operations II](./leetcode/2840-CheckIfStringsCanBeMadeEqualWithOperationsII.go)   
 [2844. Minimum Operations to Make a Special Number](./leetcode/2844-MinimumOperationsToMakeASpecialNumber.go)   
 [2864. Maximum Odd Binary Number](./leetcode/2864-MaximumOddBinaryNumber.go)   
 [2914. Minimum Number of Changes to Make Binary String Beautiful](./leetcode/2914-MinimumNumberOfChangesToMakeBinaryStringBeautiful.go)   
