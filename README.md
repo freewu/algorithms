@@ -2185,6 +2185,7 @@
 [2698. Find the Punishment Number of an Integer](./leetcode/2698-FindThePunishmentNumberOfAnInteger.go)   
 [2739. Total Distance Traveled](./leetcode/2739-TotalDistanceTraveled.go)   
 [2769. Find the Maximum Achievable Number](./leetcode/2769-FindTheMaximumAchievableNumber.go)   
+[2802. Find The K-th Lucky Number](./leetcode/2802-FindTheKthLuckyNumber.go)   
 [2806. Account Balance After Rounded Purchase](./leetcode/2806-AccountBalanceAfterRoundedPurchase.go)   
 [2834. Find the Minimum Possible Sum of a Beautiful Array](./leetcode/2834-FindTheMinimumPossibleSumOfABeautifulArray.go)    
 [2843. Count Symmetric Integers](./leetcode/2843-CountSymmetricIntegers.go)   
