@@ -1237,6 +1237,7 @@
 [2813. Maximum Elegance of a K-Length Subsequence](./leetcode/2813-MaximumEleganceOfAK-LengthSubsequence.go)   
 [2814. Minimum Time Takes to Reach Destination Without Drowning](./leetcode/2814-MinimumTimeTakesToReachDestinationWithoutDrowning.go)   
 [2815. Max Pair Sum in an Array](./leetcode/2815-MaxPairSumInAnArray.go)   
+[2819. Minimum Relative Loss After Buying Chocolates](./leetcode/2819-MinimumRelativeLossAfterBuyingChocolates.go)   
 [2831. Find the Longest Equal Subarray](./leetcode/2831-FindTheLongestEqualSubarray.go)   
 [2848. Points That Intersect With Cars](./leetcode/2848-PointsThatIntersectWithCars.go)   
 [2850. Minimum Moves to Spread Stones Over Grid](./leetcode/2850-MinimumMovesToSpreadStonesOverGrid.go)   
