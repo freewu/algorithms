@@ -1075,6 +1075,7 @@
 [2132. Stamping the Grid](./leetcode/2132-StampingTheGrid.go)   
 [2133. Check if Every Row and Column Contains All Numbers](./leetcode/2133-CheckIfEveryRowAndColumnContainsAllNumbers.go)   
 [2134. Minimum Swaps to Group All 1's Together II](./leetcode/2134-MinimumSwapsToGroupAllOneTogetherII.go)   
+[2135. Count Words Obtained After Adding a Letter](./leetcode/2135-CountWordsObtainedAfterAddingALetter.go)   
 [2136. Earliest Possible Day of Full Bloom](./leetcode/2136-EarliestPossibleDayOfFullBloom.go)   
 [2137. Pour Water Between Buckets to Make Water Levels Equal](./leetcode/2137-PourWaterBetweenBucketsToMakeWaterLevelsEqual.go)   
 [2140. Solving Questions With Brainpower](./leetcode/2140-SolvingQuestionsWithBrainpower.go)   
