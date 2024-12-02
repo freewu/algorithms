@@ -1071,6 +1071,7 @@
 [2125. Number of Laser Beams in a Bank](./leetcode/2125-NumberOfLaserBeamsInABank.go)   
 [2126. Destroying Asteroids](./leetcode/2126-DestroyingAsteroids.go)   
 [2127. Maximum Employees to Be Invited to a Meeting](./leetcode/2127-MaximumEmployeesToBeInvitedToAMeeting.go)   
+[2131. Longest Palindrome by Concatenating Two Letter Words](./leetcode/2131-LongestPalindromeByConcatenatingTwoLetterWords.go)   
 [2132. Stamping the Grid](./leetcode/2132-StampingTheGrid.go)   
 [2133. Check if Every Row and Column Contains All Numbers](./leetcode/2133-CheckIfEveryRowAndColumnContainsAllNumbers.go)   
 [2134. Minimum Swaps to Group All 1's Together II](./leetcode/2134-MinimumSwapsToGroupAllOneTogetherII.go)   
