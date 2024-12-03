@@ -1872,6 +1872,7 @@
 [3258. Count Substrings That Satisfy K-Constraint I](./leetcode/3258-CountSubstringsThatSatisfyKConstraintI.go)   
 [3261. Count Substrings That Satisfy K-Constraint II](./leetcode/3261-CountSubstringsThatSatisfyKConstraintII.go)   
 [3274. Check if Two Chessboard Squares Have the Same Color](./leetcode/3274-CheckIfTwoChessboardSquaresHaveTheSameColor.go)   
+[3280. Convert Date to Binary](./leetcode/3280-ConvertDateToBinary.go)   
 [3297. Count Substrings That Can Be Rearranged to Contain a String I](./leetcode/3297-CountSubstringsThatCanBeRearrangedToContainAStringI.go)   
 [3298. Count Substrings That Can Be Rearranged to Contain a String II](./leetcode/3298-CountSubstringsThatCanBeRearrangedToContainAStringII.go)   
 [3305. Count of Substrings Containing Every Vowel and K Consonants I](./leetcode/3305-CountOfSubstringsContainingEveryVowelAndKConsonantsI.go)   
