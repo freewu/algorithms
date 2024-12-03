@@ -58,6 +58,19 @@ func minimumCost(cost []int) int {
     return res
 }
 
+func minimumCost1(cost []int) int {
+    sort.Ints(cost)
+    res, rest := 0, len(cost) % 3
+    for i := 0 ; i < rest ; i ++ {
+        res += cost[i]
+    }
+    for i := len(cost) - 1 ; i >= rest ; i -= 3 {
+        res += cost[i]
+        res += cost[i - 1]
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: cost = [1,2,3]
@@ -83,4 +96,8 @@ func main() {
     // Explanation: Since there are only 2 candies, we buy both of them. There is not a third candy we can take for free.
     // Hence, the minimum cost to buy all candies is 5 + 5 = 10.
     fmt.Println(minimumCost([]int{5,5})) // 10
+
+    fmt.Println(minimumCost1([]int{1,2,3})) // 5
+    fmt.Println(minimumCost1([]int{6,5,7,9,2,2})) // 23
+    fmt.Println(minimumCost1([]int{5,5})) // 10
 }
