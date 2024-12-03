@@ -1082,6 +1082,7 @@
 [2141. Maximum Running Time of N Computers](./leetcode/2141-MaximumRunningTimeOfNComputers.go)   
 [2143. Choose Numbers From Two Arrays in Range](./leetcode/2143-ChooseNumbersFromTwoArraysInRange.go)   
 [2144. Minimum Cost of Buying Candies With Discount](./leetcode/2144-MinimumCostOfBuyingCandiesWithDiscount.go)   
+[2145. Count the Hidden Sequences](./leetcode/2145-CountTheHiddenSequences.go)   
 [2146. K Highest Ranked Items Within a Price Range](./leetcode/2146-KHighestRankedItemsWithinAPriceRange.go)   
 [2149. Rearrange Array Elements by Sign](./leetcode/2149-RearrangeArrayElementsBySign.go)   
 [2152. Minimum Number of Lines to Cover Points](./leetcode/2152-MinimumNumberOfLinesToCoverPoints.go)   
