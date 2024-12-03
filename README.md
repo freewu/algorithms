@@ -1084,6 +1084,7 @@
 [2144. Minimum Cost of Buying Candies With Discount](./leetcode/2144-MinimumCostOfBuyingCandiesWithDiscount.go)   
 [2145. Count the Hidden Sequences](./leetcode/2145-CountTheHiddenSequences.go)   
 [2146. K Highest Ranked Items Within a Price Range](./leetcode/2146-KHighestRankedItemsWithinAPriceRange.go)   
+[2148. Count Elements With Strictly Smaller and Greater Elements](./leetcode/2148-CountElementsWithStrictlySmallerAndGreaterElements.go)   
 [2149. Rearrange Array Elements by Sign](./leetcode/2149-RearrangeArrayElementsBySign.go)   
 [2152. Minimum Number of Lines to Cover Points](./leetcode/2152-MinimumNumberOfLinesToCoverPoints.go)   
 [2158. Amount of New Area Painted Each Day](./leetcode/2158-AmountOfNewAreaPaintedEachDay.go)   
