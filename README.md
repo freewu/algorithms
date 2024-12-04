@@ -1838,6 +1838,7 @@
 [2734. Lexicographically Smallest String After Substring Operation](./leetcode/2734-LexicographicallySmallestStringAfterSubstringOperation.go)   
 [2743. Count Substrings Without Repeating Character](./leetcode/2743-CountSubstringsWithoutRepeatingCharacter.go)   
 [2810. Faulty Keyboard](./leetcode/2810-FaultyKeyboard.go)   
+[2825. Make String a Subsequence Using Cyclic Increments](./leetcode/2825-MakeStringASubsequenceUsingCyclicIncrements.go)   
 [2839. Check if Strings Can be Made Equal With Operations I](./leetcode/2839-CheckIfStringsCanBeMadeEqualWithOperationsI.go)   
 [2840. Check if Strings Can be Made Equal With Operations II](./leetcode/2840-CheckIfStringsCanBeMadeEqualWithOperationsII.go)   
 [2844. Minimum Operations to Make a Special Number](./leetcode/2844-MinimumOperationsToMakeASpecialNumber.go)   
