@@ -31,6 +31,7 @@ package main
 //     0 <= nums[i] <= 10^6
 
 import "fmt"
+import "sort"
 
 func findLonely(nums []int) []int {
     res, mp := []int{}, make(map[int]int)
@@ -76,6 +77,24 @@ func findLonely1(nums []int) []int {
     return res 
 }
 
+func findLonely2(nums []int) []int {
+    n := len(nums)
+    sort.Ints(nums)
+    res := make([]int, 0, n)
+    if n == 1 || nums[0] + 1 < nums[1] {
+        res = append(res, nums[0])
+    }
+    for i := 1; i < n-1; i++ {
+        if nums[i]-1 > nums[i-1] && nums[i]+1 < nums[i+1] {
+            res = append(res, nums[i])
+        }
+    }
+    if n > 1 && nums[n-2]+1 < nums[n-1] {
+        res = append(res, nums[n-1])
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: nums = [10,6,5,8]
@@ -100,4 +119,7 @@ func main() {
 
     fmt.Println(findLonely1([]int{10,6,5,8})) // [10,8]
     fmt.Println(findLonely1([]int{1,3,5,3})) // [1,5]
+
+    fmt.Println(findLonely2([]int{10,6,5,8})) // [10,8]
+    fmt.Println(findLonely2([]int{1,3,5,3})) // [1,5]
 }
