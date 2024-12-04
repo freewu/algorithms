@@ -1086,6 +1086,7 @@
 [2146. K Highest Ranked Items Within a Price Range](./leetcode/2146-KHighestRankedItemsWithinAPriceRange.go)   
 [2148. Count Elements With Strictly Smaller and Greater Elements](./leetcode/2148-CountElementsWithStrictlySmallerAndGreaterElements.go)   
 [2149. Rearrange Array Elements by Sign](./leetcode/2149-RearrangeArrayElementsBySign.go)   
+[2150. Find All Lonely Numbers in the Array](./leetcode/2150-FindAllLonelyNumbersInTheArray.go)   
 [2152. Minimum Number of Lines to Cover Points](./leetcode/2152-MinimumNumberOfLinesToCoverPoints.go)   
 [2158. Amount of New Area Painted Each Day](./leetcode/2158-AmountOfNewAreaPaintedEachDay.go)   
 [2171. Removing Minimum Number of Magic Beans](./leetcode/2171-RemovingMinimumNumberOfMagicBeans.go)   
