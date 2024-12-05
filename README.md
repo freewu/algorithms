@@ -2200,6 +2200,7 @@
 [2601. Prime Subtraction Operation](./leetcode/2601-PrimeSubtractionOperation.go)   
 [2647. Color the Triangle Red](./leetcode/2647-ColorTheTriangleRed.go)   
 [2698. Find the Punishment Number of an Integer](./leetcode/2698-FindThePunishmentNumberOfAnInteger.go)   
+[2729. Check if The Number is Fascinating](./leetcode/2729-CheckIfTheNumberIsFascinating.go)   
 [2739. Total Distance Traveled](./leetcode/2739-TotalDistanceTraveled.go)   
 [2769. Find the Maximum Achievable Number](./leetcode/2769-FindTheMaximumAchievableNumber.go)   
 [2802. Find The K-th Lucky Number](./leetcode/2802-FindTheKthLuckyNumber.go)   
