@@ -1921,6 +1921,7 @@
 [1931. Painting a Grid With Three Different Colors](./leetcode/1931-PaintingAGridWithThreeDifferentColors.go)   
 [2466. Count Ways To Build Good Strings](./leetcode/2466-CountWaysToBuildGoodStrings.go)   
 [2533. Number of Good Binary Strings](./leetcode/2533-NumberOfGoodBinaryStrings.go)   
+[2787. Ways to Express an Integer as Sum of Powers](./leetcode/2787-WaysToExpressAnIntegerAsSumOfPowers.go)   
 [3129. Find All Possible Stable Binary Arrays I](./leetcode/3129-FindAllPossibleStableBinaryArraysI.go)   
 [3130. Find All Possible Stable Binary Arrays II](./leetcode/3130-FindAllPossibleStableBinaryArraysII.go)   
 
