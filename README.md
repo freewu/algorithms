@@ -2404,6 +2404,7 @@
 [2096. Step-By-Step Directions From a Binary Tree Node to Another](./leetcode/2096-StepByStepDirectionsFromABinaryTreeNodeToAnother.go)   
 [2196. Create Binary Tree From Descriptions](./leetcode/2196-CreateBinaryTreeFromDescriptions.go)   
 [2236. Root Equals Sum of Children](./leetcode/2236-RootEqualsSumOfChildren.go)   
+[2265. Count Nodes Equal to Average of Subtree](./leetcode/2265-CountNodesEqualToAverageOfSubtree.go)   
 [2277. Closest Node to Path in Tree](./leetcode/2277-ClosestNodeToPathInTree.go)   
 [2313. Minimum Flips in Binary Tree to Get Result](./leetcode/2313-MinimumFlipsInBinaryTreeToGetResult.go)   
 [2331. Evaluate Boolean Binary Tree](./leetcode/2331-EvaluateBooleanBinaryTree.go)   
