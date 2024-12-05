@@ -1213,6 +1213,7 @@
 [2664. The Knight’s Tour](./leetcode/2664-TheKnightsTour.go)   
 [2670. Find the Distinct Difference Array](./leetcode/2670-FindTheDistinctDifferenceArray.go)   
 [2678. Number of Senior Citizens](./leetcode/2678-NumberOfSeniorCitizens.go)   
+[2679. Sum in a Matrix](./leetcode/2679-SumInAMatrix.go)   
 [2684. Maximum Number of Moves in a Grid](./leetcode/2684-MaximumNumberOfMovesInAGrid.go)   
 [2702. Minimum Operations to Make Numbers Non-positive](./leetcode/2702-MinimumOperationsToMakeNumbersNonPositive.go)   
 [2708. Maximum Strength of a Group](./leetcode/2708-MaximumStrengthOfAGroup.go)   
