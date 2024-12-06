@@ -2187,6 +2187,7 @@
 [2128. Remove All Ones With Row and Column Flips](./leetcode/2128-RemoveAllOnesWithRowAndColumnFlips.go)   
 [2139. Minimum Moves to Reach Target Score](./leetcode/2139-MinimumMovesToReachTargetScore.go)   
 [2152. Minimum Number of Lines to Cover Points](./leetcode/2152-MinimumNumberOfLinesToCoverPoints.go)   
+[2160. Minimum Sum of Four Digit Number After Splitting Digits](./leetcode/2160-MinimumSumOfFourDigitNumberAfterSplittingDigits.go)   
 [2162. Minimum Cost to Set Cooking Time](./leetcode/2162-MinimumCostToSetCookingTime.go)   
 [2165. Smallest Value of the Rearranged Number](./leetcode/2165-SmallestValueOfTheRearrangedNumber.go)   
 [2189. Number of Ways to Build House of Cards](./leetcode/2189-NumberOfWaysToBuildHouseOfCards.go)   
