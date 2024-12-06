@@ -2439,6 +2439,7 @@
 [2792. Count Nodes That Are Great Enough](./leetcode/2792-CountNodesThatAreGreatEnough.go)   
 [2846. Minimum Edge Weight Equilibrium Queries in a Tree](./leetcode/2846-MinimumEdgeWeightEquilibriumQueriesInATree.go)   
 [2867. Count Valid Paths in a Tree](./leetcode/2867-CountValidPathsInATree.go)   
+[2872. Maximum Number of K-Divisible Components](./leetcode/2872-MaximumNumberOfKDivisibleComponents.go)   
 [2925. Maximum Score After Applying Operations on a Tree](./leetcode/2925-MaximumScoreAfterApplyingOperationsOnATree.go)   
 [2973. Find Number of Coins to Place in Tree Nodes](./leetcode/2973-FindNumberOfCoinsToPlaceInTreeNodes.go)   
 [3157. Find the Level of Tree with Minimum Sum](./leetcode/3157-FindTheLevelOfTreeWithMinimumSum.go)   
