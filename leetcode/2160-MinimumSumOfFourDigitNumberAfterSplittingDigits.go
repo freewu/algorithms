@@ -48,4 +48,8 @@ func main() {
     // Explanation: Some possible pairs [new1, new2] are [0, 49], [490, 0], etc. 
     // The minimum sum can be obtained by the pair [4, 9]: 4 + 9 = 13.
     fmt.Println(minimumSum(4009)) // 13
+
+    fmt.Println(minimumSum(1000)) // 1    1000 => 0 + 0 + 0 + 1
+    fmt.Println(minimumSum(1024)) // 16   1024 => 10 + 2 + 4
+    fmt.Println(minimumSum(9999)) // 198  9999 => 99 + 99
 }
