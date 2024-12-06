@@ -1373,6 +1373,7 @@
 [3205. Maximum Array Hopping Score I](./leetcode/3205-MaximumArrayHoppingScoreI.go)   
 [3206. Alternating Groups I](./leetcode/3206-AlternatingGroupsI.go)   
 [3208. Alternating Groups II](./leetcode/3208-AlternatingGroupsII.go)   
+[3212. Count Submatrices With Equal Frequency of X and Y](./leetcode/3212-CountSubmatricesWithEqualFrequencyOfXAndY.go)   
 [3215. Count Triplets with Even XOR Set Bits II](./leetcode/3215-CountTripletsWithEvenXORSetBitsII.go)   
 [3218. Minimum Cost for Cutting Cake I](./leetcode/3218-MinimumCostForCuttingCakeI.go)   
 [3219. Minimum Cost for Cutting Cake II](./leetcode/3219-MinimumCostForCuttingCakeII.go)   
