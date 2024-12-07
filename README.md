@@ -1088,6 +1088,7 @@
 [2149. Rearrange Array Elements by Sign](./leetcode/2149-RearrangeArrayElementsBySign.go)   
 [2150. Find All Lonely Numbers in the Array](./leetcode/2150-FindAllLonelyNumbersInTheArray.go)   
 [2152. Minimum Number of Lines to Cover Points](./leetcode/2152-MinimumNumberOfLinesToCoverPoints.go)   
+[2154. Keep Multiplying Found Values by Two](./leetcode/2154-KeepMultiplyingFoundValuesByTwo.go)   
 [2158. Amount of New Area Painted Each Day](./leetcode/2158-AmountOfNewAreaPaintedEachDay.go)   
 [2171. Removing Minimum Number of Magic Beans](./leetcode/2171-RemovingMinimumNumberOfMagicBeans.go)   
 [2174. Remove All Ones With Row and Column Flips II](./leetcode/2174-RemoveAllOnesWithRowAndColumnFlipsII.go)   
