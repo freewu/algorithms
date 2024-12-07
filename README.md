@@ -2550,6 +2550,7 @@
 [3243. Shortest Distance After Road Addition Queries I](./leetcode/3243-ShortestDistanceAfterRoadAdditionQueriesI.go)   
 [3311. Construct 2D Grid Matching Graph Layout](./leetcode/3311-Construct2DGridMatchingGraphLayout.go)   
 [3372. Maximize the Number of Target Nodes After Connecting Trees I](./leetcode/3372-MaximizeTheNumberOfTargetNodesAfterConnectingTreesI.go)   
+[3373. Maximize the Number of Target Nodes After Connecting Trees II](./leetcode/3373-MaximizeTheNumberOfTargetNodesAfterConnectingTreesII.go)   
 
 
 # Trie
