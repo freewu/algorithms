@@ -2448,6 +2448,7 @@
 [3249. Count the Number of Good Nodes](./leetcode/3249-CountTheNumberOfGoodNodes.go)   
 [3313. Find the Last Marked Nodes in Tree](./leetcode/3313-FindTheLastMarkedNodesInTree.go)   
 [3319. K-th Largest Perfect Subtree Size in Binary Tree](./leetcode/3319-KthLargestPerfectSubtreeSizeInBinaryTree.go)   
+[3331. Find Subtree Sizes After Changes](./leetcode/3331-FindSubtreeSizesAfterChanges.go)   
 
 # Graph
 [133. Clone Graph](./leetcode/133-CloneGraph.go)   
