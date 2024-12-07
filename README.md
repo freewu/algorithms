@@ -1220,6 +1220,7 @@
 [2684. Maximum Number of Moves in a Grid](./leetcode/2684-MaximumNumberOfMovesInAGrid.go)   
 [2702. Minimum Operations to Make Numbers Non-positive](./leetcode/2702-MinimumOperationsToMakeNumbersNonPositive.go)   
 [2708. Maximum Strength of a Group](./leetcode/2708-MaximumStrengthOfAGroup.go)   
+[2711. Difference of Number of Distinct Values on Diagonals](./leetcode/2711-DifferenceOfNumberOfDistinctValuesOnDiagonals.go)   
 [2713. Maximum Strictly Increasing Cells in a Matrix](./leetcode/2713-MaximumStrictlyIncreasingCellsInAMatrix.go)   
 [2718. Sum of Matrix After Queries](./leetcode/2718-SumOfMatrixAfterQueries.go)   
 [2728. Count Houses in a Circular Street](./leetcode/2728-CountHousesInACircularStreet.go)   
