@@ -2549,6 +2549,8 @@
 [3241. Time Taken to Mark All Nodes](./leetcode/3241-TimeTakenToMarkAllNodes.go)   
 [3243. Shortest Distance After Road Addition Queries I](./leetcode/3243-ShortestDistanceAfterRoadAdditionQueriesI.go)   
 [3311. Construct 2D Grid Matching Graph Layout](./leetcode/3311-Construct2DGridMatchingGraphLayout.go)   
+[3372. Maximize the Number of Target Nodes After Connecting Trees I](./leetcode/3372-MaximizeTheNumberOfTargetNodesAfterConnectingTreesI.go)   
+
 
 # Trie
 [386. Lexicographical Numbers](./leetcode/386-LexicographicalNumbers.go)   
