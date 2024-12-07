@@ -1266,6 +1266,7 @@
 [2874. Maximum Value of an Ordered Triplet II](./leetcode/2874-MaximumValueOfAnOrderedTripletII.go)   
 [2895. Minimum Processing Time](./leetcode/2895-MinimumProcessingTime.go)   
 [2897. Apply Operations on Array to Maximize Sum of Squares](./leetcode/2897-ApplyOperationsOnArrayToMaximizeSumOfSquares.go)   
+[2898. Maximum Linear Stock Score](./leetcode/2898-MaximumLinearStockScore.go)   
 [2900. Longest Unequal Adjacent Groups Subsequence I](./leetcode/2900-LongestUnequalAdjacentGroupsSubsequenceI.go)   
 [2901. Longest Unequal Adjacent Groups Subsequence II](./leetcode/2901-LongestUnequalAdjacentGroupsSubsequenceII.go)   
 [2903. Find Indices With Index and Value Difference I](./leetcode/2903-FindIndicesWithIndexAndValueDifferenceI.go)   
