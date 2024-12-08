@@ -2202,6 +2202,7 @@
 [2160. Minimum Sum of Four Digit Number After Splitting Digits](./leetcode/2160-MinimumSumOfFourDigitNumberAfterSplittingDigits.go)   
 [2162. Minimum Cost to Set Cooking Time](./leetcode/2162-MinimumCostToSetCookingTime.go)   
 [2165. Smallest Value of the Rearranged Number](./leetcode/2165-SmallestValueOfTheRearrangedNumber.go)   
+[2169. Count Operations to Obtain Zero](./leetcode/2169-CountOperationsToObtainZero.go)   
 [2189. Number of Ways to Build House of Cards](./leetcode/2189-NumberOfWaysToBuildHouseOfCards.go)   
 [2117. Abbreviating the Product of a Range](./leetcode/2117-AbbreviatingTheProductOfARange.go)   
 [2119. A Number After a Double Reversal](./leetcode/2119-ANumberAfterADoubleReversal.go)   
