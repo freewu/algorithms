@@ -38,6 +38,10 @@ func squareIsWhite(coordinates string) bool {
     return int(coordinates[1] - '0') % 2 == 1
 }
 
+func squareIsWhite1(coordinates string) bool {
+    return (coordinates[0] ^ coordinates[1]) & 1 == 1
+}
+
 func main() {
     // Example 1:
     // Input: coordinates = "a1"
@@ -53,4 +57,8 @@ func main() {
     // Input: coordinates = "c7"
     // Output: false
     fmt.Println(squareIsWhite("c7")) // false
+
+    fmt.Println(squareIsWhite1("a1")) // false
+    fmt.Println(squareIsWhite1("h3")) // true
+    fmt.Println(squareIsWhite1("c7")) // false
 }
