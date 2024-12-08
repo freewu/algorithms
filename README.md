@@ -1289,6 +1289,7 @@
 [2931. Maximum Spending After Buying Items](./leetcode/2931-MaximumSpendingAfterBuyingItems.go)   
 [2932. Maximum Strong Pair XOR I](./leetcode/2932-MaximumStrongPairXORI.go)   
 [2935. Maximum Strong Pair XOR II](./leetcode/2935-MaximumStrongPairXORII.go)   
+[2936. Number of Equal Numbers Blocks](./leetcode/2936-NumberOfEqualNumbersBlocks.go)   
 [2940. Find Building Where Alice and Bob Can Meet](./leetcode/2940-FindBuildingWhereAliceAndBobCanMeet.go)   
 [2943. Maximize Area of Square Hole in Grid](./leetcode/2943-MaximizeAreaOfSquareHoleInGrid.go)   
 [2946. Matrix Similarity After Cyclic Shifts](./leetcode/2946-MatrixSimilarityAfterCyclicShifts.go)   
