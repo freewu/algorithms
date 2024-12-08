@@ -1280,6 +1280,7 @@
 [2907. Maximum Profitable Triplets With Increasing Prices I](./leetcode/2907-MaximumProfitableTripletsWithIncreasingPricesI.go)   
 [2908. Minimum Sum of Mountain Triplets I](./leetcode/2908-MinimumSumOfMountainTripletsI.go)   
 [2909. Minimum Sum of Mountain Triplets II](./leetcode/2909-MinimumSumOfMountainTripletsII.go)   
+[2912. Number of Ways to Reach Destination in the Grid](./leetcode/2912-NumberOfWaysToReachDestinationInTheGrid.go)   
 [2917. Find the K-or of an Array](./leetcode/2917-FindTheKOrOfAnArray.go)   
 [2920. Maximum Points After Collecting Coins From All Nodes](./leetcode/2920-MaximumPointsAfterCollectingCoinsFromAllNodes.go)   
 [2921. Maximum Profitable Triplets With Increasing Prices II](./leetcode/2921-MaximumProfitableTripletsWithIncreasingPricesII.go)   
