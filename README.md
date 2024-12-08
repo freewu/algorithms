@@ -1090,6 +1090,7 @@
 [2151. Maximum Good People Based on Statements](./leetcode/2151-MaximumGoodPeopleBasedOnStatements.go)   
 [2152. Minimum Number of Lines to Cover Points](./leetcode/2152-MinimumNumberOfLinesToCoverPoints.go)   
 [2154. Keep Multiplying Found Values by Two](./leetcode/2154-KeepMultiplyingFoundValuesByTwo.go)   
+[2155. All Divisions With the Highest Score of a Binary Array](./leetcode/2155-AllDivisionsWithTheHighestScoreOfABinaryArray.go)   
 [2158. Amount of New Area Painted Each Day](./leetcode/2158-AmountOfNewAreaPaintedEachDay.go)   
 [2171. Removing Minimum Number of Magic Beans](./leetcode/2171-RemovingMinimumNumberOfMagicBeans.go)   
 [2174. Remove All Ones With Row and Column Flips II](./leetcode/2174-RemoveAllOnesWithRowAndColumnFlipsII.go)   
