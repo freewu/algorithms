@@ -1087,6 +1087,7 @@
 [2148. Count Elements With Strictly Smaller and Greater Elements](./leetcode/2148-CountElementsWithStrictlySmallerAndGreaterElements.go)   
 [2149. Rearrange Array Elements by Sign](./leetcode/2149-RearrangeArrayElementsBySign.go)   
 [2150. Find All Lonely Numbers in the Array](./leetcode/2150-FindAllLonelyNumbersInTheArray.go)   
+[2151. Maximum Good People Based on Statements](./leetcode/2151-MaximumGoodPeopleBasedOnStatements.go)   
 [2152. Minimum Number of Lines to Cover Points](./leetcode/2152-MinimumNumberOfLinesToCoverPoints.go)   
 [2154. Keep Multiplying Found Values by Two](./leetcode/2154-KeepMultiplyingFoundValuesByTwo.go)   
 [2158. Amount of New Area Painted Each Day](./leetcode/2158-AmountOfNewAreaPaintedEachDay.go)   
