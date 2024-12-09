@@ -1093,6 +1093,7 @@
 [2155. All Divisions With the Highest Score of a Binary Array](./leetcode/2155-AllDivisionsWithTheHighestScoreOfABinaryArray.go)   
 [2157. Groups of Strings](./leetcode/2157-GroupsOfStrings.go)   
 [2158. Amount of New Area Painted Each Day](./leetcode/2158-AmountOfNewAreaPaintedEachDay.go)   
+[2161. Partition Array According to Given Pivot](./leetcode/2161-PartitionArrayAccordingToGivenPivot.go)   
 [2171. Removing Minimum Number of Magic Beans](./leetcode/2171-RemovingMinimumNumberOfMagicBeans.go)   
 [2174. Remove All Ones With Row and Column Flips II](./leetcode/2174-RemoveAllOnesWithRowAndColumnFlipsII.go)   
 [2183. Count Array Pairs Divisible by K](./leetcode/2183-CountArrayPairsDivisibleByK.go)   
