@@ -1295,6 +1295,7 @@
 [2935. Maximum Strong Pair XOR II](./leetcode/2935-MaximumStrongPairXORII.go)   
 [2936. Number of Equal Numbers Blocks](./leetcode/2936-NumberOfEqualNumbersBlocks.go)   
 [2940. Find Building Where Alice and Bob Can Meet](./leetcode/2940-FindBuildingWhereAliceAndBobCanMeet.go)   
+[2941. Maximum GCD-Sum of a Subarray](./leetcode/2941-MaximumGCDSumOfASubarray.go)   
 [2943. Maximize Area of Square Hole in Grid](./leetcode/2943-MaximizeAreaOfSquareHoleInGrid.go)   
 [2946. Matrix Similarity After Cyclic Shifts](./leetcode/2946-MatrixSimilarityAfterCyclicShifts.go)   
 [2951. Find the Peaks](./leetcode/2951-FindThePeaks.go)   
