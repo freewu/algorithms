@@ -1830,6 +1830,7 @@
 [2138. Divide a String Into Groups of Size k](./leetcode/2138-DivideAStringIntoGroupsOfSizeK.go)   
 [2147. Number of Ways to Divide a Long Corridor](./leetcode/2147-NumberOfWaysToDivideALongCorridor.go)   
 [2156. Find Substring With Given Hash Value](./leetcode/2156-FindSubstringWithGivenHashValue.go)   
+[2167. Minimum Time to Remove All Cars Containing Illegal Goods](./leetcode/2167-MinimumTimeToRemoveAllCarsContainingIllegalGoods.go)   
 [2168. Unique Substrings With Equal Digit Frequency](./leetcode/2168-UniqueSubstringsWithEqualDigitFrequency.go)   
 [2182. Construct String With Repeat Limit](./leetcode/2182-ConstructStringWithRepeatLimit.go)   
 [2194. Cells in a Range on an Excel Sheet](./leetcode/2194-CellsInARangeOnAnExcelSheet.go)   
