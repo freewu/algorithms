@@ -1879,6 +1879,7 @@
 [2947. Count Beautiful Substrings I](./leetcode/2947-CountBeautifulSubstringsI.go)   
 [2949. Count Beautiful Substrings II](./leetcode/2949-CountBeautifulSubstringsII.go)   
 [2950. Number of Divisible Substrings](./leetcode/2950-NumberOfDivisibleSubstrings.go)   
+[2955. Number of Same-End Substrings](./leetcode/2955-NumberOfSameEndSubstrings.go)   
 [2976. Minimum Cost to Convert String I](./leetcode/2976-MinimumCostToConvertStringI.go)   
 [2981. Find Longest Special Substring That Occurs Thrice I](./leetcode/2981-FindLongestSpecialSubstringThatOccursThriceI.go)   
 [2982. Find Longest Special Substring That Occurs Thrice II](./leetcode/2982-FindLongestSpecialSubstringThatOccursThriceII.go)   
