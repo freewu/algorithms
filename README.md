@@ -1096,6 +1096,7 @@
 [2161. Partition Array According to Given Pivot](./leetcode/2161-PartitionArrayAccordingToGivenPivot.go)   
 [2163. Minimum Difference in Sums After Removal of Elements](./leetcode/2163-MinimumDifferenceInSumsAfterRemovalOfElements.go)   
 [2164. Sort Even and Odd Indices Independently](./leetcode/2164-SortEvenAndOddIndicesIndependently.go)   
+[2170. Minimum Operations to Make the Array Alternating](./leetcode/2170-MinimumOperationsToMakeTheArrayAlternating.go)   
 [2171. Removing Minimum Number of Magic Beans](./leetcode/2171-RemovingMinimumNumberOfMagicBeans.go)   
 [2174. Remove All Ones With Row and Column Flips II](./leetcode/2174-RemoveAllOnesWithRowAndColumnFlipsII.go)   
 [2183. Count Array Pairs Divisible by K](./leetcode/2183-CountArrayPairsDivisibleByK.go)   
