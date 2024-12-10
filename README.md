@@ -2219,6 +2219,7 @@
 [2119. A Number After a Double Reversal](./leetcode/2119-ANumberAfterADoubleReversal.go)   
 [2221. Find Triangular Sum of an Array](./leetcode/2221-FindTriangularSumOfAnArray.go)   
 [2235. Add Two Integers](./leetcode/2235-AddTwoIntegers.go)   
+[2240. Number of Ways to Buy Pens and Pencils](./leetcode/2240-NumberOfWaysToBuyPensAndPencils.go)   
 [2249. Count Lattice Points Inside a Circle](./leetcode/2249-CountLatticePointsInsideACircle.go)   
 [2269. Find the K-Beauty of a Number](./leetcode/2269-FindTheKBeautyOfANumber.go)   
 [2310. Sum of Numbers With Units Digit K](./leetcode/2310-SumOfNumbersWithUnitsDigitK.go)   
