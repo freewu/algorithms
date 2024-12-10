@@ -67,16 +67,16 @@ func maximumLength(s string) int {
 }
 
 func maximumLength1(s string) int {
-    cnt := make([]map[int]int, 26)
-    for i := range cnt {
-        cnt[i] = map[int]int{}
+    count := make([]map[int]int, 26)
+    for i := range count {
+        count[i] = map[int]int{}
     }
     left, right, n, res := 0, 0, len(s), -1
     for right < n {
         for right < n && s[right] == s[left] {
             right++
         }
-        cnt[s[left] - 'a'][right - left]++
+        count[s[left] - 'a'][right - left]++
         left = right
     }
     max := func (x, y int) int { if x > y { return x; }; return y; }
@@ -86,7 +86,7 @@ func maximumLength1(s string) int {
         }
         return
     }
-    for _, d := range cnt {
+    for _, d := range count {
         if len(d) == 0 {
             continue
         }
@@ -101,6 +101,37 @@ func maximumLength1(s string) int {
         }
     }
     return res
+}
+
+func maximumLength2(s string) int {
+    n := len(s)
+    l, r := 0, n
+    check := func(x int) bool {
+        count := [26]int{}
+        for i := 0; i < n; {
+            j := i + 1
+            for j < n && s[j] == s[i] {
+                j++
+            }
+            k := s[i] - 'a'
+            count[k] += max(0, j - i- x + 1)
+            if count[k] >= 3 {
+                return true
+            }
+            i = j
+        }
+        return false
+    }
+    for l < r {
+        mid := (l + r + 1) >> 1
+        if check(mid) {
+            l = mid
+        } else {
+            r = mid - 1
+        }
+    }
+    if l == 0 { return -1 }
+    return l
 }
 
 func main() {
@@ -125,4 +156,8 @@ func main() {
     fmt.Println(maximumLength1("aaaa")) // 2
     fmt.Println(maximumLength1("abcdef")) // -1
     fmt.Println(maximumLength1("abcaba")) // 1
+
+    fmt.Println(maximumLength2("aaaa")) // 2
+    fmt.Println(maximumLength2("abcdef")) // -1
+    fmt.Println(maximumLength2("abcaba")) // 1
 }
