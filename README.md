@@ -2251,6 +2251,7 @@
 [2847. Smallest Number With Given Digit Product](./leetcode/2847-SmallestNumberWithGivenDigitProduct.go)   
 [2927. Distribute Candies Among Children III](./leetcode/2927-DistributeCandiesAmongChildrenIII.go)   
 [2928. Distribute Candies Among Children I](./leetcode/2928-DistributeCandiesAmongChildrenI.go)   
+[2979. Most Expensive Item That Can Not Be Bought](./leetcode/2979-MostExpensiveItemThatCanNotBeBought.go)   
 [2999. Count the Number of Powerful Integers](./leetcode/2999-CountTheNumberOfPowerfulIntegers.go)   
 [3009. Maximum Number of Intersections on the Chart](./leetcode/3009-MaximumNumberOfIntersectionsOnTheChart.go)   
 [3032. Count Numbers With Unique Digits II](./leetcode/3032-CountNumbersWithUniqueDigitsII.go)   
