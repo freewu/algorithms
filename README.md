@@ -1099,6 +1099,7 @@
 [2170. Minimum Operations to Make the Array Alternating](./leetcode/2170-MinimumOperationsToMakeTheArrayAlternating.go)   
 [2171. Removing Minimum Number of Magic Beans](./leetcode/2171-RemovingMinimumNumberOfMagicBeans.go)   
 [2174. Remove All Ones With Row and Column Flips II](./leetcode/2174-RemoveAllOnesWithRowAndColumnFlipsII.go)   
+[2176. Count Equal and Divisible Pairs in an Array](./leetcode/2176-CountEqualAndDivisiblePairsInAnArray.go)   
 [2183. Count Array Pairs Divisible by K](./leetcode/2183-CountArrayPairsDivisibleByK.go)   
 [2184. Number of Ways to Build Sturdy Brick Wall](./leetcode/2184-NumberOfWaysToBuildSturdyBrickWall.go)   
 [2187. Minimum Time to Complete Trips](./leetcode/2187-MinimumTimeToCompleteTrips.go)   
