@@ -1122,6 +1122,7 @@
 [2249. Count Lattice Points Inside a Circle](./leetcode/2249-CountLatticePointsInsideACircle.go)   
 [2250. Count Number of Rectangles Containing Each Point](./leetcode/2250-CountNumberOfRectanglesContainingEachPoint.go)   
 [2251. Number of Flowers in Full Bloom](./leetcode/2251-NumberOfFlowersInFullBloom.go)   
+[2255. Count Prefixes of a Given String](./leetcode/2255-CountPrefixesOfAGivenString.go)   
 [2257. Count Unguarded Cells in the Grid](./leetcode/2257-CountUnguardedCellsInTheGrid.go)   
 [2258. Escape the Spreading Fire](./leetcode/2258-EscapeTheSpreadingFire.go)   
 [2263. Make Array Non-decreasing or Non-increasing](./leetcode/2263-MakeArrayNonDecreasingOrNonIncreasing.go)   
