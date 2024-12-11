@@ -1098,6 +1098,7 @@
 [2164. Sort Even and Odd Indices Independently](./leetcode/2164-SortEvenAndOddIndicesIndependently.go)   
 [2170. Minimum Operations to Make the Array Alternating](./leetcode/2170-MinimumOperationsToMakeTheArrayAlternating.go)   
 [2171. Removing Minimum Number of Magic Beans](./leetcode/2171-RemovingMinimumNumberOfMagicBeans.go)   
+[2172. Maximum AND Sum of Array](./leetcode/2172-MaximumANDSumOfArray.go)   
 [2174. Remove All Ones With Row and Column Flips II](./leetcode/2174-RemoveAllOnesWithRowAndColumnFlipsII.go)   
 [2176. Count Equal and Divisible Pairs in an Array](./leetcode/2176-CountEqualAndDivisiblePairsInAnArray.go)   
 [2179. Count Good Triplets in an Array](./leetcode/2179-CountGoodTripletsInAnArray.go)   
