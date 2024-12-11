@@ -1345,6 +1345,7 @@
 [3073. Maximum Increasing Triplet Value](./leetcode/3073-MaximumIncreasingTripletValue.go)   
 [3074. Apple Redistribution into Boxes](./leetcode/3074-AppleRedistributionIntoBoxes.go)   
 [3075. Maximize Happiness of Selected Children](./leetcode/3075-MaximizeHappinessOfSelectedChildren.go)   
+[3078. Match Alphanumerical Pattern in Matrix I](./leetcode/3078-MatchAlphanumericalPatternInMatrixI.go)   
 [3079. Find the Sum of Encrypted Integers](./leetcode/3079-FindTheSumOfEncryptedIntegers.go)   
 [3080. Mark Elements on Array by Performing Queries](./leetcode/3080-MarkElementsOnArrayByPerformingQueries.go)   
 [3082. Find the Sum of the Power of All Subsequences](./leetcode/3082-FindTheSumOfThePowerOfAllSubsequences.go)   
