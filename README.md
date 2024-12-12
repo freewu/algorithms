@@ -1331,6 +1331,7 @@
 [3009. Maximum Number of Intersections on the Chart](./leetcode/3009-MaximumNumberOfIntersectionsOnTheChart.go)   
 [3011. Find if Array Can Be Sorted](./leetcode/3011-FindIfArrayCanBeSorted.go)   
 [3018. Maximum Number of Removal Queries That Can Be Processed I](./leetcode/3018-MaximumNumberOfRemovalQueriesThatCanBeProcessedI.go)   
+[3109. Find the Index of Permutation](./leetcode/3109-FindTheIndexOfPermutation.go)   
 [3023. Find Pattern in Infinite Stream I](./leetcode/3023-FindPatternInInfiniteStreamI.go)   
 [3027. Find the Number of Ways to Place People II](./leetcode/3027-FindTheNumberOfWaysToPlacePeopleII.go)   
 [3030. Find the Grid of Region Average](./leetcode/3030-FindTheGridOfRegionAverage.go)   
