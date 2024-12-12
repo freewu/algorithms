@@ -1106,6 +1106,7 @@
 [2184. Number of Ways to Build Sturdy Brick Wall](./leetcode/2184-NumberOfWaysToBuildSturdyBrickWall.go)   
 [2187. Minimum Time to Complete Trips](./leetcode/2187-MinimumTimeToCompleteTrips.go)   
 [2188. Minimum Time to Finish the Race](./leetcode/2188-MinimumTimeToFinishTheRace.go)   
+[2190. Most Frequent Number Following Key In an Array](./leetcode/2190-MostFrequentNumberFollowingKeyInAnArray.go)   
 [2191. Sort the Jumbled Numbers](./leetcode/2191-SortTheJumbledNumbers.go)   
 [2198. Number of Single Divisor Triplets](./leetcode/2198-NumberOfSingleDivisorTriplets.go)   
 [2214. Minimum Health to Beat Game](./leetcode/2214-MinimumHealthToBeatGame.go)   
