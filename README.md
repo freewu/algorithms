@@ -1208,6 +1208,7 @@
 [2555. Maximize Win From Two Segments](./leetcode/2555-MaximizeWinFromTwoSegments.go)   
 [2556. Disconnect Path in a Binary Matrix by at Most One Flip](./leetcode/2556-DisconnectPathInABinaryMatrixByAtMostOneFlip.go)   
 [2557. Maximum Number of Integers to Choose From a Range II](./leetcode/2557-MaximumNumberOfIntegersToChooseFromARangeII.go)   
+[2558. Take Gifts From the Richest Pile](./leetcode/2558-TakeGiftsFromTheRichestPile.go)   
 [2599. Make the Prefix Sum Non-negative](./leetcode/2599-MakeThePrefixSumNonNegative.go)   
 [2563. Count the Number of Fair Pairs](./leetcode/2563-CountTheNumberOfFairPairs.go)   
 [2575. Find the Divisibility Array of a String](./leetcode/2575-FindTheDivisibilityArrayOfAString.go)   
