@@ -129,16 +129,16 @@ func main() {
     // It can be shown that it is not possible to obtain a palindrome in less than 2 moves.
     fmt.Println(minMovesToMakePalindrome("letelt")) // 2
 
-    fmt.Println(minMovesToMakePalindrome("abcdefghijklmnopqrstuvwxyz")) // 25
+    fmt.Println(minMovesToMakePalindrome("abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz")) // 325
     fmt.Println(minMovesToMakePalindrome("aaaaaaaa")) // 0
 
     fmt.Println(minMovesToMakePalindrome1("aabb")) // 2
     fmt.Println(minMovesToMakePalindrome1("letelt")) // 2
-    //fmt.Println(minMovesToMakePalindrome1("abcdefghijklmnopqrstuvwxyz")) // 25
+    fmt.Println(minMovesToMakePalindrome1("abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz")) // 325
     fmt.Println(minMovesToMakePalindrome1("aaaaaaaa")) // 0
 
     fmt.Println(minMovesToMakePalindrome2("aabb")) // 2
     fmt.Println(minMovesToMakePalindrome2("letelt")) // 2
-    fmt.Println(minMovesToMakePalindrome2("abcdefghijklmnopqrstuvwxyz")) // 1
+    fmt.Println(minMovesToMakePalindrome2("abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz")) // 325
     fmt.Println(minMovesToMakePalindrome2("aaaaaaaa")) // 0
 }
