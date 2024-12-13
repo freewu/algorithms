@@ -1219,6 +1219,7 @@
 [2577. Minimum Time to Visit a Cell In a Grid](./leetcode/2577-MinimumTimeToVisitACellInAGrid.go)   
 [2580. Count Ways to Group Overlapping Ranges](./leetcode/2580-CountWaysToGroupOverlappingRanges.go)   
 [2589. Minimum Time to Complete All Tasks](./leetcode/2589-MinimumTimeToCompleteAllTasks.go)   
+[2593. Find Score of an Array After Marking All Elements](./leetcode/2593-FindScoreOfAnArrayAfterMarkingAllElements.go)   
 [2596. Check Knight Tour Configuration](./leetcode/2596-CheckKnightTourConfiguration.go)   
 [2597. The Number of Beautiful Subsets](./leetcode/2597-TheNumberOfBeautifulSubsets.go)   
 [2601. Prime Subtraction Operation](./leetcode/2601-PrimeSubtractionOperation.go)   
