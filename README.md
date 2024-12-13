@@ -1455,6 +1455,8 @@
 [3355. Zero Array Transformation I](./leetcode/3355-ZeroArrayTransformationI.go)   
 [3356. Zero Array Transformation II](./leetcode/3356-ZeroArrayTransformationII.go)   
 [3362. Zero Array Transformation III](./leetcode/3362-ZeroArrayTransformationIII.go)   
+[3376. Minimum Time to Break Locks I](./leetcode/3376-MinimumTimeToBreakLocksI.go)   
+
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
