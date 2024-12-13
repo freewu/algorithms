@@ -138,6 +138,89 @@ func (h *MinHeap) Pop() interface{} {
     return res
 }
 
+func getFinalState1(nums []int, k int, multiplier int) []int {
+    n, mod := len(nums), 1_000_000_007
+    pow := func (a, b int) int {
+        res := 1
+        for ; b > 0; b >>= 1 {
+            if (b & 1) == 1 {
+                res = (res * a) % mod
+            }
+            a = ( a * a ) % mod
+        }
+        return res
+    }
+    switch {
+        case multiplier == 1:
+        return nums
+        case n == 1:
+        return []int{int((nums[0] * pow(multiplier, k)) % mod) }
+    }
+    idx := make([]int, n)
+    for i := range idx {
+        idx[i] = i
+    }
+    sort.Slice(idx, func (i, j int) bool { 
+        return nums[idx[i]] < nums[idx[j]] || nums[idx[i]] == nums[idx[j]] && idx[i] < idx[j] 
+    })
+    var group_idx, group_pow []int
+    sum := []int{0}
+    b, p := 1, -1
+    for i, j := range idx {
+        num := nums[j]
+        if num >= b {
+            group_idx = append(group_idx, i)
+            s := 0
+            for num >= b {
+                b *= multiplier
+                p++
+                s++
+            }
+            sum = append(sum, sum[len(sum) - 1] + s * i)
+            group_pow = append(group_pow, p)
+        }
+    }
+    group_idx = append(group_idx, n)
+    sum = sum[1:]
+    g := sort.Search(len(sum), func (i int) bool { return sum[i] > k }) - 1
+    group_size := group_idx[g + 1]
+    p = (k - sum[g]) / group_size
+    res := make([]int, n)
+    for u := 0; u <= g; u++ {
+        b := pow(multiplier, p + group_pow[g] - group_pow[u])
+        for _, j := range idx[group_idx[u]:group_idx[u + 1]] {
+            res[j] = int((nums[j] * b) % mod)
+        }
+    }
+    for _, j := range idx[group_size:] {
+        res[j] = nums[j]
+    }
+    idx = idx[:group_size]
+    p = (k - sum[g]) % group_size
+    if p > 0 {
+        if g > 0 {
+            new_nums := make([]int, n)
+            b = 1
+            for u, q := g, group_pow[g]; u >= 0; u-- {
+                for q > group_pow[u] {
+                    b *= multiplier
+                    q--
+                }
+                for _, j := range idx[group_idx[u]:group_idx[u + 1]] {
+                    new_nums[j] = nums[j] * b
+                }
+            }
+            sort.Slice(idx, func (i, j int) bool { 
+                return new_nums[idx[i]] < new_nums[idx[j]] || new_nums[idx[i]] == new_nums[idx[j]] && idx[i] < idx[j] 
+            })
+        }
+        for _, j := range idx[:p] {
+            res[j] = int((res[j] * multiplier) % mod)
+        }
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: nums = [2,1,3,5,6], k = 5, multiplier = 2
@@ -160,4 +243,7 @@ func main() {
     // After operation 2	[100000000000, 2000000000]
     // After applying modulo	[999999307, 999999993]
     fmt.Println(getFinalState([]int{100000,2000}, 2, 1000000)) // [999999307,999999993]
+
+    fmt.Println(getFinalState1([]int{2,1,3,5,6}, 5, 2)) // [8,4,6,5,6]
+    fmt.Println(getFinalState1([]int{100000,2000}, 2, 1000000)) // [999999307,999999993]
 }
