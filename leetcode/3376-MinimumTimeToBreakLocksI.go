@@ -32,7 +32,7 @@ package main
 // Output: 5
 // Explanation:
 // Time    Energy  X   Action      Updated X
-// 0       0       1   Nothing	        1
+// 0       0       1   Nothing	       1
 // 1       1       1   Nothing         1
 // 2       2       1   Break 1st Lock  3
 // 3       3       3   Nothing         3
