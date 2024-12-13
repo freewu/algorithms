@@ -1113,6 +1113,7 @@
 [2198. Number of Single Divisor Triplets](./leetcode/2198-NumberOfSingleDivisorTriplets.go)   
 [2200. Find All K-Distant Indices in an Array](./leetcode/2200-FindAllKDistantIndicesInAnArray.go)   
 [2206. Divide Array Into Equal Pairs](./leetcode/2206-DivideArrayIntoEqualPairs.go)   
+[2210. Count Hills and Valleys in an Array](./leetcode/2210-CountHillsAndValleysInAnArray.go)   
 [2214. Minimum Health to Beat Game](./leetcode/2214-MinimumHealthToBeatGame.go)   
 [2215. Find the Difference of Two Arrays](./leetcode/2215-FindTheDifferenceOfTwoArrays.go)   
 [2217. Find Palindrome With Fixed Length](./leetcode/2217-FindPalindromeWithFixedLength.go)   
