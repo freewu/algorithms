@@ -60,6 +60,29 @@ func minKnightMoves(x int, y int) int {
     return -1
 }
 
+func minKnightMoves1(x int, y int) int {
+    if x < 0 { x = -x }
+    if y < 0 { y = -y }
+    mp := make(map[int]int)
+    min := func (x, y int) int { if x < y { return x; }; return y; }
+    var dfs func(x int, y int) int
+    dfs = func(x int, y int) int {
+        if x < 0 { x = -x }
+        if y < 0 { y = -y }
+        if x == 0 && y == 0 { return 0 }
+        if x + y == 2 { return 2  }
+        // key := string(x) + "-" + string(y)
+        //key := fmt.Sprintf("%d-%d", x, y)
+        key := 1000 * x + y
+        if val, ok := mp[key]; ok {
+            return val
+        }
+        mp[key] = min(dfs(x - 2, y - 1), dfs(x - 1, y - 2)) + 1
+        return mp[key]
+    }
+    return dfs(x, y)
+}
+
 func main() {
     // Example 1:
     // Input: x = 2, y = 1
@@ -71,4 +94,7 @@ func main() {
     // Output: 4
     // Explanation: [0, 0] → [2, 1] → [4, 2] → [3, 4] → [5, 5]
     fmt.Println(minKnightMoves(5, 5)) // 4
+
+    fmt.Println(minKnightMoves1(2, 1)) // 1
+    fmt.Println(minKnightMoves1(5, 5)) // 4
 }
