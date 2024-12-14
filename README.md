@@ -1256,6 +1256,7 @@
 [2748. Number of Beautiful Pairs](./leetcode/2748-NumberOfBeautifulPairs.go)   
 [2751. Robot Collisions](./leetcode/2751-RobotCollisions.go)   
 [2753. Count Houses in a Circular Street II](./leetcode/2753-CountHousesInACircularStreetII.go)   
+[2762. Continuous Subarrays](./leetcode/2762-ContinuousSubarrays.go)   
 [2765. Longest Alternating Subarray](./leetcode/2765-LongestAlternatingSubarray.go)   
 [2766. Relocate Marbles](./leetcode/2766-RelocateMarbles.go)   
 [2768. Number of Black Blocks](./leetcode/2768-NumberOfBlackBlocks.go)   
