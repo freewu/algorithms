@@ -1112,6 +1112,7 @@
 [2197. Replace Non-Coprime Numbers in Array](./leetcode/2197-ReplaceNonCoprimeNumbersInArray.go)   
 [2198. Number of Single Divisor Triplets](./leetcode/2198-NumberOfSingleDivisorTriplets.go)   
 [2200. Find All K-Distant Indices in an Array](./leetcode/2200-FindAllKDistantIndicesInAnArray.go)   
+[2201. Count Artifacts That Can Be Extracted](./leetcode/2201-CountArtifactsThatCanBeExtracted.go)   
 [2206. Divide Array Into Equal Pairs](./leetcode/2206-DivideArrayIntoEqualPairs.go)   
 [2210. Count Hills and Valleys in an Array](./leetcode/2210-CountHillsAndValleysInAnArray.go)   
 [2214. Minimum Health to Beat Game](./leetcode/2214-MinimumHealthToBeatGame.go)   
