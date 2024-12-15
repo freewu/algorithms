@@ -68,6 +68,110 @@ func maxAverageRatio(classes [][]int, extraStudents int) float64 {
     return sum / float64(len(classes))
 }
 
+var g [][]int
+func maxAverageRatio1(classes [][]int, extraStudents int) float64 {
+    g = classes
+    h := Heap{}
+    for i := range classes {
+        h.Push(i)
+    }
+    for i := 0; i < extraStudents; i++ {
+        v := h.Pop()
+        classes[v][1]++
+        classes[v][0]++
+        h.Push(v)
+    }
+    sum := 0.
+    for _, v := range classes {
+        sum += float64(v[0]) / float64(v[1])
+    }
+    return sum / float64(len(classes))
+}
+
+
+type Heap struct {
+    data []int
+}
+
+func (h *Heap) Len() int {
+    return len(h.data)
+}
+
+func (h *Heap) Less(i, j int) bool {
+    a1, b1 := calc(h.data[i])
+    a2, b2 := calc(h.data[j])
+    return a1 * b2 > b1 * a2
+}
+
+func calc(i int) (int, int) {
+    a, b := g[i][0], g[i][1]
+    return (b-a), (b+1)*b
+}
+
+func (h *Heap) Swap(i, j int) {
+    h.data[i], h.data[j] = h.data[j], h.data[i]
+}
+
+/*
+func (h *Heap) Push(x interface{}) {
+    h.data = append(h.data, x.(int))
+}
+
+func (h *Heap) Pop() interface{} {
+    l := h.Len()
+    v := h.data[l-1]
+    h.data = h.data[:l-1]
+    return v
+}
+*/
+
+func (h *Heap) Push(x int) {
+    h.data = append(h.data, x)
+    h.filterUp(h.Len() - 1)
+}
+
+func (h *Heap) Top() int {
+    return h.data[0]
+}
+
+func (h *Heap) Pop() int {
+    l := h.Len()
+    h.Swap(0, l-1)
+    v := h.data[l-1]
+    h.data = h.data[:l-1]
+    h.filterDown(0)
+    return v
+}
+
+func (h *Heap) filterUp(t int) {
+    for t > 0 {
+        p := (t - 1) / 2
+        if h.Less(t, p) {
+            h.Swap(t, p)
+            t = p
+        } else {
+            break
+        }
+    }
+}
+
+func (h *Heap) filterDown(t int) {
+    l := h.Len()
+    left := 1
+    for left < l {
+        if left+1 < l && h.Less(left+1, left) {
+            left += 1
+        }
+        if h.Less(left, t) {
+            h.Swap(left, t)
+            t = left
+            left = t*2 + 1
+        } else {
+            break
+        }
+    }
+}
+
 func main() {
     // Example 1:
     // Input: classes = [[1,2],[3,5],[2,2]], extraStudents = 2
@@ -78,4 +182,7 @@ func main() {
     // Input: classes = [[2,4],[3,9],[4,5],[2,10]], extraStudents = 4
     // Output: 0.53485
     fmt.Println(maxAverageRatio([][]int{{2,4},{3,9},{4,5},{2,10}}, 4)) // 0.53485
+
+    fmt.Println(maxAverageRatio1([][]int{{1,2},{3,5},{2,2}}, 2)) // 0.78333
+    fmt.Println(maxAverageRatio1([][]int{{2,4},{3,9},{4,5},{2,10}}, 4)) // 0.53485
 }
