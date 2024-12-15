@@ -42,7 +42,8 @@ package main
 
 import "fmt"
 import "sort"
-import  "math/rand"
+import "math/rand"
+import "slices"
 
 type node struct {
     Ch       [2]*node
@@ -220,6 +221,43 @@ func closestRoom1(rooms [][]int, queries [][]int) []int {
     return res
 }
 
+// import "github.com/emirpasic/gods/v2/trees/redblacktree"
+// import "slices"
+
+// func closestRoom(rooms [][]int, queries [][]int) []int {
+//     slices.SortFunc(rooms, func(a, b []int) int { return b[1] - a[1] })  // 按照 size 从大到小排序
+//     n := len(queries)
+//     queryIds := make([]int, n)
+//     for i := range queryIds {
+//         queryIds[i] = i
+//     }
+//     slices.SortFunc(queryIds, func(i, j int) int { return queries[j][1] - queries[i][1] }) // 按照 minSize 从大到小排序
+//     res := make([]int, n)
+//     for i := range res {
+//         res[i] = -1
+//     }
+//     roomIds := redblacktree.New[int, struct{}]() // import "github.com/emirpasic/gods/v2/trees/redblacktree"
+//     j := 0
+//     for _, i := range queryIds {
+//         preferredId, minSize := queries[i][0], queries[i][1]
+//         for j < len(rooms) && rooms[j][1] >= minSize {
+//             roomIds.Put(rooms[j][0], struct{}{})
+//             j++
+//         }
+//         diff := math.MaxInt
+//         // 左边的差
+//         if node, ok := roomIds.Floor(preferredId); ok {
+//             diff = preferredId - node.Key
+//             res[i] = node.Key
+//         }
+//         // 右边的差
+//         if node, ok := roomIds.Ceiling(preferredId); ok && node.Key-preferredId < diff {
+//             res[i] = node.Key
+//         }
+//     }
+//     return res
+// }
+
 func main() {
     // Example 1:
     // Input: rooms = [[2,2],[1,2],[3,2]], queries = [[3,1],[3,3],[5,2]]
@@ -240,4 +278,7 @@ func main() {
 
     fmt.Println(closestRoom1([][]int{{2,2},{1,2},{3,2}}, [][]int{{3,1},{3,3},{5,2}})) // [3,-1,3]
     fmt.Println(closestRoom1([][]int{{1,4},{2,3},{3,5},{4,1},{5,2}}, [][]int{{2,3},{2,4},{2,5}})) // [2,1,3]
+
+    fmt.Println(closestRoom2([][]int{{2,2},{1,2},{3,2}}, [][]int{{3,1},{3,3},{5,2}})) // [3,-1,3]
+    fmt.Println(closestRoom2([][]int{{1,4},{2,3},{3,5},{4,1},{5,2}}, [][]int{{2,3},{2,4},{2,5}})) // [2,1,3]
 }
