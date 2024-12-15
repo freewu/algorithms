@@ -1976,6 +1976,7 @@
 [1692. Count Ways to Distribute Candies](./leetcode/1692-CountWaysToDistributeCandies.go)   
 [1900. The Earliest and Latest Rounds Where Players Compete](./leetcode/1900-TheEarliestAndLatestRoundsWherePlayersCompete.go)   
 [1931. Painting a Grid With Three Different Colors](./leetcode/1931-PaintingAGridWithThreeDifferentColors.go)   
+[2318. Number of Distinct Roll Sequences](./leetcode/2318-NumberOfDistinctRollSequences.go)   
 [2466. Count Ways To Build Good Strings](./leetcode/2466-CountWaysToBuildGoodStrings.go)   
 [2533. Number of Good Binary Strings](./leetcode/2533-NumberOfGoodBinaryStrings.go)   
 [2787. Ways to Express an Integer as Sum of Powers](./leetcode/2787-WaysToExpressAnIntegerAsSumOfPowers.go)   
