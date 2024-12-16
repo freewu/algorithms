@@ -1120,6 +1120,7 @@
 [2212. Maximum Points in an Archery Competition](./leetcode/2212-MaximumPointsInAnArcheryCompetition.go)   
 [2214. Minimum Health to Beat Game](./leetcode/2214-MinimumHealthToBeatGame.go)   
 [2215. Find the Difference of Two Arrays](./leetcode/2215-FindTheDifferenceOfTwoArrays.go)   
+[2216. Minimum Deletions to Make Array Beautiful](./leetcode/2216-MinimumDeletionsToMakeArrayBeautiful.go)   
 [2217. Find Palindrome With Fixed Length](./leetcode/2217-FindPalindromeWithFixedLength.go)   
 [2218. Maximum Value of K Coins From Piles](./leetcode/2218-MaximumValueOfKCoinsFromPiles.go)   
 [2219. Maximum Sum Score of Array](./leetcode/2219-MaximumSumScoreOfArray.go)   
