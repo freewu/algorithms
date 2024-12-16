@@ -1117,6 +1117,7 @@
 [2206. Divide Array Into Equal Pairs](./leetcode/2206-DivideArrayIntoEqualPairs.go)   
 [2208. Minimum Operations to Halve Array Sum](./leetcode/2208-MinimumOperationsToHalveArraySum.go)   
 [2210. Count Hills and Valleys in an Array](./leetcode/2210-CountHillsAndValleysInAnArray.go)   
+[2212. Maximum Points in an Archery Competition](./leetcode/2212-MaximumPointsInAnArcheryCompetition.go)   
 [2214. Minimum Health to Beat Game](./leetcode/2214-MinimumHealthToBeatGame.go)   
 [2215. Find the Difference of Two Arrays](./leetcode/2215-FindTheDifferenceOfTwoArrays.go)   
 [2217. Find Palindrome With Fixed Length](./leetcode/2217-FindPalindromeWithFixedLength.go)   
