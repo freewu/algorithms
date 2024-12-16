@@ -1403,6 +1403,7 @@
 [3177. Find the Maximum Length of a Good Subsequence II](./leetcode/3177-FindTheMaximumLengthOfAGoodSubsequenceII.go)   
 [3180. Maximum Total Reward Using Operations I](./leetcode/3180-MaximumTotalRewardUsingOperationsI.go)   
 [3181. Maximum Total Reward Using Operations II](./leetcode/3181-MaximumTotalRewardUsingOperationsII.go)   
+[3183. The Number of Ways to Make the Sum](./leetcode/3183-TheNumberOfWaysToMakeTheSum.go)   
 [3184. Count Pairs That Form a Complete Day I](./leetcode/3184-CountPairsThatFormACompleteDayI.go)   
 [3185. Count Pairs That Form a Complete Day II](./leetcode/3185-CountPairsThatFormACompleteDayII.go)   
 [3189. Minimum Moves to Get a Peaceful Board](./leetcode/3189-MinimumMovesToGetAPeacefulBoard.go)   
