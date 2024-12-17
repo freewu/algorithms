@@ -114,6 +114,29 @@ func repeatLimitedString1(s string, repeatLimit int) string {
     return string(res)
 }
 
+func repeatLimitedString2(s string, repeatLimit int) string {
+    res, count := []byte{}, [26]int{}
+    for _, v := range s {
+        count[v - 'a']++
+    }
+    min := func (x, y int) int { if x < y { return x; }; return y; }
+    for i, j := 25, 24; i >= 0; i-- {
+        j = min(j, i-1)
+        for {
+            for k := min(count[i], repeatLimit); k > 0; k-- {
+                res = append(res, byte(i + 'a'))
+                count[i]--
+            }
+            if count[i] == 0 { break }
+            for j >= 0 && count[j] == 0 { j-- }
+            if j < 0 { break }
+            res = append(res, byte(j + 'a'))
+            count[j]--
+        }
+    }
+    return string(res)
+}
+
 func main() {
     // Example 1:
     // Input: s = "cczazcc", repeatLimit = 3
@@ -139,4 +162,7 @@ func main() {
 
     fmt.Println(repeatLimitedString1("cczazcc", 3)) // "zzcccac"
     fmt.Println(repeatLimitedString1("aababab", 2)) // "bbabaa"
+
+    fmt.Println(repeatLimitedString2("cczazcc", 3)) // "zzcccac"
+    fmt.Println(repeatLimitedString2("aababab", 2)) // "bbabaa"
 }
