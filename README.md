@@ -1944,6 +1944,7 @@
 [3125. Maximum Number That Makes Result of Bitwise AND Zero](./leetcode/3125-MaximumNumberThatMakesResultOfBitwiseANDZero.go)   
 [3135. Equalize Strings by Adding or Removing Characters at Ends](./leetcode/3135-EqualizeStringsByAddingOrRemovingCharactersAtEnds.go)   
 [3137. Minimum Number of Operations to Make Word K-Periodic](./leetcode/3137-MinimumNumberOfOperationsToMakeWordKPeriodic.go)   
+[3138. Minimum Length of Anagram Concatenation](./leetcode/3138-MinimumLengthOfAnagramConcatenation.go)   
 [3144. Minimum Substring Partition of Equal Character](./leetcode/3144-MinimumSubstringPartitionOfEqualCharacter.go)   
 [3146. Permutation Difference between Two Strings](./leetcode/3146-PermutationDifferenceBetweenTwoStrings.go)   
 [3163. String Compression III](./leetcode/3163-StringCompressionIII.go)   
