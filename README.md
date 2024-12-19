@@ -1877,6 +1877,7 @@
 [2213. Longest Substring of One Repeating Character](./leetcode/2213-LongestSubstringOfOneRepeatingCharacter.go)   
 [2222. Number of Ways to Select Buildings](./leetcode/2222-NumberOfWaysToSelectBuildings.go)   
 [2223. Sum of Scores of Built Strings](./leetcode/2223-SumOfScoresOfBuiltStrings.go)   
+[2224. Minimum Number of Operations to Convert Time](./leetcode/2224-MinimumNumberOfOperationsToConvertTime.go)   
 [2232. Minimize Result by Adding Parentheses to Expression](./leetcode/2232-MinimizeResultByAddingParenthesesToExpression.go)   
 [2243. Calculate Digit Sum of a String](./leetcode/2243-CalculateDigitSumOfAString.go)   
 [2259. Remove Digit From Number to Maximize Result](./leetcode/2259-RemoveDigitFromNumberToMaximizeResult.go)   
