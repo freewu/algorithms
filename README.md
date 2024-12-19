@@ -1126,6 +1126,7 @@
 [2219. Maximum Sum Score of Array](./leetcode/2219-MaximumSumScoreOfArray.go)   
 [2221. Find Triangular Sum of an Array](./leetcode/2221-FindTriangularSumOfAnArray.go)   
 [2225. Find Players With Zero or One Losses](./leetcode/2225-FindPlayersWithZeroOrOneLosses.go)   
+[2226. Maximum Candies Allocated to K Children](./leetcode/2226-MaximumCandiesAllocatedToKChildren.go)   
 [2229. Check if an Array Is Consecutive](./leetcode/2229-CheckIfAnArrayIsConsecutive.go)   
 [2237. Count Positions on Street With Required Brightness](./leetcode/2237-CountPositionsOnStreetWithRequiredBrightness.go)   
 [2244. Minimum Rounds to Complete All Tasks](./leetcode/2244-MinimumRoundsToCompleteAllTasks.go)   
