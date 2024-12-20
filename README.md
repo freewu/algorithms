@@ -1454,6 +1454,7 @@
 [3269. Constructing Two Increasing Arrays](./leetcode/3269-ConstructingTwoIncreasingArrays.go)   
 [3279. Maximum Total Area Occupied by Pistons](./leetcode/3279-MaximumTotalAreaOccupiedByPistons.go)   
 [3283. Maximum Number of Moves to Kill All Pawns](./leetcode/3283-MaximumNumberOfMovesToKillAllPawns.go)   
+[3284. Sum of Consecutive Subarrays](./leetcode/3284-SumOfConsecutiveSubarrays.go)   
 [3285. Find Indices of Stable Mountains](./leetcode/3285-FindIndicesOfStableMountains.go)   
 [3286. Find a Safe Walk Through a Grid](./leetcode/3286-FindASafeWalkThroughAGrid.go)   
 [3288. Length of the Longest Increasing Path](./leetcode/3288-LengthOfTheLongestIncreasingPath.go)   
