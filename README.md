@@ -1954,6 +1954,7 @@
 [3167. Better Compression of String](./leetcode/3167-BetterCompressionOfString.go)   
 [3174. Clear Digits](./leetcode/3174-ClearDigits.go)   
 [3216. Lexicographically Smallest String After a Swap](./leetcode/3216-LexicographicallySmallestStringAfterASwap.go)   
+[3253. Construct String with Minimum Cost (Easy)](./leetcode/3253-ConstructStringWithMinimumCost-Easy.go)   
 [3258. Count Substrings That Satisfy K-Constraint I](./leetcode/3258-CountSubstringsThatSatisfyKConstraintI.go)   
 [3261. Count Substrings That Satisfy K-Constraint II](./leetcode/3261-CountSubstringsThatSatisfyKConstraintII.go)   
 [3274. Check if Two Chessboard Squares Have the Same Color](./leetcode/3274-CheckIfTwoChessboardSquaresHaveTheSameColor.go)   
