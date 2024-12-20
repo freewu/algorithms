@@ -1244,6 +1244,7 @@
 [2638. Count the Number of K-Free Subsets](./leetcode/2638-CountTheNumberOfKFreeSubsets.go)   
 [2655. Find Maximal Uncovered Ranges](./leetcode/2655-FindMaximalUncoveredRanges.go)   
 [2658. Maximum Number of Fish in a Grid](./leetcode/2658-MaximumNumberOfFishInAGrid.go)   
+[2260. Minimum Consecutive Cards to Pick Up](./leetcode/2260-MinimumConsecutiveCardsToPickUp.go)   
 [2661. First Completely Painted Row or Column](./leetcode/2661-FirstCompletelyPaintedRowOrColumn.go)   
 [2664. The Knight’s Tour](./leetcode/2664-TheKnightsTour.go)   
 [2670. Find the Distinct Difference Array](./leetcode/2670-FindTheDistinctDifferenceArray.go)   
