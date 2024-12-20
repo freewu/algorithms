@@ -1129,6 +1129,7 @@
 [2226. Maximum Candies Allocated to K Children](./leetcode/2226-MaximumCandiesAllocatedToKChildren.go)   
 [2229. Check if an Array Is Consecutive](./leetcode/2229-CheckIfAnArrayIsConsecutive.go)   
 [2233. Maximum Product After K Increments](./leetcode/2233-MaximumProductAfterKIncrements.go)   
+[2234. Maximum Total Beauty of the Gardens](./leetcode/2234-MaximumTotalBeautyOfTheGardens.go)   
 [2237. Count Positions on Street With Required Brightness](./leetcode/2237-CountPositionsOnStreetWithRequiredBrightness.go)   
 [2244. Minimum Rounds to Complete All Tasks](./leetcode/2244-MinimumRoundsToCompleteAllTasks.go)   
 [2245. Maximum Trailing Zeros in a Cornered Path](./leetcode/2245-MaximumTrailingZerosInACorneredPath.go)   
