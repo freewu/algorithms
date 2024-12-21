@@ -1890,6 +1890,7 @@
 [2232. Minimize Result by Adding Parentheses to Expression](./leetcode/2232-MinimizeResultByAddingParenthesesToExpression.go)   
 [2243. Calculate Digit Sum of a String](./leetcode/2243-CalculateDigitSumOfAString.go)   
 [2259. Remove Digit From Number to Maximize Result](./leetcode/2259-RemoveDigitFromNumberToMaximizeResult.go)   
+[2262. Total Appeal of A String](./leetcode/2262-TotalAppealOfAString.go)   
 [2268. Minimum Number of Keypresses](./leetcode/2268-MinimumNumberOfKeypresses.go)   
 [2288. Apply Discount to Prices](./leetcode/2288-ApplyDiscountToPrices.go)   
 [2322. Minimum Score After Removals on a Tree](./leetcode/2322-MinimumScoreAfterRemovalsOnATree.go)   
