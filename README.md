@@ -1142,6 +1142,7 @@
 [2256. Minimum Average Difference](./leetcode/2256-MinimumAverageDifference.go)   
 [2257. Count Unguarded Cells in the Grid](./leetcode/2257-CountUnguardedCellsInTheGrid.go)   
 [2258. Escape the Spreading Fire](./leetcode/2258-EscapeTheSpreadingFire.go)   
+[2261. K Divisible Elements Subarrays](./leetcode/2261-KDivisibleElementsSubarrays.go)   
 [2263. Make Array Non-decreasing or Non-increasing](./leetcode/2263-MakeArrayNonDecreasingOrNonIncreasing.go)   
 [2267. Check if There Is a Valid Parentheses String Path](./leetcode/2267-CheckIfThereIsAValidParenthesesStringPath.go)   
 [2271. Maximum White Tiles Covered by a Carpet](./leetcode/2271-MaximumWhiteTilesCoveredByACarpet.go)   
