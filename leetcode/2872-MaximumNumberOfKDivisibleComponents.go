@@ -68,6 +68,43 @@ func maxKDivisibleComponents(n int, edges [][]int, values []int, k int) int {
     return res
 }
 
+func maxKDivisibleComponents1(n int, edges [][]int, values []int, k int) int {
+    // Step 1: Create adjacency list from edges
+    adjList := make([][]int, n)
+    for _, v := range edges {
+        adjList[v[0]] = append(adjList[v[0]], v[1])
+        adjList[v[1]] = append(adjList[v[1]], v[0])
+    }
+    // Step 2: Initialize component count
+    res := 0 // Use array to pass by reference
+    // Step 3: Start DFS traversal from node 0
+    var dfs func(currentNode, parentNode int, adjList [][]int) int
+    dfs = func(currentNode, parentNode int, adjList [][]int) int {
+        // Step 1: Initialize sum for the current subtree
+        sum := 0
+        // Step 2: Traverse all neighbors
+        for _, neighborNode := range adjList[currentNode] {
+            if neighborNode != parentNode {
+                // Recursive call to process the subtree rooted at the neighbor
+                sum += dfs(neighborNode, currentNode, adjList)
+                sum %= k // Ensure the sum stays within bounds
+            }
+        }
+        // Step 3: Add the value of the current node to the sum
+        sum += values[currentNode]
+        sum %= k
+        // Step 4: Check if the sum is divisible by k
+        if sum == 0 {
+            res++
+        }
+        // Step 5: Return the computed sum for the current subtree
+        return sum
+    }
+    dfs(0, -1, adjList)
+    // Step 4: Return the total number of components
+    return res
+}
+
 func main() {
     // Example 1:
     // <img src="https://assets.leetcode.com/uploads/2023/08/07/example12-cropped2svg.jpg">
@@ -88,4 +125,7 @@ func main() {
     // - The value of the component containing nodes 1, 3, and 4 is values[1] + values[3] + values[4] = 6.
     // It can be shown that no other valid split has more than 3 connected components.
     fmt.Println(maxKDivisibleComponents(7, [][]int{{0,1},{0,2},{1,3},{1,4},{2,5},{2,6}}, []int{3,0,6,1,5,2,1}, 3)) // 3
+
+    fmt.Println(maxKDivisibleComponents1(5, [][]int{{0,2},{1,2},{1,3},{2,4}}, []int{1,8,1,4,4}, 6)) // 2
+    fmt.Println(maxKDivisibleComponents1(7, [][]int{{0,1},{0,2},{1,3},{1,4},{2,5},{2,6}}, []int{3,0,6,1,5,2,1}, 3)) // 3
 }
