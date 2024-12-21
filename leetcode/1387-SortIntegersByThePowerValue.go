@@ -65,6 +65,30 @@ func getKth(lo int, hi int, k int) int {
     return res[k - 1]
 }
 
+func getKth1(lo int, hi int, k int) int {
+    esp, mp := [200][]int{}, make(map[int]int, 4000)
+    var calc func(n int) int
+    calc = func(n int) int {
+        if mp[n] != 0 || n <= 1 { return mp[n] }
+        if n % 2 == 0 {
+            mp[n] = 1 + calc(n / 2)
+        } else {
+            mp[n] = 1 + calc(n * 3 + 1)
+        }
+        return mp[n]
+    }
+    for i := 0; i < hi - lo + 1; i++ {
+        p := calc(i + lo)
+        esp[p] = append(esp[p], i + lo)
+    }
+    i, k := 0, k - 1
+    for k >= len(esp[i]) {
+        k = k - len(esp[i])
+        i++
+    }
+    return esp[i][k]
+}
+
 func main() {
     // Example 1:
     // Input: lo = 12, hi = 15, k = 2
@@ -83,4 +107,7 @@ func main() {
     // The interval sorted by power is [8, 10, 11, 7, 9].
     // The fourth number in the sorted array is 7.
     fmt.Println(getKth(7, 11, 4)) // 7
+
+    fmt.Println(getKth1(12, 15, 2)) // 13
+    fmt.Println(getKth1(7, 11, 4)) // 7
 }
