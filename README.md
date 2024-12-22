@@ -1148,6 +1148,7 @@
 [2267. Check if There Is a Valid Parentheses String Path](./leetcode/2267-CheckIfThereIsAValidParenthesesStringPath.go)   
 [2270. Number of Ways to Split Array](./leetcode/2270-NumberOfWaysToSplitArray.go)   
 [2271. Maximum White Tiles Covered by a Carpet](./leetcode/2271-MaximumWhiteTilesCoveredByACarpet.go)   
+[2273. Find Resultant Array After Removing Anagrams](./leetcode/2273-FindResultantArrayAfterRemovingAnagrams.go)   
 [2275. Largest Combination With Bitwise AND Greater Than Zero](./leetcode/2275-LargestCombinationWithBitwiseANDGreaterThanZero.go)   
 [2280. Minimum Lines to Represent a Line Chart](./leetcode/2280-MinimumLinesToRepresentALineChart.go)   
 [2281. Sum of Total Strength of Wizards](./leetcode/2281-SumOfTotalStrengthOfWizards.go)   
