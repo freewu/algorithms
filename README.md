@@ -1146,6 +1146,7 @@
 [2263. Make Array Non-decreasing or Non-increasing](./leetcode/2263-MakeArrayNonDecreasingOrNonIncreasing.go)   
 [2266. Count Number of Texts](./leetcode/2266-CountNumberOfTexts.go)   
 [2267. Check if There Is a Valid Parentheses String Path](./leetcode/2267-CheckIfThereIsAValidParenthesesStringPath.go)   
+[2270. Number of Ways to Split Array](./leetcode/2270-NumberOfWaysToSplitArray.go)   
 [2271. Maximum White Tiles Covered by a Carpet](./leetcode/2271-MaximumWhiteTilesCoveredByACarpet.go)   
 [2275. Largest Combination With Bitwise AND Greater Than Zero](./leetcode/2275-LargestCombinationWithBitwiseANDGreaterThanZero.go)   
 [2280. Minimum Lines to Represent a Line Chart](./leetcode/2280-MinimumLinesToRepresentALineChart.go)   

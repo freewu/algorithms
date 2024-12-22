@@ -36,6 +36,17 @@ func maxNumberOfApples(weight []int) int {
     return res
 }
 
+// 排序 + 前缀和
+func maxNumberOfApples1(weight []int) int {
+    sort.Ints(weight)
+    for i := 1; i < len(weight); i++ {
+        weight[i] += weight[i-1]
+        if weight[i] == 5000 { return i + 1 }
+        if weight[i] > 5000  { return i }
+    }
+    return len(weight)
+}
+
 func main() {
     // Example 1:
     // Input: weight = [100,200,150,1000]
@@ -47,4 +58,7 @@ func main() {
     // Output: 5
     // Explanation: The sum of weights of the 6 apples exceeds 5000 so we choose any 5 of them.
     fmt.Println(maxNumberOfApples([]int{900,950,800,1000,700,800})) // 5
+
+    fmt.Println(maxNumberOfApples1([]int{100,200,150,1000})) // 4
+    fmt.Println(maxNumberOfApples1([]int{900,950,800,1000,700,800})) // 5
 }
