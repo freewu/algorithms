@@ -1151,6 +1151,7 @@
 [2273. Find Resultant Array After Removing Anagrams](./leetcode/2273-FindResultantArrayAfterRemovingAnagrams.go)   
 [2274. Maximum Consecutive Floors Without Special Floors](./leetcode/2274-MaximumConsecutiveFloorsWithoutSpecialFloors.go)   
 [2275. Largest Combination With Bitwise AND Greater Than Zero](./leetcode/2275-LargestCombinationWithBitwiseANDGreaterThanZero.go)   
+[2279. Maximum Bags With Full Capacity of Rocks](./leetcode/2279-MaximumBagsWithFullCapacityOfRocks.go)   
 [2280. Minimum Lines to Represent a Line Chart](./leetcode/2280-MinimumLinesToRepresentALineChart.go)   
 [2281. Sum of Total Strength of Wizards](./leetcode/2281-SumOfTotalStrengthOfWizards.go)   
 [2282. Number of People That Can Be Seen in a Grid](./leetcode/2282-NumberOfPeopleThatCanBeSeenInAGrid.go)   
