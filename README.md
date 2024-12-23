@@ -1472,6 +1472,7 @@
 [3315. Construct the Minimum Bitwise Array II](./leetcode/3315-ConstructTheMinimumBitwiseArrayII.go)   
 [3318. Find X-Sum of All K-Long Subarrays I](./leetcode/3318-FindXSumOfAllKLongSubarraysI.go)   
 [3321. Find X-Sum of All K-Long Subarrays II](./leetcode/3321-FindXSumOfAllKLongSubarraysII.go)   
+[3323. Minimize Connected Groups by Inserting Interval](./leetcode/3323-MinimizeConnectedGroupsByInsertingInterval.go)   
 [3341. Find Minimum Time to Reach Last Room I](./leetcode/3341-FindMinimumTimeToReachLastRoomI.go)   
 [3342. Find Minimum Time to Reach Last Room II](./leetcode/3342-FindMinimumTimeToReachLastRoomII.go)   
 [3346. Maximum Frequency of an Element After Performing Operations I](./leetcode/3346-MaximumFrequencyOfAnElementAfterPerformingOperationsI.go)   
