@@ -1465,6 +1465,7 @@
 [3285. Find Indices of Stable Mountains](./leetcode/3285-FindIndicesOfStableMountains.go)   
 [3286. Find a Safe Walk Through a Grid](./leetcode/3286-FindASafeWalkThroughAGrid.go)   
 [3288. Length of the Longest Increasing Path](./leetcode/3288-LengthOfTheLongestIncreasingPath.go)   
+[3299. Sum of Consecutive Subsequences](./leetcode/3299-SumOfConsecutiveSubsequences.go)   
 [3309. Maximum Possible Number by Binary Concatenation](./leetcode/3309-MaximumPossibleNumberByBinaryConcatenation.go)   
 [3311. Construct 2D Grid Matching Graph Layout](./leetcode/3311-Construct2DGridMatchingGraphLayout.go)   
 [3314. Construct the Minimum Bitwise Array I](./leetcode/3314-ConstructTheMinimumBitwiseArrayI.go)   
