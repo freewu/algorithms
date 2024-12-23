@@ -37,35 +37,45 @@ package main
 import "fmt"
 import "container/heap"
 
-type MinHeap [][2]int
-func (h MinHeap) Len() int              { return len(h) }
-func (h MinHeap) Less(i, j int) bool    { return h[i][0] < h[j][0] }
-func (h MinHeap) Swap(i, j int)         { h[i], h[j] = h[j], h[i] }
-func (h *MinHeap) Push(x interface{})   { *h = append(*h, x.([2]int)) }
-func (h *MinHeap) Pop() (v interface{}) { v, *h = (*h)[len(*h)-1], (*h)[:len(*h)-1]; return }
+type Pair struct{ end, left int }
+type MinHeap []Pair
 
-func eatenApples(apples []int, days []int) int {
-    res, i, pq := 0, 0, MinHeap{}
-    for i < len(apples) || len(pq) > 0 {
-        if i < len(apples) && days[i] > 0 && apples[i] > 0 {
-            heap.Push(&pq, [2]int{i + days[i], apples[i]})
+func (h MinHeap) Len() int            { return len(h) }
+func (h MinHeap) Less(i, j int) bool  { return h[i].end < h[j].end }
+func (h MinHeap) Swap(i, j int)       { h[i], h[j] = h[j], h[i] }
+func (h *MinHeap) Push(v interface{}) { *h = append(*h, v.(Pair)) }
+func (h *MinHeap) Pop() interface{}   { a := *h; v := a[len(a)-1]; *h = a[:len(a)-1]; return v }
+
+func eatenApples(apples, days []int) int {
+    h := MinHeap{}
+    res, i := 0, 0
+    for ; i < len(apples); i++ {
+        for len(h) > 0 && h[0].end <= i {
+            heap.Pop(&h)
         }
-        if len(pq) > 0 {
-            val := heap.Pop(&pq).([2]int)
-            expiry, count := val[0], val[1]
-            for expiry < i + 1 && len(pq) > 0 {
-                val := heap.Pop(&pq).([2]int)
-                expiry, count = val[0], val[1]
-            }
-            if expiry >= i + 1 {
-                count-- // Eat one apple.
-                res++
-                if count > 0 {
-                    heap.Push(&pq, [2]int{ expiry, count })
-                }
-            }
+        if apples[i] > 0 {
+            heap.Push(&h, Pair{i + days[i], apples[i]})
         }
-        i += 1
+        if len(h) > 0 {
+            h[0].left--
+            if h[0].left == 0 {
+                heap.Pop(&h)
+            }
+            res++
+        }
+    }
+    min := func (x, y int) int { if x < y { return x; }; return y; }
+    for len(h) > 0 {
+        for len(h) > 0 && h[0].end <= i {
+            heap.Pop(&h)
+        }
+        if len(h) == 0 {
+            break
+        }
+        p := heap.Pop(&h).(Pair)
+        v := min(p.end - i, p.left)
+        res += v
+        i += v
     }
     return res
 }
