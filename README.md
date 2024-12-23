@@ -1901,6 +1901,7 @@
 [2268. Minimum Number of Keypresses](./leetcode/2268-MinimumNumberOfKeypresses.go)   
 [2272. Substring With Largest Variance](./leetcode/2272-SubstringWithLargestVariance.go)   
 [2278. Percentage of Letter in String](./leetcode/2278-PercentageOfLetterInString.go)   
+[2283. Check if Number Has Equal Digit Count and Digit Value](./leetcode/2283-CheckIfNumberHasEqualDigitCountAndDigitValue.go)   
 [2288. Apply Discount to Prices](./leetcode/2288-ApplyDiscountToPrices.go)   
 [2322. Minimum Score After Removals on a Tree](./leetcode/2322-MinimumScoreAfterRemovalsOnATree.go)   
 [2325. Decode the Message](./leetcode/2325-DecodeTheMessage.go)   
