@@ -2544,10 +2544,12 @@
 [2925. Maximum Score After Applying Operations on a Tree](./leetcode/2925-MaximumScoreAfterApplyingOperationsOnATree.go)   
 [2973. Find Number of Coins to Place in Tree Nodes](./leetcode/2973-FindNumberOfCoinsToPlaceInTreeNodes.go)   
 [3157. Find the Level of Tree with Minimum Sum](./leetcode/3157-FindTheLevelOfTreeWithMinimumSum.go)   
+[3203. Find Minimum Diameter After Merging Two Trees](./leetcode/3203-FindMinimumDiameterAfterMergingTwoTrees.go)   
 [3249. Count the Number of Good Nodes](./leetcode/3249-CountTheNumberOfGoodNodes.go)   
 [3313. Find the Last Marked Nodes in Tree](./leetcode/3313-FindTheLastMarkedNodesInTree.go)   
 [3319. K-th Largest Perfect Subtree Size in Binary Tree](./leetcode/3319-KthLargestPerfectSubtreeSizeInBinaryTree.go)   
 [3331. Find Subtree Sizes After Changes](./leetcode/3331-FindSubtreeSizesAfterChanges.go)   
+
 
 # Graph
 [133. Clone Graph](./leetcode/133-CloneGraph.go)   
@@ -2643,6 +2645,7 @@
 [3108. Minimum Cost Walk in Weighted Graph](./leetcode/3108-MinimumCostWalkInWeightedGraph.go)   
 [3112. Minimum Time to Visit Disappearing Nodes](./leetcode/3112-MinimumTimeToVisitDisappearingNodes.go)   
 [3123. Find Edges in Shortest Paths](./leetcode/3123-FindEdgesInShortestPaths.go)   
+[3203. Find Minimum Diameter After Merging Two Trees](./leetcode/3203-FindMinimumDiameterAfterMergingTwoTrees.go)   
 [3241. Time Taken to Mark All Nodes](./leetcode/3241-TimeTakenToMarkAllNodes.go)   
 [3243. Shortest Distance After Road Addition Queries I](./leetcode/3243-ShortestDistanceAfterRoadAdditionQueriesI.go)   
 [3311. Construct 2D Grid Matching Graph Layout](./leetcode/3311-Construct2DGridMatchingGraphLayout.go)   
