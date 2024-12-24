@@ -51,7 +51,7 @@ import "fmt"
 
 // 二分图
 func findMinimumTime(strength []int) int {
-    n, k := len(strength), len(strength)
+    n, k := len(strength), 1
     S := n * 2
     T := S + 1
     // rid 为反向边在邻接表中的下标
