@@ -1156,6 +1156,7 @@
 [2281. Sum of Total Strength of Wizards](./leetcode/2281-SumOfTotalStrengthOfWizards.go)   
 [2282. Number of People That Can Be Seen in a Grid](./leetcode/2282-NumberOfPeopleThatCanBeSeenInAGrid.go)   
 [2284. Sender With Largest Word Count](./leetcode/2284-SenderWithLargestWordCount.go)   
+[2289. Steps to Make Array Non-decreasing](./leetcode/2289-StepsToMakeArrayNonDecreasing.go)   
 [2290. Minimum Obstacle Removal to Reach Corner](./leetcode/2290-MinimumObstacleRemovalToReachCorner.go)   
 [2291. Maximum Profit From Trading Stocks](./leetcode/2291-MaximumProfitFromTradingStocks.go)   
 [2293. Min Max Game](./leetcode/2293-MinMaxGame.go)   
