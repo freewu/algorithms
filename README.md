@@ -1168,6 +1168,7 @@
 [2306. Naming a Company](./leetcode/2306-NamingACompany.go)   
 [2307. Check for Contradictions in Equations](./leetcode/2307-CheckForContradictionsInEquations.go)   
 [2312. Selling Pieces of Wood](./leetcode/2312-SellingPiecesOfWood.go)   
+[2317. Maximum XOR After Operations](./leetcode/2317-MaximumXORAfterOperations.go)   
 [2319. Check if Matrix Is X-Matrix](./leetcode/2319-CheckIfMatrixIsXMatrix.go)   
 [2321. Maximum Score Of Spliced Array](./leetcode/2321-MaximumScoreOfSplicedArray.go)   
 [2323. Find Minimum Time to Finish All Jobs II](./leetcode/2323-FindMinimumTimeToFinishAllJobsII.go)   
