@@ -1908,6 +1908,7 @@
 [2283. Check if Number Has Equal Digit Count and Digit Value](./leetcode/2283-CheckIfNumberHasEqualDigitCountAndDigitValue.go)   
 [2287. Rearrange Characters to Make Target String](./leetcode/2287-RearrangeCharactersToMakeTargetString.go)   
 [2288. Apply Discount to Prices](./leetcode/2288-ApplyDiscountToPrices.go)   
+[2299. Strong Password Checker II](./leetcode/2299-StrongPasswordCheckerII.go)   
 [2322. Minimum Score After Removals on a Tree](./leetcode/2322-MinimumScoreAfterRemovalsOnATree.go)   
 [2325. Decode the Message](./leetcode/2325-DecodeTheMessage.go)   
 [2330. Valid Palindrome IV](./leetcode/2330-ValidPalindromeIV.go)   
