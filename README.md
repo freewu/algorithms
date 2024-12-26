@@ -2024,6 +2024,7 @@
 [1931. Painting a Grid With Three Different Colors](./leetcode/1931-PaintingAGridWithThreeDifferentColors.go)   
 [2318. Number of Distinct Roll Sequences](./leetcode/2318-NumberOfDistinctRollSequences.go)   
 [2320. Count Number of Ways to Place Houses](./leetcode/2320-CountNumberOfWaysToPlaceHouses.go)   
+[2327. Number of People Aware of a Secret](./leetcode/2327-NumberOfPeopleAwareOfASecret.go)   
 [2466. Count Ways To Build Good Strings](./leetcode/2466-CountWaysToBuildGoodStrings.go)   
 [2533. Number of Good Binary Strings](./leetcode/2533-NumberOfGoodBinaryStrings.go)   
 [2787. Ways to Express an Integer as Sum of Powers](./leetcode/2787-WaysToExpressAnIntegerAsSumOfPowers.go)   
