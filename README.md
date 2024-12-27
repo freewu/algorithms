@@ -1188,6 +1188,7 @@
 [2391. Minimum Amount of Time to Collect Garbage](./leetcode/2391-MinimumAmountOfTimeToCollectGarbage.go)   
 [2392. Build a Matrix With Conditions](./leetcode/2392-BuildAMatrixWithConditions.go)   
 [2393. Count Strictly Increasing Subarrays](./leetcode/2393-CountStrictlyIncreasingSubarrays.go)   
+[2395. Find Subarrays With Equal Sum](./leetcode/2395-FindSubarraysWithEqualSum.go)   
 [2397. Maximum Rows Covered by Columns](./leetcode/2397-MaximumRowsCoveredByColumns.go)   
 [2398. Maximum Number of Robots Within Budget](./leetcode/2398-MaximumNumberOfRobotsWithinBudget.go)   
 [2402. Meeting Rooms III](./leetcode/2402-MeetingRoomsIII.go)   
