@@ -1919,6 +1919,7 @@
 [2330. Valid Palindrome IV](./leetcode/2330-ValidPalindromeIV.go)   
 [2337. Move Pieces to Obtain a String](./leetcode/2337-MovePiecesToObtainAString.go)   
 [2370. Longest Ideal Subsequence](./leetcode/2370-LongestIdealSubsequence.go)   
+[2375. Construct Smallest Number From DI String](./leetcode/2375-ConstructSmallestNumberFromDIString.go)   
 [2390. Removing Stars From a String](./leetcode/2390-RemovingStarsFromAString.go)   
 [2399. Check Distances Between Same Letters](./leetcode/2399-CheckDistancesBetweenSameLetters.go)   
 [2414. Length of the Longest Alphabetical Continuous Substring](./leetcode/2414-LengthOfTheLongestAlphabeticalContinuousSubstring.go)   
