@@ -1920,6 +1920,7 @@
 [2337. Move Pieces to Obtain a String](./leetcode/2337-MovePiecesToObtainAString.go)   
 [2370. Longest Ideal Subsequence](./leetcode/2370-LongestIdealSubsequence.go)   
 [2390. Removing Stars From a String](./leetcode/2390-RemovingStarsFromAString.go)   
+[2399. Check Distances Between Same Letters](./leetcode/2399-CheckDistancesBetweenSameLetters.go)   
 [2414. Length of the Longest Alphabetical Continuous Substring](./leetcode/2414-LengthOfTheLongestAlphabeticalContinuousSubstring.go)   
 [2450. Number of Distinct Binary Strings After Applying Operations](./leetcode/2450-NumberOfDistinctBinaryStringsAfterApplyingOperations.go)   
 [2478. Number of Beautiful Partitions](./leetcode/2478-NumberOfBeautifulPartitions.go)   
