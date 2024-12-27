@@ -2036,6 +2036,7 @@
 [2787. Ways to Express an Integer as Sum of Powers](./leetcode/2787-WaysToExpressAnIntegerAsSumOfPowers.go)   
 [3129. Find All Possible Stable Binary Arrays I](./leetcode/3129-FindAllPossibleStableBinaryArraysI.go)   
 [3130. Find All Possible Stable Binary Arrays II](./leetcode/3130-FindAllPossibleStableBinaryArraysII.go)   
+[3339. Find the Number of K-Even Arrays](./leetcode/3339-FindTheNumberOfKEvenArrays.go)   
 
 # Two Pointers
 [11. Container With Most Water](./leetcode/11-ContainerWithMostWater.go)   
