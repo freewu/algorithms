@@ -1409,6 +1409,7 @@
 [3153. Sum of Digit Differences of All Pairs](./leetcode/3153-SumOfDigitDifferencesOfAllPairs.go)   
 [3155. Maximum Number of Upgradable Servers](./leetcode/3155-MaximumNumberOfUpgradableServers.go)   
 [3158. Find the XOR of Numbers Which Appear Twice](./leetcode/3158-FindTheXOROfNumbersWhichAppearTwice.go)   
+[3159. Find Occurrences of an Element in an Array](./leetcode/3159-FindOccurrencesOfAnElementInAnArray.go)   
 [3160. Find the Number of Distinct Colors Among the Balls](./leetcode/3160-FindTheNumberOfDistinctColorsAmongTheBalls.go)   
 [3161. Block Placement Queries](./leetcode/3161-BlockPlacementQueries.go)   
 [3165. Maximum Sum of Subsequence With Non-adjacent Elements](./leetcode/3165-MaximumSumOfSubsequenceWithNonAdjacentElements.go)   
