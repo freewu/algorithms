@@ -1370,6 +1370,7 @@
 [3041. Maximize Consecutive Elements in an Array After Modification](./leetcode/3041-MaximizeConsecutiveElementsInAnArrayAfterModification.go)   
 [3043. Find the Length of the Longest Common Prefix](./leetcode/3043-FindTheLengthOfTheLongestCommonPrefix.go)   
 [3044. Most Frequent Prime](./leetcode/3044-MostFrequentPrime.go)   
+[3046. Split the Array](./leetcode/3046-SplitTheArray.go)   
 [3047. Find the Largest Area of Square Inside Two Rectangles](./leetcode/3047-FindTheLargestAreaOfSquareInsideTwoRectangles.go)   
 [3065. Minimum Operations to Exceed Threshold Value I](./leetcode/3065-MinimumOperationsToExceedThresholdValueI.go)   
 [3066. Minimum Operations to Exceed Threshold Value II](./leetcode/3066-MinimumOperationsToExceedThresholdValueII.go)   
