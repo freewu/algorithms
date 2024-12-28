@@ -1164,6 +1164,7 @@
 [2295. Replace Elements in an Array](./leetcode/2295-ReplaceElementsInAnArray.go)   
 [2297. Jump Game VIII](./leetcode/2297-JumpGameVIII.go)   
 [2300. Successful Pairs of Spells and Potions](./leetcode/2300-SuccessfulPairsOfSpellsAndPotions.go)   
+[2302. Count Subarrays With Score Less Than K](./leetcode/2302-CountSubarraysWithScoreLessThanK.go)   
 [2304. Minimum Path Cost in a Grid](./leetcode/2304-MinimumPathCostInAGrid.go)   
 [2306. Naming a Company](./leetcode/2306-NamingACompany.go)   
 [2307. Check for Contradictions in Equations](./leetcode/2307-CheckForContradictionsInEquations.go)   
