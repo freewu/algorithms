@@ -1167,6 +1167,7 @@
 [2302. Count Subarrays With Score Less Than K](./leetcode/2302-CountSubarraysWithScoreLessThanK.go)   
 [2303. Calculate Amount Paid in Taxes](./leetcode/2303-CalculateAmountPaidInTaxes.go)   
 [2304. Minimum Path Cost in a Grid](./leetcode/2304-MinimumPathCostInAGrid.go)   
+[2305. Fair Distribution of Cookies](./leetcode/2305-FairDistributionOfCookies.go)   
 [2306. Naming a Company](./leetcode/2306-NamingACompany.go)   
 [2307. Check for Contradictions in Equations](./leetcode/2307-CheckForContradictionsInEquations.go)   
 [2312. Selling Pieces of Wood](./leetcode/2312-SellingPiecesOfWood.go)   
