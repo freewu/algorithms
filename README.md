@@ -1496,6 +1496,7 @@
 [3359. Find Sorted Submatrices With Maximum Element at Most K](./leetcode/3359-FindSortedSubmatricesWithMaximumElementAtMostK.go)   
 [3362. Zero Array Transformation III](./leetcode/3362-ZeroArrayTransformationIII.go)   
 [3376. Minimum Time to Break Locks I](./leetcode/3376-MinimumTimeToBreakLocksI.go)   
+[3383. Minimum Runes to Add to Cast Spell](./leetcode/3383-MinimumRunesToAddToCastSpell.go)   
 [3385. Minimum Time to Break Locks II](./leetcode/3385-MinimumTimeToBreakLocksII.go)   
 
 # String
@@ -2677,7 +2678,7 @@
 [3311. Construct 2D Grid Matching Graph Layout](./leetcode/3311-Construct2DGridMatchingGraphLayout.go)   
 [3372. Maximize the Number of Target Nodes After Connecting Trees I](./leetcode/3372-MaximizeTheNumberOfTargetNodesAfterConnectingTreesI.go)   
 [3373. Maximize the Number of Target Nodes After Connecting Trees II](./leetcode/3373-MaximizeTheNumberOfTargetNodesAfterConnectingTreesII.go)   
-
+[3383. Minimum Runes to Add to Cast Spell](./leetcode/3383-MinimumRunesToAddToCastSpell.go)   
 
 # Trie
 [386. Lexicographical Numbers](./leetcode/386-LexicographicalNumbers.go)   
