@@ -68,6 +68,17 @@ func countGoodStrings1(low, high, zero, one int) int {
     return res 
 }
 
+func countGoodStrings2(low, high, zero, one int) int {
+    res, mod := 0, 1_000_000_007
+    count := [1e5+1]int{1}
+    for i := 1; i <= high; i++ {
+        if i - zero >= 0 { count[i] = count[i-zero] }
+        if i - one >= 0  { count[i] = (count[i] + count[i-one]) % mod }
+        if i >= low { res = (res + count[i]) % mod }
+    }
+    return res
+}
+
 func main() {
     // One possible valid good string is "011". 
     // It can be constructed as follows: "" -> "0" -> "01" -> "011". 
@@ -78,4 +89,7 @@ func main() {
 
     fmt.Println(countGoodStrings1(3,3,1,1)) // 8
     fmt.Println(countGoodStrings1(2,3,1,2)) // 5
+
+    fmt.Println(countGoodStrings2(3,3,1,1)) // 8
+    fmt.Println(countGoodStrings2(2,3,1,2)) // 5
 }
