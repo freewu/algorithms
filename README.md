@@ -1180,6 +1180,7 @@
 [2334. Subarray With Elements Greater Than Varying Threshold](./leetcode/2334-SubarrayWithElementsGreaterThanVaryingThreshold.go)   
 [2335. Minimum Amount of Time to Fill Cups](./leetcode/2335-MinimumAmountOfTimeToFillCups.go)   
 [2340. Minimum Adjacent Swaps to Make a Valid Array](./leetcode/2340-MinimumAdjacentSwapsToMakeAValidArray.go)   
+[2341. Maximum Number of Pairs in Array](./leetcode/2341-MaximumNumberOfPairsInArray.go)   
 [2343. Query Kth Smallest Trimmed Number](./leetcode/2343-QueryKthSmallestTrimmedNumber.go)   
 [2345. Finding the Number of Visible Mountains](./leetcode/2345-FindingTheNumberOfVisibleMountains.go)   
 [2352. Equal Row and Column Pairs](./leetcode/2352-EqualRowAndColumnPairs.go)   
