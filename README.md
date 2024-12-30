@@ -1183,6 +1183,7 @@
 [2341. Maximum Number of Pairs in Array](./leetcode/2341-MaximumNumberOfPairsInArray.go)   
 [2342. Max Sum of a Pair With Equal Sum of Digits](./leetcode/2342-MaxSumOfAPairWithEqualSumOfDigits.go)   
 [2343. Query Kth Smallest Trimmed Number](./leetcode/2343-QueryKthSmallestTrimmedNumber.go)   
+[2344. Minimum Deletions to Make Array Divisible](./leetcode/2344-MinimumDeletionsToMakeArrayDivisible.go)   
 [2345. Finding the Number of Visible Mountains](./leetcode/2345-FindingTheNumberOfVisibleMountains.go)   
 [2352. Equal Row and Column Pairs](./leetcode/2352-EqualRowAndColumnPairs.go)   
 [2355. Maximum Number of Books You Can Take](./leetcode/2355-MaximumNumberOfBooksYouCanTake.go)   
