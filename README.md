@@ -1509,6 +1509,8 @@
 [3376. Minimum Time to Break Locks I](./leetcode/3376-MinimumTimeToBreakLocksI.go)   
 [3383. Minimum Runes to Add to Cast Spell](./leetcode/3383-MinimumRunesToAddToCastSpell.go)   
 [3385. Minimum Time to Break Locks II](./leetcode/3385-MinimumTimeToBreakLocksII.go)   
+[3400. Maximum Number of Matching Indices After Right Shifts](./leetcode/3400-MaximumNumberOfMatchingIndicesAfterRightShifts.go)   
+
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
