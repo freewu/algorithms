@@ -1186,6 +1186,7 @@
 [2344. Minimum Deletions to Make Array Divisible](./leetcode/2344-MinimumDeletionsToMakeArrayDivisible.go)   
 [2345. Finding the Number of Visible Mountains](./leetcode/2345-FindingTheNumberOfVisibleMountains.go)   
 [2347. Best Poker Hand](./leetcode/2347-BestPokerHand.go)   
+[2348. Number of Zero-Filled Subarrays](./leetcode/2348-NumberOfZeroFilledSubarrays.go)   
 [2352. Equal Row and Column Pairs](./leetcode/2352-EqualRowAndColumnPairs.go)   
 [2355. Maximum Number of Books You Can Take](./leetcode/2355-MaximumNumberOfBooksYouCanTake.go)   
 [2361. Minimum Costs Using the Train Line](./leetcode/2361-MinimumCostsUsingTheTrainLine.go)   
