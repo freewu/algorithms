@@ -1179,6 +1179,7 @@
 [2333. Minimum Sum of Squared Difference](./leetcode/2333-MinimumSumOfSquaredDifference.go)   
 [2334. Subarray With Elements Greater Than Varying Threshold](./leetcode/2334-SubarrayWithElementsGreaterThanVaryingThreshold.go)   
 [2335. Minimum Amount of Time to Fill Cups](./leetcode/2335-MinimumAmountOfTimeToFillCups.go)   
+[2358. Maximum Number of Groups Entering a Competition](./leetcode/2358-MaximumNumberOfGroupsEnteringACompetition.go)   
 [2340. Minimum Adjacent Swaps to Make a Valid Array](./leetcode/2340-MinimumAdjacentSwapsToMakeAValidArray.go)   
 [2341. Maximum Number of Pairs in Array](./leetcode/2341-MaximumNumberOfPairsInArray.go)   
 [2342. Max Sum of a Pair With Equal Sum of Digits](./leetcode/2342-MaxSumOfAPairWithEqualSumOfDigits.go)   
