@@ -1937,6 +1937,7 @@
 [2325. Decode the Message](./leetcode/2325-DecodeTheMessage.go)   
 [2330. Valid Palindrome IV](./leetcode/2330-ValidPalindromeIV.go)   
 [2337. Move Pieces to Obtain a String](./leetcode/2337-MovePiecesToObtainAString.go)   
+[2351. First Letter to Appear Twice](./leetcode/2351-FirstLetterToAppearTwice.go)   
 [2370. Longest Ideal Subsequence](./leetcode/2370-LongestIdealSubsequence.go)   
 [2375. Construct Smallest Number From DI String](./leetcode/2375-ConstructSmallestNumberFromDIString.go)   
 [2379. Minimum Recolors to Get K Consecutive Black Blocks](./leetcode/2379-MinimumRecolorsToGetKConsecutiveBlackBlocks.go)   
