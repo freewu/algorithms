@@ -1,0 +1,92 @@
+package main
+
+// 3406. Find the Lexicographically Largest String From the Box II
+// You are given a string word, and an integer numFriends.
+
+// Alice is organizing a game for her numFriends friends. 
+// There are multiple rounds in the game, where in each round:
+//     word is split into numFriends non-empty strings, such that no previous round has had the exact same split.
+//     All the split words are put into a box.
+
+// Find the lexicographically largest string from the box after all the rounds are finished.
+
+// A string a is lexicographically smaller than a string b if in the first position where a and b differ, 
+// string a has a letter that appears earlier in the alphabet than the corresponding letter in b.
+
+// If the first min(a.length, b.length) characters do not differ, 
+// then the shorter string is the lexicographically smaller one.
+
+// Example 1:
+// Input: word = "dbca", numFriends = 2
+// Output: "dbc"
+// Explanation:
+// All possible splits are:
+// "d" and "bca".
+// "db" and "ca".
+// "dbc" and "a".
+
+// Example 2:
+// Input: word = "gggg", numFriends = 4
+// Output: "g"
+// Explanation:
+// The only possible split is: "g", "g", "g", and "g".
+
+// Constraints:
+//     1 <= word.length <= 2 * 10^5
+//     word consists only of lowercase English letters.
+//     1 <= numFriends <= word.length
+import "fmt"
+
+func answerString(s string, k int) string {
+    if k == 1 { return s }
+    n, i, j := len(s), 0, 1
+    min := func (x, y int) int { if x < y { return x; }; return y; }
+    max := func (x, y int) int { if x > y { return x; }; return y; }
+    for j < n {
+        v := 0
+        for j + v < n && s[i + v] == s[j + v] {
+            v++
+        }
+        if j + v < n && s[i + v] < s[j + v] {
+            i, j = j, max(j + 1, i + v + 1)
+        } else {
+            j += (v + 1)
+        }
+    }
+    return s[i:min(i + n - k + 1, n)]
+}
+
+func answerString1(s string, k int) (ans string) {
+    if k == 1 { return s }
+    res, n := "", len(s)
+    min := func (x, y int) int { if x < y { return x; }; return y; }
+    max := func (x, y string) string { if x > y { return x; }; return y; }
+    for i := 0; i < n; i++ {
+        res = max(res, s[i:min(i + n - k + 1, n)])
+    }
+    return res
+}
+
+func main() {
+    // Example 1:
+    // Input: word = "dbca", numFriends = 2
+    // Output: "dbc"
+    // Explanation:
+    // All possible splits are:
+    // "d" and "bca".
+    // "db" and "ca".
+    // "dbc" and "a".
+    fmt.Println(answerString("dbca", 2)) // "dbc"
+    // Example 2:
+    // Input: word = "gggg", numFriends = 4
+    // Output: "g"
+    // Explanation:
+    // The only possible split is: "g", "g", "g", and "g".
+    fmt.Println(answerString("gggg", 4)) // "g"
+
+    fmt.Println(answerString("bluefrog", 4)) // "uefro"
+
+    fmt.Println(answerString1("dbca", 2)) // "dbc"
+    fmt.Println(answerString1("gggg", 4)) // "g"
+    fmt.Println(answerString1("bluefrog", 4)) // "uefro"
+}
