@@ -2672,6 +2672,7 @@
 [2374. Node With Highest Edge Score](./leetcode/2374-NodeWithHighestEdgeScore.go)   
 [2467. Most Profitable Path in a Tree](./leetcode/2467-MostProfitablePathInATree.go)   
 [2473. Minimum Cost to Buy Apples](./leetcode/2473-MinimumCostToBuyApples.go)   
+[2477. Minimum Fuel Cost to Report to the Capital](./leetcode/2477-MinimumFuelCostToReportToTheCapital.go)   
 [2479. Maximum XOR of Two Non-Overlapping Subtrees](./leetcode/2479-MaximumXOROfTwoNonOverlappingSubtrees.go)   
 [2492. Minimum Score of a Path Between Two Cities](./leetcode/2492-MinimumScoreOfAPathBetweenTwoCities.go)   
 [2497. Maximum Star Sum of a Graph](./leetcode/2497-MaximumStarSumOfAGraph.go)   
