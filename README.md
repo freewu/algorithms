@@ -3299,7 +3299,7 @@ LCR 185. 统计结果概率
 [3374. First Letter Capitalization II](./leetcode/3374-FirstLetterCapitalizationII.sql)   
 [3384. Team Dominance by Pass Success](./leetcode/3384-TeamDominanceByPassSuccess.sql)   
 [3390. Longest Team Pass Streak](./leetcode/3390-LongestTeamPassStreak.sql)   
-
+[3401. Find Circular Gift Exchange Chains](./leetcode/3401-FindCircularGiftExchangeChains.sql)   
 
 # Shell
 [192. Word Frequency](./leetcode/192-WordFrequency.sh)      
