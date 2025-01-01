@@ -1,6 +1,6 @@
 package main
 
-// 3406. Find the Lexicographically Largest String From the Box II
+// 3403. Find the Lexicographically Largest String From the Box I
 // You are given a string word, and an integer numFriends.
 
 // Alice is organizing a game for her numFriends friends. 
@@ -19,7 +19,7 @@ package main
 // Example 1:
 // Input: word = "dbca", numFriends = 2
 // Output: "dbc"
-// Explanation:
+// Explanation: 
 // All possible splits are:
 // "d" and "bca".
 // "db" and "ca".
@@ -28,15 +28,16 @@ package main
 // Example 2:
 // Input: word = "gggg", numFriends = 4
 // Output: "g"
-// Explanation:
+// Explanation: 
 // The only possible split is: "g", "g", "g", and "g".
 
 // Constraints:
-//     1 <= word.length <= 2 * 10^5
+//     1 <= word.length <= 5 * 10^3
 //     word consists only of lowercase English letters.
 //     1 <= numFriends <= word.length
 
 import "fmt"
+import "strings"
 
 func answerString(word string, numFriends int) string {
     if numFriends == 1 { return word }
@@ -68,6 +69,19 @@ func answerString1(word string, numFriends int) string {
     return res
 }
 
+func answerString2(word string, numFriends int) string {
+    if numFriends == 1 { return word }
+    res, n := "", len(word)
+    min := func (x, y int) int { if x < y { return x; }; return y; }
+    for i := 0; i < n; i++ {
+        s := word[i:min(n, i + n - numFriends + 1)]
+        if strings.Compare(s, res) > 0 {
+            res = s
+        }
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: word = "dbca", numFriends = 2
@@ -90,4 +104,8 @@ func main() {
     fmt.Println(answerString1("dbca", 2)) // "dbc"
     fmt.Println(answerString1("gggg", 4)) // "g"
     fmt.Println(answerString1("bluefrog", 4)) // "uefro"
+
+    fmt.Println(answerString2("dbca", 2)) // "dbc"
+    fmt.Println(answerString2("gggg", 4)) // "g"
+    fmt.Println(answerString2("bluefrog", 4)) // "uefro"
 }
