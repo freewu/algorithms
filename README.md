@@ -1193,6 +1193,7 @@
 [2354. Number of Excellent Pairs](./leetcode/2354-NumberOfExcellentPairs.go)   
 [2357. Make Array Zero by Subtracting Equal Amounts](./leetcode/2357-MakeArrayZeroBySubtractingEqualAmounts.go)   
 [2361. Minimum Costs Using the Train Line](./leetcode/2361-MinimumCostsUsingTheTrainLine.go)   
+[2363. Merge Similar Items](./leetcode/2363-MergeSimilarItems.go)   
 [2368. Reachable Nodes With Restrictions](./leetcode/2368-ReachableNodesWithRestrictions.go)   
 [2369. Check if There is a Valid Partition For The Array](./leetcode/2369-CheckIfThereIsAValidPartitionForTheArray.go)   
 [2371. Minimize Maximum Value in a Grid](./leetcode/2371-MinimizeMaximumValueInAGrid.go)   
@@ -1511,7 +1512,6 @@
 [3383. Minimum Runes to Add to Cast Spell](./leetcode/3383-MinimumRunesToAddToCastSpell.go)   
 [3385. Minimum Time to Break Locks II](./leetcode/3385-MinimumTimeToBreakLocksII.go)   
 [3400. Maximum Number of Matching Indices After Right Shifts](./leetcode/3400-MaximumNumberOfMatchingIndicesAfterRightShifts.go)   
-
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
