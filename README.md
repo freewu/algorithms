@@ -1204,6 +1204,7 @@
 [2373. Largest Local Values in a Matrix](./leetcode/2373-LargestLocalValuesInAMatrix.go)   
 [2386. Find the K-Sum of an Array](./leetcode/2386-FindTheK-SumOfAnArray.go)   
 [2387. Median of a Row Wise Sorted Matrix](./leetcode/2387-MedianOfARowWiseSortedMatrix.go)   
+[2389. Longest Subsequence With Limited Sum](./leetcode/2389-LongestSubsequenceWithLimitedSum.go)   
 [2391. Minimum Amount of Time to Collect Garbage](./leetcode/2391-MinimumAmountOfTimeToCollectGarbage.go)   
 [2392. Build a Matrix With Conditions](./leetcode/2392-BuildAMatrixWithConditions.go)   
 [2393. Count Strictly Increasing Subarrays](./leetcode/2393-CountStrictlyIncreasingSubarrays.go)   
