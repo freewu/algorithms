@@ -1195,6 +1195,7 @@
 [2361. Minimum Costs Using the Train Line](./leetcode/2361-MinimumCostsUsingTheTrainLine.go)   
 [2363. Merge Similar Items](./leetcode/2363-MergeSimilarItems.go)   
 [2364. Count Number of Bad Pairs](./leetcode/2364-CountNumberOfBadPairs.go)   
+[2365. Task Scheduler II](./leetcode/2365-TaskSchedulerII.go)   
 [2366. Minimum Replacements to Sort the Array](./leetcode/2366-MinimumReplacementsToSortTheArray.go)   
 [2367. Number of Arithmetic Triplets](./leetcode/2367-NumberOfArithmeticTriplets.go)   
 [2368. Reachable Nodes With Restrictions](./leetcode/2368-ReachableNodesWithRestrictions.go)   
