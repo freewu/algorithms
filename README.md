@@ -2670,6 +2670,7 @@
 [2316. Count Unreachable Pairs of Nodes in an Undirected Graph](./leetcode/2316-CountUnreachablePairsOfNodesInAnUndirectedGraph.go)   
 [2328. Number of Increasing Paths in a Grid](./leetcode/2328-NumberOfIncreasingPathsInAGrid.go)   
 [2359. Find Closest Node to Given Two Nodes](./leetcode/2359-FindClosestNodeToGivenTwoNodes.go)   
+[2360. Longest Cycle in a Graph](./leetcode/2360-LongestCycleInAGraph.go)   
 [2374. Node With Highest Edge Score](./leetcode/2374-NodeWithHighestEdgeScore.go)   
 [2467. Most Profitable Path in a Tree](./leetcode/2467-MostProfitablePathInATree.go)   
 [2473. Minimum Cost to Buy Apples](./leetcode/2473-MinimumCostToBuyApples.go)   
