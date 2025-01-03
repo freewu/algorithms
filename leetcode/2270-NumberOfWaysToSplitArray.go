@@ -66,6 +66,20 @@ func waysToSplitArray1(nums []int) int {
     return res
 }
 
+func waysToSplitArray2(nums []int) int {
+    res, cur, sum := 0, 0, 0
+    for _, v := range nums {
+        sum += v
+    }
+    for _, v := range nums[:len(nums) - 1] {
+        cur += v
+        if cur >= sum - cur {
+            res++
+        }
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: nums = [10,4,-8,7]
@@ -88,4 +102,7 @@ func main() {
 
     fmt.Println(waysToSplitArray1([]int{10,4,-8,7})) // 2
     fmt.Println(waysToSplitArray1([]int{2,3,1,0})) // 2
+
+    fmt.Println(waysToSplitArray2([]int{10,4,-8,7})) // 2
+    fmt.Println(waysToSplitArray2([]int{2,3,1,0})) // 2
 }
