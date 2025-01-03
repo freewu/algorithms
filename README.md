@@ -1418,6 +1418,7 @@
 [3098. Find the Sum of Subsequence Powers](./leetcode/3098-FindTheSumOfSubsequencePowers.go)   
 [3101. Count Alternating Subarrays](./leetcode/3101-CountAlternatingSubarrays.go)   
 [3102. Minimize Manhattan Distances](./leetcode/3102-MinimizeManhattanDistances.go)   
+[3105. Longest Strictly Increasing or Strictly Decreasing Subarray](./leetcode/3105-LongestStrictlyIncreasingOrStrictlyDecreasingSubarray.go)   
 [3111. Minimum Rectangles to Cover Points](./leetcode/3111-MinimumRectanglesToCoverPoints.go)   
 [3115. Maximum Prime Difference](./leetcode/3115-MaximumPrimeDifference.go)   
 [3116. Kth Smallest Amount With Single Denomination Combination](./leetcode/3116-KthSmallestAmountWithSingleDenominationCombination.go)   
