@@ -1217,6 +1217,7 @@
 [2403. Minimum Time to Kill All Monsters](./leetcode/2403-MinimumTimeToKillAllMonsters.go)   
 [2406. Divide Intervals Into Minimum Number of Groups](./leetcode/2406-DivideIntervalsIntoMinimumNumberOfGroups.go)   
 [2410. Maximum Matching of Players With Trainers](./leetcode/2410-MaximumMatchingOfPlayersWithTrainers.go)   
+[2411. Smallest Subarrays With Maximum Bitwise OR](./leetcode/2411-SmallestSubarraysWithMaximumBitwiseOR.go)   
 [2416. Sum of Prefix Scores of Strings](./leetcode/2416-SumOfPrefixScoresOfStrings.go)   
 [2418. Sort the People](./leetcode/2418-SortThePeople.go)   
 [2419. Longest Subarray With Maximum Bitwise AND](./leetcode/2419-LongestSubarrayWithMaximumBitwiseAND.go)   
