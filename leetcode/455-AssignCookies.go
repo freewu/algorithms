@@ -34,9 +34,25 @@ func findContentChildren(g []int, s []int) int {
     sort.Ints(s)
     sort.Ints(g)
     res := 0
-    for j := 0; j < len(s) && res < len(g); j++ {
-        if(g[res] <= s[j]) {
-            res += 1
+    for i := 0; i < len(s) && res < len(g); i++ {
+        if(g[res] <= s[i]) {
+            res++
+        }
+    }
+    return res
+}
+
+func findContentChildren1(g []int, s []int) int {
+    sort.Ints(s)
+    sort.Ints(g)
+    res, i, j := 0, 0, 0
+    for i < len(g) && j < len(s) {
+        if g[i] <= s[j] {
+            res++
+            i++
+            j++
+        } else {
+            j++
         }
     }
     return res
@@ -51,4 +67,7 @@ func main() {
     // You have 3 cookies and their sizes are big enough to gratify all of the children, 
     // You need to output 2.
     fmt.Println(findContentChildren([]int{1,2},[]int{1,2,3})) // 2
+
+    fmt.Println(findContentChildren1([]int{1,2,3},[]int{1,1})) // 1
+    fmt.Println(findContentChildren1([]int{1,2},[]int{1,2,3})) // 2
 }
