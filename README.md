@@ -1952,6 +1952,7 @@
 [2375. Construct Smallest Number From DI String](./leetcode/2375-ConstructSmallestNumberFromDIString.go)   
 [2379. Minimum Recolors to Get K Consecutive Black Blocks](./leetcode/2379-MinimumRecolorsToGetKConsecutiveBlackBlocks.go)   
 [2380. Time Needed to Rearrange a Binary String](./leetcode/2380-TimeNeededToRearrangeABinaryString.go)   
+[2381. Shifting Letters II](./leetcode/2381-ShiftingLettersII.go)   
 [2384. Largest Palindromic Number](./leetcode/2384-LargestPalindromicNumber.go)   
 [2390. Removing Stars From a String](./leetcode/2390-RemovingStarsFromAString.go)   
 [2399. Check Distances Between Same Letters](./leetcode/2399-CheckDistancesBetweenSameLetters.go)   
