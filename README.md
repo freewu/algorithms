@@ -2697,6 +2697,7 @@
 [2477. Minimum Fuel Cost to Report to the Capital](./leetcode/2477-MinimumFuelCostToReportToTheCapital.go)   
 [2479. Maximum XOR of Two Non-Overlapping Subtrees](./leetcode/2479-MaximumXOROfTwoNonOverlappingSubtrees.go)   
 [2492. Minimum Score of a Path Between Two Cities](./leetcode/2492-MinimumScoreOfAPathBetweenTwoCities.go)   
+[2493. Divide Nodes Into the Maximum Number of Groups](./leetcode/2493-DivideNodesIntoTheMaximumNumberOfGroups.go)   
 [2497. Maximum Star Sum of a Graph](./leetcode/2497-MaximumStarSumOfAGraph.go)   
 [2508. Add Edges to Make Degrees of All Nodes Even](./leetcode/2508-AddEdgesToMakeDegreesOfAllNodesEven.go)   
 [2608. Shortest Cycle in a Graph](./leetcode/2608-ShortestCycleInAGraph.go)   
