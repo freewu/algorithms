@@ -1236,6 +1236,7 @@
 [2464. Minimum Subarrays in a Valid Split](./leetcode/2464-MinimumSubarraysInAValidSplit.go)   
 [2482. Difference Between Ones and Zeros in Row and Column](./leetcode/2482-DifferenceBetweenOnesAndZerosInRowAndColumn.go)   
 [2495. Number of Subarrays Having Even Product](./leetcode/2495-NumberOfSubarraysHavingEvenProduct.go)   
+[2496. Maximum Value of a String in an Array](./leetcode/2496-MaximumValueOfAStringInAnArray.go)   
 [2498. Frog Jump II](./leetcode/2498-FrogJumpII.go)   
 [2499. Minimum Total Cost to Make Arrays Unequal](./leetcode/2499-MinimumTotalCostToMakeArraysUnequal.go)   
 [2501. Longest Square Streak in an Array](./leetcode/2501-LongestSquareStreakInAnArray.go)   
