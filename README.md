@@ -1461,6 +1461,7 @@
 [3193. Count the Number of Inversions](./leetcode/3193-CountTheNumberOfInversions.go)   
 [3194. Minimum Average of Smallest and Largest Elements](./leetcode/3194-MinimumAverageOfSmallestAndLargestElements.go)   
 [3195. Find the Minimum Area to Cover All Ones I](./leetcode/3195-FindTheMinimumAreaToCoverAllOnesI.go)   
+[3196. Maximize Total Cost of Alternating Subarrays](./leetcode/3196-MaximizeTotalCostOfAlternatingSubarrays.go)   
 [3197. Find the Minimum Area to Cover All Ones II](./leetcode/3197-FindTheMinimumAreaToCoverAllOnesII.go)   
 [3201. Find the Maximum Length of Valid Subsequence I](./leetcode/3201-FindTheMaximumLengthOfValidSubsequenceI.go)   
 [3202. Find the Maximum Length of Valid Subsequence II](./leetcode/3202-FindTheMaximumLengthOfValidSubsequenceII.go)   
