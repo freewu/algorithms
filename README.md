@@ -2360,6 +2360,7 @@
 [2338. Count the Number of Ideal Arrays](./leetcode/2338-CountTheNumberOfIdealArrays.go)   
 [2376. Count Special Integers](./leetcode/2376-CountSpecialIntegers.go)   
 [2396. Strictly Palindromic Number](./leetcode/2396-StrictlyPalindromicNumber.go)   
+[2400. Number of Ways to Reach a Position After Exactly k Steps](./leetcode/2400-NumberOfWaysToReachAPositionAfterExactlyKSteps.go)   
 [2413. Smallest Even Multiple](./leetcode/2413-SmallestEvenMultiple.go)   
 [2417. Closest Fair Integer](./leetcode/2417-ClosestFairInteger.go)   
 [2443. Sum of Number and Its Reverse](./leetcode/2443-SumOfNumberAndItsReverse.go)   
