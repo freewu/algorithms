@@ -1216,6 +1216,7 @@
 [2401. Longest Nice Subarray](./leetcode/2401-LongestNiceSubarray.go)   
 [2402. Meeting Rooms III](./leetcode/2402-MeetingRoomsIII.go)   
 [2403. Minimum Time to Kill All Monsters](./leetcode/2403-MinimumTimeToKillAllMonsters.go)   
+[2404. Most Frequent Even Element](./leetcode/2404-MostFrequentEvenElement.go)   
 [2406. Divide Intervals Into Minimum Number of Groups](./leetcode/2406-DivideIntervalsIntoMinimumNumberOfGroups.go)   
 [2410. Maximum Matching of Players With Trainers](./leetcode/2410-MaximumMatchingOfPlayersWithTrainers.go)   
 [2411. Smallest Subarrays With Maximum Bitwise OR](./leetcode/2411-SmallestSubarraysWithMaximumBitwiseOR.go)   
