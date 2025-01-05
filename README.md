@@ -1213,6 +1213,7 @@
 [2395. Find Subarrays With Equal Sum](./leetcode/2395-FindSubarraysWithEqualSum.go)   
 [2397. Maximum Rows Covered by Columns](./leetcode/2397-MaximumRowsCoveredByColumns.go)   
 [2398. Maximum Number of Robots Within Budget](./leetcode/2398-MaximumNumberOfRobotsWithinBudget.go)   
+[2401. Longest Nice Subarray](./leetcode/2401-LongestNiceSubarray.go)   
 [2402. Meeting Rooms III](./leetcode/2402-MeetingRoomsIII.go)   
 [2403. Minimum Time to Kill All Monsters](./leetcode/2403-MinimumTimeToKillAllMonsters.go)   
 [2406. Divide Intervals Into Minimum Number of Groups](./leetcode/2406-DivideIntervalsIntoMinimumNumberOfGroups.go)   
