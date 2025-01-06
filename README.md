@@ -1227,6 +1227,7 @@
 [2419. Longest Subarray With Maximum Bitwise AND](./leetcode/2419-LongestSubarrayWithMaximumBitwiseAND.go)   
 [2420. Find All Good Indices](./leetcode/2420-FindAllGoodIndices.go)   
 [2422. Merge Operations to Turn Array Into a Palindrome](./leetcode/2422-MergeOperationsToTurnArrayIntoAPalindrome.go)   
+[2425. Bitwise XOR of All Pairings](./leetcode/2425-BitwiseXOROfAllPairings.go)   
 [2428. Maximum Sum of an Hourglass](./leetcode/2428-MaximumSumOfAnHourglass.go)   
 [2431. Maximize Total Tastiness of Purchased Fruits](./leetcode/2431-MaximizeTotalTastinessOfPurchasedFruits.go)   
 [2435. Paths in Matrix Whose Sum Is Divisible by K](./leetcode/2435-PathsInMatrixWhoseSumIsDivisibleByK.go)   
