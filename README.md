@@ -1967,6 +1967,7 @@
 [2384. Largest Palindromic Number](./leetcode/2384-LargestPalindromicNumber.go)   
 [2390. Removing Stars From a String](./leetcode/2390-RemovingStarsFromAString.go)   
 [2399. Check Distances Between Same Letters](./leetcode/2399-CheckDistancesBetweenSameLetters.go)   
+[2409. Count Days Spent Together](./leetcode/2409-CountDaysSpentTogether.go) 
 [2414. Length of the Longest Alphabetical Continuous Substring](./leetcode/2414-LengthOfTheLongestAlphabeticalContinuousSubstring.go)   
 [2450. Number of Distinct Binary Strings After Applying Operations](./leetcode/2450-NumberOfDistinctBinaryStringsAfterApplyingOperations.go)   
 [2478. Number of Beautiful Partitions](./leetcode/2478-NumberOfBeautifulPartitions.go)   
