@@ -1225,6 +1225,7 @@
 [2416. Sum of Prefix Scores of Strings](./leetcode/2416-SumOfPrefixScoresOfStrings.go)   
 [2418. Sort the People](./leetcode/2418-SortThePeople.go)   
 [2419. Longest Subarray With Maximum Bitwise AND](./leetcode/2419-LongestSubarrayWithMaximumBitwiseAND.go)   
+[2420. Find All Good Indices](./leetcode/2420-FindAllGoodIndices.go)   
 [2422. Merge Operations to Turn Array Into a Palindrome](./leetcode/2422-MergeOperationsToTurnArrayIntoAPalindrome.go)   
 [2428. Maximum Sum of an Hourglass](./leetcode/2428-MaximumSumOfAnHourglass.go)   
 [2431. Maximize Total Tastiness of Purchased Fruits](./leetcode/2431-MaximizeTotalTastinessOfPurchasedFruits.go)   
