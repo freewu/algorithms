@@ -1241,6 +1241,7 @@
 [2462. Total Cost to Hire K Workers](./leetcode/2462-TotalCostToHireKWorkers.go)   
 [2463. Minimum Total Distance Traveled](./leetcode/2463-MinimumTotalDistanceTraveled.go)   
 [2464. Minimum Subarrays in a Valid Split](./leetcode/2464-MinimumSubarraysInAValidSplit.go)   
+[2465. Number of Distinct Averages](./leetcode/2465-NumberOfDistinctAverages.go)   
 [2482. Difference Between Ones and Zeros in Row and Column](./leetcode/2482-DifferenceBetweenOnesAndZerosInRowAndColumn.go)   
 [2495. Number of Subarrays Having Even Product](./leetcode/2495-NumberOfSubarraysHavingEvenProduct.go)   
 [2496. Maximum Value of a String in an Array](./leetcode/2496-MaximumValueOfAStringInAnArray.go)   
