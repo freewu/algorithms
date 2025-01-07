@@ -1974,6 +1974,7 @@
 [2405. Optimal Partition of String](./leetcode/2405-OptimalPartitionOfString.go)   
 [2409. Count Days Spent Together](./leetcode/2409-CountDaysSpentTogether.go)   
 [2414. Length of the Longest Alphabetical Continuous Substring](./leetcode/2414-LengthOfTheLongestAlphabeticalContinuousSubstring.go)   
+[2423. Remove Letter To Equalize Frequency](./leetcode/2423-RemoveLetterToEqualizeFrequency.go)   
 [2450. Number of Distinct Binary Strings After Applying Operations](./leetcode/2450-NumberOfDistinctBinaryStringsAfterApplyingOperations.go)   
 [2478. Number of Beautiful Partitions](./leetcode/2478-NumberOfBeautifulPartitions.go)   
 [2486. Append Characters to String to Make Subsequence](./leetcode/2486-AppendCharactersToStringToMakeSubsequence.go)   
