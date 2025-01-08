@@ -2393,6 +2393,7 @@
 [2457. Minimum Addition to Make Integer Beautiful](./leetcode/2457-MinimumAdditionToMakeIntegerBeautiful.go)   
 [2469. Convert the Temperature](./leetcode/2469-ConvertTheTemperature.go)   
 [2485. Find the Pivot Integer](./leetcode/2485-FindThePivotInteger.go)   
+[2507. Smallest Value After Replacing With Sum of Prime Factors](./leetcode/2507-SmallestValueAfterReplacingWithSumOfPrimeFactors.go)   
 [2525. Categorize Box According to Criteria](./leetcode/2525-CategorizeBoxAccordingToCriteria.go)   
 [2550. Count Collisions of Monkeys on a Polygon](./leetcode/2550-CountCollisionsOfMonkeysOnAPolygon.go)   
 [2578. Split With Minimum Sum](./leetcode/2578-SplitWithMinimumSum.go)   
