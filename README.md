@@ -1239,6 +1239,7 @@
 [2439. Minimize Maximum of Array](./leetcode/2439-MinimizeMaximumOfArray.go)   
 [2441. Largest Positive Integer That Exists With Its Negative](./leetcode/2441-LargestPositiveIntegerThatExistsWithItsNegative.go)   
 [2444. Count Subarrays With Fixed Bounds](./leetcode/2444-CountSubarraysWithFixedBounds.go)   
+[2455. Average Value of Even Numbers That Are Divisible by Three](./leetcode/2455-AverageValueOfEvenNumbersThatAreDivisibleByThree.go)   
 [2500. Delete Greatest Value in Each Row](./leetcode/2500-DeleteGreatestValueInEachRow.go)   
 [2459. Sort Array by Moving Items to Empty Space](./leetcode/2459-SortArrayByMovingItemsToEmptySpace.go)   
 [2460. Apply Operations to an Array](./leetcode/2460-ApplyOperationsToAnArray.go)   
