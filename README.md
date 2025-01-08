@@ -1408,6 +1408,7 @@
 [3042. Count Prefix and Suffix Pairs I](./leetcode/3042-CountPrefixAndSuffixPairsI.go)   
 [3043. Find the Length of the Longest Common Prefix](./leetcode/3043-FindTheLengthOfTheLongestCommonPrefix.go)   
 [3044. Most Frequent Prime](./leetcode/3044-MostFrequentPrime.go)   
+[3045. Count Prefix and Suffix Pairs II](./leetcode/3045-CountPrefixAndSuffixPairsII.go)   
 [3046. Split the Array](./leetcode/3046-SplitTheArray.go)   
 [3047. Find the Largest Area of Square Inside Two Rectangles](./leetcode/3047-FindTheLargestAreaOfSquareInsideTwoRectangles.go)   
 [3065. Minimum Operations to Exceed Threshold Value I](./leetcode/3065-MinimumOperationsToExceedThresholdValueI.go)   
