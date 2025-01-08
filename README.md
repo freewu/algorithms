@@ -1232,6 +1232,7 @@
 [2428. Maximum Sum of an Hourglass](./leetcode/2428-MaximumSumOfAnHourglass.go)   
 [2431. Maximize Total Tastiness of Purchased Fruits](./leetcode/2431-MaximizeTotalTastinessOfPurchasedFruits.go)   
 [2432. The Employee That Worked on the Longest Task](./leetcode/2432-TheEmployeeThatWorkedOnTheLongestTask.go)   
+[2433. Find The Original Array of Prefix Xor](./leetcode/2433-FindTheOriginalArrayOfPrefixXor.go)   
 [2435. Paths in Matrix Whose Sum Is Divisible by K](./leetcode/2435-PathsInMatrixWhoseSumIsDivisibleByK.go)   
 [2436. Minimum Split Into Subarrays With GCD Greater Than One](./leetcode/2436-MinimumSplitIntoSubarraysWithGCDGreaterThanOne.go)   
 [2441. Largest Positive Integer That Exists With Its Negative](./leetcode/2441-LargestPositiveIntegerThatExistsWithItsNegative.go)   
