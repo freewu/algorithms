@@ -1405,6 +1405,7 @@
 [3038. Maximum Number of Operations With the Same Score I](./leetcode/3038-MaximumNumberOfOperationsWithTheSameScoreI.go)   
 [3040. Maximum Number of Operations With the Same Score II](./leetcode/3040-MaximumNumberOfOperationsWithTheSameScoreII.go)   
 [3041. Maximize Consecutive Elements in an Array After Modification](./leetcode/3041-MaximizeConsecutiveElementsInAnArrayAfterModification.go)   
+[3042. Count Prefix and Suffix Pairs I](./leetcode/3042-CountPrefixAndSuffixPairsI.go)   
 [3043. Find the Length of the Longest Common Prefix](./leetcode/3043-FindTheLengthOfTheLongestCommonPrefix.go)   
 [3044. Most Frequent Prime](./leetcode/3044-MostFrequentPrime.go)   
 [3046. Split the Array](./leetcode/3046-SplitTheArray.go)   
