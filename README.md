@@ -1235,6 +1235,7 @@
 [2433. Find The Original Array of Prefix Xor](./leetcode/2433-FindTheOriginalArrayOfPrefixXor.go)   
 [2435. Paths in Matrix Whose Sum Is Divisible by K](./leetcode/2435-PathsInMatrixWhoseSumIsDivisibleByK.go)   
 [2436. Minimum Split Into Subarrays With GCD Greater Than One](./leetcode/2436-MinimumSplitIntoSubarraysWithGCDGreaterThanOne.go)   
+[2439. Minimize Maximum of Array](./leetcode/2439-MinimizeMaximumOfArray.go)   
 [2441. Largest Positive Integer That Exists With Its Negative](./leetcode/2441-LargestPositiveIntegerThatExistsWithItsNegative.go)   
 [2444. Count Subarrays With Fixed Bounds](./leetcode/2444-CountSubarraysWithFixedBounds.go)   
 [2459. Sort Array by Moving Items to Empty Space](./leetcode/2459-SortArrayByMovingItemsToEmptySpace.go)   
