@@ -1984,6 +1984,7 @@
 [2414. Length of the Longest Alphabetical Continuous Substring](./leetcode/2414-LengthOfTheLongestAlphabeticalContinuousSubstring.go)   
 [2423. Remove Letter To Equalize Frequency](./leetcode/2423-RemoveLetterToEqualizeFrequency.go)   
 [2430. Maximum Deletions on a String](./leetcode/2430-MaximumDeletionsOnAString.go)   
+[2434. Using a Robot to Print the Lexicographically Smallest String](./leetcode/2434-UsingARobotToPrintTheLexicographicallySmallestString.go)   
 [2437. Number of Valid Clock Times](./leetcode/2437-NumberOfValidClockTimes.go)   
 [2450. Number of Distinct Binary Strings After Applying Operations](./leetcode/2450-NumberOfDistinctBinaryStringsAfterApplyingOperations.go)   
 [2468. Split Message Based on Limit](./leetcode/2468-SplitMessageBasedOnLimit.go)   
