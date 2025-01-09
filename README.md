@@ -1251,6 +1251,7 @@
 [2470. Number of Subarrays With LCM Equal to K](./leetcode/2470-NumberOfSubarraysWithLCMEqualToK.go)   
 [2475. Number of Unequal Triplets in Array](./leetcode/2475-NumberOfUnequalTripletsInArray.go)   
 [2482. Difference Between Ones and Zeros in Row and Column](./leetcode/2482-DifferenceBetweenOnesAndZerosInRowAndColumn.go)   
+[2488. Count Subarrays With Median K](./leetcode/2488-CountSubarraysWithMedianK.go)   
 [2495. Number of Subarrays Having Even Product](./leetcode/2495-NumberOfSubarraysHavingEvenProduct.go)   
 [2496. Maximum Value of a String in an Array](./leetcode/2496-MaximumValueOfAStringInAnArray.go)   
 [2498. Frog Jump II](./leetcode/2498-FrogJumpII.go)   
