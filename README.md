@@ -1256,6 +1256,7 @@
 [2501. Longest Square Streak in an Array](./leetcode/2501-LongestSquareStreakInAnArray.go)   
 [2503. Maximum Number of Points From Grid Queries](./leetcode/2503-MaximumNumberOfPointsFromGridQueries.go)   
 [2505. Bitwise OR of All Subsequence Sums](./leetcode/2505-BitwiseOROfAllSubsequenceSums.go)   
+[2506. Count Pairs Of Similar Strings](./leetcode/2506-CountPairsOfSimilarStrings.go)   
 [2509. Cycle Length Queries in a Tree](./leetcode/2509-CycleLengthQueriesInATree.go)   
 [2510. Check if There is a Path With Equal Number of 0's And 1's](./leetcode/2510-CheckIfThereIsAPathWithEqualNumberOfZerosAndOnes.go)   
 [2519. Count the Number of K-Big Indices](./leetcode/2519-CountTheNumberOfKBigIndices.go)   
