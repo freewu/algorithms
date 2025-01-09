@@ -2000,6 +2000,7 @@
 [2468. Split Message Based on Limit](./leetcode/2468-SplitMessageBasedOnLimit.go)   
 [2472. Maximum Number of Non-overlapping Palindrome Substrings](./leetcode/2472-MaximumNumberOfNonOverlappingPalindromeSubstrings.go)   
 [2478. Number of Beautiful Partitions](./leetcode/2478-NumberOfBeautifulPartitions.go)   
+[2483. Minimum Penalty for a Shop](./leetcode/2483-MinimumPenaltyForAShop.go)   
 [2486. Append Characters to String to Make Subsequence](./leetcode/2486-AppendCharactersToStringToMakeSubsequence.go)   
 [2489. Number of Substrings With Fixed Ratio](./leetcode/2489-NumberOfSubstringsWithFixedRatio.go)   
 [2490. Circular Sentence](./leetcode/2490-CircularSentence.go)   
