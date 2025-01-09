@@ -1249,6 +1249,7 @@
 [2464. Minimum Subarrays in a Valid Split](./leetcode/2464-MinimumSubarraysInAValidSplit.go)   
 [2465. Number of Distinct Averages](./leetcode/2465-NumberOfDistinctAverages.go)   
 [2470. Number of Subarrays With LCM Equal to K](./leetcode/2470-NumberOfSubarraysWithLCMEqualToK.go)   
+[2475. Number of Unequal Triplets in Array](./leetcode/2475-NumberOfUnequalTripletsInArray.go)   
 [2482. Difference Between Ones and Zeros in Row and Column](./leetcode/2482-DifferenceBetweenOnesAndZerosInRowAndColumn.go)   
 [2495. Number of Subarrays Having Even Product](./leetcode/2495-NumberOfSubarraysHavingEvenProduct.go)   
 [2496. Maximum Value of a String in an Array](./leetcode/2496-MaximumValueOfAStringInAnArray.go)   
