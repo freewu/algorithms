@@ -1275,6 +1275,7 @@
 [2548. Maximum Price to Fill a Bag](./leetcode/2548-MaximumPriceToFillABag.go)   
 [2549. Count Distinct Numbers on Board](./leetcode/2549-CountDistinctNumbersOnBoard.go)   
 [2552. Count Increasing Quadruplets](./leetcode/2552-CountIncreasingQuadruplets.go)   
+[2553. Separate the Digits in an Array](./leetcode/2553-SeparateTheDigitsInAnArray.go)   
 [2554. Maximum Number of Integers to Choose From a Range I](./leetcode/2554-MaximumNumberOfIntegersToChooseFromARangeI.go)   
 [2555. Maximize Win From Two Segments](./leetcode/2555-MaximizeWinFromTwoSegments.go)   
 [2556. Disconnect Path in a Binary Matrix by at Most One Flip](./leetcode/2556-DisconnectPathInABinaryMatrixByAtMostOneFlip.go)   
