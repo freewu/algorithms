@@ -1267,6 +1267,7 @@
 [2534. Time Taken to Cross the Door](./leetcode/2534-TimeTakenToCrossTheDoor.go)   
 [2535. Difference Between Element Sum and Digit Sum of an Array](./leetcode/2535-DifferenceBetweenElementSumAndDigitSumOfAnArray.go)   
 [2536. Increment Submatrices by One](./leetcode/2536-IncrementSubmatricesByOne.go)   
+[2537. Count the Number of Good Subarrays](./leetcode/2537-CountTheNumberOfGoodSubarrays.go)   
 [2538. Difference Between Maximum and Minimum Price Sum](./leetcode/2538-DifferenceBetweenMaximumAndMinimumPriceSum.go)   
 [2540. Minimum Common Value](./leetcode/2540-MinimumCommonValue.go)   
 [2542. Maximum Subsequence Score](./leetcode/2542-MaximumSubsequenceScore.go)   
