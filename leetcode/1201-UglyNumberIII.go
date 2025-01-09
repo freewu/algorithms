@@ -28,8 +28,7 @@ package main
 import "fmt"
 
 func nthUglyNumber(n int, a int, b int, c int) int {
-    var gcd func(x int, y int) int
-    gcd = func(x int, y int) int { if y == 0 { return x; }; return gcd(y, x % y) }
+    gcd := func(x, y int) int { for y != 0 { x, y = y, x % y; }; return x; }
     lcm := func(x int, y int) int { return (x * y) / gcd(x, y) }
 
     lcm_ab, lcm_ac, lcm_bc := lcm(a, b), lcm(a, c), lcm(b, c)
