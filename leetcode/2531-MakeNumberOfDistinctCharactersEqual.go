@@ -51,6 +51,35 @@ func isItPossible(word1 string, word2 string) bool {
     return false
 }
 
+func isItPossible1(word1 string, word2 string) bool {
+    getCounts := func(word string) []int {
+        res := make([]int, 26)
+        for _, v := range word { res[v - 'a']++ }
+        return res
+    }
+    countDistinct := func(counts []int) int {
+        res := 0
+        for _, v := range counts { 
+            if v > 0 { res++ }
+        }
+        return res
+    }
+    counts1, counts2 := getCounts(word1), getCounts(word2)
+    dist1, dist2 := countDistinct(counts1), countDistinct(counts2)
+    for i := 0; i < 26; i++ {
+        for j := 0; j < 26; j++ {
+            if counts1[i] == 0 || counts2[j] == 0 { continue }
+            d1, d2 := dist1, dist2
+            if counts1[j] + 1 == 1       { d1++ }
+            if counts1[i] == 1 && i != j { d1-- }
+            if counts2[i] + 1 == 1       { d2++ }
+            if counts2[j] == 1 && i != j { d2-- }
+            if d1 == d2 { return true }
+        }
+    }
+    return false
+}
+
 func main() {
     // Example 1:
     // Input: word1 = "ac", word2 = "b"
@@ -69,4 +98,9 @@ func main() {
     fmt.Println(isItPossible("abcde", "fghij")) // true
 
     fmt.Println(isItPossible("bluefrog", "leetcode")) // true
+
+    fmt.Println(isItPossible1("ac", "b")) // false
+    fmt.Println(isItPossible1("abcc", "aab")) // true
+    fmt.Println(isItPossible1("abcde", "fghij")) // true
+    fmt.Println(isItPossible1("bluefrog", "leetcode")) // true
 }
