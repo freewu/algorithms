@@ -2400,6 +2400,7 @@
 [2443. Sum of Number and Its Reverse](./leetcode/2443-SumOfNumberAndItsReverse.go)   
 [2457. Minimum Addition to Make Integer Beautiful](./leetcode/2457-MinimumAdditionToMakeIntegerBeautiful.go)   
 [2469. Convert the Temperature](./leetcode/2469-ConvertTheTemperature.go)   
+[2481. Minimum Cuts to Divide a Circle](./leetcode/2481-MinimumCutsToDivideACircle.go)   
 [2485. Find the Pivot Integer](./leetcode/2485-FindThePivotInteger.go)   
 [2507. Smallest Value After Replacing With Sum of Prime Factors](./leetcode/2507-SmallestValueAfterReplacingWithSumOfPrimeFactors.go)   
 [2525. Categorize Box According to Criteria](./leetcode/2525-CategorizeBoxAccordingToCriteria.go)   
