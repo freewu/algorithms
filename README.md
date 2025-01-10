@@ -1241,6 +1241,7 @@
 [2444. Count Subarrays With Fixed Bounds](./leetcode/2444-CountSubarraysWithFixedBounds.go)   
 [2451. Odd String Difference](./leetcode/2451-OddStringDifference.go)   
 [2452. Words Within Two Edits of Dictionary](./leetcode/2452-WordsWithinTwoEditsOfDictionary.go)   
+[2453. Destroy Sequential Targets](./leetcode/2453-DestroySequentialTargets.go)   
 [2455. Average Value of Even Numbers That Are Divisible by Three](./leetcode/2455-AverageValueOfEvenNumbersThatAreDivisibleByThree.go)   
 [2500. Delete Greatest Value in Each Row](./leetcode/2500-DeleteGreatestValueInEachRow.go)   
 [2459. Sort Array by Moving Items to Empty Space](./leetcode/2459-SortArrayByMovingItemsToEmptySpace.go)   
