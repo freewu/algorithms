@@ -97,6 +97,35 @@ func wordSubsets1(words1 []string, words2 []string) []string {
     return res
 }
 
+func wordSubsets2(words1, words2 []string) []string {
+    res, maxCount := []string{}, [26]int{}
+    max := func (x, y int) int { if x > y { return x; }; return y; }
+    for _, word := range words2 {
+        count := [26]int{}
+        for _, v := range word {
+            count[v - 'a']++
+        }
+        for i := 0; i < 26; i++ {
+            maxCount[i] = max(maxCount[i], count[i])
+        }
+    }
+    for _, word := range words1 {
+        count, flag := [26]int{}, false
+        for _, v := range word {
+            count[v - 'a']++
+        }
+        for i := 0; i < 26; i++ {
+            if count[i] < maxCount[i] {
+                flag = true
+                break
+            }
+        }
+        if flag { continue }
+        res = append(res, word)
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: words1 = ["amazon","apple","facebook","google","leetcode"], words2 = ["e","o"]
@@ -109,4 +138,7 @@ func main() {
     
     fmt.Println(wordSubsets1([]string{"amazon","apple","facebook","google","leetcode"}, []string{"e","o"})) // ["facebook","google","leetcode"]
     fmt.Println(wordSubsets1([]string{"amazon","apple","facebook","google","leetcode"}, []string{"l","e"})) // "apple","google","leetcode"
+    
+    fmt.Println(wordSubsets2([]string{"amazon","apple","facebook","google","leetcode"}, []string{"e","o"})) // ["facebook","google","leetcode"]
+    fmt.Println(wordSubsets2([]string{"amazon","apple","facebook","google","leetcode"}, []string{"l","e"})) // "apple","google","leetcode"
 }
