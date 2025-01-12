@@ -31,6 +31,8 @@ package main
 //     1 <= candidates[i] <= 10^7
 
 import "fmt"
+import "slices"
+import "math/bits"
 
 func largestCombination(candidates []int) int {
     res := 0
@@ -63,6 +65,30 @@ func largestCombination1(candidates []int) int {
     return res
 }
 
+func largestCombination2(candidates []int) int {
+    count := [24]int{}
+    for _, v := range candidates {
+        for i := 0; v > 0; i++ {
+            count[i] += v & 1
+            v >>= 1
+        }
+    }
+    return slices.Max(count[:])
+}
+
+func largestCombination3(candidates []int) int {
+    mx := slices.Max(candidates)
+    res, n := 0, bits.Len(uint(mx))
+    for i := 0; i < n; i++ {
+        count := 0
+        for _, v := range candidates {
+            count += (v >> i) & 1
+        }
+        res = max(res, count)
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: candidates = [16,17,71,62,12,24,14]
@@ -79,7 +105,21 @@ func main() {
     // Explanation: The largest combination [8,8] has a bitwise AND of 8 & 8 = 8 > 0.
     // The size of the combination is 2, so we return 2.s
     fmt.Println(largestCombination([]int{8,8})) // 2
+    fmt.Println(largestCombination([]int{1,2,3,4,5,6,7,8,9})) // 5
+    fmt.Println(largestCombination([]int{9,8,7,6,5,4,3,2,1})) // 5
 
     fmt.Println(largestCombination1([]int{16,17,71,62,12,24,14})) // 4
     fmt.Println(largestCombination1([]int{8,8})) // 2
+    fmt.Println(largestCombination1([]int{1,2,3,4,5,6,7,8,9})) // 5
+    fmt.Println(largestCombination1([]int{9,8,7,6,5,4,3,2,1})) // 5
+
+    fmt.Println(largestCombination2([]int{16,17,71,62,12,24,14})) // 4
+    fmt.Println(largestCombination2([]int{8,8})) // 2
+    fmt.Println(largestCombination2([]int{1,2,3,4,5,6,7,8,9})) // 5
+    fmt.Println(largestCombination2([]int{9,8,7,6,5,4,3,2,1})) // 5
+
+    fmt.Println(largestCombination3([]int{16,17,71,62,12,24,14})) // 4
+    fmt.Println(largestCombination3([]int{8,8})) // 2
+    fmt.Println(largestCombination3([]int{1,2,3,4,5,6,7,8,9})) // 5
+    fmt.Println(largestCombination3([]int{9,8,7,6,5,4,3,2,1})) // 5
 }
