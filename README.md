@@ -1239,6 +1239,7 @@
 [2439. Minimize Maximum of Array](./leetcode/2439-MinimizeMaximumOfArray.go)   
 [2441. Largest Positive Integer That Exists With Its Negative](./leetcode/2441-LargestPositiveIntegerThatExistsWithItsNegative.go)   
 [2444. Count Subarrays With Fixed Bounds](./leetcode/2444-CountSubarraysWithFixedBounds.go)   
+[2449. Minimum Number of Operations to Make Arrays Similar](./leetcode/2449-MinimumNumberOfOperationsToMakeArraysSimilar.go)   
 [2451. Odd String Difference](./leetcode/2451-OddStringDifference.go)   
 [2452. Words Within Two Edits of Dictionary](./leetcode/2452-WordsWithinTwoEditsOfDictionary.go)   
 [2453. Destroy Sequential Targets](./leetcode/2453-DestroySequentialTargets.go)   
