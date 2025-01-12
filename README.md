@@ -1297,6 +1297,7 @@
 [2576. Find the Maximum Number of Marked Indices](./leetcode/2576-FindTheMaximumNumberOfMarkedIndices.go)   
 [2577. Minimum Time to Visit a Cell In a Grid](./leetcode/2577-MinimumTimeToVisitACellInAGrid.go)   
 [2580. Count Ways to Group Overlapping Ranges](./leetcode/2580-CountWaysToGroupOverlappingRanges.go)   
+[2584. Split the Array to Make Coprime Products](./leetcode/2584-SplitTheArrayToMakeCoprimeProducts.go)   
 [2589. Minimum Time to Complete All Tasks](./leetcode/2589-MinimumTimeToCompleteAllTasks.go)   
 [2593. Find Score of an Array After Marking All Elements](./leetcode/2593-FindScoreOfAnArrayAfterMarkingAllElements.go)   
 [2596. Check Knight Tour Configuration](./leetcode/2596-CheckKnightTourConfiguration.go)   
