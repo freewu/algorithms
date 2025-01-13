@@ -1563,6 +1563,7 @@
 [3376. Minimum Time to Break Locks I](./leetcode/3376-MinimumTimeToBreakLocksI.go)   
 [3383. Minimum Runes to Add to Cast Spell](./leetcode/3383-MinimumRunesToAddToCastSpell.go)   
 [3385. Minimum Time to Break Locks II](./leetcode/3385-MinimumTimeToBreakLocksII.go)   
+[3395. Subsequences with a Unique Middle Mode I](./leetcode/3395-SubsequencesWithAUniqueMiddleModeI.go)   
 [3400. Maximum Number of Matching Indices After Right Shifts](./leetcode/3400-MaximumNumberOfMatchingIndicesAfterRightShifts.go)   
 [3416. Subsequences with a Unique Middle Mode II](./leetcode/3416-SubsequencesWithAUniqueMiddleModeII.go)   
 
@@ -2463,6 +2464,8 @@
 [3304. Find the K-th Character in String Game I](./leetcode/3304-FindTheKthCharacterInStringGameI.go)   
 [3307. Find the K-th Character in String Game II](./leetcode/3307-FindTheKthCharacterInStringGameII.go)   
 [3345. Smallest Divisible Digit Product I](./leetcode/3345-SmallestDivisibleDigitProductI.go)   
+[3395. Subsequences with a Unique Middle Mode I](./leetcode/3395-SubsequencesWithAUniqueMiddleModeI.go)   
+[3416. Subsequences with a Unique Middle Mode II](./leetcode/3416-SubsequencesWithAUniqueMiddleModeII.go)   
 
 # Stack
 [225. Implement Stack using Queues](./leetcode/225-ImplementStackUsingQueues.go)   
