@@ -1237,6 +1237,7 @@
 [2436. Minimum Split Into Subarrays With GCD Greater Than One](./leetcode/2436-MinimumSplitIntoSubarraysWithGCDGreaterThanOne.go)   
 [2438. Range Product Queries of Powers](./leetcode/2438-RangeProductQueriesOfPowers.go)   
 [2439. Minimize Maximum of Array](./leetcode/2439-MinimizeMaximumOfArray.go)   
+[2440. Create Components With Same Value](./leetcode/2440-CreateComponentsWithSameValue.go)   
 [2441. Largest Positive Integer That Exists With Its Negative](./leetcode/2441-LargestPositiveIntegerThatExistsWithItsNegative.go)   
 [2442. Count Number of Distinct Integers After Reverse Operations](./leetcode/2442-CountNumberOfDistinctIntegersAfterReverseOperations.go)   
 [2444. Count Subarrays With Fixed Bounds](./leetcode/2444-CountSubarraysWithFixedBounds.go)   
