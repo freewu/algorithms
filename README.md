@@ -1416,6 +1416,7 @@
 [2971. Find Polygon With the Largest Perimeter](./leetcode/2971-FindPolygonWithTheLargestPerimeter.go)   
 [2972. Count the Number of Incremovable Subarrays II](./leetcode/2972-CountTheNumberOfIncremovableSubarraysII.go)   
 [2974. Minimum Number Game](./leetcode/2974-MinimumNumberGame.go)   
+[2980. Check if Bitwise OR Has Trailing Zeros](./leetcode/2980-CheckIfBitwiseORHasTrailingZeros.go)   
 [2996. Smallest Missing Integer Greater Than Sequential Prefix Sum](./leetcode/2996-SmallestMissingIntegerGreaterThanSequentialPrefixSum.go)   
 [2997. Minimum Number of Operations to Make Array XOR Equal to K](./leetcode/2997-MinimumNumberOfOperationsToMakeArrayXOREqualToK.go)   
 [3000. Maximum Area of Longest Diagonal Rectangle](./leetcode/3000-MaximumAreaOfLongestDiagonalRectangle.go)   
