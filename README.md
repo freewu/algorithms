@@ -1238,6 +1238,7 @@
 [2438. Range Product Queries of Powers](./leetcode/2438-RangeProductQueriesOfPowers.go)   
 [2439. Minimize Maximum of Array](./leetcode/2439-MinimizeMaximumOfArray.go)   
 [2441. Largest Positive Integer That Exists With Its Negative](./leetcode/2441-LargestPositiveIntegerThatExistsWithItsNegative.go)   
+[2442. Count Number of Distinct Integers After Reverse Operations](./leetcode/2442-CountNumberOfDistinctIntegersAfterReverseOperations.go)   
 [2444. Count Subarrays With Fixed Bounds](./leetcode/2444-CountSubarraysWithFixedBounds.go)   
 [2446. Determine if Two Events Have Conflict](./leetcode/2446-DetermineIfTwoEventsHaveConflict.go)   
 [2447. Number of Subarrays With GCD Equal to K](./leetcode/2447-NumberOfSubarraysWithGCDEqualToK.go)   
