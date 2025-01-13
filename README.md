@@ -1304,6 +1304,7 @@
 [2577. Minimum Time to Visit a Cell In a Grid](./leetcode/2577-MinimumTimeToVisitACellInAGrid.go)   
 [2580. Count Ways to Group Overlapping Ranges](./leetcode/2580-CountWaysToGroupOverlappingRanges.go)   
 [2584. Split the Array to Make Coprime Products](./leetcode/2584-SplitTheArrayToMakeCoprimeProducts.go)   
+[2587. Rearrange Array to Maximize Prefix Score](./leetcode/2587-RearrangeArrayToMaximizePrefixScore.go)   
 [2588. Count the Number of Beautiful Subarrays](./leetcode/2588-CountTheNumberOfBeautifulSubarrays.go)   
 [2589. Minimum Time to Complete All Tasks](./leetcode/2589-MinimumTimeToCompleteAllTasks.go)   
 [2593. Find Score of an Array After Marking All Elements](./leetcode/2593-FindScoreOfAnArrayAfterMarkingAllElements.go)   
