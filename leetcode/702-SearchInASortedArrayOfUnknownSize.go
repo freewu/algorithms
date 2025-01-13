@@ -71,10 +71,45 @@ func search(reader ArrayReader, target int) int {
     return -1
 }
 
+func search1(reader ArrayReader, target int) int {
+    start, end := 0, 9999
+    for start < end {
+        mid := (start + end) >> 1
+        val := reader.get(mid)
+        if val == target {
+            return mid
+        }
+        if val > 9999 {
+            end = mid - 1
+        } else if val < target {
+            start = mid + 1
+        } else {
+            end = mid
+        }
+    }
+    val := reader.get(start)
+    if val == target {
+        return start
+    }
+    return -1
+}
+
 func main() {
+    // Example 1:
+    // Input: secret = [-1,0,3,5,9,12], target = 9
+    // Output: 4
     // Explanation: 9 exists in secret and its index is 4.
     fmt.Println(search(Constructor([]int{-1,0,3,5,9,12}), 9)) // 4
-
+    // Example 2:
+    // Input: secret = [-1,0,3,5,9,12], target = 2
+    // Output: -1
     // Explanation: 2 does not exist in secret so return -1.
     fmt.Println(search(Constructor([]int{-1,0,3,5,9,12}), 2)) // -1
+    fmt.Println(search(Constructor([]int{1,2,3,4,5,6,7,8,9}), 2)) // 1
+    fmt.Println(search(Constructor([]int{9,8,7,6,5,4,3,2,1}), 2)) // -1
+
+    fmt.Println(search1(Constructor([]int{-1,0,3,5,9,12}), 9)) // 4
+    fmt.Println(search1(Constructor([]int{-1,0,3,5,9,12}), 2)) // -1
+    fmt.Println(search1(Constructor([]int{1,2,3,4,5,6,7,8,9}), 2)) // 1
+    fmt.Println(search1(Constructor([]int{9,8,7,6,5,4,3,2,1}), 2)) // -1
 }
