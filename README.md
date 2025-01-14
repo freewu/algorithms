@@ -2030,6 +2030,7 @@
 [2490. Circular Sentence](./leetcode/2490-CircularSentence.go)   
 [2491. Divide Players Into Teams of Equal Skill](./leetcode/2491-DividePlayersIntoTeamsOfEqualSkill.go)   
 [2516. Take K of Each Character From Left and Right](./leetcode/2516-TakeKOfEachCharacterFromLeftAndRight.go)   
+[2522. Partition String Into Substrings With Values at Most K](./leetcode/2522-PartitionStringIntoSubstringsWithValuesAtMostK.go)   
 [2531. Make Number of Distinct Characters Equal](./leetcode/2531-MakeNumberOfDistinctCharactersEqual.go)   
 [2539. Count the Number of Good Subsequences](./leetcode/2539-CountTheNumberOfGoodSubsequences.go)   
 [2575. Find the Divisibility Array of a String](./leetcode/2575-FindTheDivisibilityArrayOfAString.go)   
