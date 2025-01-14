@@ -1274,6 +1274,7 @@
 [2509. Cycle Length Queries in a Tree](./leetcode/2509-CycleLengthQueriesInATree.go)   
 [2510. Check if There is a Path With Equal Number of 0's And 1's](./leetcode/2510-CheckIfThereIsAPathWithEqualNumberOfZerosAndOnes.go)   
 [2519. Count the Number of K-Big Indices](./leetcode/2519-CountTheNumberOfKBigIndices.go)   
+[2521. Distinct Prime Factors of Product of Array](./leetcode/2521-DistinctPrimeFactorsOfProductOfArray.go)   
 [2524. Maximum Frequency Score of a Subarray](./leetcode/2524-MaximumFrequencyScoreOfASubarray.go)   
 [2529. Maximum Count of Positive Integer and Negative Integer](./leetcode/2529-MaximumCountOfPositiveIntegerAndNegativeInteger.go)   
 [2530. Maximal Score After Applying K Operations](./leetcode/2530-MaximalScoreAfterApplyingKOperations.go)   
