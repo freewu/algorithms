@@ -2440,6 +2440,7 @@
 [2520. Count the Digits That Divide a Number](./leetcode/2520-CountTheDigitsThatDivideANumber.go)   
 [2523. Closest Prime Numbers in Range](./leetcode/2523-ClosestPrimeNumbersInRange.go)   
 [2525. Categorize Box According to Criteria](./leetcode/2525-CategorizeBoxAccordingToCriteria.go)   
+[2544. Alternating Digit Sum](./leetcode/2544-AlternatingDigitSum.go)   
 [2550. Count Collisions of Monkeys on a Polygon](./leetcode/2550-CountCollisionsOfMonkeysOnAPolygon.go)   
 [2578. Split With Minimum Sum](./leetcode/2578-SplitWithMinimumSum.go)   
 [2582. Pass the Pillow](./leetcode/2582-PassThePillowd.go)   
