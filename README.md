@@ -1290,6 +1290,7 @@
 [2541. Minimum Operations to Make Array Equal II](./leetcode/2541-MinimumOperationsToMakeArrayEqualII.go)   
 [2542. Maximum Subsequence Score](./leetcode/2542-MaximumSubsequenceScore.go)   
 [2545. Sort the Students by Their Kth Score](./leetcode/2545-SortTheStudentsByTheirKthScore.go)   
+[2547. Minimum Cost to Split an Array](./leetcode/2547-MinimumCostToSplitAnArray.go)   
 [2548. Maximum Price to Fill a Bag](./leetcode/2548-MaximumPriceToFillABag.go)   
 [2549. Count Distinct Numbers on Board](./leetcode/2549-CountDistinctNumbersOnBoard.go)   
 [2551. Put Marbles in Bags](./leetcode/2551-PutMarblesInBags.go)   
