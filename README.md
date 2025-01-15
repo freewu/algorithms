@@ -1287,6 +1287,7 @@
 [2537. Count the Number of Good Subarrays](./leetcode/2537-CountTheNumberOfGoodSubarrays.go)   
 [2538. Difference Between Maximum and Minimum Price Sum](./leetcode/2538-DifferenceBetweenMaximumAndMinimumPriceSum.go)   
 [2540. Minimum Common Value](./leetcode/2540-MinimumCommonValue.go)   
+[2541. Minimum Operations to Make Array Equal II](./leetcode/2541-MinimumOperationsToMakeArrayEqualII.go)   
 [2542. Maximum Subsequence Score](./leetcode/2542-MaximumSubsequenceScore.go)   
 [2545. Sort the Students by Their Kth Score](./leetcode/2545-SortTheStudentsByTheirKthScore.go)   
 [2548. Maximum Price to Fill a Bag](./leetcode/2548-MaximumPriceToFillABag.go)   
