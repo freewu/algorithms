@@ -1449,6 +1449,7 @@
 [3045. Count Prefix and Suffix Pairs II](./leetcode/3045-CountPrefixAndSuffixPairsII.go)   
 [3046. Split the Array](./leetcode/3046-SplitTheArray.go)   
 [3047. Find the Largest Area of Square Inside Two Rectangles](./leetcode/3047-FindTheLargestAreaOfSquareInsideTwoRectangles.go)   
+[3048. Earliest Second to Mark Indices I](./leetcode/3048-EarliestSecondToMarkIndicesI.go)   
 [3065. Minimum Operations to Exceed Threshold Value I](./leetcode/3065-MinimumOperationsToExceedThresholdValueI.go)   
 [3066. Minimum Operations to Exceed Threshold Value II](./leetcode/3066-MinimumOperationsToExceedThresholdValueII.go)   
 [3067. Count Pairs of Connectable Servers in a Weighted Tree Network](./leetcode/3067-CountPairsOfConnectableServersInAWeightedTreeNetwork.go)   
