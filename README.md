@@ -1439,6 +1439,7 @@
 [3027. Find the Number of Ways to Place People II](./leetcode/3027-FindTheNumberOfWaysToPlacePeopleII.go)   
 [3030. Find the Grid of Region Average](./leetcode/3030-FindTheGridOfRegionAverage.go)   
 [3033. Modify the Matrix](./leetcode/3033-ModifyTheMatrix.go)   
+[3034. Number of Subarrays That Match a Pattern I](./leetcode/3034-NumberOfSubarraysThatMatchAPatternI.go)   
 [3037. Find Pattern in Infinite Stream II](./leetcode/3037-FindPatternInInfiniteStreamII.go)   
 [3038. Maximum Number of Operations With the Same Score I](./leetcode/3038-MaximumNumberOfOperationsWithTheSameScoreI.go)   
 [3040. Maximum Number of Operations With the Same Score II](./leetcode/3040-MaximumNumberOfOperationsWithTheSameScoreII.go)   
