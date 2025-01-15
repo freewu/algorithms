@@ -2038,6 +2038,7 @@
 [2522. Partition String Into Substrings With Values at Most K](./leetcode/2522-PartitionStringIntoSubstringsWithValuesAtMostK.go)   
 [2531. Make Number of Distinct Characters Equal](./leetcode/2531-MakeNumberOfDistinctCharactersEqual.go)   
 [2539. Count the Number of Good Subsequences](./leetcode/2539-CountTheNumberOfGoodSubsequences.go)   
+[2546. Apply Bitwise Operations to Make Strings Equal](./leetcode/2546-ApplyBitwiseOperationsToMakeStringsEqual.go)   
 [2575. Find the Divisibility Array of a String](./leetcode/2575-FindTheDivisibilityArrayOfAString.go)   
 [2586. Count the Number of Vowel Strings in Range](./leetcode/2586-CountTheNumberOfVowelStringsInRange.go)   
 [2645. Minimum Additions to Make Valid String](./leetcode/2645-MinimumAdditionsToMakeValidString.go)   
