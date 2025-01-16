@@ -1362,6 +1362,7 @@
 [2786. Visit Array Positions to Maximize Score](./leetcode/2786-VisitArrayPositionsToMaximizeScore.go)   
 [2788. Split Strings by Separator](./leetcode/2788-SplitStringsBySeparator.go)   
 [2789. Largest Element in an Array after Merge Operations](./leetcode/2789-LargestElementInAnArrayAfterMergeOperations.go)    
+[2790. Maximum Number of Groups With Increasing Length](./leetcode/2790-MaximumNumberOfGroupsWithIncreasingLength.go)   
 [2798. Number of Employees Who Met the Target](./leetcode/2798-NumberOfEmployeesWhoMetTheTarget.go)   
 [2799. Count Complete Subarrays in an Array](./leetcode/2799-CountCompleteSubarraysInAnArray.go)   
 [2808. Minimum Seconds to Equalize a Circular Array](./leetcode/2808-MinimumSecondsToEqualizeACircularArray.go)   
