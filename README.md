@@ -1332,6 +1332,7 @@
 [2661. First Completely Painted Row or Column](./leetcode/2661-FirstCompletelyPaintedRowOrColumn.go)   
 [2664. The Knight’s Tour](./leetcode/2664-TheKnightsTour.go)   
 [2670. Find the Distinct Difference Array](./leetcode/2670-FindTheDistinctDifferenceArray.go)   
+[2672. Number of Adjacent Elements With the Same Color](./leetcode/2672-NumberOfAdjacentElementsWithTheSameColor.go)   
 [2678. Number of Senior Citizens](./leetcode/2678-NumberOfSeniorCitizens.go)   
 [2679. Sum in a Matrix](./leetcode/2679-SumInAMatrix.go)   
 [2684. Maximum Number of Moves in a Grid](./leetcode/2684-MaximumNumberOfMovesInAGrid.go)   
