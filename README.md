@@ -2052,6 +2052,7 @@
 [2697. Lexicographically Smallest Palindrome](./leetcode/2697-LexicographicallySmallestPalindrome.go)   
 [2707. Extra Characters in a String](./leetcode/2707-ExtraCharactersInAString.go)   
 [2710. Remove Trailing Zeros From a String](./leetcode/2710-RemoveTrailingZerosFromAString.go)   
+[2716. Minimize String Length](./leetcode/2716-MinimizeStringLength.go)   
 [2719. Count of Integers](./leetcode/2719-CountOfIntegers.go)   
 [2734. Lexicographically Smallest String After Substring Operation](./leetcode/2734-LexicographicallySmallestStringAfterSubstringOperation.go)   
 [2743. Count Substrings Without Repeating Character](./leetcode/2743-CountSubstringsWithoutRepeatingCharacter.go)   
