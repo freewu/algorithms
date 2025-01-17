@@ -2452,6 +2452,7 @@
 [2481. Minimum Cuts to Divide a Circle](./leetcode/2481-MinimumCutsToDivideACircle.go)   
 [2485. Find the Pivot Integer](./leetcode/2485-FindThePivotInteger.go)   
 [2507. Smallest Value After Replacing With Sum of Prime Factors](./leetcode/2507-SmallestValueAfterReplacingWithSumOfPrimeFactors.go)   
+[2513. Minimize the Maximum of Two Arrays](./leetcode/2513-MinimizeTheMaximumOfTwoArrays.go)   
 [2520. Count the Digits That Divide a Number](./leetcode/2520-CountTheDigitsThatDivideANumber.go)   
 [2523. Closest Prime Numbers in Range](./leetcode/2523-ClosestPrimeNumbersInRange.go)   
 [2525. Categorize Box According to Criteria](./leetcode/2525-CategorizeBoxAccordingToCriteria.go)   
