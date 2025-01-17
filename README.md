@@ -1273,6 +1273,7 @@
 [2506. Count Pairs Of Similar Strings](./leetcode/2506-CountPairsOfSimilarStrings.go)   
 [2509. Cycle Length Queries in a Tree](./leetcode/2509-CycleLengthQueriesInATree.go)   
 [2510. Check if There is a Path With Equal Number of 0's And 1's](./leetcode/2510-CheckIfThereIsAPathWithEqualNumberOfZerosAndOnes.go)   
+[2511. Maximum Enemy Forts That Can Be Captured](./leetcode/2511-MaximumEnemyFortsThatCanBeCaptured.go)   
 [2519. Count the Number of K-Big Indices](./leetcode/2519-CountTheNumberOfKBigIndices.go)   
 [2521. Distinct Prime Factors of Product of Array](./leetcode/2521-DistinctPrimeFactorsOfProductOfArray.go)   
 [2524. Maximum Frequency Score of a Subarray](./leetcode/2524-MaximumFrequencyScoreOfASubarray.go)   
