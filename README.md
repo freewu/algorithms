@@ -2048,6 +2048,7 @@
 [2489. Number of Substrings With Fixed Ratio](./leetcode/2489-NumberOfSubstringsWithFixedRatio.go)   
 [2490. Circular Sentence](./leetcode/2490-CircularSentence.go)   
 [2491. Divide Players Into Teams of Equal Skill](./leetcode/2491-DividePlayersIntoTeamsOfEqualSkill.go)   
+[2514. Count Anagrams](./leetcode/2514-CountAnagrams.go)   
 [2516. Take K of Each Character From Left and Right](./leetcode/2516-TakeKOfEachCharacterFromLeftAndRight.go)   
 [2522. Partition String Into Substrings With Values at Most K](./leetcode/2522-PartitionStringIntoSubstringsWithValuesAtMostK.go)   
 [2531. Make Number of Distinct Characters Equal](./leetcode/2531-MakeNumberOfDistinctCharactersEqual.go)   
@@ -2133,7 +2134,6 @@
 [3348. Smallest Divisible Digit Product II](./leetcode/3348-SmallestDivisibleDigitProductII.go)   
 [3403. Find the Lexicographically Largest String From the Box I](./leetcode/3403-FindTheLexicographicallyLargestStringFromTheBoxI.go)   
 [3406. Find the Lexicographically Largest String From the Box II](./leetcode/3406-FindTheLexicographicallyLargestStringFromTheBoxII.go)   
-
 
 # Dynamic Programming
 [276. Paint Fence](./leetcode/276-PaintFence.go)   
