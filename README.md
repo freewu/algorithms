@@ -1335,6 +1335,7 @@
 [2672. Number of Adjacent Elements With the Same Color](./leetcode/2672-NumberOfAdjacentElementsWithTheSameColor.go)   
 [2678. Number of Senior Citizens](./leetcode/2678-NumberOfSeniorCitizens.go)   
 [2679. Sum in a Matrix](./leetcode/2679-SumInAMatrix.go)   
+[2683. Neighboring Bitwise XOR](./leetcode/2683-NeighboringBitwiseXOR.go)   
 [2684. Maximum Number of Moves in a Grid](./leetcode/2684-MaximumNumberOfMovesInAGrid.go)   
 [2702. Minimum Operations to Make Numbers Non-positive](./leetcode/2702-MinimumOperationsToMakeNumbersNonPositive.go)   
 [2706. Buy Two Chocolates](./leetcode/2706-BuyTwoChocolates.go)   
