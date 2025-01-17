@@ -1275,6 +1275,7 @@
 [2510. Check if There is a Path With Equal Number of 0's And 1's](./leetcode/2510-CheckIfThereIsAPathWithEqualNumberOfZerosAndOnes.go)   
 [2511. Maximum Enemy Forts That Can Be Captured](./leetcode/2511-MaximumEnemyFortsThatCanBeCaptured.go)   
 [2512. Reward Top K Students](./leetcode/2512-RewardTopKStudents.go)   
+[2517. Maximum Tastiness of Candy Basket](./leetcode/2517-MaximumTastinessOfCandyBasket.go)   
 [2519. Count the Number of K-Big Indices](./leetcode/2519-CountTheNumberOfKBigIndices.go)   
 [2521. Distinct Prime Factors of Product of Array](./leetcode/2521-DistinctPrimeFactorsOfProductOfArray.go)   
 [2524. Maximum Frequency Score of a Subarray](./leetcode/2524-MaximumFrequencyScoreOfASubarray.go)   
