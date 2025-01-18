@@ -86,6 +86,37 @@ func minCost(grid [][]int) int {
     return dp[m - 1][n - 1]
 }
 
+// dfs
+func minCost1(grid [][]int) int {
+    dist, m, n := 0, len(grid), len(grid[0])
+    queue, visited := [][]int{}, make([][]bool, m)
+    for i, _ := range visited {
+        visited[i] = make([]bool, n)
+    }
+    directions := [][]int{ {0, 1}, {0, -1}, {1, 0}, {-1, 0} }
+    var dfs func(i, j int)
+    dfs = func(i, j int) {
+        if i < 0 || i >= m { return }
+        if j < 0 || j >= n { return }
+        if visited[i][j]   { return }
+        visited[i][j] = true
+        queue = append(queue, []int{ i, j, dist } )
+        dir := directions[grid[i][j] - 1]
+        dfs(i + dir[0], j + dir[1])
+    }
+    dfs(0, 0)
+    for len(queue) > 0 {
+        top := queue[0]
+        queue = queue[1: ]
+        if top[0] == m - 1 && top[1] == n - 1 { return top[2] }
+        dist = top[2] + 1
+        for _, dir := range directions {
+            dfs(top[0] + dir[0], top[1] + dir[1])
+        }
+    }
+    return 0
+}
+
 func main() {
     // Example 1:
     // <img src="https://assets.leetcode.com/uploads/2020/02/13/grid1.png" />
@@ -121,4 +152,8 @@ func main() {
         {4,3},
     }
     fmt.Println(minCost(grid3)) // 1
+
+    fmt.Println(minCost1(grid1)) // 3
+    fmt.Println(minCost1(grid2)) // 0
+    fmt.Println(minCost1(grid3)) // 1
 }
