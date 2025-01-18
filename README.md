@@ -1308,6 +1308,7 @@
 [2558. Take Gifts From the Richest Pile](./leetcode/2558-TakeGiftsFromTheRichestPile.go)   
 [2559. Count Vowel Strings in Ranges](./leetcode/2559-CountVowelStringsInRanges.go)   
 [2560. House Robber IV](./leetcode/2560-HouseRobberIV.go)   
+[2562. Find the Array Concatenation Value](./leetcode/2562-FindTheArrayConcatenationValue.go)   
 [2585. Number of Ways to Earn Points](./leetcode/2585-NumberOfWaysToEarnPoints.go)   
 [2599. Make the Prefix Sum Non-negative](./leetcode/2599-MakeThePrefixSumNonNegative.go)   
 [2563. Count the Number of Fair Pairs](./leetcode/2563-CountTheNumberOfFairPairs.go)   
