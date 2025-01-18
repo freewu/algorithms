@@ -1568,6 +1568,7 @@
 [3284. Sum of Consecutive Subarrays](./leetcode/3284-SumOfConsecutiveSubarrays.go)   
 [3285. Find Indices of Stable Mountains](./leetcode/3285-FindIndicesOfStableMountains.go)   
 [3286. Find a Safe Walk Through a Grid](./leetcode/3286-FindASafeWalkThroughAGrid.go)   
+[3287. Find the Maximum Sequence Value of Array](./leetcode/3287-FindTheMaximumSequenceValueOfArray.go)   
 [3288. Length of the Longest Increasing Path](./leetcode/3288-LengthOfTheLongestIncreasingPath.go)   
 [3299. Sum of Consecutive Subsequences](./leetcode/3299-SumOfConsecutiveSubsequences.go)   
 [3309. Maximum Possible Number by Binary Concatenation](./leetcode/3309-MaximumPossibleNumberByBinaryConcatenation.go)   
