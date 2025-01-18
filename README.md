@@ -1311,6 +1311,7 @@
 [2562. Find the Array Concatenation Value](./leetcode/2562-FindTheArrayConcatenationValue.go)   
 [2567. Minimum Score by Changing Two Elements](./leetcode/2567-MinimumScoreByChangingTwoElements.go)   
 [2568. Minimum Impossible OR](./leetcode/2568-MinimumImpossibleOR.go)   
+[2569. Handling Sum Queries After Update](./leetcode/2569-HandlingSumQueriesAfterUpdate.go)   
 [2585. Number of Ways to Earn Points](./leetcode/2585-NumberOfWaysToEarnPoints.go)   
 [2599. Make the Prefix Sum Non-negative](./leetcode/2599-MakeThePrefixSumNonNegative.go)   
 [2563. Count the Number of Fair Pairs](./leetcode/2563-CountTheNumberOfFairPairs.go)   
