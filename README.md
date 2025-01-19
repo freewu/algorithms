@@ -1308,6 +1308,7 @@
 [2558. Take Gifts From the Richest Pile](./leetcode/2558-TakeGiftsFromTheRichestPile.go)   
 [2559. Count Vowel Strings in Ranges](./leetcode/2559-CountVowelStringsInRanges.go)   
 [2560. House Robber IV](./leetcode/2560-HouseRobberIV.go)   
+[2561. Rearranging Fruits](./leetcode/2561-RearrangingFruits.go)   
 [2562. Find the Array Concatenation Value](./leetcode/2562-FindTheArrayConcatenationValue.go)   
 [2567. Minimum Score by Changing Two Elements](./leetcode/2567-MinimumScoreByChangingTwoElements.go)   
 [2568. Minimum Impossible OR](./leetcode/2568-MinimumImpossibleOR.go)   
