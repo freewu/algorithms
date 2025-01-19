@@ -2708,6 +2708,7 @@
 [2509. Cycle Length Queries in a Tree](./leetcode/2509-CycleLengthQueriesInATree.go)   
 [2581. Count Number of Possible Root Nodes](./leetcode/2581-CountNumberOfPossibleRootNodes.go)   
 [2583. Kth Largest Sum in a Binary Tree](./leetcode/2583-KthLargestSumInABinaryTree.go)   
+[2603. Collect Coins in a Tree](./leetcode/2603-CollectCoinsInATree.go)   
 [2641. Cousins in Binary Tree II](./leetcode/2641-CousinsInBinaryTreeII.go)   
 [2646. Minimize the Total Price of the Trips](./leetcode/2646-MinimizeTheTotalPriceOfTheTrips.go)   
 [2673. Make Costs of Paths Equal in a Binary Tree](./leetcode/2673-MakeCostsOfPathsEqualInABinaryTree.go)   
