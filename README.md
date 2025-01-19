@@ -1328,6 +1328,7 @@
 [2596. Check Knight Tour Configuration](./leetcode/2596-CheckKnightTourConfiguration.go)   
 [2597. The Number of Beautiful Subsets](./leetcode/2597-TheNumberOfBeautifulSubsets.go)   
 [2601. Prime Subtraction Operation](./leetcode/2601-PrimeSubtractionOperation.go)   
+[2602. Minimum Operations to Make All Array Elements Equal](./leetcode/2602-MinimumOperationsToMakeAllArrayElementsEqual.go)   
 [2604. Minimum Time to Eat All Grains](./leetcode/2604-MinimumTimeToEatAllGrains.go)   
 [2613. Beautiful Pairs](./leetcode/2613-BeautifulPairs.go)   
 [2614. Prime In Diagonal](./leetcode/2614-PrimeInDiagonal.go)   
