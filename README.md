@@ -2062,6 +2062,7 @@
 [2531. Make Number of Distinct Characters Equal](./leetcode/2531-MakeNumberOfDistinctCharactersEqual.go)   
 [2539. Count the Number of Good Subsequences](./leetcode/2539-CountTheNumberOfGoodSubsequences.go)   
 [2546. Apply Bitwise Operations to Make Strings Equal](./leetcode/2546-ApplyBitwiseOperationsToMakeStringsEqual.go)   
+[2564. Substring XOR Queries](./leetcode/2564-SubstringXORQueries.go)   
 [2565. Subsequence With the Minimum Score](./leetcode/2565-SubsequenceWithTheMinimumScore.go)   
 [2575. Find the Divisibility Array of a String](./leetcode/2575-FindTheDivisibilityArrayOfAString.go)   
 [2586. Count the Number of Vowel Strings in Range](./leetcode/2586-CountTheNumberOfVowelStringsInRange.go)   
