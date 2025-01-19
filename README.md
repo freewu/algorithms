@@ -1330,6 +1330,7 @@
 [2601. Prime Subtraction Operation](./leetcode/2601-PrimeSubtractionOperation.go)   
 [2602. Minimum Operations to Make All Array Elements Equal](./leetcode/2602-MinimumOperationsToMakeAllArrayElementsEqual.go)   
 [2604. Minimum Time to Eat All Grains](./leetcode/2604-MinimumTimeToEatAllGrains.go)   
+[2605. Form Smallest Number From Two Digit Arrays](./leetcode/2605-FormSmallestNumberFromTwoDigitArrays.go)   
 [2607. Make K-Subarray Sums Equal](./leetcode/2607-MakeKSubarraySumsEqual.go)   
 [2613. Beautiful Pairs](./leetcode/2613-BeautifulPairs.go)   
 [2614. Prime In Diagonal](./leetcode/2614-PrimeInDiagonal.go)   
