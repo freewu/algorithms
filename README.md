@@ -2470,6 +2470,7 @@
 [2543. Check if Point Is Reachable](./leetcode/2543-CheckIfPointIsReachable.go)   
 [2544. Alternating Digit Sum](./leetcode/2544-AlternatingDigitSum.go)   
 [2550. Count Collisions of Monkeys on a Polygon](./leetcode/2550-CountCollisionsOfMonkeysOnAPolygon.go)   
+[2566. Maximum Difference by Remapping a Digit](./leetcode/2566-MaximumDifferenceByRemappingADigit.go)   
 [2578. Split With Minimum Sum](./leetcode/2578-SplitWithMinimumSum.go)   
 [2582. Pass the Pillow](./leetcode/2582-PassThePillowd.go)   
 [2601. Prime Subtraction Operation](./leetcode/2601-PrimeSubtractionOperation.go)   
