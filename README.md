@@ -2096,6 +2096,7 @@
 [2981. Find Longest Special Substring That Occurs Thrice I](./leetcode/2981-FindLongestSpecialSubstringThatOccursThriceI.go)   
 [2982. Find Longest Special Substring That Occurs Thrice II](./leetcode/2982-FindLongestSpecialSubstringThatOccursThriceII.go)   
 [2983. Palindrome Rearrangement Queries](./leetcode/2983-PalindromeRearrangementQueries.go)   
+[3003. Maximize the Number of Partitions After Operations](./leetcode/3003-MaximizeTheNumberOfPartitionsAfterOperations.go)   
 [3006. Find Beautiful Indices in the Given Array I](./leetcode/3006-FindBeautifulIndicesInTheGivenArrayI.go)   
 [3008. Find Beautiful Indices in the Given Array II](./leetcode/3008-FindBeautifulIndicesInTheGivenArrayII.go)   
 [3014. Minimum Number of Pushes to Type Word I](./leetcode/3014-MinimumNumberOfPushesToTypeWordI.go)   
