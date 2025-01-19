@@ -2477,6 +2477,7 @@
 [2566. Maximum Difference by Remapping a Digit](./leetcode/2566-MaximumDifferenceByRemappingADigit.go)   
 [2578. Split With Minimum Sum](./leetcode/2578-SplitWithMinimumSum.go)   
 [2582. Pass the Pillow](./leetcode/2582-PassThePillowd.go)   
+[2600. K Items With the Maximum Sum](./leetcode/2600-KItemsWithTheMaximumSum.go)   
 [2601. Prime Subtraction Operation](./leetcode/2601-PrimeSubtractionOperation.go)   
 [2647. Color the Triangle Red](./leetcode/2647-ColorTheTriangleRed.go)   
 [2698. Find the Punishment Number of an Integer](./leetcode/2698-FindThePunishmentNumberOfAnInteger.go)   
