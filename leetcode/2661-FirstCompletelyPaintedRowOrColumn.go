@@ -36,15 +36,13 @@ import "fmt"
 
 func firstCompleteIndex(arr []int, mat [][]int) int {
     m, n := len(mat), len(mat[0])
-    row2cnt := make([]int, m)
-    col2cnt := make([]int, n)
+    num2pos, row2cnt, col2cnt := make([]int, m * n + 1), make([]int, m), make([]int, n)
     for i := range row2cnt {
         row2cnt[i] = n
     }
     for j := range col2cnt {
         col2cnt[j] = m
     }
-    num2pos := make([]int, m * n + 1)
     for i := 0; i < m; i++ {
         for j := 0; j < n; j++ {
             num2pos[mat[i][j]] = i * n + j
