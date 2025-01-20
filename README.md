@@ -1323,6 +1323,7 @@
 [2587. Rearrange Array to Maximize Prefix Score](./leetcode/2587-RearrangeArrayToMaximizePrefixScore.go)   
 [2588. Count the Number of Beautiful Subarrays](./leetcode/2588-CountTheNumberOfBeautifulSubarrays.go)   
 [2589. Minimum Time to Complete All Tasks](./leetcode/2589-MinimumTimeToCompleteAllTasks.go)   
+[2592. Maximize Greatness of an Array](./leetcode/2592-MaximizeGreatnessOfAnArray.go)   
 [2593. Find Score of an Array After Marking All Elements](./leetcode/2593-FindScoreOfAnArrayAfterMarkingAllElements.go)   
 [2594. Minimum Time to Repair Cars](./leetcode/2594-MinimumTimeToRepairCars.go)   
 [2596. Check Knight Tour Configuration](./leetcode/2596-CheckKnightTourConfiguration.go)   
