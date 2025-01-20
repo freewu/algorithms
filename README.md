@@ -2070,6 +2070,7 @@
 [2565. Subsequence With the Minimum Score](./leetcode/2565-SubsequenceWithTheMinimumScore.go)   
 [2575. Find the Divisibility Array of a String](./leetcode/2575-FindTheDivisibilityArrayOfAString.go)   
 [2586. Count the Number of Vowel Strings in Range](./leetcode/2586-CountTheNumberOfVowelStringsInRange.go)   
+[2606. Find the Substring With Maximum Cost](./leetcode/2606-FindTheSubstringWithMaximumCost.go)   
 [2609. Find the Longest Balanced Substring of a Binary String](./leetcode/2609-FindTheLongestBalancedSubstringOfABinaryString.go)   
 [2645. Minimum Additions to Make Valid String](./leetcode/2645-MinimumAdditionsToMakeValidString.go)   
 [2663. Lexicographically Smallest Beautiful String](./leetcode/2663-LexicographicallySmallestBeautifulString.go)   
