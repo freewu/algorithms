@@ -2484,6 +2484,7 @@
 [2578. Split With Minimum Sum](./leetcode/2578-SplitWithMinimumSum.go)   
 [2582. Pass the Pillow](./leetcode/2582-PassThePillowd.go)   
 [2591. Distribute Money to Maximum Children](./leetcode/2591-DistributeMoneyToMaximumChildren.go)   
+[2595. Number of Even and Odd Bits](./leetcode/2595-NumberOfEvenAndOddBits.go)   
 [2600. K Items With the Maximum Sum](./leetcode/2600-KItemsWithTheMaximumSum.go)   
 [2601. Prime Subtraction Operation](./leetcode/2601-PrimeSubtractionOperation.go)   
 [2647. Color the Triangle Red](./leetcode/2647-ColorTheTriangleRed.go)   
