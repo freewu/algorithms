@@ -90,7 +90,6 @@ func maxValueOfCoins2(piles [][]int, k int) int {
                 sum += piles[i][j]
                 dp[count] = max(dp[count], dp[count-j-1] + sum)
             }
-
         }
     }
     return dp[k]
