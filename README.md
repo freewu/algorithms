@@ -2087,6 +2087,7 @@
 [2719. Count of Integers](./leetcode/2719-CountOfIntegers.go)   
 [2734. Lexicographically Smallest String After Substring Operation](./leetcode/2734-LexicographicallySmallestStringAfterSubstringOperation.go)   
 [2743. Count Substrings Without Repeating Character](./leetcode/2743-CountSubstringsWithoutRepeatingCharacter.go)   
+[2800. Shortest String That Contains Three Strings](./leetcode/2800-ShortestStringThatContainsThreeStrings.go)   
 [2801. Count Stepping Numbers in Range](./leetcode/2801-CountSteppingNumbersInRange.go)   
 [2810. Faulty Keyboard](./leetcode/2810-FaultyKeyboard.go)   
 [2825. Make String a Subsequence Using Cyclic Increments](./leetcode/2825-MakeStringASubsequenceUsingCyclicIncrements.go)   
@@ -3812,4 +3813,4 @@ LCR 185. 统计结果概率
 [面试题 01.05. One Away LCCI](./leetcode/LCCI0105-OneAway.go)   
 [面试题 01.06. Compress String LCCI](./leetcode/LCCI0106-CompressString.go)   
 [面试题 08.02. Robot in a Grid LCCI](./leetcode/LCCI0802-RobotInAGrid.go)   
-
+[面试题 17.21. Volume of Histogram LCCI](./leetcode/LCCI1721-VolumeOfHistogram.go)   
