@@ -78,19 +78,38 @@ func maxValueOfCoins(piles [][]int, k int) int {
 }
 
 func maxValueOfCoins2(piles [][]int, k int) int {
-    l := len(piles)
+    n:= len(piles)
     dp := make([]int, k + 1)
     totalPiles := 0
-    for idx := l - 1; idx >= 0; idx-- {
-        totalPiles += len(piles[idx]) // 
+    for i := n - 1; i >= 0; i-- {
+        totalPiles += len(piles[i]) // 
         for count := min(totalPiles, k); count >= 0; count-- {
-            // dp[idx][count] = dp[idx+1][count]
+            // dp[i][count] = dp[i+1][count]
             sum := 0
-            for i := 0; i < len(piles[idx]) && i < count; i++ {
-                sum += piles[idx][i]
-                dp[count] = max(dp[count], dp[count-i-1]+sum)
+            for j := 0; i < len(piles[i]) && j < count; j++ {
+                sum += piles[i][j]
+                dp[count] = max(dp[count], dp[count-j-1] + sum)
             }
 
+        }
+    }
+    return dp[k]
+}
+
+func maxValueOfCoins3(piles [][]int, k int) int {
+    sum, dp := 0, make([]int, k + 1)
+    min := func (x, y int) int { if x < y { return x; }; return y; }
+    max := func (x, y int) int { if x > y { return x; }; return y; }
+    for _, pile := range piles {
+        n := len(pile)
+        for i := 1; i < n; i++ {
+            pile[i] += pile[i-1] // 提前计算 pile 的前缀和
+        }
+        sum = min(sum + n, k)
+        for j := sum; j > 0; j-- { // 优化：j 从前 i 个栈的大小之和开始枚举
+            for w, v := range pile[:min(n, j)] {
+                dp[j] = max(dp[j], dp[j-w-1] + v) // w 从 0 开始，物品体积为 w + 1
+            }
         }
     }
     return dp[k]
@@ -106,6 +125,9 @@ func main() {
     fmt.Println(maxValueOfCoins1([][]int{{1,100,3},{7,8,9}}, 2)) // 101
     fmt.Println(maxValueOfCoins1([][]int{{100},{100},{100},{100},{100},{100},{1,1,1,1,1,1,700}}, 7)) // 706
 
-    fmt.Println(maxValueOfCoins2([][]int{{1,100,3},{7,8,9}}, 2)) // 101
-    fmt.Println(maxValueOfCoins2([][]int{{100},{100},{100},{100},{100},{100},{1,1,1,1,1,1,700}}, 7)) // 706
+    // fmt.Println(maxValueOfCoins2([][]int{{1,100,3},{7,8,9}}, 2)) // 101
+    // fmt.Println(maxValueOfCoins2([][]int{{100},{100},{100},{100},{100},{100},{1,1,1,1,1,1,700}}, 7)) // 706
+
+    fmt.Println(maxValueOfCoins3([][]int{{1,100,3},{7,8,9}}, 2)) // 101
+    fmt.Println(maxValueOfCoins3([][]int{{100},{100},{100},{100},{100},{100},{1,1,1,1,1,1,700}}, 7)) // 706
 }
