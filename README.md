@@ -3812,5 +3812,7 @@ LCR 185. 统计结果概率
 [面试题 01.04. Palindrome Permutation LCCI](./leetcode/LCCI0104-PalindromePermutation.go)   
 [面试题 01.05. One Away LCCI](./leetcode/LCCI0105-OneAway.go)   
 [面试题 01.06. Compress String LCCI](./leetcode/LCCI0106-CompressString.go)   
+[面试题 01.06. Compress String LCCI](./leetcode/LCCI0106-CompressString.go)   
+[面试题 01.07. Rotate Matrix LCCI](./leetcode/LCCI0107-RotateMatrix.go)   
 [面试题 08.02. Robot in a Grid LCCI](./leetcode/LCCI0802-RobotInAGrid.go)   
 [面试题 17.21. Volume of Histogram LCCI](./leetcode/LCCI1721-VolumeOfHistogram.go)   
