@@ -58,6 +58,24 @@ func maxCoins1(piles []int) int {
     return res
 }
 
+func maxCoins2(piles []int) int {
+    sort.Ints(piles)
+    res, n := 0, len(piles)
+    for i := n / 3; i < n; i += 2 {
+        res += piles[i]
+    }
+    return res
+}
+
+func maxCoins3(piles []int) int {
+    sort.Ints(piles)
+    res, n := 0, len(piles)
+    for i := 0; i < 2 * n / 3; i = i + 2 {
+        res += piles[n-i-2]
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: piles = [2,4,1,2,7,8]
@@ -75,8 +93,20 @@ func main() {
     // Input: piles = [9,8,7,6,5,1,2,3,4]
     // Output: 18
     fmt.Println(maxCoins([]int{9,8,7,6,5,1,2,3,4})) // 18
+    fmt.Println(maxCoins([]int{1,2,3,4,5,6,7,8,9})) // 18
 
     fmt.Println(maxCoins1([]int{2,4,1,2,7,8})) // 9
     fmt.Println(maxCoins1([]int{2,4,5})) // 4
     fmt.Println(maxCoins1([]int{9,8,7,6,5,1,2,3,4})) // 18
+    fmt.Println(maxCoins1([]int{1,2,3,4,5,6,7,8,9})) // 18
+
+    fmt.Println(maxCoins2([]int{2,4,1,2,7,8})) // 9
+    fmt.Println(maxCoins2([]int{2,4,5})) // 4
+    fmt.Println(maxCoins2([]int{9,8,7,6,5,1,2,3,4})) // 18
+    fmt.Println(maxCoins2([]int{1,2,3,4,5,6,7,8,9})) // 18
+
+    fmt.Println(maxCoins3([]int{2,4,1,2,7,8})) // 9
+    fmt.Println(maxCoins3([]int{2,4,5})) // 4
+    fmt.Println(maxCoins3([]int{9,8,7,6,5,1,2,3,4})) // 18
+    fmt.Println(maxCoins3([]int{1,2,3,4,5,6,7,8,9})) // 18
 }
