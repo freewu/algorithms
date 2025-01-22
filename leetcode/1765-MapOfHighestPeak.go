@@ -71,6 +71,37 @@ func highestPeak(isWater [][]int) [][]int {
     return isWater
 }
 
+var queue [1024*1024]int
+var visited [1024][1024]bool
+// bfs
+func highestPeak1(isWater [][]int) [][]int {
+    rows, cols, queue:= len(isWater), len(isWater[0]), queue[:0]
+    for r := 0; r < rows; r++ {
+        for c := 0; c < cols; c++ {
+            visited[r][c] = false
+            if isWater[r][c] == 1 { 
+                queue, visited[r][c] = append(queue, r * 1024 + c), true 
+            }
+            isWater[r][c] ^= 1
+        }
+    }
+    enq := func(r, c int) {
+        if r < 0 || r == rows || c < 0 || c == cols || visited[r][c] { return }
+        queue, visited[r][c] = append(queue, r * 1024 + c), true
+    }
+    for i := 0; len(queue) > 0; i++ {
+        for _, v := range queue {
+            r, c := v / 1024, v % 1024
+            isWater[r][c], queue = i, queue[1:]
+            enq(r - 1, c)
+            enq(r + 1, c)
+            enq(r, c - 1)
+            enq(r, c + 1)
+        }
+    }
+    return isWater
+}
+
 func main() {
     // Example 1:
     // <img src="https://assets.leetcode.com/uploads/2021/01/10/screenshot-2021-01-11-at-82045-am.png" /> 
@@ -86,4 +117,7 @@ func main() {
     // Explanation: A height of 2 is the maximum possible height of any assignment.
     // Any height assignment that has a maximum height of 2 while still meeting the rules will also be accepted.
     fmt.Println(highestPeak([][]int{{0,0,1},{1,0,0},{0,0,0}})) // [[1,1,0],[0,1,1],[1,2,2]]
+
+    fmt.Println(highestPeak1([][]int{{0,1},{0,0}})) // [[1,0],[2,1]]
+    fmt.Println(highestPeak1([][]int{{0,0,1},{1,0,0},{0,0,0}})) // [[1,1,0],[0,1,1],[1,2,2]]
 }
