@@ -25,9 +25,7 @@ package main
 //     -10^6 <= nums1[i], nums2[i] <= 10^6
 
 import "fmt"
-import "math"
 
-// by self
 func findMedianSortedArrays(nums1 []int, nums2 []int) float64 {
     l1, l2 := len(nums1),len(nums2)
     l3 := l1 + l2
@@ -72,56 +70,59 @@ func findMedianSortedArrays(nums1 []int, nums2 []int) float64 {
 }
 
 // best solution
-func findMedianSortedArraysBest(a []int, b []int) float64 {
-    m,n := len(a), len(b)
+func findMedianSortedArraysBest(nums1 []int, nums2 []int) float64 {
+    m,n := len(nums1), len(nums2)
     if m > n {
-        a, b, m,n = b,a,n,m
+        nums1, nums2, m,n = nums2, nums1, n, m
     }
     mid := (m + n - 1) / 2 // 两个数组的中位位置
-    l,r := 0,m-1
+    l, r := 0, m - 1
     for l <= r {
-        midA := l + (r-l)/2
-        midB := mid - midA
-        if a[midA] < b[midB] {
-            l = midA + 1
+        mid1 := l + (r - l) / 2
+        if nums1[mid1] < nums2[mid - mid1] {
+            l = mid1 + 1
         } else {
-            r = midA - 1
+            r = mid1 - 1
         }
     }
-
     left := 0
     if l > 0 {
-        left = a[l-1]
+        left = nums1[l - 1]
     } else {
-        left = math.MinInt32
+        left = -1 << 31
     }
-
     min := func (x, y int) int { if x < y { return x; }; return y; }
     max := func (x, y int) int { if x > y { return x; }; return y; }
-    if mid-l >= 0 {
-        left = max(left, b[mid-l])
+    if mid - l >= 0 {
+        left = max(left, nums2[mid-l])
     }
-
-    if (m+n)%2 ==1 {
+    if (m + n) % 2 ==1 {
         return float64(left)
     }
-
     right := 0  //right median, max of a[l] and b[mid-l+1]
     if l < m {
-        right= a[l]
+        right= nums1[l]
     } else {
-        right= math.MaxInt32
+        right= 1 << 31
     }
     if mid - l + 1 < n {
-        right = min(right,b[mid-l+1])
+        right = min(right, nums2[mid-l+1])
     }
     return float64(left+right) / 2.0
 }
 
 func main() {
-    fmt.Println(findMedianSortedArrays([]int{1, 3}, []int{2}))    // 2.0
+    // Example 1:
+    // Input: nums1 = [1,3], nums2 = [2]
+    // Output: 2.00000
+    // Explanation: merged array = [1,2,3] and median is 2.
+    fmt.Println(findMedianSortedArrays([]int{1, 3}, []int{2})) // 2.0
+    // Example 2:
+    // Input: nums1 = [1,2], nums2 = [3,4]
+    // Output: 2.50000
+    // Explanation: merged array = [1,2,3,4] and median is (2 + 3) / 2 = 2.5.
     fmt.Println(findMedianSortedArrays([]int{1, 2}, []int{3, 4})) // 2.5
 
-    fmt.Println(findMedianSortedArraysBest([]int{1, 3}, []int{2}))    // 2.0
+    fmt.Println(findMedianSortedArraysBest([]int{1, 3}, []int{2})) // 2.0
     fmt.Println(findMedianSortedArraysBest([]int{1, 2}, []int{3, 4})) // 2.5
 }

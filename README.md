@@ -1314,6 +1314,7 @@
 [2567. Minimum Score by Changing Two Elements](./leetcode/2567-MinimumScoreByChangingTwoElements.go)   
 [2568. Minimum Impossible OR](./leetcode/2568-MinimumImpossibleOR.go)   
 [2569. Handling Sum Queries After Update](./leetcode/2569-HandlingSumQueriesAfterUpdate.go)   
+[2570. Merge Two 2D Arrays by Summing Values](./leetcode/2570-MergeTwo2DArraysBySummingValues.go)   
 [2575. Find the Divisibility Array of a String](./leetcode/2575-FindTheDivisibilityArrayOfAString.go)   
 [2576. Find the Maximum Number of Marked Indices](./leetcode/2576-FindTheMaximumNumberOfMarkedIndices.go)   
 [2577. Minimum Time to Visit a Cell In a Grid](./leetcode/2577-MinimumTimeToVisitACellInAGrid.go)   
