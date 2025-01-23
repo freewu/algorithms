@@ -1464,6 +1464,7 @@
 [3109. Find the Index of Permutation](./leetcode/3109-FindTheIndexOfPermutation.go)   
 [3023. Find Pattern in Infinite Stream I](./leetcode/3023-FindPatternInInfiniteStreamI.go)   
 [3025. Find the Number of Ways to Place People I](./leetcode/3025-FindTheNumberOfWaysToPlacePeopleI.go)   
+[3026. Maximum Good Subarray Sum](./leetcode/3026-MaximumGoodSubarraySum.go)   
 [3027. Find the Number of Ways to Place People II](./leetcode/3027-FindTheNumberOfWaysToPlacePeopleII.go)   
 [3030. Find the Grid of Region Average](./leetcode/3030-FindTheGridOfRegionAverage.go)   
 [3033. Modify the Matrix](./leetcode/3033-ModifyTheMatrix.go)   
