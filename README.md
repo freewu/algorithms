@@ -2491,6 +2491,7 @@
 [2544. Alternating Digit Sum](./leetcode/2544-AlternatingDigitSum.go)   
 [2550. Count Collisions of Monkeys on a Polygon](./leetcode/2550-CountCollisionsOfMonkeysOnAPolygon.go)   
 [2566. Maximum Difference by Remapping a Digit](./leetcode/2566-MaximumDifferenceByRemappingADigit.go)   
+[2571. Minimum Operations to Reduce an Integer to 0](./leetcode/2571-MinimumOperationsToReduceAnIntegerTo0.go)   
 [2578. Split With Minimum Sum](./leetcode/2578-SplitWithMinimumSum.go)   
 [2579. Count Total Number of Colored Cells](./leetcode/2579-CountTotalNumberOfColoredCells.go)   
 [2582. Pass the Pillow](./leetcode/2582-PassThePillowd.go)   
