@@ -2491,6 +2491,7 @@
 [2550. Count Collisions of Monkeys on a Polygon](./leetcode/2550-CountCollisionsOfMonkeysOnAPolygon.go)   
 [2566. Maximum Difference by Remapping a Digit](./leetcode/2566-MaximumDifferenceByRemappingADigit.go)   
 [2578. Split With Minimum Sum](./leetcode/2578-SplitWithMinimumSum.go)   
+[2579. Count Total Number of Colored Cells](./leetcode/2579-CountTotalNumberOfColoredCells.go)   
 [2582. Pass the Pillow](./leetcode/2582-PassThePillowd.go)   
 [2591. Distribute Money to Maximum Children](./leetcode/2591-DistributeMoneyToMaximumChildren.go)   
 [2595. Number of Even and Odd Bits](./leetcode/2595-NumberOfEvenAndOddBits.go)   
