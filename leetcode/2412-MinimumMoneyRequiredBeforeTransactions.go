@@ -46,6 +46,17 @@ func minimumMoney(transactions [][]int) int64 {
     return int64(base + extra)
 }
 
+func minimumMoney1(transactions [][]int) int64 {
+    sum, mx := 0, 0
+    min := func (x, y int) int { if x < y { return x; }; return y; }
+    max := func (x, y int) int { if x > y { return x; }; return y; }
+    for _, t := range transactions {
+        sum += max(t[0] - t[1], 0)
+        mx = max(mx, min(t[0], t[1]))
+    }
+    return int64(sum + mx)
+}
+
 func main() {
     // Example 1:
     // Input: transactions = [[2,1],[5,0],[4,2]]
@@ -62,4 +73,7 @@ func main() {
     // - If transactions are in the order [[0,3],[3,0]], the minimum money required to complete the transactions is 0.
     // Thus, starting with money = 3, the transactions can be performed in any order.
     fmt.Println(minimumMoney([][]int{{3,0},{0,3}})) // 3
+
+    fmt.Println(minimumMoney1([][]int{{2,1},{5,0},{4,2}})) // 10
+    fmt.Println(minimumMoney1([][]int{{3,0},{0,3}})) // 3
 }
