@@ -1352,6 +1352,7 @@
 [2658. Maximum Number of Fish in a Grid](./leetcode/2658-MaximumNumberOfFishInAGrid.go)   
 [2660. Determine the Winner of a Bowling Game](./leetcode/2660-DetermineTheWinnerOfABowlingGame.go)   
 [2661. First Completely Painted Row or Column](./leetcode/2661-FirstCompletelyPaintedRowOrColumn.go)   
+[2662. Minimum Cost of a Path With Special Roads](./leetcode/2662-MinimumCostOfAPathWithSpecialRoads.go)   
 [2664. The Knight’s Tour](./leetcode/2664-TheKnightsTour.go)   
 [2670. Find the Distinct Difference Array](./leetcode/2670-FindTheDistinctDifferenceArray.go)   
 [2672. Number of Adjacent Elements With the Same Color](./leetcode/2672-NumberOfAdjacentElementsWithTheSameColor.go)   
