@@ -1387,6 +1387,7 @@
 [2766. Relocate Marbles](./leetcode/2766-RelocateMarbles.go)   
 [2768. Number of Black Blocks](./leetcode/2768-NumberOfBlackBlocks.go)   
 [2771. Longest Non-decreasing Subarray From Two Arrays](./leetcode/2771-LongestNon-DecreasingSubarrayFromTwoArrays.go)   
+[2778. Sum of Squares of Special Elements](./leetcode/2778-SumOfSquaresOfSpecialElements.go)   
 [2779. Maximum Beauty of an Array After Applying Operation](./leetcode/2779-MaximumBeautyOfAnArrayAfterApplyingOperation.go)   
 [2786. Visit Array Positions to Maximize Score](./leetcode/2786-VisitArrayPositionsToMaximizeScore.go)   
 [2788. Split Strings by Separator](./leetcode/2788-SplitStringsBySeparator.go)   
