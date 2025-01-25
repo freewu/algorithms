@@ -104,7 +104,6 @@ func minUnlockedIndices(nums []int, locked []int) int {
     return res
 }
 
-
 func main() {
     // Example 1:
     // Input: nums = [1,2,1,2,3,2], locked = [1,0,1,1,0,1]
