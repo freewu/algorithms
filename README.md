@@ -1596,6 +1596,7 @@
 [3266. Final Array State After K Multiplication Operations II](./leetcode/3266-FinalArrayStateAfterKMultiplicationOperationsII.go)  
 [3267. Count Almost Equal Pairs II](./leetcode/3267-CountAlmostEqualPairsII.go)   
 [3269. Constructing Two Increasing Arrays](./leetcode/3269-ConstructingTwoIncreasingArrays.go)   
+[3273. Minimum Amount of Damage Dealt to Bob](./leetcode/3273-MinimumAmountOfDamageDealtToBob.go)   
 [3279. Maximum Total Area Occupied by Pistons](./leetcode/3279-MaximumTotalAreaOccupiedByPistons.go)   
 [3283. Maximum Number of Moves to Kill All Pawns](./leetcode/3283-MaximumNumberOfMovesToKillAllPawns.go)   
 [3284. Sum of Consecutive Subarrays](./leetcode/3284-SumOfConsecutiveSubarrays.go)   
