@@ -2515,6 +2515,7 @@
 [2600. K Items With the Maximum Sum](./leetcode/2600-KItemsWithTheMaximumSum.go)   
 [2601. Prime Subtraction Operation](./leetcode/2601-PrimeSubtractionOperation.go)   
 [2647. Color the Triangle Red](./leetcode/2647-ColorTheTriangleRed.go)   
+[2652. Sum Multiples](./leetcode/2652-SumMultiples.go)   
 [2698. Find the Punishment Number of an Integer](./leetcode/2698-FindThePunishmentNumberOfAnInteger.go)   
 [2729. Check if The Number is Fascinating](./leetcode/2729-CheckIfTheNumberIsFascinating.go)   
 [2739. Total Distance Traveled](./leetcode/2739-TotalDistanceTraveled.go)   
