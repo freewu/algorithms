@@ -1340,6 +1340,7 @@
 [2604. Minimum Time to Eat All Grains](./leetcode/2604-MinimumTimeToEatAllGrains.go)   
 [2605. Form Smallest Number From Two Digit Arrays](./leetcode/2605-FormSmallestNumberFromTwoDigitArrays.go)   
 [2607. Make K-Subarray Sums Equal](./leetcode/2607-MakeKSubarraySumsEqual.go)   
+[2610. Convert an Array Into a 2D Array With Conditions](./leetcode/2610-ConvertAnArrayIntoA2DArrayWithConditions.go)   
 [2613. Beautiful Pairs](./leetcode/2613-BeautifulPairs.go)   
 [2614. Prime In Diagonal](./leetcode/2614-PrimeInDiagonal.go)   
 [2615. Sum of Distances](./leetcode/2615-SumOfDistances.go)   
