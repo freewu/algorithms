@@ -1440,6 +1440,7 @@
 [2943. Maximize Area of Square Hole in Grid](./leetcode/2943-MaximizeAreaOfSquareHoleInGrid.go)   
 [2944. Minimum Number of Coins for Fruits](./leetcode/2944-MinimumNumberOfCoinsForFruits.go)   
 [2946. Matrix Similarity After Cyclic Shifts](./leetcode/2946-MatrixSimilarityAfterCyclicShifts.go)   
+[2948. Make Lexicographically Smallest Array by Swapping Elements](./leetcode/2948-MakeLexicographicallySmallestArrayBySwappingElements.go)   
 [2951. Find the Peaks](./leetcode/2951-FindThePeaks.go)   
 [2952. Minimum Number of Coins to be Added](./leetcode/2952-MinimumNumberOfCoinsToBeAdded.go)   
 [2956. Find Common Elements Between Two Arrays](./leetcode/2956-FindCommonElementsBetweenTwoArrays.go)   
