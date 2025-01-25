@@ -1386,6 +1386,7 @@
 [2765. Longest Alternating Subarray](./leetcode/2765-LongestAlternatingSubarray.go)   
 [2766. Relocate Marbles](./leetcode/2766-RelocateMarbles.go)   
 [2768. Number of Black Blocks](./leetcode/2768-NumberOfBlackBlocks.go)   
+[2770. Maximum Number of Jumps to Reach the Last Index](./leetcode/2770-MaximumNumberOfJumpsToReachTheLastIndex.go)   
 [2771. Longest Non-decreasing Subarray From Two Arrays](./leetcode/2771-LongestNon-DecreasingSubarrayFromTwoArrays.go)   
 [2772. Apply Operations to Make All Array Elements Equal to Zero](./leetcode/2772-ApplyOperationsToMakeAllArrayElementsEqualToZero.go)   
 [2778. Sum of Squares of Special Elements](./leetcode/2778-SumOfSquaresOfSpecialElements.go)   
