@@ -3819,6 +3819,7 @@ LCR 185. 统计结果概率
 [LCP 01. 猜数字](./leetcode/LCP01-GuessNumbers.go)   
 [LCP 02. Deep Dark Fraction](./leetcode/LCP02-DeepDarkFraction.go)   
 [LCP 10. 二叉树任务调度](./leetcode/LCP10-BinaryTreeTaskScheduling.go)   
+[LCP 13. 寻宝](./leetcode/LCP13-TreasureHunt.go)   
 [LCP 15. 游乐园的迷宫](./leetcode/LCP15-MazeOfAmusementPark.go)   
 [LCP 24. 数字游戏](./leetcode/LCP24-NumberGame.go)   
 [LCP 27. 黑盒光线反射](./leetcode/LCP27-BlackBox.go)   
