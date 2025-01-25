@@ -1342,6 +1342,7 @@
 [2607. Make K-Subarray Sums Equal](./leetcode/2607-MakeKSubarraySumsEqual.go)   
 [2610. Convert an Array Into a 2D Array With Conditions](./leetcode/2610-ConvertAnArrayIntoA2DArrayWithConditions.go)   
 [2611. Mice and Cheese](./leetcode/2611-MiceAndCheese.go)   
+[2612. Minimum Reverse Operations](./leetcode/2612-MinimumReverseOperations.go)   
 [2613. Beautiful Pairs](./leetcode/2613-BeautifulPairs.go)   
 [2614. Prime In Diagonal](./leetcode/2614-PrimeInDiagonal.go)   
 [2615. Sum of Distances](./leetcode/2615-SumOfDistances.go)   
