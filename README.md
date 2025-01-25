@@ -1617,6 +1617,7 @@
 [3347. Maximum Frequency of an Element After Performing Operations II](./leetcode/3347-MaximumFrequencyOfAnElementAfterPerformingOperationsII.go)   
 [3349. Adjacent Increasing Subarrays Detection I](./leetcode/3349-AdjacentIncreasingSubarraysDetectionI.go)   
 [3350. Adjacent Increasing Subarrays Detection II](./leetcode/3350-AdjacentIncreasingSubarraysDetectionII.go)   
+[3351. Sum of Good Subsequences](./leetcode/3351-SumOfGoodSubsequences.go)   
 [3353. Minimum Total Operations](./leetcode/3353-MinimumTotalOperations.go)   
 [3355. Zero Array Transformation I](./leetcode/3355-ZeroArrayTransformationI.go)   
 [3356. Zero Array Transformation II](./leetcode/3356-ZeroArrayTransformationII.go)   
