@@ -1352,6 +1352,7 @@
 [2640. Find the Score of All Prefixes of an Array](./leetcode/2640-FindTheScoreOfAllPrefixesOfAnArray.go)   
 [2643. Row With Maximum Ones](./leetcode/2643-RowWithMaximumOnes.go)   
 [2653. Sliding Subarray Beauty](./leetcode/2653-SlidingSubarrayBeauty.go)   
+[2654. Minimum Number of Operations to Make All Array Elements Equal to 1](./leetcode/2654-MinimumNumberOfOperationsToMakeAllArrayElementsEqualToOne.go)   
 [2655. Find Maximal Uncovered Ranges](./leetcode/2655-FindMaximalUncoveredRanges.go)   
 [2657. Find the Prefix Common Array of Two Arrays](./leetcode/2657-FindThePrefixCommonArrayOfTwoArrays.go)   
 [2658. Maximum Number of Fish in a Grid](./leetcode/2658-MaximumNumberOfFishInAGrid.go)   
