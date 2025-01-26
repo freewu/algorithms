@@ -2526,6 +2526,7 @@
 [2647. Color the Triangle Red](./leetcode/2647-ColorTheTriangleRed.go)   
 [2651. Calculate Delayed Arrival Time](./leetcode/2651-CalculateDelayedArrivalTime.go)   
 [2652. Sum Multiples](./leetcode/2652-SumMultiples.go)   
+[2682. Find the Losers of the Circular Game](./leetcode/2682-FindTheLosersOfTheCircularGame.go)   
 [2698. Find the Punishment Number of an Integer](./leetcode/2698-FindThePunishmentNumberOfAnInteger.go)   
 [2729. Check if The Number is Fascinating](./leetcode/2729-CheckIfTheNumberIsFascinating.go)   
 [2739. Total Distance Traveled](./leetcode/2739-TotalDistanceTraveled.go)   
