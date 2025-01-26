@@ -35,44 +35,79 @@ package main
 
 import "fmt"
 
-// 解答错误 834 / 843 
+// // 解答错误 834 / 843 
+// func subsequencesWithMiddleMode(nums []int) int {
+//     n, mod := len(nums), 1_000_000_007
+//     res := n * (n - 1) * (n - 2) * (n - 3) * (n - 4) / 120 // 所有方案数
+//     suf := map[int]int{}
+//     for _, num := range nums {
+//         suf[num]++
+//     }
+//     comb2 := func (num int) int { return num * (num - 1) / 2 }
+//     pre := make(map[int]int, len(suf)) // 预分配空间
+//     var cp, cs, ps, p2s, ps2 int
+//     for _, c := range suf {
+//         cs += comb2(c)
+//     }
+//     // 枚举 x，作为子序列正中间的数
+//     for left, x := range nums[:n-2] {
+//         suf[x]--
+//         px, sx := pre[x], suf[x]
+//         cs -= sx
+//         ps -= px
+//         p2s -= px * px
+//         ps2 -= (sx*2 + 1) * px
+//         right := n - 1 - left
+//         res -= (comb2(left-px) * comb2(right-sx)) % mod
+//         res -= ((cp - comb2(px)) * sx * (right - sx)) % mod
+//         res -= ((cs - comb2(sx)) * px * (left - px)) % mod
+//         res -= (((ps-px*sx)*(right-sx) - (ps2 - px*sx*sx)) * px) % mod
+//         res -= (((ps-px*sx)*(left-px)  - (p2s - px*px*sx)) * sx) % mod
+//         cp += px
+//         ps += sx
+//         ps2 += sx * sx
+//         p2s += (px*2 + 1) * sx
+//         pre[x]++
+//     }
+//     return res % mod
+// }
+
 func subsequencesWithMiddleMode(nums []int) int {
     n, mod := len(nums), 1_000_000_007
-    res := n * (n - 1) * (n - 2) * (n - 3) * (n - 4) / 120 // 所有方案数
-    suf := map[int]int{}
+    res := n * (n - 1) * (n - 2) % mod * (n - 3) % mod * (n - 4) % mod * 808333339 % mod
+    suf := make(map[int]int)
     for _, num := range nums {
         suf[num]++
     }
-    comb2 := func (num int) int { return num * (num - 1) / 2 }
+    comb2 := func(num int) int { return num * (num - 1) / 2 % mod }
     pre := make(map[int]int, len(suf)) // 预分配空间
     var cp, cs, ps, p2s, ps2 int
     for _, c := range suf {
         cs += comb2(c)
     }
+    cs %= mod
     // 枚举 x，作为子序列正中间的数
     for left, x := range nums[:n-2] {
         suf[x]--
-        px, sx := pre[x], suf[x]
+        px, sx := pre[x],  suf[x]
         cs -= sx
         ps -= px
         p2s -= px * px
         ps2 -= (sx*2 + 1) * px
-
         right := n - 1 - left
-        res -= (comb2(left-px) * comb2(right-sx)) % mod
-        res -= ((cp - comb2(px)) * sx * (right - sx)) % mod
-        res -= ((cs - comb2(sx)) * px * (left - px)) % mod
-        res -= (((ps-px*sx)*(right-sx) - (ps2 - px*sx*sx)) * px) % mod
-        res -= (((ps-px*sx)*(left-px)  - (p2s - px*px*sx)) * sx) % mod
-
+        res -= comb2(left-px) * comb2(right-sx)
+        res -= (cp - comb2(px)) * sx % mod * (right - sx)
+        res -= (cs - comb2(sx)) * px % mod * (left - px)
+        res -= ((ps-px*sx)*(right-sx) - (ps2 - px*sx*sx)) % mod * px
+        res -= ((ps-px*sx)*(left-px) - (p2s - px*px*sx)) % mod * sx
+        res %= mod
         cp += px
         ps += sx
         ps2 += sx * sx
         p2s += (px*2 + 1) * sx
-
         pre[x]++
     }
-    return res % mod
+    return (res + mod) % mod
 }
 
 func main() {
