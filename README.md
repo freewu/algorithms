@@ -1357,6 +1357,7 @@
 [2656. Maximum Sum With Exactly K Elements](./leetcode/2656-MaximumSumWithExactlyKElements.go)   
 [2657. Find the Prefix Common Array of Two Arrays](./leetcode/2657-FindThePrefixCommonArrayOfTwoArrays.go)   
 [2658. Maximum Number of Fish in a Grid](./leetcode/2658-MaximumNumberOfFishInAGrid.go)   
+[2659. Make Array Empty](./leetcode/2659-MakeArrayEmpty.go)   
 [2660. Determine the Winner of a Bowling Game](./leetcode/2660-DetermineTheWinnerOfABowlingGame.go)   
 [2661. First Completely Painted Row or Column](./leetcode/2661-FirstCompletelyPaintedRowOrColumn.go)   
 [2662. Minimum Cost of a Path With Special Roads](./leetcode/2662-MinimumCostOfAPathWithSpecialRoads.go)   
