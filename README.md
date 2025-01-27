@@ -1432,6 +1432,7 @@
 [2899. Last Visited Integers](./leetcode/2899-LastVisitedIntegers.go)   
 [2900. Longest Unequal Adjacent Groups Subsequence I](./leetcode/2900-LongestUnequalAdjacentGroupsSubsequenceI.go)   
 [2901. Longest Unequal Adjacent Groups Subsequence II](./leetcode/2901-LongestUnequalAdjacentGroupsSubsequenceII.go)   
+[2902. Count of Sub-Multisets With Bounded Sum](./leetcode/2902-CountOfSubMultisetsWithBoundedSum.go)   
 [2903. Find Indices With Index and Value Difference I](./leetcode/2903-FindIndicesWithIndexAndValueDifferenceI.go)   
 [2905. Find Indices With Index and Value Difference II](./leetcode/2905-FindIndicesWithIndexAndValueDifferenceII.go)   
 [2906. Construct Product Matrix](./leetcode/2906-ConstructProductMatrix.go)   
