@@ -1423,6 +1423,7 @@
 [2863. Maximum Length of Semi-Decreasing Subarrays](./leetcode/2863-MaximumLengthOfSemiDecreasingSubarrays.go)   
 [2865. Beautiful Towers I](./leetcode/2865-BeautifulTowersI.go)   
 [2868. The Wording Game](./leetcode/2868-TheWordingGame.go)   
+[2869. Minimum Operations to Collect Elements](./leetcode/2869-MinimumOperationsToCollectElements.go)   
 [2873. Maximum Value of an Ordered Triplet I](./leetcode/2873-MaximumValueOfAnOrderedTripletI.go)   
 [2874. Maximum Value of an Ordered Triplet II](./leetcode/2874-MaximumValueOfAnOrderedTripletII.go)   
 [2892. Minimizing Array After Replacing Pairs With Their Product](./leetcode/2892-MinimizingArrayAfterReplacingPairsWithTheirProduct.go)   
