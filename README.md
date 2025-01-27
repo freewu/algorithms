@@ -1420,6 +1420,7 @@
 [2859. Sum of Values at Indices With K Set Bits](./leetcode/2859-SumOfValuesAtIndicesWithKSetBits.go)   
 [2860. Happy Students](./leetcode/2860-HappyStudents.go)   
 [2861. Maximum Number of Alloys](./leetcode/2861-MaximumNumberOfAlloys.go)   
+[2862. Maximum Element-Sum of a Complete Subset of Indices](./leetcode/2862-MaximumElementSumOfACompleteSubsetOfIndices.go)   
 [2863. Maximum Length of Semi-Decreasing Subarrays](./leetcode/2863-MaximumLengthOfSemiDecreasingSubarrays.go)   
 [2865. Beautiful Towers I](./leetcode/2865-BeautifulTowersI.go)   
 [2866. Beautiful Towers II](./leetcode/2866-BeautifulTowersII.go)   
