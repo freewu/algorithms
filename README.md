@@ -2122,6 +2122,7 @@
 [2712. Minimum Cost to Make All Characters Equal](./leetcode/2712-MinimumCostToMakeAllCharactersEqual.go)   
 [2716. Minimize String Length](./leetcode/2716-MinimizeStringLength.go)   
 [2719. Count of Integers](./leetcode/2719-CountOfIntegers.go)   
+[2730. Find the Longest Semi-Repetitive Substring](./leetcode/2730-FindTheLongestSemiRepetitiveSubstring.go)   
 [2734. Lexicographically Smallest String After Substring Operation](./leetcode/2734-LexicographicallySmallestStringAfterSubstringOperation.go)   
 [2743. Count Substrings Without Repeating Character](./leetcode/2743-CountSubstringsWithoutRepeatingCharacter.go)   
 [2800. Shortest String That Contains Three Strings](./leetcode/2800-ShortestStringThatContainsThreeStrings.go)   
