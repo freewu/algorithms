@@ -50,25 +50,34 @@ func containsNearbyDuplicate(nums []int, k int) bool {
 }
 
 // best solution
-func containsNearbyDuplicateBest(nums []int, k int) bool {
-    m := make(map[int]int, len(nums))
+func containsNearbyDuplicate1(nums []int, k int) bool {
+    mp := make(map[int]int, len(nums))
     for i, v := range nums {
         // 如果存在重复 且 下标差值 <= k
         // 满足 nums[i] == nums[j] 且 abs(i - j) <= k
-        if index, ok := m[v]; ok && i - index <= k {
+        if index, ok := mp[v]; ok && i - index <= k {
             return true
         }
-        m[v] = i
+        mp[v] = i
     }
     return false
 }
 
 func main() {
+    // Example 1:
+    // Input: nums = [1,2,3,1], k = 3
+    // Output: true
     fmt.Printf("containsNearbyDuplicate([]int{ 1,2,3,1 },3) = %v\n",containsNearbyDuplicate([]int{ 1,2,3,1 },3)) // true
+    // Example 2:
+    // Input: nums = [1,0,1,1], k = 1
+    // Output: true
     fmt.Printf("containsNearbyDuplicate([]int{ 1,0,1,1},1) = %v\n",containsNearbyDuplicate([]int{ 1,0,1,1},1)) // true
+    // Example 3:
+    // Input: nums = [1,2,3,1,2,3], k = 2
+    // Output: false
     fmt.Printf("containsNearbyDuplicate([]int{ 1,2,3,1,2,3},2) = %v\n",containsNearbyDuplicate([]int{ 1,2,3,1,2,3},2)) // false
 
-    fmt.Printf("containsNearbyDuplicateBest([]int{ 1,2,3,1 },3) = %v\n",containsNearbyDuplicateBest([]int{ 1,2,3,1 },3)) // true
-    fmt.Printf("containsNearbyDuplicateBest([]int{ 1,0,1,1},1) = %v\n",containsNearbyDuplicateBest([]int{ 1,0,1,1},1)) // true
-    fmt.Printf("containsNearbyDuplicateBest([]int{ 1,2,3,1,2,3},2) = %v\n",containsNearbyDuplicateBest([]int{ 1,2,3,1,2,3},2)) // false
+    fmt.Printf("containsNearbyDuplicate1([]int{ 1,2,3,1 },3) = %v\n",containsNearbyDuplicate1([]int{ 1,2,3,1 },3)) // true
+    fmt.Printf("containsNearbyDuplicate1([]int{ 1,0,1,1},1) = %v\n",containsNearbyDuplicate1([]int{ 1,0,1,1},1)) // true
+    fmt.Printf("containsNearbyDuplicate1([]int{ 1,2,3,1,2,3},2) = %v\n",containsNearbyDuplicate1([]int{ 1,2,3,1,2,3},2)) // false
 }
