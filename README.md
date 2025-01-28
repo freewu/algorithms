@@ -1380,6 +1380,7 @@
 [2728. Count Houses in a Circular Street](./leetcode/2728-CountHousesInACircularStreet.go)   
 [2731. Movement of Robots](./leetcode/2731-MovementOfRobots.go)   
 [2732. Find a Good Subset of the Matrix](./leetcode/2732-FindAGoodSubsetOfTheMatrix.go)   
+[2733. Neither Minimum nor Maximum](./leetcode/2733-NeitherMinimumNorMaximum.go)   
 [2740. Find the Value of the Partition](./leetcode/2740-FindTheValueOfThePartition.go)   
 [2741. Special Permutations](./leetcode/2741-SpecialPermutations.go)   
 [2742. Painting the Walls](./leetcode/2742-PaintingTheWalls.go)   
