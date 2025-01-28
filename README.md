@@ -1382,6 +1382,7 @@
 [2732. Find a Good Subset of the Matrix](./leetcode/2732-FindAGoodSubsetOfTheMatrix.go)   
 [2733. Neither Minimum nor Maximum](./leetcode/2733-NeitherMinimumNorMaximum.go)   
 [2735. Collecting Chocolates](./leetcode/2735-CollectingChocolates.go)   
+[2736. Maximum Sum Queries](./leetcode/2736-MaximumSumQueries.go)   
 [2740. Find the Value of the Partition](./leetcode/2740-FindTheValueOfThePartition.go)   
 [2741. Special Permutations](./leetcode/2741-SpecialPermutations.go)   
 [2742. Painting the Walls](./leetcode/2742-PaintingTheWalls.go)   
