@@ -13,52 +13,57 @@ package main
 // Example 2:
 // Input: "               ", 5
 // Output: "%20%20%20%20%20"
- 
+
 // Note:
-// 	0 <= S.length <= 500000
+//     0 <= S.length <= 500000
 
 import "fmt"
 
 func replaceSpaces(S string, length int) string {
-	res := []byte{}
-	s := byte(' ')
-	for i := 0; i < len(S); i += 1 {
-		// 为 '' 替换成 %20
-		if S[i] == s  {
-			res = append(res,'%')
-			res = append(res,'2')
-			res = append(res,'0')
-		} else {
-			res = append(res,S[i])
-		}
-		if i == length - 1 {
-			break
-		}
-	}
-	return string(res)
+    res := []byte{}
+    for i := 0; i < len(S); i += 1 {
+        // 为 '' 替换成 %20
+        if S[i] == ' ' {
+            res = append(res,'%')
+            res = append(res,'2')
+            res = append(res,'0')
+        } else {
+            res = append(res,S[i])
+        }
+        if i == length - 1 {
+            break
+        }
+    }
+    return string(res)
 }
 
 func replaceSpaces1(S string, length int) string {
-    bytes := []byte(S)
-    i, j := len(S)-1, length-1
-    for j >= 0 {
-        if bytes[j] == ' ' {
-            bytes[i] = '0'
-            bytes[i-1] = '2'
-            bytes[i-2] = '%'
-            i -= 3
+    bs := []byte(S)
+    j := len(bs) - 1
+    for i := length - 1; i >= 0; i-- {
+        if bs[i] == ' ' {
+            bs[j] = '0'
+            bs[j - 1] = '2'
+            bs[j - 2] = '%'
+            j -= 3
         } else {
-            bytes[i] = bytes[j]
-            i--
+            bs[j] = bs[i]
+            j--
         }
-        j--
     }
-    return string(bytes[i+1:])
+    return string(bs[j+1:])
 }
 
 func main() {
-	fmt.Println(replaceSpaces("Mr John Smith ",13))
-	fmt.Println(replaceSpaces("               ",5))
-	fmt.Println(replaceSpaces1("Mr John Smith ",13))
-	fmt.Println(replaceSpaces1("               ",5))
+    // Example 1:
+    // Input: "Mr John Smith ", 13
+    // Output: "Mr%20John%20Smith"
+    fmt.Println(replaceSpaces("Mr John Smith ", 13)) // "Mr%20John%20Smith"
+    // Example 2:
+    // Input: "               ", 5
+    // Output: "%20%20%20%20%20"
+    fmt.Println(replaceSpaces("               ", 5)) // "%20%20%20%20%20"
+
+    fmt.Println(replaceSpaces1("Mr John Smith ", 13)) // "Mr%20John%20Smith"
+    fmt.Println(replaceSpaces1("               ", 5)) // "%20%20%20%20%20"
 }
