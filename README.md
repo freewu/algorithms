@@ -3870,6 +3870,7 @@ LCR 185. 统计结果概率
 [面试题 01.08. Zero Matrix LCCI](./leetcode/LCCI0108-ZeroMatrix.go)   
 [面试题 01.09. String Rotation LCCI](./leetcode/LCCI0109-StringRotation.go)   
 [面试题 02.01. Remove Duplicate Node LCCI](./leetcode/LCCI0201-RemoveDuplicateNode.go)   
+[面试题 02.02. Kth Node From End of List LCCI](./leetcode/LCCI0202-KthNodeFromEndOfList.go)   
 [面试题 05.06. Convert Integer LCCI](./leetcode/LCCI0506-ConvertInteger.go)   
 [面试题 08.02. Robot in a Grid LCCI](./leetcode/LCCI0802-RobotInAGrid.go)   
 [面试题 17.01. Add Without Plus LCCI](./leetcode/LCCI1701-AddWithoutPlus.go)   
