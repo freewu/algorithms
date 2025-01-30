@@ -2546,6 +2546,7 @@
 [2729. Check if The Number is Fascinating](./leetcode/2729-CheckIfTheNumberIsFascinating.go)   
 [2739. Total Distance Traveled](./leetcode/2739-TotalDistanceTraveled.go)   
 [2749. Minimum Operations to Make the Integer Zero](./leetcode/2749-MinimumOperationsToMakeTheIntegerZero.go)   
+[2745. Construct the Longest New String](./leetcode/2745-ConstructTheLongestNewString.go)   
 [2761. Prime Pairs With Target Sum](./leetcode/2761-PrimePairsWithTargetSum.go)   
 [2769. Find the Maximum Achievable Number](./leetcode/2769-FindTheMaximumAchievableNumber.go)   
 [2802. Find The K-th Lucky Number](./leetcode/2802-FindTheKthLuckyNumber.go)   
