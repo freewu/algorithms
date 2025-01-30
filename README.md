@@ -1387,6 +1387,7 @@
 [2741. Special Permutations](./leetcode/2741-SpecialPermutations.go)   
 [2742. Painting the Walls](./leetcode/2742-PaintingTheWalls.go)   
 [2744. Find Maximum Number of String Pairs](./leetcode/2744-FindMaximumNumberOfStringPairs.go)   
+[2746. Decremental String Concatenation](./leetcode/2746-DecrementalStringConcatenation.go)   
 [2747. Count Zero Request Servers](./leetcode/2747-CountZeroRequestServers.go)   
 [2748. Number of Beautiful Pairs](./leetcode/2748-NumberOfBeautifulPairs.go)   
 [2750. Ways to Split Array Into Good Subarrays](./leetcode/2750-WaysToSplitArrayIntoGoodSubarrays.go)   
