@@ -2131,6 +2131,7 @@
 [2730. Find the Longest Semi-Repetitive Substring](./leetcode/2730-FindTheLongestSemiRepetitiveSubstring.go)   
 [2734. Lexicographically Smallest String After Substring Operation](./leetcode/2734-LexicographicallySmallestStringAfterSubstringOperation.go)   
 [2743. Count Substrings Without Repeating Character](./leetcode/2743-CountSubstringsWithoutRepeatingCharacter.go)   
+[2767. Partition String Into Minimum Beautiful Substrings](./leetcode/2767-PartitionStringIntoMinimumBeautifulSubstrings.go)   
 [2800. Shortest String That Contains Three Strings](./leetcode/2800-ShortestStringThatContainsThreeStrings.go)   
 [2801. Count Stepping Numbers in Range](./leetcode/2801-CountSteppingNumbersInRange.go)   
 [2810. Faulty Keyboard](./leetcode/2810-FaultyKeyboard.go)   
