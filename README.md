@@ -2149,6 +2149,7 @@
 [2904. Shortest and Lexicographically Smallest Beautiful String](./leetcode/2904-ShortestAndLexicographicallySmallestBeautifulString.go)   
 [2914. Minimum Number of Changes to Make Binary String Beautiful](./leetcode/2914-MinimumNumberOfChangesToMakeBinaryStringBeautiful.go)   
 [2938. Separate Black and White Balls](./leetcode/2938-SeparateBlackAndWhiteBalls.go)   
+[2942. Find Words Containing Character](./leetcode/2942-FindWordsContainingCharacter.go)   
 [2947. Count Beautiful Substrings I](./leetcode/2947-CountBeautifulSubstringsI.go)   
 [2949. Count Beautiful Substrings II](./leetcode/2949-CountBeautifulSubstringsII.go)   
 [2950. Number of Divisible Substrings](./leetcode/2950-NumberOfDivisibleSubstrings.go)   
