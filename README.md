@@ -1466,6 +1466,7 @@
 [2941. Maximum GCD-Sum of a Subarray](./leetcode/2941-MaximumGCDSumOfASubarray.go)   
 [2943. Maximize Area of Square Hole in Grid](./leetcode/2943-MaximizeAreaOfSquareHoleInGrid.go)   
 [2944. Minimum Number of Coins for Fruits](./leetcode/2944-MinimumNumberOfCoinsForFruits.go)   
+[2945. Find Maximum Non-decreasing Array Length](./leetcode/2945-FindMaximumNonDecreasingArrayLength.go)   
 [2946. Matrix Similarity After Cyclic Shifts](./leetcode/2946-MatrixSimilarityAfterCyclicShifts.go)   
 [2948. Make Lexicographically Smallest Array by Swapping Elements](./leetcode/2948-MakeLexicographicallySmallestArrayBySwappingElements.go)   
 [2951. Find the Peaks](./leetcode/2951-FindThePeaks.go)   
