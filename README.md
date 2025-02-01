@@ -1414,6 +1414,7 @@
 [2799. Count Complete Subarrays in an Array](./leetcode/2799-CountCompleteSubarraysInAnArray.go)   
 [2808. Minimum Seconds to Equalize a Circular Array](./leetcode/2808-MinimumSecondsToEqualizeACircularArray.go)   
 [2809. Minimum Time to Make Array Sum At Most x](./leetcode/2809-MinimumTimeToMakeArraySumAtMostX.go)   
+[2811. Check if it is Possible to Split Array](./leetcode/2811-CheckIfItIsPossibleToSplitArray.go)   
 [2812. Find the Safest Path in a Grid](./leetcode/2812-FindTheSafestPathInAGrid.go)   
 [2813. Maximum Elegance of a K-Length Subsequence](./leetcode/2813-MaximumEleganceOfAK-LengthSubsequence.go)   
 [2814. Minimum Time Takes to Reach Destination Without Drowning](./leetcode/2814-MinimumTimeTakesToReachDestinationWithoutDrowning.go)   
