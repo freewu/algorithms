@@ -2598,6 +2598,7 @@
 [3345. Smallest Divisible Digit Product I](./leetcode/3345-SmallestDivisibleDigitProductI.go)   
 [3395. Subsequences with a Unique Middle Mode I](./leetcode/3395-SubsequencesWithAUniqueMiddleModeI.go)   
 [3416. Subsequences with a Unique Middle Mode II](./leetcode/3416-SubsequencesWithAUniqueMiddleModeII.go)   
+[3437. Permutations III](./leetcode/3437-PermutationsIII.go)   
 
 # Stack
 [225. Implement Stack using Queues](./leetcode/225-ImplementStackUsingQueues.go)   
