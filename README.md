@@ -3869,6 +3869,7 @@ LCR 185. 统计结果概率
 [LCP 54. 夺回据点](./leetcode/LCP54-RetrieveTheStronghold.go)   
 [LCP 58. 积木拼接](./leetcode/LCP58-BuildingBlockSplicing.go)   
 [LCP 61. 气温变化趋势](./leetcode/LCP61-TemperatureTrend.go)   
+[LCP 81. 与非的谜题](./leetcode/LCP81-NAndPuzzle.go)   
 
 # LCS
 [LCS 01. 下载插件](./leetcode/LCS01-DownloadPlugins.go)   
