@@ -3877,6 +3877,7 @@ LCR 185. 统计结果概率
 [LCP 54. 夺回据点](./leetcode/LCP54-RetrieveTheStronghold.go)   
 [LCP 58. 积木拼接](./leetcode/LCP58-BuildingBlockSplicing.go)   
 [LCP 61. 气温变化趋势](./leetcode/LCP61-TemperatureTrend.go)   
+[LCP 68. 美观的花束](./leetcode/LCP68-BeautifulFlowers.go)   
 [LCP 81. 与非的谜题](./leetcode/LCP81-NAndPuzzle.go)   
 [LCP 82. 万灵之树](./leetcode/LCP82-TheTreeOfAllSouls.go)   
 
@@ -3901,7 +3902,6 @@ LCR 185. 统计结果概率
 [面试题 05.06. Convert Integer LCCI](./leetcode/LCCI0506-ConvertInteger.go)   
 [面试题 08.02. Robot in a Grid LCCI](./leetcode/LCCI0802-RobotInAGrid.go)   
 [面试题 17.01. Add Without Plus LCCI](./leetcode/LCCI1701-AddWithoutPlus.go)   
-[面试题 17.08. Circus Tower LCCI](./leetcode/LCCI1708-AddWithoutPlus.go)   
-
+[面试题 17.08. Circus Tower LCCI](./leetcode/LCCI1708-CircusTower.go)   
 [面试题 17.21. Volume of Histogram LCCI](./leetcode/LCCI1721-VolumeOfHistogram.go)   
 [面试题 17.26. Sparse Similarity LCCI](./leetcode/LCCI1726-SparseSimilarity.go)   
