@@ -2566,6 +2566,7 @@
 [2802. Find The K-th Lucky Number](./leetcode/2802-FindTheKthLuckyNumber.go)   
 [2806. Account Balance After Rounded Purchase](./leetcode/2806-AccountBalanceAfterRoundedPurchase.go)   
 [2827. Number of Beautiful Integers in the Range](./leetcode/2827-NumberOfBeautifulIntegersInTheRange.go)   
+[2829. Determine the Minimum Sum of a k-avoiding Array](./leetcode/2829-DetermineTheMinimumSumOfAKAvoidingArray.go)   
 [2834. Find the Minimum Possible Sum of a Beautiful Array](./leetcode/2834-FindTheMinimumPossibleSumOfABeautifulArray.go)    
 [2843. Count Symmetric Integers](./leetcode/2843-CountSymmetricIntegers.go)   
 [2847. Smallest Number With Given Digit Product](./leetcode/2847-SmallestNumberWithGivenDigitProduct.go)   
