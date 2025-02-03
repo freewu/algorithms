@@ -1484,6 +1484,7 @@
 [2960. Count Tested Devices After Test Operations](./leetcode/2960-CountTestedDevicesAfterTestOperations.go)   
 [2961. Double Modular Exponentiation](./leetcode/2961-DoubleModularExponentiation.go)   
 [2962. Count Subarrays Where Max Element Appears at Least K Times](./leetcode/2962-CountSubarraysWhereMaxElementAppearsAtLeastKTimes.go)   
+[2963. Count the Number of Good Partitions](./leetcode/2963-CountTheNumberOfGoodPartitions.go)   
 [2964. Number of Divisible Triplet Sums](./leetcode/2964-NumberOfDivisibleTripletSums.go)   
 [2965. Find Missing and Repeated Values](./leetcode/2965-FindMissingAndRepeatedValues.go)   
 [2966. Divide Array Into Arrays With Max Difference](./leetcode/2966-DivideArrayIntoArraysWithMaxDifference.go)   
