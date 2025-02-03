@@ -1487,6 +1487,7 @@
 [2964. Number of Divisible Triplet Sums](./leetcode/2964-NumberOfDivisibleTripletSums.go)   
 [2965. Find Missing and Repeated Values](./leetcode/2965-FindMissingAndRepeatedValues.go)   
 [2966. Divide Array Into Arrays With Max Difference](./leetcode/2966-DivideArrayIntoArraysWithMaxDifference.go)   
+[2967. Minimum Cost to Make Array Equalindromic](./leetcode/2967-MinimumCostToMakeArrayEqualindromic.go)   
 [2969. Minimum Number of Coins for Fruits II](./leetcode/2969-MinimumNumberOfCoinsForFruitsII.go)   
 [2970. Count the Number of Incremovable Subarrays I](./leetcode/2970-CountTheNumberOfIncremovableSubarraysI.go)   
 [2971. Find Polygon With the Largest Perimeter](./leetcode/2971-FindPolygonWithTheLargestPerimeter.go)   
