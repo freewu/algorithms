@@ -1427,6 +1427,7 @@
 [2830. Maximize the Profit as the Salesman](./leetcode/2830-MaximizeTheProfitAsTheSalesman.go)   
 [2831. Find the Longest Equal Subarray](./leetcode/2831-FindTheLongestEqualSubarray.go)   
 [2832. Maximal Range That Each Element Is Maximum in It](./leetcode/2832-MaximalRangeThatEachElementIsMaximumInIt.go)   
+[2835. Minimum Operations to Form Subsequence With Target Sum](./leetcode/2835-MinimumOperationsToFormSubsequenceWithTargetSum.go)   
 [2838. Maximum Coins Heroes Can Collect](./leetcode/2838-MaximumCoinsHeroesCanCollect.go)   
 [2848. Points That Intersect With Cars](./leetcode/2848-PointsThatIntersectWithCars.go)   
 [2850. Minimum Moves to Spread Stones Over Grid](./leetcode/2850-MinimumMovesToSpreadStonesOverGrid.go)   
