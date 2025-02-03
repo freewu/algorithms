@@ -1424,6 +1424,7 @@
 [2819. Minimum Relative Loss After Buying Chocolates](./leetcode/2819-MinimumRelativeLossAfterBuyingChocolates.go)   
 [2824. Count Pairs Whose Sum is Less than Target](./leetcode/2824-CountPairsWhoseSumIsLessThanTarget.go)   
 [2826. Sorting Three Groups](./leetcode/2826-SortingThreeGroups.go)   
+[2830. Maximize the Profit as the Salesman](./leetcode/2830-MaximizeTheProfitAsTheSalesman.go)   
 [2831. Find the Longest Equal Subarray](./leetcode/2831-FindTheLongestEqualSubarray.go)   
 [2832. Maximal Range That Each Element Is Maximum in It](./leetcode/2832-MaximalRangeThatEachElementIsMaximumInIt.go)   
 [2838. Maximum Coins Heroes Can Collect](./leetcode/2838-MaximumCoinsHeroesCanCollect.go)   
