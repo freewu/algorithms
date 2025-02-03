@@ -2147,6 +2147,7 @@
 [2810. Faulty Keyboard](./leetcode/2810-FaultyKeyboard.go)   
 [2825. Make String a Subsequence Using Cyclic Increments](./leetcode/2825-MakeStringASubsequenceUsingCyclicIncrements.go)   
 [2828. Check if a String Is an Acronym of Words](./leetcode/2828-CheckIfAStringIsAnAcronymOfWords.go)   
+[2833. Furthest Point From Origin](./leetcode/2833-FurthestPointFromOrigin.go)   
 [2839. Check if Strings Can be Made Equal With Operations I](./leetcode/2839-CheckIfStringsCanBeMadeEqualWithOperationsI.go)   
 [2840. Check if Strings Can be Made Equal With Operations II](./leetcode/2840-CheckIfStringsCanBeMadeEqualWithOperationsII.go)   
 [2844. Minimum Operations to Make a Special Number](./leetcode/2844-MinimumOperationsToMakeASpecialNumber.go)   
