@@ -1669,6 +1669,7 @@
 [3416. Subsequences with a Unique Middle Mode II](./leetcode/3416-SubsequencesWithAUniqueMiddleModeII.go)   
 [3418. Maximum Amount of Money Robot Can Earn](./leetcode/3418-MaximumAmountOfMoneyRobotCanEarn.go)   
 [3422. Minimum Operations to Make Subarray Elements Equal](./leetcode/3422-MinimumOperationsToMakeSubarrayElementsEqual.go)   
+[3429. Paint House IV](./leetcode/3429-PaintHouseIV.go)   
 [3431. Minimum Unlocked Indices to Sort Nums](./leetcode/3431-MinimumUnlockedIndicesToSortNums.go)   
 
 # String
