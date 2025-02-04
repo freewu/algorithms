@@ -2217,6 +2217,7 @@
 [3302. Find the Lexicographically Smallest Valid Sequence](./leetcode/3302-FindTheLexicographicallySmallestValidSequence.go)   
 [3305. Count of Substrings Containing Every Vowel and K Consonants I](./leetcode/3305-CountOfSubstringsContainingEveryVowelAndKConsonantsI.go)   
 [3306. Count of Substrings Containing Every Vowel and K Consonants II](./leetcode/3306-CountOfSubstringsContainingEveryVowelAndKConsonantsII.go)   
+[3320. Count The Number of Winning Sequences](./leetcode/3320-CountTheNumberOfWinningSequences.go)   
 [3325. Count Substrings With K-Frequency Characters I](./leetcode/3325-CountSubstringsWithKFrequencyCharactersI.go)   
 [3329. Count Substrings With K-Frequency Characters II](./leetcode/3329-CountSubstringsWithKFrequencyCharactersII.go)   
 [3330. Find the Original Typed String I](./leetcode/3330-FindTheOriginalTypedStringI.go)   
