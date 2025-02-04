@@ -1532,6 +1532,7 @@
 [3067. Count Pairs of Connectable Servers in a Weighted Tree Network](./leetcode/3067-CountPairsOfConnectableServersInAWeightedTreeNetwork.go)   
 [3068. Find the Maximum Sum of Node Values](./leetcode/3068-FindTheMaximumSumOfNodeValues.go)   
 [3069. Distribute Elements Into Two Arrays I](./leetcode/3069-DistributeElementsIntoTwoArraysI.go)   
+[3070. Count Submatrices with Top-Left Element and Sum Less Than k](./leetcode/3070-CountSubmatricesWithTopLeftElementAndSumLessThanK.go)   
 [3071. Minimum Operations to Write the Letter Y on a Grid](./leetcode/3071-MinimumOperationsToWriteTheLetterYOnAGrid.go)   
 [3072. Distribute Elements Into Two Arrays II](./leetcode/3072-DistributeElementsIntoTwoArraysII.go)   
 [3073. Maximum Increasing Triplet Value](./leetcode/3073-MaximumIncreasingTripletValue.go)   
