@@ -1633,6 +1633,7 @@
 [3273. Minimum Amount of Damage Dealt to Bob](./leetcode/3273-MinimumAmountOfDamageDealtToBob.go)   
 [3276. Select Cells in Grid With Maximum Score](./leetcode/3276-SelectCellsInGridWithMaximumScore.go)   
 [3279. Maximum Total Area Occupied by Pistons](./leetcode/3279-MaximumTotalAreaOccupiedByPistons.go)   
+[3281. Maximize Score of Numbers in Ranges](./leetcode/3281-MaximizeScoreOfNumbersInRanges.go)   
 [3283. Maximum Number of Moves to Kill All Pawns](./leetcode/3283-MaximumNumberOfMovesToKillAllPawns.go)   
 [3284. Sum of Consecutive Subarrays](./leetcode/3284-SumOfConsecutiveSubarrays.go)   
 [3285. Find Indices of Stable Mountains](./leetcode/3285-FindIndicesOfStableMountains.go)   
