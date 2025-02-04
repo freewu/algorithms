@@ -1508,6 +1508,7 @@
 [3011. Find if Array Can Be Sorted](./leetcode/3011-FindIfArrayCanBeSorted.go)   
 [3018. Maximum Number of Removal Queries That Can Be Processed I](./leetcode/3018-MaximumNumberOfRemovalQueriesThatCanBeProcessedI.go)   
 [3109. Find the Index of Permutation](./leetcode/3109-FindTheIndexOfPermutation.go)   
+[3013. Divide an Array Into Subarrays With Minimum Cost II](./leetcode/3013-DivideAnArrayIntoSubarraysWithMinimumCostII.go)   
 [3023. Find Pattern in Infinite Stream I](./leetcode/3023-FindPatternInInfiniteStreamI.go)   
 [3025. Find the Number of Ways to Place People I](./leetcode/3025-FindTheNumberOfWaysToPlacePeopleI.go)   
 [3026. Maximum Good Subarray Sum](./leetcode/3026-MaximumGoodSubarraySum.go)   
