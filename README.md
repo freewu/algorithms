@@ -1665,6 +1665,7 @@
 [3383. Minimum Runes to Add to Cast Spell](./leetcode/3383-MinimumRunesToAddToCastSpell.go)   
 [3385. Minimum Time to Break Locks II](./leetcode/3385-MinimumTimeToBreakLocksII.go)   
 [3395. Subsequences with a Unique Middle Mode I](./leetcode/3395-SubsequencesWithAUniqueMiddleModeI.go)   
+[3396. Minimum Number of Operations to Make Elements in Array Distinct](./leetcode/3396-MinimumNumberOfOperationsToMakeElementsInArrayDistinct.go)   
 [3400. Maximum Number of Matching Indices After Right Shifts](./leetcode/3400-MaximumNumberOfMatchingIndicesAfterRightShifts.go)   
 [3416. Subsequences with a Unique Middle Mode II](./leetcode/3416-SubsequencesWithAUniqueMiddleModeII.go)   
 [3418. Maximum Amount of Money Robot Can Earn](./leetcode/3418-MaximumAmountOfMoneyRobotCanEarn.go)   
