@@ -3895,6 +3895,7 @@ LCR 185. 统计结果概率
 [LCP 39. 无人机方阵](./leetcode/LCP39-DroneArray.go)   
 [LCP 40. 心算挑战](./leetcode/LCP40-MaxmiumScore.go)   
 [LCP 41. 黑白翻转棋](./leetcode/LCP41-ReversiDeluxe.go)   
+[LCP 47. 入场安检](./leetcode/LCP47-SecurityCheck.go)   
 [LCP 54. 夺回据点](./leetcode/LCP54-RetrieveTheStronghold.go)   
 [LCP 58. 积木拼接](./leetcode/LCP58-BuildingBlockSplicing.go)   
 [LCP 61. 气温变化趋势](./leetcode/LCP61-TemperatureTrend.go)   
