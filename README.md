@@ -3879,6 +3879,7 @@ LCR 185. 统计结果概率
 [LCP 02. 分式化简](./leetcode/LCP02-DeepDarkFraction.go)   
 [LCP 03. 机器人大冒险](./leetcode/LCP03-RobotAdventure.go)   
 [LCP 07. 传递信息](./leetcode/LCP07-PassMessage.go)   
+[LCP 08. 剧情触发时间](./leetcode/LCP08-PlotTriggerTime.go)   
 [LCP 10. 二叉树任务调度](./leetcode/LCP10-BinaryTreeTaskScheduling.go)   
 [LCP 11. 期望个数统计](./leetcode/LCP11-ExpectedQuantityStatistics.go)   
 [LCP 13. 寻宝](./leetcode/LCP13-TreasureHunt.go)   
