@@ -35,12 +35,10 @@ func permuteUnique(nums []int) [][]int {
         }
         for i := 0; i < len(nums); i++ {
             if !used[i] {
-                if i > 0 && nums[i] == nums[i-1] && !used[i-1] { // 去重判断
-                    continue
-                }
+                if i > 0 && nums[i] == nums[i - 1] && !used[i - 1] { continue } // 去重判断
                 used[i] = true
                 p = append(p, nums[i])
-                generatePermutation(nums, index+1, p)
+                generatePermutation(nums, index + 1, p)
                 p = p[:len(p)-1]
                 used[i] = false
             }
@@ -53,7 +51,6 @@ func permuteUnique(nums []int) [][]int {
 func permuteUnique1(nums []int) [][]int {
     res := [][]int{}
     sort.Ints(nums)
-
     var solve func(comb []int, used []bool)
     solve = func(comb []int, used []bool) {
         if len(comb) == len(nums) {
@@ -62,12 +59,8 @@ func permuteUnique1(nums []int) [][]int {
             return
         }
         for i, v := range nums {
-            if used[i] {
-                continue
-            }
-            if i > 0 && nums[i] == nums[i-1] && !used[i-1]{
-                continue
-            }
+            if used[i] { continue  }
+            if i > 0 && nums[i] == nums[i - 1] && !used[i - 1] { continue }
             used[i] = true
             solve(append(comb, v), used)
             used[i] = false
@@ -78,8 +71,15 @@ func permuteUnique1(nums []int) [][]int {
 }
 
 func main() {
+    // Example 1:
+    // Input: nums = [1,1,2]
+    // Output: [[1,1,2], [1,2,1], [2,1,1]]
     fmt.Printf("permuteUnique([]int{1,2,3}) = %v\n", permuteUnique([]int{1,2,3})) // [[1,2,3],[1,3,2],[2,1,3],[2,3,1],[3,1,2],[3,2,1]]
+    // Example 2:
+    // Input: nums = [1,2,3]
+    // Output: [[1,2,3],[1,3,2],[2,1,3],[2,3,1],[3,1,2],[3,2,1]]
     fmt.Printf("permuteUnique([]int{1,1,2}) = %v\n", permuteUnique([]int{1,1,2})) // [[1,1,2], [1,2,1], [2,1,1]]
+    
     fmt.Printf("permuteUnique1([]int{1,2,3}) = %v\n", permuteUnique1([]int{1,2,3})) // [[1,2,3],[1,3,2],[2,1,3],[2,3,1],[3,1,2],[3,2,1]]
     fmt.Printf("permuteUnique1([]int{1,1,2}) = %v\n", permuteUnique1([]int{1,1,2})) //[[1,1,2], [1,2,1], [2,1,1]]
 }
