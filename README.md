@@ -3881,6 +3881,7 @@ LCR 185. 统计结果概率
 [LCP 11. 期望个数统计](./leetcode/LCP11-ExpectedQuantityStatistics.go)   
 [LCP 13. 寻宝](./leetcode/LCP13-TreasureHunt.go)   
 [LCP 15. 游乐园的迷宫](./leetcode/LCP15-MazeOfAmusementPark.go)   
+[LCP 18. 早餐组合](./leetcode/LCP18-BreakfastCombination.go)   
 [LCP 24. 数字游戏](./leetcode/LCP24-NumberGame.go)   
 [LCP 27. 黑盒光线反射](./leetcode/LCP27-BlackBox.go)   
 [LCP 29. 乐团站位](./leetcode/LCP29-BandPositioning.go)   
