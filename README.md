@@ -2165,6 +2165,7 @@
 [2833. Furthest Point From Origin](./leetcode/2833-FurthestPointFromOrigin.go)   
 [2839. Check if Strings Can be Made Equal With Operations I](./leetcode/2839-CheckIfStringsCanBeMadeEqualWithOperationsI.go)   
 [2840. Check if Strings Can be Made Equal With Operations II](./leetcode/2840-CheckIfStringsCanBeMadeEqualWithOperationsII.go)   
+[2842. Count K-Subsequences of a String With Maximum Beauty](./leetcode/2842-CountKSubsequencesOfAStringWithMaximumBeauty.go)   
 [2844. Minimum Operations to Make a Special Number](./leetcode/2844-MinimumOperationsToMakeASpecialNumber.go)   
 [2864. Maximum Odd Binary Number](./leetcode/2864-MaximumOddBinaryNumber.go)   
 [2896. Apply Operations to Make Two Strings Equal](./leetcode/2896-ApplyOperationsToMakeTwoStringsEqual.go)   
