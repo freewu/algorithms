@@ -1431,6 +1431,7 @@
 [2836. Maximize Value of Function in a Ball Passing Game](./leetcode/2836-MaximizeValueOfFunctionInABallPassingGame.go)   
 [2838. Maximum Coins Heroes Can Collect](./leetcode/2838-MaximumCoinsHeroesCanCollect.go)   
 [2841. Maximum Sum of Almost Unique Subarray](./leetcode/2841-MaximumSumOfAlmostUniqueSubarray.go)   
+[2845. Count of Interesting Subarrays](./leetcode/2845-CountOfInterestingSubarrays.go)   
 [2848. Points That Intersect With Cars](./leetcode/2848-PointsThatIntersectWithCars.go)   
 [2850. Minimum Moves to Spread Stones Over Grid](./leetcode/2850-MinimumMovesToSpreadStonesOverGrid.go)   
 [2852. Sum of Remoteness of All Cells](./leetcode/2852-SumOfRemotenessOfAllCells.go)   
