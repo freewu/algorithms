@@ -3904,6 +3904,7 @@ LCR 185. 统计结果概率
 [LCP 47. 入场安检](./leetcode/LCP47-SecurityCheck.go)   
 [LCP 54. 夺回据点](./leetcode/LCP54-RetrieveTheStronghold.go)   
 [LCP 58. 积木拼接](./leetcode/LCP58-BuildingBlockSplicing.go)   
+[LCP 59. 搭桥过河](./leetcode/LCP59-BuildBridge.go)   
 [LCP 61. 气温变化趋势](./leetcode/LCP61-TemperatureTrend.go)   
 [LCP 63. 弹珠游戏](./leetcode/LCP63-MarblesGame.go)   
 [LCP 68. 美观的花束](./leetcode/LCP68-BeautifulFlowers.go)   
