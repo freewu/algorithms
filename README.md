@@ -2588,6 +2588,7 @@
 [2834. Find the Minimum Possible Sum of a Beautiful Array](./leetcode/2834-FindTheMinimumPossibleSumOfABeautifulArray.go)    
 [2843. Count Symmetric Integers](./leetcode/2843-CountSymmetricIntegers.go)   
 [2847. Smallest Number With Given Digit Product](./leetcode/2847-SmallestNumberWithGivenDigitProduct.go)   
+[2849. Determine if a Cell Is Reachable at a Given Time](./leetcode/2849-DetermineIfACellIsReachableAtAGivenTime.go)   
 [2894. Divisible and Non-divisible Sums Difference](./leetcode/2894-DivisibleAndNonDivisibleSumsDifference.go)   
 [2927. Distribute Candies Among Children III](./leetcode/2927-DistributeCandiesAmongChildrenIII.go)   
 [2928. Distribute Candies Among Children I](./leetcode/2928-DistributeCandiesAmongChildrenI.go)   
