@@ -48,7 +48,7 @@ func postorder(root *Node) []int {
     }
     res, stack, m := make([]int, 0),  make([]*Node, 0), map[*Node]int{}
     m[root]++
-    for len(st) > 0 {
+    for len(stack) > 0 {
         tmp := stack[len(stack)-1]
         stack = stack[:len(stack)-1]
         m[tmp]++
@@ -92,5 +92,5 @@ func main() {
 // <img src="https://assets.leetcode.com/uploads/2019/11/08/sample_4_964.png" />
 // Input: root = [1,null,2,3,4,5,null,null,6,7,null,8,null,9,10,null,null,11,null,12,null,13,null,null,14]
 // Output: [2,6,14,11,7,3,12,8,4,13,9,10,5,1]
- 
+fmt.Println()
 }
