@@ -42,18 +42,19 @@ package main
 import "fmt"
 
 func queryResults(limit int, queries [][]int) []int {
-    mp, count, res := map[int]int{}, map[int]int{}, make([]int, len(queries))
-    for i := range queries {
-        label, color := queries[i][0], queries[i][1]
-        if v, ok := mp[label]; ok {
-            count[v]--
-            if count[v] == 0 {
-                delete(count, v)
+    n := len(queries)
+    res, colors, balls := make([]int, 0, n), make(map[int]int), make(map[int]int)
+    for _, query := range queries {
+        ball, color := query[0], query[1] // Extract ball label and color from query
+        if prev, ok := balls[ball]; ok { // Check if ball is already colored
+            colors[prev]-- // Decrement count of the previous color on the ball
+            if colors[prev] == 0 { // If there are no balls with previous color left, remove color from color map
+                delete(colors, prev)
             }
         }
-        mp[label] = color
-        count[color]++
-        res[i] = len(count)
+        balls[ball] = color // Set color of ball to the new color
+        colors[color]++ // Increment the count of the new color
+        res = append(res, len(colors))
     }
     return res
 }
@@ -80,4 +81,7 @@ func main() {
     // After query 3, ball 0 has color 1, balls 1 and 2 have color 2, and ball 3 has color 4.
     // After query 4, ball 0 has color 1, balls 1 and 2 have color 2, ball 3 has color 4, and ball 4 has color 5.
     fmt.Println(queryResults(4,[][]int{{0,1},{1,2},{2,2},{3,4},{4,5}})) // [1,2,2,3,4]
+
+    // fmt.Println(queryResults1(4,[][]int{{1,4},{2,5},{1,3},{3,4}})) // [1,2,2,3]
+    // fmt.Println(queryResults1(4,[][]int{{0,1},{1,2},{2,2},{3,4},{4,5}})) // [1,2,2,3,4]
 }
