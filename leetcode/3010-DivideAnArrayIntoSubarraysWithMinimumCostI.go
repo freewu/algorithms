@@ -70,6 +70,6 @@ func main() {
     // It can be shown that 12 is the minimum cost achievable.
     fmt.Println(minimumCost([]int{10,3,1,1})) // 12
 
-    fmt.Println(minimumCost([]int{1,2,3,4,5,6,7,8,9})) // 12
+    fmt.Println(minimumCost([]int{1,2,3,4,5,6,7,8,9})) // 6
     fmt.Println(minimumCost([]int{9,8,7,6,5,4,3,2,1})) // 12
 }
