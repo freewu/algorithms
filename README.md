@@ -3940,6 +3940,7 @@ LCR 185. 统计结果概率
 [面试题 02.01. Remove Duplicate Node LCCI](./leetcode/LCCI0201-RemoveDuplicateNode.go)   
 [面试题 02.02. Kth Node From End of List LCCI](./leetcode/LCCI0202-KthNodeFromEndOfList.go)   
 [面试题 02.03. Delete Middle Node LCCI](./leetcode/LCCI0203-DeleteMiddleNode.go)   
+[面试题 02.04. Partition List LCCI](./leetcode/LCCI0204-PartitionList.go)   
 [面试题 05.01. Insert Into Bits LCCI](./leetcode/LCCI0501-InsertIntoBits.go)   
 [面试题 05.06. Convert Integer LCCI](./leetcode/LCCI0506-ConvertInteger.go)   
 [面试题 05.08. Draw Line LCCI](./leetcode/LCCI0508-DrawLine.go)   
