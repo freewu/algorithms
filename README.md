@@ -3903,6 +3903,7 @@ LCR 185. 统计结果概率
 [LCP 27. 黑盒光线反射](./leetcode/LCP27-BlackBox.go)   
 [LCP 29. 乐团站位](./leetcode/LCP29-BandPositioning.go)   
 [LCP 30. 魔塔游戏](./leetcode/LCP30-MagicTowerGame.go)   
+[LCP 31. 变换的迷宫](./leetcode/LCP31-TransformationalMaze.go)   
 [LCP 39. 无人机方阵](./leetcode/LCP39-DroneArray.go)   
 [LCP 40. 心算挑战](./leetcode/LCP40-MaxmiumScore.go)   
 [LCP 41. 黑白翻转棋](./leetcode/LCP41-ReversiDeluxe.go)   
