@@ -2244,6 +2244,8 @@
 [3348. Smallest Divisible Digit Product II](./leetcode/3348-SmallestDivisibleDigitProductII.go)   
 [3403. Find the Lexicographically Largest String From the Box I](./leetcode/3403-FindTheLexicographicallyLargestStringFromTheBoxI.go)   
 [3406. Find the Lexicographically Largest String From the Box II](./leetcode/3406-FindTheLexicographicallyLargestStringFromTheBoxII.go)   
+[3438. Find Valid Pair of Adjacent Digits in String](./leetcode/3438-FindValidPairOfAdjacentDigitsInString.go)   
+
 
 # Dynamic Programming
 [276. Paint Fence](./leetcode/276-PaintFence.go)   
