@@ -1667,6 +1667,7 @@
 [3359. Find Sorted Submatrices With Maximum Element at Most K](./leetcode/3359-FindSortedSubmatricesWithMaximumElementAtMostK.go)   
 [3361. Shift Distance Between Two Strings](./leetcode/3361-ShiftDistanceBetweenTwoStrings.go)   
 [3362. Zero Array Transformation III](./leetcode/3362-ZeroArrayTransformationIII.go)   
+[3366. Minimum Array Sum](./leetcode/3366-MinimumArraySum.go)   
 [3376. Minimum Time to Break Locks I](./leetcode/3376-MinimumTimeToBreakLocksI.go)   
 [3378. Count Connected Components in LCM Graph](./leetcode/3378-CountConnectedComponentsInLCMGraph.go)   
 [3383. Minimum Runes to Add to Cast Spell](./leetcode/3383-MinimumRunesToAddToCastSpell.go)   
