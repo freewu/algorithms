@@ -1676,6 +1676,7 @@
 [3396. Minimum Number of Operations to Make Elements in Array Distinct](./leetcode/3396-MinimumNumberOfOperationsToMakeElementsInArrayDistinct.go)   
 [3400. Maximum Number of Matching Indices After Right Shifts](./leetcode/3400-MaximumNumberOfMatchingIndicesAfterRightShifts.go)   
 [3416. Subsequences with a Unique Middle Mode II](./leetcode/3416-SubsequencesWithAUniqueMiddleModeII.go)   
+[3417. Zigzag Grid Traversal With Skip](./leetcode/3417-ZigzagGridTraversalWithSkip.go)   
 [3418. Maximum Amount of Money Robot Can Earn](./leetcode/3418-MaximumAmountOfMoneyRobotCanEarn.go)   
 [3420. Count Non-Decreasing Subarrays After K Operations](./leetcode/3420-CountNonDecreasingSubarraysAfterKOperations.go)   
 [3422. Minimum Operations to Make Subarray Elements Equal](./leetcode/3422-MinimumOperationsToMakeSubarrayElementsEqual.go)   
