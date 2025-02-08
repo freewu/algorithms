@@ -53,6 +53,7 @@ package main
 //     最后返回去重以后数组的长度值。
 //     使用双指针的解法，双指针的关键点：移动两个指针的条件
 
+import "fmt"
 
 func removeDuplicates(nums []int) int {
     slow := 0
@@ -79,14 +80,42 @@ func removeDuplicates1(nums []int) int {
     return res
 }
 
+func removeDuplicates2(nums []int) int {
+    if len(nums) == 0 { return 0 }
+    res, pre, count := 0, nums[0] + 1, 1
+    for _, v := range nums {
+        if v == pre {
+            count++
+            if count > 2 {
+                continue
+            }
+        } else {
+            count = 1
+        }
+        pre = v
+        nums[res] = v
+        res++
+    }
+    return res
+}
+
 func main() {
+    // Example 1:
+    // Input: nums = [1,1,1,2,2,3]
+    // Output: 5, nums = [1,1,2,2,3,_]
     // Explanation: Your function should return k = 5, with the first five elements of nums being 1, 1, 2, 2 and 3 respectively.
     // It does not matter what you leave beyond the returned k (hence they are underscores).
     fmt.Println(removeDuplicates([]int{1,1,1,2,2,3})) // 5
+    // Example 2:
+    // Input: nums = [0,0,1,1,1,1,2,3,3]
+    // Output: 7, nums = [0,0,1,1,2,3,3,_,_]
     // Explanation: Your function should return k = 7, with the first seven elements of nums being 0, 0, 1, 1, 2, 3 and 3 respectively.
-    // It does not matter what you leave beyond the returned k (hence they are underscores).    
+    // It does not matter what you leave beyond the returned k (hence they are underscores).
     fmt.Println(removeDuplicates([]int{0,0,1,1,1,1,2,3,3})) //  7 
 
     fmt.Printf("removeDuplicates1([]int{1,1,1,2,2,3}) = %v\n",removeDuplicates1([]int{1,1,1,2,2,3})) // 5 [1,1,2,2,3]
     fmt.Printf("removeDuplicates1([]int{0,0,1,1,1,1,2,3,3}) = %v\n",removeDuplicates1([]int{0,0,1,1,1,1,2,3,3})) // 7 [0,0,1,1,2,3,3]
+
+    fmt.Printf("removeDuplicates2([]int{1,1,1,2,2,3}) = %v\n",removeDuplicates2([]int{1,1,1,2,2,3})) // 5 [1,1,2,2,3]
+    fmt.Printf("removeDuplicates2([]int{0,0,1,1,1,1,2,3,3}) = %v\n",removeDuplicates2([]int{0,0,1,1,1,1,2,3,3})) // 7 [0,0,1,1,2,3,3]
 }
