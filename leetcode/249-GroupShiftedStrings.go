@@ -58,34 +58,34 @@ func groupStrings(strings []string) [][]string {
 
 // 哈希表记录分组
 func groupStrings1(strings []string) [][]string {
-    res := make(map[string][]string)
-    change := func (inp string) (ret string){
-        offset, tmpByte := inp[0] - 'a', []byte(inp)
-        for i := 0; i <  len(tmpByte); i++ {
-            tmpByte[i] = tmpByte[i] - offset
-            if tmpByte[i] < 'a' {
-                tmpByte[i] = tmpByte[i] + 26
+    mp := make(map[string][]string)
+    change := func (s string) string {
+        offset, arr :=  s[0] - 'a', []byte(s)
+        for i := 0; i <  len(arr); i++ {
+            arr[i] = arr[i] - offset
+            if arr[i] < 'a' {
+                arr[i] = arr[i] + 26
             }
-            if inp[i] > 'z' {
-                tmpByte[i] = tmpByte[i] - 26
+            if s[i] > 'z' {
+                arr[i] = arr[i] - 26
             }
         }
-        return string(tmpByte) 
+        return string(arr)
     }
-    for _, cur := range(strings) {
-        changeStr := change(cur)
-        if val, ok := res[changeStr]; ok {
-            res[changeStr] = append(val, cur)
+    for _, str := range strings {
+        key := change(str)
+        if v, ok := mp[key]; ok {
+            mp[key] = append(v, str)
         } else {
-            res[changeStr] = make([]string, 0)
-            res[changeStr] = append(res[changeStr], cur)
+            mp[key] = make([]string, 0)
+            mp[key] = append(mp[key], str)
         }
     }
-    result := make([][]string, 0)
-    for _, v := range(res){
-        result = append(result, v)
+    res := make([][]string, 0)
+    for _, v := range mp {
+        res = append(res, v)
     }
-    return result
+    return res
 }
 
 func main() {
@@ -97,7 +97,9 @@ func main() {
     // Input: strings = ["a"]
     // Output: [["a"]]
     fmt.Println(groupStrings([]string{"a"})) // [["a"]]
+    fmt.Println(groupStrings([]string{"bluefrog", "leetcode"})) // [[bluefrog] [leetcode]]
 
     fmt.Println(groupStrings1([]string{"abc","bcd","acef","xyz","az","ba","a","z"})) // [["acef"],["a","z"],["abc","bcd","xyz"],["az","ba"]]
     fmt.Println(groupStrings1([]string{"a"})) // [["a"]]
+    fmt.Println(groupStrings1([]string{"bluefrog", "leetcode"})) // [[bluefrog] [leetcode]]
 }
