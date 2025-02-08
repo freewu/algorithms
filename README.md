@@ -3959,6 +3959,7 @@ LCR 185. 统计结果概率
 [面试题 16.20. T9 LCCI](./leetcode/LCCI1620-T9.go)   
 [面试题 16.22. Langtons Ant LCCI](./leetcode/LCCI1622-LangtonsAnt.go)   
 [面试题 17.01. Add Without Plus LCCI](./leetcode/LCCI1701-AddWithoutPlus.go)   
+[面试题 17.06. Number Of 2s In Range LCCI](./leetcode/LCCI1706-NumberOf2sInRange.go)   
 [面试题 17.08. Circus Tower LCCI](./leetcode/LCCI1708-CircusTower.go)   
 [面试题 17.21. Volume of Histogram LCCI](./leetcode/LCCI1721-VolumeOfHistogram.go)   
 [面试题 17.26. Sparse Similarity LCCI](./leetcode/LCCI1726-SparseSimilarity.go)   
