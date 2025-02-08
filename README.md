@@ -3954,6 +3954,7 @@ LCR 185. 统计结果概率
 [面试题 05.08. Draw Line LCCI](./leetcode/LCCI0508-DrawLine.go)   
 [面试题 08.02. Robot in a Grid LCCI](./leetcode/LCCI0802-RobotInAGrid.go)   
 [面试题 10.09. Sorted Matrix Search LCCI](./leetcode/LCCI1009-SortedMatrixSearch.go)   
+[面试题 16.06. Smallest Difference LCCI](./leetcode/LCCI1606-SmallestDifference.go)   
 [面试题 16.17. Contiguous Sequence LCCI](./leetcode/LCCI1617-ContiguousSequence.go)   
 [面试题 16.20. T9 LCCI](./leetcode/LCCI1620-T9.go)   
 [面试题 16.22. Langtons Ant LCCI](./leetcode/LCCI1622-LangtonsAnt.go)   
