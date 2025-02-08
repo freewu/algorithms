@@ -1437,6 +1437,7 @@
 [2852. Sum of Remoteness of All Cells](./leetcode/2852-SumOfRemotenessOfAllCells.go)   
 [2855. Minimum Right Shifts to Sort the Array](./leetcode/2855-MinimumRightShiftsToSortTheArray.go)   
 [2856. Minimum Array Length After Pair Removals](./leetcode/2856-MinimumArrayLengthAfterPairRemovals.go)   
+[2857. Count Pairs of Points With Distance k](./leetcode/2857-CountPairsOfPointsWithDistanceK.go)   
 [2859. Sum of Values at Indices With K Set Bits](./leetcode/2859-SumOfValuesAtIndicesWithKSetBits.go)   
 [2860. Happy Students](./leetcode/2860-HappyStudents.go)   
 [2861. Maximum Number of Alloys](./leetcode/2861-MaximumNumberOfAlloys.go)   
