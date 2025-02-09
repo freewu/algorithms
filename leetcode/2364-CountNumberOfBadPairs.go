@@ -54,6 +54,17 @@ func countBadPairs1(nums []int) int64 {
     return int64(n * (n-1) / 2 - good)
 }
 
+func countBadPairs2(nums []int) int64 {
+    goodCount, totalPairs := 0, (len(nums) * (len(nums) - 1)) / 2
+    goods := make(map[int]int)
+    for i, v := range nums {
+        val := i - v
+        goodCount += goods[val]
+        goods[val]++
+    }
+    return int64(totalPairs - goodCount)
+}
+
 func main() {
     // Example 1:
     // Input: nums = [4,1,3,3]
@@ -70,7 +81,16 @@ func main() {
     // Output: 0
     // Explanation: There are no bad pairs.
     fmt.Println(countBadPairs([]int{1,2,3,4,5})) // 0
+    fmt.Println(countBadPairs([]int{1,2,3,4,5,6,7,8,9})) // 0
+    fmt.Println(countBadPairs([]int{9,8,7,6,5,4,3,2,1})) // 36
 
     fmt.Println(countBadPairs1([]int{4,1,3,3})) // 5
     fmt.Println(countBadPairs1([]int{1,2,3,4,5})) // 0
+    fmt.Println(countBadPairs1([]int{1,2,3,4,5,6,7,8,9})) // 0
+    fmt.Println(countBadPairs1([]int{9,8,7,6,5,4,3,2,1})) // 36
+
+    fmt.Println(countBadPairs2([]int{4,1,3,3})) // 5
+    fmt.Println(countBadPairs2([]int{1,2,3,4,5})) // 0
+    fmt.Println(countBadPairs2([]int{1,2,3,4,5,6,7,8,9})) // 0
+    fmt.Println(countBadPairs2([]int{9,8,7,6,5,4,3,2,1})) // 36
 }
