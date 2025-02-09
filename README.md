@@ -1686,6 +1686,7 @@
 [3418. Maximum Amount of Money Robot Can Earn](./leetcode/3418-MaximumAmountOfMoneyRobotCanEarn.go)   
 [3420. Count Non-Decreasing Subarrays After K Operations](./leetcode/3420-CountNonDecreasingSubarraysAfterKOperations.go)   
 [3422. Minimum Operations to Make Subarray Elements Equal](./leetcode/3422-MinimumOperationsToMakeSubarrayElementsEqual.go)   
+[3427. Sum of Variable Length Subarrays](./leetcode/3427-SumOfVariableLengthSubarrays.go)   
 [3429. Paint House IV](./leetcode/3429-PaintHouseIV.go)   
 [3431. Minimum Unlocked Indices to Sort Nums](./leetcode/3431-MinimumUnlockedIndicesToSortNums.go)   
 [3432. Count Partitions with Even Sum Difference](./leetcode/3432-CountPartitionsWithEvenSumDifference.go)   

@@ -50,6 +50,39 @@ func minOperations(nums []int) int {
     return res
 }
 
+func minOperations1(nums []int) int {
+    res, mp := 0, make(map[int]int)
+    for _, v := range nums {
+        mp[v]++
+    }
+    for _, v := range mp {
+        if v == 1 {
+            return -1
+        }
+        rem, val := v % 3, v / 3
+        if rem == 0 {
+            res += val
+        } else {
+            res += val + 1
+        }
+    }
+    return res
+}
+
+func minOperations2(nums []int) int {
+    res, mp := 0, make(map[int]int)
+    for _, v := range nums {
+        mp[v]++
+    }
+    for _, v := range mp {
+        if v == 1 {
+            return -1
+        }
+        res += (v + 2) / 3
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: nums = [2,3,3,2,2,4,2,3,4]
@@ -69,4 +102,14 @@ func main() {
 
     fmt.Println(minOperations([]int{1,2,3,4,5,6,7,8,9})) // -1
     fmt.Println(minOperations([]int{9,8,7,6,5,4,3,2,1})) // -1
+
+    fmt.Println(minOperations1([]int{2,3,3,2,2,4,2,3,4})) // 4
+    fmt.Println(minOperations1([]int{2,1,2,2,3,3})) // -1
+    fmt.Println(minOperations1([]int{1,2,3,4,5,6,7,8,9})) // -1
+    fmt.Println(minOperations1([]int{9,8,7,6,5,4,3,2,1})) // -1
+
+    fmt.Println(minOperations2([]int{2,3,3,2,2,4,2,3,4})) // 4
+    fmt.Println(minOperations2([]int{2,1,2,2,3,3})) // -1
+    fmt.Println(minOperations2([]int{1,2,3,4,5,6,7,8,9})) // -1
+    fmt.Println(minOperations2([]int{9,8,7,6,5,4,3,2,1})) // -1
 }
