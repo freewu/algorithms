@@ -1447,6 +1447,7 @@
 [2866. Beautiful Towers II](./leetcode/2866-BeautifulTowersII.go)   
 [2868. The Wording Game](./leetcode/2868-TheWordingGame.go)   
 [2869. Minimum Operations to Collect Elements](./leetcode/2869-MinimumOperationsToCollectElements.go)   
+[2870. Minimum Number of Operations to Make Array Empty](./leetcode/2870-MinimumNumberOfOperationsToMakeArrayEmpty.go)   
 [2873. Maximum Value of an Ordered Triplet I](./leetcode/2873-MaximumValueOfAnOrderedTripletI.go)   
 [2874. Maximum Value of an Ordered Triplet II](./leetcode/2874-MaximumValueOfAnOrderedTripletII.go)   
 [2892. Minimizing Array After Replacing Pairs With Their Product](./leetcode/2892-MinimizingArrayAfterReplacingPairsWithTheirProduct.go)   

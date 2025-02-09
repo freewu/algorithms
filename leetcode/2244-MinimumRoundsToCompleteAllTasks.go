@@ -42,11 +42,11 @@ func minimumRounds(tasks []int) int {
 }
 
 func minimumRounds1(tasks []int) int {
-    res, m := 0, map[int]int{}
+    res, mp := 0, make(map[int]int)
     for _, v := range tasks {
-       m[v]++
+        mp[v]++
     }
-    for _, v := range m {
+    for _, v := range mp {
         if v == 1 {
             return -1
         }
@@ -75,7 +75,11 @@ func main() {
     // Output: -1
     // Explanation: There is only 1 task of difficulty level 2, but in each round, you can only complete either 2 or 3 tasks of the same difficulty level. Hence, you cannot complete all the tasks, and the answer is -1.
     fmt.Println(minimumRounds([]int{2,3,3})) // -1
+    fmt.Println(minimumRounds([]int{1,2,3,4,5,6,7,8,9})) // -1
+    fmt.Println(minimumRounds([]int{9,8,7,6,5,4,3,2,1})) // -1
 
     fmt.Println(minimumRounds1([]int{2,2,3,3,2,4,4,4,4,4})) // 4
     fmt.Println(minimumRounds1([]int{2,3,3})) // -1
+    fmt.Println(minimumRounds1([]int{1,2,3,4,5,6,7,8,9})) // -1
+    fmt.Println(minimumRounds1([]int{9,8,7,6,5,4,3,2,1})) // -1
 }
