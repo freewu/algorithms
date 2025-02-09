@@ -1691,6 +1691,7 @@
 [3429. Paint House IV](./leetcode/3429-PaintHouseIV.go)   
 [3431. Minimum Unlocked Indices to Sort Nums](./leetcode/3431-MinimumUnlockedIndicesToSortNums.go)   
 [3432. Count Partitions with Even Sum Difference](./leetcode/3432-CountPartitionsWithEvenSumDifference.go)   
+[3434. Maximum Frequency After Subarray Operation](./leetcode/3434-MaximumFrequencyAfterSubarrayOperation.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
