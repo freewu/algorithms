@@ -1696,6 +1696,7 @@
 [3431. Minimum Unlocked Indices to Sort Nums](./leetcode/3431-MinimumUnlockedIndicesToSortNums.go)   
 [3432. Count Partitions with Even Sum Difference](./leetcode/3432-CountPartitionsWithEvenSumDifference.go)   
 [3434. Maximum Frequency After Subarray Operation](./leetcode/3434-MaximumFrequencyAfterSubarrayOperation.go)   
+[3439. Reschedule Meetings for Maximum Free Time I](./leetcode/3439-RescheduleMeetingsForMaximumFreeTimeI.go)   
 [3440. Reschedule Meetings for Maximum Free Time II](./leetcode/3440-RescheduleMeetingsForMaximumFreeTimeII.go)   
 
 # String
