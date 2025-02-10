@@ -1450,6 +1450,7 @@
 [2870. Minimum Number of Operations to Make Array Empty](./leetcode/2870-MinimumNumberOfOperationsToMakeArrayEmpty.go)   
 [2873. Maximum Value of an Ordered Triplet I](./leetcode/2873-MaximumValueOfAnOrderedTripletI.go)   
 [2874. Maximum Value of an Ordered Triplet II](./leetcode/2874-MaximumValueOfAnOrderedTripletII.go)   
+[2875. Minimum Size Subarray in Infinite Array](./leetcode/2875-MinimumSizeSubarrayInInfiniteArray.go)   
 [2892. Minimizing Array After Replacing Pairs With Their Product](./leetcode/2892-MinimizingArrayAfterReplacingPairsWithTheirProduct.go)   
 [2895. Minimum Processing Time](./leetcode/2895-MinimumProcessingTime.go)   
 [2897. Apply Operations on Array to Maximize Sum of Squares](./leetcode/2897-ApplyOperationsOnArrayToMaximizeSumOfSquares.go)   
