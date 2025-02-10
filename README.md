@@ -3941,6 +3941,7 @@ LCR 185. 统计结果概率
 [LCP 68. 美观的花束](./leetcode/LCP68-BeautifulFlowers.go)   
 [LCP 69. Hello LeetCode!](./leetcode/LCP69-HelloLeetCode.go)   
 [LCP 71. 集水器](./leetcode/LCP71-Reservoir.go)   
+[LCP 74. 最强祝福力场](./leetcode/LCP74-FieldOfGreatestBlessing.go)   
 [LCP 78. 城墙防线](./leetcode/LCP78-RampartDefense.go)   
 [LCP 80. 生物进化录](./leetcode/LCP80-EvolutionaryRecord.go)   
 [LCP 81. 与非的谜题](./leetcode/LCP81-NAndPuzzle.go)   
