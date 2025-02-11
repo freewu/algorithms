@@ -3924,6 +3924,7 @@ LCR 185. 统计结果概率
 [LCP 15. 游乐园的迷宫](./leetcode/LCP15-MazeOfAmusementPark.go)   
 [LCP 17. 速算机器人](./leetcode/LCP17-CalculateRobot.go)   
 [LCP 18. 早餐组合](./leetcode/LCP18-BreakfastCombination.go)   
+[LCP 19. 秋叶收藏集](./leetcode/LCP19-LeavesCollections.go)   
 [LCP 20. 快速公交](./leetcode/LCP20-BusRapidTransit.go)   
 [LCP 23. 魔术排列](./leetcode/LCP23-MagicArrangement.go)   
 [LCP 24. 数字游戏](./leetcode/LCP24-NumberGame.go)   
