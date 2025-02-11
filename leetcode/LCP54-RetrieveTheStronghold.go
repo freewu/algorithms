@@ -124,7 +124,6 @@ func minimumCost(cost []int, roads [][]int) int64 {
     return int64(res)
 }
 
-
 func main() {
     // 示例 1：
     // 输入： cost = [1,2,3,4,5,6] roads = [[0,1],[0,2],[1,3],[2,3],[1,2],[2,4],[2,5]]

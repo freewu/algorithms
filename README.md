@@ -3944,6 +3944,7 @@ LCR 185. 统计结果概率
 [LCP 57. 打地鼠](./leetcode/LCP57-WhackAMole.go)   
 [LCP 58. 积木拼接](./leetcode/LCP58-BuildingBlockSplicing.go)   
 [LCP 59. 搭桥过河](./leetcode/LCP59-BuildBridge.go)   
+[LCP 60. 力扣泡泡龙](./leetcode/LCP60-LeetcodePuzzleBobble.go)   
 [LCP 61. 气温变化趋势](./leetcode/LCP61-TemperatureTrend.go)   
 [LCP 63. 弹珠游戏](./leetcode/LCP63-MarblesGame.go)   
 [LCP 64. 二叉树灯饰](./leetcode/LCP64-BinaryTreeLighting.go)   
