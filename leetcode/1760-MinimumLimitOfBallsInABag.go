@@ -36,6 +36,7 @@ package main
 //     1 <= maxOperations, nums[i] <= 10^9
 
 import "fmt"
+import "sort"
 
 func minimumSize(nums []int, maxOperations int) int {
     mn, mx := 1, 1
@@ -92,6 +93,17 @@ func minimumSize1(nums []int, maxOperations int) int {
     return left
 }
 
+func minimumSize2(nums []int, maxOperations int) int {
+    return sort.Search(1_000_000_000, func(i int) bool {
+        if i == 0 { return false }
+        count := 0
+        for _, v := range nums {
+            count += (v + i - 1) / i - 1
+        }
+        return count <= maxOperations
+    })
+}
+
 func main() {
     // Example 1:
     // Input: nums = [9], maxOperations = 2
@@ -112,6 +124,16 @@ func main() {
     // The bag with the most number of balls has 2 balls, so your penalty is 2, and you should return 2.
     fmt.Println(minimumSize([]int{2,4,8,2}, 4)) // 2
 
+    fmt.Println(minimumSize([]int{1,2,3,4,5,6,7,8,9}, 4)) // 5
+    fmt.Println(minimumSize([]int{9,8,7,6,5,4,3,2,1}, 4)) // 5
+
     fmt.Println(minimumSize1([]int{9}, 2)) // 3
     fmt.Println(minimumSize1([]int{2,4,8,2}, 4)) // 2
+    fmt.Println(minimumSize1([]int{1,2,3,4,5,6,7,8,9}, 4)) // 5
+    fmt.Println(minimumSize1([]int{9,8,7,6,5,4,3,2,1}, 4)) // 5
+
+    fmt.Println(minimumSize2([]int{9}, 2)) // 3
+    fmt.Println(minimumSize2([]int{2,4,8,2}, 4)) // 2
+    fmt.Println(minimumSize2([]int{1,2,3,4,5,6,7,8,9}, 4)) // 5
+    fmt.Println(minimumSize2([]int{9,8,7,6,5,4,3,2,1}, 4)) // 5
 }
