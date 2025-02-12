@@ -2236,6 +2236,7 @@
 [3146. Permutation Difference between Two Strings](./leetcode/3146-PermutationDifferenceBetweenTwoStrings.go)   
 [3163. String Compression III](./leetcode/3163-StringCompressionIII.go)   
 [3167. Better Compression of String](./leetcode/3167-BetterCompressionOfString.go)   
+[3170. Lexicographically Minimum String After Removing Stars](./leetcode/3170-LexicographicallyMinimumStringAfterRemovingStars.go)   
 [3174. Clear Digits](./leetcode/3174-ClearDigits.go)   
 [3216. Lexicographically Smallest String After a Swap](./leetcode/3216-LexicographicallySmallestStringAfterASwap.go)   
 [3223. Minimum Length of String After Operations](./leetcode/3223-MinimumLengthOfStringAfterOperations.go)   
