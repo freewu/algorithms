@@ -1487,6 +1487,7 @@
 [2948. Make Lexicographically Smallest Array by Swapping Elements](./leetcode/2948-MakeLexicographicallySmallestArrayBySwappingElements.go)   
 [2951. Find the Peaks](./leetcode/2951-FindThePeaks.go)   
 [2952. Minimum Number of Coins to be Added](./leetcode/2952-MinimumNumberOfCoinsToBeAdded.go)   
+[2954. Count the Number of Infection Sequences](./leetcode/2954-CountTheNumberOfInfectionSequences.go)   
 [2956. Find Common Elements Between Two Arrays](./leetcode/2956-FindCommonElementsBetweenTwoArrays.go)   
 [2958. Length of Longest Subarray With at Most K Frequency](./leetcode/2958-LengthOfLongestSubarrayWithAtMostKFrequency.go)   
 [2960. Count Tested Devices After Test Operations](./leetcode/2960-CountTestedDevicesAfterTestOperations.go)   
