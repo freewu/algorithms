@@ -2629,6 +2629,7 @@
 [2927. Distribute Candies Among Children III](./leetcode/2927-DistributeCandiesAmongChildrenIII.go)   
 [2928. Distribute Candies Among Children I](./leetcode/2928-DistributeCandiesAmongChildrenI.go)   
 [2929. Distribute Candies Among Children II](./leetcode/2929-DistributeCandiesAmongChildrenII.go)   
+[2930. Number of Strings Which Can Be Rearranged to Contain Substring](./leetcode/2930-NumberOfStringsWhichCanBeRearrangedToContainSubstring.go)   
 [2939. Maximum Xor Product](./leetcode/2939-MaximumXorProduct.go)   
 [2979. Most Expensive Item That Can Not Be Bought](./leetcode/2979-MostExpensiveItemThatCanNotBeBought.go)   
 [2992. Number of Self-Divisible Permutations](./leetcode/2992-NumberOfSelfDivisiblePermutations.go)   
