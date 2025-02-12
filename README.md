@@ -2208,6 +2208,7 @@
 [2950. Number of Divisible Substrings](./leetcode/2950-NumberOfDivisibleSubstrings.go)   
 [2953. Count Complete Substrings](./leetcode/2953-CountCompleteSubstrings.go)   
 [2955. Number of Same-End Substrings](./leetcode/2955-NumberOfSameEndSubstrings.go)   
+[2957. Remove Adjacent Almost-Equal Characters](./leetcode/2957-RemoveAdjacentAlmostEqualCharacters.go)   
 [2976. Minimum Cost to Convert String I](./leetcode/2976-MinimumCostToConvertStringI.go)   
 [2977. Minimum Cost to Convert String II](./leetcode/2977-MinimumCostToConvertStringII.go)   
 [2981. Find Longest Special Substring That Occurs Thrice I](./leetcode/2981-FindLongestSpecialSubstringThatOccursThriceI.go)   
