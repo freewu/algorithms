@@ -76,6 +76,37 @@ func countBalls1(lowLimit int, highLimit int) int {
     return res
 }
 
+func countBalls2(lowLimit int, highLimit int) int {
+    res, dict := 0, make([]int, 50)
+    for i := lowLimit; i <= highLimit; i++ {
+        j, cur := i, 0
+        for j != 0 {
+            cur = j % 10 + cur
+            j = j / 10
+        }
+        dict[cur]++
+        if dict[cur] > res {
+            res = dict[cur]
+        }
+    }
+    return res
+}
+
+func countBalls3(lowLimit int, highLimit int) int {
+    res, mp := 0, [46]int{}
+    max := func(x, y int) int { if x > y { return x; }; return y; }
+    for i := lowLimit; i <= highLimit; i++ {
+        i, sum := i, 0
+        for i > 0 {
+            sum += (i % 10)
+            i /= 10
+        }
+        mp[sum] = mp[sum] + 1
+        res = max(res, mp[sum] )
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: lowLimit = 1, highLimit = 10
@@ -114,4 +145,20 @@ func main() {
     fmt.Println(countBalls1(10000, 10000)) // 1
     fmt.Println(countBalls1(1, 10000)) // 670
     fmt.Println(countBalls1(10000, 1)) // 0
+
+    fmt.Println(countBalls2(1, 10)) // 2
+    fmt.Println(countBalls2(5, 15)) // 2
+    fmt.Println(countBalls2(19, 28)) // 2
+    fmt.Println(countBalls2(1, 1)) // 1
+    fmt.Println(countBalls2(10000, 10000)) // 1
+    fmt.Println(countBalls2(1, 10000)) // 670
+    fmt.Println(countBalls2(10000, 1)) // 0
+
+    fmt.Println(countBalls3(1, 10)) // 2
+    fmt.Println(countBalls3(5, 15)) // 2
+    fmt.Println(countBalls3(19, 28)) // 2
+    fmt.Println(countBalls3(1, 1)) // 1
+    fmt.Println(countBalls3(10000, 10000)) // 1
+    fmt.Println(countBalls3(1, 10000)) // 670
+    fmt.Println(countBalls3(10000, 1)) // 0
 }
