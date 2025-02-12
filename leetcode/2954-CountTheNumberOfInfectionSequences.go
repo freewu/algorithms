@@ -146,4 +146,6 @@ func main() {
     // Valid infection sequences are [0,2,3], [2,0,3] and [2,3,0].
     // [3,2,0], [3,0,2], and [0,3,2] are not valid infection sequences because the infection starts at the person at index 1, then the order of infection is 2, then 3, and hence 3 cannot be infected earlier than 2.
     fmt.Println(numberOfSequence(4, []int{1})) // 3
+
+    fmt.Println(numberOfSequence(10, []int{1,2,3,4,5,6,7,8,9})) // 1
 }
