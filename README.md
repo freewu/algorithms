@@ -1599,6 +1599,7 @@
 [3184. Count Pairs That Form a Complete Day I](./leetcode/3184-CountPairsThatFormACompleteDayI.go)   
 [3185. Count Pairs That Form a Complete Day II](./leetcode/3185-CountPairsThatFormACompleteDayII.go)   
 [3186. Maximum Total Damage With Spell Casting](./leetcode/3186-MaximumTotalDamageWithSpellCasting.go)   
+[3187. Peaks in Array](./leetcode/3187-PeaksInArray.go)   
 [3189. Minimum Moves to Get a Peaceful Board](./leetcode/3189-MinimumMovesToGetAPeacefulBoard.go)   
 [3190. Find Minimum Operations to Make All Elements Divisible by Three](./leetcode/3190-FindMinimumOperationsToMakeAllElementsDivisibleByThree.go)   
 [3191. Minimum Operations to Make Binary Array Elements Equal to One I](./leetcode/3191-MinimumOperationsToMakeBinaryArrayElementsEqualToOneI.go)   
