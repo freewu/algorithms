@@ -3955,6 +3955,7 @@ LCR 185. 统计结果概率
 [LCP 46. 志愿者调配](./leetcode/LCP46-VolunteerDeployment.go)   
 [LCP 47. 入场安检](./leetcode/LCP47-SecurityCheck.go)   
 [LCP 54. 夺回据点](./leetcode/LCP54-RetrieveTheStronghold.go)   
+[LCP 55. 采集果实](./leetcode/LCP56-CollectFruits.go)   
 [LCP 57. 打地鼠](./leetcode/LCP57-WhackAMole.go)   
 [LCP 58. 积木拼接](./leetcode/LCP58-BuildingBlockSplicing.go)   
 [LCP 59. 搭桥过河](./leetcode/LCP59-BuildBridge.go)   
