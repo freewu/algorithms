@@ -1665,6 +1665,7 @@
 [3321. Find X-Sum of All K-Long Subarrays II](./leetcode/3321-FindXSumOfAllKLongSubarraysII.go)   
 [3323. Minimize Connected Groups by Inserting Interval](./leetcode/3323-MinimizeConnectedGroupsByInsertingInterval.go)   
 [3334. Find the Maximum Factor Score of Array](./leetcode/3334-FindTheMaximumFactorScoreOfArray.go)   
+[3336. Find the Number of Subsequences With Equal GCD](./leetcode/3336-FindTheNumberOfSubsequencesWithEqualGCD.go)   
 [3341. Find Minimum Time to Reach Last Room I](./leetcode/3341-FindMinimumTimeToReachLastRoomI.go)   
 [3342. Find Minimum Time to Reach Last Room II](./leetcode/3342-FindMinimumTimeToReachLastRoomII.go)   
 [3346. Maximum Frequency of an Element After Performing Operations I](./leetcode/3346-MaximumFrequencyOfAnElementAfterPerformingOperationsI.go)   
