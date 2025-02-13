@@ -1705,6 +1705,7 @@
 [3434. Maximum Frequency After Subarray Operation](./leetcode/3434-MaximumFrequencyAfterSubarrayOperation.go)   
 [3439. Reschedule Meetings for Maximum Free Time I](./leetcode/3439-RescheduleMeetingsForMaximumFreeTimeI.go)   
 [3440. Reschedule Meetings for Maximum Free Time II](./leetcode/3440-RescheduleMeetingsForMaximumFreeTimeII.go)   
+[3447. Assign Elements to Groups with Constraints](./leetcode/3447-AssignElementsToGroupsWithConstraints.go)   
 [3450. Maximum Students on a Single Bench](./leetcode/3450-MaximumStudentsOnASingleBench.go)   
 
 # String
