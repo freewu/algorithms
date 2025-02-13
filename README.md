@@ -1525,6 +1525,7 @@
 [3025. Find the Number of Ways to Place People I](./leetcode/3025-FindTheNumberOfWaysToPlacePeopleI.go)   
 [3026. Maximum Good Subarray Sum](./leetcode/3026-MaximumGoodSubarraySum.go)   
 [3027. Find the Number of Ways to Place People II](./leetcode/3027-FindTheNumberOfWaysToPlacePeopleII.go)   
+[3028. Ant on the Boundary](./leetcode/3028-AntOnTheBoundary.go)   
 [3030. Find the Grid of Region Average](./leetcode/3030-FindTheGridOfRegionAverage.go)   
 [3033. Modify the Matrix](./leetcode/3033-ModifyTheMatrix.go)   
 [3034. Number of Subarrays That Match a Pattern I](./leetcode/3034-NumberOfSubarraysThatMatchAPatternI.go)   
