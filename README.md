@@ -2873,7 +2873,7 @@
 [3313. Find the Last Marked Nodes in Tree](./leetcode/3313-FindTheLastMarkedNodesInTree.go)   
 [3319. K-th Largest Perfect Subtree Size in Binary Tree](./leetcode/3319-KthLargestPerfectSubtreeSizeInBinaryTree.go)   
 [3331. Find Subtree Sizes After Changes](./leetcode/3331-FindSubtreeSizesAfterChanges.go)   
-
+[3367. Maximize Sum of Weights after Edge Removals](./leetcode/3367-MaximizeSumOfWeightsAfterEdgeRemovals.go)   
 
 # Graph
 [133. Clone Graph](./leetcode/133-CloneGraph.go)   
