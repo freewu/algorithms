@@ -3591,6 +3591,7 @@ LCR 185. 统计结果概率
 [3415. Find Products with Three Consecutive Digits](./leetcode/3415-FindProductsWithThreeConsecutiveDigits.sql)   
 [3421. Find Students Who Improved](./leetcode/3421-FindStudentsWhoImproved.sql)   
 [3436. Find Valid Emails](./leetcode/3436-FindValidEmails.sql)   
+[3451. Find Invalid IP Addresses](./leetcode/3451-FindInvalidIPAddresses.sql)   
 
 # Shell
 [192. Word Frequency](./leetcode/192-WordFrequency.sh)      
