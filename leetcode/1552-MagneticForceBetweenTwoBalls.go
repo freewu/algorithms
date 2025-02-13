@@ -80,6 +80,22 @@ func maxDistance1(position []int, m int) int {
     return left
 }
 
+func maxDistance2(position []int, m int) int {
+    sort.Ints(position)
+    n := len(position)
+    return sort.Search((position[n - 1] - position[0]) / (m - 1), func (target int) bool {
+        target++
+        count, pre := 1, position[0]
+        for _, v := range position[1:] {
+            if v >= pre + target {
+                count++
+                pre = v
+            }
+        }
+        return count < m
+    })
+}
+
 func main() {
     // Example 1:
     // Input: position = [1,2,3,4,7], m = 3
@@ -92,6 +108,16 @@ func main() {
     // Explanation: We can use baskets 1 and 1000000000.
     fmt.Println(maxDistance([]int{5,4,3,2,1,1000000000}, 2)) // 999999999
 
+    fmt.Println(maxDistance([]int{1,2,3,4,5,6,7,8,9}, 3)) // 4
+    fmt.Println(maxDistance([]int{9,8,7,6,5,4,3,2,1}, 3)) // 4
+
     fmt.Println(maxDistance1([]int{1,2,3,4,7}, 3)) // 3
     fmt.Println(maxDistance1([]int{5,4,3,2,1,1000000000}, 2)) // 999999999
+    fmt.Println(maxDistance1([]int{1,2,3,4,5,6,7,8,9}, 3)) // 4
+    fmt.Println(maxDistance1([]int{9,8,7,6,5,4,3,2,1}, 3)) // 4
+
+    fmt.Println(maxDistance2([]int{1,2,3,4,7}, 3)) // 3
+    fmt.Println(maxDistance2([]int{5,4,3,2,1,1000000000}, 2)) // 999999999
+    fmt.Println(maxDistance2([]int{1,2,3,4,5,6,7,8,9}, 3)) // 4
+    fmt.Println(maxDistance2([]int{9,8,7,6,5,4,3,2,1}, 3)) // 4
 }
