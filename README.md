@@ -2654,6 +2654,7 @@
 [3162. Find the Number of Good Pairs I](./leetcode/3162-FindTheNumberOfGoodPairsI.go)   
 [3164. Find the Number of Good Pairs II](./leetcode/3164-FindTheNumberOfGoodPairsII.go)   
 [3178. Find the Child Who Has the Ball After K Seconds](./leetcode/3178-FindTheChildWhoHasTheBallAfterKSeconds.go)   
+[3179. Find the N-th Value After K Seconds](./leetcode/3179-FindTheNthValueAfterKSeconds.go)   
 [3200. Maximum Height of a Triangle](./leetcode/3200-MaximumHeightOfATriangle.go)   
 [3222. Find the Winning Player in Coin Game](./leetcode/3222-FindTheWinningPlayerInCoinGame.go)   
 [3233. Find the Count of Numbers Which Are Not Special](./leetcode/3233-FindTheCountOfNumbersWhichAreNotSpecial.go)   
