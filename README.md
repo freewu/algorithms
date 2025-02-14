@@ -1578,6 +1578,7 @@
 [3131. Find the Integer Added to Array I](./leetcode/3131-FindTheIntegerAddedToArrayI.go)   
 [3132. Find the Integer Added to Array II](./leetcode/3132-FindTheIntegerAddedToArrayII.go)   
 [3134. Find the Median of the Uniqueness Array](./leetcode/3134-FindTheMedianOfTheUniquenessArray.go)   
+[3139. Minimum Cost to Equalize Array](./leetcode/3139-MinimumCostToEqualizeArray.go)   
 [3142. Check if Grid Satisfies Conditions](./leetcode/3142-CheckIfGridSatisfiesConditions.go)   
 [3143. Maximum Points Inside the Square](./leetcode/3143-MaximumPointsInsideTheSquare.go)   
 [3145. Find Products of Elements of Big Array](./leetcode/3145-FindProductsOfElementsOfBigArray.go)   
