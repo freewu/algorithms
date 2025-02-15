@@ -3983,6 +3983,7 @@ LCR 185. 统计结果概率
 [LCP 74. 最强祝福力场](./leetcode/LCP74-FieldOfGreatestBlessing.go)   
 [LCP 76. 魔法棋盘](./leetcode/LCP76-MagicBoard.go)   
 [LCP 78. 城墙防线](./leetcode/LCP78-RampartDefense.go)   
+[LCP 79. 提取咒文](./leetcode/LCP79-ExtractMantra.go)   
 [LCP 80. 生物进化录](./leetcode/LCP80-EvolutionaryRecord.go)   
 [LCP 81. 与非的谜题](./leetcode/LCP81-NAndPuzzle.go)   
 [LCP 82. 万灵之树](./leetcode/LCP82-TheTreeOfAllSouls.go)   
