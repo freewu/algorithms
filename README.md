@@ -1556,6 +1556,7 @@
 [3073. Maximum Increasing Triplet Value](./leetcode/3073-MaximumIncreasingTripletValue.go)   
 [3074. Apple Redistribution into Boxes](./leetcode/3074-AppleRedistributionIntoBoxes.go)   
 [3075. Maximize Happiness of Selected Children](./leetcode/3075-MaximizeHappinessOfSelectedChildren.go)   
+[3076. Shortest Uncommon Substring in an Array](./leetcode/3076-ShortestUncommonSubstringInAnArray.go)   
 [3077. Maximum Strength of K Disjoint Subarrays](./leetcode/3077-MaximumStrengthOfKDisjointSubarrays.go)   
 [3078. Match Alphanumerical Pattern in Matrix I](./leetcode/3078-MatchAlphanumericalPatternInMatrixI.go)   
 [3079. Find the Sum of Encrypted Integers](./leetcode/3079-FindTheSumOfEncryptedIntegers.go)   
