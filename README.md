@@ -2678,6 +2678,7 @@
 [3307. Find the K-th Character in String Game II](./leetcode/3307-FindTheKthCharacterInStringGameII.go)   
 [3317. Find the Number of Possible Ways for an Event](./leetcode/3317-FindTheNumberOfPossibleWaysForAnEvent.go)   
 [3345. Smallest Divisible Digit Product I](./leetcode/3345-SmallestDivisibleDigitProductI.go)   
+[3360. Stone Removal Game](./leetcode/3360-StoneRemovalGame.go)   
 [3370. Smallest Number With All Set Bits](./leetcode/3370-SmallestNumberWithAllSetBits.go)   
 [3395. Subsequences with a Unique Middle Mode I](./leetcode/3395-SubsequencesWithAUniqueMiddleModeI.go)   
 [3416. Subsequences with a Unique Middle Mode II](./leetcode/3416-SubsequencesWithAUniqueMiddleModeII.go)   
