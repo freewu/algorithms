@@ -1470,6 +1470,7 @@
 [2913. Subarrays Distinct Element Sum of Squares I](./leetcode/2913-SubarraysDistinctElementSumOfSquaresI.go)   
 [2916. Subarrays Distinct Element Sum of Squares II](./leetcode/2916-SubarraysDistinctElementSumOfSquaresII.go)   
 [2917. Find the K-or of an Array](./leetcode/2917-FindTheKOrOfAnArray.go)   
+[2918. Minimum Equal Sum of Two Arrays After Replacing Zeros](./leetcode/2918-MinimumEqualSumOfTwoArraysAfterReplacingZeros.go)   
 [2920. Maximum Points After Collecting Coins From All Nodes](./leetcode/2920-MaximumPointsAfterCollectingCoinsFromAllNodes.go)   
 [2921. Maximum Profitable Triplets With Increasing Prices II](./leetcode/2921-MaximumProfitableTripletsWithIncreasingPricesII.go)   
 [2923. Find Champion I](./leetcode/2923-FindChampionI.go)   
