@@ -53,6 +53,26 @@ func punishmentNumber(n int) int {
     return res
 }
 
+func punishmentNumber1(n int) int {
+    var canPartition func(num, target int) bool
+    canPartition = func(num, target int) bool {
+        if target < 0 || num < target { return false } // Invalid partition found
+        if num == target { return true } // Valid partition found
+        // Recursively check all partitions for a valid partition
+        return  canPartition(num / 10,   target - (num % 10))  ||
+                canPartition(num / 100,  target - (num % 100)) ||
+                canPartition(num / 1000, target - (num % 1000))
+    }
+    res := 0
+    for i := 1; i <= n; i++ {
+        square := i * i
+        if canPartition(square, i) {
+            res += square
+        }
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: n = 10
@@ -81,4 +101,14 @@ func main() {
     fmt.Println(punishmentNumber(512)) // 772866
     fmt.Println(punishmentNumber(999)) // 9804657
     fmt.Println(punishmentNumber(1000)) // 10804657
+
+    fmt.Println(punishmentNumber1(10)) // 182
+    fmt.Println(punishmentNumber1(37)) // 1478
+    fmt.Println(punishmentNumber1(1)) // 1
+    fmt.Println(punishmentNumber1(2)) // 1
+    fmt.Println(punishmentNumber1(8)) // 1
+    fmt.Println(punishmentNumber1(16)) // 182
+    fmt.Println(punishmentNumber1(512)) // 772866
+    fmt.Println(punishmentNumber1(999)) // 9804657
+    fmt.Println(punishmentNumber1(1000)) // 10804657
 }
