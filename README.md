@@ -1719,6 +1719,7 @@
 [3440. Reschedule Meetings for Maximum Free Time II](./leetcode/3440-RescheduleMeetingsForMaximumFreeTimeII.go)   
 [3447. Assign Elements to Groups with Constraints](./leetcode/3447-AssignElementsToGroupsWithConstraints.go)   
 [3450. Maximum Students on a Single Bench](./leetcode/3450-MaximumStudentsOnASingleBench.go)   
+[3452. Sum of Good Numbers](./leetcode/3452-SumOfGoodNumbers.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
