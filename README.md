@@ -3956,6 +3956,7 @@ LCR 185. 统计结果概率
 [LCP 23. 魔术排列](./leetcode/LCP23-MagicArrangement.go)   
 [LCP 24. 数字游戏](./leetcode/LCP24-NumberGame.go)   
 [LCP 25. 古董键盘](./leetcode/LCP25-AntiqueKeyboard.go)   
+[LCP 26. 导航装置](./leetcode/LCP26-NavigationDevice.go)   
 [LCP 27. 黑盒光线反射](./leetcode/LCP27-BlackBox.go)   
 [LCP 28. 采购方案](./leetcode/LCP28-PurchasePlans.go)   
 [LCP 29. 乐团站位](./leetcode/LCP29-BandPositioning.go)   
