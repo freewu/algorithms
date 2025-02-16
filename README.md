@@ -1575,6 +1575,7 @@
 [3105. Longest Strictly Increasing or Strictly Decreasing Subarray](./leetcode/3105-LongestStrictlyIncreasingOrStrictlyDecreasingSubarray.go)   
 [3107. Minimum Operations to Make Median of Array Equal to K](./leetcode/3107-MinimumOperationsToMakeMedianOfArrayEqualToK.go)   
 [3111. Minimum Rectangles to Cover Points](./leetcode/3111-MinimumRectanglesToCoverPoints.go)   
+[3113. Find the Number of Subarrays Where Boundary Elements Are Maximum](./leetcode/3113-FindTheNumberOfSubarraysWhereBoundaryElementsAreMaximum.go)   
 [3115. Maximum Prime Difference](./leetcode/3115-MaximumPrimeDifference.go)   
 [3116. Kth Smallest Amount With Single Denomination Combination](./leetcode/3116-KthSmallestAmountWithSingleDenominationCombination.go)   
 [3117. Minimum Sum of Values by Dividing Array](./leetcode/3117-MinimumSumOfValuesByDividingArray.go)   
