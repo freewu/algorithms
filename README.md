@@ -1469,6 +1469,7 @@
 [2910. Minimum Number of Groups to Create a Valid Assignment](./leetcode/2910-MinimumNumberOfGroupsToCreateAValidAssignment.go)   
 [2912. Number of Ways to Reach Destination in the Grid](./leetcode/2912-NumberOfWaysToReachDestinationInTheGrid.go)   
 [2913. Subarrays Distinct Element Sum of Squares I](./leetcode/2913-SubarraysDistinctElementSumOfSquaresI.go)   
+[2915. Length of the Longest Subsequence That Sums to Target](./leetcode/2915-LengthOfTheLongestSubsequenceThatSumsToTarget.go)   
 [2916. Subarrays Distinct Element Sum of Squares II](./leetcode/2916-SubarraysDistinctElementSumOfSquaresII.go)   
 [2917. Find the K-or of an Array](./leetcode/2917-FindTheKOrOfAnArray.go)   
 [2918. Minimum Equal Sum of Two Arrays After Replacing Zeros](./leetcode/2918-MinimumEqualSumOfTwoArraysAfterReplacingZeros.go)   
