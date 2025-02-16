@@ -1466,6 +1466,7 @@
 [2907. Maximum Profitable Triplets With Increasing Prices I](./leetcode/2907-MaximumProfitableTripletsWithIncreasingPricesI.go)   
 [2908. Minimum Sum of Mountain Triplets I](./leetcode/2908-MinimumSumOfMountainTripletsI.go)   
 [2909. Minimum Sum of Mountain Triplets II](./leetcode/2909-MinimumSumOfMountainTripletsII.go)   
+[2910. Minimum Number of Groups to Create a Valid Assignment](./leetcode/2910-MinimumNumberOfGroupsToCreateAValidAssignment.go)   
 [2912. Number of Ways to Reach Destination in the Grid](./leetcode/2912-NumberOfWaysToReachDestinationInTheGrid.go)   
 [2913. Subarrays Distinct Element Sum of Squares I](./leetcode/2913-SubarraysDistinctElementSumOfSquaresI.go)   
 [2916. Subarrays Distinct Element Sum of Squares II](./leetcode/2916-SubarraysDistinctElementSumOfSquaresII.go)   
