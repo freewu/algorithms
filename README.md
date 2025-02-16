@@ -2252,6 +2252,7 @@
 [3121. Count the Number of Special Characters II](./leetcode/3121-CountTheNumberOfSpecialCharactersII.go)   
 [3125. Maximum Number That Makes Result of Bitwise AND Zero](./leetcode/3125-MaximumNumberThatMakesResultOfBitwiseANDZero.go)   
 [3135. Equalize Strings by Adding or Removing Characters at Ends](./leetcode/3135-EqualizeStringsByAddingOrRemovingCharactersAtEnds.go)   
+[3136. Valid Word](./leetcode/3136-ValidWord.go)   
 [3137. Minimum Number of Operations to Make Word K-Periodic](./leetcode/3137-MinimumNumberOfOperationsToMakeWordKPeriodic.go)   
 [3138. Minimum Length of Anagram Concatenation](./leetcode/3138-MinimumLengthOfAnagramConcatenation.go)   
 [3144. Minimum Substring Partition of Equal Character](./leetcode/3144-MinimumSubstringPartitionOfEqualCharacter.go)   
