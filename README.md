@@ -2662,6 +2662,7 @@
 [2992. Number of Self-Divisible Permutations](./leetcode/2992-NumberOfSelfDivisiblePermutations.go)   
 [2999. Count the Number of Powerful Integers](./leetcode/2999-CountTheNumberOfPowerfulIntegers.go)   
 [3009. Maximum Number of Intersections on the Chart](./leetcode/3009-MaximumNumberOfIntersectionsOnTheChart.go)   
+[3021. Alice and Bob Playing Flower Game](./leetcode/3021-AliceAndBobPlayingFlowerGame.go)   
 [3032. Count Numbers With Unique Digits II](./leetcode/3032-CountNumbersWithUniqueDigitsII.go)   
 [3099. Harshad Number](./leetcode/3099-HarshadNumber.go)   
 [3100. Water Bottles II](./leetcode/3100-WaterBottlesII.go)   
