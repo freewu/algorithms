@@ -1526,6 +1526,7 @@
 [3010. Divide an Array Into Subarrays With Minimum Cost I](./leetcode/3010-DivideAnArrayIntoSubarraysWithMinimumCostI.go)   
 [3012. Minimize Length of Array Using Operations](./leetcode/3012-MinimizeLengthOfArrayUsingOperations.go)   
 [3013. Divide an Array Into Subarrays With Minimum Cost II](./leetcode/3013-DivideAnArrayIntoSubarraysWithMinimumCostII.go)   
+[3020. Find the Maximum Number of Elements in Subset](./leetcode/3020-FindTheMaximumNumberOfElementsInSubset.go)   
 [3022. Minimize OR of Remaining Elements Using Operations](./leetcode/3022-MinimizeOROfRemainingElementsUsingOperations.go)   
 [3023. Find Pattern in Infinite Stream I](./leetcode/3023-FindPatternInInfiniteStreamI.go)   
 [3025. Find the Number of Ways to Place People I](./leetcode/3025-FindTheNumberOfWaysToPlacePeopleI.go)   
