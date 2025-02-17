@@ -1717,6 +1717,7 @@
 [3424. Minimum Cost to Make Arrays Identical](./leetcode/3424-MinimumCostToMakeArraysIdentical.go)   
 [3427. Sum of Variable Length Subarrays](./leetcode/3427-SumOfVariableLengthSubarrays.go)   
 [3429. Paint House IV](./leetcode/3429-PaintHouseIV.go)   
+[3430. Maximum and Minimum Sums of at Most Size K Subarrays](./leetcode/3430-MaximumAndMinimumSumsOfAtMostSizeKSubarrays.go)   
 [3431. Minimum Unlocked Indices to Sort Nums](./leetcode/3431-MinimumUnlockedIndicesToSortNums.go)   
 [3432. Count Partitions with Even Sum Difference](./leetcode/3432-CountPartitionsWithEvenSumDifference.go)   
 [3433. Count Mentions Per User](./leetcode/3433-CountMentionsPerUser.go)   
