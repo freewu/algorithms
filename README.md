@@ -1705,6 +1705,7 @@
 [3383. Minimum Runes to Add to Cast Spell](./leetcode/3383-MinimumRunesToAddToCastSpell.go)   
 [3385. Minimum Time to Break Locks II](./leetcode/3385-MinimumTimeToBreakLocksII.go)   
 [3386. Button with Longest Push Time](./leetcode/3386-ButtonWithLongestPushTime.go)   
+[3387. Maximize Amount After Two Days of Conversions](./leetcode/3387-MaximizeAmountAfterTwoDaysOfConversions.go)   
 [3394. Check if Grid can be Cut into Sections](./leetcode/3394-CheckIfGridCanBeCutIntoSections.go)   
 [3395. Subsequences with a Unique Middle Mode I](./leetcode/3395-SubsequencesWithAUniqueMiddleModeI.go)   
 [3396. Minimum Number of Operations to Make Elements in Array Distinct](./leetcode/3396-MinimumNumberOfOperationsToMakeElementsInArrayDistinct.go)   
