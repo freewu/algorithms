@@ -4040,6 +4040,7 @@ LCR 185. 统计结果概率
 [面试题 02.06. Palindrome Linked List LCCI](./leetcode/LCCI0206-PalindromeLinkedList.go)   
 [面试题 02.07. Intersection of Two Linked Lists LCCI](./leetcode/LCCI0207-IntersectionOfTwoLinkedLists.go)   
 [面试题 02.08. Linked List Cycle LCCI](./leetcode/LCCI0208-LinkedListCycle.go)   
+[面试题 04.04. Check Balance LCCI](./leetcode/LCCI0404-CheckBalance.go)   
 [面试题 05.01. Insert Into Bits LCCI](./leetcode/LCCI0501-InsertIntoBits.go)   
 [面试题 05.06. Convert Integer LCCI](./leetcode/LCCI0506-ConvertInteger.go)   
 [面试题 05.07. Exchange LCCI](./leetcode/LCCI0507-Exchange.go)   
