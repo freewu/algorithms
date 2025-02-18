@@ -2248,6 +2248,7 @@
 [3014. Minimum Number of Pushes to Type Word I](./leetcode/3014-MinimumNumberOfPushesToTypeWordI.go)   
 [3016. Minimum Number of Pushes to Type Word II](./leetcode/3016-MinimumNumberOfPushesToTypeWordII.go)   
 [3019. Number of Changing Keys](./leetcode/3019-NumberOfChangingKeys.go)   
+[3029. Minimum Time to Revert Word to Initial State I](./leetcode/3029-MinimumTimeToRevertWordToInitialStateI.go)   
 [3081. Replace Question Marks in String to Minimize Its Value](./leetcode/3081-ReplaceQuestionMarksInStringToMinimizeItsValue.go)   
 [3083. Existence of a Substring in a String and Its Reverse](./leetcode/3083-ExistenceOfASubstringInAStringAndItsReverse.go)   
 [3084. Count Substrings Starting and Ending with Given Character](./leetcode/3084-CountSubstringsStartingAndEndingWithGivenCharacter.go)   
