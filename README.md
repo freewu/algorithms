@@ -4003,6 +4003,7 @@ LCR 185. 统计结果概率
 [LCP 61. 气温变化趋势](./leetcode/LCP61-TemperatureTrend.go)   
 [LCP 63. 弹珠游戏](./leetcode/LCP63-MarblesGame.go)   
 [LCP 64. 二叉树灯饰](./leetcode/LCP64-BinaryTreeLighting.go)   
+[LCP 65. 舒适的湿度](./leetcode/LCP65-ComfortableHumidity.go)   
 [LCP 68. 美观的花束](./leetcode/LCP68-BeautifulFlowers.go)   
 [LCP 69. Hello LeetCode!](./leetcode/LCP69-HelloLeetCode.go)   
 [LCP 71. 集水器](./leetcode/LCP71-Reservoir.go)   
