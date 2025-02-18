@@ -3991,6 +3991,7 @@ LCR 185. 统计结果概率
 [LCP 47. 入场安检](./leetcode/LCP47-SecurityCheck.go)   
 [LCP 48. 无限棋局](./leetcode/LCP48-InfiniteGobang.go)   
 [LCP 49. 环形闯关游戏](./leetcode/LCP49-RingGame.go)   
+[LCP 51. 烹饪料理](./leetcode/LCP51-Cook.go)   
 [LCP 52. 二叉搜索树染色](./leetcode/LCP52-BinarySearchTreeStaining.go)   
 [LCP 54. 夺回据点](./leetcode/LCP54-RetrieveTheStronghold.go)   
 [LCP 55. 采集果实](./leetcode/LCP56-CollectFruits.go)   
