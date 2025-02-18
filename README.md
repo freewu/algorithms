@@ -3180,6 +3180,7 @@
 [2642. Design Graph With Shortest Path Calculator](./leetcode/2642-DesignGraphWithShortestPathCalculator.go)   
 [2671. Frequency Tracker](./leetcode/2671-FrequencyTracker.go)   
 [3242. Design Neighbor Sum Service](./leetcode/3242-DesignNeighborSumService.go)   
+[3408. Design Task Manager](./leetcode/3408-DesignTaskManager.go)   
 
 # Binary Search
 [278. First Bad Version](./leetcode/278-FirstBadVersion.go)   
