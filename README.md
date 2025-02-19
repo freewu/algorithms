@@ -3976,6 +3976,7 @@ LCR 185. 统计结果概率
 [LCP 11. 期望个数统计](./leetcode/LCP11-ExpectedQuantityStatistics.go)   
 [LCP 12. 小张刷题计划](./leetcode/LCP12-BrushingQuestionsPlan.go)   
 [LCP 13. 寻宝](./leetcode/LCP13-TreasureHunt.go)   
+[LCP 14. 切分数组](./leetcode/LCP14-SplitArray.go)   
 [LCP 15. 游乐园的迷宫](./leetcode/LCP15-MazeOfAmusementPark.go)   
 [LCP 17. 速算机器人](./leetcode/LCP17-CalculateRobot.go)   
 [LCP 18. 早餐组合](./leetcode/LCP18-BreakfastCombination.go)   
