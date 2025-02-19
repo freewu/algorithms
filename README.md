@@ -1729,6 +1729,7 @@
 [3435. Frequencies of Shortest Supersequences](./leetcode/3435-FrequenciesOfShortestSupersequences.go)   
 [3439. Reschedule Meetings for Maximum Free Time I](./leetcode/3439-RescheduleMeetingsForMaximumFreeTimeI.go)   
 [3440. Reschedule Meetings for Maximum Free Time II](./leetcode/3440-RescheduleMeetingsForMaximumFreeTimeII.go)   
+[3446. Sort Matrix by Diagonals](./leetcode/3446-SortMatrixByDiagonals.go)   
 [3447. Assign Elements to Groups with Constraints](./leetcode/3447-AssignElementsToGroupsWithConstraints.go)   
 [3450. Maximum Students on a Single Bench](./leetcode/3450-MaximumStudentsOnASingleBench.go)   
 [3452. Sum of Good Numbers](./leetcode/3452-SumOfGoodNumbers.go)   
