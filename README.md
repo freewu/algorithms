@@ -4060,6 +4060,7 @@ LCR 185. 统计结果概率
 [面试题 05.07. Exchange LCCI](./leetcode/LCCI0507-Exchange.go)   
 [面试题 05.08. Draw Line LCCI](./leetcode/LCCI0508-DrawLine.go)   
 [面试题 08.02. Robot in a Grid LCCI](./leetcode/LCCI0802-RobotInAGrid.go)   
+[面试题 08.06. Hanota LCCI](./leetcode/LCCI0806-Hanota.go)   
 [面试题 08.14. Boolean Evaluation LCCI](./leetcode/LCCI0814-BooleanEvaluation.go)   
 [面试题 10.03. Search Rotate Array LCCI](./leetcode/LCCI1003-SearchRotateArray.go)   
 [面试题 10.09. Sorted Matrix Search LCCI](./leetcode/LCCI1009-SortedMatrixSearch.go)   
