@@ -4076,4 +4076,5 @@ LCR 185. 统计结果概率
 [面试题 17.20. Continuous Median LCCI](./leetcode/LCCI1720-ContinuousMedian.go)   
 [面试题 17.21. Volume of Histogram LCCI](./leetcode/LCCI1721-VolumeOfHistogram.go)   
 [面试题 17.23. Max Black Square LCCI](./leetcode/LCCI1723-MaxBlackSquare.go)   
+[面试题 17.24. Max Submatrix LCCI](./leetcode/LCCI1724-MaxSubmatrix.go)   
 [面试题 17.26. Sparse Similarity LCCI](./leetcode/LCCI1726-SparseSimilarity.go)   
