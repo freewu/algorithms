@@ -26,52 +26,122 @@ package main
 
 import "fmt"
 
+// type LRUCache struct {
+//     ch map[int]int
+//     stack []int
+//     capacity int
+// }
+
+// func Constructor(capacity int) LRUCache {
+//     return LRUCache {
+//         capacity : capacity,
+//         ch : map[int]int{},
+//         stack : []int{},
+//     }
+// }
+
+// func (this *LRUCache) Get(key int) int {
+//     if _, ok := this.ch[key]; !ok { return -1 }
+//     res := this.ch[key]
+//     for k, v := range this.stack {
+//         if v == key {
+//           stack1 := this.stack[:k]
+//           stack2 := this.stack[k+1:]
+//           this.stack = append(stack1, stack2...)
+//           this.stack = append(this.stack, key)  
+//         }
+//     }
+//     return res
+// }
+
+// func (this *LRUCache) Put(key int, value int)  {
+//     if _, ok := this.ch[key]; ok {
+//             for k, v := range this.stack {
+//                 if v == key {
+//                     stack1 := this.stack[:k]
+//                     stack2 := this.stack[k+1:]
+//                     this.stack = append(stack1, stack2...)
+//                }
+//             }
+//     } else {
+//         if len(this.ch) == this.capacity {
+//             tmp := this.stack[0]
+//             this.stack = this.stack[1:]
+//             delete(this.ch, tmp)
+//         }
+//     }
+//     this.ch[key] = value
+//     this.stack = append(this.stack, key)
+// }
+
 type LRUCache struct {
-    ch map[int]int
-    stack []int
-    capacity int
+    Head *Node
+    Tail *Node
+    Cap int
+    Length int
+    NodeKeyMap map[int]*Node
+}
+
+type Node struct{
+    Key int
+    Value int
+    Next *Node
+    Pre *Node
 }
 
 func Constructor(capacity int) LRUCache {
-    return LRUCache {
-        capacity : capacity,
-        ch : map[int]int{},
-        stack : []int{},
-    }
+    head := &Node{}
+    tail := &Node{}
+    head.Next = tail
+    tail.Pre = head
+    return LRUCache{ Head: head, Tail: tail, Cap: capacity,  NodeKeyMap: make(map[int]*Node) }
 }
 
 func (this *LRUCache) Get(key int) int {
-    if _, ok := this.ch[key]; !ok { return -1 }
-    res := this.ch[key]
-    for k, v := range this.stack {
-        if v == key {
-          stack1 := this.stack[:k]
-          stack2 := this.stack[k+1:]
-          this.stack = append(stack1, stack2...)
-          this.stack = append(this.stack, key)  
-        }
-    }
+    node,ok := this.NodeKeyMap[key]
+    if !ok { return -1 }
+    res := node.Value
+    if this.Head.Next == node { return res }
+    current := this.Head.Next
+    node.Pre.Next = node.Next
+    node.Next.Pre = node.Pre
+    this.Head.Next = node
+    node.Pre = this.Head
+    node.Next = current
+    current.Pre = node
     return res
 }
 
 func (this *LRUCache) Put(key int, value int)  {
-    if _, ok := this.ch[key]; ok {
-            for k, v := range this.stack {
-                if v == key {
-                    stack1 := this.stack[:k]
-                    stack2 := this.stack[k+1:]
-                    this.stack = append(stack1, stack2...)
-               }
-            }
-    } else {
-        if len(this.ch) == this.capacity {
-            tmp := this.stack[0]
-            this.stack = this.stack[1:]
-            delete(this.ch, tmp)
+    node,ok := this.NodeKeyMap[key]
+    if !ok {
+        node = &Node{ Key:key, Value: value }
+        this.NodeKeyMap[key] = node
+        current := this.Head.Next
+        this.Head.Next = node
+        node.Pre = this.Head
+        node.Next = current
+        current.Pre = node
+        if this.Length < this.Cap {
+            this.Length++
+            return 
         }
+        deleted := this.Tail.Pre
+        deleted.Pre.Next = this.Tail
+        this.Tail.Pre = deleted.Pre
+        delete(this.NodeKeyMap, deleted.Key)
+    } else {
+        node.Value = value
+        if this.Head.Next == node { return }
+        current := this.Head.Next
+        node.Pre.Next = node.Next
+        node.Next.Pre = node.Pre
+        this.Head.Next = node
+        node.Pre = this.Head
+        node.Next = current
+        current.Pre = node
     }
-    this.ch[key] = value
-    this.stack = append(this.stack, key)
+    return 
 }
 
 func main() {
