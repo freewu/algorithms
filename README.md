@@ -2307,6 +2307,7 @@
 [3403. Find the Lexicographically Largest String From the Box I](./leetcode/3403-FindTheLexicographicallyLargestStringFromTheBoxI.go)   
 [3406. Find the Lexicographically Largest String From the Box II](./leetcode/3406-FindTheLexicographicallyLargestStringFromTheBoxII.go)   
 [3438. Find Valid Pair of Adjacent Digits in String](./leetcode/3438-FindValidPairOfAdjacentDigitsInString.go)   
+[3458. Select K Disjoint Special Substrings](./leetcode/3458-SelectKDisjointSpecialSubstrings.go)   
 [3448. Count Substrings Divisible By Last Digit](./leetcode/3448-CountSubstringsDivisibleByLastDigit.go)   
 
 # Dynamic Programming
