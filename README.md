@@ -4079,6 +4079,7 @@ LCR 185. 统计结果概率
 [面试题 16.22. Langtons Ant LCCI](./leetcode/LCCI1622-LangtonsAnt.go)   
 [面试题 16.24. Pairs With Sum LCCI](./leetcode/LCCI1624-PairsWithSum.go)   
 [面试题 16.25. LRU Cache LCCI](./leetcode/LCCI1625-LRUCache.go)   
+[面试题 16.26. Calculator LCCI](./leetcode/LCCI1626-Calculator.go)   
 [面试题 17.01. Add Without Plus LCCI](./leetcode/LCCI1701-AddWithoutPlus.go)   
 [面试题 17.06. Number Of 2s In Range LCCI](./leetcode/LCCI1706-NumberOf2sInRange.go)   
 [面试题 17.07. Baby Names LCCI](./leetcode/LCCI1707-BabyNames.go)   
