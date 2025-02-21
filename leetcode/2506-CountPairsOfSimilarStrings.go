@@ -67,6 +67,22 @@ func similarPairs1(words []string) int {
     return res
 }
 
+func similarPairs2(words []string) int {
+    mp := make(map[[26]bool]int, len(words))
+    for _, word := range words {
+        count := [26]bool{}
+        for i := range word {
+            count[word[i]-'a'] = true
+        }
+        mp[count]++
+    }
+    res := 0
+    for _, v := range mp {
+        res += v * (v - 1) / 2
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: words = ["aba","aabb","abcd","bac","aabc"]
@@ -95,4 +111,9 @@ func main() {
     fmt.Println(similarPairs1([]string{"aabb","ab","ba"})) // 3
     fmt.Println(similarPairs1([]string{"nba","cba","dba"})) // 0
     fmt.Println(similarPairs1([]string{"bluefrog","leetcode"})) // 0
+
+    fmt.Println(similarPairs2([]string{"aba","aabb","abcd","bac","aabc"})) // 2
+    fmt.Println(similarPairs2([]string{"aabb","ab","ba"})) // 3
+    fmt.Println(similarPairs2([]string{"nba","cba","dba"})) // 0
+    fmt.Println(similarPairs2([]string{"bluefrog","leetcode"})) // 0
 }
