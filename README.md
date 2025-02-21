@@ -4089,6 +4089,7 @@ LCR 185. 统计结果概率
 [面试题 17.07. Baby Names LCCI](./leetcode/LCCI1707-BabyNames.go)   
 [面试题 17.08. Circus Tower LCCI](./leetcode/LCCI1708-CircusTower.go)   
 [面试题 17.12. BiNode LCCI](./leetcode/LCCI1712-BiNode.go)   
+[面试题 17.16. The Masseuse LCCI](./leetcode/LCCI1716-TheMasseuse.go)   
 [面试题 17.18. Shortest Supersequence LCCI](./leetcode/LCCI1718-ShortestSupersequence.go)   
 [面试题 17.19. Missing Two LCCI](./leetcode/LCCI1719-MissingTwo.go)   
 [面试题 17.20. Continuous Median LCCI](./leetcode/LCCI1720-ContinuousMedian.go)   
