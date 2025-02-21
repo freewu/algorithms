@@ -1671,6 +1671,7 @@
 [3286. Find a Safe Walk Through a Grid](./leetcode/3286-FindASafeWalkThroughAGrid.go)   
 [3287. Find the Maximum Sequence Value of Array](./leetcode/3287-FindTheMaximumSequenceValueOfArray.go)   
 [3288. Length of the Longest Increasing Path](./leetcode/3288-LengthOfTheLongestIncreasingPath.go)   
+[3289. The Two Sneaky Numbers of Digitville](./leetcode/3289-TheTwoSneakyNumbersOfDigitville.go)   
 [3290. Maximum Multiplication Score](./leetcode/3290-MaximumMultiplicationScore.go)   
 [3295. Report Spam Message](./leetcode/3295-ReportSpamMessage.go)   
 [3296. Minimum Number of Seconds to Make Mountain Height Zero](./leetcode/3296-MinimumNumberOfSecondsToMakeMountainHeightZero.go)   
