@@ -1722,6 +1722,7 @@
 [3418. Maximum Amount of Money Robot Can Earn](./leetcode/3418-MaximumAmountOfMoneyRobotCanEarn.go)   
 [3420. Count Non-Decreasing Subarrays After K Operations](./leetcode/3420-CountNonDecreasingSubarraysAfterKOperations.go)   
 [3422. Minimum Operations to Make Subarray Elements Equal](./leetcode/3422-MinimumOperationsToMakeSubarrayElementsEqual.go)   
+[3423. Maximum Difference Between Adjacent Elements in a Circular Array](./leetcode/3423-MaximumDifferenceBetweenAdjacentElementsInACircularArray.go)   
 [3424. Minimum Cost to Make Arrays Identical](./leetcode/3424-MinimumCostToMakeArraysIdentical.go)   
 [3427. Sum of Variable Length Subarrays](./leetcode/3427-SumOfVariableLengthSubarrays.go)   
 [3428. Maximum and Minimum Sums of at Most Size K Subsequences](./leetcode/3428-MaximumAndMinimumSumsOfAtMostSizeKSubsequences.go)   
