@@ -4017,6 +4017,7 @@ LCR 185. 统计结果概率
 [LCP 50. 宝石补给](./leetcode/LCP50-GemSupply.go)   
 [LCP 51. 烹饪料理](./leetcode/LCP51-Cook.go)   
 [LCP 52. 二叉搜索树染色](./leetcode/LCP52-BinarySearchTreeStaining.go)   
+[LCP 53. 守护太空城](./leetcode/LCP53-DefendSpaceCity.go)   
 [LCP 54. 夺回据点](./leetcode/LCP54-RetrieveTheStronghold.go)   
 [LCP 55. 采集果实](./leetcode/LCP55-CollectFruits.go)   
 [LCP 56. 信物传送](./leetcode/LCP56-ConveyorBelt.go)   
