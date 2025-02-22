@@ -2262,6 +2262,7 @@
 [3019. Number of Changing Keys](./leetcode/3019-NumberOfChangingKeys.go)   
 [3029. Minimum Time to Revert Word to Initial State I](./leetcode/3029-MinimumTimeToRevertWordToInitialStateI.go)   
 [3031. Minimum Time to Revert Word to Initial State II](./leetcode/3031-MinimumTimeToRevertWordToInitialStateII.go)   
+[3039. Apply Operations to Make String Empty](./leetcode/3039-ApplyOperationsToMakeStringEmpty.go)   
 [3081. Replace Question Marks in String to Minimize Its Value](./leetcode/3081-ReplaceQuestionMarksInStringToMinimizeItsValue.go)   
 [3083. Existence of a Substring in a String and Its Reverse](./leetcode/3083-ExistenceOfASubstringInAStringAndItsReverse.go)   
 [3084. Count Substrings Starting and Ending with Given Character](./leetcode/3084-CountSubstringsStartingAndEndingWithGivenCharacter.go)   
