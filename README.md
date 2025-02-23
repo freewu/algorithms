@@ -1664,6 +1664,7 @@
 [3267. Count Almost Equal Pairs II](./leetcode/3267-CountAlmostEqualPairsII.go)   
 [3269. Constructing Two Increasing Arrays](./leetcode/3269-ConstructingTwoIncreasingArrays.go)   
 [3273. Minimum Amount of Damage Dealt to Bob](./leetcode/3273-MinimumAmountOfDamageDealtToBob.go)   
+[3275. K-th Nearest Obstacle Queries](./leetcode/3275-KthNearestObstacleQueries.go)   
 [3276. Select Cells in Grid With Maximum Score](./leetcode/3276-SelectCellsInGridWithMaximumScore.go)   
 [3277. Maximum XOR Score Subarray Queries](./leetcode/3277-MaximumXORScoreSubarrayQueries.go)   
 [3279. Maximum Total Area Occupied by Pistons](./leetcode/3279-MaximumTotalAreaOccupiedByPistons.go)   
