@@ -4093,6 +4093,7 @@ LCR 185. 统计结果概率
 [面试题 10.09. Sorted Matrix Search LCCI](./leetcode/LCCI1009-SortedMatrixSearch.go)   
 [面试题 16.05. Factorial Zeros LCCI](./leetcode/LCCI1605-FactorialZeros.go)   
 [面试题 16.06. Smallest Difference LCCI](./leetcode/LCCI1606-SmallestDifference.go)   
+[面试题 16.07. Maximum LCCI](./leetcode/LCCI1607-Maximum.go)   
 [面试题 16.09. Operations LCCI](./leetcode/LCCI1609-Operations.go)   
 [面试题 16.16. Sub Sort LCCI](./leetcode/LCCI1606-SubSort.go)   
 [面试题 16.17. Contiguous Sequence LCCI](./leetcode/LCCI1617-ContiguousSequence.go)   
