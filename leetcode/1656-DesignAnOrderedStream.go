@@ -69,6 +69,24 @@ func (this *OrderedStream) Insert(id int, value string) []string {
     return this.list[id-1:end] // Return the sub-array of values.
 }
 
+type OrderedStream1 struct {
+    stream []string
+    ptr    int
+}
+
+func Constructor1(n int) OrderedStream1 {
+    return OrderedStream1{ make([]string, n + 1), 1 }
+}
+
+func (s *OrderedStream1) Insert(idKey int, value string) []string {
+    s.stream[idKey] = value
+    start := s.ptr
+    for s.ptr < len(s.stream) && s.stream[s.ptr] != "" {
+        s.ptr++
+    }
+    return s.stream[start:s.ptr]
+}
+
 /**
  * Your OrderedStream object will be instantiated and called as such:
  * obj := Constructor(n);
@@ -95,4 +113,24 @@ func main() {
     // // Concatentating all the chunks returned:
     fmt.Println(obj.Insert(4, "ddddd")) // ["ddddd", "eeeee"]
     fmt.Println(obj)
+
+    // OrderedStream os = new OrderedStream(5);
+    obj1 := Constructor1(5)
+    fmt.Println(obj1)
+    // os.insert(3, "ccccc"); // Inserts (3, "ccccc"), returns [].
+    fmt.Println(obj1.Insert(3, "ccccc")) // []
+    fmt.Println(obj1)
+    // os.insert(1, "aaaaa"); // Inserts (1, "aaaaa"), returns ["aaaaa"].
+    fmt.Println(obj1.Insert(1, "aaaaa")) // ["aaaaa"]
+    fmt.Println(obj1)
+    // os.insert(2, "bbbbb"); // Inserts (2, "bbbbb"), returns ["bbbbb", "ccccc"].
+    fmt.Println(obj1.Insert(2, "bbbbb")) // ["bbbbb", "ccccc"]
+    fmt.Println(obj1)
+    // os.insert(5, "eeeee"); // Inserts (5, "eeeee"), returns [].
+    fmt.Println(obj1.Insert(5, "eeeee")) // []
+    fmt.Println(obj1)
+    // os.insert(4, "ddddd"); // Inserts (4, "ddddd"), returns ["ddddd", "eeeee"].
+    // // Concatentating all the chunks returned:
+    fmt.Println(obj1.Insert(4, "ddddd")) // ["ddddd", "eeeee"]
+    fmt.Println(obj1)
 }
