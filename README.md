@@ -2306,6 +2306,7 @@
 [3297. Count Substrings That Can Be Rearranged to Contain a String I](./leetcode/3297-CountSubstringsThatCanBeRearrangedToContainAStringI.go)   
 [3298. Count Substrings That Can Be Rearranged to Contain a String II](./leetcode/3298-CountSubstringsThatCanBeRearrangedToContainAStringII.go)   
 [3302. Find the Lexicographically Smallest Valid Sequence](./leetcode/3302-FindTheLexicographicallySmallestValidSequence.go)   
+[3303. Find the Occurrence of First Almost Equal Substring](./leetcode/3303-FindTheOccurrenceOfFirstAlmostEqualSubstring.go)   
 [3305. Count of Substrings Containing Every Vowel and K Consonants I](./leetcode/3305-CountOfSubstringsContainingEveryVowelAndKConsonantsI.go)   
 [3306. Count of Substrings Containing Every Vowel and K Consonants II](./leetcode/3306-CountOfSubstringsContainingEveryVowelAndKConsonantsII.go)   
 [3320. Count The Number of Winning Sequences](./leetcode/3320-CountTheNumberOfWinningSequences.go)   
