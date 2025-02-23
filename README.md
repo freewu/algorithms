@@ -2268,6 +2268,7 @@
 [3084. Count Substrings Starting and Ending with Given Character](./leetcode/3084-CountSubstringsStartingAndEndingWithGivenCharacter.go)   
 [3085. Minimum Deletions to Make String K-Special](./leetcode/3085-MinimumDeletionsToMakeStringKSpecial.go)   
 [3088. Make String Anti-palindrome](./leetcode/3088-MakeStringAntiPalindrome.go)   
+[3090. Maximum Length Substring With Two Occurrences](./leetcode/3090-MaximumLengthSubstringWithTwoOccurrences.go)   
 [3104. Find Longest Self-Contained Substring](./leetcode/3104-FindLongestSelfContainedSubstring.go)   
 [3106. Lexicographically Smallest String After Operations With Constraint](./leetcode/3106-LexicographicallySmallestStringAfterOperationsWithConstraint.go)   
 [3110. Score of a String](./leetcode/3110-ScoreOfAString.go)   
