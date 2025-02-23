@@ -3652,6 +3652,7 @@ LCR 185. 统计结果概率
 [3421. Find Students Who Improved](./leetcode/3421-FindStudentsWhoImproved.sql)   
 [3436. Find Valid Emails](./leetcode/3436-FindValidEmails.sql)   
 [3451. Find Invalid IP Addresses](./leetcode/3451-FindInvalidIPAddresses.sql)   
+[3465. Find Products with Valid Serial Numbers](./leetcode/3465-FindProductsWithValidSerialNumbers.sql)   
 
 # Shell
 [192. Word Frequency](./leetcode/192-WordFrequency.sh)      
