@@ -1569,6 +1569,7 @@
 [3080. Mark Elements on Array by Performing Queries](./leetcode/3080-MarkElementsOnArrayByPerformingQueries.go)   
 [3082. Find the Sum of the Power of All Subsequences](./leetcode/3082-FindTheSumOfThePowerOfAllSubsequences.go)   
 [3086. Minimum Moves to Pick K Ones](./leetcode/3086-MinimumMovesToPickKOnes.go)   
+[3093. Longest Common Suffix Queries](./leetcode/3093-LongestCommonSuffixQueries.go)   
 [3095. Shortest Subarray With OR at Least K I](./leetcode/3095-ShortestSubarrayWithORAtLeastKI.go)   
 [3097. Shortest Subarray With OR at Least K II](./leetcode/3097-ShortestSubarrayWithORAtLeastKII.go)   
 [3096. Minimum Levels to Gain More Points](./leetcode/3096-MinimumLevelsToGainMorePoints.go)   
