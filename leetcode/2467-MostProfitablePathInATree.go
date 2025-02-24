@@ -94,6 +94,41 @@ func mostProfitablePath(edges [][]int, bob int, amount []int) int {
     return res
 }
 
+func mostProfitablePath1(edges [][]int, bob int, amount []int) int {
+    n := len(edges) + 1
+    mp, seen := make([][]int, n), make([]bool, n)
+    for _, v := range edges {
+        mp[v[0]] = append(mp[v[0]], v[1])
+        mp[v[1]] = append(mp[v[1]], v[0])
+    }
+    min := func (x, y int) int { if x < y { return x; }; return y; }
+    max := func (x, y int) int { if x > y { return x; }; return y; }
+    var dfs func(node, distination int) (int, int)
+    dfs = func(node, distination int) (int, int) {
+        seen[node] = true
+        mx, steps := -1 << 31, n
+        if node == bob {
+            steps = 0
+        }
+        for _, next := range mp[node] {
+            if seen[next] {continue }
+            cur, k := dfs(next, distination + 1)
+            mx, steps = max(mx, cur), min(steps, k)
+        }
+        if mx == -1 << 31 {
+            mx = 0
+        }
+        if distination == steps {
+            mx += amount[node] / 2
+        } else if distination < steps {
+            mx += amount[node]
+        }
+        return mx, steps + 1
+    }
+    res, _ := dfs(0, 0)
+    return res
+}
+
 func main() {
     // Example 1:
     // <img src="https://assets.leetcode.com/uploads/2022/10/29/eg1.png" />
@@ -120,4 +155,7 @@ func main() {
     // Alice follows the path 0->1 whereas Bob follows the path 1->0.
     // Thus, Alice opens the gate at node 0 only. Hence, her net income is -7280. 
     fmt.Println(mostProfitablePath([][]int{{0,1}}, 1, []int{-7280,2350})) // -7280
+
+    fmt.Println(mostProfitablePath1([][]int{{0,1},{1,2},{1,3},{3,4}}, 3, []int{-2,4,2,-4,6})) // 6
+    fmt.Println(mostProfitablePath1([][]int{{0,1}}, 1, []int{-7280,2350})) // -7280
 }
