@@ -65,6 +65,6 @@ SELECT
 FROM
     products
 WHERE
-    REGEXP_LIKE(description , 'SN\d{4}\-\d{4}', 'i')
+    REGEXP_LIKE(description , 'SN\[0-9]{4}-[0-9]{4}(\\s|$)')
 ORDER BY
     product_id
