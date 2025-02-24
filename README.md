@@ -1633,6 +1633,7 @@
 [3206. Alternating Groups I](./leetcode/3206-AlternatingGroupsI.go)   
 [3207. Maximum Points After Enemy Battles](./leetcode/3207-MaximumPointsAfterEnemyBattles.go)   
 [3208. Alternating Groups II](./leetcode/3208-AlternatingGroupsII.go)   
+[3209. Number of Subarrays With AND Value of K](./leetcode/3209-NumberOfSubarraysWithANDValueOfK.go)   
 [3212. Count Submatrices With Equal Frequency of X and Y](./leetcode/3212-CountSubmatricesWithEqualFrequencyOfXAndY.go)   
 [3215. Count Triplets with Even XOR Set Bits II](./leetcode/3215-CountTripletsWithEvenXORSetBitsII.go)   
 [3218. Minimum Cost for Cutting Cake I](./leetcode/3218-MinimumCostForCuttingCakeI.go)   
