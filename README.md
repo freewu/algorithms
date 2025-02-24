@@ -4044,6 +4044,7 @@ LCR 185. 统计结果概率
 [LCP 63. 弹珠游戏](./leetcode/LCP63-MarblesGame.go)   
 [LCP 64. 二叉树灯饰](./leetcode/LCP64-BinaryTreeLighting.go)   
 [LCP 65. 舒适的湿度](./leetcode/LCP65-ComfortableHumidity.go)   
+[LCP 66. 最小展台数量](./leetcode/LCP66-MinimumNumberOfExhibitionBooths.go)   
 [LCP 67. 装饰树](./leetcode/LCP67-DecoratedTree.go)   
 [LCP 68. 美观的花束](./leetcode/LCP68-BeautifulFlowers.go)   
 [LCP 69. Hello LeetCode!](./leetcode/LCP69-HelloLeetCode.go)   
