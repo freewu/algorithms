@@ -4054,6 +4054,7 @@ LCR 185. 统计结果概率
 [LCP 67. 装饰树](./leetcode/LCP67-DecoratedTree.go)   
 [LCP 68. 美观的花束](./leetcode/LCP68-BeautifulFlowers.go)   
 [LCP 69. Hello LeetCode!](./leetcode/LCP69-HelloLeetCode.go)   
+[LCP 70. 沙地治理](./leetcode/LCP70-SandyLandManagement.go)   
 [LCP 71. 集水器](./leetcode/LCP71-Reservoir.go)   
 [LCP 72. 补给马车](./leetcode/LCP72-SupplyWagon.go)   
 [LCP 73. 探险营地](./leetcode/LCP73-AdventureCamp.go)   
