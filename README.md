@@ -1748,6 +1748,7 @@
 [3450. Maximum Students on a Single Bench](./leetcode/3450-MaximumStudentsOnASingleBench.go)   
 [3452. Sum of Good Numbers](./leetcode/3452-SumOfGoodNumbers.go)   
 [3453. Separate Squares I](./leetcode/3453-SeparateSquaresI.go)   
+[3454. Separate Squares II](./leetcode/3454-SeparateSquaresII.go)   
 [3457. Eat Pizzas!](./leetcode/3457-EatPizzas.go)   
 [3464. Maximize the Distance Between Points on a Square](./leetcode/3464-MaximizeTheDistanceBetweenPointsOnASquare.go)   
 
