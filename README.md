@@ -1749,6 +1749,8 @@
 [3452. Sum of Good Numbers](./leetcode/3452-SumOfGoodNumbers.go)   
 [3453. Separate Squares I](./leetcode/3453-SeparateSquaresI.go)   
 [3457. Eat Pizzas!](./leetcode/3457-EatPizzas.go)   
+[3464. Maximize the Distance Between Points on a Square](./leetcode/3464-MaximizeTheDistanceBetweenPointsOnASquare.go)   
+
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
