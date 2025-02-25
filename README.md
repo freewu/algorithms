@@ -4130,6 +4130,7 @@ LCR 185. 统计结果概率
 [面试题 17.08. Circus Tower LCCI](./leetcode/LCCI1708-CircusTower.go)   
 [面试题 17.09. Get Kth Magic Number LCCI](./leetcode/LCCI1709-GetKthMagicNumber.go)   
 [面试题 17.12. BiNode LCCI](./leetcode/LCCI1712-BiNode.go)   
+[面试题 17.14. Smallest K LCCI](./leetcode/LCCI1714-SmallestK.go)   
 [面试题 17.15. Longest Word LCCI](./leetcode/LCCI1715-LongestWord.go)   
 [面试题 17.16. The Masseuse LCCI](./leetcode/LCCI1716-TheMasseuse.go)   
 [面试题 17.18. Shortest Supersequence LCCI](./leetcode/LCCI1718-ShortestSupersequence.go)   
