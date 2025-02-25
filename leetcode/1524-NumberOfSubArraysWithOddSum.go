@@ -38,6 +38,19 @@ func numOfSubarrays(arr []int) int {
     return (tmp[0] * tmp[1]) % 1_000_000_007
 }
 
+func numOfSubarrays1(arr []int) int {
+    sum, odd, even := 0, 0, 1 // empty list is even number
+    for _, v := range arr {
+        sum += v
+        if sum & 1 == 1 {
+            odd++
+        } else {
+            even++
+        }
+    }
+    return (odd * even) % 1_000_000_007
+}
+
 func main() {
     // Example 1:
     // Input: arr = [1,3,5]
@@ -57,4 +70,13 @@ func main() {
     // Input: arr = [1,2,3,4,5,6,7]
     // Output: 16
     fmt.Println(numOfSubarrays([]int{1,2,3,4,5,6,7})) // 16
+
+    fmt.Println(numOfSubarrays([]int{1,2,3,4,5,6,7,8,9})) // 25
+    fmt.Println(numOfSubarrays([]int{9,8,7,6,5,4,3,2,1})) // 25
+
+    fmt.Println(numOfSubarrays1([]int{1,3,5})) // 4
+    fmt.Println(numOfSubarrays1([]int{2,4,6})) // 0
+    fmt.Println(numOfSubarrays1([]int{1,2,3,4,5,6,7})) // 16
+    fmt.Println(numOfSubarrays1([]int{1,2,3,4,5,6,7,8,9})) // 25
+    fmt.Println(numOfSubarrays1([]int{9,8,7,6,5,4,3,2,1})) // 25
 }
