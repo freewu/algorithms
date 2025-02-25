@@ -4002,6 +4002,7 @@ LCR 185. 统计结果概率
 [LCP 06. 拿硬币](./leetcode/LCP06-TakeCoin.go)   
 [LCP 07. 传递信息](./leetcode/LCP07-PassMessage.go)   
 [LCP 08. 剧情触发时间](./leetcode/LCP08-PlotTriggerTime.go)   
+[LCP 09. 最小跳跃次数](./leetcode/LCP09-MinJump.go)   
 [LCP 10. 二叉树任务调度](./leetcode/LCP10-BinaryTreeTaskScheduling.go)   
 [LCP 11. 期望个数统计](./leetcode/LCP11-ExpectedQuantityStatistics.go)   
 [LCP 12. 小张刷题计划](./leetcode/LCP12-BrushingQuestionsPlan.go)   
