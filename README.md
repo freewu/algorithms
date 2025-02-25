@@ -3997,6 +3997,7 @@ LCR 185. 统计结果概率
 [LCP 01. 猜数字](./leetcode/LCP01-GuessNumbers.go)   
 [LCP 02. 分式化简](./leetcode/LCP02-DeepDarkFraction.go)   
 [LCP 03. 机器人大冒险](./leetcode/LCP03-RobotAdventure.go)   
+[LCP 04. 覆盖](./leetcode/LCP04-Domino.go)   
 [LCP 05. 发 LeetCoin](./leetcode/LCP05-LeetCoinIssuance.go)   
 [LCP 06. 拿硬币](./leetcode/LCP06-TakeCoin.go)   
 [LCP 07. 传递信息](./leetcode/LCP07-PassMessage.go)   
