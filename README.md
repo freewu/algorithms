@@ -4129,6 +4129,7 @@ LCR 185. 统计结果概率
 [面试题 16.26. Calculator LCCI](./leetcode/LCCI1626-Calculator.go)   
 [面试题 17.01. Add Without Plus LCCI](./leetcode/LCCI1701-AddWithoutPlus.go)   
 [面试题 17.04. Missing Number LCCI](./leetcode/LCCI1704-MissingNumber.go)   
+[面试题 17.05. Find Longest Subarray LCCI](./leetcode/LCCI1705-FindLongestSubarray.go)   
 [面试题 17.06. Number Of 2s In Range LCCI](./leetcode/LCCI1706-NumberOf2sInRange.go)   
 [面试题 17.07. Baby Names LCCI](./leetcode/LCCI1707-BabyNames.go)   
 [面试题 17.08. Circus Tower LCCI](./leetcode/LCCI1708-CircusTower.go)   
