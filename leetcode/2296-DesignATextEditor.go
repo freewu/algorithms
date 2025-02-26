@@ -125,6 +125,51 @@ func (this *TextEditor) rString(k int) string {
     return string(r)
 }
 
+type TextEditor1 struct {
+    text []byte
+    text2 []byte
+}
+
+func Constructor1() TextEditor1 {
+    return TextEditor1{}
+}
+
+func (this *TextEditor1) AddText(text string) {
+    this.text = append(this.text, text...)
+}
+
+func (this *TextEditor1) DeleteText(k int) int {
+    n, del := len(this.text), k
+    if n < k {
+        del = n
+    }
+    this.text = this.text[:n - del]
+    return del
+}
+
+func (this *TextEditor1) CursorLeft(k int) string {
+    n := len(this.text)
+    for k > 0 && n > 0 {
+        this.text2 = append(this.text2, this.text[n - 1])
+        this.text = this.text[:n - 1]
+        n--
+        k--
+    }
+    return string(this.text[max(0, n - 10):])
+}
+
+func (this *TextEditor1) CursorRight(k int) string {
+    n := len(this.text2)
+    for k > 0 && n > 0 {
+        this.text = append(this.text, this.text2[n - 1])
+        this.text2 = this.text2[:n - 1]
+        n--
+        k--
+    }
+    n1 := len(this.text)
+    return string(this.text[max(0, n1 - 10):])
+}
+
 /**
  * Your TextEditor object will be instantiated and called as such:
  * obj := Constructor();
@@ -176,4 +221,46 @@ func main () {
     //                            // "practi" is the last min(10, 6) = 6 characters to the left of the cursor.
     fmt.Println(obj.CursorRight(6) ) // practi
     fmt.Println(obj) // "practi|ce"
+
+    // TextEditor textEditor = new TextEditor(); // The current text is "|". (The '|' character represents the cursor)
+    obj1 := Constructor1()
+    fmt.Println(obj1)
+    // textEditor.addText("leetcode"); // The current text is "leetcode|".
+    obj1.AddText("leetcode") 
+    fmt.Println(obj1) // "leetcode|"
+    // textEditor.deleteText(4); // return 4
+    //                           // The current text is "leet|". 
+    //                           // 4 characters were deleted.
+    fmt.Println(obj1.DeleteText(4) ) // 4
+    fmt.Println(obj1) // "leet|"
+    // textEditor.addText("practice"); // The current text is "leetpractice|". 
+    obj1.AddText("practice") 
+    fmt.Println(obj1) // "leetpractice|"
+    // textEditor.cursorRight(3); // return "etpractice"
+    //                            // The current text is "leetpractice|". 
+    //                            // The cursor cannot be moved beyond the actual text and thus did not move.
+    //                            // "etpractice" is the last 10 characters to the left of the cursor.
+    fmt.Println(obj1.CursorRight(3) ) // etpractice
+    fmt.Println(obj1) // "leetpractice|"
+    // textEditor.cursorLeft(8); // return "leet"
+    //                           // The current text is "leet|practice".
+    //                           // "leet" is the last min(10, 4) = 4 characters to the left of the cursor.
+    fmt.Println(obj1.CursorLeft(8) ) // leet
+    fmt.Println(obj1) // "leet|practice"
+    // textEditor.deleteText(10); // return 4
+    //                            // The current text is "|practice".
+    //                            // Only 4 characters were deleted.
+    fmt.Println(obj1.DeleteText(10) ) // 4
+    fmt.Println(obj1) // "|practice"
+    // textEditor.cursorLeft(2); // return ""
+    //                           // The current text is "|practice".
+    //                           // The cursor cannot be moved beyond the actual text and thus did not move. 
+    //                           // "" is the last min(10, 0) = 0 characters to the left of the cursor.
+    fmt.Println(obj1.CursorLeft(2) ) // ""
+    fmt.Println(obj1) // "|practice"
+    // textEditor.cursorRight(6); // return "practi"
+    //                            // The current text is "practi|ce".
+    //                            // "practi" is the last min(10, 6) = 6 characters to the left of the cursor.
+    fmt.Println(obj1.CursorRight(6) ) // practi
+    fmt.Println(obj1) // "practi|ce"
 }
