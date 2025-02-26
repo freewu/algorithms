@@ -1711,6 +1711,7 @@
 [3366. Minimum Array Sum](./leetcode/3366-MinimumArraySum.go)   
 [3376. Minimum Time to Break Locks I](./leetcode/3376-MinimumTimeToBreakLocksI.go)   
 [3378. Count Connected Components in LCM Graph](./leetcode/3378-CountConnectedComponentsInLCMGraph.go)   
+[3380. Maximum Area Rectangle With Point Constraints I](./leetcode/3380-MaximumAreaRectangleWithPointConstraintsI.go)   
 [3383. Minimum Runes to Add to Cast Spell](./leetcode/3383-MinimumRunesToAddToCastSpell.go)   
 [3385. Minimum Time to Break Locks II](./leetcode/3385-MinimumTimeToBreakLocksII.go)   
 [3386. Button with Longest Push Time](./leetcode/3386-ButtonWithLongestPushTime.go)   
