@@ -2299,6 +2299,7 @@
 [3170. Lexicographically Minimum String After Removing Stars](./leetcode/3170-LexicographicallyMinimumStringAfterRemovingStars.go)   
 [3174. Clear Digits](./leetcode/3174-ClearDigits.go)   
 [3210. Find the Encrypted String](./leetcode/3210-FindTheEncryptedString.go)   
+[3213. Construct String with Minimum Cost](./leetcode/3213-ConstructStringWithMinimumCost.go)   
 [3216. Lexicographically Smallest String After a Swap](./leetcode/3216-LexicographicallySmallestStringAfterASwap.go)   
 [3223. Minimum Length of String After Operations](./leetcode/3223-MinimumLengthOfStringAfterOperations.go)   
 [3234. Count the Number of Substrings With Dominant Ones](./leetcode/3234-CountTheNumberOfSubstringsWithDominantOnes.go)   
