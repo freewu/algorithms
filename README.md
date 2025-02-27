@@ -4032,6 +4032,7 @@ LCR 185. 统计结果概率
 [LCP 32. 批量处理任务](./leetcode/LCP32-BatchProcessingTasks.go)   
 [LCP 33. 蓄水](./leetcode/LCP33-StoreWater.go)   
 [LCP 34. 二叉树染色](./leetcode/LCP34-BinaryTreeStaining.go)   
+[LCP 38. 守卫城堡](./leetcode/LCP38-GuardCastle.go)   
 [LCP 39. 无人机方阵](./leetcode/LCP39-DroneArray.go)   
 [LCP 40. 心算挑战](./leetcode/LCP40-MaxmiumScore.go)   
 [LCP 41. 黑白翻转棋](./leetcode/LCP41-ReversiDeluxe.go)   
