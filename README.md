@@ -4156,6 +4156,7 @@ LCR 185. 统计结果概率
 [面试题 17.14. Smallest K LCCI](./leetcode/LCCI1714-SmallestK.go)   
 [面试题 17.15. Longest Word LCCI](./leetcode/LCCI1715-LongestWord.go)   
 [面试题 17.16. The Masseuse LCCI](./leetcode/LCCI1716-TheMasseuse.go)   
+[面试题 17.17. Multi Search LCCI](./leetcode/LCCI1717-MultiSearch.go)   
 [面试题 17.18. Shortest Supersequence LCCI](./leetcode/LCCI1718-ShortestSupersequence.go)   
 [面试题 17.19. Missing Two LCCI](./leetcode/LCCI1719-MissingTwo.go)   
 [面试题 17.20. Continuous Median LCCI](./leetcode/LCCI1720-ContinuousMedian.go)   
