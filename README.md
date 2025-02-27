@@ -4033,6 +4033,7 @@ LCR 185. 统计结果概率
 [LCP 33. 蓄水](./leetcode/LCP33-StoreWater.go)   
 [LCP 34. 二叉树染色](./leetcode/LCP34-BinaryTreeStaining.go)   
 [LCP 35. 电动车游城市](./leetcode/LCP35-ElectricCarPlan.go)   
+[LCP 36. 最多牌组数](./leetcode/LCP36-MaxGroupNumber.go)   
 [LCP 38. 守卫城堡](./leetcode/LCP38-GuardCastle.go)   
 [LCP 39. 无人机方阵](./leetcode/LCP39-DroneArray.go)   
 [LCP 40. 心算挑战](./leetcode/LCP40-MaxmiumScore.go)   
