@@ -49,6 +49,31 @@ func multiSearch(big string, smalls []string) [][]int {
     return res
 }
 
+func multiSearch1(big string, smalls []string) [][]int {
+    res := make([][]int, len(smalls))
+    minSearch := func(big, small string) []int {
+        combine := small + "#" + big
+        res, pi := []int{}, make([]int, len(combine))
+        for i := 1; i < len(combine); i++ {
+            l := pi[i-1]
+            for l > 0 && combine[i] != combine[l] {
+                l = pi[l-1]
+            }
+            if combine[i] == combine[l] {
+                pi[i] = l + 1
+                if pi[i] == len(small) {
+                    res = append(res, i - len(small) * 2)
+                }
+            }
+        }
+        return res
+    }
+    for i, small := range smalls {
+        res[i] = minSearch(big, small)
+    }
+    return res
+}
+
 func main() {
     // Example:
     // Input: 
@@ -56,4 +81,6 @@ func main() {
     // smalls = ["is","ppi","hi","sis","i","ssippi"]
     // Output:  [[1,4],[8],[],[3],[1,4,7,10],[5]]
     fmt.Println(multiSearch("mississippi", []string{"is","ppi","hi","sis","i","ssippi"})) // [[1,4],[8],[],[3],[1,4,7,10],[5]]
+
+    fmt.Println(multiSearch1("mississippi", []string{"is","ppi","hi","sis","i","ssippi"})) // [[1,4],[8],[],[3],[1,4,7,10],[5]]
 }
