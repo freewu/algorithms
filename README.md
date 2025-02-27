@@ -4152,6 +4152,7 @@ LCR 185. 统计结果概率
 [面试题 17.10. Find Majority Element LCCI](./leetcode/LCCI1710-FindMajorityElement.go)   
 [面试题 17.11. Find Closest LCCI](./leetcode/LCCI1711-FindClosest.go)   
 [面试题 17.12. BiNode LCCI](./leetcode/LCCI1712-BiNode.go)   
+[面试题 17.13. Re-Space LCCI](./leetcode/LCCI1713-ReSpace.go)   
 [面试题 17.14. Smallest K LCCI](./leetcode/LCCI1714-SmallestK.go)   
 [面试题 17.15. Longest Word LCCI](./leetcode/LCCI1715-LongestWord.go)   
 [面试题 17.16. The Masseuse LCCI](./leetcode/LCCI1716-TheMasseuse.go)   
