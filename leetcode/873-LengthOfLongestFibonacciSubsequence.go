@@ -75,6 +75,28 @@ func lenLongestFibSubseq1(arr []int) int {
     return res
 }
 
+func lenLongestFibSubseq2(arr []int) int {
+    res, n := 0, len(arr)
+    mp := make(map[int]int, n)
+    for i, v := range arr {
+        mp[v] = i
+    }
+    dp := make([][]int, n)
+    for i := range dp {
+        dp[i] = make([]int, n)
+    }
+    max := func (x, y int) int { if x > y { return x; }; return y; }
+    for r := 2; r < n; r++ {
+        for m := r - 1; m > 0 && arr[m] * 2 > arr[r]; m-- {
+            if l, ok := mp[arr[r]-arr[m]]; ok {
+                dp[m][r] = max(3, dp[l][m] + 1)
+                res = max(res, dp[m][r])
+            }
+        }
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: arr = [1,2,3,4,5,6,7,8]
@@ -86,7 +108,17 @@ func main() {
     // Output: 3
     // Explanation: The longest subsequence that is fibonacci-like: [1,11,12], [3,11,14] or [7,11,18].
     fmt.Println(lenLongestFibSubseq([]int{1,3,7,11,12,14,18})) // 3
+    
+    fmt.Println(lenLongestFibSubseq([]int{1,2,3,4,5,6,7,8,9})) // 5
+    fmt.Println(lenLongestFibSubseq([]int{9,8,7,6,5,4,3,2,1})) // 0
 
     fmt.Println(lenLongestFibSubseq1([]int{1,2,3,4,5,6,7,8})) // 5
     fmt.Println(lenLongestFibSubseq1([]int{1,3,7,11,12,14,18})) // 3
+    fmt.Println(lenLongestFibSubseq1([]int{1,2,3,4,5,6,7,8,9})) // 5
+    fmt.Println(lenLongestFibSubseq1([]int{9,8,7,6,5,4,3,2,1})) // 0
+
+    fmt.Println(lenLongestFibSubseq2([]int{1,2,3,4,5,6,7,8})) // 5
+    fmt.Println(lenLongestFibSubseq2([]int{1,3,7,11,12,14,18})) // 3
+    fmt.Println(lenLongestFibSubseq1([]int{1,2,3,4,5,6,7,8,9})) // 5
+    fmt.Println(lenLongestFibSubseq1([]int{9,8,7,6,5,4,3,2,1})) // 0
 }
