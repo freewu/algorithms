@@ -4124,6 +4124,7 @@ LCR 185. 统计结果概率
 [面试题 08.06. Hanota LCCI](./leetcode/LCCI0806-Hanota.go)   
 [面试题 08.10. Color Fill LCCI](./leetcode/LCCI0810-ColorFill.go)   
 [面试题 08.11. Coin LCCI](./leetcode/LCCI0811-Coin.go)   
+[面试题 08.13. Pile Box LCCI](./leetcode/LCCI0813-PileBox.go)   
 [面试题 08.14. Boolean Evaluation LCCI](./leetcode/LCCI0814-BooleanEvaluation.go)   
 [面试题 10.01. Sorted Merge LCCI](./leetcode/LCCI1001-SortedMerge.go)   
 [面试题 10.02. Group Anagrams LCCI](./leetcode/LCCI1002-GroupAnagrams.go)   
