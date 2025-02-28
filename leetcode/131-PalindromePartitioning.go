@@ -90,14 +90,68 @@ func partition1(s string) [][]string {
     return res
 }
 
+func partition2(s string) [][]string {
+    n := len(s)
+    dp := make([][]bool, n)
+    for i := range dp {
+        dp[i] = make([]bool, n)
+        dp[i][i] = true
+    }
+    for i := n - 2; i >= 0; i-- {
+        for j := i + 1; j < n; j++ {
+            if s[i] == s[j] {
+                if j == i+1 {
+                    dp[i][j] = true
+                } else {
+                    dp[i][j] = dp[i+1][j-1]
+                }
+            }
+        }
+    }
+    res, track := [][]string{}, []string{}
+    var dfs func(int)
+    dfs = func(index int) {
+        if index == n {
+            res = append(res, append([]string{}, track...))
+            return
+        }
+        for i := index; i < n; i++ {
+            if dp[index][i] {
+                track = append(track, s[index:i + 1])
+                dfs(i + 1)
+                track = track[:len(track) - 1]
+            }
+        }
+    }
+    dfs(0)
+    return res
+}
+
 func main() {
     start := time.Now() // 获取当前时间
+    // Example 1:
+    // Input: s = "aab"
+    // Output: [["a","a","b"],["aa","b"]]
     fmt.Println(partition("aab")) // [[a a b] [aa b]]
+    // Example 2:
+    // Input: s = "a"
+    // Output: [["a"]]
     fmt.Println(partition("a")) // [[a]]
-    fmt.Printf("ladderLength use : %v \r\n",time.Since(start))
+    fmt.Println(partition("bluefrog")) // [[a]]
+    fmt.Println(partition("leetcode")) // [[a]]
+    fmt.Printf("partition use : %v \r\n",time.Since(start))
 
     start = time.Now() // 获取当前时间
     fmt.Println(partition1("aab")) // [[a a b] [aa b]]
     fmt.Println(partition1("a")) // [[a]]
-    fmt.Printf("ladderLength use : %v \r\n",time.Since(start))
+    fmt.Println(partition1("bluefrog")) // [[b l u e f r o g]]
+    fmt.Println(partition1("leetcode")) // [[l e e t c o d e] [l ee t c o d e]]
+    fmt.Printf("partition1 use : %v \r\n",time.Since(start))
+
+    start = time.Now() // 获取当前时间
+    fmt.Println(partition2("aab")) // [[a a b] [aa b]]
+    fmt.Println(partition2("a")) // [[a]]
+    fmt.Println(partition2("bluefrog")) // [[b l u e f r o g]]
+    fmt.Println(partition2("leetcode")) // [[l e e t c o d e] [l ee t c o d e]]
+    fmt.Printf("partition2 use : %v \r\n",time.Since(start))
 }
