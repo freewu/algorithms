@@ -82,6 +82,50 @@ func shortestCommonSupersequence(s1 string, s2 string) string {
     return res
 }
 
+func shortestCommonSupersequence1(str1 string, str2 string) string {
+    // Make sure str1 is the longest
+    if len(str1) < len(str2) {
+        str1, str2 = str2, str1
+        // return shortestCommonSupersequence(str2, str1)
+    }
+    dp := make([][]int, len(str1) + 1)
+    for i := 0; i < len(dp); i++ {
+        dp[i] = make([]int, len(str2) + 1)
+    }
+    max := func (x, y int) int { if x > y { return x; }; return y; }
+    for i := len(str1) - 1; i >= 0; i-- {
+        for j := len(str2) - 1; j >= 0; j-- {
+            if str1[i] == str2[j] {
+                dp[i][j] = 1 + dp[i+1][j+1]
+            } else {
+                dp[i][j] = max(dp[i][j+1], dp[i+1][j])
+            }
+        }
+    }
+    res := []byte{} // var res strings.Builder
+    i, j := 0, 0
+    for i < len(str1) && j < len(str2) {
+        if str1[i] == str2[j] {
+            // Characters are the same; copy character to result and advance both strings.
+            res = append(res, str1[i]) // res.WriteByte(str1[i])
+            i++
+            j++
+        } else if dp[i][j+1] > dp[i+1][j] {
+            // Picking str2[j], because the str1[i:] and str2[j+1:] have longest subsequence
+            res = append(res, str2[j]) // res.WriteByte(str2[j])
+            j++
+        } else {
+            // if equal or less, we want to advance str1 first as it is bigger
+            res = append(res, str1[i]) // res.WriteByte(str1[i])
+            i++
+        }
+    }
+    // Simply copy the remaining characters from both strings
+    res = append(res, str1[i:]...) // res.WriteString(str1[i:])
+    res = append(res, str2[j:]...)  // res.WriteString(str2[j:])
+    return string(res) // return res.String()
+}
+
 func main() {
     // Example 1:
     // Input: str1 = "abac", str2 = "cab"
@@ -95,4 +139,10 @@ func main() {
     // Input: str1 = "aaaaaaaa", str2 = "aaaaaaaa"
     // Output: "aaaaaaaa"
     fmt.Println(shortestCommonSupersequence("aaaaaaaa","aaaaaaaa")) // "aaaaaaaa"
+
+    fmt.Println(shortestCommonSupersequence("bluefrog","leetcode")) // "bluefretcogde"
+
+    fmt.Println(shortestCommonSupersequence1("abac","cab")) // "cabac"
+    fmt.Println(shortestCommonSupersequence1("aaaaaaaa","aaaaaaaa")) // "aaaaaaaa"
+    fmt.Println(shortestCommonSupersequence1("bluefrog","leetcode")) // "bluefretcogde"
 }
