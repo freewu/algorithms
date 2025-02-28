@@ -2338,6 +2338,7 @@
 [3438. Find Valid Pair of Adjacent Digits in String](./leetcode/3438-FindValidPairOfAdjacentDigitsInString.go)   
 [3458. Select K Disjoint Special Substrings](./leetcode/3458-SelectKDisjointSpecialSubstrings.go)   
 [3448. Count Substrings Divisible By Last Digit](./leetcode/3448-CountSubstringsDivisibleByLastDigit.go)   
+[3460. Longest Common Prefix After at Most One Removal](./leetcode/3460-LongestCommonPrefixAfterAtMostOneRemoval.go)   
 
 # Dynamic Programming
 [276. Paint Fence](./leetcode/276-PaintFence.go)   
