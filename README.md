@@ -1754,6 +1754,7 @@
 [3454. Separate Squares II](./leetcode/3454-SeparateSquaresII.go)   
 [3457. Eat Pizzas!](./leetcode/3457-EatPizzas.go)   
 [3464. Maximize the Distance Between Points on a Square](./leetcode/3464-MaximizeTheDistanceBetweenPointsOnASquare.go)   
+[3466. Maximum Coin Collection](./leetcode/3466-MaximumCoinCollection.go)   
 
 
 # String
