@@ -1642,6 +1642,7 @@
 [3224. Minimum Array Changes to Make Differences Equal](./leetcode/3224-MinimumArrayChangesToMakeDifferencesEqual.go)   
 [3225. Maximum Score From Grid Operations](./leetcode/3225-MaximumScoreFromGridOperations.go)   
 [3327. Check if DFS Strings Are Palindromes](./leetcode/3327-CheckIfDFSStringsArePalindromes.go)   
+[3229. Minimum Operations to Make Array Equal to Target](./leetcode/3229-MinimumOperationsToMakeArrayEqualToTarget.go)   
 [3231. Minimum Number of Increasing Subsequence to Be Removed](./leetcode/3231-MinimumNumberOfIncreasingSubsequenceToBeRemoved.go)   
 [3232. Find if Digit Game Can Be Won](./leetcode/3232-FindIfDigitGameCanBeWon.go)   
 [3235. Check if the Rectangle Corner Is Reachable](./leetcode/3235-CheckIfTheRectangleCornerIsReachable.go)   
