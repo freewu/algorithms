@@ -4116,6 +4116,7 @@ LCR 185. 统计结果概率
 [面试题 03.01. Three in One LCCI](./leetcode/LCCI0301-ThreeInOne.go)   
 [面试题 03.02. Min Stack LCCI](./leetcode/LCCI0302-MinStack.go)   
 [面试题 03.03. Stack of Plates LCCI](./leetcode/LCCI0303-StackOfPlates.go)   
+[面试题 03.04. Implement Queue using Stacks LCCI](./leetcode/LCCI0304-ImplementQueueUsingStacks.go)   
 [面试题 04.04. Check Balance LCCI](./leetcode/LCCI0404-CheckBalance.go)   
 [面试题 04.12. Paths with Sum LCCI](./leetcode/LCCI0412-PathsWithSum.go)   
 [面试题 05.01. Insert Into Bits LCCI](./leetcode/LCCI0501-InsertIntoBits.go)   
