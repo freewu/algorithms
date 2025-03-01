@@ -2307,6 +2307,7 @@
 [3213. Construct String with Minimum Cost](./leetcode/3213-ConstructStringWithMinimumCost.go)   
 [3216. Lexicographically Smallest String After a Swap](./leetcode/3216-LexicographicallySmallestStringAfterASwap.go)   
 [3223. Minimum Length of String After Operations](./leetcode/3223-MinimumLengthOfStringAfterOperations.go)   
+[3227. Vowels Game in a String](./leetcode/3227-VowelsGameInAString.go)   
 [3228. Maximum Number of Operations to Move Ones to the End](./leetcode/3228-MaximumNumberOfOperationsToMoveOnesToTheEnd.go)   
 [3234. Count the Number of Substrings With Dominant Ones](./leetcode/3234-CountTheNumberOfSubstringsWithDominantOnes.go)   
 [3253. Construct String with Minimum Cost (Easy)](./leetcode/3253-ConstructStringWithMinimumCost-Easy.go)   
