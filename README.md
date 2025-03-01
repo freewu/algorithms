@@ -1639,6 +1639,7 @@
 [3218. Minimum Cost for Cutting Cake I](./leetcode/3218-MinimumCostForCuttingCakeI.go)   
 [3219. Minimum Cost for Cutting Cake II](./leetcode/3219-MinimumCostForCuttingCakeII.go)   
 [3221. Maximum Array Hopping Score II](./leetcode/3221-MaximumArrayHoppingScoreII.go)   
+[3224. Minimum Array Changes to Make Differences Equal](./leetcode/3224-MinimumArrayChangesToMakeDifferencesEqual.go)   
 [3225. Maximum Score From Grid Operations](./leetcode/3225-MaximumScoreFromGridOperations.go)   
 [3327. Check if DFS Strings Are Palindromes](./leetcode/3327-CheckIfDFSStringsArePalindromes.go)   
 [3231. Minimum Number of Increasing Subsequence to Be Removed](./leetcode/3231-MinimumNumberOfIncreasingSubsequenceToBeRemoved.go)   
