@@ -1707,6 +1707,7 @@
 [3353. Minimum Total Operations](./leetcode/3353-MinimumTotalOperations.go)   
 [3355. Zero Array Transformation I](./leetcode/3355-ZeroArrayTransformationI.go)   
 [3356. Zero Array Transformation II](./leetcode/3356-ZeroArrayTransformationII.go)   
+[3357. Minimize the Maximum Adjacent Element Difference](./leetcode/3357-MinimizeTheMaximumAdjacentElementDifference.go)   
 [3359. Find Sorted Submatrices With Maximum Element at Most K](./leetcode/3359-FindSortedSubmatricesWithMaximumElementAtMostK.go)   
 [3361. Shift Distance Between Two Strings](./leetcode/3361-ShiftDistanceBetweenTwoStrings.go)   
 [3362. Zero Array Transformation III](./leetcode/3362-ZeroArrayTransformationIII.go)   
