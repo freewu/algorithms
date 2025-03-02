@@ -1712,6 +1712,7 @@
 [3362. Zero Array Transformation III](./leetcode/3362-ZeroArrayTransformationIII.go)   
 [3363. Find the Maximum Number of Fruits Collected](./leetcode/3363-FindTheMaximumNumberOfFruitsCollected.go)   
 [3366. Minimum Array Sum](./leetcode/3366-MinimumArraySum.go)   
+[3375. Minimum Operations to Make Array Values Equal to K](./leetcode/3375-MinimumOperationsToMakeArrayValuesEqualToK.go)   
 [3376. Minimum Time to Break Locks I](./leetcode/3376-MinimumTimeToBreakLocksI.go)   
 [3378. Count Connected Components in LCM Graph](./leetcode/3378-CountConnectedComponentsInLCMGraph.go)   
 [3380. Maximum Area Rectangle With Point Constraints I](./leetcode/3380-MaximumAreaRectangleWithPointConstraintsI.go)   
