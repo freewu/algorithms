@@ -1759,6 +1759,7 @@
 [3462. Maximum Sum With at Most K Elements](./leetcode/3462-MaximumSumWithAtMostKElements.go)   
 [3464. Maximize the Distance Between Points on a Square](./leetcode/3464-MaximizeTheDistanceBetweenPointsOnASquare.go)   
 [3466. Maximum Coin Collection](./leetcode/3466-MaximumCoinCollection.go)   
+[3471. Find the Largest Almost Missing Integer](./leetcode/3471-FindTheLargestAlmostMissingInteger.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
