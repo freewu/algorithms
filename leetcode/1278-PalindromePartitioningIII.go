@@ -116,6 +116,44 @@ func palindromePartition1(s string, k int) int {
     return dfs(n-1, k)
 }
 
+func palindromePartition2(s string, k int) int {
+    n := len(s)
+    cost := make([][]int, n)
+    for i := range cost {
+        cost[i] = make([]int, n)
+    }
+    for span := 2; span <= n; span++ {
+        for i := 0; i <= n - span; i++ {
+            j := i + span - 1
+            cost[i][j] = cost[i + 1][j - 1]
+            if s[i] != s[j] {
+                cost[i][j]++
+            }
+        }
+    }
+    dp := make([][]int, n + 1)
+    for i := range dp {
+        dp[i] = make([]int, k + 1)
+        for j := range dp[i] {
+            dp[i][j] = 1 << 31
+        }
+    }
+    min := func (x, y int) int { if x < y { return x; }; return y; }
+    dp[0][0] = 0
+    for i := 1; i <= n; i++ {
+        for j := 1; j <= min(k, i); j++ {
+            if j == 1 {
+                dp[i][j] = cost[0][i - 1]
+            } else {
+                for l := j - 1; l < i; l++ {
+                    dp[i][j] = min(dp[i][j], dp[l][j - 1] + cost[l][i - 1])
+                }
+            }
+        }
+    }
+    return dp[n][k]
+}
+
 func main() {
     // Example 1:
     // Input: s = "abc", k = 2
@@ -132,7 +170,15 @@ func main() {
     // Output: 0
     fmt.Println(palindromePartition("leetcode", 8)) // 0
 
+    fmt.Println(palindromePartition("bluefrog", 2)) // 3
+
     fmt.Println(palindromePartition1("abc", 2)) // 1
     fmt.Println(palindromePartition1("aabbc", 3)) // 0
     fmt.Println(palindromePartition1("leetcode", 8)) // 0
+    fmt.Println(palindromePartition1("bluefrog", 2)) // 3
+
+    fmt.Println(palindromePartition2("abc", 2)) // 1
+    fmt.Println(palindromePartition2("aabbc", 3)) // 0
+    fmt.Println(palindromePartition2("leetcode", 8)) // 0
+    fmt.Println(palindromePartition2("bluefrog", 2)) // 3
 }
