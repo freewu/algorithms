@@ -1755,9 +1755,9 @@
 [3453. Separate Squares I](./leetcode/3453-SeparateSquaresI.go)   
 [3454. Separate Squares II](./leetcode/3454-SeparateSquaresII.go)   
 [3457. Eat Pizzas!](./leetcode/3457-EatPizzas.go)   
+[3462. Maximum Sum With at Most K Elements](./leetcode/3462-MaximumSumWithAtMostKElements.go)   
 [3464. Maximize the Distance Between Points on a Square](./leetcode/3464-MaximizeTheDistanceBetweenPointsOnASquare.go)   
 [3466. Maximum Coin Collection](./leetcode/3466-MaximumCoinCollection.go)   
-
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
@@ -4117,6 +4117,7 @@ LCR 185. 统计结果概率
 [面试题 03.02. Min Stack LCCI](./leetcode/LCCI0302-MinStack.go)   
 [面试题 03.03. Stack of Plates LCCI](./leetcode/LCCI0303-StackOfPlates.go)   
 [面试题 03.04. Implement Queue using Stacks LCCI](./leetcode/LCCI0304-ImplementQueueUsingStacks.go)   
+[面试题 03.06. Animal Shelter LCCI](./leetcode/LCCI0306-AnimalShelter.go)   
 [面试题 04.04. Check Balance LCCI](./leetcode/LCCI0404-CheckBalance.go)   
 [面试题 04.12. Paths with Sum LCCI](./leetcode/LCCI0412-PathsWithSum.go)   
 [面试题 05.01. Insert Into Bits LCCI](./leetcode/LCCI0501-InsertIntoBits.go)   
