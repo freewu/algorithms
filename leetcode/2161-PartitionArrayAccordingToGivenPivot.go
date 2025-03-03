@@ -116,6 +116,25 @@ func pivotArray2(nums []int, pivot int) []int {
     return res
 }
 
+func pivotArray3(nums []int, pivot int) []int {
+    l, r, n := 0, len(nums) - 1, len(nums)
+    res := make([]int, n)
+    for i := 0; i < n; i++ {
+        res[i] = pivot
+        if nums[i] < pivot {
+            res[l] = nums[i]
+            l++
+        }
+    }
+    for i := 0; i < n; i++ {
+        if nums[n - 1 - i] > pivot {
+            res[r] = nums[n - 1 - i]
+            r--
+        }
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: nums = [9,12,5,10,14,3,10], pivot = 10
@@ -134,9 +153,21 @@ func main() {
     // The relative ordering of the elements less than and greater than pivot is also maintained. [-3] and [4, 3] are the respective orderings.
     fmt.Println(pivotArray([]int{-3,4,3,2}, 2)) // [-3,2,4,3]
 
+    fmt.Println(pivotArray([]int{1,2,3,4,5,6,7,8,9}, 2)) // [1 2 3 4 5 6 7 8 9]
+    fmt.Println(pivotArray([]int{9,8,7,6,5,4,3,2,1}, 2)) // [1 2 9 8 7 6 5 4 3]
+
     fmt.Println(pivotArray1([]int{9,12,5,10,14,3,10}, 10)) // [9,5,3,10,10,12,14]
     fmt.Println(pivotArray1([]int{-3,4,3,2}, 2)) // [-3,2,4,3]
+    fmt.Println(pivotArray1([]int{1,2,3,4,5,6,7,8,9}, 2)) // [1 2 3 4 5 6 7 8 9]
+    fmt.Println(pivotArray1([]int{9,8,7,6,5,4,3,2,1}, 2)) // [1 2 9 8 7 6 5 4 3]
 
     fmt.Println(pivotArray2([]int{9,12,5,10,14,3,10}, 10)) // [9,5,3,10,10,12,14]
     fmt.Println(pivotArray2([]int{-3,4,3,2}, 2)) // [-3,2,4,3]
+    fmt.Println(pivotArray2([]int{1,2,3,4,5,6,7,8,9}, 2)) // [1 2 3 4 5 6 7 8 9]
+    fmt.Println(pivotArray2([]int{9,8,7,6,5,4,3,2,1}, 2)) // [1 2 9 8 7 6 5 4 3]
+
+    fmt.Println(pivotArray3([]int{9,12,5,10,14,3,10}, 10)) // [9,5,3,10,10,12,14]
+    fmt.Println(pivotArray3([]int{-3,4,3,2}, 2)) // [-3,2,4,3]
+    fmt.Println(pivotArray3([]int{1,2,3,4,5,6,7,8,9}, 2)) // [1 2 3 4 5 6 7 8 9]
+    fmt.Println(pivotArray3([]int{9,8,7,6,5,4,3,2,1}, 2)) // [1 2 9 8 7 6 5 4 3]
 }
