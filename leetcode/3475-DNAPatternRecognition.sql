@@ -97,3 +97,17 @@
 -- insert into Samples (sample_id, dna_sequence, species) values ('5', 'TCAGTCAGTCAG', 'Mouse')
 -- insert into Samples (sample_id, dna_sequence, species) values ('6', 'ATATCGCGCTAG', 'Zebrafish')
 -- insert into Samples (sample_id, dna_sequence, species) values ('7', 'CGTATGCGTCGTA', 'Zebrafish')
+
+-- Write your MySQL query statement below
+SELECT
+    sample_id,
+    dna_sequence,
+    species,
+    dna_sequence REGEXP '^ATG' AS has_start, -- 以 ATG 开头 的序列
+    dna_sequence REGEXP 'TAA$|TAG$|TGA$' AS has_stop, -- 以 TAA，TAG 或 TGA 结尾 
+    dna_sequence REGEXP 'ATAT' AS has_atat, -- 包含基序 ATAT 
+    dna_sequence REGEXP 'GGG' AS has_ggg  -- 有 至少 3 个连续 G 
+FROM 
+    Samples
+ORDER BY 
+    sample_id -- 结果表以 sample_id 升序 排序
