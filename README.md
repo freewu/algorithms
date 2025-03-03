@@ -2748,6 +2748,7 @@
 [3370. Smallest Number With All Set Bits](./leetcode/3370-SmallestNumberWithAllSetBits.go)   
 [3377. Digit Operations to Make Two Integers Equal](./leetcode/3377-DigitOperationsToMakeTwoIntegersEqual.go)   
 [3395. Subsequences with a Unique Middle Mode I](./leetcode/3395-SubsequencesWithAUniqueMiddleModeI.go)   
+[3405. Count the Number of Arrays with K Matching Adjacent Elements](./leetcode/3405-CountTheNumberOfArraysWithKMatchingAdjacentElements.go)   
 [3416. Subsequences with a Unique Middle Mode II](./leetcode/3416-SubsequencesWithAUniqueMiddleModeII.go)   
 [3426. Manhattan Distances of All Arrangements of Pieces](./leetcode/3426-ManhattanDistancesOfAllArrangementsOfPieces.go)   
 [3437. Permutations III](./leetcode/3437-PermutationsIII.go)   
