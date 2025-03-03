@@ -4140,6 +4140,7 @@ LCR 185. 统计结果概率
 [面试题 08.01. Three Steps Problem LCCI](./leetcode/LCCI0801-ThreeStepsProblem.go)   
 [面试题 08.02. Robot in a Grid LCCI](./leetcode/LCCI0802-RobotInAGrid.go)   
 [面试题 08.03. Magic Index LCCI](./leetcode/LCCI0803-MagicIndex.go)   
+[面试题 08.04. Power Set LCCI](./leetcode/LCCI0804-PowerSet.go)   
 [面试题 08.05. Recursive Mulitply LCCI](./leetcode/LCCI0805-RecursiveMulitply.go)   
 [面试题 08.06. Hanota LCCI](./leetcode/LCCI0806-Hanota.go)   
 [面试题 08.10. Color Fill LCCI](./leetcode/LCCI0810-ColorFill.go)   
