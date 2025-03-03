@@ -1757,6 +1757,7 @@
 [3453. Separate Squares I](./leetcode/3453-SeparateSquaresI.go)   
 [3454. Separate Squares II](./leetcode/3454-SeparateSquaresII.go)   
 [3457. Eat Pizzas!](./leetcode/3457-EatPizzas.go)   
+[3459. Length of Longest V-Shaped Diagonal Segment](./leetcode/3459-LengthOfLongestVShapedDiagonalSegment.go)   
 [3462. Maximum Sum With at Most K Elements](./leetcode/3462-MaximumSumWithAtMostKElements.go)   
 [3464. Maximize the Distance Between Points on a Square](./leetcode/3464-MaximizeTheDistanceBetweenPointsOnASquare.go)   
 [3466. Maximum Coin Collection](./leetcode/3466-MaximumCoinCollection.go)   
