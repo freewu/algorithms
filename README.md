@@ -1705,6 +1705,7 @@
 [3350. Adjacent Increasing Subarrays Detection II](./leetcode/3350-AdjacentIncreasingSubarraysDetectionII.go)   
 [3351. Sum of Good Subsequences](./leetcode/3351-SumOfGoodSubsequences.go)   
 [3353. Minimum Total Operations](./leetcode/3353-MinimumTotalOperations.go)   
+[3354. Make Array Elements Equal to Zero](./leetcode/3354-MakeArrayElementsEqualToZero.go)   
 [3355. Zero Array Transformation I](./leetcode/3355-ZeroArrayTransformationI.go)   
 [3356. Zero Array Transformation II](./leetcode/3356-ZeroArrayTransformationII.go)   
 [3357. Minimize the Maximum Adjacent Element Difference](./leetcode/3357-MinimizeTheMaximumAdjacentElementDifference.go)   
