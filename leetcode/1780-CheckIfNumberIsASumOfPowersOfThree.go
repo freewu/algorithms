@@ -36,6 +36,26 @@ func checkPowersOfThree(n int) bool {
     }
 }
 
+func checkPowersOfThree1(n int) bool {
+    // Find the largest power that is smaller or equal to n
+    power3 := 1
+    for ; power3 <= n; power3 *= 3 {}
+    for n > 0 {
+        // Subtract current power from n
+        if n >= power3 {
+            n -= power3
+        }
+        // We cannot use the same power twice
+        if n >= power3 {
+            return false
+        }
+        // Move to the next lower power
+        power3 /= 3
+    }
+    // n has reached 0
+    return true
+}
+
 func main() {
     // Example 1:
     // Input: n = 12
@@ -56,4 +76,12 @@ func main() {
     fmt.Println(checkPowersOfThree(1)) // true
     fmt.Println(checkPowersOfThree(10000000)) // false
     fmt.Println(checkPowersOfThree(999999)) // false
+
+    fmt.Println(checkPowersOfThree1(12)) // true 12 = 31 + 32
+    fmt.Println(checkPowersOfThree1(91)) // true 91 = 30 + 32 + 34
+    fmt.Println(checkPowersOfThree1(21)) // false
+    fmt.Println(checkPowersOfThree1(1024)) // false
+    fmt.Println(checkPowersOfThree1(1)) // true
+    fmt.Println(checkPowersOfThree1(10000000)) // false
+    fmt.Println(checkPowersOfThree1(999999)) // false
 }
