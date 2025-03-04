@@ -2333,6 +2333,7 @@
 [3303. Find the Occurrence of First Almost Equal Substring](./leetcode/3303-FindTheOccurrenceOfFirstAlmostEqualSubstring.go)   
 [3305. Count of Substrings Containing Every Vowel and K Consonants I](./leetcode/3305-CountOfSubstringsContainingEveryVowelAndKConsonantsI.go)   
 [3306. Count of Substrings Containing Every Vowel and K Consonants II](./leetcode/3306-CountOfSubstringsContainingEveryVowelAndKConsonantsII.go)   
+[3316. Find Maximum Removals From Source String](./leetcode/3316-FindMaximumRemovalsFromSourceString.go)   
 [3320. Count The Number of Winning Sequences](./leetcode/3320-CountTheNumberOfWinningSequences.go)   
 [3324. Find the Sequence of Strings Appeared on the Screen](./leetcode/3324-FindTheSequenceOfStringsAppearedOnTheScreen.go)   
 [3325. Count Substrings With K-Frequency Characters I](./leetcode/3325-CountSubstringsWithKFrequencyCharactersI.go)   
