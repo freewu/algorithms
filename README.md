@@ -1688,6 +1688,7 @@
 [3301. Maximize the Total Height of Unique Towers](./leetcode/3301-MaximizeTheTotalHeightOfUniqueTowers.go)   
 [3309. Maximum Possible Number by Binary Concatenation](./leetcode/3309-MaximumPossibleNumberByBinaryConcatenation.go)   
 [3311. Construct 2D Grid Matching Graph Layout](./leetcode/3311-Construct2DGridMatchingGraphLayout.go)   
+[3312. Sorted GCD Pair Queries](./leetcode/3312-SortedGCDPairQueries.go)   
 [3314. Construct the Minimum Bitwise Array I](./leetcode/3314-ConstructTheMinimumBitwiseArrayI.go)   
 [3315. Construct the Minimum Bitwise Array II](./leetcode/3315-ConstructTheMinimumBitwiseArrayII.go)   
 [3318. Find X-Sum of All K-Long Subarrays I](./leetcode/3318-FindXSumOfAllKLongSubarraysI.go)   
