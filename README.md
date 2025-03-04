@@ -4146,6 +4146,7 @@ LCR 185. 统计结果概率
 [面试题 08.05. Recursive Mulitply LCCI](./leetcode/LCCI0805-RecursiveMulitply.go)   
 [面试题 08.06. Hanota LCCI](./leetcode/LCCI0806-Hanota.go)   
 [面试题 08.07. Permutation I LCCI](./leetcode/LCCI0807-PermutationI.go)   
+[面试题 08.08. Permutation II LCCI](./leetcode/LCCI0808-PermutationII.go)   
 [面试题 08.10. Color Fill LCCI](./leetcode/LCCI0810-ColorFill.go)   
 [面试题 08.11. Coin LCCI](./leetcode/LCCI0811-Coin.go)   
 [面试题 08.12. Eight Queens LCCI](./leetcode/LCCI0812-EightQueens.go)   
