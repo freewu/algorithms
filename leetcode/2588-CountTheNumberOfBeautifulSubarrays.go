@@ -47,6 +47,18 @@ func beautifulSubarrays(nums []int) int64 {
     return int64(res)
 }
 
+func beautifulSubarrays1(nums []int) int64 {
+    count := make(map[int]int, len(nums) + 1)
+    count[0] = 1
+    res, sum := 0, 0
+    for _, v := range nums {
+        sum ^= v
+        res += count[sum]
+        count[sum]++
+    }
+    return int64(res)
+}
+
 func main() {
     // Example 1:
     // Input: nums = [4,3,1,2,4]
@@ -68,4 +80,9 @@ func main() {
 
     fmt.Println(beautifulSubarrays([]int{1,2,3,4,5,6,7,8,9})) // 6
     fmt.Println(beautifulSubarrays([]int{9,8,7,6,5,4,3,2,1})) // 6
+
+    fmt.Println(beautifulSubarrays1([]int{4,3,1,2,4})) // 2
+    fmt.Println(beautifulSubarrays1([]int{1,10,4})) // 0
+    fmt.Println(beautifulSubarrays1([]int{1,2,3,4,5,6,7,8,9})) // 6
+    fmt.Println(beautifulSubarrays1([]int{9,8,7,6,5,4,3,2,1})) // 6
 }
