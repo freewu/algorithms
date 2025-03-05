@@ -1722,6 +1722,7 @@
 [3378. Count Connected Components in LCM Graph](./leetcode/3378-CountConnectedComponentsInLCMGraph.go)   
 [3379. Transformed Array](./leetcode/3379-TransformedArray.go)   
 [3380. Maximum Area Rectangle With Point Constraints I](./leetcode/3380-MaximumAreaRectangleWithPointConstraintsI.go)   
+[3381. Maximum Subarray Sum With Length Divisible by K](./leetcode/3381-MaximumSubarraySumWithLengthDivisibleByK.go)   
 [3382. Maximum Area Rectangle With Point Constraints II](./leetcode/3382-MaximumAreaRectangleWithPointConstraintsII.go)   
 [3383. Minimum Runes to Add to Cast Spell](./leetcode/3383-MinimumRunesToAddToCastSpell.go)   
 [3385. Minimum Time to Break Locks II](./leetcode/3385-MinimumTimeToBreakLocksII.go)   
