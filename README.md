@@ -4179,6 +4179,7 @@ LCR 185. 统计结果概率
 [面试题 16.18. Pattern Matching LCCI](./leetcode/LCCI1618-PatternMatching.go)   
 [面试题 16.19. Pond Sizes LCCI](./leetcode/LCCI1619-PondSizes.go)   
 [面试题 16.20. T9 LCCI](./leetcode/LCCI1620-T9.go)   
+[面试题 16.21. Sum Swap LCCI](./leetcode/LCCI1621-SumSwap.go)   
 [面试题 16.22. Langtons Ant LCCI](./leetcode/LCCI1622-LangtonsAnt.go)   
 [面试题 16.24. Pairs With Sum LCCI](./leetcode/LCCI1624-PairsWithSum.go)   
 [面试题 16.25. LRU Cache LCCI](./leetcode/LCCI1625-LRUCache.go)   
