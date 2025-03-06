@@ -1734,6 +1734,7 @@
 [3394. Check if Grid can be Cut into Sections](./leetcode/3394-CheckIfGridCanBeCutIntoSections.go)   
 [3395. Subsequences with a Unique Middle Mode I](./leetcode/3395-SubsequencesWithAUniqueMiddleModeI.go)   
 [3396. Minimum Number of Operations to Make Elements in Array Distinct](./leetcode/3396-MinimumNumberOfOperationsToMakeElementsInArrayDistinct.go)   
+[3397. Maximum Number of Distinct Elements After Operations](./leetcode/3397-MaximumNumberOfDistinctElementsAfterOperations.go)   
 [3400. Maximum Number of Matching Indices After Right Shifts](./leetcode/3400-MaximumNumberOfMatchingIndicesAfterRightShifts.go)   
 [3402. Minimum Operations to Make Columns Strictly Increasing](./leetcode/3402-MinimumOperationsToMakeColumnsStrictlyIncreasing.go)   
 [3404. Count Special Subsequences](./leetcode/3404-CountSpecialSubsequences.go)   
