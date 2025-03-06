@@ -17,6 +17,13 @@ func swapNumbers(numbers []int) []int {
     return []int{ numbers[1], numbers[0] }
 }
 
+func swapNumbers1(numbers []int) []int {
+    numbers[0] = numbers[0] + numbers[1]
+	numbers[1] = numbers[0] - numbers[1]
+	numbers[0] = numbers[0] - numbers[1]
+	return numbers
+}
+
 func main() {
     // Example:
     // Input: numbers = [1,2]
@@ -24,4 +31,7 @@ func main() {
     fmt.Println(swapNumbers([]int{1, 2})) // [2,1]
 
     fmt.Println(swapNumbers([]int{1 << 31, -1 << 31})) // [-2147483648 2147483648]
+
+    fmt.Println(swapNumbers1([]int{1, 2})) // [2,1]
+    fmt.Println(swapNumbers1([]int{1 << 31, -1 << 31})) // [-2147483648 2147483648]
 }
