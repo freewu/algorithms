@@ -2353,6 +2353,7 @@
 [3352. Count K-Reducible Numbers Less Than N](./leetcode/3352-CountKReducibleNumbersLessThanN.go)   
 [3365. Rearrange K Substrings to Form Target String](./leetcode/3365-RearrangeKSubstringsToFormTargetString.go)   
 [3389. Minimum Operations to Make Character Frequencies Equal](./leetcode/3389-MinimumOperationsToMakeCharacterFrequenciesEqual.go)   
+[3398. Smallest Substring With Identical Characters I](./leetcode/3398-SmallestSubstringWithIdenticalCharactersI.go)   
 [3403. Find the Lexicographically Largest String From the Box I](./leetcode/3403-FindTheLexicographicallyLargestStringFromTheBoxI.go)   
 [3406. Find the Lexicographically Largest String From the Box II](./leetcode/3406-FindTheLexicographicallyLargestStringFromTheBoxII.go)   
 [3407. Substring Matching Pattern](./leetcode/3407-SubstringMatchingPattern.go)   
