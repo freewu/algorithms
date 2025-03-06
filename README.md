@@ -4174,6 +4174,7 @@ LCR 185. 统计结果概率
 [面试题 10.10. Rank from Stream LCCI](./leetcode/LCCI1010-RankFromStream.go)   
 [面试题 10.11. Peaks and Valleys LCCI](./leetcode/LCCI1011-PeaksAndValleys.go)   
 [面试题 16.01. Swap Numbers LCCI](./leetcode/LCCI1601-SwapNumbers.go)   
+[面试题 16.02. Words Frequency LCCI](./leetcode/LCCI1602-WordsFrequency.go)   
 [面试题 16.03. Intersection LCCI](./leetcode/LCCI1603-Intersection.go)   
 [面试题 16.04. Tic-Tac-Toe LCCI](./leetcode/LCCI1604-TicTacToe.go)   
 [面试题 16.05. Factorial Zeros LCCI](./leetcode/LCCI1605-FactorialZeros.go)   
