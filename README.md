@@ -4175,6 +4175,7 @@ LCR 185. 统计结果概率
 [面试题 16.06. Smallest Difference LCCI](./leetcode/LCCI1606-SmallestDifference.go)   
 [面试题 16.07. Maximum LCCI](./leetcode/LCCI1607-Maximum.go)   
 [面试题 16.09. Operations LCCI](./leetcode/LCCI1609-Operations.go)   
+[面试题 16.11. Diving Board LCCI](./leetcode/LCCI1611-DivingBoard.go)   
 [面试题 16.13. Bisect Squares LCCI](./leetcode/LCCI1613-BisectSquares.go)   
 [面试题 16.14. Best Line LCCI](./leetcode/LCCI1614-BestLine.go)   
 [面试题 16.15. Master Mind LCCI](./leetcode/LCCI1615-MasterMind.go)   
