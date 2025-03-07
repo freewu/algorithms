@@ -1771,6 +1771,7 @@
 [3466. Maximum Coin Collection](./leetcode/3466-MaximumCoinCollection.go)   
 [3469. Find Minimum Cost to Remove Array Elements](./leetcode/3469-FindMinimumCostToRemoveArrayElements.go)   
 [3471. Find the Largest Almost Missing Integer](./leetcode/3471-FindTheLargestAlmostMissingInteger.go)   
+[3476. Maximize Profit from Task Assignment](./leetcode/3476-MaximizeProfitFromTaskAssignment.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
