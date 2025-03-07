@@ -29,6 +29,7 @@ package main
 
 import "fmt"
 import "sort"
+import "math"
 
 // Sieve Of Eratosthenes Algorithms
 func closestPrimes(left int, right int) []int {
@@ -85,6 +86,51 @@ func closestPrimes1(left int, right int) []int {
     return []int{ l, r }
 }
 
+func closestPrimes2(left int, right int) []int {
+    isPrime := func(num int) bool {
+        if num == 1 {
+            return false
+        }
+        maxNum := int(math.Sqrt(float64(num)))
+        for divisor := 2; divisor <= maxNum; divisor++ {
+            if num%divisor == 0 {
+                return false
+            }
+        }
+        return true
+    }
+    primeNumbers := []int{}
+    // Find all prime numbers in the given range
+    for candidate := left; candidate <= right; candidate++ {
+        if candidate%2 == 0 && candidate > 2 { continue }
+        if isPrime(candidate) {
+            // If a twin prime (or [2, 3]) is found, return immediately
+            if len(primeNumbers) > 0 && candidate <= primeNumbers[len(primeNumbers)-1]+2 {
+                return []int{
+                    primeNumbers[len(primeNumbers)-1],
+                    candidate,
+                }
+            }
+            primeNumbers = append(primeNumbers, candidate)
+        }
+    }
+    // If fewer than 2 primes exist, return {-1, -1}
+    if len(primeNumbers) < 2 {
+        return []int{-1, -1}
+    }
+    // Find the closest prime pair
+    closestPair := []int{-1, -1}
+    minDifference := math.MaxInt
+    for index := 1; index < len(primeNumbers); index++ {
+        difference := primeNumbers[index] - primeNumbers[index-1]
+        if difference < minDifference {
+            minDifference = difference
+            closestPair = []int{primeNumbers[index-1], primeNumbers[index]}
+        }
+    }
+    return closestPair
+}
+
 func main() {
     // Example 1:
     // Input: left = 10, right = 19
@@ -103,9 +149,15 @@ func main() {
     fmt.Println(closestPrimes(1, 1_000_000)) // [2,3]
     fmt.Println(closestPrimes(1_000_000, 1_000_000)) // [-1,-1]
 
-    fmt.Println(closestPrimes(10, 19)) // [11,13]
-    fmt.Println(closestPrimes(4, 6)) // [-1,-1]
-    fmt.Println(closestPrimes(1, 1)) // [-1,-1]
-    fmt.Println(closestPrimes(1, 1_000_000)) // [2,3]
-    fmt.Println(closestPrimes(1_000_000, 1_000_000)) // [-1,-1]
+    fmt.Println(closestPrimes1(10, 19)) // [11,13]
+    fmt.Println(closestPrimes1(4, 6)) // [-1,-1]
+    fmt.Println(closestPrimes1(1, 1)) // [-1,-1]
+    fmt.Println(closestPrimes1(1, 1_000_000)) // [2,3]
+    fmt.Println(closestPrimes1(1_000_000, 1_000_000)) // [-1,-1]
+
+    fmt.Println(closestPrimes2(10, 19)) // [11,13]
+    fmt.Println(closestPrimes2(4, 6)) // [-1,-1]
+    fmt.Println(closestPrimes2(1, 1)) // [-1,-1]
+    fmt.Println(closestPrimes2(1, 1_000_000)) // [2,3]
+    fmt.Println(closestPrimes2(1_000_000, 1_000_000)) // [-1,-1]
 }
