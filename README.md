@@ -3253,6 +3253,7 @@
 [2642. Design Graph With Shortest Path Calculator](./leetcode/2642-DesignGraphWithShortestPathCalculator.go)   
 [2671. Frequency Tracker](./leetcode/2671-FrequencyTracker.go)   
 [3242. Design Neighbor Sum Service](./leetcode/3242-DesignNeighborSumService.go)   
+[3369. Design an Array Statistics Tracker](./leetcode/3369-DesignAnArrayStatisticsTracker.go)   
 [3391. Design a 3D Binary Matrix with Efficient Layer Tracking](./leetcode/3391-DesignA3DBinaryMatrixWithEfficientLayerTracking.go)   
 [3408. Design Task Manager](./leetcode/3408-DesignTaskManager.go)   
 
