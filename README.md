@@ -2361,6 +2361,7 @@
 [3406. Find the Lexicographically Largest String From the Box II](./leetcode/3406-FindTheLexicographicallyLargestStringFromTheBoxII.go)   
 [3407. Substring Matching Pattern](./leetcode/3407-SubstringMatchingPattern.go)   
 [3438. Find Valid Pair of Adjacent Digits in String](./leetcode/3438-FindValidPairOfAdjacentDigitsInString.go)   
+[3442. Maximum Difference Between Even and Odd Frequency I](./leetcode/3442-MaximumDifferenceBetweenEvenAndOddFrequencyI.go)   
 [3448. Count Substrings Divisible By Last Digit](./leetcode/3448-CountSubstringsDivisibleByLastDigit.go)   
 [3456. Find Special Substring of Length K](./leetcode/3456-FindSpecialSubstringOfLengthK.go)   
 [3458. Select K Disjoint Special Substrings](./leetcode/3458-SelectKDisjointSpecialSubstrings.go)   
