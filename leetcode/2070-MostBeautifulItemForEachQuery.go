@@ -117,6 +117,30 @@ func maximumBeauty2(items [][]int, queries []int) []int {
     return res
 }
 
+func maximumBeauty3(items [][]int, queries []int) []int {
+    sort.Slice(items, func(i, j int) bool { // 按价格排序
+        return items[i][0] < items[j][0]
+    })
+    k := 0
+    for _, item := range items[1:] {
+        if item[1] > items[k][1] {
+            k++
+            items[k] = item
+        }
+    }
+    for i, q := range queries {
+        j := sort.Search(k + 1, func(i int) bool { 
+            return items[i][0] > q 
+        })
+        if j > 0 {
+            queries[i] = items[j - 1][1]
+        } else {
+            queries[i] = 0
+        }
+    }
+    return queries
+}
+
 func main() {
     // Example 1:
     // Input: items = [[1,2],[3,2],[2,4],[5,6],[3,5]], queries = [1,2,3,4,5,6]
@@ -152,4 +176,8 @@ func main() {
     fmt.Println(maximumBeauty2([][]int{{1,2},{3,2},{2,4},{5,6},{3,5}}, []int{1,2,3,4,5,6})) // [2,4,5,5,6,6] 
     fmt.Println(maximumBeauty2([][]int{{1,2},{1,2},{1,3},{1,4}}, []int{1})) // [4]
     fmt.Println(maximumBeauty2([][]int{{10,1000}}, []int{5})) // [0]
+
+    fmt.Println(maximumBeauty3([][]int{{1,2},{3,2},{2,4},{5,6},{3,5}}, []int{1,2,3,4,5,6})) // [2,4,5,5,6,6] 
+    fmt.Println(maximumBeauty3([][]int{{1,2},{1,2},{1,3},{1,4}}, []int{1})) // [4]
+    fmt.Println(maximumBeauty3([][]int{{10,1000}}, []int{5})) // [0]
 }
