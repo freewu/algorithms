@@ -2364,6 +2364,7 @@
 [3442. Maximum Difference Between Even and Odd Frequency I](./leetcode/3442-MaximumDifferenceBetweenEvenAndOddFrequencyI.go)   
 [3445. Maximum Difference Between Even and Odd Frequency II](./leetcode/3445-MaximumDifferenceBetweenEvenAndOddFrequencyII.go)   
 [3448. Count Substrings Divisible By Last Digit](./leetcode/3448-CountSubstringsDivisibleByLastDigit.go)   
+[3455. Shortest Matching Substring](./leetcode/3455-ShortestMatchingSubstring.go)   
 [3456. Find Special Substring of Length K](./leetcode/3456-FindSpecialSubstringOfLengthK.go)   
 [3458. Select K Disjoint Special Substrings](./leetcode/3458-SelectKDisjointSpecialSubstrings.go)   
 [3460. Longest Common Prefix After at Most One Removal](./leetcode/3460-LongestCommonPrefixAfterAtMostOneRemoval.go)   
