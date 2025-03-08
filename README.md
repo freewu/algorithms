@@ -2369,6 +2369,7 @@
 [3458. Select K Disjoint Special Substrings](./leetcode/3458-SelectKDisjointSpecialSubstrings.go)   
 [3460. Longest Common Prefix After at Most One Removal](./leetcode/3460-LongestCommonPrefixAfterAtMostOneRemoval.go)   
 [3461. Check If Digits Are Equal in String After Operations I](./leetcode/3461-CheckIfDigitsAreEqualInStringAfterOperationsI.go)   
+[3463. Check If Digits Are Equal in String After Operations II](./leetcode/3463-CheckIfDigitsAreEqualInStringAfterOperationsII.go)   
 
 # Dynamic Programming
 [276. Paint Fence](./leetcode/276-PaintFence.go)   
