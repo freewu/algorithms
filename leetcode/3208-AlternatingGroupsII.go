@@ -59,6 +59,21 @@ func numberOfAlternatingGroups(colors []int, k int) int {
     return res
 }
 
+// 双指针
+func numberOfAlternatingGroups1(colors []int, k int) int {
+    res, l, r, n := 0, 0, 0, len(colors)
+    for l < n {
+        r++
+        if colors[r % n] == colors[(r - 1) % n] {
+            l = r
+        } else if r - l + 1 == k {
+            res++
+            l++
+        }
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: colors = [0,1,0,1,0], k = 3
@@ -82,4 +97,21 @@ func main() {
     // Explanation:
     // <img src="https://assets.leetcode.com/uploads/2024/06/19/screenshot-2024-05-28-184516.png" />
     fmt.Println(numberOfAlternatingGroups([]int{1,1,0,1}, 4)) // 0
+
+    fmt.Println(numberOfAlternatingGroups([]int{1,1,1,1,1,1,1,1,1,1}, 4)) // 0
+    fmt.Println(numberOfAlternatingGroups([]int{0,0,0,0,0,0,0,0,0,0}, 4)) // 0
+    fmt.Println(numberOfAlternatingGroups([]int{1,1,1,1,1,0,0,0,0,0}, 4)) // 0
+    fmt.Println(numberOfAlternatingGroups([]int{0,0,0,0,0,1,1,1,1,1}, 4)) // 0
+    fmt.Println(numberOfAlternatingGroups([]int{0,1,0,1,0,1,0,1,0,1}, 4)) // 10
+    fmt.Println(numberOfAlternatingGroups([]int{1,0,1,0,1,0,1,0,1,0}, 4)) // 10
+
+    fmt.Println(numberOfAlternatingGroups1([]int{0,1,0,1,0}, 3)) // 3
+    fmt.Println(numberOfAlternatingGroups1([]int{0,1,0,0,1,0,1}, 6)) // 2
+    fmt.Println(numberOfAlternatingGroups1([]int{1,1,0,1}, 4)) // 0
+    fmt.Println(numberOfAlternatingGroups1([]int{1,1,1,1,1,1,1,1,1,1}, 4)) // 0
+    fmt.Println(numberOfAlternatingGroups1([]int{0,0,0,0,0,0,0,0,0,0}, 4)) // 0
+    fmt.Println(numberOfAlternatingGroups1([]int{1,1,1,1,1,0,0,0,0,0}, 4)) // 0
+    fmt.Println(numberOfAlternatingGroups1([]int{0,0,0,0,0,1,1,1,1,1}, 4)) // 0
+    fmt.Println(numberOfAlternatingGroups1([]int{0,1,0,1,0,1,0,1,0,1}, 4)) // 10
+    fmt.Println(numberOfAlternatingGroups1([]int{1,0,1,0,1,0,1,0,1,0}, 4)) // 10
 }
