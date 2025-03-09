@@ -4157,6 +4157,7 @@ LCR 185. 统计结果概率
 [面试题 04.02. Minimum Height Tree LCCI](./leetcode/LCCI0402-MinimumHeightTree.go)   
 [面试题 04.03. List of Depth LCCI](./leetcode/LCCI0403-ListOfDepth.go)   
 [面试题 04.04. Check Balance LCCI](./leetcode/LCCI0404-CheckBalance.go)   
+[面试题 04.05. Legal Binary Search Tree LCCI](./leetcode/LCCI0405-LegalBinarySearchTree.go)   
 [面试题 04.08. First Common Ancestor LCCI](./leetcode/LCCI0408-FirstCommonAncestor.go)   
 [面试题 04.12. Paths with Sum LCCI](./leetcode/LCCI0412-PathsWithSum.go)   
 [面试题 05.01. Insert Into Bits LCCI](./leetcode/LCCI0501-InsertIntoBits.go)   
