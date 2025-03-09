@@ -1770,6 +1770,7 @@
 [3462. Maximum Sum With at Most K Elements](./leetcode/3462-MaximumSumWithAtMostKElements.go)   
 [3464. Maximize the Distance Between Points on a Square](./leetcode/3464-MaximizeTheDistanceBetweenPointsOnASquare.go)   
 [3466. Maximum Coin Collection](./leetcode/3466-MaximumCoinCollection.go)   
+[3467. Transform Array by Parity](./leetcode/3467-TransformArrayByParity.go)   
 [3469. Find Minimum Cost to Remove Array Elements](./leetcode/3469-FindMinimumCostToRemoveArrayElements.go)   
 [3471. Find the Largest Almost Missing Integer](./leetcode/3471-FindTheLargestAlmostMissingInteger.go)   
 [3476. Maximize Profit from Task Assignment](./leetcode/3476-MaximizeProfitFromTaskAssignment.go)   
