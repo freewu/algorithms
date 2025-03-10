@@ -1739,6 +1739,7 @@
 [3402. Minimum Operations to Make Columns Strictly Increasing](./leetcode/3402-MinimumOperationsToMakeColumnsStrictlyIncreasing.go)   
 [3404. Count Special Subsequences](./leetcode/3404-CountSpecialSubsequences.go)   
 [3409. Longest Subsequence With Decreasing Adjacent Difference](./leetcode/3409-LongestSubsequenceWithDecreasingAdjacentDifference.go)   
+[3410. Maximize Subarray Sum After Removing All Occurrences of One Element](./leetcode/3410-MaximizeSubarraySumAfterRemovingAllOccurrencesOfOneElement.go)   
 [3411. Maximum Subarray With Equal Products](./leetcode/3411-MaximumSubarrayWithEqualProducts.go)   
 [3414. Maximum Score of Non-overlapping Intervals](./leetcode/3414-MaximumScoreOfNonOverlappingIntervals.go)   
 [3416. Subsequences with a Unique Middle Mode II](./leetcode/3416-SubsequencesWithAUniqueMiddleModeII.go)   
