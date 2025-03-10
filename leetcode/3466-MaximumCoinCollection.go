@@ -117,6 +117,17 @@ func maxCoins1(lane1 []int, lane2 []int) int64 {
     return res
 }
 
+func maxCoins2(lane1 []int, lane2 []int) int64 {
+   var maxCoins, zeroSw, oneSw, twoSw int = -1e10, -1e10, -1e10, -1e10
+    for i := 0; i < len(lane1); i++ {
+        twoSw = max(twoSw + lane1[i], oneSw + lane1[i])
+        oneSw = max(oneSw + lane2[i], zeroSw + lane2[i], lane2[i])
+        zeroSw = max(lane1[i], zeroSw + lane1[i])
+        maxCoins = max(maxCoins, zeroSw, oneSw, twoSw)
+    }
+    return int64(maxCoins)
+}
+
 func main() {
     // Example 1:
     // Input: lane1 = [1,-2,-10,3], lane2 = [-5,10,0,1]
@@ -165,4 +176,11 @@ func main() {
     fmt.Println(maxCoins1([]int{-3,-3,-3}, []int{9,-2,4})) // 11
     fmt.Println(maxCoins1([]int{-10}, []int{-2})) // -2
     fmt.Println(maxCoins1([]int{1,2,3,4,5,6,7,8,9}, []int{9,8,7,6,5,4,3,2,1})) // 65
+
+    fmt.Println(maxCoins2([]int{1,-2,-10,3}, []int{-5,10,0,1})) // 14
+    fmt.Println(maxCoins2([]int{1,-1,-1,-1}, []int{0,3,4,-5})) // 8
+    fmt.Println(maxCoins2([]int{-5,-4,-3}, []int{-1,2,3})) // 5
+    fmt.Println(maxCoins2([]int{-3,-3,-3}, []int{9,-2,4})) // 11
+    fmt.Println(maxCoins2([]int{-10}, []int{-2})) // -2
+    fmt.Println(maxCoins2([]int{1,2,3,4,5,6,7,8,9}, []int{9,8,7,6,5,4,3,2,1})) // 65
 }
