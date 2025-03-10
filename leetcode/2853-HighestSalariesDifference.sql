@@ -82,4 +82,19 @@ SELECT
         -
         MAX(CASE WHEN department = 'Marketing' THEN salary END)
     ) AS salary_difference
-FROM Salaries;
+FROM 
+    Salaries
+
+SELECT
+    MAX(salary) - MIN(salary) AS salary_difference 
+FROM (
+    SELECT 
+        MAX(salary) AS salary
+    FROM 
+        Salaries
+    WHERE 
+        department = 'Engineering' OR 
+        department = 'Marketing'
+    GROUP BY
+        department
+) AS t
