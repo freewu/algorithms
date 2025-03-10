@@ -129,13 +129,13 @@ func lengthOfLongestSubstring3(s string) int {
 // 滑动窗口-哈希桶
 func lengthOfLongestSubstring4(s string) int {
     right, left, res := 0, 0, 0
-    m := make(map[byte]int, len(s))
+    mp := make(map[byte]int, len(s))
     max := func (x, y int) int { if x > y { return x; }; return y; }
     for left < len(s) {
-        if index, ok := m[s[left]]; ok && index >= right {
+        if index, ok := mp[s[left]]; ok && index >= right {
             right = index + 1
         }
-        m[s[left]] = left
+        mp[s[left]] = left
         left++
         res = max(res, left - right)
     }
@@ -175,6 +175,8 @@ func main() {
     fmt.Println(lengthOfLongestSubstring("abcabcbb")) // 3
     fmt.Println(lengthOfLongestSubstring("bbbbb"))    // 1
     fmt.Println(lengthOfLongestSubstring("pwwkew"))   // 3
+    fmt.Println(lengthOfLongestSubstring("bluefrog"))   // 8
+    fmt.Println(lengthOfLongestSubstring("leetcode"))   // 5
 
     fmt.Println()
 
@@ -186,6 +188,8 @@ func main() {
     fmt.Println(lengthOfLongestSubstring1("abcabcbb")) // 3
     fmt.Println(lengthOfLongestSubstring1("bbbbb"))    // 1
     fmt.Println(lengthOfLongestSubstring1("pwwkew"))   // 3
+    fmt.Println(lengthOfLongestSubstring1("bluefrog"))   // 8
+    fmt.Println(lengthOfLongestSubstring1("leetcode"))   // 5
 
     fmt.Printf("lengthOfLongestSubstring2(\"abcabcbb\") = %v\n",lengthOfLongestSubstring2("abcabcbb")) // 3
     fmt.Printf("lengthOfLongestSubstring2(\"bbbbb\") = %v\n",lengthOfLongestSubstring2("bbbbb")) // 1

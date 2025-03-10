@@ -1741,6 +1741,7 @@
 [3409. Longest Subsequence With Decreasing Adjacent Difference](./leetcode/3409-LongestSubsequenceWithDecreasingAdjacentDifference.go)   
 [3410. Maximize Subarray Sum After Removing All Occurrences of One Element](./leetcode/3410-MaximizeSubarraySumAfterRemovingAllOccurrencesOfOneElement.go)   
 [3411. Maximum Subarray With Equal Products](./leetcode/3411-MaximumSubarrayWithEqualProducts.go)   
+[3413. Maximum Coins From K Consecutive Bags](./leetcode/3413-MaximumCoinsFromKConsecutiveBags.go)   
 [3414. Maximum Score of Non-overlapping Intervals](./leetcode/3414-MaximumScoreOfNonOverlappingIntervals.go)   
 [3416. Subsequences with a Unique Middle Mode II](./leetcode/3416-SubsequencesWithAUniqueMiddleModeII.go)   
 [3417. Zigzag Grid Traversal With Skip](./leetcode/3417-ZigzagGridTraversalWithSkip.go)   
