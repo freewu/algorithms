@@ -45,32 +45,75 @@ func numKLenSubstrNoRepeats(s string, k int) int {
 
 // best solution
 func numKLenSubstrNoRepeats1(s string, k int) int {
-    i, res, m, left := 0, 0, make(map[byte]int), 0
+    i, res, left := 0, 0, 0
+    mp := make(map[byte]int)
     for left <= len(s)-k {
-        if index, ok := m[s[i]]; !ok {
-            m[s[i]] = i
+        if index, ok := mp[s[i]]; !ok {
+            mp[s[i]] = i
             if i - left + 1 == k {
-                delete(m, s[left])
+                delete(mp, s[left])
                 left++; i++; res++
             } else {
                 i++
             }
         } else {
             left, i = index + 1,index + 1
-            m = make(map[byte]int)
+            mp = make(map[byte]int)
+        }
+    }
+    return res
+}
+
+func numKLenSubstrNoRepeats2(s string, k int) int {
+    res, n := 0, len(s)
+    if n < k { return 0 }
+    count := make([]int, 26)
+    for i := 0; i < k; i++ {
+        count[s[i] - 'a']++
+    }
+    isValid := func(arr []int) bool {
+        for i:= 0; i < 26; i++ {
+            if arr[i] > 1 {
+                return false
+            }
+        }
+        return true
+    }
+    if isValid(count) {
+        res++
+    }
+    for i := k; i < n; i++ {
+        count[s[i] - 'a']++
+        count[s[i - k] - 'a']--
+        if isValid(count) {
+            res++
         }
     }
     return res
 }
 
 func main() {
-    // There are 6 substrings they are: 'havef','avefu','vefun','efuno','etcod','tcode'.
-    fmt.Println(numKLenSubstrNoRepeats("havefunonleetcode",5))
-    // Notice k can be larger than the length of s. In this case, it is not possible to find any substring.
-    fmt.Println(numKLenSubstrNoRepeats("home",5)) // 0
+    // Example 1:
+    // Input: s = "havefunonleetcode", k = 5
+    // Output: 6
+    // Explanation: There are 6 substrings they are: 'havef','avefu','vefun','efuno','etcod','tcode'.
+    fmt.Println(numKLenSubstrNoRepeats("havefunonleetcode",5)) // 6
+    // Example 2:
+    // Input: s = "home", k = 5
+    // Output: 0
+    // Explanation: Notice k can be larger than the length of s. In this case, it is not possible to find any substring.
+    fmt.Println(numKLenSubstrNoRepeats("home", 5)) // 0
 
-    // There are 6 substrings they are: 'havef','avefu','vefun','efuno','etcod','tcode'.
-    fmt.Println(numKLenSubstrNoRepeats1("havefunonleetcode",5))
-    // Notice k can be larger than the length of s. In this case, it is not possible to find any substring.
-    fmt.Println(numKLenSubstrNoRepeats1("home",5)) // 0
+    fmt.Println(numKLenSubstrNoRepeats("bluefrog", 5)) // 4
+    fmt.Println(numKLenSubstrNoRepeats("leetcode", 5)) // 2
+
+    fmt.Println(numKLenSubstrNoRepeats1("havefunonleetcode", 5)) // 6
+    fmt.Println(numKLenSubstrNoRepeats1("home", 5)) // 0
+    fmt.Println(numKLenSubstrNoRepeats1("bluefrog", 5)) // 4
+    fmt.Println(numKLenSubstrNoRepeats1("leetcode", 5)) // 2
+
+    fmt.Println(numKLenSubstrNoRepeats2("havefunonleetcode", 5)) // 6
+    fmt.Println(numKLenSubstrNoRepeats2("home", 5)) // 0
+    fmt.Println(numKLenSubstrNoRepeats2("bluefrog", 5)) // 4
+    fmt.Println(numKLenSubstrNoRepeats2("leetcode", 5)) // 2
 }
