@@ -2364,6 +2364,7 @@
 [3403. Find the Lexicographically Largest String From the Box I](./leetcode/3403-FindTheLexicographicallyLargestStringFromTheBoxI.go)   
 [3406. Find the Lexicographically Largest String From the Box II](./leetcode/3406-FindTheLexicographicallyLargestStringFromTheBoxII.go)   
 [3407. Substring Matching Pattern](./leetcode/3407-SubstringMatchingPattern.go)   
+[3412. Find Mirror Score of a String](./leetcode/3412-FindMirrorScoreOfAStriing.go)   
 [3438. Find Valid Pair of Adjacent Digits in String](./leetcode/3438-FindValidPairOfAdjacentDigitsInString.go)   
 [3442. Maximum Difference Between Even and Odd Frequency I](./leetcode/3442-MaximumDifferenceBetweenEvenAndOddFrequencyI.go)   
 [3445. Maximum Difference Between Even and Odd Frequency II](./leetcode/3445-MaximumDifferenceBetweenEvenAndOddFrequencyII.go)   
