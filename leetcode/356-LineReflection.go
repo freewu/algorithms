@@ -98,6 +98,29 @@ func isReflected1(points [][]int) bool {
     return true
 }
 
+func isReflected2(points [][]int) bool {
+    if len(points) == 1 { return true }
+    mn, mx := 1 << 31, -1 << 31
+    keys := make(map[[2]int]struct{}, len(points))
+    min := func (x, y int) int { if x < y { return x; }; return y; }
+    max := func (x, y int) int { if x > y { return x; }; return y; }
+    for i := range points {
+        mn, mx = min(mn, points[i][0]), max(mx, points[i][0])
+        key := [2]int{points[i][0], points[i][1]}
+        keys[key] = struct{}{}
+    }
+    if len(keys) == 1 {
+        return true
+    }
+    for i := range points {
+        key := [2]int{mx + mn - points[i][0], points[i][1]}
+        if _, ok := keys[key]; !ok {
+            return false
+        }
+    }
+    return true
+}
+
 func main() {
     // Example 1:
     // <img src="https://assets.leetcode.com/uploads/2020/04/23/356_example_1.PNG" />
@@ -114,4 +137,7 @@ func main() {
 
     fmt.Println(isReflected1([][]int{{1,1},{-1,1}})) // true
     fmt.Println(isReflected1([][]int{{1,1},{-1,-1}})) // false
+
+    fmt.Println(isReflected2([][]int{{1,1},{-1,1}})) // true
+    fmt.Println(isReflected2([][]int{{1,1},{-1,-1}})) // false
 }
