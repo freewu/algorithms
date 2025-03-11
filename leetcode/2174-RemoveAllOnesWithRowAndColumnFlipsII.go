@@ -53,7 +53,6 @@ func removeOnes(grid [][]int) int {
                 points = append(points, []int{i, j})
                 mask += 1 << (i*n + j)
             }
-
         }
     }
     bitLen := func (i int)int{
