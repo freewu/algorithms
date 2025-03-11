@@ -59,6 +59,23 @@ func numberOfSubstrings1(s string) int {
     return res
 }
 
+func numberOfSubstrings2(s string) int {
+    res, mp := 0, make([]int, 3)
+    for i := 0; i < 3; i++ {
+        mp[i] = -1
+    }
+    min := func (x, y int) int { if x < y { return x; }; return y; }
+    for i, v := range s {
+        mp[v - 'a'] = i 
+        if mp[0] != -1 && mp[1] != -1 && mp[2] != -1 {
+            // substrings  = ending at max of these lastSeen and starting from 0 to minIndex
+            // so total minIndex+1 variations
+            res += 1 + min(mp[0], min(mp[1], mp[2])) 
+        }
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: s = "abcabc"
@@ -78,4 +95,8 @@ func main() {
     fmt.Println(numberOfSubstrings1("abcabc")) // 10
     fmt.Println(numberOfSubstrings1("aaacb")) // 3
     fmt.Println(numberOfSubstrings1("abc")) // 1
+
+    fmt.Println(numberOfSubstrings2("abcabc")) // 10
+    fmt.Println(numberOfSubstrings2("aaacb")) // 3
+    fmt.Println(numberOfSubstrings2("abc")) // 1
 }
