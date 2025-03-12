@@ -23,7 +23,7 @@ package main
 import "fmt"
 
 func numberOfWays(numPeople int) int {
-    const MOD int = 1e9 + 7
+    mod := 1_000_000_007
     dp := map[int]int{0: 1, 2: 1}
     // i 是从2到n的偶数
     // 自下向上，计算不同人数时的握手方案
@@ -38,26 +38,45 @@ func numberOfWays(numPeople int) int {
         // 右边有x-i-1个人，共有dp[x-i-1]种握手方案，所以当x个人的时候，跟第i个人这一次的握手的方案数为dp[i-1]*dp[x-i-1].
         // 遍历i，求和即可得到x人时，总的握手方案
         for i := 1; i < x; i += 2 { // 自增2是因为不能留下奇数个，保证两边剩下的也都能握手
-            dp[x] = dp[x] + (helper(i-1) * helper(x-i-1)) % MOD
+            dp[x] = dp[x] + (helper(i-1) * helper(x-i-1)) % mod
         }
         return dp[x]
     }
     for i := 2; i <= numPeople; i += 2 {
-        dp[i] = helper(i) % MOD
+        dp[i] = helper(i) % mod
     }
     return dp[numPeople]
 }
 
 func numberOfWays1(numPeople int) int {
-    const MOD int = 1e9 + 7
+    mod := 1_000_000_007
     dp := make([]int, numPeople / 2 + 1)
     dp[0], dp[1] = 1, 1
     for i := 2; i <= numPeople / 2; i++ {
         for j := 0; j < i; j++ {
-            dp[i] = (dp[i] + (dp[j] * dp[i - j - 1]) % MOD) % MOD
+            dp[i] = (dp[i] + (dp[j] * dp[i - j - 1]) % mod) % mod
         }
     }
     return dp[numPeople / 2]
+}
+
+func numberOfWays2(numPeople int) int {
+    if numPeople < 2 { return 0 }
+    pairCount, mod := numPeople / 2, 1_000_000_007
+    dp := make([]int, pairCount + 1)
+    dp[0], dp[1] = 1, 1
+    for i := 2; i <= pairCount; i ++ {
+        border := (i - 1) / 2
+        for j := 0; j <= border; j ++ {
+            if j == i - 1 - j {
+                dp[i] += (dp[j] * dp[i - 1 - j]) % mod
+            } else {
+                dp[i] += (2 * dp[j] * dp[i - 1 - j]) % mod
+            }
+        }
+        dp[i] = dp[i] % mod
+    }
+    return dp[pairCount]
 }
 
 func main() {
@@ -73,6 +92,22 @@ func main() {
     // Output: 5
     fmt.Println(numberOfWays(6)) // 5
 
+    fmt.Println(numberOfWays(2)) // 1
+    fmt.Println(numberOfWays(8)) // 14
+    fmt.Println(numberOfWays(999)) // 0
+    fmt.Println(numberOfWays(1000)) // 591137401
+
     fmt.Println(numberOfWays1(4)) // 2
     fmt.Println(numberOfWays1(6)) // 5
+    fmt.Println(numberOfWays1(2)) // 1
+    fmt.Println(numberOfWays1(8)) // 14
+    fmt.Println(numberOfWays1(999)) // 948528453
+    fmt.Println(numberOfWays1(1000)) // 591137401
+
+    fmt.Println(numberOfWays2(4)) // 2
+    fmt.Println(numberOfWays2(6)) // 5
+    fmt.Println(numberOfWays2(2)) // 1
+    fmt.Println(numberOfWays2(8)) // 14
+    fmt.Println(numberOfWays2(999)) // 948528453
+    fmt.Println(numberOfWays2(1000)) // 591137401
 }
