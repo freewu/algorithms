@@ -37,10 +37,9 @@ func Constructor(wordsDict []string) WordDistance {
 }
 
 func (this *WordDistance) Shortest(word1 string, word2 string) int {
-    //fmt.Println("wordsDict: ", wordsDict)
-    //fmt.Println("word1: ", word1,"word2: ", word2)
-    ans := len(this.data)
-    index1, index2 := -1, -1
+    res, index1, index2 := len(this.data), -1, -1
+    min := func (x, y int) int { if x < y { return x; }; return y; }
+    abs := func(x int) int { if x < 0 { return -x; }; return x; }
     // 从左到右遍历数组 wordsDict，
     // 当遍历到 word1时，
     //     如果已经遍历的单词中存在 word2，为了计算最短距离，应该取最后一个已经遍历到的 word2 所在的下标，计算和当前下标的距离。
@@ -51,27 +50,12 @@ func (this *WordDistance) Shortest(word1 string, word2 string) int {
         } else if word == word2 { // 找到单词2
             index2 = i
         }
-        //fmt.Println("i: ", i , "index1: ", index1 , "index2: ", index2)
         // 都找到了，计算距离
         if index1 >= 0 && index2 >= 0 {
-            ans = min(ans, abs(index1 - index2))
+            res = min(res, abs(index1 - index2))
         }
     }
-    return ans
-}
-
-func abs(x int) int {
-    if x < 0 {
-        return -x
-    }
-    return x
-}
-
-func min(a, b int) int {
-    if a > b {
-        return b
-    }
-    return a
+    return res
 }
 
 type WordDistance1 struct {
@@ -88,16 +72,16 @@ func Constructor1(wordsDict []string) WordDistance1 {
     return this
 }
 
-
-func (this *WordDistance1) Shortest(word1 string, word2 string) (ans int) {
-    g1, g2 := this.g[word1], this.g[word2]
-    ans = 0x3f3f3f3f
+func (this *WordDistance1) Shortest(word1 string, word2 string) int {
+    res, g1, g2 := 0x3f3f3f3f, this.g[word1], this.g[word2]
+    min := func (x, y int) int { if x < y { return x; }; return y; }
+    abs := func(x int) int { if x < 0 { return -x; }; return x; }
     for i := 0; i < len(g1); i++ {
         for j := 0; j < len(g2); j++ {
-            ans = min(ans, abs(g1[i] - g2[j]))
+            res = min(res, abs(g1[i] - g2[j]))
         }
     }
-    return
+    return res
 }
 
 /**
@@ -110,7 +94,6 @@ func main() {
     obj := Constructor([]string{"practice", "makes", "perfect", "coding", "makes"});
     fmt.Println(obj.Shortest("coding", "practice")) // 3
     fmt.Println(obj.Shortest("makes", "coding")) // 1
-
 
     obj1 := Constructor1([]string{"practice", "makes", "perfect", "coding", "makes"});
     fmt.Println(obj1.Shortest("coding", "practice")) // 3
