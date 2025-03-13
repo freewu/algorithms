@@ -1764,6 +1764,7 @@
 [3444. Minimum Increments for Target Multiples in an Array](./leetcode/3444-MinimumIncrementsForTargetMultiplesInAnArray.go)   
 [3446. Sort Matrix by Diagonals](./leetcode/3446-SortMatrixByDiagonals.go)   
 [3447. Assign Elements to Groups with Constraints](./leetcode/3447-AssignElementsToGroupsWithConstraints.go)   
+[3449. Maximize the Minimum Game Score](./leetcode/3449-MaximizeTheMinimumGameScore.go)   
 [3450. Maximum Students on a Single Bench](./leetcode/3450-MaximumStudentsOnASingleBench.go)   
 [3452. Sum of Good Numbers](./leetcode/3452-SumOfGoodNumbers.go)   
 [3453. Separate Squares I](./leetcode/3453-SeparateSquaresI.go)   
