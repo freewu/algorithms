@@ -89,6 +89,32 @@ func largestVariance1(s string) int {
     return res
 }
 
+func largestVariance2(s string) int {
+    var f0, f1 [26][26]int
+    for i := range f1 {
+        for j := range f1[i] {
+            f1[i][j] = -1 << 31
+        }
+    }
+    res := 0
+    max := func (x, y int) int { if x > y { return x; }; return y; }
+    for _, ch := range s {
+        ch -= 'a'
+        // 遍历到 ch 时，只需计算 a=ch 或者 b=ch 的状态，其他状态和 ch 无关，f 值不变
+        for i := 0; i < 26; i++ {
+            if i == int(ch) { continue }
+            // 假设出现次数最多的字母 a=ch，更新所有 b=i 的状态
+            f0[ch][i] = max(f0[ch][i], 0) + 1
+            f1[ch][i]++
+            // 假设出现次数最少的字母 b=ch，更新所有 a=i 的状态
+            f0[i][ch] = max(f0[i][ch], 0) - 1
+            f1[i][ch] = f0[i][ch]
+            res = max(res, max(f1[ch][i], f1[i][ch]))
+        }
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: s = "aababbb"
@@ -107,7 +133,16 @@ func main() {
     // Explanation:
     // No letter occurs more than once in s, so the variance of every substring is 0.
     fmt.Println(largestVariance("abcde")) // 0
+    fmt.Println(largestVariance("bluefrog")) // 0
+    fmt.Println(largestVariance("leetcode")) // 2
 
     fmt.Println(largestVariance1("aababbb")) // 3
     fmt.Println(largestVariance1("abcde")) // 0
+    fmt.Println(largestVariance1("bluefrog")) // 0
+    fmt.Println(largestVariance1("leetcode")) // 2
+
+    fmt.Println(largestVariance2("aababbb")) // 3
+    fmt.Println(largestVariance2("abcde")) // 0
+    fmt.Println(largestVariance2("bluefrog")) // 0
+    fmt.Println(largestVariance2("leetcode")) // 2
 }
