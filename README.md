@@ -1778,6 +1778,7 @@
 [3468. Find the Number of Copy Arrays](./leetcode/3468-FindTheNumberOfCopyArrays.go)   
 [3469. Find Minimum Cost to Remove Array Elements](./leetcode/3469-FindMinimumCostToRemoveArrayElements.go)   
 [3471. Find the Largest Almost Missing Integer](./leetcode/3471-FindTheLargestAlmostMissingInteger.go)   
+[3473. Sum of K Subarrays With Length at Least M](./leetcode/3473-SumOfKSubarraysWithLengthAtLeastM.go)   
 [3476. Maximize Profit from Task Assignment](./leetcode/3476-MaximizeProfitFromTaskAssignment.go)   
 [3477. Fruits Into Baskets II](./leetcode/3477-FruitsIntoBasketsII.go)   
 [3481. Apply Substitutions](./leetcode/3481-ApplySubstitutions.go)   
