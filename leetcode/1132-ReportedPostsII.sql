@@ -66,6 +66,26 @@
 -- The other days had no spam reports so the average is (50 + 100) / 2 = 75%
 -- Note that the output is only one number and that we do not care about the remove dates.
 
+-- Create table If Not Exists Actions (user_id int, post_id int, action_date date, action ENUM('view', 'like', 'reaction', 'comment', 'report', 'share'), extra varchar(10))
+-- create table if not exists Removals (post_id int, remove_date date)
+-- Truncate table Actions
+-- insert into Actions (user_id, post_id, action_date, action, extra) values ('1', '1', '2019-07-01', 'view', NULL)
+-- insert into Actions (user_id, post_id, action_date, action, extra) values ('1', '1', '2019-07-01', 'like', NULL)
+-- insert into Actions (user_id, post_id, action_date, action, extra) values ('1', '1', '2019-07-01', 'share', NULL)
+-- insert into Actions (user_id, post_id, action_date, action, extra) values ('2', '2', '2019-07-04', 'view', NULL)
+-- insert into Actions (user_id, post_id, action_date, action, extra) values ('2', '2', '2019-07-04', 'report', 'spam')
+-- insert into Actions (user_id, post_id, action_date, action, extra) values ('3', '4', '2019-07-04', 'view', NULL)
+-- insert into Actions (user_id, post_id, action_date, action, extra) values ('3', '4', '2019-07-04', 'report', 'spam')
+-- insert into Actions (user_id, post_id, action_date, action, extra) values ('4', '3', '2019-07-02', 'view', NULL)
+-- insert into Actions (user_id, post_id, action_date, action, extra) values ('4', '3', '2019-07-02', 'report', 'spam')
+-- insert into Actions (user_id, post_id, action_date, action, extra) values ('5', '2', '2019-07-03', 'view', NULL)
+-- insert into Actions (user_id, post_id, action_date, action, extra) values ('5', '2', '2019-07-03', 'report', 'racism')
+-- insert into Actions (user_id, post_id, action_date, action, extra) values ('5', '5', '2019-07-03', 'view', NULL)
+-- insert into Actions (user_id, post_id, action_date, action, extra) values ('5', '5', '2019-07-03', 'report', 'racism')
+-- Truncate table Removals
+-- insert into Removals (post_id, remove_date) values ('2', '2019-07-20')
+-- insert into Removals (post_id, remove_date) values ('3', '2019-07-18')
+
 SELECT 
     ROUND(AVG(remove_rate),2) AS average_daily_percent -- 计算平均值 
 FROM
