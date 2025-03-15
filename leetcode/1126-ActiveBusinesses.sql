@@ -43,6 +43,16 @@
 -- - 'page views': (3+12)/2 = 7.5
 -- The business with id=1 has 7 'reviews' events (more than 5) and 11 'ads' events (more than 8), so it is an active business.
 
+-- Create table If Not Exists Events (business_id int, event_type varchar(10), occurrences int)
+-- Truncate table Events
+-- insert into Events (business_id, event_type, occurrences) values ('1', 'reviews', '7')
+-- insert into Events (business_id, event_type, occurrences) values ('3', 'reviews', '3')
+-- insert into Events (business_id, event_type, occurrences) values ('1', 'ads', '11')
+-- insert into Events (business_id, event_type, occurrences) values ('2', 'ads', '7')
+-- insert into Events (business_id, event_type, occurrences) values ('3', 'ads', '6')
+-- insert into Events (business_id, event_type, occurrences) values ('1', 'page views', '3')
+-- insert into Events (business_id, event_type, occurrences) values ('2', 'page views', '12')
+
 -- Write your MySQL query statement below
 SELECT 
     e.business_id
