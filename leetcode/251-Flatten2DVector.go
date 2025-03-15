@@ -71,24 +71,23 @@ type Vector2D1 struct {
 
 
 func Constructor1(vec [][]int) Vector2D1 {
-    ret := Vector2D1{m: len(vec), vec: vec}
-    for ;ret.i < ret.m && ret.j == len(ret.vec[ret.i]); {
-        ret.j = 0
-        ret.i += 1
+    res := Vector2D1{m: len(vec), vec: vec}
+    for ;res.i < res.m && res.j == len(res.vec[res.i]); {
+        res.j = 0
+        res.i++
     }
-    return ret
+    return res
 }
 
 
 func (this *Vector2D1) Next() int {
-    ret := this.vec[this.i][this.j]
-    this.j += 1
+    res := this.vec[this.i][this.j]
+    this.j++
     for ;this.i < this.m && this.j == len(this.vec[this.i]); {
         this.j = 0
-        this.i += 1
+        this.i++
     }
-
-    return ret
+    return res
 }
 
 func (this *Vector2D1) HasNext() bool {
