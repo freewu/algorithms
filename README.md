@@ -2783,6 +2783,7 @@
 [3416. Subsequences with a Unique Middle Mode II](./leetcode/3416-SubsequencesWithAUniqueMiddleModeII.go)   
 [3426. Manhattan Distances of All Arrangements of Pieces](./leetcode/3426-ManhattanDistancesOfAllArrangementsOfPieces.go)   
 [3437. Permutations III](./leetcode/3437-PermutationsIII.go)   
+[3470. Permutations IV](./leetcode/3470-PermutationsIV.go)   
 
 # Stack
 [225. Implement Stack using Queues](./leetcode/225-ImplementStackUsingQueues.go)   
