@@ -45,12 +45,90 @@ func minInsertions(s string) int {
     return dp[0][n-1]
 }
 
+func minInsertions1(s string) int {
+    reverseString := func(target string) string{
+        arr := []rune(target)
+        i, j := 0, len(target) - 1
+        for i < j  {
+            arr[i], arr[j] = arr[j], arr[i]
+            i++
+            j--
+        }
+        return string(arr)
+    }
+    max := func (x, y int) int { if x > y { return x; }; return y; }
+    n, rs := len(s), reverseString(s)
+    // lcs
+    dp :=  make([]int, n + 1) 
+    for i := 1; i <= n; i++ {
+        // when go to first i subchars of s
+        // look into first j subchars of rs 
+        prev := 0
+        for j := 1; j <= n; j++ {
+            // this round dp[i][j]
+            tmp := dp[j] 
+            if s[i - 1] == rs[j - 1] {
+                // this round dp[i][j] = dp[i - 1][j - 1] + 1
+                dp[j] = prev + 1 
+            } else {
+                // this round dp[i][j] = max(dp[i - 1][j], dp[i][j - 1])
+                dp[j] = max(dp[j], dp[j - 1]) 
+            }
+            // prepare next round dp[i - 1][j - 1]
+            prev = tmp
+        }
+    }
+    return n - dp[n]
+}
+
+func minInsertions2(s string) int {
+    n := len(s)
+    if n < 2 { return 0 }
+    dp, bs := make([]int, n), []byte(s)
+    pre, temp := 0, 0
+    min := func (x, y int) int { if x < y { return x; }; return y; }
+    for i := n - 2; i >= 0; i-- {
+        pre = 0
+        for j := i + 1; j < n; j++ {
+            temp = dp[j]
+            if bs[i] == bs[j] {
+                dp[j] = pre
+            } else {
+                dp[j] = min(dp[j], dp[j-1]) + 1
+            }
+            pre = temp
+        }
+    }
+    return dp[n-1]
+}
+
 func main() {
+    // Example 1:
+    // Input: s = "zzazz"
+    // Output: 0
     // Explanation: The string "zzazz" is already palindrome we do not need any insertions.
     fmt.Println(minInsertions("zzazz")) // 0
+    // Example 2:
+    // Input: s = "mbadm"
+    // Output: 2
     // Explanation: String can be "mbdadbm" or "mdbabdm".
     fmt.Println(minInsertions("mbadm")) // 2
+    // Example 3:
+    // Input: s = "leetcode"
+    // Output: 5
     // Explanation: Inserting 5 characters the string becomes "leetcodocteel".
-    // Explanation: String can be "mbdadbm" or "mdbabdm".
+    // Explanation: The string "zzazz" is already palindrome we do not need any insertions.
     fmt.Println(minInsertions("leetcode")) // 5
+
+    fmt.Println(minInsertions("bluefrog")) // 7
+
+    fmt.Println(minInsertions1("zzazz")) // 0
+    fmt.Println(minInsertions1("mbadm")) // 2
+    fmt.Println(minInsertions1("leetcode")) // 5
+    fmt.Println(minInsertions1("bluefrog")) // 7
+
+    fmt.Println(minInsertions2("zzazz")) // 0
+    fmt.Println(minInsertions2("mbadm")) // 2
+    fmt.Println(minInsertions2("leetcode")) // 5
+    fmt.Println(minInsertions2("bluefrog")) // 7
 }
