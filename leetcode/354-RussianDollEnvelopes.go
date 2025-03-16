@@ -23,6 +23,7 @@ package main
 
 import "fmt"
 import "sort"
+import "slices"
 
 // 二分法
 func maxEnvelopes(envelopes [][]int) int {
@@ -73,11 +74,41 @@ func maxEnvelopes1(envelopes [][]int) int {
     return len(res)
 }
 
+func maxEnvelopes2(envelopes [][]int) int {
+    slices.SortFunc(envelopes, func(i, j []int) int {
+        if i[0] == j[0] && i[1] > j[1] {
+            return -1
+        } else {
+            return i[0] - j[0]
+        }
+    })
+    dp := []int{}
+    for _, e := range envelopes {
+        h := e[1]
+        i, _ := slices.BinarySearch(dp, h)
+        if i < len(dp) {
+            dp[i] = h
+        } else {
+            dp = append(dp, h)
+        }
+    }
+    return len(dp)
+}
+
 func main() {
+    // Example 1:
+    // Input: envelopes = [[5,4],[6,4],[6,7],[2,3]]
+    // Output: 3
     // Explanation: The maximum number of envelopes you can Russian doll is 3 ([2,3] => [5,4] => [6,7]).
     fmt.Println(maxEnvelopes([][]int{{5,4},{6,4},{6,7},{2,3}})) // 3
+    // Example 2:
+    // Input: envelopes = [[1,1],[1,1],[1,1]]
+    // Output: 1
     fmt.Println(maxEnvelopes([][]int{{1,1},{1,1},{1,1},{1,1}})) // 1
 
     fmt.Println(maxEnvelopes1([][]int{{5,4},{6,4},{6,7},{2,3}})) // 3
     fmt.Println(maxEnvelopes1([][]int{{1,1},{1,1},{1,1},{1,1}})) // 1
+
+    fmt.Println(maxEnvelopes2([][]int{{5,4},{6,4},{6,7},{2,3}})) // 3
+    fmt.Println(maxEnvelopes2([][]int{{1,1},{1,1},{1,1},{1,1}})) // 1
 }
