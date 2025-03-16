@@ -19,6 +19,7 @@ package main
 //     -10^6 <= nums[i] <= 10^6
 
 import "fmt"
+import "sort"
 
 // dp 
 func findNumberOfLIS(nums []int) int {
@@ -46,9 +47,48 @@ func findNumberOfLIS(nums []int) int {
     return res  
 }
 
+func findNumberOfLIS1(nums []int) int {
+    q, s := [][]int{}, [][]int{}
+    for _, x := range nums {
+        i := sort.Search(len(q), func(i int) bool {
+            return q[i][len(q[i]) - 1] >= x
+        })
+        y := 1
+        if i > 0 {
+            j := sort.Search(len(q[i-1]), func(j int) bool {
+                return q[i - 1][j] < x
+            })
+            y = s[i - 1][len(s[i - 1]) - 1] - s[i - 1][j]
+        }
+        if i == len(q) {
+            q = append(q, []int{x})
+            s = append(s, []int{0, y})
+        } else {
+            q[i] = append(q[i], x)
+            s[i] = append(s[i], y + s[i][len(s[i]) - 1])
+        }
+    }
+    p := s[len(s) - 1]
+    return p[len(p) - 1]
+}
+
 func main() {
+    // Example 1:
+    // Input: nums = [1,3,5,4,7]
+    // Output: 2
     // Explanation: The two longest increasing subsequences are [1, 3, 4, 7] and [1, 3, 5, 7].
     fmt.Println(findNumberOfLIS([]int{1,3,5,4,7})) // 2
+    // Example 2:
+    // Input: nums = [2,2,2,2,2]
+    // Output: 5
     // Explanation: The length of the longest increasing subsequence is 1, and there are 5 increasing subsequences of length 1, so output 5.
     fmt.Println(findNumberOfLIS([]int{2,2,2,2,2})) // 5
+
+    fmt.Println(findNumberOfLIS([]int{1,2,3,4,5,6,7,8,9})) // 1
+    fmt.Println(findNumberOfLIS([]int{9,8,7,6,5,4,3,2,1})) // 9
+
+    fmt.Println(findNumberOfLIS1([]int{1,3,5,4,7})) // 2
+    fmt.Println(findNumberOfLIS1([]int{2,2,2,2,2})) // 5
+    fmt.Println(findNumberOfLIS1([]int{1,2,3,4,5,6,7,8,9})) // 1
+    fmt.Println(findNumberOfLIS1([]int{9,8,7,6,5,4,3,2,1})) // 9
 }
