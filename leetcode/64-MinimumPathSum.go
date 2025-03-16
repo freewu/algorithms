@@ -30,17 +30,15 @@ func minPathSum(grid [][]int) int {
     for i := 1; i < m; i++ {
         grid[i][0] += grid[i-1][0]
     }
-    //fmt.Printf("for 1 grid = %v\n",grid)
     for j := 1; j < n; j++ {
         grid[0][j] += grid[0][j-1]
     }
-    //fmt.Printf("for 2 grid = %v\n",grid)
+    min := func (x, y int) int { if x < y { return x; }; return y; }
     for i := 1; i < m; i++ {
         for j := 1; j < n; j++ {
             grid[i][j] += min(grid[i-1][j], grid[i][j-1])
         }
     }
-    //fmt.Printf("for 3 grid = %v\n",grid)
     return grid[m-1][n-1]
 }
 
@@ -110,7 +108,15 @@ func minPathSum2(grid [][]int) int {
 }
 
 func main() {
+    // Example 1:
+    // <img src="https://assets.leetcode.com/uploads/2020/11/05/minpath.jpg" />
+    // Input: grid = [[1,3,1],[1,5,1],[4,2,1]]
+    // Output: 7
+    // Explanation: Because the path 1 → 3 → 1 → 1 → 1 minimizes the sum.
     fmt.Printf("minPathSum([][]int{ []int{1,3,1},[]int{1,5,1},[]int{4,2,1}}) = %v\n",minPathSum([][]int{ []int{1,3,1},[]int{1,5,1},[]int{4,2,1}}))
+    // Example 2:
+    // Input: grid = [[1,2,3],[4,5,6]]
+    // Output: 12
     fmt.Printf("minPathSum([][]int{ []int{1,2,3},[]int{4,5,6} }) = %v\n",minPathSum([][]int{  []int{1,2,3},[]int{4,5,6} }))
 
     fmt.Printf("minPathSum1([][]int{ []int{1,3,1},[]int{1,5,1},[]int{4,2,1}}) = %v\n",minPathSum1([][]int{ []int{1,3,1},[]int{1,5,1},[]int{4,2,1}}))
