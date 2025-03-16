@@ -67,7 +67,6 @@ func numDistinct1(s, t string) int {
         dp[i] = make([]int, n+1)
         dp[i][n] = 1
     }
-    //fmt.Println(dp)
     for i := m - 1; i >= 0; i-- {
         for j := n - 1; j >= 0; j-- {
             if s[i] == t[j] {
@@ -77,7 +76,6 @@ func numDistinct1(s, t string) int {
             }
         }
     }
-    //fmt.Println(dp)
     return dp[0][0]
 }
 
@@ -103,18 +101,98 @@ func numDistinct2(s string, t string) int {
             }
         }
     }
-    //fmt.Println(dp)
     return dp[m][n] // 前 sLen 个字符的 s 串中，出现前 tLen 个字符的 t 串的次数
 }
 
-func main() {
-    fmt.Println(numDistinct("babgbag","bag")) // 5
-    fmt.Println(numDistinct("rabbbit","rabbit")) // 3
+func numDistinct3(s string, t string) int {
+    count, temp, n, m := 0, 0, len(s), len(t)
+    arr := make([]int, n)
+    for i := 0; i < n; i++ {
+        if s[i] == t[0] {
+            arr[i] = 1
+        }
+    }
+    for i := 1; i < m; i++ {
+        count = 0
+        for j := 0; j < n; j++ {
+            temp = arr[j]
+            if s[j] == t[i] {
+                arr[j] = count
+            } else {
+                arr[j] = 0
+            }
+            count += temp
+        }
+    }
+    count = 0
+    for j := 0; j < n; j++ {
+        count += arr[j]
+    }
+    return count
+}
 
+func numDistinct4(s string, t string) int {
+    // dp[i][j]表示t[0: i]在s[0: j]的子序列中出现的个数.
+    // 如果t[i - 1] == s[j - 1], 则dp[i][j] = dp[i][j - 1] + dp[i - 1][j - 1].
+    // 否则dp[i][j] = dp[i][j - 1].
+    m, n := len(s), len(t)
+    dp0 := make([]int, m + 1)
+    dp1 := make([]int, m + 1)
+    for i := range m + 1 { dp0[i] = 1 }
+    for i := 1; i <= n; i++ {
+        dp1[i - 1] = 0
+        for j := i; j <= m; j++ {
+            dp1[j] = dp1[j - 1]
+            if t[i - 1] == s[j - 1] {
+                dp1[j] += dp0[j - 1]
+            }
+        }
+        dp0, dp1 = dp1, dp0
+    }
+    return dp0[m]
+}
+
+func main() {
+    // Example 1:
+    // Input: s = "rabbbit", t = "rabbit"
+    // Output: 3
+    // Explanation:
+    // As shown below, there are 3 ways you can generate "rabbit" from s.
+    //     rabb[b]it
+    //     rab[b]bit
+    //     ra[b]bbit
+    fmt.Println(numDistinct("babgbag","bag")) // 5
+    // Example 2:
+    // Input: s = "babgbag", t = "bag"
+    // Output: 5
+    // Explanation:
+    // As shown below, there are 5 ways you can generate "bag" from s.
+    //     ba[b]g[bag]
+    //     ba[bgba]g
+    //     b[abgb]ag
+    //     [ba]b[gb]ag
+    //     [babg]bag
+    fmt.Println(numDistinct("rabbbit","rabbit")) // 3
+    fmt.Println(numDistinct("bluefrog","blue")) // 1
+    fmt.Println(numDistinct("leetcode","code")) // 1
 
     fmt.Println(numDistinct1("babgbag","bag")) // 5
     fmt.Println(numDistinct1("rabbbit","rabbit")) // 3
+    fmt.Println(numDistinct1("bluefrog","blue")) // 3
+    fmt.Println(numDistinct1("leetcode","code")) // 3
 
     fmt.Println(numDistinct2("babgbag","bag")) // 5
     fmt.Println(numDistinct2("rabbbit","rabbit")) // 3
+    fmt.Println(numDistinct2("bluefrog","blue")) // 1
+    fmt.Println(numDistinct2("leetcode","code")) // 1
+
+    fmt.Println(numDistinct3("babgbag","bag")) // 5
+    fmt.Println(numDistinct3("rabbbit","rabbit")) // 3
+    fmt.Println(numDistinct3("bluefrog","blue")) // 1
+    fmt.Println(numDistinct3("leetcode","code")) // 1
+
+    fmt.Println(numDistinct4("babgbag","bag")) // 5
+    fmt.Println(numDistinct4("rabbbit","rabbit")) // 3
+    fmt.Println(numDistinct4("bluefrog","blue")) // 1
+    fmt.Println(numDistinct4("leetcode","code")) // 1
 }
