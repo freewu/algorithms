@@ -113,12 +113,53 @@ func maximalSquare1(matrix [][]byte) int {
     return res * res
 }
 
+func maximalSquare2(matrix [][]byte) int {
+    res, prev, curr, n, m := 0, 0, 0, len(matrix), len(matrix[0])
+    dp := make([]int, m + 1)
+    for i := 0; i < n; i++ {
+        for j := 0; j < m; j++ {
+            curr = dp[j + 1]
+            if matrix[i][j] == '1' {
+                if prev < dp[j + 1] {
+                    dp[j + 1] = prev
+                }
+                if dp[j] < dp[j + 1] {
+                    dp[j + 1] = dp[j]
+                }
+                dp[j + 1]++
+                if dp[j + 1] > res {
+                    res = dp[j + 1]
+                }
+            } else {
+                dp[j + 1] = 0
+            }
+            prev = curr
+        }
+    }
+    return res * res
+}
+
 func main() {
+    // Example 1:
+    // <img src="https://assets.leetcode.com/uploads/2020/11/26/max1grid.jpg" />
+    // Input: matrix = [["1","0","1","0","0"],["1","0","1","1","1"],["1","1","1","1","1"],["1","0","0","1","0"]]
+    // Output: 4
     fmt.Println(maximalSquare([][]byte{{'1','0','1','0','0'},{'1','0','1','1','1'},{'1','1','1','1','1'},{'1','0','0','1','0'}})) // 4
+    // Example 2:
+    // Input: matrix = [["0","1"],["1","0"]]
+    // Output: 1
     fmt.Println(maximalSquare([][]byte{{'1','0'},{'0','1'}})) // 1
+    // Example 3:
+    // <img src="https://assets.leetcode.com/uploads/2020/11/26/max2grid.jpg" />
+    // Input: matrix = [["0"]]
+    // Output: 0
     fmt.Println(maximalSquare([][]byte{{'0'}})) // 0
 
     fmt.Println(maximalSquare1([][]byte{{'1','0','1','0','0'},{'1','0','1','1','1'},{'1','1','1','1','1'},{'1','0','0','1','0'}})) // 4
     fmt.Println(maximalSquare1([][]byte{{'1','0'},{'0','1'}})) // 1
     fmt.Println(maximalSquare1([][]byte{{'0'}})) // 0
+
+    fmt.Println(maximalSquare2([][]byte{{'1','0','1','0','0'},{'1','0','1','1','1'},{'1','1','1','1','1'},{'1','0','0','1','0'}})) // 4
+    fmt.Println(maximalSquare2([][]byte{{'1','0'},{'0','1'}})) // 1
+    fmt.Println(maximalSquare2([][]byte{{'0'}})) // 0
 }
