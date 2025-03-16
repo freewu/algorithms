@@ -40,9 +40,32 @@ func findLongestChain(pairs [][]int) int {
     return res
 }
 
+func findLongestChain1(pairs [][]int) int {
+    sort.Slice(pairs, func(i, j int) bool {
+        return pairs[i][1] < pairs[j][1]
+    })
+    res, pre := 0, -1 << 31
+    for _, v := range pairs {
+        if v[0] > pre {
+            res++
+            pre = v[1]
+        }
+    }
+    return res
+}
+
 func main() {
+    // Example 1:
+    // Input: pairs = [[1,2],[2,3],[3,4]]
+    // Output: 2
     // Explanation: The longest chain is [1,2] -> [3,4].
     fmt.Println(findLongestChain([][]int{{1,2},{2,3},{3,4}})) // 2
+    // Example 2:
+    // Input: pairs = [[1,2],[7,8],[4,5]]
+    // Output: 3
     // Explanation: The longest chain is [1,2] -> [4,5] -> [7,8].
     fmt.Println(findLongestChain([][]int{{1,2},{7,8},{4,5}})) // 3
+
+    fmt.Println(findLongestChain1([][]int{{1,2},{2,3},{3,4}})) // 2
+    fmt.Println(findLongestChain1([][]int{{1,2},{7,8},{4,5}})) // 3
 }
