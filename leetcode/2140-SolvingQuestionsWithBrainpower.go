@@ -75,14 +75,32 @@ func mostPoints1(questions [][]int) int64 {
     return int64(dp[0])
 }
 
+func mostPoints2(questions [][]int) int64 {
+    res, n := 0, len(questions)
+    max := func (x, y int) int { if x > y { return x; }; return y; }
+    for i := n - 1; i >= 0; i-- {
+         if i + questions[i][1] + 1 < n {
+              questions[i][0] = questions[i][0] + questions[i + questions[i][1] + 1][0]
+         }
+         res = max(res,questions[i][0])
+         questions[i][0] = res
+    }
+    return int64(res)
+}
 
 func main() {
+    // Example 1:
+    // Input: questions = [[3,2],[4,3],[4,4],[2,5]]
+    // Output: 5
     // Explanation: The maximum points can be earned by solving questions 0 and 3.
     // - Solve question 0: Earn 3 points, will be unable to solve the next 2 questions
     // - Unable to solve questions 1 and 2
     // - Solve question 3: Earn 2 points
     // Total points earned: 3 + 2 = 5. There is no other way to earn 5 or more points.
     fmt.Println(mostPoints([][]int{{3,2},{4,3},{4,4},{2,5}})) // 5
+    // Example 2:
+    // Input: questions = [[1,1],[2,2],[3,3],[4,4],[5,5]]
+    // Output: 7
     // Explanation: The maximum points can be earned by solving questions 1 and 4.
     // - Skip question 0
     // - Solve question 1: Earn 2 points, will be unable to solve the next 2 questions
@@ -93,4 +111,7 @@ func main() {
 
     fmt.Println(mostPoints1([][]int{{3,2},{4,3},{4,4},{2,5}})) // 5
     fmt.Println(mostPoints1([][]int{{1,1},{2,2},{3,3},{4,4},{5,5}})) // 7
+
+    fmt.Println(mostPoints2([][]int{{3,2},{4,3},{4,4},{2,5}})) // 5
+    fmt.Println(mostPoints2([][]int{{1,1},{2,2},{3,3},{4,4},{5,5}})) // 7
 }
