@@ -128,23 +128,39 @@ func longestPalindrome3(s string) string {
 }
 
 func main() {
+    // Example 1:
+    // Input: s = "babad"
+    // Output: "bab"
+    // Explanation: "aba" is also a valid answer.
     fmt.Printf("longestPalindrome(\"babad\") = %v\n",longestPalindrome("babad")) // bab | aba
+    // Example 2:
+    // Input: s = "cbbd"
+    // Output: "bb"
     fmt.Printf("longestPalindrome(\"cbbd\") = %v\n",longestPalindrome("cbbd")) // bb
+
     fmt.Printf("longestPalindrome(\"a\") = %v\n",longestPalindrome("a")) // a
     fmt.Printf("longestPalindrome(\"ac\") = %v\n",longestPalindrome("ac")) // a
+    fmt.Printf("longestPalindrome(\"bluefrog\") = %v\n",longestPalindrome("bluefrog")) // b
+    fmt.Printf("longestPalindrome(\"leetcode\") = %v\n",longestPalindrome("leetcode")) // ee
 
     fmt.Printf("longestPalindrome1(\"babad\") = %v\n",longestPalindrome1("babad")) // bab | aba
     fmt.Printf("longestPalindrome1(\"cbbd\") = %v\n",longestPalindrome1("cbbd")) // bb
     fmt.Printf("longestPalindrome1(\"a\") = %v\n",longestPalindrome1("a")) // a
     fmt.Printf("longestPalindrome1(\"ac\") = %v\n",longestPalindrome1("ac")) // a
+    fmt.Printf("longestPalindrome1(\"bluefrog\") = %v\n",longestPalindrome("bluefrog")) // b
+    fmt.Printf("longestPalindrome1(\"leetcode\") = %v\n",longestPalindrome("leetcode")) // ee
 
     fmt.Printf("longestPalindrome2(\"babad\") = %v\n",longestPalindrome2("babad")) // bab | aba
     fmt.Printf("longestPalindrome2(\"cbbd\") = %v\n",longestPalindrome2("cbbd")) // bb
     fmt.Printf("longestPalindrome2(\"a\") = %v\n",longestPalindrome2("a")) // a
     fmt.Printf("longestPalindrome2(\"ac\") = %v\n",longestPalindrome2("ac")) // a
+    fmt.Printf("longestPalindrome2(\"bluefrog\") = %v\n",longestPalindrome("bluefrog")) // b
+    fmt.Printf("longestPalindrome2(\"leetcode\") = %v\n",longestPalindrome("leetcode")) // ee
 
     fmt.Printf("longestPalindrome3(\"babad\") = %v\n",longestPalindrome3("babad")) // bab | aba
     fmt.Printf("longestPalindrome3(\"cbbd\") = %v\n",longestPalindrome3("cbbd")) // bb
     fmt.Printf("longestPalindrome3(\"a\") = %v\n",longestPalindrome3("a")) // a
     fmt.Printf("longestPalindrome3(\"ac\") = %v\n",longestPalindrome3("ac")) // a
+    fmt.Printf("longestPalindrome3(\"bluefrog\") = %v\n",longestPalindrome("bluefrog")) // b
+    fmt.Printf("longestPalindrome3(\"leetcode\") = %v\n",longestPalindrome("leetcode")) // ee
 }
