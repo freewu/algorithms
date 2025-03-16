@@ -99,11 +99,38 @@ func maxUncrossedLines2(nums1, nums2 []int) int {
     return dp[m][n]
 }
 
+func maxUncrossedLines3(nums1 []int, nums2 []int) int {
+    n1, n2 := len(nums1), len(nums2)
+    dp := make([]int, n2 + 1)
+    max := func (x, y int) int { if x > y { return x; }; return y; }
+    for i := 1; i < n1+1; i++ {
+        prev := 0
+        for j := 1; j < n2+1; j++ {
+            if nums1[i-1] == nums2[j-1] {
+                dp[j], prev = prev+1, dp[j]
+            } else {
+                dp[j], prev = max(dp[j], dp[j-1]), dp[j]
+            }
+        }
+    }
+    return dp[n2]
+}
+
 func main() {
+    // Example 1:
+    // <img src="https://assets.leetcode.com/uploads/2019/04/26/142.png" />
+    // Input: nums1 = [1,4,2], nums2 = [1,2,4]
+    // Output: 2
     // Explanation: We can draw 2 uncrossed lines as in the diagram.
     // We cannot draw 3 uncrossed lines, because the line from nums1[1] = 4 to nums2[2] = 4 will intersect the line from nums1[2]=2 to nums2[1]=2.
     fmt.Println(maxUncrossedLines([]int{1,4,2},[]int{1,2,4})) // 2
+    // Example 2:
+    // Input: nums1 = [2,5,1,2,5], nums2 = [10,5,2,1,5,2]
+    // Output: 3
     fmt.Println(maxUncrossedLines([]int{2,5,1,2,5},[]int{10,5,2,1,5,2})) // 3
+    // Example 3:
+    // Input: nums1 = [1,3,7,1,7,5], nums2 = [1,9,2,5,1]
+    // Output: 2
     fmt.Println(maxUncrossedLines([]int{1,3,7,1,7,5},[]int{1,9,2,5,1})) // 2
 
     fmt.Println(maxUncrossedLines1([]int{1,4,2},[]int{1,2,4})) // 2
@@ -113,4 +140,8 @@ func main() {
     fmt.Println(maxUncrossedLines2([]int{1,4,2},[]int{1,2,4})) // 2
     fmt.Println(maxUncrossedLines2([]int{2,5,1,2,5},[]int{10,5,2,1,5,2})) // 3
     fmt.Println(maxUncrossedLines2([]int{1,3,7,1,7,5},[]int{1,9,2,5,1})) // 2
+
+    fmt.Println(maxUncrossedLines3([]int{1,4,2},[]int{1,2,4})) // 2
+    fmt.Println(maxUncrossedLines3([]int{2,5,1,2,5},[]int{10,5,2,1,5,2})) // 3
+    fmt.Println(maxUncrossedLines3([]int{1,3,7,1,7,5},[]int{1,9,2,5,1})) // 2
 }
