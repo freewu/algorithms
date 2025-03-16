@@ -1783,6 +1783,7 @@
 [3477. Fruits Into Baskets II](./leetcode/3477-FruitsIntoBasketsII.go)   
 [3481. Apply Substitutions](./leetcode/3481-ApplySubstitutions.go)   
 [3483. Unique 3-Digit Even Numbers](./leetcode/3483-Unique3DigitEvenNumbers.go)   
+[3487. Maximum Unique Subarray Sum After Deletion](./leetcode/3487-MaximumUniqueSubarraySumAfterDeletion.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
