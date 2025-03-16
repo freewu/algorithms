@@ -1782,6 +1782,7 @@
 [3476. Maximize Profit from Task Assignment](./leetcode/3476-MaximizeProfitFromTaskAssignment.go)   
 [3477. Fruits Into Baskets II](./leetcode/3477-FruitsIntoBasketsII.go)   
 [3478. Choose K Elements With Maximum Sum](./leetcode/3478-ChooseKElementsWithMaximumSum.go)   
+[3479. Fruits Into Baskets III](./leetcode/3479-FruitsIntoBasketsIII.go)   
 [3481. Apply Substitutions](./leetcode/3481-ApplySubstitutions.go)   
 [3483. Unique 3-Digit Even Numbers](./leetcode/3483-Unique3DigitEvenNumbers.go)   
 [3487. Maximum Unique Subarray Sum After Deletion](./leetcode/3487-MaximumUniqueSubarraySumAfterDeletion.go)   
