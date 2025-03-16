@@ -55,6 +55,23 @@ func minSwaps(s string) int {
     return maxClose / 2 + maxClose % 2
 }
 
+func minSwaps1(s string) int {
+    right, left, res  := 0, 0, 0
+    for _, v := range s {
+        if v == '[' {
+            left++
+        } else if right + 1 <= left {
+            right++
+        } else {
+            res++
+        }
+    }
+    if res == 0 {
+        return 0
+    }
+    return (res - 1) / 2 + 1
+}
+
 func main() {
     // Example 1:
     // Input: s = "][]["
@@ -75,4 +92,8 @@ func main() {
     // Output: 0
     // Explanation: The string is already balanced.
     fmt.Println(minSwaps("[]")) // 0
+
+    fmt.Println(minSwaps1("][][")) // 1
+    fmt.Println(minSwaps1("]]][[[")) // 2
+    fmt.Println(minSwaps1("[]")) // 0
 }
