@@ -1783,12 +1783,12 @@
 [3477. Fruits Into Baskets II](./leetcode/3477-FruitsIntoBasketsII.go)   
 [3478. Choose K Elements With Maximum Sum](./leetcode/3478-ChooseKElementsWithMaximumSum.go)   
 [3479. Fruits Into Baskets III](./leetcode/3479-FruitsIntoBasketsIII.go)   
+[3480. Maximize Subarrays After Removing One Conflicting Pair](./leetcode/3480-MaximizeSubarraysAfterRemovingOneConflictingPair.go)   
 [3481. Apply Substitutions](./leetcode/3481-ApplySubstitutions.go)   
 [3483. Unique 3-Digit Even Numbers](./leetcode/3483-Unique3DigitEvenNumbers.go)   
+[3485. Longest Common Prefix of K Strings After Removal](./leetcode/3485-LongestCommonPrefixOfKStringsAfterRemoval.go)   
 [3487. Maximum Unique Subarray Sum After Deletion](./leetcode/3487-MaximumUniqueSubarraySumAfterDeletion.go)   
 [3491. Phone Number Prefix](./leetcode/3491-PhoneNumberPrefix.go)   
-[3485. Longest Common Prefix of K Strings After Removal](./leetcode/3485-LongestCommonPrefixOfKStringsAfterRemoval.go)   
-
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
