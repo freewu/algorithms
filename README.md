@@ -3281,6 +3281,7 @@
 [3369. Design an Array Statistics Tracker](./leetcode/3369-DesignAnArrayStatisticsTracker.go)   
 [3391. Design a 3D Binary Matrix with Efficient Layer Tracking](./leetcode/3391-DesignA3DBinaryMatrixWithEfficientLayerTracking.go)   
 [3408. Design Task Manager](./leetcode/3408-DesignTaskManager.go)   
+[3484. Design Spreadsheet](./leetcode/3484-DesignSpreadsheet.go)   
 
 # Binary Search
 [278. First Bad Version](./leetcode/278-FirstBadVersion.go)   
