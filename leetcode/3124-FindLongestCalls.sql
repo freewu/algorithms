@@ -1,4 +1,4 @@
--- -- 3124. Find Longest Calls
+-- 3124. Find Longest Calls
 -- Table: Contacts
 -- +-------------+---------+
 -- | Column Name | Type    |
@@ -119,4 +119,4 @@ WHERE
     u.id = c.contact_id AND
     c.rk <= 3
 ORDER  BY 
-    c.type, c.duration DESC -- Return the result table ordered by type, duration, and first_name in descending orde
+    c.type DESC, c.duration DESC, u.first_name ASC -- Return the result table ordered by type, duration, and first_name in descending orde
