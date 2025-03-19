@@ -36,14 +36,7 @@ package main
 import "fmt"
 
 func maxScore(nums []int) int {
-    var gcd func(x int, y int) int
-    gcd = func(x int, y int) int {
-        if y == 0 {
-            return x
-        } else {
-            return gcd(y, x % y)
-        }
-    }
+    gcd := func (x, y int) int { for y != 0 { x, y = y, x % y; }; return x; }
     max := func (x, y int) int { if x > y { return x; }; return y; }
     res, q, dp := 0, [][2]int{ {1, 0}}, make([]int, 1 << len(nums))
     for len(q) > 0 {
@@ -88,4 +81,7 @@ func main() {
     // Explanation: The optimal choice of operations is:
     // (1 * gcd(1, 5)) + (2 * gcd(2, 4)) + (3 * gcd(3, 6)) = 1 + 4 + 9 = 14
     fmt.Println(maxScore([]int{1,2,3,4,5,6})) // 14
+
+    fmt.Println(maxScore([]int{1,2,3,4,5,6,7,8,9})) // 30
+    fmt.Println(maxScore([]int{9,8,7,6,5,4,3,2,1})) // 30
 }
