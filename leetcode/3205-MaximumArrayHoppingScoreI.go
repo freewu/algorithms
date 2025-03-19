@@ -37,6 +37,20 @@ func maxScore(nums []int) int {
     return dp[n - 1]
 }
 
+func maxScore1(nums []int) int {
+    n := len(nums)
+    val, index := nums[n - 1], n - 1
+    res := val * index
+    for i := n - 2; i > 0; i -- {
+        if nums[i] > val {
+            res = res + (nums[i] * i) - (val * i)
+            val = nums[i]
+            index = i
+        }
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: nums = [1,5,8]
@@ -52,4 +66,12 @@ func main() {
     // Explanation:
     // We can do the hopping 0 -> 4 -> 6 with a score of (4 - 0) * 9 + (6 - 4) * 3 = 42.
     fmt.Println(maxScore([]int{4,5,2,8,9,1,3})) // 42
+
+    fmt.Println(maxScore([]int{1,2,3,4,5,6,7,8,9})) // 72
+    fmt.Println(maxScore([]int{9,8,7,6,5,4,3,2,1})) // 36
+
+    fmt.Println(maxScore1([]int{1,5,8})) // 16
+    fmt.Println(maxScore1([]int{4,5,2,8,9,1,3})) // 42
+    fmt.Println(maxScore1([]int{1,2,3,4,5,6,7,8,9})) // 72
+    fmt.Println(maxScore1([]int{9,8,7,6,5,4,3,2,1})) // 36
 }
