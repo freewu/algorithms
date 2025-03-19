@@ -58,6 +58,37 @@ func minOperations1(nums []int) int {
     return res
 }
 
+func minOperations2(nums []int) int {
+    count, n := 0, len(nums) - 2
+    for i := 0; i < n; i++ {
+        if nums[i] != 0 { continue }
+        count++
+        nums[i] = 1
+        nums[i + 1] ^= 1
+        nums[i + 2] ^= 1
+    }
+    if nums[n] + nums[n + 1] != 2 { return -1 }
+    return count
+}
+
+func minOperations3(nums []int) int {
+    res, n := 0, len(nums)
+    for i := 0; i < n - 2; i++ {
+        if nums[i] == 0 {
+            res++
+            nums[i] = 1
+            nums[i+1] ^= 1
+            nums[i+2] ^= 1
+        }
+    }
+    for i := n-2; i < n; i++ {
+        if nums[i] != 1 {
+            return -1
+        }
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: nums = [0,1,1,1,0,0]
@@ -74,7 +105,29 @@ func main() {
     // Explanation:
     // It is impossible to make all elements equal to 1.
     fmt.Println(minOperations([]int{0,1,1,1})) // -1
+    fmt.Println(minOperations([]int{0,1,0,1,0,1,0,1,0,1,0,1})) // 6
+    fmt.Println(minOperations([]int{1,0,1,0,1,0,1,0,1,0,1,0})) // 6
+    fmt.Println(minOperations([]int{1,1,1,1,1,0,0,0,0,0})) // -1
+    fmt.Println(minOperations([]int{0,0,0,0,0,1,1,1,1,1})) // -1
 
     fmt.Println(minOperations1([]int{0,1,1,1,0,0})) // 3
     fmt.Println(minOperations1([]int{0,1,1,1})) // -1
+    fmt.Println(minOperations1([]int{0,1,0,1,0,1,0,1,0,1,0,1})) // 6
+    fmt.Println(minOperations1([]int{1,0,1,0,1,0,1,0,1,0,1,0})) // 6
+    fmt.Println(minOperations1([]int{1,1,1,1,1,0,0,0,0,0})) // -1
+    fmt.Println(minOperations1([]int{0,0,0,0,0,1,1,1,1,1})) // -1
+
+    fmt.Println(minOperations2([]int{0,1,1,1,0,0})) // 3
+    fmt.Println(minOperations2([]int{0,1,1,1})) // -1
+    fmt.Println(minOperations2([]int{0,1,0,1,0,1,0,1,0,1,0,1})) // 6
+    fmt.Println(minOperations2([]int{1,0,1,0,1,0,1,0,1,0,1,0})) // 6
+    fmt.Println(minOperations2([]int{1,1,1,1,1,0,0,0,0,0})) // -1
+    fmt.Println(minOperations2([]int{0,0,0,0,0,1,1,1,1,1})) // -1
+
+    fmt.Println(minOperations3([]int{0,1,1,1,0,0})) // 3
+    fmt.Println(minOperations3([]int{0,1,1,1})) // -1
+    fmt.Println(minOperations3([]int{0,1,0,1,0,1,0,1,0,1,0,1})) // 6
+    fmt.Println(minOperations3([]int{1,0,1,0,1,0,1,0,1,0,1,0})) // 6
+    fmt.Println(minOperations3([]int{1,1,1,1,1,0,0,0,0,0})) // -1
+    fmt.Println(minOperations3([]int{0,0,0,0,0,1,1,1,1,1})) // -1
 }
