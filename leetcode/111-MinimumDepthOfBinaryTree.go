@@ -51,7 +51,7 @@ func minDepth(root *TreeNode) int {
     if root.Right == nil {
         return minDepth(root.Left) + 1
     }
-    min := func (a int, b int) int { if a < b { return a; }; return b; }
+    min := func (x, y int) int { if x < y { return x; }; return y; }
     return min(minDepth(root.Left), minDepth(root.Right)) + 1
 }
 
@@ -60,7 +60,7 @@ func minDepth1(root *TreeNode) int {
     if root == nil {
         return 0
     }
-    min := func (a int, b int) int { if a < b { return a; }; return b; }
+    min := func (x, y int) int { if x < y { return x; }; return y; }
     var dfs  func(node *TreeNode, counter, res int) int
     dfs = func(node *TreeNode, counter, res int) int {
         counter += 1

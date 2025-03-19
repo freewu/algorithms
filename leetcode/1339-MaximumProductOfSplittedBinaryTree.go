@@ -73,6 +73,26 @@ func maxProduct(root *TreeNode) int {
     return res % 1_000_000_007
 }
 
+func maxProduct1(root *TreeNode) int {
+    var sumTree func(root *TreeNode) int
+    sumTree = func(root *TreeNode) int {
+        if root == nil { return 0 }
+        return root.Val + sumTree(root.Left) + sumTree(root.Right)
+    }
+    max := func (x, y int) int { if x > y { return x; }; return y; }
+    res, total := 0, sumTree(root)
+    var dfs func(*TreeNode) int
+    dfs = func(node *TreeNode) int {
+        if node == nil { return 0}
+        left, right := dfs(node.Left), dfs(node.Right)
+        res = max(res, (total - left) * left)
+        res = max(res, (total - right) * right)
+        return node.Val + left + right
+    }
+    dfs(root)
+    return res % 1000000007
+}
+
 func main() {
     // Example 1:
     //         1                               1
@@ -110,4 +130,17 @@ func main() {
         &TreeNode { 2, &TreeNode { 3, nil, nil }, &TreeNode { 4, &TreeNode { 5, nil, nil }, &TreeNode { 6, nil, nil } } },
     }
     fmt.Println(maxProduct(tree2)) // 90
+
+    tree11 := &TreeNode {
+        1,
+        &TreeNode { 2, &TreeNode { 4, nil, nil }, &TreeNode { 5, nil, nil } },
+        &TreeNode { 3, &TreeNode { 6, nil, nil }, nil },
+    }
+    fmt.Println(maxProduct1(tree11)) // 110
+    tree12 := &TreeNode {
+        1,
+        nil,
+        &TreeNode { 2, &TreeNode { 3, nil, nil }, &TreeNode { 4, &TreeNode { 5, nil, nil }, &TreeNode { 6, nil, nil } } },
+    }
+    fmt.Println(maxProduct1(tree12)) // 90
 }

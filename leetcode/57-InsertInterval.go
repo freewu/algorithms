@@ -56,9 +56,8 @@ func insert(intervals [][]int, newInterval []int) [][]int {
 }
 
 func insert1(intervals [][]int, newInterval []int) [][]int {
-    max := func (a int, b int) int { if a > b { return a; }; return b; }
-    min := func (a int, b int) int { if a > b { return b; }; return a; }
-
+    min := func (x, y int) int { if x < y { return x; }; return y; }
+    max := func (x, y int) int { if x > y { return x; }; return y; }
     var res [][]int
     left, right := newInterval[0], newInterval[1]
     merged := false
