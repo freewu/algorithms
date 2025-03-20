@@ -59,6 +59,7 @@ package main
 //     1 <= vali <= 10
 
 import "fmt"
+import "math/big"
 
 func minZeroArray(nums []int, queries [][]int) int {
     res, left, right := -1, 0, len(queries)
@@ -105,6 +106,39 @@ func minZeroArray(nums []int, queries [][]int) int {
     return res
 }
 
+func minZeroArray1(nums []int, queries [][]int) int {
+    allZero := true
+    for _, v := range nums {
+        if v > 0 {
+            allZero = false
+            break
+        }
+    }
+    if allZero { return 0 } // 全部是0 直接返回 0
+    f := make([]*big.Int, len(nums))
+    for i := range f {
+        f[i] = big.NewInt(1)
+    }
+    p := new(big.Int)
+    for k, q := range queries {
+        flag, val := false, uint(q[2])
+        for i := q[0]; i <= q[1]; i++ {
+            if f[i].Bit(nums[i]) == 0 {
+                f[i].Or(f[i], p.Lsh(f[i], val))
+            }
+        }
+        for i, v := range nums {
+            if f[i].Bit(v) == 0 {
+                flag = true
+                break
+            }
+        }
+        if flag { continue } // 还没结束还需要走大外循环
+        return k + 1
+    }
+    return -1
+}
+
 func main() {
     // Example 1:
     // Input: nums = [2,0,2], queries = [[0,2,1],[0,2,1],[1,1,3]]
@@ -144,4 +178,9 @@ func main() {
     // Input: nums = [1,2,3,2,6], queries = [[0,1,1],[0,2,1],[1,4,2],[4,4,4],[3,4,1],[4,4,5]]
     // Output: 4
     fmt.Println(minZeroArray([]int{1,2,3,2,6}, [][]int{{0,1,1},{0,2,1},{1,4,2},{4,4,4},{3,4,1},{4,4,5}})) // 4
+
+    fmt.Println(minZeroArray1([]int{2,0,2}, [][]int{{0,2,1},{0,2,1},{1,1,3}})) // 2
+    fmt.Println(minZeroArray1([]int{4,3,2,1}, [][]int{{1,3,2},{0,2,1}})) // -1
+    fmt.Println(minZeroArray1([]int{1,2,3,2,1}, [][]int{{0,1,1},{1,2,1},{2,3,2},{3,4,1},{4,4,1}})) // 4
+    fmt.Println(minZeroArray1([]int{1,2,3,2,6}, [][]int{{0,1,1},{0,2,1},{1,4,2},{4,4,4},{3,4,1},{4,4,5}})) // 4
 }
