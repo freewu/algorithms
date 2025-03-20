@@ -38,7 +38,7 @@ package main
 import "fmt"
 
 func mergeAlternately(word1 string, word2 string) string {
-    max := func (a, b int) int { if a > b { return a; }; return b; }
+    max := func (x, y int) int { if x > y { return x; }; return y; }
     l1, l2 := len(word1), len(word2)
     res := []byte{}
     ml := max(l1, l2)
@@ -70,6 +70,24 @@ func mergeAlternately1(word1, word2 string) string {
     return string(res)
 }
 
+func mergeAlternately2(word1 string, word2 string) string {
+    res, i, j := "", 0, 0
+    for i < len(word1) && j < len(word2) {
+        res += string(word1[i]) + string(word2[j])
+        i++
+        j++
+    }
+    for i == len(word1) && j < len(word2) {
+        res += string(word2[j])
+        j++
+    }
+    for j == len(word2) && i < len(word1) {
+        res += string(word1[i])
+        i++
+    }
+    return res
+}
+
 func main() {
     // word1:  a   b   c
     // word2:    p   q   r
@@ -84,7 +102,15 @@ func main() {
     // merged: a p b q c   d
     fmt.Println(mergeAlternately("abcd","pq")) // apbqcd
 
+    fmt.Println(mergeAlternately("bluefrog","leetcode")) // blleueetfcroodge
+
     fmt.Println(mergeAlternately1("abc","pqr")) // apbqcr
     fmt.Println(mergeAlternately1("ab","pqrs")) // apbqrs
     fmt.Println(mergeAlternately1("abcd","pq")) // apbqcd
+    fmt.Println(mergeAlternately1("bluefrog","leetcode")) // blleueetfcroodge
+
+    fmt.Println(mergeAlternately2("abc","pqr")) // apbqcr
+    fmt.Println(mergeAlternately2("ab","pqrs")) // apbqrs
+    fmt.Println(mergeAlternately2("abcd","pq")) // apbqcd
+    fmt.Println(mergeAlternately2("bluefrog","leetcode")) // blleueetfcroodge
 }
