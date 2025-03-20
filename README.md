@@ -2797,6 +2797,7 @@
 [3426. Manhattan Distances of All Arrangements of Pieces](./leetcode/3426-ManhattanDistancesOfAllArrangementsOfPieces.go)   
 [3437. Permutations III](./leetcode/3437-PermutationsIII.go)   
 [3470. Permutations IV](./leetcode/3470-PermutationsIV.go)   
+[3490. Count Beautiful Numbers](./leetcode/3490-CountBeautifulNumbers.go)   
 
 # Stack
 [225. Implement Stack using Queues](./leetcode/225-ImplementStackUsingQueues.go)   
