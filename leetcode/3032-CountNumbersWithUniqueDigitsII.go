@@ -42,6 +42,27 @@ func numberCount(a int, b int) int {
     return res
 }
 
+func numberCount1(a int, b int) int {
+    res := 0
+    check := func(n int) bool {
+        var h int
+        for i := n; i != 0; i /= 10 {
+            r := i % 10
+            if h &(1 << r) != 0 {
+                return false
+            }
+            h |= 1 << r
+        }
+        return true
+    }
+    for i := a; i <= b; i++ {
+        if check(i) {
+            res++
+        }
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: a = 1, b = 20
@@ -58,4 +79,15 @@ func main() {
     // Output: 27
     // Explanation: There are 41 numbers in the range [80, 120], 27 of which have unique digits.
     fmt.Println(numberCount(80, 120)) // 27
+
+    fmt.Println(numberCount(1, 1)) // 1
+    fmt.Println(numberCount(1000, 1000)) // 0
+    fmt.Println(numberCount(1, 1000)) // 738
+
+    fmt.Println(numberCount1(1, 20)) // 19
+    fmt.Println(numberCount1(9, 19)) // 10
+    fmt.Println(numberCount1(80, 120)) // 27
+    fmt.Println(numberCount1(1, 1)) // 1
+    fmt.Println(numberCount1(1000, 1000)) // 0
+    fmt.Println(numberCount1(1, 1000)) // 738
 }
