@@ -1788,7 +1788,9 @@
 [3483. Unique 3-Digit Even Numbers](./leetcode/3483-Unique3DigitEvenNumbers.go)   
 [3485. Longest Common Prefix of K Strings After Removal](./leetcode/3485-LongestCommonPrefixOfKStringsAfterRemoval.go)   
 [3487. Maximum Unique Subarray Sum After Deletion](./leetcode/3487-MaximumUniqueSubarraySumAfterDeletion.go)   
+[3488. Closest Equal Element Queries](./leetcode/3488-ClosestEqualElementQueries.go)   
 [3491. Phone Number Prefix](./leetcode/3491-PhoneNumberPrefix.go)   
+
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
