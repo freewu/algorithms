@@ -73,6 +73,49 @@ func maxSubstringLength(s string) int {
     return res
 }
 
+func maxSubstringLength1(s string) int {
+    locs := [26][]int{}
+    for i, c := range s {
+        locs[c-'a'] = append(locs[c-'a'], i)
+    }
+    check := func(locs [26][]int, l int, r int) bool {
+        for _, poses := range locs {
+            flag := 0
+            for _, pos := range poses {
+                if pos >= l && pos <= r {
+                    if flag == 0 {
+                        flag = 1
+                    } else if flag == 2 {
+                        return false
+                    }
+                } else {
+                    if flag == 0 {
+                        flag = 2
+                    } else if flag == 1 {
+                        return false
+                    }
+                }
+            }
+        }
+        return true
+    }
+    max := func (x, y int) int { if x > y { return x; }; return y; }
+    res := -1
+    for _, pos1 := range locs {
+        if len(pos1) == 0 { continue }
+        left := pos1[0]
+        for _, row := range locs {
+            if len(row) == 0 { continue }
+            right := row[len(row) - 1]
+            if left > right || right - left + 1 == len(s) { continue }
+            if check(locs, left, right) {
+                res = max(res, right - left + 1)
+            }
+        }
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: s = "abba"
@@ -92,4 +135,13 @@ func main() {
     // Explanation:
     // Let's check the substring "abac". There is only one character outside of this substring and that is "d". There is no "d" inside the chosen substring, so it satisfies the condition and the answer is 4.
     fmt.Println(maxSubstringLength("abacd")) // 4
+
+    fmt.Println(maxSubstringLength("bluefrog")) // 7
+    fmt.Println(maxSubstringLength("leetcode")) // 7
+
+    fmt.Println(maxSubstringLength1("abba")) // 2
+    fmt.Println(maxSubstringLength1("abab")) // -1
+    fmt.Println(maxSubstringLength1("abacd")) // 4
+    fmt.Println(maxSubstringLength1("bluefrog")) // 7
+    fmt.Println(maxSubstringLength1("leetcode")) // 7
 }
