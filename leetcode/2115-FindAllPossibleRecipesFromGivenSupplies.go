@@ -147,6 +147,40 @@ func findAllRecipes2(recipes []string, ingredients [][]string, supplies []string
     return res
 }
 
+// dfs
+func findAllRecipes3(recipes []string, ingredients [][]string, supplies []string) []string {
+    n := len(recipes)
+    supplyMap, recipeMap := make(map[string]bool),  make(map[string]int)
+    for _, v := range supplies {
+        supplyMap[v] = true
+    }
+    for i, v := range recipes {
+        recipeMap[v] = i
+    }
+    good, visited := make([]bool, n), make([]bool, n)
+    var dfs func(index int) bool 
+    dfs = func(index int) bool {
+        if visited[index] { return good[index] }
+        visited[index] = true
+        for _, v := range ingredients[index] {
+            if supplyMap[v] { continue }
+            i, ok := recipeMap[v]
+            if !ok { return false } // 没有相关食谱
+            if !visited[i] { if !dfs(i) { return false } }
+            if visited[i] && !good[i] { return false }
+        }
+        good[index] = true
+        return true
+    }
+    res := make([]string, 0)
+    for i := 0; i < n; i++ {
+        if dfs(i) {
+            res = append(res, recipes[i])
+        }
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: recipes = ["bread"], ingredients = [["yeast","flour"]], supplies = ["yeast","flour","corn"]
@@ -177,4 +211,8 @@ func main() {
     fmt.Println(findAllRecipes2([]string{"bread"}, [][]string{{"yeast","flour"}}, []string{"yeast","flour","corn"})) // ["bread"]
     fmt.Println(findAllRecipes2([]string{"bread","sandwich"}, [][]string{{"yeast","flour"},{"bread","meat"}}, []string{"yeast","flour","meat"})) // ["bread","sandwich"]
     fmt.Println(findAllRecipes2([]string{"bread","sandwich","burger"}, [][]string{{"yeast","flour"},{"bread","meat"},{"sandwich","meat","bread"}}, []string{"yeast","flour","meat"})) // ["bread","sandwich","burger"]
+
+    fmt.Println(findAllRecipes3([]string{"bread"}, [][]string{{"yeast","flour"}}, []string{"yeast","flour","corn"})) // ["bread"]
+    fmt.Println(findAllRecipes3([]string{"bread","sandwich"}, [][]string{{"yeast","flour"},{"bread","meat"}}, []string{"yeast","flour","meat"})) // ["bread","sandwich"]
+    fmt.Println(findAllRecipes3([]string{"bread","sandwich","burger"}, [][]string{{"yeast","flour"},{"bread","meat"},{"sandwich","meat","bread"}}, []string{"yeast","flour","meat"})) // ["bread","sandwich","burger"]
 }
