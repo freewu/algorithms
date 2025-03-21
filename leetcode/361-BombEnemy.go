@@ -59,6 +59,41 @@ func maxKilledEnemies(grid [][]byte) int {
     return res
 }
 
+func maxKilledEnemies1(grid [][]byte) int {
+    if len(grid) == 0 { return 0 }
+    res, rowHits, m, n := 0, 0, len(grid), len(grid[0])
+    colHits := make([]int, n)
+    max := func (x, y int) int { if x > y { return x; }; return y; }
+    for r := 0; r < m; r++ {
+        for c := 0; c < n; c++ {
+            if c == 0 || grid[r][c-1] == 'W' {
+                rowHits = 0
+                for k := c; k < n; k++ {
+                    if grid[r][k] == 'W' {
+                        break
+                    } else if grid[r][k] == 'E' {
+                        rowHits++
+                    }
+                }
+            }
+            if r == 0 || grid[r-1][c] == 'W' {
+                colHits[c] = 0
+                for k := r; k < m; k++ {
+                    if grid[k][c] == 'W' {
+                        break
+                    } else if grid[k][c] == 'E' {
+                        colHits[c]++
+                    }
+                }
+            }
+            if grid[r][c] == '0' {
+                res = max(res, rowHits + colHits[c])
+            }
+        }
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // <img src="https://assets.leetcode.com/uploads/2021/03/27/bomb1-grid.jpg" />
@@ -70,4 +105,7 @@ func main() {
     // Input: grid = [["W","W","W"],["0","0","0"],["E","E","E"]]
     // Output: 1
     fmt.Println(maxKilledEnemies([][]byte{{'W','W','W'},{'0','0','0'},{'E','E','E'}})) // 1
+
+    fmt.Println(maxKilledEnemies1([][]byte{{'0','E','0','0'},{'E','0','W','E'},{'0','E','0','0'}})) // 3
+    fmt.Println(maxKilledEnemies1([][]byte{{'W','W','W'},{'0','0','0'},{'E','E','E'}})) // 1
 }
