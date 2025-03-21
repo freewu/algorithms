@@ -42,14 +42,14 @@ func maximumOr(nums []int, k int) int64 {
 // 贪心 + 前后缀分解
 func maximumOr1(nums []int, k int) int64 {
     n := len(nums)
-    suffix := make([]int, n + 1)
+    suffix := make([]int, n + 1) // // suffix[i] 表示 nums[i+1] 到 nums[n-1] 的 OR
     for i := n - 1; i > 0; i-- {
-        suffix[i] = suffix[i+1] | nums[i]
+        suffix[i] = suffix[i + 1] | nums[i]
     }
     max := func (x, y int) int { if x > y { return x; }; return y; }
-    res, pre := 0, 0
+    res, pre := 0, 0 // pre 表示 nums[0] 到 nums[i-1] 的 OR
     for i, v := range nums {
-        res = max(res, pre| v << k| suffix[i+1])
+        res = max(res, pre| v << k| suffix[i + 1])
         pre |= v
     }
     return int64(res)
