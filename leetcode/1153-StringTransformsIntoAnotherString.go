@@ -76,6 +76,24 @@ func canConvert(str1 string, str2 string) bool {
     return true
 }
 
+func canConvert1(str1 string, str2 string) bool {
+    if str1 == str2 {
+        return true
+    }
+    mp1, mp2 := make(map[byte]byte), make(map[byte]bool)
+    for i := range str1 {
+        if curr, ok := mp1[str1[i]]; ok && curr != str2[i] {
+            return false
+        }
+        mp1[str1[i]] = str2[i]
+        mp2[str2[i]] = true
+    }
+    if len(mp1) == 0 {
+        return true
+    }
+    return len(mp2) < 26
+}
+
 func main() {
     // Example 1:
     // Input: str1 = "aabcc", str2 = "ccdee"
@@ -87,4 +105,12 @@ func main() {
     // Output: false
     // Explanation: There is no way to transform str1 to str2.
     fmt.Println(canConvert("leetcode", "codeleet")) // false
+
+    fmt.Println(canConvert("bluefrog", "leetcode")) // true
+    fmt.Println(canConvert("bluefrog", "frogblue")) // true
+
+    fmt.Println(canConvert1("aabcc", "ccdee")) // true
+    fmt.Println(canConvert1("leetcode", "codeleet")) // false
+    fmt.Println(canConvert1("bluefrog", "leetcode")) // true
+    fmt.Println(canConvert1("bluefrog", "frogblue")) // true
 }
