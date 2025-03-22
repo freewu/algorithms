@@ -39,7 +39,7 @@ package main
 //     order is a permutation of integers between 1 and n.
 
 import "fmt"
-import "github.com/emirpasic/gods/treemap"
+//import "github.com/emirpasic/gods/treemap"
 
 // 超出时间限制 56 / 70 
 func maxDepthBST(order []int) int {
@@ -62,18 +62,46 @@ func maxDepthBST(order []int) int {
     return res
 }
 
+// // best solution
+// func maxDepthBST1(order []int) int {
+//     res := 0
+//     m := treemap.NewWithIntComparator()
+//     m.Put(0, 0)
+//     for i := 0; i < len(order); i++ {
+//         k,v := m.Floor(order[i])
+//         key,value:= k.(int),v.(int)+1
+//         m.Put(order[i]+1, value)
+//         m.Put(key,value)
+//         if res < value {
+//             res = value
+//         }
+//     }
+//     return res
+// }
+
 func maxDepthBST1(order []int) int {
-    res := 0
-    m := treemap.NewWithIntComparator()
-    m.Put(0, 0)
-    for i := 0; i < len(order); i++ {
-        k,v := m.Floor(order[i])
-        key,value:= k.(int),v.(int)+1
-        m.Put(order[i]+1, value)
-        m.Put(key,value)
-        if res < value {
-            res = value
+    res, n := 0, len(order)
+    fa, pos, stack := make([]int, n + 1), make([]int, n + 1), []int{}
+    for i, v := range order {
+        pos[v] = i + 1
+    }
+    for x := 1; x <= n; x++ {
+        i := pos[x]
+        for len(stack) > 0 && pos[stack[len(stack) - 1]] > i {
+            if pos[fa[stack[len(stack) - 1]]] < i {
+                fa[stack[len(stack) - 1]] = x 
+            }
+            stack = stack[:len(stack) - 1]
         }
+        if len(stack) > 0 {
+            fa[x] = stack[len(stack) - 1]
+        }
+        stack = append(stack, x)
+    }
+    max := func (x, y int) int { if x > y { return x; }; return y; }
+    for _, v := range order {
+        fa[v] = 1 + fa[fa[v]]
+        res = max(res, fa[v])
     }
     return res
 }
