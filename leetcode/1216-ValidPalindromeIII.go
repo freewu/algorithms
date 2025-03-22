@@ -39,6 +39,26 @@ func isValidPalindrome(s string, k int) bool {
     return len(s) - dp[n][n] <= k // 当len(s)-dp[len(s)][len(s)] <= k时，说明通过移除最多k个元素，可以将s转变为一个回文字符串
 }
 
+func isValidPalindrome1(s string, k int) bool {
+    n, temp, prev := len(s), 0, 0
+    if n <= k { return true }
+    dp := make([]int, n)
+    min := func (x, y int) int { if x < y { return x; }; return y; }
+    for i := n-2; i >= 0; i-- {
+        prev = 0
+        for j := i+1; j < n; j++ {
+            temp = dp[j]
+            if s[i] == s[j] {
+                dp[j] = prev
+            } else {
+                dp[j] = 1 + min(dp[j], dp[j-1])
+            }
+            prev = temp
+        }
+    }
+    return dp[n-1] <= k
+}
+
 func main() {
     // Example 1:
     // Input: s = "abcdeca", k = 2
@@ -49,4 +69,12 @@ func main() {
     // Input: s = "abbababa", k = 1
     // Output: true
     fmt.Println(isValidPalindrome("abbababa", 1)) // true
+
+    fmt.Println(isValidPalindrome("bluefrog", 2)) // false
+    fmt.Println(isValidPalindrome("leetcode", 2)) // false
+
+    fmt.Println(isValidPalindrome1("abcdeca", 2)) // true
+    fmt.Println(isValidPalindrome1("abbababa", 1)) // true
+    fmt.Println(isValidPalindrome1("bluefrog", 2)) // false
+    fmt.Println(isValidPalindrome1("leetcode", 2)) // false
 }
