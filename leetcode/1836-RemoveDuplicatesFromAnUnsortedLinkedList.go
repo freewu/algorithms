@@ -91,6 +91,26 @@ func deleteDuplicatesUnsorted(head *ListNode) *ListNode {
     return dummy.Next
 }
 
+func deleteDuplicatesUnsorted1(head *ListNode) *ListNode {
+    count := make(map[int]int)
+    p := head
+    for p != nil {
+        count[p.Val]++
+        p = p.Next
+    }
+    dummy := &ListNode{ -1, head }
+    p = dummy
+    for p != nil {
+        node := p.Next
+        for node != nil && count[node.Val] > 1 {
+            node = node.Next
+        }
+        p.Next = node
+        p = p.Next
+    }
+    return dummy.Next
+}
+
 func main() {
     // Example 1:
     // <img src="https://assets.leetcode.com/uploads/2021/04/21/tmp-linked-list.jpg" />
@@ -116,4 +136,14 @@ func main() {
     list3 := makeListNode([]int{3,2,2,1,3,2,4})
     printListNode(list3) // 3 -> 2 -> 2 -> 1 -> 3 -> 2 -> 4
     printListNode(deleteDuplicatesUnsorted(list3)) // 1 -> 4
+
+    list11 := makeListNode([]int{1,2,3,2})
+    printListNode(list11) // 1 -> 2 -> 3 -> 2
+    printListNode(deleteDuplicatesUnsorted1(list11)) // 1 -> 3
+    list12 := makeListNode([]int{2,1,1,2})
+    printListNode(list12) // 2 -> 1 -> 1 -> 2
+    printListNode(deleteDuplicatesUnsorted1(list12)) // []
+    list13 := makeListNode([]int{3,2,2,1,3,2,4})
+    printListNode(list13) // 3 -> 2 -> 2 -> 1 -> 3 -> 2 -> 4
+    printListNode(deleteDuplicatesUnsorted1(list13)) // 1 -> 4
 }
