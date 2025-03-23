@@ -94,6 +94,26 @@ func findRLEArray1(encoded1 [][]int, encoded2 [][]int) [][]int {
     return res
 }
 
+func findRLEArray2(encoded1 [][]int, encoded2 [][]int) [][]int {
+    res := make([][]int, 0,len(encoded1))
+    min := func (x, y int) int { if x < y { return x; }; return y; }
+    for i,ai,bi := 0,0,0; ai < len(encoded1) && bi < len(encoded2); {
+        mn := min(encoded1[ai][1], encoded2[bi][1])
+        arr := []int{encoded1[ai][0] * encoded2[bi][0], mn}
+        encoded1[ai][1] -= mn
+        encoded2[bi][1] -= mn
+        if encoded1[ai][1] == 0 { ai++ }
+        if encoded2[bi][1] == 0 { bi++ }
+        if i > 0 && arr[0] == res[i-1][0] {
+            res[i-1][1] += arr[1]
+        } else {
+            res = append(res, arr)
+            i++
+        }
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: encoded1 = [[1,3],[2,3]], encoded2 = [[6,3],[3,3]]
@@ -110,4 +130,7 @@ func main() {
 
     fmt.Println(findRLEArray1([][]int{{1,3},{2,3}}, [][]int{{6,3},{3,3}})) // [[6,6]]
     fmt.Println(findRLEArray1([][]int{{1,3},{2,1},{3,2}}, [][]int{{2,3},{3,3}})) // [[2,3],[6,1],[9,2]]
+
+    fmt.Println(findRLEArray2([][]int{{1,3},{2,3}}, [][]int{{6,3},{3,3}})) // [[6,6]]
+    fmt.Println(findRLEArray2([][]int{{1,3},{2,1},{3,2}}, [][]int{{2,3},{3,3}})) // [[2,3],[6,1],[9,2]]
 }
