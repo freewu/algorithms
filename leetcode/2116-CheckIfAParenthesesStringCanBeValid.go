@@ -111,6 +111,34 @@ func canBeValid2(s string, locked string) bool {
     return true
 }
 
+func canBeValid3(s string, locked string) bool {
+    low, high := 0, 0
+    for i, c := range []byte(s) {
+        if locked[i] == '0' {
+            low--
+            high++
+            if low < 0 {
+                low = 1
+            }
+        } else {
+            if c == ')' {
+                low--
+                high--
+                if low < 0 {
+                    low = 1
+                }
+                if high < 0 {
+                    return false
+                }
+            } else {
+                low++
+                high++
+            }
+        }
+    }
+    return low <= 0 && len(s) % 2 == 0
+}
+
 func main() {
     // Example 1:
     // <img src="https://assets.leetcode.com/uploads/2021/11/06/eg1.png" />
@@ -139,4 +167,8 @@ func main() {
     fmt.Println(canBeValid2("))()))", "010100")) // true
     fmt.Println(canBeValid2("()()", "0000")) // true
     fmt.Println(canBeValid2(")", "0")) // false
+
+    fmt.Println(canBeValid3("))()))", "010100")) // true
+    fmt.Println(canBeValid3("()()", "0000")) // true
+    fmt.Println(canBeValid3(")", "0")) // false
 }
