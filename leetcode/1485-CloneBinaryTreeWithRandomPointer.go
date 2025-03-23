@@ -83,6 +83,25 @@ func copyRandomBinaryTree(root *Node) *NodeCopy {
     return connects[root]
 }
 
+func copyRandomBinaryTree1(root *Node) *NodeCopy {
+    if root == nil {return nil }
+    mem := map[*Node]*NodeCopy{}
+    var helper func(root *Node) *NodeCopy
+    helper = func(root *Node) *NodeCopy {
+        if root == nil { return nil }
+        if val, ok := mem[root]; ok {
+            return val
+        }
+        t := &NodeCopy{Val: root.Val}
+        mem[root] = t
+        t.Left = helper(root.Left)
+        t.Right = helper(root.Right)
+        t.Random = helper(root.Random)
+        return t
+    }
+    return helper(root)
+}
+
 func main() {
     // Example 1:
     // <img src="https://assets.leetcode.com/uploads/2020/06/17/clone_1.png" />
