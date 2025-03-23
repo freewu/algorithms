@@ -30,6 +30,7 @@ package main
 //     1 <= heights[i] <= 10^9
 
 import "fmt"
+import "sort"
 
 // 单调栈
 func findBuildings(heights []int) []int {
@@ -65,6 +66,21 @@ func findBuildings1(heights []int) []int {
     return pos
 }
 
+func findBuildings2(heights []int) []int {
+    res, n, mx := []int{}, len(heights), 0
+    if n == 0 { return res }
+    for i := n - 1; i >= 0; i-- {
+        if heights[i] > mx {
+            res =  append(res, i)
+            mx = heights[i]
+        }
+    }
+    sort.Slice(res, func(i, j int) bool {
+        return res[i] < res[j]
+    })
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: heights = [4,2,3,1]
@@ -81,8 +97,18 @@ func main() {
     // Output: [3]
     // Explanation: Only building 3 has an ocean view.
     fmt.Println(findBuildings([]int{1,3,2,4})) // [3]
+    fmt.Println(findBuildings([]int{1,2,3,4,5,6,7,8,9})) // [8]
+    fmt.Println(findBuildings([]int{9,8,7,6,5,4,3,2,1})) // [0 1 2 3 4 5 6 7 8]
 
     fmt.Println(findBuildings1([]int{4,2,3,1})) // [0,2,3]
     fmt.Println(findBuildings1([]int{4,3,2,1})) // [0,1,2,3]
     fmt.Println(findBuildings1([]int{1,3,2,4})) // [3]
+    fmt.Println(findBuildings1([]int{1,2,3,4,5,6,7,8,9})) // [8]
+    fmt.Println(findBuildings1([]int{9,8,7,6,5,4,3,2,1})) // [0 1 2 3 4 5 6 7 8]
+
+    fmt.Println(findBuildings2([]int{4,2,3,1})) // [0,2,3]
+    fmt.Println(findBuildings2([]int{4,3,2,1})) // [0,1,2,3]
+    fmt.Println(findBuildings2([]int{1,3,2,4})) // [3]
+    fmt.Println(findBuildings2([]int{1,2,3,4,5,6,7,8,9})) // [8]
+    fmt.Println(findBuildings2([]int{9,8,7,6,5,4,3,2,1})) // [0 1 2 3 4 5 6 7 8]
 }
