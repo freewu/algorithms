@@ -53,6 +53,32 @@ func distinctNumbers(nums []int, k int) []int {
     return res
 }
 
+func distinctNumbers1(nums []int, k int) []int {
+    mx, count, n := 0, 0, len(nums)
+    for _, v := range nums {
+        if v > mx {
+            mx = v
+        }
+    }
+    freq, res := make([]int, mx + 1), make([]int, 0, n - k + 1)
+    for i := 0; i < n; i++ {
+        freq[nums[i]]++
+        if freq[nums[i]] == 1 {
+            count++
+        }
+        if i >= k {
+            freq[nums[i-k]]--
+            if freq[nums[i-k]] == 0 {
+                count--
+            }
+        }
+        if i + 1 >= k {
+            res = append(res, count)
+        }
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: nums = [1,2,3,2,2,1,3], k = 3
@@ -73,4 +99,12 @@ func main() {
     // - nums[2:5] = [1,1,2,3] so ans[2] = 3
     // - nums[3:6] = [1,2,3,4] so ans[3] = 4
     fmt.Println(distinctNumbers([]int{1,1,1,1,2,3,4}, 4)) // [1,2,3,4]
+
+    fmt.Println(distinctNumbers([]int{1,2,3,4,5,6,7,8,9}, 4)) // [4 4 4 4 4 4]
+    fmt.Println(distinctNumbers([]int{9,8,7,6,5,4,3,2,1}, 4)) // [4 4 4 4 4 4]
+
+    fmt.Println(distinctNumbers1([]int{1,2,3,2,2,1,3}, 3)) // [3,2,2,2,3]
+    fmt.Println(distinctNumbers1([]int{1,1,1,1,2,3,4}, 4)) // [1,2,3,4]
+    fmt.Println(distinctNumbers1([]int{1,2,3,4,5,6,7,8,9}, 4)) // [4 4 4 4 4 4]
+    fmt.Println(distinctNumbers1([]int{9,8,7,6,5,4,3,2,1}, 4)) // [4 4 4 4 4 4]
 }
