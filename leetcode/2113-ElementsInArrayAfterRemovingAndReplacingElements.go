@@ -56,7 +56,7 @@ package main
 import "fmt"
 
 func elementInNums(nums []int, queries [][]int) []int {
-    res, n :=[]int{}, len(nums)
+    res, n := []int{}, len(nums)
     for _, query := range queries {
         time, index := query[0], query[1]
         m := time % (2 * n)
@@ -75,6 +75,28 @@ func elementInNums(nums []int, queries [][]int) []int {
                 res = append(res, -1)
             }
         }
+    }
+    return res
+}
+
+func elementInNums1(nums []int, queries [][]int) []int {
+    res, n := make([]int, len(queries)), len(nums)
+    query := func(time int, j int) int {
+        time %= 2 * n
+        if time <= n {
+            if j < n - time {
+                return nums[time + j]
+            } else {
+                return -1
+            }
+        }
+        if j < time - n {
+            return nums[j]
+        }
+        return -1
+    }
+    for i, q := range queries {
+        res[i] = query(q[0], q[1])
     }
     return res
 }
@@ -107,4 +129,7 @@ func main() {
     // At minute 2, nums[0] is 2.
     // At minute 3, nums[0] does not exist.
     fmt.Println(elementInNums([]int{2}, [][]int{{0,0},{1,0},{2,0},{3,0}})) // [2,-1,2,-1]
+
+    fmt.Println(elementInNums1([]int{0,1,2}, [][]int{{0,2},{2,0},{3,2},{5,0}})) // [2,2,-1,0]
+    fmt.Println(elementInNums1([]int{2}, [][]int{{0,0},{1,0},{2,0},{3,0}})) // [2,-1,2,-1]
 }
