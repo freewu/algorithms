@@ -111,4 +111,7 @@ func main() {
     // Output: 0
     // Explanation: nums is already in non-decreasing order, so no operations are needed and we return 0.
     fmt.Println(convertArray([]int{0})) // 0
+
+    fmt.Println(convertArray([]int{1,2,3,4,5,6,7,8,9})) // 0
+    fmt.Println(convertArray([]int{9,8,7,6,5,4,3,2,1})) // 0
 }
