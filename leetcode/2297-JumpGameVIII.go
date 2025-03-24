@@ -40,7 +40,7 @@ func minCost(nums []int, costs []int) int64 {
     n := len(nums)
     dp, mn, mx := make([]int, n), []int{ 0 }, []int{ 0 }
     for i := 1; i < n; i++ {
-        v := 10000000001
+        v := 10_000_000_001
         for len(mn) > 0 && nums[mn[len(mn)-1]] <= nums[i] {
             top := mn[len(mn)-1]
             mn = mn[:len(mn)-1]
@@ -62,6 +62,30 @@ func minCost(nums []int, costs []int) int64 {
     return int64(dp[n-1])
 }
 
+func minCost1(nums []int, costs []int) int64 {
+    n := len(nums)
+    dp, nge, nse := make([]int64, n), []int{}, []int{}
+    for i := 0; i < n; i++ {
+        dp[i] = int64(1 << 61)
+    }
+    dp[0] = 0
+    min := func (x, y int64) int64 { if x < y { return x; }; return y; }
+    for i := 0; i < n; i++ {
+        for len(nge) > 0 && nums[i] >= nums[nge[len(nge) - 1]] {
+            v := nge[len(nge) - 1]
+            nge = nge[:len(nge) - 1]
+            dp[i] = min(dp[i], int64(costs[i]) + dp[v])
+        }
+        for len(nse) > 0 && nums[i] < nums[nse[len(nse) - 1]] {
+            v := nse[len(nse) - 1]
+            nse = nse[:len(nse) - 1]
+            dp[i] = min(dp[i], int64(costs[i]) + dp[v])
+        }
+        nge, nse = append(nge, i), append(nse, i)
+    }
+    return dp[len(dp) - 1]
+}
+
 func main() {
     // Example 1:
     // Input: nums = [3,2,4,4,1], costs = [3,7,6,4,2]
@@ -81,4 +105,16 @@ func main() {
     // - Jump to index 2 with a cost of costs[2] = 1.
     // The total cost is 2. Note that you cannot jump directly from index 0 to index 2 because nums[0] <= nums[1].
     fmt.Println(minCost([]int{0,1,2}, []int{1,1,1})) // 2
+
+    fmt.Println(minCost([]int{1,2,3,4,5,6,7,8,9}, []int{1,2,3,4,5,6,7,8,9})) // 44
+    fmt.Println(minCost([]int{1,2,3,4,5,6,7,8,9}, []int{9,8,7,6,5,4,3,2,1})) // 36
+    fmt.Println(minCost([]int{9,8,7,6,5,4,3,2,1}, []int{9,8,7,6,5,4,3,2,1})) // 36
+    fmt.Println(minCost([]int{9,8,7,6,5,4,3,2,1}, []int{1,2,3,4,5,6,7,8,9})) // 44
+
+    fmt.Println(minCost1([]int{3,2,4,4,1}, []int{3,7,6,4,2})) // 8
+    fmt.Println(minCost1([]int{0,1,2}, []int{1,1,1})) // 2
+    fmt.Println(minCost1([]int{1,2,3,4,5,6,7,8,9}, []int{1,2,3,4,5,6,7,8,9})) // 44
+    fmt.Println(minCost1([]int{1,2,3,4,5,6,7,8,9}, []int{9,8,7,6,5,4,3,2,1})) // 36
+    fmt.Println(minCost1([]int{9,8,7,6,5,4,3,2,1}, []int{9,8,7,6,5,4,3,2,1})) // 36
+    fmt.Println(minCost1([]int{9,8,7,6,5,4,3,2,1}, []int{1,2,3,4,5,6,7,8,9})) // 44
 }
