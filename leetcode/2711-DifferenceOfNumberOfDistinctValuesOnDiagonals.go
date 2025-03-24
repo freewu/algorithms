@@ -45,6 +45,7 @@ package main
 //     1 <= m, n, grid[i][j] <= 50
 
 import "fmt"
+import "math/bits"
 
 func differenceOfDistinctValues(grid [][]int) [][]int {
     m, n := len(grid), len(grid[0])
@@ -128,6 +129,38 @@ func differenceOfDistinctValues1(grid [][]int) [][]int {
     return res
 }
 
+func differenceOfDistinctValues2(grid [][]int) [][]int {
+    m, n := len(grid), len(grid[0])
+    res := make([][]int, m)
+    for i := range res {
+        res[i] = make([]int, n)
+    }
+    abs := func(x int) int { if x < 0 { return -x; }; return x; }
+    min := func (x, y int) int { if x < y { return x; }; return y; }
+    max := func (x, y int) int { if x > y { return x; }; return y; }
+    // 第一排在右上，最后一排在左下
+    // 每排从左上到右下
+    // 令 k= i-j+n，那么右上角 k=1，左下角 k=m+n-1
+    for k := 1; k < m + n; k++ {
+        // 核心：计算 j 的最小值和最大值
+        mn := max(n - k, 0) // i = 0 的时候，j = n - k，但不能是负数
+        mx := min(m + n - 1 - k, n - 1) // i = m - 1 的时候，j=m+n-1-k，但不能超过 n-1
+        set := uint(0)
+        for j := mn; j <= mx; j++ {
+            i := k + j - n
+            res[i][j] = bits.OnesCount(set) // set 的大小
+            set |= 1 << grid[i][j] // 把 grid[i][j] 加到 set 中
+        }
+        set = 0
+        for j := mx; j >= mn; j-- {
+            i := k + j - n
+            res[i][j] = abs(res[i][j] - bits.OnesCount(set))
+            set |= 1 << grid[i][j]
+        }
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: grid = [[1,2,3],[3,1,5],[3,2,1]]
@@ -150,6 +183,23 @@ func main() {
     // Output: Output: [[0]]
     fmt.Println(differenceOfDistinctValues([][]int{{1}})) // [[0]]
 
+    fmt.Println(differenceOfDistinctValues([][]int{{1,2,3,4,5,6,7,8,9}, {1,2,3,4,5,6,7,8,9}})) // [[1 1 1 1 1 1 1 1 0] [0 1 1 1 1 1 1 1 1]]
+    fmt.Println(differenceOfDistinctValues([][]int{{1,2,3,4,5,6,7,8,9}, {9,8,7,6,5,4,3,2,1}})) // [[1 1 1 1 1 1 1 1 0] [0 1 1 1 1 1 1 1 1]]
+    fmt.Println(differenceOfDistinctValues([][]int{{9,8,7,6,5,4,3,2,1}, {1,2,3,4,5,6,7,8,9}})) // [[1 1 1 1 1 1 1 1 0] [0 1 1 1 1 1 1 1 1]]
+    fmt.Println(differenceOfDistinctValues([][]int{{9,8,7,6,5,4,3,2,1}, {9,8,7,6,5,4,3,2,1}})) // [[1 1 1 1 1 1 1 1 0] [0 1 1 1 1 1 1 1 1]]
+
     fmt.Println(differenceOfDistinctValues1([][]int{{1,2,3},{3,1,5},{3,2,1}})) // [[1,1,0],[1,0,1],[0,1,1]]
     fmt.Println(differenceOfDistinctValues1([][]int{{1}})) // [[0]]
+    fmt.Println(differenceOfDistinctValues1([][]int{{1,2,3,4,5,6,7,8,9}, {1,2,3,4,5,6,7,8,9}})) // [[1 1 1 1 1 1 1 1 0] [0 1 1 1 1 1 1 1 1]]
+    fmt.Println(differenceOfDistinctValues1([][]int{{1,2,3,4,5,6,7,8,9}, {9,8,7,6,5,4,3,2,1}})) // [[1 1 1 1 1 1 1 1 0] [0 1 1 1 1 1 1 1 1]]
+    fmt.Println(differenceOfDistinctValues1([][]int{{9,8,7,6,5,4,3,2,1}, {1,2,3,4,5,6,7,8,9}})) // [[1 1 1 1 1 1 1 1 0] [0 1 1 1 1 1 1 1 1]]
+    fmt.Println(differenceOfDistinctValues1([][]int{{9,8,7,6,5,4,3,2,1}, {9,8,7,6,5,4,3,2,1}})) // [[1 1 1 1 1 1 1 1 0] [0 1 1 1 1 1 1 1 1]]
+
+    fmt.Println(differenceOfDistinctValues2([][]int{{1,2,3},{3,1,5},{3,2,1}})) // [[1,1,0],[1,0,1],[0,1,1]]
+    fmt.Println(differenceOfDistinctValues2([][]int{{1}})) // [[0]]
+    fmt.Println(differenceOfDistinctValues2([][]int{{1,2,3,4,5,6,7,8,9}, {1,2,3,4,5,6,7,8,9}})) // [[1 1 1 1 1 1 1 1 0] [0 1 1 1 1 1 1 1 1]]
+    fmt.Println(differenceOfDistinctValues2([][]int{{1,2,3,4,5,6,7,8,9}, {9,8,7,6,5,4,3,2,1}})) // [[1 1 1 1 1 1 1 1 0] [0 1 1 1 1 1 1 1 1]]
+    fmt.Println(differenceOfDistinctValues2([][]int{{9,8,7,6,5,4,3,2,1}, {1,2,3,4,5,6,7,8,9}})) // [[1 1 1 1 1 1 1 1 0] [0 1 1 1 1 1 1 1 1]]
+    fmt.Println(differenceOfDistinctValues2([][]int{{9,8,7,6,5,4,3,2,1}, {9,8,7,6,5,4,3,2,1}})) // [[1 1 1 1 1 1 1 1 0] [0 1 1 1 1 1 1 1 1]]
+
 }
