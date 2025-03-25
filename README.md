@@ -1791,7 +1791,7 @@
 [3488. Closest Equal Element Queries](./leetcode/3488-ClosestEqualElementQueries.go)   
 [3489. Zero Array Transformation IV](./leetcode/3489-ZeroArrayTransformationIV.go)   
 [3491. Phone Number Prefix](./leetcode/3491-PhoneNumberPrefix.go)   
-
+[3496. Maximize Score After Pair Deletions](./leetcode/3496-MaximizeScoreAfterPairDeletions.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
