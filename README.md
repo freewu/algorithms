@@ -3117,6 +3117,7 @@
 [3373. Maximize the Number of Target Nodes After Connecting Trees II](./leetcode/3373-MaximizeTheNumberOfTargetNodesAfterConnectingTreesII.go)   
 [3383. Minimum Runes to Add to Cast Spell](./leetcode/3383-MinimumRunesToAddToCastSpell.go)   
 [3419. Minimize the Maximum Edge Weight of Graph](./leetcode/3419-MinimizeTheMaximumEdgeWeightOfGraph.go)   
+[3493. Properties Graph](./leetcode/3493-PropertiesGraph.go)   
 
 # Trie
 [386. Lexicographical Numbers](./leetcode/386-LexicographicalNumbers.go)   
