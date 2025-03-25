@@ -57,6 +57,22 @@ func maxSubarrayLength(nums []int) int {
     return res
 }
 
+func maxSubarrayLength1(nums []int) int {
+    res, n, stack := 0, len(nums), []int{}
+    for i := n - 1; i >= 0; i-- {
+        if len(stack) == 0 || nums[stack[len(stack) - 1]] > nums[i] {
+            stack = append(stack, i)
+        }
+    }
+    for i := 0; i < n; i++ {
+        for len(stack) != 0 && nums[stack[len(stack )- 1]] < nums[i] {
+            res = max(res, stack[len(stack) - 1] - i + 1)
+            stack = stack[:len(stack) - 1]
+        }
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: nums = [7,6,5,4,3,2,1,6,10,11]
@@ -79,4 +95,13 @@ func main() {
     // Output: 0
     // Explanation: Since there are no semi-decreasing subarrays in the given array, the answer is 0.
     fmt.Println(maxSubarrayLength([]int{1,2,3,4})) // 0
+
+    fmt.Println(maxSubarrayLength([]int{1,2,3,4,5,6,7,8,9})) // 0
+    fmt.Println(maxSubarrayLength([]int{9,8,7,6,5,4,3,2,1})) // 9
+
+    fmt.Println(maxSubarrayLength1([]int{7,6,5,4,3,2,1,6,10,11})) // 8
+    fmt.Println(maxSubarrayLength1([]int{57,55,50,60,61,58,63,59,64,60,63})) // 6
+    fmt.Println(maxSubarrayLength1([]int{1,2,3,4})) // 0
+    fmt.Println(maxSubarrayLength1([]int{1,2,3,4,5,6,7,8,9})) // 0
+    fmt.Println(maxSubarrayLength1([]int{9,8,7,6,5,4,3,2,1})) // 9
 }
