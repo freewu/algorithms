@@ -77,6 +77,21 @@ func houseCount(street Street, k int) int {
     return res
 }
 
+func houseCount1(street Street, k int) int {
+    for i := 0; i < k; i++ {
+        street.CloseDoor()
+        street.MoveRight()
+    }
+    res := 1
+    street.OpenDoor()
+    street.MoveRight()
+    for !street.IsDoorOpen() {
+        street.MoveRight()
+        res++
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: street = [0,0,0,0], k = 10
