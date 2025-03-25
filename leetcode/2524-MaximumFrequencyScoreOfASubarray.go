@@ -69,4 +69,7 @@ func main() {
     // Output: 1
     // Explanation: All the subarrays of length 4 have a frequency score equal to 1.
     fmt.Println(maxFrequencyScore([]int{1,1,1,1,1,1}, 4)) // 1
+
+    fmt.Println(maxFrequencyScore([]int{1,2,3,4,5,6,7,8,9}, 4)) // 30
+    fmt.Println(maxFrequencyScore([]int{9,8,7,6,5,4,3,2,1}, 4)) // 30
 }
