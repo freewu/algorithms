@@ -63,21 +63,48 @@ type RopeTreeNode struct {
  * }
  */
 func getKthCharacter(root *RopeTreeNode, k int) byte {
-    if root.len == 0 {
-        return root.val[k-1]
-    }
-    left := 0
-    if root.left != nil {
-        left = root.left.len
-        if left == 0{
-            left = len(root.left.val)
+    var helper func(node *RopeTreeNode, k int) byte
+    helper = func(node *RopeTreeNode, k int) byte {
+        if node.len == 0 {  return node.val[k-1] }
+        left := 0
+        if node.left != nil {
+            left = node.left.len
+            if left == 0{
+                left = len(node.left.val)
+            }
+        }
+        if left >= k { // 只需跟踪左分支的大小，来判断
+            return helper(node.left, k)
+        } else {
+            return helper(node.right, k - left)
         }
     }
-    if left >= k { // 只需跟踪左分支的大小，来判断
-        return getKthCharacter(root.left, k)
-    } else {
-        return getKthCharacter(root.right, k - left)
+    return helper(root, k)
+}
+
+func getKthCharacter1(root *RopeTreeNode, k int) byte {
+    var helper func(node *RopeTreeNode, k int) byte
+    helper = func(node *RopeTreeNode, k int) byte {
+        if node.len == 0 { return node.val[k - 1] }
+        left, right := 0, 0
+        if node.left != nil {
+            left = node.left.len
+            if left == 0 {
+                left = len(node.left.val)
+            }
+        }
+        if node.right != nil {
+            right = node.right.len
+            if right == 0 {
+                right = len(node.right.val)
+            }
+        }
+        if k <= left {
+            return helper(node.left, k)
+        }
+        return helper(node.right, k - left)
     }
+    return helper(root, k)
 }
 
 func main() {
@@ -115,4 +142,8 @@ func main() {
     // <img src="https://assets.leetcode.com/uploads/2023/05/14/example3.png" />
     tree3 := &RopeTreeNode{0, "ropetree", nil, nil, }
     fmt.Printf("%c\n", getKthCharacter(tree3, 8)) // e
+
+    fmt.Printf("%c\n", getKthCharacter1(tree1, 6)) // b
+    fmt.Printf("%c\n", getKthCharacter1(tree2, 3)) // c
+    fmt.Printf("%c\n", getKthCharacter1(tree3, 8)) // e
 }
