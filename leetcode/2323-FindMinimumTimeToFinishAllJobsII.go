@@ -52,6 +52,27 @@ func minimumTime(jobs []int, workers []int) int {
     return res
 }
 
+func minimumTime1(jobs []int, workers []int) int {
+    n := len(jobs)
+    sort.Ints(jobs)
+    sort.Ints(workers)
+    max := func (x, y int) int { if x > y { return x; }; return y; }
+    // Strategy 1: Match smallest job with smallest worker capability
+    maxDaysStrategy1 := 0
+    for i := 0; i < n; i++ {
+        maxDaysStrategy1 = max(maxDaysStrategy1, (jobs[i] + workers[i] - 1) / workers[i])
+    }
+    // Strategy 2: Match largest job with smallest worker capability
+    maxDaysStrategy2 := 0
+    for i := 0; i < n; i++ {
+        maxDaysStrategy2 = max(maxDaysStrategy1, (jobs[n-1-i] + workers[i] - 1) / workers[i])
+    }
+    if maxDaysStrategy1 < maxDaysStrategy2 {
+        return maxDaysStrategy1
+    }
+    return maxDaysStrategy2
+}
+
 func main() {
     // Example 1:
     // Input: jobs = [5,2,4], workers = [1,7,5]
@@ -74,4 +95,10 @@ func main() {
     // It takes 3 days for all the jobs to be completed, so return 3.
     // It can be proven that 3 days is the minimum number of days needed.
     fmt.Println(minimumTime([]int{3,18,15,9}, []int{6,5,1,3})) // 3
+
+    fmt.Println(minimumTime([]int{1,2,3,4,5,6,7,8,9}, []int{1,2,3,4,5,6,7,8,9})) // 1
+
+    fmt.Println(minimumTime1([]int{5,2,4}, []int{1,7,5})) // 2
+    fmt.Println(minimumTime1([]int{3,18,15,9}, []int{6,5,1,3})) // 3
+    fmt.Println(minimumTime1([]int{1,2,3,4,5,6,7,8,9}, []int{1,2,3,4,5,6,7,8,9})) // 1
 }
