@@ -183,6 +183,42 @@ func minimumFlips1(root *TreeNode, result bool) int {
     return dfs(root, 0)
 }
 
+func minimumFlips2(root *TreeNode, result bool) int {
+    min := func (x, y int) int { if x < y { return x; }; return y; }
+    var dfs func(root *TreeNode) (int, int)
+    dfs = func(root *TreeNode) (int, int) {
+        if root.Val < 2 {
+            if root.Val == 0 {
+                return 1, 0
+            } else {
+                return 0, 1
+            }
+        } else if root.Val == 5 {
+            var l, r int
+            if root.Left != nil {
+                l, r = dfs(root.Left)
+            } else {
+                l, r = dfs(root.Right)
+            }
+            return r, l
+        }
+        l1, l2 := dfs(root.Left)
+        r1, r2 := dfs(root.Right)
+        if root.Val == 2 {
+            return min(l1 + r1, min(l1 + r2, l2 + r1)), l2 + r2
+        } else if root.Val == 3 {
+            return l1 + r1, min(l1 + r2, min(l2 + r1, l2 + r2))
+        } else {
+            return min(l1 + r2, l2 + r1), min(l1 + r1, l2 + r2)
+        }
+    }
+    a, b := dfs(root)
+    if result {
+        return a
+    }
+    return b
+}
+
 func main() {
     // Example 1:
     // <img src="https://assets.leetcode.com/uploads/2022/06/20/operationstree.png" />
@@ -207,4 +243,7 @@ func main() {
 
     fmt.Println(minimumFlips1(tree1, true)) // 2
     fmt.Println(minimumFlips1(tree2, false)) // 0
+
+    fmt.Println(minimumFlips2(tree1, true)) // 2
+    fmt.Println(minimumFlips2(tree2, false)) // 0
 }
