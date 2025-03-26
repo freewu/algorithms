@@ -1792,6 +1792,7 @@
 [3489. Zero Array Transformation IV](./leetcode/3489-ZeroArrayTransformationIV.go)   
 [3491. Phone Number Prefix](./leetcode/3491-PhoneNumberPrefix.go)   
 [3494. Find the Minimum Amount of Time to Brew Potions](./leetcode/3494-FindTheMinimumAmountOfTimeToBrewPotions.go)   
+[3495. Minimum Operations to Make Array Elements Zero](./leetcode/3495-MinimumOperationsToMakeArrayElementsZero.go)   
 [3496. Maximize Score After Pair Deletions](./leetcode/3496-MaximizeScoreAfterPairDeletions.go)   
 
 # String
