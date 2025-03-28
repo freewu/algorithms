@@ -106,3 +106,37 @@
 -- insert into UserActivity (user_id, activity_date, activity_type, activity_duration) values ('4', '2023-04-03', 'free_trial', '35')
 -- insert into UserActivity (user_id, activity_date, activity_type, activity_duration) values ('4', '2023-04-05', 'paid', '45')
 -- insert into UserActivity (user_id, activity_date, activity_type, activity_duration) values ('4', '2023-04-07', 'cancelled', '0')
+
+-- Write your MySQL query statement below
+SELECT 
+    ft.user_id,
+    ROUND(ft.avg_trial, 2) AS trial_avg_duration, -- （四舍五入至小数点后 2 位）
+    ROUND(pt.avg_paid, 2) AS paid_avg_duration -- （四舍五入至小数点后 2 位）
+FROM
+    (-- 免费试用用户 平均每日活动时长
+        SELECT 
+            user_id, 
+            AVG(activity_duration) AS avg_trial
+        FROM 
+            UserActivity
+        WHERE 
+            activity_type = 'free_trial'
+        GROUP BY 
+            user_id
+    ) AS ft
+JOIN
+    (-- 付费用户 平均每日活动时长
+        SELECT 
+            user_id, 
+            AVG(activity_duration) AS avg_paid
+        FROM 
+            UserActivity
+        WHERE 
+            activity_type = 'paid'
+        GROUP BY 
+            user_id
+    ) AS pt
+ON 
+    ft.user_id = pt.user_id -- 从免费试用转为付费订阅的用户 两个都有的
+ORDER BY 
+    ft.user_id
