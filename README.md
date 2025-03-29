@@ -1794,6 +1794,7 @@
 [3494. Find the Minimum Amount of Time to Brew Potions](./leetcode/3494-FindTheMinimumAmountOfTimeToBrewPotions.go)   
 [3495. Minimum Operations to Make Array Elements Zero](./leetcode/3495-MinimumOperationsToMakeArrayElementsZero.go)   
 [3496. Maximize Score After Pair Deletions](./leetcode/3496-MaximizeScoreAfterPairDeletions.go)   
+[3500. Minimum Cost to Divide Array Into Subarrays](./leetcode/3500-MinimumCostToDivideArrayIntoSubarrays.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
@@ -2399,7 +2400,6 @@
 [3498. Reverse Degree of a String](./leetcode/3498-ReverseDegreeOfAString.go)   
 [3499. Maximize Active Section with Trade I](./leetcode/3499-MaximizeActiveSectionWithTradeI.go)   
 [3501. Maximize Active Section with Trade II](./leetcode/3501-MaximizeActiveSectionWithTradeII.go)   
-
 
 # Dynamic Programming
 [276. Paint Fence](./leetcode/276-PaintFence.go)   
