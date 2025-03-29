@@ -74,6 +74,26 @@ func longestCycle1(edges []int) int {
     return res
 }
 
+func longestCycle2(edges []int) int {
+    res, clock := -1, 1
+    time := make([]int, len(edges)) // time[i] == 0 表示没有访问过
+    max := func (x, y int) int { if x > y { return x; }; return y; }
+    for i, t := range time {
+        if t > 0 { continue } // i 之前访问过，即使 i 在环上或者可以到达环，我们也已经更新了 res
+        startTime := clock // 本轮循环的开始时间
+        for ; edges[i] != -1 && time[i] == 0; i = edges[i] {
+            time[i] = clock // 记录访问 i 的时间
+            clock++
+        }
+        // 如果 time[i] < startTime，说明 i 在其他循环中访问过，无需重复计算
+        // 否则说明 i 是本轮循环访问过的点，我们找到了一个环
+        if time[i] >= startTime {
+            res = max(res, clock - time[i]) // 当前时间减去上次访问 i 的时间，即为环长
+        }
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // <img src="https://assets.leetcode.com/uploads/2022/06/08/graph4drawio-5.png" />
@@ -89,6 +109,16 @@ func main() {
     // Explanation: There are no cycles in this graph.
     fmt.Println(longestCycle([]int{2,-1,3,1})) // -1
 
+    fmt.Println(longestCycle([]int{0,1,2,3,4,5,6,7,8,9})) // 1
+    fmt.Println(longestCycle([]int{9,8,7,6,5,4,3,2,1,0})) // 2
+
     fmt.Println(longestCycle1([]int{3,3,4,2,3})) // 3
     fmt.Println(longestCycle1([]int{2,-1,3,1})) // -1
+    fmt.Println(longestCycle1([]int{0,1,2,3,4,5,6,7,8,9})) // 1
+    fmt.Println(longestCycle1([]int{9,8,7,6,5,4,3,2,1,0})) // 2
+
+    fmt.Println(longestCycle2([]int{3,3,4,2,3})) // 3
+    fmt.Println(longestCycle2([]int{2,-1,3,1})) // -1
+    fmt.Println(longestCycle2([]int{0,1,2,3,4,5,6,7,8,9})) // 1
+    fmt.Println(longestCycle2([]int{9,8,7,6,5,4,3,2,1,0})) // 2
 }
