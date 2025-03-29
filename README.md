@@ -2396,6 +2396,8 @@
 [3463. Check If Digits Are Equal in String After Operations II](./leetcode/3463-CheckIfDigitsAreEqualInStringAfterOperationsII.go)   
 [3472. Longest Palindromic Subsequence After at Most K Operations](./leetcode/3472-LongestPalindromicSubsequenceAfterAtMostKOperations.go)   
 [3474. Lexicographically Smallest Generated String](./leetcode/3474-LexicographicallySmallestGeneratedString.go)   
+[3498. Reverse Degree of a String](./leetcode/3498-ReverseDegreeOfAString.go)   
+
 
 # Dynamic Programming
 [276. Paint Fence](./leetcode/276-PaintFence.go)   
