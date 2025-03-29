@@ -2397,6 +2397,7 @@
 [3472. Longest Palindromic Subsequence After at Most K Operations](./leetcode/3472-LongestPalindromicSubsequenceAfterAtMostKOperations.go)   
 [3474. Lexicographically Smallest Generated String](./leetcode/3474-LexicographicallySmallestGeneratedString.go)   
 [3498. Reverse Degree of a String](./leetcode/3498-ReverseDegreeOfAString.go)   
+[3499. Maximize Active Section with Trade I](./leetcode/3499-MaximizeActiveSectionWithTradeI.go)   
 
 
 # Dynamic Programming
