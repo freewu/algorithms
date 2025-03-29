@@ -2398,6 +2398,7 @@
 [3474. Lexicographically Smallest Generated String](./leetcode/3474-LexicographicallySmallestGeneratedString.go)   
 [3498. Reverse Degree of a String](./leetcode/3498-ReverseDegreeOfAString.go)   
 [3499. Maximize Active Section with Trade I](./leetcode/3499-MaximizeActiveSectionWithTradeI.go)   
+[3501. Maximize Active Section with Trade II](./leetcode/3501-MaximizeActiveSectionWithTradeII.go)   
 
 
 # Dynamic Programming
