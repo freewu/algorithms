@@ -83,6 +83,31 @@ func minimumCost(nums []int, cost []int, k int) int64 {
     return find(0, 0)
 }
 
+func minimumCost1(nums []int, cost []int, k int) int64 {
+    n, m := len(nums), len(cost)
+    dp, suffixSumCost,prefixSumNum, prefixSumCost := make([]int64, n), make([]int64, n) ,make([]int64, n), make([]int64, n)
+    prefixSumNum[0], prefixSumCost[0] = int64(nums[0]), int64(cost[0])
+    for i := 1; i < n; i += 1 {
+        prefixSumNum[i] = prefixSumNum[i - 1] + int64(nums[i])
+        prefixSumCost[i] = prefixSumCost[i - 1] + int64(cost[i])
+    }
+    suffixSumCost[m - 1] = int64(cost[m - 1])
+    for i := m - 2; i >= 0; i-- {
+        suffixSumCost[i] = suffixSumCost[i + 1] + int64(cost[i])
+    }
+    min := func (x, y int64) int64 { if x < y { return x; }; return y; }
+    for i := 0; i < n; i++ {
+        dp[i] = prefixSumNum[i] * prefixSumCost[i] + int64(k) * (suffixSumCost[0])
+        for j := 0; j < i; j++ {
+            dp[i] = min(
+                dp[i], 
+                dp[j] + prefixSumNum[i] * (prefixSumCost[i] - prefixSumCost[j]) + int64(k) * suffixSumCost[j + 1],
+            )
+        }
+    }
+    return dp[n -1 ]
+}
+
 func main() {
     // Example 1:
     // Input: nums = [3,1,4], cost = [4,6,6], k = 1
@@ -106,4 +131,11 @@ func main() {
     fmt.Println(minimumCost([]int{1,2,3,4,5,6,7,8,9}, []int{9,8,7,6,5,4,3,2,1}, 1)) // 642
     fmt.Println(minimumCost([]int{9,8,7,6,5,4,3,2,1}, []int{1,2,3,4,5,6,7,8,9}, 1)) // 1901
     fmt.Println(minimumCost([]int{9,8,7,6,5,4,3,2,1}, []int{9,8,7,6,5,4,3,2,1}, 1)) // 1320
+
+    fmt.Println(minimumCost1([]int{3,1,4}, []int{4,6,6}, 1)) // 110
+    fmt.Println(minimumCost1([]int{4,8,5,1,14,2,2,12,1}, []int{7,2,8,4,2,2,1,1,2}, 7)) // 985
+    fmt.Println(minimumCost1([]int{1,2,3,4,5,6,7,8,9}, []int{1,2,3,4,5,6,7,8,9}, 1)) // 1350
+    fmt.Println(minimumCost1([]int{1,2,3,4,5,6,7,8,9}, []int{9,8,7,6,5,4,3,2,1}, 1)) // 642
+    fmt.Println(minimumCost1([]int{9,8,7,6,5,4,3,2,1}, []int{1,2,3,4,5,6,7,8,9}, 1)) // 1901
+    fmt.Println(minimumCost1([]int{9,8,7,6,5,4,3,2,1}, []int{9,8,7,6,5,4,3,2,1}, 1)) // 1320
 }
