@@ -25,17 +25,17 @@ import "fmt"
 
 func partitionLabels(s string) []int {
     // 得到每个字符最后出一的位置
-    m := map[rune]int{}
-    for i, b := range s {
-        m[b] = i
+    mp := make(map[byte]int)
+    for i := range s {
+        mp[s[i]] = i
     }
-    res, count,lastIndex := []int{}, 0, 0
-    for i, b := range s {
+    res, count, last := []int{}, 0, 0
+    for i := range s {
         count++
-        if val, ok := m[b]; ok && val > lastIndex {
-            lastIndex = val
+        if v, ok := mp[s[i]]; ok && v > last {
+            last = v
         }
-        if lastIndex == i {
+        if last == i {
             res = append(res, count)
             count = 0
         }
@@ -54,7 +54,7 @@ func partitionLabels1(s string) []int {
     for i:= 0; i < len(s); i ++ {
         right = max(right, maxIdx[s[i]-'a'])
         if i == right {
-            res = append(res, right-left+1)
+            res = append(res, right - left + 1)
             left = right + 1
         }
     }
@@ -67,7 +67,11 @@ func main() {
     // A partition like "ababcbacadefegde", "hijhklij" is incorrect, because it splits s into less parts.
     fmt.Println(partitionLabels("ababcbacadefegdehijhklij")) // [9,7,8]
     fmt.Println(partitionLabels("eccbbbbdec")) // [10]
+    fmt.Println(partitionLabels("bluefrog")) // [1 1 1 1 1 1 1 1]
+    fmt.Println(partitionLabels("leetcode")) // [1 7]
 
     fmt.Println(partitionLabels1("ababcbacadefegdehijhklij")) // [9,7,8]
     fmt.Println(partitionLabels1("eccbbbbdec")) // [10]
+    fmt.Println(partitionLabels1("bluefrog")) // [1 1 1 1 1 1 1 1]
+    fmt.Println(partitionLabels1("leetcode")) // [1 7]
 }
