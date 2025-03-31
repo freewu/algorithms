@@ -67,6 +67,36 @@ func minSwaps1(data []int) int {
     return sum - mx
 }
 
+func minSwaps2(data []int) int {
+    ones := 0
+    for i := range data {
+        if data[i] == 1 {
+            ones++
+        }
+    }
+    res, left, right, zeroes := len(data), 0, 0, 0
+    for right < ones {
+        if data[right] == 0 {
+            zeroes++
+        }
+        right++
+    }
+    min := func (x, y int) int { if x < y { return x; }; return y; }
+    res = zeroes
+    for right < len(data) {
+        if data[left] == 0 {
+            zeroes--
+        }
+        left++
+        if data[right] == 0 {
+            zeroes++
+        }
+        res = min(res, zeroes)
+        right++
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: data = [1,0,1,0,1]
@@ -88,7 +118,30 @@ func main() {
     // Explanation: One possible solution that uses 3 swaps is [0,0,0,0,0,1,1,1,1,1,1].
     fmt.Println(minSwaps([]int{1,0,1,0,1,0,0,1,1,0,1})) // 3
 
+    fmt.Println(minSwaps([]int{0,0,0,0,0,0,0,0,0,0})) // 0
+    fmt.Println(minSwaps([]int{1,1,1,1,1,1,1,1,1,1})) // 0
+    fmt.Println(minSwaps([]int{0,0,0,0,0,1,1,1,1,1})) // 0
+    fmt.Println(minSwaps([]int{1,1,1,1,1,0,0,0,0,0})) // 0
+    fmt.Println(minSwaps([]int{0,1,0,1,0,1,0,1,0,1})) // 2
+    fmt.Println(minSwaps([]int{1,0,1,0,1,0,1,0,1,0})) // 2
+
     fmt.Println(minSwaps1([]int{1,0,1,0,1})) // 1
     fmt.Println(minSwaps1([]int{0,0,0,1,0})) // 0
     fmt.Println(minSwaps1([]int{1,0,1,0,1,0,0,1,1,0,1})) // 3
+    fmt.Println(minSwaps1([]int{0,0,0,0,0,0,0,0,0,0})) // 0
+    fmt.Println(minSwaps1([]int{1,1,1,1,1,1,1,1,1,1})) // 0
+    fmt.Println(minSwaps1([]int{0,0,0,0,0,1,1,1,1,1})) // 0
+    fmt.Println(minSwaps1([]int{1,1,1,1,1,0,0,0,0,0})) // 0
+    fmt.Println(minSwaps1([]int{0,1,0,1,0,1,0,1,0,1})) // 2
+    fmt.Println(minSwaps1([]int{1,0,1,0,1,0,1,0,1,0})) // 2
+
+    fmt.Println(minSwaps2([]int{1,0,1,0,1})) // 1
+    fmt.Println(minSwaps2([]int{0,0,0,1,0})) // 0
+    fmt.Println(minSwaps2([]int{1,0,1,0,1,0,0,1,1,0,1})) // 3
+    fmt.Println(minSwaps2([]int{0,0,0,0,0,0,0,0,0,0})) // 0
+    fmt.Println(minSwaps2([]int{1,1,1,1,1,1,1,1,1,1})) // 0
+    fmt.Println(minSwaps2([]int{0,0,0,0,0,1,1,1,1,1})) // 0
+    fmt.Println(minSwaps2([]int{1,1,1,1,1,0,0,0,0,0})) // 0
+    fmt.Println(minSwaps2([]int{0,1,0,1,0,1,0,1,0,1})) // 2
+    fmt.Println(minSwaps2([]int{1,0,1,0,1,0,1,0,1,0})) // 2
 }
