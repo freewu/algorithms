@@ -2402,6 +2402,7 @@
 [3499. Maximize Active Section with Trade I](./leetcode/3499-MaximizeActiveSectionWithTradeI.go)   
 [3501. Maximize Active Section with Trade II](./leetcode/3501-MaximizeActiveSectionWithTradeII.go)   
 [3503. Longest Palindrome After Substring Concatenation I](./leetcode/3503-LongestPalindromeAfterSubstringConcatenationI.go)   
+[3504. Longest Palindrome After Substring Concatenation II](./leetcode/3504-LongestPalindromeAfterSubstringConcatenationII.go)   
 
 # Dynamic Programming
 [276. Paint Fence](./leetcode/276-PaintFence.go)   
