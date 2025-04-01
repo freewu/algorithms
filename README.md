@@ -1796,6 +1796,7 @@
 [3496. Maximize Score After Pair Deletions](./leetcode/3496-MaximizeScoreAfterPairDeletions.go)   
 [3500. Minimum Cost to Divide Array Into Subarrays](./leetcode/3500-MinimumCostToDivideArrayIntoSubarrays.go)   
 [3502. Minimum Cost to Reach Every Position](./leetcode/3502-MinimumCostToReachEveryPosition.go)   
+[3505. Minimum Operations to Make Elements Within K Subarrays Equal](./leetcode/3505-MinimumOperationsToMakeElementsWithinKSubarraysEqual.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
