@@ -65,6 +65,17 @@ func maximumTripletValue1(nums []int) int64 {
     return int64(res)
 }
 
+func maximumTripletValue2(nums []int) int64 {
+    res, imax, dmax := 0, 0, 0
+    max := func (x, y int) int { if x > y { return x; }; return y; }
+    for _, v := range nums {
+        res = max(res, dmax * v)
+        dmax = max(dmax, imax - v)
+        imax = max(imax, v)
+    }
+    return int64(res)
+}
+
 func main() {
     // Example 1:
     // Input: nums = [12,6,1,2,7]
@@ -84,7 +95,18 @@ func main() {
     // Explanation: The only ordered triplet of indices (0, 1, 2) has a negative value of (nums[0] - nums[1]) * nums[2] = -3. Hence, the answer would be 0.
     fmt.Println(maximumTripletValue([]int{1,2,3})) // 0
 
+    fmt.Println(maximumTripletValue([]int{1,2,3,4,5,6,7,8,9})) // 0
+    fmt.Println(maximumTripletValue([]int{9,8,7,6,5,4,3,2,1})) // 16
+
     fmt.Println(maximumTripletValue1([]int{12,6,1,2,7})) // 77
     fmt.Println(maximumTripletValue1([]int{1,10,3,4,19})) // 133
     fmt.Println(maximumTripletValue1([]int{1,2,3})) // 0
+    fmt.Println(maximumTripletValue1([]int{1,2,3,4,5,6,7,8,9})) // 0
+    fmt.Println(maximumTripletValue1([]int{9,8,7,6,5,4,3,2,1})) // 16
+
+    fmt.Println(maximumTripletValue2([]int{12,6,1,2,7})) // 77
+    fmt.Println(maximumTripletValue2([]int{1,10,3,4,19})) // 133
+    fmt.Println(maximumTripletValue2([]int{1,2,3})) // 0
+    fmt.Println(maximumTripletValue2([]int{1,2,3,4,5,6,7,8,9})) // 0
+    fmt.Println(maximumTripletValue2([]int{9,8,7,6,5,4,3,2,1})) // 16
 }
