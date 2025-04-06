@@ -1799,6 +1799,7 @@
 [3505. Minimum Operations to Make Elements Within K Subarrays Equal](./leetcode/3505-MinimumOperationsToMakeElementsWithinKSubarraysEqual.go)   
 [3506. Find Time Required to Eliminate Bacterial Strains II](./leetcode/3506-FindTimeRequiredToEliminateBacterialStrainsII.go)   
 [3507. Minimum Pair Removal to Sort Array I](./leetcode/3507-MinimumPairRemovalToSortArrayI.go)   
+[3509. Maximum Product of Subsequences With an Alternating Sum Equal to K](./leetcode/3509-MaximumProductOfSubsequencesWithAnAlternatingSumEqualToK.go)   
 [3510. Minimum Pair Removal to Sort Array II](./leetcode/3510-MinimumPairRemovalToSortArrayII.go)   
 
 
