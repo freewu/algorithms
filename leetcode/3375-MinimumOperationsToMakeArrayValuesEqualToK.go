@@ -69,6 +69,18 @@ func minOperations1(nums []int, k int) int {
     return len(set)
 }
 
+func minOperations2(nums []int, k int) int {
+    set := make(map[int]bool)
+    for _, v := range nums {
+        if v < k { // 出现小于 k 的 异常情况
+            return -1
+        } else if v > k {
+            set[v] = true
+        }
+    }
+    return len(set) // 本质就是统计有多种数值
+}
+
 func main() {
     // Example 1:
     // Input: nums = [5,2,5,4,5], k = 2
@@ -97,4 +109,10 @@ func main() {
     fmt.Println(minOperations1([]int{9,7,5,3}, 1)) // 4
     fmt.Println(minOperations1([]int{1,2,3,4,5,6,7,8,9}, 1)) // 8
     fmt.Println(minOperations1([]int{9,8,7,6,5,4,3,2,1}, 1)) // 8
+
+    fmt.Println(minOperations2([]int{5,2,5,4,5}, 2)) // 2
+    fmt.Println(minOperations2([]int{2,1,2}, 2)) // -1
+    fmt.Println(minOperations2([]int{9,7,5,3}, 1)) // 4
+    fmt.Println(minOperations2([]int{1,2,3,4,5,6,7,8,9}, 1)) // 8
+    fmt.Println(minOperations2([]int{9,8,7,6,5,4,3,2,1}, 1)) // 8
 }
