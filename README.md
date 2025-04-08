@@ -1801,7 +1801,7 @@
 [3507. Minimum Pair Removal to Sort Array I](./leetcode/3507-MinimumPairRemovalToSortArrayI.go)   
 [3509. Maximum Product of Subsequences With an Alternating Sum Equal to K](./leetcode/3509-MaximumProductOfSubsequencesWithAnAlternatingSumEqualToK.go)   
 [3510. Minimum Pair Removal to Sort Array II](./leetcode/3510-MinimumPairRemovalToSortArrayII.go)   
-
+[3511. Make a Positive Array](./leetcode/3511-MakeAPositiveArray.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
