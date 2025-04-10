@@ -63,6 +63,30 @@ func countSymmetricIntegers1(low int, high int) int {
     return res
 }
 
+var s [10001]int
+
+func init() {
+    for i := 1; i <= 9; i++ {
+        s[11*i]++
+    }
+    for x4 := 1; x4 <= 9; x4++ {
+        for x3 := 0; x3 <= 9; x3++ {
+            s2 := x3 + x4
+            for x2 := max(0, s2-9); x2 <= min(9, s2); x2++ {
+                x1 := s2 - x2
+                s[x1+x2*10+x3*100+x4*1000]++
+            }
+        }
+    }
+    for i := 1; i <= 10000; i++ {
+        s[i] += s[i-1]
+    }
+}
+
+func countSymmetricIntegers2(low int, high int) int {
+    return s[high] - s[low - 1]
+}
+
 func main() {
     // Example 1:
     // Input: low = 1, high = 100
@@ -76,8 +100,18 @@ func main() {
     fmt.Println(countSymmetricIntegers(1200, 1230)) // 4
 
     fmt.Println(countSymmetricIntegers(1, 10000)) // 624
+    fmt.Println(countSymmetricIntegers(1, 1)) // 0
+    fmt.Println(countSymmetricIntegers(10000, 10000)) // 0
 
     fmt.Println(countSymmetricIntegers1(1, 100)) // 9
     fmt.Println(countSymmetricIntegers1(1200, 1230)) // 4
     fmt.Println(countSymmetricIntegers1(1, 10000)) // 624
+    fmt.Println(countSymmetricIntegers1(1, 1)) // 0
+    fmt.Println(countSymmetricIntegers1(10000, 10000)) // 0
+
+    fmt.Println(countSymmetricIntegers2(1, 100)) // 9
+    fmt.Println(countSymmetricIntegers2(1200, 1230)) // 4
+    fmt.Println(countSymmetricIntegers2(1, 10000)) // 624
+    fmt.Println(countSymmetricIntegers2(1, 1)) // 0
+    fmt.Println(countSymmetricIntegers2(10000, 10000)) // 0
 }
