@@ -1803,6 +1803,7 @@
 [3510. Minimum Pair Removal to Sort Array II](./leetcode/3510-MinimumPairRemovalToSortArrayII.go)   
 [3511. Make a Positive Array](./leetcode/3511-MakeAPositiveArray.go)   
 [3512. Minimum Operations to Make Array Sum Divisible by K](./leetcode/3512-MinimumOperationsToMakeArraySumDivisibleByK.go)   
+[3513. Number of Unique XOR Triplets I](./leetcode/3513-NumberOfUniqueXORTripletsI.go)   
 
 
 # String
