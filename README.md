@@ -2817,6 +2817,7 @@
 [3470. Permutations IV](./leetcode/3470-PermutationsIV.go)   
 [3490. Count Beautiful Numbers](./leetcode/3490-CountBeautifulNumbers.go)   
 [3492. Maximum Containers on a Ship](./leetcode/3492-MaximumContainersOnAShip.go)   
+[3516. Find Closest Person](./leetcode/3516-FindClosestPerson.go)   
 
 # Stack
 [225. Implement Stack using Queues](./leetcode/225-ImplementStackUsingQueues.go)   
