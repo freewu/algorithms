@@ -3139,6 +3139,7 @@
 [3383. Minimum Runes to Add to Cast Spell](./leetcode/3383-MinimumRunesToAddToCastSpell.go)   
 [3419. Minimize the Maximum Edge Weight of Graph](./leetcode/3419-MinimizeTheMaximumEdgeWeightOfGraph.go)   
 [3493. Properties Graph](./leetcode/3493-PropertiesGraph.go)   
+[3515. Shortest Path in a Weighted Tree](./leetcode/3515-ShortestPathInAWeightedTree.go)   
 
 # Trie
 [386. Lexicographical Numbers](./leetcode/386-LexicographicalNumbers.go)   
