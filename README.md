@@ -2414,6 +2414,7 @@
 [3504. Longest Palindrome After Substring Concatenation II](./leetcode/3504-LongestPalindromeAfterSubstringConcatenationII.go)   
 [3517. Smallest Palindromic Rearrangement I](./leetcode/3517-SmallestPalindromicRearrangementI.go)   
 [3518. Smallest Palindromic Rearrangement II](./leetcode/3518-SmallestPalindromicRearrangementII.go)   
+[3519. Count Numbers with Non-Decreasing Digits](./leetcode/3519-CountNumbersWithNonDecreasingDigits.go)   
 
 # Dynamic Programming
 [276. Paint Fence](./leetcode/276-PaintFence.go)   
