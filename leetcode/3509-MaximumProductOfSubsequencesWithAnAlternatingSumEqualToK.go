@@ -173,6 +173,85 @@ func maxProduct1(nums []int, k int, limit int) int {
     return res
 }
 
+func maxProduct2(nums []int, k, limit int) int {
+    sum := 0
+    for _, v := range nums {
+        sum += v
+    }
+    max := func (x, y int) int { if x > y { return x; }; return y; }
+    abs := func(x int) int { if x < 0 { return -x; }; return x; }
+    if sum < abs(k) { return -1 } // 如果数组和小于 |k|，则返回 -1
+    // s -> {m}
+    oddS, evenS := map[int]map[int]struct{}{}, map[int]map[int]struct{}{}
+    add := func(mp map[int]map[int]struct{}, key, val int) {
+        if _, ok := mp[key]; !ok { mp[key] = map[int]struct{}{} }
+        mp[key][val] = struct{}{}
+    }
+    for _, v := range nums {
+        // 长为偶数的子序列的计算结果 newEvenS
+        newEvenS := map[int]map[int]struct{}{}
+        for s, set := range oddS {
+            newEvenS[s - v] = map[int]struct{}{}
+            for m := range set {
+                if m * v <= limit {
+                    newEvenS[s - v][m * v] = struct{}{}
+                }
+            }
+        }
+        // 长为奇数的子序列的计算结果 oddS
+        for s, set := range evenS {
+            if _, ok := oddS[s + v]; !ok {
+                oddS[s + v] = map[int]struct{}{}
+            }
+            for m := range set {
+                if m * v <= limit {
+                    oddS[s + v][m * v] = struct{}{}
+                }
+            }
+            if v == 0 {
+                add(oddS, s, 0)
+            }
+        }
+        // 更新 evenS
+        for s, set := range newEvenS {
+            if eSet, ok := evenS[s]; ok {
+                for m := range set {
+                    eSet[m] = struct{}{}
+                }
+            } else {
+                evenS[s] = set
+            }
+            if v == 0 {
+                add(evenS, s, 0)
+            }
+        }
+        // 子序列只有一个数的情况
+        if v <= limit {
+            add(oddS, v, v)
+        }
+        if set, ok := oddS[k]; ok {
+            if _, ok := set[limit]; ok {
+                return limit // 提前返回
+            }
+        }
+        if set, ok := evenS[k]; ok {
+            if _, ok := set[limit]; ok {
+                return limit // 提前返回
+            }
+        }
+    }
+    calcMax := func(m map[int]struct{}) int {
+        maxVal := -1
+        if m != nil {
+            for v := range m {
+                maxVal = max(maxVal, v)
+            }
+        }
+        return maxVal
+    }
+    return max(calcMax(oddS[k]), calcMax(evenS[k]))
+}
+
 func main() {
     // Example 1:
     // Input: nums = [1,2,3], k = 2, limit = 10
@@ -218,4 +297,10 @@ func main() {
     fmt.Println(maxProduct1([]int{2,2,3,3}, 0, 9)) // 9
     fmt.Println(maxProduct1([]int{1,2,3,4,5,6,7,8,9}, 2, 10)) // 6
     fmt.Println(maxProduct1([]int{9,8,7,6,5,4,3,2,1}, 2, 10)) // 8
+
+    fmt.Println(maxProduct2([]int{1,2,3}, 2, 10)) // 6
+    fmt.Println(maxProduct2([]int{0,2,3}, -5, 12)) // -1
+    fmt.Println(maxProduct2([]int{2,2,3,3}, 0, 9)) // 9
+    fmt.Println(maxProduct2([]int{1,2,3,4,5,6,7,8,9}, 2, 10)) // 6
+    fmt.Println(maxProduct2([]int{9,8,7,6,5,4,3,2,1}, 2, 10)) // 8
 }
