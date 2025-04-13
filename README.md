@@ -1804,7 +1804,7 @@
 [3511. Make a Positive Array](./leetcode/3511-MakeAPositiveArray.go)   
 [3512. Minimum Operations to Make Array Sum Divisible by K](./leetcode/3512-MinimumOperationsToMakeArraySumDivisibleByK.go)   
 [3513. Number of Unique XOR Triplets I](./leetcode/3513-NumberOfUniqueXORTripletsI.go)   
-
+[3514. Number of Unique XOR Triplets II](./leetcode/3514-NumberOfUniqueXORTripletsII.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
