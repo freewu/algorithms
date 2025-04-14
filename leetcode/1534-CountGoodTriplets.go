@@ -84,10 +84,22 @@ func countGoodTriplets1(arr []int, a int, b int, c int) int {
 }
 
 func main() {
-    // There are 4 good triplets: [(3,0,1), (3,0,1), (3,1,1), (0,1,1)].
+    // Example 1:
+    // Input: arr = [3,0,1,1,9,7], a = 7, b = 2, c = 3
+    // Output: 4
+    // Explanation: There are 4 good triplets: [(3,0,1), (3,0,1), (3,1,1), (0,1,1)].
     fmt.Println(countGoodTriplets([]int{3,0,1,1,9,7}, 7, 2, 3)) // 4
+    // Example 2:
+    // Input: arr = [1,1,2,2,3], a = 0, b = 0, c = 1
+    // Output: 0
+    // Explanation: No triplet satisfies all conditions.
     fmt.Println(countGoodTriplets([]int{1,1,2,2,3}, 0, 0, 1)) // 0
+
+    fmt.Println(countGoodTriplets([]int{1,2,3,4,5,6,7,8,9}, 0, 0, 1)) // 0
+    fmt.Println(countGoodTriplets([]int{9,8,7,6,5,4,3,2,1}, 0, 0, 1)) // 0
 
     fmt.Println(countGoodTriplets1([]int{3,0,1,1,9,7}, 7, 2, 3)) // 4
     fmt.Println(countGoodTriplets1([]int{1,1,2,2,3}, 0, 0, 1)) // 0
+    fmt.Println(countGoodTriplets1([]int{1,2,3,4,5,6,7,8,9}, 0, 0, 1)) // 0
+    fmt.Println(countGoodTriplets1([]int{9,8,7,6,5,4,3,2,1}, 0, 0, 1)) // 0
 }
