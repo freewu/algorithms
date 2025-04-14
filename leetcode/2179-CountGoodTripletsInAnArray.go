@@ -75,6 +75,26 @@ func goodTriplets(nums1 []int, nums2 []int) int64 {
     return int64(res)
 }
 
+func goodTriplets1(nums1, nums2 []int) int64 {
+    res, n := 0, len(nums1)
+    p := make([]int, n)
+    for i, v := range nums1 {
+        p[v] = i
+    }
+    tree := make([]int, n + 1)
+    for i := 1; i < n - 1; i++ {
+        for j := p[nums2[i-1]] + 1; j <= n; j += j & -j { // 将 p[nums2[i-1]]+1 加入树状数组
+            tree[j]++
+        }
+        y, less := p[nums2[i]], 0
+        for j := y; j > 0; j &= j - 1 { // 计算 less
+            less += tree[j]
+        }
+        res += less * (n - 1 - y - (i - less))
+    }
+    return int64(res)
+}
+
 func main() {
     // Example 1:
     // Input: nums1 = [2,0,1,3], nums2 = [0,1,2,3]
@@ -88,4 +108,16 @@ func main() {
     // Output: 4
     // Explanation: The 4 good triplets are (4,0,3), (4,0,2), (4,1,3), and (4,1,2).
     fmt.Println(goodTriplets([]int{4,0,1,3,2}, []int{4,1,0,2,3})) // 4
+
+    fmt.Println(goodTriplets([]int{0,1,2,3,4,5,6,7,8,9}, []int{9,8,7,6,5,4,3,2,1,0})) // 0
+    fmt.Println(goodTriplets([]int{0,1,2,3,4,5,6,7,8,9}, []int{0,1,2,3,4,5,6,7,8,9})) // 120
+    fmt.Println(goodTriplets([]int{9,8,7,6,5,4,3,2,1,0}, []int{0,1,2,3,4,5,6,7,8,9})) // 0
+    fmt.Println(goodTriplets([]int{9,8,7,6,5,4,3,2,1,0}, []int{9,8,7,6,5,4,3,2,1,0})) // 120
+
+    fmt.Println(goodTriplets1([]int{2,0,1,3}, []int{0,1,2,3})) // 1
+    fmt.Println(goodTriplets1([]int{4,0,1,3,2}, []int{4,1,0,2,3})) // 4
+    fmt.Println(goodTriplets1([]int{0,1,2,3,4,5,6,7,8,9}, []int{9,8,7,6,5,4,3,2,1,0})) // 0
+    fmt.Println(goodTriplets1([]int{0,1,2,3,4,5,6,7,8,9}, []int{0,1,2,3,4,5,6,7,8,9})) // 120
+    fmt.Println(goodTriplets1([]int{9,8,7,6,5,4,3,2,1,0}, []int{0,1,2,3,4,5,6,7,8,9})) // 0
+    fmt.Println(goodTriplets1([]int{9,8,7,6,5,4,3,2,1,0}, []int{9,8,7,6,5,4,3,2,1,0})) // 120
 }
