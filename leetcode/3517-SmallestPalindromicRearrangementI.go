@@ -62,6 +62,37 @@ func smallestPalindrome(s string) string {
     return string(res)
 }
 
+func smallestPalindrome1(s string) string {
+    // 1. 统计字符出现次数
+    freq := make([]int, 26)
+    for _, ch := range s {
+        freq[ch-'a']++
+    }
+    // 2. 构建左半部分和中间字符
+    left := make([]byte, 0, len(s)/2)
+    var mid byte
+    for i := 0; i < 26; i++ {
+        // 将出现次数的一半放到左半部分
+        for j := 0; j < freq[i]/2; j++ {
+            left = append(left, byte('a'+i))
+        }
+        // 如果是奇数频次，将它作为中间字符（仅可能有一个）
+        if freq[i]%2 == 1 {
+            mid = byte('a' + i)
+        }
+    }
+    // 3. 构建右半部分（为左半部分的逆序）
+    right := make([]byte, len(left))
+    for i := 0; i < len(left); i++ {
+        right[i] = left[len(left)-1-i]
+    }
+    // 4. 组合结果
+    if mid != 0 {
+        return string(left) + string(mid) + string(right)
+    }
+    return string(left) + string(right)
+}
+
 func main() {
     // Example 1:
     // Input: s = "z"
@@ -84,4 +115,10 @@ func main() {
 
     fmt.Println(smallestPalindrome("bluefrogbluefrog")) // befgloruurolgfeb
     fmt.Println(smallestPalindrome("leetcodeleetcode")) // cdeeelottoleeedc
+
+    fmt.Println(smallestPalindrome1("z")) // z
+    fmt.Println(smallestPalindrome1("babab")) // abbba
+    fmt.Println(smallestPalindrome1("daccad")) // acddca
+    fmt.Println(smallestPalindrome1("bluefrogbluefrog")) // befgloruurolgfeb
+    fmt.Println(smallestPalindrome1("leetcodeleetcode")) // cdeeelottoleeedc
 }
