@@ -79,6 +79,26 @@ func countGood2(nums []int, k int) int64 {
     return int64(res)
 }
 
+func countGood3(nums []int, k int) int64 {
+    res, n := 0, len(nums)
+    start, end, cur := 0, 0, 0
+    mp := make(map[int]int)
+    for end < n {
+        for end < n && cur < k {
+            cur += mp[nums[end]]
+            mp[nums[end]]++
+            end++
+        }
+        for start <= end && cur >= k {
+            res += n - end + 1
+            mp[nums[start]]--
+            cur -= mp[nums[start]]
+            start++
+        }
+    }
+    return int64(res)
+}
+
 func main() {
     // Example 1:
     // Input: nums = [1,1,1,1,1], k = 10
@@ -96,12 +116,20 @@ func main() {
     fmt.Println(countGood([]int{3,1,4,3,2,2,4}, 2)) // 4 
 
     fmt.Println(countGood([]int{1,2,3,4,5,6,7,8,9}, 2)) // 0
+    fmt.Println(countGood([]int{9,8,7,6,5,4,3,2,1}, 2)) // 0
 
     fmt.Println(countGood1([]int{1,1,1,1,1}, 10)) // 1
     fmt.Println(countGood1([]int{3,1,4,3,2,2,4}, 2)) // 4 
     fmt.Println(countGood1([]int{1,2,3,4,5,6,7,8,9}, 2)) // 0
+    fmt.Println(countGood1([]int{9,8,7,6,5,4,3,2,1}, 2)) // 0
 
     fmt.Println(countGood2([]int{1,1,1,1,1}, 10)) // 1
     fmt.Println(countGood2([]int{3,1,4,3,2,2,4}, 2)) // 4 
     fmt.Println(countGood2([]int{1,2,3,4,5,6,7,8,9}, 2)) // 0
+    fmt.Println(countGood2([]int{9,8,7,6,5,4,3,2,1}, 2)) // 0
+
+    fmt.Println(countGood3([]int{1,1,1,1,1}, 10)) // 1
+    fmt.Println(countGood3([]int{3,1,4,3,2,2,4}, 2)) // 4 
+    fmt.Println(countGood3([]int{1,2,3,4,5,6,7,8,9}, 2)) // 0
+    fmt.Println(countGood3([]int{9,8,7,6,5,4,3,2,1}, 2)) // 0
 }
