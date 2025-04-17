@@ -45,6 +45,18 @@ func countPairs(nums []int, k int) int {
     return res
 }
 
+func countPairs1(nums []int, k int) int {
+    res, n := 0, len(nums)
+    for i := 0; i < n - 1; i++ {
+        for j := i + 1; j < n; j++ {
+            if nums[i] == nums[j] && (i * j) % k == 0 {
+                res++
+            }
+        }
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: nums = [3,1,2,2,2,1,3], k = 2
@@ -61,4 +73,12 @@ func main() {
     // Output: 0
     // Explanation: Since no value in nums is repeated, there are no pairs (i,j) that meet all the requirements.
     fmt.Println(countPairs([]int{1,2,3,4}, 1)) // 0
+
+    fmt.Println(countPairs([]int{1,2,3,4,5,6,7,8,9}, 2)) // 0
+    fmt.Println(countPairs([]int{9,8,7,6,5,4,3,2,1}, 2)) // 0
+
+    fmt.Println(countPairs1([]int{3,1,2,2,2,1,3}, 2)) // 4
+    fmt.Println(countPairs1([]int{1,2,3,4}, 1)) // 0
+    fmt.Println(countPairs1([]int{1,2,3,4,5,6,7,8,9}, 2)) // 0
+    fmt.Println(countPairs1([]int{9,8,7,6,5,4,3,2,1}, 2)) // 0
 }
