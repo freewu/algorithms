@@ -3759,7 +3759,8 @@ LCR 185. 统计结果概率
 [3465. Find Products with Valid Serial Numbers](./leetcode/3465-FindProductsWithValidSerialNumbers.sql)   
 [3475. DNA Pattern Recognition](./leetcode/3475-DNAPatternRecognition.sql)   
 [3482. Analyze Organization Hierarchy](./leetcode/3482-AnalyzeOrganizationHierarchy.sql)   
-[3497. Analyze Subscription Conversion ](./leetcode/3497-AnalyzeSubscriptionConversion.sql)   
+[3497. Analyze Subscription Conversion](./leetcode/3497-AnalyzeSubscriptionConversion.sql)   
+[3521. Find Product Recommendation Pairs](./leetcode/3521-FindProductRecommendationPairs.sql)   
 
 # Shell
 [192. Word Frequency](./leetcode/192-WordFrequency.sh)      
