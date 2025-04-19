@@ -101,9 +101,16 @@ func main() {
     // Explanation: There is a single fair pair: (2,3).
     fmt.Println(countFairPairs([]int{1,7,9,2,5}, 11, 11)) // 1
 
+    fmt.Println(countFairPairs([]int{1,2,3,4,5,6,7,8,9}, 11, 11)) // 4
+    fmt.Println(countFairPairs([]int{9,8,7,6,5,4,3,2,1}, 11, 11)) // 4
+
     fmt.Println(countFairPairs1([]int{0,1,7,4,4,5}, 3, 6)) // 6
     fmt.Println(countFairPairs1([]int{1,7,9,2,5}, 11, 11)) // 1
+    fmt.Println(countFairPairs1([]int{1,2,3,4,5,6,7,8,9}, 11, 11)) // 4
+    fmt.Println(countFairPairs1([]int{9,8,7,6,5,4,3,2,1}, 11, 11)) // 4
 
     fmt.Println(countFairPairs2([]int{0,1,7,4,4,5}, 3, 6)) // 6
     fmt.Println(countFairPairs2([]int{1,7,9,2,5}, 11, 11)) // 1
+    fmt.Println(countFairPairs2([]int{1,2,3,4,5,6,7,8,9}, 11, 11)) // 4
+    fmt.Println(countFairPairs2([]int{9,8,7,6,5,4,3,2,1}, 11, 11)) // 4
 }
