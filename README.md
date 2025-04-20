@@ -1806,6 +1806,7 @@
 [3513. Number of Unique XOR Triplets I](./leetcode/3513-NumberOfUniqueXORTripletsI.go)   
 [3514. Number of Unique XOR Triplets II](./leetcode/3514-NumberOfUniqueXORTripletsII.go)   
 [3520. Minimum Threshold for Inversion Pairs Count](./leetcode/3520-MinimumThresholdForInversionPairsCount.go)   
+[3524. Find X Value of Array I](./leetcode/3524-FindXValueOfArrayI.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
