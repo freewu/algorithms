@@ -1807,6 +1807,7 @@
 [3514. Number of Unique XOR Triplets II](./leetcode/3514-NumberOfUniqueXORTripletsII.go)   
 [3520. Minimum Threshold for Inversion Pairs Count](./leetcode/3520-MinimumThresholdForInversionPairsCount.go)   
 [3522. Calculate Score After Performing Instructions](./leetcode/3522-CalculateScoreAfterPerformingInstructions.go)   
+[3523. Make Array Non-decreasing](./leetcode/3523-MakeArrayNonDecreasing.go)   
 [3524. Find X Value of Array I](./leetcode/3524-FindXValueOfArrayI.go)   
 [3525. Find X Value of Array II](./leetcode/3525-FindXValueOfArrayII.go)   
 
