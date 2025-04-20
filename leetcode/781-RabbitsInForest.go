@@ -79,6 +79,11 @@ func main() {
     // Output: 11
     fmt.Println(numRabbits([]int{10,10,10})) // 11
 
+    fmt.Println(numRabbits([]int{1,2,3,4,5,6,7,8,9})) // 54
+    fmt.Println(numRabbits([]int{9,8,7,6,5,4,3,2,1})) // 54
+
     fmt.Println(numRabbits1([]int{1,1,2})) // 5
     fmt.Println(numRabbits1([]int{10,10,10})) // 11
+    fmt.Println(numRabbits1([]int{1,2,3,4,5,6,7,8,9})) // 54
+    fmt.Println(numRabbits1([]int{9,8,7,6,5,4,3,2,1})) // 54
 }
