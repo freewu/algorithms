@@ -1810,6 +1810,8 @@
 [3523. Make Array Non-decreasing](./leetcode/3523-MakeArrayNonDecreasing.go)   
 [3524. Find X Value of Array I](./leetcode/3524-FindXValueOfArrayI.go)   
 [3525. Find X Value of Array II](./leetcode/3525-FindXValueOfArrayII.go)   
+[3526. Range XOR Queries with Subarray Reversals](./leetcode/3526-RangeXORQueriesWithSubarrayReversals.go)   
+
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
