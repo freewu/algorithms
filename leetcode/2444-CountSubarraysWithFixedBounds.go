@@ -70,44 +70,77 @@ func countSubarrays(nums []int, minK int, maxK int) int64 {
 
 // 
 func countSubarrays1(nums []int, minK int, maxK int) int64 {
-    mi, ma := 0, 0
-    res := 0
-    begin := 0
-    l := 0
-    for i := 0; i < len(nums); i++ {
+    res, mn, mx, begin, l, n := 0, 0, 0, 0, 0, len(nums)
+    for i := 0; i < n; i++ {
         if nums[i] > maxK || nums[i] < minK {
-            mi, ma = 0, 0
-            begin = i+1
-            l = i+1
+            mn, mx, begin, l = 0, 0, i + 1, i + 1
         }
         if nums[i] == minK {
-            mi++
+            mn++
         }
         if nums[i] == maxK {
-            ma++
+            mx++
         }
-        for l < len(nums) && ((nums[l] != minK && nums[l] != maxK) || (nums[l] == minK && mi > 1) || (nums[l] == maxK && ma > 1)) {
-            if nums[l] == minK && mi > 1 {
-                mi--
+        for l < n && ((nums[l] != minK && nums[l] != maxK) || 
+                     (nums[l] == minK && mn > 1) || 
+                     (nums[l] == maxK && mx > 1)) {
+            if nums[l] == minK && mn > 1 {
+                mn--
             }
-            if nums[l] == maxK && ma > 1 {
-                ma--
+            if nums[l] == maxK && mx > 1 {
+                mx--
             }
             l++
         }
-        if mi > 0 && ma > 0 {
-            res += l-begin+1
+        if mn > 0 && mx > 0 {
+            res += (l - begin + 1)
+        }
+    }
+    return int64(res)
+}
+
+func countSubarrays2(nums []int, minK int, maxK int) int64 {
+    res, border, mn, mx := 0, -1, -1, -1
+    min := func (x, y int) int { if x < y { return x; }; return y; }
+    for i := 0; i < len(nums); i++ {
+        if nums[i] < minK || nums[i] > maxK {
+            mx, mn, border = -1, -1, i
+        }
+        if nums[i] == minK {
+            mn = i
+        }
+        if nums[i] == maxK {
+            mx = i
+        }
+        if mn != -1 && mx != -1 {
+            res += (min(mn, mx) - border)
         }
     }
     return int64(res)
 }
 
 func main() {
+    // Example 1:
+    // Input: nums = [1,3,5,2,7,5], minK = 1, maxK = 5
+    // Output: 2
     // Explanation: The fixed-bound subarrays are [1,3,5] and [1,3,5,2].
     fmt.Println(countSubarrays([]int{1,3,5,2,7,5},1,5)) // 2
+    // Example 2:
+    // Input: nums = [1,1,1,1], minK = 1, maxK = 1
+    // Output: 10
     // Explanation: Every subarray of nums is a fixed-bound subarray. There are 10 possible subarrays.
     fmt.Println(countSubarrays([]int{1,1,1,1}, 1,1)) // 10
 
+    fmt.Println(countSubarrays([]int{1,2,3,4,5,6,7,8,9}, 1,1)) // 1
+    fmt.Println(countSubarrays([]int{9,8,7,6,5,4,3,2,1}, 1,1)) // 1
+
     fmt.Println(countSubarrays1([]int{1,3,5,2,7,5},1,5)) // 2
     fmt.Println(countSubarrays1([]int{1,1,1,1}, 1,1)) // 10
+    fmt.Println(countSubarrays1([]int{1,2,3,4,5,6,7,8,9}, 1,1)) // 1
+    fmt.Println(countSubarrays1([]int{9,8,7,6,5,4,3,2,1}, 1,1)) // 1
+
+    fmt.Println(countSubarrays2([]int{1,3,5,2,7,5},1,5)) // 2
+    fmt.Println(countSubarrays2([]int{1,1,1,1}, 1,1)) // 10
+    fmt.Println(countSubarrays2([]int{1,2,3,4,5,6,7,8,9}, 1,1)) // 1
+    fmt.Println(countSubarrays2([]int{9,8,7,6,5,4,3,2,1}, 1,1)) // 1
 }
