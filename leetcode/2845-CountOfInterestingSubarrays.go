@@ -99,6 +99,24 @@ func countInterestingSubarrays2(nums []int, modulo int, k int) int64 {
     return int64(res)
 }
 
+func countInterestingSubarrays3(nums []int, modulo, k int) (res int64) {
+    sum := make([]int, len(nums) + 1)
+    for i, v := range nums {
+        sum[i + 1] = sum[i]
+        if v % modulo == k {
+            sum[i+1]++
+        }
+    }
+    count := make([]int, min(len(nums) + 1, modulo))
+    for _, s := range sum {
+        if s >= k {
+            res += int64(count[(s - k) % modulo])
+        }
+        count[s % modulo]++
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: nums = [3,2,4], modulo = 2, k = 1
@@ -140,4 +158,9 @@ func main() {
     fmt.Println(countInterestingSubarrays2([]int{3,1,9,6}, 3, 0)) // 2
     fmt.Println(countInterestingSubarrays2([]int{1,2,3,4,5,6,7,8,9}, 3, 0)) // 12
     fmt.Println(countInterestingSubarrays2([]int{9,8,7,6,5,4,3,2,1}, 3, 0)) // 12
+
+    fmt.Println(countInterestingSubarrays3([]int{3,2,4}, 2, 1)) // 3
+    fmt.Println(countInterestingSubarrays3([]int{3,1,9,6}, 3, 0)) // 2
+    fmt.Println(countInterestingSubarrays3([]int{1,2,3,4,5,6,7,8,9}, 3, 0)) // 12
+    fmt.Println(countInterestingSubarrays3([]int{9,8,7,6,5,4,3,2,1}, 3, 0)) // 12
 }
