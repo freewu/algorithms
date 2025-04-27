@@ -1811,6 +1811,7 @@
 [3524. Find X Value of Array I](./leetcode/3524-FindXValueOfArrayI.go)   
 [3525. Find X Value of Array II](./leetcode/3525-FindXValueOfArrayII.go)   
 [3526. Range XOR Queries with Subarray Reversals](./leetcode/3526-RangeXORQueriesWithSubarrayReversals.go)   
+[3527. Find the Most Common Response](./leetcode/3527-FindTheMostCommonResponse.go)   
 
 
 # String
