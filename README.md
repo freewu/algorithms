@@ -3155,6 +3155,7 @@
 [3528. Unit Conversion I](./leetcode/3528-UnitConversionI.go)   
 [3530. Maximum Profit from Valid Topological Order in DAG](./leetcode/3530-MaximumProfitFromValidTopologicalOrderInDAG.go)   
 [3532. Path Existence Queries in a Graph I](./leetcode/3532-PathExistenceQueriesInAGraphI.go)   
+[3534. Path Existence Queries in a Graph II](./leetcode/3534-PathExistenceQueriesInAGraphII.go)   
 
 # Trie
 [386. Lexicographical Numbers](./leetcode/386-LexicographicalNumbers.go)   
