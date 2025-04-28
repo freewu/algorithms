@@ -79,6 +79,36 @@ func maxProfit(n int, edges [][]int, score []int) int {
     return int(dp[m - 1])
 }
 
+func maxProfit1(n int, edges [][]int, score []int) int {
+    size := 1 << n
+    dp := make([]int, size)
+    for i := 0; i < size; i++ {
+        dp[i] = -1
+    }
+    bit := make([]int, n)
+    for _, e := range edges {
+        bit[e[1]] |= 1 << e[0]
+    }
+    dp[size - 1] = 0
+    var dfs func(arr []int, mask int, n int) int
+    dfs = func(arr []int, mask int, n int) int {
+        if dp[mask] != -1 { return dp[mask] }
+        ord := bits.OnesCount(uint(mask)) + 1
+        res := 0
+        for u := 0; u < n; u++ {
+            if (mask >> u) & 1 == 1    { continue }
+            if mask & bit[u] != bit[u] { continue }
+            candidate := ord * arr[u] + dfs(arr, mask | (1 << u), n)
+            if candidate > res {
+                res = candidate
+            }
+        }
+        dp[mask] = res
+        return res
+    }
+    return dfs(score, 0, n)
+}
+
 func main() {
     // Example 1:
     // Input: n = 2, edges = [[0,1]], score = [2,3]
@@ -103,4 +133,7 @@ func main() {
     // 1	3rd	6	3	6 × 3 = 18
     // The maximum total profit achievable over all valid topological orders is 1 + 6 + 18 = 25.
     fmt.Println(maxProfit(3, [][]int{{0,1},{0,2}}, []int{1,6,3})) // 25
+
+    fmt.Println(maxProfit1(2, [][]int{{0,1}}, []int{2,3})) // 8
+    fmt.Println(maxProfit1(3, [][]int{{0,1},{0,2}}, []int{1,6,3})) // 25
 }
