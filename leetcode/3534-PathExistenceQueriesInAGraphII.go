@@ -58,7 +58,7 @@ package main
 //     0 <= ui, vi < n
 
 import "fmt"
-import "sort"
+// import "sort"
 
 // Time Limit Exceeded 678 / 682 
 // func pathExistenceQueries(n int, nums []int, maxDiff int, queries [][]int) []int {
@@ -113,6 +113,62 @@ import "sort"
 //     }
 //     return res
 // }
+
+import "slices"
+import "math/bits"
+
+func pathExistenceQueries(n int, nums []int, maxDiff int, queries [][]int) []int {
+    index := make([]int, n)
+    for i := range index {
+        index[i] = i
+    }
+    slices.SortFunc(index, func(i, j int) int { 
+        return nums[i] - nums[j] 
+    })
+    rank := make([]int, n) // rank[i] 表示 nums[i] 是 nums 中的第几小，或者说节点 i 在 idx 中的下标
+    for i, j := range index {
+        rank[j] = i
+    }
+    // 双指针，从第 i 小的数开始，向左一步，最远能跳到第 left 小的数
+    pa := make([][]int, n)
+    left, mx := 0, bits.Len(uint(n))
+    for i, j := range index {
+        for nums[j] - nums[index[left]] > maxDiff {
+            left++
+        }
+        pa[i] = make([]int, mx)
+        pa[i][0] = left
+    }
+    for i := 0; i < mx - 1; i++ { // 倍增
+        for x := range pa {
+            p := pa[x][i]
+            pa[x][i + 1] = pa[p][i]
+        }
+    }
+    res := make([]int, len(queries))
+    for i, q := range queries {
+        l, r := q[0], q[1]
+        if l == r { continue } // 不用跳
+        l, r = rank[l], rank[r]
+        if l > r { // 保证 l 在 r 左边
+            l, r = r, l
+        }
+        // 从 r 开始，向左跳到 l
+        v := 0
+        for k := mx - 1; k >= 0; k-- {
+            if pa[r][k] > l {
+                v |= 1 << k
+                r = pa[r][k]
+            }
+        }
+        if pa[r][0] > l { // 无法跳到 l
+            res[i] = -1
+        } else {
+            res[i] = v + 1 // 再跳一步就能到 l
+        }
+    }
+    return res
+}
 
 func main() {
     // Example 1:
