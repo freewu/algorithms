@@ -73,6 +73,36 @@ func countCoveredBuildings(n int, buildings [][]int) int {
     return res
 }
 
+func countCoveredBuildings1(n int, buildings [][]int) (ans int) {
+    type Pair struct{ min, max int }
+    res, row, col:= 0, make([]Pair, n + 1), make([]Pair, n + 1)
+    for i := 1; i <= n; i++ {
+        row[i].min = 1 << 31
+        col[i].min = 1 << 31
+    }
+    min := func (x, y int) int { if x < y { return x; }; return y; }
+    max := func (x, y int) int { if x > y { return x; }; return y; }
+    add := func(m []Pair, x, y int) {
+        m[y].min = min(m[y].min, x)
+        m[y].max = max(m[y].max, x)
+    }
+    for _, p := range buildings {
+        x, y := p[0], p[1]
+        add(row, x, y)
+        add(col, y, x)
+    }
+    check := func(m []Pair, x, y int) bool {
+        return m[y].min < x && x < m[y].max
+    }
+    for _, p := range buildings {
+        x, y := p[0], p[1]
+        if check(row, x, y) && check(col, y, x) {
+            res++
+        }
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // <img src="https://assets.leetcode.com/uploads/2025/03/04/telegram-cloud-photo-size-5-6212982906394101085-m.jpg" />
@@ -105,4 +135,8 @@ func main() {
     // right ([3,5])
     // Thus, the count of covered buildings is 1.
     fmt.Println(countCoveredBuildings(5, [][]int{{1,3},{3,2},{3,3},{3,5},{5,3}})) // 1
+
+    fmt.Println(countCoveredBuildings1(3, [][]int{{1,2},{2,2},{3,2},{2,1},{2,3}})) // 1
+    fmt.Println(countCoveredBuildings1(3, [][]int{{1,1},{1,2},{2,1},{2,2}})) // 0
+    fmt.Println(countCoveredBuildings1(5, [][]int{{1,3},{3,2},{3,3},{3,5},{5,3}})) // 1
 }
