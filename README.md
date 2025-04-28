@@ -3151,6 +3151,7 @@
 [3493. Properties Graph](./leetcode/3493-PropertiesGraph.go)   
 [3515. Shortest Path in a Weighted Tree](./leetcode/3515-ShortestPathInAWeightedTree.go)   
 [3528. Unit Conversion I](./leetcode/3528-UnitConversionI.go)   
+[3530. Maximum Profit from Valid Topological Order in DAG](./leetcode/3530-MaximumProfitFromValidTopologicalOrderInDAG.go)   
 
 # Trie
 [386. Lexicographical Numbers](./leetcode/386-LexicographicalNumbers.go)   
