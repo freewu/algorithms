@@ -45,8 +45,17 @@ func countSubarrays(nums []int, k int) int64 {
 }
 
 func main() {
+    // Example 1:
+    // Input: nums = [1,3,2,3,3], k = 2
+    // Output: 6
     // Explanation: The subarrays that contain the element 3 at least 2 times are: [1,3,2,3], [1,3,2,3,3], [3,2,3], [3,2,3,3], [2,3,3] and [3,3].
     fmt.Println(countSubarrays([]int{1,3,2,3,3}, 2)) // 6
+    // Example 2:
+    // Input: nums = [1,4,2,1], k = 3
+    // Output: 0
     // Explanation: No subarray contains the element 4 at least 3 times.
     fmt.Println(countSubarrays([]int{1,4,2,1}, 3)) // 0
+
+    fmt.Println(countSubarrays([]int{1,2,3,4,5,6,7,8,9}, 1)) // 9
+    fmt.Println(countSubarrays([]int{9,8,7,6,5,4,3,2,1}, 1)) // 9
 }
