@@ -46,6 +46,9 @@ package main
 import "fmt"
 import "sort"
 import "math"
+import "math/bits"
+import "slices"
+import "strconv"
 
 func concatenatedDivisibility(nums []int, k int) []int {
     sort.Ints(nums)
@@ -73,6 +76,36 @@ func concatenatedDivisibility(nums []int, k int) []int {
         return nil
     }
     return dfs(0, 0, 0)
+}
+
+func concatenatedDivisibility1(nums []int, k int) (ans []int) {
+    slices.Sort(nums)
+    n := len(nums)
+    res, b10 := []int{}, make([]int, n)
+    for i, v := range nums {
+        b10[i] = int(math.Pow10(len(strconv.Itoa(v))))
+    }
+    visited := make([][]bool, 1 << n)
+    for i := range visited {
+        visited[i] = make([]bool, k)
+    }
+    var f func(int, int) bool
+    f = func(i, x int) bool {
+        if i == 1 << n - 1 { return x == 0 }
+        if visited[i][x] { return false }
+        visited[i][x] = true
+        for s := uint(1<<n-1^i); s > 0; s &= s - 1 {
+            p := bits.TrailingZeros(s)
+            if f(i | 1 << p, (x * b10[p] + nums[p]) % k) {
+                res = append(res, nums[p])
+                return true
+            }
+        }
+        return false
+    }
+    if !f(0, 0) { return nil }
+    slices.Reverse(res)
+    return res
 }
 
 func main() {
@@ -107,4 +140,10 @@ func main() {
 
     fmt.Println(concatenatedDivisibility([]int{1,2,3,4,5,6,7,8,9}, 5)) // [1 2 3 4 6 7 8 9 5]
     fmt.Println(concatenatedDivisibility([]int{9,8,7,6,5,4,3,2,1}, 5)) // [1 2 3 4 6 7 8 9 5]
+
+    fmt.Println(concatenatedDivisibility1([]int{3,12,45}, 5)) // [3,12,45]
+    fmt.Println(concatenatedDivisibility1([]int{10,5}, 10)) // [5,10]
+    fmt.Println(concatenatedDivisibility1([]int{1,2,3}, 5)) // []
+    fmt.Println(concatenatedDivisibility1([]int{1,2,3,4,5,6,7,8,9}, 5)) // [1 2 3 4 6 7 8 9 5]
+    fmt.Println(concatenatedDivisibility1([]int{9,8,7,6,5,4,3,2,1}, 5)) // [1 2 3 4 6 7 8 9 5]
 }
