@@ -63,4 +63,7 @@ func main() {
     // Explanation: 
     // Only 1771 contains an even number of digits.
     fmt.Println(findNumbers([]int{555,901,482,1771})) // 1
+
+    fmt.Println(findNumbers([]int{1,2,3,4,5,6,7,8,9})) // 0
+    fmt.Println(findNumbers([]int{9,8,7,6,5,4,3,2,1})) // 0
 }
