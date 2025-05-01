@@ -113,6 +113,13 @@ func main() {
     // Output: "LL.RR.LLRRLL.."
     fmt.Println(pushDominoes(".L.R...LR..L..")) // "LL.RR.LLRRLL.."
 
+    fmt.Println(pushDominoes("LLLLLLLLLLLLLLLLLL")) // LLLLLLLLLLLLLLLLLL
+    fmt.Println(pushDominoes("RRRRRRRRRRRRRRRRRR")) // RRRRRRRRRRRRRRRRRR
+    fmt.Println(pushDominoes("..................")) // ..................
+
     fmt.Println(pushDominoes1("RR.L")) // "RR.L"
     fmt.Println(pushDominoes1(".L.R...LR..L..")) // "LL.RR.LLRRLL.."
+    fmt.Println(pushDominoes1("LLLLLLLLLLLLLLLLLL")) // LLLLLLLLLLLLLLLLLL
+    fmt.Println(pushDominoes1("RRRRRRRRRRRRRRRRRR")) // RRRRRRRRRRRRRRRRRR
+    fmt.Println(pushDominoes1("..................")) // ..................
 }
