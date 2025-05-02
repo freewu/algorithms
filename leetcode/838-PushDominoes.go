@@ -101,6 +101,76 @@ func pushDominoes1(deminoes string) string {
     return string(s)
 }
 
+func pushDominoes2(dominoes string) string {
+    res, right, count := []byte(dominoes), -1, 0
+    for i := range dominoes {
+        if dominoes[i] == '.' {
+            count++
+            if right >= 0 {
+                res[i] = 'R'
+            }
+        }
+        if dominoes[i] == 'L' {
+            if right >= 0 {
+                for sp := 0; sp < count / 2; sp++ {
+                    res[i - sp - 1] = 'L'
+                    res[right + sp] = 'R'
+                }
+                if count % 2 == 1 {
+                    res[i- ((count / 2) + 1)] = '.'
+                }
+                count = 0
+            } else {
+                for count > 0 {
+                    res[i - count] = 'L'
+                    count--
+                }
+            }
+            right = -1
+        }
+        if dominoes[i] == 'R' {
+            right, count = i, 0
+        }
+    }
+    return string(res)
+}
+
+func pushDominoes3(dominoes string) string {
+    arr := []byte{}
+    arr = append(arr, 'L')
+    arr = append(arr, []byte(dominoes)...)
+    arr = append(arr, 'R')
+    res := []byte{}
+    res = append(res, arr...)
+    pre, index := byte('L'), -1
+    for i := range arr {
+        b := arr[i]
+        if b == '.' { continue }
+        if pre == b && pre == 'L' {
+            for j := i-1; j >= 0 && arr[j] == '.'; j-- {
+                res[j] = 'L'
+            }
+        } else if pre == b && pre == 'R' {
+            for j := i-1; j >= 0 && arr[j] == '.'; j-- {
+                res[j] = 'R'
+            }
+        } else if pre != b && pre == 'R' {
+            mid := (index + i) / 2
+            for j := index + 1; j < mid; j++ {
+                res[j] = 'R'
+            }
+            for j := mid + 1; j < i; j++ {
+                res[j] = 'L'
+            }
+            if (i - index - 1) % 2 == 0 {
+                res[mid] = 'R'
+            }
+        }
+        pre, index = b, i
+    }
+    return string(res[1: len(res) - 1])
+}
+
 func main() {
     // Example 1:
     // Input: dominoes = "RR.L"
@@ -122,4 +192,16 @@ func main() {
     fmt.Println(pushDominoes1("LLLLLLLLLLLLLLLLLL")) // LLLLLLLLLLLLLLLLLL
     fmt.Println(pushDominoes1("RRRRRRRRRRRRRRRRRR")) // RRRRRRRRRRRRRRRRRR
     fmt.Println(pushDominoes1("..................")) // ..................
+
+    fmt.Println(pushDominoes2("RR.L")) // "RR.L"
+    fmt.Println(pushDominoes2(".L.R...LR..L..")) // "LL.RR.LLRRLL.."
+    fmt.Println(pushDominoes2("LLLLLLLLLLLLLLLLLL")) // LLLLLLLLLLLLLLLLLL
+    fmt.Println(pushDominoes2("RRRRRRRRRRRRRRRRRR")) // RRRRRRRRRRRRRRRRRR
+    fmt.Println(pushDominoes2("..................")) // ..................
+
+    fmt.Println(pushDominoes3("RR.L")) // "RR.L"
+    fmt.Println(pushDominoes3(".L.R...LR..L..")) // "LL.RR.LLRRLL.."
+    fmt.Println(pushDominoes3("LLLLLLLLLLLLLLLLLL")) // LLLLLLLLLLLLLLLLLL
+    fmt.Println(pushDominoes3("RRRRRRRRRRRRRRRRRR")) // RRRRRRRRRRRRRRRRRR
+    fmt.Println(pushDominoes3("..................")) // ..................
 }
