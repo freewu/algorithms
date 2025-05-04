@@ -57,6 +57,18 @@ func numEquivDominoPairs1(dominoes [][]int) int {
     return res
 }
 
+func numEquivDominoPairs2(dominoes [][]int) int {
+    res, mp := 0, make(map[[2]int]int)
+    min := func (x, y int) int { if x < y { return x; }; return y; }
+    max := func (x, y int) int { if x > y { return x; }; return y; }
+    for _, d := range dominoes {
+        key := [2]int{min(d[0], d[1]), max(d[0], d[1])}
+        res += mp[key]
+        mp[key]++
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: dominoes = [[1,2],[2,1],[3,4],[5,6]]
@@ -69,4 +81,7 @@ func main() {
 
     fmt.Println(numEquivDominoPairs1([][]int{{1,2},{2,1},{3,4},{5,6}})) // 1
     fmt.Println(numEquivDominoPairs1([][]int{{1,2},{1,2},{1,1},{1,2},{2,2}})) // 3
+
+    fmt.Println(numEquivDominoPairs2([][]int{{1,2},{2,1},{3,4},{5,6}})) // 1
+    fmt.Println(numEquivDominoPairs2([][]int{{1,2},{1,2},{1,1},{1,2},{2,2}})) // 3
 }
