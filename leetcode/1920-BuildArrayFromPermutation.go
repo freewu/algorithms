@@ -68,6 +68,11 @@ func main() {
     //     = [4,5,0,1,2,3]
     fmt.Println(buildArray([]int{5,0,1,2,3,4})) // [4,5,0,1,2,3]
 
+    fmt.Println(buildArray([]int{0,1,2,3,4,5,6,7,8,9})) // [0 1 2 3 4 5 6 7 8 9]
+    fmt.Println(buildArray([]int{9,8,7,6,5,4,3,2,1,0})) // [0 1 2 3 4 5 6 7 8 9]
+
     fmt.Println(buildArray1([]int{0,2,1,5,3,4})) // [0,1,2,4,5,3]
     fmt.Println(buildArray1([]int{5,0,1,2,3,4})) // [4,5,0,1,2,3]
+    fmt.Println(buildArray1([]int{0,1,2,3,4,5,6,7,8,9})) // [0 1 2 3 4 5 6 7 8 9]
+    fmt.Println(buildArray1([]int{9,8,7,6,5,4,3,2,1,0})) // [0 1 2 3 4 5 6 7 8 9]
 }
