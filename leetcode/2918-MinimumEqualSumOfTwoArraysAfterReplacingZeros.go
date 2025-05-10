@@ -66,6 +66,30 @@ func minSum1(nums1 []int, nums2 []int) int64 {
     return sum2
 }
 
+func minSum2(nums1 []int, nums2 []int) int64 {
+    sum1, sum2, zeros1, zeros2 := 0, 0, 0, 0
+    for _, v := range nums1 {
+        if v == 0 { zeros1++ }
+        sum1 += v
+    }
+    for _, v := range nums2 {
+        if v == 0 { zeros2++ }
+        sum2 += v
+    }
+    if sum1 + zeros1 > sum2 + zeros2 { // nums1 大
+        if zeros2 == 0 { return -1 }
+        return int64(sum1 + zeros1)
+    } else if sum1 + zeros1 < sum2 + zeros2 { // nums2 大
+        if zeros1 == 0 { return -1 }
+        return int64(sum2 + zeros2)
+    } else { // sum1 + zeros1 == sum2 + zeros2
+        if zeros1 == 0 && zeros2 == 0 { return int64(sum1) } // 两个数组都没有 0
+        if zeros1 == 0 { return int64(sum2 + zeros2) }
+        if zeros2 == 0 { return int64(sum1 + zeros1) }
+        return int64(sum1 + zeros1)
+    }
+}
+
 func main() {
     // Example 1:
     // Input: nums1 = [3,2,0,1,0], nums2 = [6,5,0]
@@ -92,4 +116,11 @@ func main() {
     fmt.Println(minSum1([]int{1,2,3,4,5,6,7,8,9}, []int{9,8,7,6,5,4,3,2,1})) // 45
     fmt.Println(minSum1([]int{9,8,7,6,5,4,3,2,1}, []int{1,2,3,4,5,6,7,8,9})) // 45
     fmt.Println(minSum1([]int{9,8,7,6,5,4,3,2,1}, []int{9,8,7,6,5,4,3,2,1})) // 45
+    
+    fmt.Println(minSum2([]int{3,2,0,1,0}, []int{6,5,0})) // 12
+    fmt.Println(minSum2([]int{2,0,2,0}, []int{1,4})) // -1
+    fmt.Println(minSum2([]int{1,2,3,4,5,6,7,8,9}, []int{1,2,3,4,5,6,7,8,9})) // 45
+    fmt.Println(minSum2([]int{1,2,3,4,5,6,7,8,9}, []int{9,8,7,6,5,4,3,2,1})) // 45
+    fmt.Println(minSum2([]int{9,8,7,6,5,4,3,2,1}, []int{1,2,3,4,5,6,7,8,9})) // 45
+    fmt.Println(minSum2([]int{9,8,7,6,5,4,3,2,1}, []int{9,8,7,6,5,4,3,2,1})) // 45
 }
