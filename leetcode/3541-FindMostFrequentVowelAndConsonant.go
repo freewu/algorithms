@@ -95,8 +95,12 @@ func main() {
     fmt.Println(maxFreqSum("aeiaeia")) // 3
 
     fmt.Println(maxFreqSum("abcdefghijklmnopqrstuvwxyz")) // 2
+    fmt.Println(maxFreqSum("bluefrog")) // 2
+    fmt.Println(maxFreqSum("leetcode")) // 4
 
     fmt.Println(maxFreqSum1("successes")) // 6
     fmt.Println(maxFreqSum1("aeiaeia")) // 3
     fmt.Println(maxFreqSum1("abcdefghijklmnopqrstuvwxyz")) // 2
+    fmt.Println(maxFreqSum1("bluefrog")) // 2
+    fmt.Println(maxFreqSum1("leetcode")) // 4
 }
