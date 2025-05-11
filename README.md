@@ -1818,6 +1818,8 @@
 [3538. Merge Operations for Minimum Travel Time](./leetcode/3538-MergeOperationsForMinimumTravelTime.go)   
 [3539. Find Sum of Array Product of Magical Sequences](./leetcode/3539-FindSumOfArrayProductOfMagicalSequences.go)   
 [3540. Minimum Time to Visit All Houses](./leetcode/3540-MinimumTimeToVisitAllHouses.go)   
+[3542. Minimum Operations to Convert All Elements to Zero](./leetcode/3542-MinimumOperationsToConvertAllElementsToZero.go)   
+
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
