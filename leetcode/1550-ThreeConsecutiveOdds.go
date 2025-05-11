@@ -56,6 +56,11 @@ func main() {
     // Explanation: [5,7,23] are three consecutive odds.
     fmt.Println(threeConsecutiveOdds([]int{1,2,34,3,4,5,7,23,12})) // true
 
+    fmt.Println(threeConsecutiveOdds([]int{1,2,3,4,5,6,7,8,9})) // false
+    fmt.Println(threeConsecutiveOdds([]int{9,8,7,6,5,4,3,2,1})) // false
+
     fmt.Println(threeConsecutiveOdds1([]int{2,6,4,1})) // false
     fmt.Println(threeConsecutiveOdds1([]int{1,2,34,3,4,5,7,23,12})) // true
+    fmt.Println(threeConsecutiveOdds1([]int{1,2,3,4,5,6,7,8,9})) // false
+    fmt.Println(threeConsecutiveOdds1([]int{9,8,7,6,5,4,3,2,1})) // false
 }
