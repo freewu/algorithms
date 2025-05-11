@@ -2429,6 +2429,7 @@
 [3517. Smallest Palindromic Rearrangement I](./leetcode/3517-SmallestPalindromicRearrangementI.go)   
 [3518. Smallest Palindromic Rearrangement II](./leetcode/3518-SmallestPalindromicRearrangementII.go)   
 [3519. Count Numbers with Non-Decreasing Digits](./leetcode/3519-CountNumbersWithNonDecreasingDigits.go)   
+[3541. Find Most Frequent Vowel and Consonant](./leetcode/3541-FindMostFrequentVowelAndConsonant.go)   
 
 # Dynamic Programming
 [276. Paint Fence](./leetcode/276-PaintFence.go)   
