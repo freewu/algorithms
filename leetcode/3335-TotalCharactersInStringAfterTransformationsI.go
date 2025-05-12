@@ -120,6 +120,11 @@ func main() {
     // 2. Final Length of the string: The string is "babcl", which has 5 characters.
     fmt.Println(lengthAfterTransformations("azbk", 1)) // 5
 
+    fmt.Println(lengthAfterTransformations("bluefrog", 1)) // 8
+    fmt.Println(lengthAfterTransformations("leetcode", 1)) // 8
+
     fmt.Println(lengthAfterTransformations1("abcyy", 2)) // 7
     fmt.Println(lengthAfterTransformations1("azbk", 1)) // 5
+    fmt.Println(lengthAfterTransformations1("bluefrog", 1)) // 8
+    fmt.Println(lengthAfterTransformations1("leetcode", 1)) // 8
 }
