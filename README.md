@@ -3051,6 +3051,7 @@
 [3367. Maximize Sum of Weights after Edge Removals](./leetcode/3367-MaximizeSumOfWeightsAfterEdgeRemovals.go)   
 [3425. Longest Special Path](./leetcode/3425-LongestSpecialPath.go)   
 [3486. Longest Special Path II](./leetcode/3486-LongestSpecialPathII.go)   
+[3544. Subtree Inversion Sum](./leetcode/3544-SubtreeInversionSum.go)   
 
 # Graph
 [133. Clone Graph](./leetcode/133-CloneGraph.go)   
