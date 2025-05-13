@@ -1821,6 +1821,7 @@
 [3542. Minimum Operations to Convert All Elements to Zero](./leetcode/3542-MinimumOperationsToConvertAllElementsToZero.go)   
 [3546. Equal Sum Grid Partition I](./leetcode/3546-EqualSumGridPartitionI.go)   
 [3548. Equal Sum Grid Partition II](./leetcode/3548-EqualSumGridPartitionII.go)   
+[3549. Multiply Two Polynomials](./leetcode/3549-MultiplyTwoPolynomials.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
