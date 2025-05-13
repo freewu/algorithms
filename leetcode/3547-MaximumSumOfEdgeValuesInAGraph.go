@@ -122,6 +122,62 @@ func maxScore(n int, edges [][]int) int64 {
     return res
 }
 
+func maxScore1(n int, edges [][]int) int64 {
+    f, en := make([]int, n), make([]int, n)
+    for i := range f {
+        f[i] = -1 
+    }
+    var fa func(int) int 
+    fa = func(u int) int {
+        if f[u] < 0 { return u }
+        f[u] = fa(f[u])
+        return f[u]
+    }
+    merge := func(u int, v int) {
+        u, v = fa(u), fa(v)
+        if f[u] > f[v] { u, v = v, u }
+        en[u] ++ 
+        if u == v { return }
+        f[u] += f[v]
+        en[u] += en[v]
+        f[v] = u
+        return 
+    }
+    for _, e := range edges {
+        merge(e[0], e[1])
+    }
+    cir, chn := make([]int, 0), make([]int, 0)
+    for i := range f {
+        if f[i] >= 0  { continue }
+        if f[i] == -1 { continue }
+        if f[i] == -en[i] { 
+            cir = append(cir, en[i]) 
+        } else {
+            chn = append(chn, en[i] + 1)
+        }
+    }
+    sort.Ints(chn)
+    sort.Ints(cir) 
+    res, cur := 0, n 
+    for i := range cir {
+        mi := cur - cir[i] + 1
+        for j := 0; j + 2 < cir[i]; j ++ {
+            res += (mi + j) * (mi + j + 2)
+        }
+        res += cur * (cur - 1) + mi * (mi + 1)
+        cur -= cir[i]
+    }
+    for i := len(chn) - 1; i >= 0; i -- {
+        mi := cur - chn[i] + 1
+        for j := 0; j + 2 < chn[i]; j ++ {
+            res += (mi + j) * (mi + j + 2)
+        }
+        res += cur * (cur - 1) 
+        cur -= chn[i]
+    }
+    return int64(res)
+}
+
 func main() {
     // Example 1:
     // <img scr="https://assets.leetcode.com/uploads/2025/03/23/graphproblemex1drawio.png" />
@@ -141,4 +197,8 @@ func main() {
     fmt.Println(maxScore(6, [][]int{{0,3},{4,5},{2,0},{1,3},{2,4},{1,5}})) // 82
 
     fmt.Println(maxScore(11, [][]int{{0,1},{1,2},{2,3},{5,6},{6,7}})) // 366
+
+    fmt.Println(maxScore1(7, [][]int{{0,1},{1,2},{2,0},{3,4},{4,5},{5,6}})) // 130
+    fmt.Println(maxScore1(6, [][]int{{0,3},{4,5},{2,0},{1,3},{2,4},{1,5}})) // 82
+    fmt.Println(maxScore1(11, [][]int{{0,1},{1,2},{2,3},{5,6},{6,7}})) // 366
 }
