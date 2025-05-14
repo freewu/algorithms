@@ -84,7 +84,13 @@ func main() {
     // Another subsequence that can be selected is ["a","b","d"] because groups[0] != groups[1] and groups[1] != groups[3]. 
     // It can be shown that the length of the longest subsequence of indices that satisfies the condition is 3.
     fmt.Println(getLongestSubsequence([]string{"a","b","c","d"}, []int{1,0,1,1})) // ["a","b","c"]
+    
+    fmt.Println(getLongestSubsequence([]string{"b","l","u","e","f","r","o","g"}, []int{1,0,1,1,1,0,1,1})) // [b l u r o]
+    fmt.Println(getLongestSubsequence([]string{"l","e","e","t","c","o","d","e"}, []int{1,0,1,1,1,0,1,1})) // [l e e o d]
 
     fmt.Println(getLongestSubsequence1([]string{"e","a","b"}, []int{0,0,1})) // ["e","b"]
     fmt.Println(getLongestSubsequence1([]string{"a","b","c","d"}, []int{1,0,1,1})) // ["a","b","c"]
+    fmt.Println(getLongestSubsequence1([]string{"b","l","u","e","f","r","o","g"}, []int{1,0,1,1,1,0,1,1})) // [b l u r o]
+    fmt.Println(getLongestSubsequence1([]string{"l","e","e","t","c","o","d","e"}, []int{1,0,1,1,1,0,1,1})) // [l e e o d]
+
 }
