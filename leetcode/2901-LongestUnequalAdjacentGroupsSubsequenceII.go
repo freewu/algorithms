@@ -54,7 +54,7 @@ func getWordsInLongestSubsequence(words []string, groups []int) []string {
     mx, index := 1, 0 // took mx as 1 because atleast one word can be taken to form a subsequence of length 1
     for i := 0; i < n; i++ {
         length[i] = 1 // initialise with 1 cause min length of sub sequence that can end with i is atleast one at begining
-        hash[i] = i // at begining initialise with its own index
+        hash[i] = i   // at begining initialise with its own index
     }
     isOne := func(s, t string) bool {
         if len(s) != len(t) { return false }
@@ -95,6 +95,48 @@ func getWordsInLongestSubsequence(words []string, groups []int) []string {
     return res
 }
 
+func getWordsInLongestSubsequence1(words []string, groups []int) []string {
+    type Pair struct{ mx, i int }
+    n := len(words)
+    mp, from := map[int]Pair{}, make([]int, n)
+    count, index := 0, 0
+    for i := n - 1; i >= 0; i-- {
+        word, g := words[i], groups[i]
+        // 计算 word 的哈希值
+        hash := 0
+        for _, ch := range word {
+            hash = hash << 5 | int(ch & 31)
+        }
+        // 计算方法一中的 f[i]
+        f := 0
+        for j := range word {
+            h := hash | 31 << (j * 5) // 用记号笔把 w[k] 涂黑（置为 11111）
+            t := mp[h]
+            if t.mx > f && g != groups[t.i] {
+                f = t.mx
+                from[i] = t.i
+            }
+        }
+        f++
+        if f > count {
+            count, index = f, i
+        }
+        // 用 f 更新 mp[h]
+        for j := range word {
+            h := hash | 31 << (j * 5)
+            if f > mp[h].mx {
+                mp[h] = Pair{f, i}
+            }
+        }
+    }
+    res, i := make([]string, count), index
+    for k := range res {
+        res[k] = words[i]
+        i = from[i]
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: words = ["bab","dab","cab"], groups = [1,2,2]
@@ -118,4 +160,12 @@ func main() {
     // It has the longest length among all subsequences of indices that satisfy the conditions.
     // Hence, it is the only answer.
     fmt.Println(getWordsInLongestSubsequence([]string{"a","b","c","d"}, []int{1,2,3,4})) // ["a","b","c","d"]
+
+    fmt.Println(getWordsInLongestSubsequence([]string{"b","l","u","e","f","r","o","g"}, []int{1,2,3,4,1,2,3,4})) // [b l u e f r o g]
+    fmt.Println(getWordsInLongestSubsequence([]string{"l","e","e","t","c","o","d","e"}, []int{1,2,3,4,1,2,3,4})) // [l e t c o d e]
+
+    fmt.Println(getWordsInLongestSubsequence1([]string{"bab","dab","cab"}, []int{1,2,2})) // ["bab","dab"]
+    fmt.Println(getWordsInLongestSubsequence1([]string{"a","b","c","d"}, []int{1,2,3,4})) // ["a","b","c","d"]
+    fmt.Println(getWordsInLongestSubsequence1([]string{"b","l","u","e","f","r","o","g"}, []int{1,2,3,4,1,2,3,4})) // [b l u e f r o g]
+    fmt.Println(getWordsInLongestSubsequence1([]string{"l","e","e","t","c","o","d","e"}, []int{1,2,3,4,1,2,3,4})) // [l e t c o d e]
 }
