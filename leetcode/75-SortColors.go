@@ -24,13 +24,13 @@ import "fmt"
 
 func sortColors(nums []int) {
     zero, one := 0, 0
-    for i, n := range nums {
+    for i, v := range nums {
         nums[i] = 2 // 每次都设置成 2,后面会根据 zero & one 再重写
-        if n <= 1 { // <= 1  这步才会执行
+        if v <= 1 { // v = 1 和 v = 0 都会进入
             nums[one] = 1
             one++
         }
-        if n == 0 { // 只有 n = 0 时候才处理
+        if v == 0 { // 只有 v = 0 时候才处理
             nums[zero] = 0
             zero++
         }
@@ -39,13 +39,29 @@ func sortColors(nums []int) {
 }
 
 func main() {
-	nums1 := []int{2,0,2,1,1,0}
-	fmt.Printf("before nums1 = %v\n",nums1) // [2 0 2 1 1 0]
-	sortColors(nums1)
-	fmt.Printf("after nums1 = %v\n",nums1) // [0 0 1 1 2 2]
+    // Example 1:
+    // Input: nums = [2,0,2,1,1,0]
+    // Output: [0,0,1,1,2,2]
+    nums1 := []int{2,0,2,1,1,0}
+    fmt.Printf("before nums1 = %v\n",nums1) // [2 0 2 1 1 0]
+    sortColors(nums1)
+    fmt.Printf("after nums1 = %v\n",nums1) // [0 0 1 1 2 2]
 
-	nums2 := []int{2,0,1}
-	fmt.Printf("before nums2 = %v\n",nums2) // [2 0 1]
-	sortColors(nums2)
-	fmt.Printf("after nums2 = %v\n",nums2) // [0 1 2]
+    // Example 2:
+    // Input: nums = [2,0,1]
+    // Output: [0,1,2]
+    nums2 := []int{2,0,1}
+    fmt.Printf("before nums2 = %v\n",nums2) // [2 0 1]
+    sortColors(nums2)
+    fmt.Printf("after nums2 = %v\n",nums2) // [0 1 2]
+
+    nums3 := []int{0,0,0,1,1,1,2,2,2}
+    fmt.Printf("before nums3 = %v\n",nums3) // [0 0 0 1 1 1 2 2 2]
+    sortColors(nums3)
+    fmt.Printf("after nums3 = %v\n",nums3) // [0 0 0 1 1 1 2 2 2]
+
+    nums4 := []int{2,2,2,1,1,1,0,0,0}
+    fmt.Printf("before nums4 = %v\n",nums4) // [2 2 2 1 1 1 0 0 0]
+    sortColors(nums4)
+    fmt.Printf("after nums4 = %v\n",nums4) // [0 0 0 1 1 1 2 2 2]
 }
