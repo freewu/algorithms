@@ -250,6 +250,42 @@ func colorTheGrid1(m int, n int) int{
     return res
 }
 
+const mod = 1e9 + 7
+var ways [1024][1024]int
+var rowmasks [6][]int
+var pow3 = []int{1, 3, 9, 27, 81, 243}
+
+func init() {
+    for m := 1; m <= 5; m++ {
+    nextmask: for mask := 0; mask < pow3[m]; mask++ {
+        bm, prev := 0, -1
+        for i, t := 0, mask; i < m; i, t = i+1, t/3 {
+            if t%3 == prev { continue nextmask }
+            bm, prev = bm*4 + t % 3 + 1, t % 3
+        }
+        rowmasks[m] = append(rowmasks[m], bm)
+        ways[1][bm] = 1
+    }
+    for n := 2; n <= 1000; n++ {
+        for _, mask := range rowmasks[m] {
+            for _, prevmask := range rowmasks[m] {
+                ok := true
+                for i := 0; ok && i < m; i++ {
+                    ok = mask >> (2*i) & 3 != prevmask >> (2*i) & 3
+                }
+                if ok { ways[n][mask] += ways[n-1][prevmask] }
+            }
+                ways[n][mask] %= mod
+            }
+        }
+    }
+}
+
+func colorTheGrid2(m int, n int) (r int) {
+    for _, mask := range rowmasks[m] { r += ways[n][mask] }
+    return r % mod
+}
+
 func main() {
     // Example 1:
     // <img src="https://assets.leetcode.com/uploads/2021/06/22/colorthegrid.png" />
@@ -268,7 +304,24 @@ func main() {
     // Output: 580986
     fmt.Println(colorTheGrid(5,5)) // 580986
 
+    fmt.Println(colorTheGrid(5,1000)) // 408208448
+    fmt.Println(colorTheGrid(1,1000)) // 32634808
+    fmt.Println(colorTheGrid(5,1)) // 48
+    fmt.Println(colorTheGrid(1,1)) // 3
+
     fmt.Println(colorTheGrid1(1,1)) // 3
     fmt.Println(colorTheGrid1(1,2)) // 6
     fmt.Println(colorTheGrid1(5,5)) // 580986
+    fmt.Println(colorTheGrid1(5,1000)) // 408208448
+    fmt.Println(colorTheGrid1(1,1000)) // 32634808
+    fmt.Println(colorTheGrid1(5,1)) // 48
+    fmt.Println(colorTheGrid1(1,1)) // 3
+
+    fmt.Println(colorTheGrid2(1,1)) // 3
+    fmt.Println(colorTheGrid2(1,2)) // 6
+    fmt.Println(colorTheGrid2(5,5)) // 580986
+    fmt.Println(colorTheGrid2(5,1000)) // 408208448
+    fmt.Println(colorTheGrid2(1,1000)) // 32634808
+    fmt.Println(colorTheGrid2(5,1)) // 48
+    fmt.Println(colorTheGrid2(1,1)) // 3
 }
