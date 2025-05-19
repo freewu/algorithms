@@ -1824,6 +1824,8 @@
 [3549. Multiply Two Polynomials](./leetcode/3549-MultiplyTwoPolynomials.go)   
 [3550. Smallest Index With Digit Sum Equal to Index](./leetcode/3550-SmallestIndexWithDigitSumEqualToIndex.go)   
 [3551. Minimum Swaps to Sort by Digit Sum](./leetcode/3551-MinimumSwapsToSortByDigitSum.go)   
+[3552. Grid Teleportation Traversal](./leetcode/3552-GridTeleportationTraversal.go)   
+
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
