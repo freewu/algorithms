@@ -3174,6 +3174,7 @@
 [3535. Unit Conversion II](./leetcode/3535-UnitConversionII.go)   
 [3543. Maximum Weighted K-Edge Path](./leetcode/3543-MaximumWeightedKEdgePath.go)   
 [3547. Maximum Sum of Edge Values in a Graph](./leetcode/3547-MaximumSumOfEdgeValuesInAGraph.go)   
+[3553. Minimum Weighted Subgraph With the Required Paths II](./leetcode/3553-MinimumWeightedSubgraphWithTheRequiredPathsII.go)   
 
 # Trie
 [386. Lexicographical Numbers](./leetcode/386-LexicographicalNumbers.go)   
