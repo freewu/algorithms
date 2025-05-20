@@ -80,6 +80,44 @@ func minSwaps(nums []int) int {
     return res
 }
 
+func minSwaps1(nums []int) int {
+    res, n := 0, len(nums)
+    digitSum := func(num int) int { // 计算数字各位之和
+        sum := 0
+        for num > 0 {
+            sum += num % 10 // 取最后一位相加
+            num /= 10       // 去掉最后一位
+        }
+        return sum
+    }
+    sum := make([]int, n)
+    for i, v := range nums {
+        sum[i] = digitSum(v)
+    }
+    ord, now, pos := make([]int, n), make([]int, n), make([]int, n)
+    for i := 0; i < n; i++ {
+        ord[i], now[i] = i, i
+    }
+    sort.Slice(ord, func(i, j int) bool {
+        a, b := ord[i], ord[j]
+        if sum[a] == sum[b] {
+            return nums[a] < nums[b]
+        }
+        return sum[a] < sum[b]
+    })
+    for i := 0; i < n; i++ {
+        pos[ord[i]] = i
+    }
+    for i := 0; i < n; i++ {
+        for now[i] != ord[i] {
+            res++
+            j := pos[now[i]]
+            now[i], now[j] = now[j], now[i]
+        }
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: nums = [37,100]
@@ -108,4 +146,10 @@ func main() {
 
     fmt.Println(minSwaps([]int{1,2,3,4,5,6,7,8,9})) // 0
     fmt.Println(minSwaps([]int{9,8,7,6,5,4,3,2,1})) // 4
+
+    fmt.Println(minSwaps1([]int{37,100})) // 1
+    fmt.Println(minSwaps1([]int{22,14,33,7})) // 0
+    fmt.Println(minSwaps1([]int{18,43,34,16})) // 2
+    fmt.Println(minSwaps1([]int{1,2,3,4,5,6,7,8,9})) // 0
+    fmt.Println(minSwaps1([]int{9,8,7,6,5,4,3,2,1})) // 4
 }
