@@ -87,7 +87,7 @@ func setZeroes(matrix [][]int) {
 }
 
 // best solution
-func setZeroesBest(matrix [][]int)  {
+func setZeroes1(matrix [][]int)  {
     m,n := len(matrix), len(matrix[0])
     rows := make([]int, m)
     columns := make([]int, n)
@@ -116,25 +116,30 @@ func setZeroesBest(matrix [][]int)  {
 }
 
 func main() {
+    // Example 1:
+    // <img src="https://assets.leetcode.com/uploads/2020/08/17/mat1.jpg" />
+    // Input: matrix = [[1,1,1],[1,0,1],[1,1,1]]
+    // Output: [[1,0,1],[0,0,0],[1,0,1]]
     matrix1 := [][]int{[]int{1, 1, 1}, []int{1, 0, 1}, []int{1, 1, 1}}
     fmt.Printf("before matrix1 = %v\n",matrix1)
     for _,m := range matrix1 {
         fmt.Printf("%v\n",m)
     }
-    //setZeroes(matrix1)
-    setZeroesBest(matrix1)
+    setZeroes(matrix1)
     fmt.Printf("after matrix1 = %v\n",matrix1)
     for _,m := range matrix1 {
         fmt.Printf("%v\n",m)
     }
-
+    // Example 2:
+    // <img src="https://assets.leetcode.com/uploads/2020/08/17/mat2.jpg" />
+    // Input: matrix = [[0,1,2,0],[3,4,5,2],[1,3,1,5]]
+    // Output: [[0,0,0,0],[0,4,5,0],[0,3,1,0]]
     matrix2 := [][]int{[]int{0,1,2,0}, []int{3,4,5,2}, []int{1,3,1,5}}
     fmt.Printf("before matrix2 = %v\n",matrix2)
     for _,m := range matrix2 {
         fmt.Printf("%v\n",m)
     }
-    //setZeroes(matrix2)
-    setZeroesBest(matrix2)
+    setZeroes(matrix2)
     fmt.Printf("after matrix2 = %v\n",matrix2)
     for _,m := range matrix2 {
         fmt.Printf("%v\n",m)
@@ -145,7 +150,7 @@ func main() {
     for _,m := range matrix11 {
         fmt.Printf("%v\n",m)
     }
-    setZeroes(matrix11)
+    setZeroes1(matrix11)
     fmt.Printf("after matrix11 = %v\n",matrix1)
     for _,m := range matrix11 {
         fmt.Printf("%v\n",m)
@@ -156,7 +161,7 @@ func main() {
     for _,m := range matrix12 {
         fmt.Printf("%v\n",m)
     }
-    setZeroes(matrix12)
+    setZeroes1(matrix12)
     fmt.Printf("after matrix12 = %v\n",matrix2)
     for _,m := range matrix12 {
         fmt.Printf("%v\n",m)
