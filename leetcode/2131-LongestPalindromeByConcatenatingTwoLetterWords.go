@@ -107,7 +107,12 @@ func main() {
     // Note that "ll" is another longest palindrome that can be created, and so is "xx".
     fmt.Println(longestPalindrome([]string{"cc","ll","xx"})) // 2
 
+    fmt.Println(longestPalindrome([]string{"leetcode","bluefrog","abccba"})) // 0
+    fmt.Println(longestPalindrome([]string{"aaa","aaa","abccba"})) // 4
+
     fmt.Println(longestPalindrome1([]string{"lc","cl","gg"})) // 6
     fmt.Println(longestPalindrome1([]string{"ab","ty","yt","lc","cl","ab"})) // 8
     fmt.Println(longestPalindrome1([]string{"cc","ll","xx"})) // 2
+    fmt.Println(longestPalindrome1([]string{"leetcode","bluefrog","abccba"})) // 0
+    fmt.Println(longestPalindrome1([]string{"aaa","aaa","abccba"})) // 4
 }
