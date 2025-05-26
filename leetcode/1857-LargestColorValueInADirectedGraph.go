@@ -40,7 +40,7 @@ func largestPathValue(colors string, edges [][]int) int {
     for _, e := range edges {
         u, v := e[0], e[1]
         adj[u] = append(adj[u], v)
-        indeg[v] += 1
+        indeg[v]++
     }
     stack := []int{}
     for u, d := range indeg {
@@ -72,6 +72,45 @@ func largestPathValue(colors string, edges [][]int) int {
     return res
 }
 
+func largestPathValue1(colors string, edges [][]int) int {
+    res, n := 0, len(colors)
+    g, deg := make([][]int, n), make([]int, n)
+    for _, e := range edges {
+        x, y := e[0], e[1]
+        if x == y { return -1 }// 自环
+        g[x] = append(g[x], y)
+        deg[y]++
+    }
+    q := make([]int, 0, n)
+    for i, d := range deg {
+        if d == 0 {
+            q = append(q, i) // 入度为 0 的点入队
+        }
+    }
+    max := func (x, y int) int { if x > y { return x; }; return y; }
+    f := make([][26]int, n)
+    for len(q) > 0 {
+        x := q[0] // x 的所有转移来源都计算完毕，也都更新到 f[x] 中
+        q = q[1:]
+        ch := colors[x] - 'a'
+        f[x][ch]++
+        res = max(res, f[x][ch])
+        for _, y := range g[x] {
+            for i, cnt := range f[x] {
+                f[y][i] = max(f[y][i], cnt) // 刷表法，更新邻居的最大值
+            }
+            deg[y]--
+            if deg[y] == 0 {
+                q = append(q, y)
+            }
+        }
+    }
+    if cap(q) > 0 { // 有节点没入队，说明有环
+        return -1
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // <img src="https://assets.leetcode.com/uploads/2021/04/21/leet1.png" />
@@ -84,5 +123,8 @@ func main() {
     // Input: colors = "a", edges = [[0,0]]
     // Output: -1
     // Explanation: There is a cycle from 0 to 0.
+    fmt.Println(largestPathValue("a",[][]int{{0,0}})) // -1
+
+    fmt.Println(largestPathValue("abaca",[][]int{{0,1},{0,2},{2,3},{3,4}})) // 3
     fmt.Println(largestPathValue("a",[][]int{{0,0}})) // -1
 }
