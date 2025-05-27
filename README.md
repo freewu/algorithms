@@ -2852,6 +2852,7 @@
 [3516. Find Closest Person](./leetcode/3516-FindClosestPerson.go)   
 [3536. Maximum Product of Two Digits](./leetcode/3536-MaximumProductOfTwoDigits.go)   
 [3537. Fill a Special Grid](./leetcode/3537-FillASpecialGrid.go)   
+[3560. Find Minimum Log Transportation Cost](./leetcode/3560-FindMinimumLogTransportationCost.go)   
 
 # Stack
 [225. Implement Stack using Queues](./leetcode/225-ImplementStackUsingQueues.go)   
