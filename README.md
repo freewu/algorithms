@@ -3805,6 +3805,7 @@ LCR 185. 统计结果概率
 [3497. Analyze Subscription Conversion](./leetcode/3497-AnalyzeSubscriptionConversion.sql)   
 [3521. Find Product Recommendation Pairs](./leetcode/3521-FindProductRecommendationPairs.sql)   
 [3554. Find Category Recommendation Pairs](./leetcode/3554-FindCategoryRecommendationPairs.sql)   
+[3564. Seasonal Sales Analysis](./leetcode/3564-SeasonalSalesAnalysis.sql)   
 
 # Shell
 [192. Word Frequency](./leetcode/192-WordFrequency.sh)      
