@@ -1828,6 +1828,8 @@
 [3555. Smallest Subarray to Sort in Every Sliding Window](./leetcode/3555-SmallestSubarrayToSortInEverySlidingWindow.go)   
 [3558. Number of Ways to Assign Edge Weights I](./leetcode/3558-NumberOfWaysToAssignEdgeWeightsI.go)   
 [3559. Number of Ways to Assign Edge Weights II](./leetcode/3559-NumberOfWaysToAssignEdgeWeightsII.go)   
+[3562. Maximum Profit from Trading Stocks with Discounts](./leetcode/3562-MaximumProfitFromTradingStocksWithDiscounts.go)   
+
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
