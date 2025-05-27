@@ -2446,7 +2446,7 @@
 [3556. Sum of Largest Prime Substrings](./leetcode/3556-SumOfLargestPrimeSubstrings.go)   
 [3557. Find Maximum Number of Non Intersecting Substrings](./leetcode/3557-FindMaximumNumberOfNonIntersectingSubstrings.go)   
 [3561. Resulting String After Adjacent Removals](./leetcode/3561-ResultingStringAfterAdjacentRemovals.go)   
-
+[3563. Lexicographically Smallest String After Adjacent Removals](./leetcode/3563-LexicographicallySmallestStringAfterAdjacentRemovals.go)   
 
 # Dynamic Programming
 [276. Paint Fence](./leetcode/276-PaintFence.go)   
