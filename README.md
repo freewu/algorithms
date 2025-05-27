@@ -1827,6 +1827,7 @@
 [3552. Grid Teleportation Traversal](./leetcode/3552-GridTeleportationTraversal.go)   
 [3555. Smallest Subarray to Sort in Every Sliding Window](./leetcode/3555-SmallestSubarrayToSortInEverySlidingWindow.go)   
 [3558. Number of Ways to Assign Edge Weights I](./leetcode/3558-NumberOfWaysToAssignEdgeWeightsI.go)   
+[3559. Number of Ways to Assign Edge Weights II](./leetcode/3559-NumberOfWaysToAssignEdgeWeightsII.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
