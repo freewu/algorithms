@@ -2443,6 +2443,7 @@
 [3545. Minimum Deletions for At Most K Distinct Characters](./leetcode/3545-MinimumDeletionsForAtMostKDistinctCharacters.go)   
 [3556. Sum of Largest Prime Substrings](./leetcode/3556-SumOfLargestPrimeSubstrings.go)   
 [3557. Find Maximum Number of Non Intersecting Substrings](./leetcode/3557-FindMaximumNumberOfNonIntersectingSubstrings.go)   
+[3561. Resulting String After Adjacent Removals](./leetcode/3561-ResultingStringAfterAdjacentRemovals.go)   
 
 
 # Dynamic Programming
