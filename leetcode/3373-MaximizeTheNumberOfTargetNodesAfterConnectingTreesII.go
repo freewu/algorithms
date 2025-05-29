@@ -89,6 +89,38 @@ func maxTargetNodes(edges1 [][]int, edges2 [][]int) []int {
     return res
 }
 
+func maxTargetNodes1(edges1 [][]int, edges2 [][]int) []int {
+    var dfs func(node, parent, depth int, children [][]int, color []int) int
+    dfs = func(node, parent, depth int, children [][]int, color []int) int {
+        res := 1 - depth%2
+        color[node] = depth % 2
+        for _, child := range children[node] {
+            if child == parent { continue }
+            res += dfs(child, node, depth+1, children, color)
+        }
+        return res
+    }
+    build := func(edges [][]int, color []int) []int {
+        n := len(edges) + 1
+        children := make([][]int, n)
+        for _, edge := range edges {
+            u, v := edge[0], edge[1]
+            children[u] = append(children[u], v)
+            children[v] = append(children[v], u)
+        }
+        res := dfs(0, -1, 0, children, color)
+        return []int{ res, n - res }
+    }
+    n, m := len(edges1) + 1, len(edges2) + 1
+    res, color1, color2 := make([]int, n), make([]int, n), make([]int, m)
+    count1, count2 := build(edges1, color1), build(edges2, color2)
+    max := func (x, y int) int { if x > y { return x; }; return y; }
+    for i := 0; i < n; i++ {
+        res[i] = count1[color1[i]] + max(count2[0], count2[1])
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: edges1 = [[0,1],[0,2],[2,3],[2,4]], edges2 = [[0,1],[0,2],[0,3],[2,7],[1,4],[4,5],[4,6]]
@@ -105,5 +137,8 @@ func main() {
     // Output: [3,6,6,6,6]
     // Explanation:
     // For every i, connect node i of the first tree with any node of the second tree.
+    fmt.Println(maxTargetNodes([][]int{{0,1},{0,2},{0,3},{0,4}}, [][]int{{0,1},{1,2},{2,3}})) // [3,6,6,6,6]
+
+    fmt.Println(maxTargetNodes([][]int{{0,1},{0,2},{2,3},{2,4}}, [][]int{{0,1},{0,2},{0,3},{2,7},{1,4},{4,5},{4,6}})) // [8,7,7,8,8]
     fmt.Println(maxTargetNodes([][]int{{0,1},{0,2},{0,3},{0,4}}, [][]int{{0,1},{1,2},{2,3}})) // [3,6,6,6,6]
 }
