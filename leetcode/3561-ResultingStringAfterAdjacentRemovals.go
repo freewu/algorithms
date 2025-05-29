@@ -74,6 +74,22 @@ func resultingString1(s string) string {
     return string(arr)
 }
 
+func resultingString2(s string) string {
+    stack := make([]byte, 0, len(s))
+    for _, b := range s {
+        if len(stack) > 0 {
+            top := stack[len(stack) - 1]
+            diff := int(b) - int(top)
+            if diff == 1 || diff == -1 || (diff == 25 && b == 'z') || (diff == -25 && b == 'a') {
+                stack = stack[:len(stack)-1]
+                continue
+            }
+        }
+        stack = append(stack, byte(b))
+    }
+    return string(stack)
+}
+
 func main() {
     // Example 1:
     // Input: s = "abc"
@@ -106,4 +122,10 @@ func main() {
     fmt.Println(resultingString1("zadb")) // "db"
     fmt.Println(resultingString1("bluefrog")) // "blurog"
     fmt.Println(resultingString1("leetcode")) // "leetco"
+
+    fmt.Println(resultingString2("abc")) // "c"
+    fmt.Println(resultingString2("adcb")) // ""
+    fmt.Println(resultingString2("zadb")) // "db"
+    fmt.Println(resultingString2("bluefrog")) // "blurog"
+    fmt.Println(resultingString2("leetcode")) // "leetco"
 }
