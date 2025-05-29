@@ -113,6 +113,49 @@ func lexicographicallySmallestString1(s string) string {
     return dp[0]
 }
 
+func lexicographicallySmallestString2(s string) (ans string) {
+    n := len(s)
+    canBeEmpty := make([][]bool, n)
+    for i := range canBeEmpty {
+        canBeEmpty[i] = make([]bool, n)
+    }
+    abs := func(x int) int { if x < 0 { return -x; }; return x; }
+    isConsecutive := func(x, y byte) bool {
+        diff := abs(int(x) - int(y))
+        return diff == 1 || diff == 25
+    }
+    for i := n - 2; i >= 0; i-- {
+        canBeEmpty[i+1][i] = true // 空串
+        for j := i + 1; j < n; j += 2 {
+            // 性质 2
+            if isConsecutive(s[i], s[j]) && canBeEmpty[i+1][j-1] {
+                canBeEmpty[i][j] = true
+                continue
+            }
+            // 性质 3
+            for k := i + 1; k < j-1; k += 2 {
+                if canBeEmpty[i][k] && canBeEmpty[k+1][j] {
+                    canBeEmpty[i][j] = true
+                    break
+                }
+            }
+        }
+    }
+    f := make([]string, n + 1)
+    for i := n - 1; i >= 0; i-- {
+        // 包含 s[i]
+        res := string(s[i]) + f[i+1]
+        // 不包含 s[i]，注意 s[i] 不能单独消除，必须和其他字符一起消除
+        for j := i + 1; j < n; j += 2 {
+            if canBeEmpty[i][j] { // 消除 s[i] 到 s[j]
+                res = min(res, f[j+1])
+            }
+        }
+        f[i] = res
+    }
+    return f[0]
+}
+
 func main() {
     // Example 1:
     // Input: s = "abc"
@@ -146,4 +189,10 @@ func main() {
     fmt.Println(lexicographicallySmallestString1("zdce")) // "zdce"
     fmt.Println(lexicographicallySmallestString1("bluefrog")) // "bluefrog"
     fmt.Println(lexicographicallySmallestString1("leetcode")) // "leetco"
+
+    fmt.Println(lexicographicallySmallestString2("abc")) // "a"
+    fmt.Println(lexicographicallySmallestString2("bcda")) // ""
+    fmt.Println(lexicographicallySmallestString2("zdce")) // "zdce"
+    fmt.Println(lexicographicallySmallestString2("bluefrog")) // "bluefrog"
+    fmt.Println(lexicographicallySmallestString2("leetcode")) // "leetco"
 }
