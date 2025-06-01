@@ -1830,6 +1830,8 @@
 [3559. Number of Ways to Assign Edge Weights II](./leetcode/3559-NumberOfWaysToAssignEdgeWeightsII.go)   
 [3562. Maximum Profit from Trading Stocks with Discounts](./leetcode/3562-MaximumProfitFromTradingStocksWithDiscounts.go)   
 [3565. Sequential Grid Path Cover](./leetcode/3565-SequentialGridPathCover.go)   
+[3566. Partition Array into Two Equal Product Subsets](./leetcode/3566-PartitionArrayIntoTwoEqualProductSubsets.go)   
+
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
