@@ -72,12 +72,22 @@ func candy1(ratings []int) int {
 }
 
 func main() {
+    // Example 1:
+    // Input: ratings = [1,0,2]
+    // Output: 5
     // Explanation: You can allocate to the first, second and third child with 2, 1, 2 candies respectively.
     fmt.Printf("candy([]int{ 1,0,2 }) = %v\n",candy([]int{ 1,0,2 })) // 5
+    // Example 2:
+    // Input: ratings = [1,2,2]
+    // Output: 4
     // Explanation: You can allocate to the first, second and third child with 1, 2, 1 candies respectively.
     // The third child gets 1 candy because it satisfies the above two conditions.
     fmt.Printf("candy([]int{ 1,2,2 }) = %v\n",candy([]int{ 1,2,2 })) // 4
+    fmt.Printf("candy([]int{ 1,2,3,4,5,6,7,8,9 }) = %v\n",candy([]int{ 1,2,3,4,5,6,7,8,9 })) // 45
+    fmt.Printf("candy([]int{ 9,8,7,6,5,4,3,2,1 }) = %v\n",candy([]int{ 9,8,7,6,5,4,3,2,1 })) // 45
 
     fmt.Printf("candy1([]int{ 1,0,2 }) = %v\n",candy1([]int{ 1,0,2 })) // 5
     fmt.Printf("candy1([]int{ 1,2,2 }) = %v\n",candy1([]int{ 1,2,2 })) // 4
+    fmt.Printf("candy1([]int{ 1,2,3,4,5,6,7,8,9 }) = %v\n",candy([]int{ 1,2,3,4,5,6,7,8,9 })) // 45
+    fmt.Printf("candy1([]int{ 9,8,7,6,5,4,3,2,1 }) = %v\n",candy([]int{ 9,8,7,6,5,4,3,2,1 })) // 45
 }
