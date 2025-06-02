@@ -1832,6 +1832,7 @@
 [3565. Sequential Grid Path Cover](./leetcode/3565-SequentialGridPathCover.go)   
 [3566. Partition Array into Two Equal Product Subsets](./leetcode/3566-PartitionArrayIntoTwoEqualProductSubsets.go)   
 [3567. Minimum Absolute Difference in Sliding Submatrix](./leetcode/3567-MinimumAbsoluteDifferenceInSlidingSubmatrix.go)   
+[3568. Minimum Moves to Clean the Classroom](./leetcode/3568-MinimumMovesToCleanTheClassroom.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
