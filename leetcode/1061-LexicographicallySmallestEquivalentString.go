@@ -89,4 +89,7 @@ func main() {
     // Output: "aauaaaaada"
     // Explanation: We group the equivalent characters in s1 and s2 as [a,o,e,r,s,c], [l,p], [g,t] and [d,m], thus all letters in baseStr except 'u' and 'd' are transformed to 'a', the answer is "aauaaaaada".
     fmt.Println(smallestEquivalentString("leetcode","programs","sourcecode")) // "aauaaaaada"
+
+    fmt.Println(smallestEquivalentString("leetcode","bluefrog","sourcecode")) // "sdbdcbcddb"
+    fmt.Println(smallestEquivalentString("bluefrog","leetcode","sourcecode")) // "sdbdcbcddb"
 }
