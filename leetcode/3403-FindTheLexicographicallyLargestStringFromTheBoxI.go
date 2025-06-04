@@ -100,12 +100,15 @@ func main() {
     fmt.Println(answerString("gggg", 4)) // "g"
 
     fmt.Println(answerString("bluefrog", 4)) // "uefro"
+    fmt.Println(answerString("leetcode", 4)) // "tcode"
 
     fmt.Println(answerString1("dbca", 2)) // "dbc"
     fmt.Println(answerString1("gggg", 4)) // "g"
     fmt.Println(answerString1("bluefrog", 4)) // "uefro"
+    fmt.Println(answerString1("leetcode", 4)) // "tcode"
 
     fmt.Println(answerString2("dbca", 2)) // "dbc"
     fmt.Println(answerString2("gggg", 4)) // "g"
     fmt.Println(answerString2("bluefrog", 4)) // "uefro"
+    fmt.Println(answerString2("leetcode", 4)) // "tcode"
 }
