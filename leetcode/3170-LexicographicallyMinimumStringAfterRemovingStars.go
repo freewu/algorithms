@@ -106,6 +106,36 @@ func clearStars2(s string) string {
     return string(res)
 }
 
+
+func clearStars3(s string) string {
+    arr := []byte(s) // 将输入字符串转换为字节切片以便修改
+    stack := make([][]int, 26) // 创建一个包含26个切片的数组，每个切片存储对应字母的位置索引 stack[0]对应'a'stack[1]对应'b'，依此类推
+    for i, c := range s { // 遍历字符串中的每个字符及其索引
+        if c != '*' { // 如果当前字符不是星号        
+            stack[c - 'a'] = append(stack[c - 'a'], i) // 将该字符的位置追加到对应字母的切片中 c - 'a' 计算字符c在字母表中的位置（0-25）
+        } else { // 如果当前字符是星号 
+            for j, row := range stack { // 遍历所有字母的切片（从a开始）
+                if m := len(row); m > 0 {  // 检查当前字母的切片是否非空
+                    arr[row[m - 1]] = '*' // 将该字母最近出现的位置（切片最后一个元素）标记为星号
+                    // 从切片中移除最后一个元素（相当于pop操作）
+                    stack[j] = row[:m-1]
+                    break // 处理完一个星号后立即跳出循环
+                }
+            }
+        }
+    }
+    // 构建结果字符串：过滤掉所有星号字符
+    // 使用原地修改技术来节省空间
+    res := arr[:0] // 创建一个长度为0但容量不变的切片
+    for _, c := range arr {
+        if c != '*' { // 只保留非星号字符
+            res = append(res, c)
+        }
+    }
+    return string(res)
+}
+
+
 func main() {
     // Example 1:
     // Input: s = "aaba*"
@@ -132,4 +162,9 @@ func main() {
     fmt.Println(clearStars2("abc*")) // abc
     fmt.Println(clearStars2("bleufrog*")) // leufrog
     fmt.Println(clearStars2("leet*code")) // letcode
+
+    fmt.Println(clearStars3("aaba*")) // aab
+    fmt.Println(clearStars3("abc*")) // abc
+    fmt.Println(clearStars3("bleufrog*")) // leufrog
+    fmt.Println(clearStars3("leet*code")) // letcode
 }
