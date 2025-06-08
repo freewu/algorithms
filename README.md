@@ -1836,6 +1836,7 @@
 [3569. Maximize Count of Distinct Primes After Split](./leetcode/3569-MaximizeCountOfDistinctPrimesAfterSplit.go)   
 [3572. Maximize Y‑Sum by Picking a Triplet of Distinct X‑Values](./leetcode/3572-MaximizeYSumByPickingATripletOfDistinctXValues.go)   
 [3573. Best Time to Buy and Sell Stock V](./leetcode/3573-BestTimeToBuyAndSellStockV.go)   
+[3574. Maximize Subarray GCD Score](./leetcode/3574-MaximizeSubarrayGCDScore.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
