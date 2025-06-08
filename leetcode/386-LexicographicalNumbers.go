@@ -116,19 +116,25 @@ func main() {
     // Example 2:
     // Input: n = 2
     // Output: [1,2]
-    fmt.Println(lexicalOrder(1)) // [1,2]
+    fmt.Println(lexicalOrder(2)) // [1,2]
+
+    fmt.Println(lexicalOrder(1)) // [1]
 
     //fmt.Println(lexicalOrder(50000)) // [1,2]
 
     fmt.Println(lexicalOrder1(13)) // [1,10,11,12,13,2,3,4,5,6,7,8,9]
-    fmt.Println(lexicalOrder1(1)) // [1,2]
+    fmt.Println(lexicalOrder1(2)) // [1,2]
+    fmt.Println(lexicalOrder1(1)) // [1]
 
     fmt.Println(lexicalOrder2(13)) // [1,10,11,12,13,2,3,4,5,6,7,8,9]
-    fmt.Println(lexicalOrder2(1)) // [1,2]
+    fmt.Println(lexicalOrder2(2)) // [1,2]
+    fmt.Println(lexicalOrder2(1)) // [1]
 
     fmt.Println(lexicalOrder3(13)) // [1,10,11,12,13,2,3,4,5,6,7,8,9]
-    fmt.Println(lexicalOrder3(1)) // [1,2]
+    fmt.Println(lexicalOrder3(2)) // [1,2]
+    fmt.Println(lexicalOrder3(1)) // [1]
 
     fmt.Println(lexicalOrder4(13)) // [1,10,11,12,13,2,3,4,5,6,7,8,9]
-    fmt.Println(lexicalOrder4(1)) // [1,2]
+    fmt.Println(lexicalOrder4(2)) // [1,2]
+    fmt.Println(lexicalOrder4(1)) // [1]
 }
