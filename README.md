@@ -1834,6 +1834,7 @@
 [3567. Minimum Absolute Difference in Sliding Submatrix](./leetcode/3567-MinimumAbsoluteDifferenceInSlidingSubmatrix.go)   
 [3568. Minimum Moves to Clean the Classroom](./leetcode/3568-MinimumMovesToCleanTheClassroom.go)   
 [3569. Maximize Count of Distinct Primes After Split](./leetcode/3569-MaximizeCountOfDistinctPrimesAfterSplit.go)   
+[3572. Maximize Y‑Sum by Picking a Triplet of Distinct X‑Values](./leetcode/3572-MaximizeYSumByPickingATripletOfDistinctXValues.go)   
 
 
 # String
