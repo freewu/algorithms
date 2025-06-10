@@ -3820,6 +3820,7 @@ LCR 185. 统计结果概率
 [3554. Find Category Recommendation Pairs](./leetcode/3554-FindCategoryRecommendationPairs.sql)   
 [3564. Seasonal Sales Analysis](./leetcode/3564-SeasonalSalesAnalysis.sql)   
 [3570. Find Books with No Available Copies](./leetcode/3570-FindBooksWithNoAvailableCopies.sql)   
+[3580. Find Consistently Improving Employees](./leetcode/3580-FindConsistentlyImprovingEmployees.sql)   
 
 # Shell
 [192. Word Frequency](./leetcode/192-WordFrequency.sh)      
