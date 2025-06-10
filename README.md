@@ -1840,7 +1840,7 @@
 [3575. Maximum Good Subtree Score](./leetcode/3575-MaximumGoodSubtreeScore.go)   
 [3576. Transform Array to All Equal Elements](./leetcode/3576-TransformArrayToAllEqualElements.go)   
 [3577. Count the Number of Computer Unlocking Permutations](./leetcode/3577-CountTheNumberOfComputerUnlockingPermutations.go)   
-
+[3578. Count Partitions With Max-Min Difference at Most K](./leetcode/3578-CountPartitionsWithMaxMinDifferenceAtMostK.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
