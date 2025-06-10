@@ -37,6 +37,7 @@ import "fmt"
 
 func maxDifference(s string, k int) int {
     res, inf := -1 << 31, 1 << 31
+    min := func (x, y int) int { if x < y { return x; }; return y; }
     max := func (x, y int) int { if x > y { return x; }; return y; }
     for x := 0; x < 5; x++ {
         for y := 0; y < 5; y++ {
@@ -51,6 +52,50 @@ func maxDifference(s string, k int) int {
                     left++
                 }
                 res = max(res, cur[x] - cur[y] - mn[cur[x] & 1 ^ 1][cur[y] & 1])
+            }
+        }
+    }
+    return res
+}
+
+func maxDifference1(s string, k int) int {
+    res, n := -1 << 31, len(s)
+    getStatus := func(cntA, cntB int) int { return ((cntA & 1) << 1) | (cntB & 1) }
+    for _, a := range []byte{'0', '1', '2', '3', '4'} {
+        for _, b := range []byte{'0', '1', '2', '3', '4'} {
+            if a == b { continue }
+            best := make([]int, 4)
+            for i := range best {
+                best[i] = 1 << 31
+            }
+            cntA, cntB, prevA, prevB, left := 0, 0, 0, 0, -1
+            for right := 0; right < n; right++ {
+                if s[right] == a {
+                    cntA++
+                }
+                if s[right] == b {
+                    cntB++
+                }
+                for right-left >= k && cntB-prevB >= 2 {
+                    leftStatus := getStatus(prevA, prevB)
+                    if prevA-prevB < best[leftStatus] {
+                        best[leftStatus] = prevA - prevB
+                    }
+                    left++
+                    if s[left] == a {
+                        prevA++
+                    }
+                    if s[left] == b {
+                        prevB++
+                    }
+                }
+                rightStatus := getStatus(cntA, cntB)
+                if best[rightStatus ^ 0b10] != 1 << 31 {
+                    current := (cntA - cntB) - best[rightStatus ^ 0b10]
+                    if current > res {
+                        res = current
+                    }
+                }
             }
         }
     }
@@ -85,4 +130,18 @@ func main() {
     fmt.Println(maxDifference("4321043210", 3)) // -1
     fmt.Println(maxDifference("0011223344", 3)) // -1
     fmt.Println(maxDifference("4433221100", 3)) // -1
+
+    fmt.Println(maxDifference1("12233", 4)) // -1
+    fmt.Println(maxDifference1("1122211", 3)) // 1
+    fmt.Println(maxDifference1("110", 3)) // -1
+    fmt.Println(maxDifference1("0000000000", 3)) // -2147483638
+    fmt.Println(maxDifference1("1111111111", 3)) // -2147483638
+    fmt.Println(maxDifference1("1010101010", 3)) // 1
+    fmt.Println(maxDifference1("0101010101", 3)) // 1
+    fmt.Println(maxDifference1("1111100000", 3)) // 3
+    fmt.Println(maxDifference1("0000011111", 3)) // 3
+    fmt.Println(maxDifference1("0123401234", 3)) // -1
+    fmt.Println(maxDifference1("4321043210", 3)) // -1
+    fmt.Println(maxDifference1("0011223344", 3)) // -1
+    fmt.Println(maxDifference1("4433221100", 3)) // -1
 }
