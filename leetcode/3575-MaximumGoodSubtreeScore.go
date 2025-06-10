@@ -65,6 +65,7 @@ package main
 
 import "fmt"
 import "slices"
+import "strconv"
 
 func goodSubtreeSum(vals, par []int) int {
     const mx = 10
@@ -110,6 +111,97 @@ func goodSubtreeSum(vals, par []int) int {
     return res % mod
 }
 
+func goodSubtreeSum1(vals []int, par []int) int {
+    const mod = 1_000_000_007
+    res, n, inf := 0, len(vals), -1 << 31
+    if n == 0 { return 0 }
+    stSize := 1 << 10
+    graph, maxScores := make([][]int, n), make([]int, n)
+    for i := 1; i < n; i++ { // Build tree
+        p := par[i]
+        graph[p] = append(graph[p], i)
+    }
+    var dfs func(u int) []int
+    dfs = func(u int) []int {
+        dp := make([]int, stSize)
+        for i := range dp {
+            dp[i] = inf
+        }
+        dp[0] = 0
+        for _, v := range graph[u] {
+            childDP := dfs(v)
+            newDp := make([]int, stSize)
+            for i := range newDp {
+                newDp[i] = inf
+            }
+            fullMask := stSize - 1
+            for s1 := 0; s1 < stSize; s1++ {
+                if dp[s1] == inf {
+                    continue
+                }
+                sub := fullMask ^ s1
+                s2 := sub
+                for {
+                    if childDP[s2] != inf {
+                        s := s1 | s2
+                        newVal := dp[s1] + childDP[s2]
+                        if newVal > newDp[s] {
+                            newDp[s] = newVal
+                        }
+                    }
+                    if s2 == 0 {
+                        break
+                    }
+                    s2 = (s2 - 1) & sub
+                }
+            }
+            dp = newDp
+        }
+        mask_u := 0
+        sVal := strconv.Itoa(vals[u])
+        seen := make([]bool, 10)
+        flag := false
+        for _, r := range sVal {
+            d := int(r - '0')
+            if d < 0 || d > 9 { continue }
+            if seen[d] {
+                flag = true
+                break
+            }
+            seen[d] = true
+            mask_u |= (1 << d)
+        }
+        if !flag {
+            for s := 0; s < stSize; s++ {
+                if dp[s] == inf {
+                    continue
+                }
+                if s & mask_u != 0 {
+                    continue
+                }
+                newState := s | mask_u
+                newVal := dp[s] + vals[u]
+                if newVal > dp[newState] {
+                    dp[newState] = newVal
+                }
+            }
+        }
+        maxScore := 0
+        for i := 0; i < stSize; i++ {
+            if dp[i] > maxScore {
+                maxScore = dp[i]
+            }
+        }
+        maxScores[u] = maxScore
+        return dp
+    }
+    dfs(0)
+    for i := 0; i < n; i++ {
+        res = (res + maxScores[i]) % mod
+    }
+    return res % mod
+}
+
 func main() {
     // Example 1:
     // Input: vals = [2,3], par = [-1,0]
@@ -149,4 +241,9 @@ func main() {
     // The subtree rooted at node 2 includes {2}. The subset {5} is good. The score of this subset is 5.
     // The maxScore array is [8, 5, 5], and the sum of all values in maxScore is 8 + 5 + 5 = 18. Thus, the answer is 18.
     fmt.Println(goodSubtreeSum([]int{3,22,5}, []int{-1,0,1})) // 18
+
+    fmt.Println(goodSubtreeSum1([]int{2,3}, []int{-1,0})) // 8
+    fmt.Println(goodSubtreeSum1([]int{1,5,2}, []int{-1,0,0})) // 15
+    fmt.Println(goodSubtreeSum1([]int{34,1,2}, []int{-1,0,1})) // 42
+    fmt.Println(goodSubtreeSum1([]int{3,22,5}, []int{-1,0,1})) // 18
 }
