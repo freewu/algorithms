@@ -1839,6 +1839,8 @@
 [3574. Maximize Subarray GCD Score](./leetcode/3574-MaximizeSubarrayGCDScore.go)   
 [3575. Maximum Good Subtree Score](./leetcode/3575-MaximumGoodSubtreeScore.go)   
 [3576. Transform Array to All Equal Elements](./leetcode/3576-TransformArrayToAllEqualElements.go)   
+[3577. Count the Number of Computer Unlocking Permutations](./leetcode/3577-CountTheNumberOfComputerUnlockingPermutations.go)   
+
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
