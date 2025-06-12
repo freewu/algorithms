@@ -88,6 +88,63 @@ func minimizeMax1(nums []int, p int) int {
     return left 
 }
 
+func minimizeMax2(nums []int, p int) int {
+    if p == 0 { return 0 }
+    sort.Ints(nums)
+    n := len(nums)
+    l, r := 0, nums[n - 1] - nums[0]
+    check := func(v int) bool {
+        count, i := 0, 1
+        for i < n {
+            if nums[i] - nums[i - 1] <= v {
+                count++
+                i += 2
+            } else {
+                i++
+            }
+            if count >= p {
+                return true
+            }
+        }
+        return false
+    }
+    for l <= r {
+        m := (l + r) / 2
+        if check(m) {
+            r = m - 1
+        } else {
+            l = m + 1
+        }
+    }
+    return l
+}
+
+func minimizeMax3(nums []int, p int) int {
+    sort.Ints(nums)
+    n := len(nums)
+    left, right := 0, nums[n-1] - nums[0]
+    countPairs := func(pivot int) bool {
+        count := 0
+        for i := 0; i < len(nums) - 1 && count < p; i++ {
+            if nums[i+1] - nums[i] <= pivot {
+                count++
+                i++
+            }
+        }
+        return count == p
+    }
+    for left < right {
+        mid := left + (right - left) / 2
+        if countPairs(mid) {
+            right = mid
+        } else {
+            left = mid + 1
+        }
+    }
+    return left
+}
+
+
 func main() {
     // Example 1:
     // Input: nums = [10,1,2,7,1,3], p = 2
@@ -110,4 +167,14 @@ func main() {
     fmt.Println(minimizeMax1([]int{4,2,1,2}, 1)) // 0
     fmt.Println(minimizeMax1([]int{1,2,3,4,5,6,7,8,9}, 1)) // 1
     fmt.Println(minimizeMax1([]int{9,8,7,6,5,4,3,2,1}, 1)) // 1
+
+    fmt.Println(minimizeMax2([]int{10,1,2,7,1,3}, 2)) // 1
+    fmt.Println(minimizeMax2([]int{4,2,1,2}, 1)) // 0
+    fmt.Println(minimizeMax2([]int{1,2,3,4,5,6,7,8,9}, 1)) // 1
+    fmt.Println(minimizeMax2([]int{9,8,7,6,5,4,3,2,1}, 1)) // 1
+
+    fmt.Println(minimizeMax3([]int{10,1,2,7,1,3}, 2)) // 1
+    fmt.Println(minimizeMax3([]int{4,2,1,2}, 1)) // 0
+    fmt.Println(minimizeMax3([]int{1,2,3,4,5,6,7,8,9}, 1)) // 1
+    fmt.Println(minimizeMax3([]int{9,8,7,6,5,4,3,2,1}, 1)) // 1
 }
