@@ -36,6 +36,16 @@ func maxAdjacentDistance(nums []int) int {
     return res
 }
 
+func maxAdjacentDistance1(nums []int) int {
+    abs := func(x int) int { if x < 0 { return -x; }; return x; }
+    max := func (x, y int) int { if x > y { return x; }; return y; }
+    res := abs(nums[0] - nums[len(nums) - 1])
+    for i := 1; i < len(nums); i++ {
+        res = max(res, abs(nums[i] - nums[i - 1]))
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: nums = [1,2,4]
@@ -54,4 +64,10 @@ func main() {
     fmt.Println(maxAdjacentDistance([]int{3,2,-5,-3})) // 7
     fmt.Println(maxAdjacentDistance([]int{1,2,3,4,5,6,7,8,9})) // 8
     fmt.Println(maxAdjacentDistance([]int{9,8,7,6,5,4,3,2,1})) // 8
+
+    fmt.Println(maxAdjacentDistance1([]int{1,2,4})) // 3
+    fmt.Println(maxAdjacentDistance1([]int{-5,-10,-5})) // 5
+    fmt.Println(maxAdjacentDistance1([]int{3,2,-5,-3})) // 7
+    fmt.Println(maxAdjacentDistance1([]int{1,2,3,4,5,6,7,8,9})) // 8
+    fmt.Println(maxAdjacentDistance1([]int{9,8,7,6,5,4,3,2,1})) // 8
 }
