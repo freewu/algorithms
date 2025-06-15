@@ -2460,6 +2460,8 @@
 [3563. Lexicographically Smallest String After Adjacent Removals](./leetcode/3563-LexicographicallySmallestStringAfterAdjacentRemovals.go)   
 [3571. Find the Shortest Superstring II](./leetcode/3571-FindTheShortestSuperstringII.go)   
 [3579. Minimum Steps to Convert String with Operations](./leetcode/3579-MinimumStepsToConvertStringWithOperations.go)   
+[3582. Generate Tag for Video Caption](./leetcode/3582-GenerateTagForVideoCaption.go)   
+
 
 # Dynamic Programming
 [276. Paint Fence](./leetcode/276-PaintFence.go)   
