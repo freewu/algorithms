@@ -1842,6 +1842,8 @@
 [3577. Count the Number of Computer Unlocking Permutations](./leetcode/3577-CountTheNumberOfComputerUnlockingPermutations.go)   
 [3578. Count Partitions With Max-Min Difference at Most K](./leetcode/3578-CountPartitionsWithMaxMinDifferenceAtMostK.go)   
 [3583. Count Special Triplets](./leetcode/3583-CountSpecialTriplets.go)   
+[3584. Maximum Product of First and Last Elements of a Subsequence](./leetcode/3584-MaximumProductOfFirstAndLastElementsOfASubsequence.go)   
+
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
