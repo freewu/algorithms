@@ -29,7 +29,6 @@ type TreeNode struct {
     Right *TreeNode
 }
 
-
 func checkEqualTree(root *TreeNode) bool {
     m := map[int]int{} // 求 root 的和的时候，就可以把中间的和记录下来。所以解决方案就是找到是否有节点和为n/2的。
     var cal func(*TreeNode) int
@@ -67,6 +66,23 @@ func checkEqualTree1(root *TreeNode) bool {
     return ok
 }
 
+func checkEqualTree2(root *TreeNode) bool {
+    // 深度遍历，统计每个子树的和
+    // 将所有的和记录到一个 map 中，最终如果存在子树的和等于总和的一半，则返回 true
+    mp := make(map[int]int)
+    var dfs func(node *TreeNode) int
+    dfs = func(node *TreeNode) int {
+        if node == nil { return 0 }
+        sum := node.Val + dfs(node.Left) + dfs(node.Right)
+        mp[sum]++ // 将所有的和记录到一个 map 中
+        return sum
+    }
+    sum := dfs(root)
+    mp[sum]--
+    if sum % 2 != 0 { return false }
+    return mp[sum / 2] > 0 // 如果存在子树的和等于总和的一半，则返回 true
+}
+
 func main() {
     // Example 1:
     // <img src="https://assets.leetcode.com/uploads/2021/05/03/split1-tree.jpg" />
@@ -92,4 +108,7 @@ func main() {
 
     fmt.Println(checkEqualTree1(tree1)) // true
     fmt.Println(checkEqualTree1(tree2)) // false
+
+    fmt.Println(checkEqualTree2(tree1)) // true
+    fmt.Println(checkEqualTree2(tree2)) // false
 }
