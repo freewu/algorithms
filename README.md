@@ -3203,6 +3203,7 @@
 [3543. Maximum Weighted K-Edge Path](./leetcode/3543-MaximumWeightedKEdgePath.go)   
 [3547. Maximum Sum of Edge Values in a Graph](./leetcode/3547-MaximumSumOfEdgeValuesInAGraph.go)   
 [3553. Minimum Weighted Subgraph With the Required Paths II](./leetcode/3553-MinimumWeightedSubgraphWithTheRequiredPathsII.go)   
+[3585. Find Weighted Median Node in Tree](./leetcode/3585-FindWeightedMedianNodeInTree.go)   
 
 # Trie
 [386. Lexicographical Numbers](./leetcode/386-LexicographicalNumbers.go)   
