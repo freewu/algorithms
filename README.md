@@ -3828,6 +3828,7 @@ LCR 185. 统计结果概率
 [3564. Seasonal Sales Analysis](./leetcode/3564-SeasonalSalesAnalysis.sql)   
 [3570. Find Books with No Available Copies](./leetcode/3570-FindBooksWithNoAvailableCopies.sql)   
 [3580. Find Consistently Improving Employees](./leetcode/3580-FindConsistentlyImprovingEmployees.sql)   
+[3586. Find COVID Recovery Patients](./leetcode/3586-FindCOVIDRecoveryPatients.sql)   
 
 # Shell
 [192. Word Frequency](./leetcode/192-WordFrequency.sh)      
