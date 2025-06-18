@@ -76,6 +76,34 @@ func divideArray2(nums []int, k int) [][]int {
     return res
 }
 
+func divideArray3(nums []int, k int) [][]int {
+    mn, mx := nums[0], nums[0]
+    min := func (x, y int) int { if x < y { return x; }; return y; }
+    max := func (x, y int) int { if x > y { return x; }; return y; }
+    for _, v := range nums { // 找到最大最小值
+        mn = min(mn, v)
+        mx = max(mx, v)
+    }
+    count := make([]int, mx - mn + 1)
+    for _, v := range nums {
+        count[v - mn]++
+    }
+    sorted := make([]int, 0, len(nums))
+    for i, c := range count {
+        for j := 0; j < c; j++ {
+            sorted = append(sorted, i + mn)
+        }
+    }
+    res := make([][]int, 0, len(nums) / 3)
+    for i := 0; i < len(sorted); i += 3 {
+        if sorted[i+2]-sorted[i] > k {
+            return [][]int{}
+        }
+        res = append(res, sorted[i:i+3])
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: nums = [1,3,4,8,7,9,3,5,1], k = 2
@@ -102,4 +130,9 @@ func main() {
     fmt.Println(divideArray2([]int{1,3,3,2,7,3},3)) // []
     fmt.Println(divideArray2([]int{1,2,3,4,5,6,7,8,9},3)) // [[1 2 3] [4 5 6] [7 8 9]]
     fmt.Println(divideArray2([]int{9,8,7,6,5,4,3,2,1},3)) // [[1 2 3] [4 5 6] [7 8 9]]
+
+    fmt.Println(divideArray3([]int{1,3,4,8,7,9,3,5,1},2)) // [[1,1,3],[3,4,5],[7,8,9]]
+    fmt.Println(divideArray3([]int{1,3,3,2,7,3},3)) // []
+    fmt.Println(divideArray3([]int{1,2,3,4,5,6,7,8,9},3)) // [[1 2 3] [4 5 6] [7 8 9]]
+    fmt.Println(divideArray3([]int{9,8,7,6,5,4,3,2,1},3)) // [[1 2 3] [4 5 6] [7 8 9]]
 }
