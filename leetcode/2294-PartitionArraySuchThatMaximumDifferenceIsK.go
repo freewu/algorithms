@@ -108,11 +108,18 @@ func main() {
     // Since three subsequences were created, we return 3. It can be shown that 3 is the minimum number of subsequences needed.
     fmt.Println(partitionArray([]int{2,2,4,5}, 0)) // 3
 
+    fmt.Println(partitionArray([]int{1,2,3,4,5,6,7,8,9}, 0)) // 9
+    fmt.Println(partitionArray([]int{9,8,7,6,5,4,3,2,1}, 0)) // 9
+
     fmt.Println(partitionArray1([]int{3,6,1,2,5}, 2)) // 2
     fmt.Println(partitionArray1([]int{1,2,3}, 1)) // 2
     fmt.Println(partitionArray1([]int{2,2,4,5}, 0)) // 3
+    fmt.Println(partitionArray1([]int{1,2,3,4,5,6,7,8,9}, 0)) // 9
+    fmt.Println(partitionArray1([]int{9,8,7,6,5,4,3,2,1}, 0)) // 9
 
     fmt.Println(partitionArray2([]int{3,6,1,2,5}, 2)) // 2
     fmt.Println(partitionArray2([]int{1,2,3}, 1)) // 2
     fmt.Println(partitionArray2([]int{2,2,4,5}, 0)) // 3
+    fmt.Println(partitionArray2([]int{1,2,3,4,5,6,7,8,9}, 0)) // 9
+    fmt.Println(partitionArray2([]int{9,8,7,6,5,4,3,2,1}, 0)) // 9
 }
