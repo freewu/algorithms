@@ -55,6 +55,30 @@ func minimumDeletions(word string, k int) int {
     return res
 }
 
+func minimumDeletions1(word string, k int) int {
+    freq := make([]int, 26)
+    for _, v := range word {
+        freq[v - 'a']++
+    }
+    sort.Ints(freq)
+    for freq[0] == 0 {
+        freq = freq[1:]
+    }
+    min := func (x, y int) int { if x < y { return x; }; return y; }
+    res, n, suff, pref, l := len(word) + 1, len(freq), len(word), 0, 0
+    for r, cnt := range freq {
+        for freq[l] + k < cnt {
+            limit := min(cnt, freq[l] + k)
+            res = min(res, pref + suff - (n - r) * limit)
+            pref += freq[l]
+            l++
+        }
+        res = min(res, pref + suff - (n - r) * cnt)
+        suff -= cnt
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: word = "aabcaba", k = 0
@@ -71,4 +95,13 @@ func main() {
     // Output: 1
     // Explanation: We can make word 2-special by deleting 1 occurrence of "b". Therefore, word becomes equal to "aaaaaa" where each letter's frequency is now uniformly 6.
     fmt.Println(minimumDeletions("aaabaaa", 2)) // 1
+
+    fmt.Println(minimumDeletions("bluefrog", 0)) // 0
+    fmt.Println(minimumDeletions("leetcode", 0)) // 2
+
+    fmt.Println(minimumDeletions1("aabcaba", 0)) // 3
+    fmt.Println(minimumDeletions1("dabdcbdcdcd", 2)) // 2
+    fmt.Println(minimumDeletions1("aaabaaa", 2)) // 1
+    fmt.Println(minimumDeletions1("bluefrog", 0)) // 0
+    fmt.Println(minimumDeletions1("leetcode", 0)) // 2
 }
