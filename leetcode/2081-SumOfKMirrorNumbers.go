@@ -124,4 +124,9 @@ func main() {
     // Explanation: The 17 smallest 7-mirror numbers are:
     // 1, 2, 3, 4, 5, 6, 8, 121, 171, 242, 292, 16561, 65656, 2137312, 4602064, 6597956, 6958596
     fmt.Println(kMirror(7,17)) // 20379000
+
+    fmt.Println(kMirror(2,1)) // 1
+    fmt.Println(kMirror(9,30)) // 18627530
+    fmt.Println(kMirror(9,1)) // 1
+    fmt.Println(kMirror(2,30)) // 2609044274
 }
