@@ -89,6 +89,74 @@ func kMirror(k int, n int) int64 {
     return int64(res)
 }
 
+const MX = 30
+var res [10][]int
+
+// 力扣 9. 回文数
+func isKPalindrome(x, k int) bool {
+    if x % k == 0 { return false }
+    rev := 0
+    for rev < x / k {
+        rev = rev  *k + x % k
+        x /= k
+    }
+    return rev == x || rev == x / k
+}
+
+func doPalindrome(x int) bool {
+    done := true
+    for k := 2; k < 10; k++ {
+        if len(res[k]) < MX && isKPalindrome(x, k) {
+            res[k] = append(res[k], x)
+        }
+        if len(res[k]) < MX {
+            done = false
+        }
+    }
+    if !done {
+        return false
+    }
+    for k := 2; k < 10; k++ {
+        // 计算前缀和 
+        for i := 1; i < MX; i++ {
+            res[k][i] += res[k][i-1]
+        }
+    }
+    return true
+}
+
+func init() {
+    for k := 2; k < 10; k++ {
+        res[k] = make([]int, 0, MX) // 预分配空间
+    }
+    for base := 1; ; base *= 10 {
+        // 生成奇数长度回文数，例如 base = 10，生成的范围是 101 ~ 999
+        for i := base; i < base * 10; i++ {
+            x := i
+            for t := i / 10; t > 0; t /= 10 {
+                x = x * 10 + t % 10
+            }
+            if doPalindrome(x) {
+                return
+            }
+        }
+        // 生成偶数长度回文数，例如 base = 10，生成的范围是 1001 ~ 9999
+        for i := base; i < base * 10; i++ {
+            x := i
+            for t := i; t > 0; t /= 10 {
+                x = x * 10 + t % 10
+            }
+            if doPalindrome(x) {
+                return
+            }
+        }
+    }
+}
+
+func kMirror1(k, n int) int64 {
+    return int64(res[k][n-1])
+}
+
 func main() {
     // Example 1:
     // Input: k = 2, n = 5
@@ -129,4 +197,12 @@ func main() {
     fmt.Println(kMirror(9,30)) // 18627530
     fmt.Println(kMirror(9,1)) // 1
     fmt.Println(kMirror(2,30)) // 2609044274
+
+    fmt.Println(kMirror1(2,5)) // 25
+    fmt.Println(kMirror1(3,7)) // 499
+    fmt.Println(kMirror1(7,17)) // 20379000
+    fmt.Println(kMirror1(2,1)) // 1
+    fmt.Println(kMirror1(9,30)) // 18627530
+    fmt.Println(kMirror1(9,1)) // 1
+    fmt.Println(kMirror1(2,30)) // 2609044274
 }
