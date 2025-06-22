@@ -1845,6 +1845,7 @@
 [3584. Maximum Product of First and Last Elements of a Subsequence](./leetcode/3584-MaximumProductOfFirstAndLastElementsOfASubsequence.go)   
 [3587. Minimum Adjacent Swaps to Alternate Parity](./leetcode/3587-MinimumAdjacentSwapsToAlternateParity.go)   
 [3588. Find Maximum Area of a Triangle](./leetcode/3588-FindMaximumAreaOfATriangle.go)   
+[3589. Count Prime-Gap Balanced Subarrays](./leetcode/3589-CountPrimeGapBalancedSubarrays.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
