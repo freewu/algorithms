@@ -84,6 +84,11 @@ func main() {
     // Thus, the 4 groups formed are "abc", "def", "ghi", and "jxx".
     fmt.Println(divideString("abcdefghij", 3, 'x')) // ["abc","def","ghi","jxx"]
 
+    fmt.Println(divideString("bluefrog", 3, 'x')) // [blu efr ogx]
+    fmt.Println(divideString("leetcode", 3, 'x')) // [lee tco dex]
+
     fmt.Println(divideString1("abcdefghi", 3, 'x')) // ["abc","def","ghi"]
     fmt.Println(divideString1("abcdefghij", 3, 'x')) // ["abc","def","ghi","jxx"]
+    fmt.Println(divideString1("bluefrog", 3, 'x')) // [blu efr ogx]
+    fmt.Println(divideString1("leetcode", 3, 'x')) // [lee tco dex]
 }
