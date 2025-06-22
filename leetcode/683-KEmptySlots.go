@@ -72,4 +72,7 @@ func main() {
     // Input: bulbs = [1,2,3], k = 1
     // Output: -1
     fmt.Println(kEmptySlots([]int{1,2,3}, 1)) // -1
+
+    fmt.Println(kEmptySlots([]int{1,2,3,4,5,6,7,8,9}, 1)) // -1
+    fmt.Println(kEmptySlots([]int{9,8,7,6,5,4,3,2,1}, 1)) // -1
 }
