@@ -80,6 +80,35 @@ func minIncrease(n int, edges [][]int, cost []int) int {
     return res
 }
 
+func minIncrease1(n int, edges [][]int, cost []int) int {
+    res, g := 0, make([][]int, n)
+    for _, e := range edges {
+        x, y := e[0], e[1]
+        g[x] = append(g[x], y)
+        g[y] = append(g[y], x)
+    }
+    g[0] = append(g[0], -1)
+    var dfs func(x, fa int) int
+    dfs = func(x, fa int) int {
+        mx, count := 0, 0
+        for _, y := range g[x] {
+            if y == fa {
+                continue
+            }
+            val := dfs(y, x)
+            if val > mx {
+                mx, count = val, 1
+            } else if val == mx {
+                count++
+            }
+        }
+        res += len(g[x]) - 1 - count
+        return mx + cost[x]
+    }
+    dfs(0, -1)
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: n = 3, edges = [[0,1],[0,2]], cost = [2,1,3]
@@ -112,4 +141,8 @@ func main() {
     // Path 0 → 1 → 3 has a score of 3 + 4 + 1 = 8.
     // To make all root-to-leaf path scores equal to 10, increase the cost of node 1 by 2. Thus, the output is 1.
     fmt.Println(minIncrease(5,[][]int{{0,4},{0,1},{1,2},{1,3}}, []int{3,4,1,1,7})) // 1
+
+    fmt.Println(minIncrease1(3,[][]int{{0,1},{0,2}}, []int{2,1,3})) // 1
+    fmt.Println(minIncrease1(3,[][]int{{0,1},{1,2}}, []int{5,1,4})) // 0
+    fmt.Println(minIncrease1(5,[][]int{{0,4},{0,1},{1,2},{1,3}}, []int{3,4,1,1,7})) // 1
 }
