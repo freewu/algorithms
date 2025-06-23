@@ -1847,6 +1847,7 @@
 [3588. Find Maximum Area of a Triangle](./leetcode/3588-FindMaximumAreaOfATriangle.go)   
 [3589. Count Prime-Gap Balanced Subarrays](./leetcode/3589-CountPrimeGapBalancedSubarrays.go)   
 [3590. Kth Smallest Path XOR Sum](./leetcode/3590-KthSmallestPathXORSum.go)   
+[3591. Check if Any Element Has Prime Frequency](./leetcode/3591-CheckIfAnyElementHasPrimeFrequency.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
