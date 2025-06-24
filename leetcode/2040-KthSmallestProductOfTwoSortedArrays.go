@@ -41,6 +41,7 @@ package main
 
 import "fmt"
 import "sort"
+import "slices"
 
 func kthSmallestProduct(nums1 []int, nums2 []int, k int64) int64 {
     abs := func(x int) int { if x < 0 { return -x; }; return x; }
@@ -135,6 +136,66 @@ func kthSmallestProduct1(nums1 []int, nums2 []int, k int64) int64 {
     return int64(res)
 }
 
+func kthSmallestProduct2(nums1 []int, nums2 []int, k int64) int64 {
+    m, n := len(nums1), len(nums2)
+    i0, j0 := sort.SearchInts(nums1, 0), sort.SearchInts(nums2, 0) // 四个区域的水平分界线, 四个区域的垂直分界线
+    check := func(t int) bool {
+        var cnt int
+        if t < 0 { // 第一和第三象限 
+            i,j := 0, j0
+            for i < i0 && j < n { // 行递增，列递减(每次增加完，继续向后找)
+                if nums1[i]*nums2[j] > t {
+                    j++
+                } else {
+                    cnt += n-j // 本行j之后，都是<t的数
+                    i++   // 都是逼近大的数，找小的
+                }
+            }
+            i, j = i0, 0
+            for i < m && j < j0 { // 列递增, 行递减
+                if nums1[i]*nums2[j] > t {
+                    i++
+                } else {
+                    cnt += m-i
+                    j++   // 都是逼近大的数，找小的
+                }
+            }
+        } else { // 第二(列减行减)、四象限(列增行增)
+            cnt = i0*(n-j0) + (m-i0)*j0    //本分支逻辑是 t>=0, 所以一四象限的全部元素都满足
+            i, j := 0, j0-1
+            for i < i0 && j >= 0 {
+                if nums1[i]*nums2[j] > t {   // 找更小的行
+                    i++
+                } else {
+                    cnt += i0-i
+                    j--   // 都是逼近大的数
+                }
+            }
+            i, j = i0, n-1
+            for i < m && j >=0 {
+                if nums1[i]*nums2[j] > t {   // 找更小的
+                    j--
+                } else {
+                    cnt += j-j0 + 1
+                    i++   // 都是逼近大的数
+                }
+            }
+        }
+        return cnt >= int(k)
+    }
+    corners := []int{nums1[0]*nums2[0], nums1[0]*nums2[n-1], nums1[m-1]*nums2[0], nums1[m-1]*nums2[n-1]}
+    left, right := slices.Min(corners), slices.Max(corners) + 1
+    for left < right {
+        mid := left + (right-left)/2
+        if check(mid) {
+            right = mid 
+        } else {
+            left = mid + 1
+        }
+    }
+    return int64(left)
+}
+
 func main() {
     // Example 1:
     // Input: nums1 = [2,5], nums2 = [3,4], k = 2
@@ -169,4 +230,8 @@ func main() {
     fmt.Println(kthSmallestProduct1([]int{2,5}, []int{3,4}, 2)) // 8
     fmt.Println(kthSmallestProduct1([]int{-4,-2,0,3}, []int{2,4}, 6)) // 0
     fmt.Println(kthSmallestProduct1([]int{-2,-1,0,1,2}, []int{-3,-1,2,4,5}, 3)) // -6
+
+    fmt.Println(kthSmallestProduct2([]int{2,5}, []int{3,4}, 2)) // 8
+    fmt.Println(kthSmallestProduct2([]int{-4,-2,0,3}, []int{2,4}, 6)) // 0
+    fmt.Println(kthSmallestProduct2([]int{-2,-1,0,1,2}, []int{-3,-1,2,4,5}, 3)) // -6
 }
