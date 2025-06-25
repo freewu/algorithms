@@ -102,6 +102,19 @@ func main() {
     // The length of this subsequence is 6, so 6 is returned.
     fmt.Println(longestSubsequence("00101001", 1)) // 6
 
+    fmt.Println(longestSubsequence("1111111111", 1)) // 1
+    fmt.Println(longestSubsequence("1111100000", 1)) // 5
+    fmt.Println(longestSubsequence("0000011111", 1)) // 6
+    fmt.Println(longestSubsequence("0000000000", 1)) // 10
+    fmt.Println(longestSubsequence("0101010101", 1)) // 6
+    fmt.Println(longestSubsequence("1010101010", 1)) // 5
+
     fmt.Println(longestSubsequence1("1001010", 5)) // 5
     fmt.Println(longestSubsequence1("00101001", 1)) // 6
+    fmt.Println(longestSubsequence1("1111111111", 1)) // 1
+    fmt.Println(longestSubsequence1("1111100000", 1)) // 5
+    fmt.Println(longestSubsequence1("0000011111", 1)) // 6
+    fmt.Println(longestSubsequence1("0000000000", 1)) // 10
+    fmt.Println(longestSubsequence1("0101010101", 1)) // 6
+    fmt.Println(longestSubsequence1("1010101010", 1)) // 5
 }
