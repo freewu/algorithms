@@ -78,6 +78,61 @@ func longestSubsequenceRepeatedK(s string, k int) string {
     return res
 }
 
+func longestSubsequenceRepeatedK1(s string, k int) string {
+    const N int = 26
+    const M int = 8
+    n := len(s)
+    pos := [N]int{}
+    for i := 0; i < N; i++ {
+        pos[i] = n
+    }
+    count, next:= [N]int{}, make([][N]int, n)
+    for i := n - 1; i >= 0; i-- {
+        next[i] = pos
+        x := int(s[i] & 31) - 1
+        pos[x] = i 
+        count[x]++
+    }
+    arr := []byte{}
+    for i := N - 1; i >= 0; i-- {
+        if count[i] >= k {
+            arr = append(arr, byte('a' + i))
+        }
+    }
+    check := func(t string) bool {
+        i, j := 0, 0
+        if s[0] == t[0] {
+            j = 1
+        }
+        for j < k * len(t) {
+            i = next[i][t[j % len(t)] - 'a']
+            if i == n {
+                return false
+            }
+            j++
+        }
+        return true
+    }
+    res := [M][]string{}
+    res[0] = append(res[0], "")
+    for t := 1; t < M; t++ {
+        for _, p := range res[t-1] {
+            for _, c := range arr {
+                tmp := p + string(c)
+                if check(tmp) {
+                    res[t] = append(res[t], tmp)
+                }
+            }
+        }
+    }
+    for t := M - 1; t > 0; t-- {
+        if len(res[t]) > 0 {
+            return res[t][0]
+        }
+    }
+    return ""
+}
+
 func main() {
     // Example 1:
     // <img src="https://assets.leetcode.com/uploads/2021/08/30/longest-subsequence-repeat-k-times.png" />
@@ -96,4 +151,13 @@ func main() {
     // Output: ""
     // Explanation: There is no subsequence repeated 2 times. Empty string is returned.
     fmt.Println(longestSubsequenceRepeatedK("ab", 2)) // ""
+
+    fmt.Println(longestSubsequenceRepeatedK("bluefrog", 2)) // ""
+    fmt.Println(longestSubsequenceRepeatedK("leetcode", 2)) // "e"
+
+    fmt.Println(longestSubsequenceRepeatedK1("letsleetcode", 2)) // "let"
+    fmt.Println(longestSubsequenceRepeatedK1("bb", 2)) // "b"
+    fmt.Println(longestSubsequenceRepeatedK1("ab", 2)) // ""
+    fmt.Println(longestSubsequenceRepeatedK1("bluefrog", 2)) // ""
+    fmt.Println(longestSubsequenceRepeatedK1("leetcode", 2)) // "e"
 }
