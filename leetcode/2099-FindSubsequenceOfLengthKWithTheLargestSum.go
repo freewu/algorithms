@@ -34,6 +34,7 @@ package main
 //     1 <= k <= nums.length
 
 import "fmt"
+import "sort"
 
 func maxSubsequence(nums []int, k int) []int {
     minIndex := func (nums ...int) int { // 找到最小的 index
@@ -51,6 +52,27 @@ func maxSubsequence(nums []int, k int) []int {
         nums = append(nums[:index], nums[index + 1:]...)
     }
     return nums
+}
+
+func maxSubsequence1(nums []int, k int) []int {
+    if k >= len(nums) { return nums }
+    type Pair struct { val, index int }
+    pairs := make([]Pair, len(nums))
+    for i, v := range nums {
+        pairs[i] = Pair{ val: v, index: i }
+    }
+    sort.Slice(pairs, func(i, j int) bool {
+        return pairs[i].val > pairs[j].val || (pairs[i].val == pairs[j].val && pairs[i].index < pairs[j].index)
+    })
+    selected := pairs[:k] // pick k items
+    sort.Slice(selected, func(i, j int) bool {
+        return selected[i].index < selected[j].index
+    })
+    res := make([]int, k)
+    for i := range selected {
+        res[i] = selected[i].val
+    }
+    return res
 }
 
 func main() {
@@ -76,4 +98,10 @@ func main() {
 
     fmt.Println(maxSubsequence([]int{1,2,3,4,5,6,7,8,9}, 2)) // [8 9]
     fmt.Println(maxSubsequence([]int{9,8,7,6,5,4,3,2,1}, 2)) // [9 8]
+
+    fmt.Println(maxSubsequence1([]int{2,1,3,3}, 2)) // [3,3]
+    fmt.Println(maxSubsequence1([]int{-1,-2,3,4}, 3)) // [-1,3,4]
+    fmt.Println(maxSubsequence1([]int{3,4,3,3}, 2)) // [3,4]
+    fmt.Println(maxSubsequence1([]int{1,2,3,4,5,6,7,8,9}, 2)) // [8 9]
+    fmt.Println(maxSubsequence1([]int{9,8,7,6,5,4,3,2,1}, 2)) // [9 8]
 }
