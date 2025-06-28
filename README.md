@@ -2882,6 +2882,8 @@
 [3537. Fill a Special Grid](./leetcode/3537-FillASpecialGrid.go)   
 [3560. Find Minimum Log Transportation Cost](./leetcode/3560-FindMinimumLogTransportationCost.go)   
 [3581. Count Odd Letters from Number](./leetcode/3581-CountOddLettersFromNumber.go)   
+[3596. Minimum Cost Path with Alternating Directions I](./leetcode/3596-MinimumCostPathWithAlternatingDirectionsI.go)   
+
 
 # Stack
 [225. Implement Stack using Queues](./leetcode/225-ImplementStackUsingQueues.go)   
