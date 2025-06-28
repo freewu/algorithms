@@ -73,4 +73,7 @@ func main() {
     // The subsequence has the largest sum of 3 + 4 = 7. 
     // Another possible subsequence is [4, 3].
     fmt.Println(maxSubsequence([]int{3,4,3,3}, 2)) // [3,4]
+
+    fmt.Println(maxSubsequence([]int{1,2,3,4,5,6,7,8,9}, 2)) // [8 9]
+    fmt.Println(maxSubsequence([]int{9,8,7,6,5,4,3,2,1}, 2)) // [9 8]
 }
