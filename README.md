@@ -1852,6 +1852,7 @@
 [3594. Minimum Time to Transport All Individuals](./leetcode/3594-MinimumTimeToTransportAllIndividuals.go)   
 [3595. Once Twice](./leetcode/3595-OnceTwice.go)   
 [3598. Longest Common Prefix Between Adjacent Strings After Removals](./leetcode/3598-LongestCommonPrefixBetweenAdjacentStringsAfterRemovals.go)   
+[3599. Partition Array to Minimize XOR](./leetcode/3599-PartitionArrayToMinimizeXOR.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
