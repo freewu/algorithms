@@ -83,6 +83,36 @@ func treeToDoublyList(root *Node) *Node {
     return left
 }
 
+func treeToDoublyList1(root *Node) *Node {
+    var dfs func(root *Node) (*Node, *Node)
+    dfs = func(root *Node) (*Node, *Node) {
+        if root == nil {  return nil, nil } 
+        leftMax, leftMin := dfs(root.Left)
+        rightMax, rightMin := dfs(root.Right)
+        if leftMax != nil {
+            leftMax.Right = root
+            root.Left = leftMax
+        }
+        if rightMin != nil {
+            rightMin.Left = root
+            root.Right = rightMin
+        }
+        if leftMin == nil {
+            leftMin = root
+        }
+        if rightMax == nil {
+            rightMax = root
+        }
+        return rightMax, leftMin
+    }
+    tail, head := dfs(root)
+    if head != nil && tail != nil {
+        head.Left = tail
+        tail.Right = head
+    }
+    return head
+}
+
 func main() {
     // Example 1:
     // <img src="https://assets.leetcode.com/uploads/2018/10/12/bstdlloriginalbst.png" />
@@ -112,4 +142,24 @@ func main() {
     fmt.Println("t2 ", t2)
     fmt.Println("t2.Left ", t2.Left)
     fmt.Println("t2.Right ", t2.Right)
+
+
+    tree11 := &Node {
+        4,
+        &Node{2, &Node{1, nil, nil}, &Node{3, nil, nil}, },
+        &Node{5, nil, nil},
+    }
+    t11 := treeToDoublyList1(tree11)
+    fmt.Println("t11 ", t11)
+    fmt.Println("t11.Left ", t11.Left)
+    fmt.Println("t11.Right ", t11.Right)
+    tree12 := &Node {
+        2,
+        &Node{1, nil, nil},
+        &Node{3, nil, nil},
+    }
+    t12 := treeToDoublyList1(tree12)
+    fmt.Println("t12 ", t12)
+    fmt.Println("t12.Left ", t12.Left)
+    fmt.Println("t12.Right ", t12.Right)
 }
