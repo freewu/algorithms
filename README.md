@@ -3217,6 +3217,7 @@
 [3553. Minimum Weighted Subgraph With the Required Paths II](./leetcode/3553-MinimumWeightedSubgraphWithTheRequiredPathsII.go)   
 [3585. Find Weighted Median Node in Tree](./leetcode/3585-FindWeightedMedianNodeInTree.go)   
 [3593. Minimum Increments to Equalize Leaf Paths](./leetcode/3593-MinimumIncrementsToEqualizeLeafPaths.go)   
+[3600. Maximize Spanning Tree Stability with Upgrades](./leetcode/3600-MaximizeSpanningTreeStabilityWithUpgrades.go)   
 
 # Trie
 [386. Lexicographical Numbers](./leetcode/386-LexicographicalNumbers.go)   
