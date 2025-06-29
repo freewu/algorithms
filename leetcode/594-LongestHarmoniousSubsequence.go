@@ -42,6 +42,40 @@ func findLHS(nums []int) int {
     return res
 }
 
+func findLHS1(nums []int) int {
+    res, mp := 0, make(map[int]int)
+    for _, v := range nums {
+        mp[v]++
+    }
+    max := func (x, y int) int { if x > y { return x; }; return y; }
+    for k, v := range mp {
+        if mp[k + 1] > 0  {
+            res = max(res,mp[k + 1] + v)
+        }
+    }
+    return res
+}
+
+func findLHS2(nums []int) int {
+    mp := make(map[int]int, len(nums))
+    for _, v := range nums {
+        mp[v]++
+    }
+    max := func (x, y int) int { if x > y { return x; }; return y; }
+    res, c1, c2 := 0, 0, 0
+    for k, v := range mp {
+        c1, c2 = mp[k+1], mp[k-1]
+        if c1 > 0 {
+            res = max(res, v + c1)
+        }
+        if c2 > 0 {
+            res = max(res, v + c2)
+        }
+    }
+    return res
+}
+
+
 func main() {
     // Example 1:
     // Input: nums = [1,3,2,2,5,2,3,7]
@@ -56,4 +90,19 @@ func main() {
     // Input: nums = [1,1,1,1]
     // Output: 0
     fmt.Println(findLHS([]int{1,1,1,1})) // 0
+
+    fmt.Println(findLHS([]int{1,2,3,4,5,6,7,8,9})) // 2
+    fmt.Println(findLHS([]int{9,8,7,6,5,4,3,2,1})) // 2
+
+    fmt.Println(findLHS1([]int{1,3,2,2,5,2,3,7})) // 5 [3,2,2,2,3]
+    fmt.Println(findLHS1([]int{1,2,3,4})) // 2 [1,2] | [2,3] | [3,4]
+    fmt.Println(findLHS1([]int{1,1,1,1})) // 0
+    fmt.Println(findLHS1([]int{1,2,3,4,5,6,7,8,9})) // 2
+    fmt.Println(findLHS1([]int{9,8,7,6,5,4,3,2,1})) // 2
+
+    fmt.Println(findLHS2([]int{1,3,2,2,5,2,3,7})) // 5 [3,2,2,2,3]
+    fmt.Println(findLHS2([]int{1,2,3,4})) // 2 [1,2] | [2,3] | [3,4]
+    fmt.Println(findLHS2([]int{1,1,1,1})) // 0
+    fmt.Println(findLHS2([]int{1,2,3,4,5,6,7,8,9})) // 2
+    fmt.Println(findLHS2([]int{9,8,7,6,5,4,3,2,1})) // 2
 }
