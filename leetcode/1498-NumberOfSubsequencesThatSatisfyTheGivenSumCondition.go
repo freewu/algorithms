@@ -65,8 +65,8 @@ func numSubseq1(nums []int, target int) int {
         if n == 1 { return 2; }
         tmp := pow(n >> 1)
         tmp *= tmp
-        if n % 2 == 0 { return tmp % 1000000007; }
-        return (tmp << 1) % 1000000007
+        if n % 2 == 0 { return tmp % 1_000_000_007; }
+        return (tmp << 1) % 1_000_000_007
     }
     left, right := 0, len(nums) - 1
     for left < right {
@@ -83,22 +83,61 @@ func numSubseq1(nums []int, target int) int {
     return res + 1
 }
 
+func numSubseq2(nums []int, target int) int {
+    sort.Ints(nums) // 对数组进行排序
+    res, n, mod := 0, len(nums), 1_000_000_007
+    left, right := 0, n - 1
+    pow := make([]int, n) // 存储2的幂次
+    pow[0] = 1
+    for i := 1; i < n; i++ {
+        pow[i] = pow[i-1] * 2 % mod // 计算2的幂次
+    }
+    for left <= right {
+        if nums[left] + nums[right] > target { // nums[right] 太大，即使与剩余元素的最小值 nums[left] 相加也不满足要求
+            right--
+        } else {
+            res = (res + pow[right - left]) % mod
+            left++
+        }
+    }
+    return res
+}
+
 func main() {
+    // Example 1:
+    // Input: nums = [3,5,6,7], target = 9
+    // Output: 4
     // Explanation: There are 4 subsequences that satisfy the condition.
     // [3] -> Min value + max value <= target (3 + 3 <= 9)
     // [3,5] -> (3 + 5 <= 9)
     // [3,5,6] -> (3 + 6 <= 9)
     // [3,6] -> (3 + 6 <= 9)
     fmt.Println(numSubseq([]int{3,5,6,7}, 9)) // 4
+    // Example 2:
+    // Input: nums = [3,3,6,8], target = 10
+    // Output: 6
     // Explanation: There are 6 subsequences that satisfy the condition. (nums can have repeated numbers).
     // [3] , [3] , [3,3], [3,6] , [3,6] , [3,3,6]
     fmt.Println(numSubseq([]int{3,3,6,8}, 10)) // 6
-
+    // Example 3:
+    // Input: nums = [2,3,3,4,6,7], target = 12
+    // Output: 61
     // Explanation: There are 63 non-empty subsequences, two of them do not satisfy the condition ([6,7], [7]).
     // Number of valid subsequences (63 - 2 = 61).
     fmt.Println(numSubseq([]int{2,3,3,4,6,7}, 12)) // 61
 
+    fmt.Println(numSubseq([]int{1,2,3,4,5,6,7,8,9}, 12)) // 469
+    fmt.Println(numSubseq([]int{9,8,7,6,5,4,3,2,1}, 12)) // 469
+
     fmt.Println(numSubseq1([]int{3,5,6,7}, 9)) // 4
     fmt.Println(numSubseq1([]int{3,3,6,8}, 10)) // 6
     fmt.Println(numSubseq1([]int{2,3,3,4,6,7}, 12)) // 61
+    fmt.Println(numSubseq1([]int{1,2,3,4,5,6,7,8,9}, 12)) // 469
+    fmt.Println(numSubseq1([]int{9,8,7,6,5,4,3,2,1}, 12)) // 469
+
+    fmt.Println(numSubseq2([]int{3,5,6,7}, 9)) // 4
+    fmt.Println(numSubseq2([]int{3,3,6,8}, 10)) // 6
+    fmt.Println(numSubseq2([]int{2,3,3,4,6,7}, 12)) // 61
+    fmt.Println(numSubseq2([]int{1,2,3,4,5,6,7,8,9}, 12)) // 469
+    fmt.Println(numSubseq2([]int{9,8,7,6,5,4,3,2,1}, 12)) // 469
 }
