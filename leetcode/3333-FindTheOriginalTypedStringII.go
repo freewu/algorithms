@@ -124,8 +124,13 @@ func main() {
     // Input: word = "aaabbb", k = 3
     // Output: 8
     fmt.Println(possibleStringCount("aaabbb", 3)) // 8
+
+    fmt.Println(possibleStringCount("bluefrog", 3)) // 1
+    fmt.Println(possibleStringCount("leetcode", 3)) // 2
     
     fmt.Println(possibleStringCount1("aabbccdd", 7)) // 5
     fmt.Println(possibleStringCount1("aabbccdd", 8)) // 1
     fmt.Println(possibleStringCount1("aaabbb", 3)) // 8
+    fmt.Println(possibleStringCount1("bluefrog", 3)) // 1
+    fmt.Println(possibleStringCount1("leetcode", 3)) // 2
 }
