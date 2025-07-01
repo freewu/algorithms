@@ -41,6 +41,16 @@ func possibleStringCount(word string) int {
     return res
 }
 
+func possibleStringCount1(word string) int {
+    res, n := 1, len(word)
+    for i := 1; i < n; i++ {
+        if word[i - 1] == word[i] {
+            res++
+        }
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: word = "abbcccc"
@@ -58,4 +68,13 @@ func main() {
     // Input: word = "aaaa"
     // Output: 4
     fmt.Println(possibleStringCount("aaaa")) // 4
+
+    fmt.Println(possibleStringCount("bluefrog")) // 1
+    fmt.Println(possibleStringCount("leetcode")) // 2
+
+    fmt.Println(possibleStringCount1("abbcccc")) // 5
+    fmt.Println(possibleStringCount1("abcd")) // 1
+    fmt.Println(possibleStringCount1("aaaa")) // 4
+    fmt.Println(possibleStringCount1("bluefrog")) // 1
+    fmt.Println(possibleStringCount1("leetcode")) // 2
 }
