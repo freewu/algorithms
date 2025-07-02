@@ -47,6 +47,23 @@ func kthCharacter(k int) byte {
     return arr[k-1]
 }
 
+func kthCharacter1(k int) byte {
+    n, s := 1, "a"
+    for n < k {
+        t := []byte{}
+        for _, c := range s {
+            if c == 'z' {
+                t = append(t, 'a')
+            } else {
+                t = append(t, byte(c+1))
+            }
+        }
+        s += string(t)
+        n = len(s)
+    }
+    return s[k-1]
+}
+
 func main() {
     // Example 1:
     // Input: k = 5
@@ -68,4 +85,13 @@ func main() {
     fmt.Printf("%c\n",kthCharacter(64)) // "g"
     fmt.Printf("%c\n",kthCharacter(499)) // "g"
     fmt.Printf("%c\n",kthCharacter(500)) // "h"
+
+    fmt.Printf("%c\n",kthCharacter1(5)) // "b"
+    fmt.Printf("%c\n",kthCharacter1(10)) // "c"
+    fmt.Printf("%c\n",kthCharacter1(1)) // "a"
+    fmt.Printf("%c\n",kthCharacter1(2)) // "b"
+    fmt.Printf("%c\n",kthCharacter1(4)) // "c"
+    fmt.Printf("%c\n",kthCharacter1(64)) // "g"
+    fmt.Printf("%c\n",kthCharacter1(499)) // "g"
+    fmt.Printf("%c\n",kthCharacter1(500)) // "h"
 }
