@@ -98,6 +98,17 @@ func main() {
     // Appends "bbccbbcc" to "aabbaabb", word becomes "aabbaabbbbccbbcc".
     fmt.Printf("%c\n",kthCharacter(10, []int{0,1,0,1})) // "b"
 
+    fmt.Printf("%c\n",kthCharacter(10, []int{1,0,1,0,1,0,1,0,1,0})) // "b"
+    fmt.Printf("%c\n",kthCharacter(10, []int{0,0,0,0,0,0,0,0,0,0})) // "a"
+    fmt.Printf("%c\n",kthCharacter(10, []int{1,1,1,1,1,1,1,1,1,1})) // "c"
+    fmt.Printf("%c\n",kthCharacter(10, []int{1,1,1,1,1,0,0,0,0,0})) // "c"
+    fmt.Printf("%c\n",kthCharacter(10, []int{0,0,0,0,0,1,1,1,1,1})) // "a"
+
     fmt.Printf("%c\n",kthCharacter1(5,[]int{0,0,0})) // "a"
     fmt.Printf("%c\n",kthCharacter1(10, []int{0,1,0,1})) // "b"
+    fmt.Printf("%c\n",kthCharacter1(10, []int{1,0,1,0,1,0,1,0,1,0})) // "b"
+    fmt.Printf("%c\n",kthCharacter1(10, []int{0,0,0,0,0,0,0,0,0,0})) // "a"
+    fmt.Printf("%c\n",kthCharacter1(10, []int{1,1,1,1,1,1,1,1,1,1})) // "c"
+    fmt.Printf("%c\n",kthCharacter1(10, []int{1,1,1,1,1,0,0,0,0,0})) // "c"
+    fmt.Printf("%c\n",kthCharacter1(10, []int{0,0,0,0,0,1,1,1,1,1})) // "a"
 }
