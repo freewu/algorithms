@@ -55,4 +55,7 @@ func main() {
     // Output: -1
     // Explanation: There are no lucky numbers in the array.
     fmt.Println(findLucky([]int{2,2,2,3,3})) // -1
+
+    fmt.Println(findLucky([]int{1,2,3,4,5,6,7,8,9})) // 1
+    fmt.Println(findLucky([]int{9,8,7,6,5,4,3,2,1})) // 1
 }
