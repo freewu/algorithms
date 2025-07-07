@@ -1854,8 +1854,6 @@
 [3598. Longest Common Prefix Between Adjacent Strings After Removals](./leetcode/3598-LongestCommonPrefixBetweenAdjacentStringsAfterRemovals.go)   
 [3599. Partition Array to Minimize XOR](./leetcode/3599-PartitionArrayToMinimizeXOR.go)   
 [3606. Coupon Code Validator](./leetcode/3606-CouponCodeValidator.go)   
-[3607. Power Grid Maintenance](./leetcode/3607-PowerGridMaintenance.go)   
-
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
@@ -2892,7 +2890,8 @@
 [3602. Hexadecimal and Hexatrigesimal Conversion](./leetcode/3602-HexadecimalAndHexatrigesimalConversion.go)   
 [3603. Minimum Cost Path with Alternating Directions II](./leetcode/3603-MinimumCostPathWithAlternatingDirectionsII.go)   
 [3604. Minimum Time to Reach Destination in Directed Graph](./leetcode/3604-MinimumTimeToReachDestinationInDirectedGraph.go)   
-
+[3607. Power Grid Maintenance](./leetcode/3607-PowerGridMaintenance.go)   
+[3608. Minimum Time for K Connected Components](./leetcode/3608-MinimumTimeForKConnectedComponents.go)   
 
 # Stack
 [225. Implement Stack using Queues](./leetcode/225-ImplementStackUsingQueues.go)   
