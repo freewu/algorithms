@@ -1854,6 +1854,8 @@
 [3598. Longest Common Prefix Between Adjacent Strings After Removals](./leetcode/3598-LongestCommonPrefixBetweenAdjacentStringsAfterRemovals.go)   
 [3599. Partition Array to Minimize XOR](./leetcode/3599-PartitionArrayToMinimizeXOR.go)   
 [3606. Coupon Code Validator](./leetcode/3606-CouponCodeValidator.go)   
+[3607. Power Grid Maintenance](./leetcode/3607-PowerGridMaintenance.go)   
+
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
