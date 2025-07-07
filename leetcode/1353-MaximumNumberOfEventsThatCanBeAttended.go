@@ -144,6 +144,35 @@ func (h *MinHeap) Push(x any) {
     h.tail++
 }
 
+func maxEvents2(events [][]int) int {
+    sort.SliceStable(events, func(i, j int) bool {
+        return events[i][0] < events[j][0]
+    })
+    res, mx := 0, events[len(events) - 1][1]
+    fa := make([]int, mx + 2)
+    for i := range fa {
+        fa[i] = i
+    }
+    find := func(x int) int {
+        val := x
+        for fa[val] != val {
+            val = fa[val]
+        }
+        for fa[x] != val {
+            fa[x], x = val, fa[x]
+        }
+        return val
+    }
+    for _, e := range events {
+        x := find(e[0]) // 查找从 startDay 开始的第一个可用天
+        if x <= e[1] {
+            res++
+            fa[x] = x + 1 // 标记 x 已占用
+        }
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // <img src="https://assets.leetcode.com/uploads/2020/02/05/e1.png" />
@@ -158,8 +187,15 @@ func main() {
     // Example 2:
     // Input: events= [[1,2],[2,3],[3,4],[1,2]]
     // Output: 4
-    fmt.Println(maxEvents([][]int{{1,2},{2,3},{3,4},{1,2}})) // 4
+    fmt.Println(maxEvents([][]int{{1,2},{2,3},{3,4},{1,2}})) // 5
+
+    fmt.Println(maxEvents([][]int{{1,2},{1,2},{3,3},{1,5},{1,5}})) // 4
 
     fmt.Println(maxEvents1([][]int{{1,2},{2,3},{3,4}})) // 3
     fmt.Println(maxEvents1([][]int{{1,2},{2,3},{3,4},{1,2}})) // 4
+    fmt.Println(maxEvents([][]int{{1,2},{1,2},{3,3},{1,5},{1,5}})) // 5
+
+    fmt.Println(maxEvents2([][]int{{1,2},{2,3},{3,4}})) // 3
+    fmt.Println(maxEvents2([][]int{{1,2},{2,3},{3,4},{1,2}})) // 4
+    fmt.Println(maxEvents([][]int{{1,2},{1,2},{3,3},{1,5},{1,5}})) // 5
 }
