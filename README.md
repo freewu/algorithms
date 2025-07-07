@@ -1853,7 +1853,9 @@
 [3595. Once Twice](./leetcode/3595-OnceTwice.go)   
 [3598. Longest Common Prefix Between Adjacent Strings After Removals](./leetcode/3598-LongestCommonPrefixBetweenAdjacentStringsAfterRemovals.go)   
 [3599. Partition Array to Minimize XOR](./leetcode/3599-PartitionArrayToMinimizeXOR.go)   
+[3605. Minimum Stability Factor of Array](./leetcode/3605-MinimumStabilityFactorOfArray.go)   
 [3606. Coupon Code Validator](./leetcode/3606-CouponCodeValidator.go)   
+
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
