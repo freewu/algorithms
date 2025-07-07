@@ -2887,7 +2887,9 @@
 [3581. Count Odd Letters from Number](./leetcode/3581-CountOddLettersFromNumber.go)   
 [3596. Minimum Cost Path with Alternating Directions I](./leetcode/3596-MinimumCostPathWithAlternatingDirectionsI.go)   
 [3602. Hexadecimal and Hexatrigesimal Conversion](./leetcode/3602-HexadecimalAndHexatrigesimalConversion.go)   
-[3603. Minimum Cost Path with Alternating Directions II](./leetcode/3603-MinimumCostPathWithAlternatingDirectionsII.go)    
+[3603. Minimum Cost Path with Alternating Directions II](./leetcode/3603-MinimumCostPathWithAlternatingDirectionsII.go)   
+[3604. Minimum Time to Reach Destination in Directed Graph](./leetcode/3604-MinimumTimeToReachDestinationInDirectedGraph.go)   
+
 
 # Stack
 [225. Implement Stack using Queues](./leetcode/225-ImplementStackUsingQueues.go)   
