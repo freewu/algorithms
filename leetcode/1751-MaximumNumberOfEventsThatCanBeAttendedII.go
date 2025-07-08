@@ -39,7 +39,6 @@ package main
 
 import "fmt"
 import "sort"
-import "slices"
 
 func maxValue(events [][]int, k int) int {
     n := len(events)
@@ -64,8 +63,8 @@ func maxValue(events [][]int, k int) int {
 }
 
 func maxValue1(events [][]int, k int) int {
-    slices.SortFunc(events, func(a, b []int) int { 
-        return a[1] - b[1] 
+    sort.Slice(events, func(i, j int) bool {
+        return events[i][0] < events[j][0]
     })
     n := len(events)
     dp := make([][]int, n + 1)
