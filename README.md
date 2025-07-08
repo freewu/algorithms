@@ -2894,6 +2894,8 @@
 [3604. Minimum Time to Reach Destination in Directed Graph](./leetcode/3604-MinimumTimeToReachDestinationInDirectedGraph.go)   
 [3607. Power Grid Maintenance](./leetcode/3607-PowerGridMaintenance.go)   
 [3608. Minimum Time for K Connected Components](./leetcode/3608-MinimumTimeForKConnectedComponents.go)   
+[3609. Minimum Moves to Reach Target in Grid](./leetcode/3609-MinimumMovesToReachTargetInGrid.go)   
+
 
 # Stack
 [225. Implement Stack using Queues](./leetcode/225-ImplementStackUsingQueues.go)   
