@@ -136,6 +136,47 @@ func maxFreeTime1(eventTime int, startTime []int, endTime []int) int {
     return res
 }
 
+func maxFreeTime2(eventTime int, startTime []int, endTime []int) int {
+    n, t1, t2  := len(startTime), 0, 0
+    q := make([]bool, n)
+    max := func (x, y int) int { if x > y { return x; }; return y; }
+    for i := 0; i < n; i++ {
+        if endTime[i] - startTime[i] <= t1 {
+            q[i] = true
+        }
+        if i == 0 {
+            t1 = max(t1, startTime[i])
+        } else {
+            t1 = max(t1, startTime[i] - endTime[i - 1])
+        }
+        if endTime[n - i - 1] - startTime[n - i - 1] <= t2 {
+            q[n - i - 1] = true
+        }
+        if i == 0 {
+            t2 = max(t2, eventTime - endTime[n - 1])
+        } else {
+            t2 = max(t2, startTime[n - i] - endTime[n - i - 1])
+        }
+    }
+    res := 0
+    for i := 0; i < n; i++ {
+        left := 0
+        if i != 0 {
+            left = endTime[i - 1]
+        }
+        right := eventTime
+        if i != n - 1 {
+            right = startTime[i + 1]
+        }
+        if q[i] {
+            res = max(res, right - left)
+        } else {
+            res = max(res, right - left - (endTime[i] - startTime[i]))
+        }
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: eventTime = 5, startTime = [1,3], endTime = [2,5]
@@ -174,4 +215,11 @@ func main() {
     fmt.Println(maxFreeTime1(5, []int{0,1,2,3,4}, []int{1,2,3,4,5})) // 0
     fmt.Println(maxFreeTime1(5, []int{1,2,3,4,5,6,7,8,9}, []int{9,8,7,6,5,4,3,2,1})) // 6
     fmt.Println(maxFreeTime1(5, []int{9,8,7,6,5,4,3,2,1}, []int{1,2,3,4,5,6,7,8,9})) // 8
+
+    fmt.Println(maxFreeTime2(5, []int{1,3}, []int{2,5})) // 2
+    fmt.Println(maxFreeTime2(10, []int{0,7,9}, []int{1,8,10})) // 7
+    fmt.Println(maxFreeTime2(10, []int{0,3,7,9}, []int{1,4,8,10})) // 6
+    fmt.Println(maxFreeTime2(5, []int{0,1,2,3,4}, []int{1,2,3,4,5})) // 0
+    fmt.Println(maxFreeTime2(5, []int{1,2,3,4,5,6,7,8,9}, []int{9,8,7,6,5,4,3,2,1})) // 6
+    fmt.Println(maxFreeTime2(5, []int{9,8,7,6,5,4,3,2,1}, []int{1,2,3,4,5,6,7,8,9})) // 8
 }
