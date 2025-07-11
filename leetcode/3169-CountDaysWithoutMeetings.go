@@ -90,6 +90,25 @@ func countDays2(days int, meetings [][]int) int {
     return res
 }
 
+func countDays3(days int, meetings [][]int) int {
+    sort.Slice(meetings, func(i,j int) bool {
+        return meetings[i][0] < meetings[j][0]
+    })
+    tmp := [][]int{ meetings[0] }
+    for _, v := range meetings[1:] {
+        end := tmp[len(tmp)-1][1]
+        if end < v[0] {
+            tmp = append(tmp, v)
+        } else {
+            tmp[len(tmp)-1][1] = max(tmp[len(tmp)-1][1], v[1])
+        }
+    }
+    for _, v := range tmp {
+        days -= v[1] - v[0] + 1
+    }
+    return days
+}
+
 func main() {
     // Example 1:
     // Input: days = 10, meetings = [[5,7],[1,3],[9,10]]
@@ -117,4 +136,8 @@ func main() {
     fmt.Println(countDays2(10, [][]int{{5,7},{1,3},{9,10}})) // 2
     fmt.Println(countDays2(5, [][]int{{2,4},{1,3}})) // 1
     fmt.Println(countDays2(6, [][]int{{1,6}})) // 0
+
+    fmt.Println(countDays3(10, [][]int{{5,7},{1,3},{9,10}})) // 2
+    fmt.Println(countDays3(5, [][]int{{2,4},{1,3}})) // 1
+    fmt.Println(countDays3(6, [][]int{{1,6}})) // 0
 }
