@@ -1855,7 +1855,7 @@
 [3599. Partition Array to Minimize XOR](./leetcode/3599-PartitionArrayToMinimizeXOR.go)   
 [3605. Minimum Stability Factor of Array](./leetcode/3605-MinimumStabilityFactorOfArray.go)   
 [3606. Coupon Code Validator](./leetcode/3606-CouponCodeValidator.go)   
-
+[3616. Number of Student Replacements](./leetcode/3616-NumberOfStudentReplacements.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
