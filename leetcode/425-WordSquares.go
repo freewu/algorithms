@@ -32,32 +32,32 @@ package main
 import "fmt"
 
 func wordSquares(words []string) [][]string {
-    res, board, dic := [][]string{}, make([]string, len(words[0])), map[string][]string{} // 行前缀哈希表
+    res, board, mp := [][]string{}, make([]string, len(words[0])), map[string][]string{} // 行前缀哈希表
     if len(words) == 0 || len(words[0]) == 0 {
         return res
     }
     for _, i := range words { // 添加行前缀对应的字符串
         for j := 0; j < len(i); j++ {
-            dic[i[:j]] = append(dic[i[:j]], i)
+            mp[i[:j]] = append(mp[i[:j]], i)
         }
     }
-    var backtrack func(int)
-    backtrack = func(cnt int){
-        if cnt == len(words[0]){ // 回溯结束条件
+    var backtrack func(v int) 
+    backtrack = func(v int) {
+        if v == len(words[0]) { // 回溯结束条件
             res = append(res, append([]string(nil),board...))
             return
         }
-        if _, ok := dic[board[cnt]]; ok { // 如果现在的行前缀没有对应的字符串，则不用继续回溯下去
-            for _, i := range dic[board[cnt]] {
-                board[cnt] = i
-                for j := cnt+1; j < len(words[0]); j++ {
-                    board[j] = board[j] + string(board[cnt][j])
+        if _, ok := mp[board[v]]; ok { // 如果现在的行前缀没有对应的字符串，则不用继续回溯下去
+            for _, i := range mp[board[v]] {
+                board[v] = i
+                for j := v + 1; j < len(words[0]); j++ {
+                    board[j] = board[j] + string(board[v][j])
                 }
-                backtrack(cnt+1)
-                for j := cnt + 1; j < len(words[0]); j++ {
+                backtrack(v + 1)
+                for j := v + 1; j < len(words[0]); j++ {
                     board[j] = board[j][:len(board[j])-1]
                 }
-                board[cnt] = board[cnt][:cnt]
+                board[v] = board[v][:v]
             }
         }
     }
@@ -78,4 +78,6 @@ func main() {
     // Explanation:
     // The output consists of two word squares. The order of output does not matter (just the order of words in each word square matters).
     fmt.Println(wordSquares([]string{"abat","baba","atan","atal"})) // [["baba","abat","baba","atal"],["baba","abat","baba","atan"]]
+
+    fmt.Println(wordSquares([]string{"blue","frog","leet","code","free"})) // []
 }
