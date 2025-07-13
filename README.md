@@ -2478,6 +2478,7 @@
 [3582. Generate Tag for Video Caption](./leetcode/3582-GenerateTagForVideoCaption.go)   
 [3597. Partition String](./leetcode/3597-PartitionString.go)   
 [3612. Process String with Special Operations I](./leetcode/3612-ProcessStringWithSpecialOperationsI.go)   
+[3614. Process String with Special Operations II](./leetcode/3614-ProcessStringWithSpecialOperationsII.go)   
 
 # Dynamic Programming
 [276. Paint Fence](./leetcode/276-PaintFence.go)   
