@@ -2897,6 +2897,7 @@
 [3608. Minimum Time for K Connected Components](./leetcode/3608-MinimumTimeForKConnectedComponents.go)   
 [3609. Minimum Moves to Reach Target in Grid](./leetcode/3609-MinimumMovesToReachTargetInGrid.go)   
 [3610. Minimum Number of Primes to Sum to Target](./leetcode/3610-MinimumNumberOfPrimesToSumToTarget.go)   
+[3613. Minimize Maximum Component Cost](./leetcode/3613-MinimizeMaximumComponentCost.go)   
 
 # Stack
 [225. Implement Stack using Queues](./leetcode/225-ImplementStackUsingQueues.go)   
