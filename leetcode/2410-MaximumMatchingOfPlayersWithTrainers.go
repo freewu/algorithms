@@ -77,6 +77,21 @@ func matchPlayersAndTrainers2(players []int, trainers []int) int {
     return res
 }
 
+func matchPlayersAndTrainers3(players []int, trainers []int) int {
+    sort.Ints(players)
+    sort.Ints(trainers)
+    res, i, j := 0, 0, 0
+    for i < len(players) && j < len(trainers) {
+        if trainers[j] >= players[i] {
+            i, j = i+1, j+1
+            res++
+            continue
+        }
+        j++
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: players = [4,7,9], trainers = [8,2,5,8]
@@ -95,9 +110,29 @@ func main() {
     // Each player can only be matched with one trainer, so the maximum answer is 1.
     fmt.Println(matchPlayersAndTrainers([]int{1,1,1}, []int{10})) // 1
 
+    fmt.Println(matchPlayersAndTrainers([]int{1,2,3,4,5,6,7,8,9}, []int{1,2,3,4,5,6,7,8,9})) // 9
+    fmt.Println(matchPlayersAndTrainers([]int{9,8,7,6,5,4,3,2,1}, []int{1,2,3,4,5,6,7,8,9})) // 9
+    fmt.Println(matchPlayersAndTrainers([]int{1,2,3,4,5,6,7,8,9}, []int{9,8,7,6,5,4,3,2,1})) // 9
+    fmt.Println(matchPlayersAndTrainers([]int{9,8,7,6,5,4,3,2,1}, []int{9,8,7,6,5,4,3,2,1})) // 9
+
     fmt.Println(matchPlayersAndTrainers1([]int{4,7,9}, []int{8,2,5,8})) // 2
     fmt.Println(matchPlayersAndTrainers1([]int{1,1,1}, []int{10})) // 1
+    fmt.Println(matchPlayersAndTrainers1([]int{1,2,3,4,5,6,7,8,9}, []int{1,2,3,4,5,6,7,8,9})) // 9
+    fmt.Println(matchPlayersAndTrainers1([]int{9,8,7,6,5,4,3,2,1}, []int{1,2,3,4,5,6,7,8,9})) // 9
+    fmt.Println(matchPlayersAndTrainers1([]int{1,2,3,4,5,6,7,8,9}, []int{9,8,7,6,5,4,3,2,1})) // 9
+    fmt.Println(matchPlayersAndTrainers1([]int{9,8,7,6,5,4,3,2,1}, []int{9,8,7,6,5,4,3,2,1})) // 9
 
     fmt.Println(matchPlayersAndTrainers2([]int{4,7,9}, []int{8,2,5,8})) // 2
     fmt.Println(matchPlayersAndTrainers2([]int{1,1,1}, []int{10})) // 1
+    fmt.Println(matchPlayersAndTrainers2([]int{1,2,3,4,5,6,7,8,9}, []int{1,2,3,4,5,6,7,8,9})) // 9
+    fmt.Println(matchPlayersAndTrainers2([]int{9,8,7,6,5,4,3,2,1}, []int{1,2,3,4,5,6,7,8,9})) // 9
+    fmt.Println(matchPlayersAndTrainers2([]int{1,2,3,4,5,6,7,8,9}, []int{9,8,7,6,5,4,3,2,1})) // 9
+    fmt.Println(matchPlayersAndTrainers2([]int{9,8,7,6,5,4,3,2,1}, []int{9,8,7,6,5,4,3,2,1})) // 9
+
+    fmt.Println(matchPlayersAndTrainers3([]int{4,7,9}, []int{8,2,5,8})) // 2
+    fmt.Println(matchPlayersAndTrainers3([]int{1,1,1}, []int{10})) // 1
+    fmt.Println(matchPlayersAndTrainers3([]int{1,2,3,4,5,6,7,8,9}, []int{1,2,3,4,5,6,7,8,9})) // 9
+    fmt.Println(matchPlayersAndTrainers3([]int{9,8,7,6,5,4,3,2,1}, []int{1,2,3,4,5,6,7,8,9})) // 9
+    fmt.Println(matchPlayersAndTrainers3([]int{1,2,3,4,5,6,7,8,9}, []int{9,8,7,6,5,4,3,2,1})) // 9
+    fmt.Println(matchPlayersAndTrainers3([]int{9,8,7,6,5,4,3,2,1}, []int{9,8,7,6,5,4,3,2,1})) // 9
 }
