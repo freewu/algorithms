@@ -52,6 +52,36 @@ func maximumLength(nums []int) int {
     return max(res,max(even, odd))
 }
 
+func maximumLength1(nums []int) int {
+    mp := make([]int, 2)
+    mp[nums[0]%2]++
+    res, flag := 1, nums[0] % 2
+    for i := 1; i < len(nums); i++ {
+        if nums[i] % 2 != flag {
+            res++
+            flag = nums[i] % 2
+        }
+        mp[nums[i] % 2]++
+    }
+    max := func (x, y int) int { if x > y { return x; }; return y; }
+    return max(res, max(mp[0], mp[1]))
+}
+
+func maximumLength2(nums []int) int {
+    a, b, c, d := 0, 0, 0, 0
+    for _, x := range nums {
+        if x & 1 == 0 {
+            b++
+            d = c + 1
+        } else {
+            a++
+            c = d + 1
+        }
+    }
+    max := func (x, y int) int { if x > y { return x; }; return y; }
+    return max(max(a, b), max(c, d))
+}
+
 func main() {
     // Example 1:
     // Input: nums = [1,2,3,4]
@@ -71,4 +101,19 @@ func main() {
     // Explanation:
     // The longest valid subsequence is [1, 3].
     fmt.Println(maximumLength([]int{1,3})) // 2
+
+    fmt.Println(maximumLength([]int{1,2,3,4,5,6,7,8,9})) // 9
+    fmt.Println(maximumLength([]int{9,8,7,6,5,4,3,2,1})) // 9
+
+    fmt.Println(maximumLength1([]int{1,2,3,4})) // 4
+    fmt.Println(maximumLength1([]int{1,2,1,1,2,1,2})) // 6
+    fmt.Println(maximumLength1([]int{1,3})) // 2
+    fmt.Println(maximumLength1([]int{1,2,3,4,5,6,7,8,9})) // 9
+    fmt.Println(maximumLength1([]int{9,8,7,6,5,4,3,2,1})) // 9
+
+    fmt.Println(maximumLength2([]int{1,2,3,4})) // 4
+    fmt.Println(maximumLength2([]int{1,2,1,1,2,1,2})) // 6
+    fmt.Println(maximumLength2([]int{1,3})) // 2
+    fmt.Println(maximumLength2([]int{1,2,3,4,5,6,7,8,9})) // 9
+    fmt.Println(maximumLength2([]int{9,8,7,6,5,4,3,2,1})) // 9
 }
