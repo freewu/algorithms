@@ -3858,6 +3858,7 @@ LCR 185. 统计结果概率
 [3586. Find COVID Recovery Patients](./leetcode/3586-FindCOVIDRecoveryPatients.sql)   
 [3601. Find Drivers with Improved Fuel Efficiency](./leetcode/3601-FindDriversWithImprovedFuelEfficiency.sql)   
 [3611. Find Overbooked Employees](./leetcode/3611-FindOverbookedEmployees.sql)   
+[3617. Find Students with Study Spiral Pattern](./leetcode/3617-FindStudentsWithStudySpiralPattern.sql)   
 
 # Shell
 [192. Word Frequency](./leetcode/192-WordFrequency.sh)      
