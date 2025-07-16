@@ -78,6 +78,11 @@ func main() {
     // The longest valid subsequence is [1, 4, 1, 4].
     fmt.Println(maximumLength([]int{1,4,2,3,1,4}, 2)) // 4
 
+    fmt.Println(maximumLength([]int{1,2,3,4,5,6,7,8,9}, 2)) // 9
+    fmt.Println(maximumLength([]int{9,8,7,6,5,4,3,2,1}, 2)) // 9
+
     fmt.Println(maximumLength1([]int{1,2,3,4,5}, 2)) // 5
     fmt.Println(maximumLength1([]int{1,4,2,3,1,4}, 2)) // 4
+    fmt.Println(maximumLength1([]int{1,2,3,4,5,6,7,8,9}, 2)) // 9
+    fmt.Println(maximumLength1([]int{9,8,7,6,5,4,3,2,1}, 2)) // 9
 }
