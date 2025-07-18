@@ -64,6 +64,18 @@ func removeSubfolders1(folder []string) []string {
     return res
 }
 
+func removeSubfolders2(folder []string) []string {
+    sort.Strings(folder)
+    res := []string{folder[0]}
+    for i := 1; i < len(folder); i++ {
+        m, n := len(res[len(res) - 1]), len(folder[i])
+        if m >= n || !(res[len(res) - 1] == folder[i][:m] && folder[i][m] == '/') {
+            res = append(res, folder[i])
+        }
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: folder = ["/a","/a/b","/c/d","/c/d/e","/c/f"]
@@ -83,4 +95,8 @@ func main() {
     fmt.Println(removeSubfolders1([]string{"/a","/a/b","/c/d","/c/d/e","/c/f"})) // ["/a","/c/d","/c/f"]
     fmt.Println(removeSubfolders1([]string{"/a","/a/b/c","/a/b/d"})) // ["/a"]
     fmt.Println(removeSubfolders1([]string{"/a/b/c","/a/b/ca","/a/b/d"})) // ["/a/b/c","/a/b/ca","/a/b/d"]
+
+    fmt.Println(removeSubfolders2([]string{"/a","/a/b","/c/d","/c/d/e","/c/f"})) // ["/a","/c/d","/c/f"]
+    fmt.Println(removeSubfolders2([]string{"/a","/a/b/c","/a/b/d"})) // ["/a"]
+    fmt.Println(removeSubfolders2([]string{"/a/b/c","/a/b/ca","/a/b/d"})) // ["/a/b/c","/a/b/ca","/a/b/d"]
 }
