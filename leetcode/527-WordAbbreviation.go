@@ -79,4 +79,6 @@ func main() {
     // Input: words = ["aa","aaa"]
     // Output: ["aa","aaa"]
     fmt.Println(wordsAbbreviation([]string{"aa","aaa"})) // ["aa","aaa"]
+
+    fmt.Println(wordsAbbreviation([]string{"bluefrog","leetcode"})) // [b6g l6e]
 }
