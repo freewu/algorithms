@@ -1857,6 +1857,7 @@
 [3606. Coupon Code Validator](./leetcode/3606-CouponCodeValidator.go)   
 [3616. Number of Student Replacements](./leetcode/3616-NumberOfStudentReplacements.go)   
 [3623. Count Number of Trapezoids I](./leetcode/3623-CountNumberOfTrapezoidsI.go)   
+[3625. Count Number of Trapezoids II](./leetcode/3625-CountNumberOfTrapezoidsII.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
