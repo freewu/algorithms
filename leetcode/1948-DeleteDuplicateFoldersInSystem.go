@@ -122,6 +122,57 @@ func deleteDuplicateFolder(paths [][]string) [][]string {
     return res
 }
 
+func deleteDuplicateFolder1(paths [][]string) [][]string {
+    type Trie struct {
+        serial   string           // current node structure's serialized representation
+        children map[string]*Trie // current node's child nodes
+    }
+    root := &Trie{children: make(map[string]*Trie)} // root node
+    // build a trie tree
+    for _, path := range paths {
+        cur := root
+        for _, node := range path {
+            if _, ok := cur.children[node]; !ok {
+                cur.children[node] = &Trie{children: make(map[string]*Trie)}
+            }
+            cur = cur.children[node]
+        }
+    }
+    freq := make(map[string]int) // hash table records the occurrence times of each serialized representation
+    // post-order traversal based on depth-first search, calculate the serialized representation of each node structure
+    var construct func(node *Trie)
+    construct = func(node *Trie) {
+        if len(node.children) == 0 { return } // if it is a leaf node, no operation is needed.
+        v := make([]string, 0, len(node.children))
+        for folder, child := range node.children {
+            construct(child)
+            v = append(v, folder+"("+child.serial+")")
+        }
+        sort.Strings(v)
+        node.serial = strings.Join(v, "")
+        freq[node.serial]++
+    }
+    construct(root)
+    res, path:= make([][]string, 0), make([]string, 0)
+    // operate the trie, delete duplicate folders
+    var operate func(*Trie)
+    operate = func(node *Trie) {
+        if freq[node.serial] > 1 { return } // if the serialization representation appears more than once, it needs to be deleted
+        if len(path) > 0 {
+            tmp := make([]string, len(path))
+            copy(tmp, path)
+            res = append(res, tmp)
+        }
+        for folder, child := range node.children {
+            path = append(path, folder)
+            operate(child)
+            path = path[:len(path)-1]
+        }
+    }
+    operate(root)
+    return res
+}
+
 func main() {
     // Example 1:
     // <img src="https://assets.leetcode.com/uploads/2021/07/19/lc-dupfolder1.jpg" />
@@ -146,4 +197,8 @@ func main() {
     // Explanation: All folders are unique in the file system.
     // Note that the returned array can be in a different order as the order does not matter.
     fmt.Println(deleteDuplicateFolder([][]string{{"a","b"},{"c","d"},{"c"},{"a"}})) // [["c"],["c","d"],["a"],["a","b"]]
+
+    fmt.Println(deleteDuplicateFolder1([][]string{{"a"},{"c"},{"d"},{"a","b"},{"c","b"},{"d","a"}})) // [["d"],["d","a"]]
+    fmt.Println(deleteDuplicateFolder1([][]string{{"a"},{"c"},{"a","b"},{"c","b"},{"a","b","x"},{"a","b","x","y"},{"w"},{"w","y"}})) // [["c"],["c","b"],["a"],["a","b"]]
+    fmt.Println(deleteDuplicateFolder1([][]string{{"a","b"},{"c","d"},{"c"},{"a"}})) // [["c"],["c","d"],["a"],["a","b"]]
 }
