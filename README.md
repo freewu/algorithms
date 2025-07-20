@@ -1856,6 +1856,7 @@
 [3605. Minimum Stability Factor of Array](./leetcode/3605-MinimumStabilityFactorOfArray.go)   
 [3606. Coupon Code Validator](./leetcode/3606-CouponCodeValidator.go)   
 [3616. Number of Student Replacements](./leetcode/3616-NumberOfStudentReplacements.go)   
+[3618. Split Array by Prime Indices](./leetcode/3618-SplitArrayByPrimeIndices.go)   
 [3623. Count Number of Trapezoids I](./leetcode/3623-CountNumberOfTrapezoidsI.go)   
 [3625. Count Number of Trapezoids II](./leetcode/3625-CountNumberOfTrapezoidsII.go)   
 
