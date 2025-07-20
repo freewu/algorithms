@@ -3234,6 +3234,8 @@
 [3610. Minimum Number of Primes to Sum to Target](./leetcode/3610-MinimumNumberOfPrimesToSumToTarget.go)   
 [3613. Minimize Maximum Component Cost](./leetcode/3613-MinimizeMaximumComponentCost.go)   
 [3615. Longest Palindromic Path in Graph](./leetcode/3615-LongestPalindromicPathInGraph.go)   
+[3619. Count Islands With Total Value Divisible by K](./leetcode/3619-CountIslandsWithTotalValueDivisibleByK.go)   
+
 
 # Trie
 [386. Lexicographical Numbers](./leetcode/386-LexicographicalNumbers.go)   
