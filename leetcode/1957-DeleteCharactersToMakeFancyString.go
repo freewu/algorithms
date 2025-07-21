@@ -88,9 +88,13 @@ func main() {
     fmt.Println(makeFancyString("aab")) // aab
 
     fmt.Println(makeFancyString("a")) // a
+    fmt.Println(makeFancyString("bluefrog")) // bluefrog
+    fmt.Println(makeFancyString("freewu")) // a
 
     fmt.Println(makeFancyString1("leeetcode")) // leetcode
     fmt.Println(makeFancyString1("aaabaaaa")) // aabaa
     fmt.Println(makeFancyString1("aab")) // aab
     fmt.Println(makeFancyString1("a")) // a
+    fmt.Println(makeFancyString1("bluefrog")) // bluefrog
+    fmt.Println(makeFancyString1("freewu")) // freewu
 }
