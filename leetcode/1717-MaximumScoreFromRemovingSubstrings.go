@@ -60,6 +60,33 @@ func maximumGain(s string, x int, y int) int {
     return res
 }
 
+func maximumGain1(s string, x int, y int) int {
+    a, b := 'a', 'b'
+    if x < y {
+        x, y = y, x
+        a, b = b, a
+    }
+    res, cnt1, cnt2 := 0, 0, 0
+    for _, c := range s {
+        if c == a {
+            cnt1++
+        } else if c == b {
+            if cnt1 > 0 {
+                res += x // 找到一个 "ab"（或 "ba"，取决于优先级）
+                cnt1--   // 消耗一个 a
+            } else {
+                cnt2++ // 记录无法配对的 b
+            }
+        } else {
+            // 遇到非 a、b 的字符，结算当前段的分数
+            res += min(cnt1, cnt2) * y
+            cnt1, cnt2 = 0, 0
+        }
+    }
+    res += min(cnt1, cnt2) * y
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: s = "cdbcbbaaabab", x = 4, y = 5
@@ -75,4 +102,12 @@ func main() {
     // Input: s = "aabbaaxybbaabb", x = 5, y = 4
     // Output: 20
     fmt.Println(maximumGain("aabbaaxybbaabb", 5, 4)) // 20
+
+    fmt.Println(maximumGain("bluefrog", 1, 2)) // 0
+    fmt.Println(maximumGain("leetcode", 1, 2)) // 0
+
+    fmt.Println(maximumGain1("cdbcbbaaabab", 4, 5)) // 19
+    fmt.Println(maximumGain1("aabbaaxybbaabb", 5, 4)) // 20
+    fmt.Println(maximumGain1("bluefrog", 1, 2)) // 0
+    fmt.Println(maximumGain1("leetcode", 1, 2)) // 0
 }
