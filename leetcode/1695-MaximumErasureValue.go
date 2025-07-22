@@ -24,6 +24,7 @@ package main
 //     1 <= nums[i] <= 10^4
 
 import "fmt"
+import "slices"
 
 func maximumUniqueSubarray(nums []int) int {
     res, sum, left := 0, 0, 0
@@ -44,6 +45,24 @@ func maximumUniqueSubarray(nums []int) int {
     return res
 }
 
+func maximumUniqueSubarray1(nums []int) int {
+    res, sum, left, mx := 0, 0, 0, slices.Max(nums) // res, 当前窗口和, 窗口左边界, 数组中的最大值
+    seen := make([]bool, mx + 1) // 创建布尔数组记录元素是否出现过
+    max := func (x, y int) int { if x > y { return x; }; return y; }
+    for _, v := range nums {
+        for seen[v] { // 移除重复元素直到当前元素唯一
+            seen[nums[left]] = false
+            sum -= nums[left]
+            left++
+        }
+        // 添加当前元素
+        seen[v] = true
+        sum += v
+        res = max(res, sum) // 更新最大和
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: nums = [4,2,4,5,6]
@@ -55,4 +74,12 @@ func main() {
     // Output: 8
     // Explanation: The optimal subarray here is [5,2,1] or [1,2,5].
     fmt.Println(maximumUniqueSubarray([]int{5,2,1,2,5,2,1,2,5})) // 8
+
+    fmt.Println(maximumUniqueSubarray([]int{1,2,3,4,5,6,7,8,9})) // 45
+    fmt.Println(maximumUniqueSubarray([]int{9,8,7,6,5,4,3,2,1})) // 45
+
+    fmt.Println(maximumUniqueSubarray1([]int{4,2,4,5,6})) // 17
+    fmt.Println(maximumUniqueSubarray1([]int{5,2,1,2,5,2,1,2,5})) // 8
+    fmt.Println(maximumUniqueSubarray1([]int{1,2,3,4,5,6,7,8,9})) // 45
+    fmt.Println(maximumUniqueSubarray1([]int{9,8,7,6,5,4,3,2,1})) // 45
 }
