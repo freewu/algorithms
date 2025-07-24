@@ -133,6 +133,46 @@ func minimumScore1(nums []int, edges [][]int) int {
     return res
 }
 
+func minimumScore2(nums []int, edges [][]int) int {
+    res, count, n := 1 << 61, 0, len(nums)
+    adj := make([][]int, n)
+    for _, e := range edges {
+        adj[e[0]] = append(adj[e[0]], e[1])
+        adj[e[1]] = append(adj[e[1]], e[0])
+    }
+    sum, in, out := make([]int, n), make([]int, n), make([]int, n)
+    var dfs func(x, fa int)
+    dfs = func(x, fa int) {
+        in[x] = count
+        count++
+        sum[x] = nums[x]
+        for _, y := range adj[x] {
+            if y == fa {
+                continue
+            }
+            dfs(y, x)
+            sum[x] ^= sum[y]
+        }
+        out[x] = count
+    }
+    min := func (x, y int) int { if x < y { return x; }; return y; }
+    max := func (x, y int) int { if x > y { return x; }; return y; }
+    calc := func(part1, part2, part3 int) int { return max(part1, max(part2, part3)) - min(part1, min(part2, part3)) }
+    dfs(0, -1)
+    for u := 1; u < n; u++ {
+        for v := u + 1; v < n; v++ {
+            if in[v] > in[u] && in[v] < out[u] {
+                res = min(res, calc(sum[0]^sum[u], sum[u]^sum[v], sum[v]))
+            } else if in[u] > in[v] && in[u] < out[v] {
+                res = min(res, calc(sum[0]^sum[v], sum[v]^sum[u], sum[u]))
+            } else {
+                res = min(res, calc(sum[0]^sum[u]^sum[v], sum[u], sum[v]))
+            }
+        }
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // <img src="https://assets.leetcode.com/uploads/2022/05/03/ex1drawio.png" />
@@ -159,4 +199,7 @@ func main() {
 
     fmt.Println(minimumScore1([]int{1,5,5,4,11}, [][]int{{0,1},{1,2},{1,3},{3,4}})) // 9
     fmt.Println(minimumScore1([]int{5,5,2,4,4,2}, [][]int{{0,1},{1,2},{5,2},{4,3},{1,3}})) // 0
+
+    fmt.Println(minimumScore2([]int{1,5,5,4,11}, [][]int{{0,1},{1,2},{1,3},{3,4}})) // 9
+    fmt.Println(minimumScore2([]int{5,5,2,4,4,2}, [][]int{{0,1},{1,2},{5,2},{4,3},{1,3}})) // 0
 }
