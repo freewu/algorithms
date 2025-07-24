@@ -91,6 +91,44 @@ func countIslands1(grid [][]int, k int) int {
     return res
 }
 
+func countIslands2(grid [][]int, k int) int {
+    m, n := len(grid), len(grid[0])
+    if m == 0 { return 0 }
+    res, total := 0, m * n
+    visited, stack := make([]bool, total),[]int{}
+    dirs := [][2]int{{1, 0}, {-1, 0}, {0, 1}, {0, -1}}
+    indexOf := func(x, y int) int { return x * n + y }
+    for i := 0; i < m; i++ {
+        for j := 0; j < n; j++ {
+            if grid[i][j] == 0 { continue }
+            index := indexOf(i, j)
+            if visited[index] { continue }
+            visited[index] = true
+            stack = append(stack, index)
+            sum := 0
+            for len(stack) > 0 {
+                cur := stack[len(stack) - 1]
+                stack = stack[:len(stack) - 1]
+                x, y := cur / n, cur % n
+                sum += grid[x][y]
+                for _, d := range dirs {
+                    nx, ny := x+d[0], y+d[1]
+                    if nx < 0 || nx >= m || ny < 0 || ny >= n { continue }
+                    if grid[nx][ny] == 0 { continue }
+                    nindex := indexOf(nx, ny)
+                    if visited[nindex] { continue }
+                    visited[nindex] = true
+                    stack = append(stack, nindex)
+                }
+            }
+            if sum % k == 0 {
+                res++
+            }
+        }
+    }
+    return res
+}
+
 func main() { 
     // Example 1:
     // <img src="https://assets.leetcode.com/uploads/2025/03/06/example1griddrawio-1.png" />
@@ -109,4 +147,7 @@ func main() {
 
     fmt.Println(countIslands1([][]int{{0,2,1,0,0},{0,5,0,0,5},{0,0,1,0,0},{0,1,4,7,0},{0,2,0,0,8}}, 5)) // 2
     fmt.Println(countIslands1([][]int{{3,0,3,0}, {0,3,0,3}, {3,0,3,0}}, 3)) // 6
+
+    fmt.Println(countIslands2([][]int{{0,2,1,0,0},{0,5,0,0,5},{0,0,1,0,0},{0,1,4,7,0},{0,2,0,0,8}}, 5)) // 2
+    fmt.Println(countIslands2([][]int{{3,0,3,0}, {0,3,0,3}, {3,0,3,0}}, 3)) // 6
 }
