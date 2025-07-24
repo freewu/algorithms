@@ -63,8 +63,8 @@ package main
 import "fmt"
 import "sort"
 import "slices"
+import "container/heap"
 
-// 629 / 631
 func findMaxPathScore(edges [][]int, online []bool, k int64) int {
     type Edge struct{ to, weight int }
     mx, n := 0, len(online)
@@ -159,6 +159,45 @@ func findMaxPathScore1(edges [][]int, online []bool, k int64) int {
     }) - 1
 }
 
+// 超出内存限制 631 / 636 
+func findMaxPathScore2(edges [][]int, online []bool, k int64) int {
+    n := len(online)
+    g := make([][]Pair, n)
+    for _, e := range edges {
+        u, v, c := e[0], e[1], e[2]
+        if online[u] && online[v] {
+            g[u] = append(g[u], Pair{ v, c, 0})
+        }
+    }
+    hp := new(MinHeap)
+    heap.Push(hp, Pair{0, 1 << 31, 0})
+    for hp.Len() > 0 {
+        p := heap.Pop(hp).(Pair)
+        if p.to == n - 1 { return p.c }
+        for _, u := range g[p.to] {
+            tall := p.all + u.c
+            if int64(tall) > k { continue }
+            mn := min(u.c, p.c)
+            heap.Push(hp, Pair{ u.to, mn, tall})
+        }
+    }
+    return -1
+}
+
+type Pair struct{ to, c, all int }
+
+type MinHeap []Pair
+
+func (h MinHeap) Len() int            { return len(h) }
+func (h MinHeap) Less(i, j int) bool  { return h[i].c > h[j].c }
+func (h MinHeap) Swap(i, j int)       { h[i], h[j] = h[j], h[i] }
+func (h *MinHeap) Push(v interface{}) { *h = append(*h, v.(Pair)) }
+func (h *MinHeap) Pop() interface{} {
+    o := (*h)[len(*h) - 1]
+    *h = (*h)[:len(*h) - 1]
+    return o
+}
+
 func main() {
     // Example 1:
     // Input: edges = [[0,1,5],[1,3,10],[0,2,3],[2,3,4]], online = [true,true,true,true], k = 10
@@ -193,4 +232,7 @@ func main() {
 
     fmt.Println(findMaxPathScore1([][]int{{0,1,5},{1,3,10},{0,2,3},{2,3,4}},[]bool{true,true,true,true}, 10)) // 3
     fmt.Println(findMaxPathScore1([][]int{{0,1,7},{1,4,5},{0,2,6},{2,3,6},{3,4,2},{2,4,6}}, []bool{true,true,true,false,true}, 12)) // 3
+    
+    fmt.Println(findMaxPathScore2([][]int{{0,1,5},{1,3,10},{0,2,3},{2,3,4}},[]bool{true,true,true,true}, 10)) // 3
+    fmt.Println(findMaxPathScore2([][]int{{0,1,7},{1,4,5},{0,2,6},{2,3,6},{3,4,2},{2,4,6}}, []bool{true,true,true,false,true}, 12)) // 3
 }
