@@ -56,6 +56,24 @@ func maxSum(nums []int) int {
     return res
 }
 
+func maxSum1(nums []int) int {
+    sum, mx := 0, -10000
+    set := make(map[int]bool)
+    for _, v := range nums {
+        set[v] = true
+        if v > mx {
+            mx = v
+        }
+    }
+    if mx <= 0 { return mx }
+    for k := range set {
+        if k > 0 {
+            sum += k
+        }
+    }
+    return sum
+}
+
 func main() {
     // Example 1:
     // Input: nums = [1,2,3,4,5]
@@ -78,4 +96,10 @@ func main() {
 
     fmt.Println(maxSum([]int{1,2,3,4,5,6,7,8,9})) // 45
     fmt.Println(maxSum([]int{9,8,7,6,5,4,3,2,1})) // 45
+
+    fmt.Println(maxSum1([]int{1,2,3,4,5})) // 15
+    fmt.Println(maxSum1([]int{1,1,0,1,1})) // 1
+    fmt.Println(maxSum1([]int{1,2,-1,-2,1,0,-1})) // 3
+    fmt.Println(maxSum1([]int{1,2,3,4,5,6,7,8,9})) // 45
+    fmt.Println(maxSum1([]int{9,8,7,6,5,4,3,2,1})) // 45
 }
