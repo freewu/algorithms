@@ -77,4 +77,7 @@ func main() {
     // At index 5: There is no non-equal neighbor of 1 on the right, so index 5 is neither a hill nor a valley.
     // There are 0 hills and valleys so we return 0.
     fmt.Println(countHillValley([]int{6,6,5,5,4,1})) // 0
+
+    fmt.Println(countHillValley([]int{1,2,3,4,5,6,7,8,9})) // 0
+    fmt.Println(countHillValley([]int{9,8,7,6,5,4,3,2,1})) // 0
 }
