@@ -2484,6 +2484,8 @@
 [3597. Partition String](./leetcode/3597-PartitionString.go)   
 [3612. Process String with Special Operations I](./leetcode/3612-ProcessStringWithSpecialOperationsI.go)   
 [3614. Process String with Special Operations II](./leetcode/3614-ProcessStringWithSpecialOperationsII.go)   
+[3628. Maximum Number of Subsequences After One Inserting](./leetcode/3628-MaximumNumberOfSubsequencesAfterOneInserting.go)   
+
 
 # Dynamic Programming
 [276. Paint Fence](./leetcode/276-PaintFence.go)   
