@@ -1859,6 +1859,8 @@
 [3618. Split Array by Prime Indices](./leetcode/3618-SplitArrayByPrimeIndices.go)   
 [3623. Count Number of Trapezoids I](./leetcode/3623-CountNumberOfTrapezoidsI.go)   
 [3625. Count Number of Trapezoids II](./leetcode/3625-CountNumberOfTrapezoidsII.go)   
+[3627. Maximum Median Sum of Subsequences of Size 3](./leetcode/3627-MaximumMedianSumOfSubsequencesOfSize3.go)   
+
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
