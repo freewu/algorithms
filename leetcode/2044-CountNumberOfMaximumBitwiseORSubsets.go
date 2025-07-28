@@ -57,6 +57,20 @@ func countMaxOrSubsets(nums []int) int {
     return res
 }
 
+func countMaxOrSubsets1(nums []int) int {
+    mx, n := 0, len(nums)
+    for _, n := range nums {
+        mx |= n
+    }
+    var dfs func(i, cur, mx int) int
+    dfs = func(i, cur, mx int) int {
+        if cur == mx { return 1 << (n - i) }
+        if i == n    {  return 0 }
+        return dfs(i + 1, cur, mx) + dfs(i + 1, cur | nums[i], mx)
+    }
+    return dfs(0, 0, mx)
+}
+
 func main() {
     // Example 1:
     // Input: nums = [3,1]
@@ -81,4 +95,13 @@ func main() {
     // - [2,5]
     // - [2,1,5]
     fmt.Println(countMaxOrSubsets([]int{3,2,1,5})) // 6
+
+    fmt.Println(countMaxOrSubsets([]int{1,2,3,4,5,6,7,8,9})) // 337
+    fmt.Println(countMaxOrSubsets([]int{9,8,7,6,5,4,3,2,1})) // 337
+
+    fmt.Println(countMaxOrSubsets1([]int{3,1})) // 2
+    fmt.Println(countMaxOrSubsets1([]int{2,2,2})) // 7
+    fmt.Println(countMaxOrSubsets1([]int{3,2,1,5})) // 6
+    fmt.Println(countMaxOrSubsets1([]int{1,2,3,4,5,6,7,8,9})) // 337
+    fmt.Println(countMaxOrSubsets1([]int{9,8,7,6,5,4,3,2,1})) // 337
 }
