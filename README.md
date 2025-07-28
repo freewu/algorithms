@@ -1861,7 +1861,7 @@
 [3625. Count Number of Trapezoids II](./leetcode/3625-CountNumberOfTrapezoidsII.go)   
 [3627. Maximum Median Sum of Subsequences of Size 3](./leetcode/3627-MaximumMedianSumOfSubsequencesOfSize3.go)   
 [3629. Minimum Jumps to Reach End via Prime Teleportation](./leetcode/3629-MinimumJumpsToReachEndViaPrimeTeleportation.go)   
-
+[3630. Partition Array for Maximum XOR and AND](./leetcode/3630-PartitionArrayForMaximumXORAndAND.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
