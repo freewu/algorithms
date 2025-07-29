@@ -87,6 +87,11 @@ func main() {
     // The longest subarray with that value is [4], so we return 1.
     fmt.Println(longestSubarray([]int{1,2,3,4})) // 1
 
+    fmt.Println(longestSubarray([]int{1,2,3,4,5,6,7,8,9})) // 1
+    fmt.Println(longestSubarray([]int{9,8,7,6,5,4,3,2,1})) // 1
+
     fmt.Println(longestSubarray1([]int{1,2,3,3,2,2})) // 2
     fmt.Println(longestSubarray1([]int{1,2,3,4})) // 1
+    fmt.Println(longestSubarray1([]int{1,2,3,4,5,6,7,8,9})) // 1
+    fmt.Println(longestSubarray1([]int{9,8,7,6,5,4,3,2,1})) // 1
 }
