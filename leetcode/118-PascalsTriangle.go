@@ -56,11 +56,20 @@ func generate1(numRows int) [][]int {
 }
 
 func main() {
-	fmt.Printf("generate(1) = %v\n",generate(1)) // [[1]]
-	fmt.Printf("generate(5) = %v\n",generate(5)) // [[1],[1,1],[1,2,1],[1,3,3,1],[1,4,6,4,1]]
-	fmt.Printf("generate(8) = %v\n",generate(8)) // [[1] [1 1] [1 2 1] [1 3 3 1] [1 4 6 4 1] [1 5 10 10 5 1] [1 6 15 20 15 6 1] [1 7 21 35 35 21 7 1]]
+    // Example 1:
+    // Input: numRows = 5
+    // Output: [[1],[1,1],[1,2,1],[1,3,3,1],[1,4,6,4,1]]
+    fmt.Printf("generate(5) = %v\n",generate(5)) // [[1],[1,1],[1,2,1],[1,3,3,1],[1,4,6,4,1]]
+    // Example 2:
+    // Input: numRows = 1
+    // Output: [[1]]
+    fmt.Printf("generate(1) = %v\n",generate(1)) // [[1]]
 
-	fmt.Printf("generate1(1) = %v\n",generate1(1)) // [[1]]
-	fmt.Printf("generate1(5) = %v\n",generate1(5)) // [[1],[1,1],[1,2,1],[1,3,3,1],[1,4,6,4,1]]
-	fmt.Printf("generate1(8) = %v\n",generate1(8)) // [[1] [1 1] [1 2 1] [1 3 3 1] [1 4 6 4 1] [1 5 10 10 5 1] [1 6 15 20 15 6 1] [1 7 21 35 35 21 7 1]]
+    fmt.Printf("generate(8) = %v\n",generate(8)) // [[1] [1 1] [1 2 1] [1 3 3 1] [1 4 6 4 1] [1 5 10 10 5 1] [1 6 15 20 15 6 1] [1 7 21 35 35 21 7 1]]
+    fmt.Printf("generate(30) = %v\n",generate(30)) //
+
+    fmt.Printf("generate1(1) = %v\n",generate1(1)) // [[1]]
+    fmt.Printf("generate1(5) = %v\n",generate1(5)) // [[1],[1,1],[1,2,1],[1,3,3,1],[1,4,6,4,1]]
+    fmt.Printf("generate1(8) = %v\n",generate1(8)) // [[1] [1 1] [1 2 1] [1 3 3 1] [1 4 6 4 1] [1 5 10 10 5 1] [1 6 15 20 15 6 1] [1 7 21 35 35 21 7 1]]
+    fmt.Printf("generate1(30) = %v\n",generate1(30)) //
 }
