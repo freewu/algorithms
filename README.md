@@ -1863,6 +1863,7 @@
 [3629. Minimum Jumps to Reach End via Prime Teleportation](./leetcode/3629-MinimumJumpsToReachEndViaPrimeTeleportation.go)   
 [3630. Partition Array for Maximum XOR and AND](./leetcode/3630-PartitionArrayForMaximumXORAndAND.go)   
 [3631. Sort Threats by Severity and Exploitability](./leetcode/3631-SortThreatsBySeverityAndExploitability.go)   
+[3632. Subarrays with XOR at Least K](./leetcode/3632-SubarraysWithXORAtLeastK.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
