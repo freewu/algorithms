@@ -1867,10 +1867,10 @@
 [3633. Earliest Finish Time for Land and Water Rides I](./leetcode/3633-EarliestFinishTimeForLandAndWaterRidesI.go)   
 [3634. Minimum Removals to Balance Array](./leetcode/3634-MinimumRemovalsToBalanceArray.go)   
 [3635. Earliest Finish Time for Land and Water Rides II](./leetcode/3635-EarliestFinishTimeForLandAndWaterRidesII.go)   
+[3636. Threshold Majority Queries](./leetcode/3636-ThresholdMajorityQueries.go)   
 [3637. Trionic Array I](./leetcode/3637-TrionicArrayI.go)   
 [3638. Maximum Balanced Shipments](./leetcode/3638-MaximumBalancedShipments.go)   
 [3640. Trionic Array II](./leetcode/3640-TrionicArrayII.go)   
-
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
