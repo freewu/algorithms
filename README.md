@@ -1866,6 +1866,8 @@
 [3632. Subarrays with XOR at Least K](./leetcode/3632-SubarraysWithXORAtLeastK.go)   
 [3637. Trionic Array I](./leetcode/3637-TrionicArrayI.go)   
 [3640. Trionic Array II](./leetcode/3640-TrionicArrayII.go)   
+[3633. Earliest Finish Time for Land and Water Rides I](./leetcode/3633-EarliestFinishTimeForLandAndWaterRidesI.go)   
+
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
