@@ -1864,10 +1864,11 @@
 [3630. Partition Array for Maximum XOR and AND](./leetcode/3630-PartitionArrayForMaximumXORAndAND.go)   
 [3631. Sort Threats by Severity and Exploitability](./leetcode/3631-SortThreatsBySeverityAndExploitability.go)   
 [3632. Subarrays with XOR at Least K](./leetcode/3632-SubarraysWithXORAtLeastK.go)   
+[3633. Earliest Finish Time for Land and Water Rides I](./leetcode/3633-EarliestFinishTimeForLandAndWaterRidesI.go)   
+[3634. Minimum Removals to Balance Array](./leetcode/3634-MinimumRemovalsToBalanceArray.go)   
+[3635. Earliest Finish Time for Land and Water Rides II](./leetcode/3635-EarliestFinishTimeForLandAndWaterRidesII.go)   
 [3637. Trionic Array I](./leetcode/3637-TrionicArrayI.go)   
 [3640. Trionic Array II](./leetcode/3640-TrionicArrayII.go)   
-[3633. Earliest Finish Time for Land and Water Rides I](./leetcode/3633-EarliestFinishTimeForLandAndWaterRidesI.go)   
-[3635. Earliest Finish Time for Land and Water Rides II](./leetcode/3635-EarliestFinishTimeForLandAndWaterRidesII.go)   
 
 
 # String
