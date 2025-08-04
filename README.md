@@ -1868,6 +1868,7 @@
 [3634. Minimum Removals to Balance Array](./leetcode/3634-MinimumRemovalsToBalanceArray.go)   
 [3635. Earliest Finish Time for Land and Water Rides II](./leetcode/3635-EarliestFinishTimeForLandAndWaterRidesII.go)   
 [3637. Trionic Array I](./leetcode/3637-TrionicArrayI.go)   
+[3638. Maximum Balanced Shipments](./leetcode/3638-MaximumBalancedShipments.go)   
 [3640. Trionic Array II](./leetcode/3640-TrionicArrayII.go)   
 
 
