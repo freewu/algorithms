@@ -68,6 +68,17 @@ func maxBalancedShipments1(weight []int) int {
     return res
 }
 
+func maxBalancedShipments2(weight []int) int {
+    res := 0
+    for i := 1; i < len(weight); i++ {
+        if weight[i-1] > weight[i] {
+            res++
+            i++ // 下个子数组至少要有两个数
+        }
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: weight = [2,5,1,4,3]
@@ -99,4 +110,9 @@ func main() {
     fmt.Println(maxBalancedShipments1([]int{4,4})) // 0
     fmt.Println(maxBalancedShipments1([]int{1,2,3,4,5,6,7,8,9})) // 0
     fmt.Println(maxBalancedShipments1([]int{9,8,7,6,5,4,3,2,1})) // 0
+
+    fmt.Println(maxBalancedShipments2([]int{2,5,1,4,3})) // 2
+    fmt.Println(maxBalancedShipments2([]int{4,4})) // 0
+    fmt.Println(maxBalancedShipments2([]int{1,2,3,4,5,6,7,8,9})) // 0
+    fmt.Println(maxBalancedShipments2([]int{9,8,7,6,5,4,3,2,1})) // 0
 }
