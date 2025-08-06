@@ -127,6 +127,44 @@ func maxCollectedFruits1(fruits [][]int) int {
     return res
 }
 
+func maxCollectedFruits2(fruits [][]int) int {
+    res, n := 0, len(fruits)
+    // 对角线
+    for i := 0; i < n; i++ {
+        res += fruits[i][i]
+        fruits[i][i] = 0
+    }
+    // 不可达区域
+    for i := 0; i < n; i++ {
+        for j := 0; j < n; j++ {
+            if i < n-1-j && i != j {
+                fruits[i][j] = 0
+            }
+        }
+    }
+    max := func (x, y int) int { if x > y { return x; }; return y; }
+    // 对角线两侧分别动态规划
+    for i := 2; i < n; i++ {
+        for j := 0; j < i && j < n-i; j++ {
+            // 右侧
+            toDiag := 0
+            if j >= 1 {
+                toDiag = fruits[i-2][n-j]
+            }
+            fruits[i-1][n-1-j] += max(max(fruits[i-2][n-1-j], fruits[i-2][n-2-j]), toDiag)
+            // 左侧
+            toDiag = 0
+            if j >= 1 {
+                toDiag = fruits[n-j][i-2]
+            }
+            fruits[n-1-j][i-1] += max(max(fruits[n-1-j][i-2], fruits[n-2-j][i-2]), toDiag)
+        }
+    }
+    res += fruits[n-1][n-2]
+    res += fruits[n-2][n-1]
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: fruits = [[1,2,3,4],[5,6,8,7],[9,10,11,12],[13,14,15,16]]
@@ -152,4 +190,7 @@ func main() {
 
     fmt.Println(maxCollectedFruits1([][]int{{1,2,3,4},{5,6,8,7},{9,10,11,12},{13,14,15,16}})) // 100
     fmt.Println(maxCollectedFruits1([][]int{{1,1},{1,1}})) // 4
+
+    fmt.Println(maxCollectedFruits2([][]int{{1,2,3,4},{5,6,8,7},{9,10,11,12},{13,14,15,16}})) // 100
+    fmt.Println(maxCollectedFruits2([][]int{{1,1},{1,1}})) // 4
 }
