@@ -91,6 +91,17 @@ func main() {
     // Output: 0.71875
     fmt.Println(soupServings(100)) // 0.71875
 
+    fmt.Println(soupServings(0)) // 00.5
+    fmt.Println(soupServings(1)) // 0.625
+    fmt.Println(soupServings(1024)) // 0.9785659726134099
+    fmt.Println(soupServings(999_999_999)) // 1
+    fmt.Println(soupServings(1_000_000_000)) // 1
+
     fmt.Println(soupServings1(50)) // 0.62500
     fmt.Println(soupServings1(100)) // 0.71875
+    fmt.Println(soupServings1(0)) // 0.5
+    fmt.Println(soupServings1(1)) // 0.625
+    fmt.Println(soupServings1(1024)) // 0.9785659726134099
+    fmt.Println(soupServings1(999_999_999)) // 1
+    fmt.Println(soupServings1(1_000_000_000)) // 1
 }
