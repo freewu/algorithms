@@ -67,6 +67,13 @@ func main() {
     // Output: false
     fmt.Println(reorderedPowerOf2(10)) // false
 
+    fmt.Println(reorderedPowerOf2(1024)) // true
+    fmt.Println(reorderedPowerOf2(999_999_999)) // false
+    fmt.Println(reorderedPowerOf2(1_000_000_000)) // false
+
     fmt.Println(reorderedPowerOf21(1)) // true
     fmt.Println(reorderedPowerOf21(10)) // false
+    fmt.Println(reorderedPowerOf21(1024)) // true
+    fmt.Println(reorderedPowerOf21(999_999_999)) // false
+    fmt.Println(reorderedPowerOf21(1_000_000_000)) // false
 }
