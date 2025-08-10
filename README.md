@@ -1873,6 +1873,7 @@
 [3640. Trionic Array II](./leetcode/3640-TrionicArrayII.go)   
 [3641. Longest Semi-Repeating Subarray](./leetcode/3641-LongestSemiRepeatingSubarray.go)   
 [3643. Flip Square Submatrix Vertically](./leetcode/3643-FlipSquareSubmatrixVertically.go)   
+[3644. Maximum K to Sort a Permutation](./leetcode/3644-MaximumKToSortAPermutation.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
@@ -3885,6 +3886,7 @@ LCR 185. 统计结果概率
 [3617. Find Students with Study Spiral Pattern](./leetcode/3617-FindStudentsWithStudySpiralPattern.sql)   
 [3626. Find Stores with Inventory Imbalance](./leetcode/3626-FindStoresWithInventoryImbalance.sql)   
 [3642. Find Books with Polarized Opinions](./leetcode/3642-FindBooksWithPolarizedOpinions.sql)   
+
 
 # Shell
 [192. Word Frequency](./leetcode/192-WordFrequency.sh)      
