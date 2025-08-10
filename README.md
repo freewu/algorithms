@@ -1872,6 +1872,7 @@
 [3638. Maximum Balanced Shipments](./leetcode/3638-MaximumBalancedShipments.go)   
 [3640. Trionic Array II](./leetcode/3640-TrionicArrayII.go)   
 [3641. Longest Semi-Repeating Subarray](./leetcode/3641-LongestSemiRepeatingSubarray.go)   
+[3643. Flip Square Submatrix Vertically](./leetcode/3643-FlipSquareSubmatrixVertically.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
