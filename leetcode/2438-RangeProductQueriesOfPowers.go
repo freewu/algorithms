@@ -80,6 +80,33 @@ func productQueries1(n int, queries [][]int) []int {
     return res
 }
 
+func productQueries2(n int, queries [][]int) []int {
+    const mod = 1_000_000_007
+    rep, bins := 1, []int{}
+    for n > 0 {
+        if n % 2 == 1 {
+            bins = append(bins, rep)
+        }
+        n /= 2
+        rep *= 2
+    }
+    m := len(bins)
+    arr := make([][]int, m)
+    for i := range arr {
+        arr[i] = make([]int, m)
+        cur := 1
+        for j := i; j < m; j++ {
+            cur = (cur * bins[j]) % mod
+            arr[i][j] = cur
+        }
+    }
+    res := make([]int, len(queries))
+    for i, query := range queries {
+        res[i] = arr[query[0]][query[1]]
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: n = 15, queries = [[0,1],[2,2],[0,3]]
@@ -101,4 +128,7 @@ func main() {
 
     fmt.Println(productQueries1(15,[][]int{{0,1},{2,2},{0,3}})) // [2,4,64]
     fmt.Println(productQueries1(2,[][]int{{0,0}})) // [2]
+
+    fmt.Println(productQueries2(15,[][]int{{0,1},{2,2},{0,3}})) // [2,4,64]
+    fmt.Println(productQueries2(2,[][]int{{0,0}})) // [2]
 }
