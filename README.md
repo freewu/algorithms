@@ -1874,6 +1874,7 @@
 [3641. Longest Semi-Repeating Subarray](./leetcode/3641-LongestSemiRepeatingSubarray.go)   
 [3643. Flip Square Submatrix Vertically](./leetcode/3643-FlipSquareSubmatrixVertically.go)   
 [3644. Maximum K to Sort a Permutation](./leetcode/3644-MaximumKToSortAPermutation.go)   
+[3645. Maximum Total from Optimal Activation Order](./leetcode/3645-MaximumTotalFromOptimalActivationOrder.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
