@@ -90,6 +90,15 @@ func main() {
     // - n = 31 + 11 = 4.
     fmt.Println(numberOfWays(4, 1)) // 2
 
+    fmt.Println(numberOfWays(1, 1)) // 1
+    fmt.Println(numberOfWays(1, 5)) // 1
+    fmt.Println(numberOfWays(300, 1)) // 872471266
+    fmt.Println(numberOfWays(300, 5)) // 0
+
     fmt.Println(numberOfWays1(10, 2)) // 1
     fmt.Println(numberOfWays1(4, 1)) // 2
+    fmt.Println(numberOfWays1(1, 1)) // 1
+    fmt.Println(numberOfWays1(1, 5)) // 1
+    fmt.Println(numberOfWays1(300, 1)) // 872471266
+    fmt.Println(numberOfWays1(300, 5)) // 0
 }
