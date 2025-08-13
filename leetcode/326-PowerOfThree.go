@@ -53,18 +53,49 @@ func isPowerOfThree2(n int) bool {
 }
 
 func main() {
-	fmt.Println(isPowerOfThree(3)) // true 
-	fmt.Println(isPowerOfThree(9)) // true 
-	fmt.Println(isPowerOfThree(8)) // true 
+    // Example 1:
+    // Input: n = 27
+    // Output: true
+    // Explanation: 27 = 3^3
+    fmt.Println(isPowerOfThree(27)) // true 
+    // Example 2:
+    // Input: n = 0
+    // Output: false
+    // Explanation: There is no x where 3x = 0.
+    fmt.Println(isPowerOfThree(0)) // false 
+    // Example 3:
+    // Input: n = -1
+    // Output: false
+    // Explanation: There is no x where 3x = (-1).
     fmt.Println(isPowerOfThree(-1)) // false 
 
-    fmt.Println(isPowerOfThree1(3)) // true 
-	fmt.Println(isPowerOfThree1(9)) // true 
-	fmt.Println(isPowerOfThree1(8)) // true 
+    fmt.Println(isPowerOfThree(3)) // true 
+    fmt.Println(isPowerOfThree(9)) // true 
+    fmt.Println(isPowerOfThree(8)) // true 
+    fmt.Println(isPowerOfThree(-1024)) // false 
+    fmt.Println(isPowerOfThree(1024)) // false 
+    fmt.Println(isPowerOfThree(-1 << 31)) // true 
+    fmt.Println(isPowerOfThree(1 << 31)) // true 
+    
+    fmt.Println(isPowerOfThree1(27)) // true 
+    fmt.Println(isPowerOfThree1(0)) // false 
     fmt.Println(isPowerOfThree1(-1)) // false 
+    fmt.Println(isPowerOfThree1(3)) // true 
+    fmt.Println(isPowerOfThree1(9)) // true 
+    fmt.Println(isPowerOfThree1(8)) // true 
+    fmt.Println(isPowerOfThree1(-1024)) // false 
+    fmt.Println(isPowerOfThree1(1024)) // false 
+    fmt.Println(isPowerOfThree1(-1 << 31)) // false 
+    fmt.Println(isPowerOfThree1(1 << 31)) // false 
 
-    fmt.Println(isPowerOfThree2(3)) // true 
-	fmt.Println(isPowerOfThree2(9)) // true 
-	fmt.Println(isPowerOfThree2(8)) // true 
+    fmt.Println(isPowerOfThree2(27)) // true 
+    fmt.Println(isPowerOfThree2(0)) // false 
     fmt.Println(isPowerOfThree2(-1)) // false 
+    fmt.Println(isPowerOfThree2(3)) // true 
+    fmt.Println(isPowerOfThree2(9)) // true 
+    fmt.Println(isPowerOfThree2(8)) // true
+    fmt.Println(isPowerOfThree2(-1024)) // false 
+    fmt.Println(isPowerOfThree2(1024)) // false 
+    fmt.Println(isPowerOfThree2(-1 << 31)) // false 
+    fmt.Println(isPowerOfThree2(1 << 31)) // false 
 }
