@@ -52,6 +52,13 @@ func isPowerOfThree2(n int) bool {
     return n > 0 && 1162261467 % n == 0
 }
 
+func isPowerOfThree3(n int) bool {
+    for  n > 0 && n %3==0 {
+        n /= 3
+    }
+    return n == 1
+}
+
 func main() {
     // Example 1:
     // Input: n = 27
@@ -97,5 +104,16 @@ func main() {
     fmt.Println(isPowerOfThree2(-1024)) // false 
     fmt.Println(isPowerOfThree2(1024)) // false 
     fmt.Println(isPowerOfThree2(-1 << 31)) // false 
-    fmt.Println(isPowerOfThree2(1 << 31)) // false 
+    fmt.Println(isPowerOfThree2(1 << 31)) // false
+
+    fmt.Println(isPowerOfThree3(27)) // true 
+    fmt.Println(isPowerOfThree3(0)) // false 
+    fmt.Println(isPowerOfThree3(-1)) // false 
+    fmt.Println(isPowerOfThree3(3)) // true 
+    fmt.Println(isPowerOfThree3(9)) // true 
+    fmt.Println(isPowerOfThree3(8)) // true
+    fmt.Println(isPowerOfThree3(-1024)) // false 
+    fmt.Println(isPowerOfThree3(1024)) // false 
+    fmt.Println(isPowerOfThree3(-1 << 31)) // false 
+    fmt.Println(isPowerOfThree3(1 << 31)) // false 
 }
