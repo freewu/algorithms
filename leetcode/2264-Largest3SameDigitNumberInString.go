@@ -76,7 +76,12 @@ func main() {
     // Explanation: No substring of length 3 consists of only one unique digit. Therefore, there are no good integers.
     fmt.Println(largestGoodInteger("42352338")) // ""
 
+    fmt.Println(largestGoodInteger("123456789")) // ""
+    fmt.Println(largestGoodInteger("987654321")) // ""
+
     fmt.Println(largestGoodInteger1("6777133339")) // "777"
     fmt.Println(largestGoodInteger1("2300019")) // 000
     fmt.Println(largestGoodInteger1("42352338")) // ""
+    fmt.Println(largestGoodInteger1("123456789")) // ""
+    fmt.Println(largestGoodInteger1("987654321")) // ""
 }
