@@ -60,12 +60,17 @@ func main() {
     // Input: n = 1
     // Output: true
     fmt.Println(isPowerOfFour(1)) // true
+
     fmt.Println(isPowerOfFour(-2147483648)) // false
     fmt.Println(isPowerOfFour(4)) // true
+    fmt.Println(isPowerOfFour(2 << 31 - 1)) // false
+    fmt.Println(isPowerOfFour(-2 << 31)) // false
 
     fmt.Println(isPowerOfFour1(16)) // true
     fmt.Println(isPowerOfFour1(5)) // false
     fmt.Println(isPowerOfFour1(1)) // true
     fmt.Println(isPowerOfFour1(-2147483648)) // false
     fmt.Println(isPowerOfFour1(4)) // true
+    fmt.Println(isPowerOfFour1(2 << 31 - 1)) // false
+    fmt.Println(isPowerOfFour1(-2 << 31)) // false
 }
