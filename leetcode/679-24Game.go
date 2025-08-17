@@ -28,6 +28,8 @@ package main
 //     cards.length == 4
 //     1 <= cards[i] <= 9
 
+import "fmt"
+
 func judgePoint24(cards []int) bool {
     // 转换成 float64
     arr := []float64{}
@@ -80,4 +82,7 @@ func main() {
     // Input: cards = [1,2,1,2]
     // Output: false
     fmt.Println(judgePoint24([]int{1,2,1,2})) // false
+
+    fmt.Println(judgePoint24([]int{1,2,3,4})) // true
+    fmt.Println(judgePoint24([]int{4,3,2,1})) // false
 }
