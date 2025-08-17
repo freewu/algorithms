@@ -53,6 +53,25 @@ func new21Game(n int, k int, maxPts int) float64 {
     return res
 }
 
+func new21Game1(n, k, maxPts int) float64 {
+    f := make([]float64, n+1)
+    s := 0.0
+    for i := n; i >= 0; i-- {
+        if i >= k {
+            f[i] = 1 // 初始值
+        } else {
+            f[i] = s / float64(maxPts)
+        }
+        // 当前循环计算的是 f[i+1] + ... + f[i+maxPts]
+        // 下个循环计算的是 f[i] + ... + f[i+maxPts-1]，多了 f[i]，少了 f[i+maxPts]
+        s += f[i]
+        if i + maxPts <= n {
+            s -= f[i+maxPts]
+        }
+    }
+    return f[0]
+}
+
 func main() {
     // Example 1:
     // Input: n = 10, k = 1, maxPts = 10
@@ -69,4 +88,8 @@ func main() {
     // Input: n = 21, k = 17, maxPts = 10
     // Output: 0.73278
     fmt.Println(new21Game(21, 17, 10)) // 0.73278
+
+    fmt.Println(new21Game1(10, 1, 10)) // 1.00000
+    fmt.Println(new21Game1(6, 1, 10)) // 0.60000
+    fmt.Println(new21Game1(21, 17, 10)) // 0.73278
 }
