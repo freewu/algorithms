@@ -1877,6 +1877,7 @@
 [3645. Maximum Total from Optimal Activation Order](./leetcode/3645-MaximumTotalFromOptimalActivationOrder.go)   
 [3647. Maximum Weight in Two Bags](./leetcode/3647-MaximumWeightInTwoBags.go)   
 [3649. Number of Perfect Pairs](./leetcode/3649-NumberOfPerfectPairs.go)   
+[3653. XOR After Range Multiplication Queries I](./leetcode/3653-XORAfterRangeMultiplicationQueriesI.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
