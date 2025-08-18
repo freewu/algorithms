@@ -29,6 +29,7 @@ package main
 //     1 <= cards[i] <= 9
 
 import "fmt"
+import "math"
 
 func judgePoint24(cards []int) bool {
     // 转换成 float64
@@ -72,6 +73,50 @@ func judgePoint24(cards []int) bool {
     return dfs(arr)
 }
 
+
+func judgePoint241(cards []int) bool {
+    flCards := []float64{}
+    for _, v := range cards {
+        flCards = append(flCards, float64(v))
+    }
+    generateAllPossibleResults := func(a, b float64) []float64 {
+        res := []float64{ a - b, b - a, a + b, a * b, }
+        if a != 0 {
+            res = append(res, b / a)
+        }
+        if b != 0 {
+            res = append(res, a / b)
+        }
+        return res
+    }
+    var checkIfResultIsReached func(nums []float64) bool
+    checkIfResultIsReached = func(nums []float64) bool {
+        if len(nums) == 1 {
+            return math.Abs(float64(nums[0]) - 24) <= 0.1
+        }
+        for i := 0; i < len(nums); i++ {
+            for j := i + 1; j < len(nums); j++ {
+                var newNums []float64
+                for k := 0; k < len(nums); k++ {
+                    if k != i && k != j {
+                        newNums = append(newNums, nums[k])
+                    }
+                }
+                possibleResults := generateAllPossibleResults(nums[i], nums[j])
+                for _, res := range possibleResults {
+                    newNums = append(newNums, res)
+                    if checkIfResultIsReached(newNums) {
+                        return true
+                    }
+                    newNums = newNums[:len(newNums)-1]
+                }
+            }
+        }
+        return false
+    }
+    return checkIfResultIsReached(flCards)
+}
+
 func main() {
     // Example 1:
     // Input: cards = [4,1,8,7]
@@ -85,4 +130,9 @@ func main() {
 
     fmt.Println(judgePoint24([]int{1,2,3,4})) // true
     fmt.Println(judgePoint24([]int{4,3,2,1})) // false
+
+    fmt.Println(judgePoint241([]int{4,1,8,7})) // true
+    fmt.Println(judgePoint241([]int{1,2,1,2})) // false
+    fmt.Println(judgePoint241([]int{1,2,3,4})) // true
+    fmt.Println(judgePoint241([]int{4,3,2,1})) // false
 }
