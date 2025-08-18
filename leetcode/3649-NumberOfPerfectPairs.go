@@ -67,6 +67,27 @@ func perfectPairs(nums []int) int64 {
     return int64(res)
 }
 
+func perfectPairs1(nums []int) int64 {
+    res, right, n := 0, 0, len(nums)
+    arr := make([]int, n)
+    abs := func(x int) int { if x < 0 { return -x; }; return x; }
+    for i, v := range nums {
+        arr[i] = abs(v)
+    }
+    sort.Ints(arr)
+    for left := 0; left < n; left++ {
+        target := 2 * arr[left]
+        for right < n && arr[right] <= target {
+            right++
+        }
+        v := right - 1 - left
+        if v > 0 {
+            res += v
+        }
+    }
+    return int64(res)
+}
+
 func main() {
     // Example 1:
     // Input: nums = [0,1,2,3]
@@ -97,4 +118,10 @@ func main() {
 
     fmt.Println(perfectPairs([]int{1,2,3,4,5,6,7,8,9})) // 20
     fmt.Println(perfectPairs([]int{9,8,7,6,5,4,3,2,1})) // 20
+
+    fmt.Println(perfectPairs1([]int{0,1,2,3})) // 2
+    fmt.Println(perfectPairs1([]int{-3,2,-1,4})) // 4
+    fmt.Println(perfectPairs1([]int{1,10,100,1000})) // 0
+    fmt.Println(perfectPairs1([]int{1,2,3,4,5,6,7,8,9})) // 20
+    fmt.Println(perfectPairs1([]int{9,8,7,6,5,4,3,2,1})) // 20
 }
