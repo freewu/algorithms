@@ -3260,6 +3260,7 @@
 [3615. Longest Palindromic Path in Graph](./leetcode/3615-LongestPalindromicPathInGraph.go)   
 [3619. Count Islands With Total Value Divisible by K](./leetcode/3619-CountIslandsWithTotalValueDivisibleByK.go)   
 [3620. Network Recovery Pathways](./leetcode/3620-NetworkRecoveryPathways.go)   
+[3650. Minimum Cost Path with Edge Reversals](./leetcode/3650-MinimumCostPathWithEdgeReversals.go)   
 
 # Trie
 [386. Lexicographical Numbers](./leetcode/386-LexicographicalNumbers.go)   
