@@ -2917,6 +2917,7 @@
 [3622. Check Divisibility by Digit Sum and Product](./leetcode/3622-CheckDivisibilityByDigitSumAndProduct.go)   
 [3624. Number of Integers With Popcount-Depth Equal to K II](./leetcode/3624-NumberOfIntegersWithPopcountDepthEqualToKII.go)   
 [3646. Next Special Palindrome Number](./leetcode/3646-NextSpecialPalindromeNumber.go)   
+[3648. Minimum Sensors to Cover Grid](./leetcode/3648-MinimumSensorsToCoverGrid.go)   
 
 # Stack
 [225. Implement Stack using Queues](./leetcode/225-ImplementStackUsingQueues.go)   
