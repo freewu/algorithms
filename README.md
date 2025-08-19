@@ -1879,6 +1879,8 @@
 [3649. Number of Perfect Pairs](./leetcode/3649-NumberOfPerfectPairs.go)   
 [3653. XOR After Range Multiplication Queries I](./leetcode/3653-XORAfterRangeMultiplicationQueriesI.go)   
 [3655. XOR After Range Multiplication Queries II](./leetcode/3655-XORAfterRangeMultiplicationQueriesII.go)   
+[3657. Count the Number of Simple Paths](./leetcode/3657-CountTheNumberOfSimplePaths.go)
+
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
