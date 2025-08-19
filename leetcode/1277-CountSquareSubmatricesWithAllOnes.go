@@ -87,6 +87,28 @@ func countSquares1(matrix [][]int) int {
     return res
 }
 
+func countSquares2(matrix [][]int) int {
+    res, m, n := 0, len(matrix), len(matrix[0])
+    f := make([][]int, m)
+    for i := range f {
+        f[i] = make([]int, n)
+    }
+    min := func (x, y int) int { if x < y { return x; }; return y; }
+    for i := 0; i < m; i++ {
+        for j := 0; j < n; j++ {
+            if i == 0 || j == 0 {
+                f[i][j] = matrix[i][j]
+            } else if matrix[i][j] == 0 {
+                f[i][j] = 0
+            } else {
+                f[i][j] = min(min(f[i][j - 1], f[i - 1][j]), f[i - 1][j - 1]) + 1
+            }
+            res += f[i][j]
+        }
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: matrix =
@@ -128,4 +150,7 @@ func main() {
 
     fmt.Println(countSquares1(matrix1)) // 15
     fmt.Println(countSquares1(matrix2)) // 7
+
+    fmt.Println(countSquares2(matrix1)) // 15
+    fmt.Println(countSquares2(matrix2)) // 7
 }
