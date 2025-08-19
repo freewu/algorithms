@@ -1878,6 +1878,7 @@
 [3647. Maximum Weight in Two Bags](./leetcode/3647-MaximumWeightInTwoBags.go)   
 [3649. Number of Perfect Pairs](./leetcode/3649-NumberOfPerfectPairs.go)   
 [3653. XOR After Range Multiplication Queries I](./leetcode/3653-XORAfterRangeMultiplicationQueriesI.go)   
+[3654. Minimum Sum After Divisible Sum Deletions](./leetcode/3654-MinimumSumAfterDivisibleSumDeletions.go)   
 [3655. XOR After Range Multiplication Queries II](./leetcode/3655-XORAfterRangeMultiplicationQueriesII.go)   
 [3657. Count the Number of Simple Paths](./leetcode/3657-CountTheNumberOfSimplePaths.go)
 
