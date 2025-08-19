@@ -1877,6 +1877,7 @@
 [3645. Maximum Total from Optimal Activation Order](./leetcode/3645-MaximumTotalFromOptimalActivationOrder.go)   
 [3647. Maximum Weight in Two Bags](./leetcode/3647-MaximumWeightInTwoBags.go)   
 [3649. Number of Perfect Pairs](./leetcode/3649-NumberOfPerfectPairs.go)   
+[3651. Minimum Cost Path with Teleportations](./leetcode/3651-MinimumCostPathWithTeleportations.go)   
 [3652. Best Time to Buy and Sell Stock using Strategy](./leetcode/3652-BestTimeToBuyAndSellStockUsingStrategy.go)   
 [3653. XOR After Range Multiplication Queries I](./leetcode/3653-XORAfterRangeMultiplicationQueriesI.go)   
 [3654. Minimum Sum After Divisible Sum Deletions](./leetcode/3654-MinimumSumAfterDivisibleSumDeletions.go)   
