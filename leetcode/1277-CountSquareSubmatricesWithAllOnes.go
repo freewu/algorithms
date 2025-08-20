@@ -109,6 +109,20 @@ func countSquares2(matrix [][]int) int {
     return res
 }
 
+func countSquares3(matrix [][]int) int {
+    res := 0 
+    for r := 0 ; r < len(matrix) ; r++{
+        for c := 0 ; c < len(matrix[r]) ; c++ {
+            if matrix[r][c] == 0 { continue }
+            if r > 0 && c > 0 {
+                matrix[r][c] = 1 + min(matrix[r][c-1], matrix[r-1][c-1], matrix[r-1][c])
+            }
+            res += matrix[r][c]
+        }
+    }   
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: matrix =
@@ -153,4 +167,7 @@ func main() {
 
     fmt.Println(countSquares2(matrix1)) // 15
     fmt.Println(countSquares2(matrix2)) // 7
+
+    fmt.Println(countSquares3(matrix1)) // 15
+    fmt.Println(countSquares3(matrix2)) // 7
 }
