@@ -1882,7 +1882,7 @@
 [3653. XOR After Range Multiplication Queries I](./leetcode/3653-XORAfterRangeMultiplicationQueriesI.go)   
 [3654. Minimum Sum After Divisible Sum Deletions](./leetcode/3654-MinimumSumAfterDivisibleSumDeletions.go)   
 [3655. XOR After Range Multiplication Queries II](./leetcode/3655-XORAfterRangeMultiplicationQueriesII.go)   
-[3657. Count the Number of Simple Paths](./leetcode/3657-CountTheNumberOfSimplePaths.go)
+[3656. Count the Number of Simple Paths](./leetcode/3656-CountTheNumberOfSimplePaths.go)
 
 
 # String
