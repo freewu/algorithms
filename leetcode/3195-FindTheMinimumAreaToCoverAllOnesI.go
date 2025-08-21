@@ -46,6 +46,45 @@ func minimumArea(grid [][]int) int {
     return ((r2 - r1) + 1) * ((c2 - c1) + 1)
 }
 
+func minimumArea1(grid [][]int) int {
+    m, n := len(grid), len(grid[0])
+    up, down := -1, -1
+    for i := 0; i < m && up == -1; i++ {
+        for j := 0; j < n; j++ {
+            if grid[i][j] == 1 {
+                up = i 
+                break
+            }
+        }
+    }
+    for i := m - 1; i >= 0 && down == -1; i-- {
+        for j := 0; j < n; j++ {
+            if grid[i][j] == 1 {
+                down = i 
+                break
+            }
+        }
+    }
+    l, r := -1, -1
+    for j := 0; j < n && l == -1; j++ {
+        for i := 0; i < m; i++ {
+            if grid[i][j] == 1 {
+                l = j 
+                break
+            }
+        } 
+    }
+    for j := n - 1; j >= 0 && r == -1; j-- {
+        for i := 0; i < m; i++ {
+            if grid[i][j] == 1 {
+                r = j 
+                break
+            }
+        }
+    }
+    return (r - l + 1) * (down - up + 1)
+}
+
 func main() {
     // Example 1:
     // Input: grid = [[0,1,0],[1,0,1]]
@@ -61,4 +100,7 @@ func main() {
     // <img src="https://assets.leetcode.com/uploads/2024/05/08/examplerect1.png" />
     // The smallest rectangle has both height and width 1, so its area is 1 * 1 = 1.
     fmt.Println(minimumArea([][]int{{1,0},{0,0}})) // 1
+
+    fmt.Println(minimumArea1([][]int{{0,1,0},{1,0,1}})) // 6
+    fmt.Println(minimumArea1([][]int{{1,0},{0,0}})) // 1
 }
