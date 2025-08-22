@@ -26,6 +26,7 @@ package main
 //     The input is generated such that there is at least one 1 in grid.
 
 import "fmt"
+import "slices"
 
 func minimumArea(grid [][]int) int {
     r1, r2, c1, c2 := -1, -1, -1, -1
@@ -85,6 +86,34 @@ func minimumArea1(grid [][]int) int {
     return (r - l + 1) * (down - up + 1)
 }
 
+func minimumArea2(grid [][]int) int {
+    y, y2, x, x2 := 0,len(grid) - 1, 0, len(grid[0]) - 1
+    rowContainsOne := func(grid [][]int, row int) bool {
+        return slices.Contains(grid[row], 1)
+    }
+    columnContainsOne := func(grid [][]int, col int) bool {
+        for y := 0; y < len(grid); y++ {
+            if grid[y][col] == 1 {
+                return true
+            }
+        }
+        return false
+    }
+    for !rowContainsOne(grid, y) {
+        y++
+    }
+    for !rowContainsOne(grid, y2) {
+        y2--
+    }
+    for !columnContainsOne(grid, x) {
+        x++
+    }
+    for !columnContainsOne(grid, x2) {
+        x2--
+    }
+    return (x2 - x + 1) * (y2 - y + 1)
+}
+
 func main() {
     // Example 1:
     // Input: grid = [[0,1,0],[1,0,1]]
@@ -103,4 +132,7 @@ func main() {
 
     fmt.Println(minimumArea1([][]int{{0,1,0},{1,0,1}})) // 6
     fmt.Println(minimumArea1([][]int{{1,0},{0,0}})) // 1
+
+    fmt.Println(minimumArea2([][]int{{0,1,0},{1,0,1}})) // 6
+    fmt.Println(minimumArea2([][]int{{1,0},{0,0}})) // 1
 }

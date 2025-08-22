@@ -4433,4 +4433,4 @@ LCR 185. 统计结果概率
 [面试题 17.23. Max Black Square LCCI](./leetcode/LCCI1723-MaxBlackSquare.go)   
 [面试题 17.24. Max Submatrix LCCI](./leetcode/LCCI1724-MaxSubmatrix.go)   
 [面试题 17.25. Word Rectangle LCCI](./leetcode/LCCI1725-WordRectangle.go)   
-[面试题 17.26. Sparse Similarity LCCI](./leetcode/LCCI1726-SparseSimilarity.go)   
+[面试题 17.26. Sparse Similarity LCCI](./leetcode/LCCI1726-SparseSimilarity.go)
