@@ -108,11 +108,30 @@ func main() {
     // Explanation: You must delete one element.
     fmt.Println(longestSubarray([]int{1,1,1})) // 2
 
+    fmt.Println(longestSubarray([]int{1,1,1,1,1,1,1,1,1,1})) // 9
+    fmt.Println(longestSubarray([]int{0,0,0,0,0,0,0,0,0,0})) // 0
+    fmt.Println(longestSubarray([]int{1,0,1,0,1,0,1,0,1,0})) // 2
+    fmt.Println(longestSubarray([]int{0,1,0,1,0,1,0,1,0,1})) // 2
+    fmt.Println(longestSubarray([]int{0,0,0,0,0,1,1,1,1,1})) // 5
+    fmt.Println(longestSubarray([]int{1,1,1,1,1,0,0,0,0,0})) // 5
+
     fmt.Println(longestSubarray1([]int{1,1,0,1})) // 3
     fmt.Println(longestSubarray1([]int{0,1,1,1,0,1,1,0,1})) // 5
     fmt.Println(longestSubarray1([]int{1,1,1})) // 2
+    fmt.Println(longestSubarray1([]int{1,1,1,1,1,1,1,1,1,1})) // 9
+    fmt.Println(longestSubarray1([]int{0,0,0,0,0,0,0,0,0,0})) // 0
+    fmt.Println(longestSubarray1([]int{1,0,1,0,1,0,1,0,1,0})) // 2
+    fmt.Println(longestSubarray1([]int{0,1,0,1,0,1,0,1,0,1})) // 2
+    fmt.Println(longestSubarray1([]int{0,0,0,0,0,1,1,1,1,1})) // 5
+    fmt.Println(longestSubarray1([]int{1,1,1,1,1,0,0,0,0,0})) // 5
 
     fmt.Println(longestSubarray2([]int{1,1,0,1})) // 3
     fmt.Println(longestSubarray2([]int{0,1,1,1,0,1,1,0,1})) // 5
     fmt.Println(longestSubarray2([]int{1,1,1})) // 2
+    fmt.Println(longestSubarray2([]int{1,1,1,1,1,1,1,1,1,1})) // 9
+    fmt.Println(longestSubarray2([]int{0,0,0,0,0,0,0,0,0,0})) // 0
+    fmt.Println(longestSubarray2([]int{1,0,1,0,1,0,1,0,1,0})) // 2
+    fmt.Println(longestSubarray2([]int{0,1,0,1,0,1,0,1,0,1})) // 2
+    fmt.Println(longestSubarray2([]int{0,0,0,0,0,1,1,1,1,1})) // 5
+    fmt.Println(longestSubarray2([]int{1,1,1,1,1,0,0,0,0,0})) // 5
 }
