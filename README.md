@@ -1884,6 +1884,7 @@
 [3655. XOR After Range Multiplication Queries II](./leetcode/3655-XORAfterRangeMultiplicationQueriesII.go)   
 [3656. Count the Number of Simple Paths](./leetcode/3656-CountTheNumberOfSimplePaths.go)
 [3659. Partition Array Into K-Distinct Groups](./leetcode/3659-PartitionArrayIntoKDistinctGroups.go)
+[3660. Jump Game IX](./leetcode/3660-JumpGameIX.go)
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
