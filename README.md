@@ -2511,6 +2511,7 @@
 [3614. Process String with Special Operations II](./leetcode/3614-ProcessStringWithSpecialOperationsII.go)   
 [3628. Maximum Number of Subsequences After One Inserting](./leetcode/3628-MaximumNumberOfSubsequencesAfterOneInserting.go)   
 [3639. Minimum Time to Activate String](./leetcode/3639-MinimumTimeToActivateString.go)   
+[3662. Filter Characters by Frequency](./leetcode/3662-FilterCharactersByFrequency.go)   
 
 # Dynamic Programming
 [276. Paint Fence](./leetcode/276-PaintFence.go)   
