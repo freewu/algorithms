@@ -1883,7 +1883,7 @@
 [3654. Minimum Sum After Divisible Sum Deletions](./leetcode/3654-MinimumSumAfterDivisibleSumDeletions.go)   
 [3655. XOR After Range Multiplication Queries II](./leetcode/3655-XORAfterRangeMultiplicationQueriesII.go)   
 [3656. Count the Number of Simple Paths](./leetcode/3656-CountTheNumberOfSimplePaths.go)
-
+[3659. Partition Array Into K-Distinct Groups](./leetcode/3659-PartitionArrayIntoKDistinctGroups.go)
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
