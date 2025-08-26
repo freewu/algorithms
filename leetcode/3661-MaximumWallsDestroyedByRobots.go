@@ -90,6 +90,46 @@ func maxWalls(robots []int, distance []int, walls []int) int {
     return dfs(n, 1)
 }
 
+func maxWalls1(robots []int, distance []int, walls []int) int {
+    n, left, right, rightWall := len(robots), 0, 0, 0
+    type Data struct {  pos, distance int }
+    datas := make([]Data, n, n + 1)
+    for i := 0; i < n; i++ {
+        datas[i] = Data{robots[i], distance[i]}
+    }
+    slices.SortFunc(datas, func(a, b Data) int { return a.pos - b.pos })
+    slices.Sort(walls)
+    datas = append(datas, Data{ pos: 1 << 31 })
+    max := func (x, y int) int { if x > y { return x; }; return y; }
+    for i, d := range datas[:len(robots)] {
+        left1, left2, overlapping := left, right, false
+        for len(walls) > 0 && walls[0] <= d.pos {
+            if walls[0]+d.distance >= d.pos {
+                left1++
+                if walls[0] > rightWall {
+                    left2++
+                }
+            }
+            overlapping = walls[0] == d.pos
+            walls = walls[1:]
+        }
+        right = max(left, right)
+        if overlapping {
+            right++
+        }
+        for _, wall := range walls {
+            if wall < datas[i+1].pos && d.pos+d.distance >= wall {
+                right++
+                rightWall = wall
+            } else {
+                break
+            }
+        }
+        left = max(left1, left2)
+    }
+    return max(left, right)
+}
+
 func main() {
     // Example 1:
     // Input: robots = [4], distance = [3], walls = [1,10]
@@ -112,4 +152,8 @@ func main() {
     // Explanation:
     // In this example, only robots[0] can reach the wall, but its shot to the right is blocked by robots[1]; thus the answer is 0.
     fmt.Println(maxWalls([]int{1,2}, []int{100,1}, []int{10})) // 0
+
+    fmt.Println(maxWalls1([]int{4}, []int{3}, []int{1,10})) // 1
+    fmt.Println(maxWalls1([]int{10,2}, []int{5,1}, []int{5,2,7})) // 3
+    fmt.Println(maxWalls1([]int{1,2}, []int{100,1}, []int{10})) // 0
 }
