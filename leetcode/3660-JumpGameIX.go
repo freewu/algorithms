@@ -61,6 +61,26 @@ func maxValue(nums []int) []int {
     return res
 }
 
+func maxValue1(nums []int) []int {
+    n := len(nums)
+    prefix := make([]int, n)
+    prefix[0] = nums[0]
+    min := func (x, y int) int { if x < y { return x; }; return y; }
+    max := func (x, y int) int { if x > y { return x; }; return y; }
+    for i := 0; i < n - 1; i++ {
+        prefix[i+1] = max(prefix[i], nums[i + 1])
+    }
+    mn, mx := 1 << 31, 0
+    for i := n - 1; i >= 0; i-- {
+        if prefix[i] <= mn {
+            mx = prefix[i]
+        }
+        mn = min(mn, nums[i])
+        nums[i] = mx
+    }
+    return nums
+}
+
 func main() {
     // Example 1:
     // Input: nums = [2,1,3]
@@ -83,4 +103,9 @@ func main() {
 
     fmt.Println(maxValue([]int{1,2,3,4,5,6,7,8,9})) // [1 2 3 4 5 6 7 8 9]
     fmt.Println(maxValue([]int{9,8,7,6,5,4,3,2,1})) // [9 9 9 9 9 9 9 9 9]
+
+    fmt.Println(maxValue1([]int{2,1,3})) // [2,2,3]
+    fmt.Println(maxValue1([]int{2,3,1})) // [3,3,3]
+    fmt.Println(maxValue1([]int{1,2,3,4,5,6,7,8,9})) // [1 2 3 4 5 6 7 8 9]
+    fmt.Println(maxValue1([]int{9,8,7,6,5,4,3,2,1})) // [9 9 9 9 9 9 9 9 9]
 }
