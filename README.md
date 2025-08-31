@@ -1887,6 +1887,7 @@
 [3660. Jump Game IX](./leetcode/3660-JumpGameIX.go)   
 [3661. Maximum Walls Destroyed by Robots](./leetcode/3661-MaximumWallsDestroyedByRobots.go)   
 [3667. Sort Array By Absolute Value](./leetcode/3667-SortArrayByAbsoluteValue.go)   
+[3668. Restore Finishing Order](./leetcode/3668-RestoreFinishingOrder.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
