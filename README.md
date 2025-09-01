@@ -2936,6 +2936,7 @@
 [3648. Minimum Sensors to Cover Grid](./leetcode/3648-MinimumSensorsToCoverGrid.go)   
 [3658. GCD of Odd and Even Sums](./leetcode/3658-GCDOfOddAndEvenSums.go)   
 [3663. Find The Least Frequent Digit](./leetcode/3663-FindTheLeastFrequentDigit.go)   
+[3669. Balanced K-Factor Decomposition](./leetcode/3669-BalancedKFactorDecomposition.go)   
 
 # Stack
 [225. Implement Stack using Queues](./leetcode/225-ImplementStackUsingQueues.go)   
