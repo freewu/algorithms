@@ -1890,6 +1890,7 @@
 [3665. Twisted Mirror Path Count](./leetcode/3665-TwistedMirrorPathCount.go)   
 [3667. Sort Array By Absolute Value](./leetcode/3667-SortArrayByAbsoluteValue.go)   
 [3668. Restore Finishing Order](./leetcode/3668-RestoreFinishingOrder.go)   
+[3670. Maximum Product of Two Integers With No Common Bits](./leetcode/3670-MaximumProductOfTwoIntegersWithNoCommonBits.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
