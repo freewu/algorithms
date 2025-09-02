@@ -88,6 +88,32 @@ func numberOfPairs1(points [][]int) int {
     return res
 }
 
+func numberOfPairs2(points [][]int) int {
+    res := 0
+    sort.Slice(points, func(i, j int) bool {
+        if points[i][0] != points[j][0] {
+            return points[i][0] < points[j][0]
+        }
+        return points[i][1] > points[j][1]
+    })
+    for i := 0; i < len(points); i++ {
+        for j := i + 1; j < len(points); j++ {
+            if points[i][0] > points[j][0] || points[i][1] < points[j][1] { continue }
+            flag := true
+            for k := i + 1; k < j; k++ {
+                if points[k][0] >= points[i][0] && points[k][0] <= points[j][0] && points[k][1] <= points[i][1] && points[k][1] >= points[j][1] {
+                    flag = false
+                    break
+                }
+            }
+            if flag {
+                res++
+            }
+        }
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: points = [[1,1],[2,2],[3,3]]
@@ -118,4 +144,8 @@ func main() {
     fmt.Println(numberOfPairs1([][]int{{1,1},{2,2},{3,3}})) // 0
     fmt.Println(numberOfPairs1([][]int{{6,2},{4,4},{2,6}})) // 2
     fmt.Println(numberOfPairs1([][]int{{3,1},{1,3},{1,1}})) // 2
+
+    fmt.Println(numberOfPairs2([][]int{{1,1},{2,2},{3,3}})) // 0
+    fmt.Println(numberOfPairs2([][]int{{6,2},{4,4},{2,6}})) // 2
+    fmt.Println(numberOfPairs2([][]int{{3,1},{1,3},{1,1}})) // 2
 }
