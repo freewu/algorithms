@@ -137,6 +137,56 @@ func maxProduct1(nums []int) int64 {
     return int64(res)
 }
 
+func maxProduct2(nums []int) int64 {
+    if len(nums) < 2 {
+        return 0
+    }
+    // Determine how many bits are actually needed
+    res, bits, mx := 0, 0, 0
+    for _, v := range nums {
+        if v > mx {
+            mx = v
+        }
+    }
+    for (1 << bits) <= mx {
+        bits++
+    }
+    if bits == 0 {
+        bits = 1
+    }
+    size := 1 << bits
+    dp := make([]int, size)
+    // For each exact mask, keep the largest value with that mask
+    for _, v := range nums {
+        if v > dp[v] {
+            dp[v] = v
+        }
+    }
+    // SOS DP: for every mask store the maximum value among all of its submasks
+    for bit := 0; bit < bits; bit++ {
+        bitMask := 1 << bit
+        for mask := 0; mask < size; mask++ {
+            if mask&bitMask != 0 {
+                sub := mask ^ bitMask
+                if dp[sub] > dp[mask] {
+                    dp[mask] = dp[sub]
+                }
+            }
+        }
+    }
+    allMask := size - 1
+    for _, v := range nums {
+        best := dp[allMask^v]
+        if best > 0 {
+            product := v * best
+            if product > res {
+                res = product
+            }
+        }
+    }
+    return int64(res)
+}
+
 func main() {
     // Example 1:
     // Input: nums = [1,2,3,4,5,6,7]
@@ -165,4 +215,10 @@ func main() {
     fmt.Println(maxProduct1([]int{64,8,32})) // 2048
     fmt.Println(maxProduct1([]int{1,2,3,4,5,6,7,8,9})) // 56
     fmt.Println(maxProduct1([]int{9,8,7,6,5,4,3,2,1})) // 56
+
+    fmt.Println(maxProduct2([]int{1,2,3,4,5,6,7})) // 12
+    fmt.Println(maxProduct2([]int{5,6,4})) // 0
+    fmt.Println(maxProduct2([]int{64,8,32})) // 2048
+    fmt.Println(maxProduct2([]int{1,2,3,4,5,6,7,8,9})) // 56
+    fmt.Println(maxProduct2([]int{9,8,7,6,5,4,3,2,1})) // 56
 }
