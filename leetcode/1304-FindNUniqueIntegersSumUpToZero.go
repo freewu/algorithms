@@ -60,6 +60,7 @@ func main() {
     fmt.Println(sumZero(10)) // [-5 -4 -3 -2 -1 5 4 3 2 1]
     fmt.Println(sumZero(16)) // [-8 -7 -6 -5 -4 -3 -2 -1 8 7 6 5 4 3 2 1]
     fmt.Println(sumZero(32)) // [-16 -15 -14 -13 -12 -11 -10 -9 -8 -7 -6 -5 -4 -3 -2 -1 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1]
+    fmt.Println(sumZero(1000))
 
     fmt.Println(sumZero1(5)) // [-2 -1 2 1 0]
     fmt.Println(sumZero1(3)) // [-1 1 0]
@@ -67,4 +68,5 @@ func main() {
     fmt.Println(sumZero1(10)) // [-5 -4 -3 -2 -1 5 4 3 2 1]
     fmt.Println(sumZero1(16)) // [-8 -7 -6 -5 -4 -3 -2 -1 8 7 6 5 4 3 2 1]
     fmt.Println(sumZero1(32)) // [-16 -15 -14 -13 -12 -11 -10 -9 -8 -7 -6 -5 -4 -3 -2 -1 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1]
+    fmt.Println(sumZero1(1000))
 }
