@@ -61,6 +61,11 @@ func main() {
     // Explanation: There is no number that occurs only once.
     fmt.Println(largestUniqueNumber([]int{ 9,9,8,8 })) // -1
 
+    fmt.Println(largestUniqueNumber([]int{ 1,2,3,4,5,6,7,8,9 })) // 9
+    fmt.Println(largestUniqueNumber([]int{ 9,8,7,6,5,4,3,2,1 })) // 9
+
     fmt.Println(largestUniqueNumber1([]int{ 5,7,3,9,4,9,8,3,1 })) // 8
     fmt.Println(largestUniqueNumber1([]int{ 9,9,8,8 })) // -1
+    fmt.Println(largestUniqueNumber1([]int{ 1,2,3,4,5,6,7,8,9 })) // 9
+    fmt.Println(largestUniqueNumber1([]int{ 9,8,7,6,5,4,3,2,1 })) // 9
 }
