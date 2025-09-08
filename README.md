@@ -3891,7 +3891,7 @@ LCR 185. 统计结果概率
 [3617. Find Students with Study Spiral Pattern](./leetcode/3617-FindStudentsWithStudySpiralPattern.sql)   
 [3626. Find Stores with Inventory Imbalance](./leetcode/3626-FindStoresWithInventoryImbalance.sql)   
 [3642. Find Books with Polarized Opinions](./leetcode/3642-FindBooksWithPolarizedOpinions.sql)   
-
+[3673. Find Zombie Sessions](./leetcode/3673-FindZombieSessions.sql)   
 
 # Shell
 [192. Word Frequency](./leetcode/192-WordFrequency.sh)      
