@@ -1876,23 +1876,7 @@
 [3644. Maximum K to Sort a Permutation](./leetcode/3644-MaximumKToSortAPermutation.go)   
 [3645. Maximum Total from Optimal Activation Order](./leetcode/3645-MaximumTotalFromOptimalActivationOrder.go)   
 [3647. Maximum Weight in Two Bags](./leetcode/3647-MaximumWeightInTwoBags.go)   
-[3649. Number of Perfect Pairs](./leetcode/3649-NumberOfPerfectPairs.go)   
-[3651. Minimum Cost Path with Teleportations](./leetcode/3651-MinimumCostPathWithTeleportations.go)   
-[3652. Best Time to Buy and Sell Stock using Strategy](./leetcode/3652-BestTimeToBuyAndSellStockUsingStrategy.go)   
-[3653. XOR After Range Multiplication Queries I](./leetcode/3653-XORAfterRangeMultiplicationQueriesI.go)   
-[3654. Minimum Sum After Divisible Sum Deletions](./leetcode/3654-MinimumSumAfterDivisibleSumDeletions.go)   
-[3655. XOR After Range Multiplication Queries II](./leetcode/3655-XORAfterRangeMultiplicationQueriesII.go)   
-[3656. Count the Number of Simple Paths](./leetcode/3656-CountTheNumberOfSimplePaths.go)   
-[3659. Partition Array Into K-Distinct Groups](./leetcode/3659-PartitionArrayIntoKDistinctGroups.go)   
-[3660. Jump Game IX](./leetcode/3660-JumpGameIX.go)   
-[3661. Maximum Walls Destroyed by Robots](./leetcode/3661-MaximumWallsDestroyedByRobots.go)   
-[3664. Two-Letter Card Game](./leetcode/3664-TwoLetterCardGame.go)   
-[3665. Twisted Mirror Path Count](./leetcode/3665-TwistedMirrorPathCount.go)   
-[3667. Sort Array By Absolute Value](./leetcode/3667-SortArrayByAbsoluteValue.go)   
-[3668. Restore Finishing Order](./leetcode/3668-RestoreFinishingOrder.go)   
-[3670. Maximum Product of Two Integers With No Common Bits](./leetcode/3670-MaximumProductOfTwoIntegersWithNoCommonBits.go)   
-[3671. Sum of Beautiful Subsequences](./leetcode/3671-SumOfBeautifulSubsequences.go)   
-[3672. Sum of Weighted Modes in Subarrays](./leetcode/3672-SumOfWeightedModesInSubarrays.go)   
+[3676. Count Bowl Subarrays](./leetcode/3676-CountBowlSubarrays.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
@@ -2518,9 +2502,6 @@
 [3614. Process String with Special Operations II](./leetcode/3614-ProcessStringWithSpecialOperationsII.go)   
 [3628. Maximum Number of Subsequences After One Inserting](./leetcode/3628-MaximumNumberOfSubsequencesAfterOneInserting.go)   
 [3639. Minimum Time to Activate String](./leetcode/3639-MinimumTimeToActivateString.go)   
-[3662. Filter Characters by Frequency](./leetcode/3662-FilterCharactersByFrequency.go)   
-[3666. Minimum Operations to Equalize Binary String](./leetcode/3666-MinimumOperationsToEqualizeBinaryString.go)   
-[3675. Minimum Operations to Transform String](./leetcode/3675-MinimumOperationsToTransformString.go)   
 
 # Dynamic Programming
 [276. Paint Fence](./leetcode/276-PaintFence.go)   
@@ -2937,10 +2918,6 @@
 [3622. Check Divisibility by Digit Sum and Product](./leetcode/3622-CheckDivisibilityByDigitSumAndProduct.go)   
 [3624. Number of Integers With Popcount-Depth Equal to K II](./leetcode/3624-NumberOfIntegersWithPopcountDepthEqualToKII.go)   
 [3646. Next Special Palindrome Number](./leetcode/3646-NextSpecialPalindromeNumber.go)   
-[3648. Minimum Sensors to Cover Grid](./leetcode/3648-MinimumSensorsToCoverGrid.go)   
-[3658. GCD of Odd and Even Sums](./leetcode/3658-GCDOfOddAndEvenSums.go)   
-[3663. Find The Least Frequent Digit](./leetcode/3663-FindTheLeastFrequentDigit.go)   
-[3669. Balanced K-Factor Decomposition](./leetcode/3669-BalancedKFactorDecomposition.go)   
 
 # Stack
 [225. Implement Stack using Queues](./leetcode/225-ImplementStackUsingQueues.go)   
@@ -3282,7 +3259,6 @@
 [3615. Longest Palindromic Path in Graph](./leetcode/3615-LongestPalindromicPathInGraph.go)   
 [3619. Count Islands With Total Value Divisible by K](./leetcode/3619-CountIslandsWithTotalValueDivisibleByK.go)   
 [3620. Network Recovery Pathways](./leetcode/3620-NetworkRecoveryPathways.go)   
-[3650. Minimum Cost Path with Edge Reversals](./leetcode/3650-MinimumCostPathWithEdgeReversals.go)   
 
 # Trie
 [386. Lexicographical Numbers](./leetcode/386-LexicographicalNumbers.go)   
@@ -3913,7 +3889,7 @@ LCR 185. 统计结果概率
 [3617. Find Students with Study Spiral Pattern](./leetcode/3617-FindStudentsWithStudySpiralPattern.sql)   
 [3626. Find Stores with Inventory Imbalance](./leetcode/3626-FindStoresWithInventoryImbalance.sql)   
 [3642. Find Books with Polarized Opinions](./leetcode/3642-FindBooksWithPolarizedOpinions.sql)   
-[3657. Find Loyal Customers](./leetcode/3657-FindLoyalCustomers.sql)   
+
 
 # Shell
 [192. Word Frequency](./leetcode/192-WordFrequency.sh)      
@@ -4448,4 +4424,4 @@ LCR 185. 统计结果概率
 [面试题 17.23. Max Black Square LCCI](./leetcode/LCCI1723-MaxBlackSquare.go)   
 [面试题 17.24. Max Submatrix LCCI](./leetcode/LCCI1724-MaxSubmatrix.go)   
 [面试题 17.25. Word Rectangle LCCI](./leetcode/LCCI1725-WordRectangle.go)   
-[面试题 17.26. Sparse Similarity LCCI](./leetcode/LCCI1726-SparseSimilarity.go)
+[面试题 17.26. Sparse Similarity LCCI](./leetcode/LCCI1726-SparseSimilarity.go)   
