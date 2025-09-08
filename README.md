@@ -1892,6 +1892,7 @@
 [3668. Restore Finishing Order](./leetcode/3668-RestoreFinishingOrder.go)   
 [3670. Maximum Product of Two Integers With No Common Bits](./leetcode/3670-MaximumProductOfTwoIntegersWithNoCommonBits.go)   
 [3671. Sum of Beautiful Subsequences](./leetcode/3671-SumOfBeautifulSubsequences.go)   
+[3672. Sum of Weighted Modes in Subarrays](./leetcode/3672-SumOfWeightedModesInSubarrays.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
