@@ -2520,6 +2520,7 @@
 [3639. Minimum Time to Activate String](./leetcode/3639-MinimumTimeToActivateString.go)   
 [3662. Filter Characters by Frequency](./leetcode/3662-FilterCharactersByFrequency.go)   
 [3666. Minimum Operations to Equalize Binary String](./leetcode/3666-MinimumOperationsToEqualizeBinaryString.go)   
+[3675. Minimum Operations to Transform String](./leetcode/3675-MinimumOperationsToTransformString.go)   
 
 # Dynamic Programming
 [276. Paint Fence](./leetcode/276-PaintFence.go)   
