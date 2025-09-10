@@ -37,6 +37,7 @@ package main
 //     languages[i] contains only unique values
 
 import "fmt"
+import "slices"
 
 func minimumTeachings(n int, languages [][]int, friendships [][]int) int {
     cantSpeekPersons := make(map[int]bool)
@@ -72,15 +73,49 @@ func minimumTeachings(n int, languages [][]int, friendships [][]int) int {
     return len(cantSpeekPersons) - maxDontSpeekCount
 }
 
+func minimumTeachings1(n int, languages [][]int, friendships [][]int) int {
+    res, m := 0, len(languages)
+    learned, visited, count := make([][]bool, m), make([]bool, m), make([]int, n + 1)
+    for i, list := range languages {
+        learned[i] = make([]bool, n+1)
+        for _, x := range list {
+            learned[i][x] = true
+        }
+    }
+    add := func(u int) {
+        if visited[u] { return }
+        res++
+        visited[u] = true
+        for _, x := range languages[u] {
+            count[x]++
+        }
+    }
+next:
+    for _, f := range friendships {
+        u, v := f[0]-1, f[1]-1
+        for _, x := range languages[u] {
+            if learned[v][x] { // 两人可以相互沟通，无需学习语言
+                continue next
+            }
+        }
+        add(u)
+        add(v)
+    }
+    return res - slices.Max(count)
+}
+
 func main() {
-// Example 1:
-// Input: n = 2, languages = [[1],[2],[1,2]], friendships = [[1,2],[1,3],[2,3]]
-// Output: 1
-// Explanation: You can either teach user 1 the second language or user 2 the first language.
-fmt.Println(minimumTeachings(2, [][]int{{1},{2},{1,2}}, [][]int{{1,2},{1,3},{2,3}})) // 1
-// Example 2:
-// Input: n = 3, languages = [[2],[1,3],[1,2],[3]], friendships = [[1,4],[1,2],[3,4],[2,3]]
-// Output: 2
-// Explanation: Teach the third language to users 1 and 3, yielding two users to teach.
-fmt.Println(minimumTeachings(3, [][]int{{2},{1,3},{1,2},{3}}, [][]int{{1,4},{1,2},{3,4},{2,3}})) // 2
+    // Example 1:
+    // Input: n = 2, languages = [[1],[2],[1,2]], friendships = [[1,2],[1,3],[2,3]]
+    // Output: 1
+    // Explanation: You can either teach user 1 the second language or user 2 the first language.
+    fmt.Println(minimumTeachings(2, [][]int{{1},{2},{1,2}}, [][]int{{1,2},{1,3},{2,3}})) // 1
+    // Example 2:
+    // Input: n = 3, languages = [[2],[1,3],[1,2],[3]], friendships = [[1,4],[1,2],[3,4],[2,3]]
+    // Output: 2
+    // Explanation: Teach the third language to users 1 and 3, yielding two users to teach.
+    fmt.Println(minimumTeachings(3, [][]int{{2},{1,3},{1,2},{3}}, [][]int{{1,4},{1,2},{3,4},{2,3}})) // 2
+
+    fmt.Println(minimumTeachings1(2, [][]int{{1},{2},{1,2}}, [][]int{{1,2},{1,3},{2,3}})) // 1
+    fmt.Println(minimumTeachings1(3, [][]int{{2},{1,3},{1,2},{3}}, [][]int{{1,4},{1,2},{3,4},{2,3}})) // 2
 }
