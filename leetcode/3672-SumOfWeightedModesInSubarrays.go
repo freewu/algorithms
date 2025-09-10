@@ -54,6 +54,7 @@ package main
 //     1 <= k <= nums.length
 
 import "fmt"
+import "container/heap"
 
 // 超出时间限制 993 / 999 
 func modeWeight(nums []int, k int) int64 {
@@ -143,6 +144,63 @@ func modeWeight(nums []int, k int) int64 {
     return int64(res)
 }
 
+type Pair struct {
+    freq int
+    val  int
+}
+
+type MaxHeap []Pair
+
+func (h MaxHeap) Len() int { return len(h) }
+func (h MaxHeap) Less(i, j int) bool {
+    if h[i].freq != h[j].freq {
+        return h[i].freq > h[j].freq
+    }
+    return h[i].val < h[j].val
+}
+func (h MaxHeap) Swap(i, j int) { h[i], h[j] = h[j], h[i] }
+func (h *MaxHeap) Push(x any) {
+    *h = append(*h, x.(Pair))
+}
+func (h *MaxHeap) Pop() any {
+    old := *h
+    n := len(old)
+    x := old[n-1]
+    *h = old[:n-1]
+    return x
+}
+
+func modeWeight1(nums []int, k int) int64 {
+    count := make(map[int]int)
+    pq := &MaxHeap{}
+    heap.Init(pq)
+    for i := 0; i < k; i++ {
+        x := nums[i]
+        count[x]++
+        heap.Push(pq, Pair{count[x], x})
+    }
+    getMode := func() int64 {
+        for {
+            top := (*pq)[0]
+            if count[top.val] == top.freq {
+                return int64(top.freq) * int64(top.val)
+            }
+            heap.Pop(pq)
+        }
+    }
+    res := int64(0)
+    res += getMode()
+    for i := k; i < len(nums); i++ {
+        x, y := nums[i], nums[i-k]
+        count[x]++
+        count[y]--
+        heap.Push(pq, Pair{ count[x], x })
+        heap.Push(pq, Pair{ count[y], y })
+        res += getMode()
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: nums = [1,2,2,3], k = 3
@@ -181,4 +239,10 @@ func main() {
 
     fmt.Println(modeWeight([]int{1,2,3,4,5,6,7,8,9}, 2)) // 36
     fmt.Println(modeWeight([]int{9,8,7,6,5,4,3,2,1}, 2)) // 36
+
+    fmt.Println(modeWeight1([]int{1,2,2,3}, 3)) // 8
+    fmt.Println(modeWeight1([]int{1,2,1,2}, 2)) // 3
+    fmt.Println(modeWeight1([]int{4,3,4,3}, 3)) // 14
+    fmt.Println(modeWeight1([]int{1,2,3,4,5,6,7,8,9}, 2)) // 36
+    fmt.Println(modeWeight1([]int{9,8,7,6,5,4,3,2,1}, 2)) // 36
 }
