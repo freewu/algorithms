@@ -94,9 +94,16 @@ func main() {
     // Thus, 101 is not a majority element because 2 > 4/2 is false.
     fmt.Println(isMajorityElement([]int{10,100,101,101}, 101)) // false
 
+    fmt.Println(isMajorityElement([]int{1,2,3,4,5,6,7,8,9}, 2)) // false
+    fmt.Println(isMajorityElement([]int{9,8,7,6,5,4,3,2,1}, 2)) // false
+
     fmt.Println(isMajorityElement1([]int{2,4,5,5,5,5,5,6,6}, 5)) // true
     fmt.Println(isMajorityElement1([]int{10,100,101,101}, 101)) // false
+    fmt.Println(isMajorityElement1([]int{1,2,3,4,5,6,7,8,9}, 2)) // false
+    fmt.Println(isMajorityElement1([]int{9,8,7,6,5,4,3,2,1}, 2)) // false
 
     fmt.Println(isMajorityElement2([]int{2,4,5,5,5,5,5,6,6}, 5)) // true
     fmt.Println(isMajorityElement2([]int{10,100,101,101}, 101)) // false
+    fmt.Println(isMajorityElement2([]int{1,2,3,4,5,6,7,8,9}, 2)) // false
+    fmt.Println(isMajorityElement2([]int{9,8,7,6,5,4,3,2,1}, 2)) // false
 }
