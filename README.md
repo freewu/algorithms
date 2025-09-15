@@ -1895,6 +1895,7 @@
 [3676. Count Bowl Subarrays](./leetcode/3676-CountBowlSubarrays.go)   
 [3678. Smallest Absent Positive Greater Than Average](./leetcode/3678-SmallestAbsentPositiveGreaterThanAverage.go)   
 [3679. Minimum Discards to Balance Inventory](./leetcode/3679-MinimumDiscardsToBalanceInventory.go)   
+[3681. Maximum XOR of Subsequences](./leetcode/3681-MaximumXOROfSubsequences.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
