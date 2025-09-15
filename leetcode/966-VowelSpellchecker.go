@@ -141,6 +141,114 @@ func spellchecker1(wordlist []string, queries []string) []string {
     return res
 }
 
+func spellchecker2(wordlist []string, queries []string) []string {
+    // isVowel is a helper to check if a rune is a vowel.
+    isVowel := func(r rune) bool {
+        return r == 'a' || r == 'e' || r == 'i' || r == 'o' || r == 'u'
+    }
+    devowel := func(word string) string {
+        lower := strings.ToLower(word)
+        var sb strings.Builder
+        sb.Grow(len(lower))
+        for _, r := range lower {
+            if isVowel(r) {
+                sb.WriteRune('*')
+            } else {
+                sb.WriteRune(r)
+            }
+        }
+        return sb.String()
+    }
+    // exact match
+    exact := map[string]struct{}{}
+    for _, w := range wordlist {
+        exact[w] = struct{}{}
+    }
+    // case insensitive match
+    ci := map[string]string{}
+    for _, w := range wordlist {
+        k := strings.ToLower(w)
+        if _, ok := ci[k]; !ok {
+            ci[k] = w
+        }
+    }
+    // devoweld
+    d := map[string]string{}
+    for _, w := range wordlist {
+        k := devowel(w)
+        if _, ok := d[k]; !ok {
+            d[k] = w
+        }
+    }
+    r := make([]string, len(queries))
+    for i, q := range queries {
+        if _, ok := exact[q]; ok {
+            r[i] = q
+            continue
+        }
+        if orig, ok := ci[strings.ToLower(q)]; ok {
+            r[i] = orig
+            continue
+        }
+        if orig, ok := d[devowel(q)]; ok {
+            r[i] = orig
+            continue
+        }
+        r[i] = ""
+    }
+    return r
+}
+
+
+func spellchecker3(wordlist []string, queries []string) []string {
+    n := len(wordlist)
+    m1, m2, m3 := make(map[string]string, n),make(map[string]string, n), make(map[string]string, n)
+    f := func(str string) (b, c string) {
+        t2 := []byte(str)
+        for j := range len(t2) {
+            if t2[j] >= 'a' {
+                t2[j] -= 'a' - 'A'
+            }
+        }
+        b = string(t2)
+        var j2 int
+        for j := range len(t2) {
+            switch t2[j] {
+            case 'E', 'I', 'O', 'U':
+                t2[j2] = 'A'
+            default:
+                t2[j2] = t2[j]
+            }
+            j2++
+        }
+        c = string(t2)
+        return
+    }
+    for i := range n {
+        t := wordlist[n-1-i]
+        m1[t] = t
+        b, c := f(t)
+        m2[b] = t
+        m3[c] = t
+    }
+    res := make([]string, len(queries))
+    for i, t := range queries {
+        if v, ok := m1[t]; ok {
+            res[i] = v
+        } else {
+            b, c := f(t)
+            if v, ok := m2[b]; ok {
+                res[i] = v
+            } else if v, ok := m3[c]; ok {
+                res[i] = v
+            } else {
+                res[i] = v
+            }
+        }
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: wordlist = ["KiTe","kite","hare","Hare"], queries = ["kite","Kite","KiTe","Hare","HARE","Hear","hear","keti","keet","keto"]
@@ -151,6 +259,17 @@ func main() {
     // Output: ["yellow"]
     fmt.Println(spellchecker([]string{"yellow"},[]string{"YellOw"})) // ["yellow"]
 
+    fmt.Println(spellchecker([]string{"bluefrog"},[]string{"leetcode"})) // []
+
     fmt.Println(spellchecker1([]string{"KiTe","kite","hare","Hare"},[]string{"kite","Kite","KiTe","Hare","HARE","Hear","hear","keti","keet","keto"})) // ["kite","KiTe","KiTe","Hare","hare","","","KiTe","","KiTe"]
     fmt.Println(spellchecker1([]string{"yellow"},[]string{"YellOw"})) // ["yellow"]
+    fmt.Println(spellchecker1([]string{"bluefrog"},[]string{"leetcode"})) // []
+
+    fmt.Println(spellchecker2([]string{"KiTe","kite","hare","Hare"},[]string{"kite","Kite","KiTe","Hare","HARE","Hear","hear","keti","keet","keto"})) // ["kite","KiTe","KiTe","Hare","hare","","","KiTe","","KiTe"]
+    fmt.Println(spellchecker2([]string{"yellow"},[]string{"YellOw"})) // ["yellow"]
+    fmt.Println(spellchecker2([]string{"bluefrog"},[]string{"leetcode"})) // []
+
+    fmt.Println(spellchecker3([]string{"KiTe","kite","hare","Hare"},[]string{"kite","Kite","KiTe","Hare","HARE","Hear","hear","keti","keet","keto"})) // ["kite","KiTe","KiTe","Hare","hare","","","KiTe","","KiTe"]
+    fmt.Println(spellchecker3([]string{"yellow"},[]string{"YellOw"})) // ["yellow"]
+    fmt.Println(spellchecker3([]string{"bluefrog"},[]string{"leetcode"})) // []
 }
