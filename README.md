@@ -1893,6 +1893,7 @@
 [3671. Sum of Beautiful Subsequences](./leetcode/3671-SumOfBeautifulSubsequences.go)   
 [3672. Sum of Weighted Modes in Subarrays](./leetcode/3672-SumOfWeightedModesInSubarrays.go)   
 [3676. Count Bowl Subarrays](./leetcode/3676-CountBowlSubarrays.go)   
+[3678. Smallest Absent Positive Greater Than Average](./leetcode/3678-SmallestAbsentPositiveGreaterThanAverage.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
