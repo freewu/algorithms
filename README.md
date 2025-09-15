@@ -1896,6 +1896,7 @@
 [3678. Smallest Absent Positive Greater Than Average](./leetcode/3678-SmallestAbsentPositiveGreaterThanAverage.go)   
 [3679. Minimum Discards to Balance Inventory](./leetcode/3679-MinimumDiscardsToBalanceInventory.go)   
 [3681. Maximum XOR of Subsequences](./leetcode/3681-MaximumXOROfSubsequences.go)   
+[3682. Minimum Index Sum of Common Elements](./leetcode/3682-MinimumIndexSumOfCommonElements.go)   
 [3683. Earliest Time to Finish One Task](./leetcode/3683-EarliestTimeToFinishOneTask.go)   
 [3684. Maximize Sum of At Most K Distinct Elements](./leetcode/3684-MaximizeSumOfAtMostKDistinctElements.go)   
 [3685. Subsequence Sum After Capping Elements](./leetcode/3685-SubsequenceSumAfterCappingElements.go)   
