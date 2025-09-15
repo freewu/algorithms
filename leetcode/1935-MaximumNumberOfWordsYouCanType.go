@@ -68,4 +68,7 @@ func main() {
     // Output: 0
     // Explanation: We cannot type either word because the 'e' key is broken.
     fmt.Println(canBeTypedWords("leet code", "e")) // 0
+
+    fmt.Println(canBeTypedWords("bluefrog", "e")) // 0
+    fmt.Println(canBeTypedWords("freewu", "e")) // 0
 }
