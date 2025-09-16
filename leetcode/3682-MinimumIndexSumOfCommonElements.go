@@ -64,6 +64,41 @@ func minimumSum(nums1 []int, nums2 []int) int {
     return res
 }
 
+func minimumSum1(nums1 []int, nums2 []int) int {
+    res, mp := -1, make(map[int]int)
+    for i, v := range nums1 {
+        if j, ok := mp[v]; !ok || i < j { // 如果元素已存在，保留较小的索引
+            mp[v] = i
+        }
+    }
+    for j, v := range nums2 {
+        if i, ok := mp[v]; ok {
+            sum := i + j
+            if res == -1 || sum < res { // 如果是第一个找到的好对，或者当前和更小，则更新最小值
+                res = sum
+            }
+        }
+    }
+    return res
+}
+
+func minimumSum2(nums1 []int, nums2 []int) int {
+    res, mp := 1 << 31, make(map[int]int)
+    for i, v := range nums2 {
+        if _, ok := mp[v]; !ok {
+            mp[v] = i
+        }
+    }
+    min := func (x, y int) int { if x < y { return x; }; return y; }
+    for i, v := range nums1 {
+        if j, ok := mp[v]; ok {
+            res = min(res, i + j)
+        }
+    }
+    if res == 1 << 31 { return -1 }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: nums1 = [3,2,1], nums2 = [1,3,1]
@@ -94,4 +129,20 @@ func main() {
     fmt.Println(minimumSum([]int{1,2,3,4,5,6,7,8,9}, []int{9,8,7,6,5,4,3,2,1})) // 8
     fmt.Println(minimumSum([]int{9,8,7,6,5,4,3,2,1}, []int{1,2,3,4,5,6,7,8,9})) // 8
     fmt.Println(minimumSum([]int{9,8,7,6,5,4,3,2,1}, []int{9,8,7,6,5,4,3,2,1})) // 0
+
+    fmt.Println(minimumSum1([]int{3,2,1}, []int{1,3,1})) // 1
+    fmt.Println(minimumSum1([]int{5,1,2}, []int{2,1,3})) // 2
+    fmt.Println(minimumSum1([]int{6,4}, []int{7,8})) // -1
+    fmt.Println(minimumSum1([]int{1,2,3,4,5,6,7,8,9}, []int{1,2,3,4,5,6,7,8,9})) // 0
+    fmt.Println(minimumSum1([]int{1,2,3,4,5,6,7,8,9}, []int{9,8,7,6,5,4,3,2,1})) // 8
+    fmt.Println(minimumSum1([]int{9,8,7,6,5,4,3,2,1}, []int{1,2,3,4,5,6,7,8,9})) // 8
+    fmt.Println(minimumSum1([]int{9,8,7,6,5,4,3,2,1}, []int{9,8,7,6,5,4,3,2,1})) // 0
+
+    fmt.Println(minimumSum2([]int{3,2,1}, []int{1,3,1})) // 1
+    fmt.Println(minimumSum2([]int{5,1,2}, []int{2,1,3})) // 2
+    fmt.Println(minimumSum2([]int{6,4}, []int{7,8})) // -1
+    fmt.Println(minimumSum2([]int{1,2,3,4,5,6,7,8,9}, []int{1,2,3,4,5,6,7,8,9})) // 0
+    fmt.Println(minimumSum2([]int{1,2,3,4,5,6,7,8,9}, []int{9,8,7,6,5,4,3,2,1})) // 8
+    fmt.Println(minimumSum2([]int{9,8,7,6,5,4,3,2,1}, []int{1,2,3,4,5,6,7,8,9})) // 8
+    fmt.Println(minimumSum2([]int{9,8,7,6,5,4,3,2,1}, []int{9,8,7,6,5,4,3,2,1})) // 0
 }
