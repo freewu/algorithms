@@ -65,6 +65,32 @@ func minArrivalsToDiscard(arrivals []int, w int, m int) int {
     return res
 }
 
+func minArrivalsToDiscard1(arrivals []int, w int, m int) int {
+    res, mx, n := 0, 0, len(arrivals)
+    if n == 0 { return 0 }
+    for _, v := range arrivals {
+        if v > mx {
+            mx = v
+        }
+    }
+    count, visited := make([]int, mx + 1), make([]bool, n)
+    for i := 0; i < n; i++ {
+        if i - w >= 0 {
+            if visited[i - w] {
+                count[arrivals[i - w]]--
+            }
+        }
+        t := arrivals[i]
+        if count[t] < m {
+            visited[i] = true
+            count[t]++
+        } else {
+            res++
+        }
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: arrivals = [1,2,1,3,1], w = 4, m = 2
@@ -92,4 +118,9 @@ func main() {
 
     fmt.Println(minArrivalsToDiscard([]int{1,2,3,4,5,6,7,8,9}, 3, 2)) // 0
     fmt.Println(minArrivalsToDiscard([]int{9,8,7,6,5,4,3,2,1}, 3, 2)) // 0
+
+    fmt.Println(minArrivalsToDiscard1([]int{1,2,1,3,1}, 4, 2)) // 0
+    fmt.Println(minArrivalsToDiscard1([]int{1,2,3,3,3,4}, 3, 2)) // 1
+    fmt.Println(minArrivalsToDiscard1([]int{1,2,3,4,5,6,7,8,9}, 3, 2)) // 0
+    fmt.Println(minArrivalsToDiscard1([]int{9,8,7,6,5,4,3,2,1}, 3, 2)) // 0
 }
