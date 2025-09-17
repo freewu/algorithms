@@ -61,6 +61,20 @@ func generateSchedule(n int) [][]int {
     return res
 }
 
+func generateSchedule1(n int) [][]int {
+    if n < 5 { return nil }
+    res := make([][]int, 0, n*(n-1))
+    for d := 2; d < n-1; d++ {
+        for i := range n {
+            res = append(res, []int{i, (i + d) % n })
+        }
+    }
+    for i := 0; i < n; i++ {
+        res = append(res, []int{i, (i+1) % n}, []int{(i+n-1) % n, (i+n-2) % n})
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: n = 3
@@ -79,4 +93,9 @@ func main() {
 
     fmt.Println(generateSchedule(2)) // []
     fmt.Println(generateSchedule(50)) // 
+
+    fmt.Println(generateSchedule1(3)) // []
+    fmt.Println(generateSchedule1(5)) // [[0,1],[2,3],[0,4],[1,2],[3,4],[0,2],[1,3],[2,4],[0,3],[1,4],[2,0],[3,1],[4,0],[2,1],[4,3],[1,0],[3,2],[4,1],[3,0],[4,2]]
+    fmt.Println(generateSchedule1(2)) // []
+    fmt.Println(generateSchedule1(50)) // 
 }
