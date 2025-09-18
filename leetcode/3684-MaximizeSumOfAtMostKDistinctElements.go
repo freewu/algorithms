@@ -32,6 +32,7 @@ package main
 
 import "fmt"
 import "sort"
+import "slices"
 
 func maxKDistinct(nums []int, k int) []int {
     set := make(map[int]bool)
@@ -49,6 +50,15 @@ func maxKDistinct(nums []int, k int) []int {
         k = len(arr)
     }
     return arr[:k]
+}
+
+func maxKDistinct1(nums []int, k int) []int {
+    slices.SortFunc(nums, func(a, b int) int { return b - a })
+    nums = slices.Compact(nums) // 原地去重
+    if len(nums) > k {
+        return nums[:k]
+    }
+    return nums
 }
 
 func main() {
@@ -73,4 +83,10 @@ func main() {
 
     fmt.Println(maxKDistinct([]int{1,2,3,4,5,6,7,8,9}, 2)) // [9,8]
     fmt.Println(maxKDistinct([]int{9,8,7,6,5,4,3,2,1}, 2)) // [9,8]
+
+    fmt.Println(maxKDistinct1([]int{84,93,100,77,90}, 3)) // [100,93,90]
+    fmt.Println(maxKDistinct1([]int{84,93,100,77,93}, 3)) // [100,93,84]
+    fmt.Println(maxKDistinct1([]int{84,93,100,77,9}, 6)) // [2,1]
+    fmt.Println(maxKDistinct1([]int{1,2,3,4,5,6,7,8,9}, 2)) // [9,8]
+    fmt.Println(maxKDistinct1([]int{9,8,7,6,5,4,3,2,1}, 2)) // [9,8]
 }
