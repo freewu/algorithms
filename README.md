@@ -1902,6 +1902,7 @@
 [3685. Subsequence Sum After Capping Elements](./leetcode/3685-SubsequenceSumAfterCappingElements.go)   
 [3686. Number of Stable Subsequences](./leetcode/3686-NumberOfStableSubsequences.go)   
 [3687. Library Late Fee Calculator](./leetcode/3687-LibraryLateFeeCalculator.go)   
+[3689. Maximum Total Subarray Value I](./leetcode/3689-MaximumTotalSubarrayValueI.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
