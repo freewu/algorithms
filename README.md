@@ -1904,6 +1904,7 @@
 [3687. Library Late Fee Calculator](./leetcode/3687-LibraryLateFeeCalculator.go)   
 [3688. Bitwise OR of Even Numbers in an Array](./leetcode/3688-BitwiseORofEvenNumbersInAnArray.go)   
 [3689. Maximum Total Subarray Value I](./leetcode/3689-MaximumTotalSubarrayValueI.go)   
+[3690. Split and Merge Array Transformation](./leetcode/3690-SplitAndMergeArrayTransformation.go)   
 [3691. Maximum Total Subarray Value II](./leetcode/3691-MaximumTotalSubarrayValueII.go)   
 
 # String
