@@ -25,21 +25,20 @@ import "fmt"
 
 func maxFrequencyElements(nums []int) int {
     // 先统计每个元素的频率
-    m := make(map[int]int) 
+    mx, m := 1, make(map[int]int) 
     for _,v := range nums {
         m[v]++
     }
-    max := 1
     // 找到最大的频率
     for _,v := range m {
-        if v > max {
-            max = v
+        if v > mx {
+            mx = v
         }
     }
     // 计算频率和
     res := 0
     for _,v := range m {
-        if v == max {
+        if v == mx {
             res += v
         }
     }
@@ -47,6 +46,19 @@ func maxFrequencyElements(nums []int) int {
 }
 
 func main() {
+    // Example 1:
+    // Input: nums = [1,2,2,3,1,4]
+    // Output: 4
+    // Explanation: The elements 1 and 2 have a frequency of 2 which is the maximum frequency in the array.
+    // So the number of elements in the array with maximum frequency is 4.
     fmt.Println(maxFrequencyElements([]int{1,2,2,3,1,4})) // 4
+    // Example 2:
+    // Input: nums = [1,2,3,4,5]
+    // Output: 5
+    // Explanation: All elements of the array have a frequency of 1 which is the maximum.
+    // So the number of elements in the array with maximum frequency is 5.
     fmt.Println(maxFrequencyElements([]int{1,2,3,4,5})) // 5
+
+    fmt.Println(maxFrequencyElements([]int{1,2,3,4,5,6,7,8,9})) // 9
+    fmt.Println(maxFrequencyElements([]int{9,8,7,6,5,4,3,2,1})) // 9
 }
