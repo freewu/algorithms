@@ -17,7 +17,6 @@ package main
 //     If version1 < version2, return -1.
 //     If version1 > version2, return 1.
 //     Otherwise, return 0.
- 
 
 // Example 1:
 // Input: version1 = "1.01", version2 = "1.001"
@@ -52,8 +51,8 @@ func compareVersion(version1 string, version2 string) int {
         return res, index
     }
     for i < len(version1) || j < len(version2) {
-        x, i = readInt(version1, i+1)
-        y, j = readInt(version2, j+1)
+        x, i = readInt(version1, i + 1)
+        y, j = readInt(version2, j + 1)
         switch {
         case x < y:
             return -1
@@ -64,11 +63,42 @@ func compareVersion(version1 string, version2 string) int {
     return 0
 }
 
+func compareVersion1(version1 string, version2 string) int {
+    m, n := len(version1), len(version2)
+    for i, j := 0, 0; i < m || j < n; i, j = i+1, j+1 {
+        n1, n2 := 0, 0
+        for i < m && version1[i] != '.' {
+            n1 = n1 * 10 + int(version1[i] - '0')
+            i++
+        }
+        for j < n && version2[j] != '.' {
+            n2 = n2 * 10 + int(version2[j] - '0')   
+            j++
+        }
+        if n1 > n2 { return 1 }
+        if n1 < n2 { return -1 }
+    }
+    return 0
+}
+
 func main() {
+    // Example 1:
+    // Input: version1 = "1.01", version2 = "1.001"
+    // Output: 0
     // Explanation: Ignoring leading zeroes, both "01" and "001" represent the same integer "1".
     fmt.Println(compareVersion("1.01","1.001")) // 0
+    // Example 2:
+    // Input: version1 = "1.0", version2 = "1.0.0"
+    // Output: 0
     // Explanation: version1 does not specify revision 2, which means it is treated as "0".
     fmt.Println(compareVersion("1.0","1.0.0")) // 0
+    // Example 3:
+    // Input: version1 = "0.1", version2 = "1.1"
+    // Output: -1
     // Explanation: version1's revision 0 is "0", while version2's revision 0 is "1". 0 < 1, so version1 < version2.
-    fmt.Println(compareVersion("0.1.0","1.0.0")) // -1 
+    fmt.Println(compareVersion("0.1.0","1.0.0")) // -1
+
+    fmt.Println(compareVersion1("1.01","1.001")) // 0
+    fmt.Println(compareVersion1("1.0","1.0.0")) // 0
+    fmt.Println(compareVersion1("0.1.0","1.0.0")) // -1 
 }
