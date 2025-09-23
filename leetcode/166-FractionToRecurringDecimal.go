@@ -123,7 +123,16 @@ func main() {
     // Output: "0.(012)"
     fmt.Println(fractionToDecimal(4, 333)) // "0.(012)"
 
+    fmt.Println(fractionToDecimal(1 << 31, -1 << 31)) // -1
+    fmt.Println(fractionToDecimal(1 << 31, 1 << 31)) // 1
+    fmt.Println(fractionToDecimal(-1 << 31, -1 << 31)) // 1
+    fmt.Println(fractionToDecimal(-1 << 31, 1 << 31)) // -1
+
     fmt.Println(fractionToDecimal1(1, 2)) // "0.5"
     fmt.Println(fractionToDecimal1(2, 1)) // "2"
     fmt.Println(fractionToDecimal1(4, 333)) // "0.(012)"
+    fmt.Println(fractionToDecimal1(1 << 31, -1 << 31)) // -1
+    fmt.Println(fractionToDecimal1(1 << 31, 1 << 31)) // 1
+    fmt.Println(fractionToDecimal1(-1 << 31, -1 << 31)) // 1
+    fmt.Println(fractionToDecimal(-1 << 31, 1 << 31)) // -1
 }
