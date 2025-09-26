@@ -24,8 +24,8 @@ import "sort"
 
 func triangleNumber(nums []int) int {
     sort.Ints(nums)
-    res, l := 0, len(nums)
-    for i := l - 1; i >= 2; i-- {
+    res, n := 0, len(nums)
+    for i := n - 1; i >= 2; i-- {
         l, r := 0, i - 1
         for l < r {
             if nums[l] + nums[r] > nums[i] {
@@ -61,13 +61,24 @@ func triangleNumber1(nums []int) int {
 }
 
 func main() {
+    // Example 1:
+    // Input: nums = [2,2,3,4]
+    // Output: 3
     // Explanation: Valid combinations are: 
     // 2,3,4 (using the first 2)
     // 2,3,4 (using the second 2)
     // 2,2,3
     fmt.Println(triangleNumber([]int{2,2,3,4})) // 3
-    fmt.Println(triangleNumber([]int{4,2,3,4})) // 2
+    // Example 2:
+    // Input: nums = [4,2,3,4]
+    // Output: 4
+    fmt.Println(triangleNumber([]int{4,2,3,4})) // 4
+
+    fmt.Println(triangleNumber([]int{1,2,3,4,5,6,7,8,9})) // 34
+    fmt.Println(triangleNumber([]int{9,8,7,6,5,4,3,2,1})) // 34
 
     fmt.Println(triangleNumber1([]int{2,2,3,4})) // 3
-    fmt.Println(triangleNumber1([]int{4,2,3,4})) // 2
+    fmt.Println(triangleNumber1([]int{4,2,3,4})) // 4
+    fmt.Println(triangleNumber1([]int{1,2,3,4,5,6,7,8,9})) // 34
+    fmt.Println(triangleNumber1([]int{9,8,7,6,5,4,3,2,1})) // 34
 }
