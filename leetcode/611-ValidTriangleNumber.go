@@ -44,11 +44,11 @@ func triangleNumber(nums []int) int {
 // 所以原问题便转化为只需关心 a + b > c 这一个不等式是否成立即可
 func triangleNumber1(nums []int) int {
     sort.Ints(nums)
-    res, l := 0, len(nums)
-    for i := 0; i < l - 2; i++ {  //此时取i=0,j=1,k=2作为三边，往下遍历，只需要符合i+j>k即可
+    res, n := 0, len(nums)
+    for i := 0; i < n - 2; i++ {  //此时取 i = 0,j = 1,k = 2 作为三边，往下遍历，只需要符合 i + j > k 即可
         k := i + 2
-        for j := i + 1; j < l-1 && nums[i] != 0; j++{
-            for k < l && nums[k] < nums[i] + nums[j] {
+        for j := i + 1; j < n - 1 && nums[i] != 0; j++ {
+            for k < n && nums[k] < nums[i] + nums[j] {
                 k++  // 此处的k不需要从最前面重新遍历，当j往前走，k之前的那些数肯定全部都满足，可以减少时间复杂度
             }
             // res += max(k-j, 0)
@@ -56,6 +56,31 @@ func triangleNumber1(nums []int) int {
             // 此时如果只计算k-j则为2，实际只有一个值，当不满足条件的话，k-j也会有一个结果，减去1则不符合也没有结果
             res += k - j - 1
         }
+    }
+    return res
+}
+
+func triangleNumber2(nums []int) int {
+    sort.Ints(nums)
+    res, n := 0, len(nums)
+    for i := n - 1; i >= 2; i-- {
+        if nums[0 ]+ nums[1] > nums[i] {
+            res += (i + 1) * i * (i - 1) / 6
+            break
+        }
+        if nums[i - 2]+nums[i - 1] <= nums[i] {
+            continue
+        }
+        l, r := 0, i - 1
+        for l < r {
+            s := nums[l] + nums[r]
+            if s > nums[i] {
+                res += r - l
+                r--
+            } else {
+                l++
+            }
+        } 
     }
     return res
 }
@@ -81,4 +106,9 @@ func main() {
     fmt.Println(triangleNumber1([]int{4,2,3,4})) // 4
     fmt.Println(triangleNumber1([]int{1,2,3,4,5,6,7,8,9})) // 34
     fmt.Println(triangleNumber1([]int{9,8,7,6,5,4,3,2,1})) // 34
+
+    fmt.Println(triangleNumber2([]int{2,2,3,4})) // 3
+    fmt.Println(triangleNumber2([]int{4,2,3,4})) // 4
+    fmt.Println(triangleNumber2([]int{1,2,3,4,5,6,7,8,9})) // 34
+    fmt.Println(triangleNumber2([]int{9,8,7,6,5,4,3,2,1})) // 34
 }
