@@ -64,6 +64,11 @@ func main() {
     // Explanation: There is no way to divide the array using the conditions required.
     fmt.Println(canDivideIntoSubsequences([]int{5,6,6,7,8}, 3)) // false
 
+    fmt.Println(canDivideIntoSubsequences([]int{1,2,3,4,5,6,7,8,9}, 3)) // true
+    fmt.Println(canDivideIntoSubsequences([]int{9,8,7,6,5,4,3,2,1}, 3)) // true
+
     fmt.Println(canDivideIntoSubsequences1([]int{1,2,2,3,3,4,4}, 3)) // true
     fmt.Println(canDivideIntoSubsequences1([]int{5,6,6,7,8}, 3)) // false
+    fmt.Println(canDivideIntoSubsequences1([]int{1,2,3,4,5,6,7,8,9}, 3)) // true
+    fmt.Println(canDivideIntoSubsequences1([]int{9,8,7,6,5,4,3,2,1}, 3)) // true
 }
