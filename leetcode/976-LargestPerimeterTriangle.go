@@ -52,18 +52,44 @@ func largestPerimeter1(nums []int) int {
     return 0
 }
 
+func largestPerimeter2(nums []int) int {
+    res := 0
+    if len(nums) < 3 { return 0 }
+    sort.Ints(nums)
+    max := func (x, y int) int { if x > y { return x; }; return y; }
+    for len(nums) >= 3 {
+        if nums[len(nums) - 1] >= nums[len(nums) - 2] + nums[len(nums) - 3] {
+            nums = nums[:len(nums) - 1]
+            continue
+        }
+        res = max(res, nums[len(nums) - 1] + nums[len(nums) - 2] + nums[len(nums) - 3])
+        nums = nums[:len(nums) - 1]
+
+    }
+    return res
+}
+
 func main() {
     // Input: nums = [2,1,2]
     // Output: 5
     // Explanation: You can form a triangle with three side lengths: 1, 2, and 2.
     fmt.Println(largestPerimeter([]int{2,1,2})) // 5
-
     // You cannot use the side lengths 1, 1, and 2 to form a triangle.
     // You cannot use the side lengths 1, 1, and 10 to form a triangle.
     // You cannot use the side lengths 1, 2, and 10 to form a triangle.
     // As we cannot use any three side lengths to form a triangle of non-zero area, we return 0.
     fmt.Println(largestPerimeter([]int{1,2,1,10})) // 0
 
+    fmt.Println(largestPerimeter([]int{1,2,3,4,5,6,7,8,9})) // 24
+    fmt.Println(largestPerimeter([]int{9,8,7,6,5,4,3,2,1})) // 24
+
     fmt.Println(largestPerimeter1([]int{2,1,2})) // 5
     fmt.Println(largestPerimeter1([]int{1,2,1,10})) // 0
+    fmt.Println(largestPerimeter1([]int{1,2,3,4,5,6,7,8,9})) // 24
+    fmt.Println(largestPerimeter1([]int{9,8,7,6,5,4,3,2,1})) // 24
+
+    fmt.Println(largestPerimeter2([]int{2,1,2})) // 5
+    fmt.Println(largestPerimeter2([]int{1,2,1,10})) // 0
+    fmt.Println(largestPerimeter2([]int{1,2,3,4,5,6,7,8,9})) // 24
+    fmt.Println(largestPerimeter2([]int{9,8,7,6,5,4,3,2,1})) // 24
 }
