@@ -1906,6 +1906,7 @@
 [3689. Maximum Total Subarray Value I](./leetcode/3689-MaximumTotalSubarrayValueI.go)   
 [3690. Split and Merge Array Transformation](./leetcode/3690-SplitAndMergeArrayTransformation.go)   
 [3691. Maximum Total Subarray Value II](./leetcode/3691-MaximumTotalSubarrayValueII.go)   
+[3693. Climbing Stairs II](./leetcode/3693-ClimbingStairsII.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
