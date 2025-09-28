@@ -1908,6 +1908,7 @@
 [3691. Maximum Total Subarray Value II](./leetcode/3691-MaximumTotalSubarrayValueII.go)   
 [3693. Climbing Stairs II](./leetcode/3693-ClimbingStairsII.go)   
 [3695. Maximize Alternating Sum Using Swaps](./leetcode/3695-MaximizeAlternatingSumUsingSwaps.go)   
+[3696. Maximum Distance Between Unequal Words in Array I](./leetcode/3696-MaximumDistanceBetweenUnequalWordsInArrayI.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
