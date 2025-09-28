@@ -2956,6 +2956,7 @@
 [3677. Count Binary Palindromic Numbers](./leetcode/3677-CountBinaryPalindromicNumbers.go)   
 [3680. Generate Schedule](./leetcode/3680-GenerateSchedule.go)   
 [3697. Compute Decimal Representation](./leetcode/3697-ComputeDecimalRepresentation.go)   
+[3699. Number of ZigZag Arrays I](./leetcode/3699-NumberOfZigZagArraysI.go)   
 
 # Stack
 [225. Implement Stack using Queues](./leetcode/225-ImplementStackUsingQueues.go)   
