@@ -2954,6 +2954,7 @@
 [3646. Next Special Palindrome Number](./leetcode/3646-NextSpecialPalindromeNumber.go)   
 [3677. Count Binary Palindromic Numbers](./leetcode/3677-CountBinaryPalindromicNumbers.go)   
 [3680. Generate Schedule](./leetcode/3680-GenerateSchedule.go)   
+[3697. Compute Decimal Representation](./leetcode/3697-ComputeDecimalRepresentation.go)   
 
 # Stack
 [225. Implement Stack using Queues](./leetcode/225-ImplementStackUsingQueues.go)   
