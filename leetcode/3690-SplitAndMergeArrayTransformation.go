@@ -32,6 +32,7 @@ package main
 
 import "fmt"
 import "slices"
+import "math"
 
 func minSplitMerge(nums1, nums2 []int) int {
     res, n := 0, len(nums1)
@@ -68,6 +69,62 @@ func minSplitMerge(nums1, nums2 []int) int {
     return res
 }
 
+func minSplitMerge1(nums1 []int, nums2 []int) int {
+    n := len(nums1)
+    n2 := int(math.Pow(float64(n), float64(n)))
+    var temp []int = make([]int, n)
+    to := func(fn func(int) int) (res int) {
+        for i := range n {
+            res = res*n + fn(i)
+        }
+        return
+    }
+    from := func(value int) {
+        for pos, t := n-1, value; pos >= 0; pos, t = pos-1, t/n {
+            temp[pos] = t % n
+        }
+    }
+    for i := range n {
+        temp[i] = i
+    }
+    var bs []bool = make([]bool, n2)
+    first := to(func(i int) int { return temp[i] })
+    var q1, q2 []int
+    q1 = append(q1, first)
+    bs[first] = true
+    for k := range n - 1 {
+        for i := range len(q1) {
+            from(q1[i])
+            ok := true
+            for i := range n {
+                ok = ok && nums1[temp[i]] == nums2[i]
+            }
+            if ok {
+                return k
+            }
+            for b := range n {
+                for c := b + 1; c <= n; c++ {
+                    for a := range b {
+                        x := to(func(index int) int {
+                            if index < a || index >= c {
+                                return temp[index]
+                            } else {
+                                return temp[(b-a+index-a)%(c-a)+a]
+                            }
+                        })
+                        if !bs[x] {
+                            q2 = append(q2, x)
+                            bs[x] = true
+                        }
+                    }
+                }
+            }
+        }
+        q1, q2 = q2, q1[:0]
+    }
+    return n - 1
+}
+
 func main() {
     // Example 1:
     // Input: nums1 = [3,1,2], nums2 = [1,2,3]
@@ -89,4 +146,11 @@ func main() {
     fmt.Println(minSplitMerge([]int{1,2,3,4,5,6}, []int{6,5,4,3,2,1})) // 4
     fmt.Println(minSplitMerge([]int{6,5,4,3,2,1}, []int{1,2,3,4,5,6})) // 4
     fmt.Println(minSplitMerge([]int{6,5,4,3,2,1}, []int{6,5,4,3,2,1})) // 0
+
+    fmt.Println(minSplitMerge1([]int{3,1,2}, []int{1,2,3})) // 1
+    fmt.Println(minSplitMerge1([]int{1,1,2,3,4,5}, []int{5,4,3,2,1,1})) // 3
+    fmt.Println(minSplitMerge1([]int{1,2,3,4,5,6}, []int{1,2,3,4,5,6})) // 0
+    fmt.Println(minSplitMerge1([]int{1,2,3,4,5,6}, []int{6,5,4,3,2,1})) // 4
+    fmt.Println(minSplitMerge1([]int{6,5,4,3,2,1}, []int{1,2,3,4,5,6})) // 4
+    fmt.Println(minSplitMerge1([]int{6,5,4,3,2,1}, []int{6,5,4,3,2,1})) // 0
 }
