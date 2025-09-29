@@ -106,6 +106,31 @@ func minScoreTriangulation1(values []int) int {
     return dfs(values, 0, n-1, dp)
 }
 
+func minScoreTriangulation2(values []int) int {
+    n := len(values)
+    memo := make([][]int, n)
+    for i := range memo {
+        memo[i] = make([]int, n) 
+        for j := range memo[i] {
+            memo[i][j] = -1
+        }
+    }
+    min := func (x, y int) int { if x < y { return x; }; return y; }
+    var dfs func(i, j int) int
+    dfs = func(i, j int) int {
+        if i + 1 == j { return 0 }
+        p := memo[i][j]
+        if p != -1 { return p }
+        res := 1 << 32 - 1
+        for k := i + 1; k < j; k++ {
+            res = min(res, dfs(i, k) + dfs(k, j) + values[i] * values[k]*values[j])
+        }
+        memo[i][j] = res
+        return res
+    }
+    return dfs(0, n - 1)
+}
+
 func main() {
     // Example 1:
     // <img src="https://assets.leetcode.com/uploads/2021/02/25/shape1.jpg" />
@@ -126,8 +151,19 @@ func main() {
     // Output: 13
     // Explanation: The minimum score triangulation has score 1*1*3 + 1*1*4 + 1*1*5 + 1*1*1 = 13.
     fmt.Println(minScoreTriangulation([]int{1,3,1,4,1,5})) // 13
+    
+    fmt.Println(minScoreTriangulation([]int{1,2,3,4,5,6,7,8,9})) // 238
+    fmt.Println(minScoreTriangulation([]int{9,8,7,6,5,4,3,2,1})) // 238
 
     fmt.Println(minScoreTriangulation1([]int{1,2,3})) // 6
     fmt.Println(minScoreTriangulation1([]int{3,7,4,5})) // 144
     fmt.Println(minScoreTriangulation1([]int{1,3,1,4,1,5})) // 13
+    fmt.Println(minScoreTriangulation1([]int{1,2,3,4,5,6,7,8,9})) // 238
+    fmt.Println(minScoreTriangulation1([]int{9,8,7,6,5,4,3,2,1})) // 238
+
+    fmt.Println(minScoreTriangulation2([]int{1,2,3})) // 6
+    fmt.Println(minScoreTriangulation2([]int{3,7,4,5})) // 144
+    fmt.Println(minScoreTriangulation2([]int{1,3,1,4,1,5})) // 13
+    fmt.Println(minScoreTriangulation2([]int{1,2,3,4,5,6,7,8,9})) // 238
+    fmt.Println(minScoreTriangulation2([]int{9,8,7,6,5,4,3,2,1})) // 238
 }
