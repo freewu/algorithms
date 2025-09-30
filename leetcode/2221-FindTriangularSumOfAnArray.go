@@ -55,6 +55,16 @@ func triangularSum1(nums []int) int {
     return nums[0]
 }
 
+func triangularSum2(nums []int) int {
+    // 每循环一轮，数组长度就减一
+    for n := len(nums) - 1; n > 0; n-- {
+        for i := range n {
+            nums[i] = (nums[i] + nums[i + 1]) % 10
+        }
+    }
+    return nums[0]
+}
+
 func main() {
     // Example 1:
     // <img src="https://assets.leetcode.com/uploads/2022/02/22/ex1drawio.png" />
@@ -72,9 +82,20 @@ func main() {
 
     fmt.Println(triangularSum([]int{9,9,9,9,9,9,9,9,9})) // 4
     fmt.Println(triangularSum([]int{1,1,1,1,1,1,1,1,1})) // 6
+    fmt.Println(triangularSum([]int{1,2,3,4,5,6,7,8,9})) // 0
+    fmt.Println(triangularSum([]int{9,8,7,6,5,4,3,2,1})) // 0
 
     fmt.Println(triangularSum1([]int{1,2,3,4,5})) // 8
     fmt.Println(triangularSum1([]int{5})) // 5
     fmt.Println(triangularSum1([]int{9,9,9,9,9,9,9,9,9})) // 4
     fmt.Println(triangularSum1([]int{1,1,1,1,1,1,1,1,1})) // 6
+    fmt.Println(triangularSum1([]int{1,2,3,4,5,6,7,8,9})) // 0
+    fmt.Println(triangularSum1([]int{9,8,7,6,5,4,3,2,1})) // 0
+
+    fmt.Println(triangularSum2([]int{1,2,3,4,5})) // 8
+    fmt.Println(triangularSum2([]int{5})) // 5
+    fmt.Println(triangularSum2([]int{9,9,9,9,9,9,9,9,9})) // 4
+    fmt.Println(triangularSum2([]int{1,1,1,1,1,1,1,1,1})) // 6
+    fmt.Println(triangularSum2([]int{1,2,3,4,5,6,7,8,9})) // 0
+    fmt.Println(triangularSum2([]int{9,8,7,6,5,4,3,2,1})) // 0
 }
