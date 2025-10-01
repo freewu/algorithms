@@ -53,4 +53,9 @@ func main() {
     // Explanation: You can exchange 4 empty bottles to get 1 full water bottle. 
     // Number of water bottles you can drink: 15 + 3 + 1 = 19.
     fmt.Println(numWaterBottles(15, 4)) // 19
+
+    fmt.Println(numWaterBottles(1, 2)) // 1
+    fmt.Println(numWaterBottles(100, 100)) // 101
+    fmt.Println(numWaterBottles(1, 100)) // 1
+    fmt.Println(numWaterBottles(100, 2)) // 199
 }
