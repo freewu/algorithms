@@ -33,12 +33,12 @@ package main
 import "fmt"
 
 func maxBottlesDrunk(numBottles int, numExchange int) int {
-    res, sum := numBottles, numBottles
-    for numExchange <= sum {
-        sum -= numExchange
-        sum++;
-        numExchange++
-        res++
+    res, sum := numBottles, numBottles // 最初拥有的满水瓶数量
+    for numExchange <= sum { // 如果瓶还够换 numExchange 换 1 个
+        sum -= numExchange // 减去 numExchange 个空瓶
+        sum++ // 换 1 个满水瓶
+        numExchange++ // 如果 3 个 空瓶 换 1 个满水瓶，那么下一次需要 4 个空瓶
+        res++ // 因为换水成功 最多 可以喝到多少瓶水  需要 + 1 
     }
     return res
 }
