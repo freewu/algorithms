@@ -296,6 +296,57 @@ func trapRainWater1(heightMap [][]int) int {
     return res
 }
 
+
+func trapRainWater2(heightMap [][]int) int {
+    if len(heightMap) == 0 { return 0 }
+    // 广度遍历，从四周向中间扩散
+    // 先把水填到最高, 当前节点水小于四周时，代表水会溢出，则四周设为当前直接填水值
+    res, maxHeight, m, n := 0, 0, len(heightMap), len(heightMap[0])
+    for _, arrv := range heightMap {
+        for _, v := range arrv {
+            maxHeight = max(maxHeight, v)
+        }
+    }
+    // 预填水
+    waterMap := make([][]int, m)
+    for i := range waterMap {
+        tmp := make([]int, n)
+        for j := range tmp {
+            tmp[j] = maxHeight
+        }
+        waterMap[i] = tmp
+    }
+    type Pair struct {x, y int}
+    queue := []Pair{}
+    for i, arrv := range heightMap {
+        for j, v := range arrv {
+            if (i == 0 || i == m - 1 || j == 0 || j == n - 1) && v < waterMap[i][j] { // 边界检测
+                waterMap[i][j] = v
+                queue = append(queue, Pair{i, j})
+            }
+        }
+    }
+    for len(queue) > 0 {
+        p := queue[0]
+        queue = queue[1:]
+        pPlace := []int{-1, 0, 1, 0, -1}
+        x, y := p.x, p.y
+        for i := 0; i < 4; i++ {
+            nx, ny := x + pPlace[i], y + pPlace[i+1]
+            if 0 <= nx && nx < m && 0 <= ny && ny < n && waterMap[x][y] < waterMap[nx][ny] && waterMap[nx][ny] > heightMap[nx][ny] {
+                waterMap[nx][ny] = max(waterMap[x][y], heightMap[nx][ny])
+                queue = append(queue, Pair{nx, ny})
+            }
+        }
+    }
+    for i, arrv := range waterMap {
+        for j, v := range arrv {
+            res += v - heightMap[i][j]
+        }
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // <img src= "https://assets.leetcode.com/uploads/2021/04/08/trap1-3d.jpg" />
@@ -313,4 +364,7 @@ func main() {
 
     fmt.Println(trapRainWater1([][]int{{1,4,3,1,3,2},{3,2,1,3,2,4},{2,3,3,2,3,1}})) // 4
     fmt.Println(trapRainWater1([][]int{{3,3,3,3,3},{3,2,2,2,3},{3,2,1,2,3},{3,2,2,2,3},{3,3,3,3,3}})) // 10
+
+    fmt.Println(trapRainWater2([][]int{{1,4,3,1,3,2},{3,2,1,3,2,4},{2,3,3,2,3,1}})) // 4
+    fmt.Println(trapRainWater2([][]int{{3,3,3,3,3},{3,2,2,2,3},{3,2,1,2,3},{3,2,2,2,3},{3,3,3,3,3}})) // 10
 }
