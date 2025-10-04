@@ -70,7 +70,7 @@ func maxArea1(height []int) int {
 
 func maxArea2(height []int) int {
     l, r, res := 0, len(height) - 1, 0
-     func (x, y int) int { if x > y { return x; }; return y; }
+    max := func (x, y int) int { if x > y { return x; }; return y; }
     for l < r {
         area :=  (r - l) * min(height[l], height[r])
         res = max(res, area)
@@ -84,12 +84,27 @@ func maxArea2(height []int) int {
 }
 
 func main() {
-    fmt.Printf("maxArea([]int{1,8,6,2,5,4,8,3,7} = %v \n",maxArea([]int{1,8,6,2,5,4,8,3,7}));
-    fmt.Printf("maxArea([]int{1,1} = %v \n",maxArea([]int{1,1}));
+    // Example 1:
+    // Input: height = [1,8,6,2,5,4,8,3,7]
+    // Output: 49
+    // Explanation: The above vertical lines are represented by array [1,8,6,2,5,4,8,3,7].
+    // In this case, the max area of water (blue section) the container can contain is 49.
+    fmt.Printf("maxArea([]int{1,8,6,2,5,4,8,3,7} = %v \n",maxArea([]int{1,8,6,2,5,4,8,3,7})); // 49
+    // Example 2:
+    // Input: height = [1,1]
+    // Output: 1
+    fmt.Printf("maxArea([]int{1,1} = %v \n",maxArea([]int{1,1})); // 1
 
-    fmt.Printf("maxArea1([]int{1,8,6,2,5,4,8,3,7} = %v \n",maxArea1([]int{1,8,6,2,5,4,8,3,7}));
-    fmt.Printf("maxArea1([]int{1,1} = %v \n",maxArea1([]int{1,1}));
+    fmt.Printf("maxArea([]int{1,2,3,4,5,6,7,8,9} = %v \n",maxArea([]int{1,2,3,4,5,6,7,8,9})); // 20
+    fmt.Printf("maxArea([]int{9,8,7,6,5,4,3,2,1} = %v \n",maxArea([]int{9,8,7,6,5,4,3,2,1})); // 20
 
-    fmt.Printf("maxArea2([]int{1,8,6,2,5,4,8,3,7} = %v \n",maxArea2([]int{1,8,6,2,5,4,8,3,7}));
-    fmt.Printf("maxArea2([]int{1,1} = %v \n",maxArea2([]int{1,1}));
+    fmt.Printf("maxArea1([]int{1,8,6,2,5,4,8,3,7} = %v \n",maxArea1([]int{1,8,6,2,5,4,8,3,7})); // 49
+    fmt.Printf("maxArea1([]int{1,1} = %v \n",maxArea1([]int{1,1})); // 1
+    fmt.Printf("maxArea1([]int{1,2,3,4,5,6,7,8,9} = %v \n",maxArea1([]int{1,2,3,4,5,6,7,8,9})); // 20
+    fmt.Printf("maxArea1([]int{9,8,7,6,5,4,3,2,1} = %v \n",maxArea1([]int{9,8,7,6,5,4,3,2,1})); // 20
+
+    fmt.Printf("maxArea2([]int{1,8,6,2,5,4,8,3,7} = %v \n",maxArea2([]int{1,8,6,2,5,4,8,3,7})); // 49
+    fmt.Printf("maxArea2([]int{1,1} = %v \n",maxArea2([]int{1,1})); // 1
+    fmt.Printf("maxArea2([]int{1,2,3,4,5,6,7,8,9} = %v \n",maxArea2([]int{1,2,3,4,5,6,7,8,9})); // 20
+    fmt.Printf("maxArea2([]int{9,8,7,6,5,4,3,2,1} = %v \n",maxArea2([]int{9,8,7,6,5,4,3,2,1})); // 20
 }
