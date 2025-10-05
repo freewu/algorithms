@@ -1911,6 +1911,7 @@
 [3696. Maximum Distance Between Unequal Words in Array I](./leetcode/3696-MaximumDistanceBetweenUnequalWordsInArrayI.go)   
 [3698. Split Array With Minimum Difference](./leetcode/3698-SplitArrayWithMinimumDifference.go)   
 [3701. Compute Alternating Sum](./leetcode/3701-ComputeAlternatingSum.go)   
+[3702. Longest Subsequence With Non-Zero Bitwise XOR](./leetcode/3702-LongestSubsequenceWithNonZeroBitwiseXOR.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
