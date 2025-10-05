@@ -2961,6 +2961,7 @@
 [3697. Compute Decimal Representation](./leetcode/3697-ComputeDecimalRepresentation.go)   
 [3699. Number of ZigZag Arrays I](./leetcode/3699-NumberOfZigZagArraysI.go)   
 [3700. Number of ZigZag Arrays II](./leetcode/3700-NumberOfZigZagArraysII.go)   
+[3704. Count No-Zero Pairs That Sum to N](./leetcode/3704-CountNoZeroPairsThatSumToN.go)   
 
 # Stack
 [225. Implement Stack using Queues](./leetcode/225-ImplementStackUsingQueues.go)   
