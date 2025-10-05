@@ -93,6 +93,46 @@ func pacificAtlantic(matrix [][]int) [][]int {
     return res
 }
 
+func pacificAtlantic1(heights [][]int) [][]int {
+    m, n := len(heights), len(heights[0])
+    res, pacific, atlantic := make([][]int, 0), make([][]bool, m), make([][]bool, m)
+    dirs := []struct{x, y int}{{-1, 0}, {1, 0}, {0, -1}, {0, 1}}
+    for i := range pacific {
+        pacific[i] = make([]bool, n)
+        atlantic[i] = make([]bool, n)
+    }
+    var dfs func(int, int, [][]bool)
+    dfs = func(x, y int, ocean [][]bool) {
+        if ocean[x][y] { return }
+        ocean[x][y] = true
+        for _, d := range dirs {
+            if nx, ny := x+d.x, y+d.y; 0 <= nx && nx < m && 0 <= ny && ny < n && heights[nx][ny] >= heights[x][y] {
+                dfs(nx, ny, ocean)
+            }
+        }
+    }
+    for i := 0; i < m; i++ {
+        dfs(i, 0, pacific)
+    }
+    for i := 0; i < n; i++ {
+        dfs(0, i, pacific)
+    }
+    for i := 0; i < m; i++ {
+        dfs(i, n-1, atlantic)
+    }
+    for i := 0; i < n; i++ {
+        dfs(m-1, i, atlantic)
+    }
+    for i, row := range pacific {
+        for j, ok := range row {
+            if ok && atlantic[i][j] {
+                res = append(res, []int{i, j})
+            }
+        }
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // <img src="https://assets.leetcode.com/uploads/2021/06/08/waterflow-grid.jpg" />
@@ -127,4 +167,17 @@ func main() {
     // Output: [[0,0]]
     // Explanation: The water can flow from the only cell to the Pacific and Atlantic oceans.
     fmt.Println(pacificAtlantic([][]int{{1}})) // [[0,0]]
+
+    ocean3 := [][]int{
+        {1,2,3,4,5,6,7,8,9},
+        {1,2,3,4,5,6,7,8,9},
+        {1,2,3,4,5,6,7,8,9},
+        {1,2,3,4,5,6,7,8,9},
+        {1,2,3,4,5,6,7,8,9},
+    }
+    fmt.Println(pacificAtlantic(ocean3)) // [[0 0] [0 1] [0 2] [0 3] [0 4] [0 5] [0 6] [0 7] [0 8] [1 0] [1 1] [1 2] [1 3] [1 4] [1 5] [1 6] [1 7] [1 8] [2 0] [2 1] [2 2] [2 3] [2 4] [2 5] [2 6] [2 7] [2 8] [3 0] [3 1] [3 2] [3 3] [3 4] [3 5] [3 6] [3 7] [3 8] [4 0] [4 1] [4 2] [4 3] [4 4] [4 5] [4 6] [4 7] [4 8]]
+
+    fmt.Println(pacificAtlantic1(ocean1)) // [[0,4],[1,3],[1,4],[2,2],[3,0],[3,1],[4,0]]
+    fmt.Println(pacificAtlantic1([][]int{{1}})) // [[0,0]]
+    fmt.Println(pacificAtlantic1(ocean3)) // [[0 0] [0 1] [0 2] [0 3] [0 4] [0 5] [0 6] [0 7] [0 8] [1 0] [1 1] [1 2] [1 3] [1 4] [1 5] [1 6] [1 7] [1 8] [2 0] [2 1] [2 2] [2 3] [2 4] [2 5] [2 6] [2 7] [2 8] [3 0] [3 1] [3 2] [3 3] [3 4] [3 5] [3 6] [3 7] [3 8] [4 0] [4 1] [4 2] [4 3] [4 4] [4 5] [4 6] [4 7] [4 8]]
 }
