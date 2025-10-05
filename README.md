@@ -2539,6 +2539,7 @@
 [3639. Minimum Time to Activate String](./leetcode/3639-MinimumTimeToActivateString.go)   
 [3692. Majority Frequency Characters](./leetcode/3692-MajorityFrequencyCharacters.go)   
 [3694. Distinct Points Reachable After Substring Removal](./leetcode/3694-DistinctPointsReachableAfterSubstringRemoval.go)   
+[3703. Remove K-Balanced Substrings](./leetcode/3703-RemoveKBalancedSubstrings.go)   
 
 # Dynamic Programming
 [276. Paint Fence](./leetcode/276-PaintFence.go)   
