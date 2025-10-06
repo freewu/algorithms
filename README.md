@@ -3934,6 +3934,7 @@ LCR 185. 统计结果概率
 [3626. Find Stores with Inventory Imbalance](./leetcode/3626-FindStoresWithInventoryImbalance.sql)   
 [3642. Find Books with Polarized Opinions](./leetcode/3642-FindBooksWithPolarizedOpinions.sql)   
 [3673. Find Zombie Sessions](./leetcode/3673-FindZombieSessions.sql)   
+[3705. Find Golden Hour Customers](./leetcode/3705-FindGoldenHourCustomers.sql)   
 
 # Shell
 [192. Word Frequency](./leetcode/192-WordFrequency.sh)      
