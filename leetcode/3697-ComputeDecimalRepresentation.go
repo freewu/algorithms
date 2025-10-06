@@ -51,6 +51,22 @@ func decimalRepresentation(n int) []int {
     return res
 }
 
+func decimalRepresentation1(n int) []int {
+    if n == 0 { return nil }
+    num, res, base := n, []int{}, 1
+    if num < 0 { num = -num }
+    for num > 0 { 
+        if digit := (num % 10) * base; digit != 0 { 
+            res = append(res, digit) 
+        } 
+        num, base = num/10, base*10 
+    }
+    for i, j := 0, len(res) - 1; i < j; i, j = i + 1, j - 1 { 
+        res[i], res[j] = res[j], res[i] 
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: n = 537
@@ -76,4 +92,13 @@ func main() {
     fmt.Println(decimalRepresentation(1024)) // [1000,20,4]
     fmt.Println(decimalRepresentation(999_999_999)) // [900000000 90000000 9000000 900000 90000 9000 900 90 9]
     fmt.Println(decimalRepresentation(1_000_000_000)) // [1000000000]
+
+    fmt.Println(decimalRepresentation1(537)) // [500,30,7]
+    fmt.Println(decimalRepresentation1(102)) // [100,2]
+    fmt.Println(decimalRepresentation1(6)) // [6]
+    fmt.Println(decimalRepresentation1(1)) // [1]
+    fmt.Println(decimalRepresentation1(999)) // [900,90,9]
+    fmt.Println(decimalRepresentation1(1024)) // [1000,20,4]
+    fmt.Println(decimalRepresentation1(999_999_999)) // [900000000 90000000 9000000 900000 90000 9000 900 90 9]
+    fmt.Println(decimalRepresentation1(1_000_000_000)) // [1000000000]
 }
