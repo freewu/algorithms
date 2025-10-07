@@ -122,8 +122,7 @@ func avoidFlood1(rains []int) []int {
                 return []int{}
             } else {
                 res[j] = lake
-                // 重大bug!! parent[j] = parent[last] 区间并查集的代表元素一定是最右节点, 本来想着j被占用了,就合并到已经被用的set上,但这样形成死循环了!!
-                // 因为每次去下一个区间都是通过 find(j+1)跳的,这个到了j就往回跳了. 另外可以不用merge j, 因为标记j是否被使用是用ans的值去标记的!!
+                // 因为每次去下一个区间都是通过 find(j+1)跳的,这个到了j就往回跳了. 另外可以不用merge j, 因为标记j是否被使用是用 res 的值去标记的!!
                 parent[j-1] = parent[j]
             }
         }
@@ -165,7 +164,12 @@ func main() {
     // After that, it will rain over lakes [1,2]. It's easy to prove that no matter which lake you choose to dry in the 3rd day, the other one will flood.
     fmt.Println(avoidFlood([]int{1,2,0,1,2})) // []
 
+    fmt.Println(avoidFlood([]int{1,2,3,4,5,6,7,8,9})) // [-1 -1 -1 -1 -1 -1 -1 -1 -1]
+    fmt.Println(avoidFlood([]int{9,8,7,6,5,4,3,2,1})) // [-1 -1 -1 -1 -1 -1 -1 -1 -1]
+
     fmt.Println(avoidFlood1([]int{1,2,3,4})) // [-1,-1,-1,-1]
     fmt.Println(avoidFlood1([]int{1,2,0,0,2,1})) // [-1,-1,2,1,-1,-1]
     fmt.Println(avoidFlood1([]int{1,2,0,1,2})) // []
+    fmt.Println(avoidFlood1([]int{1,2,3,4,5,6,7,8,9})) // [-1 -1 -1 -1 -1 -1 -1 -1 -1]
+    fmt.Println(avoidFlood1([]int{9,8,7,6,5,4,3,2,1})) // [-1 -1 -1 -1 -1 -1 -1 -1 -1]
 }
