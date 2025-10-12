@@ -69,5 +69,8 @@ func main() {
     // Example 2:
     // Input: coins = [1,2,4,-1,2], maxJump = 1
     // Output: []
-    fmt.Println(cheapestJump([]int{1,2,4,-1,2}, 1)) // [1,2,4,-1,2], maxJump = 1
+    fmt.Println(cheapestJump([]int{1,2,4,-1,2}, 1)) // []
+
+    fmt.Println(cheapestJump([]int{1,2,3,4,5,6,7,8,9}, 2)) // [1 3 5 7 9]
+    fmt.Println(cheapestJump([]int{9,8,7,6,5,4,3,2,1}, 2)) // [1 3 5 7 9]
 }
