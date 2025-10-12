@@ -1915,6 +1915,7 @@
 [3706. Maximum Distance Between Unequal Words in Array II](./leetcode/3706-MaximumDistanceBetweenUnequalWordsInArrayII.go)   
 [3708. Longest Fibonacci Subarray](./leetcode/3708-LongestFibonacciSubarray.go)   
 [3710. Maximum Partition Factor](./leetcode/3710-MaximumPartitionFactor.go)   
+[3712. Sum of Elements With Frequency Divisible by K](./leetcode/3712-SumOfElementsWithFrequencyDivisibleByK.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
