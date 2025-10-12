@@ -1913,6 +1913,7 @@
 [3701. Compute Alternating Sum](./leetcode/3701-ComputeAlternatingSum.go)   
 [3702. Longest Subsequence With Non-Zero Bitwise XOR](./leetcode/3702-LongestSubsequenceWithNonZeroBitwiseXOR.go)   
 [3706. Maximum Distance Between Unequal Words in Array II](./leetcode/3706-MaximumDistanceBetweenUnequalWordsInArrayII.go)   
+[3708. Longest Fibonacci Subarray](./leetcode/3708-LongestFibonacciSubarray.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
