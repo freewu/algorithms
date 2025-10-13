@@ -76,4 +76,6 @@ func main() {
     // Explanation:
     // No two adjacent strings in words are anagrams of each other, so no operations are performed.
     fmt.Println(removeAnagrams([]string{"a","b","c","d","e"})) // ["a","b","c","d","e"]
+
+    fmt.Println(removeAnagrams([]string{"bluefrog", "freewu","leetcode"})) // ["bluefrog","freewu","leetcode"]
 }
