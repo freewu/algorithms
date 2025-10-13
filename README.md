@@ -3485,6 +3485,7 @@
 [3408. Design Task Manager](./leetcode/3408-DesignTaskManager.go)   
 [3484. Design Spreadsheet](./leetcode/3484-DesignSpreadsheet.go)   
 [3508. Implement Router](./leetcode/3508-ImplementRouter.go)   
+[3709. Design Exam Scores Tracker](./leetcode/3709-DesignExamScoresTracker.go)   
 
 # Binary Search
 [278. First Bad Version](./leetcode/278-FirstBadVersion.go)   
