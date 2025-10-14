@@ -41,23 +41,23 @@ import "fmt"
 import "sort"
 
 type ExamTracker struct {
-	times  []int
-	prefixSum []int64
+    times  []int
+    prefixSum []int64
 }
 
 func Constructor() ExamTracker {
-	return ExamTracker{[]int{}, []int64{0}}
+    return ExamTracker{[]int{}, []int64{0}}
 }
 
 func (e *ExamTracker) Record(time, score int) {
-	e.times = append(e.times, time)
+    e.times = append(e.times, time)
 	e.prefixSum = append(e.prefixSum, e.prefixSum[len(e.prefixSum)-1]+int64(score))
 }
 
 func (e *ExamTracker) TotalScore(startTime, endTime int) int64 {
-	left := sort.SearchInts(e.times, startTime)
-	right := sort.SearchInts(e.times, endTime+1) // 也可以在 e.times[left:] 中二分
-	return e.prefixSum[right] - e.prefixSum[left]
+    left := sort.SearchInts(e.times, startTime)
+    right := sort.SearchInts(e.times, endTime+1) // 也可以在 e.times[left:] 中二分
+    return e.prefixSum[right] - e.prefixSum[left]
 }
 
 /**
