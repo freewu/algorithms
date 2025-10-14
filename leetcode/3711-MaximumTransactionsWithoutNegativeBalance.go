@@ -49,6 +49,7 @@ func (h *MaxHeap) Pop() interface{} {
     return x
 }
 
+// error
 func maxTransactions(transactions []int) int {
     res, balance := 0, 0
     hp := &MaxHeap{}
@@ -72,6 +73,25 @@ func maxTransactions(transactions []int) int {
     return res
 }
 
+func maxTransactions1(transactions []int) int {
+    res, balance := 0, 0
+    pq := &MaxHeap{}
+    heap.Init(pq)
+    for _, t := range transactions {
+        balance += t
+        if t < 0 {
+            heap.Push(pq, -t)
+            if balance < 0 {
+                balance += heap.Pop(pq).(int)
+            }
+        } else {
+            res++
+        }
+    }
+    return res + pq.Len()
+}
+
+
 func main() {
     // Example 1:
     // Input: transactions = [2,-5,3,-1,-2]
@@ -92,6 +112,14 @@ func main() {
     // All transactions can be taken in order, balance: 0 → 3 → 1 → 4 → 2 → 3 → 2.
     fmt.Println(maxTransactions([]int{3,-2,3,-2,1,-1})) // 6
 
+    fmt.Println(maxTransactions([]int{3,-3,-7})) // 2
     fmt.Println(maxTransactions([]int{1,2,3,4,5,6,7,8,9})) // 9
     fmt.Println(maxTransactions([]int{9,8,7,6,5,4,3,2,1})) // 9
+
+    fmt.Println(maxTransactions1([]int{2,-5,3,-1,-2})) // 4
+    fmt.Println(maxTransactions1([]int{-1,-2,-3})) // 0
+    fmt.Println(maxTransactions1([]int{3,-2,3,-2,1,-1})) // 6
+    fmt.Println(maxTransactions1([]int{3,-3,-7})) // 2
+    fmt.Println(maxTransactions1([]int{1,2,3,4,5,6,7,8,9})) // 9
+    fmt.Println(maxTransactions1([]int{9,8,7,6,5,4,3,2,1})) // 9
 }
