@@ -63,6 +63,26 @@ func hasIncreasingSubarrays1(nums []int, k int) bool {
     return false
 }
 
+func hasIncreasingSubarrays2(nums []int, k int) bool {
+    if k == 1 { return true }
+    n := len(nums)
+    dp := make([]int, n)
+    dp[0] = 1
+    for i := 1; i < n; i++ {
+        if nums[i] > nums[i - 1] {
+            dp[i] = dp[i - 1] + 1
+        } else {
+            dp[i] = 1
+        }
+    }
+    for i := 0; i + k + k - 1 < n; i++ {
+        if dp[i + k - 1]-dp[i]+1 == k && dp[i+k-1]-dp[i] == dp[i+k+k-1]-dp[i+k] { 
+            return true
+        }
+    }
+    return false
+}
+
 func main() {
     // Example 1:
     // Input: nums = [2,5,7,8,9,2,3,4,3,1], k = 3
@@ -77,6 +97,16 @@ func main() {
     // Output: false
     fmt.Println(hasIncreasingSubarrays([]int{1,2,3,4,4,4,4,5,6,7}, 5)) // false
 
+    fmt.Println(hasIncreasingSubarrays([]int{1,2,3,4,5,6,7,8,9}, 2)) // true
+    fmt.Println(hasIncreasingSubarrays([]int{9,8,7,6,5,4,3,2,1}, 2)) // false
+
     fmt.Println(hasIncreasingSubarrays1([]int{2,5,7,8,9,2,3,4,3,1}, 3)) // true
     fmt.Println(hasIncreasingSubarrays1([]int{1,2,3,4,4,4,4,5,6,7}, 5)) // false
+    fmt.Println(hasIncreasingSubarrays1([]int{1,2,3,4,5,6,7,8,9}, 2)) // true
+    fmt.Println(hasIncreasingSubarrays1([]int{9,8,7,6,5,4,3,2,1}, 2)) // false
+
+    fmt.Println(hasIncreasingSubarrays2([]int{2,5,7,8,9,2,3,4,3,1}, 3)) // true
+    fmt.Println(hasIncreasingSubarrays2([]int{1,2,3,4,4,4,4,5,6,7}, 5)) // false
+    fmt.Println(hasIncreasingSubarrays2([]int{1,2,3,4,5,6,7,8,9}, 2)) // true
+    fmt.Println(hasIncreasingSubarrays2([]int{9,8,7,6,5,4,3,2,1}, 2)) // false
 }
