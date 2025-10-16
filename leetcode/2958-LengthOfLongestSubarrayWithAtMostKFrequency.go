@@ -65,4 +65,7 @@ func main() {
     // Explanation: The longest possible good subarray is [5,5,5,5] since the value 5 occurs 4 times in this subarray.
     // It can be shown that there are no good subarrays with length more than 4.
     fmt.Println(maxSubarrayLength([]int{5,5,5,5,5,5,5}, 4)) // 4
+
+    fmt.Println(maxSubarrayLength([]int{1,2,3,4,5,6,7,8,9}, 4)) // 9
+    fmt.Println(maxSubarrayLength([]int{9,8,7,6,5,4,3,2,1}, 4)) // 9
 }
