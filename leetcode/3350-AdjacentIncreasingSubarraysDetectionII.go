@@ -63,6 +63,22 @@ func maxIncreasingSubarrays1(nums []int) int {
     return res
 }
 
+func maxIncreasingSubarrays2(nums []int) int {
+    res, pre, cur, n := 0, 1, 1, len(nums)
+    for i := 1; i < n; i++ {
+        for ; i < n && nums[i] > nums[i-1]; i++ {
+            cur++
+        }
+        if cur >= 2 {
+            res = max(res, cur / 2)
+        }
+        res = max(res, min(cur, pre))
+        pre = cur
+        cur = 1
+    }
+    return res  
+}
+
 func main() {
     // Example 1:
     // Input: nums = [2,5,7,8,9,2,3,4,3,1]
@@ -81,6 +97,16 @@ func main() {
     // These two subarrays are adjacent, and 2 is the maximum possible value of k for which two such adjacent strictly increasing subarrays exist.
     fmt.Println(maxIncreasingSubarrays([]int{1,2,3,4,4,4,4,5,6,7})) // 2
 
+    fmt.Println(maxIncreasingSubarrays([]int{1,2,3,4,5,6,7,8,9})) // 4
+    fmt.Println(maxIncreasingSubarrays([]int{9,8,7,6,5,4,3,2,1})) // 1
+
     fmt.Println(maxIncreasingSubarrays1([]int{2,5,7,8,9,2,3,4,3,1})) // 3
     fmt.Println(maxIncreasingSubarrays1([]int{1,2,3,4,4,4,4,5,6,7})) // 2
+    fmt.Println(maxIncreasingSubarrays1([]int{1,2,3,4,5,6,7,8,9})) // 4
+    fmt.Println(maxIncreasingSubarrays1([]int{9,8,7,6,5,4,3,2,1})) // 1
+
+    fmt.Println(maxIncreasingSubarrays2([]int{2,5,7,8,9,2,3,4,3,1})) // 3
+    fmt.Println(maxIncreasingSubarrays2([]int{1,2,3,4,4,4,4,5,6,7})) // 2
+    fmt.Println(maxIncreasingSubarrays2([]int{1,2,3,4,5,6,7,8,9})) // 4
+    fmt.Println(maxIncreasingSubarrays2([]int{9,8,7,6,5,4,3,2,1})) // 1
 }
