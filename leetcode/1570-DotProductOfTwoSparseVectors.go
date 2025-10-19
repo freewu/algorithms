@@ -77,6 +77,38 @@ func (this *SparseVector1) dotProduct(vec SparseVector1) int {
     return res
 }
 
+type SparseVector2 struct {
+    numPairs [][2]int
+}
+
+func Constructor2(nums []int) SparseVector2 {
+    numPairs := [][2]int{}
+    for i, num := range nums {
+        if num != 0 {
+            numPairs = append(numPairs, [2]int{i, num})
+        }
+    }
+    return SparseVector2{numPairs: numPairs}
+}
+
+// Return the dotProduct of two sparse vectors
+func (this *SparseVector2) dotProduct(vec SparseVector2) int {
+    numPairs1, numPairs2 := this.numPairs, vec.numPairs
+    res, i, j := 0, 0, 0
+    for i < len(numPairs1) && j < len(numPairs2) {
+        if numPairs1[i][0] == numPairs2[j][0] {
+            res += numPairs1[i][1]*numPairs2[j][1]
+            i++
+            j++
+        } else if numPairs1[i][0] > numPairs2[j][0] {
+            j++
+        } else {
+            i++
+        }
+    }
+    return res
+}
+
 /**
  * Your SparseVector object will be instantiated and called as such:
  * v1 := Constructor(nums1);
@@ -111,4 +143,11 @@ func main() {
     fmt.Println(obj12.dotProduct(Constructor1([]int{0,0,0,0,2}))) // 0
     obj13:= Constructor1([]int{0,1,0,0,2,0,0})
     fmt.Println(obj13.dotProduct(Constructor1([]int{1,0,0,0,3,0,4}))) // 6
+
+    obj21 := Constructor2([]int{1,0,0,2,3})
+    fmt.Println(obj21.dotProduct(Constructor2([]int{0,3,0,4,0}))) // 8
+    obj22:= Constructor2([]int{0,1,0,0,0})
+    fmt.Println(obj22.dotProduct(Constructor2([]int{0,0,0,0,2}))) // 0
+    obj23:= Constructor2([]int{0,1,0,0,2,0,0})
+    fmt.Println(obj23.dotProduct(Constructor2([]int{1,0,0,0,3,0,4}))) // 6
 }
