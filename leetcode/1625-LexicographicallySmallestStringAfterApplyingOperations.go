@@ -67,8 +67,8 @@ func findLexSmallestString(s string, a int, b int) string {
         return string(res)
     }
     min := func (x, y string) string { if x < y { return x; }; return y; }
-    for cnt := 0; cnt < 10; cnt++ {
-        s1 := add(s, a * cnt, 1)
+    for count1 := 0; count1 < 10; count1++ {
+        s1 := add(s, a * count1, 1)  
         i := 0
         for {
             s2 := s1[i:] + s1[:i]
@@ -77,8 +77,8 @@ func findLexSmallestString(s string, a int, b int) string {
             if i == 0 { break }
         }
         if b % 2 != 0 {
-            for cnt2 := 0; cnt2 < 10; cnt2++ {
-                s2 := add(s1, a * cnt2, 0)
+            for count2 := 0; count2 < 10; count2++ {
+                s2 := add(s1, a * count2, 0)
                 i = 0
                 for {
                     s3 := s2[i:] + s2[:i]
@@ -87,6 +87,38 @@ func findLexSmallestString(s string, a int, b int) string {
                     if i == 0 { break }
                 }
             }
+        }
+    }
+    return res
+}
+
+func findLexSmallestString1(s string, a int, b int) string {
+    res, n := s, len(s)
+    s = s + s
+    gcd := func (x, y int) int { for y != 0 { x, y = y, x % y; }; return x; }
+    add := func(t []byte, start int) {
+        mn, times := 10, 0
+        original := int(t[start] - '0')
+        for i := 0; i < 10; i++ {
+            added := (original + i*a) % 10
+            if added < mn {
+                mn, times = added, i
+            }
+        }
+        for i := start; i < n; i += 2 {
+            t[i] = byte('0' + (int(t[i] - '0') + times * a) % 10)
+        }
+    }
+    g := gcd(b, n)
+    for i := 0; i < n; i += g {
+        t := []byte(s[i : i+n])
+        add(t, 1)
+        if b % 2 != 0 {
+            add(t, 0)
+        }
+        tmp := string(t)
+        if tmp < res {
+            res = tmp
         }
     }
     return res
@@ -123,4 +155,25 @@ func main() {
     // Output: "0011"
     // Explanation: There are no sequence of operations that will give us a lexicographically smaller string than "0011".
     fmt.Println(findLexSmallestString("0011", 4, 2)) // 0011
+
+    fmt.Println(findLexSmallestString("1024", 4, 2)) // 1024
+    fmt.Println(findLexSmallestString("2048", 4, 2)) // 2048
+    fmt.Println(findLexSmallestString("000000000", 4, 2)) // 000000000
+    fmt.Println(findLexSmallestString("111111111", 4, 2)) // 111111111
+    fmt.Println(findLexSmallestString("123456789", 4, 2)) // 103254769
+    fmt.Println(findLexSmallestString("987654321", 4, 2)) // 118967452
+    fmt.Println(findLexSmallestString("999999999", 4, 2)) // 919191919
+    fmt.Println(findLexSmallestString("1000000007", 4, 2)) // 0000000710
+
+    fmt.Println(findLexSmallestString1("5525", 9, 2)) // 2050
+    fmt.Println(findLexSmallestString1("74", 5, 1)) // 24
+    fmt.Println(findLexSmallestString1("0011", 4, 2)) // 0011
+    fmt.Println(findLexSmallestString1("1024", 4, 2)) // 1024
+    fmt.Println(findLexSmallestString1("2048", 4, 2)) // 2048
+    fmt.Println(findLexSmallestString1("000000000", 4, 2)) // 000000000
+    fmt.Println(findLexSmallestString1("111111111", 4, 2)) // 111111111
+    fmt.Println(findLexSmallestString1("123456789", 4, 2)) // 103254769
+    fmt.Println(findLexSmallestString1("987654321", 4, 2)) // 118967452
+    fmt.Println(findLexSmallestString1("999999999", 4, 2)) // 919191919
+    fmt.Println(findLexSmallestString1("1000000007", 4, 2)) // 0000000710
 }
