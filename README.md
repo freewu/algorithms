@@ -1918,6 +1918,7 @@
 [3711. Maximum Transactions Without Negative Balance](./leetcode/3711-MaximumTransactionsWithoutNegativeBalance.go)   
 [3712. Sum of Elements With Frequency Divisible by K](./leetcode/3712-SumOfElementsWithFrequencyDivisibleByK.go)   
 [3717. Minimum Operations to Make the Array Beautiful](./leetcode/3717-MinimumOperationsToMakeTheArrayBeautiful.go)   
+[3718. Smallest Missing Multiple of K](./leetcode/3718-SmallestMissingMultipleOfK.go)   
 [3719. Longest Balanced Subarray I](./leetcode/3719-LongestBalancedSubarrayI.go)   
 [3721. Longest Balanced Subarray II](./leetcode/3721-LongestBalancedSubarrayII.go)   
 
