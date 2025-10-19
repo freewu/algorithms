@@ -1917,6 +1917,7 @@
 [3710. Maximum Partition Factor](./leetcode/3710-MaximumPartitionFactor.go)   
 [3711. Maximum Transactions Without Negative Balance](./leetcode/3711-MaximumTransactionsWithoutNegativeBalance.go)   
 [3712. Sum of Elements With Frequency Divisible by K](./leetcode/3712-SumOfElementsWithFrequencyDivisibleByK.go)   
+[3717. Minimum Operations to Make the Array Beautiful](./leetcode/3717-MinimumOperationsToMakeTheArrayBeautiful.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
