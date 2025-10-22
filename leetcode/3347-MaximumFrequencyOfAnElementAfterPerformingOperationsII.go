@@ -87,6 +87,11 @@ func main() {
     //     Adding 0 to nums[1].
     fmt.Println(maxFrequency([]int{5,11,20,20}, 5, 1)) // 2
 
+    fmt.Println(maxFrequency([]int{1,2,3,4,5,6,7,8,9}, 1, 2)) // 3
+    fmt.Println(maxFrequency([]int{9,8,7,6,5,4,3,2,1}, 1, 2)) // 3
+
     fmt.Println(maxFrequency1([]int{1,4,5}, 1, 2)) // 2
     fmt.Println(maxFrequency1([]int{5,11,20,20}, 5, 1)) // 2
+    fmt.Println(maxFrequency1([]int{1,2,3,4,5,6,7,8,9}, 1, 2)) // 3
+    fmt.Println(maxFrequency1([]int{9,8,7,6,5,4,3,2,1}, 1, 2)) // 3
 }
