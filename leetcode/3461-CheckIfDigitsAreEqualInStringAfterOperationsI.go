@@ -94,9 +94,11 @@ func main() {
 
     fmt.Println(hasSameDigits("123456789")) // false
     fmt.Println(hasSameDigits("987654321")) // false
+    fmt.Println(hasSameDigits("1024")) // false
 
     fmt.Println(hasSameDigits1("3902")) // true
     fmt.Println(hasSameDigits1("34789")) // false
     fmt.Println(hasSameDigits1("123456789")) // false
     fmt.Println(hasSameDigits1("987654321")) // false
+    fmt.Println(hasSameDigits1("1024")) // false
 }
