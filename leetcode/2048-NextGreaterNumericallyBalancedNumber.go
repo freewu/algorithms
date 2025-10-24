@@ -101,6 +101,34 @@ func nextBeautifulNumber1(n int) int {
     return res
 }
 
+func nextBeautifulNumber2(n int) int {
+    mx, count := 1224444, make([]int, 10)
+    for x := n + 1; x <= mx; x++ {
+        check := func(num int) bool {
+            for i := 0; i < 10; i++ {
+                count[i] = 0 
+            }
+            for num > 0 {
+                if num % 10 == 0 {
+                    return false 
+                }
+                count[num % 10] ++ 
+                num /= 10 
+            }
+            for i := 1; i < 10; i++ {
+                if count[i] > 0 && count[i] != i {
+                    return false 
+                }
+            }
+            return true 
+        }
+        if (check(x)) {
+            return x 
+        }
+    }
+    return mx
+}
+
 func main() {
     // Example 1:
     // Input: n = 1
@@ -130,7 +158,27 @@ func main() {
     // It is also the smallest numerically balanced number strictly greater than 3000.
     fmt.Println(nextBeautifulNumber(3000)) // 3133
 
+    fmt.Println(nextBeautifulNumber(0)) // 1
+    fmt.Println(nextBeautifulNumber(999)) // 1333
+    fmt.Println(nextBeautifulNumber(1024)) // 221333
+    fmt.Println(nextBeautifulNumber(999_999)) // 1224444
+    fmt.Println(nextBeautifulNumber(1_000_000)) // 1224444
+
     fmt.Println(nextBeautifulNumber1(1)) // 22
     fmt.Println(nextBeautifulNumber1(1000)) // 1333
     fmt.Println(nextBeautifulNumber1(3000)) // 3133
+    fmt.Println(nextBeautifulNumber1(0)) // 1
+    fmt.Println(nextBeautifulNumber1(999)) // 1333
+    fmt.Println(nextBeautifulNumber1(1024)) // 1333
+    fmt.Println(nextBeautifulNumber1(999_999)) // 1224444
+    fmt.Println(nextBeautifulNumber1(1_000_000)) // 1224444
+
+    fmt.Println(nextBeautifulNumber2(1)) // 22
+    fmt.Println(nextBeautifulNumber2(1000)) // 1333
+    fmt.Println(nextBeautifulNumber2(3000)) // 3133
+    fmt.Println(nextBeautifulNumber2(0)) // 1
+    fmt.Println(nextBeautifulNumber2(999)) // 1333
+    fmt.Println(nextBeautifulNumber2(1024)) // 1333
+    fmt.Println(nextBeautifulNumber2(999_999)) // 1224444
+    fmt.Println(nextBeautifulNumber2(1_000_000)) // 1224444
 }
