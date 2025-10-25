@@ -33,9 +33,9 @@ func totalMoney(n int) int {
     res := 0
     for i := 1; i <= n; i++ {
         if i % 7 == 0 {
-            res += 7 + (i / 7) - 1
+            res += 7 + (i / 7) - 1 // 从周二到周日，他每天都比前一天多存入 1 块钱
         } else {
-            res += (i % 7) + (i / 7)
+            res += (i % 7) + (i / 7) // 接下来每一个周一，他都会比 前一个周一 多存入 1 块钱
         }
     }
     return res
@@ -57,4 +57,12 @@ func main() {
     // Output: 96
     // Explanation: After the 20th day, the total is (1 + 2 + 3 + 4 + 5 + 6 + 7) + (2 + 3 + 4 + 5 + 6 + 7 + 8) + (3 + 4 + 5 + 6 + 7 + 8) = 96.
     fmt.Println(totalMoney(20)) // 96
+
+    fmt.Println(totalMoney(1)) // 1
+    fmt.Println(totalMoney(64)) // 514
+    fmt.Println(totalMoney(99)) // 1044
+    fmt.Println(totalMoney(100)) // 1060
+    fmt.Println(totalMoney(128)) // 1614
+    fmt.Println(totalMoney(999)) // 74778
+    fmt.Println(totalMoney(1000)) // 74926
 }
