@@ -2976,6 +2976,7 @@
 [3699. Number of ZigZag Arrays I](./leetcode/3699-NumberOfZigZagArraysI.go)   
 [3700. Number of ZigZag Arrays II](./leetcode/3700-NumberOfZigZagArraysII.go)   
 [3704. Count No-Zero Pairs That Sum to N](./leetcode/3704-CountNoZeroPairsThatSumToN.go)   
+[3723. Maximize Sum of Squares of Digits](./leetcode/3723-MaximizeSumOfSquaresOfDigits.go)   
 
 # Stack
 [225. Implement Stack using Queues](./leetcode/225-ImplementStackUsingQueues.go)   
