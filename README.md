@@ -2552,7 +2552,8 @@
 [3707. Equal Score Substrings](./leetcode/3707-EqualScoreSubstrings.go)   
 [3713. Longest Balanced Substring I](./leetcode/3713-LongestBalancedSubstringI.go)   
 [3714. Longest Balanced Substring II](./leetcode/3714-LongestBalancedSubstringII.go)   
-[3720. Lexicographically Smallest Permutation Greater Than Target](./leetcode/3720-LexicographicallySmallestPermutationGreaterThanTarget.go)
+[3720. Lexicographically Smallest Permutation Greater Than Target](./leetcode/3720-LexicographicallySmallestPermutationGreaterThanTarget.go)   
+[3722. Lexicographically Smallest String After Reverse](./leetcode/3722-LexicographicallySmallestStringAfterReverse.go)   
 
 # Dynamic Programming
 [276. Paint Fence](./leetcode/276-PaintFence.go)   
