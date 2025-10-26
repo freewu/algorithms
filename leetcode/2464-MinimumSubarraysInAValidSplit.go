@@ -56,23 +56,68 @@ func validSubarraySplit(nums []int) int {
             }
         }
     }
-    if dp[n] == inf {
-        return -1
-    }
+    if dp[n] == inf { return -1 }
     return dp[n]
 }
 
+// dfs
+func validSubarraySplit1(nums []int) int {
+    n, inf := len(nums), 1 << 32 -1
+    dp := make([]int, n + 1)
+    gcd := func(x, y int) int { for y != 0 { x, y = y, x % y; }; return x; }
+    min := func (x, y int) int { if x < y { return x; }; return y; }
+    var dfs func(i int) int
+    dfs = func(i int) int {
+        if i >= n { return 0 }
+        if dp[i] > 0 { return dp[i] }
+        res := inf
+        for j := i; j < n; j++ {
+            if gcd(nums[i], nums[j]) > 1 {
+                res = min(res, 1 + dfs(j + 1))
+            }
+        }
+        dp[i] = res
+        return res
+    }
+    res := dfs(0)
+    if res < inf { return res }
+    return -1
+}
+
 func main() {
+    // Example 1:
+    // Input: nums = [2,6,3,4,3]
+    // Output: 2
     // Explanation: We can create a valid split in the following way: [2,6] | [3,4,3].
     // - The starting element of the 1st subarray is 2 and the ending is 6. Their greatest common divisor is 2, which is greater than 1.
     // - The starting element of the 2nd subarray is 3 and the ending is 3. Their greatest common divisor is 3, which is greater than 1.
     // It can be proved that 2 is the minimum number of subarrays that we can obtain in a valid split.
     fmt.Println(validSubarraySplit([]int{2,6,3,4,3})) // 2
+    // Example 2:
+    // Input: nums = [3,5]
+    // Output: 2
     // Explanation: We can create a valid split in the following way: [3] | [5].
     // - The starting element of the 1st subarray is 3 and the ending is 3. Their greatest common divisor is 3, which is greater than 1.
     // - The starting element of the 2nd subarray is 5 and the ending is 5. Their greatest common divisor is 5, which is greater than 1.
     // It can be proved that 2 is the minimum number of subarrays that we can obtain in a valid split.
     fmt.Println(validSubarraySplit([]int{3,5})) // 2
+    // Example 3:
+    // Input: nums = [1,2,1]
+    // Output: -1
     // Explanation: It is impossible to create valid split.
+    
+    // Explanation: We can create a valid split in the following way: [3] | [5].
+    // - The starting element of the 1st subarray is 3 and the ending is 3. Their greatest common divisor is 3, which is greater than 1.
+    // - The starting element of the 2nd subarray is 5 and the ending is 5. Their greatest common divisor is 5, which is greater than 1.
+    // It can be proved that 2 is the minimum number of subarrays that we can obtain in a valid split.
     fmt.Println(validSubarraySplit([]int{1,2,1})) // -1
+
+    fmt.Println(validSubarraySplit([]int{1,2,3,4,5,6,7,8,9})) // -1
+    fmt.Println(validSubarraySplit([]int{9,8,7,6,5,4,3,2,1})) // -1
+
+    fmt.Println(validSubarraySplit1([]int{2,6,3,4,3})) // 2
+    fmt.Println(validSubarraySplit1([]int{3,5})) // 2
+    fmt.Println(validSubarraySplit1([]int{1,2,1})) // -1
+    fmt.Println(validSubarraySplit1([]int{1,2,3,4,5,6,7,8,9})) // -1
+    fmt.Println(validSubarraySplit1([]int{9,8,7,6,5,4,3,2,1})) // -1
 }
