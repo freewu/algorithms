@@ -1923,6 +1923,7 @@
 [3721. Longest Balanced Subarray II](./leetcode/3721-LongestBalancedSubarrayII.go)   
 [3724. Minimum Operations to Transform Array](./leetcode/3724-MinimumOperationsToTransformArray.go)   
 [3725. Count Ways to Choose Coprime Integers from Rows](./leetcode/3725-CountWaysToChooseCoprimeIntegersFromRows.go)   
+[3727. Maximum Alternating Sum of Squares](./leetcode/3727-MaximumAlternatingSumOfSquares.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
