@@ -43,6 +43,7 @@ package main
 //     bank[i][j] is either '0' or '1'.
 
 import "fmt"
+import "strings"
 
 func numberOfBeams(bank []string) int {
     res, prev := 0, 0
@@ -54,6 +55,18 @@ func numberOfBeams(bank []string) int {
         if count > 0 {
             res += (prev * count)
             prev = count
+        }
+    }
+    return res
+}
+
+func numberOfBeams1(bank []string) int {
+    res, pre := 0, 0
+    for _, row := range bank {
+        count := strings.Count(row, "1")
+        if count > 0 {
+            res += (pre * count)
+            pre = count
         }
     }
     return res
@@ -82,4 +95,7 @@ func main() {
     // Output: 0
     // Explanation: There does not exist two devices located on two different rows.
     fmt.Println(numberOfBeams([]string{"000","111","000"})) // 0
+
+    fmt.Println(numberOfBeams1([]string{"011001","000000","010100","001000"})) // 8
+    fmt.Println(numberOfBeams1([]string{"000","111","000"})) // 0
 }
