@@ -53,6 +53,25 @@ func numGoodSubarrays(nums []int, k int) int64 {
     return int64(res)
 }
 
+func numGoodSubarrays1(nums []int, k int) int64 {
+    count := map[int]int{0: 1} // 为什么加个 0？见 560 题
+    res, sum, last := 0, 0,0  // 结果, 前缀和,上一个连续相同段的起始下标
+    for i, v := range nums {
+        if i > 0 && v != nums[ i- 1] {
+            // 上一个连续相同段结束，可以把上一段对应的前缀和添加到 cnt
+            s := sum
+            for range i - last {
+                count[s % k]++
+                s -= nums[i-1]
+            }
+            last = i
+        }
+        sum += v
+        res += count[sum % k]
+    }
+    return int64(res)
+}
+
 func main() {
     // Example 1:
     // Inpu
@@ -70,4 +89,9 @@ func main() {
 
     fmt.Println(numGoodSubarrays([]int{1,2,3,4,5,6,7,8,9}, 3)) // 24
     fmt.Println(numGoodSubarrays([]int{9,8,7,6,5,4,3,2,1}, 3)) // 24
+
+    fmt.Println(numGoodSubarrays1([]int{1,2,3}, 3)) // 3
+    fmt.Println(numGoodSubarrays1([]int{2,2,2,2,2,2}, 6)) // 2
+    fmt.Println(numGoodSubarrays1([]int{1,2,3,4,5,6,7,8,9}, 3)) // 24
+    fmt.Println(numGoodSubarrays1([]int{9,8,7,6,5,4,3,2,1}, 3)) // 24
 }
