@@ -66,4 +66,7 @@ func main() {
     // Output: 7
     // Explanation: [0,0,0,0,0] -> [1,1,1,1,1] -> [2,1,1,1,1] -> [3,1,1,1,1] -> [3,1,2,2,2] -> [3,1,3,3,2] -> [3,1,4,4,2] -> [3,1,5,4,2].
     fmt.Println(minNumberOperations([]int{3,1,5,4,2})) // 7
+
+    fmt.Println(minNumberOperations([]int{1,2,3,4,5,6,7,8,9})) // 9
+    fmt.Println(minNumberOperations([]int{9,8,7,6,5,4,3,2,1})) // 9
 }
