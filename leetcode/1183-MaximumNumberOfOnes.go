@@ -73,4 +73,17 @@ func main() {
     // [1,0,1]
     // [1,0,1]
     fmt.Println(maximumNumberOfOnes(3,3,2,2)) // 6
+
+    fmt.Println(maximumNumberOfOnes(1,2,3,4)) // 2
+    fmt.Println(maximumNumberOfOnes(9,8,7,6)) // 16
+    fmt.Println(maximumNumberOfOnes(5,5,5,5)) // 5
+    fmt.Println(maximumNumberOfOnes(1,1,1,0)) // 0
+    fmt.Println(maximumNumberOfOnes(1,1,1,10000)) // 1
+    fmt.Println(maximumNumberOfOnes(100,1,100,10000)) // 100
+    fmt.Println(maximumNumberOfOnes(100,100,1,10000)) // 10000
+    fmt.Println(maximumNumberOfOnes(100,100,100,0)) // 0
+    fmt.Println(maximumNumberOfOnes(1,1,100,10000)) // 1
+    fmt.Println(maximumNumberOfOnes(100,1,1,10000)) // 100
+    fmt.Println(maximumNumberOfOnes(100,100,1,0)) // 0
+    fmt.Println(maximumNumberOfOnes(100,100,100,10000)) // 10000
 }
