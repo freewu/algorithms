@@ -133,6 +133,13 @@ func main() {
     printListNode(list3) // 1 -> 2 -> 3 -> 4
     printListNode(modifiedList([]int{5}, list3)) // 1 -> 2 -> 3 -> 4
 
+    list4 := makeListNode([]int{1,2,3,4,5,6,7,8,9})
+    printListNode(list4) // 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8 -> 9
+    printListNode(modifiedList([]int{5}, list4)) // 1 -> 2 -> 3 -> 4 -> 6 -> 7 -> 8 -> 9
+    list5 := makeListNode([]int{9,8,7,6,5,4,3,2,1})
+    printListNode(list5) // 9 -> 8 -> 7 -> 6 -> 5 -> 4 -> 3 -> 2 -> 1
+    printListNode(modifiedList([]int{5}, list5)) // 9 -> 8 -> 7 -> 6 -> 4 -> 3 -> 2 -> 1    
+
     list11 := makeListNode([]int{1,2,3,4,5})
     printListNode(list11) // 1 -> 2 -> 3 -> 4 -> 5
     printListNode(modifiedList1([]int{1,2,3}, list11)) // 4 -> 5
@@ -142,4 +149,10 @@ func main() {
     list13 := makeListNode([]int{1,2,3,4})
     printListNode(list13) // 1 -> 2 -> 3 -> 4
     printListNode(modifiedList1([]int{5}, list13)) // 1 -> 2 -> 3 -> 4
+    list14 := makeListNode([]int{1,2,3,4,5,6,7,8,9})
+    printListNode(list14) // 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8 -> 9
+    printListNode(modifiedList1([]int{5}, list14)) // 1 -> 2 -> 3 -> 4 -> 6 -> 7 -> 8 -> 9
+    list15 := makeListNode([]int{9,8,7,6,5,4,3,2,1})
+    printListNode(list15) // 9 -> 8 -> 7 -> 6 -> 5 -> 4 -> 3 -> 2 -> 1
+    printListNode(modifiedList1([]int{5}, list15)) // 9 -> 8 -> 7 -> 6 -> 4 -> 3 -> 2 -> 1 
 }
