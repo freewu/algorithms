@@ -1927,6 +1927,7 @@
 [3728. Stable Subarrays With Equal Boundary and Interior Sum](./leetcode/3728-StableSubarraysWithEqualBoundaryAndInteriorSum.go)   
 [3729. Count Distinct Subarrays Divisible by K in Sorted Array](./leetcode/3729-CountDistinctSubarraysDivisibleByKInSortedArray.go)   
 [3730. Maximum Calories Burnt from Jumps](./leetcode/3730-MaximumCaloriesBurntFromJumps.go)   
+[3731. Find Missing Elements](./leetcode/3731-FindMissingElements.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
