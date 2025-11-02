@@ -47,6 +47,26 @@ func maxAlternatingSum(nums []int) int64 {
     return int64(res)
 }
 
+func maxAlternatingSum1(nums []int) int64 {
+    res, n := 0, len(nums)
+    for i := range nums {
+        if nums[i] < 0 {
+            nums[i] = -nums[i]
+        }
+    }
+    slices.Sort(nums)
+    i, j := 0, n - 1
+    for i < j {
+        res += nums[j]*nums[j] - nums[i]*nums[i]
+        i++
+        j--
+    }
+    if i == j {
+        res += nums[i] * nums[i]
+    }
+    return int64(res)   
+}
+
 func main() {
     // Example 1:
     // Input: nums = [1,2,3]
@@ -67,4 +87,9 @@ func main() {
 
     fmt.Println(maxAlternatingSum([]int{1,2,3,4,5,6,7,8,9})) // 225
     fmt.Println(maxAlternatingSum([]int{9,8,7,6,5,4,3,2,1})) // 225
+
+    fmt.Println(maxAlternatingSum1([]int{1,2,3})) // 12
+    fmt.Println(maxAlternatingSum1([]int{1,-1,2,-2,3,-3})) // 16
+    fmt.Println(maxAlternatingSum1([]int{1,2,3,4,5,6,7,8,9})) // 225
+    fmt.Println(maxAlternatingSum1([]int{9,8,7,6,5,4,3,2,1})) // 225
 }   
