@@ -105,7 +105,12 @@ func main() {
     // There are no longer two consecutive balloons of the same color. Total time = 1 + 1 = 2.
     fmt.Println(minCost("aabaa", []int{1,2,3,4,1})) // 2
 
+    fmt.Println(minCost("leetcode", []int{1,2,3,4,5,6,7,8})) // 2
+    fmt.Println(minCost("bluefrog", []int{1,2,3,4,5,6,7,8})) // 0
+
     fmt.Println(minCost1("abaac", []int{1,2,3,4,5})) // 3
     fmt.Println(minCost1("abc", []int{1,2,3})) // 0
     fmt.Println(minCost1("aabaa", []int{1,2,3,4,1})) // 2
+    fmt.Println(minCost1("leetcode", []int{1,2,3,4,5,6,7,8})) // 2
+    fmt.Println(minCost1("bluefrog", []int{1,2,3,4,5,6,7,8})) // 0
 }
