@@ -2563,6 +2563,7 @@
 [3714. Longest Balanced Substring II](./leetcode/3714-LongestBalancedSubstringII.go)   
 [3720. Lexicographically Smallest Permutation Greater Than Target](./leetcode/3720-LexicographicallySmallestPermutationGreaterThanTarget.go)   
 [3722. Lexicographically Smallest String After Reverse](./leetcode/3722-LexicographicallySmallestStringAfterReverse.go)   
+[3734. Lexicographically Smallest Palindromic Permutation Greater Than Target](./leetcode/3734-LexicographicallySmallestPalindromicPermutationGreaterThanTarget.go)   
 
 # Dynamic Programming
 [276. Paint Fence](./leetcode/276-PaintFence.go)   
