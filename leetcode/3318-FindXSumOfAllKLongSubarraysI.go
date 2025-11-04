@@ -114,6 +114,11 @@ func main() {
     // Since k == x, answer[i] is equal to the sum of the subarray nums[i..i + k - 1].
     fmt.Println(findXSum([]int{3,8,7,8,7,5}, 2, 2)) // [11,15,15,15,12]
 
+    fmt.Println(findXSum([]int{1,2,3,4,5,6,7,8,9}, 2, 2)) // [3 5 7 9 11 13 15 17]
+    fmt.Println(findXSum([]int{9,8,7,6,5,4,3,2,1}, 2, 2)) // [17 15 13 11 9 7 5 3]
+
     fmt.Println(findXSum1([]int{1,1,2,2,3,4,2,3}, 6, 2)) // [6,10,12]
     fmt.Println(findXSum1([]int{3,8,7,8,7,5}, 2, 2)) // [11,15,15,15,12]
+    fmt.Println(findXSum1([]int{1,2,3,4,5,6,7,8,9}, 2, 2)) // [3 5 7 9 11 13 15 17]
+    fmt.Println(findXSum1([]int{9,8,7,6,5,4,3,2,1}, 2, 2)) // [17 15 13 11 9 7 5 3]
 }
