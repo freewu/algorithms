@@ -54,6 +54,7 @@ package main
 //     1 <= queries[i][1] <= c
 
 import "fmt"
+import "sort"
 //import "slices"
 
 func processQueries(c int, connections [][]int, queries [][]int) []int {
@@ -132,6 +133,63 @@ func processQueries(c int, connections [][]int, queries [][]int) []int {
     return res
 }
 
+
+func processQueries1(c int, connections [][]int, queries [][]int) []int {
+    fa := make([]int, c + 1)
+    for i := range fa {
+        fa[i] = i
+    }
+    var find func(x int) int
+    find = func(x int) int {
+        if fa[x] != x {
+            fa[x] = find(fa[x])
+        }
+        return fa[x]
+    }
+    var merge func(a, b int)
+    merge = func(a, b int) {
+        a, b = find(a), find(b)
+        if a == b { return }
+        if a > b {
+            a, b = b, a
+        }
+        fa[b] = a
+    }
+    for _, c := range connections {
+        merge(c[0], c[1])
+    }
+    belong, belongList := make([]int, c+1), make([][]int, c+1)
+    for i := range belong {
+        belong[i] = find(i)
+        belongList[belong[i]] = append(belongList[belong[i]], i)
+    }
+    for _, v := range belongList {
+        sort.Ints(v)
+    }
+    res, flag := make([]int, 0, len(queries)), make([]bool, c + 1)
+    for _, v := range queries {
+        switch v[0] {
+        case 1:
+            if !flag[v[1]] {
+                res = append(res, v[1])
+                continue
+            }
+            v[1] = find(v[1])
+            for len(belongList[v[1]]) > 0 && flag[belongList[v[1]][0]] {
+                belongList[v[1]] = belongList[v[1]][1:]
+            }
+            if len(belongList[v[1]]) > 0 {
+                res = append(res, belongList[v[1]][0])
+            } else {
+                res = append(res, -1)
+            }
+        case 2:
+            flag[v[1]] = true
+        }
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: c = 5, connections = [[1,2],[2,3],[3,4],[4,5]], queries = [[1,3],[2,1],[1,1],[2,2],[1,2]]
@@ -154,4 +212,7 @@ func main() {
     // Query [2,1]: Station 1 goes offline.
     // Query [1,1]: Station 1 is offline and there are no other stations in its grid, so the result is -1.
     fmt.Println(processQueries(3, [][]int{}, [][]int{{1,1},{2,1},{1,1}})) // [1,-1]
+
+    fmt.Println(processQueries1(5, [][]int{{1,2},{2,3},{3,4},{4,5}}, [][]int{{1,3},{2,1},{1,1},{2,2},{1,2}})) // [3,2,3]
+    fmt.Println(processQueries1(3, [][]int{}, [][]int{{1,1},{2,1},{1,1}})) // [1,-1]
 }
