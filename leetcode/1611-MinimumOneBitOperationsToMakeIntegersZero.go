@@ -67,6 +67,11 @@ func main() {
 
     fmt.Println(minimumOneBitOperations(0)) // 0
     fmt.Println(minimumOneBitOperations(1)) // 1
+    fmt.Println(minimumOneBitOperations(8)) // 15
+    fmt.Println(minimumOneBitOperations(64)) // 127
+    fmt.Println(minimumOneBitOperations(99)) // 66
+    fmt.Println(minimumOneBitOperations(100)) // 71
+    fmt.Println(minimumOneBitOperations(128)) // 255
     fmt.Println(minimumOneBitOperations(1024)) // 2047
     fmt.Println(minimumOneBitOperations(99999999)) // 111591253
     fmt.Println(minimumOneBitOperations(100000000)) // 111590912
@@ -75,6 +80,11 @@ func main() {
     fmt.Println(minimumOneBitOperations1(6)) // 4
     fmt.Println(minimumOneBitOperations1(0)) // 0
     fmt.Println(minimumOneBitOperations1(1)) // 1
+    fmt.Println(minimumOneBitOperations1(8)) // 15
+    fmt.Println(minimumOneBitOperations1(64)) // 127
+    fmt.Println(minimumOneBitOperations1(99)) // 66
+    fmt.Println(minimumOneBitOperations1(100)) // 71
+    fmt.Println(minimumOneBitOperations1(128)) // 255
     fmt.Println(minimumOneBitOperations1(1024)) // 2047
     fmt.Println(minimumOneBitOperations1(99999999)) // 111591253
     fmt.Println(minimumOneBitOperations1(100000000)) // 111590912
