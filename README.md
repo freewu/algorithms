@@ -1934,6 +1934,7 @@
 [3737. Count Subarrays With Majority Element I](./leetcode/3737-CountSubarraysWithMajorityElementI.go)   
 [3738. Longest Non-Decreasing Subarray After Replacing at Most One Element](./leetcode/3738-LongestNonDecreasingSubarrayAfterReplacingAtMostOneElement.go)   
 [3739. Count Subarrays With Majority Element II](./leetcode/3739-CountSubarraysWithMajorityElementII.go)   
+[3740. Minimum Distance Between Three Equal Elements I](./leetcode/3740-MinimumDistanceBetweenThreeEqualElementsI.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
