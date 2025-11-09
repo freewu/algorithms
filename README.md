@@ -1932,6 +1932,7 @@
 [3733. Minimum Time to Complete All Deliveries](./leetcode/3733-MinimumTimeToCompleteAllDeliveries.go)   
 [3736. Minimum Moves to Equal Array Elements III](./leetcode/3736-MinimumMovesToEqualArrayElementsIII.go)   
 [3737. Count Subarrays With Majority Element I](./leetcode/3737-CountSubarraysWithMajorityElementI.go)   
+[3738. Longest Non-Decreasing Subarray After Replacing at Most One Element](./leetcode/3738-LongestNonDecreasingSubarrayAfterReplacingAtMostOneElement.go)   
 [3739. Count Subarrays With Majority Element II](./leetcode/3739-CountSubarraysWithMajorityElementII.go)   
 
 # String
