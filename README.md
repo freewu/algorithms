@@ -1930,6 +1930,7 @@
 [3731. Find Missing Elements](./leetcode/3731-FindMissingElements.go)   
 [3732. Maximum Product of Three Elements After One Replacement](./leetcode/3732-MaximumProductOfThreeElementsAfterOneReplacement.go)   
 [3733. Minimum Time to Complete All Deliveries](./leetcode/3733-MinimumTimeToCompleteAllDeliveries.go)   
+[3736. Minimum Moves to Equal Array Elements III](./leetcode/3736-MinimumMovesToEqualArrayElementsIII.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
