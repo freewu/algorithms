@@ -1936,6 +1936,7 @@
 [3739. Count Subarrays With Majority Element II](./leetcode/3739-CountSubarraysWithMajorityElementII.go)   
 [3740. Minimum Distance Between Three Equal Elements I](./leetcode/3740-MinimumDistanceBetweenThreeEqualElementsI.go)   
 [3741. Minimum Distance Between Three Equal Elements II](./leetcode/3741-MinimumDistanceBetweenThreeEqualElementsII.go)   
+[3742. Maximum Path Score in a Grid](./leetcode/3742-MaximumPathScoreInAGrid.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
