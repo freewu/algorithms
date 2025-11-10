@@ -38,6 +38,7 @@ package main
 //     0 <= grid[i][j] <= 2
 
 import "fmt"
+import "slices"
 
 func maxPathScore(grid [][]int, k int) int {
     n, m := len(grid[0]), len(grid)
@@ -70,6 +71,55 @@ func maxPathScore(grid [][]int, k int) int {
     return res
 }
 
+func maxPathScore1(grid [][]int, k int) int {
+    m, n := len(grid), len(grid[0])
+    arr := make([][][]int, m)
+    for i := range m {
+        arr[i] = make([][]int, n)
+        for j := range n {
+            arr[i][j] = make([]int, k+1)
+        }
+    }
+    switch grid[0][0] {
+    case 0:
+        arr[0][0][0] = 0 + 1
+    case 1:
+        arr[0][0][1] = 1 + 1
+    default:
+        arr[0][0][1] = 2 + 1
+    }
+    for i := range m {
+        for j := range n {
+            var a, b int
+            switch grid[i][j] {
+            case 1:
+                a, b = 1, 1
+            case 2:
+                a, b = 2, 1
+            }
+            if i-1 >= 0 {
+                for l := range k + 1 {
+                    if arr[i-1][j][l] > 0 && l+b <= k {
+                        arr[i][j][l+b] = max(arr[i][j][l+b], arr[i-1][j][l]+a)
+                    }
+                }
+            }
+            if j-1 >= 0 {
+                for l := range k + 1 {
+                    if arr[i][j-1][l] > 0 && l+b <= k {
+                        arr[i][j][l+b] = max(arr[i][j][l+b], arr[i][j-1][l]+a)
+                    }
+                }
+            }
+        }
+    }
+    res := slices.Max(arr[m-1][n-1])
+    if res > 0 {
+        return res - 1
+    }
+    return -1
+}
+
 func main() {
     // Example 1:
     // Input: grid = [[0, 1],[2, 0]], k = 1
@@ -88,4 +138,7 @@ func main() {
     // Explanation:
     // There is no path that reaches cell (1, 1)​​​​​​​ without exceeding cost k. Thus, the answer is -1.
     fmt.Println(maxPathScore([][]int{{0, 1},{1, 2}}, 1)) // -1
+
+    fmt.Println(maxPathScore1([][]int{{0, 1},{2, 0}}, 1)) // 2
+    fmt.Println(maxPathScore1([][]int{{0, 1},{1, 2}}, 1)) // -1
 }
