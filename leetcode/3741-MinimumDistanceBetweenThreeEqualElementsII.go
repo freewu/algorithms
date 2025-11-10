@@ -52,6 +52,22 @@ func minimumDistance(nums []int) int {
     return res
 }
 
+func minimumDistance1(nums []int) int {
+    res, n := 1 << 31, len(nums)
+    arr := make([][2]int, n+1)
+    for i, t := range nums {
+        a, b, c := arr[t][0], arr[t][1], i+1
+        if a > 0 {
+            res = min(res, b-a+c-b+c-a)
+        }
+        arr[t][0], arr[t][1] = b, c
+    }
+    if res < 1 << 31 {
+        return res
+    }
+    return -1
+}
+
 func main() {
     // Example 1:
     // Input: nums = [1,2,1,1,3]
@@ -76,4 +92,10 @@ func main() {
 
     fmt.Println(minimumDistance([]int{1,2,3,4,5,6,7,8,9})) // -1
     fmt.Println(minimumDistance([]int{9,8,7,6,5,4,3,2,1})) // -1
+
+    fmt.Println(minimumDistance1([]int{1,2,1,1,3})) // 6
+    fmt.Println(minimumDistance1([]int{1,1,2,3,2,1,2})) // 8
+    fmt.Println(minimumDistance1([]int{1})) // -1
+    fmt.Println(minimumDistance1([]int{1,2,3,4,5,6,7,8,9})) // -1
+    fmt.Println(minimumDistance1([]int{9,8,7,6,5,4,3,2,1})) // -1
 }
