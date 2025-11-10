@@ -56,6 +56,39 @@ func longestSubarray(nums []int) int {
     return res
 }
 
+func longestSubarray1(nums []int) int {
+    res, left, right, curr, merge := 1, 0, -1, 0, true
+    for i := 1; i < len(nums); i++ {
+        if nums[i] >= nums[i-1] {
+            // OK
+            res = max(res, i - curr + 1)
+            // Can we merge the previous non-decreasing subarray?
+            if right != -1 {
+                // decrease nums[right] to nums[curr] is always viable
+                res = max(res, i - curr + 1 + 1)
+                if left == right {
+                    // decrease nums[left] to nums[curr] is always viable
+                    res = max(res, i - curr + 1 + 1)
+                } else if merge {
+                    if nums[right-1] <= nums[curr] { // decrease nums[right] to nums[right-1]
+                        res = max(res, i-curr + 1 + right-left+1)
+                    } else if nums[i] >= nums[right] { // increase nums[curr] to nums[right]
+                        res = max(res, i - curr + 1 + right-left+1)
+                    } else {
+                        merge = false
+                    }
+                }
+            }
+        } else {
+            left, right = curr, i - 1
+            curr = i
+            res = max(res, right - left + 2)
+            merge = true
+        }
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: nums = [1,2,3,1,2]
@@ -73,4 +106,9 @@ func main() {
 
     fmt.Println(longestSubarray([]int{1,2,3,4,5,6,7,8,9})) // 9
     fmt.Println(longestSubarray([]int{9,8,7,6,5,4,3,2,1})) // 2
+
+    fmt.Println(longestSubarray1([]int{1,2,3,1,2})) // 4
+    fmt.Println(longestSubarray1([]int{2,2,2,2,2})) // 5
+    fmt.Println(longestSubarray1([]int{1,2,3,4,5,6,7,8,9})) // 9
+    fmt.Println(longestSubarray1([]int{9,8,7,6,5,4,3,2,1})) // 2
 }
