@@ -29,6 +29,10 @@ import "slices"
 
 func findMaxForm(strs []string, m int, n int) int {
     var dp = [101][101]int{}
+    // dp := make([][]int, m + 1)
+    // for i := range dp {
+    //     dp[i] = make([]int, n +  1)
+    // }
     max := func (x, y int) int { if x > y { return x; }; return y; }
     for _, str := range strs {
         cnt0 := strings.Count(str, "0")
