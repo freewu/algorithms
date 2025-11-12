@@ -87,6 +87,22 @@ func maxOperations2(s string) int {
     return res
 }
 
+func maxOperations3(s string) int {
+    res, one, i := 0, 0, 0
+    for i < len(s) {
+        if s[i] == '0' {
+            for i + 1 < len(s) && s[i + 1] == '0' {
+                i++
+            }
+            res += one
+        } else {
+            one++
+        }
+        i++
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: s = "1001101"
@@ -121,4 +137,11 @@ func main() {
     fmt.Println(maxOperations2("11111111")) // 0
     fmt.Println(maxOperations2("10101010")) // 10
     fmt.Println(maxOperations2("01010101")) // 6
+
+    fmt.Println(maxOperations3("1001101")) // 4
+    fmt.Println(maxOperations3("00111")) // 0
+    fmt.Println(maxOperations3("00000000")) // 0
+    fmt.Println(maxOperations3("11111111")) // 0
+    fmt.Println(maxOperations3("10101010")) // 10
+    fmt.Println(maxOperations3("01010101")) // 6
 }
