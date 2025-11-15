@@ -112,9 +112,17 @@ func main() {
 
     fmt.Println(numberOfSubstrings("000000000")) // 0
     fmt.Println(numberOfSubstrings("111111111")) // 45
+    fmt.Println(numberOfSubstrings("1010101010")) // 18
+    fmt.Println(numberOfSubstrings("0101010101")) // 18
+    fmt.Println(numberOfSubstrings("0000011111")) // 22
+    fmt.Println(numberOfSubstrings("1111100000")) // 22
 
     fmt.Println(numberOfSubstrings1("00011")) // 5
     fmt.Println(numberOfSubstrings1("101101")) // 16
     fmt.Println(numberOfSubstrings1("000000000")) // 0
     fmt.Println(numberOfSubstrings1("111111111")) // 45
+    fmt.Println(numberOfSubstrings1("1010101010")) // 18
+    fmt.Println(numberOfSubstrings1("0101010101")) // 18
+    fmt.Println(numberOfSubstrings1("0000011111")) // 22
+    fmt.Println(numberOfSubstrings1("1111100000")) // 22
 }
