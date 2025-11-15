@@ -36,7 +36,7 @@ package main
 import "fmt"
 
 // 哈希 + 前缀和
-func subarraysWithMoreZerosThanOnes(nums []int) int {
+func subarraysWithMoreOnesThanZeroes(nums []int) int {
     res, sum, count := 0, 0, 0
     mp := make(map[int]int)
     mp[0] = 1
@@ -65,17 +65,20 @@ func main() {
     // The subarrays of size 3 that have more ones than zeros are: [0,1,1], [1,1,0], [1,0,1]
     // The subarrays of size 4 that have more ones than zeros are: [1,1,0,1]
     // The subarrays of size 5 that have more ones than zeros are: [0,1,1,0,1]
-    fmt.Println(subarraysWithMoreZerosThanOnes([]int{0,1,1,0,1})) // 9
+    fmt.Println(subarraysWithMoreOnesThanZeroes([]int{0,1,1,0,1})) // 9
     // Example 2:
     // Input: nums = [0]
     // Output: 0
     // Explanation:
     // No subarrays have more ones than zeros.
-    fmt.Println(subarraysWithMoreZerosThanOnes([]int{0})) // 0
+    fmt.Println(subarraysWithMoreOnesThanZeroes([]int{0})) // 0
     // Example 3:
     // Input: nums = [1]
     // Output: 1
     // Explanation:
     // The subarrays of size 1 that have more ones than zeros are: [1]
-    fmt.Println(subarraysWithMoreZerosThanOnes([]int{1})) // 1
+    fmt.Println(subarraysWithMoreOnesThanZeroes([]int{1})) // 1
+
+    fmt.Println(subarraysWithMoreOnesThanZeroes([]int{1,2,3,4,5,6,7,8,9})) // 1
+    fmt.Println(subarraysWithMoreOnesThanZeroes([]int{9,8,7,6,5,4,3,2,1})) // 1
 }
