@@ -122,8 +122,17 @@ func restoreIpAddresses1(s string) []string {
 }
 
 func main() {
+    // Example 1:
+    // Input: s = "25525511135"
+    // Output: ["255.255.11.135","255.255.111.35"]
     fmt.Printf("restoreIpAddresses(\"25525511135\") = %v\n",restoreIpAddresses("25525511135")) // ["255.255.11.135","255.255.111.35"]
+    // Example 2:
+    // Input: s = "0000"
+    // Output: ["0.0.0.0"]
     fmt.Printf("restoreIpAddresses(\"0000\") = %v\n",restoreIpAddresses("0000")) // ["0.0.0.0"]
+    // Example 3:
+    // Input: s = "101023"
+    // Output: ["1.0.10.23","1.0.102.3","10.1.0.23","10.10.2.3","101.0.2.3"]
     fmt.Printf("restoreIpAddresses(\"101023\") = %v\n",restoreIpAddresses("101023")) // ["1.0.10.23","1.0.102.3","10.1.0.23","10.10.2.3","101.0.2.3"]
 
     fmt.Printf("restoreIpAddresses1(\"25525511135\") = %v\n",restoreIpAddresses1("25525511135")) // ["255.255.11.135","255.255.111.35"]
