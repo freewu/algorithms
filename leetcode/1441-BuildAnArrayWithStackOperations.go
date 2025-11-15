@@ -93,4 +93,7 @@ func main() {
     // Since the stack (from the bottom to the top) is equal to target, we stop the stack operations.
     // The answers that read integer 3 from the stream are not accepted.
     fmt.Println(buildArray([]int{1,2}, 4)) // ["Push","Push"]
+
+    fmt.Println(buildArray([]int{1,2,3,4,5,6,7,8,9}, 4)) // [Push Push Push Push]
+    fmt.Println(buildArray([]int{9,8,7,6,5,4,3,2,1}, 4)) // [Push Pop Push Pop Push Pop Push Pop]
 }
