@@ -6,37 +6,36 @@ package main
 // Update the value of an element in nums.
 // Calculate the sum of the elements of nums between indices left and right inclusive where left <= right.
 // Implement the NumArray class:
-
-// NumArray(int[] nums) Initializes the object with the integer array nums.
-// void update(int index, int val) Updates the value of nums[index] to be val.
-// int sumRange(int left, int right) Returns the sum of the elements of nums between indices left and right inclusive (i.e. nums[left] + nums[left + 1] + ... + nums[right]).
- 
-
+//     NumArray(int[] nums) Initializes the object with the integer array nums.
+//     void update(int index, int val) Updates the value of nums[index] to be val.
+//     int sumRange(int left, int right) Returns the sum of the elements of nums between indices left and right inclusive (i.e. nums[left] + nums[left + 1] + ... + nums[right]).
+    
 // Example 1:
 // Input
-// 		["NumArray", "sumRange", "update", "sumRange"]
-// 		[[[1, 3, 5]], [0, 2], [1, 2], [0, 2]]
+// ["NumArray", "sumRange", "update", "sumRange"]
+// [[[1, 3, 5]], [0, 2], [1, 2], [0, 2]]
 // Output	
-// 		[null, 9, null, 8]
+// [null, 9, null, 8]
 // Explanation
-// 		NumArray numArray = new NumArray([1, 3, 5]);
-// 		numArray.sumRange(0, 2); // return 1 + 3 + 5 = 9
-// 		numArray.update(1, 2);   // nums = [1, 2, 5]
-// 		numArray.sumRange(0, 2); // return 1 + 2 + 5 = 8
- 
+// NumArray numArray = new NumArray([1, 3, 5]);
+// numArray.sumRange(0, 2); // return 1 + 3 + 5 = 9
+// numArray.update(1, 2);   // nums = [1, 2, 5]
+// numArray.sumRange(0, 2); // return 1 + 2 + 5 = 8
 
 // Constraints:
-
-// 		1 <= nums.length <= 3 * 104
-// 		-100 <= nums[i] <= 100
-// 		0 <= index < nums.length
-// 		-100 <= val <= 100
-// 		0 <= left <= right < nums.length
-// 		At most 3 * 104 calls will be made to update and sumRange.
+//     1 <= nums.length <= 3 * 104
+//     -100 <= nums[i] <= 100
+//     0 <= index < nums.length
+//     -100 <= val <= 100
+//     0 <= left <= right < nums.length
+//     At most 3 * 104 calls will be made to update and sumRange.
 
 // 线段树 Segment tree 是一种二叉树形数据结构，1977年由 Jon Louis Bentley 发明，用以存储区间或线段，并且允许快速查询结构内包含某一点的所有区间。
 // 	一个包含 n 个区间的线段树，空间复杂度为 O(n) ，
 // 	查询的时间复杂度则为 O(logn+k) ，其中 k 是符合条件的区间数量。线段树的数据结构也可推广到高维度。
+
+import "fmt"
+
 // SegmentTree define
 type SegmentTree struct {
 	data, tree, lazy []int
@@ -285,4 +284,17 @@ func (this *NumArray) Query(k int) int {
 
 func (this *NumArray) SumRange(left int, right int) int {
     return this.Query(right+1) - this.Query(left)
+}
+
+func main() {
+    // NumArray numArray = new NumArray([1, 3, 5]);
+    obj := Constructor([]int{1, 3, 5})
+    fmt.Println(obj) // [1, 3, 5]
+    // numArray.sumRange(0, 2); // return 1 + 3 + 5 = 9
+    fmt.Println(obj.SumRange(0, 2)) // 9
+    // numArray.update(1, 2);   // nums = [1, 2, 5]
+    obj.Update(1, 2)
+    fmt.Println(obj) // [1, 2, 5]
+    // numArray.sumRange(0, 2); // return 1 + 2 + 5 = 8
+    fmt.Println(obj.SumRange(0, 2)) // 8
 }
