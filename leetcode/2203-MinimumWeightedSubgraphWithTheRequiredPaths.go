@@ -44,7 +44,9 @@ package main
 //     1 <= weight[i] <= 10^5
 
 import "fmt"
+import "container/heap"
 
+// Time Limit Exceeded 87 / 88 testcases passed
 func minimumWeight(n int, edges [][]int, src1 int, src2 int, dest int) int64 {
     inf := int64(10000000000)
     type Pair struct {
@@ -88,6 +90,60 @@ func minimumWeight(n int, edges [][]int, src1 int, src2 int, dest int) int64 {
     return res
 }
 
+type Pair struct{ v, dis int }
+type MinHeap []Pair
+func (h MinHeap) Len() int              { return len(h) }
+func (h MinHeap) Less(i, j int) bool    { return h[i].dis < h[j].dis }
+func (h MinHeap) Swap(i, j int)         { h[i], h[j] = h[j], h[i] }
+func (h *MinHeap) Push(v interface{})   { *h = append(*h, v.(Pair)) }
+func (h *MinHeap) Pop() (v interface{}) { a := *h; *h, v = a[:len(a)-1], a[len(a)-1]; return }  
+
+type Edge struct{ to, weight int }
+func dijkstra(g [][]Edge, start int) []int {
+    dis := make([]int, len(g))
+    for i := range dis {
+        dis[i] = 1 << 61
+    }
+    dis[start] = 0
+    h := MinHeap{{start, 0}}
+    for len(h) > 0 {
+        p := heap.Pop(&h).(Pair)
+        v := p.v
+        if p.dis > dis[v] {
+            continue
+        }
+        for _, e := range g[v] {
+            w := e.to
+            if newD := dis[v] + e.weight; newD < dis[w] {
+                dis[w] = newD
+                heap.Push(&h, Pair{w, newD})
+            }
+        }
+    }
+    return dis
+}
+
+func minimumWeight1(n int, edges [][]int, src1, src2, dest int) int64 {
+    g := make([][]Edge, n)
+    rg := make([][]Edge, n)
+    for _, e := range edges {
+        v, w, weight := e[0], e[1], e[2]
+        g[v] = append(g[v], Edge{w, weight})
+        rg[w] = append(rg[w], Edge{v, weight})
+    }
+    d1 := dijkstra(g, src1)
+    d2 := dijkstra(g, src2)
+    d3 := dijkstra(rg, dest)
+    res := int64(1 << 61)
+    for x := 0; x < n; x++ {
+        res = min(res, int64(d1[x] + d2[x] + d3[x]))
+    }
+    if res < 1 << 61 {
+        return res
+    }
+    return -1
+}
+
 func main() {
     // Example 1:
     // <img src="https://assets.leetcode.com/uploads/2022/02/17/example1drawio.png" />
@@ -108,4 +164,7 @@ func main() {
     // It can be seen that there does not exist any path from node 1 to node 2, hence there are no subgraphs satisfying all the constraints.
     edges2 := [][]int{{0,1,1},{2,1,1}}
     fmt.Println(minimumWeight(3, edges2, 0, 1, 2)) // -1
+
+    fmt.Println(minimumWeight1(6, edges1, 0, 1, 5)) // 9
+    fmt.Println(minimumWeight1(3, edges2, 0, 1, 2)) // -1
 }
