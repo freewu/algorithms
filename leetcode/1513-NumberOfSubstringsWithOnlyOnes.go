@@ -81,7 +81,20 @@ func main() {
     // Explanation: Each substring contains only 1's characters.
     fmt.Println(numSub("111111")) // 21
 
+    fmt.Println(numSub("1111111111")) // 55
+    fmt.Println(numSub("0000000000")) // 0
+    fmt.Println(numSub("1111100000")) // 15
+    fmt.Println(numSub("0000011111")) // 15
+    fmt.Println(numSub("0101010101")) // 5
+    fmt.Println(numSub("1010101010")) // 5
+
     fmt.Println(numSub1("0110111")) // 9
     fmt.Println(numSub1("101")) // 2
     fmt.Println(numSub1("111111")) // 21
+    fmt.Println(numSub1("1111111111")) // 55
+    fmt.Println(numSub1("0000000000")) // 0
+    fmt.Println(numSub1("1111100000")) // 15
+    fmt.Println(numSub1("0000011111")) // 15
+    fmt.Println(numSub1("0101010101")) // 5
+    fmt.Println(numSub1("1010101010")) // 5
 }
