@@ -2575,6 +2575,7 @@
 [3734. Lexicographically Smallest Palindromic Permutation Greater Than Target](./leetcode/3734-LexicographicallySmallestPalindromicPermutationGreaterThanTarget.go)   
 [3735. Lexicographically Smallest String After Reverse II](./leetcode/3735-LexicographicallySmallestStringAfterReverseII.go)   
 [3744. Find Kth Character in Expanded String](./leetcode/3744-FindKthCharacterInExpandedString.go)   
+[3746. Minimum String Length After Balanced Removals](./leetcode/3746-MinimumStringLengthAfterBalancedRemovals.go)   
 
 # Dynamic Programming
 [276. Paint Fence](./leetcode/276-PaintFence.go)   
