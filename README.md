@@ -1939,6 +1939,7 @@
 [3742. Maximum Path Score in a Grid](./leetcode/3742-MaximumPathScoreInAGrid.go)   
 [3743. Maximize Cyclic Partition Score](./leetcode/3743-MaximizeCyclicPartitionScore.go)   
 [3745. Maximize Expression of Three Elements](./leetcode/3745-MaximizeExpressionOfThreeElements.go)   
+[3748. Count Stable Subarrays](./leetcode/3748-CountStableSubarrays.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
