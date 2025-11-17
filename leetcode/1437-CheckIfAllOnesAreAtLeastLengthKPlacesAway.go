@@ -63,6 +63,19 @@ func main() {
     // Explanation: The second 1 and third 1 are only one apart from each other.
     fmt.Println(kLengthApart([]int{1,0,0,1,0,1}, 2)) // false
 
+    fmt.Println(kLengthApart([]int{0,0,0,0,0,0,0,0,0,0}, 2)) // true
+    fmt.Println(kLengthApart([]int{1,1,1,1,1,1,1,1,1,1}, 2)) // false
+    fmt.Println(kLengthApart([]int{0,0,0,0,0,1,1,1,1,1}, 2)) // false
+    fmt.Println(kLengthApart([]int{1,1,1,1,1,0,0,0,0,0}, 2)) // false
+    fmt.Println(kLengthApart([]int{1,0,1,0,1,0,1,0,1,0}, 2)) // false
+    fmt.Println(kLengthApart([]int{0,1,0,1,0,1,0,1,0,1}, 2)) // false
+
     fmt.Println(kLengthApart1([]int{1,0,0,0,1,0,0,1}, 2)) // true
     fmt.Println(kLengthApart1([]int{1,0,0,1,0,1}, 2)) // false
+    fmt.Println(kLengthApart1([]int{0,0,0,0,0,0,0,0,0,0}, 2)) // true
+    fmt.Println(kLengthApart1([]int{1,1,1,1,1,1,1,1,1,1}, 2)) // false
+    fmt.Println(kLengthApart1([]int{0,0,0,0,0,1,1,1,1,1}, 2)) // false
+    fmt.Println(kLengthApart1([]int{1,1,1,1,1,0,0,0,0,0}, 2)) // false
+    fmt.Println(kLengthApart1([]int{1,0,1,0,1,0,1,0,1,0}, 2)) // false
+    fmt.Println(kLengthApart1([]int{0,1,0,1,0,1,0,1,0,1}, 2)) // false
 }
