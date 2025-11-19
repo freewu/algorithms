@@ -77,6 +77,11 @@ func main() {
     // - 4 is not found in nums. Thus, 4 is returned.
     fmt.Println(findFinalValue([]int{2,7,9}, 4)) // 4
 
+    fmt.Println(findFinalValue([]int{1,2,3,4,5,6,7,8,9}, 2)) // 16
+    fmt.Println(findFinalValue([]int{9,8,7,6,5,4,3,2,1}, 2)) // 16
+
     fmt.Println(findFinalValue1([]int{5,3,6,1,12}, 3)) // 24
     fmt.Println(findFinalValue1([]int{2,7,9}, 4)) // 4
+    fmt.Println(findFinalValue1([]int{1,2,3,4,5,6,7,8,9}, 2)) // 16
+    fmt.Println(findFinalValue1([]int{9,8,7,6,5,4,3,2,1}, 2)) // 16
 }
