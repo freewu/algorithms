@@ -50,4 +50,11 @@ func main() {
     // Explanation: The only way to decode it is two-bit character and two-bit character.
     // So the last character is not one-bit character. (1, 1), (1, 0)
     fmt.Println(isOneBitCharacter([]int{1,1,1,0})) // false
+
+    fmt.Println(isOneBitCharacter([]int{0,0,0,0,0,0,0,0,0,0})) // true
+    fmt.Println(isOneBitCharacter([]int{1,1,1,1,1,1,1,1,1,1})) // false
+    fmt.Println(isOneBitCharacter([]int{0,0,0,0,0,1,1,1,1,1})) // true
+    fmt.Println(isOneBitCharacter([]int{1,1,1,1,1,0,0,0,0,0})) // true
+    fmt.Println(isOneBitCharacter([]int{0,1,0,1,0,1,0,1,0,1})) // true
+    fmt.Println(isOneBitCharacter([]int{1,0,1,0,1,0,1,0,1,0})) // false
 }
