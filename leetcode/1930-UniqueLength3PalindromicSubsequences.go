@@ -38,6 +38,7 @@ package main
 //     s consists of only lowercase English letters.
 
 import "fmt"
+import "math/bits"
 
 func countPalindromicSubsequence(s string) int {
     res, inf := 0, 1 << 31
@@ -92,6 +93,29 @@ func countPalindromicSubsequence1(s string) int {
     return res
 }
 
+func countPalindromicSubsequence2(s string) int {
+    res, suffix, prefix, n := 0, 0, 0, len(s)
+    count,has := [26]int{}, [26]int{} // 统计后缀每个字母的个数
+    for _, v := range s[1:] {
+        v -= 'a'
+        count[v]++
+        suffix |= 1 << v
+    }
+    for i := 1; i < n-1; i++ {
+        prefix |= 1 << (s[i-1] - 'a')
+        v := s[i] - 'a'
+        count[v]--
+        if count[v] == 0 { // 现在，后缀 [i+1,n-1] 不包含字母 v
+            suffix ^= 1 << v // 从 suffix 中去掉 v
+        }
+        has[v] |= prefix & suffix
+    }
+    for _, mask := range has {
+        res += bits.OnesCount(uint(mask))
+    }
+    return res  
+}
+
 func main() {
     // Example 1:
     // Input: s = "aabca"
@@ -116,7 +140,18 @@ func main() {
     // - "aba" (subsequence of "bbcbaba")
     fmt.Println(countPalindromicSubsequence("bbcbaba")) // 4
 
-    fmt.Println(countPalindromicSubsequence("aabca")) // 3
-    fmt.Println(countPalindromicSubsequence("adc")) // 0
-    fmt.Println(countPalindromicSubsequence("bbcbaba")) // 4
+    fmt.Println(countPalindromicSubsequence("leetcode")) // 5
+    fmt.Println(countPalindromicSubsequence("bluefrog")) // 0
+
+    fmt.Println(countPalindromicSubsequence1("aabca")) // 3
+    fmt.Println(countPalindromicSubsequence1("adc")) // 0
+    fmt.Println(countPalindromicSubsequence1("bbcbaba")) // 4
+    fmt.Println(countPalindromicSubsequence1("leetcode")) // 5
+    fmt.Println(countPalindromicSubsequence1("bluefrog")) // 0
+
+    fmt.Println(countPalindromicSubsequence2("aabca")) // 3
+    fmt.Println(countPalindromicSubsequence2("adc")) // 0
+    fmt.Println(countPalindromicSubsequence2("bbcbaba")) // 4
+    fmt.Println(countPalindromicSubsequence2("leetcode")) // 5
+    fmt.Println(countPalindromicSubsequence2("bluefrog")) // 0
 }
