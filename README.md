@@ -3005,6 +3005,7 @@
 [3747. Count Distinct Integers After Removing Zeros](./leetcode/3747-CountDistinctIntegersAfterRemovingZeros.go)   
 [3750. Minimum Number of Flips to Reverse Binary String](./leetcode/3750-MinimumNumberOfFlipsToReverseBinaryString.go)   
 [3751. Total Waviness of Numbers in Range I](./leetcode/3751-TotalWavinessOfNumbersInRangeI.go)   
+[3752. Lexicographically Smallest Negated Permutation that Sums to Target](./leetcode/3752-LexicographicallySmallestNegatedPermutationThatSumsToTarget.go)   
 [3753. Total Waviness of Numbers in Range II](./leetcode/3753-TotalWavinessOfNumbersInRangeII.go)   
 
 # Stack
