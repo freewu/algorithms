@@ -3003,6 +3003,7 @@
 [3723. Maximize Sum of Squares of Digits](./leetcode/3723-MaximizeSumOfSquaresOfDigits.go)   
 [3726. Remove Zeros in Decimal Representation](./leetcode/3726-RemoveZerosInDecimalRepresentation.go)   
 [3747. Count Distinct Integers After Removing Zeros](./leetcode/3747-CountDistinctIntegersAfterRemovingZeros.go)   
+[3750. Minimum Number of Flips to Reverse Binary String](./leetcode/3750-MinimumNumberOfFlipsToReverseBinaryString.go)   
 
 # Stack
 [225. Implement Stack using Queues](./leetcode/225-ImplementStackUsingQueues.go)   
