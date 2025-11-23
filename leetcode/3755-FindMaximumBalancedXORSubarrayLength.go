@@ -49,6 +49,30 @@ func maxBalancedSubarray(nums []int) int {
     return res
 }
 
+func maxBalancedSubarray1(nums []int) int {
+    res, xor, count := 0, 0, 0
+    seen := make(map[int64]int)
+    index := int64(0)<<32 | int64(uint32(0))
+    seen[index] = -1
+    for i := 0; i < len(nums); i++ {
+        xor ^= nums[i]
+        if nums[i]&1 == 0 {
+            count++
+        } else {
+            count--
+        }
+        index = int64(xor)<<32 | int64(uint32(count))
+        if pos, ok := seen[index]; ok {
+            if d := i - pos; d > res {
+                res = d
+            }
+        } else {
+            seen[index] = i
+        }
+    }
+    return res  
+}
+
 func main() {
     // Example 1:
     // Input: nums = [3,1,3,2,0]
@@ -71,4 +95,10 @@ func main() {
 
     fmt.Println(maxBalancedSubarray([]int{1,2,3,4,5,6,7,8,9})) // 8
     fmt.Println(maxBalancedSubarray([]int{9,8,7,6,5,4,3,2,1})) // 8
+
+    fmt.Println(maxBalancedSubarray1([]int{3,1,3,2,0})) // 4
+    fmt.Println(maxBalancedSubarray1([]int{3,2,8,5,4,14,9,15})) // 8 
+    fmt.Println(maxBalancedSubarray1([]int{0})) // 0 
+    fmt.Println(maxBalancedSubarray1([]int{1,2,3,4,5,6,7,8,9})) // 8
+    fmt.Println(maxBalancedSubarray1([]int{9,8,7,6,5,4,3,2,1})) // 8
 }
