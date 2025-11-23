@@ -72,7 +72,12 @@ func main() {
     // Explanation: Pick numbers 1, 3, 4 and 4 their sum is 12 (maximum sum divisible by 3).
     fmt.Println(maxSumDivThree([]int{1,2,3,4,4})) // 12
 
+    fmt.Println(maxSumDivThree([]int{1,2,3,4,5,6,7,8,9})) // 45
+    fmt.Println(maxSumDivThree([]int{9,8,7,6,5,4,3,2,1})) // 45
+
     fmt.Println(maxSumDivThree1([]int{3,6,5,1,8})) // 18
     fmt.Println(maxSumDivThree1([]int{4})) // 0
     fmt.Println(maxSumDivThree1([]int{1,2,3,4,4})) // 12
+    fmt.Println(maxSumDivThree1([]int{1,2,3,4,5,6,7,8,9})) // 45
+    fmt.Println(maxSumDivThree1([]int{9,8,7,6,5,4,3,2,1})) // 45
 }
