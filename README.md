@@ -1941,6 +1941,7 @@
 [3745. Maximize Expression of Three Elements](./leetcode/3745-MaximizeExpressionOfThreeElements.go)   
 [3748. Count Stable Subarrays](./leetcode/3748-CountStableSubarrays.go)   
 [3755. Find Maximum Balanced XOR Subarray Length](./leetcode/3755-FindMaximumBalancedXORSubarrayLength.go)   
+[3757. Number of Effective Subsequences](./leetcode/3757-NumberOfEffectiveSubsequences.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
