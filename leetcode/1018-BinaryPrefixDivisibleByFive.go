@@ -55,6 +55,11 @@ func main() {
     // Output: [false,false,false]
     fmt.Println(prefixesDivBy5([]int{1,1,1})) // [false,false,false]
 
+    fmt.Println(prefixesDivBy5([]int{1,2,3,4,5,6,7,8,9})) // [false false false false false true false false false]
+    fmt.Println(prefixesDivBy5([]int{9,8,7,6,5,4,3,2,1})) // [false false false false false true false false false]
+
     fmt.Println(prefixesDivBy51([]int{0,1,1})) // [true,false,false]
     fmt.Println(prefixesDivBy51([]int{1,1,1})) // [false,false,false]
+    fmt.Println(prefixesDivBy51([]int{1,2,3,4,5,6,7,8,9})) // [false false false false false true false false false]
+    fmt.Println(prefixesDivBy51([]int{9,8,7,6,5,4,3,2,1})) // [false false false false false true false false false]
 }
