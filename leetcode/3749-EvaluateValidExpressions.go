@@ -45,6 +45,7 @@ package main
 import "fmt"
 import "container/list"
 import "strconv"
+import "unicode"
 
 func evaluateExpression(expression string) int64 {
     // 栈元素：操作符(string)和操作数列表([2]int64)
@@ -143,6 +144,42 @@ func evaluateExpression(expression string) int64 {
     return 0 // 输入合法，不会走到此分支
 }
 
+func evaluateExpression1(s string) int64 {
+    stack, operations := []int{}, []byte{}
+    n, sign, x := len(s), 1, 0
+    for i := 0; i < n; i++ {
+        c := s[i]
+        if c == '-' {
+            sign = -1
+        } else if unicode.IsDigit(rune(c)) {
+            x = x * 10 + int(c - '0')
+            if i == n-1 || s[i+1] == ',' || s[i+1] == ')' {
+                stack = append(stack, sign*x)
+                sign, x = 1, 0
+            }
+        } else if c == ')' {
+            v := stack[len(stack)-1]
+            stack = stack[:len(stack)-1]
+            op := operations[len(operations)-1]
+            operations = operations[:len(operations)-1]
+            switch op {
+            case 'a': // add
+                stack[len(stack)-1] += v
+            case 's': // sub
+                stack[len(stack)-1] -= v
+            case 'm': // mul
+                stack[len(stack)-1] *= v
+            default: // div
+                stack[len(stack)-1] /= v
+            }
+        } else if unicode.IsLower(rune(c)) {
+            operations = append(operations, c)
+            i += 3
+        }
+    }
+    return int64(stack[len(stack) - 1])
+}
+
 func main() {
     // Example 1:
     // Input: expression = "add(2,3)"
@@ -171,4 +208,10 @@ func main() {
     fmt.Println(evaluateExpression("mul(1603581729054586, 2)")) // 3207163458109172
     // 复杂嵌套测试
     fmt.Println(evaluateExpression("add(sub(1000000000000, 500000000000), div(800000000000, 2))")) // 900000000000
+
+    fmt.Println(evaluateExpression1("add(2,3)")) // 5
+    fmt.Println(evaluateExpression1("-42")) // -42   
+    fmt.Println(evaluateExpression1("div(mul(4,sub(9,5)),add(1,1))")) // 8 
+    fmt.Println(evaluateExpression1("mul(1603581729054586, 2)")) // 3207163458109172
+    fmt.Println(evaluateExpression1("add(sub(1000000000000, 500000000000), div(800000000000, 2))")) // 900000000000
 }
