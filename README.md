@@ -2581,6 +2581,7 @@
 [3746. Minimum String Length After Balanced Removals](./leetcode/3746-MinimumStringLengthAfterBalancedRemovals.go)   
 [3749. Evaluate Valid Expressions](./leetcode/3749-EvaluateValidExpressions.go)   
 [3756. Concatenate Non-Zero Digits and Multiply by Sum II](./leetcode/3756-ConcatenateNonZeroDigitsAndMultiplyBySumII.go)   
+[3758. Convert Number Words to Digits](./leetcode/3758-ConvertNumberWordsToDigits.go)   
 
 # Dynamic Programming
 [276. Paint Fence](./leetcode/276-PaintFence.go)   
