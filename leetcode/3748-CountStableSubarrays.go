@@ -78,6 +78,40 @@ func countStableSubarrays(nums []int, queries [][]int) []int64 {
     return res
 }
 
+func countStableSubarrays1(nums []int, queries [][]int) []int64 {
+    count, n := 0, len(nums)
+    sum := make([]int64, n + 1)   // 计算递增子数组的前缀和
+    for i, v := range nums {
+        if i > 0 && nums[i-1] > v {
+            count = 0
+        }
+        count++ // 统计递增子数组的个数
+        sum[i+1] = sum[i] + int64(count)
+    }
+    next := make([]int, n)
+    next[n-1] = n
+    for i := n - 2; i >= 0; i-- {
+        if nums[i] <= nums[i+1] {
+            next[i] = next[i+1]
+        } else {
+            next[i] = i + 1
+        }
+    }
+    res := make([]int64, len(queries))
+    for k, q := range queries {
+        l, r := q[0], q[1]
+        ll := next[l]
+        if ll > r {  // 查询左右端点位于同一个递增区间中
+            m := int64(r-l+1)
+            res[k] = m * (m+1) / 2
+            continue
+        }
+        m := int64(ll - l)
+        res[k] = m*(m+1)/2 + sum[r+1] - sum[ll]   // l ~ ll 位于同一个递增区间中,  ll ~ r 可以用前缀和求出
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: nums = [3,1,2], queries = [[0,1],[1,2],[0,2]]
@@ -104,4 +138,9 @@ func main() {
 
     fmt.Println(countStableSubarrays([]int{1,2,3,4,5,6,7,8,9}, [][]int{{0,1},{0,0}})) // [3 1]   
     fmt.Println(countStableSubarrays([]int{9,8,7,6,5,4,3,2,1}, [][]int{{0,1},{0,0}})) // [2 1]  
+
+    fmt.Println(countStableSubarrays1([]int{3,1,2}, [][]int{{0,1},{1,2},{0,2}})) // [2, 3, 4]
+    fmt.Println(countStableSubarrays1([]int{2,2}, [][]int{{0,1},{0,0}})) // [3, 1]
+    fmt.Println(countStableSubarrays1([]int{1,2,3,4,5,6,7,8,9}, [][]int{{0,1},{0,0}})) // [3 1]
+    fmt.Println(countStableSubarrays1([]int{9,8,7,6,5,4,3,2,1}, [][]int{{0,1},{0,0}})) // [2 1]
 }
