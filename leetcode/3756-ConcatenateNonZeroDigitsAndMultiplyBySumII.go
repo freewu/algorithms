@@ -152,6 +152,42 @@ func sumAndMultiply1(s string, queries [][]int) []int {
     return res
 }
 
+const MOD = 1_000_000_007
+const MX = 100_001
+
+var pow10 = [MX]int{1}
+
+func init() {
+    for i := 1; i < MX; i++ {
+        pow10[i] = pow10[i-1] * 10 % MOD
+    }
+}
+
+func sumAndMultiply2(s string, queries [][]int) []int {
+    n := len(s)
+    sum := make([]int, n+1)
+    prefix := make([]int, n+1)
+    sumNonZero := make([]int, n+1)
+    for i, ch := range s {
+        d := int(ch - '0')
+        sum[i+1] = sum[i] + d
+        prefix[i+1] = prefix[i]
+        sumNonZero[i+1] = sumNonZero[i]
+        if d > 0 {
+            prefix[i+1] = (prefix[i]*10 + d) % MOD
+            sumNonZero[i+1]++
+        }
+    }
+    res := make([]int, len(queries))
+    for i, q := range queries {
+        l, r := q[0], q[1]+1
+        n := sumNonZero[r] - sumNonZero[l]
+        x := prefix[r] - prefix[l]*pow10[n] % MOD + MOD
+        res[i] = int(x * (sum[r] - sum[l]) % MOD) 
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: s = "10203004", queries = [[0,7],[1,3],[4,6]]
@@ -202,5 +238,11 @@ func main() {
     fmt.Println(sumAndMultiply1("9876543210", [][]int{{0,9}})) // [444444137]
     fmt.Println(sumAndMultiply1("123456789", [][]int{{0,7},{1,3},{4,6}})) // [444444408 2106 10206]
     fmt.Println(sumAndMultiply1("987654321", [][]int{{0,7},{1,3},{4,6}})) // [345678980 18396 6516]
+
+    fmt.Println(sumAndMultiply2("10203004", [][]int{{0,7},{1,3},{4,6}})) // [12340, 4, 9]
+    fmt.Println(sumAndMultiply2("1000", [][]int{{0,3},{1,1}})) // [1, 0]
+    fmt.Println(sumAndMultiply2("9876543210", [][]int{{0,9}})) // [444444137]
+    fmt.Println(sumAndMultiply2("123456789", [][]int{{0,7},{1,3},{4,6}})) // [444444408 2106 10206]
+    fmt.Println(sumAndMultiply2("987654321", [][]int{{0,7},{1,3},{4,6}})) // [345678980 18396 6516]
 }
 
