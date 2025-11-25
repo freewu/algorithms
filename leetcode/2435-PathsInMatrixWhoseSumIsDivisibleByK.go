@@ -103,6 +103,26 @@ func numberOfPaths2(grid [][]int, k int) int {
     return dp[n][0]
 }
 
+func numberOfPaths3(grid [][]int, k int) int {
+    n, mod := len(grid[0]), 1_000_000_007
+    dp := make([][]int, n + 1)
+    for i := range dp {
+        dp[i] = make([]int, k)
+    }
+    dp[1][0] = 1
+    nf := make([]int, k) // 避免在循环内反复创建 []int
+    for i := range grid {
+        for j, x := range grid[i] {
+            for s := 0; s < k; s++ {
+                k1 := (s + x) % k
+                nf[s] = (dp[j+1][k1] + dp[j][k1]) % mod
+            }
+            copy(dp[j+1], nf) // 复制到 dp[j+1] 中
+        }
+    }
+    return dp[n][0] 
+}
+
 func main() {
     // Example 1:
     // <img src="https://assets.leetcode.com/uploads/2022/08/13/image-20220813183124-1.png" />
@@ -132,4 +152,8 @@ func main() {
     fmt.Println(numberOfPaths2([][]int{{5,2,4},{3,0,5},{0,7,2}}, 3)) // 2
     fmt.Println(numberOfPaths2([][]int{{0,0}}, 5)) // 1
     fmt.Println(numberOfPaths2([][]int{{7,3,4,9},{2,3,6,2},{2,3,7,0}}, 1)) // 10
+
+    fmt.Println(numberOfPaths3([][]int{{5,2,4},{3,0,5},{0,7,2}}, 3)) // 2
+    fmt.Println(numberOfPaths3([][]int{{0,0}}, 5)) // 1
+    fmt.Println(numberOfPaths3([][]int{{7,3,4,9},{2,3,6,2},{2,3,7,0}}, 1)) // 10
 }
