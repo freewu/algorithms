@@ -62,5 +62,11 @@ func main() {
 
     fmt.Println(smallestRepunitDivByK(10000)) // -1
     fmt.Println(smallestRepunitDivByK(9999)) // 36
-    fmt.Println(smallestRepunitDivByK(99999)) // 45
+    fmt.Println(smallestRepunitDivByK(99999)) // 45 
+    fmt.Println(smallestRepunitDivByK(8)) // -1
+    fmt.Println(smallestRepunitDivByK(64)) // -1
+    fmt.Println(smallestRepunitDivByK(99)) // 18
+    fmt.Println(smallestRepunitDivByK(100)) // -1
+    fmt.Println(smallestRepunitDivByK(1024)) // -1
+    fmt.Println(smallestRepunitDivByK(100_000)) // -1
 }
