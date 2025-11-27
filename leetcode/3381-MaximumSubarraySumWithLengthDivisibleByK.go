@@ -72,6 +72,27 @@ func maxSubarraySum1(nums []int, k int) int64 {
     return int64(res)
 }
 
+func maxSubarraySum2(nums []int, k int) int64 {
+    prefix, n := int64(0), len(nums)
+    arr := make([]int64, k)
+    for i := 0; i < k-1; i++ {
+        prefix += int64(nums[i])
+        arr[i+1] = prefix
+    }
+    res := prefix + int64(nums[k-1])
+    for i := k-1; i < n; i++ {
+        prefix += int64(nums[i])
+        cur := prefix - arr[(i+1)%k]
+        if cur > res {
+            res = cur
+        }
+        if prefix < arr[(i + 1) % k] {
+            arr[(i+1)%k] = prefix   
+        }
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: nums = [1,2], k = 1
@@ -100,4 +121,10 @@ func main() {
     fmt.Println(maxSubarraySum1([]int{-5,1,2,-3,4}, 2)) // 4
     fmt.Println(maxSubarraySum1([]int{1,2,3,4,5,6,7,8,9}, 2)) // 44
     fmt.Println(maxSubarraySum1([]int{9,8,7,6,5,4,3,2,1}, 2)) // 44
+
+    fmt.Println(maxSubarraySum2([]int{1,2}, 1)) // 3
+    fmt.Println(maxSubarraySum2([]int{-1,-2,-3,-4,-5}, 4)) // -10
+    fmt.Println(maxSubarraySum2([]int{-5,1,2,-3,4}, 2)) // 4
+    fmt.Println(maxSubarraySum2([]int{1,2,3,4,5,6,7,8,9}, 2)) // 44
+    fmt.Println(maxSubarraySum2([]int{9,8,7,6,5,4,3,2,1}, 2)) // 44
 }
