@@ -55,8 +55,8 @@ func maxKDivisibleComponents(n int, edges [][]int, values []int, k int) int {
     dfs = func(index, parent int) int {
         sum := values[index]
         for _, i := range graph[index] {
-            if i != parent {
-                sum += dfs(i, index)
+            if i != parent { // 避免访问父节点
+                sum += dfs(i, index) // 加上子树 y 的点权和，得到子树 x 的点权和
             }
         }
         if sum % k == 0 {
