@@ -1943,6 +1943,7 @@
 [3755. Find Maximum Balanced XOR Subarray Length](./leetcode/3755-FindMaximumBalancedXORSubarrayLength.go)   
 [3757. Number of Effective Subsequences](./leetcode/3757-NumberOfEffectiveSubsequences.go)   
 [3759. Count Elements With at Least K Greater Values](./leetcode/3759-CountElementsWithAtLeastKGreaterValues.go)   
+[3761. Minimum Absolute Distance Between Mirror Pairs](./leetcode/3761-MinimumAbsoluteDistanceBetweenMirrorPairs.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
