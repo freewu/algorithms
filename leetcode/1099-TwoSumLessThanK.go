@@ -46,4 +46,7 @@ func main() {
     fmt.Println(twoSumLessThanK([]int{34,23,1,24,75,33,54,8}, 60)) // 58
     // Explanation: In this case it is not possible to get a pair sum less that 15.
     fmt.Println(twoSumLessThanK([]int{10,20,30}, 15)) // -1
+
+    fmt.Println(twoSumLessThanK([]int{1,2,3,4,5,6,7,8,9}, 15)) // 14
+    fmt.Println(twoSumLessThanK([]int{9,8,7,6,5,4,3,2,1}, 15)) // 14
 }
