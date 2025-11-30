@@ -60,26 +60,54 @@ func minSubarray(nums []int, p int) int {
 
 func minSubarray1(nums []int, p int) int {
     n, inf := len(nums), 1 << 31
-    prefixSum := make([]int,n + 1)
+    prefix := make([]int,n + 1)
     for i := 0; i < n; i++ {
-        prefixSum[i+1] = prefixSum[i] + nums[i]
+        prefix[i+1] = prefix[i] + nums[i]
     }
-    remainder := prefixSum[n] % p
-    if remainder == 0 {
+    res, rem := inf, prefix[n] % p
+    if rem == 0 {
         return 0
     }
-    count, res := make(map[int]int), inf
+    count := make(map[int]int)
     for i := 0;i < n + 1; i++ {
-        t := (prefixSum[i] - remainder) % p 
+        t := (prefix[i] - rem) % p 
         if  index ,ok := count[t]; ok {
             res = min(res, i - index)
         }
-        count[prefixSum[i] % p] = i
+        count[prefix[i] % p] = i
     }
     if res == inf || res == len(nums) {
         return -1
     }
     return res 
+}
+
+func minSubarray2(nums []int, p int) int {
+    res, sum, n := 1 << 31, 0, len(nums)
+    // 整个数组的 sum%p = x, x=0 说明不用移除元素
+    // 去掉数组中的 一部分和%p = x, 说明移除这部分%p=0
+    // (后面的和+p)%p-(前面的和+p)%p == x
+    // s - z = x
+    for _, v := range nums {
+        sum = (sum + v) % p
+    }
+    x, s := sum % p, 0
+    if x == 0 { return 0 }
+    mp := make(map[int]int) // 前缀和出现k的最近一次下标v
+    mp[0] = -1              // 需要这个 前缀和为0的
+    for i := 0; i < n; i++ {
+        s = (s + nums[i] + p) % p
+        if pos, ok := mp[(s-x+p)%p]; ok { // 去掉(pos,i]
+            if i-pos != n {
+                res = min(res, i-pos)
+            }
+        }
+        mp[s] = i   
+    }
+    if res == 1 << 31 {
+        return -1
+    }
+    return res
 }
 
 func main() {
@@ -99,7 +127,18 @@ func main() {
     // Explanation: Here the sum is 6. which is already divisible by 3. Thus we do not need to remove anything.
     fmt.Println(minSubarray([]int{1,2,3}, 3)) // 0
 
+    fmt.Println(minSubarray([]int{1,2,3,4,5,6,7,8,9}, 3)) // 0
+    fmt.Println(minSubarray([]int{9,8,7,6,5,4,3,2,1}, 3)) // 0
+
     fmt.Println(minSubarray1([]int{3,1,4,2}, 6)) // 1
     fmt.Println(minSubarray1([]int{6,3,5,2}, 9)) // 2
     fmt.Println(minSubarray1([]int{1,2,3}, 3)) // 0
+    fmt.Println(minSubarray1([]int{1,2,3,4,5,6,7,8,9}, 3)) // 0
+    fmt.Println(minSubarray1([]int{9,8,7,6,5,4,3,2,1}, 3)) // 0
+
+    fmt.Println(minSubarray2([]int{3,1,4,2}, 6)) // 1
+    fmt.Println(minSubarray2([]int{6,3,5,2}, 9)) // 2
+    fmt.Println(minSubarray2([]int{1,2,3}, 3)) // 0
+    fmt.Println(minSubarray2([]int{1,2,3,4,5,6,7,8,9}, 3)) // 0
+    fmt.Println(minSubarray2([]int{9,8,7,6,5,4,3,2,1}, 3)) // 0
 }
