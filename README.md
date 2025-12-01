@@ -1945,6 +1945,7 @@
 [3759. Count Elements With at Least K Greater Values](./leetcode/3759-CountElementsWithAtLeastKGreaterValues.go)   
 [3761. Minimum Absolute Distance Between Mirror Pairs](./leetcode/3761-MinimumAbsoluteDistanceBetweenMirrorPairs.go)   
 [3762. Minimum Operations to Equalize Subarrays](./leetcode/3762-MinimumOperationsToEqualizeSubarrays.go)   
+[3763. Maximum Total Sum with Threshold Constraints](./leetcode/3763-MaximumTotalSumWithThresholdConstraints.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
