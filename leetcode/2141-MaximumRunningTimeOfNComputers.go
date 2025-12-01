@@ -92,6 +92,30 @@ func maxRunTime1(n int, batteries []int) int64 {
     return int64(left)
 }
 
+func maxRunTime2(n int, batteries []int) int64 {
+    res, sum := 0, 0
+    for _, v := range batteries {
+        sum += v
+    }
+    left, right := 0, sum / n
+    for left <= right {
+        total, mid := 0, left + (right - left) / 2
+        for _, v := range batteries {
+            if v < mid {
+                total += v
+            } else {
+                total += mid
+            }
+        }
+        if total >= n * mid {
+            res, left = mid, mid + 1
+        } else {
+            right = mid - 1
+        }
+    }
+    return int64(res)
+}
+
 func main() {
     // Example 1:
     // <img src="https://assets.leetcode.com/uploads/2022/01/06/example1-fit.png" />
@@ -115,6 +139,16 @@ func main() {
     // We can run the two computers simultaneously for at most 2 minutes, so we return 2.
     fmt.Println(maxRunTime(2, []int{1,1,1,1})) // 2
 
+    fmt.Println(maxRunTime(2, []int{1,2,3,4,5,6,7,8,9})) // 22
+    fmt.Println(maxRunTime(2, []int{9,8,7,6,5,4,3,2,1})) // 22
+
     fmt.Println(maxRunTime1(2, []int{3,3,3})) // 4
     fmt.Println(maxRunTime1(2, []int{1,1,1,1})) // 2
+    fmt.Println(maxRunTime1(2, []int{1,2,3,4,5,6,7,8,9})) // 22
+    fmt.Println(maxRunTime1(2, []int{9,8,7,6,5,4,3,2,1})) // 22
+
+    fmt.Println(maxRunTime2(2, []int{3,3,3})) // 4
+    fmt.Println(maxRunTime2(2, []int{1,1,1,1})) // 2
+    fmt.Println(maxRunTime2(2, []int{1,2,3,4,5,6,7,8,9})) // 22
+    fmt.Println(maxRunTime2(2, []int{9,8,7,6,5,4,3,2,1})) // 22
 }
