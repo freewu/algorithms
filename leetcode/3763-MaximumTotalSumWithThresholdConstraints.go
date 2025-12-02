@@ -85,7 +85,8 @@ func maxSum1(nums []int, threshold []int) int64 {
         pairs[i] = Pair{ threshold: threshold[i], neg: -nums[i], }
     }
     sort.Slice(pairs, func(i, j int) bool {
-        return pairs[i].threshold < pairs[j].threshold || (pairs[i].threshold == pairs[j].threshold && pairs[i].neg < pairs[j].neg)
+        return pairs[i].threshold < pairs[j].threshold || 
+               (pairs[i].threshold == pairs[j].threshold && pairs[i].neg < pairs[j].neg)
     })
     for i := 0; i < n; i++ {
         if pairs[i].threshold > i + 1 { // 当前是第i+1个元素（1-based），如果阈值不满足则返回当前和
