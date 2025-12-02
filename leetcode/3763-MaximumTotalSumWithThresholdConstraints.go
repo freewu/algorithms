@@ -43,6 +43,7 @@ package main
 //     1 <= threshold[i] <= n
 
 import "fmt"
+import "sort"
 
 // 超出时间限制 973 / 986 
 func maxSum(nums []int, threshold []int) int64 {
@@ -64,6 +65,28 @@ func maxSum(nums []int, threshold []int) int64 {
             }
         }
     }
+    for i := 0; i < n; i++ {
+        if pairs[i].threshold > i + 1 { // 当前是第i+1个元素（1-based），如果阈值不满足则返回当前和
+            return int64(res)
+        }
+        res -= pairs[i].neg  // 累加-nums[i]的相反数（即nums[i]）
+    }
+    return int64(res)
+}
+
+func maxSum1(nums []int, threshold []int) int64 {
+    res, n := 0, len(nums)
+    type Pair struct {  // 构造结构体切片，存储 threshold 和对应的 -nums （用于从小到大排序后取最大值）
+        threshold int
+        neg int
+    }
+    pairs := make([]Pair, n)
+    for i := 0; i < n; i++ {
+        pairs[i] = Pair{ threshold: threshold[i], neg: -nums[i], }
+    }
+    sort.Slice(pairs, func(i, j int) bool {
+        return pairs[i].threshold < pairs[j].threshold || (pairs[i].threshold == pairs[j].threshold && pairs[i].neg < pairs[j].neg)
+    })
     for i := 0; i < n; i++ {
         if pairs[i].threshold > i + 1 { // 当前是第i+1个元素（1-based），如果阈值不满足则返回当前和
             return int64(res)
@@ -104,4 +127,12 @@ func main() {
     fmt.Println(maxSum([]int{1,2,3,4,5,6,7,8,9}, []int{1,2,3,4,5,6,7,8,9})) // 45
     fmt.Println(maxSum([]int{9,8,7,6,5,4,3,2,1}, []int{1,2,3,4,5,6,7,8,9})) // 45
     fmt.Println(maxSum([]int{9,8,7,6,5,4,3,2,1}, []int{9,8,7,6,5,4,3,2,1})) // 45
+
+    fmt.Println(maxSum1([]int{1,10,4,2,1,6}, []int{5,1,5,5,2,2})) // 17
+    fmt.Println(maxSum1([]int{4,1,5,2,3}, []int{3,3,2,3,3})) // 0
+    fmt.Println(maxSum1([]int{2,6,10,13}, []int{2,1,1,1})) // 31
+    fmt.Println(maxSum1([]int{1,2,3,4,5,6,7,8,9}, []int{9,8,7,6,5,4,3,2,1})) // 45
+    fmt.Println(maxSum1([]int{1,2,3,4,5,6,7,8,9}, []int{1,2,3,4,5,6,7,8,9})) // 45
+    fmt.Println(maxSum1([]int{9,8,7,6,5,4,3,2,1}, []int{1,2,3,4,5,6,7,8,9})) // 45
+    fmt.Println(maxSum1([]int{9,8,7,6,5,4,3,2,1}, []int{9,8,7,6,5,4,3,2,1})) // 45
 }
