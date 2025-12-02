@@ -65,6 +65,20 @@ func countTrapezoids1(points [][]int) int {
     return res
 }
 
+func countTrapezoids2(points [][]int) int {
+    mp := make(map[int]int) // y -> count  评选与x轴即取两个y值相同的点
+    res, sum := 0,0  // 统计结果, 统计一个有多少个水平边
+    for _, point := range points {
+        count := mp[point[1]]
+        // sum - (count * (count - 1) / 2 表示除去当前y值有多少个水平与x轴的线
+        // *count 是因为每多一个点就多count个相同y值的水平线
+        res = (res + (sum - (count * (count - 1) / 2)) * count)
+        sum += count
+        mp[point[1]]++
+    }
+    return res %  1_000_000_007
+}
+
 func main() {
     // Example 1:
     // Input: points = [[1,0],[2,0],[3,0],[2,2],[3,2]]
@@ -86,4 +100,7 @@ func main() {
 
     fmt.Println(countTrapezoids1([][]int{{1,0},{2,0},{3,0},{2,2},{3,2}})) // 3
     fmt.Println(countTrapezoids1([][]int{{0,0},{1,0},{0,1},{2,1}})) // 1
+
+    fmt.Println(countTrapezoids2([][]int{{1,0},{2,0},{3,0},{2,2},{3,2}})) // 3
+    fmt.Println(countTrapezoids2([][]int{{0,0},{1,0},{0,1},{2,1}})) // 1
 }
