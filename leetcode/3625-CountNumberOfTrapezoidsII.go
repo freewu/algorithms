@@ -74,6 +74,48 @@ func countTrapezoids(points [][]int) int {
     return res
 }
 
+func countTrapezoids1(points [][]int) int {
+    type Pair struct{ x, y int }
+    res, groups, groups2 := 0, make(map[float64][]float64), make(map[Pair][]float64)  // 斜率 -> [截距], 中点 -> [斜率]
+    for i, p := range points {
+        x, y := p[0], p[1]
+        for _, q := range points[:i] {
+            x2, y2 := q[0], q[1]
+            dy, dx := y - y2, x - x2
+            k, b := math.MaxFloat64, float64(x)
+            if dx != 0 {
+                k, b = float64(dy) / float64(dx), float64(y * dx - dy * x) / float64(dx)
+            }
+            mid := Pair{x + x2, y + y2}
+            groups[k] = append(groups[k], b)
+            groups2[mid] = append(groups2[mid], k)
+        }
+    }
+    for _, row := range groups {
+        if len(row) == 1 { continue }
+        sum, count := 0, make(map[float64]int)
+        for _, v := range row {
+            count[v]++
+        }
+        for _, v := range count {
+            res += sum * v
+            sum += v
+        }
+    }
+    for _, row := range groups2 {
+        if len(row) == 1 { continue }
+        sum, count := 0, make(map[float64]int)
+        for _, v := range row {
+            count[v]++
+        }
+        for _, v := range count {
+            res -= sum * v // 平行四边形会统计两次，减去多统计的一次
+            sum += v
+        }
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: points = [[-3,2],[3,0],[2,3],[3,2],[2,-3]]
@@ -91,4 +133,7 @@ func main() {
     // <img src="https://assets.leetcode.com/uploads/2025/04/29/desmos-graph-5.png" />
     // There is only one trapezoid which can be formed.
     fmt.Println(countTrapezoids([][]int{{0,0},{1,0},{0,1},{2,1}})) // 1
+
+    fmt.Println(countTrapezoids1([][]int{{-3,2},{3,0},{2,3},{3,2},{2,-3}})) // 2
+    fmt.Println(countTrapezoids1([][]int{{0,0},{1,0},{0,1},{2,1}})) // 1
 }
