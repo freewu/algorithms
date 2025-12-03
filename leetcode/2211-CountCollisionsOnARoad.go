@@ -84,6 +84,17 @@ func main() {
     // No cars will collide with each other. Thus, the total number of collisions that will happen on the road is 0.
     fmt.Println(countCollisions("LLRR")) // 0
 
+    fmt.Println(countCollisions("LLLLLLLLL")) // 0
+    fmt.Println(countCollisions("RRRRRRRRR")) // 0
+    fmt.Println(countCollisions("SSSSSSSSS")) // 0
+    fmt.Println(countCollisions("LLLRRRSS")) // 3
+    fmt.Println(countCollisions("LRSLRSLRS")) // 5
+
     fmt.Println(countCollisions1("RLRSLL")) // 5
     fmt.Println(countCollisions1("LLRR")) // 0
+    fmt.Println(countCollisions1("LLLLLLLLL")) // 0
+    fmt.Println(countCollisions1("RRRRRRRRR")) // 0
+    fmt.Println(countCollisions1("SSSSSSSSS")) // 0
+    fmt.Println(countCollisions1("LLLRRRSS")) // 3
+    fmt.Println(countCollisions1("LRSLRSLRS")) // 5
 }
