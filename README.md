@@ -3993,6 +3993,7 @@ LCR 185. 统计结果概率
 [3673. Find Zombie Sessions](./leetcode/3673-FindZombieSessions.sql)   
 [3705. Find Golden Hour Customers](./leetcode/3705-FindGoldenHourCustomers.sql)   
 [3716. Find Churn Risk Customers](./leetcode/3716-FindChurnRiskCustomers.sql)   
+[3764. Most Common Course Pairs](./leetcode/3764-MostCommonCoursePairs.sql)   
 
 # Shell
 [192. Word Frequency](./leetcode/192-WordFrequency.sh)      
