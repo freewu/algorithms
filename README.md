@@ -3366,6 +3366,7 @@
 [3619. Count Islands With Total Value Divisible by K](./leetcode/3619-CountIslandsWithTotalValueDivisibleByK.go)   
 [3620. Network Recovery Pathways](./leetcode/3620-NetworkRecoveryPathways.go)   
 [3715. Sum of Perfect Square Ancestors](./leetcode/3715-SumOfPerfectSquareAncestors.go)   
+[3772. Maximum Subgraph Score in a Tree](./leetcode/3772-MaximumSubgraphScoreInATree.go)   
 
 # Trie
 [386. Lexicographical Numbers](./leetcode/386-LexicographicalNumbers.go)   
