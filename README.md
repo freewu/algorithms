@@ -1949,6 +1949,7 @@
 [3766. Minimum Operations to Make Binary Palindrome](./leetcode/3766-MinimumOperationsToMakeBinaryPalindrome.go)   
 [3767. Maximize Points After Choosing K Tasks](./leetcode/3767-MaximizePointsAfterChoosingKTasks.go)   
 [3768. Minimum Inversion Count in Subarrays of Fixed Length](./leetcode/3768-MinimumInversionCountInSubarraysOfFixedLength.go)   
+[3769. Sort Integers by Binary Reflection](./leetcode/3769-SortIntegersByBinaryReflection.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
