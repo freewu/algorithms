@@ -72,6 +72,15 @@ func main() {
     // Explanation: We can rearrange nums1 to become [5,7,4,1,2]. The product sum of [5,7,4,1,2] and [3,2,4,8,6] is 5*3 + 7*2 + 4*4 + 1*8 + 2*6 = 65.
     fmt.Println(minProductSum([]int{2,1,4,5,7}, []int{3,2,4,8,6})) // 65
 
+    fmt.Println(minProductSum([]int{1,2,3,4,5,6,7,8,9}, []int{9,8,7,6,5,4,3,2,1})) // 165
+    fmt.Println(minProductSum([]int{1,2,3,4,5,6,7,8,9}, []int{1,2,3,4,5,6,7,8,9})) // 165
+    fmt.Println(minProductSum([]int{9,8,7,6,5,4,3,2,1}, []int{1,2,3,4,5,6,7,8,9})) // 165
+    fmt.Println(minProductSum([]int{9,8,7,6,5,4,3,2,1}, []int{9,8,7,6,5,4,3,2,1})) // 165
+
     fmt.Println(minProductSum1([]int{5,3,4,2}, []int{4,2,2,5})) // 40
     fmt.Println(minProductSum1([]int{2,1,4,5,7}, []int{3,2,4,8,6})) // 65
+    fmt.Println(minProductSum1([]int{1,2,3,4,5,6,7,8,9}, []int{9,8,7,6,5,4,3,2,1})) // 165
+    fmt.Println(minProductSum1([]int{1,2,3,4,5,6,7,8,9}, []int{1,2,3,4,5,6,7,8,9})) // 165
+    fmt.Println(minProductSum1([]int{9,8,7,6,5,4,3,2,1}, []int{1,2,3,4,5,6,7,8,9})) // 165
+    fmt.Println(minProductSum1([]int{9,8,7,6,5,4,3,2,1}, []int{9,8,7,6,5,4,3,2,1})) // 165
 }
