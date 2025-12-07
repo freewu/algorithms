@@ -38,7 +38,6 @@ func countOdds(low int, high int) int {
     }
 }
 
-
 func countOdds1(low int, high int) int {
     if low % 2 == 0 {
         low++
@@ -55,8 +54,15 @@ func main() {
     // Explanation: The odd numbers between 8 and 10 are [9].
     fmt.Println(countOdds(8,10)) // 1
 
-    // Explanation: The odd numbers between 3 and 7 are [3,5,7].
+    fmt.Println(countOdds(0,0)) // 0
+    fmt.Println(countOdds(0,1_000_000_000)) // 500000000
+    fmt.Println(countOdds(1024,1_000_000_000)) // 499999488
+    fmt.Println(countOdds(1_000_000_000,1_000_000_000)) // 0
+
     fmt.Println(countOdds1(3,7)) // 3
-    // Explanation: The odd numbers between 8 and 10 are [9].
     fmt.Println(countOdds1(8,10)) // 1
+    fmt.Println(countOdds1(0,0)) // 0
+    fmt.Println(countOdds1(0,1_000_000_000)) // 500000000
+    fmt.Println(countOdds1(1024,1_000_000_000)) // 499999488
+    fmt.Println(countOdds1(1_000_000_000,1_000_000_000)) // 0
 }
