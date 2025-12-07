@@ -3022,6 +3022,7 @@
 [3753. Total Waviness of Numbers in Range II](./leetcode/3753-TotalWavinessOfNumbersInRangeII.go)   
 [3754. Concatenate Non-Zero Digits and Multiply by Sum I](./leetcode/3754-ConcatenateNonZeroDigitsAndMultiplyBySumI.go)   
 [3765. Complete Prime Number](./leetcode/3765-CompletePrimeNumber.go)   
+[3770. Largest Prime from Consecutive Prime Sum](./leetcode/3770-LargestPrimeFromConsecutivePrimeSum.go)   
 
 # Stack
 [225. Implement Stack using Queues](./leetcode/225-ImplementStackUsingQueues.go)   
