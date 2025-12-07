@@ -3017,6 +3017,7 @@
 [3752. Lexicographically Smallest Negated Permutation that Sums to Target](./leetcode/3752-LexicographicallySmallestNegatedPermutationThatSumsToTarget.go)   
 [3753. Total Waviness of Numbers in Range II](./leetcode/3753-TotalWavinessOfNumbersInRangeII.go)   
 [3754. Concatenate Non-Zero Digits and Multiply by Sum I](./leetcode/3754-ConcatenateNonZeroDigitsAndMultiplyBySumI.go)   
+[3765. Complete Prime Number](./leetcode/3765-CompletePrimeNumber.go)   
 
 # Stack
 [225. Implement Stack using Queues](./leetcode/225-ImplementStackUsingQueues.go)   
