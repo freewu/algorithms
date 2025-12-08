@@ -77,7 +77,28 @@ func sortByReflection1(nums []int) []int {
         }
         return nums[i] < nums[j]
     })
-    return nums    
+    return nums
+}
+
+func sortByReflection2(nums []int) []int {
+    binaryReflection := func(num int) int {
+        res := 0
+        for num > 0 {
+            res <<= 1
+            res += num & 0b01
+            num >>= 1
+        }
+        return res
+    }
+    sort.Slice(nums, func(i, j int) bool {
+        c1, c2 := binaryReflection(nums[i]), binaryReflection(nums[j])
+        if c1 != c2 {
+            return c1 < c2
+        } else {
+            return nums[i] < nums[j]
+        }
+    })
+    return nums
 }
 
 func main() {
@@ -111,4 +132,9 @@ func main() {
     fmt.Println(sortByReflection1([]int{3,6,5,8})) // [8,3,6,5]
     fmt.Println(sortByReflection1([]int{1,2,3,4,5,6,7,8,9})) // [1 2 4 8 3 6 5 7 9]
     fmt.Println(sortByReflection1([]int{9,8,7,6,5,4,3,2,1})) // [1 2 4 8 3 6 5 7 9]
+
+    fmt.Println(sortByReflection2([]int{4,5,4})) // [4,4,5]
+    fmt.Println(sortByReflection2([]int{3,6,5,8})) // [8,3,6,5]
+    fmt.Println(sortByReflection2([]int{1,2,3,4,5,6,7,8,9})) // [1 2 4 8 3 6 5 7 9]
+    fmt.Println(sortByReflection2([]int{9,8,7,6,5,4,3,2,1})) // [1 2 4 8 3 6 5 7 9]
 }
