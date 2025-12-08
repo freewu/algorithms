@@ -84,6 +84,33 @@ func specialTriplets1(nums []int) int {
     return res
 }
 
+func specialTriplets2(nums []int) int {
+    res, n, mx := 0, len(nums), nums[0]
+    for _, v := range nums { // 找出最大值
+        mx = max(mx, v)
+    }
+    count  := make([]int, mx + 1) 
+    for _, v := range nums { // 统计出现数量
+        count[v]++
+    }
+    freq := make([]int, mx + 1); 
+    freq[nums[0]] = 1 
+    for i := 1; i <= n - 2; i++ {
+        val := nums[i] 
+        if val == 0 {
+            res += freq[0] * (count[0] - freq[0] - 1) 
+        } else {
+            val0 := 2 * val 
+            if val0 <= mx {   
+                res += freq[val0] * (count[val0] - freq[val0])  
+            }
+        }
+        res %= 1_000_000_007 
+        freq[val]++
+    }
+    return res 
+}
+
 func main() {
     // Example 1:
     // Input: nums = [6,3,6]
@@ -125,4 +152,10 @@ func main() {
     fmt.Println(specialTriplets1([]int{8,4,2,8,4})) // 2
     fmt.Println(specialTriplets1([]int{1,2,3,4,5,6,7,8,9})) // 0
     fmt.Println(specialTriplets1([]int{9,8,7,6,5,4,3,2,1})) // 0
+
+    fmt.Println(specialTriplets2([]int{6,3,6})) // 1
+    fmt.Println(specialTriplets2([]int{0,1,0,0})) // 1
+    fmt.Println(specialTriplets2([]int{8,4,2,8,4})) // 2
+    fmt.Println(specialTriplets2([]int{1,2,3,4,5,6,7,8,9})) // 0
+    fmt.Println(specialTriplets2([]int{9,8,7,6,5,4,3,2,1})) // 0
 }
