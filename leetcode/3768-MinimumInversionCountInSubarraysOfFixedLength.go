@@ -86,6 +86,67 @@ func minInversionCount(nums []int, k int) int64 {
     return int64(res)
 }
 
+func minInversionCount1(nums []int, k int) int64 {
+    n := len(nums)
+    // coordinate compression
+    sorted := make([]int, n)
+    copy(sorted, nums)
+    sort.Ints(sorted)
+    uniq := make([]int, 0, n)
+    for i, v := range sorted {
+        if i == 0 || v != sorted[i-1] {
+            uniq = append(uniq, v)
+        }
+    }
+    m := len(uniq)
+    rank := make(map[int]int, m)
+    for i, v := range uniq {
+        rank[v] = i + 1 // 1-indexed for Fenwick tree
+    }
+    comp := make([]int, n)
+    for i, v := range nums {
+        comp[i] = rank[v]
+    }
+    // Fenwick tree
+    bit := make([]int, m+2)
+    update := func(idx int, delta int) {
+        for i := idx; i <= m; i += i & -i {
+            bit[i] += delta
+        }
+    }
+    query := func(idx int) int {
+        s := 0
+        for i := idx; i > 0; i -= i & -i {
+            s += bit[i]
+        }
+        return s
+    }
+    var inv int64 = 0
+    for i := 0; i < k; i++ {
+        v := comp[i]
+        greater := i - query(v) // number of previous elements > nums[i]
+        inv += int64(greater)
+        update(v, 1)
+    }
+    res := inv
+    for i := 0; i < n-k; i++ {
+        vx := comp[i]
+        vy := comp[i+k]
+        // remove nums[L]
+        lessX := query(vx - 1)
+        inv -= int64(lessX)
+        update(vx, -1)
+        // before adding nums[L+k], count elements > it in current window
+        total := k - 1
+        lessEqualY := query(vy)
+        greaterY := total - lessEqualY
+        inv += int64(greaterY)
+        update(vy, 1)
+        res = min(res, inv)
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: nums = [3,1,2,5,4], k = 3
@@ -115,4 +176,10 @@ func main() {
 
     fmt.Println(minInversionCount([]int{1,2,3,4,5,6,7,8,9}, 3)) // 0
     fmt.Println(minInversionCount([]int{9,8,7,6,5,4,3,2,1}, 3)) // 3
+
+    fmt.Println(minInversionCount1([]int{3,1,2,5,4}, 3)) // 0
+    fmt.Println(minInversionCount1([]int{5,3,2,1}, 4)) // 6
+    fmt.Println(minInversionCount1([]int{2,1}, 1)) // 0
+    fmt.Println(minInversionCount1([]int{1,2,3,4,5,6,7,8,9}, 3)) // 0
+    fmt.Println(minInversionCount1([]int{9,8,7,6,5,4,3,2,1}, 3)) // 3
 }
