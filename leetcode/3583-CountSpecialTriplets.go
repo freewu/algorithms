@@ -111,6 +111,18 @@ func specialTriplets2(nums []int) int {
     return res 
 }
 
+func specialTriplets3(nums []int) int {
+    res, mod := 0, 1_000_000_007
+    seen, seen2 := make([]int,200_002), make([]int,200_002)
+    for _, v := range nums {
+        res += seen2[v]
+        seen2[2 * v] += seen[2 * v]
+        seen[v]++
+    }
+    res = (res % mod + mod) % mod
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: nums = [6,3,6]
@@ -158,4 +170,10 @@ func main() {
     fmt.Println(specialTriplets2([]int{8,4,2,8,4})) // 2
     fmt.Println(specialTriplets2([]int{1,2,3,4,5,6,7,8,9})) // 0
     fmt.Println(specialTriplets2([]int{9,8,7,6,5,4,3,2,1})) // 0
+
+    fmt.Println(specialTriplets3([]int{6,3,6})) // 1
+    fmt.Println(specialTriplets3([]int{0,1,0,0})) // 1
+    fmt.Println(specialTriplets3([]int{8,4,2,8,4})) // 2
+    fmt.Println(specialTriplets3([]int{1,2,3,4,5,6,7,8,9})) // 0
+    fmt.Println(specialTriplets3([]int{9,8,7,6,5,4,3,2,1})) // 0
 }
