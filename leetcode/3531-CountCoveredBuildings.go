@@ -103,6 +103,28 @@ func countCoveredBuildings1(n int, buildings [][]int) (ans int) {
     return res
 }
 
+func countCoveredBuildings2(n int, buildings [][]int) int {
+    xmin, xmax, ymin, ymax := make([]int, n + 1), make([]int, n + 1), make([]int, n + 1), make([]int, n + 1)
+    for i := 0; i <= n; i++ {
+        xmin[i], ymin[i] = n + 1, n + 1
+    }
+    for _, b := range buildings {
+        xmin[b[0]] = min(xmin[b[0]], b[1])
+        xmax[b[0]] = max(xmax[b[0]], b[1])
+        ymin[b[1]] = min(ymin[b[1]], b[0])
+        ymax[b[1]] = max(ymax[b[1]], b[0])
+    }
+    res := 0
+    for _, b := range buildings {
+        if 0 < xmin[b[0]] && xmax[b[0]] <= n && 0 < ymin[b[1]] && ymax[b[1]] <= n  {
+            if xmin[b[0]] < b[1] && b[1] < xmax[b[0]] && ymin[b[1]] < b[0] && b[0] < ymax[b[1]] {
+                res++
+            }
+        }
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // <img src="https://assets.leetcode.com/uploads/2025/03/04/telegram-cloud-photo-size-5-6212982906394101085-m.jpg" />
@@ -139,4 +161,8 @@ func main() {
     fmt.Println(countCoveredBuildings1(3, [][]int{{1,2},{2,2},{3,2},{2,1},{2,3}})) // 1
     fmt.Println(countCoveredBuildings1(3, [][]int{{1,1},{1,2},{2,1},{2,2}})) // 0
     fmt.Println(countCoveredBuildings1(5, [][]int{{1,3},{3,2},{3,3},{3,5},{5,3}})) // 1
+
+    fmt.Println(countCoveredBuildings2(3, [][]int{{1,2},{2,2},{3,2},{2,1},{2,3}})) // 1
+    fmt.Println(countCoveredBuildings2(3, [][]int{{1,1},{1,2},{2,1},{2,2}})) // 0
+    fmt.Println(countCoveredBuildings2(5, [][]int{{1,3},{3,2},{3,3},{3,5},{5,3}})) // 1
 }
