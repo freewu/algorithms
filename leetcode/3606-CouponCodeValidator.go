@@ -41,6 +41,7 @@ package main
 import "fmt"
 import "slices"
 import "unicode"
+import "sort"
 
 func validateCoupons(code []string, businessLine []string, isActive []bool) []string {
     res, groups := []string{}, [4][]string{}
@@ -71,6 +72,32 @@ func validateCoupons(code []string, businessLine []string, isActive []bool) []st
     return res
 }
 
+func validateCoupons1(code []string, businessLine []string, isActive []bool) []string {
+    res := make([]string, 0, len(code))
+    business := []string{"electronics", "grocery", "pharmacy", "restaurant"}
+    l, r := 0, 0
+    isValidCode := func(code string) bool {
+        if len(code) == 0 { return false }
+        for _, r := range code {
+            if !unicode.IsNumber(r) && !unicode.IsLetter(r) && r != '_' {
+                return false
+            }
+        }
+        return true
+    }
+    for _, s := range business {
+        for i := 0; i < len(code); i++ {
+            if isActive[i] && businessLine[i] == s && isValidCode(code[i]) {
+                res = append(res, code[i])
+                r++
+            }
+        }
+        sort.Strings(res[l:r])
+        l = r
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: code = ["SAVE20","","PHARMA5","SAVE@20"], businessLine = ["restaurant","grocery","pharmacy","restaurant"], isActive = [true,true,true,true]
@@ -89,4 +116,7 @@ func main() {
     // Second coupon is valid.
     // Third coupon has invalid business line (invalid).
     fmt.Println(validateCoupons([]string{"GROCERY15","ELECTRONICS_50","DISCOUNT10"}, []string{"grocery","electronics","invalid"}, []bool{false,true,true})) //  ["ELECTRONICS_50"]
+
+    fmt.Println(validateCoupons1([]string{"SAVE20","","PHARMA5","SAVE@20"}, []string{"restaurant","grocery","pharmacy","restaurant"}, []bool{true,true,true,true})) // ["PHARMA5","SAVE20"]
+    fmt.Println(validateCoupons1([]string{"GROCERY15","ELECTRONICS_50","DISCOUNT10"}, []string{"grocery","electronics","invalid"}, []bool{false,true,true})) //  ["ELECTRONICS_50"]
 }
