@@ -2594,6 +2594,7 @@
 [3758. Convert Number Words to Digits](./leetcode/3758-ConvertNumberWordsToDigits.go)   
 [3760. Maximum Substrings With Distinct Start](./leetcode/3760-MaximumSubstringsWithDistinctStart.go)   
 [3773. Maximum Number of Equal Length Runs](./leetcode/3773-MaximumNumberOfEqualLengthRuns.go)   
+[3775. Reverse Words With Same Vowel Count](./leetcode/3775-ReverseWordsWithSameVowelCount.go)   
 
 # Dynamic Programming
 [276. Paint Fence](./leetcode/276-PaintFence.go)   
