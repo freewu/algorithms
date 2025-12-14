@@ -1952,6 +1952,7 @@
 [3769. Sort Integers by Binary Reflection](./leetcode/3769-SortIntegersByBinaryReflection.go)   
 [3771. Total Score of Dungeon Runs](./leetcode/3771-TotalScoreOfDungeonRuns.go)   
 [3774. Absolute Difference Between Maximum and Minimum K Elements](./leetcode/3774-AbsoluteDifferenceBetweenMaximumAndMinimumKElements.go)   
+[3776. Minimum Moves to Balance Circular Array](./leetcode/3776-MinimumMovesToBalanceCircularArray.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
