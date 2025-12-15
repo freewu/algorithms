@@ -98,11 +98,18 @@ func main() {
     // Explanation: There is 1 smooth descent period: [1]
     fmt.Println(getDescentPeriods([]int{1})) // 1
 
+    fmt.Println(getDescentPeriods([]int{1,2,3,4,5,6,7,8,9})) // 9
+    fmt.Println(getDescentPeriods([]int{9,8,7,6,5,4,3,2,1})) // 45
+
     fmt.Println(getDescentPeriods1([]int{3,2,1,4})) // 7
     fmt.Println(getDescentPeriods1([]int{8,6,7,7})) // 4
     fmt.Println(getDescentPeriods1([]int{1})) // 1
+    fmt.Println(getDescentPeriods1([]int{1,2,3,4,5,6,7,8,9})) // 9
+    fmt.Println(getDescentPeriods1([]int{9,8,7,6,5,4,3,2,1})) // 45
 
     fmt.Println(getDescentPeriods2([]int{3,2,1,4})) // 7
     fmt.Println(getDescentPeriods2([]int{8,6,7,7})) // 4
     fmt.Println(getDescentPeriods2([]int{1})) // 1
+    fmt.Println(getDescentPeriods2([]int{1,2,3,4,5,6,7,8,9})) // 9
+    fmt.Println(getDescentPeriods2([]int{9,8,7,6,5,4,3,2,1})) // 45
 }
