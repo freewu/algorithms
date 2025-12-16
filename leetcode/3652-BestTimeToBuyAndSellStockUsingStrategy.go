@@ -140,9 +140,22 @@ func main() {
     // Thus, the maximum possible profit is 9, which is achieved without any modification.
     fmt.Println(maxProfit([]int{5,4,3}, []int{1,1,0}, 2)) // 9
 
+    fmt.Println(maxProfit([]int{1,2,3,4,5,6,7,8,9}, []int{9,8,7,6,5,4,3,2,1}, 2)) // 165
+    fmt.Println(maxProfit([]int{1,2,3,4,5,6,7,8,9}, []int{1,2,3,4,5,6,7,8,9}, 2)) // 285
+    fmt.Println(maxProfit([]int{9,8,7,6,5,4,3,2,1}, []int{9,8,7,6,5,4,3,2,1}, 2)) // 285
+    fmt.Println(maxProfit([]int{9,8,7,6,5,4,3,2,1}, []int{1,2,3,4,5,6,7,8,9}, 2)) // 165
+
     fmt.Println(maxProfit1([]int{4,2,8}, []int{-1,0,1}, 2)) // 10
     fmt.Println(maxProfit1([]int{5,4,3}, []int{1,1,0}, 2)) // 9
+    fmt.Println(maxProfit1([]int{1,2,3,4,5,6,7,8,9}, []int{9,8,7,6,5,4,3,2,1}, 2)) // 165
+    fmt.Println(maxProfit1([]int{1,2,3,4,5,6,7,8,9}, []int{1,2,3,4,5,6,7,8,9}, 2)) // 285
+    fmt.Println(maxProfit1([]int{9,8,7,6,5,4,3,2,1}, []int{9,8,7,6,5,4,3,2,1}, 2)) // 285
+    fmt.Println(maxProfit1([]int{9,8,7,6,5,4,3,2,1}, []int{1,2,3,4,5,6,7,8,9}, 2)) // 165
 
     fmt.Println(maxProfit2([]int{4,2,8}, []int{-1,0,1}, 2)) // 10
     fmt.Println(maxProfit2([]int{5,4,3}, []int{1,1,0}, 2)) // 9
+    fmt.Println(maxProfit2([]int{1,2,3,4,5,6,7,8,9}, []int{9,8,7,6,5,4,3,2,1}, 2)) // 165
+    fmt.Println(maxProfit2([]int{1,2,3,4,5,6,7,8,9}, []int{1,2,3,4,5,6,7,8,9}, 2)) // 285
+    fmt.Println(maxProfit2([]int{9,8,7,6,5,4,3,2,1}, []int{9,8,7,6,5,4,3,2,1}, 2)) // 285
+    fmt.Println(maxProfit2([]int{9,8,7,6,5,4,3,2,1}, []int{1,2,3,4,5,6,7,8,9}, 2)) // 165
 }
