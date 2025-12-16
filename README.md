@@ -3372,6 +3372,7 @@
 [3620. Network Recovery Pathways](./leetcode/3620-NetworkRecoveryPathways.go)   
 [3715. Sum of Perfect Square Ancestors](./leetcode/3715-SumOfPerfectSquareAncestors.go)   
 [3772. Maximum Subgraph Score in a Tree](./leetcode/3772-MaximumSubgraphScoreInATree.go)   
+[3778. Minimum Distance Excluding One Maximum Weighted Edge](./leetcode/3778-MinimumDistanceExcludingOneMaximumWeightedEdge.go)   
 
 # Trie
 [386. Lexicographical Numbers](./leetcode/386-LexicographicalNumbers.go)   
