@@ -60,6 +60,23 @@ func maximumProfit(prices []int, k int) int64 {
     return dp[k][FREE]
 }
 
+func maximumProfit1(prices []int, k int) int64 {
+    res, dp := 0, make([]int, len(prices) + 1)
+    max := func (x, y int) int { if x > y { return x; }; return y; }
+    for t := 1; t <= k; t++ {
+        buy, sell, prev := -prices[0], prices[0], dp[t-1]
+        for i := t; i < len(prices); i++ {
+            tmp := dp[i]
+            dp[i] = max(dp[i-1], max(buy + prices[i], sell - prices[i]))
+            res = max(res, dp[i])
+            buy = max(buy, prev - prices[i])
+            sell = max(sell, prev + prices[i])
+            prev = tmp
+        }
+    }
+    return int64(res)
+}
+
 func main() {
     // Example 1:
     // Input: prices = [1,7,9,8,2], k = 2
@@ -81,4 +98,9 @@ func main() {
 
     fmt.Println(maximumProfit([]int{1,2,3,4,5,6,7,8,9}, 3)) // 8
     fmt.Println(maximumProfit([]int{9,8,7,6,5,4,3,2,1}, 3)) // 8
+
+    fmt.Println(maximumProfit1([]int{1,7,9,8,2}, 2)) // 14
+    fmt.Println(maximumProfit1([]int{12,16,19,19,8,1,19,13,9}, 3)) // 36
+    fmt.Println(maximumProfit1([]int{1,2,3,4,5,6,7,8,9}, 3)) // 8
+    fmt.Println(maximumProfit1([]int{9,8,7,6,5,4,3,2,1}, 3)) // 8
 }
