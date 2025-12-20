@@ -130,11 +130,15 @@ func main() {
     // All 3 columns are not sorted, so you will delete all 3.
     fmt.Println(minDeletionSize([]string{"zyx","wvu","tsr"})) // 3
 
+    fmt.Println(minDeletionSize([]string{"bluefrog","leetcode"})) // 6
+
     fmt.Println(minDeletionSize1([]string{"cba","daf","ghi"})) // 1
     fmt.Println(minDeletionSize1([]string{"a","b"})) // 0
     fmt.Println(minDeletionSize1([]string{"zyx","wvu","tsr"})) // 3
+    fmt.Println(minDeletionSize1([]string{"bluefrog","leetcode"})) // 6
 
     fmt.Println(minDeletionSize2([]string{"cba","daf","ghi"})) // 1
     fmt.Println(minDeletionSize2([]string{"a","b"})) // 0
     fmt.Println(minDeletionSize2([]string{"zyx","wvu","tsr"})) // 3
+    fmt.Println(minDeletionSize2([]string{"bluefrog","leetcode"})) // 6
 }
