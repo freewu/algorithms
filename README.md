@@ -1954,6 +1954,7 @@
 [3774. Absolute Difference Between Maximum and Minimum K Elements](./leetcode/3774-AbsoluteDifferenceBetweenMaximumAndMinimumKElements.go)   
 [3776. Minimum Moves to Balance Circular Array](./leetcode/3776-MinimumMovesToBalanceCircularArray.go)   
 [3779. Minimum Number of Operations to Have Distinct Elements](./leetcode/3779-MinimumNumberOfOperationsToHaveDistinctElements.go)   
+[3780. Maximum Sum of Three Numbers Divisible by Three](./leetcode/3780-MaximumSumOfThreeNumbersDivisibleByThree.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
