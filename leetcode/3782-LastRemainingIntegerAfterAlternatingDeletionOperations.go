@@ -45,6 +45,21 @@ func lastInteger(n int64) int64 {
     return (n - 1) & mask + 1
 }
 
+func lastInteger1(n int64) int64 {
+    if n <= 2 { return 1 }
+    switch n & 3 {
+    case 0:
+        return 4 * lastInteger1(n / 4) - 1
+    case 1:
+        return 4 * lastInteger1((n + 3) / 4) - 3
+    case 2:
+        return 4 * lastInteger1((n + 2) / 4) - 3
+    case 3:
+        return 4 * lastInteger1((n + 1) / 4) - 1
+    }
+    return -1
+}
+
 func main() {
     // Example 1:
     // Input: n = 8
@@ -81,4 +96,17 @@ func main() {
     fmt.Println(lastInteger(1024)) // 683
     fmt.Println(lastInteger(999_999_999_999_999)) // 712666616310443
     fmt.Println(lastInteger(1_000_000_000_000_000)) // 712666616310443
+
+    fmt.Println(lastInteger1(8)) // 3
+    fmt.Println(lastInteger1(5)) // 1
+    fmt.Println(lastInteger1(1)) // 1
+    fmt.Println(lastInteger1(64)) // 43
+    fmt.Println(lastInteger1(99)) // 35
+    fmt.Println(lastInteger1(100)) // 35
+    fmt.Println(lastInteger1(999)) // 675
+    fmt.Println(lastInteger1(1000)) // 675
+    fmt.Println(lastInteger1(1001)) // 681
+    fmt.Println(lastInteger1(1024)) // 683
+    fmt.Println(lastInteger1(999_999_999_999_999)) // 712666616310443
+    fmt.Println(lastInteger1(1_000_000_000_000_000)) // 712666616310443
 }
