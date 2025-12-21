@@ -2600,6 +2600,7 @@
 [3773. Maximum Number of Equal Length Runs](./leetcode/3773-MaximumNumberOfEqualLengthRuns.go)   
 [3775. Reverse Words With Same Vowel Count](./leetcode/3775-ReverseWordsWithSameVowelCount.go)   
 [3777. Minimum Deletions to Make Alternating Substring](./leetcode/3777-MinimumDeletionsToMakeAlternatingSubstring.go)   
+[3784. Minimum Deletion Cost to Make All Characters Equal](./leetcode/3784-MinimumDeletionCostToMakeAllCharactersEqual.go)   
 
 # Dynamic Programming
 [276. Paint Fence](./leetcode/276-PaintFence.go)   
