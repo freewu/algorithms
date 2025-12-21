@@ -85,4 +85,7 @@ func main() {
     // Output: 3
     // Explanation: We have to delete every column.
     fmt.Println(minDeletionSize([]string{"zyx","wvu","tsr"})) // 3
+
+    fmt.Println(minDeletionSize([]string{"bluefrog","leetcode"})) // 0
+    fmt.Println(minDeletionSize([]string{"leetcode","bluefrog"})) // 1
 }
