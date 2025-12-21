@@ -1956,6 +1956,7 @@
 [3779. Minimum Number of Operations to Have Distinct Elements](./leetcode/3779-MinimumNumberOfOperationsToHaveDistinctElements.go)   
 [3780. Maximum Sum of Three Numbers Divisible by Three](./leetcode/3780-MaximumSumOfThreeNumbersDivisibleByThree.go)   
 [3781. Maximum Score After Binary Swaps](./leetcode/3781-MaximumScoreAfterBinarySwaps.go)   
+[3785. Minimum Swaps to Avoid Forbidden Values](./leetcode/3785-MinimumSwapsToAvoidForbiddenValues.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
