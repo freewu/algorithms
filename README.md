@@ -3032,6 +3032,7 @@
 [3754. Concatenate Non-Zero Digits and Multiply by Sum I](./leetcode/3754-ConcatenateNonZeroDigitsAndMultiplyBySumI.go)   
 [3765. Complete Prime Number](./leetcode/3765-CompletePrimeNumber.go)   
 [3770. Largest Prime from Consecutive Prime Sum](./leetcode/3770-LargestPrimeFromConsecutivePrimeSum.go)   
+[3782. Last Remaining Integer After Alternating Deletion Operations](./leetcode/3782-LastRemainingIntegerAfterAlternatingDeletionOperations.go)   
 
 # Stack
 [225. Implement Stack using Queues](./leetcode/225-ImplementStackUsingQueues.go)   
