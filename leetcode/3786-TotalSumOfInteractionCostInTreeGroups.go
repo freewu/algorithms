@@ -92,6 +92,69 @@ func interactionCosts(n int, edges [][]int, group []int) int64 {
     return res
 }
 
+func interactionCosts1(n int, edges [][]int, group []int) int64 {
+    type stackItem struct {
+        node    int
+        parent  int
+        visited bool
+    }
+    // Build adjacency list
+    adj := make([][]int, n)
+    for _, e := range edges {
+        u, v := e[0], e[1]
+        adj[u] = append(adj[u], v)
+        adj[v] = append(adj[v], u)
+    }
+    // Compute total counts for each group
+    var total [21]int
+    for _, g := range group {
+        total[g]++
+    }
+    subtreeCounts := make([][21]int, n)
+    res := int64(0)
+    // Iterative post-order DFS traversal
+    stack := []stackItem{{node: 0, parent: -1, visited: false}}
+    for len(stack) > 0 {
+        item := stack[len(stack)-1]
+        stack = stack[:len(stack)-1]
+        u, parent, visited := item.node, item.parent, item.visited
+        if !visited {
+            // Push back as visited for later processing
+            stack = append(stack, stackItem{u, parent, true})
+            // Push children (neighbors excluding parent)
+            for _, v := range adj[u] {
+                if v != parent {
+                    stack = append(stack, stackItem{v, u, false})
+                }
+            }
+        } else {
+            // Calculate subtree counts for current node
+            var cnt [21]int
+            cnt[group[u]] = 1
+            for _, v := range adj[u] {
+                if v != parent {
+                    childCnt := subtreeCounts[v]
+                    for g := 1; g <= 20; g++ {
+                        cnt[g] += childCnt[g]
+                    }
+                }
+            }
+            subtreeCounts[u] = cnt
+            // Calculate contribution of the edge to parent if not root
+            if parent != -1 {
+                var contrib int64 = 0
+                for g := 1; g <= 20; g++ {
+                    c := cnt[g]
+                    total := total[g]
+                    contrib += int64(c) * int64(total - c)
+                }
+                res += contrib
+            }
+        }
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: n = 3, edges = [[0,1],[1,2]], group = [1,1,1]
@@ -127,4 +190,9 @@ func main() {
     // Explanation:
     // All nodes belong to different groups and there are no valid pairs. Therefore, the total interaction cost is 0.
     fmt.Println(interactionCosts(2, [][]int{{0,1}}, []int{9,8})) // 0
+
+    fmt.Println(interactionCosts1(3, [][]int{{0,1},{1,2}}, []int{1,1,1})) // 4
+    fmt.Println(interactionCosts1(3, [][]int{{0,1},{1,2}}, []int{3,2,3})) // 2
+    fmt.Println(interactionCosts1(4, [][]int{{0,1},{0,2},{0,3}}, []int{1,1,4,4})) // 3
+    fmt.Println(interactionCosts1(2, [][]int{{0,1}}, []int{9,8})) // 0
 }
