@@ -38,6 +38,7 @@ package main
 
 import "fmt"
 import "slices"
+import "sort"
 
 func maximumHappinessSum(happiness []int, k int) int64 {
     res := 0
@@ -47,6 +48,19 @@ func maximumHappinessSum(happiness []int, k int) int64 {
             break
         }
         res += v - i // 要进行 k 轮每次 -1,减 i 相当于在在第几轮取
+    }
+    return int64(res)
+}
+
+func maximumHappinessSum1(happiness []int, k int) int64 {
+    n, count := len(happiness), 1
+    sort.Ints(happiness)
+    res := happiness[n - 1]
+    for i := n - 2; i >= n - k; i-- {
+        if happiness[i] - count > 0 {
+            res += happiness[i] - count
+        }
+        count++
     }
     return int64(res)
 }
@@ -75,4 +89,13 @@ func main() {
     // - Pick the child with the happiness value == 5. The happiness value of the remaining children becomes [1,2,3].
     // The sum of the happiness values of the selected children is 5.
     fmt.Println(maximumHappinessSum([]int{2,3,4,5}, 1)) // 5
+
+    fmt.Println(maximumHappinessSum([]int{1,2,3,4,5,6,7,8,9}, 2)) // 16
+    fmt.Println(maximumHappinessSum([]int{9,8,7,6,5,4,3,2,1}, 2)) // 16
+
+    fmt.Println(maximumHappinessSum1([]int{1,2,3}, 2)) // 4
+    fmt.Println(maximumHappinessSum1([]int{1,1,1,1}, 2)) // 1
+    fmt.Println(maximumHappinessSum1([]int{2,3,4,5}, 1)) // 5
+    fmt.Println(maximumHappinessSum1([]int{1,2,3,4,5,6,7,8,9}, 2)) // 16
+    fmt.Println(maximumHappinessSum1([]int{9,8,7,6,5,4,3,2,1}, 2)) // 16
 }
