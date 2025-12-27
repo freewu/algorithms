@@ -77,4 +77,11 @@ func main() {
     // Output: 4
     // Explanation: It is best to close the shop at the 4th hour as customers arrive at each hour.
     fmt.Println(bestClosingTime("YYYY")) // 4
+
+    fmt.Println(bestClosingTime("YYYYYYYYYY")) // 10
+    fmt.Println(bestClosingTime("NNNNNNNNNN")) // 0
+    fmt.Println(bestClosingTime("YYYYYNNNNN")) // 5
+    fmt.Println(bestClosingTime("NNNNNYYYYY")) // 0
+    fmt.Println(bestClosingTime("YNYNYNYNYN")) // 1
+    fmt.Println(bestClosingTime("NYNYNYNYNY")) // 0
 }
