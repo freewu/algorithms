@@ -61,43 +61,16 @@ func countNegatives1(grid [][]int) int {
 }
 
 func main() {
-    fmt.Println(
-        countNegatives(
-            [][]int{
-                {4,3,2,-1},
-                {3,2,1,-1},
-                {1,1,-1,-2},
-                {-1,-1,-2,-3},
-            },
-        ),
-    ) // 8
+    // Example 1:
+    // Input: grid = [[4,3,2,-1],[3,2,1,-1],[1,1,-1,-2],[-1,-1,-2,-3]]
+    // Output: 8
+    // Explanation: There are 8 negatives number in the matrix.
+    fmt.Println(countNegatives([][]int{ {4,3,2,-1}, {3,2,1,-1}, {1,1,-1,-2}, {-1,-1,-2,-3}  })) // 8
+    // Example 2:
+    // Input: grid = [[3,2],[1,0]]
+    // Output: 0
+    fmt.Println(countNegatives([][]int{ {3,2}, {1,0}})) // 0
 
-    fmt.Println(
-        countNegatives(
-            [][]int{
-                {3,2},
-                {1,0},
-            },
-        ),
-    ) // 0
-
-    fmt.Println(
-        countNegatives1(
-            [][]int{
-                {4,3,2,-1},
-                {3,2,1,-1},
-                {1,1,-1,-2},
-                {-1,-1,-2,-3},
-            },
-        ),
-    ) // 8
-
-    fmt.Println(
-        countNegatives1(
-            [][]int{
-                {3,2},
-                {1,0},
-            },
-        ),
-    ) // 0
+    fmt.Println(countNegatives1([][]int{ {4,3,2,-1}, {3,2,1,-1}, {1,1,-1,-2}, {-1,-1,-2,-3}  })) // 8
+    fmt.Println(countNegatives1([][]int{ {3,2}, {1,0}})) // 0
 }
