@@ -62,6 +62,29 @@ func dietPlanPerformance(calories []int, k int, lower int, upper int) int {
     return res
 }
 
+func dietPlanPerformance1(calories []int, k int, lower int, upper int) int {
+    res, n := 0, len(calories)
+    prefix := make([]int, n)
+    for i := 0; i < n ; i++ {
+        prefix[i] += calories[i]
+        if i - 1 >= 0 {
+            prefix[i] += prefix[i-1]
+        }
+    }
+    for i := k-1; i < n; i++ {
+        sum := prefix[i]
+        if i - k >=0 {
+            sum -= prefix[i - k]
+        }
+        if sum > upper {
+            res++
+        } else if sum < lower {
+            res--
+        }
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: calories = [1,2,3,4,5], k = 1, lower = 3, upper = 3
@@ -84,4 +107,13 @@ func main() {
     // lower <= calories[1] + calories[2] <= upper so no change in points.
     // calories[2] + calories[3] < lower so 1 point is lost.
     fmt.Println(dietPlanPerformance([]int{6,5,0,0}, 2, 1, 5)) // 0
+
+    fmt.Println(dietPlanPerformance([]int{1,2,3,4,5,6,7,8,9}, 2, 1, 5)) // 6
+    fmt.Println(dietPlanPerformance([]int{9,8,7,6,5,4,3,2,1}, 2, 1, 5)) // 6
+
+    fmt.Println(dietPlanPerformance1([]int{1,2,3,4,5}, 1, 3, 3)) // 0
+    fmt.Println(dietPlanPerformance1([]int{3,2}, 2, 0, 1)) // 1
+    fmt.Println(dietPlanPerformance1([]int{6,5,0,0}, 2, 1, 5)) // 0
+    fmt.Println(dietPlanPerformance1([]int{1,2,3,4,5,6,7,8,9}, 2, 1, 5)) // 6
+    fmt.Println(dietPlanPerformance1([]int{9,8,7,6,5,4,3,2,1}, 2, 1, 5)) // 6
 }
