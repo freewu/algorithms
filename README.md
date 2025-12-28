@@ -3037,6 +3037,7 @@
 [3770. Largest Prime from Consecutive Prime Sum](./leetcode/3770-LargestPrimeFromConsecutivePrimeSum.go)   
 [3782. Last Remaining Integer After Alternating Deletion Operations](./leetcode/3782-LastRemainingIntegerAfterAlternatingDeletionOperations.go)   
 [3783. Mirror Distance of an Integer](./leetcode/3783-MirrorDistanceOfAnInteger.go)   
+[3789. Minimum Cost to Acquire Required Items](./leetcode/3789-MinimumCostToAcquireRequiredItems.go)   
 
 # Stack
 [225. Implement Stack using Queues](./leetcode/225-ImplementStackUsingQueues.go)   
