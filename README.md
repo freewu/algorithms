@@ -3039,6 +3039,7 @@
 [3783. Mirror Distance of an Integer](./leetcode/3783-MirrorDistanceOfAnInteger.go)   
 [3789. Minimum Cost to Acquire Required Items](./leetcode/3789-MinimumCostToAcquireRequiredItems.go)   
 [3790. Smallest All-Ones Multiple](./leetcode/3790-SmallestAllOnesMultiple.go)   
+[3791. Number of Balanced Integers in a Range](./leetcode/3791-NumberOfBalancedIntegersInARange.go)   
 
 # Stack
 [225. Implement Stack using Queues](./leetcode/225-ImplementStackUsingQueues.go)   
