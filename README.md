@@ -1957,6 +1957,7 @@
 [3780. Maximum Sum of Three Numbers Divisible by Three](./leetcode/3780-MaximumSumOfThreeNumbersDivisibleByThree.go)   
 [3781. Maximum Score After Binary Swaps](./leetcode/3781-MaximumScoreAfterBinarySwaps.go)   
 [3785. Minimum Swaps to Avoid Forbidden Values](./leetcode/3785-MinimumSwapsToAvoidForbiddenValues.go)   
+[3788. Maximum Score of a Split](./leetcode/3788-MaximumScoreOfASplit.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
