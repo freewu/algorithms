@@ -3038,6 +3038,7 @@
 [3782. Last Remaining Integer After Alternating Deletion Operations](./leetcode/3782-LastRemainingIntegerAfterAlternatingDeletionOperations.go)   
 [3783. Mirror Distance of an Integer](./leetcode/3783-MirrorDistanceOfAnInteger.go)   
 [3789. Minimum Cost to Acquire Required Items](./leetcode/3789-MinimumCostToAcquireRequiredItems.go)   
+[3790. Smallest All-Ones Multiple](./leetcode/3790-SmallestAllOnesMultiple.go)   
 
 # Stack
 [225. Implement Stack using Queues](./leetcode/225-ImplementStackUsingQueues.go)   
