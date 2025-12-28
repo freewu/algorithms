@@ -35,6 +35,7 @@ package main
 //     s consists of lowercase English letters.
 
 import "fmt"
+import "slices"
 
 // 超出时间限制 992 / 999 个通过的测试用例
 func lexSmallest(s string) string {
@@ -69,6 +70,22 @@ func lexSmallest(s string) string {
     return res 
 }
 
+// 超出时间限制 992 / 999
+func lexSmallest1(s string) string {
+    n := len(s)
+    res := s // k = 1 时，操作不改变 s
+    for k := 2; k <= n; k++ {
+        t := []byte(s[:k])
+        slices.Reverse(t)
+        res = min(res, string(t)+s[k:])
+
+        t = []byte(s[n-k:])
+        slices.Reverse(t)
+        res = min(res, s[:n-k]+string(t))
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: s = "dcab"
@@ -94,4 +111,11 @@ func main() {
 
     fmt.Println(lexSmallest("bluefrog")) // "bgorfeul"
     fmt.Println(lexSmallest("leetcode")) // "cteelode"
+
+    fmt.Println(lexSmallest1("dcab")) // "acdb"
+    fmt.Println(lexSmallest1("abba")) // "aabb"
+    fmt.Println(lexSmallest1("zxy")) // "xzy"
+    fmt.Println(lexSmallest1("bluefrog")) // "bgorfeul"
+    fmt.Println(lexSmallest1("leetcode")) // "cteelode"
 }
+
