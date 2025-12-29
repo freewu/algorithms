@@ -97,71 +97,37 @@ func pyramidTransition(bottom string, allowed []string) bool {
 }
 
 func pyramidTransition1(bottom string, allowed []string) bool {
-    // 思路：DFS
-    a := map[[2]byte][]byte{}
+    groups := [7][7][]byte{}
     for _, s := range allowed {
-        key:=[2]byte{s[0], s[1]}
-        a[key]=append(a[key], s[2])
+        a, b := s[0]&31, s[1]&31 // A~F -> 1~6
+        groups[a][b] = append(groups[a][b], s[2]&31)
     }
-    visited := map[string]bool{}
-    q := []string{bottom}
-    var dfs func(b [][]byte, i int, s []byte)
-    dfs = func(b [][]byte, i int, s []byte) {
-        if i == len(b) {
-            a := string(s)
-            if !visited[a] {
-                q = append(q, a)
-                visited[a] = true
-            }
-            return
-        }
-        for _, v := range b[i] {
-            s = append(s, v)
-            dfs(b, i+1, s)
-            s = s[:len(s)-1]
-        }
+    n := len(bottom)
+    pyramid := make([]int, n)
+    for i, ch := range bottom {
+        pyramid[n-1] |= int(ch&31) << (i * 3) // 等价于 pyramid[n-1][i] = ch&31
     }
-    var canForm func(s string) bool
-    canForm = func(s string) bool {
-        if len(s) == 1 {
-            return true
+    visted := make([]bool, 1<<((n-1)*3))
+    var dfs func(int, int) bool
+    dfs = func(i, j int) bool {
+        if i < 0 { return true }
+        if visted[pyramid[i]] { return false }
+        if j == i+1 {
+            visted[pyramid[i]] = true
+            return dfs(i-1, 0)
         }
-        l := len(s)
-        upper := make([][]byte, l-1)
-        for i := 1; i < l; i++ {
-            v, ok := a[[2]byte{s[i-1], s[i]}]
-            if !ok {
-                return false
-            } 
-            upper[i-1] = v
-        }
-        q := []string{}
-        var dfs func(b [][]byte, i int, s []byte)
-        dfs = func(b [][]byte, i int, s []byte) {
-            if i == len(b) {
-                a := string(s)
-                if !visited[a] {
-                    q = append(q, a)
-                    visited[a] = true
-                }
-                return
-            }
-            for _,v := range b[i] {
-                s = append(s, v)
-                dfs(b, i+1, s)
-                s = s[:len(s)-1]
-            }
-        }
-        dfs(upper, 0, []byte{})
-        for _, v := range q {
-            if canForm(v) {
+        for _, top := range groups[pyramid[i+1]>>(j*3)&7][pyramid[i+1]>>((j+1)*3)&7] {
+            pyramid[i] &^= 7 << (j * 3) // 清除之前填的字母，等价于 pyramid[i][j] = 0
+            pyramid[i] |= int(top) << (j * 3) // 等价于 pyramid[i][j] = top
+            if dfs(i, j + 1) {
                 return true
             }
         }
         return false
     }
-    return canForm(bottom)
+    return dfs(n - 2, 0)
 }
+
 
 func main() {
     // Example 1:
