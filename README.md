@@ -3040,6 +3040,7 @@
 [3789. Minimum Cost to Acquire Required Items](./leetcode/3789-MinimumCostToAcquireRequiredItems.go)   
 [3790. Smallest All-Ones Multiple](./leetcode/3790-SmallestAllOnesMultiple.go)   
 [3791. Number of Balanced Integers in a Range](./leetcode/3791-NumberOfBalancedIntegersInARange.go)   
+[3792. Sum of Increasing Product Blocks](./leetcode/3792-SumOfIncreasingProductBlocks.go)   
 
 # Stack
 [225. Implement Stack using Queues](./leetcode/225-ImplementStackUsingQueues.go)   
