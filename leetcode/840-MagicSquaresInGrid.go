@@ -29,19 +29,19 @@ package main
 import "fmt"
 
 func numMagicSquaresInside(grid [][]int) int {
-    res, col, preSum := 0, len(grid[0]), make([]int, len(grid))
+    res, col, prefix := 0, len(grid[0]), make([]int, len(grid))
     calc := func(grid [][]int, row, col int) bool {
-        visited, colSum := make(map[int]bool), make([]int, 3)
+        visited, sum := make(map[int]bool), make([]int, 3)
         for j := col; j > col-3; j -- {
             for i := row - 2; i <= row; i ++ {
                 if visited[grid[i][j]] ||  grid[i][j]> 9 || grid[i][j] < 1 {
                     return false
                 }
                 visited[grid[i][j]] = true
-                colSum[col-j] += grid[i][j]
+                sum[col-j] += grid[i][j]
             } 
         }
-        if colSum[0] != colSum[1] || colSum[0] != colSum[2] {
+        if sum[0] != sum[1] || sum[0] != sum[2] {
             return false
         } 
         if (grid[row][col] + grid[row-2][col-2]) != (grid[row][col-2] + grid[row-2][col]){
@@ -51,9 +51,9 @@ func numMagicSquaresInside(grid [][]int) int {
     }
     for i := 0; i < col; i++ {
         for j := 0; j < len(grid); j ++ {
-            preSum[j] += grid[j][i]
-            if i >= 3 { preSum[j] -= grid[j][i-3] }
-            if i >=2 && j >= 2 && preSum[j] == preSum[j-1] && preSum[j] == preSum[j-2] {
+            prefix[j] += grid[j][i]
+            if i >= 3 { prefix[j] -= grid[j][i-3] }
+            if i >=2 && j >= 2 && prefix[j] == prefix[j-1] && prefix[j] == prefix[j-2] {
                 if calc(grid, j, i) {
                     res ++
                 }
@@ -74,12 +74,7 @@ func main() {
     // while this one is not:
     // <img src="https://assets.leetcode.com/uploads/2020/09/11/magic_invalid.jpg" />
     // In total, there is only one magic square inside the given grid.
-    grid1 := [][]int{
-        {4,3,8,4},
-        {9,5,1,9},
-        {2,7,6,2},
-    }
-    fmt.Println(numMagicSquaresInside(grid1)) // 1
+    fmt.Println(numMagicSquaresInside([][]int{{4,3,8,4}, {9,5,1,9},{2,7,6,2}})) // 1
     // Example 2:
     // Input: grid = [[8]]
     // Output: 0
