@@ -204,48 +204,48 @@ func latestDayToCross2(row, col int, cells [][]int) int {
     return row * col - 1
 }
 
-func latestDayToCross3(row int, col int, cells [][]int) int {
-    directions := []struct{ x, y int }{{-1, 0}, {1, 0}, {0, -1}, {0, 1}}
-    src := row * col
-    dst := src + 1
-    fa := make([]int, dst+1)
-    for i := range fa {
-        fa[i] = i
+func latestDayToCross3(m, n int, cells [][]int) int {
+    var dirs = []struct{ x, y int }{{0, -1}, {0, 1}, {-1, 0}, {1, 0}} // 左右上下
+    // 0：水
+    // 1：陆地（待访问）
+    // 2：陆地（已访问）
+    state := make([][]int8, m)
+    for i := range state {
+        state[i] = make([]int8, n)
     }
-    find := func(x int) int {
-        res := x
-        for fa[res] != res {
-            res = fa[res]
+    // 能否从第一行到达 (r, c)
+    canReachFromTop := func(r, c int) bool {
+        if r == 0 { // 已经是第一行
+            return true
         }
-        for fa[x] != res {
-            fa[x], x = res, fa[x]
-        }
-        return res
-    }
-    merge := func(from, to int) { fa[find(from)] = find(to) }
-    same := func(x, y int) bool { return find(x) == find(y) }
-
-    land := make([][]bool, row)
-    for i := range land {
-        land[i] = make([]bool, col)
-    }
-    for day := len(cells) - 1; ; day-- {
-        p := cells[day]
-        r, c := p[0]-1, p[1]-1
-        v := r*col + c
-        for _, dir := range directions {
-            if x, y := r+dir.x, c+dir.y; x >= 0 && x < row && y >= 0 && y < col && land[x][y] {
-                merge(v, x*col+y)
+        for _, d := range dirs {
+            x, y := r+d.x, c+d.y
+            if 0 <= x && x < m && 0 <= y && y < n && state[x][y] == 2 {
+                return true
             }
         }
-        land[r][c] = true
-        if r == 0 {
-            merge(v, src)
+        return false
+    }
+    // 从 (r, c) 出发，能否到达最后一行
+    var dfs func(int, int) bool
+    dfs = func(r, c int) bool {
+        if r == m-1 {
+            return true
         }
-        if r == row-1 {
-            merge(v, dst)
+        state[r][c] = 2 // 已访问的陆地
+        for _, d := range dirs {
+            x, y := r+d.x, c+d.y
+            if 0 <= x && x < m && 0 <= y && y < n && state[x][y] == 1 && dfs(x, y) {
+                return true
+            }
         }
-        if same(src, dst) {
+        return false
+    }
+    for day := len(cells) - 1; ; day-- {
+        cell := cells[day]
+        r, c := cell[0]-1, cell[1]-1 // 改成从 0 开始的下标
+        state[r][c] = 1 // 待访问的陆地
+        if canReachFromTop(r, c) && dfs(r, c) {
             return day
         }
     }
