@@ -2,37 +2,38 @@ package main
 
 // 66. Plus One
 // Given a non-negative integer represented as a non-empty array of digits, plus one to the integer.
+
 // You may assume the integer do not contain any leading zero, except the number 0 itself.
+
 // The digits are stored such that the most significant digit is at the head of the list.
+
+// Example 1:
+// Input: digits = [1,2,3]
+// Output: [1,2,4]
+// Explanation: The array represents the integer 123.
+// Incrementing by one gives 123 + 1 = 124.
+// Thus, the result should be [1,2,4].
+
+// Example 2:
+// Input: digits = [4,3,2,1]
+// Output: [4,3,2,2]
+// Explanation: The array represents the integer 4321.
+// Incrementing by one gives 4321 + 1 = 4322.
+// Thus, the result should be [4,3,2,2].
+
+// Example 3:
+// Input: digits = [9]
+// Output: [1,0]
+// Explanation: The array represents the integer 9.
+// Incrementing by one gives 9 + 1 = 10.
+// Thus, the result should be [1,0].
 
 // Constraints:
 //     1 <= digits.length <= 100
 //     0 <= digits[i] <= 9
 //     digits does not contain any leading 0's.
 
-// Example 1:
-//     Input: digits = [1,2,3]
-//     Output: [1,2,4]
-//     Explanation: The array represents the integer 123.
-//     Incrementing by one gives 123 + 1 = 124.
-//     Thus, the result should be [1,2,4].
-
-// Example 2:
-//     Input: digits = [4,3,2,1]
-//     Output: [4,3,2,2]
-//     Explanation: The array represents the integer 4321.
-//     Incrementing by one gives 4321 + 1 = 4322.
-//     Thus, the result should be [4,3,2,2].
-
-// Example 3:
-//     Input: digits = [9]
-//     Output: [1,0]
-//     Explanation: The array represents the integer 9.
-//     Incrementing by one gives 9 + 1 = 10.
-//     Thus, the result should be [1,0].
-
 import "fmt"
-
 
 // 我最早的实现
 func plusOne(digits []int) []int {
@@ -87,15 +88,40 @@ func plusOne2(digits []int) []int {
 }
 
 func main() {
+    // Example 1:
+    // Input: digits = [1,2,3]
+    // Output: [1,2,4]
+    // Explanation: The array represents the integer 123.
+    // Incrementing by one gives 123 + 1 = 124.
+    // Thus, the result should be [1,2,4].
     fmt.Printf("plusOne([]int{1, 2, 3, 4, 8, 9, 0, 3, 4}) = %v\n",plusOne([]int{1, 2, 3, 4, 8, 9, 0, 3, 4})) // [1 2 3 4 8 9 0 3 5]
+    // Example 2:
+    // Input: digits = [4,3,2,1]
+    // Output: [4,3,2,2]
+    // Explanation: The array represents the integer 4321.
+    // Incrementing by one gives 4321 + 1 = 4322.
+    // Thus, the result should be [4,3,2,2].
     fmt.Printf("plusOne([]int{1, 2, 3, 4, 8, 9, 0, 3, 9}) = %v\n",plusOne([]int{1, 2, 3, 4, 8, 9, 0, 3, 9})) // [1 2 3 4 8 9 0 4 0]
+    // Example 3:
+    // Input: digits = [9]
+    // Output: [1,0]
+    // Explanation: The array represents the integer 9.
+    // Incrementing by one gives 9 + 1 = 10.
+    // Thus, the result should be [1,0].
     fmt.Printf("plusOne([]int{9, 9}) = %v\n",plusOne([]int{9, 9})) // [1 0 0]
+
+    fmt.Printf("plusOne([]int{1,2,3,4,5,6,7,8,9}) = %v\n",plusOne([]int{1,2,3,4,5,6,7,8,9})) // [1 2 3 4 5 6 7 9 0]
+    fmt.Printf("plusOne([]int{9,8,7,6,5,4,3,2,1}) = %v\n",plusOne([]int{9,8,7,6,5,4,3,2,1})) // [9 8 7 6 5 4 3 2 2]
 
     fmt.Printf("plusOne1([]int{1, 2, 3, 4, 8, 9, 0, 3, 4}) = %v\n",plusOne1([]int{1, 2, 3, 4, 8, 9, 0, 3, 4})) // [1 2 3 4 8 9 0 3 5]
     fmt.Printf("plusOne1([]int{1, 2, 3, 4, 8, 9, 0, 3, 9}) = %v\n",plusOne1([]int{1, 2, 3, 4, 8, 9, 0, 3, 9})) // [1 2 3 4 8 9 0 4 0]
     fmt.Printf("plusOne1([]int{9, 9}) = %v\n",plusOne1([]int{9, 9})) // [1 0 0]
+    fmt.Printf("plusOne1([]int{1,2,3,4,5,6,7,8,9}) = %v\n",plusOne1([]int{1,2,3,4,5,6,7,8,9})) // [1 2 3 4 5 6 7 9 0]
+    fmt.Printf("plusOne1([]int{9,8,7,6,5,4,3,2,1}) = %v\n",plusOne1([]int{9,8,7,6,5,4,3,2,1})) // [9 8 7 6 5 4 3 2 2]
 
     fmt.Printf("plusOne2([]int{1, 2, 3, 4, 8, 9, 0, 3, 4}) = %v\n",plusOne2([]int{1, 2, 3, 4, 8, 9, 0, 3, 4})) // [1 2 3 4 8 9 0 3 5]
     fmt.Printf("plusOne2([]int{1, 2, 3, 4, 8, 9, 0, 3, 9}) = %v\n",plusOne2([]int{1, 2, 3, 4, 8, 9, 0, 3, 9})) // [1 2 3 4 8 9 0 4 0]
     fmt.Printf("plusOne2([]int{9, 9}) = %v\n",plusOne2([]int{9, 9})) // [1 0 0]
+    fmt.Printf("plusOne2([]int{1,2,3,4,5,6,7,8,9}) = %v\n",plusOne2([]int{1,2,3,4,5,6,7,8,9})) // [1 2 3 4 5 6 7 9 0]
+    fmt.Printf("plusOne2([]int{9,8,7,6,5,4,3,2,1}) = %v\n",plusOne2([]int{9,8,7,6,5,4,3,2,1})) // [9 8 7 6 5 4 3 2 2]
 }
