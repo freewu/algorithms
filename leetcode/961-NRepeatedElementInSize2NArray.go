@@ -66,7 +66,12 @@ func main() {
     // Output: 5
     fmt.Println(repeatedNTimes([]int{5,1,5,2,5,3,5,4})) // 5
 
+    fmt.Println(repeatedNTimes([]int{1,2,3,4,5,6,7,8,9})) // 0
+    fmt.Println(repeatedNTimes([]int{9,8,7,6,5,4,3,2,1})) // 0
+
     fmt.Println(repeatedNTimes1([]int{1,2,3,3})) // 3
     fmt.Println(repeatedNTimes1([]int{2,1,2,5,3,2})) // 2
     fmt.Println(repeatedNTimes1([]int{5,1,5,2,5,3,5,4})) // 5
+    fmt.Println(repeatedNTimes1([]int{1,2,3,4,5,6,7,8,9})) // 0
+    fmt.Println(repeatedNTimes1([]int{9,8,7,6,5,4,3,2,1})) // 0
 }
