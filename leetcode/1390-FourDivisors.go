@@ -54,6 +54,29 @@ func sumFourDivisors(nums []int) int {
     return sum
 }
 
+const MX = 100_001
+
+var divisorNum, divisorSum [MX]int
+
+func init() {
+    for i := 1; i < MX; i++ {
+        for j := i; j < MX; j += i { // 枚举 i 的倍数 j
+            divisorNum[j]++ // i 是 j 的因子
+            divisorSum[j] += i
+        }
+    }
+}
+
+func sumFourDivisors1(nums []int) int {
+    res := 0
+    for _, v := range nums {
+        if divisorNum[v] == 4 {
+            res += divisorSum[v]
+        }
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: nums = [21,4,7]
@@ -72,4 +95,13 @@ func main() {
     // Input: nums = [1,2,3,4,5]
     // Output: 0
     fmt.Println(sumFourDivisors([]int{1,2,3,4,5})) // 0
+
+    fmt.Println(sumFourDivisors([]int{1,2,3,4,5,6,7,8,9})) // 27
+    fmt.Println(sumFourDivisors([]int{9,8,7,6,5,4,3,2,1})) // 27
+
+    fmt.Println(sumFourDivisors1([]int{21,4,7})) // 32
+    fmt.Println(sumFourDivisors1([]int{21,21})) // 64
+    fmt.Println(sumFourDivisors1([]int{1,2,3,4,5})) // 0
+    fmt.Println(sumFourDivisors1([]int{1,2,3,4,5,6,7,8,9})) // 27
+    fmt.Println(sumFourDivisors1([]int{9,8,7,6,5,4,3,2,1})) // 27
 }
