@@ -1961,6 +1961,7 @@
 [3795. Minimum Subarray Length With Distinct Sum At Least K](./leetcode/3795-MinimumSubarrayLengthWithDistinctSumAtLeastK.go)   
 [3796. Find Maximum Value in a Constrained Sequence](./leetcode/3796-FindMaximumValueInAConstrainedSequence.go)    
 [3797. Count Routes to Climb a Rectangular Grid](./leetcode/3797-CountRoutesToClimbARectangularGrid.go)   
+[3799. Word Squares II](./leetcode/3799-WordSquaresII.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
