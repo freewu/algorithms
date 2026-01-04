@@ -1962,6 +1962,7 @@
 [3796. Find Maximum Value in a Constrained Sequence](./leetcode/3796-FindMaximumValueInAConstrainedSequence.go)    
 [3797. Count Routes to Climb a Rectangular Grid](./leetcode/3797-CountRoutesToClimbARectangularGrid.go)   
 [3799. Word Squares II](./leetcode/3799-WordSquaresII.go)   
+[3801. Minimum Cost to Merge Sorted Lists](./leetcode/3801-MinimumCostToMergeSortedLists.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
