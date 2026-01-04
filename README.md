@@ -1960,6 +1960,7 @@
 [3788. Maximum Score of a Split](./leetcode/3788-MaximumScoreOfASplit.go)   
 [3795. Minimum Subarray Length With Distinct Sum At Least K](./leetcode/3795-MinimumSubarrayLengthWithDistinctSumAtLeastK.go)   
 [3796. Find Maximum Value in a Constrained Sequence](./leetcode/3796-FindMaximumValueInAConstrainedSequence.go)    
+[3797. Count Routes to Climb a Rectangular Grid](./leetcode/3797-CountRoutesToClimbARectangularGrid.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
