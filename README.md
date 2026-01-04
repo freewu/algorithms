@@ -2609,6 +2609,7 @@
 [3784. Minimum Deletion Cost to Make All Characters Equal](./leetcode/3784-MinimumDeletionCostToMakeAllCharactersEqual.go)   
 [3794. Reverse String Prefix](./leetcode/3794-ReverseStringPrefix.go)   
 [3798. Largest Even Number](./leetcode/3798-LargestEvenNumber.go)   
+[3800. Minimum Cost to Make Two Binary Strings Equal](./leetcode/3800-MinimumCostToMakeTwoBinaryStringsEqual.go)   
 
 # Dynamic Programming
 [276. Paint Fence](./leetcode/276-PaintFence.go)   
