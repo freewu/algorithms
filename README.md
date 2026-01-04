@@ -1958,6 +1958,7 @@
 [3781. Maximum Score After Binary Swaps](./leetcode/3781-MaximumScoreAfterBinarySwaps.go)   
 [3785. Minimum Swaps to Avoid Forbidden Values](./leetcode/3785-MinimumSwapsToAvoidForbiddenValues.go)   
 [3788. Maximum Score of a Split](./leetcode/3788-MaximumScoreOfASplit.go)   
+[3795. Minimum Subarray Length With Distinct Sum At Least K](./leetcode/3795-MinimumSubarrayLengthWithDistinctSumAtLeastK.go)
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
