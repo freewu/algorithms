@@ -52,6 +52,29 @@ func sumOfBlocks(n int) int {
     return res % mod
 }
 
+var dp []int
+
+func init() {
+    const mod = 1_000_000_007
+    nth := func (n int) (int, int) {
+        start := n * (n - 1) / 2 + 1
+        return start, start + n - 1
+    }
+    dp = make([]int, 1001)
+    for i := 1; i <= 1000; i++ {
+        start, end := nth(i)
+        prod := 1
+        for x := start; x <= end; x++ {
+            prod = prod * x % mod
+        }
+        dp[i] = (dp[i - 1] + prod) % mod
+    }
+}
+
+func sumOfBlocks1(n int) int {
+    return dp[n]
+}
+
 func main() {
     // Example 1:
     // Input: n = 3
@@ -84,4 +107,15 @@ func main() {
     fmt.Println(sumOfBlocks(110)) // 469386446
     fmt.Println(sumOfBlocks(999)) // 30330820
     fmt.Println(sumOfBlocks(1000)) // 587219233
+
+    fmt.Println(sumOfBlocks1(3)) // 127
+    fmt.Println(sumOfBlocks1(7)) // 6997165
+    fmt.Println(sumOfBlocks1(1)) // 1
+    fmt.Println(sumOfBlocks1(8)) // 103897425
+    fmt.Println(sumOfBlocks1(99)) // 518735420
+    fmt.Println(sumOfBlocks1(100)) // 523969427
+    fmt.Println(sumOfBlocks1(101)) // 91198711
+    fmt.Println(sumOfBlocks1(110)) // 469386446
+    fmt.Println(sumOfBlocks1(999)) // 30330820
+    fmt.Println(sumOfBlocks1(1000)) // 587219233
 }
