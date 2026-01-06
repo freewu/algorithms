@@ -117,6 +117,30 @@ func wordSquares1(words []string) [][]string {
     return res
 }
 
+func wordSquares2(words []string) [][]string {
+    // top[0] == left[0], top[3] == right[0], bottom[0] == left[3], bottom[3] == right[3]
+    slices.Sort(words) // 保证答案有序
+    res := [][]string{}
+    for i:= 0; i < len(words); i++ {
+        top := words[i]
+        for j := 0; j <len(words); j++ {
+            left := words[j]
+            if i == j || top[0] != left[0] { continue }
+            for k := 0; k <len(words); k++ {
+                right := words[k]
+                if i == k || j == k || top[3] != right[0] { continue }
+                for l := 0; l <len(words); l++ {
+                    bottom := words[l]
+                    if i != l && j != l && k != l && bottom[0] == left[3] && bottom[3] == right[3] {
+                        res = append(res, []string{top, left, right, bottom})
+                    }
+                }
+            }
+        }
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: words = ["able","area","echo","also"]
@@ -144,4 +168,8 @@ func main() {
     fmt.Println(wordSquares1([]string{"able","area","echo","also"})) // [["able","area","echo","also"],["area","able","also","echo"]]    
     fmt.Println(wordSquares1([]string{"code","cafe","eden","edge"})) // []
     fmt.Println(wordSquares1([]string{"blue","frog","leet","code"})) // []
+
+    fmt.Println(wordSquares2([]string{"able","area","echo","also"})) // [["able","area","echo","also"],["area","able","also","echo"]]    
+    fmt.Println(wordSquares2([]string{"code","cafe","eden","edge"})) // []
+    fmt.Println(wordSquares2([]string{"blue","frog","leet","code"})) // []
 }
