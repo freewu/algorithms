@@ -65,6 +65,7 @@ package main
 //     The sum of lists[i].length will not exceed 2000.
 
 import "fmt"
+import "sort"
 
 func minMergeCost(lists [][]int) int64 {
     abs := func(x int) int { if x < 0 { return -x; }; return x; }
@@ -110,6 +111,78 @@ func minMergeCost(lists [][]int) int64 {
         }
     }
     return int64(f[u - 1])
+}
+
+func minMergeCost1(lists [][]int) int64 {
+    abs := func(x int) int { if x < 0 { return -x; }; return x; }
+    merge := func (a, b []int) []int { // 合并两个有序数组（创建一个新数组）
+        i, n := 0, len(a)
+        j, m := 0, len(b)
+        res := make([]int, 0, n+m)
+        for {
+            if i == n {
+                return append(res, b[j:]...)
+            }
+            if j == m {
+                return append(res, a[i:]...)
+            }
+            if a[i] < b[j] {
+                res = append(res, a[i])
+                i++
+            } else {
+                res = append(res, b[j])
+                j++
+            }
+        }
+    }
+    calcSorted := func(lists [][]int) [][]int {
+        u := 1 << len(lists)
+        sorted := make([][]int, u)
+        for i, a := range lists {
+            highBit := 1 << i
+            for s, b := range sorted[:highBit] {
+                sorted[highBit|s] = merge(a, b)
+            }
+        }
+        return sorted
+    }
+    findMedianSortedArrays := func(a, b []int) int { // 寻找两个正序数组的中位数
+        if len(a) > len(b) {
+            a, b = b, a
+        }
+        m, n := len(a), len(b)
+        i := sort.Search(m, func(i int) bool {
+            j := (m+n+1)/2 - i - 2
+            return a[i] > b[j+1]
+        }) - 1
+        j := (m+n+1)/2 - i - 2
+        if i < 0 { return b[j] }
+        if j < 0 { return a[i] }
+        return max(a[i], b[j])
+    }
+    n := len(lists)
+    m := n / 2
+    sorted1, sorted2 := calcSorted(lists[:m]), calcSorted(lists[m:])
+    u := 1 << n
+    half := 1<<m - 1
+    sumLen, median := make([]int, u), make([]int, u) // 可以省略，但预处理出来，相比直接在后面 DP 中计算更快
+    for i := 1; i < u; i++ {
+        // 把 i 分成低 m 位和高 n-m 位
+        // 低 half 位去 sorted1 中找合并后的数组
+        // 高 n-half 位去 sorted2 中找合并后的数组
+        sumLen[i] = len(sorted1[i&half]) + len(sorted2[i>>m])
+        median[i] = findMedianSortedArrays(sorted1[i&half], sorted2[i>>m])
+    }
+    f := make([]int, u)
+    for i := range f {
+        if i&(i-1) == 0 { continue }
+        f[i] = 1 << 61
+        for j := i & (i - 1); j > i^j; j = (j - 1) & i {
+            k := i ^ j
+            f[i] = min(f[i], f[j]+f[k] + sumLen[i] + abs(median[j]-median[k]))
+        }
+    }
+    return int64(f[u-1])
 }
 
 func main() {
@@ -159,4 +232,13 @@ func main() {
     fmt.Println(minMergeCost([][]int{{1,2,3,4,5,6,7,8,9},{9,8,7,6,5,4,3,2,1}})) // 18
     fmt.Println(minMergeCost([][]int{{9,8,7,6,5,4,3,2,1},{1,2,3,4,5,6,7,8,9}})) // 18
     fmt.Println(minMergeCost([][]int{{9,8,7,6,5,4,3,2,1},{9,8,7,6,5,4,3,2,1}})) // 18
+
+    fmt.Println(minMergeCost1([][]int{{1,3,5},{2,4},{6,7,8}})) // 18
+    fmt.Println(minMergeCost1([][]int{{1,1,5},{1,4,7,8}})) // 10 
+    fmt.Println(minMergeCost1([][]int{{1},{3}})) // 4
+    fmt.Println(minMergeCost1([][]int{{1},{1}})) // 2
+    fmt.Println(minMergeCost1([][]int{{1,2,3,4,5,6,7,8,9},{1,2,3,4,5,6,7,8,9}})) // 18
+    fmt.Println(minMergeCost1([][]int{{1,2,3,4,5,6,7,8,9},{9,8,7,6,5,4,3,2,1}})) // 18
+    fmt.Println(minMergeCost1([][]int{{9,8,7,6,5,4,3,2,1},{1,2,3,4,5,6,7,8,9}})) // 18
+    fmt.Println(minMergeCost1([][]int{{9,8,7,6,5,4,3,2,1},{9,8,7,6,5,4,3,2,1}})) // 18
 }
