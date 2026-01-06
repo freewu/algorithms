@@ -53,13 +53,16 @@ func maxLevelSum(root *TreeNode) int {
             node := queue[0] // 出队列
             queue = queue[1:]
             sum += node.Val // 累加每层的值
-            if node.Left != nil { queue = append(queue, node.Left); }   // 如果存在左节点，加入到队列中
-            if node.Right != nil { queue = append(queue, node.Right); } // 如果存在右节点，加入到队列中
+            if node.Left != nil { // 如果存在左节点，加入到队列中
+                queue = append(queue, node.Left)
+            }   
+            if node.Right != nil { // 如果存在右节点，加入到队列中
+                queue = append(queue, node.Right)
+            }
         }
         level++
         if sum > res { // 如果是大的则
-            res = sum
-            index = level 
+            res, index = sum, level 
         }
     }
     return index
