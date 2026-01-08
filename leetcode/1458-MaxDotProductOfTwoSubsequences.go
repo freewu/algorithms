@@ -105,7 +105,16 @@ func main() {
     // Their dot product is -1.
     fmt.Println(maxDotProduct([]int{-1,-1}, []int{1,1})) // -1
 
+    fmt.Println(maxDotProduct([]int{1,2,3,4,5,6,7,8,9}, []int{1,2,3,4,5,6,7,8,9})) // 285
+    fmt.Println(maxDotProduct([]int{1,2,3,4,5,6,7,8,9}, []int{9,8,7,6,5,4,3,2,1})) // 236
+    fmt.Println(maxDotProduct([]int{9,8,7,6,5,4,3,2,1}, []int{1,2,3,4,5,6,7,8,9})) // 236
+    fmt.Println(maxDotProduct([]int{9,8,7,6,5,4,3,2,1}, []int{9,8,7,6,5,4,3,2,1})) // 285
+
     fmt.Println(maxDotProduct1([]int{2,1,-2,5}, []int{3,0,-6})) // 18
     fmt.Println(maxDotProduct1([]int{3,-2}, []int{2,-6,7})) // 21
     fmt.Println(maxDotProduct1([]int{-1,-1}, []int{1,1})) // -1
+    fmt.Println(maxDotProduct1([]int{1,2,3,4,5,6,7,8,9}, []int{1,2,3,4,5,6,7,8,9})) // 285
+    fmt.Println(maxDotProduct1([]int{1,2,3,4,5,6,7,8,9}, []int{9,8,7,6,5,4,3,2,1})) // 236
+    fmt.Println(maxDotProduct1([]int{9,8,7,6,5,4,3,2,1}, []int{1,2,3,4,5,6,7,8,9})) // 236
+    fmt.Println(maxDotProduct1([]int{9,8,7,6,5,4,3,2,1}, []int{9,8,7,6,5,4,3,2,1})) // 285
 }
