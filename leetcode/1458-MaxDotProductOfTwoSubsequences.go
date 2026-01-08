@@ -85,6 +85,24 @@ func maxDotProduct1(nums1 []int, nums2 []int) int {
     return dp[n][m]
 }
 
+func maxDotProduct2(nums1, nums2 []int) int {
+    n := len(nums2)
+    dp := make([]int, n + 1)
+    for i := range dp {
+        dp[i] = -1 << 31
+    }
+    max := func (x, y int) int { if x > y { return x; }; return y; }
+    for _, x := range nums1 {
+        prev := dp[0]
+        for j, y := range nums2 {
+            tmp := dp[j+1]
+            dp[j+1] = max(max(prev, 0)+x*y, max(dp[j+1], dp[j]))
+            prev = tmp
+        }
+    }
+    return dp[n]
+}
+
 func main() {
     // Example 1:
     // Input: nums1 = [2,1,-2,5], nums2 = [3,0,-6]
@@ -117,4 +135,12 @@ func main() {
     fmt.Println(maxDotProduct1([]int{1,2,3,4,5,6,7,8,9}, []int{9,8,7,6,5,4,3,2,1})) // 236
     fmt.Println(maxDotProduct1([]int{9,8,7,6,5,4,3,2,1}, []int{1,2,3,4,5,6,7,8,9})) // 236
     fmt.Println(maxDotProduct1([]int{9,8,7,6,5,4,3,2,1}, []int{9,8,7,6,5,4,3,2,1})) // 285
+
+    fmt.Println(maxDotProduct2([]int{2,1,-2,5}, []int{3,0,-6})) // 18
+    fmt.Println(maxDotProduct2([]int{3,-2}, []int{2,-6,7})) // 21
+    fmt.Println(maxDotProduct2([]int{-1,-1}, []int{1,1})) // -1
+    fmt.Println(maxDotProduct2([]int{1,2,3,4,5,6,7,8,9}, []int{1,2,3,4,5,6,7,8,9})) // 285
+    fmt.Println(maxDotProduct2([]int{1,2,3,4,5,6,7,8,9}, []int{9,8,7,6,5,4,3,2,1})) // 236
+    fmt.Println(maxDotProduct2([]int{9,8,7,6,5,4,3,2,1}, []int{1,2,3,4,5,6,7,8,9})) // 236
+    fmt.Println(maxDotProduct2([]int{9,8,7,6,5,4,3,2,1}, []int{9,8,7,6,5,4,3,2,1})) // 285
 }
