@@ -80,6 +80,56 @@ func minimumDeleteSum1(text1 string, text2 string) int {
     return dp[m][n]
 }
 
+func minimumDeleteSum2(s1, s2 string) int {
+    sum, n, m := 0, len(s1), len(s2)
+    for _, c := range s1 {
+        sum += int(c)
+    }
+    for _, c := range s2 {
+        sum += int(c)
+    }
+    f := make([][]int, n + 1)
+    for i := range f {
+        f[i] = make([]int, m + 1)
+    }
+    max := func (x, y int) int { if x > y { return x; }; return y; }
+    for i, x := range s1 {
+        for j, y := range s2 {
+            if x == y {
+                f[i + 1][j + 1] = f[i][j] + int(x)
+            } else {
+                f[i + 1][j + 1] = max(f[i][j + 1], f[i + 1][j])
+            }
+        }
+    }
+    return sum - f[n][m] * 2
+}
+
+// time: O(n*m), space: O(min(n,m))
+func minimumDeleteSum3(s1 string, s2 string) int {
+    n := len(s2)
+    if len(s1) < n {
+        s1, s2 = s2, s1
+        n = len(s2)
+    }
+    prev, curr := make([]int, n + 1), make([]int, n + 1)
+    for i := 1; i <= n; i++ {
+        prev[i] = prev[i - 1] + int(s2[ i- 1])
+    }
+    min := func (x, y int) int { if x < y { return x; }; return y; }
+    for i := range s1 {
+        curr[0] = prev[0] + int(s1[i])
+        for j := 1; j <= n; j++ {
+            if s1[i] == s2[j-1] {
+                curr[j] = prev[j-1]
+            } else {
+                curr[j] = min( prev[j] + int(s1[i]), curr[j-1] + int(s2[j-1]))
+            }
+        }
+        prev, curr = curr, prev
+    }
+    return prev[n]
+}
 
 func main() {
     // Explanation: Deleting "s" from "sea" adds the ASCII value of "s" (115) to the sum.
@@ -103,5 +153,19 @@ func main() {
     fmt.Println(minimumDeleteSum1("bluefrog","leetcode")) // 1051
     fmt.Println(minimumDeleteSum1("leetcode","bluefrog")) // 1051
     fmt.Println(minimumDeleteSum1("bluefrog","freewu")) // 1076
-    fmt.Println(minimumDeleteSum("leetcode","freewu")) // 1087
+    fmt.Println(minimumDeleteSum1("leetcode","freewu")) // 1087
+
+    fmt.Println(minimumDeleteSum2("sea","eat")) // 231
+    fmt.Println(minimumDeleteSum2("delete","leet")) // 430
+    fmt.Println(minimumDeleteSum2("bluefrog","leetcode")) // 1051
+    fmt.Println(minimumDeleteSum2("leetcode","bluefrog")) // 1051
+    fmt.Println(minimumDeleteSum2("bluefrog","freewu")) // 1076
+    fmt.Println(minimumDeleteSum2("leetcode","freewu")) // 1087
+
+    fmt.Println(minimumDeleteSum3("sea","eat")) // 231
+    fmt.Println(minimumDeleteSum3("delete","leet")) // 430
+    fmt.Println(minimumDeleteSum3("bluefrog","leetcode")) // 1051
+    fmt.Println(minimumDeleteSum3("leetcode","bluefrog")) // 1051
+    fmt.Println(minimumDeleteSum3("bluefrog","freewu")) // 1076
+    fmt.Println(minimumDeleteSum3("leetcode","freewu")) // 1087
 }
