@@ -40,7 +40,7 @@ func minimumDeleteSum(s1 string, s2 string) int {
             if i == 0 && j == 0 { 
                 continue 
             }
-            dp[1][j] = 10000000000
+            dp[1][j] = 10_000_000_000
             if i > 0 { 
                 dp[1][j] = min(dp[1][j], dp[0][j] + int(s1[i-1])) 
             }
@@ -93,6 +93,15 @@ func main() {
     // If instead we turned both strings into "lee" or "eet", we would get answers of 433 or 417, which are higher.
     fmt.Println(minimumDeleteSum("delete","leet")) // 430
 
+    fmt.Println(minimumDeleteSum("bluefrog","leetcode")) // 1051
+    fmt.Println(minimumDeleteSum("leetcode","bluefrog")) // 1051
+    fmt.Println(minimumDeleteSum("bluefrog","freewu")) // 1076
+    fmt.Println(minimumDeleteSum("leetcode","freewu")) // 1087
+
     fmt.Println(minimumDeleteSum1("sea","eat")) // 231
     fmt.Println(minimumDeleteSum1("delete","leet")) // 430
+    fmt.Println(minimumDeleteSum1("bluefrog","leetcode")) // 1051
+    fmt.Println(minimumDeleteSum1("leetcode","bluefrog")) // 1051
+    fmt.Println(minimumDeleteSum1("bluefrog","freewu")) // 1076
+    fmt.Println(minimumDeleteSum("leetcode","freewu")) // 1087
 }
