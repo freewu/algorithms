@@ -57,8 +57,18 @@ func maximalRectangle(matrix [][]byte) int {
 }
 
 func main() {
+    // Example 1:
+    // <img src="https://assets.leetcode.com/uploads/2020/09/14/maximal.jpg" />
+    // Input: matrix = [["1","0","1","0","0"],["1","0","1","1","1"],["1","1","1","1","1"],["1","0","0","1","0"]]
+    // Output: 6
     // Explanation: The maximal rectangle is shown in the above picture.
     fmt.Println(maximalRectangle([][]byte{{'1','0','1','0','0'},{'1','0','1','1','1'},{'1','1','1','1','1'},{'1','0','0','1','0'}})) // 6
+    // Example 2:
+    // Input: matrix = [["0"]]
+    // Output: 0
     fmt.Println(maximalRectangle([][]byte{{'0'}})) // 0
+    // Example 3:
+    // Input: matrix = [["1"]]
+    // Output: 1
     fmt.Println(maximalRectangle([][]byte{{'1'}})) // 1
 }
