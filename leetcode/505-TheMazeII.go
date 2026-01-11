@@ -102,7 +102,6 @@ func (pq *PriorityQueue) Pop() interface{} {
 func shortestDistance1(maze [][]int, start []int, destination []int) int {
     m, n := len(maze), len(maze[0])
     dirs := [][]int{{0, 1}, {1, 0}, {0, -1}, {-1, 0}} // Possible directions: up, right, down, left
-
     // Initialize distances with -1, indicating unreachable points
     distance := make([][]int, m)
     for i := range distance {
@@ -111,13 +110,11 @@ func shortestDistance1(maze [][]int, start []int, destination []int) int {
             distance[i][j] = -1 // Initialize distance to -1 (unvisited)
         }
     }
-
     // Initialize priority queue
     pq := &PriorityQueue{}
     heap.Init(pq)
     heap.Push(pq, Point{start[0], start[1], 0}) // Push starting point with distance 0
     distance[start[0]][start[1]] = 0            // Update distance to starting point
-
     for pq.Len() > 0 {
         p := heap.Pop(pq).(Point) // Pop the point with smallest distance from the priority queue
         if p.x == destination[0] && p.y == destination[1] {
@@ -136,6 +133,42 @@ func shortestDistance1(maze [][]int, start []int, destination []int) int {
         }
     }
     return -1 // If destination cannot be reached, return -1
+}
+
+func shortestDistance2(maze [][]int, start []int, destination []int) int {
+    m, n := len(maze), len(maze[0])
+    distance := make([][]int, m)
+    for i := range distance {
+        distance[i] = make([]int, n)
+        for j := range distance[i] {
+            distance[i][j] =  1 << 61
+        }
+    }
+    distance[start[0]][start[1]] = 0
+    dirs := [][]int{{0, 1}, {0, -1}, {-1, 0}, {1, 0}}
+    queue := [][]int{start}
+    for len(queue) > 0 {
+        s := queue[0]
+        queue = queue[1:]
+        for _, dir := range dirs {
+            x, y := s[0] + dir[0], s[1] + dir[1]
+            count := 0
+            for x >= 0 && y >= 0 && x < m && y < n && maze[x][y] == 0 {
+                x += dir[0]
+                y += dir[1]
+                count++
+            }
+            newX, newY := x - dir[0], y - dir[1]
+            if distance[s[0]][s[1]] + count < distance[newX][newY] {
+                distance[newX][newY] = distance[s[0]][s[1]] + count
+                queue = append(queue, []int{newX, newY})
+            }
+        }
+    }
+    if distance[destination[0]][destination[1]] == 1 << 61 {
+        return -1
+    }
+    return distance[destination[0]][destination[1]]
 }
 
 func main() {
@@ -165,7 +198,7 @@ func main() {
         {1,1,0,1,1},
         {0,0,0,0,0},
     }
-    fmt.Println(shortestDistance(maze2,[]int{0,4},[]int{3,2})) // -1
+    fmt.Println(shortestDistance(maze2,[]int{0,4}, []int{3,2})) // -1
     // Example 3:
     // Input: maze = [[0,0,0,0,0],[1,1,0,0,1],[0,0,0,0,0],[0,1,0,0,1],[0,1,0,0,0]], start = [4,3], destination = [0,1]
     // Output: -1
@@ -176,9 +209,13 @@ func main() {
         {0,1,0,0,1},
         {0,1,0,0,0},
     }
-    fmt.Println(shortestDistance(maze3,[]int{4,3},[]int{0,1})) // -1
+    fmt.Println(shortestDistance(maze3,[]int{4,3}, []int{0,1})) // -1
 
     fmt.Println(shortestDistance1(maze1,[]int{0,4}, []int{4,4})) // 12
-    fmt.Println(shortestDistance1(maze2,[]int{0,4},[]int{3,2})) // -1
-    fmt.Println(shortestDistance1(maze3,[]int{4,3},[]int{0,1})) // -1
+    fmt.Println(shortestDistance1(maze2,[]int{0,4}, []int{3,2})) // -1
+    fmt.Println(shortestDistance1(maze3,[]int{4,3}, []int{0,1})) // -1
+
+    fmt.Println(shortestDistance2(maze1,[]int{0,4}, []int{4,4})) // 12
+    fmt.Println(shortestDistance2(maze2,[]int{0,4}, []int{3,2})) // -1
+    fmt.Println(shortestDistance2(maze3,[]int{4,3}, []int{0,1})) // -1
 }
