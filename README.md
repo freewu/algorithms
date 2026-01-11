@@ -1966,6 +1966,7 @@
 [3802. Number of Ways to Paint Sheets](./leetcode/3802-NumberOfWaysToPaintSheets.go)   
 [3804. Number of Centered Subarrays](./leetcode/3804-NumberOfCenteredSubarrays.go)   
 [3805. Count Caesar Cipher Pairs](./leetcode/3805-CountCaesarCipherPairs.go)   
+[3806. Maximum Bitwise AND After Increment Operations](./leetcode/3806-MaximumBitwiseANDAfterIncrementOperations.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
