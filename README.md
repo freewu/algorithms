@@ -2612,6 +2612,7 @@
 [3794. Reverse String Prefix](./leetcode/3794-ReverseStringPrefix.go)   
 [3798. Largest Even Number](./leetcode/3798-LargestEvenNumber.go)   
 [3800. Minimum Cost to Make Two Binary Strings Equal](./leetcode/3800-MinimumCostToMakeTwoBinaryStringsEqual.go)   
+[3803. Count Residue Prefixes](./leetcode/3803-CountResiduePrefixes.go)   
 
 # Dynamic Programming
 [276. Paint Fence](./leetcode/276-PaintFence.go)   
