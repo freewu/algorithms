@@ -1964,6 +1964,7 @@
 [3799. Word Squares II](./leetcode/3799-WordSquaresII.go)   
 [3801. Minimum Cost to Merge Sorted Lists](./leetcode/3801-MinimumCostToMergeSortedLists.go)   
 [3802. Number of Ways to Paint Sheets](./leetcode/3802-NumberOfWaysToPaintSheets.go)   
+[3804. Number of Centered Subarrays](./leetcode/3804-NumberOfCenteredSubarrays.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
