@@ -117,6 +117,23 @@ func main() {
     // Since the areas above and below the line are equal, the output is 7/6 = 1.16667.
     fmt.Println(separateSquares([][]int{{0,0,2},{1,1,1}})) // 1.16667
 
+    fmt.Println(separateSquares([][]int{{1,2,3},{1,2,3}})) // 3.50001
+    fmt.Println(separateSquares([][]int{{1,2,3},{3,2,1}})) // 3.33333
+    fmt.Println(separateSquares([][]int{{3,2,1},{1,2,3}})) // 3.33333
+    fmt.Println(separateSquares([][]int{{3,2,1},{3,2,1}})) // 2.5
+    fmt.Println(separateSquares([][]int{{7,8,9},{3,2,1}})) // 12.44445
+    fmt.Println(separateSquares([][]int{{3,2,1},{3,2,1}})) // 2.5
+    fmt.Println(separateSquares([][]int{{7,8,9},{7,8,9}})) // 12.5
+    fmt.Println(separateSquares([][]int{{3,2,1},{7,8,9}})) // 12.44445
+
     fmt.Println(separateSquares1([][]int{{0,0,1},{2,2,1}})) // 1.00000
     fmt.Println(separateSquares1([][]int{{0,0,2},{1,1,1}})) // 1.16667
+    fmt.Println(separateSquares1([][]int{{1,2,3},{1,2,3}})) // 3.50001
+    fmt.Println(separateSquares1([][]int{{1,2,3},{3,2,1}})) // 3.33333
+    fmt.Println(separateSquares1([][]int{{3,2,1},{1,2,3}})) // 3.33333
+    fmt.Println(separateSquares1([][]int{{3,2,1},{3,2,1}})) // 2.5
+    fmt.Println(separateSquares1([][]int{{7,8,9},{3,2,1}})) // 12.44445
+    fmt.Println(separateSquares1([][]int{{3,2,1},{3,2,1}})) // 2.5
+    fmt.Println(separateSquares1([][]int{{7,8,9},{7,8,9}})) // 12.5
+    fmt.Println(separateSquares1([][]int{{3,2,1},{7,8,9}})) // 12.44445
 }
