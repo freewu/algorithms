@@ -3400,6 +3400,7 @@
 [3778. Minimum Distance Excluding One Maximum Weighted Edge](./leetcode/3778-MinimumDistanceExcludingOneMaximumWeightedEdge.go)   
 [3786. Total Sum of Interaction Cost in Tree Groups](./leetcode/3786-TotalSumOfInteractionCostInTreeGroups.go)   
 [3787. Find Diameter Endpoints of a Tree](./leetcode/3787-FindDiameterEndpointsOfATree.go)   
+[3807. Minimum Cost to Repair Edges to Traverse a Graph](./leetcode/3807-MinimumCostToRepairEdgesToTraverseAGraph.go)   
 
 # Trie
 [386. Lexicographical Numbers](./leetcode/386-LexicographicalNumbers.go)   
