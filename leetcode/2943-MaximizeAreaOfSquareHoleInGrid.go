@@ -90,4 +90,9 @@ func main() {
     // Explanation:
     // One way to get the maximum square-shaped hole is by removing horizontal bar 3, and vertical bar 4.
     fmt.Println(maximizeSquareHoleArea(2,3,[]int{2,3},[]int{2,4})) // 4
+
+    fmt.Println(maximizeSquareHoleArea(2,3,[]int{1,2,3,4,5,6,7,8,9},[]int{9,8,7,6,5,4,3,2,1})) // 100
+    fmt.Println(maximizeSquareHoleArea(2,3,[]int{1,2,3,4,5,6,7,8,9},[]int{1,2,3,4,5,6,7,8,9})) // 100
+    fmt.Println(maximizeSquareHoleArea(2,3,[]int{9,8,7,6,5,4,3,2,1},[]int{9,8,7,6,5,4,3,2,1})) // 100
+    fmt.Println(maximizeSquareHoleArea(2,3,[]int{9,8,7,6,5,4,3,2,1},[]int{1,2,3,4,5,6,7,8,9})) // 100
 }
