@@ -68,6 +68,53 @@ func maximumAND(nums []int, k int, m int) int {
     return res
 }
 
+func maximumAND1(nums []int, k int, m int) int {
+    res, mx, n := 0, 0, len(nums)
+    for _, v := range nums {
+        mx = max(mx, v+k)
+    }
+    b := 0
+    for x := mx; x > 0; x >>= 1 {
+        b++
+    }
+    count := make([]int, n)
+    for b--; b >= 0; b-- {
+        for i := range nums {
+            nums[i] %= 1 << (b + 1)
+        }
+        slices.Sort(nums)
+        copy(count, nums)
+        q := 0
+        p := 0
+        for i := range m {
+            j := n - i - 1
+            if nums[j]&(1<<b) == 0 {
+                q++
+                count[j] = 1 << b
+                p += count[j] - nums[j]
+            }
+        }
+        if q == 0 {
+            res |= 1 << b
+            for nums[0] & (1<<b) == 0 {
+                nums = nums[1:]
+                count = count[1:]
+            }
+            n = len(nums)
+        } else if p <= k {
+            k -= p
+            if n > m {
+                nums = nums[n-m : n]
+                count = count[n-m : n]
+                n = m
+            }
+            copy(nums, count)
+            res |= 1 << b
+        }
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: nums = [3,1,2], k = 8, m = 2
@@ -99,4 +146,10 @@ func main() {
 
     fmt.Println(maximumAND([]int{1,2,3,4,5,6,7,8,9}, 3, 2)) // 10
     fmt.Println(maximumAND([]int{9,8,7,6,5,4,3,2,1}, 3, 2)) // 10
+
+    fmt.Println(maximumAND1([]int{3,1,2}, 8, 2)) // 6
+    fmt.Println(maximumAND1([]int{1,2,8,4}, 7, 3)) // 4
+    fmt.Println(maximumAND1([]int{1,1}, 3, 2)) // 2
+    fmt.Println(maximumAND1([]int{1,2,3,4,5,6,7,8,9}, 3, 2)) // 10
+    fmt.Println(maximumAND1([]int{9,8,7,6,5,4,3,2,1}, 3, 2)) // 10
 }
