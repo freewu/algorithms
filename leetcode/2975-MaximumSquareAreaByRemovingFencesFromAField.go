@@ -105,6 +105,15 @@ func main() {
     // Explanation: It can be proved that there is no way to create a square field by removing fences.
     fmt.Println(maximizeSquareArea(6, 7, []int{2}, []int{4})) // -1
 
+    fmt.Println(maximizeSquareArea(6, 7, []int{1,2,3,4,5,6,7,8,9}, []int{1,2,3,4,5,6,7,8,9})) // 64
+    fmt.Println(maximizeSquareArea(6, 7, []int{1,2,3,4,5,6,7,8,9}, []int{9,8,7,6,5,4,3,2,1})) // 64
+    fmt.Println(maximizeSquareArea(6, 7, []int{9,8,7,6,5,4,3,2,1}, []int{1,2,3,4,5,6,7,8,9})) // 64
+    fmt.Println(maximizeSquareArea(6, 7, []int{9,8,7,6,5,4,3,2,1}, []int{9,8,7,6,5,4,3,2,1})) // 64
+
     fmt.Println(maximizeSquareArea1(4, 3, []int{2,3}, []int{2})) // 4
     fmt.Println(maximizeSquareArea1(6, 7, []int{2}, []int{4})) // -1
+    fmt.Println(maximizeSquareArea1(6, 7, []int{1,2,3,4,5,6,7,8,9}, []int{1,2,3,4,5,6,7,8,9})) // 64
+    fmt.Println(maximizeSquareArea1(6, 7, []int{1,2,3,4,5,6,7,8,9}, []int{9,8,7,6,5,4,3,2,1})) // 64
+    fmt.Println(maximizeSquareArea1(6, 7, []int{9,8,7,6,5,4,3,2,1}, []int{1,2,3,4,5,6,7,8,9})) // 64
+    fmt.Println(maximizeSquareArea1(6, 7, []int{9,8,7,6,5,4,3,2,1}, []int{9,8,7,6,5,4,3,2,1})) // 64
 }
