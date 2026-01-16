@@ -4037,6 +4037,7 @@ LCR 185. 统计结果概率
 [3716. Find Churn Risk Customers](./leetcode/3716-FindChurnRiskCustomers.sql)   
 [3764. Most Common Course Pairs](./leetcode/3764-MostCommonCoursePairs.sql)   
 [3793. Find Users with High Token Usage](./leetcode/3793-FindUsersWithHighTokenUsage.sql)   
+[3808. Find Emotionally Consistent Users](./leetcode/3808-FindEmotionallyConsistentUsers.sql)   
 
 # Shell
 [192. Word Frequency](./leetcode/192-WordFrequency.sh)      
