@@ -81,6 +81,21 @@ func largestSquareArea1(bottomLeft [][]int, topRight [][]int) int64 {
     return int64(res)
 }
 
+func largestSquareArea2(bottomLeft [][]int, topRight [][]int) int64 {
+    min := func (x, y int) int { if x < y { return x; }; return y; }
+    max := func (x, y int) int { if x > y { return x; }; return y; }
+    f := func(i, j, k int) int {
+        return max(min(topRight[i][k], topRight[j][k])-max(bottomLeft[i][k], bottomLeft[j][k]), 0)
+    }
+    w, n := 0, len(bottomLeft)
+    for i := range n {
+        for j := range i {
+            w = max(w, min(f(i, j, 0), f(i, j, 1)))
+        }
+    }
+    return int64(w * w)
+}
+
 func main() {
     // Example 1:
     // <img src="https://assets.leetcode.com/uploads/2024/01/05/example12.png" />
@@ -115,4 +130,9 @@ func main() {
     fmt.Println(largestSquareArea1([][]int{{1,1},{1,3},{1,5}}, [][]int{{5,5},{5,7},{5,9}})) // 4
     fmt.Println(largestSquareArea1([][]int{{1,1},{2,2},{1,2}}, [][]int{{3,3},{4,4},{3,4}})) // 1
     fmt.Println(largestSquareArea1([][]int{{1,1},{3,3},{3,1}}, [][]int{{2,2},{4,4},{4,2}})) // 0
+
+    fmt.Println(largestSquareArea2([][]int{{1,1},{2,2},{3,1}}, [][]int{{3,3},{4,4},{6,6}})) // 1
+    fmt.Println(largestSquareArea2([][]int{{1,1},{1,3},{1,5}}, [][]int{{5,5},{5,7},{5,9}})) // 4
+    fmt.Println(largestSquareArea2([][]int{{1,1},{2,2},{1,2}}, [][]int{{3,3},{4,4},{3,4}})) // 1
+    fmt.Println(largestSquareArea2([][]int{{1,1},{3,3},{3,1}}, [][]int{{2,2},{4,4},{4,2}})) // 0
 }
