@@ -2619,6 +2619,7 @@
 [3798. Largest Even Number](./leetcode/3798-LargestEvenNumber.go)   
 [3800. Minimum Cost to Make Two Binary Strings Equal](./leetcode/3800-MinimumCostToMakeTwoBinaryStringsEqual.go)   
 [3803. Count Residue Prefixes](./leetcode/3803-CountResiduePrefixes.go)   
+[3813. Vowel-Consonant Score](./leetcode/3813-VowelConsonantScore.go)   
 
 # Dynamic Programming
 [276. Paint Fence](./leetcode/276-PaintFence.go)   
