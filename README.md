@@ -3582,6 +3582,7 @@
 [3484. Design Spreadsheet](./leetcode/3484-DesignSpreadsheet.go)   
 [3508. Implement Router](./leetcode/3508-ImplementRouter.go)   
 [3709. Design Exam Scores Tracker](./leetcode/3709-DesignExamScoresTracker.go)   
+[3815. Design Auction System](./leetcode/3815-DesignAuctionSystem.go)   
 
 # Binary Search
 [278. First Bad Version](./leetcode/278-FirstBadVersion.go)   
