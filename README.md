@@ -1968,6 +1968,7 @@
 [3805. Count Caesar Cipher Pairs](./leetcode/3805-CountCaesarCipherPairs.go)   
 [3806. Maximum Bitwise AND After Increment Operations](./leetcode/3806-MaximumBitwiseANDAfterIncrementOperations.go)   
 [3809. Best Reachable Tower](./leetcode/3809-BestReachableTower.go)    
+[3810. Minimum Operations to Reach Target Array](./leetcode/3810-MinimumOperationsToReachTargetArray.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
