@@ -2621,6 +2621,7 @@
 [3800. Minimum Cost to Make Two Binary Strings Equal](./leetcode/3800-MinimumCostToMakeTwoBinaryStringsEqual.go)   
 [3803. Count Residue Prefixes](./leetcode/3803-CountResiduePrefixes.go)   
 [3813. Vowel-Consonant Score](./leetcode/3813-VowelConsonantScore.go)   
+[3816. Lexicographically Smallest String After Deleting Duplicate Characters](./leetcode/3816-LexicographicallySmallestStringAfterDeletingDuplicateCharacters.go)   
 
 # Dynamic Programming
 [276. Paint Fence](./leetcode/276-PaintFence.go)   
