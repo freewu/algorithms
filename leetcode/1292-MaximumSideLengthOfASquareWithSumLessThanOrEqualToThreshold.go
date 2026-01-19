@@ -65,6 +65,36 @@ func maxSideLength(mat [][]int, threshold int) int {
     }
 }
 
+func maxSideLength1(mat [][]int, threshold int) int {
+    m, n := len(mat), len(mat[0])
+    prefix := make([][]int, m+1)
+    for i := range prefix {
+        prefix[i] = make([]int, n+1)
+    }
+    for i := 1; i <= m; i++ {
+        for j := 1; j <= n; j++ {
+            prefix[i][j] = prefix[i-1][j] + prefix[i][j-1] - prefix[i-1][j-1] + mat[i-1][j-1]
+        }
+    }
+    min := func (x, y int) int { if x < y { return x; }; return y; }
+    getRect := func(x1, y1, x2, y2 int) int {
+        return prefix[x2][y2] - prefix[x1-1][y2] - prefix[x2][y1-1] + prefix[x1-1][y1-1]
+    }
+    res, r := 0, min(m, n)
+    for i := 1; i <= m; i++ {
+        for j := 1; j <= n; j++ {
+            for c := res + 1; c <= r; c++ {
+                if i+c-1 <= m && j+c-1 <= n && getRect(i, j, i+c-1, j+c-1) <= threshold {
+                    res = c
+                } else {
+                    break
+                }
+            }
+        }
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // <img src="https://assets.leetcode.com/uploads/2019/12/05/e1.png" />
@@ -88,4 +118,7 @@ func main() {
         {2,2,2,2,2},
     }
     fmt.Println(maxSideLength(mat2, 1)) // 0
+
+    fmt.Println(maxSideLength1(mat1, 4)) // 2
+    fmt.Println(maxSideLength1(mat2, 1)) // 0
 }
