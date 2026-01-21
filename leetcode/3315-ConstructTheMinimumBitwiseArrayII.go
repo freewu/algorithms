@@ -72,4 +72,7 @@ func main() {
     // For i = 1, the smallest ans[1] that satisfies ans[1] OR (ans[1] + 1) = 13 is 12, because 12 OR (12 + 1) = 13.
     // For i = 2, the smallest ans[2] that satisfies ans[2] OR (ans[2] + 1) = 31 is 15, because 15 OR (15 + 1) = 31.
     fmt.Println(minBitwiseArray([]int{11,13,31})) // [9,12,15]
+
+    fmt.Println(minBitwiseArray([]int{2,3,5,7,11,13,17,19,23})) // [-1 1 4 3 9 12 16 17 19]
+    fmt.Println(minBitwiseArray([]int{23,19,17,13,11,7,5,3,2})) // [19 17 16 12 9 3 4 1 -1]
 }
