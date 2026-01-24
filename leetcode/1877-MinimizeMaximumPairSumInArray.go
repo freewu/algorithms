@@ -78,6 +78,18 @@ func minPairSum3(nums []int) int {
     return res
 }
 
+func minPairSum4(nums []int) int {
+    sort.Ints(nums)
+    res, n := 0, len(nums)
+    for i := 0; i < n / 2; i++ {
+        sum := nums[i] + nums[n - 1 - i]
+        if sum > res {
+            res = sum
+        }
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: nums = [3,5,2,3]
@@ -92,12 +104,26 @@ func main() {
     // The maximum pair sum is max(3+5, 4+4, 6+2) = max(8, 8, 8) = 8.
     fmt.Println(minPairSum([]int{3,5,4,2,4,6})) // 8
 
+    fmt.Println(minPairSum([]int{1,2,3,4,5,6,7,8,9})) // 10
+    fmt.Println(minPairSum([]int{9,8,7,6,5,4,3,2,1})) // 10
+
     fmt.Println(minPairSum1([]int{3,5,2,3})) // 7
     fmt.Println(minPairSum1([]int{3,5,4,2,4,6})) // 8
+    fmt.Println(minPairSum1([]int{1,2,3,4,5,6,7,8,9})) // 10
+    fmt.Println(minPairSum1([]int{9,8,7,6,5,4,3,2,1})) // 10
 
     fmt.Println(minPairSum2([]int{3,5,2,3})) // 7
     fmt.Println(minPairSum2([]int{3,5,4,2,4,6})) // 8
+    fmt.Println(minPairSum2([]int{1,2,3,4,5,6,7,8,9})) // 10
+    fmt.Println(minPairSum2([]int{9,8,7,6,5,4,3,2,1})) // 10
 
     fmt.Println(minPairSum3([]int{3,5,2,3})) // 7
     fmt.Println(minPairSum3([]int{3,5,4,2,4,6})) // 8
+    fmt.Println(minPairSum3([]int{1,2,3,4,5,6,7,8,9})) // 10
+    fmt.Println(minPairSum3([]int{9,8,7,6,5,4,3,2,1})) // 10
+
+    fmt.Println(minPairSum4([]int{3,5,2,3})) // 7
+    fmt.Println(minPairSum4([]int{3,5,4,2,4,6})) // 8
+    fmt.Println(minPairSum4([]int{1,2,3,4,5,6,7,8,9})) // 10
+    fmt.Println(minPairSum4([]int{9,8,7,6,5,4,3,2,1})) // 10
 }
