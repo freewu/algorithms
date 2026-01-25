@@ -48,6 +48,19 @@ func minimumDifference(nums []int, k int) int {
     return res
 }
 
+func minimumDifference1(nums []int, k int) int {
+    if k == 1 { return 0 }
+    sort.Ints(nums)
+    res := int(^uint(0) >> 1)
+    for i := 0; i <= len(nums)-k; i++ {
+        diff := nums[i + k -1] - nums[i]
+        if diff < res {
+            res = diff
+        }
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: nums = [90], k = 1
@@ -68,4 +81,12 @@ func main() {
     // - [9,4,1,7]. The difference between the highest and lowest score is 7 - 1 = 6.
     // The minimum possible difference is 2.
     fmt.Println(minimumDifference([]int{9,4,1,7}, 2)) // 2
+
+    fmt.Println(minimumDifference([]int{1,2,3,4,5,6,7,8,9}, 2)) // 1
+    fmt.Println(minimumDifference([]int{9,8,7,6,5,4,3,2,1}, 2)) // 1
+
+    fmt.Println(minimumDifference1([]int{90}, 1)) // 0
+    fmt.Println(minimumDifference1([]int{9,4,1,7}, 2)) // 2
+    fmt.Println(minimumDifference1([]int{1,2,3,4,5,6,7,8,9}, 2)) // 1
+    fmt.Println(minimumDifference1([]int{9,8,7,6,5,4,3,2,1}, 2)) // 1
 }
