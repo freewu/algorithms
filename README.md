@@ -1971,6 +1971,7 @@
 [3810. Minimum Operations to Reach Target Array](./leetcode/3810-MinimumOperationsToReachTargetArray.go)   
 [3811. Number of Alternating XOR Partitions](./leetcode/3811-NumberOfAlternatingXORPartitions.go)   
 [3814. Maximum Capacity Within Budget](./leetcode/3814-MaximumCapacityWithinBudget.go)   
+[3818. Minimum Prefix Removal to Make Array Strictly Increasing](./leetcode/3818-MinimumPrefixRemovalToMakeArrayStrictlyIncreasing.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
