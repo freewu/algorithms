@@ -3063,6 +3063,7 @@
 [3790. Smallest All-Ones Multiple](./leetcode/3790-SmallestAllOnesMultiple.go)   
 [3791. Number of Balanced Integers in a Range](./leetcode/3791-NumberOfBalancedIntegersInARange.go)   
 [3792. Sum of Increasing Product Blocks](./leetcode/3792-SumOfIncreasingProductBlocks.go)   
+[3821. Find Nth Smallest Integer With K One Bits](./leetcode/3821-FindNthSmallestIntegerWithKOneBits.go)   
 
 # Stack
 [225. Implement Stack using Queues](./leetcode/225-ImplementStackUsingQueues.go)   
