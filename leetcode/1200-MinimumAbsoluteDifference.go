@@ -47,7 +47,7 @@ func minimumAbsDifference(arr []int) [][]int {
 
 func minimumAbsDifference1(arr []int) [][]int {
     sort.Ints(arr)
-    res :=  [][]int{}
+    res := [][]int{}
     if len(arr) < 2 {
         return res // 如果数组长度小于2，直接返回空切片
     }
@@ -59,6 +59,22 @@ func minimumAbsDifference1(arr []int) [][]int {
             res = [][]int{{arr[i], arr[i+1]}} // 重新初始化 res 添加当前元素对
         } else if mid == mn {
             res = append(res, []int{arr[i], arr[i+1]}) // 添加当前元素对
+        }
+    }
+    return res
+}
+
+func minimumAbsDifference2(arr []int) [][]int {
+    sort.Ints(arr)
+    res, mn := [][]int{}, 1 << 31
+    for i, x := range arr[:len(arr)-1] {
+        y := arr[i+1]
+        diff := y - x
+        if diff < mn {
+            mn = diff
+            res = [][]int{{x, y}}
+        } else if diff == mn {
+            res = append(res, []int{x, y})
         }
     }
     return res
@@ -79,7 +95,18 @@ func main() {
     // Output: [[-14,-10],[19,23],[23,27]]
     fmt.Println(minimumAbsDifference([]int{3,8,-10,23,19,-4,-14,27})) // [[-14,-10],[19,23],[23,27]]
 
+    fmt.Println(minimumAbsDifference([]int{1,2,3,4,5,6,7,8,9})) // [[1 2] [2 3] [3 4] [4 5] [5 6] [6 7] [7 8] [8 9]]
+    fmt.Println(minimumAbsDifference([]int{9,8,7,6,5,4,3,2,1})) // [[1 2] [2 3] [3 4] [4 5] [5 6] [6 7] [7 8] [8 9]]
+
     fmt.Println(minimumAbsDifference1([]int{4,2,1,3})) // [[1,2],[2,3],[3,4]]
     fmt.Println(minimumAbsDifference1([]int{1,3,6,10,15})) // [[1,3]]
     fmt.Println(minimumAbsDifference1([]int{3,8,-10,23,19,-4,-14,27})) // [[-14,-10],[19,23],[23,27]]
+    fmt.Println(minimumAbsDifference1([]int{1,2,3,4,5,6,7,8,9})) // [[1 2] [2 3] [3 4] [4 5] [5 6] [6 7] [7 8] [8 9]]
+    fmt.Println(minimumAbsDifference1([]int{9,8,7,6,5,4,3,2,1})) // [[1 2] [2 3] [3 4] [4 5] [5 6] [6 7] [7 8] [8 9]]
+
+    fmt.Println(minimumAbsDifference2([]int{4,2,1,3})) // [[1,2],[2,3],[3,4]]
+    fmt.Println(minimumAbsDifference2([]int{1,3,6,10,15})) // [[1,3]]
+    fmt.Println(minimumAbsDifference2([]int{3,8,-10,23,19,-4,-14,27})) // [[-14,-10],[19,23],[23,27]]
+    fmt.Println(minimumAbsDifference2([]int{1,2,3,4,5,6,7,8,9})) // [[1 2] [2 3] [3 4] [4 5] [5 6] [6 7] [7 8] [8 9]]
+    fmt.Println(minimumAbsDifference2([]int{9,8,7,6,5,4,3,2,1})) // [[1 2] [2 3] [3 4] [4 5] [5 6] [6 7] [7 8] [8 9]]
 }
