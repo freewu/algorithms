@@ -3405,6 +3405,7 @@
 [3615. Longest Palindromic Path in Graph](./leetcode/3615-LongestPalindromicPathInGraph.go)   
 [3619. Count Islands With Total Value Divisible by K](./leetcode/3619-CountIslandsWithTotalValueDivisibleByK.go)   
 [3620. Network Recovery Pathways](./leetcode/3620-NetworkRecoveryPathways.go)   
+[3650. Minimum Cost Path with Edge Reversals](./leetcode/3650-MinimumCostPathWithEdgeReversals.go)   
 [3715. Sum of Perfect Square Ancestors](./leetcode/3715-SumOfPerfectSquareAncestors.go)   
 [3772. Maximum Subgraph Score in a Tree](./leetcode/3772-MaximumSubgraphScoreInATree.go)   
 [3778. Minimum Distance Excluding One Maximum Weighted Edge](./leetcode/3778-MinimumDistanceExcludingOneMaximumWeightedEdge.go)   
@@ -3588,6 +3589,7 @@
 [3508. Implement Router](./leetcode/3508-ImplementRouter.go)   
 [3709. Design Exam Scores Tracker](./leetcode/3709-DesignExamScoresTracker.go)   
 [3815. Design Auction System](./leetcode/3815-DesignAuctionSystem.go)   
+[3822. Design Order Management System](./leetcode/3822-DesignOrderManagementSystem.go)   
 
 # Binary Search
 [278. First Bad Version](./leetcode/278-FirstBadVersion.go)   
