@@ -127,6 +127,42 @@ func minimumCost1(source string, target string, original []byte, changed []byte,
     return res
 }
 
+func minimumCost2(source string, target string, original []byte, changed []byte, cost []int) int64 {
+    res, n, inf := int64(0), 26, int64(1 << 61)
+    dist := make([][]int64, n)
+    for i := 0; i < n; i++ {
+        dist[i] = make([]int64, n)
+        for j := 0; j < n; j++ {
+            if i == j {
+                dist[i][j] = 0
+            } else {
+                dist[i][j] = inf
+            }
+        }
+    }
+    for i := range original {
+        u, v, c := original[i] - 'a', changed[i] - 'a', int64(cost[i])
+        if c < dist[u][v] {
+            dist[u][v] = c
+        }
+    }
+    for k := 0; k < n; k++ {
+        for i := 0; i < n; i++ {
+            for j := 0; j < n; j++ {
+                if dist[i][k]+dist[k][j] < dist[i][j] {
+                    dist[i][j] = dist[i][k] + dist[k][j]
+                }
+            }
+        }
+    }
+    for i := 0; i < len(source); i++ {
+        u, v := source[i] - 'a', target[i] - 'a'
+        if dist[u][v] >= inf { return -1 }
+        res += dist[u][v]
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: source = "abcd", target = "acbe", original = ["a","b","c","c","e","d"], changed = ["b","c","b","e","b","e"], cost = [2,5,5,1,2,20]
@@ -153,4 +189,8 @@ func main() {
     fmt.Println(minimumCost1("abcd","acbe", []byte{'a','b','c','c','e','d'}, []byte{'b','c','b','e','b','e'}, []int{2,5,5,1,2,20})) // 28
     fmt.Println(minimumCost1("aaaa","bbbb", []byte{'a','c'}, []byte{'c','b'}, []int{1,2})) // 12
     fmt.Println(minimumCost1("abcd","abce", []byte{'a'}, []byte{'e'}, []int{10000})) // -1
+
+    fmt.Println(minimumCost2("abcd","acbe", []byte{'a','b','c','c','e','d'}, []byte{'b','c','b','e','b','e'}, []int{2,5,5,1,2,20})) // 28
+    fmt.Println(minimumCost2("aaaa","bbbb", []byte{'a','c'}, []byte{'c','b'}, []int{1,2})) // 12
+    fmt.Println(minimumCost2("abcd","abce", []byte{'a'}, []byte{'e'}, []int{10000})) // -1
 }
