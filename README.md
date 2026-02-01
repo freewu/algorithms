@@ -1977,6 +1977,7 @@
 [3825. Longest Strictly Increasing Subsequence With Non-Zero Bitwise AND](./leetcode/3825-LongestStrictlyIncreasingSubsequenceWithNonZeroBitwiseAND.go)   
 [3826. Minimum Partition Score](./leetcode/3826-MinimumPartitionScore.go)   
 [3828. Final Element After Subarray Deletions](./leetcode/3828-FinalElementAfterSubarrayDeletions.go)    
+[3830. Longest Alternating Subarray After Removing At Most One Element](./leetcode/3830-LongestAlternatingSubarrayAfterRemovingAtMostOneElement.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
