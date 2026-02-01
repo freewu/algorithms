@@ -1975,6 +1975,7 @@
 [3819. Rotate Non Negative Elements](./leetcode/3819-RotateNonNegativeElements.go)   
 [3824. Minimum K to Reduce Array Within Limit](./leetcode/3824-MinimumKToReduceArrayWithinLimit.go)   
 [3825. Longest Strictly Increasing Subsequence With Non-Zero Bitwise AND](./leetcode/3825-LongestStrictlyIncreasingSubsequenceWithNonZeroBitwiseAND.go)   
+[3826. Minimum Partition Score](./leetcode/3826-MinimumPartitionScore.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
