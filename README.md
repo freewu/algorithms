@@ -2625,6 +2625,7 @@
 [3813. Vowel-Consonant Score](./leetcode/3813-VowelConsonantScore.go)   
 [3816. Lexicographically Smallest String After Deleting Duplicate Characters](./leetcode/3816-LexicographicallySmallestStringAfterDeletingDuplicateCharacters.go)   
 [3817. Good Indices in a Digit String](./leetcode/3817-GoodIndicesInADigitString.go)   
+[3823. Reverse Letters Then Special Characters in a String](./leetcode/3823-ReverseLettersThenSpecialCharactersInAString.go)   
 
 # Dynamic Programming
 [276. Paint Fence](./leetcode/276-PaintFence.go)   
