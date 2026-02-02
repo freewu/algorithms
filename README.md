@@ -3597,6 +3597,7 @@
 [3709. Design Exam Scores Tracker](./leetcode/3709-DesignExamScoresTracker.go)   
 [3815. Design Auction System](./leetcode/3815-DesignAuctionSystem.go)   
 [3822. Design Order Management System](./leetcode/3822-DesignOrderManagementSystem.go)   
+[3829. Design Ride Sharing System](./leetcode/3829-DesignRideSharingSystem.go)   
 
 # Binary Search
 [278. First Bad Version](./leetcode/278-FirstBadVersion.go)   
