@@ -93,6 +93,42 @@ func longestAlternating(nums []int) int {
     return res
 }
 
+func longestAlternating1(nums []int) int {
+    res, n := 0, len(nums)
+    l1, l2, r1, r2 := make([]int, n), make([]int, n), make([]int, n), make([]int, n)
+    for i := 0; i < n; i++ {
+        l1[i], l2[i], r1[i], r2[i] = 1, 1, 1, 1
+    }
+    for i := 1; i < n; i++ {
+        if nums[i-1] < nums[i] {
+            l1[i] = l2[i-1] + 1
+        } else if nums[i-1] > nums[i] {
+            l2[i] = l1[i-1] + 1
+        }
+        res = max(res, l1[i], l2[i])
+    }
+    for i := n - 2; i >= 0; i-- {
+        if nums[i+1] > nums[i] {
+            r1[i] = r2[i+1] + 1
+        } else if nums[i+1] < nums[i] {
+            r2[i] = r1[i+1] + 1
+        }
+        res = max(res, r1[i], r2[i])
+    }
+    for i := 1; i < n-1; i++ {
+        if nums[i-1] < nums[i+1] {
+            if l2[i-1]+r2[i+1] > res {
+                res = l2[i-1] + r2[i+1]
+            }
+        } else if nums[i-1] > nums[i+1] {
+            if l1[i-1]+r1[i+1] > res {
+                res = l1[i-1] + r1[i+1]
+            }
+        }
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: nums = [2,1,3,2]
@@ -118,4 +154,10 @@ func main() {
 
     fmt.Println(longestAlternating([]int{1,2,3,4,5,6,7,8,9})) // 2
     fmt.Println(longestAlternating([]int{9,8,7,6,5,4,3,2,1})) // 2
+
+    fmt.Println(longestAlternating1([]int{2,1,3,2})) // 4
+    fmt.Println(longestAlternating1([]int{3,2,1,2,3,2,1})) // 4
+    fmt.Println(longestAlternating1([]int{100000,100000})) // 1
+    fmt.Println(longestAlternating1([]int{1,2,3,4,5,6,7,8,9})) // 2
+    fmt.Println(longestAlternating1([]int{9,8,7,6,5,4,3,2,1})) // 2
 }
