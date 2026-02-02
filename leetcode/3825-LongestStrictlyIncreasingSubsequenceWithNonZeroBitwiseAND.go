@@ -60,6 +60,37 @@ func longestSubsequence(nums []int) int {
     return res
 }
 
+func longestSubsequence1(nums []int) int {
+    res := 0
+    tails := make([]int, 0, len(nums))
+    for b := 0; b <= 30; b++ {
+        mask := 1 << b
+        tails = tails[:0]
+        for _, v := range nums {
+            if v & mask != 0 {
+                low, high := 0, len(tails)
+                for low < high {
+                    mid := (low + high) >> 1
+                    if tails[mid] < v {
+                        low = mid + 1
+                    } else {
+                        high = mid
+                    }
+                }
+                if low == len(tails) {
+                    tails = append(tails, v)
+                } else {
+                    tails[low] = v
+                }
+            }
+        }
+        if len(tails) > res {
+            res = len(tails)
+        }
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: nums = [5,4,7]
@@ -82,4 +113,10 @@ func main() {
 
     fmt.Println(longestSubsequence([]int{1,2,3,4,5,6,7,8,9})) // 5
     fmt.Println(longestSubsequence([]int{9,8,7,6,5,4,3,2,1})) // 1
+
+    fmt.Println(longestSubsequence1([]int{5,4,7})) // 2
+    fmt.Println(longestSubsequence1([]int{2,3,6})) // 3
+    fmt.Println(longestSubsequence1([]int{0,1})) // 1
+    fmt.Println(longestSubsequence1([]int{1,2,3,4,5,6,7,8,9})) // 5
+    fmt.Println(longestSubsequence1([]int{9,8,7,6,5,4,3,2,1})) // 1
 }
