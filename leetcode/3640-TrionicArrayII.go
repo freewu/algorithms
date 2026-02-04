@@ -60,6 +60,44 @@ func maxSumTrionic(nums []int) int64 {
     return int64(res)
 }
 
+func maxSumTrionic1(nums []int) int64 {
+    res, n := -1 << 61, len(nums)
+    for i := 0; i < n; {
+        // 第一段
+        start := i
+        for i++; i < n && nums[i-1] < nums[i]; i++ {
+        }
+        if i == start+1 { continue } // 第一段至少要有两个数
+        // 第二段
+        peak := i - 1
+        val := nums[peak-1] + nums[peak] // 第一段的最后两个数必选
+        for ; i < n && nums[i-1] > nums[i]; i++ {
+            val += nums[i] // 第二段的所有元素必选
+        }
+        if i == peak+1 || i == n || nums[i-1] == nums[i] { continue } // 第二段至少要有两个数，第三段至少要有两个数
+        // 第三段
+        bottom := i - 1
+        val += nums[i] // 第三段的前两个数必选（第一个数在上面的循环中加了）
+        // 从第三段的第三个数往右，计算最大元素和
+        mx, sum := 0, 0
+        for i++; i < n && nums[i-1] < nums[i]; i++ {
+            sum += nums[i]
+            mx = max(mx, sum)
+        }
+        val += mx
+        // 从第一段的倒数第三个数往左，计算最大元素和
+        mx, sum = 0, 0
+        for j := peak - 2; j >= start; j-- {
+            sum += nums[j]
+            mx = max(mx, sum)
+        }
+        val += mx
+        res = max(res, val)
+        i = bottom // 第三段的起点也是下一个极大三段式子数组的第一段的起点
+    }
+    return int64(res)
+}
+
 func main() {
     // Example 1:
     // Input: nums = [0,-2,-1,-3,0,2,-1]
@@ -82,6 +120,11 @@ func main() {
     // Sum = 1 + 4 + 2 + 7 = 14.
     fmt.Println(maxSumTrionic([]int{1,4,2,7})) // 14
 
-    fmt.Println(maxSumTrionic([]int{1,2,3,4,5,6,7,8,9})) // -2305843009213693908
-    fmt.Println(maxSumTrionic([]int{9,8,7,6,5,4,3,2,1})) // -2305843009213693952
+    fmt.Println(maxSumTrionic([]int{1,2,3,4,5,6,7,8,9})) // -2147483648
+    fmt.Println(maxSumTrionic([]int{9,8,7,6,5,4,3,2,1})) // -2147483648
+
+    fmt.Println(maxSumTrionic1([]int{0,-2,-1,-3,0,2,-1})) // -4
+    fmt.Println(maxSumTrionic1([]int{1,4,2,7})) // 14
+    fmt.Println(maxSumTrionic1([]int{1,2,3,4,5,6,7,8,9})) // -2147483648
+    fmt.Println(maxSumTrionic1([]int{9,8,7,6,5,4,3,2,1})) // -2147483648
 }
