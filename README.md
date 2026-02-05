@@ -4062,6 +4062,7 @@ LCR 185. 统计结果概率
 [3764. Most Common Course Pairs](./leetcode/3764-MostCommonCoursePairs.sql)   
 [3793. Find Users with High Token Usage](./leetcode/3793-FindUsersWithHighTokenUsage.sql)   
 [3808. Find Emotionally Consistent Users](./leetcode/3808-FindEmotionallyConsistentUsers.sql)   
+[3832. Find Users with Persistent Behavior Patterns](./leetcode/3832-FindUsersWithPersistentBehaviorPatterns.sql)   
 
 # Shell
 [192. Word Frequency](./leetcode/192-WordFrequency.sh)      
