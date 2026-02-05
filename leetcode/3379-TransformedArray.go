@@ -78,6 +78,16 @@ func constructTransformedArray2(nums []int) []int {
     return res
 }
 
+func constructTransformedArray3(nums []int) []int {
+    n := len(nums)
+    bign := n * 100
+    res := make([]int, n)
+    for i, v := range nums {
+        res[i] = nums[(i + v + bign) % n]
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: nums = [3,-2,1,1]
@@ -109,4 +119,9 @@ func main() {
     fmt.Println(constructTransformedArray2([]int{-1,4,-1})) // [-1,-1,4]
     fmt.Println(constructTransformedArray2([]int{1,2,3,4,5,6,7,8,9})) // [2 4 6 8 1 3 5 7 9]
     fmt.Println(constructTransformedArray2([]int{9,8,7,6,5,4,3,2,1})) // [9 9 9 9 9 9 9 9 9]
+
+    fmt.Println(constructTransformedArray3([]int{3,-2,1,1})) // [1,1,1,3]
+    fmt.Println(constructTransformedArray3([]int{-1,4,-1})) // [-1,-1,4]
+    fmt.Println(constructTransformedArray3([]int{1,2,3,4,5,6,7,8,9})) // [2 4 6 8 1 3 5 7 9]
+    fmt.Println(constructTransformedArray3([]int{9,8,7,6,5,4,3,2,1})) // [9 9 9 9 9 9 9 9 9]
 }
