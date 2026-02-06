@@ -65,6 +65,20 @@ func minRemoval1(nums []int, k int) int {
     return len(nums) - save
 }
 
+func minRemoval2(nums []int, k int) int {
+    sort.Ints(nums)
+    p ,count := 0 ,0
+    for i := 0;i < len(nums);i ++ {
+        for float64(nums[i]) > float64(nums[p]) * float64(k) {
+            p ++
+        }
+        if i - p + 1 > count {
+            count = i - p + 1
+        }
+    }
+    return len(nums) - count
+}
+
 func main() {
     // Example 1:
     // Input: nums = [2,1,5], k = 2
@@ -95,4 +109,10 @@ func main() {
     fmt.Println(minRemoval1([]int{4,6}, 2)) // 0
     fmt.Println(minRemoval1([]int{1,2,3,4,5,6,7,8,9}, 2)) // 4
     fmt.Println(minRemoval1([]int{9,8,7,6,5,4,3,2,1}, 2)) // 4
+
+    fmt.Println(minRemoval2([]int{2,1,5}, 2)) // 1
+    fmt.Println(minRemoval2([]int{1,6,2,9}, 3)) // 2
+    fmt.Println(minRemoval2([]int{4,6}, 2)) // 0
+    fmt.Println(minRemoval2([]int{1,2,3,4,5,6,7,8,9}, 2)) // 4
+    fmt.Println(minRemoval2([]int{9,8,7,6,5,4,3,2,1}, 2)) // 4
 }
