@@ -74,9 +74,23 @@ func main() {
     // Output: 2
     // Explanation: The only solution is to delete the first two characters.
     fmt.Println(minimumDeletions("bbaaaaabb")) // 2
+
     fmt.Println(minimumDeletions("bbaabaaabb")) // 3
+    fmt.Println(minimumDeletions("aaaaaaaaaa")) // 0
+    fmt.Println(minimumDeletions("bbbbbbbbbb")) // 0
+    fmt.Println(minimumDeletions("ababababab")) // 4
+    fmt.Println(minimumDeletions("bababababa")) // 5
+    fmt.Println(minimumDeletions("aaaaabbbbb")) // 0
+    fmt.Println(minimumDeletions("bbbbbaaaaa")) // 5
 
     fmt.Println(minimumDeletions1("aababbab")) // 2
     fmt.Println(minimumDeletions1("bbaaaaabb")) // 2
     fmt.Println(minimumDeletions1("bbaabaaabb")) // 3
+    fmt.Println(minimumDeletions1("bbaabaaabb")) // 3
+    fmt.Println(minimumDeletions1("aaaaaaaaaa")) // 0
+    fmt.Println(minimumDeletions1("bbbbbbbbbb")) // 0
+    fmt.Println(minimumDeletions1("ababababab")) // 4
+    fmt.Println(minimumDeletions1("bababababa")) // 5
+    fmt.Println(minimumDeletions1("aaaaabbbbb")) // 0
+    fmt.Println(minimumDeletions1("bbbbbaaaaa")) // 5
 }
