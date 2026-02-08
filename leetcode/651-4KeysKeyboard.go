@@ -55,4 +55,11 @@ func main() {
     // Explanation: We can at most get 9 A's on screen by pressing following key sequence:
     // A, A, A, Ctrl A, Ctrl C, Ctrl V, Ctrl V
     fmt.Println(maxA(7)) // 9
+
+    fmt.Println(maxA(1)) // 1
+    fmt.Println(maxA(2)) // 2
+    fmt.Println(maxA(4)) // 4
+    fmt.Println(maxA(8)) // 12
+    fmt.Println(maxA(49)) // 1048576
+    fmt.Println(maxA(50)) // 1327104
 }
