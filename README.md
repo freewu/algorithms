@@ -1980,6 +1980,7 @@
 [3830. Longest Alternating Subarray After Removing At Most One Element](./leetcode/3830-LongestAlternatingSubarrayAfterRemovingAtMostOneElement.go)   
 [3833. Count Dominant Indices](./leetcode/3833-CountDominantIndices.go)   
 [3834. Merge Adjacent Equal Elements](./leetcode/3834-MergeAdjacentEqualElements.go)   
+[3835. Count Subarrays With Cost Less Than or Equal to K](./leetcode/3835-CountSubarraysWithCostLessThanOrEqualToK.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
