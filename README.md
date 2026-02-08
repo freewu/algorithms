@@ -1978,6 +1978,7 @@
 [3826. Minimum Partition Score](./leetcode/3826-MinimumPartitionScore.go)   
 [3828. Final Element After Subarray Deletions](./leetcode/3828-FinalElementAfterSubarrayDeletions.go)    
 [3830. Longest Alternating Subarray After Removing At Most One Element](./leetcode/3830-LongestAlternatingSubarrayAfterRemovingAtMostOneElement.go)   
+[3833. Count Dominant Indices](./leetcode/3833-CountDominantIndices.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
