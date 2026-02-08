@@ -52,7 +52,7 @@ type TreeNode struct {
  * }
  */
 // 递归
-func isBalanced1(root *TreeNode) bool {
+func isBalanced(root *TreeNode) bool {
     abs := func(x int) int { if x < 0 { return -x; }; return x; }
     max := func (x, y int) int { if x > y { return x; }; return y; }
     // iterative function to measure the maximum depth of a tree
@@ -79,40 +79,20 @@ func isBalanced1(root *TreeNode) bool {
     return helper(root)
 }
 
-// func isBalanced(root *TreeNode) bool {
-//     if root == nil {
-//         return true
-//     }
-//     // getting maximum depth possible from both left and right children
-//     // check if the difference is not more than 1, if it is then the tree is unbalanced and we can stop our check
-//     if abs(maxDepth(root.Left) - maxDepth(root.Right)) > 1 {
-//         return false
-//     }
-//     // if both children are balanced then this tree is also balanced
-//     return isBalanced(root.Left) && isBalanced(root.Right)
-// }
-
-// //iterative function to measure the maximum depth of a tree
-// func maxDepth(root *TreeNode) int {
-//     if root == nil {
-//         return 0
-//     }
-//     return max(maxDepth(root.Left), maxDepth(root.Right)) + 1
-// }
-
-// func max(a,b int) int {
-//     if a > b {
-//         return a
-//     }
-//     return b
-// }
-
-// func abs(a int) int {
-//     if a > 0 {
-//         return a
-//     }
-//     return -a
-// }
+func isBalanced1(root *TreeNode) bool {
+    abs := func(x int) int { if x < 0 { return -x; }; return x; }
+    max := func (x, y int) int { if x > y { return x; }; return y; }
+    var dfs func(*TreeNode) int
+    dfs = func(node *TreeNode) int {
+        if node == nil { return 0  }
+        left := dfs(node.Left)
+        if left == -1 { return -1 }
+        right := dfs(node.Right)
+        if right == -1 || abs(left - right) > 1 { return -1 }
+        return max(left, right) + 1
+    }
+    return dfs(root) != -1
+}
 
 func main() {
     // Example 1:
@@ -164,4 +144,8 @@ func main() {
     // Input: root = []
     // Output: true
     fmt.Println(isBalanced(nil)) // false
+
+    fmt.Println(isBalanced1(tree1)) // true
+    fmt.Println(isBalanced1(tree2)) // false
+    fmt.Println(isBalanced1(nil)) // false
 }
