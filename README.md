@@ -1982,6 +1982,7 @@
 [3834. Merge Adjacent Equal Elements](./leetcode/3834-MergeAdjacentEqualElements.go)   
 [3835. Count Subarrays With Cost Less Than or Equal to K](./leetcode/3835-CountSubarraysWithCostLessThanOrEqualToK.go)   
 [3836. Maximum Score Using Exactly K Pairs](./leetcode/3836-MaximumScoreUsingExactlyKPairs.go)   
+[3837. Delayed Count of Equal Elements](./leetcode/3837-DelayedCountOfEqualElements.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
