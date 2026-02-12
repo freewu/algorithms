@@ -108,6 +108,43 @@ func maxScore1(nums1 []int, nums2 []int, k int) int64 {
     return prefix[n-1][m-1]
 }
 
+func maxScore2(nums1 []int, nums2 []int, k int) int64 {
+    n, m, inf := len(nums1), len(nums2), int64(1 << 61)
+    if k == 0 { return 0 }
+    if k > n || k > m { return -(1 << 60) }
+    dp := make([][]int64, k + 1)
+    for i := 0; i <= k; i++ {
+        dp[i] = make([]int64, m + 1)
+        for j := 0; j <= m; j++ {
+            dp[i][j] = -inf
+        }
+    }
+    for j := 0; j <= m; j++ {
+        dp[0][j] = 0
+    }
+
+    for i := 1; i <= n; i++ {
+        v, up := int64(nums1[i-1]), k
+        if i < up {
+            up = i
+        }
+        for t := up; t >= 1; t-- {
+            for j := 1; j <= m; j++ {
+                if dp[t][j-1] > dp[t][j] {
+                    dp[t][j] = dp[t][j-1]
+                }
+                if dp[t-1][j-1] != -inf { // 非初始值
+                    val := dp[t-1][j-1] + v * int64(nums2[j-1])
+                    if val > dp[t][j] {
+                        dp[t][j] = val
+                    }
+                }
+            }
+        }
+    }
+    return dp[k][m]
+}
+
 func main() {
     // Example 1:
     // Input: nums1 = [1,3,2], nums2 = [4,5,1], k = 2
@@ -149,6 +186,15 @@ func main() {
     fmt.Println(maxScore1([]int{-891015}, []int{805820}, 1)) // -717997707300
     fmt.Println(maxScore1([]int{1,2,3,4,5,6,7,8,9}, []int{1,2,3,4,5,6,7,8,9}, 2)) // 145
     fmt.Println(maxScore1([]int{1,2,3,4,5,6,7,8,9}, []int{9,8,7,6,5,4,3,2,1}, 2)) // 144
+    fmt.Println(maxScore1([]int{9,8,7,6,5,4,3,2,1}, []int{1,2,3,4,5,6,7,8,9}, 2)) // 144
+    fmt.Println(maxScore1([]int{9,8,7,6,5,4,3,2,1}, []int{9,8,7,6,5,4,3,2,1}, 2)) // 145
+
+    fmt.Println(maxScore2([]int{1,3,2}, []int{4,5,1}, 2)) // 22
+    fmt.Println(maxScore2([]int{-2,0,5}, []int{-3,4,-1,2}, 2)) // 26 
+    fmt.Println(maxScore2([]int{-3,-2}, []int{1,2}, 2)) // -7
+    fmt.Println(maxScore2([]int{-891015}, []int{805820}, 1)) // -717997707300
+    fmt.Println(maxScore2([]int{1,2,3,4,5,6,7,8,9}, []int{1,2,3,4,5,6,7,8,9}, 2)) // 145
+    fmt.Println(maxScore2([]int{1,2,3,4,5,6,7,8,9}, []int{9,8,7,6,5,4,3,2,1}, 2)) // 144
     fmt.Println(maxScore1([]int{9,8,7,6,5,4,3,2,1}, []int{1,2,3,4,5,6,7,8,9}, 2)) // 144
     fmt.Println(maxScore1([]int{9,8,7,6,5,4,3,2,1}, []int{9,8,7,6,5,4,3,2,1}, 2)) // 145
 }
