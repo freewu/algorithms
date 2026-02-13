@@ -99,4 +99,12 @@ func main() {
     // Explanation:
     // One of the longest balanced substrings is "ab" because both distinct characters 'a' and 'b' each appear exactly 1 time. Another longest balanced substring is "ba".
     fmt.Println(longestBalanced("aba")) // 2
+
+    fmt.Println(longestBalanced("aaaaaaaaa")) // 9
+    fmt.Println(longestBalanced("bbbbbbbbb")) // 9
+    fmt.Println(longestBalanced("ccccccccc")) // 9
+    fmt.Println(longestBalanced("abcabcabc")) // 9
+    fmt.Println(longestBalanced("aaabbbccc")) // 9
+    fmt.Println(longestBalanced("cccbbbaaa")) // 9
+    fmt.Println(longestBalanced("bbbcccaaa")) // 9
 }
