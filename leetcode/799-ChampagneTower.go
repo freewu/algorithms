@@ -97,7 +97,20 @@ func main() {
     // Output: 1.00000
     fmt.Println(champagneTower(100000009,33,17)) // 1.00000
 
+    fmt.Println(champagneTower(0,0,0)) // 1
+    fmt.Println(champagneTower(0,99,0)) // 0
+    fmt.Println(champagneTower(0,99,99)) // 0
+    fmt.Println(champagneTower(1_000_000_000,0,0)) // 1
+    fmt.Println(champagneTower(1_000_000_000,99,0)) // 0
+    fmt.Println(champagneTower(1_000_000_000,99,99)) // 0
+
     fmt.Println(champagneTower1(1,1,1)) // 0.00000
     fmt.Println(champagneTower1(2,1,1)) // 0.50000
     fmt.Println(champagneTower1(100000009,33,17)) // 1.00000
+    fmt.Println(champagneTower1(0,0,0)) // 1
+    fmt.Println(champagneTower1(0,99,0)) // 0
+    fmt.Println(champagneTower1(0,99,99)) // 0
+    fmt.Println(champagneTower1(1_000_000_000,0,0)) // 1
+    fmt.Println(champagneTower1(1_000_000_000,99,0)) // 0
+    fmt.Println(champagneTower1(1_000_000_000,99,99)) // 0
 }
