@@ -1988,6 +1988,7 @@
 [3840. House Robber V](./leetcode/3840-HouseRobberV.go)   
 [3842. Toggle Light Bulbs](./leetcode/3842-ToggleLightBulbs.go)   
 [3843. First Element with Unique Frequency](./leetcode/3843-FirstElementWithUniqueFrequency.go)   
+[3845. Maximum Subarray XOR with Bounded Range](./leetcode/3845-MaximumSubarrayXORWithBoundedRange.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
