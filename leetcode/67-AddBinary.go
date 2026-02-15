@@ -101,7 +101,7 @@ func addBinary(a string, b string) string {
 }
 
 // best solution
-func addBinaryBest(a string, b string) string {
+func addBinary1(a string, b string) string {
     if len(b) > len(a) {
         a, b = b, a
     }
@@ -135,7 +135,23 @@ func addBinaryBest(a string, b string) string {
 func main() {
     fmt.Printf("addBinary(\"11\", \"1\") = %v\n",addBinary("11", "1"))  // "100"
     fmt.Printf("addBinary(\"11\", \"11\") = %v\n",addBinary("11", "11")) // "110"
+    fmt.Println(addBinary("111111111", "111111111")) // "1111111110"
+    fmt.Println(addBinary("000000000", "000000000")) // "000000000"
+    fmt.Println(addBinary("000000000", "111111111")) // "111111111"
+    fmt.Println(addBinary("111111111", "000000000")) // "111111111"
+    fmt.Println(addBinary("101010101", "101010101")) // "1010101010"
+    fmt.Println(addBinary("101010101", "010101010")) // "111111111"
+    fmt.Println(addBinary("010101010", "101010101")) // "111111111"
+    fmt.Println(addBinary("010101010", "010101010")) // "101010100"
 
-    fmt.Printf("addBinaryBest(\"11\", \"1\") = %v\n",addBinaryBest("11", "1"))  // "100"
-    fmt.Printf("addBinaryBest(\"11\", \"11\") = %v\n",addBinaryBest("11", "11")) // "110"
+    fmt.Printf("addBinary1(\"11\", \"1\") = %v\n",addBinary1("11", "1"))  // "100"
+    fmt.Printf("addBinary1(\"11\", \"11\") = %v\n",addBinary1("11", "11")) // "110"
+    fmt.Println(addBinary1("111111111", "111111111")) // "1111111110"
+    fmt.Println(addBinary1("000000000", "000000000")) // "000000000"
+    fmt.Println(addBinary1("000000000", "111111111")) // "111111111"
+    fmt.Println(addBinary1("111111111", "000000000")) // "111111111"
+    fmt.Println(addBinary1("101010101", "101010101")) // "1010101010"
+    fmt.Println(addBinary1("101010101", "010101010")) // "111111111"
+    fmt.Println(addBinary1("010101010", "101010101")) // "111111111"
+    fmt.Println(addBinary1("010101010", "010101010")) // "101010100"
 }
