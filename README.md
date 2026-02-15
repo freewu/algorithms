@@ -1984,6 +1984,7 @@
 [3836. Maximum Score Using Exactly K Pairs](./leetcode/3836-MaximumScoreUsingExactlyKPairs.go)   
 [3837. Delayed Count of Equal Elements](./leetcode/3837-DelayedCountOfEqualElements.go)   
 [3838. Weighted Word Mapping](./leetcode/3838-WeightedWordMapping.go)   
+[3839. Number of Prefix Connected Groups](./leetcode/3839-NumberOfPrefixConnectedGroups.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
