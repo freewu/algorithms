@@ -67,26 +67,41 @@ func validWordSquare1(words []string) bool {
 }
 
 func main() {
+    // Example 1:
+    // <img src="https://assets.leetcode.com/uploads/2021/04/09/validsq1-grid.jpg" />
+    // Input: words = ["abcd","bnrt","crmy","dtye"]
+    // Output: true
+    // Explanation:
     // The 1st row and 1st column both read "abcd".
     // The 2nd row and 2nd column both read "bnrt".
     // The 3rd row and 3rd column both read "crmy".
     // The 4th row and 4th column both read "dtye".
     // Therefore, it is a valid word square.
     fmt.Println(validWordSquare([]string{"abcd","bnrt","crmy","dtye"})) // true
-
+    // Example 2:
+    // <img src="https://assets.leetcode.com/uploads/2021/04/09/validsq2-grid.jpg" />
+    // Input: words = ["abcd","bnrt","crm","dt"]
+    // Output: true
+    // Explanation:
     // The 1st row and 1st column both read "abcd".
     // The 2nd row and 2nd column both read "bnrt".
     // The 3rd row and 3rd column both read "crm".
     // The 4th row and 4th column both read "dt".
     // Therefore, it is a valid word square.
     fmt.Println(validWordSquare([]string{"abcd","bnrt","crm","dt"})) // true
-
+    // Example 3:
+    // <img src="https://assets.leetcode.com/uploads/2021/04/09/validsq3-grid.jpg" />
+    // Input: words = ["ball","area","read","lady"]
+    // Output: false
+    // Explanation:
     // The 3rd row reads "read" while the 3rd column reads "lead".
     // Therefore, it is NOT a valid word square.
     fmt.Println(validWordSquare([]string{"ball","area","read","lady"})) // false
 
+    fmt.Println(validWordSquare([]string{"bluefrog","leetcode","freewu"})) // false
 
     fmt.Println(validWordSquare1([]string{"abcd","bnrt","crmy","dtye"})) // true
     fmt.Println(validWordSquare1([]string{"abcd","bnrt","crm","dt"})) // true
     fmt.Println(validWordSquare1([]string{"ball","area","read","lady"})) // false
+    fmt.Println(validWordSquare1([]string{"bluefrog","leetcode","freewu"})) // false
 }
