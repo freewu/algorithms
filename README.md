@@ -3431,6 +3431,7 @@
 [3807. Minimum Cost to Repair Edges to Traverse a Graph](./leetcode/3807-MinimumCostToRepairEdgesToTraverseAGraph.go)   
 [3812. Minimum Edge Toggles on a Tree](./leetcode/3812-MinimumEdgeTogglesOnATree.go)   
 [3820. Pythagorean Distance Nodes in a Tree](./leetcode/3820-PythagoreanDistanceNodesInATree.go)   
+[3841. Palindromic Path Queries in a Tree](./leetcode/3841-PalindromicPathQueriesInATree.go)   
 
 # Trie
 [386. Lexicographical Numbers](./leetcode/386-LexicographicalNumbers.go)   
