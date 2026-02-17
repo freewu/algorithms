@@ -30,6 +30,7 @@ package main
 //     0 <= k < 2^15
 
 import "fmt"
+import "math/bits"
 
 const WIDTH = 15 // nums[i] 二进制长度的最大值
 
@@ -115,6 +116,56 @@ func maxXor(nums []int, k int) int {
     return res
 }
 
+func maxXor1(nums []int, k int) int {
+    // 预处理：当窗口右端点在 right 时，最远左端点在 lefts[right]
+    // 顺带算出前缀异或和、nums 的最大值
+    res, n := 0,len(nums)
+    var minQ, maxQ []int
+    lefts := make([]int, n)
+    left := 0
+    sum := make([]int, len(nums)+1)
+    mx := 0
+    for right, x := range nums {
+        sum[right+1] = sum[right] ^ x
+        mx = max(mx, x)
+        // 1. 入
+        for len(minQ) > 0 && x <= nums[minQ[len(minQ)-1]] {
+            minQ = minQ[:len(minQ)-1]
+        }
+        minQ = append(minQ, right)
+        for len(maxQ) > 0 && x >= nums[maxQ[len(maxQ)-1]] {
+            maxQ = maxQ[:len(maxQ)-1]
+        }
+        maxQ = append(maxQ, right)
+        // 2. 出
+        for nums[maxQ[0]]-nums[minQ[0]] > k {
+            left++
+            if minQ[0] < left {
+                minQ = minQ[1:]
+            }
+            if maxQ[0] < left {
+                maxQ = maxQ[1:]
+            }
+        }
+        // 3. 记录此时的 left
+        lefts[right] = left
+    }
+    for i := bits.Len(uint(mx)) - 1; i >= 0; i-- {
+        res <<= 1
+        newAns := res | 1
+        last := map[int]int{0: 0}
+        for right := range n {
+            x := sum[right+1] >> i
+            if p, ok := last[newAns^x]; ok && p >= lefts[right] {
+                res = newAns // 这个比特位可以是 1
+                break
+            }
+            last[x] = right + 1
+        }
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: nums = [5,4,5,6], k = 2
@@ -135,4 +186,9 @@ func main() {
 
     fmt.Println(maxXor([]int{1,2,3,4,5,6,7,8,9}, 2)) // 15
     fmt.Println(maxXor([]int{9,8,7,6,5,4,3,2,1}, 2)) // 15
+
+    fmt.Println(maxXor1([]int{5,4,5,6}, 2)) // 7
+    fmt.Println(maxXor1([]int{5,4,5,6}, 1)) // 6
+    fmt.Println(maxXor1([]int{1,2,3,4,5,6,7,8,9}, 2)) // 15
+    fmt.Println(maxXor1([]int{9,8,7,6,5,4,3,2,1}, 2)) // 15
 }
