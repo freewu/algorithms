@@ -53,4 +53,10 @@ func main() {
     // Output: false
     // Explanation: The binary representation of 11 is: 1011.
     fmt.Println(hasAlternatingBits(11)) // false  1011
+
+    fmt.Println(hasAlternatingBits(1)) //
+    fmt.Println(hasAlternatingBits(999)) // false 111111111
+    fmt.Println(hasAlternatingBits(1024)) // false 
+    fmt.Println(hasAlternatingBits(1_000_000_007)) // false 
+    fmt.Println(hasAlternatingBits(2 << 31 - 1)) // false 
 }
