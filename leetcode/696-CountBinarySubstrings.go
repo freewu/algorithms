@@ -48,18 +48,18 @@ func countBinarySubstrings(s string) int {
 }
 
 func countBinarySubstrings1(s string) int {
-    count, prev, current := 0, 0, 1
+    count, prev, curr := 0, 0, 1
     min := func (x, y int) int { if x < y { return x; }; return y; }
     for i := 1; i < len(s); i++ {
         if s[i - 1] == s[i] {
-            current++
+            curr++
         } else {
-            count += min(current, prev)
-            prev = current
-            current = 1
+            count += min(curr, prev)
+            prev = curr
+            curr = 1
         }
     }
-    return count + min(current, prev)
+    return count + min(curr, prev)
 }
 
 func main() {
@@ -76,6 +76,19 @@ func main() {
     // Explanation: There are 4 substrings: "10", "01", "10", "01" that have equal number of consecutive 1's and 0's.
     fmt.Println(countBinarySubstrings("10101")) // 4
 
+    fmt.Println(countBinarySubstrings("1111111111")) // 0
+    fmt.Println(countBinarySubstrings("0000000000")) // 0
+    fmt.Println(countBinarySubstrings("1111100000")) // 5
+    fmt.Println(countBinarySubstrings("0000011111")) // 5
+    fmt.Println(countBinarySubstrings("1010101010")) // 9
+    fmt.Println(countBinarySubstrings("0101010101")) // 9
+
     fmt.Println(countBinarySubstrings1("00110011")) // 6
     fmt.Println(countBinarySubstrings1("10101")) // 4
+    fmt.Println(countBinarySubstrings1("1111111111")) // 0
+    fmt.Println(countBinarySubstrings1("0000000000")) // 0
+    fmt.Println(countBinarySubstrings1("1111100000")) // 5
+    fmt.Println(countBinarySubstrings1("0000011111")) // 5
+    fmt.Println(countBinarySubstrings1("1010101010")) // 9
+    fmt.Println(countBinarySubstrings1("0101010101")) // 9
 }
