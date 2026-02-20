@@ -95,4 +95,11 @@ func main() {
     // Input: s = "10"
     // Output: "10"
     fmt.Println(makeLargestSpecial("10")) // "10"
+
+    fmt.Println(makeLargestSpecial("1111111111")) // ""
+    fmt.Println(makeLargestSpecial("0000000000")) // ""
+    fmt.Println(makeLargestSpecial("1111100000")) // "1111100000"
+    fmt.Println(makeLargestSpecial("0000011111")) // "1111010000"
+    fmt.Println(makeLargestSpecial("0101010101")) // "0101010101"
+    fmt.Println(makeLargestSpecial("1010101010")) // "1010101010"
 }
