@@ -88,6 +88,17 @@ func main() {
     // 5 numbers have a prime number of set bits.
     fmt.Println(countPrimeSetBits(10,15)) // 5
 
+    fmt.Println(countPrimeSetBits(1,1)) // 0
+    fmt.Println(countPrimeSetBits(1,10000)) // 4252
+    fmt.Println(countPrimeSetBits(990_000,1_000_000)) // 3754
+
     fmt.Println(countPrimeSetBits1(6,10)) // 4
     fmt.Println(countPrimeSetBits1(10,15)) // 5
+    fmt.Println(countPrimeSetBits1(1,1)) // 0
+    fmt.Println(countPrimeSetBits1(1,10000)) // 4252
+    fmt.Println(countPrimeSetBits1(990_000,1_000_000)) // 3754
+
+    // Constraints:
+//     1 <= left <= right <= 10^6
+//     0 <= right - left <= 10^4
 }
