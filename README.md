@@ -2645,6 +2645,7 @@
 [3823. Reverse Letters Then Special Characters in a String](./leetcode/3823-ReverseLettersThenSpecialCharactersInAString.go)   
 [3844. Longest Almost-Palindromic Substring](./leetcode/3844-LongestAlmostPalindromicSubstring.go)   
 [3846. Total Distance to Type a String Using One Finger](./leetcode/3846-TotalDistanceToTypeAStringUsingOneFinger.go)   
+[3849. Maximum Bitwise XOR After Rearrangement](./leetcode/3849-MaximumBitwiseXORAfterRearrangement.go)   
 
 # Dynamic Programming
 [276. Paint Fence](./leetcode/276-PaintFence.go)   
