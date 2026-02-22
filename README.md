@@ -1990,6 +1990,7 @@
 [3843. First Element with Unique Frequency](./leetcode/3843-FirstElementWithUniqueFrequency.go)   
 [3845. Maximum Subarray XOR with Bounded Range](./leetcode/3845-MaximumSubarrayXORWithBoundedRange.go)   
 [3847. Find the Score Difference in a Game](./leetcode/3847-FindTheScoreDifferenceInAGame.go)   
+[3850. Count Sequences to K](./leetcode/3850-CountSequencesToK.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
