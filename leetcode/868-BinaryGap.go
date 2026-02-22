@@ -138,15 +138,48 @@ func main() {
     // Explanation: 5 in binary is "101".
     fmt.Println(binaryGap(5)) // 2  101
 
+    fmt.Println(binaryGap(1)) // 0
+    fmt.Println(binaryGap(64)) // 0
+    fmt.Println(binaryGap(99)) // 4
+    fmt.Println(binaryGap(100)) // 3
+    fmt.Println(binaryGap(1024)) // 0
+    fmt.Println(binaryGap(1025)) // 10
+    fmt.Println(binaryGap(999_999_999)) // 3
+    fmt.Println(binaryGap(1_000_000_000)) // 3
+
     fmt.Println(binaryGap1(22)) // 2  10110
     fmt.Println(binaryGap1(8)) // 0  1000
     fmt.Println(binaryGap1(5)) // 2  101
+    fmt.Println(binaryGap1(1)) // 0
+    fmt.Println(binaryGap1(64)) // 0
+    fmt.Println(binaryGap1(99)) // 4
+    fmt.Println(binaryGap1(100)) // 3
+    fmt.Println(binaryGap1(1024)) // 0
+    fmt.Println(binaryGap1(1025)) // 10
+    fmt.Println(binaryGap1(999_999_999)) // 3
+    fmt.Println(binaryGap1(1_000_000_000)) // 3
 
     fmt.Println(binaryGap2(22)) // 2  10110
     fmt.Println(binaryGap2(8)) // 0  1000
     fmt.Println(binaryGap2(5)) // 2  101
+    fmt.Println(binaryGap2(1)) // 0
+    fmt.Println(binaryGap2(64)) // 0
+    fmt.Println(binaryGap2(99)) // 4
+    fmt.Println(binaryGap2(100)) // 3
+    fmt.Println(binaryGap2(1024)) // 0
+    fmt.Println(binaryGap2(1025)) // 10
+    fmt.Println(binaryGap2(999_999_999)) // 3
+    fmt.Println(binaryGap2(1_000_000_000)) // 3
 
     fmt.Println(binaryGap3(22)) // 2  10110
     fmt.Println(binaryGap3(8)) // 0  1000
     fmt.Println(binaryGap3(5)) // 2  101
+    fmt.Println(binaryGap3(1)) // 0
+    fmt.Println(binaryGap3(64)) // 0
+    fmt.Println(binaryGap3(99)) // 4
+    fmt.Println(binaryGap3(100)) // 3
+    fmt.Println(binaryGap3(1024)) // 0
+    fmt.Println(binaryGap3(1025)) // 10
+    fmt.Println(binaryGap3(999_999_999)) // 3
+    fmt.Println(binaryGap3(1_000_000_000)) // 3
 }
