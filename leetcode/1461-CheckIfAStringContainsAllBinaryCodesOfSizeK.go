@@ -75,7 +75,20 @@ func main() {
     // Explanation: The binary code "00" is of length 2 and does not exist in the array.
     fmt.Println(hasAllCodes("0110", 2)) // false
 
+    fmt.Println(hasAllCodes("1111111111", 2)) // false
+    fmt.Println(hasAllCodes("0000000000", 2)) // false
+    fmt.Println(hasAllCodes("1010101010", 2)) // false
+    fmt.Println(hasAllCodes("0101010101", 2)) // false
+    fmt.Println(hasAllCodes("1111100000", 2)) // false
+    fmt.Println(hasAllCodes("0000011111", 2)) // false
+
     fmt.Println(hasAllCodes1("00110110", 2)) // true
     fmt.Println(hasAllCodes1("0110", 1)) // true
     fmt.Println(hasAllCodes1("0110", 2)) // false
+    fmt.Println(hasAllCodes1("1111111111", 2)) // false
+    fmt.Println(hasAllCodes1("0000000000", 2)) // false
+    fmt.Println(hasAllCodes1("1010101010", 2)) // false
+    fmt.Println(hasAllCodes1("0101010101", 2)) // false
+    fmt.Println(hasAllCodes1("1111100000", 2)) // false
+    fmt.Println(hasAllCodes1("0000011111", 2)) // false
 }
