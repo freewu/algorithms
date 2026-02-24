@@ -47,14 +47,14 @@ type TreeNode struct {
  * }
  */
 func sumRootToLeaf(root *TreeNode) int {
-    var dfs func(root *TreeNode, cur int) int 
-    dfs = func(root *TreeNode, cur int) int {
+    var dfs func(root *TreeNode, curr int) int 
+    dfs = func(root *TreeNode, curr int) int {
         if root == nil { return 0 }
         if root.Left == nil && root.Right == nil { // leaf
-            return cur + root.Val 
+            return curr + root.Val 
         }
-        cur = (root.Val + cur) << 1
-        return dfs(root.Left, cur) + dfs(root.Right, cur)
+        curr = (root.Val + curr) << 1
+        return dfs(root.Left, curr) + dfs(root.Right, curr)
     }
     return dfs(root, 0)
 }

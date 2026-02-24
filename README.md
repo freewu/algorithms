@@ -3202,7 +3202,7 @@
 [993. Cousins in Binary Tree](./leetcode/993-CousinsInBinaryTree.go)   
 [998. Maximum Binary Tree II](./leetcode/998-MaximumBinaryTreeII.go)   
 [1008. Construct Binary Search Tree from Preorder Traversal](./leetcode/1008-ConstructBinarySearchTreeFromPreorderTraversal.go)   
-[1022. Sum of Root To Leaf Binary Numbers](./leetcode/11022-SumOfRootToLeafBinaryNumbers.go)   
+[1022. Sum of Root To Leaf Binary Numbers](./leetcode/1022-SumOfRootToLeafBinaryNumbers.go)   
 [1026. Maximum Difference Between Node and Ancestor](./leetcode/1026-MaximumDifferenceBetweenNodeAndAncestor.go)   
 [1028. Recover a Tree From Preorder Traversal](./leetcode/1028-RecoverATreeFromPreorderTraversal.go)   
 [1038. Binary Search Tree to Greater Sum Tree](./leetcode/1038-BinarySearchTreeToGreaterSumTree.go)   
