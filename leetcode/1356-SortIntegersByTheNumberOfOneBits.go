@@ -77,6 +77,11 @@ func main() {
     // Explantion: All integers have 1 bit in the binary representation, you should just sort them in ascending order.
     fmt.Println(sortByBits([]int{1024,512,256,128,64,32,16,8,4,2,1})) // [1,2,4,8,16,32,64,128,256,512,1024]
 
+    fmt.Println(sortByBits([]int{1,2,3,4,5,6,7,8,9})) // [1 2 4 8 3 5 6 9 7]
+    fmt.Println(sortByBits([]int{9,8,7,6,5,4,3,2,1})) // [1 2 4 8 3 5 6 9 7]
+
     fmt.Println(sortByBits1([]int{0,1,2,3,4,5,6,7,8})) // [0,1,2,4,8,3,5,6,7]
     fmt.Println(sortByBits1([]int{1024,512,256,128,64,32,16,8,4,2,1})) // [1,2,4,8,16,32,64,128,256,512,1024]
+    fmt.Println(sortByBits1([]int{1,2,3,4,5,6,7,8,9})) // [1 2 4 8 3 5 6 9 7]
+    fmt.Println(sortByBits1([]int{9,8,7,6,5,4,3,2,1})) // [1 2 4 8 3 5 6 9 7]
 }
