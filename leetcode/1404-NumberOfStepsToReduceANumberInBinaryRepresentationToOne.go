@@ -38,7 +38,7 @@ import "fmt"
 
 // 模拟
 func numSteps(s string) int {
-    count, arr := 0, []byte(s)
+    res, arr := 0, []byte(s)
     for l := len(arr); l != 1; l = len(arr) {
         if arr[l-1] == '0' { // 如果当前数字为偶数，则将其除以 2  >> 1 
             arr = arr[:l-1]
@@ -55,9 +55,9 @@ func numSteps(s string) int {
                 arr = append([]byte{'1'}, arr...)
             }
         }
-        count++
+        res++
     }
-    return count
+    return res
 }
 
 func main() {
@@ -82,4 +82,11 @@ func main() {
     // Input: s = "1"
     // Output: 0
     fmt.Println(numSteps("1")) // 0
+
+    fmt.Println(numSteps("1111111111")) // 11
+    fmt.Println(numSteps("0000000000")) // 9
+    fmt.Println(numSteps("0000011111")) // 17
+    fmt.Println(numSteps("1111100000")) // 11
+    fmt.Println(numSteps("1010101010")) // 15
+    fmt.Println(numSteps("0101010101")) // 17
 }
