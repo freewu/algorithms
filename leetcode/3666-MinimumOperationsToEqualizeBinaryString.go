@@ -89,4 +89,11 @@ func main() {
     // Explanation:
     // Since k = 2 and s has only one '0', it is impossible to flip exactly k indices to make all '1'. Hence, the answer is -1.
     fmt.Println(minOperations("101", 2)) // -1
+
+    fmt.Println(minOperations("0000000000", 2)) // 5
+    fmt.Println(minOperations("1111111111", 2)) // 0
+    fmt.Println(minOperations("0000011111", 2)) // -1
+    fmt.Println(minOperations("1111100000", 2)) // -1
+    fmt.Println(minOperations("0101010101", 2)) // -1
+    fmt.Println(minOperations("1010101010", 2)) // -1
 }

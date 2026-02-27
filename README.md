@@ -2616,6 +2616,7 @@
 [3612. Process String with Special Operations I](./leetcode/3612-ProcessStringWithSpecialOperationsI.go)   
 [3614. Process String with Special Operations II](./leetcode/3614-ProcessStringWithSpecialOperationsII.go)   
 [3628. Maximum Number of Subsequences After One Inserting](./leetcode/3628-MaximumNumberOfSubsequencesAfterOneInserting.go)   
+[3666. Minimum Operations to Equalize Binary String](./leetcode/3666-MinimumOperationsToEqualizeBinaryString.go)   
 [3639. Minimum Time to Activate String](./leetcode/3639-MinimumTimeToActivateString.go)   
 [3692. Majority Frequency Characters](./leetcode/3692-MajorityFrequencyCharacters.go)   
 [3694. Distinct Points Reachable After Substring Removal](./leetcode/3694-DistinctPointsReachableAfterSubstringRemoval.go)   
