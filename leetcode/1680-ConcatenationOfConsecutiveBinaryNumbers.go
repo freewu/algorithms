@@ -26,6 +26,7 @@ package main
 //     1 <= n <= 10^5
 
 import "fmt"
+import "math/bits"
 
 func concatenatedBinary(n int) int {
     res, curr, count := 1, 2, 1
@@ -46,6 +47,14 @@ func concatenatedBinary1(n int) int {
             shift++
         }
         res = ((res << shift) | i) % 1_000_000_007
+    }
+    return res
+}
+
+func concatenatedBinary2(n int) int {
+    res := 0
+    for i := 1; i <= n; i++ {
+        res = (res << bits.Len(uint(i)) | i) % 1_000_000_007
     }
     return res
 }
@@ -90,5 +99,16 @@ func main() {
     fmt.Println(concatenatedBinary1(1024)) // 41183187
     fmt.Println(concatenatedBinary1(9999)) // 987753695
     fmt.Println(concatenatedBinary1(10000)) // 356435599
-    
+
+    fmt.Println(concatenatedBinary2(1)) // 1
+    fmt.Println(concatenatedBinary2(3)) // 27
+    fmt.Println(concatenatedBinary2(12)) // 505379714
+    fmt.Println(concatenatedBinary2(8)) // 1808248
+    fmt.Println(concatenatedBinary2(64)) // 644325427
+    fmt.Println(concatenatedBinary2(99)) // 627428348
+    fmt.Println(concatenatedBinary2(100)) // 310828084
+    fmt.Println(concatenatedBinary2(101)) // 785994580
+    fmt.Println(concatenatedBinary2(1024)) // 41183187
+    fmt.Println(concatenatedBinary2(9999)) // 987753695
+    fmt.Println(concatenatedBinary2(10000)) // 356435599 
 }
