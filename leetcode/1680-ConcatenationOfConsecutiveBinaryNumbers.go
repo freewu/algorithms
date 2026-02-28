@@ -39,6 +39,17 @@ func concatenatedBinary(n int) int {
     return res
 }
 
+func concatenatedBinary1(n int) int {
+    res, shift := 0, 0
+    for i := 1; i <= n; i++ {
+        if i & (i-1) == 0 {
+            shift++
+        }
+        res = ((res << shift) | i) % 1_000_000_007
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: n = 1
@@ -59,7 +70,25 @@ func main() {
     // After modulo 10^9 + 7, the result is 505379714.
     fmt.Println(concatenatedBinary(12)) // 505379714
 
+    fmt.Println(concatenatedBinary(8)) // 1808248
+    fmt.Println(concatenatedBinary(64)) // 644325427
+    fmt.Println(concatenatedBinary(99)) // 627428348
+    fmt.Println(concatenatedBinary(100)) // 310828084
+    fmt.Println(concatenatedBinary(101)) // 785994580
     fmt.Println(concatenatedBinary(1024)) // 41183187
-    fmt.Println(concatenatedBinary(10000)) // 356435599
     fmt.Println(concatenatedBinary(9999)) // 987753695
+    fmt.Println(concatenatedBinary(10000)) // 356435599
+
+    fmt.Println(concatenatedBinary1(1)) // 1
+    fmt.Println(concatenatedBinary1(3)) // 27
+    fmt.Println(concatenatedBinary1(12)) // 505379714
+    fmt.Println(concatenatedBinary1(8)) // 1808248
+    fmt.Println(concatenatedBinary1(64)) // 644325427
+    fmt.Println(concatenatedBinary1(99)) // 627428348
+    fmt.Println(concatenatedBinary1(100)) // 310828084
+    fmt.Println(concatenatedBinary1(101)) // 785994580
+    fmt.Println(concatenatedBinary1(1024)) // 41183187
+    fmt.Println(concatenatedBinary1(9999)) // 987753695
+    fmt.Println(concatenatedBinary1(10000)) // 356435599
+    
 }
