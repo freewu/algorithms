@@ -2652,6 +2652,7 @@
 [3846. Total Distance to Type a String Using One Finger](./leetcode/3846-TotalDistanceToTypeAStringUsingOneFinger.go)   
 [3849. Maximum Bitwise XOR After Rearrangement](./leetcode/3849-MaximumBitwiseXORAfterRearrangement.go)   
 [3853. Merge Close Characters](./leetcode/3853-MergeCloseCharacters.go)   
+[3856. Trim Trailing Vowels from a String](./leetcode/3856-TrimTrailingVowelsFromAString.go)   
 
 # Dynamic Programming
 [276. Paint Fence](./leetcode/276-PaintFence.go)   
