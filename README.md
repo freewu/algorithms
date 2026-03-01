@@ -1992,6 +1992,7 @@
 [3847. Find the Score Difference in a Game](./leetcode/3847-FindTheScoreDifferenceInAGame.go)   
 [3850. Count Sequences to K](./leetcode/3850-CountSequencesToK.go)   
 [3851. Maximum Requests Without Violating the Limit](./leetcode/3851-MaximumRequestsWithoutViolatingtheLimit.go)   
+[3852. Smallest Pair With Different Frequencies](./leetcode/3852-SmallestPairWithDifferentFrequencies.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
@@ -2649,7 +2650,7 @@
 [3844. Longest Almost-Palindromic Substring](./leetcode/3844-LongestAlmostPalindromicSubstring.go)   
 [3846. Total Distance to Type a String Using One Finger](./leetcode/3846-TotalDistanceToTypeAStringUsingOneFinger.go)   
 [3849. Maximum Bitwise XOR After Rearrangement](./leetcode/3849-MaximumBitwiseXORAfterRearrangement.go)   
-[3852. Smallest Pair With Different Frequencies](./leetcode/3852-SmallestPairWithDifferentFrequencies.go)   
+[3853. Merge Close Characters](./leetcode/3853-MergeCloseCharacters.go)   
 
 # Dynamic Programming
 [276. Paint Fence](./leetcode/276-PaintFence.go)   
