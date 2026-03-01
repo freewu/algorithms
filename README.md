@@ -1993,6 +1993,7 @@
 [3850. Count Sequences to K](./leetcode/3850-CountSequencesToK.go)   
 [3851. Maximum Requests Without Violating the Limit](./leetcode/3851-MaximumRequestsWithoutViolatingtheLimit.go)   
 [3852. Smallest Pair With Different Frequencies](./leetcode/3852-SmallestPairWithDifferentFrequencies.go)   
+[3854. Minimum Operations to Make Array Parity Alternating](./leetcode/3854-MinimumOperationsToMakeArrayParityAlternating.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
