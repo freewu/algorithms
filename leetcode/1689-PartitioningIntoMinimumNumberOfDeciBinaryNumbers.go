@@ -62,7 +62,20 @@ func main() {
     // Output: 9
     fmt.Println(minPartitions("82734")) // 8
 
+    fmt.Println(minPartitions("1")) // 1
+    fmt.Println(minPartitions("1024")) // 4
+    fmt.Println(minPartitions("10000")) // 1
+    fmt.Println(minPartitions("99999")) // 9
+    fmt.Println(minPartitions("1000000000")) // 1
+    fmt.Println(minPartitions("1000000007")) // 7
+
     fmt.Println(minPartitions1("32")) // 3
     fmt.Println(minPartitions1("82734")) // 8
     fmt.Println(minPartitions1("82734")) // 8
+    fmt.Println(minPartitions1("1")) // 1
+    fmt.Println(minPartitions1("1024")) // 4
+    fmt.Println(minPartitions1("10000")) // 1
+    fmt.Println(minPartitions1("99999")) // 9
+    fmt.Println(minPartitions1("1000000000")) // 1
+    fmt.Println(minPartitions1("1000000007")) // 7
 }
