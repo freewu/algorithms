@@ -2649,6 +2649,7 @@
 [3844. Longest Almost-Palindromic Substring](./leetcode/3844-LongestAlmostPalindromicSubstring.go)   
 [3846. Total Distance to Type a String Using One Finger](./leetcode/3846-TotalDistanceToTypeAStringUsingOneFinger.go)   
 [3849. Maximum Bitwise XOR After Rearrangement](./leetcode/3849-MaximumBitwiseXORAfterRearrangement.go)   
+[3852. Smallest Pair With Different Frequencies](./leetcode/3852-SmallestPairWithDifferentFrequencies.go)   
 
 # Dynamic Programming
 [276. Paint Fence](./leetcode/276-PaintFence.go)   
