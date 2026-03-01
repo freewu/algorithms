@@ -3093,6 +3093,7 @@
 [3821. Find Nth Smallest Integer With K One Bits](./leetcode/3821-FindNthSmallestIntegerWithKOneBits.go)   
 [3827. Count Monobit Integers](./leetcode/3827-CountMonobitIntegers.go)   
 [3848. Check Digitorial Permutation](./leetcode/3848-CheckDigitorialPermutation.go)   
+[3855. Sum of K-Digit Numbers in a Range](./leetcode/3855-SumOfKDigitNumbersInARange.go)
 
 # Stack
 [225. Implement Stack using Queues](./leetcode/225-ImplementStackUsingQueues.go)   
