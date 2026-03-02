@@ -71,6 +71,30 @@ func maxRequests(requests [][]int, k int, window int) int {
     return res
 }
 
+func maxRequests1(requests [][]int, k int, window int) int {
+    graph := make(map[int][]int)
+    for _, r := range requests {
+        u, t := r[0], r[1]
+        graph[u] = append(graph[u], t)
+    }
+    res := len(requests)
+    for _, ts := range graph {
+        sort.Ints(ts)
+        kept := make([]int, 0)
+        for _, t := range ts {
+            for len(kept) > 0 && t - kept[0] > window {
+                kept = kept[1:]
+            }
+            if len(kept) < k {
+                kept = append(kept, t)
+            } else {
+                res--
+            }
+        }
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: requests = [[1,1],[2,1],[1,7],[2,8]], k = 1, window = 4
@@ -97,4 +121,8 @@ func main() {
     // The inclusive interval [1, 2] contains both requests, so the count is 2, which exceeds k = 1. One request must be removed.
     // Users 2 and 3 each have only one request and do not violate the limit. Therefore, the maximum number of requests that can remain is 3.
     fmt.Println(maxRequests([][]int{{1,1},{2,5},{1,2},{3,9}}, 1, 1)) // 3
+
+    fmt.Println(maxRequests1([][]int{{1,1},{2,1},{1,7},{2,8}}, 1, 4)) // 4
+    fmt.Println(maxRequests1([][]int{{1,2},{1,5},{1,2},{1,6}}, 2, 5)) // 2
+    fmt.Println(maxRequests1([][]int{{1,1},{2,5},{1,2},{3,9}}, 1, 1)) // 3
 }
