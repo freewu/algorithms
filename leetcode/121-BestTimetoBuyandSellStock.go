@@ -91,10 +91,16 @@ func main() {
     fmt.Printf("maxProfit([]int{7,1,5,3,6,4}) = %v\n",maxProfit([]int{7,1,5,3,6,4})) // 5    (6 - 1)
     // Explanation: In this case, no transactions are done and the max profit = 0.
     fmt.Printf("maxProfit([]int{7,6,4,3,1}) = %v\n",maxProfit([]int{7,6,4,3,1})) // 0   当天买入 当天卖出
+    fmt.Printf("maxProfit2([]int{1,2,3,4,5,6,7,8,9}) = %v\n",maxProfit2([]int{1,2,3,4,5,6,7,8,9})) // 8
+    fmt.Printf("maxProfit2([]int{9,8,7,6,5,4,3,2,1}) = %v\n",maxProfit2([]int{9,8,7,6,5,4,3,2,1})) // 0 
 
     fmt.Printf("maxProfit1([]int{7,1,5,3,6,4}) = %v\n",maxProfit1([]int{7,1,5,3,6,4})) // 5    (6 - 1)
     fmt.Printf("maxProfit1([]int{7,6,4,3,1}) = %v\n",maxProfit1([]int{7,6,4,3,1})) // 0   当天买入 当天卖出
+    fmt.Printf("maxProfit2([]int{1,2,3,4,5,6,7,8,9}) = %v\n",maxProfit2([]int{1,2,3,4,5,6,7,8,9})) // 8
+    fmt.Printf("maxProfit2([]int{9,8,7,6,5,4,3,2,1}) = %v\n",maxProfit2([]int{9,8,7,6,5,4,3,2,1})) // 0 
 
     fmt.Printf("maxProfit2([]int{7,1,5,3,6,4}) = %v\n",maxProfit2([]int{7,1,5,3,6,4})) // 5    (6 - 1)
     fmt.Printf("maxProfit2([]int{7,6,4,3,1}) = %v\n",maxProfit2([]int{7,6,4,3,1})) // 0   当天买入 当天卖出
+    fmt.Printf("maxProfit2([]int{1,2,3,4,5,6,7,8,9}) = %v\n",maxProfit2([]int{1,2,3,4,5,6,7,8,9})) // 8
+    fmt.Printf("maxProfit2([]int{9,8,7,6,5,4,3,2,1}) = %v\n",maxProfit2([]int{9,8,7,6,5,4,3,2,1})) // 0 
 }
