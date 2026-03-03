@@ -64,7 +64,11 @@ func isAnagram1(s string, t string) bool {
 func main() {
     fmt.Println(isAnagram("anagram","nagaram")) // true
     fmt.Println(isAnagram("rat","car")) // false
+    fmt.Println(isAnagram("bluefrog","leetcode")) // false
+    fmt.Println(isAnagram("leetcode","bluefrog")) // false
 
     fmt.Println(isAnagram1("anagram","nagaram")) // true
     fmt.Println(isAnagram1("rat","car")) // false
+    fmt.Println(isAnagram1("bluefrog","leetcode")) // false
+    fmt.Println(isAnagram1("leetcode","bluefrog")) // false
 }
