@@ -78,6 +78,15 @@ func main() {
     // The 11th bit is "1".
     fmt.Printf("%c\n", findKthBit(4,11)) // '1'
 
+    fmt.Printf("%c\n", findKthBit(1,1)) // '0'
+    fmt.Printf("%c\n", findKthBit(20,1)) // '0'
+    fmt.Printf("%c\n", findKthBit(20,20)) // '1'
+    fmt.Printf("%c\n", findKthBit(20,39)) // '1'
+
     fmt.Printf("%c\n", findKthBit1(3,1)) // '0'
     fmt.Printf("%c\n", findKthBit1(4,11)) // '1'
+    fmt.Printf("%c\n", findKthBit1(1,1)) // '0'
+    fmt.Printf("%c\n", findKthBit1(20,1)) // '0'
+    fmt.Printf("%c\n", findKthBit1(20,20)) // '1'
+    fmt.Printf("%c\n", findKthBit1(20,39)) // '1'
 } 
