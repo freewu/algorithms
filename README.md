@@ -1996,6 +1996,7 @@
 [3854. Minimum Operations to Make Array Parity Alternating](./leetcode/3854-MinimumOperationsToMakeArrayParityAlternating.go)   
 [3858. Minimum Bitwise OR From Grid](./leetcode/3858-MinimumBitwiseORFromGrid.go)   
 [3859. Count Subarrays With K Distinct Integers](./leetcode/3859-CountSubarraysWithKDistinctIntegers.go)   
+[3860. Unique Email Groups](./leetcode/3860-UniqueEmailGroups.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
