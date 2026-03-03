@@ -32,27 +32,23 @@ package main
 import "fmt"
 
 func numIslands(grid [][]byte) int {
-	m := len(grid)
-	if m == 0 {
-		return 0
-	}
-	n := len(grid[0])
-	if n == 0 {
-		return 0
-	}
-	res, visited := 0, make([][]bool, m)
-	for i := 0; i < m; i++ {
-		visited[i] = make([]bool, n)
-	}
-	for i := 0; i < m; i++ {
-		for j := 0; j < n; j++ {
-			if grid[i][j] == '1' && !visited[i][j] {
-				searchIslands(grid, &visited, i, j)
-				res++
-			}
-		}
-	}
-	return res
+    m, n := len(grid), len(grid[0])
+    if m == 0 || n == 0 {
+        return 0
+    }
+    res, visited := 0, make([][]bool, m)
+    for i := 0; i < m; i++ {
+        visited[i] = make([]bool, n)
+    }
+    for i := 0; i < m; i++ {
+        for j := 0; j < n; j++ {
+            if grid[i][j] == '1' && !visited[i][j] {
+                searchIslands(grid, &visited, i, j)
+                res++
+            }
+        }
+    }
+    return res
 }
 
 func searchIslands(grid [][]byte, visited *[][]bool, x, y int) {
