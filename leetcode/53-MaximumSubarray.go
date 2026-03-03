@@ -106,13 +106,11 @@ func maxSubArray3(nums []int) int {
 
 // best solution 快慢指针
 func maxSubArray4(nums []int) int {
-    length := len(nums)
-    fast, slow := 0,0
-    result, sum :=  -1 >> 32 - 1, 0
-    for fast < length && slow < length {
+    res, sum, fast, slow, n := -1 >> 32 - 1, 0, 0, 0, len(nums)
+    for fast < n && slow < n {
         sum = sum + nums[fast]
-        if sum > result {
-            result = sum
+        if sum > res {
+            res = sum
         }
         for sum< 0 {
             sum = sum - nums[slow]
@@ -120,27 +118,37 @@ func maxSubArray4(nums []int) int {
         }
         fast++
     }
-    return result
+    return res
 }
 
 func main() {
     fmt.Printf("maxSubArray([]int{-2, 1, -3, 4, -1, 2, 1, -5, 4}) = %v\n",maxSubArray([]int{-2, 1, -3, 4, -1, 2, 1, -5, 4})) // 6
     fmt.Printf("maxSubArray([]int{1}) = %v\n",maxSubArray([]int{1})) // 1
     fmt.Printf("maxSubArray([]int{5,4,-1,7,8}) = %v\n",maxSubArray([]int{5,4,-1,7,8})) // 23
+    fmt.Println(maxSubArray([]int{1,2,3,4,5,6,7,8,9})) // 45
+    fmt.Println(maxSubArray([]int{9,8,7,6,5,4,3,2,1})) // 45
 
     fmt.Printf("maxSubArray1([]int{-2, 1, -3, 4, -1, 2, 1, -5, 4}) = %v\n",maxSubArray1([]int{-2, 1, -3, 4, -1, 2, 1, -5, 4})) // 6
     fmt.Printf("maxSubArray1([]int{1}) = %v\n",maxSubArray1([]int{1})) // 1
     fmt.Printf("maxSubArray1([]int{5,4,-1,7,8}) = %v\n",maxSubArray1([]int{5,4,-1,7,8})) // 23
+    fmt.Println(maxSubArray1([]int{1,2,3,4,5,6,7,8,9})) // 45
+    fmt.Println(maxSubArray1([]int{9,8,7,6,5,4,3,2,1})) // 45
 
     fmt.Printf("maxSubArray2([]int{-2, 1, -3, 4, -1, 2, 1, -5, 4}) = %v\n",maxSubArray2([]int{-2, 1, -3, 4, -1, 2, 1, -5, 4})) // 6
     fmt.Printf("maxSubArray2([]int{1}) = %v\n",maxSubArray2([]int{1})) // 1
     fmt.Printf("maxSubArray2([]int{5,4,-1,7,8}) = %v\n",maxSubArray2([]int{5,4,-1,7,8})) // 23
+    fmt.Println(maxSubArray2([]int{1,2,3,4,5,6,7,8,9})) // 45
+    fmt.Println(maxSubArray2([]int{9,8,7,6,5,4,3,2,1})) // 45
 
     fmt.Printf("maxSubArray3([]int{-2, 1, -3, 4, -1, 2, 1, -5, 4}) = %v\n",maxSubArray3([]int{-2, 1, -3, 4, -1, 2, 1, -5, 4})) // 6
     fmt.Printf("maxSubArray3([]int{1}) = %v\n",maxSubArray3([]int{1})) // 1
     fmt.Printf("maxSubArray3([]int{5,4,-1,7,8}) = %v\n",maxSubArray3([]int{5,4,-1,7,8})) // 23
+    fmt.Println(maxSubArray3([]int{1,2,3,4,5,6,7,8,9})) // 45
+    fmt.Println(maxSubArray3([]int{9,8,7,6,5,4,3,2,1})) // 45
 
     fmt.Printf("maxSubArray4([]int{-2, 1, -3, 4, -1, 2, 1, -5, 4}) = %v\n",maxSubArray4([]int{-2, 1, -3, 4, -1, 2, 1, -5, 4})) // 6
     fmt.Printf("maxSubArray4([]int{1}) = %v\n",maxSubArray4([]int{1})) // 1
     fmt.Printf("maxSubArray4([]int{5,4,-1,7,8}) = %v\n",maxSubArray4([]int{5,4,-1,7,8})) // 23
+    fmt.Println(maxSubArray4([]int{1,2,3,4,5,6,7,8,9})) // 45
+    fmt.Println(maxSubArray4([]int{9,8,7,6,5,4,3,2,1})) // 45
 }
