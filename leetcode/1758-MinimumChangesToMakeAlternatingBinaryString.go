@@ -87,11 +87,30 @@ func main() {
     // Explanation: You need two operations to reach "0101" or "1010".
     fmt.Println(minOperations("1111")) // 2
 
+    fmt.Println(minOperations("0000000000")) // 5
+    fmt.Println(minOperations("1111111111")) // 5
+    fmt.Println(minOperations("0000011111")) // 4
+    fmt.Println(minOperations("1111100000")) // 4
+    fmt.Println(minOperations("0101010101")) // 0
+    fmt.Println(minOperations("1010101010")) // 0
+
     fmt.Println(minOperations1("0100")) // 1
     fmt.Println(minOperations1("10")) // 0
     fmt.Println(minOperations1("1111")) // 2
+    fmt.Println(minOperations1("0000000000")) // 5
+    fmt.Println(minOperations1("1111111111")) // 5
+    fmt.Println(minOperations1("0000011111")) // 4
+    fmt.Println(minOperations1("1111100000")) // 4
+    fmt.Println(minOperations1("0101010101")) // 0
+    fmt.Println(minOperations1("1010101010")) // 0
 
     fmt.Println(minOperations2("0100")) // 1
     fmt.Println(minOperations2("10")) // 0
     fmt.Println(minOperations2("1111")) // 2
+    fmt.Println(minOperations2("0000000000")) // 5
+    fmt.Println(minOperations2("1111111111")) // 5
+    fmt.Println(minOperations2("0000011111")) // 4
+    fmt.Println(minOperations2("1111100000")) // 4
+    fmt.Println(minOperations2("0101010101")) // 0
+    fmt.Println(minOperations2("1010101010")) // 0
 }
