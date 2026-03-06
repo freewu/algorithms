@@ -64,14 +64,32 @@ func main() {
 
     fmt.Println(checkOnesSegment("1")) // true
     fmt.Println(checkOnesSegment("10")) // true
+    fmt.Println(checkOnesSegment("0000000000")) // true
+    fmt.Println(checkOnesSegment("1111111111")) // true
+    fmt.Println(checkOnesSegment("0000011111")) // false
+    fmt.Println(checkOnesSegment("1111100000")) // true
+    fmt.Println(checkOnesSegment("0101010101")) // false
+    fmt.Println(checkOnesSegment("1010101010")) // false
 
     fmt.Println(checkOnesSegment1("1001")) // false
     fmt.Println(checkOnesSegment1("110")) // true
     fmt.Println(checkOnesSegment1("1")) // true
     fmt.Println(checkOnesSegment1("10")) // true
+    fmt.Println(checkOnesSegment1("0000000000")) // true
+    fmt.Println(checkOnesSegment1("1111111111")) // true
+    fmt.Println(checkOnesSegment1("0000011111")) // false
+    fmt.Println(checkOnesSegment1("1111100000")) // true
+    fmt.Println(checkOnesSegment1("0101010101")) // false
+    fmt.Println(checkOnesSegment1("1010101010")) // false
 
     fmt.Println(checkOnesSegment2("1001")) // false
     fmt.Println(checkOnesSegment2("110")) // true
     fmt.Println(checkOnesSegment2("1")) // true
     fmt.Println(checkOnesSegment2("10")) // true
+    fmt.Println(checkOnesSegment2("0000000000")) // true
+    fmt.Println(checkOnesSegment2("1111111111")) // true
+    fmt.Println(checkOnesSegment2("0000011111")) // false
+    fmt.Println(checkOnesSegment2("1111100000")) // true
+    fmt.Println(checkOnesSegment2("0101010101")) // false
+    fmt.Println(checkOnesSegment2("1010101010")) // false
 }
