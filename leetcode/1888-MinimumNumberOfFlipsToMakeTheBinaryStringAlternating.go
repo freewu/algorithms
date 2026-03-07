@@ -103,7 +103,20 @@ func main() {
     // Explanation: Use the second operation on the second element to make s = "1010".
     fmt.Println(minFlips("1110")) // 1
 
+    fmt.Println(minFlips("0000000000")) // 5
+    fmt.Println(minFlips("1111111111")) // 5
+    fmt.Println(minFlips("0000011111")) // 4
+    fmt.Println(minFlips("1111100000")) // 4
+    fmt.Println(minFlips("0101010101")) // 0
+    fmt.Println(minFlips("1010101010")) // 0
+
     fmt.Println(minFlips1("111000")) // 2
     fmt.Println(minFlips1("010")) // 0
     fmt.Println(minFlips1("1110")) // 1
+    fmt.Println(minFlips1("0000000000")) // 5
+    fmt.Println(minFlips1("1111111111")) // 5
+    fmt.Println(minFlips1("0000011111")) // 4
+    fmt.Println(minFlips1("1111100000")) // 4
+    fmt.Println(minFlips1("0101010101")) // 0
+    fmt.Println(minFlips1("1010101010")) // 0
 }
