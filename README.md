@@ -2659,6 +2659,7 @@
 [3853. Merge Close Characters](./leetcode/3853-MergeCloseCharacters.go)   
 [3856. Trim Trailing Vowels from a String](./leetcode/3856-TrimTrailingVowelsFromAString.go)   
 [3863. Minimum Operations to Sort a String](./leetcode/3863-MinimumOperationsToSortAString.go)   
+[3864. Minimum Cost to Partition a Binary String](./leetcode/3864-MinimumCostToPartitionABinaryString.go)   
 
 # Dynamic Programming
 [276. Paint Fence](./leetcode/276-PaintFence.go)   
