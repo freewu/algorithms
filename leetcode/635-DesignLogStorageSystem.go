@@ -39,110 +39,79 @@ package main
 
 import "fmt"
 import "strings"
+import "strconv"
 
 type LogSystem struct {
-    logs     []Log
-    indexMap map[string]int
-}
-
-type Log struct {
-    timestamp string
-    id        int
+	list [][2]int64
 }
 
 func Constructor() LogSystem {
-    indexMap := map[string]int{}
-    indexMap["Year"] = 1
-    indexMap["Month"] = 2
-    indexMap["Day"] = 3
-    indexMap["Hour"] = 4
-    indexMap["Minute"] = 5
-    indexMap["Second"] = 6
-    return LogSystem{
-        logs:     make([]Log, 0),
-        indexMap: indexMap,
-    }
+	return LogSystem{}
 }
 
-// 利用二分查找，查找插入位置
 func (this *LogSystem) Put(id int, timestamp string) {
-    // 根据输入的数据，产生一条新日志
-    log := Log{
-        timestamp: timestamp,
-        id:        id,
-    }
-    // 二分查找，查找插入位置，队列是根据 timestamp 升序排列的
-    low, high := 0, len(this.logs)-1
-    pos := -1
-    for low <= high {
-        mid := (low + high) / 2
-        compareRes := strings.Compare(timestamp, this.logs[mid].timestamp)
-        if compareRes == 0 { // 待插入元素等于中间位置，可插入中间位置的下一个位置，跳出循环
-            pos = mid
-            return // 重复的不允许插入 65 过不了
-            // break
-        } else if compareRes < 0 { // 待插入元素小于中间位置，需要在左侧插入
-            high = mid - 1
-        } else if compareRes > 0 { // 待插入元素大于中间位置，需要在右侧插入
-            low = mid + 1
-        }
-    }
-    if pos == -1 { // 没有找到等于 timestamp 的元素，此时 low = high + 1
-        pos = high
-    }
-    newLogs := make([]Log, len(this.logs)+1)
-    // put new log in position pos+1
-    copy(newLogs[0:pos+1], this.logs[0:pos+1])
-    newLogs[pos+1] = log
-    copy(newLogs[pos+2:], this.logs[pos+1:])
-    this.logs = newLogs
+	st := this.split(timestamp)
+	this.list = append(this.list, [2]int64{this.convert(st), int64(id)})
 }
 
-func (this *LogSystem) Retrieve(start string, end string, granularity string) []int {
-    pos := this.Search(start, granularity)
-    ids := []int{}
-    for i := pos; i < len(this.logs); i++ {
-        if this.compare(this.logs[i].timestamp, start, granularity) >= 0 &&
-            this.compare(this.logs[i].timestamp, end, granularity) <= 0 {
-            ids = append(ids, this.logs[i].id)
-        }
-    }
-    return ids
+func (this *LogSystem) convert(st []int) int64 {
+	if st[1] > 0 {
+		st[1]--
+	}
+	if st[2] > 0 {
+		st[2]--
+	}
+	return int64(st[0]-1999)*(31*12)*24*60*60 + 
+	       int64(st[1])*31*24*60*60 + 
+	       int64(st[2])*24*60*60 + 
+	       int64(st[3])*60*60 + 
+	       int64(st[4])*60 + 
+	       int64(st[5])
 }
 
-// search the first position i, i >= start
-func (this *LogSystem) Search(start string, granularity string) int {
-    l, h := 0, len(this.logs)-1
-    pos := -1
-    for l <= h {
-        mid := (l + h) / 2
-        cmpRes := this.compare(start, this.logs[mid].timestamp, granularity)
-        if cmpRes == 0 { // start == mid
-            pos = mid
-            break
-        } else if cmpRes > 0 {
-            l = mid + 1
-        } else {
-            h = mid - 1
-        }
-    }
-    if pos == -1 {
-        return h + 1
-    }
-    for pos >= 0 && this.compare(start, this.logs[pos].timestamp, granularity) == 0 {
-        pos--
-    }
-    return pos + 1
+func (this *LogSystem) split(s string) []int {
+	parts := strings.Split(s, ":")
+	result := make([]int, len(parts))
+	for i, part := range parts {
+		result[i], _ = strconv.Atoi(part)
+	}
+	return result
 }
 
-// 2016:01:01:01:01:01
-// "Year", "Month", "Day", "Hour", "Minute", "Second"
-func (this *LogSystem) compare(a, b string, granularity string) int {
-    ta, tb := strings.Split(a, ":"), strings.Split(b, ":")
-    index := this.indexMap[granularity]
-    cptimea := strings.Join(ta[0:index], ":")
-    cptimeb := strings.Join(tb[0:index], ":")
-    return strings.Compare(cptimea, cptimeb)
+func (this *LogSystem) Retrieve(s string, e string, gra string) []int {
+	res := []int{}
+	start := this.Granularity(s, gra, false)
+	end := this.Granularity(e, gra, true)
+	for _, item := range this.list {
+		if item[0] >= start && item[0] < end {
+			res = append(res, int(item[1]))
+		}
+	}
+	return res
+}
+
+func (this *LogSystem) Granularity(s string, gra string, end bool) int64 {
+	h := map[string]int{
+		"Year": 0, "Month": 1, "Day": 2,
+		"Hour": 3, "Minute": 4, "Second": 5,
+	}
+	
+	res := []string{"1999", "00", "00", "00", "00", "00"}
+	st := this.split(s)
+	
+	for i := 0; i <= h[gra]; i++ {
+		res[i] = strconv.Itoa(st[i])
+	}
+	
+	t := make([]int, len(res))
+	for i, str := range res {
+		t[i], _ = strconv.Atoi(str)
+	}
+	
+	if end {
+		t[h[gra]]++
+	}
+	return this.convert(t)
 }
 
 // import "sort"
