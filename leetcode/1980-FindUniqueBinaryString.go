@@ -45,7 +45,7 @@ func main() {
     // Example 1:
     // Input: nums = ["01","10"]
     // Output: "11"
-    // Explanation: "11" does not appear in nums. "00" would also be correct.
+    // Explanation: "11" does not appe ar in nums. "00" would also be correct.
     fmt.Println(findDifferentBinaryString([]string{"01","10"})) // "11"
     // Example 2:
     // Input: nums = ["00","01"]
@@ -57,4 +57,13 @@ func main() {
     // Output: "101"
     // Explanation: "101" does not appear in nums. "000", "010", "100", and "110" would also be correct.
     fmt.Println(findDifferentBinaryString([]string{"111","011","001"})) // "000"
+
+    fmt.Println(findDifferentBinaryString([]string{"0000000000","1111111111"})) // "10"
+    fmt.Println(findDifferentBinaryString([]string{"0000000000","0000000000"})) // "11"
+    fmt.Println(findDifferentBinaryString([]string{"1111111111","0000000000"})) // "01"
+    fmt.Println(findDifferentBinaryString([]string{"1111111111","1111111111"})) // "00"
+    fmt.Println(findDifferentBinaryString([]string{"0101010101","1010101010"})) // "11"
+    fmt.Println(findDifferentBinaryString([]string{"0101010101","0101010101"})) // "10"
+    fmt.Println(findDifferentBinaryString([]string{"1010101010","0101010101"})) // "00"
+    fmt.Println(findDifferentBinaryString([]string{"1010101010","1010101010"})) // "01"
 }
