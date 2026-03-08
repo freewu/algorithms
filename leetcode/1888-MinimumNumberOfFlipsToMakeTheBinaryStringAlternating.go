@@ -85,6 +85,27 @@ func minFlips1(s string) int {
     return res
 }
 
+
+func minFlips2(s string) int {
+    calc := func (ch byte,i int) int { // ch跟i奇偶性相同
+        if (int(ch - '0') ^ (i & 1)) == 0 {
+            return 1
+        }
+        return 0
+    }
+    min := func (x, y int) int { if x < y { return x; }; return y; }
+    cntx, n := 0, len(s)
+    for i, _ := range s {
+        cntx += calc(s[i], i)
+    }
+    res := min(cntx, n - cntx)
+    for i := 1; i < n; i++ {
+        cntx = cntx - calc(s[i - 1], i - 1) + calc(s[i - 1], i - 1 + n)
+        res = min(res, min(cntx, n - cntx))
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: s = "111000"
@@ -119,4 +140,14 @@ func main() {
     fmt.Println(minFlips1("1111100000")) // 4
     fmt.Println(minFlips1("0101010101")) // 0
     fmt.Println(minFlips1("1010101010")) // 0
+
+    fmt.Println(minFlips2("111000")) // 2
+    fmt.Println(minFlips2("010")) // 0
+    fmt.Println(minFlips2("1110")) // 1
+    fmt.Println(minFlips2("0000000000")) // 5
+    fmt.Println(minFlips2("1111111111")) // 5
+    fmt.Println(minFlips2("0000011111")) // 4
+    fmt.Println(minFlips2("1111100000")) // 4
+    fmt.Println(minFlips2("0101010101")) // 0
+    fmt.Println(minFlips2("1010101010")) // 0
 }
