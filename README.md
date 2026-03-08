@@ -1998,6 +1998,7 @@
 [3859. Count Subarrays With K Distinct Integers](./leetcode/3859-CountSubarraysWithKDistinctIntegers.go)   
 [3860. Unique Email Groups](./leetcode/3860-UniqueEmailGroups.go)   
 [3861. Minimum Capacity Box](./leetcode/3861-MinimumCapacityBox.go)   
+[3862. Find the Smallest Balanced Index](./leetcode/3862-FindTheSmallestBalancedIndex.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
