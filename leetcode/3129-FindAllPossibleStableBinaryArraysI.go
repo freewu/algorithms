@@ -99,6 +99,49 @@ func numberOfStableArrays(zero int, one int, limit int) int {
     return (dp[zero][one][0] + dp[zero][one][1]) % mod
 }
 
+func numberOfStableArrays1(zero, one, limit int) int {
+    const MOD = 1_000_000_007
+    modinv := func (n int) int {
+        x, y, px, py := 0, 1, 1, 0
+        m := MOD
+        for m != 0 {
+            q := n / m
+            n, m = m, n%m
+            px, x = x, px - q * x
+            py, y = y, py - q * y
+        }
+        return px
+    }
+    ncr := func(n, r int) int {
+        if r > n/2 { r = n - r }
+        num, den := 1, 1
+        for i := 1; i <= r; i++ {
+            num = (num * (n - i + 1)) % MOD
+            den = (den * i) % MOD
+        }
+        return (num * modinv(den)) % MOD
+    }
+    splitways := func (n, k, limit int) int {
+        if n == k { return 1 }
+        if n > k*limit { return 0 }
+        total, flag, remaining := 0, 1, n
+        for j := 0; j <= k && k <= remaining; j++ {
+            term := ncr(k, j) * ncr(remaining - 1, k - 1)
+            total = (total + flag * term + MOD*MOD) % MOD
+            flag = -flag
+            remaining -= limit
+        }
+        return total
+    }
+    res, prev, curr, next := 0, 0, splitways(one, 1, limit), splitways(one, 2, limit)
+    for k := 1; k <= zero; k++ {
+        choices := (prev + 2 * curr + next) * splitways(zero, k, limit)
+        res = (res + choices) % MOD
+        prev, curr, next = curr, next, splitways(one, k + 2, limit)
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: zero = 1, one = 1, limit = 2
@@ -128,4 +171,16 @@ func main() {
     fmt.Println(numberOfStableArrays(2000,1,1)) // 0
     fmt.Println(numberOfStableArrays(1,2000,1)) // 0
     fmt.Println(numberOfStableArrays(2000,2000,2000)) // 67529288
+
+    fmt.Println(numberOfStableArrays1(1,1,2)) // 2
+    fmt.Println(numberOfStableArrays1(1,2,1)) // 1
+    fmt.Println(numberOfStableArrays1(3,3,2)) // 14
+    fmt.Println(numberOfStableArrays1(1,1,1)) // 2
+    fmt.Println(numberOfStableArrays1(1,2000,2000)) // 2001
+    fmt.Println(numberOfStableArrays1(2000,1,2000)) // 2001
+    fmt.Println(numberOfStableArrays1(2000,2000,1)) // 2
+    fmt.Println(numberOfStableArrays1(1,1,2000)) // 2
+    fmt.Println(numberOfStableArrays1(2000,1,1)) // 0
+    fmt.Println(numberOfStableArrays1(1,2000,1)) // 0
+    fmt.Println(numberOfStableArrays1(2000,2000,2000)) // 67529288
 }
