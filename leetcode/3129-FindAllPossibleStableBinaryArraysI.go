@@ -119,4 +119,13 @@ func main() {
     // Explanation:
     // All the possible stable binary arrays are [0,0,1,0,1,1], [0,0,1,1,0,1], [0,1,0,0,1,1], [0,1,0,1,0,1], [0,1,0,1,1,0], [0,1,1,0,0,1], [0,1,1,0,1,0], [1,0,0,1,0,1], [1,0,0,1,1,0], [1,0,1,0,0,1], [1,0,1,0,1,0], [1,0,1,1,0,0], [1,1,0,0,1,0], and [1,1,0,1,0,0].
     fmt.Println(numberOfStableArrays(3,3,2)) // 14
+
+    fmt.Println(numberOfStableArrays(1,1,1)) // 2
+    fmt.Println(numberOfStableArrays(1,2000,2000)) // 2001
+    fmt.Println(numberOfStableArrays(2000,1,2000)) // 2001
+    fmt.Println(numberOfStableArrays(2000,2000,1)) // 2
+    fmt.Println(numberOfStableArrays(1,1,2000)) // 2
+    fmt.Println(numberOfStableArrays(2000,1,1)) // 0
+    fmt.Println(numberOfStableArrays(1,2000,1)) // 0
+    fmt.Println(numberOfStableArrays(2000,2000,2000)) // 67529288
 }
