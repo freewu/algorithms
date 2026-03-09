@@ -95,6 +95,39 @@ func uniqueEmailGroups(emails []string) int {
     return len(mp)
 }
 
+func uniqueEmailGroups1(emails []string) int {
+    handle := func (email string) string {
+        enableDot, enablePlus, ignoreAny := false,true, false
+        runeList := make([]rune, 0, len(email))
+        for _, v := range email {
+            if v >= 'A' && v <= 'Z' {
+                v += 32
+            }
+            if enablePlus && v == '+' {
+                ignoreAny, enablePlus = true, false
+                continue
+            }
+            if v == '@' {       
+                enablePlus, enableDot, ignoreAny = false, true, false
+            }
+            if ignoreAny { continue }
+            if v == '.' {
+                if enableDot {
+                    runeList = append(runeList, v)
+                }
+            } else {
+                runeList = append(runeList, v)
+            }
+        }
+        return string(runeList)
+    }
+    mp := make(map[string]bool)
+    for _, email := range emails {
+        mp[handle(email)] = true
+    }
+    return len(mp)  
+}
+
 func main() {
     // Example 1:
     // Input: emails = ["test.email+alex@leetcode.com", "test.e.mail+bob.cathy@leetcode.com", "testemail+david@lee.tcode.com"]
@@ -129,4 +162,9 @@ func main() {
     fmt.Println(uniqueEmailGroups([]string{"a.b+c.d+e@DoMain.com", "ab+xyz@domain.com", "ab@domain.com"})) // 1
 
     fmt.Println(uniqueEmailGroups([]string{"bluefrog@leetcode.com", "admin@leetcode.com", "freewu@lee.tcode.com"})) // 3
+
+    fmt.Println(uniqueEmailGroups1([]string{"test.email+alex@leetcode.com", "test.e.mail+bob.cathy@leetcode.com", "testemail+david@lee.tcode.com"})) // 2
+    fmt.Println(uniqueEmailGroups1([]string{"A@B.com", "a@b.com", "ab+xy@b.com", "a.b@b.com"})) // 2
+    fmt.Println(uniqueEmailGroups1([]string{"a.b+c.d+e@DoMain.com", "ab+xyz@domain.com", "ab@domain.com"})) // 1
+    fmt.Println(uniqueEmailGroups1([]string{"bluefrog@leetcode.com", "admin@leetcode.com", "freewu@lee.tcode.com"})) // 3
 }
