@@ -57,7 +57,11 @@ func main() {
     // - ans = [nums[0],nums[1],nums[2],nums[3],nums[0],nums[1],nums[2],nums[3]]
     // - ans = [1,3,2,1,1,3,2,1]
     fmt.Println(getConcatenation([]int{1,3,2,1})) // [1,3,2,1,1,3,2,1]
+    fmt.Println(getConcatenation([]int{1,2,3,4,5,6,7,8,9})) // [1,2,3,4,5,6,7,8,9,1,2,3,4,5,6,7,8,9]
+    fmt.Println(getConcatenation([]int{9,8,7,6,5,4,3,2,1})) // [9,8,7,6,5,4,3,2,1,9,8,7,6,5,4,3,2,1]
 
     fmt.Println(getConcatenation1([]int{1,2,1})) // [1,2,1,1,2,1]
     fmt.Println(getConcatenation1([]int{1,3,2,1})) // [1,3,2,1,1,3,2,1]
+    fmt.Println(getConcatenation1([]int{1,2,3,4,5,6,7,8,9})) // [1,2,3,4,5,6,7,8,9,1,2,3,4,5,6,7,8,9]
+    fmt.Println(getConcatenation1([]int{9,8,7,6,5,4,3,2,1})) // [9,8,7,6,5,4,3,2,1,9,8,7,6,5,4,3,2,1]
 }
