@@ -81,7 +81,7 @@ func makeListNode(arr []int) *ListNode {
 // 优先队列（小根堆）
 func mergeKLists(lists []*ListNode) *ListNode {
     // 创建一个小根堆来 pq 维护所有链表的头节点
-    pq := hp{}
+    pq := MinHeap{}
     for _, head := range lists {
         if head != nil {
             pq = append(pq, head)
@@ -103,12 +103,12 @@ func mergeKLists(lists []*ListNode) *ListNode {
     return dummy.Next
 }
 
-type hp []*ListNode
-func (h hp)  Len() int           { return len(h) }
-func (h hp)  Less(i, j int) bool { return h[i].Val < h[j].Val }
-func (h hp)  Swap(i, j int)      { h[i], h[j] = h[j], h[i] }
-func (h *hp) Push(v any)         { *h = append(*h, v.(*ListNode)) }
-func (h *hp) Pop() any           { a := *h; v := a[len(a)-1]; *h = a[:len(a)-1]; return v }
+type MinHeap []*ListNode
+func (h MinHeap)  Len() int           { return len(h) }
+func (h MinHeap)  Less(i, j int) bool { return h[i].Val < h[j].Val }
+func (h MinHeap)  Swap(i, j int)      { h[i], h[j] = h[j], h[i] }
+func (h *MinHeap) Push(v any)         { *h = append(*h, v.(*ListNode)) }
+func (h *MinHeap) Pop() any           { a := *h; v := a[len(a)-1]; *h = a[:len(a)-1]; return v }
 
 // 递归合并
 func mergeKLists1(lists []*ListNode) *ListNode {
@@ -141,6 +141,17 @@ func mergeTwoLists1(l1 *ListNode, l2 *ListNode) *ListNode {
 }
 
 func main() {
+    // Example 1:
+    // Input: lists = [[1,4,5],[1,3,4],[2,6]]
+    // Output: [1,1,2,3,4,4,5,6]
+    // Explanation: The linked-lists are:
+    // [
+    //   1->4->5,
+    //   1->3->4,
+    //   2->6
+    // ]
+    // merging them into one sorted list:
+    // 1->1->2->3->4->4->5->6
     printListNode(mergeKLists(
         []*ListNode{
             makeListNode([]int{1,4,5}),
@@ -148,15 +159,14 @@ func main() {
             makeListNode([]int{2,6}),
         },
     )) // 1->1->2->3->4->4->5->6
-
-    printListNode(mergeKLists(
-        []*ListNode{},
-    )) // 
-    printListNode(mergeKLists(
-        []*ListNode{
-            makeListNode([]int{}),
-        },
-    )) // 
+    // Example 2:
+    // Input: lists = []
+    // Output: []
+    printListNode(mergeKLists( []*ListNode{})) // 
+    // Example 3:
+    // Input: lists = [[]]
+    // Output: []
+    printListNode(mergeKLists( []*ListNode{  makeListNode([]int{}) })) // 
 
     printListNode(mergeKLists1(
         []*ListNode{
