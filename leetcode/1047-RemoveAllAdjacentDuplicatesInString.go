@@ -54,4 +54,8 @@ func main() {
     // Input: s = "azxxzy"
     // Output: "ay"
     fmt.Println(removeDuplicates("azxxzy")) // "ay"
+
+    fmt.Println(removeDuplicates("bluefrog")) // "bluefrog"
+    fmt.Println(removeDuplicates("leetcode")) // "ltcode"
+    fmt.Println(removeDuplicates("freewu")) // "frwu"
 }
