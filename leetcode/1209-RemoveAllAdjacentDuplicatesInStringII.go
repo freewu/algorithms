@@ -99,7 +99,12 @@ func main() {
     // Output: "ps"
     fmt.Println(removeDuplicates("pbbcggttciiippooaais", 2)) // "ps"
 
+    fmt.Println(removeDuplicates("bluefrog", 2)) // "bluefrog"
+    fmt.Println(removeDuplicates("leetcode", 2)) // "ltcode"
+
     fmt.Println(removeDuplicates1("abcd", 2)) // "abcd"
     fmt.Println(removeDuplicates1("deeedbbcccbdaa", 3)) // "aa"
     fmt.Println(removeDuplicates1("pbbcggttciiippooaais", 2)) // "ps"
+    fmt.Println(removeDuplicates1("bluefrog", 2)) // "bluefrog"
+    fmt.Println(removeDuplicates1("leetcode", 2)) // "ltcode"
 }
