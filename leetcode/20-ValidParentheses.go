@@ -7,16 +7,16 @@ package main
 //     Open brackets must be closed in the correct order.
 
 // Example 1:
-//     Input: s = "()"
-//     Output: true
+// Input: s = "()"
+// Output: true
 
 // Example 2:
-//     Input: s = "()[]{}"
-//     Output: true
+// Input: s = "()[]{}"
+// Output: true
 
 // Example 3:
-//     Input: s = "(]"
-//     Output: false
+// Input: s = "(]"
+// Output: false
 
 // Constraints:
 //     1 <= s.length <= 10^4
@@ -110,18 +110,37 @@ func isValid1(s string) bool {
 }
 
 func main() {
+    // Example 1:
+    // Input: s = "()"
+    // Output: true
+    fmt.Println(isValid("()")) // true
+    // Example 2:
+    // Input: s = "()[]{}"
+    // Output: true
+    fmt.Println(isValid("()[]{}")) // true
+    // Example 3:
+    // Input: s = "(]"
+    // Output: false
+    fmt.Println(isValid("(]")) // false
+        
     fmt.Printf("isValid(\"((\") = %v\n",isValid("((")) // false
     fmt.Printf("isValid(\"(\") = %v\n",isValid("(")) // false
     fmt.Printf("isValid(\"(+\") = %v\n",isValid("()")) // true
     fmt.Printf("isValid(\"({[()]})\") = %v\n",isValid("({[()]})")) // true
     fmt.Printf("isValid(\"({[()}])\") = %v\n",isValid("({[()}])")) // false
 
+    fmt.Println(isValidBest("()")) // true
+    fmt.Println(isValidBest("()[]{}")) // true
+    fmt.Println(isValidBest("(]")) // false
     fmt.Printf("isValidBest(\"((\") = %v\n",isValidBest("((")) // false
     fmt.Printf("isValidBest(\"(\") = %v\n",isValidBest("(")) // false
     fmt.Printf("isValidBest(\"(+\") = %v\n",isValidBest("()")) // true
     fmt.Printf("isValidBest(\"({[()]})\") = %v\n",isValidBest("({[()]})")) // true
     fmt.Printf("isValidBest(\"({[()}])\") = %v\n",isValidBest("({[()}])")) // false
 
+    fmt.Println(isValid1("()")) // true
+    fmt.Println(isValid1("()[]{}")) // true
+    fmt.Println(isValid1("(]")) // false
     fmt.Printf("isValid1(\"((\") = %v\n",isValid1("((")) // false
     fmt.Printf("isValid1(\"(\") = %v\n",isValid1("(")) // false
     fmt.Printf("isValid1(\"(+\") = %v\n",isValid1("()")) // true
