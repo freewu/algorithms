@@ -52,11 +52,23 @@ func subarraySum1(nums []int, k int) int {
 }
 
 func main() {
+    // Example 1:
+    // Input: nums = [1,1,1], k = 2
+    // Output: 2
     fmt.Println(subarraySum([]int{1,1,1}, 2)) // 2
+    // Example 2:
+    // Input: nums = [1,2,3], k = 3
+    // Output: 2
     fmt.Println(subarraySum([]int{1,2,3}, 3)) // 2
+
     fmt.Println(subarraySum([]int{1,2,3,4,5,6,7,8,0}, 22)) // 1
+    fmt.Println(subarraySum([]int{1,2,3,4,5,6,7,8,0}, 22)) // 1
+    fmt.Println(subarraySum([]int{1,2,3,4,5,6,7,8,9}, 2)) // 1
+    fmt.Println(subarraySum([]int{9,8,7,6,5,4,3,2,1}, 2)) // 1
 
     fmt.Println(subarraySum1([]int{1,1,1}, 2)) // 2
     fmt.Println(subarraySum1([]int{1,2,3}, 3)) // 2
     fmt.Println(subarraySum1([]int{1,2,3,4,5,6,7,8,0}, 22)) // 1
+    fmt.Println(subarraySum1([]int{1,2,3,4,5,6,7,8,9}, 2)) // 1
+    fmt.Println(subarraySum1([]int{9,8,7,6,5,4,3,2,1}, 2)) // 1
 }
