@@ -69,8 +69,12 @@ func main () {
     fmt.Printf("longestCommonPrefix(d) = %v\n",longestCommonPrefix(d)) // xx
     fmt.Printf("longestCommonPrefix([]string{\"flower\",\"flow\",\"flight\"}) = %v\n",longestCommonPrefix([]string{"flower","flow","flight"})) // fl
     fmt.Printf("longestCommonPrefix([]string{\"dog\",\"racecar\",\"car\"}) = %v\n",longestCommonPrefix([]string{"dog","racecar","car"})) // ""
+    fmt.Println(longestCommonPrefix([]string{"bluefrog","blue","bl"})) // bl
+    fmt.Println(longestCommonPrefix([]string{"bluefrog","leetcode","freewu"})) // ""
     
     fmt.Printf("longestCommonPrefix1(d) = %v\n",longestCommonPrefix1(d)) // xx
     fmt.Printf("longestCommonPrefix1([]string{\"flower\",\"flow\",\"flight\"}) = %v\n",longestCommonPrefix1([]string{"flower","flow","flight"})) // fl
     fmt.Printf("longestCommonPrefix1([]string{\"dog\",\"racecar\",\"car\"}) = %v\n",longestCommonPrefix1([]string{"dog","racecar","car"})) // ""
+    fmt.Println(longestCommonPrefix1([]string{"bluefrog","blue","bl"})) // bl
+    fmt.Println(longestCommonPrefix1([]string{"bluefrog","leetcode","freewu"})) // ""
 }
