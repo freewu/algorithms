@@ -44,14 +44,12 @@ func productExceptSelf(nums []int) []int {
 func productExceptSelf1(nums []int) []int {
     res := make([]int,len(nums))
     // 求出所有的乘积
-    t := 1
-    zero := 0
-    zero_index := 0
+    t, zero, index := 1, 0, 0
     for i := 0; i < len(nums); i++ {
         // 排除 0 的
         if nums[i] == 0 {
             zero++
-            zero_index = i
+            index = i
             // 出现两 0 直接返回 全 0 的结果
             if zero >= 2 {
                 return res
@@ -62,7 +60,7 @@ func productExceptSelf1(nums []int) []int {
     }
     // 有一个 0 存在,把 0 的位置替换成 t 结束
     if zero == 1 {
-        res[zero_index] = t 
+        res[index] = t 
         return res
     }
     // 没有 0 出现在的情况 
@@ -104,10 +102,10 @@ func productExceptSelf2(nums []int) []int {
 
 // 不用除法 容易理解的
 func productExceptSelf3(nums []int) []int {
-    l := len(nums)
-    left := make([]int,l)
+    n := len(nums)
+    left := make([]int,n)
     // 从左到右累乘 0 --> len(nums) - 1
-    for i := 0; i < l; i++ {
+    for i := 0; i < n; i++ {
         if i == 0 {
             left[i] = int(1)
             continue
@@ -115,18 +113,18 @@ func productExceptSelf3(nums []int) []int {
         left[i] = left[i - 1] * nums[i - 1]
     }
     // 从右到左累乘 0 --> len(nums) - 1
-    right := make([]int,len(nums))
-    for i := l - 1 ; i >= 0; i-- {
-        if i == l - 1 {
+    right := make([]int,n)
+    for i := n - 1 ; i >= 0; i-- {
+        if i == n - 1 {
             right[i] = int(1)
             continue
         }
         right[i] = right[i + 1] * nums[i + 1]
     }
-    res :=  make([]int,len(nums))
+    res :=  make([]int,n)
     //fmt.Println("left: ",left," right: ",right)
     // 左右结果相乘得出结果
-    for i := range nums{
+    for i := range nums {
         res[i] = left[i] * right[i]
     }
     return res
@@ -150,16 +148,26 @@ func productExceptSelf4(nums []int) []int {
 func main() {
     fmt.Println(productExceptSelf([]int{ 1,2,3,4 })) // [24,12,8,6]
     fmt.Println(productExceptSelf([]int{ -1,1,0,-3,3 })) // [0,0,9,0,0]
+    fmt.Println(productExceptSelf([]int{ 1,2,3,4,5,6,7,8,9 })) // [362880 181440 120960 90720 72576 60480 51840 45360 40320]
+    fmt.Println(productExceptSelf([]int{ 9,8,7,6,5,4,3,2,1 })) // [40320 45360 51840 60480 72576 90720 120960 181440 362880]
 
     fmt.Println(productExceptSelf1([]int{ 1,2,3,4 })) // [24,12,8,6]
     fmt.Println(productExceptSelf1([]int{ -1,1,0,-3,3 })) // [0,0,9,0,0]
+    fmt.Println(productExceptSelf1([]int{ 1,2,3,4,5,6,7,8,9 })) // [362880 181440 120960 90720 72576 60480 51840 45360 40320]
+    fmt.Println(productExceptSelf1([]int{ 9,8,7,6,5,4,3,2,1 })) // [40320 45360 51840 60480 72576 90720 120960 181440 362880]
 
     fmt.Println(productExceptSelf2([]int{ 1,2,3,4 })) // [24,12,8,6]
     fmt.Println(productExceptSelf2([]int{ -1,1,0,-3,3 })) // [0,0,9,0,0]
+    fmt.Println(productExceptSelf2([]int{ 1,2,3,4,5,6,7,8,9 })) // [362880 181440 120960 90720 72576 60480 51840 45360 40320]
+    fmt.Println(productExceptSelf2([]int{ 9,8,7,6,5,4,3,2,1 })) // [40320 45360 51840 60480 72576 90720 120960 181440 362880]
 
     fmt.Println(productExceptSelf3([]int{ 1,2,3,4 })) // [24,12,8,6]
     fmt.Println(productExceptSelf3([]int{ -1,1,0,-3,3 })) // [0,0,9,0,0]
+    fmt.Println(productExceptSelf3([]int{ 1,2,3,4,5,6,7,8,9 })) // [362880 181440 120960 90720 72576 60480 51840 45360 40320]
+    fmt.Println(productExceptSelf3([]int{ 9,8,7,6,5,4,3,2,1 })) // [40320 45360 51840 60480 72576 90720 120960 181440 362880]
 
     fmt.Println(productExceptSelf4([]int{ 1,2,3,4 })) // [24,12,8,6]
     fmt.Println(productExceptSelf4([]int{ -1,1,0,-3,3 })) // [0,0,9,0,0]
+    fmt.Println(productExceptSelf4([]int{ 1,2,3,4,5,6,7,8,9 })) // [362880 181440 120960 90720 72576 60480 51840 45360 40320]
+    fmt.Println(productExceptSelf4([]int{ 9,8,7,6,5,4,3,2,1 })) // [40320 45360 51840 60480 72576 90720 120960 181440 362880]
 }
