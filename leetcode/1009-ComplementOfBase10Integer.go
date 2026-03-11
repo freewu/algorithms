@@ -27,6 +27,7 @@ import "fmt"
 import "math/bits"
 
 func bitwiseComplement1(n int) int {
+    if 0 == n { return 1 }
     return (1 << (bits.Len(uint(n))) - 1) ^ n
 }
 
@@ -59,12 +60,26 @@ func main() {
     // Output: 5
     // Explanation: 10 is "1010" in binary, with complement "0101" in binary, which is 5 in base-10.
     fmt.Println(bitwiseComplement(10)) // 5
+
+
     fmt.Println(bitwiseComplement(1023)) // 0
     fmt.Println(bitwiseComplement(1024)) // 1023
+    fmt.Println(bitwiseComplement(0)) // 1
+    fmt.Println(bitwiseComplement(1)) // 0
+    fmt.Println(bitwiseComplement(8)) // 7
+    fmt.Println(bitwiseComplement(64)) // 63
+    fmt.Println(bitwiseComplement(999_999_999)) // 73741824
+    fmt.Println(bitwiseComplement(1_000_000_000)) // 73741823
 
     fmt.Println(bitwiseComplement1(5)) // 2
     fmt.Println(bitwiseComplement1(7)) // 0
     fmt.Println(bitwiseComplement1(10)) // 5
     fmt.Println(bitwiseComplement1(1023)) // 0
     fmt.Println(bitwiseComplement1(1024)) // 1023
+    fmt.Println(bitwiseComplement1(0)) // 1
+    fmt.Println(bitwiseComplement1(1)) // 0
+    fmt.Println(bitwiseComplement1(8)) // 7
+    fmt.Println(bitwiseComplement1(64)) // 63
+    fmt.Println(bitwiseComplement1(999_999_999)) // 73741824
+    fmt.Println(bitwiseComplement1(1_000_000_000)) // 73741823
 }
