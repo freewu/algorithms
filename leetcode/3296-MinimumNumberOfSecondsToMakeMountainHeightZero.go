@@ -106,6 +106,29 @@ func minNumberOfSeconds1(mountainHeight int, workerTimes []int) int64 {
     return int64(res)
 }
 
+func minNumberOfSeconds2(mountainHeight int, workerTimes []int) int64 {
+    check := func(num int) bool {
+        var count int
+        for i := range workerTimes {
+            count += int(math.Sqrt(float64(num * 2) / float64(workerTimes[i]) + 0.25) - 0.5)
+            if count >= mountainHeight {
+                return true
+            }
+        }
+        return false
+    }
+    mn, mx := 1, slices.Min(workerTimes)*mountainHeight*(mountainHeight+1)
+    for mn < mx {
+        mid := (mn + mx) / 2
+        if check(mid) {
+            mx = mid
+        } else {
+            mn = mid + 1
+        }
+    }
+    return int64(mx)
+}
+
 func main() {
     // Example 1:
     // Input: mountainHeight = 4, workerTimes = [2,1,1]
@@ -126,7 +149,7 @@ func main() {
     // Worker 2 reduces the height by 3, taking workerTimes[2] + workerTimes[2] * 2 + workerTimes[2] * 3 = 12 seconds.
     // Worker 3 reduces the height by 2, taking workerTimes[3] + workerTimes[3] * 2 = 12 seconds.
     // The number of seconds needed is max(9, 12, 12, 12) = 12 seconds.
-    fmt.Println(minNumberOfSeconds(10, []int{3,2,2,4})) // 3
+    fmt.Println(minNumberOfSeconds(10, []int{3,2,2,4})) // 12
     // Example 3:
     // Input: mountainHeight = 5, workerTimes = [1]
     // Output: 15
@@ -138,8 +161,14 @@ func main() {
     fmt.Println(minNumberOfSeconds(5, []int{9,8,7,6,5,4,3,2,1})) // 4
 
     fmt.Println(minNumberOfSeconds1(4, []int{2,1,1})) // 3
-    fmt.Println(minNumberOfSeconds1(10, []int{3,2,2,4})) // 3
+    fmt.Println(minNumberOfSeconds1(10, []int{3,2,2,4})) // 12
     fmt.Println(minNumberOfSeconds1(5, []int{1})) // 15
     fmt.Println(minNumberOfSeconds1(5, []int{1,2,3,4,5,6,7,8,9})) // 4
     fmt.Println(minNumberOfSeconds1(5, []int{9,8,7,6,5,4,3,2,1})) // 4
+
+    fmt.Println(minNumberOfSeconds2(4, []int{2,1,1})) // 3
+    fmt.Println(minNumberOfSeconds2(10, []int{3,2,2,4})) // 12
+    fmt.Println(minNumberOfSeconds2(5, []int{1})) // 15
+    fmt.Println(minNumberOfSeconds2(5, []int{1,2,3,4,5,6,7,8,9})) // 4
+    fmt.Println(minNumberOfSeconds2(5, []int{9,8,7,6,5,4,3,2,1})) // 4
 }
