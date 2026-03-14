@@ -132,7 +132,16 @@ func main() {
     // Explanation: There are 12 different happy string of length 3 ["aba", "abc", "aca", "acb", "bab", "bac", "bca", "bcb", "cab", "cac", "cba", "cbc"]. You will find the 9th string = "cab"
     fmt.Println(getHappyString(3,9)) // cab
 
+    fmt.Println(getHappyString(1,1)) // "a"
+    fmt.Println(getHappyString(1,100)) // ""
+    fmt.Println(getHappyString(10,1)) // "ababababab"
+    fmt.Println(getHappyString(10,100)) // "abacbabacb"
+
     fmt.Println(getHappyString1(1,3)) // "c"
     fmt.Println(getHappyString1(1,4)) // ""
-    fmt.Println(getHappyString1(3,9)) // cab
+    fmt.Println(getHappyString1(3,9)) // "cab"
+    fmt.Println(getHappyString1(1,1)) // "a"
+    fmt.Println(getHappyString1(1,100)) // ""
+    fmt.Println(getHappyString1(10,1)) // "ababababab"
+    fmt.Println(getHappyString1(10,100)) // "abacbabacb"
 }
