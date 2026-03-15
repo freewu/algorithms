@@ -2003,6 +2003,7 @@
 [3866. First Unique Even Element](./leetcode/3866-FirstUniqueEvenElement.go)   
 [3867. Sum of GCD of Formed Pairs](./leetcode/3867-SumOfGCDOfFormedPairs.go)   
 [3868. Minimum Cost to Equalize Arrays Using Swaps](./leetcode/3868-MinimumCostToEqualizeArraysUsingSwaps.go)   
+[3872. Longest Arithmetic Sequence After Changing At Most One Element](./leetcode/3872-LongestArithmeticSequenceAfterChangingAtMostOneElement.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
