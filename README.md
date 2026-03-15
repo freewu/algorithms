@@ -2004,6 +2004,7 @@
 [3867. Sum of GCD of Formed Pairs](./leetcode/3867-SumOfGCDOfFormedPairs.go)   
 [3868. Minimum Cost to Equalize Arrays Using Swaps](./leetcode/3868-MinimumCostToEqualizeArraysUsingSwaps.go)   
 [3872. Longest Arithmetic Sequence After Changing At Most One Element](./leetcode/3872-LongestArithmeticSequenceAfterChangingAtMostOneElement.go)   
+[3873. Maximum Points Activated with One Addition](./leetcode/3873-MaximumPointsActivatedWithOneAddition.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
