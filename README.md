@@ -3107,6 +3107,7 @@
 [3848. Check Digitorial Permutation](./leetcode/3848-CheckDigitorialPermutation.go)   
 [3855. Sum of K-Digit Numbers in a Range](./leetcode/3855-SumOfKDigitNumbersInARange.go)   
 [3857. Minimum Cost to Split into Ones](./leetcode/3857-MinimumCostToSplitIntoOnes.go)   
+[3869. Count Fancy Numbers in a Range](./leetcode/3869-CountFancyNumbersInRange.go)   
 [3870. Count Commas in Range](./leetcode/3870-CountCommasInRange.go)   
 
 # Stack
