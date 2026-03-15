@@ -2001,6 +2001,7 @@
 [3862. Find the Smallest Balanced Index](./leetcode/3862-FindTheSmallestBalancedIndex.go)   
 [3865. Reverse K Subarrays](./leetcode/3865-ReverseKSubarrays.go)   
 [3866. First Unique Even Element](./leetcode/3866-FirstUniqueEvenElement.go)   
+[3867. Sum of GCD of Formed Pairs](./leetcode/3867-SumOfGCDOfFormedPairs.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
