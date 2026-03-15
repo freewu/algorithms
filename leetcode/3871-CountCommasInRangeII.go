@@ -1,6 +1,6 @@
 package main
 
-// 3870. Count Commas in Range
+// 3871. Count Commas in Range II
 // You are given an integer n.
 
 // Return the total number of commas used when writing all integers from [1, n] (inclusive) in standard number formatting.
@@ -19,19 +19,20 @@ package main
 // Input: n = 998
 // Output: 0
 // Explanation:
-// All numbers from 1 to 998 have fewer than four digits. Therefore, no commas are used.
+// ​​​​​​​All numbers from 1 to 998 have fewer than four digits. Therefore, no commas are used.
 
 // Constraints:
-//     1 <= n <= 10^5
+//     1 <= n <= 10^15
 
 import "fmt"
 
-func countCommas(n int) int {
-    // 小于1000的数没有逗号，直接返回0
-    if n < 1000 { return 0 }
-    // 大于等于1000的数，从1000到n的每个数贡献1个逗号
-    // 总数 = n - 999
-    return n - 999
+func countCommas(n int64) int64 {
+    res, count := int64(0), int64(1000)
+    for count <= n {
+        res += (n - count + 1)
+        count *= 1000
+    }
+    return res
 }
 
 func main() {
@@ -45,10 +46,10 @@ func main() {
     // Input: n = 998
     // Output: 0
     // Explanation:
-    // All numbers from 1 to 998 have fewer than four digits. Therefore, no commas are used.
-    fmt.Println(countCommas(998)) // 0
+    // ​​​​​​​All numbers from 1 to 998 have fewer than four digits. Therefore, no commas are used.  
+    fmt.Println(countCommas(998)) // 0     
 
-    fmt.Println(countCommas(1)) // 0
+    fmt.Println(countCommas(1)) // 0    
     fmt.Println(countCommas(2)) // 0
     fmt.Println(countCommas(8)) // 0
     fmt.Println(countCommas(64)) // 0
@@ -57,4 +58,6 @@ func main() {
     fmt.Println(countCommas(1024)) // 25
     fmt.Println(countCommas(99_999)) // 99000
     fmt.Println(countCommas(100_000)) // 99001
+    fmt.Println(countCommas(999_999_999_999_999)) // 3998998998999000
+    fmt.Println(countCommas(1_000_000_000_000_000)) // 3998998998999005
 }

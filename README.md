@@ -3109,6 +3109,7 @@
 [3857. Minimum Cost to Split into Ones](./leetcode/3857-MinimumCostToSplitIntoOnes.go)   
 [3869. Count Fancy Numbers in a Range](./leetcode/3869-CountFancyNumbersInRange.go)   
 [3870. Count Commas in Range](./leetcode/3870-CountCommasInRange.go)   
+[3871. Count Commas in Range II](./leetcode/3871-CountCommasInRangeII.go)   
 
 # Stack
 [225. Implement Stack using Queues](./leetcode/225-ImplementStackUsingQueues.go)   
