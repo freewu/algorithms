@@ -76,14 +76,68 @@ func longestCommonSubsequence1(text1 string, text2 string) int {
     return dp[len(text1)][len(text2)]
 }
 
+func longestCommonSubsequence2(text1 string, text2 string) int {
+    m, n := len(text1), len(text2)
+    if m < n { 	// 优化：让短字符串作为列，减少空间占用
+        return longestCommonSubsequence2(text2, text1)
+    }
+    // 初始化一维DP数组：dp[j]表示上一行的状态（text1前i-1个字符与text2前j个字符的LCS长度）
+    dp := make([]int, n+1)
+    for i := 1; i <= m; i++ {
+        pre := 0 // pre保存dp[i-1][j-1]的状态（左上角值）
+        for j := 1; j <= n; j++ {
+            temp := dp[j] // 保存当前dp[j]（即dp[i-1][j]），后续更新pre
+            if text1[i-1] == text2[j-1] {
+                dp[j] = pre + 1 // 字符匹配：取左上角值+1
+            } else {
+                dp[j] = max(dp[j], dp[j-1]) // 字符不匹配：取上方（dp[j]）或左方（dp[j-1]）的最大值
+            }
+            pre = temp // 更新pre为当前temp（即下一轮的dp[i-1][j-1]）
+        }
+    }
+    return dp[n]
+}
+
 func main() {
+    // Example 1:
+    // Input: text1 = "abcde", text2 = "ace" 
+    // Output: 3  
+    // Explanation: The longest common subsequence is "ace" and its length is 3.
     fmt.Println(longestCommonSubsequence("abcde","ace")) // 3
-    fmt.Println(longestCommonSubsequence("abcde","aec")) // 2
-    fmt.Println(longestCommonSubsequence("ababccde","abc")) // 3
+    // Example 2:
+    // Input: text1 = "abc", text2 = "abc"
+    // Output: 3
+    // Explanation: The longest common subsequence is "abc" and its length is 3.
+    fmt.Println(longestCommonSubsequence("abc","aec")) // 2
+    // Example 3:
+    // Input: text1 = "abc", text2 = "def"
+    // Output: 0
+    // Explanation: There is no such common subsequence, so the result is 0.
     fmt.Println(longestCommonSubsequence("abc","def")) // 0
 
+    fmt.Println(longestCommonSubsequence("abcde","aec")) // 2
+    fmt.Println(longestCommonSubsequence("ababccde","abc")) // 3
+    fmt.Println(longestCommonSubsequence("bluefrog","leetcode")) // 4
+    fmt.Println(longestCommonSubsequence("freewu","leetcode")) // 2
+    fmt.Println(longestCommonSubsequence("freewu","bluefrog")) // 2
+
     fmt.Println(longestCommonSubsequence1("abcde","ace")) // 3
+    fmt.Println(longestCommonSubsequence1("abc","aec")) // 2
+    fmt.Println(longestCommonSubsequence1("abc","def")) // 0
     fmt.Println(longestCommonSubsequence1("abcde","aec")) // 2
     fmt.Println(longestCommonSubsequence1("ababccde","abc")) // 3
-    fmt.Println(longestCommonSubsequence1("abc","def")) // 0
+    fmt.Println(longestCommonSubsequence1("bluefrog","leetcode")) // 3
+    fmt.Println(longestCommonSubsequence1("leetcode","code")) // 4
+    fmt.Println(longestCommonSubsequence1("freewu","leetcode")) // 2
+    fmt.Println(longestCommonSubsequence1("freewu","bluefrog")) // 2
+
+    fmt.Println(longestCommonSubsequence2("abcde","ace")) // 3
+    fmt.Println(longestCommonSubsequence2("abc","aec")) // 2
+    fmt.Println(longestCommonSubsequence2("abc","def")) // 0
+    fmt.Println(longestCommonSubsequence2("abcde","aec")) // 2
+    fmt.Println(longestCommonSubsequence2("ababccde","abc")) // 3
+    fmt.Println(longestCommonSubsequence2("bluefrog","leetcode")) // 3
+    fmt.Println(longestCommonSubsequence2("leetcode","code")) // 4
+    fmt.Println(longestCommonSubsequence2("freewu","leetcode")) // 2
+    fmt.Println(longestCommonSubsequence2("freewu","bluefrog")) // 2
 }
