@@ -79,7 +79,24 @@ func main() {
     // Explanation: n is already a perfect square, Alice can win with one move, removing 4 stones (4 -> 0).
     fmt.Println(winnerSquareGame(4)) // true
 
+    fmt.Println(winnerSquareGame(8)) // true
+    fmt.Println(winnerSquareGame(64)) // true
+    fmt.Println(winnerSquareGame(99)) // true
+    fmt.Println(winnerSquareGame(100)) // true
+    fmt.Println(winnerSquareGame(101)) // true
+    fmt.Println(winnerSquareGame(1024)) // true
+    fmt.Println(winnerSquareGame(99_999)) // true
+    fmt.Println(winnerSquareGame(100_000)) // true
+
     fmt.Println(winnerSquareGame1(1)) // true
     fmt.Println(winnerSquareGame1(2)) // false
     fmt.Println(winnerSquareGame1(4)) // true
+    fmt.Println(winnerSquareGame1(8)) // true
+    fmt.Println(winnerSquareGame1(64)) // true
+    fmt.Println(winnerSquareGame1(99)) // true
+    fmt.Println(winnerSquareGame1(100)) // true
+    fmt.Println(winnerSquareGame1(101)) // true
+    fmt.Println(winnerSquareGame1(1024)) // true
+    fmt.Println(winnerSquareGame1(99_999)) // true
+    fmt.Println(winnerSquareGame1(100_000)) // true
 }
