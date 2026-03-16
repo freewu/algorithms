@@ -91,4 +91,7 @@ func main() {
     // - Swap 15 and 3 because gcd(15,3) = 3. nums = [3,5,9,15,10]
     // - Swap 10 and 15 because gcd(10,15) = 5. nums = [3,5,9,10,15]
     fmt.Println(gcdSort([]int{10,5,9,3,15})) // true
+
+    fmt.Println(gcdSort([]int{1,2,3,4,5,6,7,8,9})) // true
+    fmt.Println(gcdSort([]int{9,8,7,6,5,4,3,2,1})) // false
 }
