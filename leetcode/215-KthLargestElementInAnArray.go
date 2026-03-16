@@ -135,12 +135,25 @@ func (h *minHeap) Pop() interface{} {
 }
 
 func main() {
+    // Example 1:
+    // Input: nums = [3,2,1,5,6,4], k = 2
+    // Output: 5
+    fmt.Printf("findKthLargest([]int{ 3,2,1,5,6,4}, 2) = %v\n",findKthLargest([]int{ 3,2,1,5,6,4} ,2)) // 5
+    // Example 2:
+    // Input: nums = [3,2,3,1,2,4,5,5,6], k = 4
+    // Output: 4
+    fmt.Printf("findKthLargest([]int{ 3,2,3,1,2,4,5,5,6}, 4) = %v\n",findKthLargest([]int{ 3,2,3,1,2,4,5,5,6} ,4)) // 4
+
+    fmt.Println(findKthLargest([]int{ 1,2,3,4,5,6,7,8,9 } ,4)) // 6
+    fmt.Println(findKthLargest([]int{ 9,8,7,6,5,4,3,2,1 } ,4)) // 6
+    
     fmt.Printf("findKthLargest1([]int{ 3,2,1,5,6,4}, 2) = %v\n",findKthLargest1([]int{ 3,2,1,5,6,4} ,2)) // 5
     fmt.Printf("findKthLargest1([]int{ 3,2,3,1,2,4,5,5,6}, 4) = %v\n",findKthLargest1([]int{ 3,2,3,1,2,4,5,5,6} ,4)) // 4
-
-    fmt.Printf("findKthLargest([]int{ 3,2,1,5,6,4}, 2) = %v\n",findKthLargest([]int{ 3,2,1,5,6,4} ,2)) // 5
-    fmt.Printf("findKthLargest([]int{ 3,2,3,1,2,4,5,5,6}, 4) = %v\n",findKthLargest([]int{ 3,2,3,1,2,4,5,5,6} ,4)) // 4
+    fmt.Println(findKthLargest1([]int{ 1,2,3,4,5,6,7,8,9 } ,4)) // 6
+    fmt.Println(findKthLargest1([]int{ 9,8,7,6,5,4,3,2,1 } ,4)) // 6
 
     fmt.Printf("findKthLargest2([]int{ 3,2,1,5,6,4}, 2) = %v\n",findKthLargest2([]int{ 3,2,1,5,6,4} ,2)) // 5
     fmt.Printf("findKthLargest2([]int{ 3,2,3,1,2,4,5,5,6}, 4) = %v\n",findKthLargest2([]int{ 3,2,3,1,2,4,5,5,6} ,4)) // 4
+    fmt.Println(findKthLargest2([]int{ 1,2,3,4,5,6,7,8,9 } ,4)) // 6
+    fmt.Println(findKthLargest2([]int{ 9,8,7,6,5,4,3,2,1 } ,4)) // 6
 }
