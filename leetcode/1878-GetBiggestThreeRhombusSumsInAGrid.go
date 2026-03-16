@@ -137,6 +137,50 @@ func getBiggestThree1(grid [][]int) []int {
     return arr[:min(3, len(arr))]
 }
 
+func getBiggestThree2(grid [][]int) []int {
+    x, y, z , m, n := 0, 0, 0, len(grid), len(grid[0])
+    sum1, sum2 := make([][]int, m+1), make([][]int, m+1)
+    for i := range sum1 {
+        sum1[i] = make([]int, n+1)
+        sum2[i] = make([]int, n+1)
+    }
+    for i, row := range grid {
+        for j, v := range row {
+            sum1[i+1][j+1] = sum1[i][j] + v
+            sum2[i+1][j] = sum2[i][j+1] + v
+        }
+    }
+    querySum1 := func(x, y, k int) int {
+        return sum1[x+k][y+k] - sum1[x][y]
+    }
+    querySum2 := func(x, y, k int) int {
+        return sum2[x+k][y+1-k] - sum2[x][y+1]
+    }
+    update := func(k int) {
+        if k > x {
+            x, y, z = k, x, y
+        } else if k < x && k > y {
+            y, z = k, y
+        } else if k < y && k > z {
+            z = k
+        }
+    }
+    for i, row := range grid {
+        for j, v := range row {
+            update(v)
+            maxLen := min(i, j, m-i-1, n-j-1)
+            for k := 1; k <= maxLen; k++ {
+                update(querySum1(i-k, j, k) + querySum1(i, j-k, k) + querySum2(i-k+1, j-1, k-1) + querySum2(i, j+k, k+1))
+            }
+        }
+    }
+    res := []int{x, y, z}
+    for res[len(res)-1] == 0 {
+        res = res[:len(res)-1]
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // <img src="https://assets.leetcode.com/uploads/2021/04/23/pc73-q4-ex1.png" />
@@ -165,4 +209,8 @@ func main() {
     fmt.Println(getBiggestThree1([][]int{{3,4,5,1,3},{3,3,4,2,3},{20,30,200,40,10},{1,5,5,4,1},{4,3,2,2,5}})) // [228,216,211]
     fmt.Println(getBiggestThree1([][]int{{1,2,3},{4,5,6},{7,8,9}})) // [20,9,8]
     fmt.Println(getBiggestThree1([][]int{{7,7,7}})) // [7]
+
+    fmt.Println(getBiggestThree2([][]int{{3,4,5,1,3},{3,3,4,2,3},{20,30,200,40,10},{1,5,5,4,1},{4,3,2,2,5}})) // [228,216,211]
+    fmt.Println(getBiggestThree2([][]int{{1,2,3},{4,5,6},{7,8,9}})) // [20,9,8]
+    fmt.Println(getBiggestThree2([][]int{{7,7,7}})) // [7]
 }
