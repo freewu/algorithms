@@ -68,6 +68,36 @@ func minCost(nums1 []int, nums2 []int) int {
     return diff / 4
 }
 
+func minCost1(nums1 []int, nums2 []int) int {
+    mp := [80009]int{0}
+    for _, v := range nums1 {
+        mp[v]++
+    }
+    for _, v := range nums2 {
+        mp[v]++
+    }
+    for _, v := range nums1 {
+        if mp[v] % 2 == 1 {
+            return -1
+        }
+    }
+    for _, v := range nums2 {
+        if mp[v] % 2 == 1 {
+            return -1
+        }
+    }
+    count := 0
+    for i, v := range nums2 {
+        if mp[v] == 0 {
+            nums1[i], nums2[i] = nums2[i], nums1[i]
+            count++
+        } else {
+            mp[v] -= 2
+        }
+    }
+    return count
+}
+
 func main() {
     // Example 1:
     // Input: nums1 = [10,20], nums2 = [20,10]
@@ -102,4 +132,12 @@ func main() {
     fmt.Println(minCost([]int{1,2,3,4,5,6,7,8,9}, []int{9,8,7,6,5,4,3,2,1})) // 0
     fmt.Println(minCost([]int{9,8,7,6,5,4,3,2,1}, []int{1,2,3,4,5,6,7,8,9})) // 0
     fmt.Println(minCost([]int{9,8,7,6,5,4,3,2,1}, []int{9,8,7,6,5,4,3,2,1})) // 0
+
+    fmt.Println(minCost1([]int{10,20}, []int{20,10})) // 0
+    fmt.Println(minCost1([]int{10,10}, []int{20,20})) // 1
+    fmt.Println(minCost1([]int{10,20}, []int{30,40})) // -1
+    fmt.Println(minCost1([]int{1,2,3,4,5,6,7,8,9}, []int{1,2,3,4,5,6,7,8,9})) // 0
+    fmt.Println(minCost1([]int{1,2,3,4,5,6,7,8,9}, []int{9,8,7,6,5,4,3,2,1})) // 0
+    fmt.Println(minCost1([]int{9,8,7,6,5,4,3,2,1}, []int{1,2,3,4,5,6,7,8,9})) // 0
+    fmt.Println(minCost1([]int{9,8,7,6,5,4,3,2,1}, []int{9,8,7,6,5,4,3,2,1})) // 0
 }
