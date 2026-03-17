@@ -65,6 +65,22 @@ func countSubmatrices1(grid [][]int, k int) int {
     return res
 }
 
+func countSubmatrices2(grid [][]int, k int) int {
+    res, n, m := 0, len(grid), len(grid[0])
+    cols := make([]int, m)
+    for i := 0; i < n; i++ {
+        rows := 0
+        for j := 0; j < m; j++ {
+            cols[j] += grid[i][j]
+            rows += cols[j]
+            if rows <= k {
+                res++
+            }
+        }
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // <img src="https://assets.leetcode.com/uploads/2024/01/01/example1.png" />
@@ -81,4 +97,7 @@ func main() {
 
     fmt.Println(countSubmatrices1([][]int{{7,6,3},{6,6,1}}, 18)) // 4
     fmt.Println(countSubmatrices1([][]int{{7,2,9},{1,5,0},{2,6,6}}, 20)) // 6
+
+    fmt.Println(countSubmatrices2([][]int{{7,6,3},{6,6,1}}, 18)) // 4
+    fmt.Println(countSubmatrices2([][]int{{7,2,9},{1,5,0},{2,6,6}}, 20)) // 6
 }
