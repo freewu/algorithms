@@ -61,6 +61,21 @@ func delayedCount(nums []int, k int) []int {
     return res
 }
 
+func delayedCount1(nums []int, k int) []int {
+    inited, delayed := map[int][]int{}, map[int][]int{}
+    res := make([]int, len(nums))
+    for i := len(nums) - 1; i >= 0; i-- {
+        num := nums[i]
+        inited[num] = append(inited[num], i)
+        for len(inited[num]) > 0 && i + k < inited[num][0] {
+            delayed[num] = append(delayed[num], inited[num][0])
+            inited[num] = inited[num][1:]
+        }
+        res[i] = len(delayed[num])
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: nums = [1,2,1,1], k = 1
@@ -87,4 +102,9 @@ func main() {
 
     fmt.Println(delayedCount([]int{1,2,3,4,5,6,7,8,9}, 1)) // [0 0 0 0 0 0 0 0 0]
     fmt.Println(delayedCount([]int{9,8,7,6,5,4,3,2,1}, 1)) // [0 0 0 0 0 0 0 0 0]
+
+    fmt.Println(delayedCount1([]int{1,2,1,1}, 1)) // [2, 0, 0, 0]
+    fmt.Println(delayedCount1([]int{3,1,3,1}, 0)) // [1, 1, 0, 0]
+    fmt.Println(delayedCount1([]int{1,2,3,4,5,6,7,8,9}, 1)) // [0 0 0 0 0 0 0 0 0]
+    fmt.Println(delayedCount1([]int{9,8,7,6,5,4,3,2,1}, 1)) // [0 0 0 0 0 0 0 0 0]
 }
