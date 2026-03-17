@@ -56,6 +56,23 @@ func maxSameLengthRuns(s string) int {
     return res
 }
 
+func maxSameLengthRuns1(s string) int {
+    mp := map[int]int{}
+    res, start := 0, 0
+    for i := 1; i <= len(s); i++ {
+        if i == len(s) || s[i] != s[start] {
+            mp[i - start]++
+            start = i
+        }
+    }
+    for _, v := range mp {
+        if res < v {
+            res = v
+        }
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: s = "hello"
@@ -72,4 +89,9 @@ func main() {
 
     fmt.Println(maxSameLengthRuns("leetcode")) // 6
     fmt.Println(maxSameLengthRuns("bluefrog")) // 8
+
+    fmt.Println(maxSameLengthRuns1("hello")) // 3
+    fmt.Println(maxSameLengthRuns1("aaabaaa")) // 2  
+    fmt.Println(maxSameLengthRuns1("leetcode")) // 6
+    fmt.Println(maxSameLengthRuns1("bluefrog")) // 8
 }
