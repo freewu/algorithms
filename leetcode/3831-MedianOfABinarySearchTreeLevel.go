@@ -86,6 +86,32 @@ func levelMedian(root *TreeNode, level int) int {
     return -1 // 目标层级不存在，返回-1
 }
 
+func levelMedian1(r *TreeNode, l int) int {
+    if l == 0 { 
+        return r.Val 
+    }
+    queue := []*TreeNode{ r }
+    for len(queue) > 0 && l > 0 {
+        nq := []*TreeNode{}
+        for k := range queue {
+            if queue[k].Left != nil {
+                nq = append(nq, queue[k].Left)
+            }
+            if queue[k].Right != nil {
+                nq = append(nq, queue[k].Right)
+            }
+        }
+        if len(nq) > 0 {
+            queue = nq
+            l --
+        } else { 
+            return -1 
+        }
+    }
+    v := queue[len(queue) / 2]
+    return v.Val
+}
+
 func main() {
     // Example 1:
     // ​​​​​​​​​​​​​<img src="https://assets.leetcode.com/uploads/2026/01/27/screenshot-2026-01-27-at-20801pm.png" />
@@ -123,4 +149,8 @@ func main() {
         nil,
     }
     fmt.Println(levelMedian(tree3, 2)) // -1
+
+    fmt.Println(levelMedian1(tree1, 2)) // 7
+    fmt.Println(levelMedian1(tree2, 1)) // 8
+    fmt.Println(levelMedian1(tree3, 2)) // -1
 }
