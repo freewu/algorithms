@@ -48,6 +48,20 @@ func filterCharacters(s string, k int) string {
     return string(res)
 }
 
+func filterCharacters1(s string, k int) string {
+    freq := map[byte]int{}
+    for i := 0; i < len(s); i++ {
+        freq[s[i]]++
+    }
+    res := []byte{}
+    for i := 0; i < len(s); i++ {
+        if freq[s[i]] < k {
+            res = append(res, s[i])
+        }
+    }
+    return string(res)
+}
+
 func main() {
     // Example 1:
     // Input: s = "aadbbcccca", k = 3
@@ -69,4 +83,9 @@ func main() {
 
     fmt.Println(filterCharacters("bluefrog", 2)) // bluefrog
     fmt.Println(filterCharacters("leetcode", 2)) // ltcod
+
+    fmt.Println(filterCharacters1("aadbbcccca", 3)) // dbb
+    fmt.Println(filterCharacters1("xyz", 2)) // xyz
+    fmt.Println(filterCharacters1("bluefrog", 2)) // bluefrog
+    fmt.Println(filterCharacters1("leetcode", 2)) // ltcod
 }
