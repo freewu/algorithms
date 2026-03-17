@@ -97,6 +97,24 @@ func maxSum1(nums []int, threshold []int) int64 {
     return int64(res)
 }
 
+func maxSum2(nums []int, threshold []int) int64 {
+    res, n := 0, len(nums)
+    index := make([]int, n)
+    for i := 0; i < n; i++ {
+        index[i] = i
+    }
+    sort.Slice(index, func(i, j int) bool {
+        return threshold[index[i]] < threshold[index[j]]
+    })
+    for i := 0; i < n; i++ {
+        if threshold[index[i]] > i + 1 {
+            break
+        }
+        res += nums[index[i]]
+    }
+    return int64(res)
+}
+
 func main() {
     // Example 1:
     // Input: nums = [1,10,4,2,1,6], threshold = [5,1,5,5,2,2]
@@ -136,4 +154,12 @@ func main() {
     fmt.Println(maxSum1([]int{1,2,3,4,5,6,7,8,9}, []int{1,2,3,4,5,6,7,8,9})) // 45
     fmt.Println(maxSum1([]int{9,8,7,6,5,4,3,2,1}, []int{1,2,3,4,5,6,7,8,9})) // 45
     fmt.Println(maxSum1([]int{9,8,7,6,5,4,3,2,1}, []int{9,8,7,6,5,4,3,2,1})) // 45
+
+    fmt.Println(maxSum2([]int{1,10,4,2,1,6}, []int{5,1,5,5,2,2})) // 17
+    fmt.Println(maxSum2([]int{4,1,5,2,3}, []int{3,3,2,3,3})) // 0
+    fmt.Println(maxSum2([]int{2,6,10,13}, []int{2,1,1,1})) // 31
+    fmt.Println(maxSum2([]int{1,2,3,4,5,6,7,8,9}, []int{9,8,7,6,5,4,3,2,1})) // 45
+    fmt.Println(maxSum2([]int{1,2,3,4,5,6,7,8,9}, []int{1,2,3,4,5,6,7,8,9})) // 45
+    fmt.Println(maxSum2([]int{9,8,7,6,5,4,3,2,1}, []int{1,2,3,4,5,6,7,8,9})) // 45
+    fmt.Println(maxSum2([]int{9,8,7,6,5,4,3,2,1}, []int{9,8,7,6,5,4,3,2,1})) // 45
 }
