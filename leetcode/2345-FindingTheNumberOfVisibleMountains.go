@@ -56,6 +56,36 @@ func visibleMountains(peaks [][]int) int {
     return res
 }
 
+func visibleMountains1(peaks [][]int) int {
+    res, n, mx := 0, len(peaks), float64(-1)
+    if n == 0 {
+        return 0
+    }
+    sort.Slice(peaks, func(i, j int) bool {
+        li := peaks[i][0] - peaks[i][1]
+        lj := peaks[j][0] - peaks[j][1]
+        if li != lj {
+            return li < lj
+        }
+        ri := peaks[i][0] + peaks[i][1]
+        rj := peaks[j][0] + peaks[j][1]
+        return ri > rj
+    })
+    for i := 0; i < n; i++ {
+        x, y := peaks[i][0], peaks[i][1]
+        end := float64(x + y)
+        if end > mx {
+            mx = end
+            // If this peak is identical to the next one, don't count it.
+            if i < n-1 && peaks[i][0] == peaks[i+1][0] && peaks[i][1] == peaks[i+1][1] {
+                continue
+            }
+            res++
+        }
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // <img src="https://assets.leetcode.com/uploads/2022/07/19/ex1.png" />
@@ -74,4 +104,7 @@ func main() {
     // Explanation: The diagram above shows the mountains (they completely overlap).
     // Both mountains are not visible since their peaks lie within each other.
     fmt.Println(visibleMountains([][]int{{1,3},{1,3}})) // 0
+
+    fmt.Println(visibleMountains1([][]int{{2,2},{6,3},{5,4}})) // 2
+    fmt.Println(visibleMountains1([][]int{{1,3},{1,3}})) // 0
 }
