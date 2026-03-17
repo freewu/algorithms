@@ -52,16 +52,60 @@ import "slices"
 func minThreshold(nums []int, k int) int {
     // Step 1: Discretize the numbers
     unique := make(map[int]bool)
-    for _, num := range nums {
-        unique[num] = true
+    for _, v := range nums {
+        unique[v] = true
     }
     arr := make([]int, 0, len(unique))
     for num := range unique {
         arr = append(arr, num)
     }
-    sort.Ints(arr)
+    var update  func(tree []int, root, start, end, index, val int) 
+    update = func(tree []int, root, start, end, index, val int) {
+        if start == end {
+            tree[root] += val
+            return
+        }
+        mid := (start + end) / 2
+        if index <= mid {
+            update(tree, 2*root+1, start, mid, index, val)
+        } else {
+            update(tree, 2*root+2, mid+1, end, index, val)
+        }
+        tree[root] = tree[2*root+1] + tree[2*root+2]
+    }
+    var query func (tree []int, root, start, end, left, right int) int
+    query = func (tree []int, root, start, end, left, right int) int {
+        if left > end || right < start {
+            return 0
+        }
+        if left <= start && end <= right {
+            return tree[root]
+        }
+        mid := (start + end) / 2
+        return query(tree, 2*root+1, start, mid, left, right) + query(tree, 2*root+2, mid+1, end, left, right)
+    }
+    check := func(nums, arr []int, x, k, n int) bool {
+        count := 0
+        tree := make([]int, 4*n)
+        for _, v := range nums {
+            tmp := x + v
+            right := sort.SearchInts(arr, tmp+1) - 1
+            left := sort.SearchInts(arr, v)
+            if left < len(arr) && arr[left] == v {
+                left = left + 1
+            }
+            if left <= right && right >= 0 {
+                count += query(tree, 0, 0, n-1, left, right)
+            }
+            update(tree, 0, 0, n-1, sort.SearchInts(arr, v), 1)
+            if count >= k {
+                return true
+            }
+        }
+        return count >= k
+    }
+    slices.Sort(arr)
     n := len(arr)
-
     // Binary search to find the minimal threshold
     res, left, right := -1, 0, slices.Max(nums)
     for left <= right {
@@ -73,53 +117,6 @@ func minThreshold(nums []int, k int) int {
         }
     }
     return res
-}
-
-func check(nums, arr []int, x, k, n int) bool {
-    count := 0
-    tree := make([]int, 4*n)
-
-    for _, val := range nums {
-        tmp := x + val
-        right := sort.SearchInts(arr, tmp+1) - 1
-        left := sort.SearchInts(arr, val)
-        if left < len(arr) && arr[left] == val {
-            left = left + 1
-        }
-        if left <= right && right >= 0 {
-            count += query(tree, 0, 0, n-1, left, right)
-        }
-        update(tree, 0, 0, n-1, sort.SearchInts(arr, val), 1)
-        if count >= k {
-            return true
-        }
-    }
-    return count >= k
-}
-
-func update(tree []int, root, start, end, index, val int) {
-    if start == end {
-        tree[root] += val
-        return
-    }
-    mid := (start + end) / 2
-    if index <= mid {
-        update(tree, 2*root+1, start, mid, index, val)
-    } else {
-        update(tree, 2*root+2, mid+1, end, index, val)
-    }
-    tree[root] = tree[2*root+1] + tree[2*root+2]
-}
-
-func query(tree []int, root, start, end, left, right int) int {
-    if left > end || right < start {
-        return 0
-    }
-    if left <= start && end <= right {
-        return tree[root]
-    }
-    mid := (start + end) / 2
-    return query(tree, 2*root+1, start, mid, left, right) + query(tree, 2*root+2, mid+1, end, left, right)
 }
 
 func main() {
