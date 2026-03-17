@@ -81,21 +81,36 @@ func isPalindrome1(s string) bool {
 }
 
 func main() {
+    // Example 1:
+    // Input: s = "A man, a plan, a canal: Panama"
+    // Output: true
+    // Explanation: "amanaplanacanalpanama" is a palindrome.
+    fmt.Println(isPalindrome("A man, a plan, a canal: Panama")) // true
+    // Example 2:
+    // Input: s = "race a car"
+    // Output: false
+    // Explanation: "raceacar" is not a palindrome.
+    fmt.Println(isPalindrome("race a car")) // false
+    // Example 3:
+    // Input: s = " "
+    // Output: true
+    // Explanation: s is an empty string "" after removing non-alphanumeric characters.
+    // Since an empty string reads the same forward and backward, it is a palindrome.
+    fmt.Println(isPalindrome(" ")) // true
+
     fmt.Println(isPalindrome("ab"))   // false
     fmt.Println(isPalindrome(" Abc")) // false
-
     fmt.Println(isPalindrome(""))                               // true
     fmt.Println(isPalindrome("a"))                              // true
     fmt.Println(isPalindrome(" Aba"))                           // true
-    fmt.Println(isPalindrome("A man, a plan, a canal: Panama")) // true
     fmt.Println(isPalindrome("12321"))                          // true
     fmt.Println(isPalindrome("123321"))                         // true
     fmt.Println(isPalindrome(".,"))                             // true
-
+    fmt.Println(isPalindrome("bluefrog")) // false
+    fmt.Println(isPalindrome("leetcode")) // false
 
     fmt.Println(isPalindrome1("ab"))   // false
     fmt.Println(isPalindrome1(" Abc")) // false
-
     fmt.Println(isPalindrome1(""))                               // true
     fmt.Println(isPalindrome1("a"))                              // true
     fmt.Println(isPalindrome1(" Aba"))                           // true
@@ -103,4 +118,6 @@ func main() {
     fmt.Println(isPalindrome1("12321"))                          // true
     fmt.Println(isPalindrome1("123321"))                         // true
     fmt.Println(isPalindrome1(".,"))                             // true
+    fmt.Println(isPalindrome1("bluefrog")) // false
+    fmt.Println(isPalindrome1("leetcode")) // false
 }
