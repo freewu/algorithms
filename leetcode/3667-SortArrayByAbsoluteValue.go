@@ -32,6 +32,7 @@ package main
 //     -100 <= nums[i] <= 100
 
 import "fmt"
+import "sort"
 import "slices"
 
 func sortByAbsoluteValue(nums []int) []int {
@@ -44,6 +45,14 @@ func sortByAbsoluteValue(nums []int) []int {
         return a - b
     })
     return nums;
+}
+
+func sortByAbsoluteValue1(nums []int) []int {
+    abs := func(x int) int { if x < 0 { return -x; }; return x; }
+    sort.Slice(nums, func(i, j int) bool {
+        return abs(nums[i]) < abs(nums[j])
+    })
+    return nums
 }
 
 func main() {
@@ -66,4 +75,9 @@ func main() {
 
     fmt.Println(sortByAbsoluteValue([]int{1,2,3,4,5,6,7,8,9}))  // [1,2,3,4,5,6,7,8,9]
     fmt.Println(sortByAbsoluteValue([]int{9,8,7,6,5,4,3,2,1}))  // [1,2,3,4,5,6,7,8,9]
+
+    fmt.Println(sortByAbsoluteValue1([]int{3,-1,-4,1,5}))  // [-1,1,3,-4,5]
+    fmt.Println(sortByAbsoluteValue1([]int{-100,100}))  // [-100,100]
+    fmt.Println(sortByAbsoluteValue1([]int{1,2,3,4,5,6,7,8,9}))  // [1,2,3,4,5,6,7,8,9]
+    fmt.Println(sortByAbsoluteValue1([]int{9,8,7,6,5,4,3,2,1}))  // [1,2,3,4,5,6,7,8,9]
 }
