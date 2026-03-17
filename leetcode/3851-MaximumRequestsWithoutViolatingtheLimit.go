@@ -95,6 +95,34 @@ func maxRequests1(requests [][]int, k int, window int) int {
     return res
 }
 
+func maxRequests2(requests [][]int, k int, window int) int {
+    res, mn := 0, 0
+    for _, request := range requests {
+        if mn <= request[0] {
+            mn = request[0]
+        }
+    }
+    mp := make([][]int, mn + 1)
+    for _, request := range requests {
+        user, time := request[0], request[1]
+        mp[user] = append(mp[user], time)
+    }
+    for _, times := range mp {
+        sort.Ints(times)
+        s := 0
+        for e, time := range times {
+            for times[s] < time - window || times[s] == 0 {
+                s++
+            }
+            if e >= s + k {
+                res++
+                times[e] = 0
+            }
+        }
+    }
+    return len(requests) - res
+}
+
 func main() {
     // Example 1:
     // Input: requests = [[1,1],[2,1],[1,7],[2,8]], k = 1, window = 4
@@ -125,4 +153,8 @@ func main() {
     fmt.Println(maxRequests1([][]int{{1,1},{2,1},{1,7},{2,8}}, 1, 4)) // 4
     fmt.Println(maxRequests1([][]int{{1,2},{1,5},{1,2},{1,6}}, 2, 5)) // 2
     fmt.Println(maxRequests1([][]int{{1,1},{2,5},{1,2},{3,9}}, 1, 1)) // 3
+
+    fmt.Println(maxRequests2([][]int{{1,1},{2,1},{1,7},{2,8}}, 1, 4)) // 4
+    fmt.Println(maxRequests2([][]int{{1,2},{1,5},{1,2},{1,6}}, 2, 5)) // 2
+    fmt.Println(maxRequests2([][]int{{1,1},{2,5},{1,2},{3,9}}, 1, 1)) // 3
 }
