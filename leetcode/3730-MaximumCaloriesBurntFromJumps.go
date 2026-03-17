@@ -70,6 +70,24 @@ func maxCaloriesBurnt(heights []int) int64 {
     return int64(res)
 }
 
+func maxCaloriesBurnt1(heights []int) int64 {
+    sort.Ints(heights)
+    n := len(heights)
+    i, j := 0, n - 1
+    res := int64(heights[j] * heights[j])
+    for i < j {
+        val := heights[j] - heights[i]
+        res += int64(val * val)
+        j--
+        if j > i {
+            val := heights[j] - heights[i]
+            res += int64(val * val)
+        }
+        i++
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: heights = [1,7,9]
@@ -103,4 +121,10 @@ func main() {
 
     fmt.Println(maxCaloriesBurnt([]int{1,2,3,4,5,6,7,8,9})) // 285
     fmt.Println(maxCaloriesBurnt([]int{9,8,7,6,5,4,3,2,1})) // 285
+
+    fmt.Println(maxCaloriesBurnt1([]int{1,7,9})) // 181
+    fmt.Println(maxCaloriesBurnt1([]int{5,2,4})) // 38
+    fmt.Println(maxCaloriesBurnt1([]int{3,3})) // 9
+    fmt.Println(maxCaloriesBurnt1([]int{1,2,3,4,5,6,7,8,9})) // 285
+    fmt.Println(maxCaloriesBurnt1([]int{9,8,7,6,5,4,3,2,1})) // 285
 }
