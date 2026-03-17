@@ -113,12 +113,26 @@ func longestConsecutive2(nums []int) int {
 }
 
 func main() {
+    // Example 1:
+    // Input: nums = [100,4,200,1,3,2]
+    // Output: 4
+    // Explanation: The longest consecutive elements sequence is [1, 2, 3, 4]. Therefore its length is 4.
     fmt.Printf("longestConsecutive([]int{ 100,4,200,1,3,2 }) = %v\n",longestConsecutive([]int{ 100,4,200,1,3,2 })) // 4 [1,2,3,4]
+    // Example 2:
+    // Input: nums = [0,3,7,2,5,8,4,6,0,1]
+    // Output: 9
     fmt.Printf("longestConsecutive([]int{ 0,3,7,2,5,8,4,6,0,1 }) = %v\n",longestConsecutive([]int{ 0,3,7,2,5,8,4,6,0,1 })) // 9
+
+    fmt.Println(longestConsecutive([]int{ 1,2,3,4,5,6,7,8,9 })) // 9
+    fmt.Println(longestConsecutive([]int{ 9,8,7,6,5,4,3,2,1 })) // 9
 
     fmt.Printf("longestConsecutive1([]int{ 100,4,200,1,3,2 }) = %v\n",longestConsecutive1([]int{ 100,4,200,1,3,2 })) // 4 [1,2,3,4]
     fmt.Printf("longestConsecutive1([]int{ 0,3,7,2,5,8,4,6,0,1 }) = %v\n",longestConsecutive1([]int{ 0,3,7,2,5,8,4,6,0,1 })) // 9
+    fmt.Println(longestConsecutive1([]int{ 1,2,3,4,5,6,7,8,9 })) // 9
+    fmt.Println(longestConsecutive1([]int{ 9,8,7,6,5,4,3,2,1 })) // 9
 
     fmt.Printf("longestConsecutive2([]int{ 100,4,200,1,3,2 }) = %v\n",longestConsecutive2([]int{ 100,4,200,1,3,2 })) // 4 [1,2,3,4]
     fmt.Printf("longestConsecutive2([]int{ 0,3,7,2,5,8,4,6,0,1 }) = %v\n",longestConsecutive2([]int{ 0,3,7,2,5,8,4,6,0,1 })) // 9
+    fmt.Println(longestConsecutive2([]int{ 1,2,3,4,5,6,7,8,9 })) // 9
+    fmt.Println(longestConsecutive2([]int{ 9,8,7,6,5,4,3,2,1 })) // 9
 }
