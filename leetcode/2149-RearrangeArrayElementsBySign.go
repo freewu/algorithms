@@ -33,31 +33,38 @@ package main
 import "fmt"
 
 func rearrangeArray(nums []int) []int {
-	res := make([]int,len(nums))
-	// 初始化正数 / 负数位置  正数开头
-	p_pos, n_pos := 0, 1 
-	// for i := 0; i < len(nums); i = i + 1 {
-	// 	if nums[i] > 0 {
-	// 		res[p_pos] = nums[i]
-	// 		p_pos += 2 // 步长为2
-	// 	} else {
-	// 		res[n_pos] = nums[i]
-	// 		n_pos += 2 // 步长为2
-	// 	}
-	// }
-	for _, n := range nums {
-		if n > 0 {
-			res[p_pos] = n
-			p_pos += 2 // 步长为2
-		} else {
-			res[n_pos] = n
-			n_pos += 2 // 步长为2
-		}
-	}
-	return res
+    res := make([]int,len(nums))
+    // 初始化正数 / 负数位置  正数开头
+    p_pos, n_pos := 0, 1 
+    for _, n := range nums {
+        if n > 0 {
+            res[p_pos] = n
+            p_pos += 2 // 步长为2
+        } else {
+            res[n_pos] = n
+            n_pos += 2 // 步长为2
+        }
+    }
+    return res
 }
 
 func main() {
-	fmt.Println(rearrangeArray([]int{3,1,-2,-5,2,-4})) // [3,-2,1,-5,2,-4]
-	fmt.Println(rearrangeArray([]int{-1,1})) // [1,-1]
+    // Example 1:
+    // Input: nums = [3,1,-2,-5,2,-4]
+    // Output: [3,-2,1,-5,2,-4]
+    // Explanation:
+    // The positive integers in nums are [3,1,2]. The negative integers are [-2,-5,-4].
+    // The only possible way to rearrange them such that they satisfy all conditions is [3,-2,1,-5,2,-4].
+    // Other ways such as [1,-2,2,-5,3,-4], [3,1,2,-2,-5,-4], [-2,3,-5,1,-4,2] are incorrect because they do not satisfy one or more conditions.  
+    fmt.Println(rearrangeArray([]int{3,1,-2,-5,2,-4})) // [3,-2,1,-5,2,-4]
+    // Example 2:
+    // Input: nums = [-1,1]
+    // Output: [1,-1]
+    // Explanation:
+    // 1 is the only positive integer and -1 the only negative integer in nums.
+    // So nums is rearranged to [1,-1].
+    fmt.Println(rearrangeArray([]int{-1,1})) // [1,-1]
+
+    fmt.Println(rearrangeArray([]int{1,-1,2,-3,4,-5,6,-7,8,-9})) // [1 -1 2 -3 4 -5 6 -7 8 -9]
+    fmt.Println(rearrangeArray([]int{-9,8,-7,6,-5,4,-3,2,-1,1})) // [8 -9 6 -7 4 -5 2 -3 1 -1]
 }
