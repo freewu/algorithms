@@ -39,6 +39,25 @@ func validSubarrays(nums []int) int {
     return res
 }
 
+func validSubarrays1(nums []int) int {
+    res, stack := 0, []int{-1}
+    for _, v := range nums {
+        c := stack[len(stack) - 1]
+        if v >= c {
+            stack = append(stack, v)
+            res += len(stack) - 1            
+        } else {
+            for v < c && len(stack) > 0 {
+                stack = stack[:len(stack) - 1]
+                c = stack[len(stack) - 1]
+            }
+            stack = append(stack, v)
+            res += len(stack) - 1
+        }
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: nums = [1,4,2,5,3]
@@ -55,4 +74,13 @@ func main() {
     // Output: 6
     // Explanation: There are 6 valid subarrays: [2],[2],[2],[2,2],[2,2],[2,2,2].
     fmt.Println(validSubarrays([]int{2,2,2})) // 6
+
+    fmt.Println(validSubarrays([]int{1,2,3,4,5,6,7,8,9})) // 45
+    fmt.Println(validSubarrays([]int{9,8,7,6,5,4,3,2,1})) // 9
+
+    fmt.Println(validSubarrays1([]int{1,4,2,5,3})) // 11
+    fmt.Println(validSubarrays1([]int{3,2,1})) // 3
+    fmt.Println(validSubarrays1([]int{2,2,2})) // 6
+    fmt.Println(validSubarrays1([]int{1,2,3,4,5,6,7,8,9})) // 45
+    fmt.Println(validSubarrays1([]int{9,8,7,6,5,4,3,2,1})) // 9
 }
