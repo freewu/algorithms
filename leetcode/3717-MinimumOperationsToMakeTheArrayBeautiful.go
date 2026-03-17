@@ -33,26 +33,53 @@ package main
 
 import "fmt"
 
+// Wrong Answer 916 / 1047 testcases passed
 // 美丽数组的定义：对于数组中的每个元素（除了第一个元素），该元素必须能被前一个元素整除
 // 解题思路：
 //     1. 从数组的第二个元素开始遍历，计算当前元素与前一个元素的余数
 //     2. 如果余数不为 0，计算需要增加的值（使得当前元素能被前一个元素整除），并将该值累加到总操作次数中
 //     3. 更新当前元素的值（增加后的值），并将其设为下一次迭代的前一个元素
 //     4. 遍历完成后，返回总操作次数
-func minOperations(nums []int) int64 {
+func minOperations(nums []int) int {
     res, n, prev := 0, len(nums), nums[0]
     if n <= 1 { return 0 } // 如果数组长度小于等于 1，数组已经是美丽数组，直接返回 0
     for i := 1; i < n; i++ {
-        current := nums[i]
-        remainder := current % prev // 计算当前元素与前一个元素的余数
-        if remainder != 0 { // 如果余数不为 0，计算需要增加的值（使得当前元素能被前一个元素整除），并将该值累加到总操作次数中。
-            add := prev - remainder
+        curr:= nums[i]
+        rem := curr % prev // 计算当前元素与前一个元素的余数
+        if rem != 0 { // 如果余数不为 0，计算需要增加的值（使得当前元素能被前一个元素整除），并将该值累加到总操作次数中。
+            add := prev - rem
             res += add
-            current += add
+            curr += add
         }
-        prev = current // 更新当前元素的值（增加后的值），并将其设为下一次迭代的前一个元素
+        prev = curr // 更新当前元素的值（增加后的值），并将其设为下一次迭代的前一个元素
     }
-    return int64(res)
+    return res
+}
+
+// Wrong Answer 916 / 1047 testcases passed
+func minOperations1(nums []int) int {
+    res, n, prev := 0, len(nums), nums[0]
+    if n <= 1 {
+        return 0
+    }
+    for i := 1; i < n; i++ {
+        cur := nums[i]
+        k := (cur + prev - 1) / prev
+        res += (k * prev - cur)
+        prev= k * prev
+    }
+    return res
+}
+
+func minOperations2(nums []int) int {
+    res, n := 0, len(nums)
+    for i := 1; i < n; i++ {
+        if nums[i] % nums[i - 1] == 0 { continue }
+        next := (nums[i] + nums[i - 1] - 1) / nums[i - 1]
+        res += next - nums[i]
+        nums[i] = next
+    }
+    return res
 }
 
 func main() {
@@ -75,6 +102,22 @@ func main() {
     // The array has only one element, so it's already beautiful.
     fmt.Println(minOperations([]int{4})) // 0
 
+    fmt.Println(minOperations([]int{5,13,18})) // 9
     fmt.Println(minOperations([]int{1,2,3,4,5,6,7,8,9})) // 14
     fmt.Println(minOperations([]int{9,8,7,6,5,4,3,2,1})) // 36
+
+    fmt.Println(minOperations1([]int{3,7,9})) // 2
+    fmt.Println(minOperations1([]int{1,1,1})) // 0
+    fmt.Println(minOperations1([]int{4})) // 0
+    fmt.Println(minOperations1([]int{5,13,18})) // 9
+    fmt.Println(minOperations1([]int{1,2,3,4,5,6,7,8,9})) // 14
+    fmt.Println(minOperations1([]int{9,8,7,6,5,4,3,2,1})) // 36
+
+    fmt.Println(minOperations2([]int{3,7,9})) // 2
+    fmt.Println(minOperations2([]int{1,1,1})) // 0
+    fmt.Println(minOperations2([]int{4})) // 0
+    fmt.Println(minOperations2([]int{5,13,18})) // 9
+    fmt.Println(minOperations1([]int{5,13,18})) // 9
+    fmt.Println(minOperations2([]int{1,2,3,4,5,6,7,8,9})) // 14
+    fmt.Println(minOperations2([]int{9,8,7,6,5,4,3,2,1})) // 36
 }

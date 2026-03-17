@@ -59,6 +59,37 @@ func goodIndices(s string) []int {
     return res
 }
 
+func goodIndices1(s string) []int {
+    res, i, n := []int{}, 1, 1
+    getLenght := func(n int) int {
+        if n < 100000 {
+            if n < 100 {
+                if n < 10 {
+                    return 1
+                }
+                return 2
+            } else {
+                if n < 1000 {
+                    return 3
+                } else if n < 10000 {
+                    return 4
+                }
+                return 5
+            }
+        }
+        return 6
+    }
+    for i <= len(s) {
+        v, _ := strconv.Atoi(s[i-n:i])
+        if v == i-1 {
+            res = append(res, i-1)
+        }
+        i++
+        n = getLenght(i-1)
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: s = "0234567890112"
@@ -88,4 +119,12 @@ func main() {
     fmt.Println(goodIndices("9876543210")) // []
     fmt.Println(goodIndices("123456789")) // []
     fmt.Println(goodIndices("987654321")) // []
+
+    fmt.Println(goodIndices1("0234567890112")) // [0,11,12]
+    fmt.Println(goodIndices1("01234")) // [0,1,2,3,4]
+    fmt.Println(goodIndices1("12345")) // []
+    fmt.Println(goodIndices1("0123456789")) // [0 1 2 3 4 5 6 7 8 9]
+    fmt.Println(goodIndices1("9876543210")) // []
+    fmt.Println(goodIndices1("123456789")) // []
+    fmt.Println(goodIndices1("987654321")) // []
 }
