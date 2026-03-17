@@ -70,7 +70,7 @@ func findMedianSortedArrays(nums1 []int, nums2 []int) float64 {
 }
 
 // best solution
-func findMedianSortedArraysBest(nums1 []int, nums2 []int) float64 {
+func findMedianSortedArrays1(nums1 []int, nums2 []int) float64 {
     m,n := len(nums1), len(nums2)
     if m > n {
         nums1, nums2, m,n = nums2, nums1, n, m
@@ -123,6 +123,15 @@ func main() {
     // Explanation: merged array = [1,2,3,4] and median is (2 + 3) / 2 = 2.5.
     fmt.Println(findMedianSortedArrays([]int{1, 2}, []int{3, 4})) // 2.5
 
-    fmt.Println(findMedianSortedArraysBest([]int{1, 3}, []int{2})) // 2.0
-    fmt.Println(findMedianSortedArraysBest([]int{1, 2}, []int{3, 4})) // 2.5
+    fmt.Println(findMedianSortedArrays([]int{1,2,3,4,5,6,7,8,9}, []int{1,2,3,4,5,6,7,8,9})) // 5
+    fmt.Println(findMedianSortedArrays([]int{9,8,7,6,5,4,3,2,1}, []int{9,8,7,6,5,4,3,2,1})) // 5
+    fmt.Println(findMedianSortedArrays([]int{9,8,7,6,5,4,3,2,1}, []int{1,2,3,4,5,6,7,8,9})) // 9
+    fmt.Println(findMedianSortedArrays([]int{9,8,7,6,5,4,3,2,1}, []int{9,8,7,6,5,4,3,2,1})) // 5
+
+    fmt.Println(findMedianSortedArrays1([]int{1, 3}, []int{2})) // 2.0
+    fmt.Println(findMedianSortedArrays1([]int{1, 2}, []int{3, 4})) // 2.5
+    fmt.Println(findMedianSortedArrays1([]int{1,2,3,4,5,6,7,8,9}, []int{1,2,3,4,5,6,7,8,9})) // 5
+    fmt.Println(findMedianSortedArrays1([]int{9,8,7,6,5,4,3,2,1}, []int{9,8,7,6,5,4,3,2,1})) // 5
+    fmt.Println(findMedianSortedArrays1([]int{9,8,7,6,5,4,3,2,1}, []int{1,2,3,4,5,6,7,8,9})) // 9
+    fmt.Println(findMedianSortedArrays1([]int{9,8,7,6,5,4,3,2,1}, []int{9,8,7,6,5,4,3,2,1})) // 5
 }
