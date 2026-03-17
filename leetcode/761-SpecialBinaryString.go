@@ -31,7 +31,7 @@ import "fmt"
 import "sort"
 
 func makeLargestSpecial(s string) string {
-    memo := make(map[string]string)
+    mp := make(map[string]string)
     split := func(s string) []string {
         res, count, start := []string{}, 0, 0
         for end := 0; end < len(s); end++ {
@@ -47,19 +47,19 @@ func makeLargestSpecial(s string) string {
         }
         return res
     }
-    var largestSpecial func(s string, memo map[string]string) string 
-    largestSpecial = func(s string, memo map[string]string) string {
+    var largestSpecial func(s string, mp map[string]string) string 
+    largestSpecial = func(s string, mp map[string]string) string {
         // Base Case: "10", or as parenthesis ()
         n := len(s)
         if n == 2 { return s }
-        if _, exists := memo[s]; exists { // Check if solution exists in memory
-            return memo[s]
+        if _, exists := mp[s]; exists { // Check if solution exists in memory
+            return mp[s]
         }
         tuples := split(s)
         // Get max for each individual tuple
         if len(tuples) != 1 {
             for i, tuple := range tuples {
-                tuples[i] = largestSpecial(tuple, memo) // Recursive
+                tuples[i] = largestSpecial(tuple, mp) // Recursive
             }
         } else {
             // Single tuple, break it smaller.
@@ -67,7 +67,7 @@ func makeLargestSpecial(s string) string {
             // Eg: (()(())); obviously () needs to be swapped with (())
             // resulting in ((())())
             tuple := s[1 : n-1] // Remove first and last chars
-            tuples[0] = fmt.Sprintf("1%s0", largestSpecial(tuple, memo))
+            tuples[0] = fmt.Sprintf("1%s0", largestSpecial(tuple, mp))
         }
         // Greedy approach: max value can be obtained by combining
         // tuples in descending order. Can be proven, but
@@ -78,10 +78,10 @@ func makeLargestSpecial(s string) string {
         for i := len(tuples) - 1; 0 <= i; i-- {
             res += tuples[i]
         }
-        memo[s] = res
+        mp[s] = res
         return res
     }
-	return largestSpecial(s, memo)
+    return largestSpecial(s, mp)
 }
 
 func main() {
