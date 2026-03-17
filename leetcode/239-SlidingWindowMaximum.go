@@ -23,6 +23,7 @@ package main
 // Example 2:
 // Input: nums = [1], k = 1
 // Output: [1]
+
 // Constraints:
 //     1 <= nums.length <= 10^5
 //     -10^4 <= nums[i] <= 10^4
@@ -104,12 +105,35 @@ func maxSlidingWindow2(nums []int, limit int) []int {
 
 
 func main()  {
+    // Example 1:
+    // Input: nums = [1,3,-1,-3,5,3,6,7], k = 3
+    // Output: [3,3,5,5,6,7]
+    // Explanation: 
+    // Window position                Max
+    // ---------------               -----
+    // [1  3  -1] -3  5  3  6  7       3
+    //  1 [3  -1  -3] 5  3  6  7       3
+    //  1  3 [-1  -3  5] 3  6  7       5
+    //  1  3  -1 [-3  5  3] 6  7       5
+    //  1  3  -1  -3 [5  3  6] 7       6
+    //  1  3  -1  -3  5 [3  6  7]      7
     fmt.Printf("maxSlidingWindow1([]int{1,3,-1,-3,5,3,6,7},3) = %v\n",maxSlidingWindow1([]int{1,3,-1,-3,5,3,6,7},3)) // [3,3,5,5,6,7]
+    // Example 2:
+    // Input: nums = [1], k = 1
+    // Output: [1]
     fmt.Printf("maxSlidingWindow1([]int{1},1) = %v\n",maxSlidingWindow1([]int{1},1)) // [1]
+
+    fmt.Println(maxSlidingWindow([]int{1,2,3,4,5,6,7,8,9},3)) // [3 4 5 6 7 8 9]
+    fmt.Println(maxSlidingWindow([]int{9,8,7,6,5,4,3,2,1},3)) // [9 8 7 6 5 4 3]
 
     fmt.Printf("maxSlidingWindow([]int{1,3,-1,-3,5,3,6,7},3) = %v\n",maxSlidingWindow([]int{1,3,-1,-3,5,3,6,7},3)) // [3,3,5,5,6,7]
     fmt.Printf("maxSlidingWindow([]int{1},1) = %v\n",maxSlidingWindow([]int{1},1)) // [1]
+    fmt.Println(maxSlidingWindow1([]int{1,2,3,4,5,6,7,8,9},3)) // [3 4 5 6 7 8 9]
+    fmt.Println(maxSlidingWindow1([]int{9,8,7,6,5,4,3,2,1},3)) // [9 8 7 6 5 4 3]
+
 
     fmt.Printf("maxSlidingWindow2([]int{1,3,-1,-3,5,3,6,7},3) = %v\n",maxSlidingWindow2([]int{1,3,-1,-3,5,3,6,7},3)) // [3,3,5,5,6,7]
     fmt.Printf("maxSlidingWindow2([]int{1},1) = %v\n",maxSlidingWindow2([]int{1},1)) // [1]
+    fmt.Println(maxSlidingWindow2([]int{1,2,3,4,5,6,7,8,9},3)) // [3 4 5 6 7 8 9]
+    fmt.Println(maxSlidingWindow2([]int{9,8,7,6,5,4,3,2,1},3)) // [9 8 7 6 5 4 3]
 }
