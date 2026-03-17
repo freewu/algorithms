@@ -5,22 +5,22 @@ package main
 // You can return the answer in any order.
 // An Anagram is a word or phrase formed by rearranging the letters of a different word or phrase, typically using all the original letters exactly once.
 
+// Example 1:
+// Input: strs = ["eat","tea","tan","ate","nat","bat"]
+// Output: [["bat"],["nat","tan"],["ate","eat","tea"]]
+
+// Example 2:
+// Input: strs = [""]
+// Output: [[""]]
+
+// Example 3:
+// Input: strs = ["a"]
+// Output: [["a"]]
+
 // Constraints:
 //     1 <= strs.length <= 10^4
 //     0 <= strs[i].length <= 100
 //     strs[i] consists of lowercase English letters.
-
-// Example 1:
-//     Input: strs = ["eat","tea","tan","ate","nat","bat"]
-//     Output: [["bat"],["nat","tan"],["ate","eat","tea"]]
-
-// Example 2:
-//     Input: strs = [""]
-//     Output: [[""]]
-
-// Example 3:
-//     Input: strs = ["a"]
-//     Output: [["a"]]
 
 // 给出一个字符串数组，要求对字符串数组里面有 Anagrams 关系的字符串进行分组。
 // Anagrams 关系是指两个字符串的字符完全相同，顺序不同，两者是由排列组合组成。
@@ -136,9 +136,18 @@ func groupAnagrams3(strs []string) [][]string {
 }
 
 func main() {
+    // Example 1:
+    // Input: strs = ["eat","tea","tan","ate","nat","bat"]
+    // Output: [["bat"],["nat","tan"],["ate","eat","tea"]]
     fmt.Printf("groupAnagrams([]string{\"eat\",\"tea\",\"tan\",\"ate\",\"nat\",\"bat\"}) = %v\n",groupAnagrams([]string{"eat","tea","tan","ate","nat","bat"})) //  [["bat"],["nat","tan"],["ate","eat","tea"]]
+    // Example 2:
+    // Input: strs = [""]
+    // Output: [[""]]
     fmt.Printf("groupAnagrams([]string{\"\"}) = %v\n",groupAnagrams([]string{""})) // [[""]]
-    fmt.Printf("groupAnagrams([]string{\"a\"}) = %v\n",groupAnagrams([]string{"a"})) // [["a"]]
+    // Example 3:
+    // Input: strs = ["a"]
+    // Output: [["a"]]
+    fmt.Printf("groupAnagrams([]string{\"a\"}) = %v\n",groupAnagrams([]string{"a"})) // [["a"]] 
 
     fmt.Printf("groupAnagrams1([]string{\"eat\",\"tea\",\"tan\",\"ate\",\"nat\",\"bat\"}) = %v\n",groupAnagrams1([]string{"eat","tea","tan","ate","nat","bat"})) //  [["bat"],["nat","tan"],["ate","eat","tea"]]
     fmt.Printf("groupAnagrams1([]string{\"\"}) = %v\n",groupAnagrams1([]string{""})) // [[""]]
