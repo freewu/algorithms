@@ -2005,6 +2005,9 @@
 [3868. Minimum Cost to Equalize Arrays Using Swaps](./leetcode/3868-MinimumCostToEqualizeArraysUsingSwaps.go)   
 [3872. Longest Arithmetic Sequence After Changing At Most One Element](./leetcode/3872-LongestArithmeticSequenceAfterChangingAtMostOneElement.go)   
 [3873. Maximum Points Activated with One Addition](./leetcode/3873-MaximumPointsActivatedWithOneAddition.go)   
+[3874. Valid Subarrays With Exactly One Peak](./leetcode/3874-ValidSubarraysWithExactlyOnePeak.go)   
+
+
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
