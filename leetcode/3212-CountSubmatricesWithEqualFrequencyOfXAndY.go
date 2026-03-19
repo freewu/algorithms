@@ -100,6 +100,28 @@ func numberOfSubmatrices1(grid [][]byte) int {
     return res
 }
 
+func numberOfSubmatrices2(grid [][]byte) int {
+    res, n := 0, len(grid[0])
+    memo := make([][2]int, n)
+    for i := range grid {
+        x, y := 0, 0
+        for j := range grid[i] {
+            if grid[i][j] == 'X' {
+                memo[j][0]++
+            }
+            if grid[i][j] == 'Y' {
+                memo[j][1]++
+            }
+            x += memo[j][0]
+            y += memo[j][1]
+            if x == y && x != 0 {
+                res++
+            }
+        }
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: grid = [["X","Y","."],["Y",".","."]]
@@ -123,4 +145,8 @@ func main() {
     fmt.Println(numberOfSubmatrices1([][]byte{{'X','Y','.'},{'Y','.','.'}})) // 3
     fmt.Println(numberOfSubmatrices1([][]byte{{'X','X'},{'X','Y'}})) // 0
     fmt.Println(numberOfSubmatrices1([][]byte{{'.','.'},{'.','.'}})) // 0
+
+    fmt.Println(numberOfSubmatrices2([][]byte{{'X','Y','.'},{'Y','.','.'}})) // 3
+    fmt.Println(numberOfSubmatrices2([][]byte{{'X','X'},{'X','Y'}})) // 0
+    fmt.Println(numberOfSubmatrices2([][]byte{{'.','.'},{'.','.'}})) // 0
 }
