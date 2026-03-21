@@ -35,9 +35,9 @@ package main
 import "fmt"
 
 func reverseSubmatrix(grid [][]int, x int, y int, k int) [][]int {
-    l, r := x, x+k-1
+    l, r := x, x + k - 1
     for l < r {
-        for j := y; j < y+k; j++ {
+        for j := y; j < y + k; j++ {
             grid[l][j], grid[r][j] = grid[r][j], grid[l][j]
         }
         l++
@@ -61,4 +61,9 @@ func main() {
     // Explanation:
     // The diagram above shows the grid before and after the transformation.
     fmt.Println(reverseSubmatrix([][]int{{3,4,2,3},{2,3,4,2}}, 0, 2, 2)) // [[3,4,4,2],[2,3,2,3]]
+
+    fmt.Println(reverseSubmatrix([][]int{{1,2,3,4,5,6,7,8,9},{1,2,3,4,5,6,7,8,9}}, 0, 2, 2)) // [[1 2 3 4 5 6 7 8 9] [1 2 3 4 5 6 7 8 9]]
+    fmt.Println(reverseSubmatrix([][]int{{1,2,3,4,5,6,7,8,9},{9,8,7,6,5,4,3,2,1}}, 0, 2, 2)) // [[1 2 7 6 5 6 7 8 9] [9 8 3 4 5 4 3 2 1]]
+    fmt.Println(reverseSubmatrix([][]int{{9,8,7,6,5,4,3,2,1},{1,2,3,4,5,6,7,8,9}}, 0, 2, 2)) // [[1 2 7 6 5 6 7 8 9] [9 8 3 4 5 4 3 2 1]]
+    fmt.Println(reverseSubmatrix([][]int{{9,8,7,6,5,4,3,2,1},{9,8,7,6,5,4,3,2,1}}, 0, 2, 2)) // [[9 8 7 6 5 4 3 2 1] [9 8 7 6 5 4 3 2 1]]
 }
