@@ -38,40 +38,45 @@ type TreeNode struct {
  * }
  */
 func diameterOfBinaryTree(root *TreeNode) int {
-	result := 0
-    var checkDiameter func(root *TreeNode, result *int) int 
-    checkDiameter = func(root *TreeNode, result *int) int {
+    res := 0
+    var checkDiameter func(root *TreeNode, res *int) int 
+    checkDiameter = func(root *TreeNode, res *int) int {
         if root == nil {
             return 0
         }
         max := func (x, y int) int { if x > y { return x; }; return y; }
-        left := checkDiameter(root.Left, result)
-        right := checkDiameter(root.Right, result)
-        *result = max(*result, left+right)
+        left := checkDiameter(root.Left, res)
+        right := checkDiameter(root.Right, res)
+        *res = max(*res, left + right)
         return max(left, right) + 1
     }
-	checkDiameter(root, &result)
-	return result
+    checkDiameter(root, &res)
+    return res
 }
 
-func diameterOfBinaryTree1(root *TreeNode) (ans int) {
+func diameterOfBinaryTree1(root *TreeNode) int {
     res := 0
-    var depth func(*TreeNode) int
-    depth = func (root *TreeNode) int {
+    var dfs func(*TreeNode) int
+    dfs = func (root *TreeNode) int {
         if root == nil {
             return 0
         }
-        left := depth(root.Left)
-        right := depth(root.Right)
+        left := dfs(root.Left)
+        right := dfs(root.Right)
         max := func (x, y int) int { if x > y { return x; }; return y; }
         res = max(res, left + right)
         return max(left, right) + 1
     }
-    depth(root)
+    dfs(root)
     return res
 }
 
 func main() {
+    // Example 1:
+    // <img src="https://assets.leetcode.com/uploads/2021/03/06/diamtree.jpg" />
+    // Input: root = [1,2,3,4,5]
+    // Output: 3
+    // Explanation: 3 is the length of the path [4,2,1,3] or [5,2,1,3].
     fmt.Println(diameterOfBinaryTree(
         &TreeNode {
             1,
@@ -83,6 +88,9 @@ func main() {
             &TreeNode{3, nil, nil},
         },
     )) // 3
+    // Example 2:
+    // Input: root = [1,2]
+    // Output: 1
     fmt.Println(diameterOfBinaryTree(
         &TreeNode {
             1,
