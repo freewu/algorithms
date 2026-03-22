@@ -44,12 +44,7 @@ func mirrorReflection1(p int, q int) int {
     // 水平方向 w/gcd如果是奇数,则移动到了右侧,偶数则在左侧
     // 数值方向 移动的距离lcm,因为正方形,移动的边角是 lcm/w = h/gcd, 如果是奇数则是1,如果是偶数则是0(镜子镜像映射上去)
     // 因为gcd的奇偶性是综合了w,h两者的奇偶性
-    gcd := func(a, b int) int {
-        for b != 0 {
-            a, b = b, a % b
-        }
-        return a
-    }
+    gcd := func (x, y int) int { for y != 0 { x, y = y, x % y; }; return x; }
     g := gcd(p, q)
     if (p/g) % 2 == 0 { // 水平移动,偶数在左侧,奇数在右侧
         return 2
@@ -69,6 +64,13 @@ func main() {
     // Output: 1
     fmt.Println(mirrorReflection(3,1)) // 1
 
+    fmt.Println(mirrorReflection(1,1)) // 1
+    fmt.Println(mirrorReflection(1,1000)) // 0
+    fmt.Println(mirrorReflection(1000,1000)) // 1
+
     fmt.Println(mirrorReflection1(2,1)) // 2
     fmt.Println(mirrorReflection1(3,1)) // 1
+    fmt.Println(mirrorReflection1(1,1)) // 1
+    fmt.Println(mirrorReflection1(1,1000)) // 0
+    fmt.Println(mirrorReflection1(1000,1000)) // 1
 }
