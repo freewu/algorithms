@@ -82,8 +82,11 @@ func main() {
     // Input: radius = 1, xCenter = 0, yCenter = 0, x1 = -1, y1 = 0, x2 = 0, y2 = 1
     // Output: true
     fmt.Println(checkOverlap(1, 0, 0, -1, 0, 0, 1)) // true
+    
+    fmt.Println(checkOverlap(2000, 0, 0, -1, 0, 0, 1)) // true
 
     fmt.Println(checkOverlap1(1, 0, 0, 1, -1, 3, 1)) // true
     fmt.Println(checkOverlap1(1, 1, 1, 1, -3, 2, -1)) // false
     fmt.Println(checkOverlap1(1, 0, 0, -1, 0, 0, 1)) // true
+    fmt.Println(checkOverlap1(2000, 0, 0, -1, 0, 0, 1)) // true
 }
