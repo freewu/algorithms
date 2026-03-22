@@ -81,11 +81,26 @@ func maxSatisfied1(customers []int, grumpy []int, minutes int) int {
 }
 
 func main() {
+    // Example 1:
+    // Input: customers = [1,0,1,2,1,1,7,5], grumpy = [0,1,0,1,0,1,0,1], minutes = 3
+    // Output: 16
     // Explanation: The bookstore owner keeps themselves not grumpy for the last 3 minutes. 
     // The maximum number of customers that can be satisfied = 1 + 1 + 1 + 1 + 7 + 5 = 16.
     fmt.Println(maxSatisfied([]int{1,0,1,2,1,1,7,5},[]int{0,1,0,1,0,1,0,1},3)) // 16
+    // Example 2:
+    // Input: customers = [1], grumpy = [0], minutes = 1
+    // Output: 1
     fmt.Println(maxSatisfied([]int{1},[]int{0},1)) // 1
+
+    fmt.Println(maxSatisfied([]int{1,2,3,4,5,6,7,8,9},[]int{1,2,3,4,5,6,7,8,9},3)) // 1
+    fmt.Println(maxSatisfied([]int{1,2,3,4,5,6,7,8,9},[]int{9,8,7,6,5,4,3,2,1},3)) // 0
+    fmt.Println(maxSatisfied([]int{9,8,7,6,5,4,3,2,1},[]int{1,2,3,4,5,6,7,8,9},3)) // 9
+    fmt.Println(maxSatisfied([]int{9,8,7,6,5,4,3,2,1},[]int{9,8,7,6,5,4,3,2,1},3)) // 0
 
     fmt.Println(maxSatisfied1([]int{1,0,1,2,1,1,7,5},[]int{0,1,0,1,0,1,0,1},3)) // 16
     fmt.Println(maxSatisfied1([]int{1},[]int{0},1)) // 1
+    fmt.Println(maxSatisfied1([]int{1,2,3,4,5,6,7,8,9},[]int{1,2,3,4,5,6,7,8,9},3)) // 1
+    fmt.Println(maxSatisfied1([]int{1,2,3,4,5,6,7,8,9},[]int{9,8,7,6,5,4,3,2,1},3)) // 0
+    fmt.Println(maxSatisfied1([]int{9,8,7,6,5,4,3,2,1},[]int{1,2,3,4,5,6,7,8,9},3)) // 9
+    fmt.Println(maxSatisfied1([]int{9,8,7,6,5,4,3,2,1},[]int{9,8,7,6,5,4,3,2,1},3)) // 0
 }
