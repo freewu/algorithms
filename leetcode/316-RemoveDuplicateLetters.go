@@ -45,6 +45,16 @@ func removeDuplicateLetters(s string) string {
 }
 
 func main() {
+    // Example 1:
+    // Input: s = "bcabc"
+    // Output: "abc"
     fmt.Println(removeDuplicateLetters("bcabc")) // "abc"
+    // Example 2:
+    // Input: s = "cbacdcbc"
+    // Output: "acdb"
     fmt.Println(removeDuplicateLetters("cbacdcbc")) // "acdb"
+
+    fmt.Println(removeDuplicateLetters("leetcode")) // "letcod"
+    fmt.Println(removeDuplicateLetters("bluefrog")) // "bluefrog"
+    fmt.Println(removeDuplicateLetters("freewu")) // "frewu"
 }
