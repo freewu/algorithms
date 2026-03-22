@@ -160,12 +160,21 @@ func reorderList1(head *ListNode)  {
 }
 
 func main() {
+    // Example 1:
+    // (1) -> (2) -> (3) -> (4)
+    // (1) -> (4) -> (2) -> (3)
+    // Input: head = [1,2,3,4]
+    // Output: [1,4,2,3]go
     l1 :=  makeListNode([]int{1,2,3,4})
     printListNode(l1) // (1) -> (2) -> (3) -> (4)
     reorderList(l1)
     fmt.Println("After reorder: ")
     printListNode(l1) // (1) -> (4) -> (2) -> (3)
-    
+    // Example 2:
+    // (1) -> (2) -> (3) -> (4) -> (5)
+    // (1) -> (5) -> (2) -> (4) -> (3)
+    // Input: head = [1,2,3,4,5]
+    // Output: [1,5,2,4,3]
     l2 :=  makeListNode([]int{1,2,3,4,5})
     printListNode(l2) // (1) -> (2) -> (3) -> (4) -> (5)
     reorderList(l2)
