@@ -2008,7 +2008,7 @@
 [3874. Valid Subarrays With Exactly One Peak](./leetcode/3874-ValidSubarraysWithExactlyOnePeak.go)   
 [3875. Construct Uniform Parity Array I](./leetcode/3875-ConstructUniformParityArrayI.go)   
 [3876. Construct Uniform Parity Array II](./leetcode/3876-ConstructUniformParityArrayII.go)   
-
+[3877. Minimum Removals to Achieve Target XOR](./leetcode/3877-MinimumRemovalsToAchieveTargetXOR.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
