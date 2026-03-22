@@ -88,6 +88,11 @@ func main() {
     // Output: 127
     fmt.Println(findMaximumXOR([]int{14,70,53,83,49,91,36,80,92,51,66,70})) // 127
 
+    fmt.Println(findMaximumXOR([]int{1,2,3,4,5,6,7,8,9})) // 15
+    fmt.Println(findMaximumXOR([]int{9,8,7,6,5,4,3,2,1})) // 15
+
     fmt.Println(findMaximumXOR1([]int{3,10,5,25,2,8})) // 28
     fmt.Println(findMaximumXOR1([]int{14,70,53,83,49,91,36,80,92,51,66,70})) // 127
+    fmt.Println(findMaximumXOR1([]int{1,2,3,4,5,6,7,8,9})) // 15
+    fmt.Println(findMaximumXOR1([]int{9,8,7,6,5,4,3,2,1})) // 15
 }
