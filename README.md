@@ -2007,6 +2007,7 @@
 [3873. Maximum Points Activated with One Addition](./leetcode/3873-MaximumPointsActivatedWithOneAddition.go)   
 [3874. Valid Subarrays With Exactly One Peak](./leetcode/3874-ValidSubarraysWithExactlyOnePeak.go)   
 [3875. Construct Uniform Parity Array I](./leetcode/3875-ConstructUniformParityArrayI.go)   
+[3876. Construct Uniform Parity Array II](./leetcode/3876-ConstructUniformParityArrayII.go)   
 
 
 # String
