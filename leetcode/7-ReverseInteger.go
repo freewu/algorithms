@@ -1,90 +1,90 @@
 package main
 
-/**
-Given a 32-bit signed integer, reverse digits of an integer.
+// 7. Reverse Integer
+// Given a 32-bit signed integer, reverse digits of an integer.
 
-Example 1:
+// Example 1:
+// Input: 123
+// Output:  321
 
-Input: 123
-Output:  321
-Example 2:
+// Example 2:
+// Input: -123
+// Output: -321
 
-Input: -123
-Output: -321
-Example 3:
+// Example 3:
+// Input: 120
+// Output: 21
 
-Input: 120
-Output: 21
-*/
+// Constraints:
+//     -2^31 <= x <= 2^31 - 1
 
-import (
-	"fmt"
-	"math"
-)
+
+import "fmt"
+import "math"
 
 func reverse(x int) int {
-	var t = []int{}
-
-	for {
-		//fmt.Println(x)
-		//fmt.Println(x % 10)
-		var s = x % 10
-		x = x / 10;
-
-		t = append(t,s)
-
-		if 0 == x {
-			//fmt.Println(t)
-			break
-		}
-	}
-	var l = len(t)
-	// fmt.Println(l)
-	var s = 0
-	for i := 0; i < l; i++ {
-		//fmt.Println(math.Pow10(l - 1))
-		//fmt.Println(i)
-		s += t[i] * int( math.Pow10(l - i - 1))
-	}
-
-	if s > math.MaxInt32 || s < math.MinInt32 {
-		return 0
-	}
-    return s
+    arr := []int{}
+    for {
+        rem := x % 10
+        x = x / 10;
+        arr = append(arr, rem)
+        if 0 == x {
+            break
+        }
+    }
+    res, n := 0, len(arr)
+    for i := 0; i < n; i++ {
+        //fmt.Println(math.Pow10(l - 1))
+        //fmt.Println(i)
+        res += arr[i] * int( math.Pow10(n - i - 1))
+    }
+    if res > math.MaxInt32 || res < math.MinInt32 {
+        return 0
+    }
+    return res
 }
 
 func reverse1(x int) int {
-	var s int64 = 0
-	for {
-		s = s * 10 + int64(x % 10)
-		x /= 10;
-		if x == 0 {
-			break
-		}
-	}
-	if s > math.MaxInt32 || s < math.MinInt32 {
-		return 0
-	}
-	return int(s)
+    res := 0
+    for {
+        res = res * 10 + (x % 10)
+        x /= 10;
+        if x == 0 {
+            break
+        }
+    }
+    if res > math.MaxInt32 || res < math.MinInt32 {
+        return 0
+    }
+    return res
 }
-
-/*
-while (x > 0) {
-	res = res * 10 + x % 10;
-	x /= 10;
-}
-if (res > INT_MAX) return 0;
-if (isPositive) return res;
-*/
 
 func main() {
-	fmt.Println(reverse1(123))
-	fmt.Println(reverse1(120))
-	fmt.Println(reverse1(-1234))
+    // Example 1:
+    // Input: 123
+    // Output:  321
+    fmt.Println(reverse(123)) // 321
+    // Example 2:
+    // Input: -123
+    // Output: -321
+    fmt.Println(reverse(-123)) // -321
+    // Example 3:
+    // Input: 120
+    // Output: 21
+    fmt.Println(reverse(120)) // 21
 
-	fmt.Println(reverse(123))
-	fmt.Println(reverse(120))
+    fmt.Println(reverse(-1234)) // -4321
+    fmt.Println(reverse(0)) // 0
+    fmt.Println(reverse(1)) // 1
+    fmt.Println(reverse((-1 << 30) + 1)) // 0
+    fmt.Println(reverse((1 << 30) - 1)) // 0
 
-	fmt.Println(reverse(-123))
-	fmt.Println(reverse(-1234))
+    fmt.Println(reverse1(123)) // 321
+    fmt.Println(reverse1(120)) // 21
+    fmt.Println(reverse1(-123)) // -321
+    fmt.Println(reverse1(-1234)) // -4321
+    fmt.Println(reverse1(0)) // 0
+    fmt.Println(reverse1(1)) // 1
+    fmt.Println(reverse1((-1 << 30) + 1)) // 0
+    fmt.Println(reverse1((1 << 30) - 1)) // 0
 }
