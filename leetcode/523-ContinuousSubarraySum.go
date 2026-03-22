@@ -67,4 +67,7 @@ func main() {
     // Input: nums = [23,2,6,4,7], k = 13
     // Output: false
     fmt.Println(checkSubarraySum([]int{23,2,6,4,7}, 13)) // false
+
+    fmt.Println(checkSubarraySum([]int{1,2,3,4,5,6,7,8,9}, 2)) // true
+    fmt.Println(checkSubarraySum([]int{9,8,7,6,5,4,3,2,1}, 2)) // true
 }
