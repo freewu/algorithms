@@ -77,7 +77,7 @@ func trimBST1(root *TreeNode, low int, high int) *TreeNode {
             return nil
           }
           // Trim the left and right subtrees
-          root.Left, root.Right = trimBST(root.Left, low, high), trimBST(root.Right, low, high)
+          root.Left, root.Right = trimBST1(root.Left, low, high), trimBST1(root.Right, low, high)
           // If the current node's value is less than low, return the right subtree
           if root.Val < low {
             return root.Right
