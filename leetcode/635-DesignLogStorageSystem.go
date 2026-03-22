@@ -42,76 +42,76 @@ import "strings"
 import "strconv"
 
 type LogSystem struct {
-	list [][2]int64
+    list [][2]int64
 }
 
 func Constructor() LogSystem {
-	return LogSystem{}
+    return LogSystem{}
 }
 
 func (this *LogSystem) Put(id int, timestamp string) {
-	st := this.split(timestamp)
-	this.list = append(this.list, [2]int64{this.convert(st), int64(id)})
+    st := this.split(timestamp)
+    this.list = append(this.list, [2]int64{this.convert(st), int64(id)})
 }
 
 func (this *LogSystem) convert(st []int) int64 {
-	if st[1] > 0 {
-		st[1]--
-	}
-	if st[2] > 0 {
-		st[2]--
-	}
-	return int64(st[0]-1999)*(31*12)*24*60*60 + 
-	       int64(st[1])*31*24*60*60 + 
-	       int64(st[2])*24*60*60 + 
-	       int64(st[3])*60*60 + 
-	       int64(st[4])*60 + 
-	       int64(st[5])
+    if st[1] > 0 {
+        st[1]--
+    }
+    if st[2] > 0 {
+        st[2]--
+    }
+    return int64(st[0]-1999)*(31*12)*24*60*60 + 
+            int64(st[1])*31*24*60*60 + 
+            int64(st[2])*24*60*60 + 
+            int64(st[3])*60*60 + 
+            int64(st[4])*60 + 
+            int64(st[5])
 }
 
 func (this *LogSystem) split(s string) []int {
-	parts := strings.Split(s, ":")
-	result := make([]int, len(parts))
-	for i, part := range parts {
-		result[i], _ = strconv.Atoi(part)
-	}
-	return result
+    parts := strings.Split(s, ":")
+    res := make([]int, len(parts))
+    for i, part := range parts {
+        res[i], _ = strconv.Atoi(part)
+    }
+    return res
 }
 
 func (this *LogSystem) Retrieve(s string, e string, gra string) []int {
-	res := []int{}
-	start := this.Granularity(s, gra, false)
-	end := this.Granularity(e, gra, true)
-	for _, item := range this.list {
-		if item[0] >= start && item[0] < end {
-			res = append(res, int(item[1]))
-		}
-	}
-	return res
+    res := []int{}
+    start := this.Granularity(s, gra, false)
+    end := this.Granularity(e, gra, true)
+    for _, item := range this.list {
+        if item[0] >= start && item[0] < end {
+            res = append(res, int(item[1]))
+        }
+    }
+    return res
 }
 
 func (this *LogSystem) Granularity(s string, gra string, end bool) int64 {
-	h := map[string]int{
-		"Year": 0, "Month": 1, "Day": 2,
-		"Hour": 3, "Minute": 4, "Second": 5,
-	}
-	
-	res := []string{"1999", "00", "00", "00", "00", "00"}
-	st := this.split(s)
-	
-	for i := 0; i <= h[gra]; i++ {
-		res[i] = strconv.Itoa(st[i])
-	}
-	
-	t := make([]int, len(res))
-	for i, str := range res {
-		t[i], _ = strconv.Atoi(str)
-	}
-	
-	if end {
-		t[h[gra]]++
-	}
-	return this.convert(t)
+    h := map[string]int{
+        "Year": 0, "Month": 1, "Day": 2,
+        "Hour": 3, "Minute": 4, "Second": 5,
+    }
+
+    res := []string{"1999", "00", "00", "00", "00", "00"}
+    st := this.split(s)
+
+    for i := 0; i <= h[gra]; i++ {
+        res[i] = strconv.Itoa(st[i])
+    }
+
+    t := make([]int, len(res))
+    for i, str := range res {
+        t[i], _ = strconv.Atoi(str)
+    }
+
+    if end {
+        t[h[gra]]++
+    }
+    return this.convert(t)
 }
 
 // import "sort"
