@@ -80,14 +80,14 @@ func minDays1(bloomDay []int, m int, k int) int {
     if len(bloomDay) < m * k { // 花不够
         return -1
     }
-    minDay, maxDay := 1 << 32 - 1, 0
+    mn, mx := 1 << 32 - 1, 0
     for _, day := range bloomDay { // 找出最小天数 & 最大天数
-        if day < minDay { minDay = day; }
-        if day > maxDay { maxDay = day; }
+        if day < mn { mn = day; }
+        if day > mx { mx = day; }
     }
-    longestDays := maxDay - minDay
+    longestDays := mx - mn
     fewestDays := sort.Search(longestDays, func(days int) bool {
-        days += minDay
+        days += mn
         flowers, bouquets := 0, 0
         for _, d := range bloomDay {
             if d > days {
@@ -102,7 +102,7 @@ func minDays1(bloomDay []int, m int, k int) int {
         }
         return bouquets >= m
     })
-    return minDay + fewestDays
+    return mn + fewestDays
 }
 
 func main() {
@@ -131,7 +131,12 @@ func main() {
     // It is obvious that we can make two bouquets in different ways.
     fmt.Println(minDays([]int{7,7,7,7,12,7,7},2,3)) // 12
 
+    fmt.Println(minDays([]int{1,2,3,4,5,6,7,8,9},2,3)) // 6
+    fmt.Println(minDays([]int{9,8,7,6,5,4,3,2,1},2,3)) // 6
+
     fmt.Println(minDays1([]int{1,10,3,10,2},3,1)) // 3
     fmt.Println(minDays1([]int{1,10,3,10,2},3,2)) // -1
     fmt.Println(minDays1([]int{7,7,7,7,12,7,7},2,3)) // 12
+    fmt.Println(minDays1([]int{1,2,3,4,5,6,7,8,9},2,3)) // 6
+    fmt.Println(minDays1([]int{9,8,7,6,5,4,3,2,1},2,3)) // 6
 }
