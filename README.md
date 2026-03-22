@@ -2006,7 +2006,7 @@
 [3872. Longest Arithmetic Sequence After Changing At Most One Element](./leetcode/3872-LongestArithmeticSequenceAfterChangingAtMostOneElement.go)   
 [3873. Maximum Points Activated with One Addition](./leetcode/3873-MaximumPointsActivatedWithOneAddition.go)   
 [3874. Valid Subarrays With Exactly One Peak](./leetcode/3874-ValidSubarraysWithExactlyOnePeak.go)   
-
+[3875. Construct Uniform Parity Array I](./leetcode/3875-ConstructUniformParityArrayI.go)   
 
 
 # String
