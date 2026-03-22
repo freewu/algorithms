@@ -60,18 +60,18 @@ func numOfSubarrays1(arr []int, k int, threshold int) int {
 
 func numOfSubarrays2(arr []int, k int, threshold int) int {
     threshold *= k // to avoid dividing by k every round
-    meetsThreshold, begin, sum := 0, 0, 0
+    res, begin, sum := 0, 0, 0
     for end := range arr {
         sum += arr[end]
         if end - begin + 1 == k {
             if sum >= threshold {
-                meetsThreshold++
+                res++
             }
             sum -= arr[begin]
             begin++
         }
     }
-    return meetsThreshold
+    return res
 }
 
 func main() {
@@ -86,9 +86,17 @@ func main() {
     // Explanation: The first 6 sub-arrays of size 3 have averages greater than 5. Note that averages are not integers.
     fmt.Println(numOfSubarrays([]int{11,13,17,23,29,31,7,5,2,3}, 3, 5)) // 6
 
+    fmt.Println(numOfSubarrays([]int{1,2,3,4,5,6,7,8,9}, 3, 5)) // 4
+    fmt.Println(numOfSubarrays([]int{9,8,7,6,5,4,3,2,1}, 3, 5)) // 4
+
     fmt.Println(numOfSubarrays1([]int{2,2,2,2,5,5,5,8}, 3, 4)) // 3
     fmt.Println(numOfSubarrays1([]int{11,13,17,23,29,31,7,5,2,3}, 3, 5)) // 6
+    fmt.Println(numOfSubarrays1([]int{1,2,3,4,5,6,7,8,9}, 3, 5)) // 4
+    fmt.Println(numOfSubarrays1([]int{9,8,7,6,5,4,3,2,1}, 3, 5)) // 4
+
 
     fmt.Println(numOfSubarrays2([]int{2,2,2,2,5,5,5,8}, 3, 4)) // 3
     fmt.Println(numOfSubarrays2([]int{11,13,17,23,29,31,7,5,2,3}, 3, 5)) // 6
+    fmt.Println(numOfSubarrays2([]int{1,2,3,4,5,6,7,8,9}, 3, 5)) // 4
+    fmt.Println(numOfSubarrays2([]int{9,8,7,6,5,4,3,2,1}, 3, 5)) // 4
 }
