@@ -62,4 +62,8 @@ func main() {
     // Output: 0
     // Explanation: "ac" is not a substring in "ababc". 
     fmt.Println(maxRepeating("ababc", "ac")) // 0
+
+    fmt.Println(maxRepeating("bluefrog", "ac")) // 0
+    fmt.Println(maxRepeating("leetcode", "ac")) // 0
+    fmt.Println(maxRepeating("freewu", "ac")) // 0
 }
