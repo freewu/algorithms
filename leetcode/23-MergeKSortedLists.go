@@ -78,6 +78,13 @@ func makeListNode(arr []int) *ListNode {
  *     Next *ListNode
  * }
  */
+type MinHeap []*ListNode
+func (h MinHeap)  Len() int           { return len(h) }
+func (h MinHeap)  Less(i, j int) bool { return h[i].Val < h[j].Val }
+func (h MinHeap)  Swap(i, j int)      { h[i], h[j] = h[j], h[i] }
+func (h *MinHeap) Push(v any)         { *h = append(*h, v.(*ListNode)) }
+func (h *MinHeap) Pop() any           { a := *h; v := a[len(a)-1]; *h = a[:len(a)-1]; return v }
+
 // 优先队列（小根堆）
 func mergeKLists(lists []*ListNode) *ListNode {
     // 创建一个小根堆来 pq 维护所有链表的头节点
@@ -102,13 +109,6 @@ func mergeKLists(lists []*ListNode) *ListNode {
     }
     return dummy.Next
 }
-
-type MinHeap []*ListNode
-func (h MinHeap)  Len() int           { return len(h) }
-func (h MinHeap)  Less(i, j int) bool { return h[i].Val < h[j].Val }
-func (h MinHeap)  Swap(i, j int)      { h[i], h[j] = h[j], h[i] }
-func (h *MinHeap) Push(v any)         { *h = append(*h, v.(*ListNode)) }
-func (h *MinHeap) Pop() any           { a := *h; v := a[len(a)-1]; *h = a[:len(a)-1]; return v }
 
 // 递归合并
 func mergeKLists1(lists []*ListNode) *ListNode {
