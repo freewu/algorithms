@@ -3330,6 +3330,7 @@
 [3486. Longest Special Path II](./leetcode/3486-LongestSpecialPathII.go)   
 [3544. Subtree Inversion Sum](./leetcode/3544-SubtreeInversionSum.go)   
 [3831. Median of a Binary Search Tree Level](./leetcode/3831-MedianOfABinarySearchTreeLevel.go)    
+[3879. Maximum Distinct Path Sum in a Binary Tree](./leetcode/3879-MaximumDistinctPathSumInABinaryTree.go)   
 
 # Graph
 [133. Clone Graph](./leetcode/133-CloneGraph.go)   
