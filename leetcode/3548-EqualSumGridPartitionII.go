@@ -140,4 +140,9 @@ func main() {
     // Explanation:
     // No valid cut exists, so the answer is false.
     fmt.Println(canPartitionGrid([][]int{{4,1,8},{3,2,6}})) // false
+
+    fmt.Println(canPartitionGrid([][]int{{1,2,3,4,5,6,7,8,9},{1,2,3,4,5,6,7,8,9}})) // true
+    fmt.Println(canPartitionGrid([][]int{{1,2,3,4,5,6,7,8,9},{9,8,7,6,5,4,3,2,1}})) // true
+    fmt.Println(canPartitionGrid([][]int{{9,8,7,6,5,4,3,2,1},{1,2,3,4,5,6,7,8,9}})) // true
+    fmt.Println(canPartitionGrid([][]int{{9,8,7,6,5,4,3,2,1},{9,8,7,6,5,4,3,2,1}})) // true
 }
