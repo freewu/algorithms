@@ -231,6 +231,59 @@ func maxSum(root *TreeNode) int {
     return res
 }
 
+func maxSum1(root *TreeNode) int {
+    res := -1 << 61
+    type Node struct {
+        Val    int
+        Left   *Node
+        Right  *Node
+        Parent *Node
+    }
+    var build func(*TreeNode) *Node  // 构建带父指针的树，只执行1次 O(n)
+    build = func(tn *TreeNode) *Node { 
+        if tn == nil { return nil }
+        n := &Node{ Val: tn.Val }
+        n.Left = build(tn.Left)
+        if n.Left != nil {
+            n.Left.Parent = n
+        }
+        n.Right = build(tn.Right)
+        if n.Right != nil {
+            n.Right.Parent = n
+        }
+        return n
+    }
+    newRoot := build(root)
+    // 核心优化：全局复用 map + 回溯（无复制！）
+    var traverse func(*Node)
+    traverse = func(node *Node) {
+        if node == nil { return }
+        visited := make(map[int]bool, 100) // 预分配容量
+        var dfs func(cur *Node, sum int)
+        dfs = func(cur *Node, sum int) {
+            // 终止条件：空节点 / 值重复
+            if cur == nil || visited[cur.Val] { return }
+            // 标记
+            visited[cur.Val] = true
+            sum += cur.Val
+            if sum > res {
+                res = sum
+            }
+            // 三个方向搜索
+            dfs(cur.Left, sum)
+            dfs(cur.Right, sum)
+            dfs(cur.Parent, sum)
+            // 回溯：撤销标记（关键！避免map复制，性能爆炸提升）
+            visited[cur.Val] = false
+        }
+        dfs(node, 0)
+        traverse(node.Left)
+        traverse(node.Right)
+    }
+    traverse(newRoot)
+    return res
+}
+
 func main() {
     // Example 1:
     //         2
@@ -298,6 +351,11 @@ func main() {
     tree4 := buildBinaryTree([]int{900,245,794,627,853,858,-581,math.MinInt32 ,math.MinInt32 ,math.MinInt32 ,165,math.MinInt32 ,-392,math.MinInt32 ,72})
     fmt.Println(maxSum(tree4)) // 3815
     //printBinaryTree(tree4)
+
+    fmt.Println(maxSum1(tree1)) // 3
+    fmt.Println(maxSum1(tree2)) // 9
+    fmt.Println(maxSum1(tree3)) // 19
+    fmt.Println(maxSum1(tree4)) // 3815
 }
 
 // type TreeNode struct {
