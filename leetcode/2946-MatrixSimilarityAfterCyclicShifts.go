@@ -102,7 +102,16 @@ func main() {
     }
     fmt.Println(areSimilar(mat3, 3)) // true
 
+    fmt.Println(areSimilar([][]int{{1,2,3,4,5,6,7,8,9},{1,2,3,4,5,6,7,8,9}}, 3)) // false
+    fmt.Println(areSimilar([][]int{{1,2,3,4,5,6,7,8,9},{9,8,7,6,5,4,3,2,1}}, 3)) // false
+    fmt.Println(areSimilar([][]int{{9,8,7,6,5,4,3,2,1},{1,2,3,4,5,6,7,8,9}}, 3)) // false
+    fmt.Println(areSimilar([][]int{{9,8,7,6,5,4,3,2,1},{9,8,7,6,5,4,3,2,1}}, 3)) // false
+
     fmt.Println(areSimilar1(mat1, 4)) // false
     fmt.Println(areSimilar1(mat2, 2)) // true
     fmt.Println(areSimilar1(mat3, 3)) // true
+    fmt.Println(areSimilar1([][]int{{1,2,3,4,5,6,7,8,9},{1,2,3,4,5,6,7,8,9}}, 3)) // false
+    fmt.Println(areSimilar1([][]int{{1,2,3,4,5,6,7,8,9},{9,8,7,6,5,4,3,2,1}}, 3)) // false
+    fmt.Println(areSimilar1([][]int{{9,8,7,6,5,4,3,2,1},{1,2,3,4,5,6,7,8,9}}, 3)) // false
+    fmt.Println(areSimilar1([][]int{{9,8,7,6,5,4,3,2,1},{9,8,7,6,5,4,3,2,1}}, 3)) // false
 }
