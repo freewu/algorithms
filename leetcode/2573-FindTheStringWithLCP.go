@@ -107,6 +107,41 @@ func findTheString1(lcp [][]int) string {
     return string(res)
 }
 
+func findTheString2(lcp [][]int) string {
+    n, i := len(lcp), 0 // res[i] 没有填字母
+    res := make([]byte, n)
+    for c := byte('a'); c <= 'z'; c++ {
+        for j := i; j < n; j++ {
+            if lcp[i][j] > 0 { // res[j] == res[i]
+                res[j] = c
+            }
+        }
+        for i < n && res[i] > 0 { // 找下一个空位
+            i++
+        }
+        if i == n { break } // 没有空位
+    }
+    if i < n { return "" } // 还有空位
+    // 验证 res 是否符合 lcp 矩阵
+    for i := n - 1; i >= 0; i-- {
+        for j := n - 1; j >= 0; j-- {
+            // 计算后缀 [i,n-1] 和后缀 [j,n-1] 的实际 LCP
+            actual := 0
+            if res[i] == res[j] {
+                if i == n-1 || j == n-1 {
+                    actual = 1
+                } else {
+                    actual = lcp[i+1][j+1] + 1
+                }
+            }
+            if lcp[i][j] != actual { // 矛盾
+                return ""
+            }
+        }
+    }
+    return string(res)
+}
+
 func main() {
     // Example 1:
     // Input: lcp = [[4,0,2,0],[0,3,0,1],[2,0,2,0],[0,1,0,1]]
@@ -127,4 +162,8 @@ func main() {
     fmt.Println(findTheString1([][]int{{4,0,2,0},{0,3,0,1},{2,0,2,0},{0,1,0,1}})) // "abab"
     fmt.Println(findTheString1([][]int{{4,3,2,1},{3,3,2,1},{2,2,2,1},{1,1,1,1}})) // "aaaa"
     fmt.Println(findTheString1([][]int{{4,3,2,1},{3,3,2,1},{2,2,2,1},{1,1,1,3}})) // ""
+
+    fmt.Println(findTheString2([][]int{{4,0,2,0},{0,3,0,1},{2,0,2,0},{0,1,0,1}})) // "abab"
+    fmt.Println(findTheString2([][]int{{4,3,2,1},{3,3,2,1},{2,2,2,1},{1,1,1,1}})) // "aaaa"
+    fmt.Println(findTheString2([][]int{{4,3,2,1},{3,3,2,1},{2,2,2,1},{1,1,1,3}})) // ""
 }
