@@ -2675,6 +2675,7 @@
 [3856. Trim Trailing Vowels from a String](./leetcode/3856-TrimTrailingVowelsFromAString.go)   
 [3863. Minimum Operations to Sort a String](./leetcode/3863-MinimumOperationsToSortAString.go)   
 [3864. Minimum Cost to Partition a Binary String](./leetcode/3864-MinimumCostToPartitionABinaryString.go)   
+[3884. First Matching Character From Both Ends](./leetcode/3884-FirstMatchingCharacterFromBothEnds.go)   
 
 # Dynamic Programming
 [276. Paint Fence](./leetcode/276-PaintFence.go)   
