@@ -50,4 +50,8 @@ func main() {
     fmt.Println(canBeEqual("abcd","dacb")) // false
 
     fmt.Println(canBeEqual("bnxw","bwxn")) // true
+
+    fmt.Println(canBeEqual("bluefrog","leetcode")) // false
+    fmt.Println(canBeEqual("leetcode","codeleet")) // false
+    fmt.Println(canBeEqual("bluefrog","frogblue")) // false
 }
