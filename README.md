@@ -3654,6 +3654,7 @@
 [3815. Design Auction System](./leetcode/3815-DesignAuctionSystem.go)   
 [3822. Design Order Management System](./leetcode/3822-DesignOrderManagementSystem.go)   
 [3829. Design Ride Sharing System](./leetcode/3829-DesignRideSharingSystem.go)   
+[3885. Design Event Manager](./leetcode/3885-DesignEventManager.go)   
 
 # Binary Search
 [278. First Bad Version](./leetcode/278-FirstBadVersion.go)   
