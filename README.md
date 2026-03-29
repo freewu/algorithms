@@ -2011,6 +2011,7 @@
 [3877. Minimum Removals to Achieve Target XOR](./leetcode/3877-MinimumRemovalsToAchieveTargetXOR.go)   
 [3878. Count Good Subarrays](./leetcode/3878-CountGoodSubarrays.go)   
 [3880. Minimum Absolute Difference Between Two Values](./leetcode/3880-MinimumAbsoluteDifferenceBetweenTwoValues.go)   
+[3882. Minimum XOR Path in a Grid](./leetcode/3882-MinimumXORPathInAGrid.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
