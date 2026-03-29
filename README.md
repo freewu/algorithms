@@ -2010,6 +2010,7 @@
 [3876. Construct Uniform Parity Array II](./leetcode/3876-ConstructUniformParityArrayII.go)   
 [3877. Minimum Removals to Achieve Target XOR](./leetcode/3877-MinimumRemovalsToAchieveTargetXOR.go)   
 [3878. Count Good Subarrays](./leetcode/3878-CountGoodSubarrays.go)   
+[3880. Minimum Absolute Difference Between Two Values](./leetcode/3880-MinimumAbsoluteDifferenceBetweenTwoValues.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
