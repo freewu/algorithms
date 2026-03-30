@@ -80,6 +80,13 @@ func main() {
     // Explanation: It is not possible to make the two strings equal.
     fmt.Println(checkStrings("abe", "bea")) // false
 
+    fmt.Println(checkStrings1("bluefrog", "leetcode")) // false
+    fmt.Println(checkStrings1("bluefrog", "frogblue")) // true
+    fmt.Println(checkStrings1("leetcode", "codeleet")) // true
+
     fmt.Println(checkStrings1("abcdba", "cabdab")) // true
     fmt.Println(checkStrings1("abe", "bea")) // false
+    fmt.Println(checkStrings1("bluefrog", "leetcode")) // false
+    fmt.Println(checkStrings1("bluefrog", "frogblue")) // true
+    fmt.Println(checkStrings1("leetcode", "codeleet")) // true
 }
