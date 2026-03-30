@@ -74,6 +74,34 @@ func countGoodSubarrays(nums []int) int64 {
     return int64(res)
 }
 
+func countGoodSubarrays1(nums []int) int64 {
+    res, n := 0, len(nums)
+    left := make([]int, n)
+    stack := []int{-1} // 哨兵
+    for i, v := range nums {
+        for len(stack) > 1 && nums[stack[len(stack)-1]]|v == v {
+            stack = stack[:len(stack)-1]
+        }
+        left[i] = stack[len(stack)-1] // nums[left[i]] 不是 v 的子集
+        stack = append(stack, i)
+    }
+    stack = []int{n}
+    for i := n - 1; i >= 0; i-- {
+        v := nums[i]
+        // 比如 nums = [...,1,...,1,...]，我们规定，包含左边的 1 的子数组，不能包含右边的 1，从而避免重复统计子数组
+        // 注：包含右边的 1 的子数组，可以包含左边的 1
+        for len(stack) > 1 && nums[stack[len(stack)-1]] != v && nums[stack[len(stack)-1]]|v == v {
+            stack = stack[:len(stack)-1]
+        }
+        right := stack[len(stack)-1] // nums[right] 不是 v 的子集
+        stack = append(stack, i)
+        // 子数组左端点可以从 left[i] + 1 到 i，一共 i - left[i] 个
+        // 子数组右端点可以从 i 到 right - 1，一共 right - i 个
+        res += (i - left[i]) * (right - i)
+    }
+    return int64(res)
+}
+
 func main() {
     // Example 1:
     // Input: nums = [4,2,3]
@@ -99,4 +127,9 @@ func main() {
 
     fmt.Println(countGoodSubarrays([]int{1,2,3,4,5,6,7,8,9})) // 19
     fmt.Println(countGoodSubarrays([]int{9,8,7,6,5,4,3,2,1})) // 19
+
+    fmt.Println(countGoodSubarrays1([]int{4,2,3})) // 4
+    fmt.Println(countGoodSubarrays1([]int{1,3,1}))  // 6
+    fmt.Println(countGoodSubarrays1([]int{1,2,3,4,5,6,7,8,9})) // 19
+    fmt.Println(countGoodSubarrays1([]int{9,8,7,6,5,4,3,2,1})) // 19
 }
