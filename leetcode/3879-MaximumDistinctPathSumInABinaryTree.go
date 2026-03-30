@@ -284,6 +284,57 @@ func maxSum1(root *TreeNode) int {
     return res
 }
 
+func maxSum2(root *TreeNode) int {
+    if root == nil { return 0 }
+    peace := []*TreeNode{}
+    melody := [][]int{}
+    harmony := map[*TreeNode]int{}
+    var build func(*TreeNode)
+    build = func(node *TreeNode) {
+        if node == nil { return }
+        if _, ok := harmony[node]; ok { return }
+        i := len(peace)
+        harmony[node] = i
+        peace = append(peace, node)
+        melody = append(melody, []int{})
+        
+        if node.Left != nil {
+            build(node.Left)
+            left := harmony[node.Left]
+            melody[i] = append(melody[i], left)
+            melody[left] = append(melody[left], i)
+        }
+        if node.Right != nil {
+            build(node.Right)
+            right := harmony[node.Right]
+            melody[i] = append(melody[i], right)
+            melody[right] = append(melody[right], i)
+        }
+    }
+    build(root)
+    res := -1 << 31
+    var dfs func(u int, sum int, seen []bool)
+    dfs = func(u int, sum int, seen []bool) {
+        val := peace[u].Val
+        i := val + 1000
+        if seen[i] { return }
+        seen[i] = true
+        rhythm := sum + val
+        if rhythm > res { 
+            res = rhythm 
+        }   
+        for _, v := range melody[u] {
+            dfs(v, rhythm, seen)
+        }
+        seen[i] = false
+    }
+    for i := 0; i < len(peace); i++ {
+        seen := make([]bool, 2001)
+        dfs(i, 0, seen)
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     //         2
@@ -356,19 +407,9 @@ func main() {
     fmt.Println(maxSum1(tree2)) // 9
     fmt.Println(maxSum1(tree3)) // 19
     fmt.Println(maxSum1(tree4)) // 3815
+
+    fmt.Println(maxSum2(tree1)) // 3
+    fmt.Println(maxSum2(tree2)) // 9
+    fmt.Println(maxSum2(tree3)) // 19
+    fmt.Println(maxSum2(tree4)) // 3815
 }
-
-// type TreeNode struct {
-//     Val int
-//     Left *TreeNode
-//     Right *TreeNode
-// }
-
-// 使用 golang 实现，传入 数组，返回通过数组创建的二叉树, 方法定义如下:
-// func buildBinaryTree(arr []int) *TreeNode
-// 使用 golang 实现，传入 二叉树， 层级显示打印显示二叉树，方法签名如下:
-// func printBinaryTree(root *TreeNode)  
-//     1 root 需要在顶部居中
-//     2 左边使用 /
-//     3 右边使用 \
-   
