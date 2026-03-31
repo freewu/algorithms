@@ -142,6 +142,46 @@ func sortableIntegers1(nums []int) int {
     return res
 }
 
+func sortableIntegers2(nums []int) int {
+    res, n, p := 0, len(nums), len(nums)
+    next := make([]int, n)
+    next[n - 1] = n
+    for i := n - 2; i >= 0; i -- {
+        if nums[i] > nums[i+1] {
+            p = i
+        }
+        next[i] = p
+    }
+    calc := func(v int) int {
+        last := 0
+        for r := v - 1; r < n; r += v {
+            l := r - v + 1  
+            m := next[l]
+            if m >= r {
+                if nums[l] < last {
+                    return 0
+                }
+                last = nums[r]
+            } else {
+                if next[m + 1] < r || nums[m + 1] < last || nums[l] < nums[r] {
+                    return 0
+                }
+                last = nums[m]
+            }
+        }
+        return v
+    }
+    for i := 1; i * i <= n; i ++ {
+        if n % i == 0 {
+            res += calc(i)
+            if i != n / i {
+                res += calc(n / i)
+            }
+        }
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: nums = [3,1,2]
@@ -177,4 +217,10 @@ func main() {
     fmt.Println(sortableIntegers1([]int{5,8})) // 3
     fmt.Println(sortableIntegers1([]int{1,2,3,4,5,6,7,8,9})) // 13
     fmt.Println(sortableIntegers1([]int{9,8,7,6,5,4,3,2,1})) // 0
+
+    fmt.Println(sortableIntegers2([]int{3,1,2})) // 3
+    fmt.Println(sortableIntegers2([]int{7,6,5})) // 0
+    fmt.Println(sortableIntegers2([]int{5,8})) // 3
+    fmt.Println(sortableIntegers2([]int{1,2,3,4,5,6,7,8,9})) // 13
+    fmt.Println(sortableIntegers2([]int{9,8,7,6,5,4,3,2,1})) // 0
 }
