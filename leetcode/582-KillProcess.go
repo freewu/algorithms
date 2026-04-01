@@ -69,18 +69,40 @@ func killProcess(pid []int, ppid []int, kill int) []int {
 
 // bfs
 func killProcess1(pid []int, ppid []int, kill int) []int {
-    res, m := []int{}, make(map[int][]int)
+    res, mp := []int{}, make(map[int][]int)
     for i,p := range ppid {
-        m[p] = append(m[p], pid[i])
+        mp[p] = append(mp[p], pid[i])
     }
     q := []int{ kill }
     for len(q) > 0{
         t := []int{}
         for i := range q {
-            t = append(t, m[q[i]]...)
+            t = append(t, mp[q[i]]...)
         }
         res = append(res, q...)
         q = t
+    }
+    return res
+}
+
+func killProcess2(pid []int, ppid []int, kill int) []int {
+    res, mp := []int{}, make(map[int][]int)
+    for i,p := range ppid {
+        mp[p] = append(mp[p], pid[i])
+    }
+    killed := []int{ kill }
+    for len(killed) != 0 {
+        temp := []int{}
+        for i := range killed {
+            res = append(res, killed[i])
+            if v,ok := mp[killed[i]]; !ok {
+                continue
+            } else {
+                temp = append(temp, v...)
+                delete(mp, killed[i])
+            }
+        }
+        killed = temp
     }
     return res
 }
@@ -102,6 +124,22 @@ func main() {
     // Output: [1]
     fmt.Println(killProcess([]int{1},[]int{0},1)) // [1]
 
+    // fmt.Println(killProcess([]int{1,2,3,4,5,6,7,8,9},[]int{1,2,3,4,5,6,7,8,9},1)) // [1 1]
+    // fmt.Println(killProcess([]int{1,2,3,4,5,6,7,8,9},[]int{9,8,7,6,5,4,3,2,1},1)) // [1 9 1]
+    // fmt.Println(killProcess([]int{9,8,7,6,5,4,3,2,1},[]int{1,2,3,4,5,6,7,8,9},1)) // [1 9 1]
+    // fmt.Println(killProcess([]int{9,8,7,6,5,4,3,2,1},[]int{9,8,7,6,5,4,3,2,1},1)) // [1 1]
+
     fmt.Println(killProcess1([]int{1,3,10,5},[]int{3,0,5,3},5)) // [5,10]
     fmt.Println(killProcess1([]int{1},[]int{0},1)) // [1]
+    // fmt.Println(killProcess1([]int{1,2,3,4,5,6,7,8,9},[]int{1,2,3,4,5,6,7,8,9},1)) // [1 1]
+    // fmt.Println(killProcess1([]int{1,2,3,4,5,6,7,8,9},[]int{9,8,7,6,5,4,3,2,1},1)) // [1 9 1]
+    // fmt.Println(killProcess1([]int{9,8,7,6,5,4,3,2,1},[]int{1,2,3,4,5,6,7,8,9},1)) // [1 9 1]
+    // fmt.Println(killProcess1([]int{9,8,7,6,5,4,3,2,1},[]int{9,8,7,6,5,4,3,2,1},1)) // [1 1]
+
+    fmt.Println(killProcess2([]int{1,3,10,5},[]int{3,0,5,3},5)) // [5,10]
+    fmt.Println(killProcess2([]int{1},[]int{0},1)) // [1]
+    fmt.Println(killProcess2([]int{1,2,3,4,5,6,7,8,9},[]int{1,2,3,4,5,6,7,8,9},1)) // [1 1]
+    fmt.Println(killProcess2([]int{1,2,3,4,5,6,7,8,9},[]int{9,8,7,6,5,4,3,2,1},1)) // [1 9 1]
+    fmt.Println(killProcess2([]int{9,8,7,6,5,4,3,2,1},[]int{1,2,3,4,5,6,7,8,9},1)) // [1 9 1]
+    fmt.Println(killProcess2([]int{9,8,7,6,5,4,3,2,1},[]int{9,8,7,6,5,4,3,2,1},1)) // [1 1]
 }
