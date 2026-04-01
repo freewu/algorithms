@@ -2,11 +2,22 @@ package main
 
 // 2751. Robot Collisions
 // There are n 1-indexed robots, each having a position on a line, health, and movement direction.
-// You are given 0-indexed integer arrays positions, healths, and a string directions (directions[i] is either 'L' for left or 'R' for right). All integers in positions are unique.
-// All robots start moving on the line simultaneously at the same speed in their given directions. If two robots ever share the same position while moving, they will collide.
-// If two robots collide, the robot with lower health is removed from the line, and the health of the other robot decreases by one. The surviving robot continues in the same direction it was going. If both robots have the same health, they are both removed from the line.
-// Your task is to determine the health of the robots that survive the collisions, in the same order that the robots were given, i.e. final heath of robot 1 (if survived), final health of robot 2 (if survived), and so on. If there are no survivors, return an empty array.
+
+// You are given 0-indexed integer arrays positions, healths, and a string directions (directions[i] is either 'L' for left or 'R' for right). 
+// All integers in positions are unique.
+
+// All robots start moving on the line simultaneously at the same speed in their given directions. 
+// If two robots ever share the same position while moving, they will collide.
+
+// If two robots collide, the robot with lower health is removed from the line, and the health of the other robot decreases by one. 
+// The surviving robot continues in the same direction it was going. 
+// If both robots have the same health, they are both removed from the line.
+
+// Your task is to determine the health of the robots that survive the collisions, in the same order that the robots were given, i.e. final heath of robot 1 (if survived), final health of robot 2 (if survived), and so on. 
+// If there are no survivors, return an empty array.
+
 // Return an array containing the health of the remaining robots (in the order they were given in the input), after no further collisions can occur.
+
 // Note: The positions may be unsorted.
 
 // Example 1:
@@ -35,6 +46,7 @@ package main
 
 import "fmt"
 import "sort"
+import "slices"
 
 func survivedRobotsHealths(positions []int, healths []int, directions string) []int {
     robots := make(map[int][]int)
@@ -123,6 +135,48 @@ func survivedRobotsHealths1(positions []int, healths []int, directions string) [
     return res
 }
 
+func survivedRobotsHealths2(positions []int, healths []int, directions string) []int {
+    res, index := []int{}, make([]int, len(positions)) // 创建一个下标数组，对下标数组排序，这样不会打乱输入顺序
+    for i := range index {
+        index[i] = i
+    }
+    slices.SortFunc(index, func(i, j int) int { 
+        return positions[i] - positions[j] 
+    })
+    stack := []int{}
+    for _, i := range index {
+        if directions[i] == 'R' { // 机器人 i 向右
+            stack = append(stack, i)
+            continue
+        }
+        for len(stack) > 0 { // 栈顶机器人向右
+            j := stack[len(stack) - 1]
+            if healths[j] > healths[i] { // 栈顶机器人的健康度大
+                healths[i] = 0 // 移除机器人 i
+                healths[j]--
+                break
+            }
+            if healths[j] == healths[i] { // 健康度一样大，都移除
+                healths[i] = 0
+                healths[j] = 0
+                stack = stack[:len(stack) - 1]
+                break
+            }
+            // 机器人 i 的健康度大
+            healths[i]--
+            healths[j] = 0 // 移除机器人 j
+            stack = stack[:len(stack)-1]
+        }
+    }
+    // 返回幸存机器人的健康度
+    for _, h := range healths {
+        if h > 0 {
+            res = append(res, h)
+        }
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // <img src="https://assets.leetcode.com/uploads/2023/05/15/image-20230516011718-12.png" />
@@ -146,4 +200,8 @@ func main() {
     fmt.Println(survivedRobotsHealths1([]int{5,4,3,2,1},[]int{2,17,9,15,10},"RRRRR")) // [2,17,9,15,10]
     fmt.Println(survivedRobotsHealths1([]int{3,5,2,6},[]int{10,10,15,12},"RLRL")) // [14]
     fmt.Println(survivedRobotsHealths1([]int{1,2,5,6},[]int{10,10,11,11},"RLRL")) // []
+
+    fmt.Println(survivedRobotsHealths2([]int{5,4,3,2,1},[]int{2,17,9,15,10},"RRRRR")) // [2,17,9,15,10]
+    fmt.Println(survivedRobotsHealths2([]int{3,5,2,6},[]int{10,10,15,12},"RLRL")) // [14]
+    fmt.Println(survivedRobotsHealths2([]int{1,2,5,6},[]int{10,10,11,11},"RLRL")) // []
 }
