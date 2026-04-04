@@ -89,6 +89,21 @@ func decodeCiphertext1(encodedText string, rows int) string {
     return string(res[:i+1])
 }
 
+func decodeCiphertext2(encodedText string, rows int) string {
+    res, n := []byte{}, len(encodedText)
+    cols := n / rows
+    for j := 0; j < cols ; j++ {
+        row, col := 0, j
+        for row < rows && col < cols { // Traverse the diagonal path.
+            index := row * cols + col
+            res = append(res, encodedText[index])
+            row++
+            col++
+        }
+    }
+    return strings.TrimRight(string(res), " ")
+}
+
 func main() {
     // Example 1:
     // Input: encodedText = "ch   ie   pr", rows = 3
@@ -119,4 +134,11 @@ func main() {
     fmt.Println(decodeCiphertext1("bluefrog", 1)) // "bluefrog"
     fmt.Println(decodeCiphertext1("leetcode", 1)) // "leetcode"
     fmt.Println(decodeCiphertext1("freewu", 1)) // "freewu"
+
+    fmt.Println(decodeCiphertext2("ch   ie   pr", 3)) // "cipher"
+    fmt.Println(decodeCiphertext2("iveo    eed   l te   olc", 4)) // "i love leetcode"
+    fmt.Println(decodeCiphertext2("coding", 1)) // "coding"
+    fmt.Println(decodeCiphertext2("bluefrog", 1)) // "bluefrog"
+    fmt.Println(decodeCiphertext2("leetcode", 1)) // "leetcode"
+    fmt.Println(decodeCiphertext2("freewu", 1)) // "freewu"
 }
