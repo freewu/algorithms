@@ -109,7 +109,14 @@ func main() {
     // Explanation: Since there is only 1 row, both originalText and encodedText are the same.
     fmt.Println(decodeCiphertext("coding", 1)) // "coding"
 
+    fmt.Println(decodeCiphertext("bluefrog", 1)) // "bluefrog"
+    fmt.Println(decodeCiphertext("leetcode", 1)) // "leetcode"
+    fmt.Println(decodeCiphertext("freewu", 1)) // "freewu"
+
     fmt.Println(decodeCiphertext1("ch   ie   pr", 3)) // "cipher"
     fmt.Println(decodeCiphertext1("iveo    eed   l te   olc", 4)) // "i love leetcode"
     fmt.Println(decodeCiphertext1("coding", 1)) // "coding"
+    fmt.Println(decodeCiphertext1("bluefrog", 1)) // "bluefrog"
+    fmt.Println(decodeCiphertext1("leetcode", 1)) // "leetcode"
+    fmt.Println(decodeCiphertext1("freewu", 1)) // "freewu"
 }
