@@ -2016,6 +2016,7 @@
 [3886. Sum of Sortable Integers](./leetcode/3886-SumOfSortableIntegers.go)   
 [3888. Minimum Operations to Make All Grid Elements Equal](./leetcode/3888-MinimumOperationsToMakeAllGridElementsEqual.go)   
 [3891. Minimum Increase to Maximize Special Indices](./leetcode/3891-MinimumIncreaseToMaximizeSpecialIndices.go)   
+[3892. Minimum Operations to Achieve At Least K Peaks](./leetcode/3892-MinimumOperationsToAchieveAtLeastKPeaks.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
