@@ -107,4 +107,7 @@ func main() {
     // Input: heights = [3,1,3], volume = 5, k = 1
     // Output: [4,4,4]
     fmt.Println(pourWater([]int{3,1,3}, 5, 1)) // [4,4,4]
+
+    fmt.Println(pourWater([]int{1,2,3,4,5,6,7,8,9}, 2, 2)) // [2 3 3 4 5 6 7 8 9]
+    fmt.Println(pourWater([]int{9,8,7,6,5,4,3,2,1}, 2, 2)) // [9 8 7 6 5 4 3 3 2]
 }
