@@ -125,6 +125,48 @@ func numberOfEdgesAdded1(n int, edges [][]int) int {
     return res
 }
 
+func numberOfEdgesAdded2(n int, edges [][]int) int {
+    res := 0
+    parent, rank, parity := make([]int, n),  make([]int, n), make([]int, n)
+    for i := range parent {
+        parent[i] = i
+    }
+    var find func(x int) (int, int)
+    find = func(x int) (int, int) {
+        if parent[x] == x {
+            return x, 0
+        }
+        root, p := find(parent[x])
+        parity[x] ^= p
+        parent[x] = root
+        return root, parity[x]
+    }
+    for _, e := range edges {
+        u, v, w := e[0], e[1], e[2]
+        ru, pu := find(u)
+        rv, pv := find(v)
+        if ru == rv {
+            if pu ^ pv == w {
+                res++
+            }
+        } else {
+            if rank[ru] < rank[rv] {
+                parent[ru] = rv
+                parity[ru] = pu ^ pv ^ w
+            } else if rank[ru] > rank[rv] {
+                parent[rv] = ru
+                parity[rv] = pu ^ pv ^ w
+            } else {
+                parent[rv] = ru
+                parity[rv] = pu ^ pv ^ w
+                rank[ru]++
+            }
+            res++
+        }
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: n = 3, edges = [[0,1,1],[1,2,1],[0,2,1]]
@@ -148,4 +190,7 @@ func main() {
 
     fmt.Println(numberOfEdgesAdded1(3, [][]int{{0,1,1},{1,2,1},{0,2,1}})) // 2
     fmt.Println(numberOfEdgesAdded1(3, [][]int{{0,1,1},{1,2,1},{0,2,0}})) // 3
+
+    fmt.Println(numberOfEdgesAdded2(3, [][]int{{0,1,1},{1,2,1},{0,2,1}})) // 2
+    fmt.Println(numberOfEdgesAdded2(3, [][]int{{0,1,1},{1,2,1},{0,2,0}})) // 3
 }
