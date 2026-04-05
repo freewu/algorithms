@@ -53,6 +53,7 @@ package main
 //     s consists only of lowercase English letters and digits.
 
 import "fmt"
+import "unicode"
 
 func mirrorFrequency(s string) int {
     res, mp := 0, make(map[string]bool)
@@ -87,6 +88,40 @@ func mirrorFrequency(s string) int {
     return res
 }
 
+func mirrorFrequency1(s string) int {
+    res, freq1, freq2 := 0, make([]int, 26), make([]int, 10)
+    abs := func(x int) int { if x < 0 { return -x; }; return x; }
+    for _, v := range s {
+        if(unicode.IsDigit(v)){
+            freq2[v - '0']++
+        } else {
+            freq1[v - 'a']++  
+        }
+    }
+    for i, j := 0, 25; i < j; i, j = i+1, j-1 {
+        res += abs(freq1[i] - freq1[j])
+    }
+
+    for i, j := 0, 9; i < j; i, j = i+1, j-1 {
+        res += abs(freq2[i] - freq2[j])
+    }
+    return res
+}
+
+func mirrorFrequency2(s string) int {
+    res, mp := 0, ['z' + 1]int{}
+    abs := func(x int) int { if x < 0 { return -x; }; return x; }
+    for _, ch := range s {
+        mp[ch]++
+    }
+    for i := range 13 {
+        res += abs(mp['a' + i] - mp['z' - i])
+    }
+    for i := range 5 {
+        res += abs(mp['0' + i] - mp['9' - i])
+    }
+    return res
+}
 
 func main() {
     // Example 1:
@@ -123,4 +158,18 @@ func main() {
     fmt.Println(mirrorFrequency("bluefrog")) // 4
     fmt.Println(mirrorFrequency("leetcode")) // 6
     fmt.Println(mirrorFrequency("freewu")) // 4
+
+    fmt.Println(mirrorFrequency1("ab1z9")) // 3
+    fmt.Println(mirrorFrequency1("4m7n")) // 2
+    fmt.Println(mirrorFrequency1("byby")) // 0
+    fmt.Println(mirrorFrequency1("bluefrog")) // 4
+    fmt.Println(mirrorFrequency1("leetcode")) // 6
+    fmt.Println(mirrorFrequency1("freewu")) // 4
+
+    fmt.Println(mirrorFrequency2("ab1z9")) // 3
+    fmt.Println(mirrorFrequency2("4m7n")) // 2
+    fmt.Println(mirrorFrequency2("byby")) // 0
+    fmt.Println(mirrorFrequency2("bluefrog")) // 4
+    fmt.Println(mirrorFrequency2("leetcode")) // 6
+    fmt.Println(mirrorFrequency2("freewu")) // 4
 }
