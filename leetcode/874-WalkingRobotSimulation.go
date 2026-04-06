@@ -162,6 +162,37 @@ func robotSim2(commands []int, obstaclesIn [][]int) int {
     return res
 }
 
+func robotSim3(commands []int, obstacles [][]int) int {
+    dirs := [4][2]int{{0, 1}, {1, 0}, {0, -1}, {-1, 0}}
+    set := make(map[[2]int]bool, len(obstacles))
+    for _, v := range obstacles {
+        set[[2]int{v[0], v[1]}] = true
+    }
+    res, dir, x, y := 0, 0, 0, 0
+    for _, cmd := range commands {
+        switch cmd {
+        case -2:
+            dir = (dir + 3) % 4
+        case -1:
+            dir = (dir + 1) % 4
+        default:
+            dx, dy := dirs[dir][0], dirs[dir][1]
+            for i := 0; i < cmd; i++ {
+                nx, ny := x + dx, y + dy
+                if set[[2]int{nx, ny}] {
+                    break
+                }
+                x, y = nx, ny
+                dist := x * x + y * y
+                if dist > res {
+                    res = dist
+                }
+            }
+        }
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: commands = [4,-1,3], obstacles = []
@@ -208,4 +239,10 @@ func main() {
     fmt.Println(robotSim2([]int{6,-1,-1,6},[][]int{})) // 36
     fmt.Println(robotSim2([]int{1,2,3,4,5,6,7,8,9},[][]int{})) // 2025
     fmt.Println(robotSim2([]int{9,8,7,6,5,4,3,2,1},[][]int{})) // 2025
+
+    fmt.Println(robotSim3([]int{4,-1,3},[][]int{})) // 25
+    fmt.Println(robotSim3([]int{4,-1,4,-2,4},[][]int{{2,4}})) // 65
+    fmt.Println(robotSim3([]int{6,-1,-1,6},[][]int{})) // 36
+    fmt.Println(robotSim3([]int{1,2,3,4,5,6,7,8,9},[][]int{})) // 2025
+    fmt.Println(robotSim3([]int{9,8,7,6,5,4,3,2,1},[][]int{})) // 2025
 }
