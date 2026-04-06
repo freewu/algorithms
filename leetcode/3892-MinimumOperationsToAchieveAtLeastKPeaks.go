@@ -77,6 +77,62 @@ func minOperations(nums []int, k int) int {
     return min(res1, res2)
 }
 
+func minOperations1(nums []int, k int) int {
+    n, inf := len(nums), 1 << 61
+    if k == 0    { return 0 }
+    if k > n / 2 { return -1 }
+    cost := make([]int, n)
+    for i := 0; i < n; i++ {
+        left := nums[(i-1+n)%n]
+        right := nums[(i+1)%n]
+        need := max(left, right) + 1
+        if need > nums[i] {
+            cost[i] = need - nums[i]
+        }
+    }
+    helper := func(cost []int, l, r, k int) int {
+        if k == 0 { return 0  }
+        length := r - l + 1
+        if length <= 0 || k > (length + 1) / 2 {
+            return inf
+        }
+        prev, curr := make([]int, k + 1),  make([]int, k + 1)
+        for j := range prev {
+            prev[j] = inf
+        }
+        prev[0] = 0
+        prevPrev := make([]int, k + 1)
+        for j := range prevPrev {
+            prevPrev[j] = inf
+        }
+        prevPrev[0] = 0
+        for i := l; i <= r; i++ {
+            for j := range curr {
+                curr[j] = inf
+            }
+            for j := 0; j <= k; j++ {
+                if prev[j] < curr[j] {
+                    curr[j] = prev[j]
+                }
+                if j >= 1 && prevPrev[j-1] < inf {
+                    val := prevPrev[j-1] + cost[i]
+                    if val < curr[j] {
+                        curr[j] = val
+                    }
+                }
+            }
+            prevPrev, prev, curr = prev, curr, prevPrev
+        }
+        return prev[k]
+    }
+    res := helper(cost, 1, n - 1, k)
+    res = min(res, helper(cost, 2, n - 2, k - 1) + cost[0])
+    if res == inf {
+        return -1
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: nums = [2,1,2], k = 1
@@ -104,4 +160,10 @@ func main() {
 
     fmt.Println(minOperations([]int{1,2,3,4,5,6,7,8,9}, 2)) // 2 
     fmt.Println(minOperations([]int{9,8,7,6,5,4,3,2,1}, 2)) // 2 
+
+    fmt.Println(minOperations1([]int{2,1,2}, 1)) // 1
+    fmt.Println(minOperations1([]int{4,5,3,6}, 2)) // 0
+    fmt.Println(minOperations1([]int{3,7,3}, 2)) // -1   
+    fmt.Println(minOperations1([]int{1,2,3,4,5,6,7,8,9}, 2)) // 2 
+    fmt.Println(minOperations1([]int{9,8,7,6,5,4,3,2,1}, 2)) // 2 
 }
