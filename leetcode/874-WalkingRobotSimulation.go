@@ -59,13 +59,13 @@ package main
 import "fmt"
 
 func robotSim(commands []int, obstacles [][]int) int {
-    type point struct {
+    type Point struct {
         x, y int
     }
     dx, dy := [4]int{0, 1, 0, -1}, [4]int{1, 0, -1, 0}
-    set := make(map[point]bool)
+    set := make(map[Point]bool)
     for _, v := range obstacles {
-        set[point{v[0], v[1]}] = true
+        set[Point{v[0], v[1]}] = true
     }
     res, x, y, direction := 0, 0, 0, 0
     for _, c := range commands {
@@ -76,7 +76,7 @@ func robotSim(commands []int, obstacles [][]int) int {
         } else {
             for i := 0; i < c; i++ {
                 nx, ny := x + dx[direction], y + dy[direction]
-                if set[point{nx, ny}] { // 机器人无法走到障碍物上，它将会停留在障碍物的前一个网格方块上，并继续执行下一个命令
+                if set[Point{nx, ny}] { // 机器人无法走到障碍物上，它将会停留在障碍物的前一个网格方块上，并继续执行下一个命令
                     break
                 } else {
                     x, y = nx, ny
@@ -154,7 +154,6 @@ func robotSim2(commands []int, obstaclesIn [][]int) int {
                     currPos = newPos
                 }
         }
-
         currDist := currPos.x * currPos.x + currPos.y * currPos.y
         if currDist > res {
             res = currDist
@@ -195,11 +194,18 @@ func main() {
     // The furthest point the robot ever gets from the origin is (0, 6), which squared is 62 = 36 units away.
     fmt.Println(robotSim([]int{6,-1,-1,6},[][]int{})) // 36
 
+    fmt.Println(robotSim([]int{1,2,3,4,5,6,7,8,9},[][]int{})) // 2025
+    fmt.Println(robotSim([]int{9,8,7,6,5,4,3,2,1},[][]int{})) // 2025
+
     fmt.Println(robotSim1([]int{4,-1,3},[][]int{})) // 25
     fmt.Println(robotSim1([]int{4,-1,4,-2,4},[][]int{{2,4}})) // 65
     fmt.Println(robotSim1([]int{6,-1,-1,6},[][]int{})) // 36
+    fmt.Println(robotSim1([]int{1,2,3,4,5,6,7,8,9},[][]int{})) // 2025
+    fmt.Println(robotSim1([]int{9,8,7,6,5,4,3,2,1},[][]int{})) // 2025
 
     fmt.Println(robotSim2([]int{4,-1,3},[][]int{})) // 25
     fmt.Println(robotSim2([]int{4,-1,4,-2,4},[][]int{{2,4}})) // 65
     fmt.Println(robotSim2([]int{6,-1,-1,6},[][]int{})) // 36
+    fmt.Println(robotSim2([]int{1,2,3,4,5,6,7,8,9},[][]int{})) // 2025
+    fmt.Println(robotSim2([]int{9,8,7,6,5,4,3,2,1},[][]int{})) // 2025
 }
