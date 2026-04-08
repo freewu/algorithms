@@ -2017,6 +2017,7 @@
 [3888. Minimum Operations to Make All Grid Elements Equal](./leetcode/3888-MinimumOperationsToMakeAllGridElementsEqual.go)   
 [3891. Minimum Increase to Maximize Special Indices](./leetcode/3891-MinimumIncreaseToMaximizeSpecialIndices.go)   
 [3892. Minimum Operations to Achieve At Least K Peaks](./leetcode/3892-MinimumOperationsToAchieveAtLeastKPeaks.go)   
+[3893. Maximum Team Size with Overlapping Intervals](./leetcode/3893-MaximumTeamSizeWithOverlappingIntervals.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
