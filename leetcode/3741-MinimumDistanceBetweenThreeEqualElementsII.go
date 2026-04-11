@@ -68,6 +68,23 @@ func minimumDistance1(nums []int) int {
     return -1
 }
 
+func minimumDistance2(nums []int) int {
+    var seen [100_000][2]uint32
+    mx, res := 0, ^uint32(0)
+    for i := range uint32(len(nums)) {
+        v := nums[i]
+        mx = max(mx, v)
+        j := seen[v-1][0]
+        seen[v-1][0] = seen[v-1][1]
+        seen[v-1][1] = uint32(i + 1)
+        if d := (i + 1 - j) * 2; j > 0 && d < res {
+            res = d
+        }
+    }
+    clear(seen[:mx])
+    return int(int32(res))
+}
+
 func main() {
     // Example 1:
     // Input: nums = [1,2,1,1,3]
@@ -98,4 +115,10 @@ func main() {
     fmt.Println(minimumDistance1([]int{1})) // -1
     fmt.Println(minimumDistance1([]int{1,2,3,4,5,6,7,8,9})) // -1
     fmt.Println(minimumDistance1([]int{9,8,7,6,5,4,3,2,1})) // -1
+
+    fmt.Println(minimumDistance2([]int{1,2,1,1,3})) // 6
+    fmt.Println(minimumDistance2([]int{1,1,2,3,2,1,2})) // 8
+    fmt.Println(minimumDistance2([]int{1})) // -1
+    fmt.Println(minimumDistance2([]int{1,2,3,4,5,6,7,8,9})) // -1
+    fmt.Println(minimumDistance2([]int{9,8,7,6,5,4,3,2,1})) // -1
 }
