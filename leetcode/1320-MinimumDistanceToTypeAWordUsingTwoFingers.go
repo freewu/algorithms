@@ -187,9 +187,19 @@ func main() {
     // Total distance = 6
     fmt.Println(minimumDistance("HAPPY")) // 6
 
+    fmt.Println(minimumDistance("BLUEFROG")) // 13
+    fmt.Println(minimumDistance("LEETCODE")) // 8
+    fmt.Println(minimumDistance("FREEWU")) // 5
+
     fmt.Println(minimumDistance1("CAKE")) // 3
     fmt.Println(minimumDistance1("HAPPY")) // 6
+    fmt.Println(minimumDistance1("BLUEFROG")) // 13
+    fmt.Println(minimumDistance1("LEETCODE")) // 8
+    fmt.Println(minimumDistance1("FREEWU")) // 5
 
     fmt.Println(minimumDistance2("CAKE")) // 3
     fmt.Println(minimumDistance2("HAPPY")) // 6
+    fmt.Println(minimumDistance2("BLUEFROG")) // 13
+    fmt.Println(minimumDistance2("LEETCODE")) // 8
+    fmt.Println(minimumDistance2("FREEWU")) // 5
 }
