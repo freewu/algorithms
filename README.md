@@ -3131,6 +3131,7 @@
 [3871. Count Commas in Range II](./leetcode/3871-CountCommasInRangeII.go)   
 [3881. Direction Assignments with Exactly K Visible People](./leetcode/3881-DirectionAssignmentsWithExactlyKVisiblePeople.go)   
 [3890. Integers With Multiple Sum of Two Cubes](./leetcode/3890-IntegersWithMultipleSumOfTwoCubes.go)   
+[3894. Traffic Signal Color](./leetcode/3894-TrafficSignalColor.go)   
 
 # Stack
 [225. Implement Stack using Queues](./leetcode/225-ImplementStackUsingQueues.go)   
