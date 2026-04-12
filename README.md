@@ -2687,6 +2687,7 @@
 [3864. Minimum Cost to Partition a Binary String](./leetcode/3864-MinimumCostToPartitionABinaryString.go)   
 [3884. First Matching Character From Both Ends](./leetcode/3884-FirstMatchingCharacterFromBothEnds.go)   
 [3889. Mirror Frequency Distance](./leetcode/3889-MirrorFrequencyDistance.go)   
+[3900. Longest Balanced Substring After One Swap](./leetcode/3900-LongestBalancedSubstringAfterOneSwap.go)   
 
 # Dynamic Programming
 [276. Paint Fence](./leetcode/276-PaintFence.go)   
