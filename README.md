@@ -2019,6 +2019,7 @@
 [3892. Minimum Operations to Achieve At Least K Peaks](./leetcode/3892-MinimumOperationsToAchieveAtLeastKPeaks.go)   
 [3893. Maximum Team Size with Overlapping Intervals](./leetcode/3893-MaximumTeamSizeWithOverlappingIntervals.go)   
 [3895. Count Digit Appearances](./leetcode/3895-CountDigitAppearances.go)   
+[3896. Minimum Operations to Transform Array into Alternating Prime](./leetcode/3896-MinimumOperationsToTransformArrayIntoAlternatingPrime.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
