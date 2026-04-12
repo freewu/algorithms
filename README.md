@@ -2021,6 +2021,7 @@
 [3895. Count Digit Appearances](./leetcode/3895-CountDigitAppearances.go)   
 [3896. Minimum Operations to Transform Array into Alternating Prime](./leetcode/3896-MinimumOperationsToTransformArrayIntoAlternatingPrime.go)   
 [3897. Maximum Value of Concatenated Binary Segments](./leetcode/3897-MaximumValueOfConcatenatedBinarySegments.go)   
+[3898. Find the Degree of Each Vertex](./leetcode/3898-FindDegreeOfEachVertex.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
