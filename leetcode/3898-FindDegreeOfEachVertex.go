@@ -56,6 +56,23 @@ func findDegrees(matrix [][]int) []int {
     return res
 }
 
+func findDegrees1(matrix [][]int) []int {
+    if len(matrix) == 0 || len(matrix[0]) == 0 {
+        return []int{}
+    }
+    i, n := 0, len(matrix)
+    res := make([]int, n)
+    for i < n {
+        j := 0
+        for j < n {
+            res[i] += matrix[i][j]
+            j++
+        }
+        i++
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // <img src="https://assets.leetcode.com/uploads/2026/03/14/g41f.png" />
@@ -76,11 +93,15 @@ func main() {
     // Vertex 1 is connected to vertex 0, so its degree is 1.
     // Vertex 2 is not connected to any vertex, so its degree is 0.
     // Thus, the answer is [1, 1, 0].
-        fmt.Println(findDegrees([][]int{{0,1,0},{1,0,0},{0,0,0}})) // [1,1,0]
+    fmt.Println(findDegrees([][]int{{0,1,0},{1,0,0},{0,0,0}})) // [1,1,0]
     // Example 3:
     // Input: matrix = [[0]]
     // Output: [0]
     // Explanation:
     // There is only one vertex and it has no edges connected to it. Thus, the answer is [0].
     fmt.Println(findDegrees([][]int{{0}})) // [0]
+
+    fmt.Println(findDegrees1([][]int{{0,1,1},{1,0,1},{1,1,0}})) // [2,2,2]
+    fmt.Println(findDegrees1([][]int{{0,1,0},{1,0,0},{0,0,0}})) // [1,1,0]
+    fmt.Println(findDegrees1([][]int{{0}})) // [0]
 }
