@@ -228,6 +228,135 @@ func countGoodSubseq1(nums []int,p int,queries [][]int) int {
     return res
 }
 
+func countGoodSubseq2(nums []int, p int, queries [][]int) int {
+    gcd := func (x, y int) int { for y != 0 { x, y = y, x % y; }; return x; }
+    res, countDivisible, n := 0, 0, len(nums)
+    transformed := make([]int, n)
+    // Initialize transformed array and count of divisible elements
+    for i, x := range nums {
+        if x % p == 0 {
+            transformed[i] = x / p
+            countDivisible++
+        } else {
+            transformed[i] = 0
+        }
+    }
+    // Build Segment Tree for Range GCD
+    // Size of segment tree array
+    size := 1
+    for size < n {
+        size <<= 1
+    }
+    segment := make([]int, 2 * size)
+    // Initialize leaves
+    for i := 0; i < n; i++ {
+        segment[size + i] = transformed[i]
+    }
+    // Initialize unused leaves to 0 (GCD(x, 0) = x)
+    for i := size + n; i < 2 * size; i++ {
+        segment[i] = 0
+    }
+    // Build internal nodes
+    for i := size - 1; i > 0; i-- {
+        segment[i] = gcd(segment[2*i], segment[2*i+1])
+    }
+    for _, q := range queries {
+        i, val := q[0], q[1]
+        oldVal := transformed[i]
+        // Calculate new transformed value
+        var newVal int
+        if val % p == 0 {
+            newVal = val / p
+        } else {
+            newVal = 0
+        }
+        // Update count of divisible elements
+        if oldVal == 0 && newVal > 0 {
+            countDivisible++
+        } else if oldVal > 0 && newVal == 0 {
+            countDivisible--
+        }
+        // Update transformed array and segment tree
+        if oldVal != newVal {
+            transformed[i] = newVal
+            pos := size + i
+            segment[pos] = newVal
+            for pos > 1 {
+                pos >>= 1
+                segment[pos] = gcd(segment[2*pos], segment[2 * pos + 1])
+            }
+        }
+        // Check for good subsequence
+        // 1. Must have at least one multiple of p
+        // 2. GCD of all multiples of p (normalized by p) must be 1
+        //    Because any subsequence of multiples of p has GCD = p * (sub-GCD).
+        //    We need sub-GCD = 1.
+        //    If GCD of all normalized multiples is g > 1, any sub-GCD is multiple of g, so != 1.
+        //    If GCD of all normalized multiples is 1, then there exists a subset with GCD 1.
+        totalGCD := segment[1] // Root of segment tree
+        if totalGCD == 0 { continue } // No multiples of p
+        if totalGCD > 1  { continue } // GCD of all multiples is > 1, so any subsequence GCD will be multiple of p * totalGCD > p
+        // totalGCD == 1
+        // There exists a subsequence with GCD exactly p.
+        // We need to ensure its length is strictly less than n.
+        if countDivisible < n {
+            // The set of all multiples of p has size < n.
+            // This set has GCD p. Its size is countDivisible < n.
+            // So this set is a good subsequence.
+            res++
+        } else {
+            // countDivisible == n
+            // All elements are multiples of p. The set of all elements has size n.
+            // We need a proper subset with GCD 1.
+            // For values up to 50000, the minimum subset size to achieve GCD 1 is small (<= 6 or 7).
+            // If n > 6, a proper subset definitely exists.
+            if n > 6 {
+                res++
+            } else {
+                // n is small (<= 6), check all subsets.
+                // There are 2^n - 1 non-empty subsets.
+                // We need a subset of size < n with GCD 1.
+                // Since totalGCD is 1, the full set has GCD 1. We check proper subsets.
+                found := false
+                limit := 1 << n
+                // Iterate all masks except 0 and the full set
+                for mask := 1; mask < limit-1; mask++ {
+                    currentGCD := 0
+                    first := true
+                    tempMask := mask
+                    bitPos := 0
+                    // Iterate bits to compute GCD
+                    // Optimization: if currentGCD becomes 1, we can stop for this mask
+                    for tempMask > 0 {
+                        if tempMask&1 != 0 {
+                            if first {
+                                currentGCD = transformed[bitPos]
+                                first = false
+                            } else {
+                                currentGCD = gcd(currentGCD, transformed[bitPos])
+                            }
+                            
+                            if currentGCD == 1 {
+                                found = true
+                                break
+                            }
+                        }
+                        tempMask >>= 1
+                        bitPos++
+                    }
+                    if found {
+                        break
+                    }
+                }
+                if found {
+                    res++
+                }
+            }
+        }
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: nums = [4,8,12,16], p = 2, queries = [[0,3],[2,6]]
@@ -266,4 +395,10 @@ func main() {
     fmt.Println(countGoodSubseq1([]int{5,7,9}, 2, [][]int{{1,4},{2,8}})) // 0
     fmt.Println(countGoodSubseq1([]int{1,2,3,4,5,6,7,8,9}, 2, [][]int{{1,4},{2,8}})) // 2
     fmt.Println(countGoodSubseq1([]int{9,8,7,6,5,4,3,2,1}, 2, [][]int{{1,4},{2,8}})) // 2
+
+    fmt.Println(countGoodSubseq2([]int{4,8,12,16}, 2, [][]int{{0,3},{2,6}})) // 1
+    fmt.Println(countGoodSubseq2([]int{4,5,7,8}, 3, [][]int{{0,6},{1,9},{2,3}})) // 2
+    fmt.Println(countGoodSubseq2([]int{5,7,9}, 2, [][]int{{1,4},{2,8}})) // 0
+    fmt.Println(countGoodSubseq2([]int{1,2,3,4,5,6,7,8,9}, 2, [][]int{{1,4},{2,8}})) // 2
+    fmt.Println(countGoodSubseq2([]int{9,8,7,6,5,4,3,2,1}, 2, [][]int{{1,4},{2,8}})) // 2
 }
