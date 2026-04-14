@@ -41,37 +41,82 @@ package main
 //     The total sum of all elements in nums1 and nums0 does not exceed 2 * 10^5.
 
 import "fmt"
+// import "slices"
+// import "cmp"
+
+// const MOD = 1_000_000_007
+// const MX = 10001
+
+// var pow2 = [MX]int{1}
+
+// func init() {
+//     // 预处理 2 的幂
+//     for i := 1; i < MX; i++ {
+//         pow2[i] = pow2[i-1] * 2 % MOD   
+//     }
+// }
+
+// func maxValue(nums1, nums0 []int) int {
+//     res, index := 0, make([]int, len(nums1))
+//     for i := range index {
+//         index[i] = i
+//     }
+//     slices.SortFunc(index, func(i, j int) int {
+//         if nums0[i] == 0 {
+//             return -1
+//         }
+//         if nums0[j] == 0 {
+//             return 1
+//         }
+//         return cmp.Or(nums1[j]-nums1[i], nums0[i]-nums0[j])
+//     })
+//     for _, i := range index {
+//         res = ((res + 1) * pow2[nums1[i]] - 1) % MOD * pow2[nums0[i]] % MOD
+//     }
+//     return res
+// }
+
 import "slices"
-import "cmp"
 
 const MOD = 1_000_000_007
-const MX = 10001
-
-var pow2 = [MX]int{1}
+const MX = 200_001
+var pow = [MX]int{1}
 
 func init() {
-    // 预处理 2 的幂
-    for i := 1; i < MX; i++ {
-        pow2[i] = pow2[i-1] * 2 % MOD   
+    for i := 1; i < MX; i ++ {
+        pow[i] = (pow[i-1] << 1) % MOD
     }
 }
 
-func maxValue(nums1, nums0 []int) int {
-    res, index := 0, make([]int, len(nums1))
-    for i := range index {
-        index[i] = i
+func maxValue(nums1 []int, nums0 []int) int {
+    res, n := 0, len(nums1)
+    type Pair struct { x, y int }
+    nums := make([]Pair, n)
+    for i, v := range nums1 {
+        nums[i] = Pair{v, nums0[i]}
     }
-    slices.SortFunc(index, func(i, j int) int {
-        if nums0[i] == 0 {
-            return -1
-        }
-        if nums0[j] == 0 {
-            return 1
-        }
-        return cmp.Or(nums1[j]-nums1[i], nums0[i]-nums0[j])
+    slices.SortFunc(nums, func(a, b Pair) int {
+        if a.y == 0 && b.y != 0 { return -1 }
+        if a.y != 0 && b.y == 0 { return 1  }
+        if a.x == 0 && b.x != 0 { return 1  }
+        if a.x != 0 && b.x == 0 { return -1 }
+        if a.x != b.x { return b.x - a.x  }
+        return a.y - b.y
     })
-    for _, i := range index {
-        res = ((res + 1) * pow2[nums1[i]] - 1) % MOD * pow2[nums0[i]] % MOD
+    for _, p := range nums {
+        val := pow[p.x] - 1
+        for p.x > 0 {
+            count := min(p.x, 32)
+            res = res << count % MOD
+            p.x -= count
+        }
+        for p.y > 0 {
+            count := min(p.y, 32)
+            val = val << count % MOD
+            res = res << count % MOD
+            p.y -= count
+        }
+        res = (res + val) % MOD
     }
     return res
 }
