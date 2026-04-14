@@ -60,7 +60,6 @@ package main
 import "fmt"
 import "sort"
 import "slices"
-import "math"
 
 func minimumTotalDistance(robot []int, factory [][]int) int64 {
     memo := make(map[[3]int]int64, 0)
@@ -89,22 +88,57 @@ func minimumTotalDistance(robot []int, factory [][]int) int64 {
             if len(f) > 1 {
                 return dp(r, f[1:])
             } else {
-                return math.MaxInt64
+                return 1 << 61
             }
         }
         f[0][1]--
-        cur := dp(r[1:], f)
-        if cur < math.MaxInt64 {
-            cur += dist(r[0], f[0][0])
+        curr := dp(r[1:], f)
+        if curr < 1 << 61 {
+            curr += dist(r[0], f[0][0])
         }
         f[0][1]++
         if len(f) > 1 {
-            cur = min(cur, dp(r, f[1:]))
+            curr = min(curr, dp(r, f[1:]))
         }
-        memo[[3]int{len(r), len(f), f[0][1]}] = cur
-        return cur
+        memo[[3]int{len(r), len(f), f[0][1]}] = curr
+        return curr
     }
     return dp(robot, factory)
+}
+
+func minimumTotalDistance1(robot []int, factory [][]int) int64 {
+    slices.SortFunc(factory, func(a, b []int) int { 
+        return a[0] - b[0] 
+    })
+    slices.Sort(robot)
+    n := len(robot)
+    f := make([]int, n + 1)
+    for j := 1; j <= n; j++ {
+        f[j] = 1 << 61
+    }
+    abs := func(x int) int { if x < 0 { return -x; }; return x; }
+    type Pair struct{ i, v int }
+    for _, fac := range factory {
+        distance, position, limit := 0, fac[0], fac[1]
+        q := []Pair{{0, 0}}
+        for j, r := range robot {
+            j++
+            distance += abs(r - position)
+            // 1. 入
+            v := f[j] - distance
+            for len(q) > 0 && q[len(q)-1].v >= v {
+                q = q[:len(q)-1]
+            }
+            q = append(q, Pair{j, v})
+            // 2. 出
+            for q[0].i < j-limit {
+                q = q[1:]
+            }
+            // 3. 队首为滑动窗口最小值
+            f[j] = distance + q[0].v
+        }
+    }
+    return int64(f[n])
 }
 
 func main() {
@@ -131,4 +165,12 @@ func main() {
     // The limit of the second factory is 1, and it fixed 1 robot.
     // The total distance is |2 - 1| + |(-2) - (-1)| = 2. It can be shown that we cannot achieve a better total distance than 2.
     fmt.Println(minimumTotalDistance([]int{1,-1}, [][]int{{-2,1},{2,1}})) // 2
+
+    fmt.Println(minimumTotalDistance([]int{1,2,3,4,5,6,7,8,9}, [][]int{{-2,1},{2,1}})) // 2305843009213693952
+    fmt.Println(minimumTotalDistance([]int{9,8,7,6,5,4,3,2,1}, [][]int{{-2,1},{2,1}})) // 2305843009213693952
+
+    fmt.Println(minimumTotalDistance1([]int{0,4,6}, [][]int{{2,2},{6,2}})) // 4
+    fmt.Println(minimumTotalDistance1([]int{1,-1}, [][]int{{-2,1},{2,1}})) // 2
+    fmt.Println(minimumTotalDistance1([]int{1,2,3,4,5,6,7,8,9}, [][]int{{-2,1},{2,1}})) // 2305843009213693952
+    fmt.Println(minimumTotalDistance1([]int{9,8,7,6,5,4,3,2,1}, [][]int{{-2,1},{2,1}})) // 2305843009213693952
 }
