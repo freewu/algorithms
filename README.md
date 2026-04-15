@@ -3351,7 +3351,8 @@
 [3544. Subtree Inversion Sum](./leetcode/3544-SubtreeInversionSum.go)   
 [3831. Median of a Binary Search Tree Level](./leetcode/3831-MedianOfABinarySearchTreeLevel.go)    
 [3879. Maximum Distinct Path Sum in a Binary Tree](./leetcode/3879-MaximumDistinctPathSumInABinaryTree.go)   
-
+[3902. Zigzag Level Sum of Binary Tree](./leetcode/3902-ZigzagLevelSumOfBinaryTree.go)   
+   
 # Graph
 [133. Clone Graph](./leetcode/133-CloneGraph.go)   
 [210. Course Schedule II](./leetcode/210-CourseScheduleII.go)   

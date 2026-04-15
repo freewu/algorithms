@@ -64,30 +64,30 @@ type TreeNode struct {
 // buildBinaryTree 根据数组构建 完全二叉树
 // 规则：数组下标 i 的左孩子 2i+1，右孩子 2i+2，-1 代表空节点
 func buildBinaryTree(arr []int) *TreeNode {
-	if len(arr) == 0 || arr[0] == -1 {
-		return nil
-	}
-	root := &TreeNode{Val: arr[0]}
-	queue := []*TreeNode{root}
-	i := 1
-	// 队列层序构建二叉树
-	for len(queue) > 0 && i < len(arr) {
-		node := queue[0]
-		queue = queue[1:]
-		// 构建左子树
-		if i < len(arr) && arr[i] != math.MinInt32 {
-			node.Left = &TreeNode{Val: arr[i]}
-			queue = append(queue, node.Left)
-		}
-		i++
-		// 构建右子树
-		if i < len(arr) && arr[i] != math.MinInt32 {
-			node.Right = &TreeNode{Val: arr[i]}
-			queue = append(queue, node.Right)
-		}
-		i++
-	}
-	return root
+    if len(arr) == 0 || arr[0] == -1 {
+        return nil
+    }
+    root := &TreeNode{Val: arr[0]}
+    queue := []*TreeNode{root}
+    i := 1
+    // 队列层序构建二叉树
+    for len(queue) > 0 && i < len(arr) {
+        node := queue[0]
+        queue = queue[1:]
+        // 构建左子树
+        if i < len(arr) && arr[i] != math.MinInt32 {
+            node.Left = &TreeNode{Val: arr[i]}
+            queue = append(queue, node.Left)
+        }
+        i++
+        // 构建右子树
+        if i < len(arr) && arr[i] != math.MinInt32 {
+            node.Right = &TreeNode{Val: arr[i]}
+            queue = append(queue, node.Right)
+        }
+        i++
+    }
+    return root
 }
 
 // printBinaryTree 美观打印二叉树：根居中、/ 左、\ 右
