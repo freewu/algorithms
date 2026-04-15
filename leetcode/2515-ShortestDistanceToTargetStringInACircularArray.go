@@ -42,7 +42,7 @@ package main
 
 import "fmt"
 
-func closetTarget(words []string, target string, startIndex int) int {
+func closestTarget(words []string, target string, startIndex int) int  {
     if words[startIndex] == target { return 0 } // base case
     n, distance, left, right := len(words), 1, startIndex - 1, startIndex + 1
     // check if the target exists while incrementing the pointers
@@ -59,7 +59,7 @@ func closetTarget(words []string, target string, startIndex int) int {
     return -1
 }
 
-func closetTarget1(words []string, target string, startIndex int) int {
+func closestTarget1(words []string, target string, startIndex int) int {
     for i, n := 0, len(words); i <= n / 2; i++ {
         if words[(startIndex + i) % n] == target {
             return i
@@ -81,7 +81,7 @@ func main() {
     // - moving 4 units to the right to reach index 0.
     // - moving 1 unit to the left to reach index 0.
     // The shortest distance to reach "hello" is 1.
-    fmt.Println(closetTarget([]string{"hello","i","am","leetcode","hello"}, "hello", 1)) // 1
+    fmt.Println(closestTarget([]string{"hello","i","am","leetcode","hello"}, "hello", 1)) // 1
     // Example 2:
     // Input: words = ["a","b","leetcode"], target = "leetcode", startIndex = 0
     // Output: 1
@@ -89,14 +89,21 @@ func main() {
     // - moving 2 units to the right to reach index 3.
     // - moving 1 unit to the left to reach index 3.
     // The shortest distance to reach "leetcode" is 1.
-    fmt.Println(closetTarget([]string{"a","b","leetcode"}, "leetcode", 0)) // 1
+    fmt.Println(closestTarget([]string{"a","b","leetcode"}, "leetcode", 0)) // 1
     // Example 3:
     // Input: words = ["i","eat","leetcode"], target = "ate", startIndex = 0
     // Output: -1
     // Explanation: Since "ate" does not exist in words, we return -1.
-    fmt.Println(closetTarget([]string{"i","eat","leetcode"}, "ate", 0)) // -1
+    fmt.Println(closestTarget([]string{"i","eat","leetcode"}, "ate", 0)) // -1
 
-    fmt.Println(closetTarget1([]string{"hello","i","am","leetcode","hello"}, "hello", 1)) // 1
-    fmt.Println(closetTarget1([]string{"a","b","leetcode"}, "leetcode", 0)) // 1
-    fmt.Println(closetTarget1([]string{"i","eat","leetcode"}, "ate", 0)) // -1
+    fmt.Println(closestTarget([]string{"bluefrog","freewu","leetcode"}, "bluefrog", 1)) // 1
+    fmt.Println(closestTarget([]string{"bluefrog","freewu","leetcode"}, "leetcode", 1)) // 1
+    fmt.Println(closestTarget([]string{"bluefrog","freewu","leetcode"}, "freewu", 1)) // 0
+
+    fmt.Println(closestTarget1([]string{"hello","i","am","leetcode","hello"}, "hello", 1)) // 1
+    fmt.Println(closestTarget1([]string{"a","b","leetcode"}, "leetcode", 0)) // 1
+    fmt.Println(closestTarget1([]string{"i","eat","leetcode"}, "ate", 0)) // -1
+    fmt.Println(closestTarget1([]string{"bluefrog","freewu","leetcode"}, "bluefrog", 1)) // 1
+    fmt.Println(closestTarget1([]string{"bluefrog","freewu","leetcode"}, "leetcode", 1)) // 1
+    fmt.Println(closestTarget1([]string{"bluefrog","freewu","leetcode"}, "freewu", 1)) // 0
 }
