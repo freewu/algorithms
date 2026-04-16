@@ -93,6 +93,39 @@ func solveQueries1(nums []int, queries []int) []int {
     return res
 }
 
+func solveQueries2(nums []int, queries []int) []int {
+    const STEP = 1 << 18
+    const MASK = STEP - 1
+    var dist [100_000]int32
+    var seen [1_000_001]int32
+    var gen int32
+    n := int32(len(nums))
+    gen += STEP
+    for i := range n {
+        dist[i] = n
+    }
+    for i := range n * 2 {
+        idx := i % n
+        v := nums[idx]
+        if prev := seen[v]; prev > gen {
+            prev &= MASK
+            pidx := (prev - 1) % n
+            d := i - prev + 1
+            dist[idx] = min(dist[idx], d)
+            dist[pidx] = min(dist[pidx], d)
+        }
+        seen[v] = (i + 1) | gen
+    }
+    for i, q := range queries {
+        if dist[q] == n {
+            queries[i] = -1
+        } else {
+            queries[i] = int(dist[q])
+        }
+    }
+    return queries
+}
+
 func main() {
     // Example 1:
     // Input: nums = [1,3,1,4,1,3,2], queries = [0,3,5]
@@ -118,6 +151,13 @@ func main() {
     fmt.Println(solveQueries1([]int{1,2,3,4}, []int{0,1,2,3})) // [-1,-1,-1,-1]
     fmt.Println(solveQueries1([]int{0,1,2,3,4,5,6,7,8,9}, []int{9,8,7,6,5,4,3,2,1})) // [-1 -1 -1 -1 -1 -1 -1 -1 -1]
     fmt.Println(solveQueries1([]int{9,8,7,6,5,4,3,2,1,0}, []int{1,2,3,4,5,6,7,8,9})) // [-1 -1 -1 -1 -1 -1 -1 -1 -1]
+    fmt.Println(solveQueries1([]int{0,1,2,3,4,5,6,7,8,9}, []int{1,2,3,4,5,6,7,8,9})) // [-1 -1 -1 -1 -1 -1 -1 -1 -1]
+    fmt.Println(solveQueries1([]int{9,8,7,6,5,4,3,2,1,0}, []int{9,8,7,6,5,4,3,2,1})) // [-1 -1 -1 -1 -1 -1 -1 -1 -1]
+
+    fmt.Println(solveQueries2([]int{1,3,1,4,1,3,2}, []int{0,3,5})) // [2,-1,3]
+    fmt.Println(solveQueries2([]int{1,2,3,4}, []int{0,1,2,3})) // [-1,-1,-1,-1]
+    fmt.Println(solveQueries2([]int{0,1,2,3,4,5,6,7,8,9}, []int{9,8,7,6,5,4,3,2,1})) // [-1 -1 -1 -1 -1 -1 -1 -1 -1]
+    fmt.Println(solveQueries2([]int{9,8,7,6,5,4,3,2,1,0}, []int{1,2,3,4,5,6,7,8,9})) // [-1 -1 -1 -1 -1 -1 -1 -1 -1]
     fmt.Println(solveQueries1([]int{0,1,2,3,4,5,6,7,8,9}, []int{1,2,3,4,5,6,7,8,9})) // [-1 -1 -1 -1 -1 -1 -1 -1 -1]
     fmt.Println(solveQueries1([]int{9,8,7,6,5,4,3,2,1,0}, []int{9,8,7,6,5,4,3,2,1})) // [-1 -1 -1 -1 -1 -1 -1 -1 -1]
 }
