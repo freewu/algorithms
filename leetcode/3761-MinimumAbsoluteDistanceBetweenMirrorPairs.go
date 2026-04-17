@@ -42,7 +42,7 @@ package main
 import "fmt"
 
 func minMirrorPairDistance(nums []int) int {
-    res, mp := 1 << 31, make(map[int]int)
+    res, mp := 1 << 31, make(map[int]int, len(nums))
     reverse := func(n int) int {
         res := 0
         for ; 0 < n; n /= 10 {
