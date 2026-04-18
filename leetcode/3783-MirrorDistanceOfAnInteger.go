@@ -51,10 +51,12 @@ func mirrorDistance(n int) int {
 func mirrorDistance1(n int) int {
     rev, v := 0, n
     for v > 0 {
-        rev = rev * 10 +  v% 10
+        rev = rev * 10 +  v % 10
         v /= 10 
     }
-    if n >= rev { return n - rev }
+    if n >= rev { 
+        return n - rev 
+    }
     return rev - n
 }
 
