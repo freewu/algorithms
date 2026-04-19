@@ -2024,6 +2024,7 @@
 [3898. Find the Degree of Each Vertex](./leetcode/3898-FindDegreeOfEachVertex.go)   
 [3899. Angles of a Triangle](./leetcode/3899-AnglesOfATriangle.go)   
 [3901. Good Subsequence Queries](./leetcode/3901-GoodSubsequenceQueries.go)   
+[3903. Smallest Stable Index I](./leetcode/3903-SmallestStableIndexI.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
