@@ -2692,6 +2692,7 @@
 [3884. First Matching Character From Both Ends](./leetcode/3884-FirstMatchingCharacterFromBothEnds.go)   
 [3889. Mirror Frequency Distance](./leetcode/3889-MirrorFrequencyDistance.go)   
 [3900. Longest Balanced Substring After One Swap](./leetcode/3900-LongestBalancedSubstringAfterOneSwap.go)   
+[3906. Count Good Integers on a Grid Path](./leetcode/3906-CountGoodIntegersOnAGridPath.go)   
 
 # Dynamic Programming
 [276. Paint Fence](./leetcode/276-PaintFence.go)   
