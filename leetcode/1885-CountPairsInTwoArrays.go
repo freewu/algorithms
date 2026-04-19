@@ -78,4 +78,9 @@ func main() {
     // - (1, 3) where 10 + 2 > 4 + 5.
     // - (2, 3) where 6 + 2 > 1 + 5.
     fmt.Println(countPairs([]int{1,10,6,2}, []int{1,4,1,5})) // 5
+
+    fmt.Println(countPairs([]int{1,2,3,4,5,6,7,8,9}, []int{1,2,3,4,5,6,7,8,9})) // 0
+    fmt.Println(countPairs([]int{1,2,3,4,5,6,7,8,9}, []int{9,8,7,6,5,4,3,2,1})) // 16
+    fmt.Println(countPairs([]int{9,8,7,6,5,4,3,2,1}, []int{1,2,3,4,5,6,7,8,9})) // 16
+    fmt.Println(countPairs([]int{9,8,7,6,5,4,3,2,1}, []int{9,8,7,6,5,4,3,2,1})) // 0
 }
