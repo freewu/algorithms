@@ -85,7 +85,16 @@ func main() {
     // The maximum distance is 2 with pair (2,4).
     fmt.Println(maxDistance([]int{30,29,19,5}, []int{25,25,25,25,25})) // 2
 
+    fmt.Println(maxDistance([]int{1,2,3,4,5,6,7,8,9}, []int{1,2,3,4,5,6,7,8,9})) // 8
+    fmt.Println(maxDistance([]int{1,2,3,4,5,6,7,8,9}, []int{9,8,7,6,5,4,3,2,1})) // 8
+    fmt.Println(maxDistance([]int{9,8,7,6,5,4,3,2,1}, []int{1,2,3,4,5,6,7,8,9})) // 0
+    fmt.Println(maxDistance([]int{9,8,7,6,5,4,3,2,1}, []int{9,8,7,6,5,4,3,2,1})) // 0
+
     fmt.Println(maxDistance1([]int{55,30,5,4,2}, []int{100,20,10,10,5})) // 2
     fmt.Println(maxDistance1([]int{2,2,2}, []int{10,10,1})) // 1
     fmt.Println(maxDistance1([]int{30,29,19,5}, []int{25,25,25,25,25})) // 2
+    fmt.Println(maxDistance1([]int{1,2,3,4,5,6,7,8,9}, []int{1,2,3,4,5,6,7,8,9})) // 8
+    fmt.Println(maxDistance1([]int{1,2,3,4,5,6,7,8,9}, []int{9,8,7,6,5,4,3,2,1})) // 8
+    fmt.Println(maxDistance1([]int{9,8,7,6,5,4,3,2,1}, []int{1,2,3,4,5,6,7,8,9})) // 0
+    fmt.Println(maxDistance1([]int{9,8,7,6,5,4,3,2,1}, []int{9,8,7,6,5,4,3,2,1})) // 0
 }
