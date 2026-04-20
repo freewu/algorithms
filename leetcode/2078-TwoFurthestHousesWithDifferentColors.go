@@ -53,10 +53,16 @@ func maxDistance(colors []int) int {
 
 func maxDistance1(colors []int) int {
     n := len(colors)
-    if colors[0] != colors[n - 1] {  return n - 1 }
+    if colors[0] != colors[n - 1] {  
+        return n - 1 
+    }
     c, l, r := colors[0], 1, n - 2
-    for l < n && colors[l] == c {l++}
-    for r >= 0 && colors[r] == c {r--}
+    for l < n && colors[l] == c {
+        l++
+    }
+    for r >= 0 && colors[r] == c {
+        r--
+    }
     max := func (x, y int) int { if x > y { return x; }; return y; }
     return max(r, n - 1 - l)
 }
@@ -87,9 +93,13 @@ func main() {
     fmt.Println(maxDistance([]int{0,1})) // 1
 
     fmt.Println(maxDistance([]int{1,1,1,1,1,1,1,1,1})) // -1
+    fmt.Println(maxDistance([]int{1,2,3,4,5,6,7,8,9})) // 8
+    fmt.Println(maxDistance([]int{9,8,7,6,5,4,3,2,1})) // 8
 
     fmt.Println(maxDistance1([]int{1,1,1,6,1,1,1})) // 3
     fmt.Println(maxDistance1([]int{1,8,3,8,3})) // 4
     fmt.Println(maxDistance1([]int{0,1})) // 1
     fmt.Println(maxDistance1([]int{1,1,1,1,1,1,1,1,1})) // -1
+    fmt.Println(maxDistance1([]int{1,2,3,4,5,6,7,8,9})) // 8
+    fmt.Println(maxDistance1([]int{9,8,7,6,5,4,3,2,1})) // 8
 }
