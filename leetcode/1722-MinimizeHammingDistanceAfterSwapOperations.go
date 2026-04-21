@@ -141,15 +141,16 @@ func main() {
     // Output: 0
     fmt.Println(minimumHammingDistance([]int{5,1,2,4,3}, []int{1,5,4,2,3}, [][]int{{0,4},{4,2},{1,3},{1,4}})) // 0
 
+    fmt.Println(minimumHammingDistance([]int{1,2,3,4,5,6,7,8,9}, []int{1,2,3,4,5,6,7,8,9}, [][]int{{0,4},{4,2},{1,3},{1,4}})) // 0
+    fmt.Println(minimumHammingDistance([]int{1,2,3,4,5,6,7,8,9}, []int{9,8,7,6,5,4,3,2,1}, [][]int{{0,4},{4,2},{1,3},{1,4}})) // 8
+    fmt.Println(minimumHammingDistance([]int{9,8,7,6,5,4,3,2,1}, []int{1,2,3,4,5,6,7,8,9}, [][]int{{0,4},{4,2},{1,3},{1,4}})) // 8
+    fmt.Println(minimumHammingDistance([]int{9,8,7,6,5,4,3,2,1}, []int{9,8,7,6,5,4,3,2,1}, [][]int{{0,4},{4,2},{1,3},{1,4}})) // 0
+    
     fmt.Println(minimumHammingDistance1([]int{1,2,3,4}, []int{2,1,4,5}, [][]int{{0,1},{2,3}})) // 1
-    // Example 2:
-    // Input: source = [1,2,3,4], target = [1,3,2,4], allowedSwaps = []
-    // Output: 2
-    // Explanation: There are no allowed swaps.
-    // The Hamming distance of source and target is 2 as they differ in 2 positions: index 1 and index 2.
     fmt.Println(minimumHammingDistance1([]int{1,2,3,4}, []int{1,3,2,4}, [][]int{})) // 2
-    // Example 3:
-    // Input: source = [5,1,2,4,3], target = [1,5,4,2,3], allowedSwaps = [[0,4],[4,2],[1,3],[1,4]]
-    // Output: 0
     fmt.Println(minimumHammingDistance1([]int{5,1,2,4,3}, []int{1,5,4,2,3}, [][]int{{0,4},{4,2},{1,3},{1,4}})) // 0
+    fmt.Println(minimumHammingDistance1([]int{1,2,3,4,5,6,7,8,9}, []int{1,2,3,4,5,6,7,8,9}, [][]int{{0,4},{4,2},{1,3},{1,4}})) // 0
+    fmt.Println(minimumHammingDistance1([]int{1,2,3,4,5,6,7,8,9}, []int{9,8,7,6,5,4,3,2,1}, [][]int{{0,4},{4,2},{1,3},{1,4}})) // 8
+    fmt.Println(minimumHammingDistance1([]int{9,8,7,6,5,4,3,2,1}, []int{1,2,3,4,5,6,7,8,9}, [][]int{{0,4},{4,2},{1,3},{1,4}})) // 8
+    fmt.Println(minimumHammingDistance1([]int{9,8,7,6,5,4,3,2,1}, []int{9,8,7,6,5,4,3,2,1}, [][]int{{0,4},{4,2},{1,3},{1,4}})) // 0
 }
