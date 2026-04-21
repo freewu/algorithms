@@ -121,6 +121,57 @@ func minimumHammingDistance1(source []int, target []int, allowedSwaps [][]int) i
     return n - same
 }
 
+type UnionFind struct {
+    fa []int
+}
+
+func NewUnionFind(size int) UnionFind {
+    fa := make([]int, size)
+    for i := 0; i < size; i++ {
+        fa[i] = i
+    }
+    return UnionFind{fa}
+}
+
+func (uf *UnionFind) find(x int) int {
+    if uf.fa[x] != x {
+        uf.fa[x] = uf.find(uf.fa[x])
+    }
+    return uf.fa[x]
+}
+
+func (uf *UnionFind) merge(x, y int) bool {
+    x, y = uf.find(x), uf.find(y)
+    if x == y {
+        return false
+    }
+    uf.fa[x] = y
+    return true
+}
+
+func minimumHammingDistance2(source []int, target []int, allowedSwaps [][]int) int {
+    res, n := 0, len(source)
+    uf := NewUnionFind(n)
+    for i := range allowedSwaps {
+        uf.merge(allowedSwaps[i][0], allowedSwaps[i][1])
+    }
+    hashList := make([]map[int]int, n)
+    for i := range hashList {
+        hashList[i] = make(map[int]int)
+    }
+    for i, v := range uf.fa {
+        hashList[uf.find(v)][source[i]]++
+    }
+    for i, v := range uf.fa {
+        if hashList[uf.find(v)][target[i]] == 0 {
+            res++
+        } else {
+            hashList[uf.find(v)][target[i]]--
+        }
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: source = [1,2,3,4], target = [2,1,4,5], allowedSwaps = [[0,1],[2,3]]
@@ -153,4 +204,12 @@ func main() {
     fmt.Println(minimumHammingDistance1([]int{1,2,3,4,5,6,7,8,9}, []int{9,8,7,6,5,4,3,2,1}, [][]int{{0,4},{4,2},{1,3},{1,4}})) // 8
     fmt.Println(minimumHammingDistance1([]int{9,8,7,6,5,4,3,2,1}, []int{1,2,3,4,5,6,7,8,9}, [][]int{{0,4},{4,2},{1,3},{1,4}})) // 8
     fmt.Println(minimumHammingDistance1([]int{9,8,7,6,5,4,3,2,1}, []int{9,8,7,6,5,4,3,2,1}, [][]int{{0,4},{4,2},{1,3},{1,4}})) // 0
+
+    fmt.Println(minimumHammingDistance2([]int{1,2,3,4}, []int{2,1,4,5}, [][]int{{0,1},{2,3}})) // 1
+    fmt.Println(minimumHammingDistance2([]int{1,2,3,4}, []int{1,3,2,4}, [][]int{})) // 2
+    fmt.Println(minimumHammingDistance2([]int{5,1,2,4,3}, []int{1,5,4,2,3}, [][]int{{0,4},{4,2},{1,3},{1,4}})) // 0
+    fmt.Println(minimumHammingDistance2([]int{1,2,3,4,5,6,7,8,9}, []int{1,2,3,4,5,6,7,8,9}, [][]int{{0,4},{4,2},{1,3},{1,4}})) // 0
+    fmt.Println(minimumHammingDistance2([]int{1,2,3,4,5,6,7,8,9}, []int{9,8,7,6,5,4,3,2,1}, [][]int{{0,4},{4,2},{1,3},{1,4}})) // 8
+    fmt.Println(minimumHammingDistance2([]int{9,8,7,6,5,4,3,2,1}, []int{1,2,3,4,5,6,7,8,9}, [][]int{{0,4},{4,2},{1,3},{1,4}})) // 8
+    fmt.Println(minimumHammingDistance2([]int{9,8,7,6,5,4,3,2,1}, []int{9,8,7,6,5,4,3,2,1}, [][]int{{0,4},{4,2},{1,3},{1,4}})) // 0
 }
