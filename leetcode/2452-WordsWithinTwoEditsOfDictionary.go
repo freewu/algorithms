@@ -74,5 +74,8 @@ func main() {
     // Explanation:
     // Applying any two edits to "yes" cannot make it equal to "not". Thus, we return an empty array.
     fmt.Println(twoEditWords([]string{"yes"}, []string{"not"})) // []
+
     fmt.Println(twoEditWords([]string{"bluefrog"}, []string{"leetcode"})) // []
+    fmt.Println(twoEditWords([]string{"bluefrog"}, []string{"frewu"})) // []
+    fmt.Println(twoEditWords([]string{"frewu"}, []string{"leetcode"})) // []
 }
