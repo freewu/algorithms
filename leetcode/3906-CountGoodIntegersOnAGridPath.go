@@ -86,6 +86,8 @@ package main
 
 import "fmt"
 import "strconv"
+import "strings"
+import "math"
 
 func countGoodIntegersOnPath(l, r int64, directions string) int64 {
     lowS := strconv.FormatInt(l, 10)
@@ -206,6 +208,68 @@ func countGoodIntegersOnPath1(l int64, r int64, directions string) int64 {
     return calc(r) - calc(l-1)
 }
 
+
+const MX = 7
+
+var comb [MX + 10][MX + 1]int
+
+func init() {
+    // 预处理组合数
+    for i := range comb {
+        comb[i][0] = 1
+        for j := 1; j < min(i + 1, len(comb[i])); j++ {
+            comb[i][j] = comb[i-1][j-1] + comb[i-1][j]
+        }
+    }
+}
+
+func countGoodIntegersOnPath2(l, r int64, directions string) int64 {
+    highS := strconv.FormatInt(r+1, 10) // 注意这里加一了
+    n := len(highS)
+    lowS := strconv.FormatInt(l, 10)
+    lowS = strings.Repeat("0", n-len(lowS)) + lowS
+    inPath := make([]bool, n)
+    pos := n - 16 // 右下角是下标 n-1，那么左上角是下标 n-16
+    for _, d := range directions {
+        if pos >= 0 { // 只需要对网格图中的后 n 个格子做标记
+            inPath[pos] = true // 标记在路径中的格子
+        }
+        if d == 'R' { // 往右
+            pos++
+        } else { // 往下
+            pos += 4 // 相当于往右数 4 个位置
+        }
+    }
+    inPath[n-1] = true // 终点一定在路径中
+    // suf[i] 表示后缀 [i, n-1] 在路径中的下标个数
+    suf := make([]int, n+1)
+    for i := n - 1; i >= 0; i-- {
+        suf[i] = suf[i+1]
+        if inPath[i] {
+            suf[i]++
+        }
+    }
+    // 计算小于 r 的合法整数个数
+    calc := func(r string) (res int) {
+        pre := 0
+        for i, ch := range r {
+            hi := int(ch - '0')
+            m := suf[i+1]
+            if !inPath[i] {
+                res += hi * comb[m+9-pre][m] * int(math.Pow10(n-1-i-m))
+                continue
+            }
+            if hi < pre {
+                break
+            }
+            res += (comb[m+10-pre][m+1] - comb[m+10-hi][m+1]) * int(math.Pow10(n-1-i-m))
+            pre = hi // 这一位填 hi，继续计算剩余数位的方案数
+        }
+        return res
+    }
+    return int64(calc(highS) - calc(lowS))
+}
+
 func main() {
     // Example 1:
     // Input: l = 8, r = 10, directions = "DDDRRR"
@@ -271,8 +335,12 @@ func main() {
     // No numbers are good, giving a total of 0 good integers in the range.
     fmt.Println(countGoodIntegersOnPath(1288561398769758, 1288561398769758, "RRRDDD")) // 0
 
-    fmt.Println(countGoodIntegersOnPath(8, 10, "DDDRRR")) // 2
-    fmt.Println(countGoodIntegersOnPath(123456789, 123456790, "DDRRDR")) // 1
-    fmt.Println(countGoodIntegersOnPath(1288561398769758, 1288561398769758, "RRRDDD")) // 0
+    fmt.Println(countGoodIntegersOnPath1(8, 10, "DDDRRR")) // 2
+    fmt.Println(countGoodIntegersOnPath1(123456789, 123456790, "DDRRDR")) // 1
+    fmt.Println(countGoodIntegersOnPath1(1288561398769758, 1288561398769758, "RRRDDD")) // 0
+
+    fmt.Println(countGoodIntegersOnPath2(8, 10, "DDDRRR")) // 2
+    fmt.Println(countGoodIntegersOnPath2(123456789, 123456790, "DDRRDR")) // 1
+    fmt.Println(countGoodIntegersOnPath2(1288561398769758, 1288561398769758, "RRRDDD")) // 0
 }
 
