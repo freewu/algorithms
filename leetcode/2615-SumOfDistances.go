@@ -23,13 +23,12 @@ package main
 // Explanation: Since each element in nums is distinct, arr[i] = 0 for all i.
 
 // Constraints:
-// 1 <= nums.length <= 10^5
-// 0 <= nums[i] <= 10^9
+//     1 <= nums.length <= 10^5
+//     0 <= nums[i] <= 10^9
 
 // Note: This question is the same as 2121: Intervals Between Identical Elements.
 
 import "fmt"
-import "sort"
 
 func distance(nums []int) []int64 {
     data, sum := make(map[int][]int), make(map[int]int64)
@@ -108,12 +107,18 @@ func main() {
     fmt.Println(distance([]int{0,5,3})) // [0,0,0]
 
     fmt.Println(distance([]int{1,3,1,1,2})) // [5,0,3,4,0]
+    fmt.Println(distance([]int{1,2,3,4,5,6,7,8,9})) // [0 0 0 0 0 0 0 0 0]
+    fmt.Println(distance([]int{9,8,7,6,5,4,3,2,1})) // [0 0 0 0 0 0 0 0 0]
 
     fmt.Println(distance1([]int{1,3,1,1,2})) // [5,0,3,4,0]
     fmt.Println(distance1([]int{0,5,3})) // [0,0,0]
     fmt.Println(distance1([]int{1,3,1,1,2})) // [5,0,3,4,0]
+    fmt.Println(distance1([]int{1,2,3,4,5,6,7,8,9})) // [0 0 0 0 0 0 0 0 0]
+    fmt.Println(distance1([]int{9,8,7,6,5,4,3,2,1})) // [0 0 0 0 0 0 0 0 0]
 
     fmt.Println(distance2([]int{1,3,1,1,2})) // [5,0,3,4,0]
     fmt.Println(distance2([]int{0,5,3})) // [0,0,0]
     fmt.Println(distance2([]int{1,3,1,1,2})) // [5,0,3,4,0]
+    fmt.Println(distance2([]int{1,2,3,4,5,6,7,8,9})) // [0 0 0 0 0 0 0 0 0]
+    fmt.Println(distance2([]int{9,8,7,6,5,4,3,2,1})) // [0 0 0 0 0 0 0 0 0]
 }
