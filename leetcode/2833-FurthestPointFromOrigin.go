@@ -76,7 +76,14 @@ func main() {
     // Explanation: The furthest point we can reach from the origin 0 is point 7 through the following sequence of moves "RRRRRRR".
     fmt.Println(furthestDistanceFromOrigin("_______")) // 7
 
+    fmt.Println(furthestDistanceFromOrigin("RRRRRRRRR")) // 9
+    fmt.Println(furthestDistanceFromOrigin("LLLLLLLLL")) // 9
+    fmt.Println(furthestDistanceFromOrigin("_________")) // 9
+
     fmt.Println(furthestDistanceFromOrigin1("L_RL__R")) // 3
     fmt.Println(furthestDistanceFromOrigin1("_R__LL_")) // 5
     fmt.Println(furthestDistanceFromOrigin1("_______")) // 7
+    fmt.Println(furthestDistanceFromOrigin1("RRRRRRRRR")) // 9
+    fmt.Println(furthestDistanceFromOrigin1("LLLLLLLLL")) // 9
+    fmt.Println(furthestDistanceFromOrigin1("_________")) // 9
 }
