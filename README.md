@@ -3144,6 +3144,7 @@
 [3881. Direction Assignments with Exactly K Visible People](./leetcode/3881-DirectionAssignmentsWithExactlyKVisiblePeople.go)   
 [3890. Integers With Multiple Sum of Two Cubes](./leetcode/3890-IntegersWithMultipleSumOfTwoCubes.go)   
 [3894. Traffic Signal Color](./leetcode/3894-TrafficSignalColor.go)   
+[3908. Valid Digit Number](./leetcode/3908-ValidDigitNumber.go)   
 
 # Stack
 [225. Implement Stack using Queues](./leetcode/225-ImplementStackUsingQueues.go)   
