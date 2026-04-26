@@ -201,10 +201,13 @@ func main() {
     fmt.Println(minOperationsMaxProfit([]int{3,4,0,5,1}, 1, 92)) // -1
 
     fmt.Println(minOperationsMaxProfit([]int{4,0,0,0,0,3}, 5, 12)) // 1
-
+    fmt.Println(minOperationsMaxProfit([]int{1,2,3,4,5,6,7,8,9},6,4)) // 13
+    fmt.Println(minOperationsMaxProfit([]int{9,8,7,6,5,4,3,2,1},6,4)) // 12
 
     fmt.Println(minOperationsMaxProfit1([]int{8,3},5,6)) // 3
     fmt.Println(minOperationsMaxProfit1([]int{10,9,6},6,4)) // 7
     fmt.Println(minOperationsMaxProfit1([]int{3,4,0,5,1}, 1, 92)) // -1
     fmt.Println(minOperationsMaxProfit1([]int{4,0,0,0,0,3}, 5, 12)) // 1
+    fmt.Println(minOperationsMaxProfit1([]int{1,2,3,4,5,6,7,8,9},6,4)) // 13
+    fmt.Println(minOperationsMaxProfit1([]int{9,8,7,6,5,4,3,2,1},6,4)) // 12
 }
