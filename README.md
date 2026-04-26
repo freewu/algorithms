@@ -2030,6 +2030,7 @@
 [3907. Count Smaller Elements With Opposite Parity](./leetcode/3907-CountSmallerElementsWithOppositeParity.go)   
 [3909. Compare Sums of Bitonic Parts](./leetcode/3909-CompareSumsOfBitonicParts.go)   
 [3910. Count Connected Subgraphs with Even Node Sum](./leetcode/3910-CountConnectedSubgraphsWithEvenNodeSum.go)   
+[3911. K-th Smallest Remaining Even Integer in Subarray Queries](./leetcode/3911-KthSmallestRemainingEvenIntegerInSubarrayQueries.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
