@@ -39,6 +39,7 @@ package main
 //     1 <= nums[i] <= 100
 
 import "fmt"
+import "slices"
 
 func findValidElements(nums []int) []int {
     res := []int{}
@@ -59,6 +60,26 @@ func findValidElements(nums []int) []int {
             }
         }
         if nums[i] > maxL || nums[i] > maxR {
+            res = append(res, nums[i])
+        }
+    }
+    return res
+}
+
+func findValidElements1(nums []int) []int {
+    res, left, right := []int{}, []int{0}, []int{0}
+    maxc, maxd, n := 0, 0, len(nums)
+    for i := 1; i < n; i++ {
+        maxc = max(maxc, nums[i-1])
+        left = append(left, maxc)
+    }
+    for i := n - 2; i >= 0; i-- {
+        maxd = max(maxd, nums[i+1])
+        right = append(right, maxd)
+    }
+    slices.Reverse(right)
+    for i := 0; i < n; i++ {
+        if nums[i] > left[i] || nums[i] > right[i] {
             res = append(res, nums[i])
         }
     }
@@ -92,4 +113,10 @@ func main() {
 
     fmt.Println(findValidElements([]int{1,2,3,4,5,6,7,8,9})) // [1 2 3 4 5 6 7 8 9]
     fmt.Println(findValidElements([]int{9,8,7,6,5,4,3,2,1})) // [9 8 7 6 5 4 3 2 1]
+
+    fmt.Println(findValidElements1([]int{1,2,4,2,3,2})) // [1,2,4,3,2]
+    fmt.Println(findValidElements1([]int{5,5,5,5})) // [5,5]
+    fmt.Println(findValidElements1([]int{1})) // [1]
+    fmt.Println(findValidElements1([]int{1,2,3,4,5,6,7,8,9})) // [1 2 3 4 5 6 7 8 9]
+    fmt.Println(findValidElements1([]int{9,8,7,6,5,4,3,2,1})) // [9 8 7 6 5 4 3 2 1]
 }
