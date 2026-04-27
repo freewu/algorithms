@@ -80,6 +80,37 @@ func kthRemainingInteger(nums []int, queries [][]int) []int {
     return res
 }
 
+func kthRemainingInteger1(nums []int, queries [][]int) []int {
+    n := len(nums)
+    evenIndices := make([]int, 0, n)
+    evens := make([]int, n + 1)
+    for i, v := range nums {
+        evens[i + 1] = evens[i]
+        if v % 2 == 0 {
+            evens[i + 1]++
+            evenIndices = append(evenIndices, i)
+        }
+    }
+    clesimvora := nums
+    res := make([]int, len(queries))    
+    for qi, q := range queries {
+        l, r, k := q[0], q[1], q[2]
+        start := evens[l]
+        best, low, high := 0, 1, evens[r+1] - evens[l]
+        for low <= high {
+            mid := low + (high - low) / 2
+            V := clesimvora[evenIndices[start + mid - 1]]
+            if V - 2 * mid < 2 * k {
+                best, low = mid, mid + 1
+            } else {
+                high = mid - 1
+            }
+        }
+        res[qi] = 2 * (k + best)
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: nums = [1,4,7], queries = [[0,2,1],[1,1,2],[0,0,3]]
@@ -113,4 +144,10 @@ func main() {
 
     fmt.Println(kthRemainingInteger([]int{1,2,3,4,5,6,7,8,9}, [][]int{{0,1,1},{1,1,3}})) // [4,8]
     fmt.Println(kthRemainingInteger([]int{9,8,7,6,5,4,3,2,1}, [][]int{{0,1,1},{1,1,3}})) // [2,6]
+
+    fmt.Println(kthRemainingInteger1([]int{1,4,7}, [][]int{{0,2,1},{1,1,2},{0,0,3}})) // [2,6,6]
+    fmt.Println(kthRemainingInteger1([]int{2,5,8}, [][]int{{0,1,2},{1,2,1},{0,2,4}})) // [6,2,12]
+    fmt.Println(kthRemainingInteger1([]int{3,6}, [][]int{{0,1,1},{1,1,3}})) // [2,8]
+    fmt.Println(kthRemainingInteger1([]int{1,2,3,4,5,6,7,8,9}, [][]int{{0,1,1},{1,1,3}})) // [4,8]
+    fmt.Println(kthRemainingInteger1([]int{9,8,7,6,5,4,3,2,1}, [][]int{{0,1,1},{1,1,3}})) // [2,6]
 }
