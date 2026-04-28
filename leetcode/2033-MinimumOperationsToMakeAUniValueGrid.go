@@ -62,6 +62,31 @@ func minOperations(grid [][]int, x int) int {
     return min(count(x, flat[mid], flat), count(x, flat[mid - 1], flat))
 }
 
+func minOperations1(grid [][]int, x int) int {
+    res, n, m := 0, len(grid), len(grid[0])
+    arr := make([]int, 0, n * m)
+    for i := 0; i < n; i++ {
+        for j := 0; j < m; j++ {
+            arr = append(arr, grid[i][j])
+        }
+    }
+    mod, median := arr[0] % x, arr[len(arr) / 2]
+    for _, v := range arr {
+        if v % x != mod {
+            return -1
+        }
+    }
+    sort.Ints(arr)
+    for _, v := range arr {
+        diff := v - median
+        if diff < 0 {
+            diff = -diff
+        }
+        res += diff / x
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // <img src="https://assets.leetcode.com/uploads/2021/09/21/gridtxt.png" />
@@ -85,4 +110,8 @@ func main() {
     // Output: -1
     // Explanation: It is impossible to make every element equal.
     fmt.Println(minOperations([][]int{{1,2},{3,4}}, 2)) // -1
+
+    fmt.Println(minOperations1([][]int{{2,4},{6,8}}, 2)) // 4
+    fmt.Println(minOperations1([][]int{{1,5},{2,3}}, 1)) // 5
+    fmt.Println(minOperations1([][]int{{1,2},{3,4}}, 2)) // -1
 }
