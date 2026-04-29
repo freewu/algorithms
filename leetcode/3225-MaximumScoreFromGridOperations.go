@@ -66,6 +66,39 @@ func maximumScore(grid [][]int) int64 {
     return int64(res)
 }
 
+func maximumScore1(grid [][]int) int64 {
+    res, n := 0, len(grid)
+    prefix := [2][]int{make([]int, n+1), make([]int, n+1)}
+    for i := range n {
+        prefix[0][i+1] = prefix[0][i] + grid[i][0]
+    }
+    dp := [2][201][2]int{}
+    prev, curr := 0, 1
+    for col := range n - 1 {
+        for i := range n {
+            prefix[curr][i+1] = prefix[curr][i] + grid[i][col+1]
+        }
+        mx := dp[prev][0][1]
+        for i := 1; i <= n; i++ {
+            dp[curr][i][0] = max(dp[prev][i][0], mx + prefix[prev][i])
+            dp[curr][i][1] = dp[curr][i][0]
+            mx = max(mx, dp[prev][i][1]-prefix[prev][i])
+        }
+        mx = dp[prev][n][0] + prefix[curr][n]
+        for i := n - 1; i > 0; i-- {
+            dp[curr][i][0] = max(dp[curr][i][0], mx - prefix[curr][i])
+            mx = max(mx, dp[prev][i][0] + prefix[curr][i])
+        }
+        dp[curr][0][0] = mx
+        dp[curr][0][1] = max(dp[prev][0][0], dp[prev][n][0])
+        prev, curr = curr, prev
+    }
+    for _, pair := range dp[prev][:n+1] {
+        res = max(res, pair[0], pair[1])
+    }
+    return int64(res)
+}
+
 func main() {
     // Example 1:
     // Input: grid = [[0,0,0,0,0],[0,0,3,0,0],[0,1,0,0,0],[5,0,0,3,0],[0,0,0,0,2]]
@@ -83,4 +116,7 @@ func main() {
     // We perform operations on 1, 2, and 3 down to rows 1, 4, and 0, respectively. 
     // The score of the resulting grid is grid[0][0] + grid[1][0] + grid[2][1] + grid[4][1] + grid[1][3] + grid[2][3] + grid[3][3] + grid[4][3] + grid[0][4] which is equal to 94.
     fmt.Println(maximumScore([][]int{{10,9,0,0,15},{7,1,0,8,0},{5,20,0,11,0},{0,0,0,1,2},{8,12,1,10,3}})) // 94
+
+    fmt.Println(maximumScore1([][]int{{0,0,0,0,0},{0,0,3,0,0},{0,1,0,0,0},{5,0,0,3,0},{0,0,0,0,2}})) // 11
+    fmt.Println(maximumScore1([][]int{{10,9,0,0,15},{7,1,0,8,0},{5,20,0,11,0},{0,0,0,1,2},{8,12,1,10,3}})) // 94
 }
