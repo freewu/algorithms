@@ -120,6 +120,43 @@ func maxPathScore1(grid [][]int, k int) int {
     return -1
 }
 
+func maxPathScore2(grid [][]int, k int) int {
+    var dp [201][400]int
+    m, n := len(grid), len(grid[0])
+    // first check if a valid path exists
+    path := dp[0]
+    path[0] = 0
+    for j, v := range grid[0] {
+        path[j+1] = path[j] + min(v, 1)
+    }
+    path[0] = 1 << 61
+    for i := 1; i < m; i++ {
+        row := grid[i]
+        for j, v := range row {
+            path[j+1] = min(path[j], path[j+1]) + min(v, 1)
+        }
+    }
+    if path[n] > k {
+        return -1
+    }
+    // run dp to maximize score respécting k
+    for j := range n + 1 {
+        for k := range min(k+2, m+n) {
+            dp[j][k] = -1 << 61
+        }
+    }
+    dp[1][1] = 0
+    for i, row := range grid {
+        for j, v := range row {
+            step := 1 - min(1, v)
+            for k := min(k, i+j); k >= 0; k-- {
+                dp[j+1][k+1] = max(dp[j+1][k+step], dp[j][k+step]) + v
+            }
+        }
+    }
+    return slices.Max(dp[n][:min(k+2, m+n)])
+}
+
 func main() {
     // Example 1:
     // Input: grid = [[0, 1],[2, 0]], k = 1
@@ -141,4 +178,7 @@ func main() {
 
     fmt.Println(maxPathScore1([][]int{{0, 1},{2, 0}}, 1)) // 2
     fmt.Println(maxPathScore1([][]int{{0, 1},{1, 2}}, 1)) // -1
+
+    fmt.Println(maxPathScore2([][]int{{0, 1},{2, 0}}, 1)) // 2
+    fmt.Println(maxPathScore2([][]int{{0, 1},{1, 2}}, 1)) // -1
 }
