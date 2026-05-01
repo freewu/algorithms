@@ -60,6 +60,28 @@ func employeeFreeTime(schedule [][]*Interval) []*Interval {
     return res
 }
 
+func employeeFreeTime1(schedule [][]*Interval) []*Interval {
+    res, intervals := []*Interval{}, []*Interval{}
+    for _, emp := range schedule{
+        intervals = append(intervals, emp...)
+    }
+    sort.Slice(intervals, func(i, j int) bool{
+        return intervals[i].Start < intervals[j].Start
+    })
+    prev := intervals[0].End
+    for i := 1; i < len(intervals); i++ {
+        curr := intervals[i]
+        if curr.Start > prev {
+            res = append(res, &Interval{
+                Start: prev, 
+                End: curr.Start,
+            })
+        }
+        prev = max(prev, curr.End)
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: schedule = [[[1,2],[5,6]],[[1,3]],[[4,10]]]
@@ -80,4 +102,7 @@ func main() {
         []*Interval{ &Interval{2,4},  &Interval{2,5}, &Interval{9,12}, },
     }
     fmt.Println(employeeFreeTime(schedule2)) // [[5,6],[7,9]]
+
+    fmt.Println(employeeFreeTime1(schedule1)) // [[3,4]]
+    fmt.Println(employeeFreeTime1(schedule2)) // [[5,6],[7,9]]
 }
