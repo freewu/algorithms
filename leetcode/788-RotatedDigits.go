@@ -88,7 +88,28 @@ func main() {
     // Output: 1
     fmt.Println(rotatedDigits(2)) // 1
 
+    fmt.Println(rotatedDigits(3)) // 1
+    fmt.Println(rotatedDigits(4)) // 1
+    fmt.Println(rotatedDigits(8)) // 3
+    fmt.Println(rotatedDigits(99)) // 40
+    fmt.Println(rotatedDigits(100)) // 40
+    fmt.Println(rotatedDigits(101)) // 40
+    fmt.Println(rotatedDigits(999)) // 316
+    fmt.Println(rotatedDigits(1024)) // 327
+    fmt.Println(rotatedDigits(9999)) // 2320
+    fmt.Println(rotatedDigits(10000)) // 2320
+
     fmt.Println(rotatedDigits1(10)) // 4
     fmt.Println(rotatedDigits1(1)) // 0
     fmt.Println(rotatedDigits1(2)) // 1
+    fmt.Println(rotatedDigits1(3)) // 1
+    fmt.Println(rotatedDigits1(4)) // 1
+    fmt.Println(rotatedDigits1(8)) // 3
+    fmt.Println(rotatedDigits1(99)) // 40
+    fmt.Println(rotatedDigits1(100)) // 40
+    fmt.Println(rotatedDigits1(101)) // 40
+    fmt.Println(rotatedDigits1(999)) // 316
+    fmt.Println(rotatedDigits1(1024)) // 327
+    fmt.Println(rotatedDigits1(9999)) // 2320
+    fmt.Println(rotatedDigits1(10000)) // 2320
 }
