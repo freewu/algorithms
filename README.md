@@ -2035,6 +2035,7 @@
 [3914. Minimum Operations to Make Array Non Decreasing](./leetcode/3914-MinimumOperationsToMakeArrayNonDecreasing.go)   
 [3915. Maximum Sum of Alternating Subsequence With Distance at Least K](./leetcode/3915-MaximumSumOfAlternatingSubsequenceWithDistanceAtLeastK.go)   
 [3917. Count Indices With Opposite Parity](./leetcode/3917-CountIndicesWithOppositeParity.go)   
+[3919. Minimum Cost to Move Between Indices](./leetcode/3919-MinimumCostToMoveBetweenIndices.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
