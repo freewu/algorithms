@@ -46,6 +46,13 @@ func main() {
     // Output: false
     fmt.Println(rotateString("abcde","abced")) // false
 
+    fmt.Println(rotateString("bluefrog","frogblue")) // true
+    fmt.Println(rotateString("leetcode","codeleet")) // true
+    fmt.Println(rotateString("freewu","uferew")) // false
+
     fmt.Println(rotateString1("abcde","cdeab")) // true
     fmt.Println(rotateString1("abcde","abced")) // false
+    fmt.Println(rotateString1("bluefrog","frogblue")) // true
+    fmt.Println(rotateString1("leetcode","codeleet")) // true
+    fmt.Println(rotateString1("freewu","uferew")) // false
 }
