@@ -71,12 +71,12 @@ func rotateRight(head *ListNode, k int) *ListNode {
     count, tail, sp := 0, head, head
     
     for tail.Next != nil {
-        count++
+        count++ // 链表长度
         tail = tail.Next
     }
-    count++
+    count++ // 链表长度
     j := k % count
-    for i := 1; i < count-j; i++{
+    for i := 1; i < count - j; i++ {
         sp = sp.Next
     }
     tail.Next = head
@@ -85,13 +85,27 @@ func rotateRight(head *ListNode, k int) *ListNode {
     return dummy.Next
 }
 
-func main() {
+func main() {   
+    // Example 1:
+    // <img src="https://assets.leetcode.com/uploads/2020/11/13/rotate1.jpg" />
+    // Input: head = [1,2,3,4,5], k = 2
+    // Output: [4,5,1,2,3]
     l11 := makeListNode([]int{1,2,3,4,5})
-    printListNode(l11)
-    printListNode(rotateRight(l11,2)) //  [4,5,1,2,3]
-
+    printListNode(l11) // 1 -> 2 -> 3 -> 4 -> 5
+    printListNode(rotateRight(l11,2)) // 4 -> 5 -> 1 -> 2 -> 3
+    // Example 2:
+    // <img src="https://assets.leetcode.com/uploads/2020/11/13/roate2.jpg" />
+    // Input: head = [0,1,2], k = 4
+    // Output: [2,0,1]
     l12 := makeListNode([]int{0,1,2})
-    printListNode(l12)
-    printListNode(rotateRight(l12,4)) // [2,0,1]
- 
+    printListNode(l12) // 0 -> 1 -> 2
+    printListNode(rotateRight(l12,4)) // 2 -> 0 -> 1
+
+    l13 := makeListNode([]int{1,2,3,4,5,6,7,8,9})
+    printListNode(l13) // 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8 -> 9
+    printListNode(rotateRight(l13,4)) // 6 -> 7 -> 8 -> 9 -> 1 -> 2 -> 3 -> 4 -> 5
+
+    l14 := makeListNode([]int{9,8,7,6,5,4,3,2,1})
+    printListNode(l14) // 9 -> 8 -> 7 -> 6 -> 5 -> 4 -> 3 -> 2 -> 1
+    printListNode(rotateRight(l14,4)) // 4 -> 3 -> 2 -> 1 -> 9 -> 8 -> 7 -> 6 -> 5
 }
