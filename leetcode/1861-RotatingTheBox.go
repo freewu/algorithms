@@ -39,6 +39,7 @@ package main
 //     box[i][j] is either '#', '*', or '.'.
 
 import "fmt"
+import "bytes"
 
 func rotateTheBox(box [][]byte) [][]byte {
     m, n := len(box[0]), len(box)
@@ -96,6 +97,27 @@ func rotateTheBox1(box [][]byte) [][]byte {
     return res
 }
 
+func rotateTheBox2(box [][]byte) [][]byte {
+    m, n := len(box), len(box[0])
+    res := make([][]byte, n)
+    for i := range res {
+        res[i] = bytes.Repeat([]byte{'.'}, m)
+    }
+    for i, row := range box {
+        stone := n - 1
+        for j := n - 1; j >= 0; j-- {
+            if row[j] == '*' { // 障碍物
+                res[j][m-1-i] = '*'
+                stone = j - 1 // 障碍物左边最近的石头，在旋转后掉落到 j-1
+            } else if row[j] == '#' { // 石头
+                res[stone][m-1-i] = '#' // 旋转后，石头掉落到 stone
+                stone--
+            }
+        }
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // <img src="https://assets.leetcode.com/uploads/2021/04/08/rotatingtheboxleetcodewithstones.png" />
@@ -121,4 +143,8 @@ func main() {
     fmt.Println(rotateTheBox1(box1)) // [["."], ["#"], ["#"]]
     fmt.Println(rotateTheBox1(box2)) // [["#","."], ["#","#"], ["*","*"], [".","."]]
     fmt.Println(rotateTheBox1(box3)) // [[".","#","#"], [".","#","#"], ["#","#","*"], ["#","*","."], ["#",".","*"], ["#",".","."]]
+
+    fmt.Println(rotateTheBox2(box1)) // [["."], ["#"], ["#"]]
+    fmt.Println(rotateTheBox2(box2)) // [["#","."], ["#","#"], ["*","*"], [".","."]]
+    fmt.Println(rotateTheBox2(box3)) // [[".","#","#"], [".","#","#"], ["#","#","*"], ["#","*","."], ["#",".","*"], ["#",".","."]]
 }
