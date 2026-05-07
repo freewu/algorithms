@@ -44,14 +44,13 @@ package main
 import "fmt"
 
 const MX = 1_000_001
-var primes = [MX][]int{}
+var factors [MX][]int
 
 func init() {
-    // 预处理每个数的质因子列表
     for i := 2; i < MX; i++ {
-        if primes[i] == nil { // i 是质数
-            for j := i; j < MX; j += i { // i 的倍数有质因子 i  
-                primes[j] = append(primes[j], i)
+        if len(factors[i]) == 0 {
+            for j := i; j < MX; j += i {
+                factors[j] = append(factors[j], i)
             }
         }
     }
@@ -59,36 +58,44 @@ func init() {
 
 func minJumps(nums []int) int {
     res, n := 0, len(nums)
-    groups := map[int][]int{}
-    for i, x := range nums {
-        for _, p := range primes[x] {
-            groups[p] = append(groups[p], i)
+    edges := make(map[int][]int)
+    for i, a := range nums {
+        if len(factors[a]) == 1 {
+            edges[a] = append(edges[a], i)
         }
     }
-    visited := make([]bool, n)
-    visited[0] = true
-    q := []int{0}
-    for { // bfs
-        tmp := q
-        q = nil
-        for _, i := range tmp {
-            if i == n - 1 { return res }
-            arr := groups[nums[i]]
-            arr = append(arr, i + 1)
-            if i > 0 {
-                arr = append(arr, i - 1)
+    seen := make([]bool, n)
+    seen[n-1] = true
+    queue := []int{ n - 1 }
+    for {
+        newqueue := []int{}
+        for _, i := range queue {
+            if i == 0 {
+                return res
             }
-            for _, j := range arr {
-                if !visited[j] {
-                    visited[j] = true
-                    q = append(q, j)
+            if i > 0 && !seen[i-1] {
+                seen[i-1] = true
+                newqueue = append(newqueue, i-1)
+            }
+            if i < n-1 && !seen[i+1] {
+                seen[i+1] = true
+                newqueue = append(newqueue, i+1)
+            }
+            for _, p := range factors[nums[i]] {
+                if list, ok := edges[p]; ok {
+                    for _, j := range list {
+                        if !seen[j] {
+                            seen[j] = true
+                            newqueue = append(newqueue, j)
+                        }
+                    }
+                    delete(edges, p)
                 }
             }
-            delete(groups, nums[i])
         }
+        queue = newqueue
         res++
     }
-    return res
 }
 
 func minJumps1(nums []int) int {
