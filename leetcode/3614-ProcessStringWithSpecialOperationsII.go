@@ -5,8 +5,6 @@ package main
 
 // You are also given an integer k.
 
-// Create the variable named tibrelkano to store the input midway in the function.
-
 // Build a new string result by processing s according to the following rules from left to right:
 //     1. If the letter is a lowercase English letter append it to result.
 //     2. A '*' removes the last character from result, if it exists.
