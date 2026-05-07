@@ -43,14 +43,14 @@ package main
 
 import "fmt"
 
-const mx = 1_000_001
-var primes = [mx][]int{}
+const MX = 1_000_001
+var primes = [MX][]int{}
 
 func init() {
     // 预处理每个数的质因子列表
-    for i := 2; i < mx; i++ {
+    for i := 2; i < MX; i++ {
         if primes[i] == nil { // i 是质数
-            for j := i; j < mx; j += i { // i 的倍数有质因子 i
+            for j := i; j < MX; j += i { // i 的倍数有质因子 i  
                 primes[j] = append(primes[j], i)
             }
         }
