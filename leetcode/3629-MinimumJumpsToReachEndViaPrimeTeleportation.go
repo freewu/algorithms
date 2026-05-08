@@ -43,59 +43,140 @@ package main
 
 import "fmt"
 
-const MX = 1_000_001
-var factors [MX][]int
+// const MX = 1_000_001
+// var factors [MX][]int
+
+// func init() {
+//     for i := 2; i < MX; i++ {
+//         if len(factors[i]) == 0 {
+//             for j := i; j < MX; j += i {
+//                 factors[j] = append(factors[j], i)
+//             }
+//         }
+//     }
+// }
+
+// func minJumps(nums []int) int {
+//     res, n := 0, len(nums)
+//     edges := make(map[int][]int)
+//     for i, a := range nums {
+//         if len(factors[a]) == 1 {
+//             edges[a] = append(edges[a], i)
+//         }
+//     }
+//     seen := make([]bool, n)
+//     seen[n-1] = true
+//     queue := []int{ n - 1 }
+//     for {
+//         newqueue := []int{}
+//         for _, i := range queue {
+//             if i == 0 {
+//                 return res
+//             }
+//             if i > 0 && !seen[i-1] {
+//                 seen[i-1] = true
+//                 newqueue = append(newqueue, i-1)
+//             }
+//             if i < n-1 && !seen[i+1] {
+//                 seen[i+1] = true
+//                 newqueue = append(newqueue, i+1)
+//             }
+//             for _, p := range factors[nums[i]] {
+//                 if list, ok := edges[p]; ok {
+//                     for _, j := range list {
+//                         if !seen[j] {
+//                             seen[j] = true
+//                             newqueue = append(newqueue, j)
+//                         }
+//                     }
+//                     delete(edges, p)
+//                 }
+//             }
+//         }
+//         queue = newqueue
+//         res++
+//     }
+// }
+
+const MAXN = 100_000
+const MAXV = 1_000_000
+const SQRTMAXV = 1_000
+
+type Bitset [(MAXV + 64) / 64]uint64
+
+func (b *Bitset) Set(x int) {
+    b[x/64] |= 1 << (x % 64)
+}
+
+func (b *Bitset) Get(x int) bool {
+    return b[x/64]>>(x%64)&1 != 0
+}
+
+var sieve Bitset
 
 func init() {
-    for i := 2; i < MX; i++ {
-        if len(factors[i]) == 0 {
-            for j := i; j < MX; j += i {
-                factors[j] = append(factors[j], i)
+    sieve.Set(0)
+    sieve.Set(1)
+    for i := 4; i <= MAXV; i += 2 {
+        sieve.Set(i)
+    }
+    for i := 3; i <= SQRTMAXV; i += 2 {
+        if !sieve.Get(i) {
+            for j := i * i; j <= MAXV; j += 2 * i {
+                sieve.Set(j)
             }
         }
     }
 }
 
 func minJumps(nums []int) int {
-    res, n := 0, len(nums)
-    edges := make(map[int][]int)
-    for i, a := range nums {
-        if len(factors[a]) == 1 {
-            edges[a] = append(edges[a], i)
-        }
+    var adj [MAXV + 2]uint32
+    var nxt, dist, queue [MAXN + 2]uint32
+    var gen uint32
+    gen += 1 << 20
+    maxv, n := 0, uint32(len(nums))
+    for i := n - 1; i != ^uint32(0); i-- {
+        maxv = max(maxv, nums[i])
+        nxt[i] = adj[nums[i]]
+        adj[nums[i]] = i | gen
     }
-    seen := make([]bool, n)
-    seen[n-1] = true
-    queue := []int{ n - 1 }
-    for {
-        newqueue := []int{}
-        for _, i := range queue {
-            if i == 0 {
-                return res
-            }
-            if i > 0 && !seen[i-1] {
-                seen[i-1] = true
-                newqueue = append(newqueue, i-1)
-            }
-            if i < n-1 && !seen[i+1] {
-                seen[i+1] = true
-                newqueue = append(newqueue, i+1)
-            }
-            for _, p := range factors[nums[i]] {
-                if list, ok := edges[p]; ok {
-                    for _, j := range list {
-                        if !seen[j] {
-                            seen[j] = true
-                            newqueue = append(newqueue, j)
-                        }
-                    }
-                    delete(edges, p)
-                }
+    var visited Bitset
+    head, tail := 0, 1
+    queue[0] = 0
+    dist[0] = gen
+    for head < tail && queue[head] < n-1 {
+        u := queue[head]
+        head++
+        d := dist[u]
+        enqueue := func(v uint32) {
+            if dist[v] < gen {
+                dist[v] = d + 1
+                queue[tail] = v
+                tail++
             }
         }
-        queue = newqueue
-        res++
+        if u+1 < n {
+            enqueue(u + 1)
+        }
+        if u > 0 {
+            enqueue(u - 1)
+        }
+        p := nums[u]
+        if sieve.Get(p) || visited.Get(p) {
+            continue
+        }
+        visited.Set(p)
+        for i := p; i <= maxv; i += p {
+            cur := adj[i]
+            for cur >= gen {
+                v := cur &^ gen
+                enqueue(v)
+                cur = nxt[v]
+            }
+            adj[i] = 0
+        }
     }
+    return int(dist[queue[head]] - gen)
 }
 
 func minJumps1(nums []int) int {
