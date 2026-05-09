@@ -91,6 +91,60 @@ func rotateGrid(grid [][]int, k int) [][]int {
     return grid
 }
 
+func rotateGrid1(grid [][]int, k int) [][]int {
+    buffer := make([]int, 200)
+    m, n := len(grid), len(grid[0])
+    same, val := true, grid[0][0]
+    for i := 0; i < m && same; i++ {
+        for j := 0; j < n && same; j++ {
+            same = val == grid[i][j]
+        }
+    }
+    if same {
+        return grid
+    }
+    for layer := range min(m, n) / 2 {
+        top, left, bottom, right := layer, layer, m-1-layer, n-1-layer
+        h, w := bottom - top + 1, right - left + 1
+        perim := 2 * (h + w) - 4
+        b := 0
+        for j := range w - 1 { 
+            buffer[b] = grid[top][left+j]
+            b++ 
+        }
+        for i := range h - 1 { 
+            buffer[b] = grid[top+i][right]
+            b++ 
+        }
+        for j := range w - 1 { 
+            buffer[b] = grid[bottom][right-j]
+            b++ 
+        }
+        for i := range h - 1 { 
+            buffer[b] = grid[bottom-i][left]
+            b++ 
+        }
+        b = k % perim
+        for j := range w - 1 { 
+            grid[top][left+j] = buffer[b]
+            b = (b+1) % perim 
+        }
+        for i := range h - 1 { 
+            grid[top+i][right] = buffer[b]
+            b = (b+1) % perim 
+        }
+        for j := range w - 1 { 
+            grid[bottom][right-j] = buffer[b]
+            b = (b+1) % perim 
+        }
+        for i := range h - 1 { 
+            grid[bottom-i][left]  = buffer[b]
+            b = (b+1) % perim 
+        }
+    }
+    return grid
+}
+
 func main() {
     // Example 1:
     // <img src="https://assets.leetcode.com/uploads/2021/06/19/rod2.png" />
@@ -116,4 +170,30 @@ func main() {
         {13,14, 15, 16},
     }
     fmt.Println(rotateGrid(grid2, 2)) // [[3,4,8,12],[2,11,10,16],[1,7,6,15],[5,9,13,14]]
+
+    grid3 := [][]int{
+        {1,2,3},
+        {4,5,6},
+        {7,8,9},
+    }
+    fmt.Println(rotateGrid(grid3,1)) // [[2 3 6] [1 5 9] [4 7 8]]
+
+    grid11 := [][]int{
+        {40,10},
+        {30,20},
+    }
+    fmt.Println(rotateGrid1(grid11,1)) // [[10,20],[40,30]]
+    grid12 := [][]int{
+        {1, 2,  3,  4},
+        {5, 6,  7,  8},
+        {9, 10, 11, 12},
+        {13,14, 15, 16},
+    }
+    fmt.Println(rotateGrid1(grid12, 2)) // [[3,4,8,12],[2,11,10,16],[1,7,6,15],[5,9,13,14]]
+    grid13 := [][]int{
+        {1,2,3},
+        {4,5,6},
+        {7,8,9},
+    }
+    fmt.Println(rotateGrid1(grid13,1)) // [[2 3 6] [1 5 9] [4 7 8]]
 }
