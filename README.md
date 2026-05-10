@@ -3515,6 +3515,7 @@
 [3820. Pythagorean Distance Nodes in a Tree](./leetcode/3820-PythagoreanDistanceNodesInATree.go)   
 [3841. Palindromic Path Queries in a Tree](./leetcode/3841-PalindromicPathQueriesInATree.go)   
 [3887. Incremental Even-Weighted Cycle Queries](./leetcode/3887-IncrementalEvenWeightedCycleQueries.go)   
+[3924. Minimum Threshold Path With Limited Heavy Edges](./leetcode/3924-MinimumThresholdPathWithLimitedHeavyEdges.go)   
 
 # Trie
 [386. Lexicographical Numbers](./leetcode/386-LexicographicalNumbers.go)   
