@@ -77,6 +77,26 @@ func maximumJumps1(nums []int, target int) int {
     return max(-1, dp[n-1])
 }
 
+func maximumJumps2(nums []int, target int) int {
+    dp := make([]int, 1000)
+    gen := 1 << 32
+    n := len(nums)
+    dp[0] = gen | 1
+    abs := func(x int) int { if x < 0 { return -x; }; return x; }
+    max := func (x, y int) int { if x > y { return x; }; return y; }
+    for i := range nums {
+        if dp[i] < gen {
+            continue
+        }
+        for j := i + 1; j < len(nums); j++ {
+            if abs(nums[i]-nums[j]) <= target {
+                dp[j] = max(dp[j], dp[i]+1|gen)
+            }
+        }
+    }
+    return max(0, dp[n-1]-gen) - 1
+}
+
 func main() {
     // Example 1:
     // Input: nums = [1,3,6,4,1,2], target = 2
@@ -112,4 +132,11 @@ func main() {
     fmt.Println(maximumJumps1([]int{1,3,6,4,1,2}, 0)) // -1
     fmt.Println(maximumJumps1([]int{1,2,3,4,5,6,7,8,9}, 2)) // 8
     fmt.Println(maximumJumps1([]int{9,8,7,6,5,4,3,2,1}, 2)) // 8
+
+    fmt.Println(maximumJumps2([]int{1,3,6,4,1,2}, 2)) // 3
+    fmt.Println(maximumJumps2([]int{1,3,6,4,1,2}, 3)) // 5
+    fmt.Println(maximumJumps2([]int{1,3,6,4,1,2}, 0)) // -1
+    fmt.Println(maximumJumps2([]int{1,2,3,4,5,6,7,8,9}, 2)) // 8
+    fmt.Println(maximumJumps2([]int{9,8,7,6,5,4,3,2,1}, 2)) // 8
+    fmt.Println(maximumJumps2([]int{9,8,7,6,5,4,3,2,1}, 2)) // 8
 }
