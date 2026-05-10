@@ -2040,6 +2040,7 @@
 [3921. Score Validator](./leetcode/3921-ScoreValidator.go)   
 [3923. Minimum Generations to Target Point](./leetcode/3923-MinimumGenerationsToTargetPoint.go)   
 [3925. Concatenate Array With Reverse Order](./leetcode/3925-ConcatenateArrayWithReverseOrder.go)   
+[3926. Count Valid Word Occurrences](./leetcode/3926-CountValidWordOccurrences.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
