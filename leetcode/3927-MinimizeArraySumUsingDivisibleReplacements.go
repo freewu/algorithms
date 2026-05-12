@@ -92,6 +92,32 @@ func minArraySum1(nums []int) int64 {
     return int64(res)
 }
 
+func minArraySum2(nums []int) int64 {
+    res, mx, n := 0, slices.Max(nums), len(nums)
+    freq := make([]int, mx + 1)
+    for _, v := range nums {
+        freq[v]++
+    }
+    if freq[1] > 0 {
+        return int64(n)
+    }
+    marked := make([]bool, mx + 1)
+    for i := 2; i <= mx; i++ {
+        if marked[i] || freq[i] == 0 {
+            continue
+        }
+        count := 0
+        for j := i; j <= mx; j += i {
+            if !marked[j] {
+                count += freq[j]
+            }
+            marked[j] = true
+        }
+        res += count * i
+    }
+    return int64(res)
+}
+
 func main() {
     // Example 1:
     // Input: nums = [3,6,2]
@@ -126,4 +152,10 @@ func main() {
     fmt.Println(minArraySum1([]int{7,5,9})) // 21
     fmt.Println(minArraySum1([]int{1,2,3,4,5,6,7,8,9})) // 9
     fmt.Println(minArraySum1([]int{9,8,7,6,5,4,3,2,1})) // 9
+
+    fmt.Println(minArraySum2([]int{3,6,2})) // 7
+    fmt.Println(minArraySum2([]int{4,2,8,3})) // 9
+    fmt.Println(minArraySum2([]int{7,5,9})) // 21
+    fmt.Println(minArraySum2([]int{1,2,3,4,5,6,7,8,9})) // 9
+    fmt.Println(minArraySum2([]int{9,8,7,6,5,4,3,2,1})) // 9
 }
