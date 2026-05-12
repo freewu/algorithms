@@ -76,6 +76,21 @@ func minimumEffort(tasks [][]int) int {
     return res
 }
 
+func minimumEffort1(tasks [][]int) int {
+    slices.SortFunc(tasks, func(a, b []int) int {
+        return (b[1] - b[0]) - (a[1] - a[0]) // 按照 minimum - actual 从大到小排序
+    })
+    res, s := 0, 0 // 累计耗费的能量之和
+    for _, t := range tasks {
+        actual, mn := t[0], t[1]
+        // 题目要求 E0 - s >= mn E0 >= s + mn
+        // 由此可以得到 n 个 E0 的下界，所有下界的最大值即为答案
+        res = max(res, s + mn)
+        s += actual
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: tasks = [[1,2],[2,4],[4,8]]
@@ -110,4 +125,8 @@ func main() {
     //     - 4th task. Now energy = 16 - 4 = 12.
     //     - 6th task. Now energy = 12 - 6 = 6.
     fmt.Println(minimumEffort([][]int{{1,7},{2,8},{3,9},{4,10},{5,11},{6,12}})) // 27
+
+    fmt.Println(minimumEffort1([][]int{{1,2},{2,4},{4,8}})) // 8
+    fmt.Println(minimumEffort1([][]int{{1,3},{2,4},{10,11},{10,12},{8,9}})) // 32
+    fmt.Println(minimumEffort1([][]int{{1,7},{2,8},{3,9},{4,10},{5,11},{6,12}})) // 27
 }
