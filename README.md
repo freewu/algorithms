@@ -2042,6 +2042,7 @@
 [3925. Concatenate Array With Reverse Order](./leetcode/3925-ConcatenateArrayWithReverseOrder.go)   
 [3926. Count Valid Word Occurrences](./leetcode/3926-CountValidWordOccurrences.go)   
 [3927. Minimize Array Sum Using Divisible Replacements](./leetcode/3927-MinimizeArraySumUsingDivisibleReplacements.go)   
+[3929. Minimum Partition Score II](./leetcode/3929-MinimumPartitionScoreII.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
