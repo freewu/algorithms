@@ -2043,6 +2043,7 @@
 [3926. Count Valid Word Occurrences](./leetcode/3926-CountValidWordOccurrences.go)   
 [3927. Minimize Array Sum Using Divisible Replacements](./leetcode/3927-MinimizeArraySumUsingDivisibleReplacements.go)   
 [3929. Minimum Partition Score II](./leetcode/3929-MinimumPartitionScoreII.go)   
+[3930. Power Update After K-th Largest Insertion II](./leetcode/3930-PowerUpdateAfterKthLargestInsertionII.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
