@@ -66,7 +66,24 @@ func isGood1(nums []int) bool {
         return true
     }
     return false
-}   
+}
+
+func isGood2(nums []int) bool {
+    freq := make([]byte, 201)
+    for _, v := range nums {
+        freq[v]++
+    }
+    n := len(nums)
+    if freq[n-1] != 2 {
+        return false
+    }
+    for i := 1; i < n-1; i++ {
+        if freq[i] != 1 {
+            return false
+        }
+    }
+    return true
+}
 
 func main() {
     // Example 1:
@@ -99,4 +116,11 @@ func main() {
     fmt.Println(isGood1([]int{3, 4, 4, 1, 2, 1})) // false
     fmt.Println(isGood1([]int{1,2,3,4,5,6,7,8,9})) // false
     fmt.Println(isGood1([]int{9,8,7,6,5,4,3,2,1})) // false
+
+    fmt.Println(isGood2([]int{2, 1, 3})) // false
+    fmt.Println(isGood2([]int{1, 3, 3, 2})) // true
+    fmt.Println(isGood2([]int{1, 1})) // true
+    fmt.Println(isGood2([]int{3, 4, 4, 1, 2, 1})) // false
+    fmt.Println(isGood2([]int{1,2,3,4,5,6,7,8,9})) // false
+    fmt.Println(isGood2([]int{9,8,7,6,5,4,3,2,1})) // false
 }
