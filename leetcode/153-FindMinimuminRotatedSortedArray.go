@@ -103,7 +103,7 @@ func findMin2(nums []int) int {
 }
 
 // best solution  O(log n)
-func findMinBest(nums []int) int {
+func findMin3(nums []int) int {
     low,high := 0, len(nums) - 1
     for low < high {
         mid := low + (high - low) / 2
@@ -117,19 +117,40 @@ func findMinBest(nums []int) int {
 }
 
 func main() {
+    // Example 1:
+    // Input: nums = [3,4,5,1,2]
+    // Output: 1
+    // Explanation: The original array was [1,2,3,4,5] rotated 3 times.
     fmt.Printf("findMin([]int{ 3,4,5,1,2 }) = %v\n",findMin([]int{ 3,4,5,1,2 })) // 1
+    // Example 2:
+    // Input: nums = [4,5,6,7,0,1,2]
+    // Output: 0
+    // Explanation: The original array was [0,1,2,4,5,6,7] and it was rotated 4 times.
     fmt.Printf("findMin([]int{ 4,5,6,7,0,1,2 }) = %v\n",findMin([]int{ 4,5,6,7,0,1,2 })) // 0
+    // Example 3:
+    // Input: nums = [11,13,15,17]
+    // Output: 11
+    // Explanation: The original array was [11,13,15,17] and it was rotated 4 times. 
     fmt.Printf("findMin([]int{ 11,13,15,17 }) = %v\n",findMin([]int{ 11,13,15,17 })) // 11
+
+    fmt.Printf("findMin([]int{ 1,2,3,4,5,6,7,8,9 }) = %v\n",findMin([]int{ 1,2,3,4,5,6,7,8,9 })) // 1
+    fmt.Printf("findMin([]int{ 9,8,7,6,5,4,3,2,1 }) = %v\n",findMin([]int{ 9,8,7,6,5,4,3,2,1 })) // 1
 
     fmt.Printf("findMin1([]int{ 3,4,5,1,2 }) = %v\n",findMin1([]int{ 3,4,5,1,2 })) // 1
     fmt.Printf("findMin1([]int{ 4,5,6,7,0,1,2 }) = %v\n",findMin1([]int{ 4,5,6,7,0,1,2 })) // 0
     fmt.Printf("findMin1([]int{ 11,13,15,17 }) = %v\n",findMin1([]int{ 11,13,15,17 })) // 11
+    fmt.Printf("findMin1([]int{ 1,2,3,4,5,6,7,8,9 }) = %v\n",findMin1([]int{ 1,2,3,4,5,6,7,8,9 })) // 1
+    fmt.Printf("findMin1([]int{ 9,8,7,6,5,4,3,2,1 }) = %v\n",findMin1([]int{ 9,8,7,6,5,4,3,2,1 })) // 1
 
     fmt.Printf("findMin2([]int{ 3,4,5,1,2 }) = %v\n",findMin2([]int{ 3,4,5,1,2 })) // 1
     fmt.Printf("findMin2([]int{ 4,5,6,7,0,1,2 }) = %v\n",findMin2([]int{ 4,5,6,7,0,1,2 })) // 0
     fmt.Printf("findMin2([]int{ 11,13,15,17 }) = %v\n",findMin2([]int{ 11,13,15,17 })) // 11
+    fmt.Printf("findMin2([]int{ 1,2,3,4,5,6,7,8,9 }) = %v\n",findMin2([]int{ 1,2,3,4,5,6,7,8,9 })) // 1
+    fmt.Printf("findMin2([]int{ 9,8,7,6,5,4,3,2,1 }) = %v\n",findMin2([]int{ 9,8,7,6,5,4,3,2,1 })) // 1
 
-    fmt.Printf("findMinBest([]int{ 3,4,5,1,2 }) = %v\n",findMinBest([]int{ 3,4,5,1,2 })) // 1
-    fmt.Printf("findMinBest([]int{ 4,5,6,7,0,1,2 }) = %v\n",findMinBest([]int{ 4,5,6,7,0,1,2 })) // 0
-    fmt.Printf("findMinBest([]int{ 11,13,15,17 }) = %v\n",findMinBest([]int{ 11,13,15,17 })) // 11
+    fmt.Printf("findMin3([]int{ 3,4,5,1,2 }) = %v\n",findMin3([]int{ 3,4,5,1,2 })) // 1
+    fmt.Printf("findMin3([]int{ 4,5,6,7,0,1,2 }) = %v\n",findMin3([]int{ 4,5,6,7,0,1,2 })) // 0
+    fmt.Printf("findMin3([]int{ 11,13,15,17 }) = %v\n",findMin3([]int{ 11,13,15,17 })) // 11
+    fmt.Printf("findMin3([]int{ 1,2,3,4,5,6,7,8,9 }) = %v\n",findMin3([]int{ 1,2,3,4,5,6,7,8,9 })) // 1
+    fmt.Printf("findMin3([]int{ 9,8,7,6,5,4,3,2,1 }) = %v\n",findMin3([]int{ 9,8,7,6,5,4,3,2,1 })) // 1
 }
