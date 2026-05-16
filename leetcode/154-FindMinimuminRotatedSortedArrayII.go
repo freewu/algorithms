@@ -18,7 +18,6 @@ package main
 // Input: nums = [2,2,2,0,1]
 // Output: 0
  
-
 // Constraints:
 //     n == nums.length
 //     1 <= n <= 5000
@@ -78,12 +77,25 @@ func findMin2(nums []int) int {
 }
 
 func main() {
+    // Example 1:
+    // Input: nums = [1,3,5]
+    // Output: 1
     fmt.Printf("findMin([]int{ 1,3,5 }) = %v\n",findMin([]int{ 1,3,5 })) // 1
+    // Example 2:
+    // Input: nums = [2,2,2,0,1]
+    // Output: 0
     fmt.Printf("findMin([]int{ 2,2,2,0,1 }) = %v\n",findMin([]int{ 2,2,2,0,1 })) // 0
+
+    fmt.Printf("findMin([]int{ 1,2,3,4,5,6,7,8,9 }) = %v\n",findMin([]int{ 1,2,3,4,5,6,7,8,9 })) // 1
+    fmt.Printf("findMin([]int{ 9,8,7,6,5,4,3,2,1 }) = %v\n",findMin([]int{ 9,8,7,6,5,4,3,2,1 })) // 1
 
     fmt.Printf("findMin1([]int{ 1,3,5 }) = %v\n",findMin1([]int{ 1,3,5 })) // 1
     fmt.Printf("findMin1([]int{ 2,2,2,0,1 }) = %v\n",findMin1([]int{ 2,2,2,0,1 })) // 0
+    fmt.Printf("findMin1([]int{ 1,2,3,4,5,6,7,8,9 }) = %v\n",findMin1([]int{ 1,2,3,4,5,6,7,8,9 })) // 1
+    fmt.Printf("findMin1([]int{ 9,8,7,6,5,4,3,2,1 }) = %v\n",findMin1([]int{ 9,8,7,6,5,4,3,2,1 })) // 1
 
     fmt.Printf("findMin2([]int{ 1,3,5 }) = %v\n",findMin2([]int{ 1,3,5 })) // 1
     fmt.Printf("findMin2([]int{ 2,2,2,0,1 }) = %v\n",findMin2([]int{ 2,2,2,0,1 })) // 0
+    fmt.Printf("findMin2([]int{ 1,2,3,4,5,6,7,8,9 }) = %v\n",findMin2([]int{ 1,2,3,4,5,6,7,8,9 })) // 1
+    fmt.Printf("findMin2([]int{ 9,8,7,6,5,4,3,2,1 }) = %v\n",findMin2([]int{ 9,8,7,6,5,4,3,2,1 })) // 1
 }
