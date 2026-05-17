@@ -157,15 +157,24 @@ func main() {
     // Explanation: There is no way to reach at index 1 with value 0.
     fmt.Println(canReach([]int{3,0,2,1,2}, 0)) // false
 
+    fmt.Println(canReach([]int{1,2,3,4,5,6,7,8,9}, 2)) // false
+    fmt.Println(canReach([]int{9,8,7,6,5,4,3,2,1}, 2)) // false
+
     fmt.Println(canReach1([]int{4,2,3,0,3,1,2}, 5)) // true
     fmt.Println(canReach1([]int{4,2,3,0,3,1,2}, 0)) // true
     fmt.Println(canReach1([]int{3,0,2,1,2}, 0)) // false
+    fmt.Println(canReach1([]int{1,2,3,4,5,6,7,8,9}, 2)) // false
+    fmt.Println(canReach1([]int{9,8,7,6,5,4,3,2,1}, 2)) // false
 
     fmt.Println(canReach2([]int{4,2,3,0,3,1,2}, 5)) // true
     fmt.Println(canReach2([]int{4,2,3,0,3,1,2}, 0)) // true
     fmt.Println(canReach2([]int{3,0,2,1,2}, 0)) // false
+    fmt.Println(canReach2([]int{1,2,3,4,5,6,7,8,9}, 2)) // false
+    fmt.Println(canReach2([]int{9,8,7,6,5,4,3,2,1}, 2)) // false
 
     fmt.Println(canReach3([]int{4,2,3,0,3,1,2}, 5)) // true
     fmt.Println(canReach3([]int{4,2,3,0,3,1,2}, 0)) // true
     fmt.Println(canReach3([]int{3,0,2,1,2}, 0)) // false
+    fmt.Println(canReach3([]int{1,2,3,4,5,6,7,8,9}, 2)) // false
+    fmt.Println(canReach3([]int{9,8,7,6,5,4,3,2,1}, 2)) // false
 }
