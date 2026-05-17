@@ -3166,6 +3166,7 @@
 [3908. Valid Digit Number](./leetcode/3908-ValidDigitNumber.go)   
 [3916. Number of ZigZag Arrays III](./leetcode/3916-NumberOfZigZagArraysIII.go)   
 [3918. Sum of Primes Between Number and Its Reverse](./leetcode/3918-SumOfPrimesBetweenNumberAndItsReverse.go)   
+[3932. Count K-th Roots in a Range](./leetcode/3932-CountKthRootsInRange.go)   
 
 # Stack
 [225. Implement Stack using Queues](./leetcode/225-ImplementStackUsingQueues.go)   
