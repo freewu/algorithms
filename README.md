@@ -2712,6 +2712,7 @@
 [3906. Count Good Integers on a Grid Path](./leetcode/3906-CountGoodIntegersOnAGridPath.go)   
 [3913. Sort Vowels by Frequency](./leetcode/3913-SortVowelsByFrequency.go)   
 [3922. Minimum Flips to Make Binary String Coherent](./leetcode/3922-MinimumFlipsToMakeBinaryStringCoherent.go)   
+[3931. Check Adjacent Digit Differences](./leetcode/3931-CheckAdjacentDigitDifferences.go)   
 
 # Dynamic Programming
 [276. Paint Fence](./leetcode/276-PaintFence.go)   
