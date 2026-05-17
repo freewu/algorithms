@@ -38,9 +38,11 @@ func fixedPoint(arr []int) int {
 }
 
 func fixedPoint1(arr []int) int {
-    index := sort.Search(len(arr), func(i int) bool {return arr[i] >= i})
-    if index < len(arr) && arr[index] == index {
-        return index
+    i := sort.Search(len(arr), func(i int) bool {
+        return arr[i] >= i
+    })
+    if i < len(arr) && arr[i] == i {
+        return i
     }
     return -1
 }
@@ -62,7 +64,12 @@ func main() {
     // Explanation: There is no such i that arr[i] == i, thus the output is -1.
     fmt.Println(fixedPoint([]int{-10,-5,3,4,7,9})) // -1
 
+    fmt.Println(fixedPoint([]int{1,2,3,4,5,6,7,8,9})) // -1
+    fmt.Println(fixedPoint([]int{9,8,7,6,5,4,3,2,1})) // -1
+
     fmt.Println(fixedPoint1([]int{-10,-5,0,3,7})) // 3
     fmt.Println(fixedPoint1([]int{0,2,5,8,17})) // 0
     fmt.Println(fixedPoint1([]int{-10,-5,3,4,7,9})) // -1
+    fmt.Println(fixedPoint1([]int{1,2,3,4,5,6,7,8,9})) // -1
+    fmt.Println(fixedPoint1([]int{9,8,7,6,5,4,3,2,1})) // -1
 }
