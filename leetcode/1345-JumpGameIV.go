@@ -125,7 +125,12 @@ func main() {
     // Explanation: You can jump directly from index 0 to index 7 which is last index of the array.
     fmt.Println(minJumps([]int{7,6,9,6,9,6,9,7})) // 1
 
+    fmt.Println(minJumps([]int{1,2,3,4,5,6,7,8,9})) // 8
+    fmt.Println(minJumps([]int{9,8,7,6,5,4,3,2,1})) // 8
+
     fmt.Println(minJumps1([]int{100,-23,-23,404,100,23,23,23,3,404})) // 3
     fmt.Println(minJumps1([]int{7})) // 0
     fmt.Println(minJumps1([]int{7,6,9,6,9,6,9,7})) // 1
+    fmt.Println(minJumps1([]int{1,2,3,4,5,6,7,8,9})) // 8
+    fmt.Println(minJumps1([]int{9,8,7,6,5,4,3,2,1})) // 8
 }
