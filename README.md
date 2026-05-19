@@ -2046,6 +2046,7 @@
 [3930. Power Update After K-th Largest Insertion II](./leetcode/3930-PowerUpdateAfterKthLargestInsertionII.go)   
 [3933. Largest Local Values in a Matrix II](./leetcode/3933-LargestLocalValuesInAMatrixII.go)   
 [3934. Smallest Unique Subarray](./leetcode/3934-SmallestUniqueSubarray.go)   
+[3935. Power Update After K-th Largest Insertion I](./leetcode/3935-PowerUpdateAfterKthLargestInsertionI.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
