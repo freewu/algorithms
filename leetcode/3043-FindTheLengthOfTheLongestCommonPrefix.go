@@ -89,6 +89,48 @@ func longestCommonPrefix2(arr1 []int, arr2 []int) int {
     return res
 }
 
+type TrieNode [10]*TrieNode
+
+func (root *TrieNode) put(word string) {
+    node := root
+    for _, ch := range word {
+        ch -= '0'
+        if node[ch] == nil {
+            node[ch] = &TrieNode{}
+        }
+        node = node[ch]
+    }
+}
+
+func (root *TrieNode) lcs(word string) int {
+    size := 0
+    node := root
+    for _, ch := range word {
+        ch -= '0'
+        if node[ch] == nil {
+            return size
+        }
+        node = node[ch]
+        size++
+    }
+    return size
+}
+
+func longestCommonPrefix3(arr1 []int, arr2 []int) int {
+    root := &TrieNode{}
+    for _, val := range arr1 {
+        root.put(strconv.Itoa(val))
+    }
+    res := 0
+    for _, val := range arr2 {
+        str := strconv.Itoa(val)
+        if len(str) > res {
+            res = max(res, root.lcs(str))
+        }
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: arr1 = [1,10,100], arr2 = [1000]
@@ -106,9 +148,29 @@ func main() {
     // Note that common prefixes between elements of the same array do not count.
     fmt.Println(longestCommonPrefix([]int{1,2,3}, []int{4,4,4})) // 0
 
+    fmt.Println(longestCommonPrefix([]int{1,2,3,4,5,6,7,8,9}, []int{1,2,3,4,5,6,7,8,9})) // 1
+    fmt.Println(longestCommonPrefix([]int{1,2,3,4,5,6,7,8,9}, []int{9,8,7,6,5,4,3,2,1})) // 1
+    fmt.Println(longestCommonPrefix([]int{9,8,7,6,5,4,3,2,1}, []int{1,2,3,4,5,6,7,8,9})) // 1
+    fmt.Println(longestCommonPrefix([]int{9,8,7,6,5,4,3,2,1}, []int{9,8,7,6,5,4,3,2,1})) // 1
+
     fmt.Println(longestCommonPrefix1([]int{1,10,100}, []int{1000})) // 3
     fmt.Println(longestCommonPrefix1([]int{1,2,3}, []int{4,4,4})) // 0
+    fmt.Println(longestCommonPrefix1([]int{1,2,3,4,5,6,7,8,9}, []int{1,2,3,4,5,6,7,8,9})) // 1
+    fmt.Println(longestCommonPrefix1([]int{1,2,3,4,5,6,7,8,9}, []int{9,8,7,6,5,4,3,2,1})) // 1
+    fmt.Println(longestCommonPrefix1([]int{9,8,7,6,5,4,3,2,1}, []int{1,2,3,4,5,6,7,8,9})) // 1
+    fmt.Println(longestCommonPrefix1([]int{9,8,7,6,5,4,3,2,1}, []int{9,8,7,6,5,4,3,2,1})) // 1
 
     fmt.Println(longestCommonPrefix2([]int{1,10,100}, []int{1000})) // 3
     fmt.Println(longestCommonPrefix2([]int{1,2,3}, []int{4,4,4})) // 0
+    fmt.Println(longestCommonPrefix2([]int{1,2,3,4,5,6,7,8,9}, []int{1,2,3,4,5,6,7,8,9})) // 1
+    fmt.Println(longestCommonPrefix2([]int{1,2,3,4,5,6,7,8,9}, []int{9,8,7,6,5,4,3,2,1})) // 1
+    fmt.Println(longestCommonPrefix2([]int{9,8,7,6,5,4,3,2,1}, []int{1,2,3,4,5,6,7,8,9})) // 1
+    fmt.Println(longestCommonPrefix2([]int{9,8,7,6,5,4,3,2,1}, []int{9,8,7,6,5,4,3,2,1})) // 1
+
+    fmt.Println(longestCommonPrefix3([]int{1,10,100}, []int{1000})) // 3
+    fmt.Println(longestCommonPrefix3([]int{1,2,3}, []int{4,4,4})) // 0
+    fmt.Println(longestCommonPrefix3([]int{1,2,3,4,5,6,7,8,9}, []int{1,2,3,4,5,6,7,8,9})) // 1
+    fmt.Println(longestCommonPrefix3([]int{1,2,3,4,5,6,7,8,9}, []int{9,8,7,6,5,4,3,2,1})) // 1
+    fmt.Println(longestCommonPrefix3([]int{9,8,7,6,5,4,3,2,1}, []int{1,2,3,4,5,6,7,8,9})) // 1
+    fmt.Println(longestCommonPrefix3([]int{9,8,7,6,5,4,3,2,1}, []int{9,8,7,6,5,4,3,2,1})) // 1
 }
