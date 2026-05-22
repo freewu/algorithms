@@ -15,7 +15,7 @@
 [23. Merge k Sorted Lists](./leetcode/23-MergeKSortedLists.go)    
 [31. Next Permutation](./leetcode/31-NextPermutation.go)    
 [32. Longest Valid Parentheses](./leetcode/32-LongestValidParentheses.go)    
-[33. Search in Rotated Sorted Array](./leetcode/33-SearchfinRotatedSortedArray.go)    
+[33. Search in Rotated Sorted Array](./leetcode/33-SearchinRotatedSortedArray.go)    
 [34. Find First and Last Position of Element in Sorted Array](./leetcode/34-FindFirstandLastPositionofElementinSortedArray.go)    
 [39. Combination Sum](./leetcode/39-CombinationSum.go)   
 [42. Trapping Rain Water](./leetcode/42-TrappingRainWater.go)   

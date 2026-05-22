@@ -36,7 +36,7 @@ func search(nums []int, target int) int {
     if len(nums) == 0 {
         return -1
     }
-    low, high := 0, len(nums)-1
+    low, high := 0, len(nums) - 1
     for low <= high {
         mid := low + (high-low)>>1
         if nums[mid] == target {
@@ -125,15 +125,31 @@ func search2(nums []int, target int) int {
 }
 
 func main() {
+    // Example 1:
+    // Input: nums = [4,5,6,7,0,1,2], target = 0
+    // Output: 4
     fmt.Printf("search([]int{4,5,6,7,0,1,2},0)  = %v\n",search([]int{4,5,6,7,0,1,2},0)) // 4
+    // Example 2:
+    // Input: nums = [4,5,6,7,0,1,2], target = 3
+    // Output: -1
     fmt.Printf("search([]int{4,5,6,7,0,1,2},3)  = %v\n",search([]int{4,5,6,7,0,1,2},3)) // -1
+    // Example 3:
+    // Input: nums = [1], target = 0
+    // Output: -1
     fmt.Printf("search([]int{1},0)  = %v\n",search([]int{1},0)) // -1
+
+    fmt.Printf("search([]int{1,2,3,4,5,6,7,8,9},0)  = %v\n",search([]int{1,2,3,4,5,6,7,8,9}, 2)) // -1
+    fmt.Printf("search([]int{9,8,7,6,5,4,3,2,1},0)  = %v\n",search([]int{9,8,7,6,5,4,3,2,1}, 2)) // -1
     
-    fmt.Printf("search1([]int{4,5,6,7,0,1,2},0)  = %v\n",search1([]int{4,5,6,7,0,1,2},0)) //4
+    fmt.Printf("search1([]int{4,5,6,7,0,1,2},0)  = %v\n",search1([]int{4,5,6,7,0,1,2},0)) // 4
     fmt.Printf("search1([]int{4,5,6,7,0,1,2},3)  = %v\n",search1([]int{4,5,6,7,0,1,2},3)) // -1
     fmt.Printf("search1([]int{1},0)  = %v\n",search1([]int{1},0)) // -1
+    fmt.Printf("search1([]int{1,2,3,4,5,6,7,8,9},0)  = %v\n",search1([]int{1,2,3,4,5,6,7,8,9}, 2)) // -1
+    fmt.Printf("search1([]int{9,8,7,6,5,4,3,2,1},0)  = %v\n",search1([]int{9,8,7,6,5,4,3,2,1}, 2)) // -1
 
-    fmt.Printf("search2([]int{4,5,6,7,0,1,2},0)  = %v\n",search2([]int{4,5,6,7,0,1,2},0)) //4
+    fmt.Printf("search2([]int{4,5,6,7,0,1,2},0)  = %v\n",search2([]int{4,5,6,7,0,1,2},0)) // 4
     fmt.Printf("search2([]int{4,5,6,7,0,1,2},3)  = %v\n",search2([]int{4,5,6,7,0,1,2},3)) // -1
     fmt.Printf("search2([]int{1},0)  = %v\n",search2([]int{1},0)) // -1
+    fmt.Printf("search2([]int{1,2,3,4,5,6,7,8,9},0)  = %v\n",search2([]int{1,2,3,4,5,6,7,8,9}, 2)) // -1
+    fmt.Printf("search2([]int{9,8,7,6,5,4,3,2,1},0)  = %v\n",search2([]int{9,8,7,6,5,4,3,2,1}, 2)) // -1
 }
