@@ -48,6 +48,19 @@ func check(nums []int) bool {
     return true
 }
 
+func check1(nums []int) bool {
+    count := 0
+    for i := 0; i < len(nums) - 1; i++ {
+        if nums[i] > nums[i + 1] {
+            count++
+        }
+    }
+    if nums[0] < nums[len(nums) - 1] {
+        count++
+    }
+    return count <= 1
+}
+
 func main() {
     // Example 1:
     // Input: nums = [3,4,5,1,2]
@@ -66,4 +79,13 @@ func main() {
     // Explanation: [1,2,3] is the original sorted array.
     // You can rotate the array by x = 0 positions (i.e. no rotation) to make nums.
     fmt.Println(check([]int{1,2,3})) // true
+
+    fmt.Println(check([]int{1,2,3,4,5,6,7,8,9})) // true
+    fmt.Println(check([]int{9,8,7,6,5,4,3,2,1})) // false
+
+    fmt.Println(check1([]int{3,4,5,1,2})) // true
+    fmt.Println(check1([]int{2,1,3,4})) // false
+    fmt.Println(check1([]int{1,2,3})) // true
+    fmt.Println(check1([]int{1,2,3,4,5,6,7,8,9})) // true
+    fmt.Println(check1([]int{9,8,7,6,5,4,3,2,1})) // false
 }
