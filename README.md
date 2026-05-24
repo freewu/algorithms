@@ -2049,6 +2049,7 @@
 [3935. Power Update After K-th Largest Insertion I](./leetcode/3935-PowerUpdateAfterKthLargestInsertionI.go)   
 [3936. Minimum Swaps to Move Zeros to End](./leetcode/3936-MinimumSwapsToMoveZerosToEnd.go)   
 [3937. Minimum Operations to Make Array Modulo Alternating I](./leetcode/3937-MinimumOperationsToMakeArrayModuloAlternatingI.go)   
+[3938. Maximum Path Intersection Sum in a Grid](./leetcode/3938-MaximumPathIntersectionSumInAGrid.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
