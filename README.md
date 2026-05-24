@@ -2051,6 +2051,7 @@
 [3937. Minimum Operations to Make Array Modulo Alternating I](./leetcode/3937-MinimumOperationsToMakeArrayModuloAlternatingI.go)   
 [3938. Maximum Path Intersection Sum in a Grid](./leetcode/3938-MaximumPathIntersectionSumInAGrid.go)   
 
+
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
 [5. Longest Palindromic Substring](./leetcode/5-LongestPalindromicSubstring.go)    
@@ -3386,6 +3387,7 @@
 [3831. Median of a Binary Search Tree Level](./leetcode/3831-MedianOfABinarySearchTreeLevel.go)    
 [3879. Maximum Distinct Path Sum in a Binary Tree](./leetcode/3879-MaximumDistinctPathSumInABinaryTree.go)   
 [3902. Zigzag Level Sum of Binary Tree](./leetcode/3902-ZigzagLevelSumOfBinaryTree.go)   
+[3939. Count Non Adjacent Subsets in a Rooted Tree](./leetcode/3939-CountNonAdjacentSubsetsInARootedTree.go)   
    
 # Graph
 [133. Clone Graph](./leetcode/133-CloneGraph.go)   
