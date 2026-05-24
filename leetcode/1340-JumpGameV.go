@@ -127,6 +127,33 @@ func maxJumps2(arr []int, d int) int {
     return slices.Max(dp)
 }
 
+func maxJumps3(arr []int, d int) int {
+    GEN := 1 << 18
+    MASK := GEN - 1
+    res, n := 0, len(arr)
+    dp := make([]int, 1001)
+    var dfs func(int) int
+    dfs = func(i int) int {
+        if dp[i] >= GEN {
+            return dp[i] & MASK
+        }
+        jumps, end := 1, min(i + d, n - 1)
+        for j := i + 1; j <= end && arr[j] < arr[i]; j++ {
+            jumps = max(jumps, 1+dfs(j))
+        }
+        beg := max(0, i-d)
+        for j := i - 1; j >= beg && arr[j] < arr[i]; j-- {
+            jumps = max(jumps, 1+dfs(j))
+        }
+        dp[i] = jumps | GEN
+        return jumps
+    }
+    for i := range arr {
+        res = max(res, dfs(i))
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // <img src="https://assets.leetcode.com/uploads/2020/01/23/meta-chart.jpeg" />
@@ -147,11 +174,24 @@ func main() {
     // Explanation: Start at index 0. You can visit all the indicies. 
     fmt.Println(maxJumps([]int{7,6,5,4,3,2,1}, 1)) // 7
 
+    fmt.Println(maxJumps([]int{1,2,3,4,5,6,7,8,9}, 1)) // 9
+    fmt.Println(maxJumps([]int{9,8,7,6,5,4,3,2,1}, 1)) // 9
+
     fmt.Println(maxJumps1([]int{6,4,14,6,8,13,9,7,10,6,12}, 2)) // 4
     fmt.Println(maxJumps1([]int{3,3,3,3,3}, 3)) // 1
     fmt.Println(maxJumps1([]int{7,6,5,4,3,2,1}, 1)) // 7
+    fmt.Println(maxJumps1([]int{1,2,3,4,5,6,7,8,9}, 1)) // 9
+    fmt.Println(maxJumps1([]int{9,8,7,6,5,4,3,2,1}, 1)) // 9s
 
     fmt.Println(maxJumps2([]int{6,4,14,6,8,13,9,7,10,6,12}, 2)) // 4
     fmt.Println(maxJumps2([]int{3,3,3,3,3}, 3)) // 1
     fmt.Println(maxJumps2([]int{7,6,5,4,3,2,1}, 1)) // 7
+    fmt.Println(maxJumps2([]int{1,2,3,4,5,6,7,8,9}, 1)) // 9
+    fmt.Println(maxJumps2([]int{9,8,7,6,5,4,3,2,1}, 1)) // 9
+
+    fmt.Println(maxJumps3([]int{6,4,14,6,8,13,9,7,10,6,12}, 2)) // 4
+    fmt.Println(maxJumps3([]int{3,3,3,3,3}, 3)) // 1
+    fmt.Println(maxJumps3([]int{7,6,5,4,3,2,1}, 1)) // 7
+    fmt.Println(maxJumps3([]int{1,2,3,4,5,6,7,8,9}, 1)) // 9
+    fmt.Println(maxJumps3([]int{9,8,7,6,5,4,3,2,1}, 1)) // 9
 }
