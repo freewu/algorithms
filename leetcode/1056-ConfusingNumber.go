@@ -53,10 +53,35 @@ func confusingNumber(n int) bool {
 }
 
 func main() {
+    // Example 1:
+    // <img src="https://assets.leetcode.com/uploads/2019/03/23/1268_1.png" />
+    // Input: n = 6
+    // Output: true
     // Explanation: We get 9 after rotating 6, 9 is a valid number, and 9 != 6.
     fmt.Println(confusingNumber(6)) // true
+    // Example 2:
+    // <img src="https://assets.leetcode.com/uploads/2019/03/23/1268_2.png" />
+    // Input: n = 89
+    // Output: true
     // Explanation: We get 68 after rotating 89, 68 is a valid number and 68 != 89.
     fmt.Println(confusingNumber(98)) // true
+    // Example 3:
+    // <img src="https://assets.leetcode.com/uploads/2019/03/26/1268_3.png" />
+    // Input: n = 11
+    // Output: false
     // Explanation: We get 11 after rotating 11, 11 is a valid number but the value remains the same, thus 11 is not a confusing number
     fmt.Println(confusingNumber(11)) // false
+
+    fmt.Println(confusingNumber(1)) // false
+    fmt.Println(confusingNumber(2)) // false
+    fmt.Println(confusingNumber(4)) // false
+    fmt.Println(confusingNumber(8)) // true
+    fmt.Println(confusingNumber(99)) // true
+    fmt.Println(confusingNumber(100)) // true
+    fmt.Println(confusingNumber(999)) // true
+    fmt.Println(confusingNumber(1000)) // true
+    fmt.Println(confusingNumber(1001)) // false
+    fmt.Println(confusingNumber(1024)) // false
+    fmt.Println(confusingNumber(999_999_999)) // true
+    fmt.Println(confusingNumber(1_000_000_000)) // true
 }
