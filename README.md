@@ -2052,6 +2052,7 @@
 [3938. Maximum Path Intersection Sum in a Grid](./leetcode/3938-MaximumPathIntersectionSumInAGrid.go)   
 [3940. Limit Occurrences in Sorted Array](./leetcode/3940-LimitOccurrencesInSortedArray.go)   
 [3942. Minimum Operations to Sort a Permutation](./leetcode/3942-MinimumOperationsToSortAPermutation.go)   
+[3943. Number of Pairs After Increment](./leetcode/3943-NumberOfPairsAfterIncrement.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
