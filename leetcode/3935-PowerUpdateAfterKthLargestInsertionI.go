@@ -40,7 +40,10 @@ package main
 //     |ki - ki - 1| < 10 for i > 0
 
 import "fmt"
+import "sort"
+import "slices"
 
+// 超出时间限制 992 / 1000 个通过的测试用例
 func powerUpdate(nums []int, p int, queries [][]int) []int {
     const MOD = 1_000_000_007
     // Pair { 数值, 唯一索引 }
@@ -98,6 +101,81 @@ func powerUpdate(nums []int, p int, queries [][]int) []int {
     return res
 }
 
+type BinaryIndexedTree []int
+
+func (t BinaryIndexedTree) Add(index, inc int) {
+    n := len(t)
+    for i := max(1, index); i < n; i += i & -i {
+        t[i] += inc
+    }
+}
+
+func (t BinaryIndexedTree) Pre(index int) int {
+    s := 0
+    for i := min(len(t) - 1, index); i > 0; i -= i & -i {
+        s += t[i]
+    }
+    return s
+}
+
+func (t BinaryIndexedTree) Sum(l, r int) int {
+    if l > r {
+        return 0
+    }
+    return t.Pre(r) - t.Pre(l - 1)
+}
+
+func powerUpdate1(nums []int, p int, queries [][]int) []int {
+    const MOD = 1_000_000_007
+    pow := func (x, y int) int {
+        p := 1
+        for y > 0 {
+            if y & 1 == 1 {
+                p = p * x % MOD
+            }
+            x = x * x % MOD
+            y >>= 1
+        }
+        return p
+    }
+    disperse := func(nums []int) (map[int]int, []int) {
+        i2v := slices.Clone(nums)
+        slices.Sort(i2v)
+        slices.Compact(i2v)
+        v2i := make(map[int]int)
+        i := 0
+        for _, num := range i2v {
+            i++
+            v2i[num] = i
+        }
+        return v2i, i2v
+    }
+    arr := slices.Clone(nums)
+    for _, q := range queries {
+        arr = append(arr, q[0])
+    }
+    v2i, i2v := disperse(arr)
+    t := make(BinaryIndexedTree, len(v2i) + 1)
+    for _, num := range nums {
+        t.Add(v2i[num], 1)
+    }
+    res := make([]int, 0, len(queries))
+    total := len(nums)
+    for _, q := range queries {
+        val, k := q[0], q[1]
+        t.Add(v2i[val], 1)
+        total++
+        right := total - k + 1
+        i := sort.Search(len(v2i), func (a int) bool {
+            a++
+            return t.Pre(a) >= right
+        })
+        p = pow(p, i2v[i])
+        res = append(res, p)
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: nums = [2], p = 4, queries = [[3,1],[1,2]]
@@ -117,4 +195,7 @@ func main() {
     // 1	| 7     | [7, 5, 4, 7]	|  2 | 7            | 1296   | 12967 % (10^9 + 7) = 220296870
     // Thus, ans = [1296, 220296870]
     fmt.Println(powerUpdate([]int{7,5}, 6, [][]int{{4,3},{7,2}})) // [1296,220296870]
+
+    fmt.Println(powerUpdate1([]int{2}, 4, [][]int{{3,1},{1,2}})) // [64,4096]
+    fmt.Println(powerUpdate1([]int{7,5}, 6, [][]int{{4,3},{7,2}})) // [1296,220296870]
 }
