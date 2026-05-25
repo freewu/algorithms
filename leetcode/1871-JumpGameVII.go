@@ -81,6 +81,27 @@ func canReach2(s string, minJump, maxJump int) bool {
     return dp[n-1]
 }
 
+func canReach3(s string, minJump int, maxJump int) bool {
+    count, n := 0, len(s)
+    if s[n-1] == '1' {
+        return false
+    }
+    reachable := make([]bool, n)
+    reachable[0] = true
+    for i := 0; i < n; i++ {
+        if i >= minJump && reachable[i-minJump] {
+            count++
+        }
+        if i > maxJump && reachable[i-maxJump-1] {
+            count--
+        }
+        if count > 0 && s[i] == '0' {
+            reachable[i] = true
+        }
+    }
+    return reachable[n - 1]
+}
+
 func main() {
     // Example 1:
     // Input: s = "011010", minJump = 2, maxJump = 3
@@ -118,4 +139,13 @@ func main() {
     fmt.Println(canReach2("1111100000", 2, 3)) // false
     fmt.Println(canReach2("0101010101", 2, 3)) // false
     fmt.Println(canReach2("1010101010", 2, 3)) // true
+
+    fmt.Println(canReach3("011010", 2, 3)) // true
+    fmt.Println(canReach3("01101110", 2, 3)) // false
+    fmt.Println(canReach3("0000000000", 2, 3)) // true
+    fmt.Println(canReach3("1111111111", 2, 3)) // false
+    fmt.Println(canReach3("0000011111", 2, 3)) // false
+    fmt.Println(canReach3("1111100000", 2, 3)) // false
+    fmt.Println(canReach3("0101010101", 2, 3)) // false
+    fmt.Println(canReach3("1010101010", 2, 3)) // true
 }
