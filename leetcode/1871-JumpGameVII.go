@@ -94,9 +94,28 @@ func main() {
     // Output: false
     fmt.Println(canReach("01101110", 2, 3)) // false
 
+    fmt.Println(canReach("0000000000", 2, 3)) // true
+    fmt.Println(canReach("1111111111", 2, 3)) // false
+    fmt.Println(canReach("0000011111", 2, 3)) // false
+    fmt.Println(canReach("1111100000", 2, 3)) // false
+    fmt.Println(canReach("0101010101", 2, 3)) // false
+    fmt.Println(canReach("1010101010", 2, 3)) // true
+
     fmt.Println(canReach1("011010", 2, 3)) // true
     fmt.Println(canReach1("01101110", 2, 3)) // false
+    fmt.Println(canReach1("0000000000", 2, 3)) // true
+    fmt.Println(canReach1("1111111111", 2, 3)) // false
+    fmt.Println(canReach1("0000011111", 2, 3)) // false
+    fmt.Println(canReach1("1111100000", 2, 3)) // false
+    fmt.Println(canReach1("0101010101", 2, 3)) // false
+    fmt.Println(canReach1("1010101010", 2, 3)) // true
 
     fmt.Println(canReach2("011010", 2, 3)) // true
     fmt.Println(canReach2("01101110", 2, 3)) // false
+    fmt.Println(canReach2("0000000000", 2, 3)) // true
+    fmt.Println(canReach2("1111111111", 2, 3)) // false
+    fmt.Println(canReach2("0000011111", 2, 3)) // false
+    fmt.Println(canReach2("1111100000", 2, 3)) // false
+    fmt.Println(canReach2("0101010101", 2, 3)) // false
+    fmt.Println(canReach2("1010101010", 2, 3)) // true
 }
