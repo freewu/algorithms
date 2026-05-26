@@ -80,7 +80,14 @@ func main() {
     // The only special character in word is 'b'.
     fmt.Println(numberOfSpecialChars("abBCab")) // 1
 
+    fmt.Println(numberOfSpecialChars("bluefrog")) // 0
+    fmt.Println(numberOfSpecialChars("leetcode")) // 0
+    fmt.Println(numberOfSpecialChars("freewu")) // 0
+
     fmt.Println(numberOfSpecialChars1("aaAbcBC")) // 3
     fmt.Println(numberOfSpecialChars1("abc")) // 0
     fmt.Println(numberOfSpecialChars1("abBCab")) // 1
+    fmt.Println(numberOfSpecialChars1("bluefrog")) // 0
+    fmt.Println(numberOfSpecialChars1("leetcode")) // 0
+    fmt.Println(numberOfSpecialChars1("freewu")) // 0
 }
