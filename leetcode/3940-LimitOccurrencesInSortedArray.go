@@ -40,6 +40,21 @@ func limitOccurrences(nums []int, k int) []int {
     return res
 }
 
+func limitOccurrences1(nums []int, k int) []int {
+    res, count := []int{}, 0
+    for i, v := range nums {
+        if i == 0 || v != nums[i-1] {
+            count = 1
+        } else {
+            count++
+        }
+        if count <= k {
+            res = append(res, v)
+        }
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: nums = [1,1,1,2,2,3], k = 2
@@ -60,4 +75,9 @@ func main() {
 
     fmt.Println(limitOccurrences([]int{1,2,3,4,5,6,7,8,9}, 2)) // [1,2,3,4,5,6,7,8,9]
     fmt.Println(limitOccurrences([]int{9,8,7,6,5,4,3,2,1}, 2)) // [9,8,7,6,5,4,3,2,1]
+
+    fmt.Println(limitOccurrences1([]int{1,1,1,2,2,3}, 2)) // [1,1,2,2,3]
+    fmt.Println(limitOccurrences1([]int{1,2,3}, 1)) // [1,2,3]
+    fmt.Println(limitOccurrences1([]int{1,2,3,4,5,6,7,8,9}, 2)) // [1,2,3,4,5,6,7,8,9]
+    fmt.Println(limitOccurrences1([]int{9,8,7,6,5,4,3,2,1}, 2)) // [9,8,7,6,5,4,3,2,1]
 }
