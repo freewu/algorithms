@@ -74,6 +74,35 @@ func minOperations(nums []int) int {
     return res
 }
 
+func minOperations1(nums []int) int {
+    res, zero, n := 1 << 61, 0, len(nums)
+    for i, v := range nums {
+        if v == 0 {
+            zero = i
+            break
+        }
+    }
+    check := func(step int) bool {
+        for i := 1; i < n; i++ {
+            prev, curr := (zero + (i - 1) * step + n) % n, (zero + i * step + n) % n
+            if nums[prev] > nums[curr] {
+                return false
+            }
+        }
+        return true
+    }
+    if check(1) {
+        res = min(res, min(zero, n - zero + 2))
+    }
+    if check(-1) {
+        res = min(res, min(zero + 2, n - zero))
+    }
+    if res == 1 << 61 {
+        return -1
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: nums = [0,2,1]
@@ -98,6 +127,12 @@ func main() {
     // It is impossible to reach [2, 0, 1, 3]. Thus, the answer is -1. 
     fmt.Println(minOperations([]int{2,0,1,3})) // -1
 
-    fmt.Println(minOperations([]int{1,2,3,4,5,6,7,8,9})) // 0
-    fmt.Println(minOperations([]int{9,8,7,6,5,4,3,2,1})) // 1
+    fmt.Println(minOperations([]int{0,1,2,3,4,5,6,7,8,9})) // 0
+    fmt.Println(minOperations([]int{9,8,7,6,5,4,3,2,1,0})) // 1
+
+    fmt.Println(minOperations1([]int{0,2,1})) // 2
+    fmt.Println(minOperations1([]int{1,0,2})) // 2
+    fmt.Println(minOperations1([]int{2,0,1,3})) // -1
+    fmt.Println(minOperations1([]int{0,1,2,3,4,5,6,7,8,9})) // 0
+    fmt.Println(minOperations1([]int{9,8,7,6,5,4,3,2,1,0})) // 1
 }
