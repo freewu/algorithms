@@ -2053,6 +2053,7 @@
 [3940. Limit Occurrences in Sorted Array](./leetcode/3940-LimitOccurrencesInSortedArray.go)   
 [3942. Minimum Operations to Sort a Permutation](./leetcode/3942-MinimumOperationsToSortAPermutation.go)   
 [3943. Number of Pairs After Increment](./leetcode/3943-NumberOfPairsAfterIncrement.go)   
+[3944. Minimum Operations to Make Array Modulo Alternating II](./leetcode/3944-MinimumOperationsToMakeArrayModuloAlternatingII.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
