@@ -130,19 +130,31 @@ func main() {
     fmt.Println(numberOfSpecialChars("AbBCab")) // 0
 
     fmt.Println(numberOfSpecialChars("cCceDC")) // 0
+    fmt.Println(numberOfSpecialChars("bluefrog")) // 0
+    fmt.Println(numberOfSpecialChars("leetcode")) // 0
+    fmt.Println(numberOfSpecialChars("freewu")) // 0
 
     fmt.Println(numberOfSpecialChars1("aaAbcBC")) // 3
     fmt.Println(numberOfSpecialChars1("abc")) // 0
     fmt.Println(numberOfSpecialChars1("AbBCab")) // 0
     fmt.Println(numberOfSpecialChars1("cCceDC")) // 0
+    fmt.Println(numberOfSpecialChars1("bluefrog")) // 0
+    fmt.Println(numberOfSpecialChars1("leetcode")) // 0
+    fmt.Println(numberOfSpecialChars1("freewu")) // 0
 
     fmt.Println(numberOfSpecialChars2("aaAbcBC")) // 3
     fmt.Println(numberOfSpecialChars2("abc")) // 0
     fmt.Println(numberOfSpecialChars2("AbBCab")) // 0
     fmt.Println(numberOfSpecialChars2("cCceDC")) // 0
+    fmt.Println(numberOfSpecialChars2("bluefrog")) // 0
+    fmt.Println(numberOfSpecialChars2("leetcode")) // 0
+    fmt.Println(numberOfSpecialChars2("freewu")) // 0
 
     fmt.Println(numberOfSpecialChars3("aaAbcBC")) // 3
     fmt.Println(numberOfSpecialChars3("abc")) // 0
     fmt.Println(numberOfSpecialChars3("AbBCab")) // 0
     fmt.Println(numberOfSpecialChars3("cCceDC")) // 0
+    fmt.Println(numberOfSpecialChars3("bluefrog")) // 0
+    fmt.Println(numberOfSpecialChars3("leetcode")) // 0
+    fmt.Println(numberOfSpecialChars3("freewu")) // 0
 }
