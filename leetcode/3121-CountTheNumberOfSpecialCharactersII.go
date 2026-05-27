@@ -109,6 +109,28 @@ func numberOfSpecialChars3(word string) int {
     return bits.OnesCount(lower & upper &^ invalid)
 }
 
+func numberOfSpecialChars4(word string) int {
+    res, lastLow, firstUp := 0, make([]int, 26), make([]int, 26)  
+    for i := range lastLow { // fill -1
+        lastLow[i], firstUp[i] = -1, -1
+    }
+    for i, c := range word {
+        if c >= 'a' && c <= 'z' {
+            lastLow[c-'a'] = i
+        } else {
+            if firstUp[c-'A'] == -1 {
+                firstUp[c-'A'] = i
+            }
+        }
+    }
+    for i := 0; i < 26; i++ {
+        if lastLow[i] != -1 && firstUp[i] != -1 && lastLow[i] < firstUp[i] {
+            res++
+        }
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: word = "aaAbcBC"
@@ -157,4 +179,12 @@ func main() {
     fmt.Println(numberOfSpecialChars3("bluefrog")) // 0
     fmt.Println(numberOfSpecialChars3("leetcode")) // 0
     fmt.Println(numberOfSpecialChars3("freewu")) // 0
+
+    fmt.Println(numberOfSpecialChars4("aaAbcBC")) // 3
+    fmt.Println(numberOfSpecialChars4("abc")) // 0
+    fmt.Println(numberOfSpecialChars4("AbBCab")) // 0
+    fmt.Println(numberOfSpecialChars4("cCceDC")) // 0
+    fmt.Println(numberOfSpecialChars4("bluefrog")) // 0
+    fmt.Println(numberOfSpecialChars4("leetcode")) // 0
+    fmt.Println(numberOfSpecialChars4("freewu")) // 0
 }
