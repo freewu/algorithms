@@ -139,6 +139,56 @@ func stringIndices1(wordsContainer []string, wordsQuery []string) []int {
     return res
 }
 
+// Time Limit Exceeded 287 / 817 testcases passed
+func stringIndices2(wordsContainer []string, wordsQuery []string) []int {
+    const MX = 500_000
+    const INF = 1 << 61
+    type Node struct {
+        ch     [26]int
+        minlen int
+        index    int
+    }
+    trie := make([]Node, MX)
+    total := 0
+    newNode := func () int {
+        total++
+        trie[total] = Node{minlen: INF}
+        return total
+    }
+    trie[0] = Node{minlen: INF}
+    for i, w := range wordsContainer {
+        p, n := 0, len(w)
+        if n < trie[p].minlen {
+            trie[p].minlen = n
+            trie[p].index = i
+        }
+        for j := len(w) - 1; j >= 0; j-- {
+            c := w[j] - 'a'
+            if trie[p].ch[c] == 0 {
+                trie[p].ch[c] = newNode()
+            }
+            p = trie[p].ch[c]
+            if n < trie[p].minlen {
+                trie[p].minlen = n
+                trie[p].index = i
+            }
+        }
+    }
+    res := make([]int, len(wordsQuery))
+    for i, q := range wordsQuery {
+        p := 0
+        for j := len(q) - 1; j >= 0; j-- {
+            next := trie[p].ch[q[j]-'a']
+            if next == 0 {
+                break
+            }
+            p = next
+        }
+        res[i] = trie[p].index
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: wordsContainer = ["abcd","bcd","xbcd"], wordsQuery = ["cd","bcd","xyz"]
@@ -161,4 +211,7 @@ func main() {
 
     fmt.Println(stringIndices1([]string{"abcd","bcd","xbcd"}, []string{"cd","bcd","xyz"})) // [1,1,1]
     fmt.Println(stringIndices1([]string{"abcdefgh","poiuygh","ghghgh"}, []string{"gh","acbfgh","acbfegh"})) // [2,0,2]
+
+    fmt.Println(stringIndices2([]string{"abcd","bcd","xbcd"}, []string{"cd","bcd","xyz"})) // [1,1,1]
+    fmt.Println(stringIndices2([]string{"abcdefgh","poiuygh","ghghgh"}, []string{"gh","acbfgh","acbfegh"})) // [2,0,2]
 }
