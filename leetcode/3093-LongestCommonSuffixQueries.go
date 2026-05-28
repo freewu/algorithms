@@ -90,6 +90,55 @@ func stringIndices(wordsContainer []string, wordsQuery []string) []int {
     return res
 }
 
+type TrieNode struct {
+    index int
+    children [26]*TrieNode
+}
+
+func (root *TrieNode) put(words []string, index int) {
+    node := root
+    word := words[index]
+    n := len(word)
+    for i := n - 1; i >= 0; i-- {
+        ch := word[i] - 'a'
+        if node.children[ch] == nil {
+            node.children[ch] = &TrieNode{index: -1}
+        }
+        node = node.children[ch]
+        if node.index < 0 || len(words[index]) < len(words[node.index]) {
+            node.index = index
+        }
+    }
+}
+
+func (root *TrieNode) search(word string) int {
+    node := root
+    for i := len(word) - 1; i >= 0; i-- {
+        ch := word[i] - 'a'
+        if node.children[ch] == nil {
+            return node.index
+        }
+        node = node.children[ch]
+    }
+    return node.index
+}
+
+func stringIndices1(wordsContainer []string, wordsQuery []string) []int {
+    index, root := 0, &TrieNode{index: -1}
+    for i, word := range wordsContainer {
+        if len(word) < len(wordsContainer[index]) {
+            index = i
+        }
+        root.put(wordsContainer, i)
+    }
+    root.index = index
+    res := make([]int, 0, len(wordsQuery))
+    for _, q := range wordsQuery {
+        res = append(res, root.search(q))
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: wordsContainer = ["abcd","bcd","xbcd"], wordsQuery = ["cd","bcd","xyz"]
@@ -109,4 +158,7 @@ func main() {
     // For wordsQuery[1] = "acbfgh", only the string at index 0 shares the longest common suffix "fgh". Hence it is the answer, even though the string at index 2 is shorter.
     // For wordsQuery[2] = "acbfegh", strings from wordsContainer that share the longest common suffix "gh" are at indices 0, 1, and 2. Among these, the answer is the string at index 2 because it has the shortest length of 6.
     fmt.Println(stringIndices([]string{"abcdefgh","poiuygh","ghghgh"}, []string{"gh","acbfgh","acbfegh"})) // [2,0,2]
+
+    fmt.Println(stringIndices1([]string{"abcd","bcd","xbcd"}, []string{"cd","bcd","xyz"})) // [1,1,1]
+    fmt.Println(stringIndices1([]string{"abcdefgh","poiuygh","ghghgh"}, []string{"gh","acbfgh","acbfegh"})) // [2,0,2]
 }
