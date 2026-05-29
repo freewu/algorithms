@@ -47,6 +47,18 @@ func minElement(nums []int) int {
     return res
 }
 
+func minElement1(nums []int) int {
+    res := 1 << 31
+    for _, v := range nums {
+        sum := 0
+        for ;v > 0; v /= 10 {
+            sum += v % 10
+        }
+        res = min(res, sum)
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: nums = [10,12,13,14]
@@ -66,4 +78,13 @@ func main() {
     // Explanation:
     // nums becomes [27, 10, 19] after all replacements, with minimum element 10.
     fmt.Println(minElement([]int{999,19,199})) // 10
+
+    fmt.Println(minElement([]int{1,2,3,4,5,6,7,8,9})) // 1
+    fmt.Println(minElement([]int{9,8,7,6,5,4,3,2,1})) // 1
+
+    fmt.Println(minElement([]int{10,12,13,14})) // 1
+    fmt.Println(minElement([]int{1,2,3,4})) // 1
+    fmt.Println(minElement([]int{999,19,199})) // 10
+    fmt.Println(minElement([]int{1,2,3,4,5,6,7,8,9})) // 1
+    fmt.Println(minElement([]int{9,8,7,6,5,4,3,2,1})) // 1
 }
