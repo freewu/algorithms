@@ -39,8 +39,7 @@ package main
 
 import "fmt"
 import "slices"
-
-// func max(x, y int) int { if x > y { return x; }; return y; }
+import "math/bits"
 
 // type Segment []int
 
@@ -164,6 +163,87 @@ func getResults(queries [][]int) []bool {
     return res
 }
 
+func getResults1(queries [][]int) []bool {
+    mx := 0
+    for _, q := range queries {
+        if q[1] > mx {
+            mx = q[1]
+        }
+    }
+    n := mx + 1
+    seg, bit := make([]int, 2 * n), make([]int, n + 1)
+    totalObs := 0
+    logN := bits.Len(uint(n))
+    bitAdd := func(pos int) {
+        for i := pos + 1; i <= n; i += i & (-i) {
+            bit[i]++
+        }
+        totalObs++
+    }
+    bitSum := func(pos int) int {
+        s := 0
+        for i := pos + 1; i > 0; i -= i & (-i) {
+            s += bit[i]
+        }
+        return s
+    }
+    bitKth := func(k int) int {
+        pos := 0
+        for bm := 1 << (logN - 1); bm > 0; bm >>= 1 {
+            if pos+bm <= n && bit[pos+bm] < k {
+                pos += bm
+                k -= bit[pos]
+            }
+        }
+        return pos
+    }
+    segSet := func(pos, val int) {
+        pos += n
+        seg[pos] = val
+        for pos >>= 1; pos > 0; pos >>= 1 {
+            seg[pos] = max(seg[2*pos], seg[2*pos+1])
+        }
+    }
+    segMax := func(l, r int) int {
+        res := 0
+        for l, r = l+n, r+n+1; l < r; l, r = l>>1, r>>1 {
+            if l&1 == 1 {
+                res = max(res, seg[l])
+                l++
+            }
+            if r&1 == 1 {
+                r--
+                res = max(res, seg[r])
+            }
+        }
+        return res
+    }
+    bitAdd(0)
+    res := make([]bool, 0, len(queries))
+    for _, q := range queries {
+        if q[0] == 1 {
+            x := q[1]
+            count := bitSum(x - 1)
+            prev := bitKth(count)
+            hasNext := count < totalObs
+            var next int
+            if hasNext {
+                next = bitKth(count + 1)
+            }
+            bitAdd(x)
+            segSet(x, x-prev)
+            if hasNext {
+                segSet(next, next-x)
+            }
+        } else {
+            x, sz := q[1], q[2]
+            last := bitKth(bitSum(x))
+            res = append(res, max(x - last, segMax(0, x)) >= sz)
+        }
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: queries = [[1,2],[2,3,3],[2,3,1],[2,2,2]]
@@ -180,4 +260,7 @@ func main() {
     // Place an obstacle at x = 7 for query 0. A block of size at most 7 can be placed before x = 7.
     // Place an obstacle at x = 2 for query 2. Now, a block of size at most 5 can be placed before x = 7, and a block of size at most 2 before x = 2.
     fmt.Println(getResults([][]int{{1,7},{2,7,6},{1,2},{2,7,5},{2,7,6}})) // [true,true,false]
+
+    fmt.Println(getResults1([][]int{{1,2},{2,3,3},{2,3,1},{2,2,2}})) // [false,true,true]
+    fmt.Println(getResults1([][]int{{1,7},{2,7,6},{1,2},{2,7,5},{2,7,6}})) // [true,true,false]
 }
