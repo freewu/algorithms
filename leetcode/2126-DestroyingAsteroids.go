@@ -36,6 +36,8 @@ package main
 
 import "fmt"
 import "sort"
+import "math/bits"
+import "slices"
 
 func asteroidsDestroyed(mass int, asteroids []int) bool {
     sort.Ints(asteroids)
@@ -44,6 +46,27 @@ func asteroidsDestroyed(mass int, asteroids []int) bool {
             return false
         }
         mass += asteroid
+    }
+    return true
+}
+
+func asteroidsDestroyed1(mass int, asteroids []int) bool {
+    maxWidth := bits.Len(uint(slices.Max(asteroids)))
+    sum, mn := make([]int, maxWidth), make([]int, maxWidth)
+    for i := range mn {
+        mn[i] = 1 << 61
+    }
+    for _, x := range asteroids {
+        i := bits.Len(uint(x)) - 1
+        sum[i] += x
+        mn[i] = min(mn[i], x)
+    }
+    for i, v := range mn {
+        if v == 1 << 61 { continue }
+        if mass < v { // 无法摧毁这组的任意小行星
+            return false
+        }
+        mass += sum[i] // 获得这组小行星的质量
     }
     return true
 }
@@ -68,4 +91,12 @@ func main() {
     // After the planet destroys the other asteroids, it will have a mass of 5 + 4 + 9 + 4 = 22.
     // This is less than 23, so a collision would not destroy the last asteroid.
     fmt.Println(asteroidsDestroyed(5, []int{4,9,23,4})) // false
+
+    fmt.Println(asteroidsDestroyed(5, []int{1,2,3,4,5,6,7,8,9})) // true
+    fmt.Println(asteroidsDestroyed(5, []int{9,8,7,6,5,4,3,2,1})) // true
+
+    fmt.Println(asteroidsDestroyed1(10, []int{3,9,19,5,21})) // true
+    fmt.Println(asteroidsDestroyed1(5, []int{4,9,23,4})) // false
+    fmt.Println(asteroidsDestroyed1(5, []int{1,2,3,4,5,6,7,8,9})) // true
+    fmt.Println(asteroidsDestroyed1(5, []int{9,8,7,6,5,4,3,2,1})) // true
 }
