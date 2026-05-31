@@ -2055,6 +2055,7 @@
 [3943. Number of Pairs After Increment](./leetcode/3943-NumberOfPairsAfterIncrement.go)   
 [3944. Minimum Operations to Make Array Modulo Alternating II](./leetcode/3944-MinimumOperationsToMakeArrayModuloAlternatingII.go)   
 [3946. Maximum Number of Items From Sale I](./leetcode/3946-MaximumNumberofItemsFromSaleI.go)   
+[3947. Maximum Number of Items From Sale II](./leetcode/3947-MaximumNumberofItemsFromSaleII.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
