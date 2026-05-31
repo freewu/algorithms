@@ -84,4 +84,19 @@ func main() {
     // Output: 19
     // Explanation: The confusing numbers are [6,9,10,16,18,19,60,61,66,68,80,81,86,89,90,91,98,99,100].
     fmt.Println(confusingNumberII(100)) // 19
+
+    //  1 <= n <= 10^9
+    fmt.Println(confusingNumberII(1)) // 0
+    fmt.Println(confusingNumberII(2)) // 0
+    fmt.Println(confusingNumberII(3)) // 0
+    fmt.Println(confusingNumberII(8)) // 1
+    fmt.Println(confusingNumberII(64)) // 8
+    fmt.Println(confusingNumberII(99)) // 18
+    fmt.Println(confusingNumberII(100)) // 19
+    fmt.Println(confusingNumberII(101)) // 19
+    fmt.Println(confusingNumberII(999)) // 106
+    fmt.Println(confusingNumberII(1000)) // 107
+    fmt.Println(confusingNumberII(1024)) // 115
+    fmt.Println(confusingNumberII(999_999_999)) // 1950626
+    fmt.Println(confusingNumberII(1_000_000_000)) // 1950627
 }
