@@ -97,7 +97,12 @@ func main() {
     // Hence, the minimum cost to buy all candies is 5 + 5 = 10.
     fmt.Println(minimumCost([]int{5,5})) // 10
 
+    fmt.Println(minimumCost([]int{1,2,3,4,5,6,7,8,9})) // 33
+    fmt.Println(minimumCost([]int{9,8,7,6,5,4,3,2,1})) // 33
+
     fmt.Println(minimumCost1([]int{1,2,3})) // 5
     fmt.Println(minimumCost1([]int{6,5,7,9,2,2})) // 23
     fmt.Println(minimumCost1([]int{5,5})) // 10
+    fmt.Println(minimumCost1([]int{1,2,3,4,5,6,7,8,9})) // 33
+    fmt.Println(minimumCost1([]int{9,8,7,6,5,4,3,2,1})) // 33
 }
