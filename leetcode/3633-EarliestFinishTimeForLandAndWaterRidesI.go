@@ -79,6 +79,29 @@ func earliestFinishTime(landStartTime []int, landDuration []int, waterStartTime 
     return res
 }
 
+func earliestFinishTime1(landStartTime []int, landDuration []int, waterStartTime []int, waterDuration []int) int {
+    res, land, water := 1 << 61, 1 << 61, 1 << 61
+    for i := 0; i < len(landStartTime); i++ {
+        land = min(land, landStartTime[i] + landDuration[i])
+    }
+    for i := 0; i < len(waterStartTime); i++ {
+        water = min(water, waterStartTime[i]+waterDuration[i])
+        if waterStartTime[i] <= land {
+            res = min(res, land+waterDuration[i])
+        } else {
+            res = min(res, waterStartTime[i]+waterDuration[i])
+        }
+    }
+    for i := 0; i < len(landStartTime); i++ {
+        if landStartTime[i] <= water {
+            res = min(res, water + landDuration[i])
+        } else {
+            res = min(res, landStartTime[i] + landDuration[i])
+        }
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: landStartTime = [2,8], landDuration = [4,1], waterStartTime = [6], waterDuration = [3]
@@ -110,4 +133,7 @@ func main() {
     // Water ride 0 opened at waterStartTime[0] = 1. Start immediately at 8 and finish at 8 + waterDuration[0] = 18.
     // Plan A provides the earliest finish time of 14.​​​​​​​
     fmt.Println(earliestFinishTime([]int{5},[]int{3},[]int{1},[]int{10})) // 14
+
+    fmt.Println(earliestFinishTime1([]int{2,8},[]int{4,1},[]int{6},[]int{3})) // 9
+    fmt.Println(earliestFinishTime1([]int{5},[]int{3},[]int{1},[]int{10})) // 14
 }
