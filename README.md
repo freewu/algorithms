@@ -3396,7 +3396,8 @@
 [3879. Maximum Distinct Path Sum in a Binary Tree](./leetcode/3879-MaximumDistinctPathSumInABinaryTree.go)   
 [3902. Zigzag Level Sum of Binary Tree](./leetcode/3902-ZigzagLevelSumOfBinaryTree.go)   
 [3939. Count Non Adjacent Subsets in a Rooted Tree](./leetcode/3939-CountNonAdjacentSubsetsInARootedTree.go)   
-   
+[3949. Subtree Inversion Sum II](./leetcode/3949-SubtreeInversionSumII.go)  
+
 # Graph
 [133. Clone Graph](./leetcode/133-CloneGraph.go)   
 [210. Course Schedule II](./leetcode/210-CourseScheduleII.go)   
@@ -3539,7 +3540,7 @@
 [3841. Palindromic Path Queries in a Tree](./leetcode/3841-PalindromicPathQueriesInATree.go)   
 [3887. Incremental Even-Weighted Cycle Queries](./leetcode/3887-IncrementalEvenWeightedCycleQueries.go)   
 [3924. Minimum Threshold Path With Limited Heavy Edges](./leetcode/3924-MinimumThresholdPathWithLimitedHeavyEdges.go)   
-[3928. Minimum Cost to Buy Apples II](./leetcode/3928-MinimumCostToBuyApplesII.go)   
+[3928. Minimum Cost to Buy Apples II](./leetcode/3928-MinimumCostToBuyApplesII.go)    
 
 # Trie
 [386. Lexicographical Numbers](./leetcode/386-LexicographicalNumbers.go)   
