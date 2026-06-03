@@ -35,6 +35,8 @@ package main
 //     2 <= k <= 100
 
 import "fmt"
+import "slices"
+import "sort"
 
 func minOperations(nums []int, k int) int {
     n := len(nums)
@@ -65,6 +67,57 @@ func minOperations(nums []int, k int) int {
     return res
 }
 
+func minOperations1(nums []int, k int) int {
+    if len(nums) == 1 {
+        return 0
+    }
+    arr := [2][]int{}
+    for i, v := range nums {
+        arr[i % 2] = append(arr[i % 2], v % k)
+    }
+    calc := func(a []int, k int) (int, int, int) {
+        n := len(a)
+        slices.Sort(a)
+        for _, x := range a {
+            a = append(a, x + k)
+        }
+        sum := make([]int, n*2+1)
+        for i, x := range a {
+            sum[i+1] = sum[i] + x
+        }
+        // 都变成 target 的最小操作次数
+        calcOp := func(target int) int {
+            i := sort.SearchInts(a[:n], target)
+            j := i + sort.SearchInts(a[i:i+n], target+k/2+1)
+            return (sum[j] - sum[i]) - (j-i)*target + // [i, j) 中的数都减小到 target
+                (n-j+i)*(target+k) - (sum[i+n] - sum[j]) // [j, i+n) 中的数都增大到 target+k
+        }
+        mn, mn2, bestX := 1 << 61, 1 << 61, 0
+        for i, x := range a[:n] {
+            if i > 0 && a[i] == a[i-1] { // 优化：相同的值无需重复计算
+                continue
+            }
+            op := calcOp(x)
+            // 维护最小次小操作次数
+            if op < mn {
+                mn2 = mn
+                mn, bestX = op, x
+            } else if op < mn2 {
+                mn2 = op
+            }
+        }
+        // 还可以都变成 bestX - 1 或者 bestX + 1
+        mn2 = min(mn2, calcOp((bestX - 1 + k) % k), calcOp((bestX + 1) % k))
+        return mn, mn2, bestX
+    }
+    mn1x, mn2x, bestX := calc(arr[0], k)
+    mn1y, mn2y, bestY := calc(arr[1], k)
+    if bestX != bestY {
+        return mn1x + mn1y
+    }
+    return min(mn1x + mn2y, mn2x + mn1y)
+}
+
 func main() {
     // Example 1:
     // Input: nums = [1,4,2,8], k = 3
@@ -87,4 +140,9 @@ func main() {
 
     fmt.Println(minOperations([]int{1,2,3,4,5,6,7,8,9}, 3)) // 5
     fmt.Println(minOperations([]int{9,8,7,6,5,4,3,2,1}, 3)) // 5
+
+    fmt.Println(minOperations1([]int{1,4,2,8}, 3)) // 2
+    fmt.Println(minOperations1([]int{1,1,1}, 3)) // 1
+    fmt.Println(minOperations1([]int{1,2,3,4,5,6,7,8,9}, 3)) // 5
+    fmt.Println(minOperations1([]int{9,8,7,6,5,4,3,2,1}, 3)) // 5
 }
