@@ -117,6 +117,54 @@ func maximumMEX1(nums []int) []int {
     return res
 }
 
+func maximumMEX2(nums []int) []int {
+    mex, n := 0, len(nums)
+    count := make([]int, n + 1)
+    for _, v := range nums {
+        if v <= n {
+            count[v]++
+        }
+    }
+    for mex <= n && count[mex] > 0 {
+        mex++
+    }
+    res, seen := make([]int, 0, n), make([]int, n + 1)
+    i, segID := 0, 1
+    for i < n {
+        m := mex
+        if m == 0 {
+            res = append(res, 0)
+            v := nums[i]
+            if v <= n {
+                count[v]--
+                if count[v] == 0 && v < mex {
+                    mex = v
+                }
+            }
+            i++
+            continue
+        }
+        need := m
+        segID++
+        for need > 0 {
+            v := nums[i]
+            if v <= n {
+                count[v]--
+                if count[v] == 0 && v < mex {
+                    mex = v
+                }
+            }
+            if v < m && seen[v] != segID {
+                seen[v] = segID
+                need--
+            }
+            i++
+        }
+        res = append(res, m)
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: nums = [0,1,0]
@@ -147,4 +195,10 @@ func main() {
     fmt.Println(maximumMEX1([]int{3,1})) // [0,0]
     fmt.Println(maximumMEX1([]int{1,2,3,4,5,6,7,8,9})) // [0 0 0 0 0 0 0 0 0]
     fmt.Println(maximumMEX1([]int{9,8,7,6,5,4,3,2,1})) // [0 0 0 0 0 0 0 0 0]
+
+    fmt.Println(maximumMEX2([]int{0,1,0})) // [2,1]
+    fmt.Println(maximumMEX2([]int{1,0,2})) // [3]
+    fmt.Println(maximumMEX2([]int{3,1})) // [0,0]
+    fmt.Println(maximumMEX2([]int{1,2,3,4,5,6,7,8,9})) // [0 0 0 0 0 0 0 0 0]
+    fmt.Println(maximumMEX2([]int{9,8,7,6,5,4,3,2,1})) // [0 0 0 0 0 0 0 0 0]
 }
