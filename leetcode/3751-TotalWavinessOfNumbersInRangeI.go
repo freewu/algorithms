@@ -89,6 +89,24 @@ func totalWaviness1(num1 int, num2 int) int {
     return res
 }
 
+func totalWaviness2(num1 int, num2 int) int {
+    res := 0 
+    min := func (x, y int) int { if x < y { return x; }; return y; }
+    max := func (x, y int) int { if x > y { return x; }; return y; }
+    for i := num1; i <= num2; i++ {
+        candi := i 
+        a, b, c := -1, -1, -1 // 标记临近的3个数位值: #. ↓ 
+        for candi > 0 {
+            c, b, a = b, a, candi % 10 // 平移传递3个邻近值: 
+            if c != -1 && (b > max(a, c) || b < min(a, c)) {
+                res += 1 
+            }
+            candi /= 10 
+        }
+    }
+    return res 
+}
+
 func main() {
     // Example 1:
     // Input: num1 = 120, num2 = 130
@@ -135,4 +153,14 @@ func main() {
     fmt.Println(totalWaviness1(1024, 1024)) // 1
     fmt.Println(totalWaviness1(1024, 1_000_000)) // 2229463
     fmt.Println(totalWaviness1(1_000_000, 1_000_000)) // 0
+
+    fmt.Println(totalWaviness2(120, 130)) // 3   
+    fmt.Println(totalWaviness2(120, 130)) // 3   
+    fmt.Println(totalWaviness2(4848, 4848)) // 2
+    fmt.Println(totalWaviness2(1, 1)) // 0
+    fmt.Println(totalWaviness2(1, 1024)) // 543
+    fmt.Println(totalWaviness2(1, 1_000_000)) // 2230005
+    fmt.Println(totalWaviness2(1024, 1024)) // 1
+    fmt.Println(totalWaviness2(1024, 1_000_000)) // 2229463
+    fmt.Println(totalWaviness2(1_000_000, 1_000_000)) // 0
 }
