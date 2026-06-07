@@ -2060,6 +2060,7 @@
 [3951. Minimum Energy to Maintain Brightness](./leetcode/3951-MinimumEnergyToMaintainBrightness.go)   
 [3952. Maximum Total Value of Covered Indices](./leetcode/3952-MaximumTotalValueOfCoveredIndices.go)   
 [3953. Maximum Score with Co-Prime Element](./leetcode/3953-MaximumScoreWithCoPrimeElement.go)   
+[3956. Maximum Sum of M Non-Overlapping Subarrays I](./leetcode/3956-MaximumSumOfMNonOverlappingSubarraysI.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
