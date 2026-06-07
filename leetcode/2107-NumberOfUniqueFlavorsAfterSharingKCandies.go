@@ -123,7 +123,12 @@ func main() {
     // There are 3 unique flavors, so return 3.
     fmt.Println(shareCandies([]int{2,4,5}, 0)) // 3
 
+    fmt.Println(shareCandies([]int{1,2,3,4,5,6,7,8,9}, 2)) // 7
+    fmt.Println(shareCandies([]int{9,8,7,6,5,4,3,2,1}, 2)) // 7
+
     fmt.Println(shareCandies1([]int{1,2,2,3,4,3}, 3)) // 3
     fmt.Println(shareCandies1([]int{2,2,2,2,3,3}, 2)) // 2
     fmt.Println(shareCandies1([]int{2,4,5}, 0)) // 3
+    fmt.Println(shareCandies1([]int{1,2,3,4,5,6,7,8,9}, 2)) // 7
+    fmt.Println(shareCandies1([]int{9,8,7,6,5,4,3,2,1}, 2)) // 7
 }
