@@ -83,6 +83,29 @@ func createBinaryTree(descriptions [][]int) *TreeNode {
     return res
 }
 
+func createBinaryTree1(descriptions [][]int) *TreeNode {
+    nodes := make(map[int]*TreeNode, len(descriptions) + 1) // 预分配空间
+    root := 0
+    for _, d := range descriptions {
+        x, y := d[0], d[1]
+        if nodes[x] == nil {
+            nodes[x] = &TreeNode{ Val: x }
+            root ^= x
+        }
+        if nodes[y] == nil {
+            nodes[y] = &TreeNode{Val: y }
+            root ^= y
+        }
+        if d[2] == 1 {
+            nodes[x].Left = nodes[y]
+        } else {
+            nodes[x].Right = nodes[y]
+        }
+        root ^= y
+    }
+    return nodes[root]
+}
+
 func main() {
     // Example 1:
     //          50
@@ -110,4 +133,7 @@ func main() {
     // Explanation: The root node is the node with value 1 since it has no parent.
     // The resulting binary tree is shown in the diagram.
     fmt.Println(createBinaryTree([][]int{{1,2,1},{2,3,0},{3,4,1}})) // &{1 0xc000008120 <nil>}
+
+    fmt.Println(createBinaryTree1([][]int{{20,15,1},{20,17,0},{50,20,1},{50,80,0},{80,19,1}})) // &{50 0xc000008090 0xc0000080a8}
+    fmt.Println(createBinaryTree1([][]int{{1,2,1},{2,3,0},{3,4,1}})) // &{1 0xc000008120 <nil>}
 }
