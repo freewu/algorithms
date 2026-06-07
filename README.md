@@ -3187,6 +3187,7 @@
 [3945. Digit Frequency Score](./leetcode/3945-DigitFrequencyScore.go)   
 [3950. Exactly One Consecutive Set Bits Pair](./leetcode/3950-ExactlyOneConsecutiveSetBitsPair.go)   
 [3954. Sum of Compatible Numbers in Range I](./leetcode/3954-SumOfCompatibleNumbersInRangeI.go)   
+[3955. Valid Binary Strings With Cost Limit](./leetcode/3955-ValidBinaryStringsWithCostLimit.go)   
 
 # Stack
 [225. Implement Stack using Queues](./leetcode/225-ImplementStackUsingQueues.go)   
