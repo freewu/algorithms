@@ -3182,6 +3182,7 @@
 [3918. Sum of Primes Between Number and Its Reverse](./leetcode/3918-SumOfPrimesBetweenNumberAndItsReverse.go)   
 [3932. Count K-th Roots in a Range](./leetcode/3932-CountKthRootsInRange.go)   
 [3945. Digit Frequency Score](./leetcode/3945-DigitFrequencyScore.go)   
+[3950. Exactly One Consecutive Set Bits Pair](./leetcode/3950-ExactlyOneConsecutiveSetBitsPair.go)   
 
 # Stack
 [225. Implement Stack using Queues](./leetcode/225-ImplementStackUsingQueues.go)   
