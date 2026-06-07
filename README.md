@@ -2059,6 +2059,7 @@
 [3948. Lexicographically Maximum MEX Array](./leetcode/3948-LexicographicallyMaximumMEXArray.go)   
 [3951. Minimum Energy to Maintain Brightness](./leetcode/3951-MinimumEnergyToMaintainBrightness.go)   
 [3952. Maximum Total Value of Covered Indices](./leetcode/3952-MaximumTotalValueOfCoveredIndices.go)   
+[3953. Maximum Score with Co-Prime Element](./leetcode/3953-MaximumScoreWithCoPrimeElement.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
