@@ -46,7 +46,6 @@ package main
 //     1 <= l <= r <= n
 
 import "fmt"
-import "math"
 import "container/list"
 
 // Time Limit Exceeded 989 / 999 testcases passed
@@ -88,134 +87,118 @@ func maximumSum(nums []int, m, left, right int) int64 {
     return int64(res)
 }
 
-
-const inf = math.MinInt64 / 10
-
-func aliensDp(k int, getDp func(int) (int64, int)) int64 {
-	left := 0
-	right := int(1e18)
-	f1Val, f1Cnt := getDp(0)
-	if f1Cnt >= 1 && f1Cnt <= k {
-		return f1Val
-	}
-	penalty := 0
-	var bestVal int64 = inf
-	// bestCnt 只声明不使用，直接删除
-
-	for left <= right {
-		mid := (left + right) >> 1
-		cVal, cCnt := getDp(mid)
-		if cCnt >= k {
-			penalty = mid
-			bestVal = cVal
-			left = mid + 1
-		} else {
-			right = mid - 1
-		}
-	}
-	return bestVal + int64(penalty*k)
-}
-
 func maximumSum1(nums []int, m, l, r int) int64 {
-	n := len(nums)
-	pre := make([]int64, n+1)
-	for i := 0; i < n; i++ {
-		pre[i+1] = pre[i] + int64(nums[i])
-	}
+    const inf = -1 << 61
+    n := len(nums)
+    prefix := make([]int64, n + 1)
+    for i := 0; i < n; i++ {
+        prefix[i+1] = prefix[i] + int64(nums[i])
+    }
+    getdp := func(p int) (int64, int) {
+        f, count := make([][2]int64, n + 1), make([]int, n + 1)
+        for i := range f {
+            f[i][0] = inf
+            count[i] = 0
+        }
+        f[0][0] = 0
+        count[0] = 0
+        fg := func(x, y int) bool {
+            cx := f[x][0] - prefix[x]
+            cy := f[y][0] - prefix[y]
+            if cy > cx {
+                return true
+            }
+            if cy == cx && count[y] < count[x] {
+                return true
+            }
+            return false
+        }
+        max2 := func(aVal int64, aCnt int, bVal int64, bCnt int) (int64, int) {
+            if aVal > bVal {
+                return aVal, aCnt
+            }
+            if bVal > aVal {
+                return bVal, bCnt
+            }
+            if aCnt > bCnt {
+                return aVal, aCnt
+            }
+            return bVal, bCnt
+        }
+        q := list.New()
+        for i := 1; i <= n; i++ {
+            for q.Len() > 0 && q.Front().Value.(int) < i-r {
+                q.Remove(q.Front())
+            }
+            j := i - l
+            if j >= 0 {
+                for q.Len() > 0 && fg(q.Back().Value.(int), j) {
+                    q.Remove(q.Back())
+                }
+                q.PushBack(j)
+            }
+            curVal, curCnt := f[i-1][0], count[i-1]
+            if q.Len() > 0 {
+                front := q.Front().Value.(int)
+                newVal := f[front][0] - prefix[front] + prefix[i] - int64(p)
+                newCnt := count[front] + 1
+                curVal, curCnt = max2(curVal, curCnt, newVal, newCnt)
+            }
+            f[i][0], count[i] = curVal, curCnt
+        }
+        totalVal := f[n][0]
+        totalCnt := count[n]
+        if totalCnt == 0 {
+            var mx int64 = inf
+            q := list.New()
+            for i := 1; i <= n; i++ {
+                for q.Len() > 0 && q.Front().Value.(int) < i-r {
+                    q.Remove(q.Front())
+                }
+                j := i - l
+                if j >= 0 {
+                    for q.Len() > 0 && prefix[j] < prefix[q.Back().Value.(int)] {
+                        q.Remove(q.Back())
+                    }
+                    q.PushBack(j)
+                }
+                if q.Len() > 0 {
+                    front := q.Front().Value.(int)
+                    current := prefix[i] - prefix[front]
+                    if current > mx {
+                        mx = current
+                    }
+                }
+            }
+            return mx - int64(p), 1
+        }
+        return totalVal, totalCnt
+    }
+    aliensDp := func(k int, getDp func(int) (int64, int)) int64 {
+        left := 0
+        right := int(1e18)
+        f1Val, f1Cnt := getDp(0)
+        if f1Cnt >= 1 && f1Cnt <= k {
+            return f1Val
+        }
+        penalty := 0
+        var bestVal int64 = inf
+        // bestCnt 只声明不使用，直接删除
 
-	getdp := func(p int) (int64, int) {
-		f := make([][2]int64, n+1)
-		cnt := make([]int, n+1)
-		for i := range f {
-			f[i][0] = inf
-			cnt[i] = 0
-		}
-		f[0][0] = 0
-		cnt[0] = 0
-
-		fg := func(x, y int) bool {
-			cx := f[x][0] - pre[x]
-			cy := f[y][0] - pre[y]
-			if cy > cx {
-				return true
-			}
-			if cy == cx && cnt[y] < cnt[x] {
-				return true
-			}
-			return false
-		}
-
-		max2 := func(aVal int64, aCnt int, bVal int64, bCnt int) (int64, int) {
-			if aVal > bVal {
-				return aVal, aCnt
-			}
-			if bVal > aVal {
-				return bVal, bCnt
-			}
-			if aCnt > bCnt {
-				return aVal, aCnt
-			}
-			return bVal, bCnt
-		}
-
-		q := list.New()
-		for i := 1; i <= n; i++ {
-			for q.Len() > 0 && q.Front().Value.(int) < i-r {
-				q.Remove(q.Front())
-			}
-
-			j := i - l
-			if j >= 0 {
-				for q.Len() > 0 && fg(q.Back().Value.(int), j) {
-					q.Remove(q.Back())
-				}
-				q.PushBack(j)
-			}
-
-			curVal, curCnt := f[i-1][0], cnt[i-1]
-			if q.Len() > 0 {
-				front := q.Front().Value.(int)
-				newVal := f[front][0] - pre[front] + pre[i] - int64(p)
-				newCnt := cnt[front] + 1
-				curVal, curCnt = max2(curVal, curCnt, newVal, newCnt)
-			}
-
-			f[i][0] = curVal
-			cnt[i] = curCnt
-		}
-
-		totalVal := f[n][0]
-		totalCnt := cnt[n]
-
-		if totalCnt == 0 {
-			var mx int64 = inf
-			q := list.New()
-			for i := 1; i <= n; i++ {
-				for q.Len() > 0 && q.Front().Value.(int) < i-r {
-					q.Remove(q.Front())
-				}
-				j := i - l
-				if j >= 0 {
-					for q.Len() > 0 && pre[j] < pre[q.Back().Value.(int)] {
-						q.Remove(q.Back())
-					}
-					q.PushBack(j)
-				}
-				if q.Len() > 0 {
-					front := q.Front().Value.(int)
-					current := pre[i] - pre[front]
-					if current > mx {
-						mx = current
-					}
-				}
-			}
-			return mx - int64(p), 1
-		}
-
-		return totalVal, totalCnt
-	}
-
-	return aliensDp(m, getdp)
+        for left <= right {
+            mid := (left + right) >> 1
+            cVal, cCnt := getDp(mid)
+            if cCnt >= k {
+                penalty = mid
+                bestVal = cVal
+                left = mid + 1
+            } else {
+                right = mid - 1
+            }
+        }
+        return bestVal + int64(penalty * k)
+    }
+    return aliensDp(m, getdp)
 }
 
 func main() {
