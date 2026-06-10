@@ -3190,6 +3190,7 @@
 [3950. Exactly One Consecutive Set Bits Pair](./leetcode/3950-ExactlyOneConsecutiveSetBitsPair.go)   
 [3954. Sum of Compatible Numbers in Range I](./leetcode/3954-SumOfCompatibleNumbersInRangeI.go)   
 [3955. Valid Binary Strings With Cost Limit](./leetcode/3955-ValidBinaryStringsWithCostLimit.go)   
+[3958. Minimum Cost to Split into Ones II](./leetcode/3958-MinimumCostToSplitIntoOnesII.go)   
 
 # Stack
 [225. Implement Stack using Queues](./leetcode/225-ImplementStackUsingQueues.go)   
