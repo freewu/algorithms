@@ -357,6 +357,101 @@ func maximumSum2(nums []int, m int, l int, r int) int64 {
     return res
 }
 
+func maximumSum3(nums []int, m int, l int, r int) int64 {
+    type Element struct {
+        val   int64
+        count int
+        index int
+    }
+    n := len(nums)
+    s := make([]int64, n + 1)
+    for i := 0; i < n; i++ {
+        s[i+1] = s[i] + int64(nums[i])
+    }
+    maxSingle, minSDeque := int64(-2e18), make([]int, n + 1)
+    h, t := 0, 0
+    for i := 0; i <= n; i++ {
+        if i >= l {
+            j := i - l
+            for t > h && s[minSDeque[t-1]] >= s[j] {
+                t--
+            }
+            minSDeque[t] = j
+            t++
+            if minSDeque[h] < i-r {
+                h++
+            }
+            if s[i]-s[minSDeque[h]] > maxSingle {
+                maxSingle = s[i] - s[minSDeque[h]]
+            }
+        }
+    }
+    if maxSingle <= 0 {
+        return maxSingle
+    }
+    // 2. Since maxSingle > 0, we use the WQS binary search (Alien's trick) to maximize
+    // the sum with at most m subarrays. The function f(k), being the maximum sum
+    // with exactly k subarrays of length [l, r], is concave.
+    dp, count, deque := make([]int64, n+1), make([]int, n+1), make([]Element, n + 1)
+    // check returns the max value of (f(k) - k * C) and the largest k that achieves it.
+    check := func(C int64) (int64, int) {
+        head, tail := 0, 0
+        dp[0] = 0
+        count[0] = 0
+        for i := 1; i <= n; i++ {
+            // Case: Don't pick a subarray ending at index i.
+            dp[i], count[i] = dp[i-1], count[i - 1]
+            // Case: Consider picking a subarray ending at index i.
+            // The subarray must have length len in [l, r], i.e., start at j = i - len.
+            // j is in [i-r, i-l].
+            if i - l >= 0 {
+                j := i - l
+                newVal := dp[j] - s[j]
+                newCount := count[j]
+                for tail > head && (newVal > deque[tail-1].val || (newVal == deque[tail-1].val && newCount > deque[tail-1].count)) {
+                    tail--
+                }
+                deque[tail] = Element{newVal, newCount, j}
+                tail++
+            }
+            // Clean up elements outside the window [i-r, i-l].
+            if tail > head && deque[head].index < i - r {
+                head++
+            }
+            // If valid starting positions exist, update the maximum DP value for index i.
+            if tail > head {
+                currentMaxVal, currentMaxCount := deque[head].val + s[i] - C, deque[head].count + 1
+                if currentMaxVal > dp[i] || (currentMaxVal == dp[i] && currentMaxCount > count[i]) {
+                    dp[i], count[i] = currentMaxVal, currentMaxCount
+                }
+            }
+        }
+        return dp[n], count[n]
+    }
+    // If with no penalty (C=0) we use at most m subarrays, then that is the answer.
+    val0, k0 := check(0)
+    if k0 <= m {
+        return val0
+    }
+    // Otherwise, find a penalty C > 0 such that we use exactly m subarrays (or as close as possible
+    // if m lies on a linear segment of f(k)).
+    low, high := int64(0), int64(2e10) // Max possible penalty is subarray sum ~ 10^10.
+    best_C := int64(0)
+    for low <= high {
+        mid := low + (high - low) / 2
+        _, k := check(mid)
+        if k >= m {
+            best_C = mid
+            low = mid + 1
+        } else {
+            high = mid - 1
+        }
+    }
+    // f(m) = max_k (f(k) - k * best_C) + m * best_C.
+    val, _ := check(best_C)
+    return val + int64(m) * best_C
+}
+
 func main() {
     // Example 1:
     // Input: nums = [4,1,-5,2], m = 2, l = 1, r = 3
@@ -405,4 +500,11 @@ func main() {
     fmt.Println(maximumSum2([]int{-3,-4,-1}, 2, 1, 2)) // -1
     fmt.Println(maximumSum2([]int{1,2,3,4,5,6,7,8,9}, 2, 1, 2)) // 30
     fmt.Println(maximumSum2([]int{9,8,7,6,5,4,3,2,1}, 2, 1, 2)) // 30
+
+    fmt.Println(maximumSum3([]int{4,1,-5,2}, 2, 1, 3)) // 7
+    fmt.Println(maximumSum3([]int{1,0,3,4}, 2, 1, 2)) // 8
+    fmt.Println(maximumSum3([]int{-1,7,-4}, 1, 2, 3)) // 6
+    fmt.Println(maximumSum3([]int{-3,-4,-1}, 2, 1, 2)) // -1
+    fmt.Println(maximumSum3([]int{1,2,3,4,5,6,7,8,9}, 2, 1, 2)) // 30
+    fmt.Println(maximumSum3([]int{9,8,7,6,5,4,3,2,1}, 2, 1, 2)) // 30
 }
