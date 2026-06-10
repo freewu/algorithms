@@ -198,6 +198,7 @@ func maximumSum1(nums []int, m, l, r int) int64 {
     return aliensDp(m, getdp)
 }
 
+// 超出时间限制 999 / 1000 个通过的测试用例
 func maximumSum2(nums []int, m int, l int, r int) int64 {
     fentoluric := nums
     n := len(fentoluric)
