@@ -98,6 +98,77 @@ func maxTotalValue(nums []int, k int) int64 {
     return res
 }
 
+func maxTotalValue1(nums []int, k int) int64 {
+    var st [16][50000][2]uint32
+    var h [50000][3]uint32
+    res, n := int64(0), uint32(len(nums))
+    kk := uint32(k)
+    lg := uint32(bits.Len32(n))
+    for i := range n {
+        st[0][i][0], st[0][i][1] = uint32(nums[i]), uint32(nums[i])
+    }
+    for j := uint32(1); j < lg; j++ {
+        for i := uint32(0); i+(1<<j) <= n; i++ {
+            L := st[j-1][i]
+            R := st[j-1][i+(1<<(j-1))]
+            st[j][i][0] = min(L[0], R[0])
+            st[j][i][1] = max(L[1], R[1])
+        }
+    }
+    get := func(l, r uint32) uint32 {
+        j := bits.Len32(r - l + 1) - 1
+        L, R := st[j][l], st[j][r- (1 << j) + 1]
+        return max(L[1], R[1]) - min(L[0], R[0])
+    }
+    if k == 1 {
+        return int64(get(0, n-1))
+    }
+    for i := range n - 1 {
+        h[i] = [3]uint32{get(i, n-1), i, n - 1}
+    }
+    h[n-1] = [3]uint32{0, 0, 0}
+    down := func(i uint32) {
+        for {
+            l, r, mx := 2*i+1, 2*i+2, i
+            if l < n && h[mx][0] < h[l][0] {
+                mx = l
+            }
+            if r < n && h[mx][0] < h[r][0] {
+                mx = r
+            }
+            if mx == i {
+                break
+            }
+            h[i], h[mx] = h[mx], h[i]
+            i = mx
+        }
+    }
+    for k > 0 {
+        v, l, r := h[0][0], h[0][1], h[0][2]
+        if v == 0 {
+            return res
+        }
+        count, nv := uint32(1), uint32(0)
+        for r--; r > l; r-- {
+            if nv = get(l, r); nv != v {
+                break
+            }
+            count++
+        }
+        if count >= kk {
+            return res + int64(kk) * int64(v)
+        }
+        res += int64(count) * int64(v)
+        kk -= count
+        if r == l {
+            nv = 0
+        }
+        h[0] = [3]uint32{ nv, l, r }
+        down(0)
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: nums = [1,3,2], k = 2
@@ -121,4 +192,9 @@ func main() {
 
     fmt.Println(maxTotalValue([]int{1,2,3,4,5,6,7,8,9}, 2)) // 15
     fmt.Println(maxTotalValue([]int{9,8,7,6,5,4,3,2,1}, 2)) // 15
+
+    fmt.Println(maxTotalValue1([]int{1,3,2}, 2)) // 4
+    fmt.Println(maxTotalValue1([]int{4,2,5,1}, 3)) // 12
+    fmt.Println(maxTotalValue1([]int{1,2,3,4,5,6,7,8,9}, 2)) // 15
+    fmt.Println(maxTotalValue1([]int{9,8,7,6,5,4,3,2,1}, 2)) // 15
 }
