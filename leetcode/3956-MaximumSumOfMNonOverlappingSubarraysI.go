@@ -46,6 +46,7 @@ package main
 //     1 <= l <= r <= n
 
 import "fmt"
+import "sort"
 
 func maximumSum(nums []int, m, left, right int) int64 {
     res, n := -1 << 61, len(nums)
@@ -85,6 +86,69 @@ func maximumSum(nums []int, m, left, right int) int64 {
     return int64(res)
 }
 
+func maximumSum1(nums []int, m, l, r int) int64 {
+    type Pair struct{ f, count int } // DP 值, 子数组个数
+    res, n := 0, len(nums)
+    s := make([]int, n + 1) // nums 的前缀和
+    posSum := 0 // nums 中的正数之和
+    for i, v := range nums {
+        s[i+1] = s[i] + v
+        if v > 0 {
+            posSum += v
+        }
+    }
+    less := func (a, b Pair) bool {  // 相等的时候，子数组个数更大的劣
+        return a.f < b.f || a.f == b.f && a.count > b.count
+    }
+    // 没有 m 约束，但每选一个子数组就要把元素和减少 k
+    dpWithoutLimit := func(k int) Pair {
+        f := make([]Pair, n+1)
+        q := []int{}
+        res := Pair{ -1 << 61, 0}
+        for i := l; i <= n; i++ {
+            // 1. 入
+            j := i - l
+            v := Pair{f[j].f - s[j], f[j].count}
+            for len(q) > 0 && less(Pair{f[q[len(q)-1]].f - s[q[len(q)-1]], f[q[len(q)-1]].count}, v) {
+                q = q[:len(q)-1]
+            }
+            q = append(q, j)
+            // 2. 更新答案
+            choose := Pair{f[q[0]].f - s[q[0]] + s[i] - k, f[q[0]].count + 1}
+            if less(res, choose) {
+                // choose 保证我们至少选了一个子数组
+                res = choose
+            }
+            // 更新 DP
+            if less(f[i-1], choose) {
+                f[i] = choose
+            } else { // 不选
+                f[i] = f[i-1]
+            }
+            // 3. 出，下一轮循环队首离开窗口
+            if q[0] <= i-r {
+                q = q[1:]
+            }
+        }
+        return res
+    }
+    pair := dpWithoutLimit(0)
+    if pair.count <= m { // 直接满足题目要求
+        return int64(pair.f)
+    }
+    // 现在专注于解决「选恰好 m 个子数组」的问题
+    sort.Search(posSum, func(k int) bool {
+        k++
+        pair := dpWithoutLimit(k)
+        if pair.count <= m {
+            res = pair.f + m * k // 不需要取 max，二分最终会缩小到凸函数中的 x=m 所在的那条线段
+            return true
+        }
+        return false
+    })
+    return int64(res)
+}
+
 func main() {
     // Example 1:
     // Input: nums = [4,1,-5,2], m = 2, l = 1, r = 3
@@ -119,4 +183,11 @@ func main() {
 
     fmt.Println(maximumSum([]int{1,2,3,4,5,6,7,8,9}, 2, 1, 2)) // 30
     fmt.Println(maximumSum([]int{9,8,7,6,5,4,3,2,1}, 2, 1, 2)) // 30
+
+    fmt.Println(maximumSum1([]int{4,1,-5,2}, 2, 1, 3)) // 7
+    fmt.Println(maximumSum1([]int{1,0,3,4}, 2, 1, 2)) // 8
+    fmt.Println(maximumSum1([]int{-1,7,-4}, 1, 2, 3)) // 6
+    fmt.Println(maximumSum1([]int{-3,-4,-1}, 2, 1, 2)) // -1
+    fmt.Println(maximumSum1([]int{1,2,3,4,5,6,7,8,9}, 2, 1, 2)) // 30
+    fmt.Println(maximumSum1([]int{9,8,7,6,5,4,3,2,1}, 2, 1, 2)) // 30
 }
