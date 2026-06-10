@@ -47,6 +47,7 @@ package main
 
 import "fmt"
 import "container/list"
+import "sort"
 
 // Time Limit Exceeded 989 / 999 testcases passed
 func maximumSum(nums []int, m, left, right int) int64 {
@@ -181,16 +182,12 @@ func maximumSum1(nums []int, m, l, r int) int64 {
         if f1Cnt >= 1 && f1Cnt <= k {
             return f1Val
         }
-        penalty := 0
-        var bestVal int64 = inf
-        // bestCnt 只声明不使用，直接删除
-
+        penalty, bestVal := 0, int64(inf)
         for left <= right {
             mid := (left + right) >> 1
             cVal, cCnt := getDp(mid)
             if cCnt >= k {
-                penalty = mid
-                bestVal = cVal
+                penalty, bestVal = mid, cVal
                 left = mid + 1
             } else {
                 right = mid - 1
@@ -199,6 +196,164 @@ func maximumSum1(nums []int, m, l, r int) int64 {
         return bestVal + int64(penalty * k)
     }
     return aliensDp(m, getdp)
+}
+
+func maximumSum2(nums []int, m int, l int, r int) int64 {
+    fentoluric := nums
+    n := len(fentoluric)
+    const negInf int64 = -1 << 60
+    pref := make([]int64, n+1)
+    for i, v := range fentoluric {
+        pref[i+1] = pref[i] + int64(v)
+    }
+    // Special case: subarray length fixed at 1 => pick up to m elements.
+    if l == 1 && r == 1 {
+        maxVal := fentoluric[0]
+        pos := make([]int, 0, n)
+        for _, v := range fentoluric {
+            if v > maxVal {
+                maxVal = v
+            }
+            if v > 0 {
+                pos = append(pos, v)
+            }
+        }
+        if maxVal <= 0 {
+            return int64(maxVal) // must pick at least one
+        }
+        sort.Ints(pos)
+        need := m
+        if need > len(pos) {
+            need = len(pos)
+        }
+        var sum int64
+        for i := 0; i < need; i++ {
+            sum += int64(pos[len(pos)-1-i])
+        }
+        return sum
+    }
+    // Compute best single subarray sum with length in [l, r] (needed for m==1 or all-negative cases).
+    bestSingle := func() int64 {
+        dq := make([]int, n+1)
+        head, tail := 0, 0
+        best := negInf
+        for i := 1; i <= n; i++ {
+            jAdd := i - l
+            if jAdd >= 0 {
+                for tail > head && pref[dq[tail-1]] >= pref[jAdd] {
+                    tail--
+                }
+                dq[tail] = jAdd
+                tail++
+            }
+            jMin := i - r
+            for head < tail && dq[head] < jMin {
+                head++
+            }
+            if head < tail {
+                seg := pref[i] - pref[dq[head]]
+                if seg > best {
+                    best = seg
+                }
+            }
+        }
+        return best
+    }()
+    if m == 1 {
+        return bestSingle
+    }
+    maxPossible := n / l // max number of non-overlapping segments possible (using length l)
+    if m >= maxPossible {
+        // Unbounded number of segments (count constraint not binding): O(n) DP.
+        dp := make([]int64, n+1)
+        dq := make([]int, n+1)
+        head, tail := 0, 0
+        for i := 1; i <= n; i++ {
+            jAdd := i - l
+            if jAdd >= 0 {
+                vAdd := dp[jAdd] - pref[jAdd]
+                for tail > head {
+                    b := dq[tail-1]
+                    vBack := dp[b] - pref[b]
+                    if vBack >= vAdd {
+                        break
+                    }
+                    tail--
+                }
+                dq[tail] = jAdd
+                tail++
+            }
+            jMin := i - r
+            for head < tail && dq[head] < jMin {
+                head++
+            }
+            best := dp[i-1]
+            if head < tail {
+                j := dq[head]
+                cand := dp[j] + (pref[i] - pref[j])
+                if cand > best {
+                    best = cand
+                }
+            }
+            dp[i] = best
+        }
+        // Must pick at least one segment: if all are negative, return bestSingle.
+        if bestSingle < 0 {
+            return bestSingle
+        }
+        return dp[n]
+    }
+    // General case: DP for exactly k segments, k=1..m, with deque optimization: O(m*n)
+    maxK := m
+    if maxK > maxPossible {
+        maxK = maxPossible
+    }
+    prev := make([]int64, n+1) // exactly 0 segments => 0 everywhere
+    curr := make([]int64, n+1)
+    dq := make([]int, n+1)
+    res := negInf
+    for k := 1; k <= maxK; k++ {
+        curr[0] = negInf
+        head, tail := 0, 0
+        for i := 1; i <= n; i++ {
+            // option: not end at i
+            best := curr[i-1]
+            // add j = i-l to deque
+            jAdd := i - l
+            if jAdd >= 0 && prev[jAdd] != negInf {
+                vAdd := prev[jAdd] - pref[jAdd]
+                for tail > head {
+                    b := dq[tail-1]
+                    vBack := prev[b] - pref[b]
+                    if vBack >= vAdd {
+                        break
+                    }
+                    tail--
+                }
+                dq[tail] = jAdd
+                tail++
+            }
+            // remove outdated < i-r
+            jMin := i - r
+            for head < tail && dq[head] < jMin {
+                head++
+            }
+            // option: take a segment ending at i
+            if head < tail {
+                j := dq[head]
+                cand := prev[j] + (pref[i] - pref[j])
+                if cand > best {
+                    best = cand
+                }
+            }
+            curr[i] = best
+        }
+        if curr[n] > res {
+            res = curr[n]
+        }
+        prev, curr = curr, prev
+    }
+    return res
 }
 
 func main() {
@@ -242,4 +397,11 @@ func main() {
     fmt.Println(maximumSum1([]int{-3,-4,-1}, 2, 1, 2)) // -1
     fmt.Println(maximumSum1([]int{1,2,3,4,5,6,7,8,9}, 2, 1, 2)) // 30
     fmt.Println(maximumSum1([]int{9,8,7,6,5,4,3,2,1}, 2, 1, 2)) // 30
+
+    fmt.Println(maximumSum2([]int{4,1,-5,2}, 2, 1, 3)) // 7
+    fmt.Println(maximumSum2([]int{1,0,3,4}, 2, 1, 2)) // 8
+    fmt.Println(maximumSum2([]int{-1,7,-4}, 1, 2, 3)) // 6
+    fmt.Println(maximumSum2([]int{-3,-4,-1}, 2, 1, 2)) // -1
+    fmt.Println(maximumSum2([]int{1,2,3,4,5,6,7,8,9}, 2, 1, 2)) // 30
+    fmt.Println(maximumSum2([]int{9,8,7,6,5,4,3,2,1}, 2, 1, 2)) // 30
 }
