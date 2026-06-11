@@ -125,6 +125,32 @@ func (g *Graph) AddEdge(u, v int) {
     g.to[g.cur] = v
 }
 
+func assignEdgeWeights2(edges [][]int) int {
+    maxdepth, mod := 1, 1_000_000_007
+    depth := make([]int, 100_000)
+    depth[0] = 1
+    slices.SortFunc(edges, func(a, b []int) int { 
+        return a[0] - b[0] 
+    })
+    for _, e := range edges {
+        u, v := min(e[0], e[1])-1, max(e[0], e[1])-1
+        depth[v] = depth[u] + 1
+        maxdepth = max(maxdepth, depth[v])
+    }
+    pow2 := func(n int) int {
+        res, base := 1, 2
+        for n > 0 {
+            if n & 1 == 1 {
+                res = res * base % mod
+            }
+            base = base * base % mod
+            n >>= 1
+        }
+        return res
+    }
+    return pow2(maxdepth - 2)
+}
+
 func main() {
     // Example 1:
     // <img src="https://pic.leetcode.cn/1748074049-lsGWuV-screenshot-2025-03-24-at-060006.png" />
@@ -146,4 +172,7 @@ func main() {
 
     fmt.Println(assignEdgeWeights1([][]int{{1,2}})) // 1
     fmt.Println(assignEdgeWeights1([][]int{{1,2},{1,3},{3,4},{3,5}})) // 2
+
+    fmt.Println(assignEdgeWeights2([][]int{{1,2}})) // 1
+    fmt.Println(assignEdgeWeights2([][]int{{1,2},{1,3},{3,4},{3,5}})) // 2
 }
