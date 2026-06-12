@@ -44,76 +44,187 @@ package main
 //     edges represents a valid tree.
 
 import "fmt"
-import "math/bits"
+//import "math/bits"
 
-const mod = 1_000_000_007
-const mx = 17
+// const mod = 1_000_000_007
+// const mx = 17
 
-var pow2 = [1e5]int{1}
+// var pow2 = [1e5]int{1}
+
+// func init() {
+//     for i := 1; i < len(pow2); i++ {
+//         pow2[i] = pow2[i - 1] * 2 % mod // 预处理 2 的幂
+//     }
+// }
+
+// func assignEdgeWeights(edges [][]int, queries [][]int) []int {
+//     n := len(edges) + 1
+//     g := make([][]int, n)
+//     for _, e := range edges {
+//         x, y := e[0]-1, e[1]-1
+//         g[x] = append(g[x], y)
+//         g[y] = append(g[y], x)
+//     }
+//     pa := make([][mx]int, n)
+//     dep := make([]int, n)
+//     var dfs func(int, int)
+//     dfs = func(x, p int) {
+//         pa[x][0] = p
+//         for _, y := range g[x] {
+//             if y != p {
+//                 dep[y] = dep[x] + 1
+//                 dfs(y, x)
+//             }
+//         }
+//     }
+//     dfs(0, -1)
+//     for i := 0; i < mx - 1; i++ {
+//         for x := range pa {
+//             if p := pa[x][i]; p != -1 {
+//                 pa[x][i+1] = pa[p][i]
+//             } else {
+//                 pa[x][i+1] = -1
+//             }
+//         }
+//     }
+//     uptoDep := func(x, d int) int {
+//         for k := uint(dep[x] - d); k > 0; k &= k - 1 {
+//             x = pa[x][bits.TrailingZeros(k)]
+//         }
+//         return x
+//     }
+//     getLCA := func(x, y int) int {
+//         if dep[x] > dep[y] {
+//             x, y = y, x
+//         }
+//         y = uptoDep(y, dep[x])
+//         if y == x {
+//             return x
+//         }
+//         for i := mx - 1; i >= 0; i-- {
+//             if pv, pw := pa[x][i], pa[y][i]; pv != pw {
+//                 x, y = pv, pw
+//             }
+//         }
+//         return pa[x][0]
+//     }
+//     getDistance := func(x, y int) int { return dep[x] + dep[y] - dep[getLCA(x, y)] * 2 }
+//     res := make([]int, len(queries))
+//     for i, q := range queries {
+//         if q[0] != q[1] {
+//             res[i] = pow2[getDistance(q[0] - 1, q[1] - 1) - 1]
+//         }
+//     }
+//     return res
+// }
+
+const MX = 100_000
+const SHIFT = 18 // bits.Len64(2*MX)
+const GENMASK = 1<<SHIFT - 1
+
+var queue [MX]int
+var pow2, depth, uf, lca, head, qhead [MX + 1]uint32
+var to, nxt, qto, qnxt [2 * MX + 1]uint32
+var visited [MX + 1]uint8
+var gen uint32
+var visgen uint8
 
 func init() {
-    for i := 1; i < len(pow2); i++ {
-        pow2[i] = pow2[i - 1] * 2 % mod // 预处理 2 的幂
+    pow2[1] = 1
+    for i := 2; i < len(pow2); i++ {
+        pow2[i] = pow2[i-1] * 2 % 1_000_000_007
     }
 }
 
 func assignEdgeWeights(edges [][]int, queries [][]int) []int {
-    n := len(edges) + 1
-    g := make([][]int, n)
-    for _, e := range edges {
-        x, y := e[0]-1, e[1]-1
-        g[x] = append(g[x], y)
-        g[y] = append(g[y], x)
+    add := func(u, v, i uint32) {
+        to[i] = v
+        nxt[i] = head[u]
+        head[u] = i | gen
     }
-    pa := make([][mx]int, n)
-    dep := make([]int, n)
-    var dfs func(int, int)
-    dfs = func(x, p int) {
-        pa[x][0] = p
-        for _, y := range g[x] {
-            if y != p {
-                dep[y] = dep[x] + 1
-                dfs(y, x)
-            }
-        }
+    qadd := func(u, v, i uint32) {
+        qto[i] = v
+        qnxt[i] = qhead[u]
+        qhead[u] = i | gen
     }
-    dfs(0, -1)
-    for i := 0; i < mx - 1; i++ {
-        for x := range pa {
-            if p := pa[x][i]; p != -1 {
-                pa[x][i+1] = pa[p][i]
-            } else {
-                pa[x][i+1] = -1
-            }
-        }
-    }
-    uptoDep := func(x, d int) int {
-        for k := uint(dep[x] - d); k > 0; k &= k - 1 {
-            x = pa[x][bits.TrailingZeros(k)]
-        }
-        return x
-    }
-    getLCA := func(x, y int) int {
-        if dep[x] > dep[y] {
-            x, y = y, x
-        }
-        y = uptoDep(y, dep[x])
-        if y == x {
+    find := func(x uint32) uint32 {
+        if uf[x] < gen {
+            uf[x] = gen | x
             return x
         }
-        for i := mx - 1; i >= 0; i-- {
-            if pv, pw := pa[x][i], pa[y][i]; pv != pw {
-                x, y = pv, pw
+        root, parent := x, uf[x]&GENMASK
+        for parent != root {
+            root = parent
+            parent = uf[root] & GENMASK
+        }
+        // path compression
+        for x != root {
+            next := uf[x] & GENMASK
+            uf[x] = gen | root
+            x = next
+        }
+        return root
+    }
+    gen += 1 << SHIFT
+    visgen++
+    if visgen == 0 {
+        clear(visited[:])
+        visgen = 1
+    }
+    n := uint32(len(edges) + 1)
+    clear(depth[1 : n+1])
+    for i := uint32(1); i <= n; i++ {
+        uf[i] = i
+    }
+    for i, e := range edges {
+        j := uint32(2 * i)
+        u, v := uint32(e[0]), uint32(e[1])
+        add(u, v, j+1)
+        add(v, u, j+2)
+    }
+    for i, q := range queries {
+        j := uint32(2 * i)
+        u, v := uint32(q[0]), uint32(q[1])
+        qadd(u, v, j+1)
+        qadd(v, u, j+2)
+    }
+    queue[0], depth[1] = 1, 0
+    sz := 1
+    for i := 0; i < sz; i++ {
+        u := queue[i]
+        for e := head[u]; e > gen; e = nxt[e&GENMASK] {
+            v := to[e&GENMASK]
+            if depth[v] == 0 && v != 1 {
+                depth[v] = depth[u] + 1
+                queue[sz] = int(v)
+                sz++
             }
         }
-        return pa[x][0]
     }
-    getDis := func(x, y int) int { return dep[x] + dep[y] - dep[getLCA(x, y)] * 2 }
-    res := make([]int, len(queries))
-    for i, q := range queries {
-        if q[0] != q[1] {
-            res[i] = pow2[getDis(q[0]-1, q[1]-1)-1]
+    var tarjan func(u, parent uint32)
+    tarjan = func(u, parent uint32) {
+        visited[u] = visgen
+        for e := head[u]; e > gen; e = nxt[e&GENMASK] {
+            v := to[e&GENMASK]
+            if v == parent {
+                continue
+            }
+            tarjan(v, u)
+            uf[v] = u | gen
         }
+        for e := qhead[u]; e > gen; e = qnxt[e&GENMASK] {
+            idx := e & GENMASK
+            v := qto[idx]
+            if visited[v] == visgen {
+                lca[(idx-1)/2] = find(v)
+            }
+        }
+    }
+    tarjan(1, 0)
+    res := queue[:len(queries)] // reuse memory
+    for i, q := range queries {
+        path := depth[q[0]] + depth[q[1]] - 2*depth[lca[i]]
+        res[i] = int(pow2[path])
     }
     return res
 }
