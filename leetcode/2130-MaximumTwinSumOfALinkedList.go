@@ -142,6 +142,27 @@ func pairSum1(head *ListNode) int {
     return res
 }
 
+// 快慢指针
+func pairSum2(head *ListNode) int {
+    res, count, fast, slow := 0, 0, head, head
+    for fast != nil {
+        slow = slow.Next
+        fast = fast.Next.Next
+        count++
+    }
+    stack := make([]int, count)
+    for i := 0; i < count; i++ {
+        stack[i] = slow.Val
+        slow = slow.Next
+    }
+    curr := head
+    for i := len(stack) - 1; i >= 0; i-- {
+        res = max(res, curr.Val + stack[i])
+        curr = curr.Next
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // 5 -> (4) -> (2) -> 1
@@ -179,13 +200,42 @@ func main() {
     printListNode(l3)
     fmt.Println(pairSum(l3)) // 100001
 
+    l4 := makeListNode([]int{1,2,3,4,5,6,7,8,9})
+    printListNode(l4) // 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8 -> 9
+    fmt.Println(pairSum(l4)) // 10
+    l5 := makeListNode([]int{9,8,7,6,5,4,3,2,1})
+    printListNode(l5) // 9 -> 8 -> 7 -> 6 -> 5 -> 4 -> 3 -> 2 -> 1
+    fmt.Println(pairSum(l5)) // 10
+
     l11 := makeListNode([]int{5,4,2,1})
-    printListNode(l11)
-    fmt.Println(pairSum(l11)) // 6
+    printListNode(l11) // 5 -> 4 -> 2 -> 1
+    fmt.Println(pairSum1(l11)) // 6
     l12 := makeListNode([]int{5,4,2,1})
-    printListNode(l12)
-    fmt.Println(pairSum(l12)) // 7
+    printListNode(l12) // 5 -> 4 -> 2 -> 1
+    fmt.Println(pairSum1(l12)) // 7
     l13 := makeListNode([]int{1,100000})
-    printListNode(l13)
-    fmt.Println(pairSum(l13)) // 100001
+    printListNode(l13) // 1 -> 100000
+    fmt.Println(pairSum1(l13)) // 100001
+    l14 := makeListNode([]int{1,2,3,4,5,6,7,8,9})
+    printListNode(l14) // 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8 -> 9
+    fmt.Println(pairSum1(l14)) // 10
+    l15 := makeListNode([]int{9,8,7,6,5,4,3,2,1})
+    printListNode(l15) // 9 -> 8 -> 7 -> 6 -> 5 -> 4 -> 3 -> 2 -> 1
+    fmt.Println(pairSum1(l15)) // 10
+
+    l21 := makeListNode([]int{5,4,2,1})
+    printListNode(l21) // 5 -> 4 -> 2 -> 1
+    fmt.Println(pairSum1(l21)) // 6
+    l22 := makeListNode([]int{5,4,2,1})
+    printListNode(l22) // 5 -> 4 -> 2 -> 1
+    fmt.Println(pairSum1(l22)) // 7
+    l23 := makeListNode([]int{1,100000})
+    printListNode(l23) // 1 -> 100000
+    fmt.Println(pairSum1(l23)) // 100001
+    l24 := makeListNode([]int{1,2,3,4,5,6,7,8,9})
+    printListNode(l24) // 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8 -> 9
+    fmt.Println(pairSum1(l24)) // 10
+    l25 := makeListNode([]int{9,8,7,6,5,4,3,2,1})
+    printListNode(l25) // 9 -> 8 -> 7 -> 6 -> 5 -> 4 -> 3 -> 2 -> 1
+    //fmt.Println(pairSum2(l25)) // 10
 }
