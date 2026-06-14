@@ -2062,6 +2062,7 @@
 [3953. Maximum Score with Co-Prime Element](./leetcode/3953-MaximumScoreWithCoPrimeElement.go)   
 [3956. Maximum Sum of M Non-Overlapping Subarrays I](./leetcode/3956-MaximumSumOfMNonOverlappingSubarraysI.go)   
 [3957. Maximum Sum of M Non-Overlapping Subarrays II](./leetcode/3957-MaximumSumOfMNonOverlappingSubarraysII.go)   
+[3960. Frequency Balance Subarray](./leetcode/3960-FrequencyBalanceSubarray.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
