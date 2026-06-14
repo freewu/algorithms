@@ -3191,6 +3191,7 @@
 [3954. Sum of Compatible Numbers in Range I](./leetcode/3954-SumOfCompatibleNumbersInRangeI.go)   
 [3955. Valid Binary Strings With Cost Limit](./leetcode/3955-ValidBinaryStringsWithCostLimit.go)   
 [3958. Minimum Cost to Split into Ones II](./leetcode/3958-MinimumCostToSplitIntoOnesII.go)   
+[3959. Check Good Integer](./leetcode/3959-CheckGoodInteger.go)   
 
 # Stack
 [225. Implement Stack using Queues](./leetcode/225-ImplementStackUsingQueues.go)   
