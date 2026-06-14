@@ -94,20 +94,20 @@ func main() {
 
     fmt.Println(numberOfWays(2)) // 1
     fmt.Println(numberOfWays(8)) // 14
-    fmt.Println(numberOfWays(999)) // 0
+    fmt.Println(numberOfWays(998)) // 948528453
     fmt.Println(numberOfWays(1000)) // 591137401
 
     fmt.Println(numberOfWays1(4)) // 2
     fmt.Println(numberOfWays1(6)) // 5
     fmt.Println(numberOfWays1(2)) // 1
     fmt.Println(numberOfWays1(8)) // 14
-    fmt.Println(numberOfWays1(999)) // 948528453
+    fmt.Println(numberOfWays1(998)) // 948528453
     fmt.Println(numberOfWays1(1000)) // 591137401
 
     fmt.Println(numberOfWays2(4)) // 2
     fmt.Println(numberOfWays2(6)) // 5
     fmt.Println(numberOfWays2(2)) // 1
     fmt.Println(numberOfWays2(8)) // 14
-    fmt.Println(numberOfWays2(999)) // 948528453
+    fmt.Println(numberOfWays2(998)) // 948528453
     fmt.Println(numberOfWays2(1000)) // 591137401
 }
