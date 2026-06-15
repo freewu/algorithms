@@ -98,16 +98,16 @@ func deleteMiddle(head *ListNode) *ListNode {
 }
 
 func deleteMiddle1(head *ListNode) *ListNode {
-    length := 0
+    n := 0
     for i := head; i != nil; i = i.Next { // 得到链表长度
-        length++
+        n++
     }
-    if length == 1 {
+    if n == 1 {
         return nil
     }
-    middle := length / 2
+    mid := n / 2
     node := head
-    for i := 0; i < middle - 1; i++ { // 循环到中间位置
+    for i := 0; i < mid - 1; i++ { // 循环到中间位置
         node = node.Next
     }
     node.Next = node.Next.Next // 删除中间节点
@@ -151,13 +151,26 @@ func main() {
     printListNode(l3) // 2 -> 1
     printListNode(deleteMiddle(l3)) // 2
 
+    l4 := makeListNode([]int{1,2,3,4,5,6,7,8,9})
+    printListNode(l4) // 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8 -> 9
+    printListNode(deleteMiddle1(l4)) // 1 -> 2 -> 3 -> 4 -> 6 -> 7 -> 8 -> 9
+    l5 := makeListNode([]int{9,8,7,6,5,4,3,2,1})
+    printListNode(l5) // 9 -> 8 -> 7 -> 6 -> 5 -> 4 -> 3 -> 2 -> 1
+    printListNode(deleteMiddle1(l5)) // 9 -> 8 -> 7 -> 6 -> 4 -> 3 -> 2 -> 1 
+
     l11 := makeListNode([]int{1,3,4,7,1,2,6})
     printListNode(l11) // 1 -> 3 -> 4 -> 7 -> 1 -> 2 -> 6
-    printListNode(deleteMiddle(l11)) // 1 -> 3 -> 4 -> 1 -> 2 -> 6
+    printListNode(deleteMiddle1(l11)) // 1 -> 3 -> 4 -> 1 -> 2 -> 6
     l12 := makeListNode([]int{1,2,3,4}) 
     printListNode(l12) // 1 -> 2 -> 3 -> 4
-    printListNode(deleteMiddle(l12)) // 1 -> 2 -> 4
+    printListNode(deleteMiddle1(l12)) // 1 -> 2 -> 4
     l13 := makeListNode([]int{2,1})
     printListNode(l13) // 2 -> 1
-    printListNode(deleteMiddle(l13)) // 2
+    printListNode(deleteMiddle1(l13)) // 2
+    l14 := makeListNode([]int{1,2,3,4,5,6,7,8,9})
+    printListNode(l14) // 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8 -> 9
+    printListNode(deleteMiddle1(l14)) // 1 -> 2 -> 3 -> 4 -> 6 -> 7 -> 8 -> 9
+    l15 := makeListNode([]int{9,8,7,6,5,4,3,2,1})
+    printListNode(l15) // 9 -> 8 -> 7 -> 6 -> 5 -> 4 -> 3 -> 2 -> 1
+    printListNode(deleteMiddle1(l15)) // 9 -> 8 -> 7 -> 6 -> 4 -> 3 -> 2 -> 1 
 }
