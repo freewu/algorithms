@@ -82,6 +82,31 @@ func processStr1(s string) string {
     return string(res)
 }
 
+func processStr2(s string) string {
+    res := []byte{}
+    reverse := func(s []byte) []byte {
+        n := len(s)
+        for i := 0; i < n/2; i++ {
+            s[i], s[n-1-i] = s[n-1-i], s[i]
+        }
+        return s
+    }
+    for _, c := range s {
+        if c == '#' { // 字符 '#' 会 复制 当前的 res 并 追加 到其自身后面。
+            res = append(res, res...)
+        } else if c == '*' { // '*' 会 删除 res 中的最后一个字符（如果存在）
+            if len(res) > 0 {
+                res = res[:len(res) - 1]
+            }
+        } else if c == '%' { // '%' 会 反转 当前的 res
+            res = reverse(res)
+        } else {
+            res = append(res, byte(c))
+        }
+    }
+    return string(res)
+}
+
 func main() {
     // Example 1:
     // Input: s = "a#b%*"
@@ -108,9 +133,17 @@ func main() {
 
     fmt.Println(processStr("blue%frog#")) // "eulbfrogeulbfrog"
     fmt.Println(processStr("leet%code#")) // "teelcodeteelcode"
+    fmt.Println(processStr("free%wu#")) // "eerfwueerfwu"
 
     fmt.Println(processStr1("a#b%*")) // "ba"
     fmt.Println(processStr1("z*#")) // ""
     fmt.Println(processStr1("blue%frog#")) // "eulbfrogeulbfrog"
     fmt.Println(processStr1("leet%code#")) // "teelcodeteelcode"
+    fmt.Println(processStr1("free%wu#")) // "eerfwueerfwu"
+
+    fmt.Println(processStr2("a#b%*")) // "ba"
+    fmt.Println(processStr2("z*#")) // ""
+    fmt.Println(processStr2("blue%frog#")) // "eulbfrogeulbfrog"
+    fmt.Println(processStr2("leet%code#")) // "teelcodeteelcode"
+    fmt.Println(processStr2("free%wu#")) // "eerfwueerfwu"
 }
