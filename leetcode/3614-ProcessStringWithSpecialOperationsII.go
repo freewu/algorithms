@@ -121,6 +121,43 @@ func processStr1(s string, k int64) byte {
     return '.'
 }
 
+func processStr2(s string, k int64) byte {
+    n := int64(0)
+    for _, x := range s {
+        if x == '#' {
+            n *= 2
+        } else if x == '*' {
+            if n > 0 {
+                n--
+            }
+        } else if x == '%' {
+        } else {
+            n++
+        }
+    }
+    if k >= n {
+        return '.'
+    }
+    for i := len(s) - 1; ; i-- {
+        c := s[i]
+        if c == '#' {
+            n /= 2
+            if k >= n {
+                k -= n
+            }
+        } else if c == '*' {
+            n++
+        } else if c == '%' {
+            k = n - k - 1
+        } else {
+            n--
+        }
+        if k == n {
+            return c    
+        }
+    }
+}
+
 func main() {
     // Example 1:
     // Input: s = "a#b%*", k = 1
@@ -160,10 +197,19 @@ func main() {
 
     fmt.Printf("%c\r\n", processStr("blue%frog#", 3)) // "b"
     fmt.Printf("%c\r\n", processStr("leet%code#", 3)) // "l"
+    fmt.Printf("%c\r\n", processStr("free%wu#", 3)) // "f"
 
     fmt.Printf("%c\r\n", processStr1("a#b%*", 1)) // "a"
     fmt.Printf("%c\r\n", processStr1("cd%#*#", 3)) // "d"
     fmt.Printf("%c\r\n", processStr1("z*#", 3)) // "."
     fmt.Printf("%c\r\n", processStr1("blue%frog#", 3)) // "b"
     fmt.Printf("%c\r\n", processStr1("leet%code#", 3)) // "l"
+    fmt.Printf("%c\r\n", processStr1("free%wu#", 3)) // "f"
+
+    fmt.Printf("%c\r\n", processStr2("a#b%*", 1)) // "a"
+    fmt.Printf("%c\r\n", processStr2("cd%#*#", 3)) // "d"
+    fmt.Printf("%c\r\n", processStr2("z*#", 3)) // "."
+    fmt.Printf("%c\r\n", processStr2("blue%frog#", 3)) // "b"
+    fmt.Printf("%c\r\n", processStr2("leet%code#", 3)) // "l"
+    fmt.Printf("%c\r\n", processStr2("free%wu#", 3)) // "f"
 }
