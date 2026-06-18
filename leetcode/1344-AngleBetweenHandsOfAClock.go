@@ -38,6 +38,13 @@ func angleClock(hour int, minutes int) float64 {
     return angle
 }
 
+func angleClock1(hour int, minutes int) float64 {
+    abs := func(x int) int { if x < 0 { return -x; }; return x; }
+    min := func (x, y int) int { if x < y { return x; }; return y; }
+    d := abs(hour * 60 - minutes * 11)
+    return float64(min(d, 720-d)) / 2 
+}
+
 func main() {
     // Example 1:
     // <img src="https://assets.leetcode.com/uploads/2019/12/26/sample_1_1673.png" />
@@ -54,4 +61,17 @@ func main() {
     // Input: hour = 3, minutes = 15
     // Output: 7.5
     fmt.Println(angleClock(3, 15)) // 7.5
+
+    fmt.Println(angleClock(1, 0)) // 30
+    fmt.Println(angleClock(1, 59)) // 65.5
+    fmt.Println(angleClock(12, 0)) // 0
+    fmt.Println(angleClock(12, 59)) // 35.5
+
+    fmt.Println(angleClock1(12, 30)) // 165
+    fmt.Println(angleClock1(3, 30)) // 75
+    fmt.Println(angleClock1(3, 15)) // 7.5
+    fmt.Println(angleClock1(1, 0)) // 30
+    fmt.Println(angleClock1(1, 59)) // 65.5
+    fmt.Println(angleClock1(12, 0)) // 0
+    fmt.Println(angleClock1(12, 59)) // 35.5
 }
