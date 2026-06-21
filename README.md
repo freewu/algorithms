@@ -2067,6 +2067,7 @@
 [3962. Maximum Subarray Sum After at Most K Swaps](./leetcode/3962-MaximumSubarraySumAfterAtMostKSwaps.go)   
 [3964. Minimum Lights to Illuminate a Road](./leetcode/3964-MinimumLightsToIlluminateARoad.go)   
 [3969. Valid Subarrays With Matching Sum Digits I](./leetcode/3969-ValidSubarraysWithMatchingSumDigitsI.go)   
+[3971. Maximum Total Value](./leetcode/3971-MaximumTotalValue.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
