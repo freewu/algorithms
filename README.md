@@ -3195,6 +3195,7 @@
 [3955. Valid Binary Strings With Cost Limit](./leetcode/3955-ValidBinaryStringsWithCostLimit.go)   
 [3958. Minimum Cost to Split into Ones II](./leetcode/3958-MinimumCostToSplitIntoOnesII.go)   
 [3959. Check Good Integer](./leetcode/3959-CheckGoodInteger.go)   
+[3963. Create Grid With Exactly One Path](./leetcode/3963-CreateGridWithExactlyOnePath.go)   
 
 # Stack
 [225. Implement Stack using Queues](./leetcode/225-ImplementStackUsingQueues.go)   
