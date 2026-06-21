@@ -3556,6 +3556,7 @@
 [3887. Incremental Even-Weighted Cycle Queries](./leetcode/3887-IncrementalEvenWeightedCycleQueries.go)   
 [3924. Minimum Threshold Path With Limited Heavy Edges](./leetcode/3924-MinimumThresholdPathWithLimitedHeavyEdges.go)   
 [3928. Minimum Cost to Buy Apples II](./leetcode/3928-MinimumCostToBuyApplesII.go)    
+[3965. Finish Time of Tasks I](./leetcode/3965-FinishTimeOfTasksI.go)   
 
 # Trie
 [386. Lexicographical Numbers](./leetcode/386-LexicographicalNumbers.go)   
