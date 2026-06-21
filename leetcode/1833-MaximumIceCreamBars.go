@@ -88,6 +88,24 @@ func maxIceCream2(costs []int, coins int) int {
     return res
 }
 
+func maxIceCream3(costs []int, coins int) int {
+    res, mx := 0, costs[0]
+    mp := make([]int, 1_000_02)
+    for _, v := range costs {
+        mp[v]++
+        mx = max(mx, v)
+    }
+    for i := 1; i <= mx; i ++ {
+        count := min(mp[i] * i, coins) / i
+        coins -= count * i
+        res += count
+        if coins < i {
+            break
+        }
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: costs = [1,3,2,4,1], coins = 7
@@ -105,11 +123,24 @@ func main() {
     // Explanation: The boy can buy all the ice cream bars for a total price of 1 + 6 + 3 + 1 + 2 + 5 = 18.
     fmt.Println(maxIceCream([]int{1,6,3,1,2,5}, 20)) // 6
 
+    fmt.Println(maxIceCream([]int{1,2,3,4,5,6,7,8,9}, 5)) // 2
+    fmt.Println(maxIceCream([]int{9,8,7,6,5,4,3,2,1}, 5)) // 2
+
     fmt.Println(maxIceCream1([]int{1,3,2,4,1}, 7)) // 4
     fmt.Println(maxIceCream1([]int{10,6,8,7,7,8}, 5)) // 0
     fmt.Println(maxIceCream1([]int{1,6,3,1,2,5}, 20)) // 6
+    fmt.Println(maxIceCream1([]int{1,2,3,4,5,6,7,8,9}, 5)) // 2
+    fmt.Println(maxIceCream1([]int{9,8,7,6,5,4,3,2,1}, 5)) // 2
 
     fmt.Println(maxIceCream2([]int{1,3,2,4,1}, 7)) // 4
     fmt.Println(maxIceCream2([]int{10,6,8,7,7,8}, 5)) // 0
     fmt.Println(maxIceCream2([]int{1,6,3,1,2,5}, 20)) // 6
+    fmt.Println(maxIceCream2([]int{1,2,3,4,5,6,7,8,9}, 5)) // 2
+    fmt.Println(maxIceCream2([]int{9,8,7,6,5,4,3,2,1}, 5)) // 2
+
+    fmt.Println(maxIceCream3([]int{1,3,2,4,1}, 7)) // 4
+    fmt.Println(maxIceCream3([]int{10,6,8,7,7,8}, 5)) // 0
+    fmt.Println(maxIceCream3([]int{1,6,3,1,2,5}, 20)) // 6
+    fmt.Println(maxIceCream3([]int{1,2,3,4,5,6,7,8,9}, 5)) // 2
+    fmt.Println(maxIceCream3([]int{9,8,7,6,5,4,3,2,1}, 5)) // 2
 }
