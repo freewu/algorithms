@@ -77,7 +77,12 @@ func main() {
     // Output: 0
     fmt.Println(maxNumberOfBalloons("leetcode")) // 0
 
+    fmt.Println(maxNumberOfBalloons("bluefrog")) // 0
+    fmt.Println(maxNumberOfBalloons("freewu")) // 0
+
     fmt.Println(maxNumberOfBalloons1("nlaebolko")) // 1
     fmt.Println(maxNumberOfBalloons1("loonbalxballpoon")) // 2
     fmt.Println(maxNumberOfBalloons1("leetcode")) // 0
+    fmt.Println(maxNumberOfBalloons1("bluefrog")) // 0
+    fmt.Println(maxNumberOfBalloons1("freewu")) // 0
 }
