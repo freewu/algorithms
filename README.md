@@ -3562,7 +3562,9 @@
 [3924. Minimum Threshold Path With Limited Heavy Edges](./leetcode/3924-MinimumThresholdPathWithLimitedHeavyEdges.go)   
 [3928. Minimum Cost to Buy Apples II](./leetcode/3928-MinimumCostToBuyApplesII.go)    
 [3965. Finish Time of Tasks I](./leetcode/3965-FinishTimeOfTasksI.go)   
+[3967. Finish Time of Tasks II](./leetcode/3967-FinishTimeOfTasksII.go)   
 [3970. Shortest Path With At Most K Consecutive Identical Characters](./leetcode/3970-ShortestPathWithAtMostKConsecutiveIdenticalCharacters.go)   
+
 
 # Trie
 [386. Lexicographical Numbers](./leetcode/386-LexicographicalNumbers.go)   
