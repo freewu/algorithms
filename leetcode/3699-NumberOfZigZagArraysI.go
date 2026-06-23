@@ -61,6 +61,35 @@ func zigZagArrays(n int, l int, r int) int {
     return res * 2 % mod
 }
 
+func zigZagArrays1(n int, l int, r int) int {
+    res, mod := 0, 1_000_000_007
+    prefix := make([]int, r + 1)
+    for i := l; i <= r; i ++ {
+        prefix[i] = 1
+    }
+    for i := 1; i < n; i ++ {
+        if i % 2 == 1 {
+            sum := 0
+            for j := l; j <= r; j ++ {
+                tmp := sum % mod
+                sum += prefix[j]
+                prefix[j] = tmp
+            }
+        } else {
+            sum := 0
+            for j := r; j >= l; j -- {
+                tmp := sum % mod
+                sum += prefix[j]
+                prefix[j] = tmp
+            }
+        }
+    }
+    for i := l; i <= r; i ++ {
+        res = (res + prefix[i]) % mod
+    }
+    return res * 2 % mod
+}
+
 func main() {
     // Example 1:
     // Input: n = 3, l = 4, r = 5
@@ -85,4 +114,11 @@ func main() {
     fmt.Println(zigZagArrays(2000, 1, 2)) // 2
     fmt.Println(zigZagArrays(2000, 1, 2000)) // 594850306
     fmt.Println(zigZagArrays(3, 1999, 2000)) // 2
+
+    fmt.Println(zigZagArrays1(3, 4, 5)) // 2
+    fmt.Println(zigZagArrays1(3, 1, 3)) // 10
+    fmt.Println(zigZagArrays1(3, 1, 2)) // 2
+    fmt.Println(zigZagArrays1(2000, 1, 2)) // 2
+    fmt.Println(zigZagArrays1(2000, 1, 2000)) // 594850306
+    fmt.Println(zigZagArrays1(3, 1999, 2000)) // 2
 }
