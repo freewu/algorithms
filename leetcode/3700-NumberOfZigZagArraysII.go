@@ -40,7 +40,7 @@ package main
 
 import "fmt"
 
-const mod = 1_000_000_007
+const MOD = 1_000_000_007
 
 type Matrix [][]int
 
@@ -59,7 +59,7 @@ func (a Matrix) mul(b Matrix) Matrix {
         for k, x := range row {
             if x == 0 { continue }
             for j, y := range b[k] {
-                c[i][j] = (c[i][j] + x*y) % mod
+                c[i][j] = (c[i][j] + x*y) % MOD
             }
         }
     }
@@ -94,6 +94,67 @@ func zigZagArrays(n, l, r int) int {
     for _, row := range fn {
         res += row[0]
     }
+    return res * 2 % MOD
+}
+
+func zigZagArrays1(n int, l int, r int) int {
+    n--
+    ll := r - l + 1
+    pow2 := make([][]int, ll)
+    for i := range pow2 {
+        pow2[i] = make([]int, ll)
+        for j := range pow2[i] {
+            pow2[i][j] = min(ll-1-i, ll-1-j)
+        }
+    }
+    accu := make([][]int, ll)
+    for i := range accu {
+        accu[i] = make([]int, ll)
+        accu[i][i] = 1
+    }
+    caches := make([][]int, ll)
+    for i := range caches {
+        caches[i] = make([]int, ll)
+    }
+    res, mod := 0, 1_000_000_007
+    multi := func(arr1Ptr *[][]int, arr2 [][]int) {
+        arr1 := *arr1Ptr
+        for i := range ll {
+            for j := range ll {
+                caches[i][j] = 0
+                for k := range ll {
+                    caches[i][j] += arr1[i][k] * arr2[k][j] % mod
+                }
+                caches[i][j] %= mod
+            }
+        }
+        caches, *arr1Ptr = arr1, caches
+    }
+    for i := n >> 1; i != 0; i >>= 1 {
+        if i&1 == 1 {
+            multi(&accu, pow2)
+        }
+        multi(&pow2, pow2)
+    }
+    if n & 1 == 0 {
+        for i := range accu {
+            tmp := 0
+            for j := range accu[i] {
+                tmp += accu[i][j]
+            }
+            res = (res + tmp) % mod
+        }
+    } else {
+        tans := 0
+        for i := range accu {
+            tmp := 0
+            for j := range accu[i] {
+                tmp += accu[i][j]
+            }
+            res = (res + tans) % mod
+            tans = (tans + tmp) % mod
+        }
+    }
     return res * 2 % mod
 }
 
@@ -121,4 +182,11 @@ func main() {
     fmt.Println(zigZagArrays(1_000_000_000, 1, 2)) // 2
     fmt.Println(zigZagArrays(1_000_000_000, 1, 75)) // 16
     fmt.Println(zigZagArrays(3, 74, 75)) // 2
+
+    fmt.Println(zigZagArrays1(3, 4, 5)) // 2
+    fmt.Println(zigZagArrays1(3, 1, 3)) // 10
+    fmt.Println(zigZagArrays1(3, 1, 2)) // 2
+    fmt.Println(zigZagArrays1(1_000_000_000, 1, 2)) // 2
+    fmt.Println(zigZagArrays1(1_000_000_000, 1, 75)) // 16
+    fmt.Println(zigZagArrays1(3, 74, 75)) // 2
 }
