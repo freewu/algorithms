@@ -8,7 +8,6 @@ package main
 // The majority element of a subarray is the element that appears strictly more than half of the times in that subarray.
 
 // A subarray is a contiguous non-empty sequence of elements within an array.
- 
 
 // Example 1:
 // Input: nums = [1,2,2,3], target = 2
@@ -83,6 +82,28 @@ func countMajoritySubarrays1(nums []int, target int) int {
     return res
 }
 
+var sum [2001]uint16
+
+func countMajoritySubarrays2(nums []int, target int) int {
+    n := len(nums)
+    clear(sum[:2 * n + 1])
+    //sum := make([]int,2 * n + 1)
+    sum[n] = 1
+    index, res, curr := n, 0, 0
+    for _, num := range nums {
+        if num == target {
+            curr += int(sum[index])
+            index++
+        } else {
+            index--
+            curr -= int(sum[index])
+        }
+        sum[index]++
+        res += curr
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: nums = [1,2,2,3], target = 2
@@ -117,4 +138,10 @@ func main() {
     fmt.Println(countMajoritySubarrays1([]int{1,2,3}, 4)) // 0
     fmt.Println(countMajoritySubarrays1([]int{1,2,3,4,5,6,7,8,9}, 2)) // 1
     fmt.Println(countMajoritySubarrays1([]int{9,8,7,6,5,4,3,2,1}, 2)) // 1
+
+    fmt.Println(countMajoritySubarrays2([]int{1,2,2,3}, 2)) // 5 
+    fmt.Println(countMajoritySubarrays2([]int{1,1,1,1}, 1)) // 10
+    fmt.Println(countMajoritySubarrays2([]int{1,2,3}, 4)) // 0
+    fmt.Println(countMajoritySubarrays2([]int{1,2,3,4,5,6,7,8,9}, 2)) // 1
+    fmt.Println(countMajoritySubarrays2([]int{9,8,7,6,5,4,3,2,1}, 2)) // 1
 }
