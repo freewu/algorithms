@@ -59,7 +59,7 @@ func maximumLength1(nums []int) int {
     for _, v := range nums{
         count[v]++
     }
-    res := count[1] - 1 | 1
+    res := count[1] - 1 | 1 // 保证 ans 是奇数（奇数不变，偶数减一）
     delete(count, 1)
     max := func (x, y int) int { if x > y { return x; }; return y; }
     for v := range count {
@@ -73,6 +73,25 @@ func maximumLength1(nums []int) int {
             val--
         }
         res = max(res, val) // 保证 res 是奇数
+    }
+    return res
+}
+
+func maximumLength2(nums []int) int {
+    count := map[int]int{}
+    for _, v := range nums {
+        count[v]++
+    }
+    res := count[1] - 1 | 1 // 保证 res 是奇数（奇数不变，偶数减一）
+    delete(count, 1)
+    for v := range count {
+        val := 0
+        for count[v] >= 2 {
+            val += 2
+            v *= v
+        }
+        val += count[v]
+        res = max(res, val - 1 | 1) // 保证 res 是奇数（奇数不变，偶数减一）    
     }
     return res
 }
@@ -96,4 +115,9 @@ func main() {
     fmt.Println(maximumLength1([]int{1,3,2,4})) // 1
     fmt.Println(maximumLength1([]int{1,2,3,4,5,6,7,8,9})) // 1
     fmt.Println(maximumLength1([]int{9,8,7,6,5,4,3,2,1})) // 1
+
+    fmt.Println(maximumLength2([]int{5,4,1,2,2})) // 3
+    fmt.Println(maximumLength2([]int{1,3,2,4})) // 1
+    fmt.Println(maximumLength2([]int{1,2,3,4,5,6,7,8,9})) // 1
+    fmt.Println(maximumLength2([]int{9,8,7,6,5,4,3,2,1})) // 1
 }
