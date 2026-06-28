@@ -2070,6 +2070,7 @@
 [3971. Maximum Total Value](./leetcode/3971-MaximumTotalValue.go)   
 [3972. Valid Subarrays With Matching Sum Digits II](./leetcode/3972-ValidSubarraysWithMatchingSumDigitsII.go)   
 [3973. Distinct Gate Paths to LCA](./leetcode/3973-DistinctGatePathsToLCA.go)   
+[3974. Maximum Total Sum of K Selected Elements](./leetcode/3974-MaximumTotalSumOfKSelectedElements.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
