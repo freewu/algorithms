@@ -3567,7 +3567,7 @@
 [3965. Finish Time of Tasks I](./leetcode/3965-FinishTimeOfTasksI.go)   
 [3967. Finish Time of Tasks II](./leetcode/3967-FinishTimeOfTasksII.go)   
 [3970. Shortest Path With At Most K Consecutive Identical Characters](./leetcode/3970-ShortestPathWithAtMostKConsecutiveIdenticalCharacters.go)   
-
+[3977. Minimum Time to Reach Target With Limited Power](./leetcode/3977-MinimumTimeToReachTargetWithLimitedPower.go)   
 
 # Trie
 [386. Lexicographical Numbers](./leetcode/386-LexicographicalNumbers.go)   
