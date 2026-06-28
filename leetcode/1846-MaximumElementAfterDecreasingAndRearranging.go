@@ -42,6 +42,7 @@ package main
 //     1 <= arr[i] <= 10^9
 
 import "fmt"
+import "sort"
 
 func maximumElementAfterDecrementingAndRearranging(arr []int) int {
     sort.Ints(arr)
@@ -78,4 +79,7 @@ func main() {
     // Output: 5
     // Explanation: The array already satisfies the conditions, and the largest element is 5.
     fmt.Println(maximumElementAfterDecrementingAndRearranging([]int{1,2,3,4,5})) // 5
+
+    fmt.Println(maximumElementAfterDecrementingAndRearranging([]int{1,2,3,4,5,6,7,8,9})) // 9
+    fmt.Println(maximumElementAfterDecrementingAndRearranging([]int{9,8,7,6,5,4,3,2,1})) // 9
 }
