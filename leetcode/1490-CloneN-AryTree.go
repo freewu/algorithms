@@ -56,11 +56,44 @@ func main()  {
     // <img src="https://assets.leetcode.com/uploads/2018/10/12/narytreeexample.png" />
     // Input: root = [1,null,3,2,4,null,5,6]
     // Output: [1,null,3,2,4,null,5,6]
+    root1 := &Node{ 
+                Val: 1, 
+                Children: []*Node{
+                    &Node{ 
+                        Val: 3, 
+                        Children: []*Node{
+                            &Node{ 
+                                Val: 2, 
+                                Children: []*Node{
+                                    &Node{ Val: 4 },
+                                },
+                            },
+                            &Node{ Val: 5 },
+                        },
+                    },
+                    &Node{ Val: 6 },
+                },
+            }
+    fmt.Println(root1)
+    fmt.Println(cloneTree(root1))
     
     // Example 2:
     // <img src="https://assets.leetcode.com/uploads/2019/11/08/sample_4_964.png" />
     // Input: root = [1,null,2,3,4,5,null,null,6,7,null,8,null,9,10,null,null,11,null,12,null,13,null,null,14]
     // Output: [1,null,2,3,4,5,null,null,6,7,null,8,null,9,10,null,null,11,null,12,null,13,null,null,14]
-    
-    fmt.Println()
+    root2 := &Node{ 
+                Val: 1, 
+                Children: []*Node{
+                    &Node{ 
+                        Val: 2, 
+                        Children: []*Node{
+                            &Node{ Val: 4 },
+                            &Node{ Val: 5 },
+                        },
+                    },
+                    &Node{ Val: 6 },
+                },
+            }
+    fmt.Println(root2)
+    fmt.Println(cloneTree(root2))
 }
