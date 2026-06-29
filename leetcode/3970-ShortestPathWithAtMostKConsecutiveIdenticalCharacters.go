@@ -98,6 +98,111 @@ func shortestPath(n int, edges [][]int, labels string, k int) int {
     return -1
 }
 
+func shortestPath1(n int, edges [][]int, labels string, k int) int {
+    if n == 1 {
+        return 0
+    }
+    lb := []byte(labels)
+    m := len(edges)
+    head := make([]int, n)
+    for i := 0; i < n; i++ {
+        head[i] = -1
+    }
+    to := make([]int, m)
+    wt := make([]int, m)
+    next := make([]int, m)
+    for i, e := range edges {
+        u, v, w := e[0], e[1], e[2]
+        to[i] = v
+        wt[i] = w
+        next[i] = head[u]
+        head[u] = i
+    }
+    const INF int64 = 1 << 62
+    kk := k + 1 // run length in [1..k]
+    dist := make([]int64, n*kk)
+    for i := range dist {
+        dist[i] = INF
+    }
+    type State struct {
+        d    int64
+        node int
+        run  int
+    }
+    heap := make([]State, 0, 1024)
+    push := func(s State) {
+        heap = append(heap, s)
+        i := len(heap) - 1
+        for i > 0 {
+            p := (i - 1) >> 1
+            if heap[p].d <= heap[i].d {
+                break
+            }
+            heap[p], heap[i] = heap[i], heap[p]
+            i = p
+        }
+    }
+    pop := func() State {
+        res := heap[0]
+        last := heap[len(heap)-1]
+        heap = heap[:len(heap)-1]
+        if len(heap) > 0 {
+            heap[0] = last
+            i := 0
+            for {
+                l := i*2 + 1
+                if l >= len(heap) {
+                    break
+                }
+                r := l + 1
+                c := l
+                if r < len(heap) && heap[r].d < heap[l].d {
+                    c = r
+                }
+                if heap[i].d <= heap[c].d {
+                    break
+                }
+                heap[i], heap[c] = heap[c], heap[i]
+                i = c
+            }
+        }
+        return res
+    }
+    startIdx := 0*kk + 1
+    dist[startIdx] = 0
+    push(State{d: 0, node: 0, run: 1})
+    for len(heap) > 0 {
+        cur := pop()
+        u, run := cur.node, cur.run
+        d := cur.d
+        idx := u*kk + run
+        if d != dist[idx] {
+            continue
+        }
+        if u == n-1 {
+            return int(d)
+        }
+        ul := lb[u]
+        for ei := head[u]; ei != -1; ei = next[ei] {
+            v := to[ei]
+            nr := 1
+            if lb[v] == ul {
+                if run == k {
+                    continue
+                }
+                nr = run + 1
+            }
+            nd := d + int64(wt[ei])
+            vidx := v*kk + nr
+            if nd < dist[vidx] {
+                dist[vidx] = nd
+                push(State{d: nd, node: v, run: nr})
+            }
+        }
+    }
+    return -1
+}
+
 func main() {
     // Example 1:
     // Input: n = 3, edges = [[0,1,1],[1,2,1],[0,2,3]], labels = "aab", k = 1
@@ -122,4 +227,8 @@ func main() {
     // Explanation:
     // There is no valid path from node 0 to node 2 that satisfies at most k = 2 consecutive identical characters. Thus, the answer is -1.
     fmt.Println(shortestPath(3, [][]int{{0,1,1},{1,2,1}}, "aaa", 2)) // -1
+
+    fmt.Println(shortestPath1(3, [][]int{{0,1,1},{1,2,1},{0,2,3}}, "aab", 1)) // 3
+    fmt.Println(shortestPath1(3, [][]int{{0,1,1},{1,2,1},{0,2,3}}, "aab", 2)) // 2
+    fmt.Println(shortestPath1(3, [][]int{{0,1,1},{1,2,1}}, "aaa", 2)) // -1
 }
