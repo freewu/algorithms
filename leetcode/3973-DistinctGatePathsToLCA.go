@@ -71,153 +71,153 @@ package main
 //     The input is generated such that the array parent represents a valid tree.
 
 import "fmt"
+import "math/bits"
 
 const MOD = 1_000_000_007
-const LOG = 16 // 覆盖2^16=65536 > 2e4
 
-// 2*2状态转移矩阵：mat[sFrom][sTo] = 从状态sFrom到sTo的方案数
-type Matrix [2][2]int
-
-// 单位矩阵（无移动，状态不变）
-var I = Matrix{
-    {1, 0},
-    {0, 1},
+// Mat 存储四元组 (bb, br, rb, rr)
+type Mat struct {
+    bb, br, rb, rr int
 }
 
-// 矩阵乘法：A * B = 先走A路径，再走B路径
-func mul(a, b Matrix) Matrix {
-    res := Matrix{}
-    res[0][0] = (a[0][0]*b[0][0] + a[0][1]*b[1][0]) % MOD
-    res[0][1] = (a[0][0]*b[0][1] + a[0][1]*b[1][1]) % MOD
-    res[1][0] = (a[1][0]*b[0][0] + a[1][1]*b[1][0]) % MOD
-    res[1][1] = (a[1][0]*b[0][1] + a[1][1]*b[1][1]) % MOD
-    return res
+type LcaBinaryLifting struct {
+    depth []int
+    pa    [][]int
+    val   [][]Mat
+    m     int
+}
+
+// mul 改造为独立普通函数（移除结构体接收者）
+func mul(x, y Mat) Mat {
+    xbb, xbr, xrb, xrr := x.bb, x.br, x.rb, x.rr
+    ybb, ybr, yrb, yrr := y.bb, y.br, y.rb, y.rr
+    return Mat{
+        (xbb*ybb + xbr*yrb) % MOD,
+        (xbb*ybr + xbr*yrr) % MOD,
+        (xrb*ybb + xrr*yrb) % MOD,
+        (xrb*ybr + xrr*yrr) % MOD,
+    }
+}
+
+func NewLcaBinaryLifting(parent []int, gates [][]int) *LcaBinaryLifting {
+    n := len(parent)
+    m := bits.Len(uint(n))
+    // 建图
+    g := make([][]int, n)
+    for i := 1; i < n; i++ {
+        f := parent[i]
+        g[f] = append(g[f], i)
+    }
+    depth := make([]int, n)
+    // pa 初始化 -1
+    pa := make([][]int, m)
+    val := make([][]Mat, m)
+    for i := 0; i < m; i++ {
+        pa[i] = make([]int, n)
+        val[i] = make([]Mat, n)
+        for j := 0; j < n; j++ {
+            pa[i][j] = -1
+            // 单位矩阵 (1,0,0,1)
+            val[i][j] = Mat{1, 0, 0, 1}
+        }
+    }
+    // 填充0层val
+    for i := 0; i < n; i++ {
+        r, b, w := gates[i][0], gates[i][1], gates[i][2]
+        val[0][i] = Mat{b, w, w, r}
+    }
+    // dfs
+    var dfs func(x, fa int)
+    dfs = func(x, fa int) {
+        pa[0][x] = fa
+        for _, y := range g[x] {
+            depth[y] = depth[x] + 1
+            dfs(y, x)
+        }
+    }
+    dfs(0, -1)
+    // 倍增预处理（调用独立函数mul，无l.前缀）
+    for i := 0; i < m-1; i++ {
+        for x := 0; x < n; x++ {
+            p := pa[i][x]
+            if p != -1 {
+                pa[i+1][x] = pa[i][p]
+                val[i+1][x] = mul(val[i][p], val[i][x])
+            }
+        }
+    }
+    return &LcaBinaryLifting{
+        depth: depth,
+        pa:    pa,
+        val:   val,
+        m:     m,
+    }
+}
+
+// getKthAncestor 向上跳k步祖先
+func (l *LcaBinaryLifting) getKthAncestor(node, k int) int {
+    for i := 0; i < bits.Len(uint(k)); i++ {
+        if (k >> i) & 1 == 1 {
+            node = l.pa[i][node]
+            if node < 0 {
+                return -1
+            }
+        }
+    }
+    return node
+}
+
+// getLca 求x,y的lca
+func (l *LcaBinaryLifting) getLca(x, y int) int {
+    if l.depth[x] > l.depth[y] {
+        x, y = y, x
+    }
+    // y上跳到同深度
+    diff := l.depth[y] - l.depth[x]
+    y = l.getKthAncestor(y, diff)
+    if x == y {
+        return x
+    }
+    // 从高层往下跳
+    for i := l.m - 1; i >= 0; i-- {
+        px := l.pa[i][x]
+        py := l.pa[i][y]
+        if px != py {
+            x, y = px, py
+        }
+    }
+    return l.pa[0][x]
+}
+
+// getWays 从x往上走到a，card=0返回bb+rb mod MOD，card=1返回br+rr mod MOD
+func (l *LcaBinaryLifting) getWays(x, a, card int) int {
+    // 初始单位矩阵
+    cur := Mat{1, 0, 0, 1}
+    d := l.depth[x] - l.depth[a]
+    for i := 0; i < bits.Len(uint(d)); i++ {
+        if (d >> i) & 1 == 1 {
+            // 调用独立函数mul，无l.前缀
+            cur = mul(l.val[i][x], cur)
+            x = l.pa[i][x]
+        }
+    }
+    if card == 0 {
+        return (cur.bb + cur.rb) % MOD
+    } else {
+        return (cur.br + cur.rr) % MOD
+    }
 }
 
 func distinctPaths(n int, parent []int, gates [][]int, queries [][]int) int {
-    // 1. 构建每个节点的转移矩阵M[u]：经过u节点时的状态变化
-    res, M := 0, make([]Matrix, n)
-    for u := 0; u < n; u++ {
-        r, b, w := gates[u][0], gates[u][1], gates[u][2]
-        mat := Matrix{}
-        // 初始状态=红色(1) → 经过u后转移到的状态
-        mat[1][1] = r % MOD // 红门：保持红
-        mat[1][0] = w % MOD // 白门：变蓝
-        // 初始状态=蓝色(0) → 经过u后转移到的状态
-        mat[0][0] = b % MOD // 蓝门：保持蓝
-        mat[0][1] = w % MOD // 白门：变红
-        M[u] = mat
-    }
-    // 2. 建树 + BFS计算节点深度
-    adj := make([][]int, n)
-    for i := 1; i < n; i++ {
-        p := parent[i]
-        adj[p] = append(adj[p], i)
-    }
-    depth := make([]int, n)
-    queue := []int{0}
-    for len(queue) > 0 {
-        u := queue[0]
-        queue = queue[1:]
-        for _, v := range adj[u] {
-            depth[v] = depth[u] + 1
-            queue = append(queue, v)
-        }
-    }
-    // 3. 预处理倍增表
-    // up[k][u]：u向上跳2^k步到达的节点
-    // matJump[k][u]：u向上跳2^k步的总转移矩阵（先走u的1步，再跳2^(k-1)步）
-    up := make([][]int, LOG)
-    matJump := make([][]Matrix, LOG)
-    for k := range up {
-        up[k] = make([]int, n)
-        matJump[k] = make([]Matrix, n)
-    }
-    // 初始化k=0：跳1步（2^0=1）
-    for u := 0; u < n; u++ {
-        if parent[u] == -1 { // 根节点无父节点，跳1步仍为自身
-            up[0][u] = u
-            matJump[0][u] = I
-        } else {
-            up[0][u] = parent[u]
-            matJump[0][u] = M[u] // 跳1步的矩阵=当前节点的转移矩阵
-        }
-    }
-    // 填充倍增表（k≥1）
-    for k := 1; k < LOG; k++ {
-        for u := 0; u < n; u++ {
-            mid := up[k-1][u]
-            up[k][u] = up[k-1][mid]
-            // 乘法顺序：先走2^(k-1)步，再走2^(k-1)步 → matJump[k-1][u] * matJump[k-1][mid]
-            matJump[k][u] = mul(matJump[k-1][u], matJump[k-1][mid])
-        }
-    }
-    // LCA：求x和y的最近公共祖先
-    getLCA := func(x, y int) int {
-        if depth[x] < depth[y] {
-            x, y = y, x
-        }
-        // x上跳至与y同深度
-        for k := LOG - 1; k >= 0; k-- {
-            if depth[x]-(1<<k) >= depth[y] {
-                x = up[k][x]
-            }
-        }
-        if x == y {
-            return x
-        }
-        // 同步上跳至LCA子节点
-        for k := LOG - 1; k >= 0; k-- {
-            if up[k][x] != up[k][y] {
-                x = up[k][x]
-                y = up[k][y]
-            }
-        }
-        return up[0][x]
-    }
-    // getUpMatrix：计算x向上走到祖先anc的**总转移矩阵**（正向路径：x→parent(x)→…→anc）
-    getUpMatrix := func(x, anc int) Matrix {
-        res := I
-        cur := x
-        for k := LOG - 1; k >= 0; k-- {
-            if depth[up[k][cur]] >= depth[anc] {
-                res = mul(res, matJump[k][cur]) // 乘法顺序：先已有路径，再跳k步
-                cur = up[k][cur]
-            }
-        }
-        return res
-    }
-    // getDownMatrix：计算祖先anc向下走到x的**总转移矩阵**（正向路径：anc→…→x）
-    getDownMatrix := func(anc, x int) Matrix {
-        res := I
-        cur := x
-        // 反向收集跳步，再反向相乘（保证向下路径的矩阵顺序正确）
-        var steps []Matrix
-        for k := LOG - 1; k >= 0; k-- {
-            if depth[up[k][cur]] >= depth[anc] {
-                steps = append(steps, matJump[k][cur])
-                cur = up[k][cur]
-            }
-        }
-        // 反向遍历steps，相乘得到向下路径的矩阵
-        for i := len(steps) - 1; i >= 0; i-- {
-            res = mul(res, steps[i])
-        }
-        return res
-    }
-    // 处理所有查询，计算异或结果
+    res, lca := 0, NewLcaBinaryLifting(parent, gates)
     for _, q := range queries {
-        a, sa, b := q[0], q[1],  q[2] // a：起点，sa：初始状态 b：终点
-        lcaNode := getLCA(a, b)
-        // 1. 计算a→LCA的向上转移矩阵
-        upMat := getUpMatrix(a, lcaNode)
-        // 2. 计算LCA→b的向下转移矩阵
-        downMat := getDownMatrix(lcaNode, b)
-        // 3. 总转移矩阵：先走upMat，再走downMat
-        totalMat := mul(upMat, downMat)
-        // 总方案数：初始状态sa经过总矩阵后的所有可能状态之和
-        ways := (totalMat[sa][0] + totalMat[sa][1]) % MOD
-        res ^= ways
+        a, ac := q[0], q[1]
+        b, bc := q[2], q[3]
+        c := lca.getLca(a, b)
+        wa := lca.getWays(a, c, ac)
+        wb := lca.getWays(b, c, bc)
+        mulVal := (wa * wb) % MOD
+        res ^= mulVal
     }
     return res
 }
@@ -244,4 +244,6 @@ func main() {
     // 2	| [1, 1]: Red       | [2, 1]: Red	    | 1	  | 1	       | 2 → 1       | 1 (no move)                      | 3 (3 White at node 2)	| 1 × 3 = 3
     // Thus, the XOR of all values: 3 XOR 3 XOR 3 = 3.
     fmt.Println(distinctPaths(3, []int{-1,0,1}, [][]int{{0,1,2},{1,0,1},{0,0,3}}, [][]int{{2,0,1,0},{2,1,0,0},{1,1,2,1}})) // 3
+
+    fmt.Println(distinctPaths(2, []int{-1,0}, [][]int{{5,7,4},{5,3,10}}, [][]int{{0,1,0,0},{0,1,1,0}})) // 12 
 }
