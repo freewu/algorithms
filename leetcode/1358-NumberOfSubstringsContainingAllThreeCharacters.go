@@ -92,11 +92,45 @@ func main() {
     // Output: 1
     fmt.Println(numberOfSubstrings("abc")) // 1
 
+    fmt.Println(numberOfSubstrings("aaaaaaaaa")) // 0
+    fmt.Println(numberOfSubstrings("bbbbbbbbb")) // 0
+    fmt.Println(numberOfSubstrings("ccccccccc")) // 0
+    fmt.Println(numberOfSubstrings("aaabbbccc")) // 9
+    fmt.Println(numberOfSubstrings("bbbaaaccc")) // 9
+    fmt.Println(numberOfSubstrings("cccaaabbb")) // 9
+    fmt.Println(numberOfSubstrings("cccbbbaaa")) // 9
+    fmt.Println(numberOfSubstrings("abcabcabc")) // 28
+    fmt.Println(numberOfSubstrings("bcabcabca")) // 28
+    fmt.Println(numberOfSubstrings("cabcabcab")) // 28
+    fmt.Println(numberOfSubstrings("cbacbacba")) // 28
+
     fmt.Println(numberOfSubstrings1("abcabc")) // 10
     fmt.Println(numberOfSubstrings1("aaacb")) // 3
     fmt.Println(numberOfSubstrings1("abc")) // 1
+    fmt.Println(numberOfSubstrings1("aaaaaaaaa")) // 0
+    fmt.Println(numberOfSubstrings1("bbbbbbbbb")) // 0
+    fmt.Println(numberOfSubstrings1("ccccccccc")) // 0
+    fmt.Println(numberOfSubstrings1("aaabbbccc")) // 9
+    fmt.Println(numberOfSubstrings1("bbbaaaccc")) // 9
+    fmt.Println(numberOfSubstrings1("cccaaabbb")) // 9
+    fmt.Println(numberOfSubstrings1("cccbbbaaa")) // 9
+    fmt.Println(numberOfSubstrings1("abcabcabc")) // 28
+    fmt.Println(numberOfSubstrings1("bcabcabca")) // 28
+    fmt.Println(numberOfSubstrings1("cabcabcab")) // 28
+    fmt.Println(numberOfSubstrings1("cbacbacba")) // 28
 
     fmt.Println(numberOfSubstrings2("abcabc")) // 10
     fmt.Println(numberOfSubstrings2("aaacb")) // 3
     fmt.Println(numberOfSubstrings2("abc")) // 1
+    fmt.Println(numberOfSubstrings2("aaaaaaaaa")) // 0
+    fmt.Println(numberOfSubstrings2("bbbbbbbbb")) // 0
+    fmt.Println(numberOfSubstrings2("ccccccccc")) // 0
+    fmt.Println(numberOfSubstrings2("aaabbbccc")) // 9
+    fmt.Println(numberOfSubstrings2("bbbaaaccc")) // 9
+    fmt.Println(numberOfSubstrings2("cccaaabbb")) // 9
+    fmt.Println(numberOfSubstrings2("cccbbbaaa")) // 9
+    fmt.Println(numberOfSubstrings2("abcabcabc")) // 28
+    fmt.Println(numberOfSubstrings2("bcabcabca")) // 28
+    fmt.Println(numberOfSubstrings2("cabcabcab")) // 28
+    fmt.Println(numberOfSubstrings2("cbacbacba")) // 28
 }
