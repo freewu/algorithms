@@ -76,6 +76,19 @@ func numberOfSubstrings2(s string) int {
     return res
 }
 
+func numberOfSubstrings3(s string) int {
+    res, left, count := 0, 0, [3]int{}
+    for right := 0; right < len(s); right++ {
+        count[s[right]-'a']++
+        for count[0] > 0 && count[1] > 0 && count[2] > 0 {
+            res += len(s) - right
+            count[s[left]-'a']--
+            left++
+        }
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: s = "abcabc"
@@ -133,4 +146,19 @@ func main() {
     fmt.Println(numberOfSubstrings2("bcabcabca")) // 28
     fmt.Println(numberOfSubstrings2("cabcabcab")) // 28
     fmt.Println(numberOfSubstrings2("cbacbacba")) // 28
+
+    fmt.Println(numberOfSubstrings3("abcabc")) // 10
+    fmt.Println(numberOfSubstrings3("aaacb")) // 3
+    fmt.Println(numberOfSubstrings3("abc")) // 1
+    fmt.Println(numberOfSubstrings3("aaaaaaaaa")) // 0
+    fmt.Println(numberOfSubstrings3("bbbbbbbbb")) // 0
+    fmt.Println(numberOfSubstrings3("ccccccccc")) // 0
+    fmt.Println(numberOfSubstrings3("aaabbbccc")) // 9
+    fmt.Println(numberOfSubstrings3("bbbaaaccc")) // 9
+    fmt.Println(numberOfSubstrings3("cccaaabbb")) // 9
+    fmt.Println(numberOfSubstrings3("cccbbbaaa")) // 9
+    fmt.Println(numberOfSubstrings3("abcabcabc")) // 28
+    fmt.Println(numberOfSubstrings3("bcabcabca")) // 28
+    fmt.Println(numberOfSubstrings3("cabcabcab")) // 28
+    fmt.Println(numberOfSubstrings3("cbacbacba")) // 28
 }
