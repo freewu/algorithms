@@ -46,8 +46,8 @@ import "fmt"
 func maximumSafenessFactor(grid [][]int) int {
     min := func (x, y int) int { if x < y { return x; }; return y; }
     max := func (x, y int) int { if x > y { return x; }; return y; }
-    type pair struct { i, j int }
-    n, dirs := len(grid), []pair{{0, 1}, {1, 0}, {0, -1}, {-1, 0}}
+    type Pair struct { i, j int }
+    n, dirs := len(grid), []Pair{{0, 1}, {1, 0}, {0, -1}, {-1, 0}}
     dis := make([][]int, n)
     for i := range dis {
         dis[i] = make([]int, n)
@@ -55,11 +55,11 @@ func maximumSafenessFactor(grid [][]int) int {
             dis[i][j] = -1
         }
     }
-    thiefs := []pair{}
+    thiefs := []Pair{}
     for i, row := range grid {
         for j, v := range row {
             if v == 1 {
-                thiefs = append(thiefs, pair{i, j})
+                thiefs = append(thiefs, Pair{i, j})
                 dis[i][j] = 0
             }
         }
@@ -67,13 +67,13 @@ func maximumSafenessFactor(grid [][]int) int {
     q := thiefs
     for i := 1; len(q) > 0; i++ {
         tmp := q
-        q = []pair{}
+        q = []Pair{}
         for _, v := range tmp {
             for _, d := range dirs {
                 ni, nj := v.i+d.i, v.j+d.j
                 if ni >= 0 && ni < n && nj >= 0 && nj < n && dis[ni][nj] < 0 {
                     dis[ni][nj] = i
-                    q = append(q, pair{ni, nj})
+                    q = append(q, Pair{ni, nj})
                 }
             }
         }
@@ -81,11 +81,11 @@ func maximumSafenessFactor(grid [][]int) int {
     res, visited := 0, make([]int, n * n)
     var dfs func(i, j, mi int)
     dfs = func(i, j, mi int) {
-        if i == n-1 && j == n-1 {
+        if i == n-1 && j == n - 1 {
             res = max(res, mi)
             return
         }
-        ha:= i * n + j
+        ha := i * n + j
         if mi <= res || mi <= visited[ha] {
             return
         }
@@ -108,8 +108,8 @@ func maximumSafenessFactor1(grid [][]int) int {
     }
     dis := make([][]int, n)
     // 多源BFS
-    type pair struct {x,y int}
-    q:=[]pair{}
+    type Pair struct {x,y int}
+    q:=[]Pair{}
     for i,row:=range grid {
         if dis[i]==nil {
             dis[i]=make([]int, n)
@@ -118,12 +118,12 @@ func maximumSafenessFactor1(grid [][]int) int {
             if num==0 {
                 dis[i][j]=-1
             } else {
-                q=append(q, pair{i,j})
+                q=append(q, Pair{i,j})
             }
         }
     }
     moves:=[][]int{{1,0},{-1,0},{0,1},{0,-1}}
-    groups:=[][]pair{q}
+    groups:=[][]Pair{ q }
     for len(q)>0 {
         l:=len(q)
         for i:=0; i<l; i++ {
@@ -132,7 +132,7 @@ func maximumSafenessFactor1(grid [][]int) int {
                 ni:=q[i].x+move[0]
                 nj:=q[i].y+move[1]
                 if ni>=0 && ni<n && nj>=0 && nj<n && grid[ni][nj]==0 && dis[ni][nj]<0 {
-                    q=append(q, pair{ni, nj})
+                    q=append(q, Pair{ni, nj})
                     grid[ni][nj]=2
                 }
             }
