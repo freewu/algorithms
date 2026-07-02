@@ -43,19 +43,20 @@ package main
 
 import "fmt"
 import "container/heap"
+import "container/list"
 
 // 定义优先队列类型
-type item struct {
+type Item struct {
     x, y, cost int
 }
-type minHeap []*item
-func (h minHeap) Len() int           { return len(h) }
-func (h minHeap) Less(i, j int) bool { return h[i].cost < h[j].cost }
-func (h minHeap) Swap(i, j int)      { h[i], h[j] = h[j], h[i] }
-func (h *minHeap) Push(x interface{}) {
-    *h = append(*h, x.(*item))
+type MinHeap []*Item
+func (h MinHeap) Len() int           { return len(h) }
+func (h MinHeap) Less(i, j int) bool { return h[i].cost < h[j].cost }
+func (h MinHeap) Swap(i, j int)      { h[i], h[j] = h[j], h[i] }
+func (h *MinHeap) Push(x interface{}) {
+    *h = append(*h, x.(*Item))
 }
-func (h *minHeap) Pop() interface{} {
+func (h *MinHeap) Pop() interface{} {
     old := *h
     n := len(old)
     lastItem := old[n-1]
@@ -74,12 +75,12 @@ func findSafeWalk(grid [][]int, health int) bool {
         }
     }
     dirs := [][2]int{{1, 0}, {-1, 0}, {0, 1}, {0, -1}}
-    h := &minHeap{}
+    h := &MinHeap{}
     heap.Init(h)
     cost[0][0] = grid[0][0]
-    heap.Push(h, &item{x: 0, y: 0, cost: cost[0][0]})
+    heap.Push(h, &Item{ x: 0, y: 0, cost: cost[0][0] })
     for h.Len() > 0 {
-        curItem := heap.Pop(h).(*item)
+    curItem := heap.Pop(h).(*Item)
         x, y, curCost := curItem.x, curItem.y, curItem.cost
         if x == m-1 && y == n-1 {
             return curCost < health
@@ -88,7 +89,7 @@ func findSafeWalk(grid [][]int, health int) bool {
             nx, ny := x+d[0], y+d[1]
             if nx >= 0 && nx < m && ny >= 0 && ny < n && curCost+grid[nx][ny] < cost[nx][ny] {
                 cost[nx][ny] = curCost+grid[nx][ny]
-                heap.Push(h, &item{x: nx, y: ny, cost: cost[nx][ny]})
+                heap.Push(h, &Item{ x: nx, y: ny, cost: cost[nx][ny] })
             }
         }
     }
@@ -191,8 +192,8 @@ func findSafeWalk1(grid [][]int, health int) bool {
 }
 
 func findSafeWalk2(grid [][]int, health int) bool {
-    type pair struct{ x, y int }
-    dirs := []pair{{-1, 0}, {1, 0}, {0, -1}, {0, 1}}
+    type Pair struct{ x, y int }
+    dirs := []Pair{{-1, 0}, {1, 0}, {0, -1}, {0, 1}}
     m, n := len(grid), len(grid[0])
     dis := make([][]int, m)
     for i := range dis {
@@ -202,9 +203,9 @@ func findSafeWalk2(grid [][]int, health int) bool {
         }
     }
     dis[0][0] = grid[0][0]
-    q := [2][]pair{{{}}} // 两个 slice 头对头来实现 deque
+    q := [2][]Pair{{{}}} // 两个 slice 头对头来实现 deque
     for len(q[0]) > 0 || len(q[1]) > 0 {
-        var p pair
+        var p Pair
         if len(q[0]) > 0 {
             p, q[0] = q[0][len(q[0])-1], q[0][:len(q[0])-1]
         } else {
@@ -216,12 +217,54 @@ func findSafeWalk2(grid [][]int, health int) bool {
                 g := grid[x][y]
                 if dis[p.x][p.y]+g < dis[x][y] {
                     dis[x][y] = dis[p.x][p.y] + g
-                    q[g] = append(q[g], pair{x, y})
+                    q[g] = append(q[g], Pair{x, y})
                 }
             }
         }
     }
     return dis[m-1][n-1] < health
+}
+
+func findSafeWalk3(grid [][]int, health int) bool {
+    m, n := len(grid), len(grid[0])
+    dirs := [][2]int{{0, 1}, {0, -1}, {1, 0}, {-1, 0}} 
+    dis := make([][]int, m)
+    for i := range dis {
+        dis[i] = make([]int, n)
+        for j := range dis[i] {
+            dis[i][j] = 1 << 61
+        }
+    }
+    q := list.New()
+    q.PushFront([2]int{0, 0})
+    dis[0][0] = grid[0][0]
+    
+    for q.Len() > 0 {
+        cur := q.Remove(q.Front()).([2]int)
+        cx, cy := cur[0], cur[1]
+        if cx == m-1 && cy == n-1 {
+            return dis[cx][cy] < health
+        }
+        for _, dir := range dirs {
+            nx, ny := cx+dir[0], cy+dir[1]
+            if nx < 0 || ny < 0 || nx >= m || ny >= n {
+                continue
+            }
+            cost := dis[cx][cy] + grid[nx][ny]
+            if cost >= health {
+                continue
+            }
+            if cost < dis[nx][ny] {
+                dis[nx][ny] = cost
+                if grid[nx][ny] == 0 {
+                    q.PushFront([2]int{nx, ny})
+                } else {
+                    q.PushBack([2]int{nx, ny})
+                }
+            }
+        }
+    }
+    return false
 }
 
 func main() {
@@ -255,4 +298,8 @@ func main() {
     fmt.Println(findSafeWalk2([][]int{{0,1,0,0,0},{0,1,0,1,0},{0,0,0,1,0}}, 1)) // true
     fmt.Println(findSafeWalk2([][]int{{0,1,1,0,0,0},{1,0,1,0,0,0},{0,1,1,1,0,1},{0,0,1,0,1,0}}, 3)) // false
     fmt.Println(findSafeWalk2([][]int{{1,1,1},{1,0,1},{1,1,1}}, 5)) // true
+
+    fmt.Println(findSafeWalk3([][]int{{0,1,0,0,0},{0,1,0,1,0},{0,0,0,1,0}}, 1)) // true
+    fmt.Println(findSafeWalk3([][]int{{0,1,1,0,0,0},{1,0,1,0,0,0},{0,1,1,1,0,1},{0,0,1,0,1,0}}, 3)) // false
+    fmt.Println(findSafeWalk3([][]int{{1,1,1},{1,0,1},{1,1,1}}, 5)) // true
 }
