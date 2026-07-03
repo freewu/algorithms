@@ -99,6 +99,60 @@ func minScore1(n int, roads [][]int) int {
     return res
 }
 
+type DSU struct {
+    parent []int
+    rank   []int
+}
+
+func NewDSU(n int) *DSU {
+    parent := make([]int, n)
+    for i := range parent {
+        parent[i] = i
+    }
+    return &DSU{
+        parent: parent,
+        rank:   make([]int, n),
+    }
+}
+
+func (d *DSU) Join(x, y int) {
+    rx, ry := d.Find(x), d.Find(y)
+    if rx == ry {
+        return
+    }
+    if d.rank[rx] == d.rank[ry] {
+        d.parent[ry] = rx
+        d.rank[rx]++
+    } else if d.rank[rx] < d.rank[ry] {
+        rx, ry = ry, rx
+    }
+    d.parent[ry] = rx
+}
+
+func (d *DSU) Find(x int) int {
+    if d.parent[x] != x {
+        d.parent[x] = d.Find(d.parent[x])
+    }
+    return d.parent[x]
+}
+
+func minScore2(n int, roads [][]int) int {
+    res := 1 << 61
+    d := NewDSU(n + 1)
+    for _, road := range roads {
+        d.Join(road[0], road[1])
+    }
+    component := d.Find(1)
+    for _, road := range roads {
+        if d.Find(road[0]) == component {
+            if road[2] < res {
+                res = road[2]
+            }
+        }
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // <img src="https://assets.leetcode.com/uploads/2022/10/12/graph11.png" />
@@ -116,4 +170,7 @@ func main() {
 
     fmt.Println(minScore1(4,[][]int{{1,2,9},{2,3,6},{2,4,5},{1,4,7}})) // 5
     fmt.Println(minScore1(4,[][]int{{1,2,2},{1,3,4},{3,4,7}})) // 2
+
+    fmt.Println(minScore2(4,[][]int{{1,2,9},{2,3,6},{2,4,5},{1,4,7}})) // 5
+    fmt.Println(minScore2(4,[][]int{{1,2,2},{1,3,4},{3,4,7}})) // 2
 }
