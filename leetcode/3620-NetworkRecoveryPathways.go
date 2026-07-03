@@ -159,6 +159,20 @@ func findMaxPathScore1(edges [][]int, online []bool, k int64) int {
     }) - 1
 }
 
+type Pair struct{ to, c, all int }
+
+type MinHeap []Pair
+
+func (h MinHeap) Len() int            { return len(h) }
+func (h MinHeap) Less(i, j int) bool  { return h[i].c > h[j].c }
+func (h MinHeap) Swap(i, j int)       { h[i], h[j] = h[j], h[i] }
+func (h *MinHeap) Push(v interface{}) { *h = append(*h, v.(Pair)) }
+func (h *MinHeap) Pop() interface{} {
+    o := (*h)[len(*h) - 1]
+    *h = (*h)[:len(*h) - 1]
+    return o
+}
+
 // 超出内存限制 631 / 636 
 func findMaxPathScore2(edges [][]int, online []bool, k int64) int {
     n := len(online)
@@ -184,18 +198,61 @@ func findMaxPathScore2(edges [][]int, online []bool, k int64) int {
     return -1
 }
 
-type Pair struct{ to, c, all int }
-
-type MinHeap []Pair
-
-func (h MinHeap) Len() int            { return len(h) }
-func (h MinHeap) Less(i, j int) bool  { return h[i].c > h[j].c }
-func (h MinHeap) Swap(i, j int)       { h[i], h[j] = h[j], h[i] }
-func (h *MinHeap) Push(v interface{}) { *h = append(*h, v.(Pair)) }
-func (h *MinHeap) Pop() interface{} {
-    o := (*h)[len(*h) - 1]
-    *h = (*h)[:len(*h) - 1]
-    return o
+func findMaxPathScore3(edges [][]int, online []bool, k int64) int {
+    l, r, n := int(1e9), 0, len(online)
+    graph := make([][][2]int, n)
+    for _, edge := range edges {
+        u, v, w := edge[0], edge[1], edge[2]
+        if !online[u] || !online[v] {
+            continue
+        }
+        graph[u] = append(graph[u], [2]int{ v, w })
+        if w < l {
+            l = w
+        }
+        if w > r {
+            r = w
+        }
+    }
+    check := func(mid int) bool {
+        memo := make([]int64, n)
+        for i := range memo {
+            memo[i] = -1
+        }
+        var dfs func(int) int64
+        dfs = func(u int) int64 {
+            if u == n-1 {
+                return 0
+            }
+            if memo[u] != -1 {
+                return memo[u]
+            }
+            res := int64(1e18)
+            for _, edge := range graph[u] {
+                v, w := edge[0], edge[1]
+                if w >= mid {
+                    if val := dfs(v) + int64(w); val < res {
+                        res = val
+                    }
+                }
+            }
+            memo[u] = res
+            return res
+        }
+        return dfs(0) <= k
+    }
+    if !check(l) {
+        return -1
+    }
+    for l <= r {
+        mid := (l + r) >> 1
+        if check(mid) {
+            l = mid + 1
+        } else {
+            r = mid - 1
+        }
+    }
+    return r
 }
 
 func main() {
@@ -235,4 +292,7 @@ func main() {
     
     fmt.Println(findMaxPathScore2([][]int{{0,1,5},{1,3,10},{0,2,3},{2,3,4}},[]bool{true,true,true,true}, 10)) // 3
     fmt.Println(findMaxPathScore2([][]int{{0,1,7},{1,4,5},{0,2,6},{2,3,6},{3,4,2},{2,4,6}}, []bool{true,true,true,false,true}, 12)) // 3
+
+    fmt.Println(findMaxPathScore3([][]int{{0,1,5},{1,3,10},{0,2,3},{2,3,4}},[]bool{true,true,true,true}, 10)) // 3
+    fmt.Println(findMaxPathScore3([][]int{{0,1,7},{1,4,5},{0,2,6},{2,3,6},{3,4,2},{2,4,6}}, []bool{true,true,true,false,true}, 12)) // 3
 }
