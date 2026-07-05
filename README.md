@@ -2747,6 +2747,7 @@
 [3941. Password Strength](./leetcode/3941-PasswordStrength.go)   
 [3968. Maximum Manhattan Distance After All Moves](./leetcode/3968-MaximumManhattanDistanceAfterAllMoves.go)   
 [3980. Minimum Operations to Transform Binary String](./leetcode/3980-MinimumOperationsToTransformBinaryString.go)   
+[3981. Count Distinct Ways to Form Target from Two Strings](./leetcode/3981-CountDistinctWaysToFormTargetFromTwoStrings.go)   
 
 # Dynamic Programming
 [276. Paint Fence](./leetcode/276-PaintFence.go)   
