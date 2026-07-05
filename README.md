@@ -2073,6 +2073,8 @@
 [3974. Maximum Total Sum of K Selected Elements](./leetcode/3974-MaximumTotalSumOfKSelectedElements.go)   
 [3975. Filter Occupied Intervals](./leetcode/3975-FilterOccupiedIntervals.go)   
 [3976. Maximum Subarray Sum After Multiplier](./leetcode/3976-MaximumSubarraySumAfterMultiplier.go)   
+[3978. Unique Middle Element](./leetcode/3978-UniqueMiddleElement.go)   
+
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
 [5. Longest Palindromic Substring](./leetcode/5-LongestPalindromicSubstring.go)    
