@@ -2075,6 +2075,7 @@
 [3976. Maximum Subarray Sum After Multiplier](./leetcode/3976-MaximumSubarraySumAfterMultiplier.go)   
 [3978. Unique Middle Element](./leetcode/3978-UniqueMiddleElement.go)   
 [3979. Maximum Valid Pair Sum](./leetcode/3979-MaximumValidPairSum.go)   
+[3982. Sum of Integers with Maximum Digit Range](./leetcode/3982-SumOfIntegersWithMaximumDigitRange.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
