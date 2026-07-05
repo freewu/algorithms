@@ -3793,20 +3793,59 @@
 [1215. Stepping Numbers](./leetcode/1215-SteppingNumbers.go)   
 [1240. Tiling a Rectangle with the Fewest Squares](./leetcode/1240-TilingARectangleWithTheFewestSquares.go)   
 
-# QuickSelect
+# Merge Sort 归并排序
+[23. Merge k Sorted Lists](./leetcode/23-MergeKSortedLists.go)   
+[148. Sort List](./leetcode/148-SortList.go)   
+[315. Count of Smaller Numbers After Self](./leetcode/315-CountOfSmallerNumbersAfterSelf.go)   
+[327. Count of Range Sum](./leetcode/327-CountOfRangeSum.go)   
+493
+912
+
+
+# Randomized 随机化
+[380. Insert Delete GetRandom O(1)](./leetcode/380-InsertDeleteGetRandomO1.go)   
+[381. Insert Delete GetRandom O(1) - Duplicates allowed](./leetcode/381-InsertDeleteGetRandomO1-DuplicatesAllowed.go)   
+[382. Linked List Random Node](./leetcode/382-LinkedListRandomNode.go)   
+[384. Shuffle an Array](./leetcode/384-ShuffleAnArray.go)    
+[398. Random Pick Index](./leetcode/398-RandomPickIndex.go)   
+[470. Implement Rand10() Using Rand7()](./leetcode/470-ImplementRand10UsingRand7.go)   
+[478. Generate Random Point in a Circle](./leetcode/478-GenerateRandomPointInACircle.go)   
+[519. Random Flip Matrix](./leetcode/519-RandomFlipMatrix.go)   
+[528. Random Pick with Weight](./leetcode/528-RandomPickWithWeight.go)   
+[710. Random Pick with Blacklist](./leetcode/710-RandomPickWithBlacklist.go)   
+[1515. Best Position for a Service Centre](./leetcode/1515-BestPositionForAServiceCentre.go)   
+[LCR 030. O(1) 时间插入、删除和获取随机元素](./leetcode/LCR030-InsertDeleteGetRandomO1.go)   
+[LCR 071. 按权重随机选择](./leetcode/LCR071-RandomPickWithWeight.go)  
+
+# QuickSelect 快速选择
 [215. Kth Largest Element in an Array](./leetcode/215-KthLargestElementInAnArray.go)   
 [324. Wiggle Sort II](./leetcode/324-WiggleSortII.go)   
 [347. Top K Frequent Elements](./leetcode/347-TopKFrequentElements.go)   
-973. K Closest Points to Origin	
-1738. Find Kth Largest XOR Coordinate Value	
-1985. Find the Kth Largest Integer in the Array
+[973. K Closest Points to Origin](./leetcode/973-KClosestPointsToOrigin.go)   
+[1738. Find Kth Largest XOR Coordinate Value](./leetcode/1738-FindKthLargestXORCoordinateValue.go)   
+[1985. Find the Kth Largest Integer in the Array](./leetcode/1985-FindTheKthLargestIntegerInTheArray.go)   
 [2343. Query Kth Smallest Trimmed Number](./leetcode/2343-QueryKthSmallestTrimmedNumber.go)   
-[LCR 060. 前 K 个高频元素](./leetcode/LCR060-TopKFrequentWords.go)   
-LCR 076. 数组中的第 K 个最大元素	
-LCR 159. 库存管理 III	
-面试题 17.14. Smallest K LCCI
+[3759. Count Elements With at Least K Greater Values](./leetcode/3759-CountElementsWithAtLeastKGreaterValues.go)   
+[LCR 060. 前 K 个高频元素](./leetcode/LCR060-TopKFrequentElements.go)    
+[LCR 076. 数组中的第 K 个最大元素](./leetcode/LCR076-KthLargestElementInAnArray.go)   
+[LCR 159. 库存管理 III](./leetcode/LCR159-InventoryManagementIII.go)   
+[面试题 17.14. Smallest K LCCI](./leetcode/LCCI1714-SmallestK.go)  
 
-# Iterator
+# Counting Sort 计数排序
+[274. H-Index](./leetcode/274-H-Index.go)   
+[561. Array Partition](./leetcode/561-ArrayPartition.go)   
+[912. Sort an Array](./leetcode/912-SortAnArray.go)   
+[1051. Height Checker](./leetcode/1051-HeightChecker.go)   
+[1122. Relative Sort Array](./leetcode/1122-RelativeSortArray.go)   
+[1365. How Many Numbers Are Smaller Than the Current Number](./leetcode/1365-HowManyNumbersAreSmallerThanTheCurrentNumber.go)   
+[1833. Maximum Ice Cream Bars](./leetcode/1833-MaximumIceCreamBars.go)   
+[2037. Minimum Number of Moves to Seat Everyone](./leetcode/2037-MinimumNumberOfMovesToSeatEveryone.go)   
+[3088. Make String Anti-palindrome](./leetcode/3088-MakeStringAntiPalindrome.go)   
+[3189. Minimum Moves to Get a Peaceful Board](./leetcode/3189-MinimumMovesToGetAPeacefulBoard.go)   
+[3517. Smallest Palindromic Rearrangement I](./leetcode/3517-SmallestPalindromicRearrangementI.go)   
+[LCR 075. 数组的相对排序](./leetcode/LCR075-RelativeSortArray.go)   
+
+# Iterator 迭代器
 [173. Binary Search Tree Iterator](./leetcode/173-BinarySearchTreeIterator.go)   
 [251. Flatten 2D Vector](./leetcode/251-Flatten2DVector.go)   
 [281. Zigzag Iterator](./leetcode/281-ZigzagIterator.go)   
@@ -3815,10 +3854,10 @@ LCR 159. 库存管理 III
 [604. Design Compressed String Iterator](./leetcode/604-DesignCompressedStringIterator.go)   
 [900. RLE Iterator](./leetcode/900-RLEIterator.go)   
 [1286. Iterator for Combination](./leetcode/1286-IteratorForCombination.go)   
-1586. Binary Search Tree Iterator II
-LCR 055. 二叉搜索树迭代器
+[1586. Binary Search Tree Iterator II](./leetcode/1586-BinarySearchTreeIteratorII.go)   
+[LCR 055. 二叉搜索树迭代器](./leetcode/LCR055-BinarySearchTreeIterator.go)   
 
-# Probability & Statistics
+# Probability & Statistics 概率与统计
 [470. Implement Rand10() Using Rand7()](./leetcode/470-ImplementRand10UsingRand7.go)   
 [808. Soup Servings](./leetcode/808-SoupServings.go)   
 [837. New 21 Game](./leetcode/837-New21Game.go)   	
@@ -3826,10 +3865,30 @@ LCR 055. 二叉搜索树迭代器
 [1227. Airplane Seat Assignment Probability](./leetcode/1227-AirplaneSeatAssignmentProbability.go)   
 [1230. Toss Strange Coins](./leetcode/1230-TossStrangeCoins.go)   
 [1467. Probability of a Two Boxes Having The Same Number of Distinct Balls](./leetcode/1467-ProbabilityOfATwoBoxesHavingTheSameNumberOfDistinctBalls.go)   
-LCP 11. 期望个数统计
-LCR 185. 统计结果概率
+[LCP 11. 期望个数统计](./leetcode/LCP11-ExpectedQuantityStatistics.go)   
+[LCR 185. 统计结果概率](./leetcode/LCR185-StatisticsProbability.go)   
 
-# Bucket Sort
+# Line Sweep 扫描线
+[218. The Skyline Problem](./leetcode/218-TheSkylineProblem.go)   
+[391. Perfect Rectangle](./leetcode/391-PerfectRectangle.go)   
+[795. Number of Subarrays with Bounded Maximum](./leetcode/795-NumberOfSubarraysWithBoundedMaximum.go)   
+[850. Rectangle Area II](./leetcode/850-RectangleAreaII.go)   
+[986. Interval List Intersections](./leetcode/986-IntervalListIntersections.go)   
+[1851. Minimum Interval to Include Eac](./leetcode/1851-MinimumIntervalToIncludeEac.go)   
+[3009. Maximum Number of Intersections on the Chart](./leetcode/3009-MaximumNumberOfIntersectionsOnTheChart.go)   
+[3454. Separate Squares II](./leetcode/3454-SeparateSquaresII.go)   
+
+# Suffix Array 后缀数组
+[1044. Longest Duplicate Substring](./leetcode/1044-LongestDuplicateSubstring.go)   
+[1062. Longest Repeating Substring](./leetcode/1062-LongestRepeatingSubstring.go)   
+[1698. Number of Distinct Substrings in a String](./leetcode/1698-NumberOfDistinctSubstringsInAString.go)   
+[1923. Longest Common Subpath](./leetcode/1923-LongestCommonSubpath.go)   
+[2223. Sum of Scores of Built Strings](./leetcode/2223-SumOfScoresOfBuiltStrings.go)   
+[3213. Construct String with Minimum Cost](./leetcode/3213-ConstructStringWithMinimumCost.go)   
+[3735. Lexicographically Smallest String After Reverse II](./leetcode/3735-LexicographicallySmallestStringAfterReverseII.go)   
+[3934. Smallest Unique Subarray](./leetcode/3934-SmallestUniqueSubarray.go)    
+
+# Bucket Sort 桶排序
 [164. Maximum Gap](./leetcode/164-MaximumGap.go)   
 [220. Contains Duplicate III](./leetcode/220-ContainsDuplicateIII.go)   
 [347. Top K Frequent Elements](./leetcode/347-TopKFrequentElements.go)   
@@ -3839,61 +3898,38 @@ LCR 185. 统计结果概率
 [LCR 057. 存在重复元素 III](./leetcode/LCR057-ContainsDuplicateIII.go)   
 [LCR 060. 前 K 个高频元素](./leetcode/LCR060-TopKFrequentWords.go)   
 
-# Suffix Array
-1044. Longest Duplicate Substring
-1062. Longest Repeating Substring
-1698. Number of Distinct Substrings in a String
-1923. Longest Common Subpath
-1977. Number of Ways to Separate Numbers
-2223. Sum of Scores of Built Strings
-
-# Counting Sort
-[274. H-Index](./leetcode/274-H-Index.go)   
-[561. Array Partition](./leetcode/561-ArrayPartition.go)   
-[912. Sort an Array](./leetcode/912-SortAnArray.go)   
-[1051. Height Checker](./leetcode/1051-HeightChecker.go)   
-[1122. Relative Sort Array](./leetcode/1122-RelativeSortArray.go)   
-[LCR 075. 数组的相对排序](./leetcode/LCR075-RelativeSortArray.go)   
-
-# Minimum Spanning Tree
+# Minimum Spanning Tree 最小生成树
 [1135. Connecting Cities With Minimum Cost](./leetcode/1135-ConnectingCitiesWithMinimumCost.go)   
 [1168. Optimize Water Distribution in a Village](./leetcode/1168-OptimizeWaterDistributionInAVillage.go)   
 [1489. Find Critical and Pseudo-Critical Edges in Minimum Spanning Tree](./leetcode/1489-FindCriticalAndPseudoCriticalEdgesInMinimumSpanningTree.go)   
 [1584. Min Cost to Connect All Points](./leetcode/1584-MinCostToConnectAllPoints.go)   
 [1724. Checking Existence of Edge Length Limited Paths II](./leetcode/1724-CheckingExistenceOfEdgeLengthLimitedPathsII.go)   
 
-# Line Sweep
-[218. The Skyline Problem](./leetcode/218-TheSkylineProblem.go)   
-[391. Perfect Rectangle](./leetcode/391-PerfectRectangle.go)   
-[850. Rectangle Area II](./leetcode/850-RectangleAreaII.go)   
-[1851. Minimum Interval to Include Eac](./leetcode/1851-MinimumIntervalToIncludeEac.go)   
-
-# Reservoir Sampling
+# Reservoir Sampling 水塘抽样
 [382. Linked List Random Node](./leetcode/382-LinkedListRandomNode.go)   
 [398. Random Pick Index](./leetcode/398-RandomPickIndex.go)   
 [497. Random Point in Non-overlapping Rectangles](./leetcode/497-RandomPointInNonOverlappingRectangles.go)   
 [519. Random Flip Matrix](./leetcode/519-RandomFlipMatrix.go)   
 
-# Strongly Connected Component
-[1489. Find Critical and Pseudo-Critical Edges in Minimum Spanning Tree](./leetcode/1489-FindCriticalAndPseudoCriticalEdgesInMinimumSpanningTree.go)   
-[1568. Minimum Number of Days to Disconnect Island](./leetcode/1568-MinimumNumberOfDaysToDisconnectIsland.go)   
-[2846. Minimum Edge Weight Equilibrium Queries in a Tree](./leetcode/2846-MinimumEdgeWeightEquilibriumQueriesInATree.go)   
-
-# Eulerian Circuit
+# Eulerian Circuit 欧拉回路
 [332. Reconstruct Itinerary](./leetcode/332-ReconstructItinerary.go)   
 [753. Cracking the Safe](./leetcode/753-CrackingTheSafe.go)   
 [2097. Valid Arrangement of Pairs](./leetcode/2097-ValidArrangementOfPairs.go)   
 
-# Radix Sort
+# Radix Sort 基数排序
 [164. Maximum Gap](./leetcode/164-MaximumGap.go)   
 [912. Sort an Array](./leetcode/912-SortAnArray.go)   
 [2343. Query Kth Smallest Trimmed Number](./leetcode/2343-QueryKthSmallestTrimmedNumber.go)   
 
-# Biconnected Component
+# Strongly Connected Component 强连通分量
+[1489. Find Critical and Pseudo-Critical Edges in Minimum Spanning Tree](./leetcode/1489-FindCriticalAndPseudoCriticalEdgesInMinimumSpanningTree.go)   
+[1568. Minimum Number of Days to Disconnect Island](./leetcode/1568-MinimumNumberOfDaysToDisconnectIsland.go)    
+
+# Biconnected Component 双连通分量
 [1192. Critical Connections in a Network](./leetcode/1192-CriticalConnectionsInANetwork.go)   
 [LCP 54. 夺回据点](./leetcode/LCP54-RetrieveTheStronghold.go)   
 
-# Rejection Sampling
+# Rejection Sampling 拒绝采样
 [470. Implement Rand10() Using Rand7()](./leetcode/470-ImplementRand10UsingRand7.go)   
 [478. Generate Random Point in a Circle](./leetcode/478-GenerateRandomPointInACircle.go)   
 
