@@ -77,4 +77,11 @@ func main() {
     // Input: pattern = "aabb", s = "xyzabcxzyabc"
     // Output: false
     fmt.Println(wordPatternMatch("aabb","xyzabcxzyabc")) // false
+
+    fmt.Println(wordPatternMatch("aabb","bluefrog")) // false
+    fmt.Println(wordPatternMatch("abab","bluefrogbluefrog")) // true
+    fmt.Println(wordPatternMatch("aabb","leetcode")) // false
+    fmt.Println(wordPatternMatch("abab","leetcodeleetcode")) // true
+    fmt.Println(wordPatternMatch("aabb","freewu")) // false
+    fmt.Println(wordPatternMatch("abab","freewufreewu")) // true
 }
