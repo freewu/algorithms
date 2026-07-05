@@ -2074,6 +2074,7 @@
 [3975. Filter Occupied Intervals](./leetcode/3975-FilterOccupiedIntervals.go)   
 [3976. Maximum Subarray Sum After Multiplier](./leetcode/3976-MaximumSubarraySumAfterMultiplier.go)   
 [3978. Unique Middle Element](./leetcode/3978-UniqueMiddleElement.go)   
+[3979. Maximum Valid Pair Sum](./leetcode/3979-MaximumValidPairSum.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
