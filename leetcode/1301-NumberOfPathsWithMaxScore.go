@@ -91,6 +91,79 @@ func pathsWithMaxScore(board []string) []int {
     return []int{ dp[n-1][n-1] - int('S'-'0'), count[n-1][n-1]}
 }
 
+func pathsWithMaxScore1(board []string) []int {
+    n, mod := len(board), 1_000_000_007
+    pre, now := make([][]int, n), make([][]int, n)
+    for i := 0; i < n; i++ {
+        now[i], pre[i] = make([]int, 2), []int{ -1, 0 }
+    }
+    now[n - 1][1] = 1
+    getScore := func(ch byte) int { // 获取格子的数字得分
+        if ch == 'E' || ch == 'S' { 
+            return 0
+        }
+        return int(ch - '0')
+    }
+    for i := n - 1; i >= 0; i-- {
+        for j := n - 1; j >= 0; j-- {
+            if i == n - 1 && j == n - 1 { // 起点已经初始化过
+                continue
+            }
+            // 障碍物不可达
+            if board[i][j] == 'X' {
+                now[j][0] = -1 // 标记为不可达
+                continue
+            }
+            // 从三个方向收集候选
+            down, right, downR := []int{}, []int{}, []int{}
+            if i < n - 1 {
+                down = pre[j]
+            }
+            if j < n - 1 {
+                right = now[j+1]
+            }
+            if i < n - 1 && j < n - 1 {
+                downR = pre[j + 1]
+            }
+            best, totalWays := -1, 0
+            if len(down) != 0 {
+                if down[0] > best {
+                    best, totalWays = down[0], down[1]
+                } else if down[0] == best {
+                    totalWays += down[1]
+                    totalWays %= mod
+                }
+            }
+            if len(right) != 0 {
+                if right[0] > best {
+                    best, totalWays = right[0], right[1]
+                } else if right[0] == best {
+                    totalWays += right[1]
+                    totalWays %= mod
+                }
+            }
+            if len(downR) != 0 {
+                if downR[0] > best {
+                    best, totalWays = downR[0], downR[1]    
+                } else if downR[0] == best {
+                    totalWays += downR[1]
+                    totalWays %= mod
+                }
+            }
+            if best == -1 {
+                now[j][0] = -1
+                continue
+            }
+            now[j][0], now[j][1] = best + getScore(board[i][j]), totalWays
+        }
+        now, pre = pre, now
+    }
+    if pre[0][0] == -1 {
+        return []int{0, 0}
+    }
+    return pre[0]
+}
+
 func main() {
     // Example 1:
     // Input: board = ["E23","2X2","12S"]
@@ -104,4 +177,8 @@ func main() {
     // Input: board = ["E11","XXX","11S"]
     // Output: [0,0]
     fmt.Println(pathsWithMaxScore([]string{"E11","XXX","11S"})) //  [0,0]
+
+    fmt.Println(pathsWithMaxScore1([]string{"E23","2X2","12S"})) // [7,1]
+    fmt.Println(pathsWithMaxScore1([]string{"E12","1X1","21S"})) //  [4,2]
+    fmt.Println(pathsWithMaxScore1([]string{"E11","XXX","11S"})) //  [0,0]
 }
