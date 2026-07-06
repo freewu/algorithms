@@ -24,6 +24,8 @@ package main
 
 import "fmt"
 import "sort"
+import "cmp"
+import "slices"
 
 func removeCoveredIntervals(intervals [][]int) int {
     sort.Slice(intervals, func(i, j int) bool { // sort by increasing 'start' then by decreasing 'end'
@@ -33,12 +35,12 @@ func removeCoveredIntervals(intervals [][]int) int {
         return intervals[i][0] <= intervals[j][0]
     })
     i, count := 0, 0
-    for j := 1; j < len(intervals); j += 1 {
+    for j := 1; j < len(intervals); j++ {
         if intervals[j][1] > intervals[i][1] {
             i = j
             continue
         }
-        count += 1 // remove jth interval 
+        count++// remove jth interval 
     }
     return len(intervals) - count
 }
@@ -64,6 +66,24 @@ func removeCoveredIntervals1(intervals [][]int) int {
     return len(intervals) - res
 }
 
+func removeCoveredIntervals2(intervals [][]int) int {
+    // 按区间左端点从小到大排序
+    // 区间左端点相同时，按区间右端点从大到小排序，这样会先遍历大区间，再遍历被大区间覆盖的小区间
+    slices.SortFunc(intervals, func(a, b []int) int {
+        return cmp.Or(a[0] - b[0], b[1] - a[1])
+    })
+    res, maxRight := 0, 0 // 已遍历区间中的最大右端点
+    for _, p := range intervals {
+        // 由于区间左端点是从小到大排序的，遍历过的区间的左端点都 <= 当前区间的左端点
+        // 如果当前区间右端点 <= maxRight，说明当前区间被另一个区间覆盖，否则没被覆盖
+        if p[1] > maxRight {
+            maxRight = p[1]
+            res++ // 当前区间没被覆盖
+        }
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: intervals = [[1,4],[3,6],[2,8]]
@@ -77,4 +97,7 @@ func main() {
 
     fmt.Println(removeCoveredIntervals1([][]int{{1,4},{3,6},{2,8}})) // 2
     fmt.Println(removeCoveredIntervals1([][]int{{1,4},{2,3}})) // 1
+
+    fmt.Println(removeCoveredIntervals2([][]int{{1,4},{3,6},{2,8}})) // 2
+    fmt.Println(removeCoveredIntervals2([][]int{{1,4},{2,3}})) // 1
 }
