@@ -42,6 +42,20 @@ func sumAndMultiply(n int) int64 {
     return int64(s) * int64(x)
 }
 
+func sumAndMultiply1(n int) int64 {
+    x, sum, pow10 := int64(0), int64(0), int64(1)
+    for n > 0 {
+        d := n % 10
+        sum += int64(d)
+        if d > 0 {
+            x += int64(d) * pow10
+            pow10 *= 10
+        }
+        n /= 10
+    }
+    return x * sum
+}
+
 func main() {
     // Example 1:
     // Input: n = 10203004
@@ -68,4 +82,16 @@ func main() {
     fmt.Println(sumAndMultiply(1024)) // 868
     fmt.Println(sumAndMultiply(999_999_999)) // 80999999919
     fmt.Println(sumAndMultiply(1_000_000_000)) // 1
+
+    fmt.Println(sumAndMultiply1(10203004)) // 12340
+    fmt.Println(sumAndMultiply1(1000)) // 1
+    fmt.Println(sumAndMultiply1(0)) // 0
+    fmt.Println(sumAndMultiply1(1)) // 1
+    fmt.Println(sumAndMultiply1(8)) // 64
+    fmt.Println(sumAndMultiply1(64)) // 640
+    fmt.Println(sumAndMultiply1(99)) // 1782
+    fmt.Println(sumAndMultiply1(100)) // 1
+    fmt.Println(sumAndMultiply1(1024)) // 868
+    fmt.Println(sumAndMultiply1(999_999_999)) // 80999999919
+    fmt.Println(sumAndMultiply1(1_000_000_000)) // 1
 }
