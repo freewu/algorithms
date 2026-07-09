@@ -112,6 +112,27 @@ func pathExistenceQueries1(n int, nums []int, maxDiff int, queries [][]int) []bo
     return res
 }
 
+func pathExistenceQueries2(n int, nums []int, maxDiff int, queries [][]int) []bool {
+    if n == 0 {
+        return make([]bool, len(queries))
+    }
+    packs := make([]int32, n)
+    curr := int32(0)
+    packs[0] = curr
+    for i := 1; i < n; i++ {
+        if nums[i]-nums[i-1] > maxDiff {
+            curr++
+        }
+        packs[i] = curr 
+    }
+    res := make([]bool, len(queries))
+    for i, q := range queries {
+        a, b := q[0], q[1]
+        res[i] = packs[a] == packs[b]
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: n = 2, nums = [1,3], maxDiff = 1, queries = [[0,0],[0,1]]
@@ -136,4 +157,7 @@ func main() {
     
     fmt.Println(pathExistenceQueries1(2, []int{1,3}, 1, [][]int{{0,0},{0,1}})) // [true,false]
     fmt.Println(pathExistenceQueries1(4, []int{2,5,6,8}, 2, [][]int{{0,1},{0,2},{1,3},{2,3}})) // [false,false,true,true]
+
+    fmt.Println(pathExistenceQueries2(2, []int{1,3}, 1, [][]int{{0,0},{0,1}})) // [true,false]
+    fmt.Println(pathExistenceQueries2(4, []int{2,5,6,8}, 2, [][]int{{0,1},{0,2},{1,3},{2,3}})) // [false,false,true,true]
 }
