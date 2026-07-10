@@ -170,6 +170,62 @@ func pathExistenceQueries(n int, nums []int, maxDiff int, queries [][]int) []int
     return res
 }
 
+func pathExistenceQueries1(n int, nums []int, maxDiff int, queries [][]int) []int {
+    index := make([]int, n)
+    for i := range index {
+        index[i] = i
+    }
+    slices.SortFunc(index, func(a, b int) int { 
+        return nums[a] - nums[b] 
+    })
+    rank := make([]int, n)
+    for j, i := range index {
+        rank[i] = j
+    }
+    m := bits.Len(uint(n))
+    pa := make([][]int, n)
+    {
+        j := n - 1
+        for i := n - 1; i >= 0; i-- {
+            pa[i] = make([]int, m)
+            for nums[index[i]] + maxDiff < nums[index[j]] {
+                j--
+            }
+            pa[i][0] = j
+        }
+    }
+    for j := range m - 1 {
+        for i := range n {
+            p := pa[i][j]
+            pa[i][j+1] = pa[p][j]
+        }
+    }
+    res := make([]int, len(queries))
+    for i, q := range queries {
+        a, b := q[0], q[1]
+        if a == b {
+            continue
+        }
+        a, b = rank[a], rank[b]
+        if a > b {
+            a, b = b, a
+        }
+        steps := 0
+        for k := m - 1; k >= 0; k-- { // 尝试 2^k步
+            if pa[a][k] < b {
+                steps += 1 << k
+                a = pa[a][k]
+            }
+        }
+        if pa[a][0] < b {
+            res[i] = -1
+        } else {
+            res[i] = steps + 1
+        }
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: n = 5, nums = [1,8,3,4,2], maxDiff = 3, queries = [[0,3],[2,4]]
@@ -205,4 +261,8 @@ func main() {
     // Nodes 1 and 2: |nums[1] - nums[2]| = |6 - 1| = 5 > 1
     // Thus, no node can reach any other node, and the output is [0, -1, -1].
     fmt.Println(pathExistenceQueries(3,[]int{3,6,1}, 1, [][]int{{0,0},{0,1},{1,2}})) //  [0,-1,-1]
+
+    fmt.Println(pathExistenceQueries1(5,[]int{1,8,3,4,2}, 3, [][]int{{0,3},{2,4}})) // [1,1]
+    fmt.Println(pathExistenceQueries1(5,[]int{5,3,1,9,10}, 2, [][]int{{0,1},{0,2},{2,3},{4,3}})) // [1,2,-1,1]
+    fmt.Println(pathExistenceQueries1(3,[]int{3,6,1}, 1, [][]int{{0,0},{0,1},{1,2}})) //  [0,-1,-1]
 }
