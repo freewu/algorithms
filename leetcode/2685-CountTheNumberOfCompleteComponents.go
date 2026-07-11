@@ -105,6 +105,37 @@ func countCompleteComponents1(n int, edges [][]int) int {
     return res
 }
 
+func countCompleteComponents2(n int, edges [][]int) int {
+    res, v, e := 0, 0, 0
+    adj, visited := make([][]int, n), make([]bool, n)
+    for _, edge := range edges {
+        u, v := edge[0], edge[1]
+        adj[u] = append(adj[u], v)
+        adj[v] = append(adj[v], u)
+    }
+    var dfs func(int)
+    dfs = func(x int) {
+        visited[x] = true
+        v++
+        e += len(adj[x])
+        for _, next := range adj[x] {
+            if !visited[next] {
+                dfs(next)
+            }
+        }
+    }
+    for i := range n {
+        if !visited[i] {
+            v, e = 0, 0
+            dfs(i)
+            if e == v*(v-1) {
+                res++
+            }
+        }
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // <img src="https://assets.leetcode.com/uploads/2023/04/11/screenshot-from-2023-04-11-23-31-23.png" />
@@ -121,4 +152,7 @@ func main() {
 
     fmt.Println(countCompleteComponents1(6, [][]int{{0,1},{0,2},{1,2},{3,4}})) // 3
     fmt.Println(countCompleteComponents1(6, [][]int{{0,1},{0,2},{1,2},{3,4},{3,5}})) // 1
+
+    fmt.Println(countCompleteComponents2(6, [][]int{{0,1},{0,2},{1,2},{3,4}})) // 3
+    fmt.Println(countCompleteComponents2(6, [][]int{{0,1},{0,2},{1,2},{3,4},{3,5}})) // 1
 }
