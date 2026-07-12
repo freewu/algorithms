@@ -84,6 +84,50 @@ func arrayRankTransform2(arr []int) []int {
     return res
 }
 
+func arrayRankTransform3(arr []int) []int {
+    sortedArr := make([]int, len(arr))
+    copy(sortedArr, arr)
+    sort.Ints(sortedArr)
+    sortedUnique := make([]int, 0, len(sortedArr))
+    for i, v := range sortedArr {
+        if i == 0 || v != sortedArr[i -1 ] {
+            sortedUnique = append(sortedUnique, v)
+        }
+    }
+    rankMap := make(map[int]int, len(sortedUnique))
+    for i, v := range sortedUnique {
+        rankMap[v] = i + 1
+    }
+    res := make([]int, len(arr))
+    for i, v := range arr {
+        res[i] = rankMap[v]
+    }
+    return res
+}
+
+func arrayRankTransform4(arr []int) []int {
+    n := len(arr)
+    if n == 0 {
+        return make([]int, 0)
+    }
+    t := make([]int, n)
+    copy(t, arr)
+    sort.Ints(t)
+    count, i := make(map[int]int, n), 1
+    count[t[0]] = i 
+    for j := 1; j < n; j ++ {
+        if t[j] != t[j-1] {
+            i++
+            count[t[j]] = i
+        } 
+    }
+    res := make([]int, n)
+    for i, v := range arr {
+        res[i] = count[v]
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: arr = [40,10,20,30]
@@ -100,11 +144,30 @@ func main() {
     // Output: [5,3,4,2,8,6,7,1,3]
     fmt.Println(arrayRankTransform([]int{37,12,28,9,100,56,80,5,12})) // [5,3,4,2,8,6,7,1,3]
 
+    fmt.Println(arrayRankTransform([]int{1,2,3,4,5,6,7,8,9})) // [1,2,3,4,5,6,7,8,9]
+    fmt.Println(arrayRankTransform([]int{9,8,7,6,5,4,3,2,1})) // [9,8,7,6,5,4,3,2,1]
+
     fmt.Println(arrayRankTransform1([]int{40,10,20,30})) // [4,1,2,3]
     fmt.Println(arrayRankTransform1([]int{100,100,100})) // [1,1,1]
     fmt.Println(arrayRankTransform1([]int{37,12,28,9,100,56,80,5,12})) // [5,3,4,2,8,6,7,1,3]
+    fmt.Println(arrayRankTransform1([]int{1,2,3,4,5,6,7,8,9})) // [1,2,3,4,5,6,7,8,9]
+    fmt.Println(arrayRankTransform1([]int{9,8,7,6,5,4,3,2,1})) // [9,8,7,6,5,4,3,2,1]
 
     fmt.Println(arrayRankTransform2([]int{40,10,20,30})) // [4,1,2,3]
     fmt.Println(arrayRankTransform2([]int{100,100,100})) // [1,1,1]
     fmt.Println(arrayRankTransform2([]int{37,12,28,9,100,56,80,5,12})) // [5,3,4,2,8,6,7,1,3]
+    fmt.Println(arrayRankTransform2([]int{1,2,3,4,5,6,7,8,9})) // [1,2,3,4,5,6,7,8,9]
+    fmt.Println(arrayRankTransform2([]int{9,8,7,6,5,4,3,2,1})) // [9,8,7,6,5,4,3,2,1]
+
+    fmt.Println(arrayRankTransform3([]int{40,10,20,30})) // [4,1,2,3]
+    fmt.Println(arrayRankTransform3([]int{100,100,100})) // [1,1,1]
+    fmt.Println(arrayRankTransform3([]int{37,12,28,9,100,56,80,5,12})) // [5,3,4,2,8,6,7,1,3]
+    fmt.Println(arrayRankTransform3([]int{1,2,3,4,5,6,7,8,9})) // [1,2,3,4,5,6,7,8,9]
+    fmt.Println(arrayRankTransform3([]int{9,8,7,6,5,4,3,2,1})) // [9,8,7,6,5,4,3,2,1]
+
+    fmt.Println(arrayRankTransform4([]int{40,10,20,30})) // [4,1,2,3]
+    fmt.Println(arrayRankTransform4([]int{100,100,100})) // [1,1,1]
+    fmt.Println(arrayRankTransform4([]int{37,12,28,9,100,56,80,5,12})) // [5,3,4,2,8,6,7,1,3]
+    fmt.Println(arrayRankTransform4([]int{1,2,3,4,5,6,7,8,9})) // [1,2,3,4,5,6,7,8,9]
+    fmt.Println(arrayRankTransform4([]int{9,8,7,6,5,4,3,2,1})) // [9,8,7,6,5,4,3,2,1]
 }
