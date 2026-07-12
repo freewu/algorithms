@@ -2078,6 +2078,7 @@
 [3982. Sum of Integers with Maximum Digit Range](./leetcode/3982-SumOfIntegersWithMaximumDigitRange.go)   
 [3984. Divisible Game](./leetcode/3984-DivisibleGame.go)   
 [3985. Palindromic Subarray Sum](./leetcode/3985-PalindromicSubarraySum.go)   
+[3987. Minimum Total Cost to Process All Elements](./leetcode/3987-MinimumTotalCostToProcessAllElements.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
