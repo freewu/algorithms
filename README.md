@@ -2079,6 +2079,7 @@
 [3984. Divisible Game](./leetcode/3984-DivisibleGame.go)   
 [3985. Palindromic Subarray Sum](./leetcode/3985-PalindromicSubarraySum.go)   
 [3987. Minimum Total Cost to Process All Elements](./leetcode/3987-MinimumTotalCostToProcessAllElements.go)   
+[3989. Maximum Consistent Columns in a Grid](./leetcode/3989-MaximumConsistentColumnsInAGrid.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
