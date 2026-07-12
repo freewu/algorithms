@@ -3216,6 +3216,7 @@
 [3959. Check Good Integer](./leetcode/3959-CheckGoodInteger.go)   
 [3963. Create Grid With Exactly One Path](./leetcode/3963-CreateGridWithExactlyOnePath.go)   
 [3966. Count Good Integers in a Range](./leetcode/3966-CountGoodIntegersInRange.go)   
+[3988. Create Grid With Exactly K Paths I](./leetcode/3988-CreateGridWithExactlyKPathsI.go)   
 
 # Stack
 [225. Implement Stack using Queues](./leetcode/225-ImplementStackUsingQueues.go)   
