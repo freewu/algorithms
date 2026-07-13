@@ -42,47 +42,40 @@ package main
 //     1 <= k <= 1000
 
 import "fmt"
+import "math/bits"
 
 func createGrid(k int) []string {
-	if k == 0 {
-		return []string{}
-	}
-	// 存储每一位需要的2的幂次
-	var powers []int
-	tmp := k
-	pow := 0
-	for tmp > 0 {
-		if tmp%2 == 1 {
-			powers = append(powers, pow)
-		}
-		tmp /= 2
-		pow++
-	}
-	// 每一个power对应一个通路块，块之间用1列#分隔
-	var row0, row1 string
-	for idx, p := range powers {
-		length := (1 << p) + 1 // 2^p +1
-		// 通路块第一行：全.
-		block0 := make([]byte, length)
-		for i := range block0 {
-			block0[i] = '.'
-		}
-		// 通路块第二行：首尾.，中间#
-		block1 := make([]byte, length)
-		block1[0] = '.'
-		block1[length-1] = '.'
-		for i := 1; i < length-1; i++ {
-			block1[i] = '#'
-		}
-		row0 += string(block0)
-		row1 += string(block1)
-		// 块之间加分隔墙（1列#），最后一块不加
-		if idx != len(powers)-1 {
-			row0 += "#"
-			row1 += "#"
-		}
-	}
-	return []string{row0, row1}
+    width := bits.Len(uint(k))
+    m, n := width * 2, width + 3
+    arr := make([][]rune, m)
+    for i := range arr {
+        row := make([]rune, n)
+        for j := 0; j < n-1; j++ {
+            row[j] = '#'
+        }
+        row[n-1] = '.'
+        arr[i] = row
+    }
+    for j := 0; j < width; j++ {
+        i := j * 2
+        arr[i][j] = '.'
+        arr[i][j+1] = '.'
+        arr[i+1][j] = '.'
+        arr[i+1][j+1] = '.'
+    }
+    for i := 0; i < width; i++ {
+        if (k >> i) & 1 == 1 {
+            row := i * 2
+            for j := i + 2; j < n; j++ {
+                arr[row][j] = '.'
+            }
+        }
+    }
+    res := make([]string, m)
+    for i, r := range arr {
+        res[i] = string(r)
+    }
+    return res
 }
 
 func main() {
@@ -104,14 +97,14 @@ func main() {
     // (0, 0) → (0, 1) → (0, 2) → (1, 2) → (2, 2)
     // (0, 0) → (0, 1) → (1, 1) → (1, 2) → (2, 2)
     // (0, 0) → (0, 1) → (1, 1) → (2, 1) → (2, 2)
-    fmt.Println(createGrid(3)) // ["...","#..","#.."]
+    fmt.Println(createGrid(3)) // ["...", "#..", "#.."]
 
-    fmt.Println(createGrid(1)) // ["...","#..","#.."]
-    fmt.Println(createGrid(4)) // []
-    fmt.Println(createGrid(8)) // ["...","#..","#.."]
-    fmt.Println(createGrid(99)) // ["...","#..","#.."]
-    fmt.Println(createGrid(100)) // ["...","#..","#.."]
-    fmt.Println(createGrid(101)) // ["...","#..","#.."]
-    fmt.Println(createGrid(999)) // ["...","#..","#.."]
-    fmt.Println(createGrid(1000)) // ["...","#..","#.."]
+    fmt.Println(createGrid(1)) // [.... ..#.]
+    fmt.Println(createGrid(4)) // [..###. ..###. #..##. #..##. ##.... ##..#.]
+    fmt.Println(createGrid(8)) // [..####. ..####. #..###. #..###. ##..##. ##..##. ###.... ###..#.]
+    fmt.Println(createGrid(99)) // [.......... ..#######. #......... #..######. ##..#####. ##..#####. ###..####. ###..####. ####..###. ####..###. #####..... #####..##. ######.... ######..#.]
+    fmt.Println(createGrid(100)) // [..#######. ..#######. #..######. #..######. ##........ ##..#####. ###..####. ###..####. ####..###. ####..###. #####..... #####..##. ######.... ######..#.]
+    fmt.Println(createGrid(101)) // [.......... ..#######. #..######. #..######. ##........ ##..#####. ###..####. ###..####. ####..###. ####..###. #####..... #####..##. ######.... ######..#.]  
+    fmt.Println(createGrid(999)) // [............. ..##########. #............ #..#########. ##........... ##..########. ###..#######. ###..#######. ####..######. ####..######. #####........ #####..#####. ######....... ######..####. #######...... #######..###. ########..... ########..##. #########.... #########..#.]
+    fmt.Println(createGrid(1000)) // [..##########. ..##########. #..#########. #..#########. ##..########. ##..########. ###.......... ###..#######. ####..######. ####..######. #####........ #####..#####. ######....... ######..####. #######...... #######..###. ########..... ########..##. #########.... #########..#.]
 }
