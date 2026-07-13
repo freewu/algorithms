@@ -50,7 +50,6 @@ func sortArray(nums []int, pre []int) int {
     for i := 0; i < n; i++ {
         target[i] = i
     }
-
     // 判断数组是否相等
     equal := func(a, b []int) bool {
         for i := range a {
@@ -63,7 +62,6 @@ func sortArray(nums []int, pre []int) int {
     if equal(nums, target) {
         return 0
     }
-
     // 数组转字符串用于去重
     arrToString := func(arr []int) string {
         var s []string
@@ -72,7 +70,6 @@ func sortArray(nums []int, pre []int) int {
         }
         return strings.Join(s, ",")
     }
-
     // 翻转前x个元素，返回新数组
     reversePrefix := func(arr []int, x int) []int {
         newArr := make([]int, n)
@@ -85,19 +82,16 @@ func sortArray(nums []int, pre []int) int {
         }
         return newArr
     }
-
-    type state struct {
+    type State struct {
         arr []int
         step int
     }
-    queue := []state{{arr: nums, step: 0}}
+    queue := []State{{arr: nums, step: 0}}
     visited := make(map[string]bool)
     visited[arrToString(nums)] = true
-
     for len(queue) > 0 {
         cur := queue[0]
         queue = queue[1:]
-
         // 遍历所有可用翻转长度
         for _, x := range pre {
             nextArr := reversePrefix(cur.arr, x)
@@ -107,7 +101,7 @@ func sortArray(nums []int, pre []int) int {
             key := arrToString(nextArr)
             if !visited[key] {
                 visited[key] = true
-                queue = append(queue, state{arr: nextArr, step: cur.step + 1})
+                queue = append(queue, State{arr: nextArr, step: cur.step + 1})
             }
         }
     }
@@ -137,8 +131,8 @@ func main() {
     // Since nums is already sorted, no prefix reversals are needed. Thus, the answer is 0.
     fmt.Println(sortArray([]int{0,1}, []int{2})) // 0
 
-    fmt.Println(sortArray([]int{0,1,2,3,4,5,6,7}, []int{1,2,3,4,5,6,7,8})) // 2
-    fmt.Println(sortArray([]int{0,1,2,3,4,5,6,7}, []int{8,7,6,5,4,3,2,1})) // 2
-    fmt.Println(sortArray([]int{7,6,5,4,3,2,1,0}, []int{1,2,3,4,5,6,7,8})) // 2
-    fmt.Println(sortArray([]int{7,6,5,4,3,2,1,0}, []int{8,7,6,5,4,3,2,1})) // 2
+    fmt.Println(sortArray([]int{0,1,2,3,4,5,6,7}, []int{1,2,3,4,5,6,7,8})) // 0
+    fmt.Println(sortArray([]int{0,1,2,3,4,5,6,7}, []int{8,7,6,5,4,3,2,1})) // 0
+    fmt.Println(sortArray([]int{7,6,5,4,3,2,1,0}, []int{1,2,3,4,5,6,7,8})) // 1
+    fmt.Println(sortArray([]int{7,6,5,4,3,2,1,0}, []int{8,7,6,5,4,3,2,1})) // 1
 }
