@@ -97,11 +97,11 @@ func subsequencePairCount1(nums []int) int {
     return dp[n][0][0]
 }
 
-const mod = 1_000_000_007
-const mx = 201
+const MOD = 1_000_000_007
+const MX = 201
 
-var lcms [mx][mx]int
-var pow2, pow3, mu [mx]int
+var lcms [MX][MX]int
+var pow2, pow3, mu [MX]int
 
 func gcd(a, b int) int {
     for a != 0 { a, b = b % a, a }
@@ -113,26 +113,26 @@ func lcm(a, b int) int {
 }
 
 func init() {
-    for i := 1; i < mx; i++ {
-        for j := 1; j < mx; j++ {
+    for i := 1; i < MX; i++ {
+        for j := 1; j < MX; j++ {
             lcms[i][j] = lcm(i, j)
         }
     }
     pow2[0], pow3[0] = 1, 1
-    for i := 1; i < mx; i++ {
-        pow2[i] = pow2[i-1] * 2 % mod
-        pow3[i] = pow3[i-1] * 3 % mod
+    for i := 1; i < MX; i++ {
+        pow2[i] = pow2[i-1] * 2 % MOD
+        pow3[i] = pow3[i-1] * 3 % MOD
     }
     mu[1] = 1
-    for i := 1; i < mx; i++ {
-        for j := i * 2; j < mx; j += i {
+    for i := 1; i < MX; i++ {
+        for j := i * 2; j < MX; j += i {
             mu[j] -= mu[i]
         }
     }
 }
 
 func subsequencePairCount2(nums []int) int {
-    m := slices.Max(nums)
+    res, m := 0, slices.Max(nums)
     count := make([]int, m + 1) // count[i] 表示 nums 中的 i 的倍数的个数
     for _, v := range nums {
         count[v]++
@@ -151,11 +151,10 @@ func subsequencePairCount2(nums []int) int {
                 c = count[l]
             }
             c1, c2 := count[g1], count[g2]
-            dp[g1][g2] = (pow3[c] * pow2[c1 + c2 - c * 2] - pow2[c1] - pow2[c2] + 1) % mod
+            dp[g1][g2] = (pow3[c] * pow2[c1 + c2 - c * 2] - pow2[c1] - pow2[c2] + 1) % MOD
         }
     }
     // 倍数容斥
-    res := 0
     for i := 1; i <= m; i++ {
         for j := 1; j <= m / i; j++ {
             for k := 1; k <= m / i; k++ {
@@ -163,7 +162,7 @@ func subsequencePairCount2(nums []int) int {
             }
         }
     }
-    return (res % mod + mod) % mod // 保证 res 非负
+    return (res % MOD + MOD) % MOD // 保证 res 非负
 }
 
 func main() {
@@ -204,4 +203,10 @@ func main() {
     fmt.Println(subsequencePairCount1([]int{1,1,1,1})) // 50
     fmt.Println(subsequencePairCount1([]int{1,2,3,4,5,6,7,8,9})) // 11888
     fmt.Println(subsequencePairCount1([]int{9,8,7,6,5,4,3,2,1})) // 11888
+
+    fmt.Println(subsequencePairCount2([]int{1,2,3,4})) // 10
+    fmt.Println(subsequencePairCount2([]int{10,20,30})) // 2
+    fmt.Println(subsequencePairCount2([]int{1,1,1,1})) // 50
+    fmt.Println(subsequencePairCount2([]int{1,2,3,4,5,6,7,8,9})) // 11888
+    fmt.Println(subsequencePairCount2([]int{9,8,7,6,5,4,3,2,1})) // 11888
 }
