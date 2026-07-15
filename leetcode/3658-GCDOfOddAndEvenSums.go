@@ -33,6 +33,12 @@ func gcdOfOddEvenSums(n int) int {
     return n
 }
 
+func gcdOfOddEvenSums1(n int) int {
+    odd, even := n * n, n * (n + 1)
+    gcd := func (x, y int) int { for y != 0 { x, y = y, x % y; }; return x; }
+    return gcd(odd, even)
+}
+
 func main() {
     // Example 1:
     // Input: n = 4
@@ -41,7 +47,7 @@ func main() {
     // Sum of the first 4 odd numbers sumOdd = 1 + 3 + 5 + 7 = 16
     // Sum of the first 4 even numbers sumEven = 2 + 4 + 6 + 8 = 20
     // Hence, GCD(sumOdd, sumEven) = GCD(16, 20) = 4.
-    fmt.Println(gcdOfOddEvenSums(4))
+    fmt.Println(gcdOfOddEvenSums(4)) // 4
     // Example 2:
     // Input: n = 5
     // Output: 5
@@ -49,8 +55,13 @@ func main() {
     // Sum of the first 5 odd numbers sumOdd = 1 + 3 + 5 + 7 + 9 = 25
     // Sum of the first 5 even numbers sumEven = 2 + 4 + 6 + 8 + 10 = 30
     // Hence, GCD(sumOdd, sumEven) = GCD(25, 30) = 5.
-    fmt.Println(gcdOfOddEvenSums(5))
+    fmt.Println(gcdOfOddEvenSums(5)) // 5
 
-    fmt.Println(gcdOfOddEvenSums(1))
-    fmt.Println(gcdOfOddEvenSums(1000))
+    fmt.Println(gcdOfOddEvenSums(1)) // 1
+    fmt.Println(gcdOfOddEvenSums(1000)) // 1000
+
+    fmt.Println(gcdOfOddEvenSums1(4)) // 4
+    fmt.Println(gcdOfOddEvenSums1(5)) // 5
+    fmt.Println(gcdOfOddEvenSums1(1)) // 1
+    fmt.Println(gcdOfOddEvenSums1(1000)) // 1000
 }

@@ -3173,6 +3173,7 @@
 [3622. Check Divisibility by Digit Sum and Product](./leetcode/3622-CheckDivisibilityByDigitSumAndProduct.go)   
 [3624. Number of Integers With Popcount-Depth Equal to K II](./leetcode/3624-NumberOfIntegersWithPopcountDepthEqualToKII.go)   
 [3646. Next Special Palindrome Number](./leetcode/3646-NextSpecialPalindromeNumber.go)   
+[3658. GCD of Odd and Even Sums](./leetcode/3658-GCDOfOddAndEvenSums.go)   
 [3677. Count Binary Palindromic Numbers](./leetcode/3677-CountBinaryPalindromicNumbers.go)   
 [3680. Generate Schedule](./leetcode/3680-GenerateSchedule.go)   
 [3697. Compute Decimal Representation](./leetcode/3697-ComputeDecimalRepresentation.go)   
