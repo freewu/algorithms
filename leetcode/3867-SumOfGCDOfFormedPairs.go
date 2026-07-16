@@ -84,6 +84,47 @@ func gcdSum1(nums []int) int64 {
     return int64(res)
 }
 
+const SIZE = 64
+
+var data [SIZE][SIZE]uint8
+
+func init() {
+    for i := uint8(1); i < SIZE; i++ {
+        data[0][i] = i
+        data[i][0] = i
+        data[i][i] = i
+        for j := i + 1; j < SIZE; j++ {
+            // gcd(i, j) = gcd(j % i, i)
+            r := j - i
+            data[i][j] = data[i][r]
+            data[j][i] = data[i][r]
+        }
+    }
+}
+
+func gcd(a, b int) int {
+    for b >= SIZE {
+        a, b = b, a % b
+    }
+    if b == 0 {
+        return a
+    }
+    return int(data[a % b][b])
+}
+
+func gcdSum2(nums []int) int64 {
+    sum, mx, n := 0, 0, len(nums)
+    for i, v := range nums {
+        mx = max(mx, v)
+        nums[i] = gcd(mx, v)
+    }
+    sort.Ints(nums)
+    for i := range n / 2 {
+        sum += gcd(nums[i], nums[n-i-1])
+    }
+    return int64(sum)
+}
+
 func main() {
     // Example 1:
     // Input: nums = [2,6,4]
@@ -118,4 +159,9 @@ func main() {
     fmt.Println(gcdSum1([]int{3,6,2,8})) // 5
     fmt.Println(gcdSum1([]int{1,2,3,4,5,6,7,8,9})) // 6
     fmt.Println(gcdSum1([]int{9,8,7,6,5,4,3,2,1})) // 4
+
+    fmt.Println(gcdSum2([]int{2,6,4})) // 2
+    fmt.Println(gcdSum2([]int{3,6,2,8})) // 5
+    fmt.Println(gcdSum2([]int{1,2,3,4,5,6,7,8,9})) // 6
+    fmt.Println(gcdSum2([]int{9,8,7,6,5,4,3,2,1})) // 4
 }
