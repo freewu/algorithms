@@ -46,9 +46,9 @@ func boldWords(words []string, s string) string {
         }
         return res
     }
-    sLen := len(s)
-    marked := make([]bool, sLen) // 用于记录该位置的字符是否加粗
-    for index := 0; index < sLen; index++ {
+    n := len(s)
+    marked := make([]bool, n) // 用于记录该位置的字符是否加粗
+    for index := 0; index < n; index++ {
         subStringEnd := findSubstring(s, words, index)
         if subStringEnd != -1 {
             // subStringEnd != -1 说明
@@ -61,7 +61,7 @@ func boldWords(words []string, s string) string {
     }
     isFirst := true // 用于记录是否是第一个被加粗的字符
     var builder strings.Builder
-    for index := 0; index < sLen; index++ {
+    for index := 0; index < n; index++ {
         if marked[index] {
             if isFirst {
                 isFirst = false
@@ -70,11 +70,11 @@ func boldWords(words []string, s string) string {
             builder.WriteByte(s[index])
             // 如果是s中最后一个字符，且加粗
             // 需要手动加上</b>
-            if index == sLen - 1 {
+            if index == n - 1 {
                 builder.WriteString("</b>")
             }
         } else {
-            // isFirst为false说明前面是加粗的
+            // isFirst 为 false 说明前面是加粗的
             // 且这回碰上的字符不用加粗
             // 那就得加上</b>
             if !isFirst {
