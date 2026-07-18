@@ -2756,6 +2756,7 @@
 [3981. Count Distinct Ways to Form Target from Two Strings](./leetcode/3981-CountDistinctWaysToFormTargetFromTwoStrings.go)   
 [3983. Subsequence After One Replacement](./leetcode/3983-SubsequenceAfterOneReplacement.go)   
 [3986. Number of Elapsed Seconds Between Two Times](./leetcode/3986-NumberOfElapsedSecondsBetweenTwoTimes.go)   
+[3992. Rearrange String to Avoid Character Pair](./leetcode/3992-RearrangeStringToAvoidCharacterPair.go)   
 
 # Dynamic Programming
 [276. Paint Fence](./leetcode/276-PaintFence.go)   
