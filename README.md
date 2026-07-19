@@ -3222,6 +3222,7 @@
 [3966. Count Good Integers in a Range](./leetcode/3966-CountGoodIntegersInRange.go)   
 [3988. Create Grid With Exactly K Paths I](./leetcode/3988-CreateGridWithExactlyKPathsI.go)   
 [3990. Create Grid With Exactly K Paths II](./leetcode/3990-CreateGridWithExactlyKPathsII.go)   
+[3993. Maximum Value of an Alternating Sequence](./leetcode/3993-MaximumValueOfAnAlternatingSequence.go)   
 
 # Stack
 [225. Implement Stack using Queues](./leetcode/225-ImplementStackUsingQueues.go)   
