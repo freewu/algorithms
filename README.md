@@ -2081,6 +2081,7 @@
 [3987. Minimum Total Cost to Process All Elements](./leetcode/3987-MinimumTotalCostToProcessAllElements.go)   
 [3989. Maximum Consistent Columns in a Grid](./leetcode/3989-MaximumConsistentColumnsInAGrid.go)   
 [3991. Sort Array Using Prefix Reversals](./leetcode/3991-SortArrayUsingPrefixReversals.go)   
+[3996. Even Number of Knight Moves](./leetcode/3996-EvenNumberofKnightMoves.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
