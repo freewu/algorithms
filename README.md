@@ -3440,7 +3440,8 @@
 [3879. Maximum Distinct Path Sum in a Binary Tree](./leetcode/3879-MaximumDistinctPathSumInABinaryTree.go)   
 [3902. Zigzag Level Sum of Binary Tree](./leetcode/3902-ZigzagLevelSumOfBinaryTree.go)   
 [3939. Count Non Adjacent Subsets in a Rooted Tree](./leetcode/3939-CountNonAdjacentSubsetsInARootedTree.go)   
-[3949. Subtree Inversion Sum II](./leetcode/3949-SubtreeInversionSumII.go)  
+[3949. Subtree Inversion Sum II](./leetcode/3949-SubtreeInversionSumII.go)   
+[3997. Count Dominant Nodes in a Binary Tree](./leetcode/3997-CountDominantNodesInABinaryTree.go)   
 
 # Graph
 [133. Clone Graph](./leetcode/133-CloneGraph.go)   
