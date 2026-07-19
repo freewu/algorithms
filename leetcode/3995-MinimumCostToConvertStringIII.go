@@ -191,6 +191,78 @@ func minCost1(source string, target string, rules [][]string, costs []int) int {
     return int(dp[n])
 }
 
+func minCost2(source string, target string, rules [][]string, costs []int) int {
+    n := len(source)
+    if n != len(target) {
+        return -1
+    }
+    m := len(rules)
+    type Key struct{ p, r string }
+    best := make(map[Key]int, m)
+    for i := 0; i < m; i++ {
+        p := rules[i][0]
+        r := rules[i][1]
+        c := costs[i]
+        for j := 0; j < len(p); j++ {
+            if p[j] == '*' {
+                c++
+            }
+        }
+        k := Key{p, r}
+        if v, ok := best[k]; !ok || c < v {
+            best[k] = c
+        }
+    }
+    type RuleT struct {
+        p, r string
+        c    int
+    }
+    rs := make([]RuleT, 0, len(best))
+    for k, v := range best {
+        rs = append(rs, RuleT{k.p, k.r, v})
+    }
+    const INF = 1 << 60
+    dp := make([]int, n+1)
+    for i := 1; i <= n; i++ {
+        dp[i] = INF
+    }
+    for i := 1; i <= n; i++ {
+        if source[i-1] == target[i-1] && dp[i-1] < dp[i] {
+            dp[i] = dp[i-1]
+        }
+        for idx := range rs {
+            ru := &rs[idx]
+            L := len(ru.p)
+            if L > i {
+                continue
+            }
+            if dp[i-L] >= INF || dp[i-L]+ru.c >= dp[i] {
+                continue
+            }
+            start := i - L
+            ok := true
+            for j := 0; j < L; j++ {
+                if ru.r[j] != target[start+j] {
+                    ok = false
+                    break
+                }
+                pc := ru.p[j]
+                if pc != '*' && pc != source[start+j] {
+                    ok = false
+                    break
+                }
+            }
+            if ok {
+                dp[i] = dp[start] + ru.c
+            }
+        }
+    }
+    if dp[n] >= INF {
+        return -1
+    }
+    return dp[n]
+}
+
 func main() {
     // Example 1:
     // Input: source = "hello", target = "world", rules = [["he","wo"],["llo","rld"]], costs = [3,4]
