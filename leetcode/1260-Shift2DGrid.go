@@ -35,23 +35,23 @@ package main
 import "fmt"
 
 func shiftGrid(grid [][]int, k int) [][]int {
-    m, n, cur := len(grid), len(grid[0]), 0
+    m, n, curr := len(grid), len(grid[0]), 0
     arr := make([]int, m * n)
     for i := 0; i < m; i++ {
         for j := 0; j < n; j++ {
-            arr[cur] = grid[i][j]
-            cur++
+            arr[curr] = grid[i][j]
+            curr++
         }
     }
     if k > len(arr) { 
         k = k % len(arr) 
     }
     arr = append(arr[len(arr) - k:], arr[:len(arr) - k]...)
-    cur = 0
+    curr = 0
     for i := 0; i < m; i++ {
         for j := 0; j < n; j++ {
-            grid[i][j] = arr[cur]
-            cur++
+            grid[i][j] = arr[curr]
+            curr++
         }
     }
     return grid
