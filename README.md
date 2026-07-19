@@ -2759,6 +2759,7 @@
 [3986. Number of Elapsed Seconds Between Two Times](./leetcode/3986-NumberOfElapsedSecondsBetweenTwoTimes.go)   
 [3992. Rearrange String to Avoid Character Pair](./leetcode/3992-RearrangeStringToAvoidCharacterPair.go)   
 [3995. Minimum Cost to Convert String III](./leetcode/3995-MinimumCostToConvertStringIII.go)   
+[3998. Transform Binary String Using Subsequence Sort](./leetcode/3998-TransformBinaryStringUsingSubsequenceSort.go)   
 
 # Dynamic Programming
 [276. Paint Fence](./leetcode/276-PaintFence.go)   
