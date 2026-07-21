@@ -51,35 +51,35 @@ import "fmt"
 import "strings"
 
 func transformStr(s string, strs []string) []bool {
-    sum0 := strings.Count(s, "0")
-    res := make([]bool, len(strs))
+    m := len(strs)
+    res := make([]bool, m)
+    zero := strings.Count(s, "0")
+
 next:
-    for index, t := range strs {
-        cnt0 := strings.Count(t, "0")
-        cntQ := strings.Count(t, "?")
-        // str 中的 '0' 的个数在闭区间 [cnt0, cnt0+cntQ] 中，sum0 必须在这个范围内
-        if sum0 < cnt0 || sum0 > cnt0+cntQ {
+    for k, t := range strs {
+        a := strings.Count(t, "0") 
+        b := strings.Count(t, "?") 
+        if a > zero || a + b < zero {
             continue
         }
-        // 判断能否把 s 变成 t
-        cntS1, cntT1 := 0, 0
-        for i, x := range s {
-            y := t[i]
-            if y == '?' {
-                if cnt0 < sum0 {
-                    y = '0'
-                    cnt0++
-                } else {
-                    y = '1'
+        x, y := 0, 0
+        for j := range t {
+            if t[j] == '?' {
+                if a < zero {
+                    x++
+                    a++
                 }
+            } else if t[j] == '0' {
+                x++
             }
-            cntS1 += int(x - '0')
-            cntT1 += int(y - '0')
-            if cntS1 < cntT1 {
+            if s[j] == '0' {
+                y++
+            }
+            if x < y {
                 continue next
             }
         }
-        res[index] = true
+        res[k] = true
     }
     return res
 }
