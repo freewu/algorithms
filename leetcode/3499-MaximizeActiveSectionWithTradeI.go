@@ -75,6 +75,29 @@ func maxActiveSectionsAfterTrade(s string) int {
     return oneCount
 }
 
+func maxActiveSectionsAfterTrade1(s string) int {
+    i, ones, gain, prev, n := 0, 0, 0, 0, len(s)
+    for ; i < n && s[i] == '1'; i++ { 
+        ones++ 
+    }
+    for ; i < n && s[i] == '0'; i++ { 
+        prev++ 
+    }
+    for i < n {
+        for ; i < n && s[i] == '1'; i++ { 
+            ones++ 
+        }
+        if i == n { break }
+        curr := 0
+        for ; i < n && s[i] == '0'; i++ { 
+            curr++ 
+        }
+        gain = max(gain, prev+curr)
+        prev = curr
+    }
+    return ones + gain
+}
+
 func main() {
     // Example 1:
     // Input: s = "01"
@@ -113,4 +136,15 @@ func main() {
     fmt.Println(maxActiveSectionsAfterTrade("1111100000")) // 5
     fmt.Println(maxActiveSectionsAfterTrade("0101010101")) // 7
     fmt.Println(maxActiveSectionsAfterTrade("1010101010")) // 7
+
+    fmt.Println(maxActiveSectionsAfterTrade1("01")) // 1
+    fmt.Println(maxActiveSectionsAfterTrade1("0100")) // 4
+    fmt.Println(maxActiveSectionsAfterTrade1("1000100")) // 7
+    fmt.Println(maxActiveSectionsAfterTrade1("01010")) // 4
+    fmt.Println(maxActiveSectionsAfterTrade1("0000000000")) // 0
+    fmt.Println(maxActiveSectionsAfterTrade1("1111111111")) // 10
+    fmt.Println(maxActiveSectionsAfterTrade1("0000011111")) // 5
+    fmt.Println(maxActiveSectionsAfterTrade1("1111100000")) // 5
+    fmt.Println(maxActiveSectionsAfterTrade1("0101010101")) // 7
+    fmt.Println(maxActiveSectionsAfterTrade1("1010101010")) // 7
 }
