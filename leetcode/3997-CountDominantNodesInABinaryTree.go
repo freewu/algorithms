@@ -93,6 +93,29 @@ func countDominantNodes1(root *TreeNode) int {
     return res
 }
 
+func countDominantNodes2(root *TreeNode) int {
+    var dfs func(*TreeNode) (int, int)
+    dfs = func(node *TreeNode) (int, int) {
+        if node.Left == nil {
+            return node.Val, 1
+        }
+        mxL, resL := dfs(node.Left)
+        mxR, resR := 0, 0
+        if node.Right != nil {
+            mxR, resR = dfs(node.Right)
+        }
+        mx := max(mxL, mxR)
+        res := resL + resR
+        if node.Val >= mx {
+            mx = node.Val
+            res++
+        }
+        return mx, res
+    }
+    _, res := dfs(root)
+    return res
+}
+
 func main() {
     // Example 1:
     //             5
@@ -163,4 +186,26 @@ func main() {
         &TreeNode{ 3, nil, nil, },
     }
     fmt.Println(countDominantNodes1(tree12)) // 4
+
+    tree21 := &TreeNode{
+        5, 
+        &TreeNode{ 3, 
+            &TreeNode{ 2, nil, nil, }, 
+            &TreeNode{ 4, nil, nil, }, 
+        },
+        &TreeNode{ 8, 
+            &TreeNode{ 7, nil, nil, }, 
+            &TreeNode{ 1, nil, nil, }, 
+        },
+    }
+    fmt.Println(countDominantNodes2(tree21)) // 5
+    tree22 := &TreeNode{
+        1, 
+        &TreeNode{ 2, 
+            &TreeNode{ 1, nil, nil, }, 
+            &TreeNode{ 2, nil, nil, }, 
+        },
+        &TreeNode{ 3, nil, nil, },
+    }
+    fmt.Println(countDominantNodes2(tree22)) // 4
 }
