@@ -33,6 +33,10 @@ func canReach(start []int, target []int) bool {
     return (start[0] + start[1]) % 2 == (target[0] + target[1]) % 2
 }
 
+func canReach1(start []int, target []int) bool {
+    return (start[0] + start[1]) & 1 == (target[0] + target[1]) & 1
+}
+
 func main() {
     // Example 1:
     // Input: start = [1,1], target = [2,2]
@@ -47,4 +51,16 @@ func main() {
     // Explanation:​​​​​​​
     // It is impossible to reach target = [6, 6] from start = [4, 5] in an even number of moves. Thus, the answer is false.
     fmt.Println(canReach([]int{4,5}, []int{6,6})) // false
+
+    fmt.Println(canReach([]int{1,2}, []int{1,2})) // true
+    fmt.Println(canReach([]int{1,2}, []int{8,9})) // true
+    fmt.Println(canReach([]int{8,9}, []int{1,2})) // true
+    fmt.Println(canReach([]int{8,9}, []int{8,9})) // true
+
+    fmt.Println(canReach1([]int{1,1}, []int{2,2})) // true
+    fmt.Println(canReach1([]int{4,5}, []int{6,6})) // false
+    fmt.Println(canReach1([]int{1,2}, []int{1,2})) // true
+    fmt.Println(canReach1([]int{1,2}, []int{8,9})) // true
+    fmt.Println(canReach1([]int{8,9}, []int{1,2})) // true
+    fmt.Println(canReach1([]int{8,9}, []int{8,9})) // true
 }
