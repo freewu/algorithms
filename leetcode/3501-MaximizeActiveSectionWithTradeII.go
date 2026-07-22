@@ -79,6 +79,7 @@ package main
 import "fmt"
 import "sort"
 import "math/bits"
+import "unsafe"
 
 func maxActiveSectionsAfterTrade(s string, queries [][]int) []int {
     n := len(s)
@@ -163,6 +164,90 @@ func maxActiveSectionsAfterTrade(s string, queries [][]int) []int {
     return res
 }
 
+const MX = 100_000
+
+var zeros [MX / 2][2]int32
+var index [MX]int32
+var st [17][MX]int32
+
+func maxActiveSectionsAfterTrade1(s string, queries [][]int) []int {
+    query := func (l, r int32) int32 {
+        i := bits.Len32(uint32(r-l+1)) - 1
+        return max(st[i][l], st[i][r-(1<<i)+1])
+    }
+    castSlice := func(arr [][]int) []int {
+        return unsafe.Slice((*int)(unsafe.Pointer(&arr[0])), len(arr))
+    }
+    n := int32(len(s))
+    // count ones and track zeros
+    one, zero := 0, int32(0)
+    for i := range n {
+        if s[i] == '0' {
+            if i > 0 && s[i-1] == '0' {
+                zeros[zero-1][1]++
+            } else {
+                zeros[zero] = [2]int32{i, 1}
+                zero++
+            }
+        } else {
+            one++
+        }
+        index[i] = zero - 1
+    }
+    res := castSlice(queries)
+    // edge cases
+    if zero == 0 {
+        for i := range res {
+            res[i] = one
+        }
+        return res
+    } else if zeros[zero-1][1] == n {
+        clear(res)
+        return res
+    }
+    // build sparse table
+    m := uint32(zero - 1)
+    for j := range m {
+        st[0][j] = (zeros[j][1] + zeros[j+1][1])
+    }
+    log := bits.Len32(m)
+    for i := 1; i < log; i++ {
+        for j := uint32(0); j+(1<<i) <= m; j++ {
+            st[i][j] = max(st[i-1][j], st[i-1][j+(1<<(i-1))])
+        }
+    }
+    // answer queries
+    for i, q := range queries {
+        l, r := int32(q[0]), int32(q[1])
+        lc, rc := int32(s[l]&1), int32(s[r]&1)
+        lidx, ridx := index[l], index[r]
+        start := lidx + 1
+        end := ridx - (rc ^ 1)
+        var lz, rz int32 = -1, -1
+        if lidx >= 0 {
+            lz = zeros[lidx][1] - l + zeros[lidx][0]
+        }
+        if ridx >= 0 {
+            rz = r - zeros[ridx][0] + 1
+        }
+        var v int32
+        if start < end {
+            v = query(start, end-1)
+        }
+        if lc == 0 && rc == 0 && lidx+1 == ridx {
+            v = max(v, lz+rz)
+        }
+        if lc == 0 && lidx+1 < ridx+rc {
+            v = max(v, lz+zeros[lidx+1][1])
+        }
+        if rc == 0 && lidx < ridx-1 {
+            v = max(v, rz+zeros[ridx-1][1])
+        }
+        res[i] = one + int(v)
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: s = "01", queries = [[0,1]]
@@ -218,4 +303,15 @@ func main() {
     fmt.Println(maxActiveSectionsAfterTrade("1111100000", [][]int{{0,3},{1,4},{1,3}})) // [5 5 5]
     fmt.Println(maxActiveSectionsAfterTrade("0101010101", [][]int{{0,3},{1,4},{1,3}})) // [7 7 5]
     fmt.Println(maxActiveSectionsAfterTrade("1010101010", [][]int{{0,3},{1,4},{1,3}})) // [7 7 7]
+
+    fmt.Println(maxActiveSectionsAfterTrade1("01", [][]int{{0,1}})) // [1]
+    fmt.Println(maxActiveSectionsAfterTrade1("0100", [][]int{{0,3},{0,2},{1,3},{2,3}})) // [4,3,1,1]
+    fmt.Println(maxActiveSectionsAfterTrade1("1000100", [][]int{{1,5},{0,6},{0,4}})) // [6,7,2]
+    fmt.Println(maxActiveSectionsAfterTrade1("01010", [][]int{{0,3},{1,4},{1,3}})) // [4,4,2]
+    fmt.Println(maxActiveSectionsAfterTrade1("0000000000", [][]int{{0,3},{1,4},{1,3}})) // [0 0 0]
+    fmt.Println(maxActiveSectionsAfterTrade1("1111111111", [][]int{{0,3},{1,4},{1,3}})) // [10 10 10]
+    fmt.Println(maxActiveSectionsAfterTrade1("0000011111", [][]int{{0,3},{1,4},{1,3}})) // [5 5 5]
+    fmt.Println(maxActiveSectionsAfterTrade1("1111100000", [][]int{{0,3},{1,4},{1,3}})) // [5 5 5]
+    fmt.Println(maxActiveSectionsAfterTrade1("0101010101", [][]int{{0,3},{1,4},{1,3}})) // [7 7 5]
+    fmt.Println(maxActiveSectionsAfterTrade1("1010101010", [][]int{{0,3},{1,4},{1,3}})) // [7 7 7]
 }
