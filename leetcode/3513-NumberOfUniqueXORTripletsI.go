@@ -49,9 +49,10 @@ func uniqueXorTriplets(nums []int) int {
 }
 
 func uniqueXorTriplets1(nums []int) int {
-    n := len(nums)
-    if n < 3 { return n }
-    m := 0
+    m, n := 0, len(nums)
+    if n < 3 { 
+        return n 
+    }
     for 1 << m <= n {
         m++
     }
