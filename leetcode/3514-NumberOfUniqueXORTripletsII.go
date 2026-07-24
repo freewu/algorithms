@@ -73,6 +73,36 @@ func uniqueXorTriplets1(nums []int) int {
     return res
 }
 
+func uniqueXorTriplets2(nums []int) int {
+    res, mx := 0, 0
+    f := make([]int, 1 << 11)
+    for _, v := range nums {
+        mx |= v
+        f[v] = 1
+    }
+    n := 1 << bits.Len32(uint32(mx))
+    fwht := func() {
+        for k := 1; k*2 <= n; k *= 2 {
+            for i := 0; i < n; i += k * 2 {
+                for j := 0; j < k; j++ {
+                    u, v := f[i+j], f[i+j+k]
+                    f[i+j], f[i+j+k] = u+v, u-v
+                }
+            }
+        }
+    }
+    fwht()
+    for i := range n {
+        f[i] *= f[i] * f[i]
+    }
+    fwht()
+    for i := range n {
+        f[i] /= n
+        res += min(1, f[i])
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: nums = [1,2]
@@ -99,4 +129,9 @@ func main() {
     fmt.Println(uniqueXorTriplets1([]int{6,7,8,9})) // 4
     fmt.Println(uniqueXorTriplets1([]int{1,2,3,4,5,6,7,8,9})) // 16
     fmt.Println(uniqueXorTriplets1([]int{9,8,7,6,5,4,3,2,1})) // 16
+
+    fmt.Println(uniqueXorTriplets2([]int{1,2})) // 2
+    fmt.Println(uniqueXorTriplets2([]int{6,7,8,9})) // 4
+    fmt.Println(uniqueXorTriplets2([]int{1,2,3,4,5,6,7,8,9})) // 16
+    fmt.Println(uniqueXorTriplets2([]int{9,8,7,6,5,4,3,2,1})) // 16
 }
