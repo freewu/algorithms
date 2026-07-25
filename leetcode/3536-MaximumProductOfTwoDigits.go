@@ -45,6 +45,21 @@ func maxProduct(n int) int {
     return arr[len(arr) - 2] * arr[len(arr) - 1]
 }
 
+func maxProduct1(n int) int {
+    first, second := 0, 0
+    for n > 0 {
+        v := n % 10
+        if v > first {
+            second = first
+            first = v
+        } else if v > second {
+            second = v
+        }
+        n /= 10
+    }
+    return first * second
+}
+
 func main() {
     // Example 1:
     // Input: n = 31
@@ -72,7 +87,21 @@ func main() {
     fmt.Println(maxProduct(124)) // 8
 
     fmt.Println(maxProduct(10)) // 0
+    fmt.Println(maxProduct(99)) // 81
+    fmt.Println(maxProduct(100)) // 0
+    fmt.Println(maxProduct(101)) // 1
     fmt.Println(maxProduct(1024)) // 8
-    fmt.Println(maxProduct(999_999_999)) // 91
+    fmt.Println(maxProduct(999_999_999)) // 81
     fmt.Println(maxProduct(1_000_000_000)) // 0
+
+    fmt.Println(maxProduct1(31)) // 3
+    fmt.Println(maxProduct1(22)) // 4
+    fmt.Println(maxProduct1(124)) // 8
+    fmt.Println(maxProduct1(10)) // 0
+    fmt.Println(maxProduct1(99)) // 81
+    fmt.Println(maxProduct1(100)) // 0
+    fmt.Println(maxProduct1(101)) // 1
+    fmt.Println(maxProduct1(1024)) // 8
+    fmt.Println(maxProduct1(999_999_999)) // 81
+    fmt.Println(maxProduct1(1_000_000_000)) // 0
 }
