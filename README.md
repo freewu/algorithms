@@ -2083,6 +2083,7 @@
 [3991. Sort Array Using Prefix Reversals](./leetcode/3991-SortArrayUsingPrefixReversals.go)   
 [3996. Even Number of Knight Moves](./leetcode/3996-EvenNumberofKnightMoves.go)   
 [3999. Minimum Number of String Groups Through Transformations](./leetcode/3999-MinimumNumberofStringGroupsThroughTransformations.go)   
+[4001. Aggregate Two Time Series](./leetcode/4001-AggregateTwoTimeSeries.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
