@@ -3230,6 +3230,7 @@
 [3993. Maximum Value of an Alternating Sequence](./leetcode/3993-MaximumValueOfAnAlternatingSequence.go)   
 [3994. Minimum Adjacent Swaps to Partition Array](./leetcode/3994-MinimumAdjacentSwapsToPartitionArray.go)   
 [4000. Largest Integer With Given Digit Sum](./leetcode/4000-LargestIntegerWithGivenDigitSum.go)   
+[4002. Count Valid Sequences](./leetcode/4002-CountValidSequences.go)   
 
 # Stack
 [225. Implement Stack using Queues](./leetcode/225-ImplementStackUsingQueues.go)   
