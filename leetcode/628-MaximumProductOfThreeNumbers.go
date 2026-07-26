@@ -40,7 +40,35 @@ func maximumProduct(nums []int) int {
             return sum2
         }
     }
-	return sum1
+    return sum1
+}
+
+func maximumProduct1(nums []int) int {
+    mx1, mx2, mx3, mn1, mn2 := -1000, -1000, -1000, 1000, 1000
+    for i := 0; i < len(nums); i++ {
+        v := nums[i]
+        if v >= mx1 {
+            mx3 = mx2
+            mx2 = mx1
+            mx1 = v
+        } else if v >= mx2 {
+            mx3 = mx2
+            mx2 = v
+        } else if v >= mx3 {
+            mx3 = v
+        }
+        if v <= mn1 {
+            mn2 = mn1
+            mn1 = v
+        } else if v <= mn2 {
+            mn2 = v
+        }
+    }
+    res := mx1 * mx2 * mx3
+    if mx1 * mn1 * mn2 > res {
+        res = mx1 * mn1 * mn2
+    }
+    return res
 }
 
 func main() {
@@ -58,4 +86,13 @@ func main() {
     fmt.Println(maximumProduct([]int{-1,-2,-3})) // -6
 
     fmt.Println(maximumProduct([]int{-100,-98,-1,2,3,4})) // 39200  4 * -98 * -100
+    fmt.Println(maximumProduct([]int{1,2,3,4,5,6,7,8,9})) // 504
+    fmt.Println(maximumProduct([]int{9,8,7,6,5,4,3,2,1})) // 504
+
+    fmt.Println(maximumProduct1([]int{1,2,3})) // 6
+    fmt.Println(maximumProduct1([]int{1,2,3,4})) // 24
+    fmt.Println(maximumProduct1([]int{-1,-2,-3})) // -6
+    fmt.Println(maximumProduct1([]int{-100,-98,-1,2,3,4})) // 39200  4 * -98 * -100
+    fmt.Println(maximumProduct1([]int{1,2,3,4,5,6,7,8,9})) // 504
+    fmt.Println(maximumProduct1([]int{9,8,7,6,5,4,3,2,1})) // 504   
 }
