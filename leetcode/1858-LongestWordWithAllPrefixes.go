@@ -42,15 +42,15 @@ func longestWord(words []string) string {
     }
     res, root := "", &Trie{}
     wordInsert := func(s string) bool { // 如果插入过程中,所有前缀都存在,返回true
-        cur, n := root, len(s)
+        curr, n := root, len(s)
         for _, ch := range s[:n-1] {
-            if cur.son[ch - 'a'] == nil { // 剪枝! 途中少了一环,后续以此字符串为前缀的都不可能成为答案, 无需插入了
+            if curr.son[ch - 'a'] == nil { // 剪枝! 途中少了一环,后续以此字符串为前缀的都不可能成为答案, 无需插入了
                 return false
             }
-            cur = cur.son[ch - 'a'] 
+            curr = curr.son[ch - 'a'] 
         }
-        if cur.son[s[n-1] - 'a'] == nil { // 前面都存在,单独插入最后一个字符
-            cur.son[s[n-1] - 'a'] = &Trie{}
+        if curr.son[s[n-1] - 'a'] == nil { // 前面都存在,单独插入最后一个字符
+            curr.son[s[n-1] - 'a'] = &Trie{}
         }
         return true
     }
@@ -84,4 +84,6 @@ func main() {
     // Input: words = ["abc", "bc", "ab", "qwe"]
     // Output: ""
     fmt.Println(longestWord([]string{"abc", "bc", "ab", "qwe"})) // ""
+
+    fmt.Println(longestWord([]string{"bluefrog", "leetcode", "freewu"})) // ""
 }
