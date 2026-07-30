@@ -104,6 +104,13 @@ func main() {
     // It can be shown that no other mapping can provide a lower cost.
     fmt.Println(minimumPushes("xycdefghij")) // 12
 
+    fmt.Println(minimumPushes("bluefrog")) // 8
+    fmt.Println(minimumPushes("leetcode")) // 8
+    fmt.Println(minimumPushes("freewu")) // 6
+
     fmt.Println(minimumPushes1("abcde")) // 5
     fmt.Println(minimumPushes1("xycdefghij")) // 12
+    fmt.Println(minimumPushes1("bluefrog")) // 8
+    fmt.Println(minimumPushes1("leetcode")) // 8
+    fmt.Println(minimumPushes1("freewu")) // 6
 }
