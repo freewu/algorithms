@@ -84,6 +84,23 @@ func minimumPushes(word string) int {
     return res
 }
 
+func minimumPushes1(word string) int {
+    res, freq := 0, make([]uint32, 27)
+    for i := range len(word) {
+        freq[word[i]-'a']++
+    }
+    sort.Slice(freq, func(i, j int) bool {
+        return freq[i] > freq[j]
+    })
+    for i, j := 0, 0; freq[i] != 0; i++ {
+        if i % 8 == 0 {
+            j++
+        }
+        res += int(freq[i]) * j
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // <img src="https://assets.leetcode.com/uploads/2023/12/26/keypadv1e1.png" />
@@ -131,4 +148,11 @@ func main() {
     fmt.Println(minimumPushes("bluefrog")) // 8
     fmt.Println(minimumPushes("leetcode")) // 8
     fmt.Println(minimumPushes("freewu")) // 6
+
+    fmt.Println(minimumPushes1("abcde")) // 5
+    fmt.Println(minimumPushes1("xyzxyzxyzxyz")) // 12
+    fmt.Println(minimumPushes1("aabbccddeeffgghhiiiiii")) // 24
+    fmt.Println(minimumPushes1("bluefrog")) // 8
+    fmt.Println(minimumPushes1("leetcode")) // 8
+    fmt.Println(minimumPushes1("freewu")) // 6
 }
