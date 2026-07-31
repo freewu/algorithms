@@ -127,4 +127,8 @@ func main() {
     // Total cost is 1 * 2 + 1 * 2 + 1 * 2 + 1 * 2 + 1 * 2 + 1 * 2 + 1 * 2 + 2 * 2 + 6 * 1 = 24.
     // It can be shown that no other mapping can provide a lower cost.
     fmt.Println(minimumPushes("aabbccddeeffgghhiiiiii")) // 24
+
+    fmt.Println(minimumPushes("bluefrog")) // 8
+    fmt.Println(minimumPushes("leetcode")) // 8
+    fmt.Println(minimumPushes("freewu")) // 6
 }
