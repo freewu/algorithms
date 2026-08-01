@@ -47,19 +47,19 @@ func predictTheWinner(nums []int) bool {
 }
 
 func predictTheWinner1(nums []int) bool {
-    sum, l := 0, len(nums)
+    sum, n := 0, len(nums)
     for _, v := range nums {
         sum += v
     }
-    dp := make([][]int, l)
+    dp := make([][]int, n)
     for i := range dp {
-        dp[i] = make([]int, l)
+        dp[i] = make([]int, n)
         dp[i][i] = nums[i]
     }
     min := func (x, y int) int { if x < y { return x; }; return y; }
     max := func (x, y int) int { if x > y { return x; }; return y; }
-    for i := l - 1; i >= 0; i-- {
-        for j := i + 1; j < l; j++ {
+    for i := n - 1; i >= 0; i-- {
+        for j := i + 1; j < n; j++ {
             if i + 1 == j {
                 dp[i][j] = max(nums[i], nums[j])
             } else {
@@ -67,7 +67,7 @@ func predictTheWinner1(nums []int) bool {
             }
         }
     }
-    return dp[0][l-1] >= (sum - dp[0][l-1])
+    return dp[0][n-1] >= (sum - dp[0][n-1])
 }
 
 func main() {
@@ -82,6 +82,11 @@ func main() {
     // Finally, player 1 has more score (234) than player 2 (12), so you need to return True representing player1 can win.
     fmt.Println(predictTheWinner([]int{1,5,233,7})) // true
 
+    fmt.Println(predictTheWinner([]int{1,2,3,4,5,6,7,8,9})) // true
+    fmt.Println(predictTheWinner([]int{9,8,7,6,5,4,3,2,1})) // true
+
     fmt.Println(predictTheWinner1([]int{1,5,2})) // false
     fmt.Println(predictTheWinner1([]int{1,5,233,7})) // true
+    fmt.Println(predictTheWinner1([]int{1,2,3,4,5,6,7,8,9})) // true
+    fmt.Println(predictTheWinner1([]int{9,8,7,6,5,4,3,2,1})) // true
 }
