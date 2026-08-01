@@ -124,7 +124,12 @@ func main() {
     // The cost is 1 + max(3, 1 + max(1, 2)) = 4.
     fmt.Println(minBuildTime([]int{1,2,3}, 1)) // 4
 
+    fmt.Println(minBuildTime([]int{1,2,3,4,5,6,7,8,9}, 2)) // 13
+    fmt.Println(minBuildTime([]int{9,8,7,6,5,4,3,2,1}, 2)) // 13
+
     fmt.Println(minBuildTime1([]int{1}, 1)) // 1
     fmt.Println(minBuildTime1([]int{1,2}, 5)) // 7
     fmt.Println(minBuildTime1([]int{1,2,3}, 1)) // 4
+    fmt.Println(minBuildTime1([]int{1,2,3,4,5,6,7,8,9}, 2)) // 13
+    fmt.Println(minBuildTime1([]int{9,8,7,6,5,4,3,2,1}, 2)) // 13
 }
