@@ -2089,6 +2089,7 @@
 [4005. Minimum Operations to Make Array Equal III](./leetcode/4005-MinimumOperationsToMakeArrayEqualIII.go)   
 [4007. Widest Possible Fence](./leetcode/4007-WidestPossibleFence.go)   
 [4008. Minimum Initial Strength to Defeat All Monsters](./leetcode/4008-MinimumInitialStrengthToDefeatAllMonsters.go)   
+[4009. Minimum Possible Maximum Waiting Time](./leetcode/4009-MinimumPossibleMaximumWaitingTime.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
