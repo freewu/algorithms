@@ -2091,6 +2091,7 @@
 [4008. Minimum Initial Strength to Defeat All Monsters](./leetcode/4008-MinimumInitialStrengthToDefeatAllMonsters.go)   
 [4009. Minimum Possible Maximum Waiting Time](./leetcode/4009-MinimumPossibleMaximumWaitingTime.go)   
 [4010. Maximize Pair Strength Using GCD](./leetcode/4010-MaximizePairStrengthUsingGCD.go)   
+[4011. Count Subarrays With Even Odd Ratio I](./leetcode/4011-CountSubarraysWithEvenOddRatioI.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
