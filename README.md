@@ -2087,6 +2087,7 @@
 [4003. Minimum Cost Path with Alternating Directions III](./leetcode/4003-MinimumCostPathWithAlternatingDirectionsIII.go)   
 [4004. Minimum Moves to Balance Circular Array II](./leetcode/4004-MinimumMovesToBalanceCircularArrayII.go)   
 [4005. Minimum Operations to Make Array Equal III](./leetcode/4005-MinimumOperationsToMakeArrayEqualIII.go)   
+[4007. Widest Possible Fence](./leetcode/4007-WidestPossibleFence.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
