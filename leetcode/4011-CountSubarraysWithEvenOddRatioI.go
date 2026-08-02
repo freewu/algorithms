@@ -110,4 +110,13 @@ func main() {
 
     fmt.Println(countRatioSubarrays([]int{1,2,3,4,5,6,7,8,9}, 3, 2)) // 38  
     fmt.Println(countRatioSubarrays([]int{9,8,7,6,5,4,3,2,1}, 3, 2)) // 38
+
+    fmt.Println(countRatioSubarrays([]int{1,2,3,4,5,6,7,8,9}, 1, 1)) // 35 
+    fmt.Println(countRatioSubarrays([]int{9,8,7,6,5,4,3,2,1}, 1, 1)) // 35
+    fmt.Println(countRatioSubarrays([]int{1,2,3,4,5,6,7,8,9}, 1, 1000)) // 5  
+    fmt.Println(countRatioSubarrays([]int{9,8,7,6,5,4,3,2,1}, 1, 1000)) // 5
+    fmt.Println(countRatioSubarrays([]int{1,2,3,4,5,6,7,8,9}, 1000, 1)) // 41 
+    fmt.Println(countRatioSubarrays([]int{9,8,7,6,5,4,3,2,1}, 1000, 1)) // 41
+    fmt.Println(countRatioSubarrays([]int{1,2,3,4,5,6,7,8,9}, 1000, 1000)) // 35
+    fmt.Println(countRatioSubarrays([]int{9,8,7,6,5,4,3,2,1}, 1000, 1000)) // 35
 }
