@@ -2092,6 +2092,7 @@
 [4009. Minimum Possible Maximum Waiting Time](./leetcode/4009-MinimumPossibleMaximumWaitingTime.go)   
 [4010. Maximize Pair Strength Using GCD](./leetcode/4010-MaximizePairStrengthUsingGCD.go)   
 [4011. Count Subarrays With Even Odd Ratio I](./leetcode/4011-CountSubarraysWithEvenOddRatioI.go)   
+[4012. Count of Unfinished Tasks After Each Shift](./leetcode/4012-CountofUnfinishedTasksAfterEachShift.go)   
 [4013. Count Subarrays With Even Odd Ratio II](./leetcode/4013-CountSubarraysWithEvenOddRatioII.go)   
 
 # String
