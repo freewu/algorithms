@@ -94,6 +94,22 @@ func stoneGameIII1(stoneValue []int) string {
     return "Tie"
 }
 
+func stoneGameIII2(stoneValue []int) string {
+    sum, f1, f2, f3 := 0, 0, 0, 0
+    for i := len(stoneValue) - 1; i >= 0; i-- {
+        sum += stoneValue[i]
+        f1, f2, f3 = sum-min(f1, f2, f3), f1, f2
+    }
+    diff := f1 - (sum - f1)
+    if diff == 0 {
+        return "Tie"
+    }
+    if diff > 0 {
+        return "Alice"
+    }
+    return "Bob"
+}
+
 func main() {
     // Example 1:
     // Input: stoneValue = [1,2,3,7]
@@ -130,4 +146,10 @@ func main() {
     fmt.Println(stoneGameIII1([]int{1,2,3,6})) // "Tie"
     fmt.Println(stoneGameIII1([]int{1,2,3,4,5,6,7,8,9})) // "Alice"
     fmt.Println(stoneGameIII1([]int{9,8,7,6,5,4,3,2,1})) // "Alice"
+
+    fmt.Println(stoneGameIII2([]int{1,2,3,7})) // "Bob"
+    fmt.Println(stoneGameIII2([]int{1,2,3,-9})) // "Alice"
+    fmt.Println(stoneGameIII2([]int{1,2,3,6})) // "Tie"
+    fmt.Println(stoneGameIII2([]int{1,2,3,4,5,6,7,8,9})) // "Alice"
+    fmt.Println(stoneGameIII2([]int{9,8,7,6,5,4,3,2,1})) // "Alice"
 }
