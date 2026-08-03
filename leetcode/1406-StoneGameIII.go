@@ -122,7 +122,12 @@ func main() {
     // She can end the game in a draw if she decided to choose all the first three piles, otherwise she will lose.
     fmt.Println(stoneGameIII([]int{1,2,3,6})) // "Tie"
 
+    fmt.Println(stoneGameIII([]int{1,2,3,4,5,6,7,8,9})) // "Alice"
+    fmt.Println(stoneGameIII([]int{9,8,7,6,5,4,3,2,1})) // "Alice"
+
     fmt.Println(stoneGameIII1([]int{1,2,3,7})) // "Bob"
     fmt.Println(stoneGameIII1([]int{1,2,3,-9})) // "Alice"
     fmt.Println(stoneGameIII1([]int{1,2,3,6})) // "Tie"
+    fmt.Println(stoneGameIII1([]int{1,2,3,4,5,6,7,8,9})) // "Alice"
+    fmt.Println(stoneGameIII1([]int{9,8,7,6,5,4,3,2,1})) // "Alice"
 }
