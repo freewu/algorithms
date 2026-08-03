@@ -139,6 +139,140 @@ func minMaxWaitingTime(demand []int, fuel []int) int {
     return res
 }
 
+func minMaxWaitingTime1(demand []int, fuel []int) int {
+    const INF = 1 << 61
+    n := len(demand)
+    // Step 1: find maximum number of served cars (must be a prefix).
+    // poss[s] = can assign prefix cars so that dispenser 0 uses exactly s fuel.
+    poss := make([]bool, fuel[0]+1)
+    poss[0] = true
+    pref, kStar := 0, 0
+    for i := 0; i < n; i++ {
+        d := demand[i]
+        np := make([]bool, fuel[0]+1)
+        for s := 0; s <= fuel[0]; s++ {
+            if poss[s] {
+                np[s] = true
+                if s+d <= fuel[0] {
+                    np[s+d] = true
+                }
+            }
+        }
+        poss = np
+        pref += d
+        ok := false
+        for s := 0; s <= fuel[0]; s++ {
+            if poss[s] && pref-s <= fuel[1] {
+                ok = true
+                break
+            }
+        }
+        if ok {
+            kStar = i + 1
+        } else {
+            break
+        }
+    }
+    if kStar == 0 {
+        return -1
+    }
+    F0 := fuel[0]
+    // dp[f0][last][r] = minimal possible max waiting time so far, where
+    // f0 = fuel used on dispenser 0, last = dispenser of previous car,
+    // r = clamped (availability time of other dispenser - start time of previous car).
+    dp := make([][2][21]int, F0+1)
+    for a := range dp {
+        for l := 0; l < 2; l++ {
+            for r := 0; r < 21; r++ {
+                dp[a][l][r] = INF
+            }
+        }
+    }
+    if demand[0] <= fuel[0] {
+        dp[demand[0]][0][0] = 0
+    }
+    if demand[0] <= fuel[1] {
+        dp[0][1][0] = 0
+    }
+    prefUsed := demand[0]
+    for i := 1; i < kStar; i++ {
+        d := demand[i]
+        pd := demand[i-1]
+        ndp := make([][2][21]int, F0+1)
+        for a := range ndp {
+            for l := 0; l < 2; l++ {
+                for r := 0; r < 21; r++ {
+                    ndp[a][l][r] = INF
+                }
+            }
+        }
+        for f0 := 0; f0 <= F0; f0++ {
+            f1 := prefUsed - f0
+            for last := 0; last < 2; last++ {
+                for r := 0; r < 21; r++ {
+                    v := dp[f0][last][r]
+                    if v >= INF {
+                        continue
+                    }
+                    // Option A: same dispenser as previous car -> wait = pd
+                    {
+                        nv := v
+                        if pd > nv {
+                            nv = pd
+                        }
+                        nr := r - pd
+                        if nr < 0 {
+                            nr = 0
+                        }
+                        if last == 0 {
+                            if f0+d <= fuel[0] && nv < ndp[f0+d][0][nr] {
+                                ndp[f0+d][0][nr] = nv
+                            }
+                        } else {
+                            if f1+d <= fuel[1] && nv < ndp[f0][1][nr] {
+                                ndp[f0][1][nr] = nv
+                            }
+                        }
+                    }
+                    // Option B: other dispenser -> wait = r
+                    {
+                        nv := v
+                        if r > nv {
+                            nv = r
+                        }
+                        nr := pd - r
+                        if nr < 0 {
+                            nr = 0
+                        }
+                        if last == 0 {
+                            if f1+d <= fuel[1] && nv < ndp[f0][1][nr] {
+                                ndp[f0][1][nr] = nv
+                            }
+                        } else {
+                            if f0+d <= fuel[0] && nv < ndp[f0+d][0][nr] {
+                                ndp[f0+d][0][nr] = nv
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        dp = ndp
+        prefUsed += d
+    }
+    res := INF
+    for f0 := 0; f0 <= F0; f0++ {
+        for l := 0; l < 2; l++ {
+            for r := 0; r < 21; r++ {
+                if dp[f0][l][r] < res {
+                    res = dp[f0][l][r]
+                }
+            }
+        }
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: demand = [6,8,4,6,5], fuel = [16,13]
@@ -180,4 +314,14 @@ func main() {
     fmt.Println(minMaxWaitingTime([]int{1,2,3,4,5,6,7,8,9}, []int{9,8,7,6,5,4,3,2,1})) // 2
     fmt.Println(minMaxWaitingTime([]int{9,8,7,6,5,4,3,2,1}, []int{1,2,3,4,5,6,7,8,9})) // -1
     fmt.Println(minMaxWaitingTime([]int{9,8,7,6,5,4,3,2,1}, []int{9,8,7,6,5,4,3,2,1})) // 0
+
+    fmt.Println(minMaxWaitingTime1([]int{6,8,4,6,5}, []int{16,13})) // 6
+    fmt.Println(minMaxWaitingTime1([]int{10,15}, []int{12,17})) // 0
+    fmt.Println(minMaxWaitingTime1([]int{10,5}, []int{8,8})) // -1
+    fmt.Println(minMaxWaitingTime1([]int{2,3,5}, []int{1,8})) // 2
+    fmt.Println(minMaxWaitingTime1([]int{3,2,4,4}, []int{4,5})) // 3
+    fmt.Println(minMaxWaitingTime1([]int{1,2,3,4,5,6,7,8,9}, []int{1,2,3,4,5,6,7,8,9})) // 0
+    fmt.Println(minMaxWaitingTime1([]int{1,2,3,4,5,6,7,8,9}, []int{9,8,7,6,5,4,3,2,1})) // 2
+    fmt.Println(minMaxWaitingTime1([]int{9,8,7,6,5,4,3,2,1}, []int{1,2,3,4,5,6,7,8,9})) // -1
+    fmt.Println(minMaxWaitingTime1([]int{9,8,7,6,5,4,3,2,1}, []int{9,8,7,6,5,4,3,2,1})) // 0
 }
