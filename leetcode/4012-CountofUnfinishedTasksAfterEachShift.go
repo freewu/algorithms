@@ -79,6 +79,40 @@ func countTasks(tasks []int, shifts []int) []int {
     return res
 }
 
+func countTasks1(tasks []int, shifts []int) []int {
+    n := len(tasks)
+    suffix := make([]int, n)
+    suffix[n-1] = tasks[n-1]
+    for i := n - 2; i >= 0; i-- {
+        suffix[i] = suffix[i+1] + tasks[i]
+    }
+    m := len(shifts)
+    res := make([]int, m)
+    currTask, currDone := 0, 0
+    for i := 0; i < m; i++ {
+        shift := shifts[i]
+        if suffix[currTask] - currDone <= shift {
+            res[i], currTask, currDone = 0, 0, 0
+            continue
+        }
+        for currTask < n && shift > 0 {
+            currTaskRemain := tasks[currTask] - currDone
+            finished := min(currTaskRemain, shift)
+            shift -= finished
+            currDone += finished
+            if tasks[currTask] == currDone {
+                currTask++
+                currDone = 0
+            }
+        }
+        res[i] = n - currTask
+        if currTask == n {
+            currTask, currDone = 0, 0
+        }
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: tasks = [1,4,4], shifts = [9,1,4]
@@ -109,4 +143,12 @@ func main() {
     fmt.Println(countTasks([]int{1,2,3,4,5,6,7,8,9}, []int{9,8,7,6,5,4,3,2,1})) // [6 4 3 2 2 1 1 1 0]
     fmt.Println(countTasks([]int{9,8,7,6,5,4,3,2,1}, []int{1,2,3,4,5,6,7,8,9})) // [9 9 9 8 8 7 6 4 0]
     fmt.Println(countTasks([]int{9,8,7,6,5,4,3,2,1}, []int{9,8,7,6,5,4,3,2,1})) // [8 7 6 5 4 3 2 1 0]
+
+    fmt.Println(countTasks1([]int{1,4,4}, []int{9,1,4})) // [0,2,1]
+    fmt.Println(countTasks1([]int{2,3,4}, []int{20,4,5})) // [0,2,0]
+    fmt.Println(countTasks1([]int{4,2}, []int{3,6,1})) // [2,0,2]
+    fmt.Println(countTasks1([]int{1,2,3,4,5,6,7,8,9}, []int{1,2,3,4,5,6,7,8,9})) // [8 7 6 5 4 3 2 1 0]
+    fmt.Println(countTasks1([]int{1,2,3,4,5,6,7,8,9}, []int{9,8,7,6,5,4,3,2,1})) // [6 4 3 2 2 1 1 1 0]
+    fmt.Println(countTasks1([]int{9,8,7,6,5,4,3,2,1}, []int{1,2,3,4,5,6,7,8,9})) // [9 9 9 8 8 7 6 4 0]
+    fmt.Println(countTasks1([]int{9,8,7,6,5,4,3,2,1}, []int{9,8,7,6,5,4,3,2,1})) // [8 7 6 5 
 }
