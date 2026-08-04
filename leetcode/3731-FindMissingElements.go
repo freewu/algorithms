@@ -63,6 +63,23 @@ func findMissingElements1(nums []int) []int {
     return res
 }
 
+func findMissingElements2(nums []int) []int {
+    mp := make(map[int]struct{}, len(nums))
+    mn, mx := nums[0], nums[0]
+    for _, v := range nums {
+        mp[v] = struct{}{}
+        mn = min(mn, v)
+        mx = max(mx, v)
+    }
+    res := []int{}
+    for i := mn + 1; i < mx; i++ {
+        if _, ok := mp[i]; !ok {
+            res = append(res, i)
+        }
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: nums = [1,4,2,5]
@@ -86,9 +103,15 @@ func main() {
     fmt.Println(findMissingElements([]int{1,2,3,4,5,6,7,8,9})) // []
     fmt.Println(findMissingElements([]int{9,8,7,6,5,4,3,2,1})) // []
 
-    fmt.Println(findMissingElements([]int{1,4,2,5})) // [3]
-    fmt.Println(findMissingElements([]int{7,8,6,9})) // []
-    fmt.Println(findMissingElements([]int{5,1})) // [2,3,4]
-    fmt.Println(findMissingElements([]int{1,2,3,4,5,6,7,8,9})) // []
-    fmt.Println(findMissingElements([]int{9,8,7,6,5,4,3,2,1})) // []
+    fmt.Println(findMissingElements1([]int{1,4,2,5})) // [3]
+    fmt.Println(findMissingElements1([]int{7,8,6,9})) // []
+    fmt.Println(findMissingElements1([]int{5,1})) // [2,3,4]
+    fmt.Println(findMissingElements1([]int{1,2,3,4,5,6,7,8,9})) // []
+    fmt.Println(findMissingElements1([]int{9,8,7,6,5,4,3,2,1})) // []
+
+    fmt.Println(findMissingElements2([]int{1,4,2,5})) // [3]
+    fmt.Println(findMissingElements2([]int{7,8,6,9})) // []
+    fmt.Println(findMissingElements2([]int{5,1})) // [2,3,4]
+    fmt.Println(findMissingElements2([]int{1,2,3,4,5,6,7,8,9})) // []
+    fmt.Println(findMissingElements2([]int{9,8,7,6,5,4,3,2,1})) // []
 }
