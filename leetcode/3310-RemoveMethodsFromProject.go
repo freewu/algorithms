@@ -125,6 +125,47 @@ func remainingMethods1(n int, k int, invocations [][]int) []int {
     return res
 }
 
+func remainingMethods2(n int, k int, invocations [][]int) []int {
+    edges, inDegree, visited := make([][]int, n), make([]int, n), make([]bool, n)
+    for _, inv := range invocations {
+        u, v := inv[0], inv[1]
+        edges[u] = append(edges[u], v)
+        inDegree[v]++
+    }
+    queue := []int{k}
+    suspicious := make([]bool, n)
+    suspicious[k], visited[k] = true, true
+    for len(queue) > 0 {
+        u := queue[0]
+        queue = queue[1:]
+        for _, v := range edges[u] {
+            inDegree[v]--
+            if !visited[v] {
+                visited[v] = true
+                queue = append(queue, v)
+                suspicious[v] = true
+            }
+        }
+    }
+    res, canRemoveAll := make([]int, 0), true
+    for i := 0; i < n; i++ {
+        if suspicious[i] && inDegree[i] > 0 {
+            canRemoveAll = false
+            break
+        } else if !suspicious[i] {
+            res = append(res, i)
+        }
+    }
+    if !canRemoveAll {
+        allNodes := make([]int, n)
+        for i := 0; i < n; i++ {
+            allNodes[i] = i
+        }
+        return allNodes
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: n = 4, k = 1, invocations = [[1,2],[0,1],[3,2]]
@@ -153,4 +194,8 @@ func main() {
     fmt.Println(remainingMethods1(4, 1, [][]int{{1,2},{0,1},{3,2}})) // [0,1,2,3]
     fmt.Println(remainingMethods1(5, 0, [][]int{{1,2},{0,2},{0,1},{3,4}})) // [3,4]
     fmt.Println(remainingMethods1(3, 2, [][]int{{1,2},{0,1},{2,0}})) // []
+
+    fmt.Println(remainingMethods2(4, 1, [][]int{{1,2},{0,1},{3,2}})) // [0,1,2,3]
+    fmt.Println(remainingMethods2(5, 0, [][]int{{1,2},{0,2},{0,1},{3,4}})) // [3,4]
+    fmt.Println(remainingMethods2(3, 2, [][]int{{1,2},{0,1},{2,0}})) // []
 }
