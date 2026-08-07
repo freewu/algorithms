@@ -85,6 +85,111 @@ func smallestNumber(num string, t int64) string {
     return string(res)
 }
 
+func smallestNumber1(num string, t int64) string {
+    type PrimeFactor [4]int // prime factors of 2, 3, 5, 7
+    factor := [10]PrimeFactor{{}, {}, {1}, {0, 1}, {2}, {0, 0, 1}, {1, 1}, {0, 0, 0, 1}, {3}, {0, 2}}
+    var target PrimeFactor
+
+    ceil := func(x, y int) int { return (x + y - 1) / y }
+    getmin := func(a PrimeFactor) int {
+        d23 := ceil(a[0], 3) + ceil(a[1], 2)
+        for i, m := 1, min(a[0], min(a[1], 5)); i <= m; i++ {
+            d23 = min(d23, i+ceil(a[0]-i, 3)+ceil(a[1]-i, 2))
+        }
+        return a[2] + a[3] + d23
+    }
+    add := func(a *PrimeFactor, d, s int) {
+        for i := range 4 {
+            a[i] += s * factor[d][i]
+        }
+    }
+    consume := func(a PrimeFactor, d int) PrimeFactor {
+        for i := range 4 {
+            a[i] = max(0, a[i]-factor[d][i])
+        }
+        return a
+    }
+    checkfactors := func(x int64) bool {
+        target = PrimeFactor{}
+        p := [4]int64{2, 3, 5, 7}
+        for i := range [4]int64{2, 3, 5, 7} {
+            for x%p[i] == 0 {
+                target[i]++
+                x /= p[i]
+            }
+        }
+        return x == 1
+    }
+    covers := func(a PrimeFactor) bool {
+        for i := range 4 {
+            if a[i] < target[i] {
+                return false
+            }
+        }
+        return true
+    }
+    missing := func(a PrimeFactor, d int) (r PrimeFactor) {
+        for i := range 4 {
+            r[i] = max(0, target[i]-a[i]-factor[d][i])
+        }
+        return
+    }
+    write := func(ans *[]byte, l int, need PrimeFactor) {
+        core := getmin(need)
+        for range l - core {
+            *ans = append(*ans, '1')
+        }
+        for slots := core; slots > 0; slots-- {
+            for d := 2; d <= 9; d++ {
+                next := consume(need, d)
+                if getmin(next) <= slots-1 {
+                    *ans = append(*ans, byte('0'+d))
+                    need = next
+                    break
+                }
+            }
+        }
+    }
+    if !checkfactors(t) {
+        return "-1"
+    }
+    n, firstZero := len(num), len(num)
+    var covered PrimeFactor
+    for i := range n {
+        d := int(num[i] - '0')
+        if d == 0 && firstZero == n {
+            firstZero = i
+        }
+        add(&covered, d, 1)
+    }
+    if firstZero == n && covers(covered) {
+        return num
+    }
+    for i := n - 1; i >= 0; i-- {
+        o := int(num[i] - '0')
+        add(&covered, o, -1)
+        if firstZero < i {
+            continue
+        }
+        suf := n - i - 1
+        for d := max(1, o+1); d <= 9; d++ {
+            need := missing(covered, d)
+            if getmin(need) > suf {
+                continue
+            }
+            ans := make([]byte, 0, n)
+            ans = append(ans, num[:i]...)
+            ans = append(ans, byte('0'+d))
+            write(&ans, suf, need)
+            return string(ans)
+        }
+    }
+    need := target
+    res := make([]byte, 0, max(n + 1, getmin(need)))
+    write(&res, cap(res), need)
+    return string(res)
+}
+
 func main() {
     // Example 1:
     // Input: num = "1234", t = 256
@@ -104,4 +209,13 @@ func main() {
     // Explanation:
     // No number greater than 11111 has the product of its digits divisible by 26.
     fmt.Println(smallestNumber("11111", 26)) // "-1"
+
+    fmt.Println(smallestNumber("123456789", 26)) // "-1"
+    fmt.Println(smallestNumber("987654321", 26)) // "-1"
+
+    fmt.Println(smallestNumber1("1234", 256)) // "1488"
+    fmt.Println(smallestNumber1("12355", 50)) // "12355"
+    fmt.Println(smallestNumber1("11111", 26)) // "-1"
+    fmt.Println(smallestNumber1("123456789", 26)) // "-1"
+    fmt.Println(smallestNumber1("987654321", 26)) // "-1"
 }
