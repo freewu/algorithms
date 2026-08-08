@@ -120,6 +120,38 @@ func validSequence1(word1 string, word2 string) []int {
     return res
 }
 
+var suffix [300_001]int32
+var res [300_000]int
+
+func validSequence2(a string, b string) []int {
+    m, n := int32(len(a)), int32(len(b))
+    for i := range n {
+        suffix[i] = -1
+    }
+    suffix[n] = m
+    for i, j := m-1, n-1; i >= 0 && j >= 0; i-- {
+        if a[i] == b[j] {
+            suffix[j] = i
+            j--
+        }
+    }
+    flag := false
+    for i, j := int32(0), int32(0); i < m; i++ {
+        if a[i] == b[j] {
+            res[j] = int(i)
+            j++
+        } else if !flag && i < suffix[j+1] {
+            flag = true
+            res[j] = int(i)
+            j++
+        }
+        if j == n {
+            return res[:j]
+        }
+    }
+    return nil
+}
+
 func main() {
     // Example 1:
     // Input: word1 = "vbcca", word2 = "abc"
@@ -150,8 +182,23 @@ func main() {
     // Output: [0,1]
     fmt.Println(validSequence("abc", "ab")) // [0,1]
 
+    fmt.Println(validSequence("bluefrog", "bf")) // [0,1]
+    fmt.Println(validSequence("leetcode", "lc")) // [0,1]
+    fmt.Println(validSequence("freewu", "fw")) // [0,1]
+
     fmt.Println(validSequence1("vbcca", "abc")) // [0,1,2]
     fmt.Println(validSequence1("bacdc", "abc")) // [1,2,4]
     fmt.Println(validSequence1("aaaaaa", "aaabc")) // []
     fmt.Println(validSequence1("abc", "ab")) // [0,1]
+    fmt.Println(validSequence1("bluefrog", "bf")) // [0,1]
+    fmt.Println(validSequence1("leetcode", "lc")) // [0,1]
+    fmt.Println(validSequence1("freewu", "fw")) // [0,1]
+
+    fmt.Println(validSequence2("vbcca", "abc")) // [0,1,2]
+    fmt.Println(validSequence2("bacdc", "abc")) // [1,2,4]
+    fmt.Println(validSequence2("aaaaaa", "aaabc")) // []
+    fmt.Println(validSequence2("abc", "ab")) // [0,1]
+    fmt.Println(validSequence2("bluefrog", "bf")) // [0,1]
+    fmt.Println(validSequence2("leetcode", "lc")) // [0,1]
+    fmt.Println(validSequence2("freewu", "fw")) // [0,1]
 }
