@@ -91,6 +91,11 @@ func main() {
     // Output: 104
     fmt.Println(stoneGameII([]int{ 1,2,3,4,5,100 })) // 104
 
+    fmt.Println(stoneGameII([]int{ 1,2,3,4,5,6,7,8,9 })) // 25
+    fmt.Println(stoneGameII([]int{ 9,8,7,6,5,4,3,2,1 })) // 25
+
     fmt.Println(stoneGameII1([]int{ 2,7,9,4,4 })) // 10
     fmt.Println(stoneGameII1([]int{ 1,2,3,4,5,100 })) // 104
+    fmt.Println(stoneGameII1([]int{ 1,2,3,4,5,6,7,8,9 })) // 25
+    fmt.Println(stoneGameII1([]int{ 9,8,7,6,5,4,3,2,1 })) // 25
 }
