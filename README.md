@@ -2095,6 +2095,7 @@
 [4012. Count of Unfinished Tasks After Each Shift](./leetcode/4012-CountofUnfinishedTasksAfterEachShift.go)   
 [4013. Count Subarrays With Even Odd Ratio II](./leetcode/4013-CountSubarraysWithEvenOddRatioII.go)   
 [4014. Minimum Total Price After Applying Discounts](./leetcode/4014-MinimumTotalPriceAfterApplyingDiscounts.go)   
+[4016. Maximum Area of Two Non-Overlapping Square Submatrices](./leetcode/4016-MaximumAreaOfTwoNonOverlappingSquareSubmatrices.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
