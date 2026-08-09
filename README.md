@@ -3459,6 +3459,7 @@
 [3939. Count Non Adjacent Subsets in a Rooted Tree](./leetcode/3939-CountNonAdjacentSubsetsInARootedTree.go)   
 [3949. Subtree Inversion Sum II](./leetcode/3949-SubtreeInversionSumII.go)   
 [3997. Count Dominant Nodes in a Binary Tree](./leetcode/3997-CountDominantNodesInABinaryTree.go)   
+[4015. Weighted Sum of a Tree](./leetcode/4015-WeightedSumOfATree.go)   
 
 # Graph
 [133. Clone Graph](./leetcode/133-CloneGraph.go)   
