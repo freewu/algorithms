@@ -33,6 +33,7 @@ package main
 //     1 <= nums[i] <= 10^5
 
 import "fmt"
+import "slices"
 
 func maxPairStrength(nums []int) int64 {
     res := int64(0)
@@ -60,6 +61,23 @@ func maxPairStrength1(nums []int) int64 {
         }
     }
     return res
+}
+
+func maxPairStrength2(nums []int) int64 {
+    slices.SortFunc(nums, func(a, b int) int { return b - a })
+    gcd := func (x, y int) int { for y != 0 { x, y = y, x % y; }; return x; }
+    res := 0
+    for i, x := range nums {
+        for _, y := range nums[:i] {
+            mul := x * y
+            if mul <= res {
+                break
+            }
+            val := gcd(x, y)
+            res = max(res, mul / (val * val))
+        }
+    }   
+    return int64(res)
 }
 
 func main() {
@@ -90,4 +108,10 @@ func main() {
     fmt.Println(maxPairStrength1([]int{3,3})) // 1
     fmt.Println(maxPairStrength1([]int{1,2,3,4,5,6,7,8,9})) // 72
     fmt.Println(maxPairStrength1([]int{9,8,7,6,5,4,3,2,1})) // 72
+
+    fmt.Println(maxPairStrength2([]int{2,3,5})) // 15
+    fmt.Println(maxPairStrength2([]int{4,6,8})) // 12
+    fmt.Println(maxPairStrength2([]int{3,3})) // 1
+    fmt.Println(maxPairStrength2([]int{1,2,3,4,5,6,7,8,9})) // 72
+    fmt.Println(maxPairStrength2([]int{9,8,7,6,5,4,3,2,1})) // 72
 }
