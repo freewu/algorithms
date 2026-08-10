@@ -62,6 +62,17 @@ func winnerSquareGame1(n int) bool {
     return f[n]
 }
 
+func winnerSquareGame2(n int) bool {
+    f := make([]bool, n + 1)
+    for i := range n {
+        if f[i] { continue }
+        for x := 1; x * x <= n - i; x++ {
+            f[i + x * x] = true
+        }
+    }
+    return f[n]
+}
+
 func main() {
     // Example 1:
     // Input: n = 1
@@ -99,4 +110,16 @@ func main() {
     fmt.Println(winnerSquareGame1(1024)) // true
     fmt.Println(winnerSquareGame1(99_999)) // true
     fmt.Println(winnerSquareGame1(100_000)) // true
+
+    fmt.Println(winnerSquareGame2(1)) // true
+    fmt.Println(winnerSquareGame2(2)) // false
+    fmt.Println(winnerSquareGame2(4)) // true
+    fmt.Println(winnerSquareGame2(8)) // true
+    fmt.Println(winnerSquareGame2(64)) // true
+    fmt.Println(winnerSquareGame2(99)) // true
+    fmt.Println(winnerSquareGame2(100)) // true
+    fmt.Println(winnerSquareGame2(101)) // true
+    fmt.Println(winnerSquareGame2(1024)) // true
+    fmt.Println(winnerSquareGame2(99_999)) // true
+    fmt.Println(winnerSquareGame2(100_000)) // true
 }
