@@ -55,6 +55,7 @@ package main
 //     1 <= a, b <= 1000
 
 import "fmt"
+import "sort"
 
 func countRatioSubarrays(nums []int, a int, b int) int {
     res := 0
@@ -70,6 +71,36 @@ func countRatioSubarrays(nums []int, a int, b int) int {
                 res++
             }
         }
+    }
+    return res
+}
+
+func countRatioSubarrays1(nums []int, a int, b int) int {
+    n, even, odd := len(nums), 0, 0
+    arr := make([]int, n + 1)
+    for i, v := range nums {
+        if v%2 == 0 {
+            even++
+        } else {
+            odd++
+        }
+        arr[i+1] = b * even - a * odd
+    }
+    sorted := append([]int(nil), arr...)
+    sort.Ints(sorted)
+    bit := make([]int, n+2)
+    res, inserted := 0, 0
+    for _, v := range arr {
+        index := sort.SearchInts(sorted, v) + 1
+        less := 0
+        for i := index - 1; i > 0; i -= i & -i {
+            less += bit[i]
+        }
+        res += inserted - less
+        for i := index; i < len(bit); i += i & -i {
+            bit[i]++
+        }
+        inserted++
     }
     return res
 }
@@ -119,4 +150,18 @@ func main() {
     fmt.Println(countRatioSubarrays([]int{9,8,7,6,5,4,3,2,1}, 1000, 1)) // 41
     fmt.Println(countRatioSubarrays([]int{1,2,3,4,5,6,7,8,9}, 1000, 1000)) // 35
     fmt.Println(countRatioSubarrays([]int{9,8,7,6,5,4,3,2,1}, 1000, 1000)) // 35
+
+    fmt.Println(countRatioSubarrays1([]int{1,2,1,2}, 3, 2)) // 7
+    fmt.Println(countRatioSubarrays1([]int{2,2,1}, 2, 1)) // 3
+    fmt.Println(countRatioSubarrays1([]int{2,2,2}, 1, 1)) // 0
+    fmt.Println(countRatioSubarrays1([]int{1,2,3,4,5,6,7,8,9}, 3, 2)) // 38  
+    fmt.Println(countRatioSubarrays1([]int{9,8,7,6,5,4,3,2,1}, 3, 2)) // 38
+    fmt.Println(countRatioSubarrays1([]int{1,2,3,4,5,6,7,8,9}, 1, 1)) // 35 
+    fmt.Println(countRatioSubarrays1([]int{9,8,7,6,5,4,3,2,1}, 1, 1)) // 35
+    fmt.Println(countRatioSubarrays1([]int{1,2,3,4,5,6,7,8,9}, 1, 1000)) // 5  
+    fmt.Println(countRatioSubarrays1([]int{9,8,7,6,5,4,3,2,1}, 1, 1000)) // 5
+    fmt.Println(countRatioSubarrays1([]int{1,2,3,4,5,6,7,8,9}, 1000, 1)) // 41 
+    fmt.Println(countRatioSubarrays1([]int{9,8,7,6,5,4,3,2,1}, 1000, 1)) // 41
+    fmt.Println(countRatioSubarrays1([]int{1,2,3,4,5,6,7,8,9}, 1000, 1000)) // 35
+    fmt.Println(countRatioSubarrays1([]int{9,8,7,6,5,4,3,2,1}, 1000, 1000)) // 35
 }
