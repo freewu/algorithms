@@ -3610,6 +3610,7 @@
 [3967. Finish Time of Tasks II](./leetcode/3967-FinishTimeOfTasksII.go)   
 [3970. Shortest Path With At Most K Consecutive Identical Characters](./leetcode/3970-ShortestPathWithAtMostKConsecutiveIdenticalCharacters.go)   
 [3977. Minimum Time to Reach Target With Limited Power](./leetcode/3977-MinimumTimeToReachTargetWithLimitedPower.go)   
+[4018. Total Sum of Interaction Cost in Tree Groups II](./leetcode/4018-TotalSumOfInteractionCostInTreeGroupsII.go)   
 
 # Trie
 [386. Lexicographical Numbers](./leetcode/386-LexicographicalNumbers.go)   
