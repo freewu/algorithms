@@ -34,21 +34,35 @@ import "fmt"
 
 // 滑动窗口 + 哈希表
 func maxSubarrayLength(nums []int, k int) int {
-	m := make(map[int]int)
-	left, res := 0,0
+    mp := make(map[int]int)
+    left, res := 0,0
     max := func (a int, b int) int { if a > b { return a; }; return b; }
-
-	for right, x := range nums {
+    for right, v := range nums {
         // 哈希表维护每个元素在窗口个数
-		m[x]++
+        mp[v]++
         // 维护窗口内数组元素个数不超过 k 即可
-		for m[x] > k {
-			m[nums[left]]--
-			left++
-		}
-		res = max(res, right - left + 1)
-	}
-	return res
+        for mp[v] > k {
+            mp[nums[left]]--
+            left++
+        }
+        res = max(res, right - left + 1)
+    }
+    return res
+}
+
+func maxSubarrayLength1(nums []int, k int) int {
+    mp := make(map[int]int, len(nums)/4)
+    res, l := 0, 0
+    max := func (a int, b int) int { if a > b { return a; }; return b; }
+    for r, v := range nums {
+        mp[v]++
+        for mp[v] > k {
+            mp[nums[l]]--
+            l++
+        }
+        res = max(res, r - l + 1)
+    }
+    return res
 }
 
 func main() {
@@ -68,4 +82,10 @@ func main() {
 
     fmt.Println(maxSubarrayLength([]int{1,2,3,4,5,6,7,8,9}, 4)) // 9
     fmt.Println(maxSubarrayLength([]int{9,8,7,6,5,4,3,2,1}, 4)) // 9
+
+    fmt.Println(maxSubarrayLength1([]int{1,2,3,1,2,3,1,2},2)) // 6
+    fmt.Println(maxSubarrayLength1([]int{1,2,1,2,1,2,1,2},1)) // 2
+    fmt.Println(maxSubarrayLength1([]int{5,5,5,5,5,5,5}, 4)) // 4
+    fmt.Println(maxSubarrayLength1([]int{1,2,3,4,5,6,7,8,9}, 4)) // 9
+    fmt.Println(maxSubarrayLength1([]int{9,8,7,6,5,4,3,2,1}, 4)) // 9
 }
