@@ -104,6 +104,65 @@ func longestRepeating(s string, queryCharacters string, queryIndices []int) []in
     return res
 }
 
+func longestRepeating1(s string, queryCharacters string, queryIndices []int) []int {
+    n := len(s)
+    prefix, suffix := make([]int, 4 * n), make([]int, 4 * n)
+    maxLen, leftChar, rightChar := make([]int, 4 * n), make([]byte, 4 * n), make([]byte, 4 * n)
+    var pushUp func(u, l, r int)
+    pushUp = func(u, l, r int) {
+        mid := (l + r) >> 1
+        leftLen, rightLen := mid - l + 1, r - mid
+        left, right := u<<1, u<<1|1
+        leftChar[u], rightChar[u] = leftChar[left], rightChar[right]
+        prefix[u] = prefix[left]
+        if prefix[left] == leftLen && rightChar[left] == leftChar[right] {
+            prefix[u] = prefix[left] + prefix[right]
+        }
+        suffix[u] = suffix[right]
+        if suffix[right] == rightLen && rightChar[left] == leftChar[right] {
+            suffix[u] = suffix[right] + suffix[left]
+        }
+        maxLen[u] = max(maxLen[left], maxLen[right])
+        if rightChar[left] == leftChar[right] {
+            maxLen[u] = max(maxLen[u], suffix[left] + prefix[right])
+        }
+    }
+    var build func(u, l, r int)
+    build = func(u, l, r int) {
+        if l == r {
+            prefix[u], suffix[u], maxLen[u] = 1, 1, 1
+            leftChar[u], rightChar[u] = s[l], s[l]
+            return
+        }
+        mid := (l + r) >> 1
+        build(u<<1, l, mid)
+        build(u<<1|1, mid+1, r)
+        pushUp(u, l, r)
+    }
+    var update func(u, l, r, pos int, ch byte)
+    update = func(u, l, r, pos int, ch byte) {
+        if l == r {
+            leftChar[u], rightChar[u] = ch, ch
+            return
+        }
+        mid := (l + r) >> 1
+        if pos <= mid {
+            update(u<<1, l, mid, pos, ch)
+        } else {
+            update(u<<1|1, mid+1, r, pos, ch)
+        }
+        pushUp(u, l, r)
+    }
+    build(1, 0, n-1)
+    k := len(queryIndices)
+    res := make([]int, k)
+    for i := 0; i < k; i++ {
+        update(1, 0, n-1, queryIndices[i], queryCharacters[i])
+        res[i] = maxLen[1]
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: s = "babacc", queryCharacters = "bcb", queryIndices = [1,3,3]
@@ -123,4 +182,14 @@ func main() {
     // - 2nd query updates s = "aaazz". The longest substring consisting of one repeating character is "aaa" with length 3.
     // Thus, we return [2,3].
     fmt.Println(longestRepeating("abyzz", "aa", []int{2,1})) // [2,3]
+
+    fmt.Println(longestRepeating("bluefrog", "bf", []int{2,1})) // [1 1]
+    fmt.Println(longestRepeating("leetcode", "lc", []int{2,1})) // [1 1]
+    fmt.Println(longestRepeating("freewu", "fr", []int{2,1})) // [1 1]
+
+    fmt.Println(longestRepeating1("babacc", "bcb", []int{1,3,3})) // [3,3,4]
+    fmt.Println(longestRepeating1("abyzz", "aa", []int{2,1})) // [2,3]
+    fmt.Println(longestRepeating1("bluefrog", "bf", []int{2,1})) // [1 1]
+    fmt.Println(longestRepeating1("leetcode", "lc", []int{2,1})) // [1 1]
+    fmt.Println(longestRepeating1("freewu", "fr", []int{2,1})) // [1 1]
 }
