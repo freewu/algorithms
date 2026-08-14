@@ -80,6 +80,21 @@ func maximumLengthSubstring2(s string) int {
     return res
 }
 
+func maximumLengthSubstring3(s string) (res int) {
+    res, l, mp := 0, 0, make(map[byte]int)
+    max := func (x, y int) int { if x > y { return x; }; return y; }
+    for r, ch := range s {
+        c := byte(ch)
+        mp[c]++
+        for mp[c] > 2 {
+            mp[s[l]]--
+            l++
+        }
+        res = max(res, r - l + 1)
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: s = "bcbbbcba"
@@ -96,14 +111,23 @@ func main() {
 
     fmt.Println(maximumLengthSubstring("bluefrog")) // 8
     fmt.Println(maximumLengthSubstring("leetcode")) // 7
+    fmt.Println(maximumLengthSubstring2("freewu")) // 6
 
     fmt.Println(maximumLengthSubstring1("bcbbbcba")) // 4
     fmt.Println(maximumLengthSubstring1("aaaa")) // 2
     fmt.Println(maximumLengthSubstring1("bluefrog")) // 8
     fmt.Println(maximumLengthSubstring1("leetcode")) // 7
+    fmt.Println(maximumLengthSubstring2("freewu")) // 6
 
     fmt.Println(maximumLengthSubstring2("bcbbbcba")) // 4
     fmt.Println(maximumLengthSubstring2("aaaa")) // 2
     fmt.Println(maximumLengthSubstring2("bluefrog")) // 8
     fmt.Println(maximumLengthSubstring2("leetcode")) // 7
+    fmt.Println(maximumLengthSubstring2("freewu")) // 6
+
+    fmt.Println(maximumLengthSubstring3("bcbbbcba")) // 4
+    fmt.Println(maximumLengthSubstring3("aaaa")) // 2
+    fmt.Println(maximumLengthSubstring3("bluefrog")) // 8
+    fmt.Println(maximumLengthSubstring3("leetcode")) // 7
+    fmt.Println(maximumLengthSubstring3("freewu")) // 6
 }
