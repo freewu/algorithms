@@ -2776,6 +2776,7 @@
 [3995. Minimum Cost to Convert String III](./leetcode/3995-MinimumCostToConvertStringIII.go)   
 [3998. Transform Binary String Using Subsequence Sort](./leetcode/3998-TransformBinaryStringUsingSubsequenceSort.go)   
 [4006. Count Valid Prefixes](./leetcode/4006-CountValidPrefixes.go)   
+[4019. Merge Close Characters II](./leetcode/4019-MergeCloseCharactersII.go)   
 
 # Dynamic Programming
 [276. Paint Fence](./leetcode/276-PaintFence.go)   
