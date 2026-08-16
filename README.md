@@ -2784,6 +2784,7 @@
 [4019. Merge Close Characters II](./leetcode/4019-MergeCloseCharactersII.go)   
 [4021. Minimum Operations to Make a Rotated Palindrome I](./leetcode/4021-MinimumOperationsToMakeARotatedPalindromeI.go)   
 [4026. Maximum Gap Between Stations](./leetcode/4026-MaximumGapBetweenStations.go)   
+[4029. Minimum Operations to Make a Rotated Palindrome II](./leetcode/4029-MinimumOperationsToMakeARotatedPalindromeII.go)   
 
 # Dynamic Programming
 [276. Paint Fence](./leetcode/276-PaintFence.go)   
