@@ -82,6 +82,21 @@ func stoneGameIX1(stones []int) bool {
     return check(count1) || check(count2)
 }
 
+func stoneGameIX2(stones []int) bool {
+    count := [3]int{}
+    for _, s := range stones {
+        count[s%3]++
+    }
+    if count[0]%2 == 0 {
+        return count[1] > 0 && count[2] > 0
+    }
+    diff := count[1] - count[2]
+    if diff < 0 {
+        diff = -diff
+    }
+    return diff > 2
+}
+
 func main() {
     // Example 1:
     // Input: stones = [2,1]
@@ -109,7 +124,18 @@ func main() {
     // Alice loses the game because the sum of the removed stones (15) is divisible by 3. Bob wins the game.
     fmt.Println(stoneGameIX([]int{5,1,2,4,3})) // false
 
+    fmt.Println(stoneGameIX([]int{1,2,3,4,5,6,7,8,9})) // false
+    fmt.Println(stoneGameIX([]int{9,8,7,6,5,4,3,2,1})) // false
+
     fmt.Println(stoneGameIX1([]int{2,1})) // true
     fmt.Println(stoneGameIX1([]int{2})) // false
     fmt.Println(stoneGameIX1([]int{5,1,2,4,3})) // false
+    fmt.Println(stoneGameIX1([]int{1,2,3,4,5,6,7,8,9})) // false
+    fmt.Println(stoneGameIX1([]int{9,8,7,6,5,4,3,2,1})) // false
+
+    fmt.Println(stoneGameIX2([]int{2,1})) // true
+    fmt.Println(stoneGameIX2([]int{2})) // false
+    fmt.Println(stoneGameIX2([]int{5,1,2,4,3})) // false
+    fmt.Println(stoneGameIX2([]int{1,2,3,4,5,6,7,8,9})) // false
+    fmt.Println(stoneGameIX2([]int{9,8,7,6,5,4,3,2,1})) // false
 }
