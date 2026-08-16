@@ -3248,6 +3248,7 @@
 [3994. Minimum Adjacent Swaps to Partition Array](./leetcode/3994-MinimumAdjacentSwapsToPartitionArray.go)   
 [4000. Largest Integer With Given Digit Sum](./leetcode/4000-LargestIntegerWithGivenDigitSum.go)   
 [4002. Count Valid Sequences](./leetcode/4002-CountValidSequences.go)   
+[4022. K-th Digit in Infinite String](./leetcode/4022-KthDigitInInfiniteString.go)   
 
 # Stack
 [225. Implement Stack using Queues](./leetcode/225-ImplementStackUsingQueues.go)   
