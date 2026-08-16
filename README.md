@@ -2099,6 +2099,7 @@
 [4017. Peaks in Array II](./leetcode/4017-PeaksInArrayII.go)   
 [4020. Elevator Requests I](./leetcode/4020-ElevatorRequestsI.go)   
 [4023. Elevator Requests II](./leetcode/4023-ElevatorRequestsII.go)   
+[4024. Nearest Available Drone](./leetcode/4024-NearestAvailableDrone.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
