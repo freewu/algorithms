@@ -92,6 +92,13 @@ func main() {
     // Output: 65
     fmt.Println(numberOfPatterns(1,2)) // 65
 
+    fmt.Println(numberOfPatterns(1,9)) // 389497
+    fmt.Println(numberOfPatterns(9,1)) // 0
+    fmt.Println(numberOfPatterns(9,9)) // 140704
+
     fmt.Println(numberOfPatterns1(1,1)) // 9
     fmt.Println(numberOfPatterns1(1,2)) // 65
+    fmt.Println(numberOfPatterns1(1,9)) // 389497
+    fmt.Println(numberOfPatterns1(9,1)) // 0
+    fmt.Println(numberOfPatterns1(9,9)) // 140704
 }
