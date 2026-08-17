@@ -93,6 +93,84 @@ func elevatorRequests(n int, start int, requests []int) int64 {
     return int64(dfs(index, index, 0)) // 这里 0 和 1 是一样的
 }
 
+func elevatorRequests1(n int, start int, requests []int) int64 {
+    inf := int64(1 << 61)
+    pos := make([]int, 0, len(requests) + 1)
+    pos = append(pos, start)
+    for _, floor := range requests {
+        if floor != start {
+            pos = append(pos, floor)
+        }
+    }
+    if len(pos) == 1 {
+        return 0
+    }
+    for i := 1; i < len(pos); i++ {
+        val := pos[i]
+        j := i - 1
+        for j >= 0 && pos[j] > val {
+            pos[j+1] = pos[j]
+            j--
+        }
+        pos[j+1] = val
+    }
+    startIndex := 0
+    for pos[startIndex] != start {
+        startIndex++
+    }
+    leftCount, rightCount := startIndex, len(pos) - startIndex - 1
+    requestCount := leftCount + rightCount
+    prevLeft, prevRight := make([]int64, rightCount + 1), make([]int64, rightCount + 1)
+    prevLeft[0], prevRight[0] = 0, 0
+    for j := 1; j <= rightCount; j++ {
+        remaining := int64(requestCount - j + 1)
+        newRight := pos[startIndex+j]
+        fromLeft := prevLeft[j-1] + int64(newRight-pos[startIndex])*remaining
+        fromRight := prevRight[j-1] + int64(newRight-pos[startIndex+j-1])*remaining
+        prevLeft[j] = inf
+        if fromLeft < fromRight {
+            prevRight[j] = fromLeft
+        } else {
+            prevRight[j] = fromRight
+        }
+    }
+    for i := 1; i <= leftCount; i++ {
+        currentLeft, currentRight := make([]int64, rightCount + 1), make([]int64, rightCount + 1)
+        newLeft, remaining := pos[startIndex-i], int64(requestCount - i + 1)
+        fromLeft := prevLeft[0] + int64(pos[startIndex-i+1]-newLeft)*remaining
+        fromRight := prevRight[0] + int64(pos[startIndex]-newLeft)*remaining
+        if fromLeft < fromRight {
+            currentLeft[0] = fromLeft
+        } else {
+            currentLeft[0] = fromRight
+        }
+        currentRight[0] = inf
+        for j := 1; j <= rightCount; j++ {
+            remaining = int64(requestCount - i - j + 1)
+            newRight := pos[startIndex+j]
+            fromLeft = prevLeft[j] + int64(pos[startIndex-i+1]-newLeft)*remaining
+            fromRight = prevRight[j] + int64(pos[startIndex+j]-newLeft)*remaining
+            if fromLeft < fromRight {
+                currentLeft[j] = fromLeft
+            } else {
+                currentLeft[j] = fromRight
+            }
+            fromLeft = currentLeft[j-1] + int64(newRight-newLeft)*remaining
+            fromRight = currentRight[j-1] + int64(newRight-pos[startIndex+j-1])*remaining
+            if fromLeft < fromRight {
+                currentRight[j] = fromLeft
+            } else {
+                currentRight[j] = fromRight
+            }
+        }
+        prevLeft, prevRight = currentLeft, currentRight
+    }
+    if prevLeft[rightCount] < prevRight[rightCount] {
+        return prevLeft[rightCount]
+    }
+    return prevRight[rightCount]
+}
+
 func main() {
     // Example 1:
     // Input: n = 6, start = 4, requests = [1,5]
@@ -123,4 +201,10 @@ func main() {
 
     fmt.Println(elevatorRequests(6, 4, []int{1,2,3,4,5,6,7,8,9})) // 42
     fmt.Println(elevatorRequests(6, 4, []int{9,8,7,6,5,4,3,2,1})) // 42
+
+    fmt.Println(elevatorRequests1(6, 4, []int{1,5})) // 6
+    fmt.Println(elevatorRequests1(8, 3, []int{3,7,1})) // 10
+    fmt.Println(elevatorRequests1(10, 5, []int{0,2,9})) // 22
+    fmt.Println(elevatorRequests1(6, 4, []int{1,2,3,4,5,6,7,8,9})) // 42
+    fmt.Println(elevatorRequests1(6, 4, []int{9,8,7,6,5,4,3,2,1})) // 42
 }
