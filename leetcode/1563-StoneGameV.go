@@ -104,6 +104,43 @@ func stoneGameV1(stoneValue []int) int {
     return dfs(0, n - 1)
 }
 
+var psum [501]uint32
+var pf, sf [502][502]uint32
+
+func stoneGameV2(stones []int) int {
+    n := len(stones)
+    if n == 1 {
+        return 0
+    } else if n == 2 {
+        return min(stones[0], stones[1])
+    }
+    for i := 1; i <= n; i++ {
+        s := uint32(stones[i-1])
+        psum[i] = psum[i-1] + s
+        pf[i][i], sf[i][i] = s, s
+        pf[i][i-1], sf[i+1][i] = 0, 0
+    }
+    res := uint32(0)
+    for i := n - 1; i >= 1; i-- {
+        k := i
+        for j := i + 1; j <= n; j++ {
+            t := psum[i-1] + psum[j]
+            for psum[k]*2 < t {
+                k++
+            }
+            var off int
+            if psum[k]*2 == t {
+                off++
+            }
+            res = max(pf[i][k-1+off], sf[k+1][j])
+            next := psum[j] - psum[i-1] + res
+            pf[i][j] = max(pf[i][j-1], next)
+            sf[i][j] = max(sf[i+1][j], next)
+        }
+    }
+    return int(res)
+}
+
 func main() {
     // Example 1:
     // Input: stoneValue = [6,2,3,4,5,5]
@@ -121,7 +158,18 @@ func main() {
     // Output: 0
     fmt.Println(stoneGameV([]int{4})) // 0
 
+    fmt.Println(stoneGameV([]int{1,2,3,4,5,6,7,8,9})) // 35
+    fmt.Println(stoneGameV([]int{9,8,7,6,5,4,3,2,1})) // 35
+
     fmt.Println(stoneGameV1([]int{6,2,3,4,5,5})) // 18
     fmt.Println(stoneGameV1([]int{7,7,7,7,7,7,7})) // 28
     fmt.Println(stoneGameV1([]int{4})) // 0
+    fmt.Println(stoneGameV1([]int{1,2,3,4,5,6,7,8,9})) // 35
+    fmt.Println(stoneGameV1([]int{9,8,7,6,5,4,3,2,1})) // 35
+
+    fmt.Println(stoneGameV2([]int{6,2,3,4,5,5})) // 18
+    fmt.Println(stoneGameV2([]int{7,7,7,7,7,7,7})) // 28
+    fmt.Println(stoneGameV2([]int{4})) // 0
+    fmt.Println(stoneGameV2([]int{1,2,3,4,5,6,7,8,9})) // 35
+    fmt.Println(stoneGameV2([]int{9,8,7,6,5,4,3,2,1})) // 35
 }
