@@ -58,6 +58,7 @@ package main
 
 import "fmt"
 
+// 超出时间限制 992 / 1000
 func interactionCosts(n int, edges [][]int, group []int) int64 {
     adj := make([][]int, n)
     for _, e := range edges {
@@ -65,87 +66,119 @@ func interactionCosts(n int, edges [][]int, group []int) int64 {
         adj[u] = append(adj[u], v)
         adj[v] = append(adj[v], u)
     }
-    depth, subSize,cntLca  := make([]int, n), make([]int, n),  make([]int64, n)
-    // first dfs: compute size & depth
-    var dfsSize func(u, p int)
-    dfsSize = func(u, p int) {
-        subSize[u] = 1
-        for _, v := range adj[u] {
-            if v == p {
-                continue
-            }
-            depth[v] = depth[u] + 1
-            dfsSize(v, u)
-            subSize[u] += subSize[v]
-        }
+    total := make(map[int]int)
+    for _, g := range group {
+        total[g]++
     }
-    dfsSize(0, -1)
-    // DSU on tree small‑to‑large
-    var dfs func(u, p int, keep bool) map[int]int64
-    dfs = func(u, p int, keep bool) map[int]int64 {
-        // find heavy child
-        heavy, mx := -1, 0
-        for _, v := range adj[u] {
-            if v != p && subSize[v] > mx {
-                mx, heavy = subSize[v], v
+    type stackItem struct {
+        node    int
+        parent  int
+        visited bool
+    }
+    stack := []stackItem{{node: 0, parent: -1, visited: false}}
+    subMap := make([]map[int]int, n)
+    var res int64 = 0
+    for len(stack) > 0 {
+        item := stack[len(stack)-1]
+        stack = stack[:len(stack)-1]
+        u, parent, visited := item.node, item.parent, item.visited
+        if !visited {
+            stack = append(stack, stackItem{u, parent, true})
+            for _, v := range adj[u] {
+                if v != parent {
+                    stack = append(stack, stackItem{v, u, false})
+                }
             }
-        }
-        res := make(map[int]int64)
-        if heavy != -1 {
-            res = dfs(heavy, u, true)
         } else {
-            res = make(map[int]int64)
+            cnt := make(map[int]int)
+            cnt[group[u]] = 1
+            for _, v := range adj[u] {
+                if v == parent {
+                    continue
+                }
+                child := subMap[v]
+                // small‑to‑large: always merge smaller into larger
+                if len(child) > len(cnt) {
+                    cnt, child = child, cnt
+                }
+                for g, c := range child {
+                    cnt[g] += c
+                }
+                subMap[v] = nil
+            }
+            subMap[u] = cnt
+            if parent != -1 {
+                var contrib int64
+                for g, c := range cnt {
+                    t := total[g]
+                    contrib += int64(c) * int64(t-c)
+                }
+                res += contrib
+            }
         }
-        // iterate light children
+    }
+    return res
+}
+
+// 超出时间限制 998 / 1000
+func interactionCosts1(n int, edges [][]int, group []int) int64 {
+    type Pair struct {
+        g int
+        c int
+    }
+    adj := make([][]int, n)
+    for _, e := range edges {
+        u, v := e[0], e[1]
+        adj[u] = append(adj[u], v)
+        adj[v] = append(adj[v], u)
+    }
+    total := make([]int, n+1)
+    for _, g := range group {
+        total[g]++
+    }
+    res := int64(0)
+    var dfs func(u, parent int) []Pair
+    dfs = func(u, parent int) []Pair {
+        // 当前节点
+        list := []Pair{{g: group[u], c: 1}}
         for _, v := range adj[u] {
-            if v == p || v == heavy {
+            if v == parent {
                 continue
             }
-            childMap := dfs(v, u, false)
-            // count cross pairs between res and childMap: these pairs' lca is u
-            for g, c := range childMap {
-                cntLca[u] += res[g] * c
+            child := dfs(v, u)
+            // small‑to‑large：短合并到长，减少拷贝
+            if len(child) > len(list) {
+                list, child = child, list
             }
-            // merge childMap into res
-            for g, c := range childMap {
-                res[g] += c
+            // 把child合并进list
+            for _, cp := range child {
+                found := false
+                for i := range list {
+                    if list[i].g == cp.g {
+                        list[i].c += cp.c
+                        found = true
+                        break
+                    }
+                }
+                if !found {
+                    list = append(list, cp)
+                }
             }
         }
-        // add current node u itself
-        gU := group[u]
-        cntLca[u] += res[gU] // pairs between u and existing nodes in subtree, lca=u
-        res[gU]++
-        if !keep {
-            // discard map
-            return nil
+        if parent != -1 {
+            var contrib int64
+            for _, p := range list {
+                contrib += int64(p.c) * int64(total[p.g]-p.c)
+            }
+            res += contrib
         }
-        return res
+        return list
     }
-    dfs(0, -1, true)
-    // compute first term sum_{u<v} (depth[u]+depth[v])
-    groups := make(map[int][]int)
-    for i := 0; i < n; i++ {
-        g := group[i]
-        groups[g] = append(groups[g], i)
-    }
-    sum := int64(0)
-    for _, nodes := range groups {  
-        m := len(nodes)
-        if m < 2 {
-            continue
-        }
-        s := int64(0)
-        for _, nd := range nodes {
-            s += int64(depth[nd])
-        }
-        sum += s * int64(m-1)
-    }
-    sumLca := int64(0)
-    for x := 0; x < n; x++ {
-        sumLca += cntLca[x] * int64(depth[x])
-    }
-    return sum - 2 * sumLca
+    dfs(0, -1)
+    return res
 }
+
+
 
 func main() {
     // Example 1:
@@ -183,4 +216,41 @@ func main() {
     // Explanation:
     // All nodes belong to different groups and there are no valid pairs. Therefore, the total interaction cost is 0.
     fmt.Println(interactionCosts(2, [][]int{{0,1}}, []int{1,2})) // 0
+
+    fmt.Println(interactionCosts(
+        21, 
+        [][]int{{3,9},{2,4},{3,7},{1,15},{10,13},{6,8},{1,11},{9,18},{8,20},{0,1},{0,2},{0,5},{2,3},{15,16},{7,14},{5,10},{3,6},{7,17},{4,12},{13,19}}, 
+        []int{15,19,3,19,6,8,5,2,9,16,9,17,14,21,11,3,7,5,9,19,14}),
+    ) // 42
+    fmt.Println(interactionCosts(
+        31, 
+        [][]int{{13,22},{5,25},{1,5},{7,29},{2,4},{1,3},{20,28},{20,23},{21,30},{0,13},{0,1},{5,11},{19,26},{7,8},{9,19},{9,10},{3,24},{1,6},{0,2},{14,17},{18,20},{14,16},{5,7},{2,14},{2,9},{5,12},{10,15},{10,18},{25,27},{7,21}}, 
+        []int{6,30,3,8,22,6,21,11,8,2,23,11,7,14,10,17,3,1,5,15,21,21,9,19,6,12,31,15,22,13,13}),
+    ) // 52
+    fmt.Println(interactionCosts(
+        64, 
+        [][]int{{50,54},{39,61},{4,34},{0,43},{37,44},{3,21},{8,17},{21,28},{38,47},{10,19},{0,2},{6,11},{15,18},{36,63},{27,30},{34,55},{22,27},{37,52},{4,8},{24,37},{7,14},{30,59},{28,49},{8,24},{42,57},{0,33},{13,16},{3,4},{27,36},{25,48},{20,35},{10,25},{1,39},{13,56},{45,50},{13,29},{0,6},{25,32},{14,22},{4,15},{0,7},{4,26},{1,10},{0,42},{12,13},{21,23},{11,20},{1,5},{36,40},{7,38},{2,3},{24,41},{38,53},{0,1},{2,51},{10,60},{0,9},{8,12},{14,46},{5,62},{35,45},{45,58},{4,31}}, 
+        []int{55,42,56,60,26,64,53,17,49,3,25,64,1,38,12,14,14,62,28,2,27,15,24,45,48,25,9,57,26,34,30,64,52,59,37,28,59,49,5,31,38,2,7,34,39,60,51,38,12,40,20,49,29,51,42,23,60,59,37,37,62,59,36,45}),
+    ) // 216
+
+
+    fmt.Println(interactionCosts1(3, [][]int{{0,1},{1,2}}, []int{1,1,1})) // 4
+    fmt.Println(interactionCosts1(3, [][]int{{0,1},{1,2}}, []int{3,2,3})) // 2
+    fmt.Println(interactionCosts1(4, [][]int{{0,1},{0,2},{0,3}}, []int{1,1,4,4})) // 3
+    fmt.Println(interactionCosts1(2, [][]int{{0,1}}, []int{1,2})) // 0
+    fmt.Println(interactionCosts1(
+        21, 
+        [][]int{{3,9},{2,4},{3,7},{1,15},{10,13},{6,8},{1,11},{9,18},{8,20},{0,1},{0,2},{0,5},{2,3},{15,16},{7,14},{5,10},{3,6},{7,17},{4,12},{13,19}}, 
+        []int{15,19,3,19,6,8,5,2,9,16,9,17,14,21,11,3,7,5,9,19,14}),
+    ) // 42
+    fmt.Println(interactionCosts1(
+        31, 
+        [][]int{{13,22},{5,25},{1,5},{7,29},{2,4},{1,3},{20,28},{20,23},{21,30},{0,13},{0,1},{5,11},{19,26},{7,8},{9,19},{9,10},{3,24},{1,6},{0,2},{14,17},{18,20},{14,16},{5,7},{2,14},{2,9},{5,12},{10,15},{10,18},{25,27},{7,21}}, 
+        []int{6,30,3,8,22,6,21,11,8,2,23,11,7,14,10,17,3,1,5,15,21,21,9,19,6,12,31,15,22,13,13}),
+    ) // 52
+    fmt.Println(interactionCosts1(
+        64, 
+        [][]int{{50,54},{39,61},{4,34},{0,43},{37,44},{3,21},{8,17},{21,28},{38,47},{10,19},{0,2},{6,11},{15,18},{36,63},{27,30},{34,55},{22,27},{37,52},{4,8},{24,37},{7,14},{30,59},{28,49},{8,24},{42,57},{0,33},{13,16},{3,4},{27,36},{25,48},{20,35},{10,25},{1,39},{13,56},{45,50},{13,29},{0,6},{25,32},{14,22},{4,15},{0,7},{4,26},{1,10},{0,42},{12,13},{21,23},{11,20},{1,5},{36,40},{7,38},{2,3},{24,41},{38,53},{0,1},{2,51},{10,60},{0,9},{8,12},{14,46},{5,62},{35,45},{45,58},{4,31}}, 
+        []int{55,42,56,60,26,64,53,17,49,3,25,64,1,38,12,14,14,62,28,2,27,15,24,45,48,25,9,57,26,34,30,64,52,59,37,28,59,49,5,31,38,2,7,34,39,60,51,38,12,40,20,49,29,51,42,23,60,59,37,37,62,59,36,45}),
+    ) // 216
 }
