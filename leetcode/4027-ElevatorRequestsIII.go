@@ -121,6 +121,46 @@ func elevatorRequests1(n int, start int, requests [][]int) int64 {
     return int64(slices.Min(f[1<<m-1]))
 }
 
+func elevatorRequests2(n int, start int, requests [][]int) int64 {
+    m, inf := len(requests), int64(1 << 61)
+    dp := make([][]int64, 1 << m)
+    for mask := range dp {
+        dp[mask] = make([]int64, m)
+        for i := range dp[mask] {
+            dp[mask][i] = inf
+        }
+    }
+    abs := func(x int64) int64 { if x < 0 { return -x; }; return x; }
+    for i, r := range requests {
+        arrival, floor := int64(r[0]), int64(r[1])
+        dist := abs(int64(start) - floor)
+        dp[1<<i][i]=max(arrival, dist)
+    }
+    for mask := 1; mask < 1<<m; mask++ {
+        for i := 0; i < m; i++ {
+            if mask >> i & 1 == 0 || dp[mask][i] == inf {
+                continue
+            }
+            currTime, currFloor := dp[mask][i], int64(requests[i][1])
+            for j := 0; j < m;j++ {
+                if mask >> j & 1 == 1 {
+                    continue
+                }
+                arrival, nextFloor := int64(requests[j][0]), int64(requests[j][1])
+                dist := abs(currFloor - nextFloor)
+                nextTime := max(currTime + dist, arrival)
+                nextMast := mask | 1<<j
+                dp[nextMast][j] = min(dp[nextMast][j], nextTime)
+            }
+        }
+    }
+    res, all := inf, (1 << m) -1
+    for i :=0;i < m; i++ {
+        res = min(res, dp[all][i])
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: n = 9, start = 0, requests = [[0,8],[6,5]]
@@ -151,4 +191,8 @@ func main() {
     fmt.Println(elevatorRequests1(9, 0, [][]int{{0,8},{6,5}})) // 9 
     fmt.Println(elevatorRequests1(8, 5, [][]int{{1,7},{7,3}})) // 7
     fmt.Println(elevatorRequests1(7, 3, [][]int{{0,5},{0,1},{6,3}})) // 8
+
+    fmt.Println(elevatorRequests2(9, 0, [][]int{{0,8},{6,5}})) // 9 
+    fmt.Println(elevatorRequests2(8, 5, [][]int{{1,7},{7,3}})) // 7
+    fmt.Println(elevatorRequests2(7, 3, [][]int{{0,5},{0,1},{6,3}})) // 8
 }
