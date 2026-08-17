@@ -57,6 +57,8 @@ package main
 //     The input is generated such that edges represents a valid tree.
 
 import "fmt"
+import "math/bits"
+import "slices"
 
 // 超出时间限制 992 / 1000
 func interactionCosts(n int, edges [][]int, group []int) int64 {
@@ -178,7 +180,129 @@ func interactionCosts1(n int, edges [][]int, group []int) int64 {
     return res
 }
 
-
+func interactionCosts2(n int, edges [][]int, group []int) int64 {
+    g := make([][]int, n)
+    for _, e := range edges {
+        v, w := e[0], e[1]
+        g[v] = append(g[v], w)
+        g[w] = append(g[w], v)
+    }
+    dfn := make([]int, n)
+    res, ts := int64(0), 0
+    pa := make([][17]int, n)
+    dep := make([]int, n)
+    var build func(int, int)
+    build = func(v, p int) {
+        dfn[v] = ts
+        ts++
+        pa[v][0] = p
+        for _, w := range g[v] {
+            if w != p {
+                dep[w] = dep[v] + 1
+                build(w, v)
+            }
+        }
+    }
+    build(0, -1)
+    mx := bits.Len(uint(n))
+    for i := range mx - 1 {
+        for v := range pa {
+            p := pa[v][i]
+            if p != -1 {
+                pa[v][i+1] = pa[p][i]
+            } else {
+                pa[v][i+1] = -1
+            }
+        }
+    }
+    uptoDep := func(v, d int) int {
+        for k := uint32(dep[v] - d); k > 0; k &= k - 1 {
+            v = pa[v][bits.TrailingZeros32(k)]
+        }
+        return v
+    }
+    getLCA := func(v, w int) int {
+        if dep[v] > dep[w] {
+            v, w = w, v
+        }
+        w = uptoDep(w, dep[v])
+        if w == v {
+            return v
+        }
+        for i := mx - 1; i >= 0; i-- {
+            pv, pw := pa[v][i], pa[w][i]
+            if pv != pw {
+                v, w = pv, pw
+            }
+        }
+        return pa[v][0]
+    }
+    nodesMap := map[int][]int{}
+    for i, x := range group {
+        nodesMap[x] = append(nodesMap[x], i)
+    }
+    vt := make([][]int, n)   // 虚树
+    isNode := make([]int, n) // 用来区分是关键节点还是 LCA
+    for i := range isNode {
+        isNode[i] = -1
+    }
+    addVtEdge := func(v, w int) {
+        vt[v] = append(vt[v], w) // 往虚树上添加一条有向边
+    }
+    const root = 0
+    st := []int{root} // 用根节点作为栈底哨兵
+    for val, nodes := range nodesMap {
+        // 对于相同点权的这一组关键节点 nodes，构建虚树
+        slices.SortFunc(nodes, func(a, b int) int { return dfn[a] - dfn[b] })
+        vt[root] = vt[root][:0] // 重置虚树
+        st = st[:1]
+        for _, v := range nodes {
+            isNode[v] = val
+            if v == root {
+                continue
+            }
+            vt[v] = vt[v][:0]
+            lca := getLCA(st[len(st)-1], v) // 路径的拐点（LCA）也加到虚树中
+            // 回溯，加边
+            for len(st) > 1 && dfn[lca] <= dfn[st[len(st)-2]] {
+                addVtEdge(st[len(st)-2], st[len(st)-1])
+                st = st[:len(st)-1]
+            }
+            if lca != st[len(st)-1] { // lca 不在栈中（首次遇到）
+                vt[lca] = vt[lca][:0]
+                addVtEdge(lca, st[len(st)-1])
+                st[len(st)-1] = lca // 加到栈中
+            }
+            st = append(st, v)
+        }
+        // 最后的回溯，加边
+        for i := 1; i < len(st); i++ {
+            addVtEdge(st[i-1], st[i])
+        }
+        var dfs func(int) int
+        dfs = func(v int) (size int) {
+            // 如果 isNode[v] != t，那么 v 只是关键节点之间路径上的「拐点」
+            if isNode[v] == val {
+                size = 1
+            }
+            for _, w := range vt[v] {
+                sz := dfs(w)
+                wt := dep[w] - dep[v] // 虚树边权
+                // 贡献法
+                res += int64(wt) * int64(sz) * int64(len(nodes)-sz)
+                size += sz
+            }
+            return
+        }
+        rt := root
+        if isNode[rt] != val && len(vt[rt]) == 1 {
+            // 注意 root 只是一个哨兵，不一定在虚树上，得从真正的根节点开始
+            rt = vt[rt][0]
+        }
+        dfs(rt)
+    }
+    return res
+}
 
 func main() {
     // Example 1:
@@ -233,7 +357,6 @@ func main() {
         []int{55,42,56,60,26,64,53,17,49,3,25,64,1,38,12,14,14,62,28,2,27,15,24,45,48,25,9,57,26,34,30,64,52,59,37,28,59,49,5,31,38,2,7,34,39,60,51,38,12,40,20,49,29,51,42,23,60,59,37,37,62,59,36,45}),
     ) // 216
 
-
     fmt.Println(interactionCosts1(3, [][]int{{0,1},{1,2}}, []int{1,1,1})) // 4
     fmt.Println(interactionCosts1(3, [][]int{{0,1},{1,2}}, []int{3,2,3})) // 2
     fmt.Println(interactionCosts1(4, [][]int{{0,1},{0,2},{0,3}}, []int{1,1,4,4})) // 3
@@ -249,6 +372,27 @@ func main() {
         []int{6,30,3,8,22,6,21,11,8,2,23,11,7,14,10,17,3,1,5,15,21,21,9,19,6,12,31,15,22,13,13}),
     ) // 52
     fmt.Println(interactionCosts1(
+        64, 
+        [][]int{{50,54},{39,61},{4,34},{0,43},{37,44},{3,21},{8,17},{21,28},{38,47},{10,19},{0,2},{6,11},{15,18},{36,63},{27,30},{34,55},{22,27},{37,52},{4,8},{24,37},{7,14},{30,59},{28,49},{8,24},{42,57},{0,33},{13,16},{3,4},{27,36},{25,48},{20,35},{10,25},{1,39},{13,56},{45,50},{13,29},{0,6},{25,32},{14,22},{4,15},{0,7},{4,26},{1,10},{0,42},{12,13},{21,23},{11,20},{1,5},{36,40},{7,38},{2,3},{24,41},{38,53},{0,1},{2,51},{10,60},{0,9},{8,12},{14,46},{5,62},{35,45},{45,58},{4,31}}, 
+        []int{55,42,56,60,26,64,53,17,49,3,25,64,1,38,12,14,14,62,28,2,27,15,24,45,48,25,9,57,26,34,30,64,52,59,37,28,59,49,5,31,38,2,7,34,39,60,51,38,12,40,20,49,29,51,42,23,60,59,37,37,62,59,36,45}),
+    ) // 216
+
+    
+    fmt.Println(interactionCosts2(3, [][]int{{0,1},{1,2}}, []int{1,1,1})) // 4
+    fmt.Println(interactionCosts2(3, [][]int{{0,1},{1,2}}, []int{3,2,3})) // 2
+    fmt.Println(interactionCosts2(4, [][]int{{0,1},{0,2},{0,3}}, []int{1,1,4,4})) // 3
+    fmt.Println(interactionCosts2(2, [][]int{{0,1}}, []int{1,2})) // 0
+    fmt.Println(interactionCosts2(
+        21, 
+        [][]int{{3,9},{2,4},{3,7},{1,15},{10,13},{6,8},{1,11},{9,18},{8,20},{0,1},{0,2},{0,5},{2,3},{15,16},{7,14},{5,10},{3,6},{7,17},{4,12},{13,19}}, 
+        []int{15,19,3,19,6,8,5,2,9,16,9,17,14,21,11,3,7,5,9,19,14}),
+    ) // 42
+    fmt.Println(interactionCosts2(
+        31, 
+        [][]int{{13,22},{5,25},{1,5},{7,29},{2,4},{1,3},{20,28},{20,23},{21,30},{0,13},{0,1},{5,11},{19,26},{7,8},{9,19},{9,10},{3,24},{1,6},{0,2},{14,17},{18,20},{14,16},{5,7},{2,14},{2,9},{5,12},{10,15},{10,18},{25,27},{7,21}}, 
+        []int{6,30,3,8,22,6,21,11,8,2,23,11,7,14,10,17,3,1,5,15,21,21,9,19,6,12,31,15,22,13,13}),
+    ) // 52
+    fmt.Println(interactionCosts2(
         64, 
         [][]int{{50,54},{39,61},{4,34},{0,43},{37,44},{3,21},{8,17},{21,28},{38,47},{10,19},{0,2},{6,11},{15,18},{36,63},{27,30},{34,55},{22,27},{37,52},{4,8},{24,37},{7,14},{30,59},{28,49},{8,24},{42,57},{0,33},{13,16},{3,4},{27,36},{25,48},{20,35},{10,25},{1,39},{13,56},{45,50},{13,29},{0,6},{25,32},{14,22},{4,15},{0,7},{4,26},{1,10},{0,42},{12,13},{21,23},{11,20},{1,5},{36,40},{7,38},{2,3},{24,41},{38,53},{0,1},{2,51},{10,60},{0,9},{8,12},{14,46},{5,62},{35,45},{45,58},{4,31}}, 
         []int{55,42,56,60,26,64,53,17,49,3,25,64,1,38,12,14,14,62,28,2,27,15,24,45,48,25,9,57,26,34,30,64,52,59,37,28,59,49,5,31,38,2,7,34,39,60,51,38,12,40,20,49,29,51,42,23,60,59,37,37,62,59,36,45}),
