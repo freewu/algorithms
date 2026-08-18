@@ -79,6 +79,26 @@ func maxNumberOfFamilies1(n int, reservedSeats [][]int) int {
     return res
 }
 
+var im = map[int]int{
+	0b00001111:1,
+	0b11000011:1,
+	0b11110000:1,
+}
+
+func maxNumberOfFamilies2(n int, reservedSeats [][]int) int {
+    m := make(map[int]int)
+    for _, seat := range reservedSeats {
+        if seat[1] != 1 && seat[1] != 10 {
+            m[seat[0]] |= 1 << (seat[1] - 2)
+        }
+    }
+    res := (n - len(m)) * 2
+    for _, v := range m {
+        res += im[v|0b00001111]|im[v|0b11000011]|im[v|0b11110000]
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // <img src="https://assets.leetcode.com/uploads/2020/02/14/cinema_seats_3.png" />
@@ -98,4 +118,8 @@ func main() {
     fmt.Println(maxNumberOfFamilies1(3, [][]int{{1,2},{1,3},{1,8},{2,6},{3,1},{3,10}})) // 4
     fmt.Println(maxNumberOfFamilies1(2, [][]int{{2,1},{1,8},{2,6}})) // 2
     fmt.Println(maxNumberOfFamilies1(4, [][]int{{4,3},{1,4},{4,6},{1,7}})) // 4
+
+    fmt.Println(maxNumberOfFamilies2(3, [][]int{{1,2},{1,3},{1,8},{2,6},{3,1},{3,10}})) // 4
+    fmt.Println(maxNumberOfFamilies2(2, [][]int{{2,1},{1,8},{2,6}})) // 2
+    fmt.Println(maxNumberOfFamilies2(4, [][]int{{4,3},{1,4},{4,6},{1,7}})) // 4
 }
