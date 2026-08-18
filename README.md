@@ -2102,6 +2102,7 @@
 [4024. Nearest Available Drone](./leetcode/4024-NearestAvailableDrone.go)   
 [4025. Minimize the Maximum Waiting Time at Synchronized Traffic Lights](./leetcode/4025-MinimizeTheMaximumWaitingTimeAtSynchronizedTrafficLights.go)   
 [4027. Elevator Requests III](./leetcode/4027-ElevatorRequestsIII.go)   
+[4030. Elevator Requests IV](./leetcode/4030-ElevatorRequestsIV.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
