@@ -32,6 +32,7 @@ package main
 
 import "fmt"
 import "math"
+import "math/bits"
 
 // 超出时间限制 498 / 500 
 func minOperations(s string) int {
@@ -176,6 +177,112 @@ func minOperations1(s string) int {
     return int(calm)
 }
 
+type FFT struct {
+    n        int
+    omega    []complex128
+    omegaInv []complex128
+}
+
+func newFFT(n int) *FFT {
+    omega := make([]complex128, n)
+    omegaInv := make([]complex128, n)
+    for i := range omega {
+        sin, cos := math.Sincos(2 * math.Pi * float64(i) / float64(n))
+        omega[i] = complex(cos, sin)
+        omegaInv[i] = complex(cos, -sin)
+    }
+    return &FFT{n, omega, omegaInv}
+}
+
+func (t *FFT) transform(a, omega []complex128) {
+    n := t.n
+    for i, j := 0, 0; i < n; i++ {
+        if i > j {
+            a[i], a[j] = a[j], a[i]
+        }
+        for l := n / 2; ; l /= 2 {
+            j ^= l
+            if j >= l {
+                break
+            }
+        }
+    }
+    for l := 2; l <= n; l *= 2 {
+        m := l / 2
+        for st := 0; st < n; st += l {
+            b := a[st:]
+            for i := range m {
+                v := omega[n/l*i] * b[m+i]
+                b[m+i] = b[i] - v
+                b[i] += v
+            }
+        }
+    }
+}
+
+func (t *FFT) dft(a []complex128) {
+    t.transform(a, t.omega)
+}
+
+func (t *FFT) idft(a []complex128) {
+    t.transform(a, t.omegaInv)
+    cn := complex(float64(t.n), 0)
+    for i := range a {
+        a[i] /= cn
+    }
+}
+
+func minOperations2(s string) int {
+    n := len(s)
+    limit := 1 << bits.Len(uint(n*2-1))
+    t := newFFT(limit)
+    sum := 0
+    convSum := make([]int, n)
+    selfConv := func(a []int, t *FFT) []int {
+        n := len(a)
+        A := make([]complex128, t.n)
+        for i, v := range a {
+            A[i] = complex(float64(v), 0)
+        }
+        t.dft(A)
+        for i := range A {
+            A[i] *= A[i]
+        }
+        t.idft(A)
+        conv := make([]int, n+n-1)
+        for i := range conv {
+            conv[i] = int(math.Round(real(A[i])))
+        }
+        return conv
+    }
+    for k := range 13 {
+        arr := make([]int, n)
+        count := 0
+        for i := range n {
+            v := int(s[i] - 'a')
+            if v >= k && v <= k+12 {
+                arr[i] = 1
+                count++
+            }
+        }
+        sum += count
+        b := selfConv(arr, t)
+        for i := range n {
+            val := b[i]
+            if i + n < len(b) {
+                val += b[i+n]
+            }
+            convSum[i] += val
+        }
+    }
+    res := 1 << 61
+    for r := range n {
+        c := ((r*2-1)%n + n) % n
+        res = min(res, r+sum-convSum[c])
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: s = "abc"
@@ -203,4 +310,10 @@ func main() {
     fmt.Println(minOperations1("bluefrog")) // 12
     fmt.Println(minOperations1("leetcode")) // 20
     fmt.Println(minOperations1("freewu")) // 16
+
+    fmt.Println(minOperations2("abc")) // 2 
+    fmt.Println(minOperations2("yb")) // 3
+    fmt.Println(minOperations2("bluefrog")) // 12
+    fmt.Println(minOperations2("leetcode")) // 20
+    fmt.Println(minOperations2("freewu")) // 16
 }
