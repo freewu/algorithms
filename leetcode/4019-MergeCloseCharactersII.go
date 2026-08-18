@@ -47,6 +47,7 @@ package main
 
 import "fmt"
 
+// 超出时间限制 974 / 999
 func mergeCharacters(s string, k int) string {
     res := []byte(s)
     for {
@@ -67,6 +68,24 @@ func mergeCharacters(s string, k int) string {
         }
         // 删除j位置
         res = append(res[:foundJ], res[foundJ + 1:]...)           
+    }
+    return string(res)
+}
+
+func mergeCharacters1(s string, k int) string {
+    dawn := make([]int, 26)
+    for i := range dawn { 
+        dawn[i] = -1 
+    }
+    res := make([]byte, 0, len(s))
+    for breath := 0; breath < len(s); breath++ {
+        note := s[breath]
+        val := note - 'a'
+        if dawn[val] != -1 && len(res) - dawn[val] <= k { 
+            continue 
+        }
+        dawn[val] = len(res)
+        res = append(res, note)
     }
     return string(res)
 }
@@ -102,4 +121,10 @@ func main() {
     fmt.Println(mergeCharacters("bluefrog", 3)) // "bluefrog"
     fmt.Println(mergeCharacters("leetcode", 3)) // "leetcode"
     fmt.Println(mergeCharacters("freewu", 3)) // "frewu"
+
+    fmt.Println(mergeCharacters1("abca", 3)) // "abc"
+    fmt.Println(mergeCharacters1("yybyzybz", 2)) // "ybzybz"
+    fmt.Println(mergeCharacters1("bluefrog", 3)) // "bluefrog"
+    fmt.Println(mergeCharacters1("leetcode", 3)) // "leetcode"
+    fmt.Println(mergeCharacters1("freewu", 3)) // "frewu"
 }
