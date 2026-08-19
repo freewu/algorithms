@@ -80,9 +80,9 @@ func maxNumberOfFamilies1(n int, reservedSeats [][]int) int {
 }
 
 var im = map[int]int{
-	0b00001111:1,
-	0b11000011:1,
-	0b11110000:1,
+    0b00001111:1,
+    0b11000011:1,
+    0b11110000:1,
 }
 
 func maxNumberOfFamilies2(n int, reservedSeats [][]int) int {
@@ -95,6 +95,32 @@ func maxNumberOfFamilies2(n int, reservedSeats [][]int) int {
     res := (n - len(m)) * 2
     for _, v := range m {
         res += im[v|0b00001111]|im[v|0b11000011]|im[v|0b11110000]
+    }
+    return res
+}
+
+var lost [256]uint8
+
+func init() {
+    for used := 1; used < 256; used++ {
+        lost[used] = 1
+        if used&0x0F != 0 && used&0x3C != 0 && used&0xF0 != 0 {
+            lost[used] = 2
+        }
+    }
+}
+
+func maxNumberOfFamilies3(n int, reserved [][]int) int {
+    rows := make(map[uint32]uint8, len(reserved))
+    for _, re := range reserved {
+        seat := uint8(re[1] - 2)
+        if seat < 8 {
+            rows[uint32(re[0])] |= 1 << seat
+        }
+    }
+    res := 2 * n
+    for _, used := range rows {
+        res -= int(lost[used])
     }
     return res
 }
@@ -122,4 +148,8 @@ func main() {
     fmt.Println(maxNumberOfFamilies2(3, [][]int{{1,2},{1,3},{1,8},{2,6},{3,1},{3,10}})) // 4
     fmt.Println(maxNumberOfFamilies2(2, [][]int{{2,1},{1,8},{2,6}})) // 2
     fmt.Println(maxNumberOfFamilies2(4, [][]int{{4,3},{1,4},{4,6},{1,7}})) // 4
+
+    fmt.Println(maxNumberOfFamilies3(3, [][]int{{1,2},{1,3},{1,8},{2,6},{3,1},{3,10}})) // 4
+    fmt.Println(maxNumberOfFamilies3(2, [][]int{{2,1},{1,8},{2,6}})) // 2
+    fmt.Println(maxNumberOfFamilies3(4, [][]int{{4,3},{1,4},{4,6},{1,7}})) // 4
 }
