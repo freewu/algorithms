@@ -56,6 +56,13 @@ func main() {
     fmt.Println(checkDivisibility(23)) // false
 
     fmt.Println(checkDivisibility(1)) // false
+    fmt.Println(checkDivisibility(2)) // false
+    fmt.Println(checkDivisibility(3)) // false
+    fmt.Println(checkDivisibility(8)) // false
+    fmt.Println(checkDivisibility(64)) // false
+    fmt.Println(checkDivisibility(99)) // true
+    fmt.Println(checkDivisibility(100)) // true
+    fmt.Println(checkDivisibility(101)) // false
     fmt.Println(checkDivisibility(1024)) // false
     fmt.Println(checkDivisibility(999_999)) // false
     fmt.Println(checkDivisibility(1_000_000)) // true
