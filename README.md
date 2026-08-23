@@ -2102,7 +2102,8 @@
 [4024. Nearest Available Drone](./leetcode/4024-NearestAvailableDrone.go)   
 [4025. Minimize the Maximum Waiting Time at Synchronized Traffic Lights](./leetcode/4025-MinimizeTheMaximumWaitingTimeAtSynchronizedTrafficLights.go)   
 [4027. Elevator Requests III](./leetcode/4027-ElevatorRequestsIII.go)   
-[4030. Elevator Requests IV](./leetcode/4030-ElevatorRequestsIV.go)   
+[4029. Elevator Requests IV](./leetcode/4029-ElevatorRequestsIV.go)   
+[4031. Find All Numbers Disappeared in an Array II](./leetcode/4031-FindAllNumbersDisappearedinanAnArrayII.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
@@ -2785,7 +2786,7 @@
 [4019. Merge Close Characters II](./leetcode/4019-MergeCloseCharactersII.go)   
 [4021. Minimum Operations to Make a Rotated Palindrome I](./leetcode/4021-MinimumOperationsToMakeARotatedPalindromeI.go)   
 [4026. Maximum Gap Between Stations](./leetcode/4026-MaximumGapBetweenStations.go)   
-[4029. Minimum Operations to Make a Rotated Palindrome II](./leetcode/4029-MinimumOperationsToMakeARotatedPalindromeII.go)   
+[4028. Minimum Operations to Make a Rotated Palindrome II](./leetcode/4028-MinimumOperationsToMakeARotatedPalindromeII.go)   
 [4030. Check ASCII Palindromic](./leetcode/4030-CheckASCIIPalindromic.go)   
 
 # Dynamic Programming

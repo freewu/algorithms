@@ -1,6 +1,6 @@
 package main
 
-// 4029. Minimum Operations to Make a Rotated Palindrome II
+// 4028. Minimum Operations to Make a Rotated Palindrome II
 // You are given a string s consisting of lowercase English letters.
 
 // You can perform the following operations any number of times (including zero) and in any order:
