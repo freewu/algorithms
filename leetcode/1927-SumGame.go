@@ -70,6 +70,23 @@ func sumGame(num string) bool {
     return sum[1] > sum[0] || diff != 9 * movesForBob
 }
 
+func sumGame1(num string) bool {
+    n := len(num)
+    calc := func(s string) (q, sum int) {
+        for _, v := range s {
+            if v == '?' {
+                q++
+            } else {
+                sum += int(v - '0')
+            }
+        }
+        return
+    }
+    ql, sumL := calc(num[:n/2])
+    qr, sumR := calc(num[n/2:])
+    return (ql + qr) % 2 > 0 || (ql - qr) / 2 * 9 != sumR - sumL
+}
+
 func main() {
     // Example 1:
     // Input: num = "5023"
@@ -92,4 +109,15 @@ func main() {
     // - Bob replaces the last '?' in the right half with '7'. num = "93295927".
     // Bob wins because 9 + 3 + 2 + 9 = 5 + 9 + 2 + 7.
     fmt.Println(sumGame("?3295???")) // false
+
+    fmt.Println(sumGame("?1024???")) // true
+    fmt.Println(sumGame("??1927??")) // true
+    fmt.Println(sumGame("?1404?")) // true
+
+    fmt.Println(sumGame1("5023")) // false
+    fmt.Println(sumGame1("25??")) // true
+    fmt.Println(sumGame1("?3295???")) // false
+    fmt.Println(sumGame1("?1024???")) // true
+    fmt.Println(sumGame1("??1927??")) // true
+    fmt.Println(sumGame1("?1404?")) // true
 }
