@@ -2104,6 +2104,7 @@
 [4027. Elevator Requests III](./leetcode/4027-ElevatorRequestsIII.go)   
 [4029. Elevator Requests IV](./leetcode/4029-ElevatorRequestsIV.go)   
 [4031. Find All Numbers Disappeared in an Array II](./leetcode/4031-FindAllNumbersDisappearedinanAnArrayII.go)   
+[4033. Valid K-Unique Subarrays I](./leetcode/4033-ValidKUniqueSubarraysI.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
