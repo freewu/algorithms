@@ -91,4 +91,7 @@ func main() {
     //   score and places a stone of value -22 on the left. stones = [-22].
     // The difference between their scores is (-22) - 0 = -22.
     fmt.Println(stoneGameVIII([]int{-10,-12})) // -22
+
+    fmt.Println(stoneGameVIII([]int{1,2,3,4,5,6,7,8,9})) // 45
+    fmt.Println(stoneGameVIII([]int{9,8,7,6,5,4,3,2,1})) // 45
 }
