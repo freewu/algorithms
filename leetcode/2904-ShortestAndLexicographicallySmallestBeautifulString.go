@@ -99,4 +99,11 @@ func main() {
     // Output: ""
     // Explanation: There are no beautiful substrings in this example.
     fmt.Println(shortestBeautifulSubstring("000", 1)) // ""
+
+    fmt.Println(shortestBeautifulSubstring("0000000000", 1)) // ""
+    fmt.Println(shortestBeautifulSubstring("1111111111", 1)) // "1"
+    fmt.Println(shortestBeautifulSubstring("0000011111", 1)) // "1"
+    fmt.Println(shortestBeautifulSubstring("1111100000", 1)) // "1"
+    fmt.Println(shortestBeautifulSubstring("0101010101", 1)) // "1"
+    fmt.Println(shortestBeautifulSubstring("1010101010", 1)) // "1"
 }
