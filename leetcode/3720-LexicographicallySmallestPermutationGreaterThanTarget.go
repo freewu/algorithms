@@ -38,6 +38,7 @@ package main
 
 import "fmt"
 import "strings"
+import "bytes"
 
 func lexGreaterPermutation(s, target string) string {
     res, left := []byte(target),make([]int, 26)
@@ -73,6 +74,46 @@ func lexGreaterPermutation(s, target string) string {
     return ""
 }
 
+func lexGreaterPermutation1(s string, target string) string {
+    count := make([]int, 26)
+    for i := 0; i < len(s); i++ {
+        count[s[i]-'a']++
+        count[target[i]-'a']--
+    }
+    min := func(arr []int) int {
+        res := arr[0]
+        for _, v := range arr {
+            if v < res {
+                res = v
+            }
+        }
+        return res
+    }
+    getMinString := func (arr []int) string {
+        var res []byte
+        for i := 0; i < 26; i++ {
+            res = append(res, bytes.Repeat([]byte{byte('a' + i)}, arr[i])...)
+        }
+        return string(res)
+    }
+    t := []byte(target)
+    for i := len(s) - 1; i >= 0; i-- {
+        b := t[i] - 'a'
+        count[b]++
+        if min(count) < 0 {
+            continue
+        }
+        for j := b + 1; j < 26; j++ {
+            if count[j] > 0 {
+                count[j]--
+                t[i] = byte('a' + j)
+                return string(t[:i+1]) + getMinString(count)
+            }
+        }
+    }
+    return ""
+}
+
 func main() {
     // Example 1:
     // Input: s = "abc", target = "bba"
@@ -98,4 +139,10 @@ func main() {
 
     fmt.Println(lexGreaterPermutation("bluefrog", "leetcode")) // lefbgoru
     fmt.Println(lexGreaterPermutation("leetcode", "bluefrog")) // cdeeelot
+
+    fmt.Println(lexGreaterPermutation1("abc", "bba")) // bca
+    fmt.Println(lexGreaterPermutation1("leet", "code")) // eelt  
+    fmt.Println(lexGreaterPermutation1("baba", "bbaa")) // ""
+    fmt.Println(lexGreaterPermutation1("bluefrog", "leetcode")) // lefbgoru
+    fmt.Println(lexGreaterPermutation1("leetcode", "bluefrog")) // cdeeelot
 }
