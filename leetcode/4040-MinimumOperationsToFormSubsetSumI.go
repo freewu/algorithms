@@ -70,7 +70,7 @@ func minOperations(nums []int, sum int) int {
 }
 
 func minOperations1(nums[]int,sum int) int {
-    inf := 1 << 30
+    inf := 1 << 61
     dp := make([]int,sum + 1)
     for i := 1; i <= sum; i++ {
         dp[i] = inf
