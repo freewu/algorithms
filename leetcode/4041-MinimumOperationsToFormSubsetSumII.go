@@ -77,6 +77,32 @@ import "fmt"
 //     return dp[sum]
 // }
 
+func minOperations(nums []int, sum int) int {
+    f := make([]int, sum+1)
+    for i := 1; i <= sum; i++ {
+        f[i] = 1 << 61 // 避免加法溢出
+    }
+    for _, x := range nums {
+        for i := sum; i > 0; i-- {
+            // 回想一下，0-1 背包是选或不选，状态转移方程为 f[i] = min(f[i], f[i-物品体积] + 物品价值)
+            // 本题是分组背包，要枚举选哪个物品（枚举除法操作次数为 a，乘法操作次数为 b）
+            for a := 0; x>>a > 0; a++ {
+                for b := 0; x>>a<<b <= i; b++ {
+                    // 物品体积为 x>>a<<b，价值为 a+b
+                    f[i] = min(f[i], f[i-x>>a<<b]+a+b)
+                }
+            }
+        }
+        if f[sum] == 0 { // 优化：提前返回
+            return 0
+        }
+    }
+    if f[sum] == 1 << 61 {
+        return -1
+    }
+    return f[sum]
+}
+
 func main() {
     // Example 1:
     // Input: nums = [10,2], sum = 13
