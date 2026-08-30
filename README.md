@@ -2110,6 +2110,7 @@
 [4036. Lexicographically Largest String After Pair Transformations](./leetcode/4036-LexicographicallyLargestStringAfterPairTransformations.go)   
 [4037. Maximum Valid Split Positions II](./leetcode/4037-MaximumValidSplitPositionsII.go)   
 [4038. Count Integers Appearing in a Single Block](./leetcode/4038-CountIntegersAppearinginaASingleBlock.go)   
+[4039. Sum of Decoded Numbers](./leetcode/4039-SumOfDecodedNumbers.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
