@@ -83,4 +83,7 @@ func main() {
     // There is only one element in the array, which makes it both the minimum and maximum element.
     // We can remove it with 1 deletion.
     fmt.Println(minimumDeletions([]int{101})) // 1
+
+    fmt.Println(minimumDeletions([]int{1,2,3,4,5,6,7,8,9})) // 2
+    fmt.Println(minimumDeletions([]int{9,8,7,6,5,4,3,2,1})) // 2
 }
