@@ -60,6 +60,11 @@ func main() {
     // Explanation: No numbers are counted, cause there is no 2, 4, 6, or 8 in arr.
     fmt.Println(countElements([]int{1,1,3,3,5,5,7,7})) // 0
 
+    fmt.Println(countElements([]int{1,2,3,4,5,6,7,8,9})) // 8
+    fmt.Println(countElements([]int{9,8,7,6,5,4,3,2,1})) // 8
+
     fmt.Println(countElements1([]int{1,2,3})) // 2
     fmt.Println(countElements1([]int{1,1,3,3,5,5,7,7})) // 0
+    fmt.Println(countElements1([]int{1,2,3,4,5,6,7,8,9})) // 8
+    fmt.Println(countElements1([]int{9,8,7,6,5,4,3,2,1})) // 8
 }
