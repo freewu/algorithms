@@ -2111,6 +2111,7 @@
 [4037. Maximum Valid Split Positions II](./leetcode/4037-MaximumValidSplitPositionsII.go)   
 [4038. Count Integers Appearing in a Single Block](./leetcode/4038-CountIntegersAppearinginaASingleBlock.go)   
 [4039. Sum of Decoded Numbers](./leetcode/4039-SumOfDecodedNumbers.go)   
+[4040. Minimum Operations to Form Subset Sum I](./leetcode/4040-MinimumOperationsToFormSubsetSumI.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
