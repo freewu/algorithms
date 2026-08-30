@@ -2107,6 +2107,7 @@
 [4032. Longest Subarray With at Most K Distinct Prime Factors](./leetcode/4032-LongestSubarrayWithAtMostKDistinctPrimeFactors.go)   
 [4033. Valid K-Unique Subarrays I](./leetcode/4033-ValidKUniqueSubarraysI.go)   
 
+
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
 [5. Longest Palindromic Substring](./leetcode/5-LongestPalindromicSubstring.go)    
@@ -3260,6 +3261,7 @@
 [4000. Largest Integer With Given Digit Sum](./leetcode/4000-LargestIntegerWithGivenDigitSum.go)   
 [4002. Count Valid Sequences](./leetcode/4002-CountValidSequences.go)   
 [4022. K-th Digit in Infinite String](./leetcode/4022-KthDigitInInfiniteString.go)   
+[4034. Minimum Bishop Moves to Reach Target](./leetcode/4034-MinimumBishopMovesToReachTarget.go)   
 
 # Stack
 [225. Implement Stack using Queues](./leetcode/225-ImplementStackUsingQueues.go)   
