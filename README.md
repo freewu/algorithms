@@ -2106,7 +2106,7 @@
 [4031. Find All Numbers Disappeared in an Array II](./leetcode/4031-FindAllNumbersDisappearedinanAnArrayII.go)   
 [4032. Longest Subarray With at Most K Distinct Prime Factors](./leetcode/4032-LongestSubarrayWithAtMostKDistinctPrimeFactors.go)   
 [4033. Valid K-Unique Subarrays I](./leetcode/4033-ValidKUniqueSubarraysI.go)   
-
+[4035. Maximum Valid Split Positions I](./leetcode/4035-MaximumValidSplitPositionsI.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
