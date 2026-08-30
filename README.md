@@ -2107,6 +2107,7 @@
 [4032. Longest Subarray With at Most K Distinct Prime Factors](./leetcode/4032-LongestSubarrayWithAtMostKDistinctPrimeFactors.go)   
 [4033. Valid K-Unique Subarrays I](./leetcode/4033-ValidKUniqueSubarraysI.go)   
 [4035. Maximum Valid Split Positions I](./leetcode/4035-MaximumValidSplitPositionsI.go)   
+[4037. Maximum Valid Split Positions II](./leetcode/4037-MaximumValidSplitPositionsII.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
