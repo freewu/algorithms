@@ -79,6 +79,64 @@ func longestSubarray(nums []int, k int) int {
     return res
 }
 
+func longestSubarray1(nums []int, k int) int {
+    mx := 0
+    for _, v := range nums {
+        if v > mx {
+            mx = v
+        }
+    }
+    if mx < 2 {
+        return 0
+    }
+    spf := make([]int, mx+1)
+    for i := 2; i <= mx; i++ {
+        spf[i] = i
+    }
+    for i := 2; i*i <= mx; i++ {
+        if spf[i] == i {
+            for j := i * i; j <= mx; j += i {
+                if spf[j] == j {
+                    spf[j] = i
+                }
+            }
+        }
+    }
+    primeCount := make([]int, mx + 1)
+    res, left, distinctCount := 0, 0, 0
+    for right := 0; right < len(nums); right++ {
+        n := nums[right]
+        for n > 1 {
+            p := spf[n]
+            if primeCount[p] == 0 {
+                distinctCount++
+            }
+            primeCount[p]++
+            for n % p == 0 {
+                n /= p
+            }
+        }
+        for distinctCount > k {
+            n2 := nums[left]
+            for n2 > 1 {
+                p := spf[n2]
+                primeCount[p]--
+                if primeCount[p] == 0 {
+                    distinctCount--
+                }
+                for n2 % p == 0 {
+                    n2 /= p
+                }
+            }
+            left++
+        }
+        if right - left + 1 > res {
+            res = right - left + 1
+        }
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: nums = [7,6,10,12,11], k = 3
@@ -113,4 +171,10 @@ func main() {
 
     fmt.Println(longestSubarray([]int{1,2,3,4,5,6,7,8,9}, 2)) // 4
     fmt.Println(longestSubarray([]int{9,8,7,6,5,4,3,2,1}, 2)) // 4
+
+    fmt.Println(longestSubarray1([]int{7,6,10,12,11}, 3)) // 3
+    fmt.Println(longestSubarray1([]int{4,6,9,18}, 4)) // 4
+    fmt.Println(longestSubarray1([]int{6,10,15}, 2)) // 1
+    fmt.Println(longestSubarray1([]int{1,2,3,4,5,6,7,8,9}, 2)) // 4
+    fmt.Println(longestSubarray1([]int{9,8,7,6,5,4,3,2,1}, 2)) // 4
 }
