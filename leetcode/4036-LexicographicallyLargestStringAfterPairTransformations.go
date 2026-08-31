@@ -86,6 +86,25 @@ func largestString1(nums []int) []string {
     return res
 }
 
+func largestString2(nums []int) []string {
+    res := make([]string, len(nums))
+    weight := 1 << 25
+    for i, x := range nums {
+        b := make([]byte, 0, 32)
+        for x >= weight {
+            b = append(b, 'z')
+            x -= weight
+        }
+        for bit := 24; bit >= 0; bit-- {
+            if x&(1<<bit) != 0 {
+                b = append(b, byte('a'+bit))
+            }
+        }
+        res[i] = string(b)
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: nums = [2,5,7]
@@ -113,4 +132,9 @@ func main() {
     fmt.Println(largestString1([]int{3,9,1})) // ["ba","da","a"] 
     fmt.Println(largestString1([]int{1,2,3,4,5,6,7,8,9})) // [a b ba c ca cb cba d da]
     fmt.Println(largestString1([]int{9,8,7,6,5,4,3,2,1})) // [da d cba cb ca c ba b a]
+
+    fmt.Println(largestString2([]int{2,5,7})) // ["b","ca","cba"] 
+    fmt.Println(largestString2([]int{3,9,1})) // ["ba","da","a"] 
+    fmt.Println(largestString2([]int{1,2,3,4,5,6,7,8,9})) // [a b ba c ca cb cba d da]
+    fmt.Println(largestString2([]int{9,8,7,6,5,4,3,2,1})) // [da d cba cb ca c ba b a]
 }
