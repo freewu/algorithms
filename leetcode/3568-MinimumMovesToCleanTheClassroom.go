@@ -117,6 +117,67 @@ func minMoves(classroom []string, energy int) int {
     return -1
 }
 
+func minMoves1(classroom []string, energy int) int {
+    res, m, n := 0, len(classroom), len(classroom[0])
+    index := make([][]int, m)
+    for i := range index {
+        index[i] = make([]int, n)
+    }
+    left, sx, sy := 0, 0, 0
+    for i, row := range classroom {
+        for j, b := range row {
+            if b == 'L' {
+                index[i][j] = 1 << left
+                left++
+            } else if b == 'S' {
+                sx, sy = i, j
+            }
+        }
+    }
+    dirs := []struct{ x, y int }{{-1, 0}, {1, 0}, {0, 1}, {0, -1}}
+    u := 1 << left
+    maxEnergy := make([][][]int8, m)
+    for i := range maxEnergy {
+        maxEnergy[i] = make([][]int8, n)
+        for j := range maxEnergy[i] {
+            maxEnergy[i][j] = make([]int8, u)
+            for k := range maxEnergy[i][j] {
+                maxEnergy[i][j][k] = -1
+            }
+        }
+    }
+    maxEnergy[sx][sy][0] = int8(energy)
+    type Tuple struct{ x, y, e, mask int }
+    q := []Tuple{{sx, sy, energy, 0}}
+    for ; len(q) > 0; res++ {
+        tmp := q
+        q = nil
+        for _, p := range tmp {
+            if p.mask == u - 1 {
+                return res
+            }
+            if p.e == 0 {
+                continue
+            }
+            for _, d := range dirs {
+                x, y := p.x+d.x, p.y+d.y
+                if 0 <= x && x < m && 0 <= y && y < n && classroom[x][y] != 'X' {
+                    newE := p.e - 1
+                    if classroom[x][y] == 'R' {
+                        newE = energy
+                    }
+                    newMask := p.mask | index[x][y]
+                    if int8(newE) > maxEnergy[x][y][newMask] {
+                        maxEnergy[x][y][newMask] = int8(newE)
+                        q = append(q, Tuple{x, y, newE, newMask})
+                    }
+                }
+            }
+        }
+    }
+    return -1
+}
+
 func main() {
     // Example 1:
     // Input: classroom = ["S.", "XL"], energy = 2
@@ -146,4 +207,8 @@ func main() {
     // Explanation:
     // No valid path collects all 'L'.
     fmt.Println(minMoves([]string{"L.S", "RXL"}, 3)) // -1
+
+    fmt.Println(minMoves1([]string{"S.", "XL"}, 2)) // 2
+    fmt.Println(minMoves1([]string{"LS", "RL"}, 4)) // 3
+    fmt.Println(minMoves1([]string{"L.S", "RXL"}, 3)) // -1
 }
