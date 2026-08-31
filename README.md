@@ -1192,6 +1192,7 @@
 [2350. Shortest Impossible Sequence of Rolls](./leetcode/2350-ShortestImpossibleSequenceOfRolls.go)   
 [2352. Equal Row and Column Pairs](./leetcode/2352-EqualRowAndColumnPairs.go)   
 [2354. Number of Excellent Pairs](./leetcode/2354-NumberOfExcellentPairs.go)   
+[2355. Maximum Number of Books You Can Take](./leetcode/2355-MaximumNumberOfBooksYouCanTake.go)   
 [2357. Make Array Zero by Subtracting Equal Amounts](./leetcode/2357-MakeArrayZeroBySubtractingEqualAmounts.go)   
 [2361. Minimum Costs Using the Train Line](./leetcode/2361-MinimumCostsUsingTheTrainLine.go)   
 [2363. Merge Similar Items](./leetcode/2363-MergeSimilarItems.go)   
