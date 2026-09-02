@@ -2114,6 +2114,7 @@
 [4039. Sum of Decoded Numbers](./leetcode/4039-SumOfDecodedNumbers.go)   
 [4040. Minimum Operations to Form Subset Sum I](./leetcode/4040-MinimumOperationsToFormSubsetSumI.go)   
 [4041. Minimum Operations to Form Subset Sum II](./leetcode/4041-MinimumOperationsToFormSubsetSumII.go)   
+[4042. Valid K-Unique Subarrays II](./leetcode/4042-ValidKUniqueSubarraysII.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
