@@ -84,6 +84,22 @@ func firstStableIndex1(nums []int, k int) int {
     return -1
 }
 
+func firstStableIndex2(nums []int, k int) int {
+    n, sum := len(nums), 0
+    mn := make([]int, n)
+    mn[n - 1] = nums[n - 1]
+    for i := n - 2; i >= 0; i-- {
+        mn[i] = min(mn[i + 1], nums[i])
+    }
+    for i, x := range nums {
+        sum = max(sum, x)
+        if sum - mn[i] <= k {
+            return i
+        }
+    }
+    return -1
+}
+
 func main() {
     // Example 1:
     // Input: nums = [5,0,1,4], k = 3
@@ -119,4 +135,10 @@ func main() {
     fmt.Println(firstStableIndex1([]int{0}, 0)) // 0
     fmt.Println(firstStableIndex1([]int{1,2,3,4,5,6,7,8,9}, 2)) // 0
     fmt.Println(firstStableIndex1([]int{9,8,7,6,5,4,3,2,1}, 2)) // -1
+
+    fmt.Println(firstStableIndex2([]int{5,0,1,4}, 3)) // 3
+    fmt.Println(firstStableIndex2([]int{3,2,1}, 1)) // -1
+    fmt.Println(firstStableIndex2([]int{0}, 0)) // 0
+    fmt.Println(firstStableIndex2([]int{1,2,3,4,5,6,7,8,9}, 2)) // 0
+    fmt.Println(firstStableIndex2([]int{9,8,7,6,5,4,3,2,1}, 2)) // -1
 }
