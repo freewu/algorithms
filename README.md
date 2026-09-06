@@ -2799,6 +2799,7 @@
 [4026. Maximum Gap Between Stations](./leetcode/4026-MaximumGapBetweenStations.go)   
 [4028. Minimum Operations to Make a Rotated Palindrome II](./leetcode/4028-MinimumOperationsToMakeARotatedPalindromeII.go)   
 [4030. Check ASCII Palindromic](./leetcode/4030-CheckASCIIPalindromic.go)   
+[4043. Count Rotations With Exactly K Equal Adjacent Pairs](./leetcode/4043-CountRotationsWithExactlyKEquEqualAdjacentPairs.go)   
 
 # Dynamic Programming
 [276. Paint Fence](./leetcode/276-PaintFence.go)   
