@@ -2115,6 +2115,7 @@
 [4040. Minimum Operations to Form Subset Sum I](./leetcode/4040-MinimumOperationsToFormSubsetSumI.go)   
 [4041. Minimum Operations to Form Subset Sum II](./leetcode/4041-MinimumOperationsToFormSubsetSumII.go)   
 [4042. Valid K-Unique Subarrays II](./leetcode/4042-ValidKUniqueSubarraysII.go)   
+[4044. Count Good Cyclic Rotations](./leetcode/4044-CountGoodCyclicRotations.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
