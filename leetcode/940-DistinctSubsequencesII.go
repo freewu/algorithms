@@ -73,11 +73,15 @@ func main() {
     // Explanation: The 3 distinct subsequences are "a", "aa" and "aaa".
     fmt.Println(distinctSubseqII("aaa")) // 3
     fmt.Println(distinctSubseqII("blljuffdyfrkqtwfyfztpdiyktrhftgtabxxoibcclbjvirnqyynkyaqlxgyybkgyzvcahmytjdqqtctirnxfjpktxmjkojlvvrr")) // 589192369
-
+    fmt.Println(distinctSubseqII("bluefrog")) // 256
+    fmt.Println(distinctSubseqII("leetcode")) // 187
+    fmt.Println(distinctSubseqII("freewu")) // 47
 
     fmt.Println(distinctSubseqII1("abc")) // 7
     fmt.Println(distinctSubseqII1("aba")) // 6
     fmt.Println(distinctSubseqII1("aaa")) // 3
-
     fmt.Println(distinctSubseqII1("blljuffdyfrkqtwfyfztpdiyktrhftgtabxxoibcclbjvirnqyynkyaqlxgyybkgyzvcahmytjdqqtctirnxfjpktxmjkojlvvrr")) // 589192369
+    fmt.Println(distinctSubseqII1("bluefrog")) // 256
+    fmt.Println(distinctSubseqII1("leetcode")) // 187
+    fmt.Println(distinctSubseqII1("freewu")) // 47
 }
