@@ -86,6 +86,30 @@ func averageOfSubtree1(root *TreeNode) int {
     return res
 }
 
+func averageOfSubtree2(root *TreeNode) int {
+    res := 0
+    var dfs func(node *TreeNode) (int, int)
+    dfs = func(node *TreeNode) (int, int) {
+        if node.Right == nil && node.Left == nil {
+            res++
+            return node.Val, 1
+        }
+        leftSum, rightSum, leftChildren, rightChildren := 0, 0, 0, 0
+        if node.Left != nil {
+            leftSum, leftChildren = dfs(node.Left)
+        }
+        if node.Right != nil {
+            rightSum, rightChildren = dfs(node.Right)
+        }
+        if (leftSum+rightSum+node.Val)/(leftChildren+rightChildren+1) == node.Val {
+            res++
+        }
+        return leftSum + rightSum + node.Val, leftChildren + rightChildren + 1
+    }
+    dfs(root)
+    return res  
+}
+
 func main() {
     // Example 1:
     // <img src="https://assets.leetcode.com/uploads/2022/03/15/image-20220315203925-1.png" />
@@ -112,4 +136,7 @@ func main() {
 
     fmt.Println(averageOfSubtree1(tree1)) // 5
     fmt.Println(averageOfSubtree1(tree2)) // 1
+
+    fmt.Println(averageOfSubtree2(tree1)) // 5
+    fmt.Println(averageOfSubtree2(tree2)) // 1
 }
