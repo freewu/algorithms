@@ -95,6 +95,100 @@ func minCost(grid [][]int, k int) int {
     return -1
 }
 
+func minCost1(grid [][]int, k int) int {
+    m, n := len(grid), len(grid[0])
+    if m == 1 && n == 1 {
+        return grid[0][0]
+    }
+    total, inf := m * n, int(^uint(0)>>1) / 4
+    cost := make([]int, total)
+    for i := 0; i < m; i++ {
+        for j := 0; j < n; j++ {
+            cost[i*n+j] = grid[i][j]
+        }
+    }
+    prev, curr := make([][]int, 4), make([][]int, 4)
+    for d := 0; d < 4; d++ {
+        prev[d], curr[d] = make([]int, total), make([]int, total)
+        for i := 0; i < total; i++ {
+            prev[d][i], curr[d][i] = inf, inf
+        }
+    }
+    // Directions: 0 = up, 1 = down, 2 = left, 3 = right.
+    sum := cost[0]
+    for j := 1; j < n; j++ {
+        sum += cost[j]
+        prev[3][j] = sum
+    }
+    sum = cost[0]
+    for i := 1; i < m; i++ {
+        sum += cost[i*n]
+        prev[1][i*n] = sum
+    }
+    res, target := inf, total - 1
+    for i := 0; i < 4; i++ {
+        if prev[i][target] < res {
+            res = prev[i][target]
+        }
+    }
+    update := func(d, v, p int) {
+        best := curr[d][p]
+        for oldDir := 0; oldDir < 4; oldDir++ {
+            if oldDir != d && prev[oldDir][p] < best {
+                best = prev[oldDir][p]
+            }
+        }
+        if best < inf {
+            curr[d][v] = best + cost[v]
+        }
+    }
+    for turns := 1; turns <= k; turns++ {
+        for d := 0; d < 4; d++ {
+            for i := 0; i < total; i++ {
+                curr[d][i] = inf
+            }
+        }
+        // End with an upward move.
+        for i := m - 2; i >= 0; i-- {
+            for j := 0; j < n; j++ {
+                v := i*n + j
+                update(0, v, v+n)
+            }
+        }
+        // End with a downward move.
+        for i := 1; i < m; i++ {
+            for j := 0; j < n; j++ {
+                v := i*n + j
+                update(1, v, v-n)
+            }
+        }
+        // End with a left move.
+        for j := n - 2; j >= 0; j-- {
+            for i := 0; i < m; i++ {
+                v := i*n + j
+                update(2, v, v+1)
+            }
+        }
+        // End with a right move.
+        for j := 1; j < n; j++ {
+            for i := 0; i < m; i++ {
+                v := i*n + j
+                update(3, v, v-1)
+            }
+        }
+        for i := 0; i < 4; i++ {
+            if curr[i][target] < res {
+                res = curr[i][target]
+            }
+        }
+        prev, curr = curr, prev
+    }
+    if res == inf {
+        return -1
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: grid = [[2,7,3],[1,4,5]], k = 1
@@ -118,4 +212,8 @@ func main() {
     // Explanation:
     // It is impossible to reach (1, 1) using k = 0 turns. Thus, the answer is -1.
     fmt.Println(minCost([][]int{{1,9},{3,4}}, 0)) // -1
+
+    fmt.Println(minCost1([][]int{{2,7,3},{1,4,5}}, 1)) // 12
+    fmt.Println(minCost1([][]int{{4,1,9},{3,2,5},{4,8,6}}, 2)) // 20
+    fmt.Println(minCost1([][]int{{1,9},{3,4}}, 0)) // -1
 }
