@@ -31,6 +31,7 @@ package main
 //     0 <= digits[i] <= 9
 
 import "fmt"
+import "math/bits"
 
 func totalNumbers(digits []int) int {
     set := make(map[int]bool)
@@ -49,6 +50,61 @@ func totalNumbers(digits []int) int {
         }
     }
     return len(set)
+}
+
+func totalNumbers1(digits []int) int {
+    set := map[int]struct{}{}
+    for i, a := range digits { // 个位数
+        if a % 2 > 0 {
+            continue
+        }
+        for j, b := range digits { // 十位数
+            if j == i {
+                continue
+            }
+            for k, c := range digits { // 百位数
+                if c == 0 || k == i || k == j {
+                    continue
+                }
+                set[c*100+b*10+a] = struct{}{}
+            }
+        }
+    }
+    return len(set)
+}
+
+const (
+    SHIFT = 3
+    MASK  = 1<<SHIFT - 1
+    ALL   = 0b01001001001001001001001001001
+    EVEN  = 0b1000001000001000001000001
+    ODD2  = 0b10000010000010000010000010000
+    EVEN2 = 0b10000010000010000010000000
+    EVEN3 = 0b100000100000100000100000000
+    ZERO  = 0b1
+    ZERO2 = 0b10
+)
+
+func totalNumbers2(digits []int) int {
+    mask := uint32(0)
+    for _, d := range digits {
+        shift := d * SHIFT
+        f := (mask >> shift) & MASK
+        f = (f<<1 | 1) & MASK
+        mask |= f << shift
+    }
+    all := bits.OnesCount32(mask & ALL)
+    even := bits.OnesCount32(mask & EVEN)
+    zero := bits.OnesCount32(mask & ZERO)
+    // freq >= 1
+    count := (even*(all-1) - zero*(even-1)) * (all - 2)
+    // freq >= 2
+    count += bits.OnesCount32(mask&ZERO2) * (all - 1)
+    count += bits.OnesCount32(mask&ODD2) * even
+    count += bits.OnesCount32(mask&EVEN2) * (3*(even-1) - zero + 2*(all-even))
+    // freq >= 3
+    count += bits.OnesCount32(mask & EVEN3)
+    return count
 }
 
 func main() {
@@ -75,4 +131,18 @@ func main() {
 
     fmt.Println(totalNumbers([]int{1,2,3,4,5,6,7,8,9})) // 224
     fmt.Println(totalNumbers([]int{9,8,7,6,5,4,3,2,1})) // 224
+
+    fmt.Println(totalNumbers1([]int{1,2,3,4})) // 12
+    fmt.Println(totalNumbers1([]int{0,2,2})) // 2
+    fmt.Println(totalNumbers1([]int{6,6,6})) // 1
+    fmt.Println(totalNumbers1([]int{1,3,5})) // 0
+    fmt.Println(totalNumbers1([]int{1,2,3,4,5,6,7,8,9})) // 224
+    fmt.Println(totalNumbers1([]int{9,8,7,6,5,4,3,2,1})) // 224
+
+    fmt.Println(totalNumbers2([]int{1,2,3,4})) // 12
+    fmt.Println(totalNumbers2([]int{0,2,2})) // 2
+    fmt.Println(totalNumbers2([]int{6,6,6})) // 1
+    fmt.Println(totalNumbers2([]int{1,3,5})) // 0
+    fmt.Println(totalNumbers2([]int{1,2,3,4,5,6,7,8,9})) // 224
+    fmt.Println(totalNumbers2([]int{9,8,7,6,5,4,3,2,1})) // 224
 }
