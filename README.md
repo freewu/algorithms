@@ -2124,6 +2124,7 @@
 [4051. Count Subarrays with Distant Sums](./leetcode/4051-CountSubarraysWithDistantSums.go)   
 [4052. Cyclically Shift Rows and Columns](./leetcode/4052-CyclicallyShiftRowsAndColumns.go)   
 [4053. Minimum Operations to Make Every Element Palindromic](./leetcode/4053-MinimumOperationsToMakeEveryElementPalindromic.go)   
+[4054. Count Shadow Pairs I](./leetcode/4054-CountShadowPairsI.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
