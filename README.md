@@ -2123,6 +2123,7 @@
 [4049. Count Values With Equally Spaced Occurrences II](./leetcode/4049-CountValuesWithEquallySpacedOccurrencesII.go)   
 [4051. Count Subarrays with Distant Sums](./leetcode/4051-CountSubarraysWithDistantSums.go)   
 [4052. Cyclically Shift Rows and Columns](./leetcode/4052-CyclicallyShiftRowsAndColumns.go)   
+[4053. Minimum Operations to Make Every Element Palindromic](./leetcode/4053-MinimumOperationsToMakeEveryElementPalindromic.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
