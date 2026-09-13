@@ -38,6 +38,7 @@ package main
 //     img2[i][j] is either 0 or 1.
 
 import "fmt"
+import "math/bits"
 
 // 解答错误 49 / 59 个通过的测试用例
 // func largestOverlap(img1 [][]int, img2 [][]int) int {
@@ -106,6 +107,78 @@ func largestOverlap(img1 [][]int, img2 [][]int) int {
     return maxOverlap
 }
 
+func largestOverlap1(img1 [][]int, img2 [][]int) int {
+    // 最多向右边 
+    res, n, arr, arr2 := 0 ,len(img1), []int{}, []int{}
+    mask := 1 << (n + 1) - 1
+    for i:= 0; i < n; i++{
+        sum := 0
+        for j:= 0; j < n; j++{
+            sum |= 1 << (n - 1 - j) *img1[i][j]   
+        }
+        arr = append(arr , sum)
+    }
+    for i:= 0; i < n; i++{
+        sum := 0
+        for j:= 0; j < n; j++{
+            sum |= 1 << (n - 1 - j) *img2[i][j]   
+        }
+        arr2 = append(arr2 , sum)
+    }
+    // 右移 
+    for offset := 0 ; offset < n; offset++{
+        newArr := []int{}
+        for _, v := range arr{
+            newArr = append(newArr , v >> offset)
+        }
+        // 然后尝试向上 
+        for k1 := 0 ; k1 < n ; k1++{
+            local, k11, k2 := 0, k1, 0 
+            for k11 < n && k2 < n{
+                local += bits.OnesCount(uint(newArr[k11] & arr2[k2]))  
+                k11++
+                k2++
+            }
+            res = max(res, local)
+        }
+        for k1 := n -1  ; k1 >= 0 ; k1--{
+            local, k11, k2 := 0, k1, n - 1
+            for k11 >= 0  && k2 >= 0 {
+                local += bits.OnesCount(uint(newArr[k11] & arr2[k2])) 
+                k11--
+                k2-- 
+            }
+            res = max(res, local)
+        }  
+    }
+    for offset:= 0 ; offset < n ; offset++{
+        newArr := []int{}
+        for _, v := range arr{
+            newArr = append(newArr , v << offset & mask)
+        }
+        // 然后尝试向上 
+        for k1 := 0 ; k1 < n ; k1++{
+            local, k11, k2 := 0, k1, 0 
+            for k11 < n && k2 < n{
+                local += bits.OnesCount(uint(newArr[k11] & arr2[k2]))  
+                k11++
+                k2++
+            }
+            res = max(res, local)
+        }
+        for k1 := n -1  ; k1 >= 0 ; k1--{
+            local, k11, k2 := 0, k1, n - 1
+            for k11 >= 0  && k2 >= 0 {
+                local += bits.OnesCount(uint(newArr[k11] & arr2[k2])) 
+                k11--
+                k2-- 
+            }
+            res = max(res, local)
+        }  
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // <img src="https://assets.leetcode.com/uploads/2020/09/09/overlap1.jpg" />
@@ -128,4 +201,9 @@ func main() {
     img11 := [][]int{{0,0,0,0,1},{0,0,0,0,0},{0,0,0,0,0},{0,0,0,0,0},{0,0,0,0,0},}
     img12 := [][]int{{0,0,0,0,0},{0,0,0,0,0},{0,0,0,0,0},{0,0,0,0,0},{1,0,0,0,0},}
     fmt.Println(largestOverlap(img11, img12)) // 1
+
+    fmt.Println(largestOverlap1([][]int{{1,1,0},{0,1,0},{0,1,0}}, [][]int{{0,0,0},{0,1,1},{0,0,1}})) // 3
+    fmt.Println(largestOverlap1([][]int{{1}},[][]int{{1}})) // 1
+    fmt.Println(largestOverlap1([][]int{{0}},[][]int{{0}})) // 0
+    fmt.Println(largestOverlap1(img11, img12)) // 1
 }
