@@ -3277,6 +3277,7 @@
 [4002. Count Valid Sequences](./leetcode/4002-CountValidSequences.go)   
 [4022. K-th Digit in Infinite String](./leetcode/4022-KthDigitInInfiniteString.go)   
 [4034. Minimum Bishop Moves to Reach Target](./leetcode/4034-MinimumBishopMovesToReachTarget.go)   
+[4050. Minimum Days to Score Exactly N Points](./leetcode/4050-MinimumDaysToScoreExactlyNPoints.go)   
 
 # Stack
 [225. Implement Stack using Queues](./leetcode/225-ImplementStackUsingQueues.go)   
