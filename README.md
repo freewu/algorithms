@@ -2119,6 +2119,7 @@
 [4045. Count Robot Groups](./leetcode/4045-CountRobotGroups.go)   
 [4046. Minimum Cost Path With At Most K Turns](./leetcode/4046-MinimumCostPathWithAtMostKTurns.go)   
 [4047. Minimum Operations to Make XOR of All Elements Zero](./leetcode/4047-MinimumOperationsToMakeXOROfAllElementsZero.go)   
+[4048. Count Values With Equally Spaced Occurrences I](./leetcode/4048-CountValuesWithEquallySpacedOccurrencesI.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
