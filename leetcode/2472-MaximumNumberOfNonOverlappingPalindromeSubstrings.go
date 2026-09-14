@@ -90,9 +90,11 @@ func main() {
 
     fmt.Println(maxPalindromes("bluefrog", 2)) // 0
     fmt.Println(maxPalindromes("leetcode", 2)) // 1
+    fmt.Println(maxPalindromes("freewu", 2)) // 1
 
     fmt.Println(maxPalindromes1("abaccdbbd", 3)) // 2
     fmt.Println(maxPalindromes1("adbcda", 2)) // 0
     fmt.Println(maxPalindromes1("bluefrog", 2)) // 0
     fmt.Println(maxPalindromes1("leetcode", 2)) // 1
+    fmt.Println(maxPalindromes("freewu", 2)) // 1
 }
