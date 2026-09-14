@@ -178,6 +178,65 @@ func distantSubarrays1(nums []int, goal int, k int) int64 {
     return n * (n + 1) / 2 - near
 }
 
+func distantSubarrays2(nums []int, goal int, k int) int64 {
+    n := len(nums)
+    sum := int64(n) * int64(n +1)/2
+    if k == 0 {
+        return sum
+    }
+    l, u := int64(goal -k +1), int64(goal+k-1)
+    pre := make([]int64, n+1)
+    for i, x := range nums {
+        pre[i+1] = pre[i] + int64(x)
+    }
+    countRangeSum := func(pre []int64, lower, upper int64) int64{
+        tmp := make([]int64, len(pre))
+        var mergeSort func(l, r int) int64
+        mergeSort = func(l, r int) int64 {
+            if r -l <= 1 {
+                return 0
+            }
+            mid := (l + r) / 2 
+            res := mergeSort(l, mid) + mergeSort(mid, r)
+            p1, p2 := mid, mid 
+            for i := l; i < mid; i++ {
+                for p1 < r && pre[p1]-pre[i] < lower {
+                    p1++
+                }
+                for p2 < r && pre[p2]-pre[i] <= upper {
+                    p2++
+                }
+                res += int64(p2-p1)
+            }
+            i, j, t := l, mid, l 
+            for i < mid && j < r {
+                if pre[i] <= pre[j] {
+                    tmp[t] = pre[i]
+                    i++
+                } else {
+                    tmp[t] = pre[j]
+                    j++
+                }
+                t++
+            }
+            for i < mid {
+                tmp[t] = pre[i]
+                i++
+                t++
+            }
+            for j < r {
+                tmp[t] = pre[j]
+                j++
+                t++
+            }
+            copy(pre[l:r], tmp[l:r])
+            return res
+        }
+        return mergeSort(0, len(pre))
+    }
+    return sum - countRangeSum(pre, l, u) 
+}
+
 func main() {
     // Example 1:
     // Input: nums = [1,2,1], goal = 4, k = 1
@@ -221,4 +280,10 @@ func main() {
     fmt.Println(distantSubarrays1([]int{-3,1,2}, 0, 3)) // 2
     fmt.Println(distantSubarrays1([]int{1,2,3,4,5,6,7,8,9}, 2, 2)) // 41
     fmt.Println(distantSubarrays1([]int{9,8,7,6,5,4,3,2,1}, 2, 2)) // 41
+
+    fmt.Println(distantSubarrays2([]int{1,2,1}, 4, 1)) // 5
+    fmt.Println(distantSubarrays2([]int{2, -1, 3}, 2, 2)) // 2
+    fmt.Println(distantSubarrays2([]int{-3,1,2}, 0, 3)) // 2
+    fmt.Println(distantSubarrays2([]int{1,2,3,4,5,6,7,8,9}, 2, 2)) // 41
+    fmt.Println(distantSubarrays2([]int{9,8,7,6,5,4,3,2,1}, 2, 2)) // 41
 }
