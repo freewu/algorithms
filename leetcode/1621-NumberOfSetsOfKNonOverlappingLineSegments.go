@@ -100,10 +100,16 @@ func main() {
     
     fmt.Println(numberOfSets(999, 998)) // 1
     fmt.Println(numberOfSets(999, 1)) // 498501
+    fmt.Println(numberOfSets(2, 1)) // 1
+    fmt.Println(numberOfSets(1000, 1)) // 499500
+    fmt.Println(numberOfSets(1000, 999)) // 1
 
     fmt.Println(numberOfSets1(4, 2)) // 5
     fmt.Println(numberOfSets1(3, 1)) // 3
     fmt.Println(numberOfSets1(30, 7)) // 796297179
     fmt.Println(numberOfSets1(999, 998)) // 1
     fmt.Println(numberOfSets1(999, 1)) // 498501
+    fmt.Println(numberOfSets1(2, 1)) // 1
+    fmt.Println(numberOfSets1(1000, 1)) // 499500
+    fmt.Println(numberOfSets1(1000, 999)) // 1
 }
