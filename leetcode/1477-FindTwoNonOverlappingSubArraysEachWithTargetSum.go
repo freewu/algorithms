@@ -94,6 +94,32 @@ func minSumOfLengths1(arr []int, target int) int {
     return res
 }
 
+const MX = 100_001
+var dp [MX]uint32
+
+func minSumOfLengths2(arr []int, target int) int {
+    res, left, n, sum  := ^uint32(0), uint32(0), uint32(len(arr)), 0
+    for i := range n + 1 {
+        dp[i] = n
+    }
+    for right := range n {
+        sum += arr[right]
+        for sum > target {
+            sum -= arr[left]
+            left++
+        }
+        dp[right+1] = dp[right]
+        if sum == target {
+            length := right - left + 1
+            if dp[left] < n {
+                res = min(res, length+dp[left])
+            }
+            dp[right+1] = min(dp[right+1], length)
+        }
+    }
+    return int(int32(res))
+}
+
 func main() {
     // Example 1:
     // Input: arr = [3,2,2,4,3], target = 3
@@ -111,7 +137,18 @@ func main() {
     // Explanation: We have only one sub-array of sum = 6.
     fmt.Println(minSumOfLengths([]int{4,3,2,6,2,3,4}, 6)) // -1
 
+    fmt.Println(minSumOfLengths([]int{1,2,3,4,5,6,7,8,9}, 6)) // 4
+    fmt.Println(minSumOfLengths([]int{9,8,7,6,5,4,3,2,1}, 6)) // 4
+
     fmt.Println(minSumOfLengths1([]int{3,2,2,4,3}, 3)) // 2
     fmt.Println(minSumOfLengths1([]int{7,3,4,7}, 7)) // 2
     fmt.Println(minSumOfLengths1([]int{4,3,2,6,2,3,4}, 6)) // -1
+    fmt.Println(minSumOfLengths1([]int{1,2,3,4,5,6,7,8,9}, 6)) // 4
+    fmt.Println(minSumOfLengths1([]int{9,8,7,6,5,4,3,2,1}, 6)) // 4
+
+    fmt.Println(minSumOfLengths2([]int{3,2,2,4,3}, 3)) // 2 
+    fmt.Println(minSumOfLengths2([]int{7,3,4,7}, 7)) // 2
+    fmt.Println(minSumOfLengths2([]int{4,3,2,6,2,3,4}, 6)) // -1
+    fmt.Println(minSumOfLengths2([]int{1,2,3,4,5,6,7,8,9}, 6)) // 4
+    fmt.Println(minSumOfLengths2([]int{9,8,7,6,5,4,3,2,1}, 6)) // 4
 }
