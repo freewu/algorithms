@@ -35,6 +35,7 @@ package main
 //     s contains only lowercase English letters.
 
 import "fmt"
+import "slices"
 
 func maxNumOfSubstrings(s string) []string {
     n, left, right := len(s), make([]int, 26), make([]int, 26)
@@ -77,6 +78,46 @@ func maxNumOfSubstrings(s string) []string {
     return res
 }
 
+func maxNumOfSubstrings1(s string) []string {
+    const SHIFT = 32
+    const MASK = 1 << SHIFT - 1
+    n, m := len(s), 0
+    first, last, block := make([]int, 26), make([]int, 26), make([]int, 26)
+    for c := range 26 {
+        first[c], last[c] = n, -1
+    }
+    for i := range n {
+        c := s[i] - 'a'
+        first[c] = min(first[c], i)
+        last[c] = i
+    }
+    for c := range 26 {
+        l, r := first[c], last[c]
+        i := l
+        for ; i <= r; i++ {
+            d := s[i] - 'a'
+            if first[d] < l {
+                break
+            }
+            r = max(r, last[d])
+        }
+        if i > r && r != -1 {
+            block[m] = r<<SHIFT | l
+            m++
+        }
+    }
+    slices.Sort(block[:m])
+    res, end := make([]string, 0, m), -1
+    for _, b := range block[:m] {
+        l, r := b & MASK, b >> SHIFT
+        if l > end {
+            res = append(res, s[l:r+1])
+            end = r
+        }
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: s = "adefaddaccc"
@@ -97,4 +138,14 @@ func main() {
     // Output: ["d","bb","cc"]
     // Explanation: Notice that while the set of substrings ["d","abba","cc"] also has length 3, it's considered incorrect since it has larger total length.
     fmt.Println(maxNumOfSubstrings("abbaccd")) //  ["d","bb","cc"]
+
+    fmt.Println(maxNumOfSubstrings("leetcode")) //  [l t c o d]
+    fmt.Println(maxNumOfSubstrings("bluefrog")) //  [b l u e f r o g]
+    fmt.Println(maxNumOfSubstrings("freewu")) //  [f r ee w u]
+
+    fmt.Println(maxNumOfSubstrings1("adefaddaccc")) // ["e","f","ccc"]
+    fmt.Println(maxNumOfSubstrings1("abbaccd")) //  ["d","bb","cc"]
+    fmt.Println(maxNumOfSubstrings1("leetcode")) //  [l t c o d]
+    fmt.Println(maxNumOfSubstrings1("bluefrog")) //  [b l u e f r o g]
+    fmt.Println(maxNumOfSubstrings1("freewu")) //  [f r ee w u]
 }
