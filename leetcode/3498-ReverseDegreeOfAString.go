@@ -70,4 +70,5 @@ func main() {
 
     fmt.Println(reverseDegree("bluefrog")) // 564
     fmt.Println(reverseDegree("leetcode")) // 682
+    fmt.Println(reverseDegree("freewu")) // 249
 }
