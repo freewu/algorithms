@@ -1,6 +1,6 @@
 package main
 
-// 4056. Number of Intersecting Interval Pairs I
+// 4057. Number of Intersecting Interval Pairs II
 // You are given a 2D integer array intervals of n elements, 
 // where intervals[i] = [starti, endi] represents the closed interval from starti to endi.
 
@@ -32,15 +32,15 @@ package main
 // There are no intersecting interval pairs. Hence, the answer is 0.
 
 // Constraints:
-//     2 <= n == intervals.length <= 100
+//     2 <= n == intervals.length <= 10^5
 //     intervals[i] = [starti, endi]
-//     0 <= starti <= endi <= 100
+//     0 <= starti <= endi <= 10^9
 
 import "fmt"
 import "slices"
 import "sort"
 
-func countIntersectingIntervals(intervals [][]int) int {
+func countIntersectingIntervals(intervals [][]int) int64 {
     n := len(intervals) 
     slices.SortFunc(intervals, func(a, b []int) int { // 按照右端点升序排序
         return a[1] - b[1] 
@@ -54,10 +54,10 @@ func countIntersectingIntervals(intervals [][]int) int {
             return intervals[j][1] >= start 
         })
     }
-    return res
+    return int64(res)
 }
 
-func countIntersectingIntervals1(intervals [][]int) int {
+func countIntersectingIntervals1(intervals [][]int) int64 {
     n := len(intervals)
     starts, ends := make([]int, n), make([]int, n)
     for i, p := range intervals {
@@ -74,7 +74,7 @@ func countIntersectingIntervals1(intervals [][]int) int {
         // [0, j-1] 的区间与当前区间不相交，这有 j 个
         res -= j
     }
-    return res
+    return int64(res)
 }
 
 func main() {

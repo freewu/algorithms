@@ -2127,6 +2127,7 @@
 [4054. Count Shadow Pairs I](./leetcode/4054-CountShadowPairsI.go)   
 [4055. Count Shadow Pairs II](./leetcode/4055-CountShadowPairsII.go)   
 [4056. Number of Intersecting Interval Pairs I](./leetcode/4056-NumberofIntersectingIntervalPairsI.go)   
+[4057. Number of Intersecting Interval Pairs II](./leetcode/4057-NumberofIntersectingIntervalPairsII.go)   
 [4059. Lexicographically Largest Power Array](./leetcode/4059-LexicographicallyLargestPowerArray.go)   
 
 # String
