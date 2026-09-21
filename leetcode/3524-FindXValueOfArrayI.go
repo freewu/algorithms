@@ -114,6 +114,75 @@ func resultArray2(nums []int, k int) []int64 {
     return res
 }
 
+func resultArray3(nums []int, k int) []int64 {
+    switch k {
+    case 1:
+        n := int64(len(nums))
+        return []int64{n * (n + 1) / 2}
+    case 2:
+        var res, dp [2]int64
+        for _, v := range nums {
+            var dp2 [2]int64
+            m := v % 2
+            dp2[0] = dp[0]
+            dp2[m] += dp[1] + 1
+            res[0] += dp[0]
+            res[m] += dp[1] + 1
+            dp = dp2
+        }
+        return res[:]
+    case 3:
+        var res, dp [3]int64
+        for _, v := range nums {
+            var dp2 [3]int64
+            m := v % 3
+            dp2[0] = dp[0]
+            dp2[m] += dp[1] + 1
+            dp2[(2*m)%3] += dp[2]
+            res[0] += dp[0]
+            res[m] += dp[1] + 1
+            res[(2*m)%3] += dp[2]
+            dp = dp2
+        }
+        return res[:]
+    case 4:
+        var res, dp [4]int64
+        for _, v := range nums {
+            var dp2 [4]int64
+            m := v % 4
+            dp2[0] = dp[0]
+            dp2[m] += dp[1] + 1
+            dp2[(2*m)&3] += dp[2]
+            dp2[(3*m)&3] += dp[3]
+            res[0] += dp[0]
+            res[m] += dp[1] + 1
+            res[(2*m)&3] += dp[2]
+            res[(3*m)&3] += dp[3]
+            dp = dp2
+        }
+        return res[:]
+    case 5:
+        var res, dp [5]int64
+        for _, v := range nums {
+            var dp2 [5]int64
+            m := v % 5
+            dp2[0] = dp[0]
+            dp2[m] += dp[1] + 1
+            dp2[(2*m)%5] += dp[2]
+            dp2[(3*m)%5] += dp[3]
+            dp2[(4*m)%5] += dp[4]
+            res[0] += dp[0]
+            res[m] += dp[1] + 1
+            res[(2*m)%5] += dp[2]
+            res[(3*m)%5] += dp[3]
+            res[(4*m)%5] += dp[4]
+            dp = dp2
+        }
+        return res[:]
+    }
+    return nil
+}
+
 func main() {
     // Example 1:
     // Input: nums = [1,2,3,4,5], k = 3
@@ -163,4 +232,10 @@ func main() {
     fmt.Println(resultArray2([]int{1,1,2,1,1}, 2)) // [9,6]
     fmt.Println(resultArray2([]int{1,2,3,4,5,6,7,8,9}, 2)) // [40 5]
     fmt.Println(resultArray2([]int{9,8,7,6,5,4,3,2,1}, 2)) // [40 5]
+
+    fmt.Println(resultArray3([]int{1,2,3,4,5}, 3)) // [9,2,4]
+    fmt.Println(resultArray3([]int{1,2,4,8,16,32}, 4)) // [18,1,2,0]
+    fmt.Println(resultArray3([]int{1,1,2,1,1}, 2)) // [9,6]
+    fmt.Println(resultArray3([]int{1,2,3,4,5,6,7,8,9}, 2)) // [40 5]
+    fmt.Println(resultArray3([]int{9,8,7,6,5,4,3,2,1}, 2)) // [40 5]
 }
