@@ -64,26 +64,26 @@ import "math/bits"
 
 var K int
 
-type data struct {
+type Data struct {
     mul int
     cnt [5]int // 比 []int 快
 }
 
-type SegmentTree []data
+type SegmentTree []Data
 
-func mergeData(a, b data) data {
+func mergeData(a, b Data) Data {
     cnt := a.cnt
     for rx, c := range b.cnt {
         cnt[a.mul * rx % K] += c
     }
-    return data{a.mul * b.mul % K, cnt}
+    return Data{a.mul * b.mul % K, cnt}
 }
 
-func newData(val int) data {
+func newData(val int) Data {
     mul := val % K
     cnt := [5]int{}
     cnt[mul] = 1
-    return data{mul, cnt}
+    return Data{mul, cnt}
 }
 
 func (t SegmentTree) maintain(o int) {
@@ -115,7 +115,7 @@ func (t SegmentTree) update(o, l, r, i, val int) {
     t.maintain(o)
 }
 
-func (t SegmentTree) query(o, l, r, ql, qr int) data {
+func (t SegmentTree) query(o, l, r, ql, qr int) Data {
     if ql <= l && r <= qr {
         return t[o]
     }
@@ -151,6 +151,7 @@ func resultArray(nums []int, k int, queries [][]int) []int {
     return res
 }
 
+// 超出时间限制 781 / 783 
 func resultArray1(nums []int, k int, queries [][]int) []int {
     mod := make([]int, len(nums))
     for i := range nums {
@@ -191,6 +192,129 @@ func resultArray1(nums []int, k int, queries [][]int) []int {
     return res
 }
 
+const MAXN = 100_001
+const MAXK = 6
+
+var tree [2*MAXN*MAXK + 3*MAXK]uint32
+
+func merge(l, r, i, k int) {
+    mul := int(tree[l+k])
+    tree[i+k] = uint32(mul) * tree[r+k] % uint32(k)
+    switch k {
+    case 1:
+        tree[i] = tree[l] + tree[r]
+    case 2:
+        tree[i] = tree[l] + tree[r]
+        tree[i+1] = tree[l+1]
+        tree[i+(mul*1)%2] += tree[r+1]
+    case 3:
+        tree[i] = tree[l] + tree[r]
+        tree[i+1] = tree[l+1]
+        tree[i+2] = tree[l+2]
+        tree[i+(mul*1)%3] += tree[r+1]
+        tree[i+(mul*2)%3] += tree[r+2]
+    case 4:
+        tree[i] = tree[l] + tree[r]
+        tree[i+1] = tree[l+1]
+        tree[i+2] = tree[l+2]
+        tree[i+3] = tree[l+3]
+        tree[i+(mul*1)%4] += tree[r+1]
+        tree[i+(mul*2)%4] += tree[r+2]
+        tree[i+(mul*3)%4] += tree[r+3]
+    case 5:
+        tree[i] = tree[l] + tree[r]
+        tree[i+1] = tree[l+1]
+        tree[i+2] = tree[l+2]
+        tree[i+3] = tree[l+3]
+        tree[i+4] = tree[l+4]
+        tree[i+(mul*1)%5] += tree[r+1]
+        tree[i+(mul*2)%5] += tree[r+2]
+        tree[i+(mul*3)%5] += tree[r+3]
+        tree[i+(mul*4)%5] += tree[r+4]
+    }
+}
+
+func initleaf(o, value, k, stride int) {
+    o *= stride
+    clear(tree[o : o+stride])
+    r := value % k
+    tree[o+r] = 1
+    tree[o+k] = uint32(r)
+}
+
+func build(n, k, stride int) {
+    for i := n - 1; i > 0; i-- {
+        merge((i<<1)*stride, (i<<1|1)*stride, i*stride, k)
+    }
+}
+
+func update(index, value, n, k, stride int) {
+    index += n
+    initleaf(index, value, k, stride)
+    for index >>= 1; index > 0; index >>= 1 {
+        merge((index<<1)*stride, (index<<1|1)*stride, index*stride, k)
+    }
+}
+
+func suffix(start, n, k, stride, x int) uint32 {
+    l, r := start+n, 2*n
+    left := 2 * n * stride
+    right := left + stride
+    next := right + stride
+    hasLeft, hasRight := false, false
+    for l < r {
+        if l&1 != 0 {
+            if !hasLeft {
+                for i := 0; i < stride; i++ {
+                    tree[left+i] = tree[l*stride+i]
+                }
+                hasLeft = true
+            } else {
+                merge(left, l*stride, next, k)
+                left, next = next, left
+            }
+            l++
+        }
+        if r&1 != 0 {
+            r--
+            if !hasRight {
+                for i := 0; i < stride; i++ {
+                    tree[right+i] = tree[r*stride+i]
+                }
+                hasRight = true
+            } else {
+                merge(r*stride, right, next, k)
+                right, next = next, right
+            }
+        }
+        l >>= 1
+        r >>= 1
+    }
+    if !hasLeft {
+        return tree[right+x]
+    }
+    if !hasRight {
+        return tree[left+x]
+    }
+    merge(left, right, next, k)
+    return tree[next+x]
+}
+
+func resultArray2(nums []int, k int, queries [][]int) []int {
+    n, stride := len(nums), k + 1
+    for i, value := range nums {
+        initleaf(n+i, value, k, stride)
+    }
+    build(n, k, stride)
+    res := make([]int, 0, len(queries))
+    for _, q := range queries {
+        index, value, start, x := q[0], q[1], q[2], q[3]
+        update(index, value, n, k, stride)
+        res = append(res, int(suffix(start, n, k, stride, x)))
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: nums = [1,2,3,4,5], k = 3, queries = [[2,2,0,2],[3,3,3,0],[3,3,3,0]]
@@ -227,4 +351,10 @@ func main() {
     fmt.Println(resultArray1([]int{1,1,2,1,1}, 2, [][]int{{2,1,0,1}})) // [5]
     fmt.Println(resultArray1([]int{1,2,3,4,5,6,7,8,9}, 2, [][]int{{2,1,0,1}})) // [1]
     fmt.Println(resultArray1([]int{9,8,7,6,5,4,3,2,1}, 2, [][]int{{2,1,0,1}})) // [1]
+
+    fmt.Println(resultArray2([]int{1,2,3,4,5}, 3, [][]int{{2,2,0,2},{3,3,3,0},{3,3,3,0}})) // [2,2,2]
+    fmt.Println(resultArray2([]int{1,2,4,8,16,32}, 4, [][]int{{0,2,0,2},{0,2,0,1}})) // [1,0]
+    fmt.Println(resultArray2([]int{1,1,2,1,1}, 2, [][]int{{2,1,0,1}})) // [5]
+    fmt.Println(resultArray2([]int{1,2,3,4,5,6,7,8,9}, 2, [][]int{{2,1,0,1}})) // [1]
+    fmt.Println(resultArray2([]int{9,8,7,6,5,4,3,2,1}, 2, [][]int{{2,1,0,1}})) // [1]
 }
