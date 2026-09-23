@@ -103,7 +103,12 @@ func main() {
     // Explanation: The optimal solution is to remove the last three elements and the first two elements (5 operations in total) to reduce x to zero.
     fmt.Println(minOperations([]int{3,2,20,1,1,3}, 10)) // 5
 
+    fmt.Println(minOperations([]int{1,2,3,4,5,6,7,8,9}, 2)) // -1
+    fmt.Println(minOperations([]int{9,8,7,6,5,4,3,2,1}, 2)) // -1
+
     fmt.Println(minOperations1([]int{1,1,4,2,3}, 5)) // 2
     fmt.Println(minOperations1([]int{5,6,7,8,9}, 4)) // -1
     fmt.Println(minOperations1([]int{3,2,20,1,1,3}, 10)) // 5
+    fmt.Println(minOperations1([]int{1,2,3,4,5,6,7,8,9}, 2)) // -1
+    fmt.Println(minOperations1([]int{9,8,7,6,5,4,3,2,1}, 2)) // -1
 }
