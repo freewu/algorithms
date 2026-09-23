@@ -87,6 +87,32 @@ func minOperations1(nums []int, x int) int {
     return n - res
 }
 
+func minOperations2(nums []int, x int) int {
+    sum := 0
+    for _, v := range nums {
+        sum += v
+    }
+    if sum < x {
+        return -1
+    }
+    target, left, curr, n := sum - x, 0, 0, -1
+    for right := range nums {
+        curr += nums[right]
+        for curr > target {
+            curr -= nums[left]
+            left++
+        }
+        if curr == target {
+            n = max(n, right - left + 1)
+        }
+    }
+    if n == -1 {
+        return -1
+    } else {
+        return len(nums) - n
+    }
+}
+
 func main() {
     // Example 1:
     // Input: nums = [1,1,4,2,3], x = 5
@@ -111,4 +137,10 @@ func main() {
     fmt.Println(minOperations1([]int{3,2,20,1,1,3}, 10)) // 5
     fmt.Println(minOperations1([]int{1,2,3,4,5,6,7,8,9}, 2)) // -1
     fmt.Println(minOperations1([]int{9,8,7,6,5,4,3,2,1}, 2)) // -1
+
+    fmt.Println(minOperations2([]int{1,1,4,2,3}, 5)) // 2
+    fmt.Println(minOperations2([]int{5,6,7,8,9}, 4)) // -1
+    fmt.Println(minOperations2([]int{3,2,20,1,1,3}, 10)) // 5
+    fmt.Println(minOperations2([]int{1,2,3,4,5,6,7,8,9}, 2)) // -1
+    fmt.Println(minOperations2([]int{9,8,7,6,5,4,3,2,1}, 2)) // -1
 }
