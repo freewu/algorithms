@@ -173,6 +173,61 @@ func braceExpansionII1(expression string) []string {
     return calc(post)
 }
 
+func braceExpansionII2(expression string) []string {
+    arr, curr := []string{}, []string{}
+    stack := [][]string{}
+    multiply := func (a, b []string) []string {
+        if len(a) == 0 {
+            return b
+        }
+        if len(b) == 0 {
+            return a
+        }
+        res := make([]string, 0, len(a) * len(b))
+        for _, i := range a {
+            for _, j := range b {
+                res = append(res, i+j)
+            }
+        }
+        return res
+    }
+    for i := 0; i < len(expression); i++ {
+        x := expression[i]
+        switch {
+        case x >= 'a' && x <= 'z':
+            if len(curr) > 0 {
+                for j := range curr {
+                    curr[j] += string(x)
+                }
+            } else {
+                curr = append(curr, string(x))
+            }
+        case x == '{':
+            stack = append(stack, arr, curr)
+            arr, curr = nil, nil
+        case x == '}':
+            n := len(stack)
+            preCurr, preRes := stack[n-1], stack[n-2]
+            stack = stack[:n-2]
+            arr = append(arr, curr...)
+            curr = multiply(preCurr, arr)
+            arr = preRes
+        case x == ',':
+            arr = append(arr, curr...)
+            curr = nil
+        }
+    }
+    arr = append(arr, curr...)  
+    sort.Strings(arr)
+    res := arr[:0]
+    for i, s := range arr {
+        if i == 0 || s != res[len(res)-1] {
+            res = append(res, s)
+        }
+    }
+    return res 
+}
+
 func main() {
     // Example 1:
     // Input: expression = "{a,b}{c,{d,e}}"
@@ -186,4 +241,7 @@ func main() {
 
     fmt.Println(braceExpansionII1("{a,b}{c,{d,e}}")) // ["ac","ad","ae","bc","bd","be"]
     fmt.Println(braceExpansionII1("{{a,z},a{b,c},{ab,z}}")) // ["a","ab","ac","z"]
+
+    fmt.Println(braceExpansionII2("{a,b}{c,{d,e}}")) // ["ac","ad","ae","bc","bd","be"]
+    fmt.Println(braceExpansionII2("{{a,z},a{b,c},{ab,z}}")) // ["a","ab","ac","z"]
 }
