@@ -107,6 +107,36 @@ func evaluate1(s string, knowledge [][]string) string {
     return string(res)
 }
 
+var buf [100_000]byte
+
+func evaluate2(s string, knowledge [][]string) string {
+    mp := make(map[string]string, len(knowledge))
+    for _, k := range knowledge {
+        mp[k[0]] = k[1]
+    }
+    n, index := 0, 0
+    for i := 0; i < len(s); i++ {
+        if s[i] == '(' {
+            index = n
+        } else if s[i] == ')' {
+            val := mp[string(buf[index:n])]
+            if val == "" {
+                buf[index] = '?'
+                n = index + 1   
+            } else {
+                for i := index; i < index+len(val); i++ {
+                    buf[i] = val[i-index]
+                }
+                n = index + len(val)
+            }
+        } else {
+            buf[n] = s[i]
+            n++
+        }
+    }
+    return string(buf[:n])
+}
+
 func main() {
     // Example 1:
     // Input: s = "(name)is(age)yearsold", knowledge = [["name","bob"],["age","two"]]
@@ -136,4 +166,10 @@ func main() {
     fmt.Println(evaluate1("(a)(a)(a)aaa", [][]string{{"a","yes"}})) // "yesyesyesaaa"
     fmt.Println(evaluate1("call(bluefrog)", [][]string{{"a","b"}})) // "call?"
     fmt.Println(evaluate1("use(leetcode)", [][]string{{"a","b"}})) // "use?"
+
+    fmt.Println(evaluate2("(name)is(age)yearsold", [][]string{{"name","bob"},{"age","two"}})) // "bobistwoyearsold"
+    fmt.Println(evaluate2("hi(name)", [][]string{{"a","b"}})) // "hi?"
+    fmt.Println(evaluate2("(a)(a)(a)aaa", [][]string{{"a","yes"}})) // "yesyesyesaaa"
+    fmt.Println(evaluate2("call(bluefrog)", [][]string{{"a","b"}})) // "call?"
+    fmt.Println(evaluate2("use(leetcode)", [][]string{{"a","b"}})) // "use?"
 }
