@@ -128,7 +128,12 @@ func main() {
     // Notice that the "a"s not in a bracket pair are not evaluated.
     fmt.Println(evaluate("(a)(a)(a)aaa", [][]string{{"a","yes"}})) // "yesyesyesaaa"
 
+    fmt.Println(evaluate("call(bluefrog)", [][]string{{"a","b"}})) // "call?"
+    fmt.Println(evaluate("use(leetcode)", [][]string{{"a","b"}})) // "use?"
+
     fmt.Println(evaluate1("(name)is(age)yearsold", [][]string{{"name","bob"},{"age","two"}})) // "bobistwoyearsold"
     fmt.Println(evaluate1("hi(name)", [][]string{{"a","b"}})) // "hi?"
     fmt.Println(evaluate1("(a)(a)(a)aaa", [][]string{{"a","yes"}})) // "yesyesyesaaa"
+    fmt.Println(evaluate1("call(bluefrog)", [][]string{{"a","b"}})) // "call?"
+    fmt.Println(evaluate1("use(leetcode)", [][]string{{"a","b"}})) // "use?"
 }
