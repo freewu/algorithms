@@ -2130,7 +2130,7 @@
 [4057. Number of Intersecting Interval Pairs II](./leetcode/4057-NumberofIntersectingIntervalPairsII.go)   
 [4058. Maximum Pulse Value After One Subarray Rotation](./leetcode/4058-MaximumPulseValueAfterOneSubarrayRotation.go)   
 [4059. Lexicographically Largest Power Array](./leetcode/4059-LexicographicallyLargestPowerArray.go)   
-[4061. Minimum Queen Moves to Reach Target](./leetcode/4061-MinimumQueenMovesToReachTarget.go)   
+[4062. Transform Array Using Pair Operations](./leetcode/4062-TransformArrayUsingPairOperations.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
@@ -3289,6 +3289,7 @@
 [4034. Minimum Bishop Moves to Reach Target](./leetcode/4034-MinimumBishopMovesToReachTarget.go)   
 [4050. Minimum Days to Score Exactly N Points](./leetcode/4050-MinimumDaysToScoreExactlyNPoints.go)   
 [4060. Count Evenly Good Integers](./leetcode/4060-CountEvenlyGoodIntegers.go)   
+[4061. Minimum Queen Moves to Reach Target](./leetcode/4061-MinimumQueenMovesToReachTarget.go)   
 
 # Stack
 [225. Implement Stack using Queues](./leetcode/225-ImplementStackUsingQueues.go)   
