@@ -26,23 +26,22 @@ package main
 
 import "fmt"
 
-
 func reverseParentheses(s string) string {
-    reverseString := func (s string) string {
+    reverse := func (s string) string {
         res := ""
         for _, char := range s[1:] { res = string(char) + res; }
         return res[1:]
     }
-    recentL, pointer := 0, 0
-    for pointer < len(s) {
-        if s[pointer] == ')' {
-            s = s[:recentL] + reverseString(s[recentL:pointer + 1]) + s[pointer + 1:]
-            recentL, pointer = 0, 0
+    left, p := 0, 0
+    for p < len(s) {
+        if s[p] == ')' {
+            s = s[:left] + reverse(s[left:p + 1]) + s[p + 1:]
+            left, p = 0, 0
         }
-        if s[pointer] == '(' { // 记录要翻转的开始位置
-            recentL = pointer
+        if s[p] == '(' { // 记录要翻转的开始位置
+            left = p
         }
-        pointer++
+        p++
     } 
     return s
 }
@@ -87,7 +86,14 @@ func main() {
     // Explanation: First, we reverse the substring "oc", then "etco", and finally, the whole string.
     fmt.Println(reverseParentheses("(ed(et(oc))el)")) // "leetcode"
 
+    fmt.Println(reverseParentheses("(freewu)")) // "uweerf"
+    fmt.Println(reverseParentheses("(bluefrog)")) // "gorfeulb"
+    fmt.Println(reverseParentheses("(leetcode)")) // "edocteel"
+
     fmt.Println(reverseParentheses1("(abcd)")) // "dcba"
     fmt.Println(reverseParentheses1("(u(love)i)")) // "iloveu"
     fmt.Println(reverseParentheses1("(ed(et(oc))el)")) // "leetcode"
+    fmt.Println(reverseParentheses1("(freewu)")) // "uweerf"
+    fmt.Println(reverseParentheses1("(bluefrog)")) // "gorfeulb"
+    fmt.Println(reverseParentheses1("(leetcode)")) // "edocteel"
 }
