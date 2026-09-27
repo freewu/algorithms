@@ -41,13 +41,18 @@ func maxDepth(s string) int {
         } else if v == ')' {
             count--
         }
-
     }
     return res
 }
 
 func main() {
+    // Example 1:
+    // Input: s = "(1+(2*3)+((8)/4))+1"
+    // Output: 3
     // Explanation: Digit 8 is inside of 3 nested parentheses in the string.
     fmt.Println(maxDepth("(1+(2*3)+((8)/4))+1")) // 3
+    // Example 2:
+    // Input: s = "(1)+((2))+(((3)))"
+    // Output: 3
     fmt.Println(maxDepth("(1)+((2))+(((3)))")) // 3
 }
