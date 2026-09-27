@@ -71,6 +71,14 @@ package main
 import "fmt"
 import "strings"
 
+type HtmlParser struct {
+
+}
+
+func (h *HtmlParser) GetUrls(url string) []string {
+    return []string{ url }
+}
+
 /**
  * // This is HtmlParser's API interface.
  * // You should not implement it, or speculate about its implementation
@@ -133,35 +141,38 @@ func crawl1(startUrl string, htmlParser HtmlParser) []string {
 
 
 func main() {
-// Example 1:
-// Input:
-// urls = [
-//   "http://news.yahoo.com",
-//   "http://news.yahoo.com/news",
-//   "http://news.yahoo.com/news/topics/",
-//   "http://news.google.com",
-//   "http://news.yahoo.com/us"
-// ]
-// edges = [[2,0],[2,1],[3,2],[3,1],[0,4]]
-// startUrl = "http://news.yahoo.com/news/topics/"
-// Output: [
-//   "http://news.yahoo.com",
-//   "http://news.yahoo.com/news",
-//   "http://news.yahoo.com/news/topics/",
-//   "http://news.yahoo.com/us"
-// ]
+    // Example 1:
+    // Input:
+    // urls = [
+    //   "http://news.yahoo.com",
+    //   "http://news.yahoo.com/news",
+    //   "http://news.yahoo.com/news/topics/",
+    //   "http://news.google.com",
+    //   "http://news.yahoo.com/us"
+    // ]
+    // edges = [[2,0],[2,1],[3,2],[3,1],[0,4]]
+    // startUrl = "http://news.yahoo.com/news/topics/"
+    // Output: [
+    //   "http://news.yahoo.com",
+    //   "http://news.yahoo.com/news",
+    //   "http://news.yahoo.com/news/topics/",
+    //   "http://news.yahoo.com/us"
+    // ]
+    fmt.Println(crawl("http://news.yahoo.com/news/topics/", HtmlParser{})) // ["http://news.yahoo.com", "http://news.yahoo.com/news", "http://news.yahoo.com/news/topics/","http://news.yahoo.com/us"]
+    //// Example 2:
+    // Input: 
+    // urls = [
+    //   "http://news.yahoo.com",
+    //   "http://news.yahoo.com/news",
+    //   "http://news.yahoo.com/news/topics/",
+    //   "http://news.google.com"
+    // ]
+    // edges = [[0,2],[2,1],[3,2],[3,1],[3,0]]
+    // startUrl = "http://news.google.com"
+    // Output: ["http://news.google.com"]
+    // Explanation: The startUrl links to all other pages that do not share the same hostname.
+    fmt.Println(crawl("http://news.google.com", HtmlParser{})) // ["http://news.google.com"]
 
-// Example 2:
-// Input: 
-// urls = [
-//   "http://news.yahoo.com",
-//   "http://news.yahoo.com/news",
-//   "http://news.yahoo.com/news/topics/",
-//   "http://news.google.com"
-// ]
-// edges = [[0,2],[2,1],[3,2],[3,1],[3,0]]
-// startUrl = "http://news.google.com"
-// Output: ["http://news.google.com"]
-// Explanation: The startUrl links to all other pages that do not share the same hostname.
- 
+    fmt.Println(crawl1("http://news.yahoo.com/news/topics/", HtmlParser{})) // ["http://news.yahoo.com", "http://news.yahoo.com/news", "http://news.yahoo.com/news/topics/","http://news.yahoo.com/us"]
+    fmt.Println(crawl1("http://news.google.com", HtmlParser{})) // ["http://news.google.com"]
 }
