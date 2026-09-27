@@ -2136,6 +2136,7 @@
 [4065. Rearrange Array by Removing Distinct Values](./leetcode/4065-RearrangeArrayByRemovingDistinctValues.go)   
 [4066. Maximum Equal Adjacent Pairs After at Most One Replacement](./leetcode/4066-MaximumEqualAdjacentPairsAfterAtMostOneReplacement.go)   
 [4067. Longest Subarray With Restricted Pair Sums](./leetcode/4067-LongestSubarrayWithRestrictedPairSums.go)   
+[4068. Maximize Meeting Earnings with Idle Gaps](./leetcode/4068-MaximizeMeetingEarningsWithIdleGaps.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
