@@ -111,6 +111,46 @@ func countEvenlyGoodIntegers(l int64, r int64) int64 {
     return calc(r) - calc(l-1)
 }
 
+func countEvenlyGoodIntegers1(l int64, r int64) int64 {
+    var s string
+    var f [20][2][2]int64
+    calc := func(x int64) int64 {
+        s = strconv.FormatInt(x, 10)
+        for i := range f {
+            for j := range f[i] {
+                for k := range f[i][j] {
+                    f[i][j][k] = -1
+                }
+            }
+        }
+        var dfs func(pos, st int, lim bool) int64
+        dfs = func(pos, st int, lim bool) int64 {
+            if pos >= len(s) {
+                return int64(st ^ 1)
+            }
+            k := 0
+            if lim {
+                k = 1
+            }
+            if f[pos][st][k] != -1 {
+                return f[pos][st][k]
+            }
+            up := 9
+            if lim {
+                up = int(s[pos] - '0')
+            }
+            var res int64
+            for i := 0; i <= up; i++ {
+                res += dfs(pos+1, (st+(i&1^1))%2, lim && i == up)
+            }
+            f[pos][st][k] = res
+            return res
+        }
+        return dfs(0, 0, true)
+    }
+    return calc(r) - calc(l-1)
+}
+
 func main() {
     // Example 1:
     // Input: l = 18, r = 22
@@ -144,4 +184,13 @@ func main() {
     fmt.Println(countEvenlyGoodIntegers(1024, 1024)) // 0
     fmt.Println(countEvenlyGoodIntegers(1, 1_000_000_000_000_000)) // 500000000000000
     fmt.Println(countEvenlyGoodIntegers(1_000_000_000_000_000, 1_000_000_000_000_000)) // 0
+
+    fmt.Println(countEvenlyGoodIntegers1(18, 22)) // 3
+    fmt.Println(countEvenlyGoodIntegers1(98, 101)) // 2
+    fmt.Println(countEvenlyGoodIntegers1(1, 10)) // 5
+    fmt.Println(countEvenlyGoodIntegers1(1, 1)) // 1
+    fmt.Println(countEvenlyGoodIntegers1(1, 1024)) // 512
+    fmt.Println(countEvenlyGoodIntegers1(1024, 1024)) // 0
+    fmt.Println(countEvenlyGoodIntegers1(1, 1_000_000_000_000_000)) // 500000000000000
+    fmt.Println(countEvenlyGoodIntegers1(1_000_000_000_000_000, 1_000_000_000_000_000)) // 0
 }
