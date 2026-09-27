@@ -2131,6 +2131,7 @@
 [4058. Maximum Pulse Value After One Subarray Rotation](./leetcode/4058-MaximumPulseValueAfterOneSubarrayRotation.go)   
 [4059. Lexicographically Largest Power Array](./leetcode/4059-LexicographicallyLargestPowerArray.go)   
 [4062. Transform Array Using Pair Operations](./leetcode/4062-TransformArrayUsingPairOperations.go)   
+[4063. Longest Subarray Divisible by K with At Most One Negation I](./leetcode/4063-LongestSubarrayDivisibleByKWithAtMostOneNegationI.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
