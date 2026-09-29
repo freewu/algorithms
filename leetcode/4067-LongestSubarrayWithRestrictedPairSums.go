@@ -104,6 +104,56 @@ func maxSubarray1(nums []int) int {
     return res  
 }
 
+func maxSubarray2(nums []int) int {
+    res, count, l, n := 0, 0, 0, len(nums)
+    if n == 0 {
+        return 0
+    }
+    freq, pairSum := make([]int, 501), make([]int, 501)
+    for r := 0; r < n; r++ {
+        v := nums[r]
+        // Add pairs of nums[r] with elements in [l, r-1]
+        for j := l; j < r; j++ {
+            s := v + nums[j]
+            if s <= 500 {
+                if freq[s] > 0 && pairSum[s] == 0 {
+                    count++
+                }
+                pairSum[s]++
+            }
+        }
+        // Add nums[r] to freq
+        if pairSum[v] > 0 && freq[v] == 0 {
+            count++
+        }
+        freq[v]++
+        // Shrink window from left while there are violations
+        for count > 0 {
+            u := nums[l]
+            // Remove nums[l] from freq
+            if pairSum[u] > 0 && freq[u] == 1 {
+                count--
+            }
+            freq[u]--
+            // Remove pairs involving nums[l] and elements in [l+1, r]
+            for j := l + 1; j <= r; j++ {
+                s := u + nums[j]
+                if s <= 500 {
+                    pairSum[s]--
+                    if freq[s] > 0 && pairSum[s] == 0 {
+                        count--
+                    }
+                }
+            }
+            l++
+        }
+        if r-l+1 > res {
+            res = r - l + 1
+        }
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: nums = [2,3,5,3,2,1]
@@ -132,4 +182,9 @@ func main() {
     fmt.Println(maxSubarray1([]int{3,4,5,6})) // 4
     fmt.Println(maxSubarray1([]int{1,2,3,4,5,6,7,8,9})) // 5
     fmt.Println(maxSubarray1([]int{9,8,7,6,5,4,3,2,1})) // 5
+
+    fmt.Println(maxSubarray2([]int{2,3,5,3,2,1})) // 3
+    fmt.Println(maxSubarray2([]int{3,4,5,6})) // 4
+    fmt.Println(maxSubarray2([]int{1,2,3,4,5,6,7,8,9})) // 5
+    fmt.Println(maxSubarray2([]int{9,8,7,6,5,4,3,2,1})) // 5
 }
