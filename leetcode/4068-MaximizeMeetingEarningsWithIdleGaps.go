@@ -120,6 +120,50 @@ func maxEarnings1(meetings [][]int) int64 {
     return res
 }
 
+func maxEarnings2(meetings [][]int) int64 {
+    type Meeting struct {
+        start, end, revenue int64
+    }
+    const NEG int64 = -1 << 60
+    best := NEG
+    res, ptr, n := int64(0), 0, len(meetings)
+    arr := make([]Meeting, n)
+    for i, m := range meetings {
+        arr[i] = Meeting{int64(m[0]), int64(m[1]), int64(m[2])}
+    }
+    sort.Slice(arr, func(i, j int) bool {
+        return arr[i].start < arr[j].start
+    })
+    order := make([]int, n)
+    for i := range order {
+        order[i] = i
+    }
+    sort.Slice(order, func(i, j int) bool {
+        return arr[order[i]].end < arr[order[j]].end
+    })
+    dp := make([]int64, n)
+    for i := 0; i < n; i++ {
+        s := arr[i].start
+        for ptr < n && arr[order[ptr]].end <= s {
+            index := order[ptr]
+            val := dp[index] - arr[index].end
+            if val > best {
+                best = val
+            }
+            ptr++
+        }
+        curr := arr[i].revenue
+        if best != NEG {
+            curr += s + best
+        }
+        dp[i] = curr
+        if curr > res {
+            res = curr
+        }
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: meetings = [[2,5,4],[6,8,3]]
@@ -150,4 +194,8 @@ func main() {
     fmt.Println(maxEarnings1([][]int{{2,5,4},{6,8,3}})) // 8 
     fmt.Println(maxEarnings1([][]int{{3,5,4},{4,7,8},{8,10,3}})) // 12
     fmt.Println(maxEarnings1([][]int{{1,2,2},{4,5,2},{7,9,3}})) // 11
+    
+    fmt.Println(maxEarnings2([][]int{{2,5,4},{6,8,3}})) // 8 
+    fmt.Println(maxEarnings2([][]int{{3,5,4},{4,7,8},{8,10,3}})) // 12
+    fmt.Println(maxEarnings2([][]int{{1,2,2},{4,5,2},{7,9,3}})) // 11
 }
