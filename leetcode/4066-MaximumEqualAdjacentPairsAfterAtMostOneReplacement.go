@@ -64,6 +64,28 @@ func maxEqualAdjacentPairs(nums []int) int {
     return base + mx
 }
 
+func maxEqualAdjacentPairs1(nums []int) int {
+    res, base := 0, 0
+    count := make(map[[2]int]int, len(nums))
+    for i := 0; i+1 < len(nums); i++ {
+        a, b := nums[i], nums[i+1]
+        if a == b {
+            base++
+            continue
+        }
+        if a > b {
+            a, b = b, a
+        }
+        count[[2]int{a, b}]++
+    }
+    for _, c := range count {
+        if c > res {
+            res = c
+        }
+    }
+    return base + res
+}
+
 func main() {
     // Example 1:
     // Input: nums = [1,2,3,2]
@@ -95,4 +117,10 @@ func main() {
 
     fmt.Println(maxEqualAdjacentPairs([]int{1,2,3,4,5,6,7,8,9})) // 1
     fmt.Println(maxEqualAdjacentPairs([]int{9,8,7,6,5,4,3,2,1})) // 1
+
+    fmt.Println(maxEqualAdjacentPairs1([]int{1,2,3,2})) // 2
+    fmt.Println(maxEqualAdjacentPairs1([]int{1,2,1,2,1})) // 4
+    fmt.Println(maxEqualAdjacentPairs1([]int{1,1,1})) // 2
+    fmt.Println(maxEqualAdjacentPairs1([]int{1,2,3,4,5,6,7,8,9})) // 1
+    fmt.Println(maxEqualAdjacentPairs1([]int{9,8,7,6,5,4,3,2,1})) // 1
 }
