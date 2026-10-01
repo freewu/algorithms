@@ -30,13 +30,11 @@ func isValid(s string) bool {
         return false
     }
     // 用stack就可很好处理golang没有原生的stack 这里使用一个array 和 int来处理
-    var a []string
-    var l = 0
-
+    l, stack := 0, []string{}
     for i := 0; i < len(s); i++ {
         // 遇到 ([{ 就入栈
         if '(' == s[i] || '[' == s[i] || '{' == s[i] {
-            a = append(a, string(s[i]))
+            stack = append(stack, string(s[i]))
             l++
         }
         // 遇到)]} 就出栈 比对
@@ -45,16 +43,16 @@ func isValid(s string) bool {
             if 0 == l {
                 return false
             }
-            if ')' == s[i] && "(" != a[l-1] {
+            if ')' == s[i] && "(" != stack[l-1] {
                 return false
             }
-            if ']' == s[i] && "[" != a[l-1] {
+            if ']' == s[i] && "[" != stack[l-1] {
                 return false
             }
-            if '}' == s[i] && "{" != a[l-1] {
+            if '}' == s[i] && "{" != stack[l-1] {
                 return false
             }
-            a = append(a[0 : l-1])
+            stack = stack[0 : l-1]
             l--
         }
     }
@@ -66,7 +64,7 @@ func isValid(s string) bool {
 }
 
 // best solution
-func isValidBest(s string) bool {
+func isValid1(s string) bool {
     // 空字符串直接返回 true
     if len(s) == 0 {
         return true
@@ -87,26 +85,26 @@ func isValidBest(s string) bool {
 }
 
 // stack + map
-func isValid1(s string) bool {
-    var pairs map[string]string = map[string]string{
-		")": "(",
-		"}": "{",
-		"]": "[",
-	}
-	var stack []string
-	for _, c := range s {
-		ch := string(c)
-		size := len(stack)
-		if left, ok := pairs[ch]; ok {
-			if size == 0 || stack[size-1] != left {
-				return false
-			}
-			stack = stack[:size-1]
-		}else {
-    		stack = append(stack, ch)
+func isValid2(s string) bool {
+    mp := map[string]string{
+        ")": "(",
+        "}": "{",
+        "]": "[",
+    }
+    stack := []string{}
+    for _, c := range s {
+        ch := string(c)
+        size := len(stack)
+        if left, ok := mp[ch]; ok {
+            if size == 0 || stack[size-1] != left {
+                return false
+            }
+            stack = stack[:size-1]
+        }else {
+            stack = append(stack, ch)
         }
-	}
-	return len(stack) == 0
+    }
+    return len(stack) == 0
 }
 
 func main() {
@@ -129,15 +127,6 @@ func main() {
     fmt.Printf("isValid(\"({[()]})\") = %v\n",isValid("({[()]})")) // true
     fmt.Printf("isValid(\"({[()}])\") = %v\n",isValid("({[()}])")) // false
 
-    fmt.Println(isValidBest("()")) // true
-    fmt.Println(isValidBest("()[]{}")) // true
-    fmt.Println(isValidBest("(]")) // false
-    fmt.Printf("isValidBest(\"((\") = %v\n",isValidBest("((")) // false
-    fmt.Printf("isValidBest(\"(\") = %v\n",isValidBest("(")) // false
-    fmt.Printf("isValidBest(\"(+\") = %v\n",isValidBest("()")) // true
-    fmt.Printf("isValidBest(\"({[()]})\") = %v\n",isValidBest("({[()]})")) // true
-    fmt.Printf("isValidBest(\"({[()}])\") = %v\n",isValidBest("({[()}])")) // false
-
     fmt.Println(isValid1("()")) // true
     fmt.Println(isValid1("()[]{}")) // true
     fmt.Println(isValid1("(]")) // false
@@ -146,4 +135,13 @@ func main() {
     fmt.Printf("isValid1(\"(+\") = %v\n",isValid1("()")) // true
     fmt.Printf("isValid1(\"({[()]})\") = %v\n",isValid1("({[()]})")) // true
     fmt.Printf("isValid1(\"({[()}])\") = %v\n",isValid1("({[()}])")) // false
+
+    fmt.Println(isValid2("()")) // true
+    fmt.Println(isValid2("()[]{}")) // true
+    fmt.Println(isValid2("(]")) // false
+    fmt.Printf("isValid2(\"((\") = %v\n",isValid2("((")) // false
+    fmt.Printf("isValid2(\"(\") = %v\n",isValid2("(")) // false
+    fmt.Printf("isValid2(\"(+\") = %v\n",isValid2("()")) // true
+    fmt.Printf("isValid2(\"({[()]})\") = %v\n",isValid2("({[()]})")) // true
+    fmt.Printf("isValid2(\"({[()}])\") = %v\n",isValid2("({[()}])")) // false
 }
