@@ -87,4 +87,9 @@ func main() {
     // The total cost is 10 + 5 + 9 = 24.
     // Note that the expressCost is paid again to transfer back to the express route.
     fmt.Println(minimumCosts([]int{11,5,13}, []int{7,10,6}, 3)) // [10,15,24]
+
+    fmt.Println(minimumCosts([]int{1,2,3,4,5,6,7,8,9}, []int{1,2,3,4,5,6,7,8,9}, 3)) // [1 3 6 10 15 21 28 36 45]
+    fmt.Println(minimumCosts([]int{1,2,3,4,5,6,7,8,9}, []int{9,8,7,6,5,4,3,2,1}, 3)) // [1 3 6 10 15 21 25 27 28]
+    fmt.Println(minimumCosts([]int{9,8,7,6,5,4,3,2,1}, []int{1,2,3,4,5,6,7,8,9}, 3)) // [4 6 9 13 18 22 25 27 28]
+    fmt.Println(minimumCosts([]int{9,8,7,6,5,4,3,2,1}, []int{9,8,7,6,5,4,3,2,1}, 3)) // [9 17 24 30 35 39 42 44 45]
 }
