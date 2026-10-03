@@ -102,9 +102,21 @@ func longestValidParentheses2(s string) int {
 }
 
 func main() {
+    // Example 1:
+    // Input: s = "(()"
+    // Output: 2
+    // Explanation: The longest valid parentheses substring is "()".
     fmt.Printf("longestValidParentheses(\"(()\") = %v\n",longestValidParentheses("(()")) // 2
+    // Example 2:
+    // Input: s = ")()())"
+    // Output: 4
+    // Explanation: The longest valid parentheses substring is "()()".
     fmt.Printf("longestValidParentheses(\")()())\") = %v\n",longestValidParentheses(")()())")) // 4
+    // Example 3:
+    // Input: s = ""
+    // Output: 0
     fmt.Printf("longestValidParentheses(\"\") = %v\n",longestValidParentheses("")) // 0
+
     fmt.Printf("longestValidParentheses(\")(\") = %v\n",longestValidParentheses(")(")) // 0
 
     fmt.Printf("longestValidParentheses1(\"(()\") = %v\n",longestValidParentheses1("(()")) // 2
