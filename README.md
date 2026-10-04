@@ -3300,6 +3300,7 @@
 [4050. Minimum Days to Score Exactly N Points](./leetcode/4050-MinimumDaysToScoreExactlyNPoints.go)   
 [4060. Count Evenly Good Integers](./leetcode/4060-CountEvenlyGoodIntegers.go)   
 [4061. Minimum Queen Moves to Reach Target](./leetcode/4061-MinimumQueenMovesToReachTarget.go)   
+[4073. Count Good Strings](./leetcode/4073-CountGoodStrings.go)   
 
 # Stack
 [225. Implement Stack using Queues](./leetcode/225-ImplementStackUsingQueues.go)   
