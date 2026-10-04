@@ -102,33 +102,43 @@ func checkValidString(s string) bool {
 
 // 
 func checkValidString1(s string) bool {
-    min, max := 0, 0
+    mn, mx := 0, 0
     for i := range s {
         switch s[i] {
         case '(':
-            min++
-            max++
+            mn++
+            mx++
         case ')':
-            min--
-            max--
-            if max < 0 { // 出现了未配对的 ) 直接 可以返回了
+            mn--
+            mx--
+            if mx < 0 { // 出现了未配对的 ) 直接 可以返回了
                 return false
             }
         case '*':
-            min--
-            max++
+            mn--
+            mx++
         }
-        if min < 0 {
-            min = 0
+        if mn < 0 {
+            mn = 0
         }
     }
     return min == 0
 }
 
 func main() {
+    // Example 1:
+    // Input: s = "()"
+    // Output: true
     fmt.Println(checkValidString("()")) // true
+    // Example 2:
+    // Input: s = "(*)"
+    // Output: true
     fmt.Println(checkValidString("(*)")) // true
+    // Example 3:
+    // Input: s = "(*))"
+    // Output: true
     fmt.Println(checkValidString("(*))")) // true
+    
     fmt.Println(checkValidString(")*(")) // false
     fmt.Println(checkValidString("(*))(")) // false
 
