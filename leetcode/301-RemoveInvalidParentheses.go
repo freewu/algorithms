@@ -31,19 +31,19 @@ func removeInvalidParentheses(s string) []string {
     res, seen, queue := []string{}, map[string]struct{}{}, []string{s}
     seen[s] = struct{}{}
     isValid := func (s string) bool {
-        cnt := 0
+        count := 0
         for i := range s { 
             if s[i] == '(' { // （ 则 ++
-                cnt++
+                count++
             } else if s[i] == ')' {
-                if cnt > 0 { 
-                    cnt--
+                if count > 0 { 
+                    count--
                 } else { // 没有配对的 ( 的直接返回 false
                     return false
                 }
             }
         }
-        return cnt == 0
+        return count == 0
     }
     for len(queue) > 0 && len(res) == 0 {
         for _, elem := range queue { // traverse by level
@@ -87,18 +87,18 @@ func removeInvalidParentheses1(s string) []string{
         }
     }
     isValid := func (str string) bool {
-        cnt := 0
+        count := 0
         for _, ch := range str {
             if ch == '(' {
-                cnt++
+                count++
             } else if ch == ')' {
-                cnt--
-                if cnt < 0 {
+                count--
+                if count < 0 {
                     return false
                 }
             }
         }
-        return cnt == 0
+        return count == 0
     }
     var dfs func(res *[]string, str string, start, left, right int)
     dfs = func(res *[]string, str string, start, left, right int) {
@@ -128,8 +128,17 @@ func removeInvalidParentheses1(s string) []string{
 }
 
 func main() {
+    // Example 1:
+    // Input: s = "()())()"
+    // Output: ["(())()","()()()"]
     fmt.Println(removeInvalidParentheses("()())()")) // ["(())()","()()()"]
+    // Example 2:
+    // Input: s = "(a)())()"
+    // Output: ["(a())()","(a)()()"]
     fmt.Println(removeInvalidParentheses("(a)())()")) //  ["(a())()","(a)()()"]
+    // Example 3:
+    // Input: s = ")("
+    // Output: [""]
     fmt.Println(removeInvalidParentheses(")(")) //  [""]
 
     fmt.Println(removeInvalidParentheses1("()())()")) // ["(())()","()()()"]
