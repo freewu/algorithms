@@ -54,6 +54,27 @@ func minInsertions(s string) int {
     return close + open
 }
 
+func minInsertions1(s string) int {
+    res, open := 0, 0
+    for i := 0; i < len(s); i += 1 {
+        if s[i] == '(' {
+            open++
+        } else {
+            if i + 1 < len(s) && s[i + 1] == ')' {
+                i++
+            } else {
+                res++
+            }
+            if open == 0 {
+                res++
+            } else {
+                open--
+            }
+        }
+    }
+    return res + open * 2
+}
+
 func main() {
     // Example 1:
     // Input: s = "(()))"
@@ -70,4 +91,8 @@ func main() {
     // Output: 3
     // Explanation: Add '(' to match the first '))', Add '))' to match the last '('.
     fmt.Println(minInsertions("))())(")) // 3
+
+    fmt.Println(minInsertions1("(()))")) // 1
+    fmt.Println(minInsertions1("())")) // 0
+    fmt.Println(minInsertions1("))())(")) // 3
 }
