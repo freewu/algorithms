@@ -118,6 +118,15 @@ func main() {
     // Note that, there are other ways to obtain the minimum of the sum of square difference, but there is no way to obtain a sum smaller than 43.
     fmt.Println(minSumSquareDiff([]int{1,4,10,12}, []int{5,8,6,9}, 1, 1)) // 43
 
+    fmt.Println(minSumSquareDiff([]int{1,2,3,4,5,6,7,8,9}, []int{1,2,3,4,5,6,7,8,9}, 0, 0)) // 0
+    fmt.Println(minSumSquareDiff([]int{1,2,3,4,5,6,7,8,9}, []int{9,8,7,6,5,4,3,2,1}, 0, 0)) // 240
+    fmt.Println(minSumSquareDiff([]int{9,8,7,6,5,4,3,2,1}, []int{1,2,3,4,5,6,7,8,9}, 0, 0)) // 240
+    fmt.Println(minSumSquareDiff([]int{9,8,7,6,5,4,3,2,1}, []int{9,8,7,6,5,4,3,2,1}, 0, 0)) // 0
+
     fmt.Println(minSumSquareDiff1([]int{1,2,3,4}, []int{2,10,20,19}, 0, 0)) // 579
     fmt.Println(minSumSquareDiff1([]int{1,4,10,12}, []int{5,8,6,9}, 1, 1)) // 43
+    fmt.Println(minSumSquareDiff1([]int{1,2,3,4,5,6,7,8,9}, []int{1,2,3,4,5,6,7,8,9}, 0, 0)) // 0
+    fmt.Println(minSumSquareDiff1([]int{1,2,3,4,5,6,7,8,9}, []int{9,8,7,6,5,4,3,2,1}, 0, 0)) // 240
+    fmt.Println(minSumSquareDiff1([]int{9,8,7,6,5,4,3,2,1}, []int{1,2,3,4,5,6,7,8,9}, 0, 0)) // 240
+    fmt.Println(minSumSquareDiff1([]int{9,8,7,6,5,4,3,2,1}, []int{9,8,7,6,5,4,3,2,1}, 0, 0)) // 0
 }
