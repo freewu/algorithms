@@ -100,6 +100,50 @@ func minSumSquareDiff1(nums1 []int, nums2 []int, k1 int, k2 int) int64 {
     return int64(res)
 }
 
+func minSumSquareDiff2(nums1 []int, nums2 []int, k1 int, k2 int) int64 {
+    abs := func(x int) int { if x < 0 { return -x; }; return x; }
+    res, k, s, mx, n := 0, k1 + k2, 0, 0, len(nums1)
+    dp := make([]int, n)
+    for i, v := range nums1 {
+        dp[i] = abs(v - nums2[i])
+        s += dp[i]
+        mx = max(mx, dp[i])
+    }
+    if s <= k {
+        return 0
+    }
+    left, right := 0, mx
+    for left < right {
+        mid := (left + right) >> 1
+        t := 0
+        for _, v := range dp {
+            t += max(v - mid, 0)
+        }
+        if t <= k {
+            right = mid
+        } else {
+            left = mid + 1
+        }
+    }
+    for i, v := range dp {
+        k -= max(v-left, 0)
+        dp[i] = min(v, left)
+    }
+    for i, v := range dp {
+        if k <= 0 {
+            break
+        }
+        if v == left {
+            dp[i]--
+            k--
+        }
+    }
+    for _, v := range dp {
+        res += v * v
+    }
+    return int64(res)
+}
+
 func main() {
     // Example 1:
     // Input: nums1 = [1,2,3,4], nums2 = [2,10,20,19], k1 = 0, k2 = 0
@@ -129,4 +173,11 @@ func main() {
     fmt.Println(minSumSquareDiff1([]int{1,2,3,4,5,6,7,8,9}, []int{9,8,7,6,5,4,3,2,1}, 0, 0)) // 240
     fmt.Println(minSumSquareDiff1([]int{9,8,7,6,5,4,3,2,1}, []int{1,2,3,4,5,6,7,8,9}, 0, 0)) // 240
     fmt.Println(minSumSquareDiff1([]int{9,8,7,6,5,4,3,2,1}, []int{9,8,7,6,5,4,3,2,1}, 0, 0)) // 0
+
+    fmt.Println(minSumSquareDiff2([]int{1,2,3,4}, []int{2,10,20,19}, 0, 0)) // 579
+    fmt.Println(minSumSquareDiff2([]int{1,4,10,12}, []int{5,8,6,9}, 1, 1)) // 43
+    fmt.Println(minSumSquareDiff2([]int{1,2,3,4,5,6,7,8,9}, []int{1,2,3,4,5,6,7,8,9}, 0, 0)) // 0
+    fmt.Println(minSumSquareDiff2([]int{1,2,3,4,5,6,7,8,9}, []int{9,8,7,6,5,4,3,2,1}, 0, 0)) // 240
+    fmt.Println(minSumSquareDiff2([]int{9,8,7,6,5,4,3,2,1}, []int{1,2,3,4,5,6,7,8,9}, 0, 0)) // 240
+    fmt.Println(minSumSquareDiff2([]int{9,8,7,6,5,4,3,2,1}, []int{9,8,7,6,5,4,3,2,1}, 0, 0)) // 0
 }
