@@ -2139,6 +2139,7 @@
 [4068. Maximize Meeting Earnings with Idle Gaps](./leetcode/4068-MaximizeMeetingEarningsWithIdleGaps.go)   
 [4069. Best Time to Buy and Sell Stock with Cooldown II](./leetcode/4069-BestTimeToBuyAndSellStockWithCooldownII.go)   
 [4072. Maximum Alternating Subarray Sum With One Deletion](./leetcode/4072-MaximumAlternatingSubarraySumWithOneDeletion.go)   
+[4074. Maximum Product Pair With Target Sum](./leetcode/4074-MaximumProductPairWithTargetSum.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
