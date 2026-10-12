@@ -2141,6 +2141,7 @@
 [4072. Maximum Alternating Subarray Sum With One Deletion](./leetcode/4072-MaximumAlternatingSubarraySumWithOneDeletion.go)   
 [4074. Maximum Product Pair With Target Sum](./leetcode/4074-MaximumProductPairWithTargetSum.go)   
 [4075. Longest Resilient Subarray I](./leetcode/4075-LongestResilientSubarrayI.go)   
+[4076. Longest Resilient Subarray II](./leetcode/4076-LongestResilientSubarrayII.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
