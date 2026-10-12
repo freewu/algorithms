@@ -3306,6 +3306,7 @@
 [4061. Minimum Queen Moves to Reach Target](./leetcode/4061-MinimumQueenMovesToReachTarget.go)   
 [4073. Count Good Strings](./leetcode/4073-CountGoodStrings.go)   
 [4078. Three Fibonacci Sum](./leetcode/4078-ThreeFibonacciSum.go)   
+[4079. Prime Subset Selection I](./leetcode/4079-PrimeSubsetSelectionI.go)   
 
 # Stack
 [225. Implement Stack using Queues](./leetcode/225-ImplementStackUsingQueues.go)   
