@@ -3852,6 +3852,7 @@
 [3822. Design Order Management System](./leetcode/3822-DesignOrderManagementSystem.go)   
 [3829. Design Ride Sharing System](./leetcode/3829-DesignRideSharingSystem.go)   
 [3885. Design Event Manager](./leetcode/3885-DesignEventManager.go)   
+[4080. Design Bus Seat Booking System](./leetcode/4080-DesignBusSeatBookingSystem.go)   
 
 # Binary Search
 [278. First Bad Version](./leetcode/278-FirstBadVersion.go)   
