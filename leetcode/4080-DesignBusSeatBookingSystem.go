@@ -76,9 +76,9 @@ import "fmt"
 import "strconv"
 
 type BusBooking struct {
-	times     [][4]int
-	totalTime int
-	bookedNum int
+    times     [][4]int
+    totalTime int
+    bookedNum int
 }
 
 func Constructor(n int) BusBooking {
