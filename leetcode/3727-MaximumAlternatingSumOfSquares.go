@@ -67,6 +67,25 @@ func maxAlternatingSum1(nums []int) int64 {
     return int64(res)   
 }
 
+var freq [40_001]uint32
+
+func maxAlternatingSum2(nums []int) int64 {
+    n, total, remove, mn, mx := len(nums), 0, 0, len(freq), 0
+    for _, v := range nums {
+        v = max(v, -v)
+        mn, mx = min(mn, v), max(mx, v)
+        freq[v]++
+        total += v * v
+    }
+    for i, target := mn, n/2; target > 0; i++ {
+        take := min(target, int(freq[i]))
+        remove += take * i * i
+        target -= take
+    }
+    clear(freq[mn : mx + 1])
+    return int64(total - 2 * remove)
+}
+
 func main() {
     // Example 1:
     // Input: nums = [1,2,3]
@@ -92,4 +111,9 @@ func main() {
     fmt.Println(maxAlternatingSum1([]int{1,-1,2,-2,3,-3})) // 16
     fmt.Println(maxAlternatingSum1([]int{1,2,3,4,5,6,7,8,9})) // 225
     fmt.Println(maxAlternatingSum1([]int{9,8,7,6,5,4,3,2,1})) // 225
+
+    fmt.Println(maxAlternatingSum2([]int{1,2,3})) // 12
+    fmt.Println(maxAlternatingSum2([]int{1,-1,2,-2,3,-3})) // 16
+    fmt.Println(maxAlternatingSum2([]int{1,2,3,4,5,6,7,8,9})) // 225
+    fmt.Println(maxAlternatingSum2([]int{9,8,7,6,5,4,3,2,1})) // 225
 }   
