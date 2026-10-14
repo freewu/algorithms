@@ -109,6 +109,26 @@ func maxProfit(prices []int, cooldown int, costs []int) int {
     return res
 }
 
+func maxProfit1(prices []int, cooldown int, costs []int) int {
+    n := len(prices)
+    dp := make([]int, n)
+    dp[0] = 0
+    for i := 1; i < n; i++ {
+        curr := dp[i - 1]
+        for j := 0; j <= i; j++ {
+            prev := 0
+            if j - cooldown - 1 >= 0 {
+                prev = dp[j - cooldown - 1]
+            } else {
+                prev = 0
+            }
+            curr = max(curr, prev + (prices[i] - prices[j] - costs[i - j]))
+        }
+        dp[i] = curr
+    }
+    return dp[n - 1]
+}
+
 func main() {
     // Example 1:
     // Input: prices = [1,5,3], cooldown = 1, costs = [2,0,1]
@@ -156,4 +176,13 @@ func main() {
     fmt.Println(maxProfit([]int{1,2,3,4,5,6,7,8,9}, 1, []int{9,8,7,6,5,4,3,2,1})) // 7
     fmt.Println(maxProfit([]int{9,8,7,6,5,4,3,2,1}, 1, []int{1,2,3,4,5,6,7,8,9})) // 0
     fmt.Println(maxProfit([]int{9,8,7,6,5,4,3,2,1}, 1, []int{9,8,7,6,5,4,3,2,1})) // 0
+
+    fmt.Println(maxProfit1([]int{1,5,3}, 1, []int{2,0,1})) // 4 
+    fmt.Println(maxProfit1([]int{1,2,5}, 0, []int{0,2,1})) // 3
+    fmt.Println(maxProfit1([]int{4,1,7}, 2, []int{3,0,1})) // 6
+    fmt.Println(maxProfit1([]int{3,1,4}, 0, []int{2,1,0})) // 2
+    fmt.Println(maxProfit1([]int{1,2,3,4,5,6,7,8,9}, 1, []int{1,2,3,4,5,6,7,8,9})) // 0
+    fmt.Println(maxProfit1([]int{1,2,3,4,5,6,7,8,9}, 1, []int{9,8,7,6,5,4,3,2,1})) // 7
+    fmt.Println(maxProfit1([]int{9,8,7,6,5,4,3,2,1}, 1, []int{1,2,3,4,5,6,7,8,9})) // 0
+    fmt.Println(maxProfit1([]int{9,8,7,6,5,4,3,2,1}, 1, []int{9,8,7,6,5,4,3,2,1})) // 0
 }
