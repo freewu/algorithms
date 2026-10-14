@@ -3525,6 +3525,7 @@
 [3949. Subtree Inversion Sum II](./leetcode/3949-SubtreeInversionSumII.go)   
 [3997. Count Dominant Nodes in a Binary Tree](./leetcode/3997-CountDominantNodesInABinaryTree.go)   
 [4015. Weighted Sum of a Tree](./leetcode/4015-WeightedSumOfATree.go)   
+[4082. Minimum Operations to Stabilize a Binary Tree](./leetcode/4082-MinimumOperationsToStabilizeABinaryTree.go)   
 
 # Graph
 [133. Clone Graph](./leetcode/133-CloneGraph.go)   
