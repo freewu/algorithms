@@ -174,6 +174,178 @@ func minInversions(words []string, target []int) int{
     return res
 }
 
+func minInversions1(words []string, target []int) int {
+    n := len(words)
+    rank := make([]int, n)
+    for i, v := range target {
+        rank[v] = i
+    }
+    type Node struct {
+        child [10]int32
+        mark  int32
+    }
+    newNode := func() Node {
+        return Node{
+            child: [10]int32{-1, -1, -1, -1, -1, -1, -1, -1, -1, -1},
+            mark:  -1,
+        }
+    }
+    totalChars := 0
+    for _, w := range words {
+        totalChars += len(w)
+    }
+    nodes := make([]Node, 1, totalChars + 1)
+    nodes[0] = newNode()
+    for i, word := range words {
+        curr := int32(0)
+        for _, ch := range word {
+            c := ch - 'a'
+            if nodes[curr].child[c] == -1 {
+                nodes = append(nodes, newNode())
+                nodes[curr].child[c] = int32(len(nodes) - 1)
+            }
+            curr = nodes[curr].child[c]
+        }
+        nodes[curr].mark = int32(i)
+    }
+    dp, bit := make([]int, 1 << 10), make([]int, 1 << 10)
+    var rowSum [10][1 << 10]int
+    for i := 0; i < 10; i++ {
+        bit[1 << i] = i
+    }
+    countGreater := func(a, b []int) int {
+        res, j := 0, 0
+        for _, x := range a {
+            for j < len(b) && b[j] < x {
+                j++
+            }
+            res += j
+        }
+        return res
+    }
+    countLess := func(a []int, x int) int {
+        low, high := 0, len(a)
+        for low < high {
+            mid := (low + high) / 2
+            if a[mid] < x {
+                low = mid + 1
+            } else {
+                high = mid
+            }
+        }
+        return low
+    }
+    buildSortedList := func(childLists [][]int, ownRank, totalSize int) []int {
+        var lists [11][]int
+        var pos [11]int
+        count := 0
+        if ownRank != -1 {
+            ownArr := [1]int{ ownRank }
+            lists[0] = ownArr[:]
+            count = 1
+        }
+        for _, l := range childLists {
+            lists[count] = l
+            count++
+        }
+        full := make([]int, 0, totalSize)
+        for k := 0; k < totalSize; k++ {
+            best := -1
+            for i := 0; i < count; i++ {
+                if pos[i] < len(lists[i]) {
+                    if best == -1 || lists[i][pos[i]] < lists[best][pos[best]] {
+                        best = i
+                    }
+                }
+            }
+            full = append(full, lists[best][pos[best]])
+            pos[best]++
+        }
+        return full
+    }
+    computeCrossDP := func(lists [][]int) int {
+        m := len(lists)
+        var cost [10][10]int
+        for i := 0; i < m; i++ {
+            for j := i + 1; j < m; j++ {
+                c := countGreater(lists[i], lists[j])
+                cost[i][j] = c
+                cost[j][i] = len(lists[i])*len(lists[j]) - c
+            }
+        }
+        fullMask := (1 << m) - 1
+        for i := 0; i < m; i++ {
+            rowSum[i][0] = 0
+            for mask := 1; mask <= fullMask; mask++ {
+                index := mask & -mask
+                j := bit[index]
+                rowSum[i][mask] = rowSum[i][mask^index] + cost[j][i]
+            }
+        }
+        dp[0] = 0
+        for mask := 1; mask <= fullMask; mask++ {
+            best := 1 << 30
+            for i := 0; i < m; i++ {
+                bit := 1 << i
+                if mask&bit != 0 {
+                    prev := mask ^ bit
+                    cand := dp[prev] + rowSum[i][prev]
+                    if cand < best {
+                        best = cand
+                    }
+                }
+            }
+            dp[mask] = best
+        }
+        return dp[fullMask]
+    }
+    var dfs func(u int32) ([]int, int)
+    dfs = func(u int32) ([]int, int) {
+        node := &nodes[u]
+        var childIdx [10]int32
+        m := 0
+        for _, c := range node.child {
+            if c != -1 {
+                childIdx[m] = c
+                m++
+            }
+        }
+        var childLists [10][]int
+        var childCosts [10]int
+        totalSize := 0
+        for i := 0; i < m; i++ {
+            list, cost := dfs(childIdx[i])
+            childLists[i] = list
+            childCosts[i] = cost
+            totalSize += len(list)
+        }
+        totalCost := 0
+        for i := 0; i < m; i++ {
+            totalCost += childCosts[i]
+        }
+        ownRank := -1
+        if node.mark != -1 {
+            ownRank = rank[node.mark]
+            less := 0
+            for i := 0; i < m; i++ {
+                less += countLess(childLists[i], ownRank)
+            }
+            totalCost += less
+        }
+        if m > 1 {
+            totalCost += computeCrossDP(childLists[:m])
+        }
+        fullSize := totalSize
+        if ownRank != -1 {
+            fullSize++
+        }
+        full := buildSortedList(childLists[:m], ownRank, fullSize)
+        return full, totalCost
+    }
+    _, res := dfs(0)
+    return res
+}
+
 func main() {
     // Example 1:
     // <img src="https://assets.leetcode.com/uploads/2026/03/04/screenshot-2026-03-04-at-55332pm.png" style="width: 264px; height: 250px;">​​​​​​​​​​​​​​​​​​​​​
@@ -208,4 +380,7 @@ func main() {
     // The only inversion is the pair of traversal positions (1,2), since 2 > 1.
     // No child ordering produces zero inversions.
     fmt.Println(minInversions([]string{"ab","ac","ba","bc"}, []int{0,3,1,2})) // 1
+
+    fmt.Println(minInversions1([]string{"bad","bag","fig","fed"}, []int{3,1,0,2})) // 2
+    fmt.Println(minInversions1([]string{"ab","ac","ba","bc"}, []int{0,3,1,2})) // 1
 }
