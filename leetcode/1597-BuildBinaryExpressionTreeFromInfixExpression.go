@@ -50,14 +50,187 @@ package main
 import "fmt"
 
 // Definition for a binary tree node.
+// Node 二叉树节点定义
 type Node struct {
-    Val byte
-    Left *Node
-    Right *Node
+	val   byte
+	left  *Node
+	right *Node
+}
+
+// == 二叉树构建 & 打印输出 start ==================================================================
+// ptrb 取 byte 值的地址（层序数组里用 nil 表示 null）
+func ptrb(v byte) *byte {
+    return &v
+}
+
+// buildTree 按层序数组（LeetCode 格式，nil 表示 null）创建二叉树（Node 版）
+func buildTree(nums []*byte) *Node {
+    if len(nums) == 0 || nums[0] == nil {
+        return nil
+    }
+    root := NewNode(*nums[0], nil, nil)
+    queue := []*Node{root}
+    i := 1
+    for len(queue) > 0 && i < len(nums) {
+        node := queue[0]
+        queue = queue[1:]
+        if nums[i] != nil {
+            node.left = NewNode(*nums[i], nil, nil)
+            queue = append(queue, node.left)
+        }
+        i++
+        if i < len(nums) && nums[i] != nil {
+            node.right = NewNode(*nums[i], nil, nil)
+            queue = append(queue, node.right)
+        }
+        i++
+    }
+    return root
+}
+
+// printTree 自顶向下打印二叉树（Node 版，节点值按字符输出），父子之间用 / \ 连线
+// 第 r 层（根为第 1 层）有 2^(r-1) 个位置，每个节点占 2 列，
+// 因此节点中心列 = (2j+1) * 2^(h-r)（j 为该层从左往右的序号）
+func printTree(root *Node) {
+    if root == nil {
+        fmt.Println("(empty tree)")
+        return
+    }
+    // treeHeight 返回二叉树的层数（空树为 0，根节点为第 1 层）
+    var treeHeight func(node *Node) int
+    treeHeight = func(node *Node) int {
+        if node == nil {
+            return 0
+        }
+        l, r := treeHeight(node.left), treeHeight(node.right)
+        if l < r {
+            l = r
+        }
+        return l + 1
+    }
+    h := treeHeight(root)
+
+    // 画布：值占 1 行、连线占 1 行，共 2h-1 行
+    const block = 2 // 每个节点占 2 列：1 列值 + 1 列间隔
+    width := (1 << h) * block
+    rows := make([][]byte, 2*h-1)
+    for i := range rows {
+        rows[i] = make([]byte, width)
+        for k := range rows[i] {
+            rows[i][k] = ' '
+        }
+    }
+    put := func(row, col int, ch byte) {
+        if col >= 0 && col < width {
+            rows[row][col] = ch
+        }
+    }
+    var draw func(node *Node, r, j int)
+    draw = func(node *Node, r, j int) {
+        if node == nil {
+            return
+        }
+        col := (2*j + 1) * (1 << (h - r)) // 当前节点中心列
+        put(2*(r-1), col, node.val)
+        if r == h {
+            return
+        }
+        off := (1 << (h - r - 1)) / 2 // 连线相对父节点中心的偏移（取行间中点）
+        if off == 0 {
+            off = 1
+        }
+        if node.left != nil {
+            put(2*r-1, col-off, '/')
+            draw(node.left, r+1, 2*j)
+        }
+        if node.right != nil {
+            put(2*r-1, col+off, '\\')
+            draw(node.right, r+1, 2*j+1)
+        }
+    }
+    draw(root, 1, 0)
+
+    for _, line := range rows {
+        end := len(line)
+        for end > 0 && line[end-1] == ' ' {
+            end--
+        }
+        fmt.Println(string(line[:end]))
+    }
+}
+
+func NewNode(val byte, left, right *Node) *Node {
+	return &Node{
+		val:   val,
+		left:  left,
+		right: right,
+	}
 }
 
 func expTree(s string) *Node {
-    return &Node{'-', nil, nil }
+	var nums []*Node // 数字栈，存二叉树节点
+	var ops []byte   // 运算符栈
+
+	// 优先级函数：数字越大优先级越高
+	priority := func(c byte) int {
+		switch c {
+		case '(':
+			return 4
+		case '*', '/':
+			return 3
+		case '+', '-':
+			return 2
+		default:
+			return 1
+		}
+	}
+
+	// PopOps：弹出运算符作为根，弹出两个节点做左右子树
+	popOps := func() {
+		// 先弹right，后弹left 和C++一致
+		right := nums[len(nums)-1]
+		nums = nums[:len(nums)-1]
+
+		left := nums[len(nums)-1]
+		nums = nums[:len(nums)-1]
+
+		op := ops[len(ops)-1]
+		ops = ops[:len(ops)-1]
+
+		root := NewNode(op, left, right)
+		nums = append(nums, root)
+	}
+
+	for i := 0; i < len(s); i++ {
+		c := s[i]
+		if c >= '0' && c <= '9' {
+			// 数字直接入节点栈
+			nums = append(nums, NewNode(c, nil, nil))
+		} else {
+			// 运算符
+			if len(ops) == 0 || priority(ops[len(ops)-1]) < priority(c) {
+				ops = append(ops, c)
+			} else {
+				// 持续弹出优先级 >= 当前运算符，直到栈空或者遇到'('
+				for len(ops) > 0 && ops[len(ops)-1] != '(' && priority(ops[len(ops)-1]) >= priority(c) {
+					popOps()
+				}
+				if c != ')' {
+					ops = append(ops, c)
+				} else {
+					// 遇到右括号，弹出左括号，不压入右括号
+					ops = ops[:len(ops)-1]
+				}
+			}
+		}
+	}
+
+	// 处理栈剩余运算符
+	for len(ops) > 0 {
+		popOps()
+	}
+
+	return nums[0]
 }
 
 /**
@@ -166,13 +339,26 @@ func expTree(s string) *Node {
 //         }
 //     };
 
+// 测试打印（中序遍历验证树）
+func inOrder(node *Node) {
+    if node == nil {
+        return
+    }
+    inOrder(node.left)
+    fmt.Printf("%c", node.val)
+    inOrder(node.right)
+}
+
 func main() {
     // Example 1:
     // <img src="https://assets.leetcode.com/uploads/2020/10/02/ex1-4.png" />
     // Input: s = "3*4-2*5"
     // Output: [-,*,*,3,4,2,5]
     // Explanation: The tree above is the only valid tree whose inorder traversal produces s.
-    fmt.Println(expTree("3*4-2*5")) // [-,*,*,3,4,2,5]
+    tree1 := expTree("3*4-2*5")
+    printTree(tree1)
+    fmt.Println(tree1) // [-,*,*,3,4,2,5]
+    inOrder(tree1) 
     // Example 2:
     // <img src="https://assets.leetcode.com/uploads/2020/10/02/ex1-2.png" />
     // Input: s = "2-3/(5*2)+1"
@@ -182,10 +368,18 @@ func main() {
     // <img src="https://assets.leetcode.com/uploads/2020/10/02/ex1-1.png" />
     // The third tree below is also not valid. Although it produces the same result and is equivalent to the above trees, its inorder traversal does not produce s and its operands are not in the same order as s.
     // <img src="https://assets.leetcode.com/uploads/2020/10/02/ex1-3.png" />
-    fmt.Println(expTree("2-3/(5*2)+1")) // [+,-,1,2,/,null,null,null,null,3,*,null,null,5,2]
+    tree2 := expTree("2-3/(5*2)+1")
+    fmt.Println()
+    printTree(tree2)
+    fmt.Println(tree2) // [+,-,1,2,/,null,null,null,null,3,*,null,null,5,2]
+    inOrder(tree2) 
     // Example 3:
     // Input: s = "1+2+3+4+5"
     // Output: [+,+,5,+,4,null,null,+,3,null,null,1,2]
     // Explanation: The tree [+,+,5,+,+,null,null,1,2,3,4] is also one of many other valid trees.
-    fmt.Println(expTree("1+2+3+4+5")) // [+,+,5,+,4,null,null,+,3,null,null,1,2]
+    tree3 := expTree("1+2+3+4+5")
+    fmt.Println()
+    printTree(tree3)
+    fmt.Println(tree3) // [+,+,5,+,4,null,null,+,3,null,null,1,2]
+    inOrder(tree3) 
 }
