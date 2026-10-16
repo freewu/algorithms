@@ -58,48 +58,117 @@ import "fmt"
 
 type LazySegment []struct{ sum, todo int }
 
-func (t LazySegment) do(o, l, r, add int) {
-    t[o].sum += add * (r - l + 1)
-    t[o].todo += add
+func (ls LazySegment) do(o, l, r, add int) {
+    ls[o].sum += add * (r - l + 1)
+    ls[o].todo += add
 }
 
 // o=1  [l,r] 1<=l<=r<=n
 // 把 [L,R] 加一，同时返回加一之前的区间和
-func (t LazySegment) queryAndAdd1(o, l, r, L, R int) int {
+func (ls LazySegment) queryAndAdd1(o, l, r, L, R int) int {
     res := 0
     if L <= l && r <= R {
-        res = t[o].sum
-        t.do(o, l, r, 1)
+        res = ls[o].sum
+        ls.do(o, l, r, 1)
         return res
     }
     m := (l + r) >> 1
-    if add := t[o].todo; add != 0 {
-        t.do(o << 1, l, m, add)
-        t.do(o << 1|1, m + 1, r, add)
-        t[o].todo = 0
+    if add := ls[o].todo; add != 0 {
+        ls.do(o << 1, l, m, add)
+        ls.do(o << 1|1, m + 1, r, add)
+        ls[o].todo = 0
     }
     if L <= m {
-        res = t.queryAndAdd1(o << 1, l, m, L, R)
+        res = ls.queryAndAdd1(o << 1, l, m, L, R)
     }
     if m < R {
-        res += t.queryAndAdd1(o << 1|1, m+1, r, L, R)
+        res += ls.queryAndAdd1(o << 1|1, m+1, r, L, R)
     }
-    t[o].sum = t[o << 1].sum + t[o << 1|1].sum
+    ls[o].sum = ls[o << 1].sum + ls[o << 1|1].sum
     return res
 }
 
 func sumCounts(nums []int) int {
     last := map[int]int{}
     res, sum, n := 0, 0, len(nums)
-    t := make(LazySegment, n * 4)
+    ls := make(LazySegment, n * 4)
     for i, x := range nums {
         i++
         j := last[x]
-        sum += t.queryAndAdd1(1, 1, n, j+1, i) * 2 + i - j
+        sum += ls.queryAndAdd1(1, 1, n, j+1, i) * 2 + i - j
         res = (res + sum) % 1_000_000_007
         last[x] = i
     }
     return res
+}
+
+type Bit struct {
+    size   int
+    _tree1 []int64
+    _tree2 []int64
+}
+
+func NewBit(n int) *Bit {
+    return &Bit{
+        size:   n,
+        _tree1: make([]int64, n+2),
+        _tree2: make([]int64, n+2),
+    }
+}
+
+func (bit *Bit) _lowbit(index int) int {
+    return index & -index
+}
+
+func (bit *Bit) Add(left, right, delta int) {
+    bit._add(left, int64(delta))
+    bit._add(right+1, int64(-delta))
+}
+
+func (bit *Bit) Query(left, right int) int64 {
+    return bit._query(right) - bit._query(left-1)
+}
+
+func (bit *Bit) _add(index int, delta int64) {
+    index += 1
+    rawIndex := int64(index)
+    for index <= bit.size {
+        bit._tree1[index] += delta
+        bit._tree2[index] += rawIndex * delta
+        index += bit._lowbit(index)
+    }
+}
+
+func (bit *Bit) _query(index int) int64 {
+    index += 1
+    res, rawIndex := int64(0), int64(index + 1)
+    if index > bit.size {
+        index = bit.size
+    }
+    for index > 0 {
+        res += rawIndex * bit._tree1[index] - bit._tree2[index]
+        index -= bit._lowbit(index)
+    }
+    return res
+}
+
+func sumCounts1(nums []int) int {
+    res, curr, n, mod := int64(0), int64(0), len(nums), int64(1_000_000_007)
+    bit := NewBit(n + 10)
+    seen := make(map[int]int)
+    for i, v := range nums {
+        j := -1
+        if val, ok := seen[v]; ok {
+            j = val
+        }
+        j += 1
+        q := bit.Query(j, i)
+        curr = (curr + q * 2 + int64(i - j + 1)) % mod
+        res = (res + curr) % mod
+        bit.Add(j, i, 1)
+        seen[v] = i
+    }
+    return int(res)
 }
 
 func main() {
@@ -128,8 +197,8 @@ func main() {
     fmt.Println(sumCounts([]int{1,2,3,4,5,6,7,8,9})) // 825
     fmt.Println(sumCounts([]int{9,8,7,6,5,4,3,2,1})) // 825
 
-    // fmt.Println(sumCounts1([]int{1,2,1})) // 15
-    // fmt.Println(sumCounts1([]int{1,1})) // 3
-    // fmt.Println(sumCounts1([]int{1,2,3,4,5,6,7,8,9})) // 825
-    // fmt.Println(sumCounts1([]int{9,8,7,6,5,4,3,2,1})) // 825
+    fmt.Println(sumCounts1([]int{1,2,1})) // 15
+    fmt.Println(sumCounts1([]int{1,1})) // 3
+    fmt.Println(sumCounts1([]int{1,2,3,4,5,6,7,8,9})) // 825
+    fmt.Println(sumCounts1([]int{9,8,7,6,5,4,3,2,1})) // 825
 }
