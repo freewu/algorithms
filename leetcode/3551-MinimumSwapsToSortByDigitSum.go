@@ -118,6 +118,38 @@ func minSwaps1(nums []int) int {
     return res
 }
 
+func minSwaps2(nums []int) int {
+    res := 0
+    const MASK = 1 << 18 - 1
+    uf := make([]int, 100_000)
+    var find func(x int) int
+    find = func (x int) int {
+        if uf[x] != x {
+            uf[x] = find(uf[x])
+        }
+        return uf[x]
+    }
+    for i := range nums {
+        var digits int
+        for v := nums[i]; v > 0; v /= 10 {
+            digits += v % 10
+        }
+        nums[i] = digits<<50 | nums[i]<<18 | i
+    }
+    for i := range nums {
+        uf[i] = i
+    }
+    sort.Ints(nums)
+    for i, v := range nums {
+        x, y := find(v & MASK), find(i)
+        if x != y {
+            uf[x] = y
+            res++
+        }
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: nums = [37,100]
@@ -152,4 +184,10 @@ func main() {
     fmt.Println(minSwaps1([]int{18,43,34,16})) // 2
     fmt.Println(minSwaps1([]int{1,2,3,4,5,6,7,8,9})) // 0
     fmt.Println(minSwaps1([]int{9,8,7,6,5,4,3,2,1})) // 4
+
+    fmt.Println(minSwaps2([]int{37,100})) // 1
+    fmt.Println(minSwaps2([]int{22,14,33,7})) // 0
+    fmt.Println(minSwaps2([]int{18,43,34,16})) // 2
+    fmt.Println(minSwaps2([]int{1,2,3,4,5,6,7,8,9})) // 0
+    fmt.Println(minSwaps2([]int{9,8,7,6,5,4,3,2,1})) // 4
 }
