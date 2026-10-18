@@ -3713,6 +3713,7 @@
 [3211. Generate Binary Strings Without Adjacent Zeros](./leetcode/3211-GenerateBinaryStringsWithoutAdjacentZeros.go)   
 [3226. Number of Bit Changes to Make Two Integers Equal](./leetcode/3226-NumberOfBitChangesToMakeTwoIntegersEqual.go)   
 [3344. Maximum Sized Array](./leetcode/3344-MaximumSizedArray.go)   
+[4085. Find Root of a Colored Tree](./leetcode/4085-FindRootOfAColoredTree.go)   
 
 # Design
 [146. LRU Cache](./leetcode/146-LRUCache.go)   
