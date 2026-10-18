@@ -49,7 +49,6 @@ func getFood(grid [][]byte) int {
     if n == 1 && m == 1{
         return -1
     }
-    
     x, y := -1, -1 // 找到出发点
     visited := make([][]bool,n)
     for i := range visited { 
@@ -70,10 +69,10 @@ func getFood(grid [][]byte) int {
     for step := 1; len(queue) > 0; step++ {
         node := len(queue)
         for i := 0; i < node; i++ {
-            cur := queue[0] // pop
+            curr := queue[0] // pop
             queue = queue[1:]
             for _, d := range dirs {
-                x, y = cur[0] + d[0], cur[1] + d[1]
+                x, y = curr[0] + d[0], curr[1] + d[1]
                 if x >= 0 && x < n &&  y >= 0 && y < m { // 边界内
                     if grid[x][y] != 'X' && !visited[x][y] { // 不是墙且没有访问过
                         if grid[x][y] == '#' { // 找到目标
