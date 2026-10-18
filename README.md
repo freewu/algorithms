@@ -2143,6 +2143,7 @@
 [4075. Longest Resilient Subarray I](./leetcode/4075-LongestResilientSubarrayI.go)   
 [4076. Longest Resilient Subarray II](./leetcode/4076-LongestResilientSubarrayII.go)   
 [4077. Minimize Inversions in a Prefix Tree](./leetcode/4077-MinimizeInversionsinaAPrefixTree.go)   
+[4083. Minimum Deletions to Make Array Sharp](./leetcode/4083-MinimumDeletionsToMakeArraySharp.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
