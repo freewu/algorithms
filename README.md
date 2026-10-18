@@ -2144,6 +2144,7 @@
 [4076. Longest Resilient Subarray II](./leetcode/4076-LongestResilientSubarrayII.go)   
 [4077. Minimize Inversions in a Prefix Tree](./leetcode/4077-MinimizeInversionsinaAPrefixTree.go)   
 [4083. Minimum Deletions to Make Array Sharp](./leetcode/4083-MinimumDeletionsToMakeArraySharp.go)   
+[4084. Last Visited Cell in a Directional Grid](./leetcode/4084-LastVisitedCellinaDirectionalGrid.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
