@@ -76,9 +76,14 @@ func minSelection(availableIntervals, targetIntervals [][]int) int {
     return res
 }
 
+var avmx, tgmx [100_001]uint32
+var gen uint32
+
 func minSelection1(availableIntervals, targetIntervals [][]int) int {
-    avmx, tgmx := make([]uint32, 1000_001), make([]uint32, 1000_001)
-    mx, gen := 0, uint32(1 << 31)
+    //avmx, tgmx := make([]uint32, 100_001), make([]uint32, 100_001)
+    //mx, gen := 0, uint32(1 << 31)
+    gen += 1 << 18
+    mx := 0
     for _, a := range availableIntervals {
         mx = max(mx, a[1])
         avmx[a[0]] = max(avmx[a[0]], uint32(a[1])|gen)
