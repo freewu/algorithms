@@ -182,6 +182,53 @@ func sortableIntegers2(nums []int) int {
     return res
 }
 
+var drops [100_000]uint32
+
+func sortableIntegers3(nums []int) int {
+    n := len(nums)
+    drops[n - 1] = uint32(n)
+    for i, last := n-2, n; i >= 0; i-- {
+        if nums[i] > nums[i+1] {
+            last = i
+        }
+        drops[i] = uint32(last)
+    }
+    sorted := drops[0] == uint32(n)
+    check := func(k int) int {
+        if sorted {
+            return k
+        } else if k == 1 {
+            return 0
+        }
+        last := 0
+        for left := 0; left < n; left += k {
+            right, d := left+k-1, int(drops[left])
+            l, r := nums[left], nums[right]
+            if d < right {
+                if int(drops[d+1]) < right || nums[right] > nums[left] {
+                    return 0
+                }
+                l, r = nums[d+1], nums[d]
+            }
+            if last > l {
+                return 0
+            }
+            last = r
+        }
+        return k
+    }
+    res, k := 0, 1
+    for ; k*k < n; k++ {
+        if n%k == 0 {
+            res += check(k) + check(n/k)
+        }
+    }
+    if k*k == n {
+        res += check(k)
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: nums = [3,1,2]
@@ -223,4 +270,10 @@ func main() {
     fmt.Println(sortableIntegers2([]int{5,8})) // 3
     fmt.Println(sortableIntegers2([]int{1,2,3,4,5,6,7,8,9})) // 13
     fmt.Println(sortableIntegers2([]int{9,8,7,6,5,4,3,2,1})) // 0
+
+    fmt.Println(sortableIntegers3([]int{3,1,2})) // 3
+    fmt.Println(sortableIntegers3([]int{7,6,5})) // 0
+    fmt.Println(sortableIntegers3([]int{5,8})) // 3
+    fmt.Println(sortableIntegers3([]int{1,2,3,4,5,6,7,8,9})) // 13
+    fmt.Println(sortableIntegers3([]int{9,8,7,6,5,4,3,2,1})) // 0
 }
