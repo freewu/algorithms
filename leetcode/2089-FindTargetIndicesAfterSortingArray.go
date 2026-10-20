@@ -69,4 +69,7 @@ func main() {
     // Explanation: After sorting, nums is [1,2,2,3,5].
     // The index where nums[i] == 5 is 4.
     fmt.Println(targetIndices([]int{1,2,5,2,3}, 5)) // [4]
+
+    fmt.Println(targetIndices([]int{1,2,3,4,5,6,7,8,9}, 2)) // [1]
+    fmt.Println(targetIndices([]int{9,8,7,6,5,4,3,2,1}, 2)) // [1]
 }
