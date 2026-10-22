@@ -103,6 +103,33 @@ func minOperations1(nums []int) int {
     return res
 }
 
+func minOperations2(nums []int) int {
+    n, start := len(nums), 0
+    if n == 1 {
+        return 0
+    }
+    for nums[start] != 0 {
+        start++
+    }
+    asc, desc := true, true
+    for i := 1; i < n; i++ {
+        value := nums[(start+i)%n]
+        if value != i {
+            asc = false
+        }
+        if value != n - i {
+            desc = false
+        }
+        if !asc && !desc {
+            return -1
+        }
+    }
+    if asc {
+        return min(start, n - start + 2)
+    }
+    return min(n - start + 1, start + 2)
+}
+
 func main() {
     // Example 1:
     // Input: nums = [0,2,1]
@@ -135,4 +162,10 @@ func main() {
     fmt.Println(minOperations1([]int{2,0,1,3})) // -1
     fmt.Println(minOperations1([]int{0,1,2,3,4,5,6,7,8,9})) // 0
     fmt.Println(minOperations1([]int{9,8,7,6,5,4,3,2,1,0})) // 1
+
+    fmt.Println(minOperations2([]int{0,2,1})) // 2
+    fmt.Println(minOperations2([]int{1,0,2})) // 2
+    fmt.Println(minOperations2([]int{2,0,1,3})) // -1
+    fmt.Println(minOperations2([]int{0,1,2,3,4,5,6,7,8,9})) // 0
+    fmt.Println(minOperations2([]int{9,8,7,6,5,4,3,2,1,0})) // 1
 }
