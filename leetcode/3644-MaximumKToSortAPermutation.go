@@ -62,6 +62,16 @@ func sortPermutation1(nums []int) int {
     return max(res, 0)
 }
 
+func sortPermutation2(nums []int) int {
+    k := -1
+    for i := 0; i < len(nums) && k != 0; i++ {
+        if i != nums[i] { 
+            k &= nums[i] 
+        }
+    }
+    return max(0, k)
+}
+
 func main() {
     // Example 1:
     // Input: nums = [0,3,2,1]
@@ -90,4 +100,10 @@ func main() {
     fmt.Println(sortPermutation1([]int{3,2,1,0})) // 0
     fmt.Println(sortPermutation1([]int{0,1,2,3,4,5,6,7,8,9})) // 0
     fmt.Println(sortPermutation1([]int{9,8,7,6,5,4,3,2,1,0})) // 0
+
+    fmt.Println(sortPermutation2([]int{0,3,2,1})) // 1
+    fmt.Println(sortPermutation2([]int{0,1,3,2})) // 2
+    fmt.Println(sortPermutation2([]int{3,2,1,0})) // 0
+    fmt.Println(sortPermutation2([]int{0,1,2,3,4,5,6,7,8,9})) // 0
+    fmt.Println(sortPermutation2([]int{9,8,7,6,5,4,3,2,1,0})) // 0
 }
