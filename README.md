@@ -2147,6 +2147,7 @@
 [4084. Last Visited Cell in a Directional Grid](./leetcode/4084-LastVisitedCellinaDirectionalGrid.go)   
 [4086. Minimum Interval Selection to Cover Target Intervals](./leetcode/4086-MinimumIntervalSelectionToCoverTargetIntervals.go)   
 [4087. Maximum Subarray Sum of Fixed Length After at Most K Swaps](./leetcode/4087-MaximumSubarraySumOfFixedLengthAfterAtMostKSwaps.go)   
+[4088. Difference Between Peaks and Valleys](./leetcode/4088-DifferenceBetweenPeaksAndValleys.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
