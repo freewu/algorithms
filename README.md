@@ -2149,6 +2149,7 @@
 [4087. Maximum Subarray Sum of Fixed Length After at Most K Swaps](./leetcode/4087-MaximumSubarraySumOfFixedLengthAfterAtMostKSwaps.go)   
 [4088. Difference Between Peaks and Valleys](./leetcode/4088-DifferenceBetweenPeaksAndValleys.go)   
 [4089. Count Subarrays With Loose Bounds](./leetcode/4089-CountSubarraysWithLooseBounds.go)   
+[4093. Maximize Sum After At Most K Digit Rearrangements](./leetcode/4093-MaximizeSumAfterAtMostKDigitRearrangements.go)   
 [4094. Count Frequency Staircase Subarrays I](./leetcode/4094-CountFrequencyStaircaseSubarraysI.go)   
 [4095. Count Frequency Staircase Subarrays II](./leetcode/4095-CountFrequencyStaircaseSubarraysII.go)   
 
