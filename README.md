@@ -2835,6 +2835,7 @@
 [4043. Count Rotations With Exactly K Equal Adjacent Pairs](./leetcode/4043-CountRotationsWithExactlyKEquEqualAdjacentPairs.go)   
 [4070. Minimum Rotations to Dial a Number I](./leetcode/4070-MinimumRotationsToDialANumberI.go)   
 [4071. Minimum Rotations to Dial a Number II](./leetcode/4071-MinimumRotationsToDialANumberII.go)   
+[4090. Count Magical Substring Pairs I](./leetcode/4090-CountMagicalSubstringPairsI.go)   
 
 # Dynamic Programming
 [276. Paint Fence](./leetcode/276-PaintFence.go)   
