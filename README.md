@@ -2150,6 +2150,7 @@
 [4088. Difference Between Peaks and Valleys](./leetcode/4088-DifferenceBetweenPeaksAndValleys.go)   
 [4089. Count Subarrays With Loose Bounds](./leetcode/4089-CountSubarraysWithLooseBounds.go)   
 [4094. Count Frequency Staircase Subarrays I](./leetcode/4094-CountFrequencyStaircaseSubarraysI.go)   
+[4095. Count Frequency Staircase Subarrays II](./leetcode/4095-CountFrequencyStaircaseSubarraysII.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
