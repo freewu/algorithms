@@ -50,6 +50,67 @@ func maximizeSum(nums []int, k int) int64 {
     return res
 }
 
+func maximizeSum1(nums []int, k int) int64 {
+    res, h := int64(0), make([]int64, 0, k)
+    for _, v := range nums {
+        iv := int64(v)
+        res += iv
+        x := v
+        count := [10]int{}
+        for x > 0 {
+            count[x%10]++
+            x /= 10
+        }
+        mx := int64(0)
+        for d := 9; d >= 0; d-- {
+            c := count[d]
+            for ; c > 0; c-- {
+                mx = mx * 10 + int64(d)
+            }
+        }
+        gain := mx - iv
+        if gain <= 0 {
+            continue
+        }
+        if len(h) < k {
+            h = append(h, gain)
+            i := len(h) - 1
+            for i > 0 {
+                p := (i - 1) / 2
+                if h[p] <= h[i] {
+                    break
+                }
+                h[p], h[i] = h[i], h[p]
+                i = p
+            }
+        } else if gain > h[0] {
+            h[0] = gain
+            i := 0
+            n := len(h)
+            for {
+                l := i*2 + 1
+                if l >= n {
+                    break
+                }
+                r := l + 1
+                m := l
+                if r < n && h[r] < h[l] {
+                    m = r
+                }
+                if h[i] <= h[m] {
+                    break
+                }
+                h[i], h[m] = h[m], h[i]
+                i = m
+            }
+        }
+    }
+    for _, g := range h {
+        res += g
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: nums = [123,45], k = 1
@@ -69,4 +130,9 @@ func main() {
 
     fmt.Println(maximizeSum([]int{1,2,3,4,5,6,7,8,9}, 2)) // 45
     fmt.Println(maximizeSum([]int{9,8,7,6,5,4,3,2,1}, 2)) // 45
+
+    fmt.Println(maximizeSum1([]int{123,45}, 1)) // 366
+    fmt.Println(maximizeSum1([]int{102,90,14}, 2)) // 341
+    fmt.Println(maximizeSum1([]int{1,2,3,4,5,6,7,8,9}, 2)) // 45
+    fmt.Println(maximizeSum1([]int{9,8,7,6,5,4,3,2,1}, 2)) // 45
 }
