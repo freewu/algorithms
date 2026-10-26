@@ -36,29 +36,27 @@ import "fmt"
 import "math"
 
 func pathSum(nums []int) int {
-    l  := len(nums)
-    nowLevel := int(nums[l-1] / 100)
-    nowLevelWidth := int(math.Pow(2, float64(nowLevel-1)))
+    res, now, n  := 0, 0, len(nums)
+    nowLevel := int(nums[n-1] / 100)
+    nowLevelWidth := int(math.Pow(2, float64(nowLevel - 1)))
     nowNodeNums := make([]int, nowLevelWidth)
-    now, sum := 0, 0
-    for i := l - 1; i >= 0; i-- {
+    for i := n - 1; i >= 0; i-- {   
         now = nums[i]
         level, pos := int(now / 100), int(now/10) % 10
         if level != nowLevel {
             nowLevelWidth = nowLevelWidth / 2
             tmp := make([]int, nowLevelWidth)
             for j := 0; j < nowLevelWidth; j++ {
-                tmp[j] = nowNodeNums[j*2] + nowNodeNums[j*2+1]
+                tmp[j] = nowNodeNums[j * 2] + nowNodeNums[j * 2 + 1]
             }
-            nowNodeNums = tmp
-            nowLevel = level
+            nowNodeNums, nowLevel = tmp, level
         }
-        if nowNodeNums[pos-1] == 0 {
-            nowNodeNums[pos-1] = 1
+        if nowNodeNums[pos - 1] == 0 {
+            nowNodeNums[pos - 1] = 1
         }
-        sum += ((now % 10) * nowNodeNums[pos-1])
+        res += ((now % 10) * nowNodeNums[pos - 1])
     }
-    return sum
+    return res
 }
 
 func main() {
