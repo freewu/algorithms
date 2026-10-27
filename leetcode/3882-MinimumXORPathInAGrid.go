@@ -111,6 +111,42 @@ func minCost1(grid [][]int) int {
     return res
 }
 
+func minCost2(grid [][]int) int {
+    res, m, n, orAll := 1 << 61, len(grid), len(grid[0]), 0
+    for _, row := range grid {
+        for _, x := range row {
+            orAll |= x
+        }
+    }
+    memo := make([][][]bool, m)
+    for i := range memo {
+        memo[i] = make([][]bool, n)
+        for j := range memo[i] {
+            memo[i][j] = make([]bool, orAll+1)
+        }
+    }
+    var dfs func(int, int, int)
+    dfs = func(i, j, curr int) {
+        if res == 0 || memo[i][j][curr] {
+            return
+        }
+        memo[i][j][curr] = true
+        curr ^= grid[i][j]
+        if i == m-1 && j == n-1 {
+            res = min(res, curr)
+            return
+        }
+        if i+1 < m {
+            dfs(i+1, j, curr)
+        }
+        if j+1 < n {
+            dfs(i, j+1, curr)
+        }
+    }
+    dfs(0, 0, 0)
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: grid = [[1,2],[3,4]]
@@ -151,4 +187,12 @@ func main() {
     fmt.Println(minCost1([][]int{{1,2,3,4,5,6,7,8,9},{9,8,7,6,5,4,3,2,1}})) // 0
     fmt.Println(minCost1([][]int{{9,8,7,6,5,4,3,2,1},{1,2,3,4,5,6,7,8,9}})) // 0
     fmt.Println(minCost1([][]int{{9,8,7,6,5,4,3,2,1},{9,8,7,6,5,4,3,2,1}})) // 0
+
+    fmt.Println(minCost2([][]int{{1,2},{3,4}})) // 6
+    fmt.Println(minCost2([][]int{{6,7},{5,8}})) // 9
+    fmt.Println(minCost2([][]int{{2,7,5}})) // 0
+    fmt.Println(minCost2([][]int{{1,2,3,4,5,6,7,8,9},{1,2,3,4,5,6,7,8,9}})) // 0
+    fmt.Println(minCost2([][]int{{1,2,3,4,5,6,7,8,9},{9,8,7,6,5,4,3,2,1}})) // 0
+    fmt.Println(minCost2([][]int{{9,8,7,6,5,4,3,2,1},{1,2,3,4,5,6,7,8,9}})) // 0
+    fmt.Println(minCost2([][]int{{9,8,7,6,5,4,3,2,1},{9,8,7,6,5,4,3,2,1}})) // 0
 }
