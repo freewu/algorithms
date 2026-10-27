@@ -2152,6 +2152,7 @@
 [4093. Maximize Sum After At Most K Digit Rearrangements](./leetcode/4093-MaximizeSumAfterAtMostKDigitRearrangements.go)   
 [4094. Count Frequency Staircase Subarrays I](./leetcode/4094-CountFrequencyStaircaseSubarraysI.go)   
 [4095. Count Frequency Staircase Subarrays II](./leetcode/4095-CountFrequencyStaircaseSubarraysII.go)   
+[4096. Simulate Bomb Explosions and Falling Boxes](./leetcode/4096-SimulateBombExplosionsAndFallingBoxes.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
