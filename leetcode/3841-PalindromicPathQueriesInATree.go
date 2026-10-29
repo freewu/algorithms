@@ -158,6 +158,125 @@ func palindromePath(n int, edges [][]int, s string, queries []string) []bool {
     return res
 }
 
+var adj, deg, sizes, heavy, chain, queue [50_000]uint16
+var bit, masks [50_001]uint32
+
+func palindromePath1(n int, edges [][]int, s string, queries []string) []bool {
+    sentinel := uint16(n)
+    clear(adj[:n])
+    clear(deg[:n])
+    deg[0] = 2
+    for _, edge := range edges {
+        u, v := uint16(edge[0]), uint16(edge[1])
+        adj[u] ^= v
+        adj[v] ^= u
+        deg[u]++
+        deg[v]++
+    }
+    q := 0
+    for u := range uint16(n) {
+        sizes[u] = 1
+        heavy[u] = sentinel
+        if deg[u] == 1 {
+            queue[q] = u
+            q++
+        }
+    }
+    for i := 0; i < q; i++ {
+        u := queue[i]
+        v := adj[u]
+        size := sizes[u]
+        sizes[v] += size
+        if child := heavy[v]; child == sentinel || size > sizes[child] {
+            heavy[v] = u
+        }
+        adj[v] ^= u
+        deg[v]--
+        if deg[v] == 1 {
+            queue[q] = v
+            q++
+        }
+    }
+    queue[q] = 0
+    q++
+    idxs := deg[:n]
+    clear(idxs)
+    var pos uint16
+    for i := q - 1; i >= 0; i-- {
+        u := queue[i]
+        if idxs[u] != 0 {
+            continue
+        }
+        i := u
+        for u != sentinel {
+            pos++
+            chain[u] = i
+            idxs[u] = pos
+            masks[pos] = 1 << (s[u] - 'a')
+            u = heavy[u]
+        }
+    }
+    copy(bit[:n+1], masks[:n+1])
+    for i := 1; i <= n; i++ {
+        if j := i + (i & -i); j <= n {
+            bit[j] ^= bit[i]
+        }
+    }
+    res := make([]bool, 0, len(queries))
+    for _, query := range queries {
+        update := query[0] == 'u'
+        ptr := 6
+        if update {
+            ptr = 7
+        }
+        var u uint16
+        for ; query[ptr] != ' '; ptr++ {
+            u = u*10 + uint16(query[ptr]-'0')
+        }
+        ptr++
+        if update {
+            mask := uint32(1) << (query[ptr] - 'a')
+            pos := int(idxs[u])
+            delta := mask ^ masks[pos]
+            if delta != 0 {
+                masks[pos] = mask
+                for i := pos; i <= n; i += i & -i {
+                    bit[i] ^= delta
+                }
+            }
+            continue
+        }
+        var v uint16
+        for ; ptr < len(query); ptr++ {
+            v = v*10 + uint16(query[ptr]-'0')
+        }
+        var path uint32
+        for chain[u] != chain[v] {
+            if idxs[chain[u]] < idxs[chain[v]] {
+                u, v = v, u
+            }
+            for right := idxs[u]; right > 0; right &= right - 1 {
+                path ^= bit[right]
+            }
+            for left := idxs[chain[u]] - 1; left > 0; left &= left - 1 {
+                path ^= bit[left]
+            }
+            u = adj[chain[u]]
+        }
+        if idxs[u] > idxs[v] {
+            u, v = v, u
+        }
+        for right := idxs[v]; right > 0; right &= right - 1 {
+            path ^= bit[right]
+        }
+        for left := idxs[u] - 1; left > 0; left &= left - 1 {
+            path ^= bit[left]
+        }
+        res = append(res, path & (path - 1) == 0)
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: n = 3, edges = [[0,1],[1,2]], s = "aac", queries = ["query 0 2","update 1 b","query 0 2"]
@@ -179,4 +298,8 @@ func main() {
     // "query 1 3": Path 1 → 0 → 3 gives "bba", which can be rearranged to form "bab", a palindrome. Thus, answer[2] = true.
     // Thus, answer = [false, false, true]. 
     fmt.Println(palindromePath(4, [][]int{{0,1},{0,2},{0,3}}, "abca", []string{"query 1 2","update 0 b","query 2 3","update 3 a","query 1 3"})) // [false, false, true]
+
+
+    fmt.Println(palindromePath1(3, [][]int{{0,1},{1,2}}, "aac", []string{"query 0 2","update 1 b","query 0 2"})) // [true, false]
+    fmt.Println(palindromePath1(4, [][]int{{0,1},{0,2},{0,3}}, "abca", []string{"query 1 2","update 0 b","query 2 3","update 3 a","query 1 3"})) // [false, false, true]
 }
