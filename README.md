@@ -2154,7 +2154,7 @@
 [4095. Count Frequency Staircase Subarrays II](./leetcode/4095-CountFrequencyStaircaseSubarraysII.go)   
 [4096. Simulate Bomb Explosions and Falling Boxes](./leetcode/4096-SimulateBombExplosionsAndFallingBoxes.go)   
 [4097. Minimum Value of Merged Integers](./leetcode/4097-MinimumValueOfMergedIntegers.go)   
-4098. 
+[4099. Minimum Operations to Sort With Locked Indices](./leetcode/4099-MinimumOperationsToSortWithLockedIndices.go)
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
