@@ -2154,6 +2154,7 @@
 [4095. Count Frequency Staircase Subarrays II](./leetcode/4095-CountFrequencyStaircaseSubarraysII.go)   
 [4096. Simulate Bomb Explosions and Falling Boxes](./leetcode/4096-SimulateBombExplosionsAndFallingBoxes.go)   
 [4097. Minimum Value of Merged Integers](./leetcode/4097-MinimumValueOfMergedIntegers.go)   
+4098. 
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
@@ -3322,7 +3323,7 @@
 [4079. Prime Subset Selection I](./leetcode/4079-PrimeSubsetSelectionI.go)   
 [4081. Prime Subset Selection II](./leetcode/4081-PrimeSubsetSelectionII.go)   
 [4092. Binary Digit Score](./leetcode/4092-BinaryDigitScore.go)   
-
+[4098. Minimize the Maximum Value of GCD-Connected Array](4098-MinimizeTheMaximumValueOfGCD-ConnectedArray.go)   
 # Stack
 [225. Implement Stack using Queues](./leetcode/225-ImplementStackUsingQueues.go)   
 [232. Implement Queue using Stacks](./leetcode/232-ImplementQueueUsingStacks.go)   
