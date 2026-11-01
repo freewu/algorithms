@@ -37,7 +37,10 @@ package main
 //     - n is even
 //     - 1 <= nums[i] <= 1000
 
-import "fmt"
+import (
+	"fmt"
+	"strconv"
+)
 
 func minMergedInteger(nums []int) int {
 	res := 1 << 61
@@ -49,6 +52,15 @@ func minMergedInteger(nums []int) int {
 		res = min(res, x+y)
 	}
 	return res
+}
+
+func minMergedInteger1(nums []int) int {
+	res, n := int64(1<<61), len(nums)
+	for i := 0; i < n; i += 2 {
+		v, _ := strconv.ParseInt(strconv.Itoa(nums[i])+strconv.Itoa(nums[i+1]), 10, 64)
+		res = min(res, v)
+	}
+	return int(res)
 }
 
 func main() {
@@ -78,4 +90,10 @@ func main() {
 
 	fmt.Println(minMergedInteger([]int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10})) // 12
 	fmt.Println(minMergedInteger([]int{10, 9, 8, 7, 6, 5, 4, 3, 2, 1})) // 21
+
+	fmt.Println(minMergedInteger1([]int{23, 55, 42, 21}))                // 2355
+	fmt.Println(minMergedInteger1([]int{34, 7, 11, 11}))                 // 347
+	fmt.Println(minMergedInteger1([]int{9, 20}))                         // 920
+	fmt.Println(minMergedInteger1([]int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10})) // 12
+	fmt.Println(minMergedInteger1([]int{10, 9, 8, 7, 6, 5, 4, 3, 2, 1})) // 21
 }
