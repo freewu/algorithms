@@ -2153,6 +2153,7 @@
 [4094. Count Frequency Staircase Subarrays I](./leetcode/4094-CountFrequencyStaircaseSubarraysI.go)   
 [4095. Count Frequency Staircase Subarrays II](./leetcode/4095-CountFrequencyStaircaseSubarraysII.go)   
 [4096. Simulate Bomb Explosions and Falling Boxes](./leetcode/4096-SimulateBombExplosionsAndFallingBoxes.go)   
+[4097. Minimum Value of Merged Integers](./leetcode/4097-MinimumValueOfMergedIntegers.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
@@ -4902,4 +4903,4 @@
 [面试题 17.23. Max Black Square LCCI](./leetcode/LCCI1723-MaxBlackSquare.go)   
 [面试题 17.24. Max Submatrix LCCI](./leetcode/LCCI1724-MaxSubmatrix.go)   
 [面试题 17.25. Word Rectangle LCCI](./leetcode/LCCI1725-WordRectangle.go)   
-[面试题 17.26. Sparse Similarity LCCI](./leetcode/LCCI1726-SparseSimilarity.go)   
+[面试题 17.26. Sparse Similarity LCCI](./leetcode/LCCI1726-SparseSimilarity.go)
