@@ -73,6 +73,31 @@ func findTheDistanceValue1(arr1 []int, arr2 []int, d int) int {
     return len(arr1) - res
 }
 
+const MX = 1000
+
+var freq [2 * (MX + 1)]int32
+
+func findTheDistanceValue2(arr1 []int, arr2 []int, d int) int {
+    res, mx := 0, -MX
+    for _, v := range arr2 {
+        x := v + MX + 1
+        mx = max(mx, x)
+        freq[x]++
+    }
+    for i := 1; i <= mx; i++ {
+        freq[i] += freq[i-1]
+    }
+    for _, v := range arr1 {
+        low := min(max(v-d+MX, 0), mx)
+        high := min(v+d+MX+1, mx)
+        if freq[high]-freq[low] == 0 {
+            res++
+        }
+    }
+    clear(freq[:mx + 1])
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: arr1 = [4,5,8], arr2 = [10,9,1,8], d = 2
@@ -103,7 +128,24 @@ func main() {
     // Output: 1
     fmt.Println(findTheDistanceValue([]int{2,1,100,3}, []int{-5,-2,10,-3,7}, 6)) // 1
 
+    fmt.Println(findTheDistanceValue([]int{1,2,3,4,5,6,7,8,9}, []int{1,2,3,4,5,6,7,8,9}, 2)) // 0
+    fmt.Println(findTheDistanceValue([]int{1,2,3,4,5,6,7,8,9}, []int{9,8,7,6,5,4,3,2,1}, 2)) // 0
+    fmt.Println(findTheDistanceValue([]int{9,8,7,6,5,4,3,2,1}, []int{1,2,3,4,5,6,7,8,9}, 2)) // 0
+    fmt.Println(findTheDistanceValue([]int{9,8,7,6,5,4,3,2,1}, []int{9,8,7,6,5,4,3,2,1}, 2)) // 0
+
     fmt.Println(findTheDistanceValue1([]int{4,5,8}, []int{10,9,1,8}, 2)) // 2
     fmt.Println(findTheDistanceValue1([]int{1,4,2,3}, []int{-4,-3,6,10,20,30}, 3)) // 2
     fmt.Println(findTheDistanceValue1([]int{2,1,100,3}, []int{-5,-2,10,-3,7}, 6)) // 1
+    fmt.Println(findTheDistanceValue1([]int{1,2,3,4,5,6,7,8,9}, []int{1,2,3,4,5,6,7,8,9}, 2)) // 0
+    fmt.Println(findTheDistanceValue1([]int{1,2,3,4,5,6,7,8,9}, []int{9,8,7,6,5,4,3,2,1}, 2)) // 0
+    fmt.Println(findTheDistanceValue1([]int{9,8,7,6,5,4,3,2,1}, []int{1,2,3,4,5,6,7,8,9}, 2)) // 0
+    fmt.Println(findTheDistanceValue1([]int{9,8,7,6,5,4,3,2,1}, []int{9,8,7,6,5,4,3,2,1}, 2)) // 0
+
+    fmt.Println(findTheDistanceValue2([]int{4,5,8}, []int{10,9,1,8}, 2)) // 2
+    fmt.Println(findTheDistanceValue2([]int{1,4,2,3}, []int{-4,-3,6,10,20,30}, 3)) // 2
+    fmt.Println(findTheDistanceValue2([]int{2,1,100,3}, []int{-5,-2,10,-3,7}, 6)) // 1
+    fmt.Println(findTheDistanceValue2([]int{1,2,3,4,5,6,7,8,9}, []int{1,2,3,4,5,6,7,8,9}, 2)) // 0
+    fmt.Println(findTheDistanceValue2([]int{1,2,3,4,5,6,7,8,9}, []int{9,8,7,6,5,4,3,2,1}, 2)) // 0
+    fmt.Println(findTheDistanceValue2([]int{9,8,7,6,5,4,3,2,1}, []int{1,2,3,4,5,6,7,8,9}, 2)) // 0
+    fmt.Println(findTheDistanceValue2([]int{9,8,7,6,5,4,3,2,1}, []int{9,8,7,6,5,4,3,2,1}, 2)) // 0
 }
