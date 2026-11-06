@@ -103,6 +103,40 @@ func countServers1(n int, logs [][]int, x int, queries []int) []int {
     return res
 }
 
+func countServers2(n int, logs [][]int, x int, queries []int) []int {
+    type Pair struct{ q, i int }
+    arr := make([]Pair, len(queries))
+    for i, q := range queries {
+        arr[i] = Pair{ q, i }
+    }
+    sort.Slice(arr, func(i, j int) bool { 
+        return arr[i].q < arr[j].q 
+    })
+    sort.Slice(logs, func(i, j int) bool { // 按照 time 排序
+        return logs[i][1] < logs[j][1] 
+    })
+    res, count := make([]int, len(queries)), make([]int, n+1)
+    outOfRange, left, right := n, 0, 0
+    for _, p := range arr {
+        for ; right < len(logs) && logs[right][1] <= p.q; right++ { // 进入窗口
+            i := logs[right][0]
+            if count[i] == 0 {
+                outOfRange--
+            }
+            count[i]++
+        }
+        for ; left < len(logs) && logs[left][1] < p.q-x; left++ { // 离开窗口
+            i := logs[left][0]
+            count[i]--
+            if count[i] == 0 {
+                outOfRange++
+            }
+        }
+        res[p.i] = outOfRange
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: n = 3, logs = [[1,3],[2,6],[1,5]], x = 5, queries = [10,11]
@@ -121,4 +155,7 @@ func main() {
 
     fmt.Println(countServers1(3, [][]int{{1,3},{2,6},{1,5}}, 5, []int{10,11})) // [1,2]
     fmt.Println(countServers1(3, [][]int{{2,4},{2,1},{1,2},{3,1}}, 2, []int{3,4})) // [0,1]
+
+    fmt.Println(countServers2(3, [][]int{{1,3},{2,6},{1,5}}, 5, []int{10,11})) // [1,2]
+    fmt.Println(countServers2(3, [][]int{{2,4},{2,1},{1,2},{3,1}}, 2, []int{3,4})) // [0,1]
 }
