@@ -51,6 +51,7 @@ package main
 
 import "fmt"
 import "container/heap"
+import "math/bits"
 
 type MinHeap [][2]int
 func(h MinHeap) Len() int { return len(h) }
@@ -97,6 +98,49 @@ func assignTasks(servers []int, tasks []int) []int {
     return res
 }
 
+var seg [1 << 19]uint32
+var freq, index [200_001]uint32
+
+func assignTasks1(servers []int, tasks []int) []int {
+    n := len(servers)
+    size, mx, sum := 1 << bits.Len(uint(n-1)), 0, uint32(0)
+    for _, w := range servers {
+        mx = max(mx, w)
+        freq[w]++
+    }
+    for w := range mx + 1 {     
+        freq[w], sum = sum, sum + freq[w]
+    }
+    for i, w := range servers {
+        index[freq[w]] = uint32(i)
+        freq[w]++
+    }
+    for layer, w := 1, size; w >= 1; layer, w = layer << 1, w >> 1 {
+        curr := (n + w - 1) / w
+        clear(seg[layer : layer+curr])
+        for i := layer + curr; i < 2*layer; i++ {
+            seg[i] = 1 << 30
+        }
+    }
+    for j, d := range tasks {
+        ts := max(uint32(j), seg[1])
+        i := 1
+        for i < size {
+            i <<= 1
+            if seg[i] > ts {
+                i++
+            }
+        }
+        tasks[j] = int(index[i-size])
+        seg[i] = ts + uint32(d)
+        for i >>= 1; i >= 1; i >>= 1 {
+            seg[i] = min(seg[2*i], seg[2*i+1])
+        }
+    }
+    clear(freq[:mx + 1])
+    return tasks
+}
+
 func main() {
     // Example 1:
     // Input: servers = [3,3,2], tasks = [1,2,3,2,1,2]
@@ -121,4 +165,17 @@ func main() {
     // - At second 5, task 5 is added and processed using server 3 until second 7.
     // - At second 6, task 6 is added and processed using server 2 until second 7.
     fmt.Println(assignTasks([]int{5,1,4,3,2}, []int{2,1,2,4,5,2,1})) // [1,4,1,4,1,3,2]
+
+    fmt.Println(assignTasks([]int{1,2,3,4,5,6,7,8,9}, []int{1,2,3,4,5,6,7,8,9})) // [0 0 1 0 2 1 3 0 4]
+    fmt.Println(assignTasks([]int{1,2,3,4,5,6,7,8,9}, []int{9,8,7,6,5,4,3,2,1})) // [0 1 2 3 4 5 6 7 8]
+    fmt.Println(assignTasks([]int{9,8,7,6,5,4,3,2,1}, []int{1,2,3,4,5,6,7,8,9})) // [8 8 7 8 6 7 5 8 4]
+    fmt.Println(assignTasks([]int{1,2,3,4,5,6,7,8,9}, []int{9,8,7,6,5,4,3,2,1})) // [0 1 2 3 
+
+    fmt.Println("-- assignTasks1: ---------------")
+    fmt.Println(assignTasks1([]int{3,3,2}, []int{1,2,3,2,1,2})) // [2,2,0,2,1,2]
+    fmt.Println(assignTasks1([]int{5,1,4,3,2}, []int{2,1,2,4,5,2,1})) // [1,4,1,4,1,3,2]
+    fmt.Println(assignTasks1([]int{1,2,3,4,5,6,7,8,9}, []int{1,2,3,4,5,6,7,8,9})) // [0 0 1 0 2 1 3 0 4]
+    fmt.Println(assignTasks1([]int{1,2,3,4,5,6,7,8,9}, []int{9,8,7,6,5,4,3,2,1})) // [0 1 2 3 4 5 6 7 8]
+    fmt.Println(assignTasks1([]int{9,8,7,6,5,4,3,2,1}, []int{1,2,3,4,5,6,7,8,9})) // [8 8 7 8 6 7 5 8 4]
+    fmt.Println(assignTasks1([]int{1,2,3,4,5,6,7,8,9}, []int{9,8,7,6,5,4,3,2,1})) // [0 1 2 3 4 5 6 7 8]
 }
