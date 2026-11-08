@@ -30,23 +30,23 @@ import "fmt"
 func findMaxConsecutiveOnes(nums []int) int {
     res, left, right := 0, 0, 0
     pos := []int{} // 记录0的位置
-    cnt0, cnt1 := 0, 0 // 0的数量，1的数量
+    count0, count1 := 0, 0 // 0的数量，1的数量
     max := func (x, y int) int { if x > y { return x; }; return y; }
     for right < len(nums) {
         if nums[right] == 0 {
-            cnt0++
+            count0++
             pos = append(pos, right)
         } else {
-            cnt1++
+            count1++
         }
         right++
-        if cnt0 > 1 { // 如果0的数量大于1，则窗口缩小，直到0的数量<1
-            cnt1 =  cnt1 - (pos[0]-left) //1的数量减少从left到第一个0出现的位置个
-            cnt0--
+        if count0 > 1 { // 如果0的数量大于1，则窗口缩小，直到0的数量<1
+            count1 =  count1 - (pos[0]-left) //1的数量减少从left到第一个0出现的位置个
+            count0--
             left = pos[0] + 1  // 将left直接跳跃到第一个0出现的位置+1
             pos = pos[1:]
         }
-        res = max(res, cnt0 + cnt1)
+        res = max(res, count0 + count1)
     }
     return res
 }
@@ -93,6 +93,19 @@ func main() {
     // The max number of consecutive ones is 4.
     fmt.Println(findMaxConsecutiveOnes([]int{1,0,1,1,0,1})) // 4
 
+    fmt.Println(findMaxConsecutiveOnes([]int{1,1,1,1,1,1,1,1,1,1})) // 10
+    fmt.Println(findMaxConsecutiveOnes([]int{0,0,0,0,0,0,0,0,0,0})) // 1
+    fmt.Println(findMaxConsecutiveOnes([]int{1,1,1,1,1,0,0,0,0,0})) // 6
+    fmt.Println(findMaxConsecutiveOnes([]int{0,0,0,0,0,1,1,1,1,1})) // 6
+    fmt.Println(findMaxConsecutiveOnes([]int{0,1,0,1,0,1,0,1,0,1})) // 3
+    fmt.Println(findMaxConsecutiveOnes([]int{1,0,1,0,1,0,1,0,1,0})) // 3
+
     fmt.Println(findMaxConsecutiveOnes1([]int{1,0,1,1,0})) // 4
     fmt.Println(findMaxConsecutiveOnes1([]int{1,0,1,1,0,1})) // 4
+    fmt.Println(findMaxConsecutiveOnes1([]int{1,1,1,1,1,1,1,1,1,1})) // 10
+    fmt.Println(findMaxConsecutiveOnes1([]int{0,0,0,0,0,0,0,0,0,0})) // 1
+    fmt.Println(findMaxConsecutiveOnes1([]int{1,1,1,1,1,0,0,0,0,0})) // 6
+    fmt.Println(findMaxConsecutiveOnes1([]int{0,0,0,0,0,1,1,1,1,1})) // 6
+    fmt.Println(findMaxConsecutiveOnes1([]int{0,1,0,1,0,1,0,1,0,1})) // 3
+    fmt.Println(findMaxConsecutiveOnes1([]int{1,0,1,0,1,0,1,0,1,0})) // 3
 }
