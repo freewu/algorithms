@@ -2846,6 +2846,7 @@
 [4071. Minimum Rotations to Dial a Number II](./leetcode/4071-MinimumRotationsToDialANumberII.go)   
 [4090. Count Magical Substring Pairs I](./leetcode/4090-CountMagicalSubstringPairsI.go)   
 [4091. Count Magical Substring Pairs II](./leetcode/4091-CountMagicalSubstringPairsII.go)   
+[4102. Count Valid Substrings I](./leetcode/4102-CountValidSubstringsI.go)   
 
 # Dynamic Programming
 [276. Paint Fence](./leetcode/276-PaintFence.go)   
