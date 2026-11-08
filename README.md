@@ -2850,6 +2850,7 @@
 [4091. Count Magical Substring Pairs II](./leetcode/4091-CountMagicalSubstringPairsII.go)   
 [4102. Count Valid Substrings I](./leetcode/4102-CountValidSubstringsI.go)   
 [4104. Count Valid Substrings II](./leetcode/4104-CountValidSubstringsII.go)   
+[4105. Repeated String Match II](./leetcode/4105-RepeatedStringMatchII.go)   
 
 # Dynamic Programming
 [276. Paint Fence](./leetcode/276-PaintFence.go)   
