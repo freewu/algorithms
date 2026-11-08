@@ -120,4 +120,15 @@ func main() {
     fmt.Println(countValidSubstrings("aaabbbccc")) // 45
     fmt.Println(countValidSubstrings("cbacbacba")) // 45
     fmt.Println(countValidSubstrings("cccbbbaaa")) // 45
+
+    fmt.Println(countValidSubstrings1("abac")) // 10
+    fmt.Println(countValidSubstrings1("abc")) // 5
+    fmt.Println(countValidSubstrings1("ac")) // 3
+    fmt.Println(countValidSubstrings1("aaaaaaaaa")) // 25
+    fmt.Println(countValidSubstrings1("bbbbbbbbb")) // 45
+    fmt.Println(countValidSubstrings1("ccccccccc")) // 45
+    fmt.Println(countValidSubstrings1("abcabcabc")) // 23
+    fmt.Println(countValidSubstrings1("aaabbbccc")) // 45
+    fmt.Println(countValidSubstrings1("cbacbacba")) // 45
+    fmt.Println(countValidSubstrings1("cccbbbaaa")) // 45
 }
