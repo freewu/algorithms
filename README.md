@@ -2156,7 +2156,7 @@
 [4097. Minimum Value of Merged Integers](./leetcode/4097-MinimumValueOfMergedIntegers.go)   
 [4099. Minimum Operations to Sort With Locked Indices](./leetcode/4099-MinimumOperationsToSortWithLockedIndices.go)   
 [4101. Find All Numbers Disappeared in an Array III](./leetcode/4101-FindAllNumbersDisappearedinanArrayIII.go)   
-
+[4103. Remove Elements by Type and Color](./leetcode/4103-RemoveElementsByTypeAndColor.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
