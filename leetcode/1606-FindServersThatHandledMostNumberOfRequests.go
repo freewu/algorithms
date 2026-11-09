@@ -143,11 +143,11 @@ func busiestServers1(k int, arrival []int, load []int) []int {
             heap.Push(&idle, ServerPair{cur.id, nxId})
         }
         if idle.Len() > 0 {
-            cur := heap.Pop(&idle).(ServerPair)
-            count[cur.id]++
-            mx = max(mx, count[cur.id])
-            cur.wt = end
-            heap.Push(&busy, cur)
+            curr := heap.Pop(&idle).(ServerPair)
+            count[curr.id]++
+            mx = max(mx, count[curr.id])
+            curr.wt = end
+            heap.Push(&busy, curr)
         }
     }
     for i, v := range count {
@@ -184,7 +184,16 @@ func main() {
     // Explanation: Each server handles a single request, so they are all considered the busiest.
     fmt.Println(busiestServers(3, []int{1,2,3}, []int{10,12,11})) // [0,1,2]
 
+    fmt.Println(busiestServers(3, []int{1,2,3,4,5,6,7,8,9}, []int{1,2,3,4,5,6,7,8,9})) // [0]
+    fmt.Println(busiestServers(3, []int{1,2,3,4,5,6,7,8,9}, []int{9,8,7,6,5,4,3,2,1})) // [0 1 2]
+    fmt.Println(busiestServers(3, []int{9,8,7,6,5,4,3,2,1}, []int{1,2,3,4,5,6,7,8,9})) // [0 1 2]
+    fmt.Println(busiestServers(3, []int{9,8,7,6,5,4,3,2,1}, []int{9,8,7,6,5,4,3,2,1})) // [0 1 2]
+
     fmt.Println(busiestServers1(3, []int{1,2,3,4,5}, []int{5,2,3,3,3})) // [1] 
     fmt.Println(busiestServers1(3, []int{1,2,3,4}, []int{1,2,1,2})) // [0]
     fmt.Println(busiestServers1(3, []int{1,2,3}, []int{10,12,11})) // [0,1,2]
+    fmt.Println(busiestServers1(3, []int{1,2,3,4,5,6,7,8,9}, []int{1,2,3,4,5,6,7,8,9})) // [0]
+    fmt.Println(busiestServers1(3, []int{1,2,3,4,5,6,7,8,9}, []int{9,8,7,6,5,4,3,2,1})) // [0 1 2]
+    fmt.Println(busiestServers1(3, []int{9,8,7,6,5,4,3,2,1}, []int{1,2,3,4,5,6,7,8,9})) // [0 1 2]
+    fmt.Println(busiestServers1(3, []int{9,8,7,6,5,4,3,2,1}, []int{9,8,7,6,5,4,3,2,1})) // [0 1 2]
 }
