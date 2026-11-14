@@ -104,6 +104,35 @@ func countNonDecreasingSubarrays1(nums []int, k int) int64 {
     return res
 }
 
+var deque [100_000]uint32
+
+func countNonDecreasingSubarrays2(nums []int, k int) int64 {
+    head, tail, res, n := 0, 0, 0, uint32(len(nums)-1)
+    for i, j := uint32(0), uint32(0); i <= n; i++ {
+        v := nums[n-i]
+        for head < tail && nums[n-deque[tail-1]] < v {
+            r := deque[tail-1]
+            tail--
+            l := j - 1
+            if head < tail {
+                l = deque[tail-1]
+            }
+            k -= int(r-l) * (v - nums[n-r])
+        }
+        deque[tail] = i
+        tail++
+        for k < 0 {
+            k += nums[n-deque[head]] - nums[n-j]
+            if deque[head] == j {
+                head++
+            }
+            j++
+        }
+        res += int(i - j + 1)
+    }
+    return int64(res)
+}
+
 func main() {
     // Example 1:
     // Input: nums = [6,3,1,2,4,4], k = 7
@@ -125,5 +154,10 @@ func main() {
     fmt.Println(countNonDecreasingSubarrays1([]int{6,3,1,3,6}, 4)) // 12
     fmt.Println(countNonDecreasingSubarrays1([]int{1,2,3,4,5,6,7,8,9}, 4)) // 45
     fmt.Println(countNonDecreasingSubarrays1([]int{9,8,7,6,5,4,3,2,1}, 4)) // 24
+
+    fmt.Println(countNonDecreasingSubarrays2([]int{6,3,1,2,4,4}, 7)) // 17
+    fmt.Println(countNonDecreasingSubarrays2([]int{6,3,1,3,6}, 4)) // 12
+    fmt.Println(countNonDecreasingSubarrays2([]int{1,2,3,4,5,6,7,8,9}, 4)) // 45
+    fmt.Println(countNonDecreasingSubarrays2([]int{9,8,7,6,5,4,3,2,1}, 4)) // 24
 }
 
