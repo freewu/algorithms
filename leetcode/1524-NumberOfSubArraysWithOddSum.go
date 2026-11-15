@@ -30,12 +30,12 @@ package main
 import "fmt"
 
 func numOfSubarrays(arr []int) int {
-    index, tmp := 0, []int{ 1, 0 }
+    index, mp := 0, []int{ 1, 0 }
     for _, v := range arr {
         index = ((index + v) % 2 + 2) % 2
-        tmp[index]++
+        mp[index]++
     }
-    return (tmp[0] * tmp[1]) % 1_000_000_007
+    return (mp[0] * mp[1]) % 1_000_000_007
 }
 
 func numOfSubarrays1(arr []int) int {
