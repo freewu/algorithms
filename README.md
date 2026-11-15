@@ -2161,6 +2161,7 @@
 [4109. Count Valid Suffix Sorts II](./leetcode/4109-CountValidSuffixSortsII.go)   
 [4110. Find the Maximum Length of Valid Subsequence III](./leetcode/4110-FindtheMaximumLengthofValidSubsequenceIII.go)   
 [4111. Count Consistent Subarrays I](./leetcode/4111-CountConsistentSubarraysI.go)   
+[4114. Count Consistent Subarrays II](./leetcode/4114-CountConsistentSubarraysII.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
