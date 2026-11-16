@@ -101,6 +101,11 @@ func main() {
     // s becomes "0" + "0" + "0" = "000", whose length is equal to k, so we return "000".
     fmt.Println(digitSum("00000000", 3)) // "000"
 
+    fmt.Println(digitSum("123456789", 3)) // "126"
+    fmt.Println(digitSum("987654321", 3)) // "711"
+
     fmt.Println(digitSum1("11111222223", 3)) // "135"
     fmt.Println(digitSum1("00000000", 3)) // "000"
+    fmt.Println(digitSum1("123456789", 3)) // "126"
+    fmt.Println(digitSum1("987654321", 3)) // "711"
 }
