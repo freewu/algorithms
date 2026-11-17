@@ -91,6 +91,125 @@ func minimumChanges(s string, k int) int {
     return f[n][k]
 }
 
+func minimumChanges1(s string, k int) int {
+    n, inf := len(s), 1 << 31
+    divisors := make([][]int, n+1)
+    for d := 1; d < n; d++ {
+        for length := 2 * d; length <= n; length += d {
+            divisors[length] = append(divisors[length], d)
+        }
+    }
+    cost := make([][]int, n+1)
+    for i := range cost {
+        cost[i] = make([]int, n+1)
+        for j := range cost[i] {
+            cost[i][j] = n
+        }
+    }
+    for start := 0; start < n; start++ {
+        for end := start + 2; end <= n; end++ {
+            for _, d := range divisors[end-start] {
+                changes := 0
+                for offset := 0; offset < d; offset++ {
+                    left, right := start + offset, end - d + offset
+                    for left < right {
+                        if s[left] != s[right] {
+                            changes++
+                        }
+                        left += d
+                        right -= d
+                    }
+                }
+                if changes < cost[start][end] {
+                    cost[start][end] = changes
+                }
+            }
+        }
+    }
+    dp := make([][]int, k+1)
+    for i := range dp {
+        dp[i] = make([]int, n+1)
+        for j := range dp[i] {
+            dp[i][j] = inf
+        }
+    }
+    dp[0][0] = 0
+    for p := 1; p <= k; p++ {
+        for end := 2 * p; end <= n; end++ {
+            for start := 2 * (p - 1); start <= end-2; start++ {
+                candidate := dp[p-1][start] + cost[start][end]
+                if candidate < dp[p][end] {
+                    dp[p][end] = candidate
+                }
+            }
+        }
+    }
+    return dp[k][n]
+}
+
+// 预处理每个数的真因子
+const MX = 200
+var divisors [MX + 1][]int
+
+func init() {
+    for i := 1; i <= MX; i++ {
+        for j := i * 2; j <= MX; j += i {
+            divisors[j] = append(divisors[j], i)
+        }
+    }
+}
+
+func minimumChanges2(s string, k int) (ans int) {
+    n := len(s)
+    modify := make([][]int, n - 1)
+    calc := func (s string) int {
+        n := len(s)
+        res := n
+        for _, d := range divisors[n] {
+            count := 0
+            for i0 := 0; i0 < d; i0++ {
+                for i, j := i0, n-d+i0; i < j; i, j = i+d, j-d {
+                    if s[i] != s[j] {
+                        count++
+                    }
+                }
+            }
+            res = min(res, count)
+        }
+        return res
+    }
+    for l := range modify {
+        modify[l] = make([]int, n)
+        for r := l + 1; r < n; r++ { // 半回文串长度至少为 2
+            modify[l][r] = calc(s[l : r+1])
+        }
+    }
+    memo := make([][]int, k)
+    for i := range memo {
+        memo[i] = make([]int, n)
+        for j := range memo[i] {
+            memo[i][j] = -1
+        }
+    }
+    var dfs func(int, int) int
+    dfs = func(i, j int) int {
+        if i == 0 {
+            return modify[0][j]
+        }
+        p := &memo[i][j]
+        if *p != -1 {
+            return *p
+        }
+        res := n
+        for L := i * 2; L < j; L++ {
+            res = min(res, dfs(i-1, L-1)+modify[L][j])
+        }
+        *p = res
+        return res
+    }
+    return dfs(k-1, n-1)
+}
+
 func main() {
     // Example 1:
     // Input: s = "abcac", k = 2
@@ -110,4 +229,16 @@ func main() {
 
     fmt.Println(minimumChanges("bluefrog", 2)) // 3
     fmt.Println(minimumChanges("leetcode", 2)) // 3
+
+    fmt.Println(minimumChanges1("abcac", 2)) // 1
+    fmt.Println(minimumChanges1("abcdef", 2)) // 2
+    fmt.Println(minimumChanges1("aabbaa", 3)) // 0
+    fmt.Println(minimumChanges1("bluefrog", 2)) // 3
+    fmt.Println(minimumChanges1("leetcode", 2)) // 3
+
+    fmt.Println(minimumChanges2("abcac", 2)) // 1
+    fmt.Println(minimumChanges2("abcdef", 2)) // 2
+    fmt.Println(minimumChanges2("aabbaa", 3)) // 0
+    fmt.Println(minimumChanges2("bluefrog", 2)) // 3
+    fmt.Println(minimumChanges2("leetcode", 2)) // 3
 }
