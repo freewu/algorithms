@@ -55,6 +55,27 @@ func maxSelectedElements(nums []int) int {
     return res
 }
 
+func maxSelectedElements1(nums []int) int {
+    sort.Ints(nums)
+    a, b, c := 0, 0, 0 // dp[x-1], dp[x], dp[x+1]
+    res, prev := 0, nums[0]
+    for _, v := range nums {
+        switch v - prev {
+        case 0:
+        case 1:
+            a, b, c = b, c, 0
+        case 2:
+            a, b, c = c, 0, 0
+        default:
+            a, b, c = 0, 0, 0
+        }
+        c = max(c, b + 1)
+        b = max(b, a + 1)
+        res, prev = max(res, b, c), v
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: nums = [2,1,5,1,1]
@@ -68,4 +89,12 @@ func main() {
     // Output: 1
     // Explanation: The maximum consecutive elements that we can select is 1.
     fmt.Println(maxSelectedElements([]int{1,4,7,10})) // 1
+
+    fmt.Println(maxSelectedElements([]int{1,2,3,4,5,6,7,8,9})) // 9
+    fmt.Println(maxSelectedElements([]int{9,8,7,6,5,4,3,2,1})) // 9
+
+    fmt.Println(maxSelectedElements1([]int{2,1,5,1,1})) // 3
+    fmt.Println(maxSelectedElements1([]int{1,4,7,10})) // 1
+    fmt.Println(maxSelectedElements1([]int{1,2,3,4,5,6,7,8,9})) // 9
+    fmt.Println(maxSelectedElements1([]int{9,8,7,6,5,4,3,2,1})) // 9
 }
