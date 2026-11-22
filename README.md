@@ -3712,6 +3712,7 @@
 [4018. Total Sum of Interaction Cost in Tree Groups II](./leetcode/4018-TotalSumOfInteractionCostInTreeGroupsII.go)   
 [4100. Minimum Cost Path With Even XOR Parity](./leetcode/4100-MinimumCostPathWithEvenXORParity.go)   
 [4108. Minimum Cost to Make Red Nodes Connected](./leetcode/4108-MinimumCostToMakeRedNodesConnected.go)   
+[4122. Earliest Signal Activation Times](./leetcode/4122-EarliestSignalActivationTimes.go)   
 
 # Trie
 [386. Lexicographical Numbers](./leetcode/386-LexicographicalNumbers.go)   
