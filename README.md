@@ -2163,6 +2163,7 @@
 [4111. Count Consistent Subarrays I](./leetcode/4111-CountConsistentSubarraysI.go)   
 [4113. Game of Divisible Sums](./leetcode/4113-GameofDivisibleSums.go)   
 [4114. Count Consistent Subarrays II](./leetcode/4114-CountConsistentSubarraysII.go)   
+[4116. Assign Umbrella on Rainy Days](./leetcode/4116-ssignUmbrellaOnRainyDays.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
