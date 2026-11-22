@@ -2165,6 +2165,7 @@
 [4114. Count Consistent Subarrays II](./leetcode/4114-CountConsistentSubarraysII.go)   
 [4116. Assign Umbrella on Rainy Days](./leetcode/4116-ssignUmbrellaOnRainyDays.go)   
 [4118. Minimum Operations to Make Mountain Array I](./leetcode/4118-MinimumOperationsToMakeMountainArrayI.go)   
+[4119. Minimum Set Bits in a Valid Integer](./leetcode/4119-MinimumSetBitsinaValidInteger.go)   
 [4120. Count Dominant Elements](./leetcode/4120-CountDominantElements.go)   
 [4121. Minimum Cost to Make All Array Elements Equal](./leetcode/4121-MinimumCostToMakeAllArrayElementsEqual.go)   
 [4123. Minimum Cost to Delete Array Elements](./leetcode/4123-MinimumCostToDeleteArrayElements.go)   
