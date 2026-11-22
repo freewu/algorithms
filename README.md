@@ -2167,6 +2167,7 @@
 [4118. Minimum Operations to Make Mountain Array I](./leetcode/4118-MinimumOperationsToMakeMountainArrayI.go)   
 [4120. Count Dominant Elements](./leetcode/4120-CountDominantElements.go)   
 [4121. Minimum Cost to Make All Array Elements Equal](./leetcode/4121-MinimumCostToMakeAllArrayElementsEqual.go)   
+[4123. Minimum Cost to Delete Array Elements](./leetcode/4123-MinimumCostToDeleteArrayElements.go)   
 
 # String
 [3. Longest Substring Without Repeating Characters](./leetcode/3-LongestSubstringWithoutRepeatingCharacters.go)    
