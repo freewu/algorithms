@@ -3338,6 +3338,7 @@
 [4092. Binary Digit Score](./leetcode/4092-BinaryDigitScore.go)   
 [4098. Minimize the Maximum Value of GCD-Connected Array](./leetcode/4098-MinimizeTheMaximumValueOfGCD-ConnectedArray.go)   
 [4115. Sum of Compatible Numbers in Range II](./leetcode/4115-SumOfCompatibleNumbersInRangeII.go)   
+[4117. Minimum Range After Sum Operations](./leetcode/4117-MinimumRangeAfterSumOperations.go)   
 
 # Stack
 [225. Implement Stack using Queues](./leetcode/225-ImplementStackUsingQueues.go)   
