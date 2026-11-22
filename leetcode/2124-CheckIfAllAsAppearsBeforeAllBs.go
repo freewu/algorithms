@@ -45,6 +45,17 @@ func checkString(s string) bool {
     return true
 }
 
+func checkString1(s string) bool {
+    i, n := 0, len(s)
+    for i < n && s[i] == 'a' {
+        i++
+    }
+    for i < n && s[i] == 'b' {
+        i++
+    }
+    return i == n
+}
+
 func main() {
     // Example 1:
     // Input: s = "aaabbb"
@@ -66,4 +77,12 @@ func main() {
     // Explanation:
     // There are no 'a's, hence, every 'a' appears before every 'b' and we return true.
     fmt.Println(checkString("bbb")) // true
+
+    fmt.Println(checkString("bluefrog")) // true
+    fmt.Println(checkString("leetcode")) // true
+    fmt.Println(checkString("freewu")) // true
+
+    fmt.Println(checkString1("aaabbb")) // true
+    fmt.Println(checkString1("abab")) // false
+    fmt.Println(checkString1("bbb")) // true
 }
