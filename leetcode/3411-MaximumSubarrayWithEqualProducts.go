@@ -74,6 +74,22 @@ func maxLength1(nums []int) int {
     return res
 }
 
+func maxLength2(nums []int) int {
+    const MASK = 0x5218341210
+    prime := func(x int) int { return MASK >> (uint(x-1) * 4 & 63) & 0xF }
+    i, mask, res := 0, 0, 2
+    for j, v := range nums {
+        m := prime(v)
+        for mask&m != 0 {
+            mask &^= prime(nums[i])
+            i++
+        }
+        mask |= m
+        res = max(res, j-i+1)
+    }
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: nums = [1,2,1,2,1,1,1]
@@ -100,4 +116,10 @@ func main() {
     fmt.Println(maxLength1([]int{1,2,3,1,4,5,1})) // 5
     fmt.Println(maxLength1([]int{1,2,3,4,5,6,7,8,9})) // 3
     fmt.Println(maxLength1([]int{9,8,7,6,5,4,3,2,1})) // 3
+
+    fmt.Println(maxLength2([]int{1,2,1,2,1,1,1})) // 5
+    fmt.Println(maxLength2([]int{2,3,4,5,6})) // 3
+    fmt.Println(maxLength2([]int{1,2,3,1,4,5,1})) // 5
+    fmt.Println(maxLength2([]int{1,2,3,4,5,6,7,8,9})) // 3
+    fmt.Println(maxLength2([]int{9,8,7,6,5,4,3,2,1})) // 3
 }
