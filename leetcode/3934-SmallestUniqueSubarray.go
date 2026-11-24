@@ -49,6 +49,7 @@ package main
 //     1 <= nums[i] <= 10^5
 
 import "fmt"
+import "sort"
 
 func smallestUniqueSubarray(nums []int) int {
     n := len(nums)
@@ -88,6 +89,35 @@ func smallestUniqueSubarray(nums []int) int {
     return low
 }
 
+func smallestUniqueSubarray1(nums []int) int {
+    return sort.Search(len(nums), func(n int) bool {
+        counts := make(map[uint64]uint16, len(nums) - n + 1)
+        unique := 0
+        const B = 37
+        var h, pow uint64 = 0, 1
+        for i := range n {
+            pow *= B
+            h = h*B + uint64(nums[i])
+        }
+        counts[h]++
+        if counts[h] == 1 {
+            unique++
+        } else if counts[h] == 2 {
+            unique--
+        }
+        for i := n; i < len(nums); i++ {
+            h = h*B - uint64(nums[i - n])*pow + uint64(nums[i])
+            counts[h]++
+            if counts[h] == 1 {
+                unique++
+            } else if counts[h] == 2 {
+                unique--
+            }
+        }
+        return unique > 0
+    })
+}
+
 func main() {
     // Example 1:
     // Input: nums = [3,3,3]
@@ -125,5 +155,11 @@ func main() {
 
     fmt.Println(smallestUniqueSubarray([]int{1,2,3,4,5,6,7,8,9})) // 1
     fmt.Println(smallestUniqueSubarray([]int{9,8,7,6,5,4,3,2,1})) // 1 
+
+    fmt.Println(smallestUniqueSubarray1([]int{3,3,3})) // 3
+    fmt.Println(smallestUniqueSubarray1([]int{2,1,2,3,3})) // 1  
+    fmt.Println(smallestUniqueSubarray1([]int{1,1,2,2,1})) // 2 
+    fmt.Println(smallestUniqueSubarray1([]int{1,2,3,4,5,6,7,8,9})) // 1
+    fmt.Println(smallestUniqueSubarray1([]int{9,8,7,6,5,4,3,2,1})) // 1 
 }
 
