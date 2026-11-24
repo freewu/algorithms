@@ -34,7 +34,9 @@ import "fmt"
 
 func maxLength(nums []int) int {
     n := len(nums)
-    if n <= 2 { return n }
+    if n <= 2 { 
+        return n 
+    }
     gcd := func (x, y int) int { for y != 0 { x, y = y, x % y; }; return x; }
     max := func (x, y int) int { if x > y { return x; }; return y; }
     res, l, r := 2, 0, 1
@@ -53,6 +55,21 @@ func maxLength(nums []int) int {
         lcm *= nums[r]
         r++
         res = max(res, r - l)
+    }
+    return res
+}
+
+func maxLength1(nums []int) int {
+    res, n, multi, l, r := 2, len(nums), 1, 0, 0
+    gcd := func (x, y int) int { for y != 0 { x, y = y, x % y; }; return x; }
+    for r < n {
+        for gcd(multi, nums[r]) > 1 {
+            multi /= nums[l]
+            l++
+        }
+        multi *= nums[r]
+        res = max(res, r - l + 1)
+        r++
     }
     return res
 }
@@ -77,4 +94,10 @@ func main() {
 
     fmt.Println(maxLength([]int{1,2,3,4,5,6,7,8,9})) // 3
     fmt.Println(maxLength([]int{9,8,7,6,5,4,3,2,1})) // 3
+
+    fmt.Println(maxLength1([]int{1,2,1,2,1,1,1})) // 5
+    fmt.Println(maxLength1([]int{2,3,4,5,6})) // 3
+    fmt.Println(maxLength1([]int{1,2,3,1,4,5,1})) // 5
+    fmt.Println(maxLength1([]int{1,2,3,4,5,6,7,8,9})) // 3
+    fmt.Println(maxLength1([]int{9,8,7,6,5,4,3,2,1})) // 3
 }
