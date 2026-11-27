@@ -117,6 +117,45 @@ func maximumSaleItems2(items [][]int, budget int) int {
     return res
 }
 
+var freq, count, dp [1501]int
+
+func maximumSaleItems3(items [][]int, budget int) int {
+    res, sum, mx, mn := 0, 0, 0, items[0][1]
+    for _, v := range items {
+        mx = max(mx, v[0])
+        mn = min(mn, v[1])
+    }
+    for _, v := range items {
+        freq[v[0]]++
+    }
+    for _, v := range items {
+        f, p := v[0], v[1]
+        if p > budget {
+            continue
+        }
+        c := count[f]
+        if c == 0 {
+            for i := f; i <= mx; i += f {
+                c += freq[i]
+            }
+            count[f] = c
+        }
+        if p < c * mn {
+            sum += p
+            for i := min(sum, budget); i >= p; i-- {
+                dp[i] = max(dp[i], dp[i-p]+c)
+            }
+        }
+    }
+    for i := range budget + 1 {
+        res = max(res, dp[i]+(budget-i)/mn)
+        dp[i] = 0
+    }
+    clear(freq[:mx+1])
+    clear(count[:mx+1])
+    return res
+}
+
 func main() {
     // Example 1:
     // Input: items = [[6,2],[2,6],[3,4]], budget = 9
@@ -142,4 +181,7 @@ func main() {
 
     fmt.Println(maximumSaleItems2([][]int{{6,2},{2,6},{3,4}}, 9)) // 4
     fmt.Println(maximumSaleItems2([][]int{{2,4},{3,2},{4,1},{6,4},{12,4}}, 8)) // 10
+
+    fmt.Println(maximumSaleItems3([][]int{{6,2},{2,6},{3,4}}, 9)) // 4
+    fmt.Println(maximumSaleItems3([][]int{{2,4},{3,2},{4,1},{6,4},{12,4}}, 8)) // 10
 }
